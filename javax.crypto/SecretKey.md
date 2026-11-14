@@ -11,6 +11,7 @@ interface SecretKey : Destroyable, Key
 | [javax.crypto.SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey#) |
 
 | Known Direct Subclasses [PBEKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey), [SecretKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec) |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [PBEKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey) | The interface to a PBE key. | | [SecretKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec) | This class specifies a secret key in a provider-independent fashion. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A secret (symmetric) key. The purpose of this interface is to group (and provide type safety for) all secret key interfaces.
 

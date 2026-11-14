@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # CanonicalAddressesColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Telephony.CanonicalAddressesColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface CanonicalAddressesColumns : BaseColumns

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Percentage
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/units/Percentage "View this page in Java") 
+| --- | --- |
 
 ```
 class Percentage : Comparable<Percentage!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.units.Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#) |
 
 Represents a value as a percentage, not a fraction - for example 100%, 89.62%, etc.
@@ -22,9 +24,11 @@ Represents a value as a percentage, not a fraction - for example 100%, 89.62%, e
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#compareTo(android.health.connect.datatypes.units.Percentage))`(`other:` ` [Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#)`)` Compares this object with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#) | [fromValue](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#fromValue(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Percentage object with the specified value |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getValue](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#getValue())`()` Returns the percentage. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

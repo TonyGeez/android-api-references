@@ -9,6 +9,7 @@ open class ParsePosition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition#) |
 
 `ParsePosition`is a simple class used by`Format`and its subclasses to keep track of the current position during parsing. The`parseObject`method in the various`Format`classes requires a`ParsePosition`object as an argument.
@@ -26,9 +27,11 @@ By design, as you parse through a string with different formats, you can use the
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/ParsePosition#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorIndex](https://developer.android.com/reference/kotlin/java/text/ParsePosition#getErrorIndex())`()` Retrieve the index at which an error occurred, or -1 if the error index has not been set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/text/ParsePosition#getIndex())`()` Retrieve the current parse position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/ParsePosition#hashCode())`()` Returns a hash code for this ParsePosition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorIndex](https://developer.android.com/reference/kotlin/java/text/ParsePosition#setErrorIndex(kotlin.Int))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the index at which a parse error occurred. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndex](https://developer.android.com/reference/kotlin/java/text/ParsePosition#setIndex(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the current parse position. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/text/ParsePosition#toString())`()` Return a string representation of this ParsePosition. |
 
 ## Public constructors

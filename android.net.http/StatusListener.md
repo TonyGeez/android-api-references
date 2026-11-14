@@ -4,6 +4,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # StatusListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener "View this page in Java")
+| --- | --- |
 
 ```
 interface StatusListener

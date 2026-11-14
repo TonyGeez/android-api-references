@@ -7,10 +7,12 @@ open class GregorianCalendar : Calendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) ||
 | | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#) |
 
 | Known Direct Subclasses [BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar), [JapaneseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar), [TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar) |---|---| | [BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
@@ -138,12 +140,15 @@ GregorianCalendar usually should be instantiated using `https://developer.androi
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#clone()()` Overrides Cloneable |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the maximum value that this field could have, given the current date. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the minimum value that this field could have, given the current date. |
+| --- | --- |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getGregorianChange()()` Gets the Gregorian Calendar change date. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getType()()` **\[icu\]** Returns the calendar type name string for this Calendar object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#hashCode()()` Override hashCode. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#isEquivalentTo(android.icu.util.Calendar)(other: https://developer.android.com/reference/kotlin/android/icu/util/Calendar!)` Returns true if the given Calendar object is equivalent to this one. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#isLeapYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the given year is a leap year. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#roll(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Roll a field by a signed amount. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#setGregorianChange(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Sets the GregorianCalendar change date. |
 
 | Protected methods ||
@@ -151,9 +156,11 @@ GregorianCalendar usually should be instantiated using `https://developer.androi
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleComputeFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override Calendar to compute several fields specific to the hybrid Gregorian-Julian calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleComputeJulianDay(kotlin.Int)(bestField: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Return JD of start of given month/year |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleGetExtendedYear()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int)(extendedYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#handleGetYearLength(kotlin.Int)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 
 | Inherited functions ||
@@ -302,6 +309,7 @@ Constructs a GregorianCalendar with the given date set in the default time zone 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the YEAR time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the MONTH time field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the DATE time field in the calendar. |
+| --- | --- |
 
 **See Also**
 
@@ -327,6 +335,7 @@ Constructs a GregorianCalendar with the given date and time set for the default 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the YEAR time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the MONTH time field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the DATE time field in the calendar. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the HOUR_OF_DAY time field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the MINUTE time field in the calendar. |
 
@@ -355,9 +364,11 @@ Constructs a GregorianCalendar with the given date and time set for the default 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the YEAR time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the MONTH time field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the DATE time field in the calendar. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the HOUR_OF_DAY time field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the MINUTE time field in the calendar. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the SECOND time field in the calendar. |
+| --- | --- |
 
 **See Also**
 
@@ -595,6 +606,7 @@ Return JD of start of given month/year
 | `eyear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the extended year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the zero-based month, or 0 if useMonth is false |
 | `useMonth` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, compute the day before the first day of the given year, otherwise, compute the day before the first day of the given month |
+| --- | --- |
 
 | Return ||
 |---|---|

@@ -7,6 +7,7 @@ class ChildSaProposal : SaProposal
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.ipsec.ike.SaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal) ||
 | | ↳ | [android.net.ipsec.ike.ChildSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#) |
 
@@ -31,6 +32,7 @@ User must provide at least one valid ChildSaProposal when they are creating a ne
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#getSupportedEncryptionAlgorithms()()` Returns supported encryption algorithms for Child SA proposal negotiation. |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#getSupportedIntegrityAlgorithms()()` Returns supported integrity algorithms for Child SA proposal negotiation. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#hashCode()()` Returns a hash code value for the object. |
 
 | Inherited functions ||

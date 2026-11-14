@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # VibratorFrequencyProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/vibrator/VibratorFrequencyProfile "View this page in Java") 
+| --- | --- |
 
 ```
 class VibratorFrequencyProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.vibrator.VibratorFrequencyProfile](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#) |
 
 Describes the output of a [android.os.Vibrator](https://developer.android.com/reference/kotlin/android/os/Vibrator.html#) for different vibration frequencies.
@@ -28,9 +30,11 @@ Vibrators without independent frequency control do not have a frequency profile.
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\> | [getFrequenciesOutputAcceleration](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getFrequenciesOutputAcceleration())`()` Returns a [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#) representing the vibrator's output acceleration capabilities across different frequencies. |
 | [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>? | [getFrequencyRange](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getFrequencyRange(kotlin.Float))`(`minOutputAccelerationGs:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Returns the frequency range (in Hz) where the vibrator can sustain at least the given minimum output acceleration (Gs). |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaxFrequencyHz](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getMaxFrequencyHz())`()` Gets the maximum frequency supported by the vibrator. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaxOutputAccelerationGs](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getMaxOutputAccelerationGs())`()` Returns the maximum output acceleration (in Gs) supported by the vibrator. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinFrequencyHz](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getMinFrequencyHz())`()` Gets the minimum frequency supported by the vibrator. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOutputAccelerationGs](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile#getOutputAccelerationGs(kotlin.Float))`(`frequencyHz:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Returns the output acceleration (in Gs) for the given frequency (Hz). |
+| --- | --- |
 
 ## Public methods
 

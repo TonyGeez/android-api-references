@@ -9,6 +9,7 @@ open class SetAppInstallAdvertisersRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.SetAppInstallAdvertisersRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/SetAppInstallAdvertisersRequest#) |
 
 > [!CAUTION]

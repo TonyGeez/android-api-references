@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # StructCmsghdr
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/StructCmsghdr "View this page in Java") 
+| --- | --- |
 
 ```
 class StructCmsghdr
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructCmsghdr](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr#) |
 
 Corresponds to C's`struct cmsghdr`.
@@ -27,6 +29,7 @@ Corresponds to C's`struct cmsghdr`.
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [cmsg_data](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr#cmsg_data:kotlin.ByteArray) message data sent/received |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_level](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr#cmsg_level:kotlin.Int) Originating protocol |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_type](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr#cmsg_type:kotlin.Int) Protocol-specific type |
+| --- | --- |
 
 ## Public constructors
 

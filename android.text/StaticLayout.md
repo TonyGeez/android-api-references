@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # StaticLayout
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/StaticLayout "View this page in Java") 
+| --- | --- |
 
 ```
 open class StaticLayout : Layout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.Layout](https://developer.android.com/reference/kotlin/android/text/Layout) ||
 | | ↳ | [android.text.StaticLayout](https://developer.android.com/reference/kotlin/android/text/StaticLayout#) |
 
@@ -39,15 +41,19 @@ This is used by widgets to control text layout. You should not need to use this 
 | open [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | [computeDrawingBoundingBox](https://developer.android.com/reference/kotlin/android/text/StaticLayout#computeDrawingBoundingBox())`()` Get an actual bounding box that draws text content. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBottomPadding](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getBottomPadding())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisCount](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getEllipsisCount(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisStart](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getEllipsisStart(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLineContainsTab](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineContainsTab(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineCount](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineCount())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineDescent](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineDescent(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | [Layout.Directions](https://developer.android.com/reference/kotlin/android/text/Layout.Directions)! | [getLineDirections](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineDirections(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineForVertical](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineForVertical(kotlin.Int))`(`vertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineStart](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineStart(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineTop](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getLineTop(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphDirection](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getParagraphDirection(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTopPadding](https://developer.android.com/reference/kotlin/android/text/StaticLayout#getTopPadding())`()` <br /> |
 
 | Inherited functions ||

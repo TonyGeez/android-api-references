@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # AccessibilityRequestPreparer
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AccessibilityRequestPreparer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.accessibility.AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer#) |
 
 Object responsible to ensuring that a [View](https://developer.android.com/reference/kotlin/android/view/View.html#) is prepared to meet a synchronous request for accessibility data.
@@ -103,6 +105,7 @@ Callback to allow preparation for filling extra data. Only called back if REQUES
 | `virtualViewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The ID of a virtual child node, if the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) for this preparer supports virtual descendents, or [AccessibilityNodeProvider.HOST_VIEW_ID](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#HOST_VIEW_ID:kotlin.Int) if the request is for the view itself. |
 | `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The extra data key for the request |
 | `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The arguments for the request |
+| --- | --- |
 | `preparationFinishedMessage` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!:A message that must be sent to its target when preparations are complete. |
 
 **See Also**

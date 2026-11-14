@@ -9,6 +9,7 @@ open class IntSummaryStatistics : IntConsumer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.IntSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#) |
 
 A state object for collecting statistics such as count, min, max, sum, and average.
@@ -43,9 +44,11 @@ This computes, in a single pass, the count of people, as well as the minimum, ma
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#accept(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Records a new value into the summary information |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [combine](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#combine(java.util.IntSummaryStatistics))`(`other:` ` [IntSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#)!`)` Combines the state of another`IntSummaryStatistics`into this one. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAverage](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#getAverage())`()` Returns the arithmetic mean of values recorded, or zero if no values have been recorded. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#getCount())`()` Returns the count of values recorded. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMax](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#getMax())`()` Returns the maximum value recorded, or`Integer.MIN_VALUE`if no values have been recorded. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMin](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#getMin())`()` Returns the minimum value recorded, or`Integer.MAX_VALUE`if no values have been recorded. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSum](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#getSum())`()` Returns the sum of values recorded, or zero if no values have been recorded. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics#toString())`()` Returns a non-empty string representation of this object suitable for debugging. |
 
@@ -91,6 +94,7 @@ If the arguments are inconsistent then an`IllegalArgumentException`is thrown. Th
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the count of values |
 | `min` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minimum value |
 | `max` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum value |
+| --- | --- |
 | `sum` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the sum of all values |
 
 | Exceptions ||

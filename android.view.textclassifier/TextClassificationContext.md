@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # TextClassificationContext
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext "View this page in Java")
+| --- | --- |
 
 ```
 class TextClassificationContext : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#) |
 
 A representation of the context in which text classification would be performed.
@@ -28,9 +30,11 @@ A representation of the context in which text classification would be performed.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#getPackageName()()` Returns the package name of the app that this context originated in. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#getWidgetType()()` Returns the widget type for this classification context. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#getWidgetVersion()()` Returns a custom version string for the widget type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

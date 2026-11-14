@@ -7,9 +7,11 @@ abstract class PccService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.privatecompute.PccService](https://developer.android.com/reference/kotlin/android/app/privatecompute/PccService#) |
 
 Abstract base class for a PCC service that receives data from other components. Developers must extend this class and implement its abstract methods to handle data ingress.

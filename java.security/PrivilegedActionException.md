@@ -9,9 +9,11 @@ open class PrivilegedActionException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.security.PrivilegedActionException](https://developer.android.com/reference/kotlin/java/security/PrivilegedActionException#) |
+| --- | --- | --- | --- |
 
 Legacy security code; do not use. This exception is thrown by`doPrivileged(PrivilegedExceptionAction)`and`doPrivileged(PrivilegedExceptionAction, AccessControlContext context)`to indicate that the action being performed threw a checked exception. The exception thrown by the action can be obtained by calling the`getException`method. In effect, an`PrivilegedActionException`is a "wrapper" for an exception thrown by a privileged action.
 

@@ -4,12 +4,14 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 # StampAnnotation
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/component/StampAnnotation "View this page in Java")
+| --- | --- |
 
 ```
 class StampAnnotation : PdfAnnotation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.component.PdfAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfAnnotation) ||
 | | ↳ | [android.graphics.pdf.component.StampAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#) |
 
@@ -28,6 +30,7 @@ Only path, image, or text objects created using the `https://developer.android.c
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#addObject(android.graphics.pdf.component.PdfPageObject)(pageObject: https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject)` Adds a PDF page object to the stamp annotation. |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getBounds()()` Returns the bounding rectangle of the stamp annotation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getObjects()()` Returns all the known PDF page objects in the stamp annotation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#removeObject(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove the page object at the given index inside the stamp annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#setBounds(android.graphics.RectF)(bounds: https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)` Sets the bounding rectangle of the stamp annotation. |
 

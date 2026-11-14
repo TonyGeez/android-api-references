@@ -9,6 +9,7 @@ abstract class TimerTask : Runnable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask#) |
 
 A task that can be scheduled for one-time or repeated execution by a [Timer](https://developer.android.com/reference/kotlin/java/util/Timer).
@@ -26,6 +27,7 @@ A timer task is*not* reusable. Once a task has been scheduled for execution on a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/util/TimerTask#cancel())`()` Cancels this timer task. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/java/util/TimerTask#run())`()` The action to be performed by this timer task. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [scheduledExecutionTime](https://developer.android.com/reference/kotlin/java/util/TimerTask#scheduledExecutionTime())`()` Returns the*scheduled* execution time of the most recent*actual*execution of this task. |
+| --- | --- |
 
 ## Protected constructors
 

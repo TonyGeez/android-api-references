@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # CalendarCacheColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.CalendarCacheColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface CalendarCacheColumns
@@ -13,6 +14,7 @@ protected interface CalendarCacheColumns
 | [android.provider.CalendarContract.CalendarCacheColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCacheColumns#) |
 
 | Known Direct Subclasses [CalendarContract.CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache) |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache) | CalendarCache stores some settings for calendar including the current time zone for the instances. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 

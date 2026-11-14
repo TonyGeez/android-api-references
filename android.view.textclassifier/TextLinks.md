@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # TextLinks
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/TextLinks "View this page in Java")
+| --- | --- |
 
 ```
 class TextLinks : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.TextLinks](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#) |
 
 A collection of links, representing subsequences of text and the entity types (phone number, address, url, etc) they may be.
@@ -20,6 +22,7 @@ A collection of links, representing subsequences of text and the entity types (p
 | | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.Builder` A builder to construct a TextLinks instance. |
 | | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.Request` A request object for generating TextLinks. |
 | | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLink` A link, identifying a substring of text and possible entity types for it. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan` A ClickableSpan for a TextLink. |
 
 | Constants ||
@@ -27,9 +30,11 @@ A collection of links, representing subsequences of text and the entity types (p
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#APPLY_STRATEGY_IGNORE:kotlin.Int` Do not replace `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s that exist where the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan` needs to be applied to. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#APPLY_STRATEGY_REPLACE:kotlin.Int` Replace any `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s that exist where the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan` needs to be applied to. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#STATUS_DIFFERENT_TEXT:kotlin.Int` The specified text does not match the text used to generate the links. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#STATUS_LINKS_APPLIED:kotlin.Int` Links were successfully applied to the text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#STATUS_NO_LINKS_APPLIED:kotlin.Int` No links applied to text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#STATUS_NO_LINKS_FOUND:kotlin.Int` No links exist to apply to text. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#STATUS_UNSUPPORTED_CHARACTER:kotlin.Int` The specified text contains unsupported characters. |
 
 | Inherited constants ||
@@ -41,9 +46,11 @@ A collection of links, representing subsequences of text and the entity types (p
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#apply(android.text.Spannable,%20kotlin.Int,%20java.util.function.Function)(text: https://developer.android.com/reference/kotlin/android/text/Spannable.html#, applyStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, spanFactory: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLink!, https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan!>?)` Annotates the given text with the generated links. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#getExtras()()` Returns the extended data. |
+| --- | --- |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [TextLinks.TextLink](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLink)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#getLinks()()` Returns an unmodifiable Collection of the links. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#getText()()` Returns the text that was used to generate these links. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -159,6 +166,7 @@ Annotates the given text with the generated links. It will fail if the provided 
 | `text` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#): the text to apply the links to. Must match the original text. This value cannot be `null`. |
 | `applyStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the apply strategy used to determine how to apply links to text. e.g `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#APPLY_STRATEGY_IGNORE:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#APPLY_STRATEGY_IGNORE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks#APPLY_STRATEGY_REPLACE:kotlin.Int` |
 | `spanFactory` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [TextLinks.TextLink](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLink)!, [TextLinks.TextLinkSpan](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan)!\>?: a custom span factory for converting TextLinks to TextLinkSpans. Set to `null` to use the default span factory. |
+| --- | --- |
 
 | Return ||
 |---|---|

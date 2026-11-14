@@ -37,9 +37,11 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInputEncoding](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getInputEncoding())`()` An attribute specifying the encoding used for this entity at the time of parsing, when it is an external parsed entity. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNotationName](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getNotationName())`()` For unparsed entities, the name of the notation for the entity. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getPublicId())`()` The public identifier associated with the entity if specified, and`null`otherwise. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getSystemId())`()` The system identifier associated with the entity if specified, and`null`otherwise. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getXmlEncoding](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getXmlEncoding())`()` An attribute specifying, as part of the text declaration, the encoding of this entity, when it is an external parsed entity. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getXmlVersion](https://developer.android.com/reference/kotlin/org/w3c/dom/Entity#getXmlVersion())`()` An attribute specifying, as part of the text declaration, the version number of this entity, when it is an external parsed entity. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -3,12 +3,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Condition
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/notification/Condition "View this page in Java")
+| --- | --- |
 
 ```
 class Condition : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.notification.Condition](https://developer.android.com/reference/kotlin/android/service/notification/Condition#) |
 
 The current condition of an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#`, provided by the app that owns the rule. Used to tell the system to enter Do Not Disturb mode and request that the system exit Do Not Disturb mode.
@@ -20,12 +22,15 @@ The current condition of an `https://developer.android.com/reference/kotlin/andr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#FLAG_RELEVANT_ALWAYS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#FLAG_RELEVANT_NOW:kotlin.Int` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SCHEME:kotlin.String` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_CONTEXT:kotlin.Int` The state is changing due to a change in context (such as detected driving or sleeping). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_SCHEDULE:kotlin.Int` The state is changing due to an automatic schedule (alarm, set time, etc). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_UNKNOWN:kotlin.Int` The state is changing due to an unknown reason. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_USER_ACTION:kotlin.Int` The state is changing due to an explicit user action. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_FALSE:kotlin.Int` Indicates that Do Not Disturb should be turned off. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_TRUE:kotlin.Int` Indicates that Do Not Disturb should be turned on. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_UNKNOWN:kotlin.Int` <br /> |
 
@@ -46,12 +51,15 @@ The current condition of an `https://developer.android.com/reference/kotlin/andr
 | [Condition](https://developer.android.com/reference/kotlin/android/service/notification/Condition#)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#copy()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#hashCode()()` Returns a hash code value for the object. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#isValidId(android.net.Uri,%20kotlin.String)(id: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | static [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#newId(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#relevanceToString(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#stateToString(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -59,12 +67,15 @@ The current condition of an `https://developer.android.com/reference/kotlin/andr
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Condition](https://developer.android.com/reference/kotlin/android/service/notification/Condition#)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#flags:kotlin.Int` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#icon:kotlin.Int` <br /> |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#id:android.net.Uri` The URI representing the rule being updated. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#line1:kotlin.String` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#line2:kotlin.String` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#source:kotlin.Int` The source of, or reason for, the state change represented by this Condition. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#state:kotlin.Int` The state of this condition. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#summary:kotlin.String` A summary of what the rule encoded in `https://developer.android.com/reference/kotlin/android/service/notification/Condition#id:android.net.Uri` means when it is enabled. |
+| --- | --- |
 
 ## Constants
 
@@ -210,6 +221,7 @@ An object representing the current state of a `https://developer.android.com/ref
 | `id` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a user visible description of the rule state |
 | `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): whether the mode should be activated or deactivated |
+| --- | --- |
 
 ### Condition
 
@@ -230,6 +242,7 @@ An object representing the current state of a `https://developer.android.com/ref
 | `id` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user visible description of the rule state. This value may be `null`. |
 | `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): whether the mode should be activated or deactivated. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_FALSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_TRUE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_ERROR:kotlin.Int` |
+| --- | --- |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the source of, or reason for, the state change represented by this Condition. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_SCHEDULE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_CONTEXT:kotlin.Int` |
 
 ### Condition
@@ -270,9 +283,11 @@ An object representing the current state of a `https://developer.android.com/ref
 | `id` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user visible description of the rule state. This value may be `null`. |
 | `line1` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user-visible description of when the rule will end. This value may be `null`. |
+| --- | --- |
 | `line2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a continuation of the user-visible description of when the rule will end. This value may be `null`. |
 | `icon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an icon representing this condition |
 | `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): whether the mode should be activated or deactivated. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_FALSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_TRUE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_ERROR:kotlin.Int` |
+| --- | --- |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the source of, or reason for, the state change represented by this Condition. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_SCHEDULE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#SOURCE_CONTEXT:kotlin.Int` |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): flags on this condition |
 

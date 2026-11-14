@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # Pair
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Pair "View this page in Java") 
+| --- | --- |
 
 ```
 open class Pair<F : Any!, S : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Pair](https://developer.android.com/reference/kotlin/android/util/Pair#) |
 
 Container to ease passing around a tuple of two objects. This object provides a sensible implementation of equals(), returning true if equals() is true on each of the contained objects.
@@ -26,6 +28,7 @@ Container to ease passing around a tuple of two objects. This object provides a 
 | openstatic [Pair](https://developer.android.com/reference/kotlin/android/util/Pair#)\<A,B\>! | [create](https://developer.android.com/reference/kotlin/android/util/Pair#create(android.util.Pair.create.A,%20android.util.Pair.create.B))`(`a:` `A`, `b:` `B`)` Convenience method for creating an appropriately typed pair. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/util/Pair#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks the two objects for equality by delegating to their respective [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/util/Pair#hashCode())`()` Compute a hash code using the hash codes of the underlying objects |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/util/Pair#toString())`()` <br /> |
 
 | Properties ||

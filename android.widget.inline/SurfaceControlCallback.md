@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SurfaceControlCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/inline/InlineContentView.SurfaceControlCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface SurfaceControlCallback

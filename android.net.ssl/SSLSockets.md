@@ -7,6 +7,7 @@ open class SSLSockets
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ssl.SSLSockets](https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#) |
 
 Static utility methods for accessing additional functionality of supported instances of `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#`. Sockets from the platform TLS provider will be compatible with all methods in this class.
@@ -18,6 +19,7 @@ Static utility methods for accessing additional functionality of supported insta
 | open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#exportKeyingMaterial(javax.net.ssl.SSLSocket,%20kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(socket: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Exports a value derived from the TLS master secret as described in RFC 5705. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#isSupportedSocket(javax.net.ssl.SSLSocket)(socket: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#)` Returns whether the given socket can be used with the methods in this class. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#setEchConfigList(javax.net.ssl.SSLSocket,%20android.net.ssl.EchConfigList)(socket: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#, echConfigList: https://developer.android.com/reference/kotlin/android/net/ssl/EchConfigList)` Sets an EchConfigList to be used to establish ECH on the TLS handshake. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#setUseSessionTickets(javax.net.ssl.SSLSocket,%20kotlin.Boolean)(socket: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#, useSessionTickets: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the use of session tickets. |
 
 ## Public methods
@@ -42,6 +44,7 @@ Exports a value derived from the TLS master secret as described in RFC 5705. A n
 | `socket` | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#): the socket to use for exporting keying material. This value cannot be `null`. |
 | `label` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the label to use in calculating the exported value. This must be an ASCII-only string. This value cannot be `null`. |
 | `context` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: the application-specific context value to use in calculating the exported value. This may be `null` to use no application context, which is treated differently than an empty byte array. |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of bytes of keying material to return. |
 
 | Return ||

@@ -7,6 +7,7 @@ open class File : Comparable<File!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.File](https://developer.android.com/reference/kotlin/java/io/File#) |
 
 An abstract representation of file and directory pathnames.
@@ -55,51 +56,67 @@ On Android strings are converted to UTF-8 byte sequences when sending filenames 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#canExecute()()` Tests whether the application can execute the file denoted by this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#canRead()()` Tests whether the application can read the file denoted by this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#canWrite()()` Tests whether the application can modify the file denoted by this abstract pathname. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#compareTo(java.io.File)(other: https://developer.android.com/reference/kotlin/java/io/File#)` Compares two abstract pathnames lexicographically. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#createNewFile()()` Atomically creates a new, empty file named by this abstract pathname if and only if a file with this name does not yet exist. |
 | open static [File](https://developer.android.com/reference/kotlin/java/io/File#) | `https://developer.android.com/reference/kotlin/java/io/File#createTempFile(kotlin.String,%20kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Creates an empty file in the default temporary-file directory, using the given prefix and suffix to generate its name. |
+| --- | --- |
 | open static [File](https://developer.android.com/reference/kotlin/java/io/File#) | `https://developer.android.com/reference/kotlin/java/io/File#createTempFile(kotlin.String,%20kotlin.String,%20java.io.File)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, directory: https://developer.android.com/reference/kotlin/java/io/File#?)` Creates a new empty file in the specified directory, using the given prefix and suffix strings to generate its name. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#delete()()` Deletes the file or directory denoted by this abstract pathname. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#deleteOnExit()()` Requests that the file or directory denoted by this abstract pathname be deleted when the virtual machine terminates. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tests this abstract pathname for equality with the given object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#exists()()` Tests whether the file or directory denoted by this abstract pathname exists. |
 | open [File](https://developer.android.com/reference/kotlin/java/io/File#) | `https://developer.android.com/reference/kotlin/java/io/File#getAbsoluteFile()()` Returns the absolute form of this abstract pathname. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getAbsolutePath()()` Returns the absolute path of this file. |
 | open [File](https://developer.android.com/reference/kotlin/java/io/File#) | `https://developer.android.com/reference/kotlin/java/io/File#getCanonicalFile()()` Returns the canonical form of this abstract pathname. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getCanonicalPath()()` Returns the canonical pathname string of this abstract pathname. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getFreeSpace()()` Returns the number of unallocated bytes in the partition [named](https://developer.android.com/reference/kotlin/java/io/File#partName) by this abstract path name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getName()()` Returns the name of the file or directory denoted by this abstract pathname. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/io/File#getParent()()` Returns the pathname string of this abstract pathname's parent, or `null` if this pathname does not name a parent directory. |
+| --- | --- |
 | open [File](https://developer.android.com/reference/kotlin/java/io/File#)? | `https://developer.android.com/reference/kotlin/java/io/File#getParentFile()()` Returns the abstract pathname of this abstract pathname's parent, or `null` if this pathname does not name a parent directory. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getPath()()` Converts this abstract pathname into a pathname string. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getTotalSpace()()` Returns the size of the partition [named](https://developer.android.com/reference/kotlin/java/io/File#partName) by this abstract pathname. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#getUsableSpace()()` Returns the number of bytes available to this virtual machine on the partition [named](https://developer.android.com/reference/kotlin/java/io/File#partName) by this abstract pathname. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#hashCode()()` Computes a hash code for this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#isAbsolute()()` Tests whether this abstract pathname is absolute. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#isDirectory()()` Tests whether the file denoted by this abstract pathname is a directory. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#isFile()()` Tests whether the file denoted by this abstract pathname is a normal file. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#isHidden()()` Tests whether the file named by this abstract pathname is a hidden file. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#lastModified()()` Returns the time that the file denoted by this abstract pathname was last modified. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#length()()` Returns the length of the file denoted by this abstract pathname. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/java/io/File#list()()` Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/java/io/File#list(java.io.FilenameFilter)(filter: https://developer.android.com/reference/kotlin/java/io/FilenameFilter?)` Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](https://developer.android.com/reference/kotlin/java/io/File#)!\>? | `https://developer.android.com/reference/kotlin/java/io/File#listFiles()()` Returns an array of abstract pathnames denoting the files in the directory denoted by this abstract pathname. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](https://developer.android.com/reference/kotlin/java/io/File#)!\>? | `https://developer.android.com/reference/kotlin/java/io/File#listFiles(java.io.FileFilter)(filter: https://developer.android.com/reference/kotlin/java/io/FileFilter?)` Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](https://developer.android.com/reference/kotlin/java/io/File#)!\>? | `https://developer.android.com/reference/kotlin/java/io/File#listFiles(java.io.FilenameFilter)(filter: https://developer.android.com/reference/kotlin/java/io/FilenameFilter?)` Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. |
 | open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](https://developer.android.com/reference/kotlin/java/io/File#)!\> | `https://developer.android.com/reference/kotlin/java/io/File#listRoots()()` Returns the file system roots. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#mkdir()()` Creates the directory named by this abstract pathname. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#mkdirs()()` Creates the directory named by this abstract pathname, including any necessary but nonexistent parent directories. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#renameTo(java.io.File)(dest: https://developer.android.com/reference/kotlin/java/io/File#)` Renames the file denoted by this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setExecutable(kotlin.Boolean)(executable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` A convenience method to set the owner's execute permission for this abstract pathname. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setExecutable(kotlin.Boolean,%20kotlin.Boolean)(executable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ownerOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the owner's or everybody's execute permission for this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setLastModified(kotlin.Long)(time: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the last-modified time of the file or directory named by this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setReadOnly()()` Marks the file or directory named by this abstract pathname so that only read operations are allowed. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setReadable(kotlin.Boolean)(readable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` A convenience method to set the owner's read permission for this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setReadable(kotlin.Boolean,%20kotlin.Boolean)(readable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ownerOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the owner's or everybody's read permission for this abstract pathname. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setWritable(kotlin.Boolean)(writable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` A convenience method to set the owner's write permission for this abstract pathname. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#setWritable(kotlin.Boolean,%20kotlin.Boolean)(writable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ownerOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the owner's or everybody's write permission for this abstract pathname. |
 | open [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#) | `https://developer.android.com/reference/kotlin/java/io/File#toPath()()` Returns a `https://developer.android.com/reference/kotlin/java/nio/file/Path.html#` object constructed from the this abstract path. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#toString()()` Returns the pathname string of this abstract pathname. |
+| --- | --- |
 | open [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#) | `https://developer.android.com/reference/kotlin/java/io/File#toURI()()` Constructs a URI that represents this abstract pathname. |
 | open [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) | `https://developer.android.com/reference/kotlin/java/io/File#toURL()()` Converts this abstract pathname into a `file:` URL. |
 
@@ -108,6 +125,7 @@ On Android strings are converted to UTF-8 byte sequences when sending filenames 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#pathSeparator:kotlin.String` The system-dependent path-separator character, represented as a string for convenience. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#pathSeparatorChar:kotlin.Char` The system-dependent path-separator character. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#separator:kotlin.String` The system-dependent default name-separator character, represented as a string for convenience. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/File#separatorChar:kotlin.Char` The system-dependent default name-separator character. |
 
 ## Public constructors
@@ -339,6 +357,7 @@ The `https://developer.android.com/reference/kotlin/java/nio/file/Files.html#cre
 | `java.io.IOException` | If a file could not be created |
 | `java.lang.IllegalArgumentException` | If the `prefix` argument contains fewer than three characters |
 | `java.lang.SecurityException` | If a security manager exists and its `` `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)` `` method does not allow a file to be created |
+| --- | --- |
 
 **See Also**
 
@@ -372,6 +391,7 @@ If the `directory` argument is `null` then the system-dependent default temporar
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The prefix string to be used in generating the file's name; must be at least three characters long |
 | `suffix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The suffix string to be used in generating the file's name; may be `null`, in which case the suffix `".tmp"` will be used |
 | `directory` | [File](https://developer.android.com/reference/kotlin/java/io/File#)?: The directory in which the file is to be created, or `null` if the default temporary-file directory is to be used |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -382,6 +402,7 @@ If the `directory` argument is `null` then the system-dependent default temporar
 | `java.io.IOException` | If a file could not be created |
 | `java.lang.IllegalArgumentException` | If the `prefix` argument contains fewer than three characters |
 | `java.lang.SecurityException` | If a security manager exists and its `` `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)` `` method does not allow a file to be created |
+| --- | --- |
 
 ### delete
 

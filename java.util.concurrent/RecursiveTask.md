@@ -7,6 +7,7 @@ abstract class RecursiveTask<V : Any!> : ForkJoinTask<V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.concurrent.ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<V\> ||
 | | ↳ | [java.util.concurrent.RecursiveTask](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask#) |
 
@@ -60,6 +61,7 @@ For example, here is a task-based program for computing Factorials:
 | abstract V | `https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask#compute()()` The main computation performed by this task. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask#exec()()` Implements execution conventions for RecursiveTask. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask#setRawResult(java.util.concurrent.RecursiveTask.V)(value: V)` Forces the given value to be returned as a result. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

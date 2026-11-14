@@ -9,6 +9,7 @@ open class PropertyResourceBundle : ResourceBundle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle) ||
 | | ↳ | [java.util.PropertyResourceBundle](https://developer.android.com/reference/kotlin/java/util/PropertyResourceBundle#) |
 
@@ -87,6 +88,7 @@ Creates a property resource bundle from an [InputStream](https://developer.andro
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.NullPointerException` | if`stream`is null |
 | `java.lang.IllegalArgumentException` | if`stream`contains a malformed Unicode escape sequence. |
+| --- | --- |
 | `java.nio.charset.MalformedInputException` | if the system property`java.util.PropertyResourceBundle.encoding`is set to "UTF-8" and`stream`contains an invalid UTF-8 byte sequence. |
 | `java.nio.charset.UnmappableCharacterException` | if the system property`java.util.PropertyResourceBundle.encoding`is set to "UTF-8" and`stream`contains an unmappable UTF-8 byte sequence. |
 
@@ -109,6 +111,7 @@ Creates a property resource bundle from a [Reader](https://developer.android.com
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.NullPointerException` | if`reader`is null |
 | `java.lang.IllegalArgumentException` | if a malformed Unicode escape sequence appears from`reader`. |
+| --- | --- |
 
 ## Public methods
 

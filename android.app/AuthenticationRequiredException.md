@@ -5,15 +5,18 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AuthenticationRequiredException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/AuthenticationRequiredException "View this page in Java") 
+| --- | --- |
 
 ```
 class AuthenticationRequiredException : SecurityException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) ||
 | | | | | ↳ | [android.app.AuthenticationRequiredException](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException#) |
 
@@ -38,6 +41,7 @@ Note: legacy code that receives this exception may treat it as a general [Securi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException#describeContents())`()` <br /> |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent)! | [getUserAction](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException#getUserAction())`()` Return primary action that will initiate the authorization. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

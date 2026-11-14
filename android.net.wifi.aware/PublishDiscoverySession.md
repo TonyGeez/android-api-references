@@ -7,6 +7,7 @@ open class PublishDiscoverySession : DiscoverySession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.aware.DiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession) ||
 | | ↳ | [android.net.wifi.aware.PublishDiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#) |
 
@@ -19,6 +20,7 @@ A class representing a Aware publish session. Created when `https://developer.an
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#acceptDataPathRequest(android.net.wifi.aware.PeerHandle,%20android.net.wifi.aware.AwareDataPathRequest)(peerHandle: https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle, request: https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareDataPathRequest)` Accept a Wi-Fi Aware data path request to create a connection with the target peer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#rejectDataPathRequest(android.net.wifi.aware.PeerHandle)(peerHandle: https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle)` Reject a Wi-Fi Aware data path request received from peer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#updatePublish(android.net.wifi.aware.PublishConfig)(publishConfig: https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig)` Re-configure the currently active publish session. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

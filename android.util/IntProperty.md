@@ -3,12 +3,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # IntProperty
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/IntProperty "View this page in Java")
+| --- | --- |
 
 ```
 abstract class IntProperty<T : Any!> : Property<T, Int!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.util.Property](https://developer.android.com/reference/kotlin/android/util/Property)\<T, [kotlin.Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)\> ||
 | | ↳ | [android.util.IntProperty](https://developer.android.com/reference/kotlin/android/util/IntProperty#) |
 

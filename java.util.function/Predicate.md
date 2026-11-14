@@ -19,9 +19,11 @@ This is a [functional interface](https://developer.android.com/reference/kotlin/
 | open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#and(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
 | open static [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#isEqual(kotlin.Any)(targetRef: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)`. |
 | open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#negate()()` Returns a predicate that represents the logical negation of this predicate. |
+| --- | --- |
 | open static [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#not(java.util.function.Predicate)(target: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a predicate that is the negation of the supplied predicate. |
 | open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#or(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)(t: T)` Evaluates this predicate on the given argument. |
+| --- | --- |
 
 ## Public methods
 

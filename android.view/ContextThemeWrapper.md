@@ -7,9 +7,11 @@ open class ContextThemeWrapper : ContextWrapper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) An activity is a single, focused thing that the user can do.
 Known Indirect Subclasses [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#), [ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup.html#), [AliasActivity](https://developer.android.com/reference/kotlin/android/app/AliasActivity.html#), [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#), [LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity.html#), [ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity.html#), [NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity.html#), [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.html#), [TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity.html#) [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
@@ -946,9 +948,11 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#applyOverrideConfiguration(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Call to set an "override configuration" on this context -- this is a configuration that replies one or more values of the standard configuration that is applied to the context. |
 | open [AssetManager](https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
 | open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getResources()()` Returns a Resources instance for the application's package. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
 | open [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getTheme()()` Return the Theme object associated with this Context. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#setTheme(android.content.res.Resources.Theme)(theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Set the configure the current theme. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#setTheme(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the base theme for this context. |
 
 | Protected methods ||
@@ -2588,3 +2592,4 @@ Called by #setTheme and #getTheme to apply a theme resource to the current Theme
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: the theme being modified |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the style resource being applied to theme |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if this is the first time a style is being applied to theme |
+| --- | --- |

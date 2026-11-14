@@ -9,9 +9,11 @@ open class SyncFailedException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.io.SyncFailedException](https://developer.android.com/reference/kotlin/java/io/SyncFailedException#) |
 
 Signals that a sync operation has failed.

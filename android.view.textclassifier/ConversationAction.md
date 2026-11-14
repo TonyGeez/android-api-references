@@ -3,12 +3,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ConversationAction
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/ConversationAction "View this page in Java")
+| --- | --- |
 
 ```
 class ConversationAction : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.ConversationAction](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#) |
 
 Represents the action suggested by a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier` on a given conversation.
@@ -24,12 +26,15 @@ Represents the action suggested by a `https://developer.android.com/reference/ko
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_CALL_PHONE:kotlin.String` Indicates an action to call a phone number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_CREATE_REMINDER:kotlin.String` Indicates an action to create a reminder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_OPEN_URL:kotlin.String` Indicates an action to open an URL. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_SEND_EMAIL:kotlin.String` Indicates an action to send an email. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_SEND_SMS:kotlin.String` Indicates an action to send a SMS. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_SHARE_LOCATION:kotlin.String` Indicates an action to reply with a location. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_TEXT_REPLY:kotlin.String` Indicates an action to reply with a text message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_TRACK_FLIGHT:kotlin.String` Indicates an action to track a flight. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_VIEW_CALENDAR:kotlin.String` Indicates an action to view a calendar at a specified time. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_VIEW_MAP:kotlin.String` Indicates an action to view the map at a specified location. |
 
 | Inherited constants ||
@@ -41,9 +46,11 @@ Represents the action suggested by a `https://developer.android.com/reference/ko
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction.html#)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getAction()()` Returns a RemoteAction object, which contains the icon, label and a PendingIntent, for the specified action type. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getConfidenceScore()()` Returns the confidence score for the specified action. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getExtras()()` Returns the extended data related to this conversation action. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getTextReply()()` Returns the text reply that could be sent as a reply to the given conversation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getType()()` Returns the type of this action, for example, `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_VIEW_CALENDAR:kotlin.String`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

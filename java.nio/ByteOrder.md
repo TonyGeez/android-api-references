@@ -9,6 +9,7 @@ class ByteOrder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder#) |
 
 A typesafe enumeration for byte orders.

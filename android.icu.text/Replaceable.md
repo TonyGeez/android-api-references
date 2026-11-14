@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Replaceable
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Replaceable "View this page in Java") 
+| --- | --- |
 
 ```
 interface Replaceable
@@ -38,9 +39,11 @@ If this is not the behavior, the subclass should document any differences.
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [char32At](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#char32At(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the 32-bit code point at the given 16-bit offset into the text. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [charAt](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#charAt(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the 16-bit code unit at the given offset into the text. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#copy(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies a substring of this object, retaining metadata. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getChars](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int))`(`srcStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `dstStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies characters from this object into the destination character array. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMetaData](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#hasMetaData())`()` R Returns true if this object contains metadata. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#length())`()` Returns the number of 16-bit code units in the text. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replace](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#replace(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `charsStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `charsLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Replaces a substring of this object with the given text. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replace](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable#replace(kotlin.Int,%20kotlin.Int,%20kotlin.String))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replaces a substring of this object with the given text. |
 
@@ -111,6 +114,7 @@ char[] text = new char[limit - start];
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning index, inclusive;`0 <= start <= limit`. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ending index, exclusive;`start <= limit <= length()`. |
 | `dest` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the destination index. The characters from`start..limit-1`will be copied to`dest`. Implementations of this method may assume that`dest <= start || dest >= limit`. |
+| --- | --- | --- | --- |
 
 ### getChars
 
@@ -132,6 +136,7 @@ Copies characters from this object into the destination character array. The fir
 | `srcStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning index to copy, inclusive;`0 <= start <= limit`. |
 | `srcLimit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ending index to copy, exclusive;`start <= limit <= length()`. |
 | `dst` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the destination array. |
+| --- | --- |
 | `dstStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array. |
 
 ### hasMetaData
@@ -185,6 +190,7 @@ Subclasses must ensure that if the text between start and limit is equal to the 
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning index, inclusive;`0 <= start <= limit`. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ending index, exclusive;`start <= limit <= length()`. |
 | `chars` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the text to replace characters`start`to`limit - 1` |
+| --- | --- |
 | `charsStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning index into`chars`, inclusive;`0 <= start <= limit`. |
 | `charsLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of characters of`chars`. |
 
@@ -209,3 +215,4 @@ Subclasses must ensure that if the text between start and limit is equal to the 
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning index, inclusive;`0 <= start <= limit`. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ending index, exclusive;`start <= limit <= length()`. |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the text to replace characters`start`to`limit - 1` |
+| --- | --- |

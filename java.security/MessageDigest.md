@@ -9,6 +9,7 @@ abstract class MessageDigest : MessageDigestSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.MessageDigestSpi](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi) ||
 | | ↳ | [java.security.MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#) |
 
@@ -46,9 +47,11 @@ Android provides the following`MessageDigest`algorithms:
 | MD5 | 1+ |
 | SHA-1 | 1+ |
 | SHA-224 | 1-8,22+ |
+| --- | --- |
 | SHA-256 | 1+ |
 | SHA-384 | 1+ |
 | SHA-512 | 1+ |
+| --- | --- |
 
 These algorithms are described in the [MessageDigest section](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#messagedigest-algorithms) of the Java Cryptography Architecture Standard Algorithm Name Documentation.
 
@@ -63,18 +66,23 @@ These algorithms are described in the [MessageDigest section](https://docs.oracl
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/MessageDigest#clone())`()` Returns a clone if the implementation is cloneable. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#digest())`()` Completes the hash computation by performing final operations such as padding. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#digest(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Performs a final update on the digest using the specified array of bytes, then completes the digest computation. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#digest(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getAlgorithm())`()` Returns a string that identifies the algorithm, independent of implementation details. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigestLength](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getDigestLength())`()` Returns the length of the digest in bytes, or 0 if this operation is not supported by the provider and the implementation is not cloneable. |
+| --- | --- |
 | openstatic [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#) | [getInstance](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
 | openstatic [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#) | [getInstance](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
 | openstatic [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest#) | [getInstance](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider) | [getProvider](https://developer.android.com/reference/kotlin/java/security/MessageDigest#getProvider())`()` Returns the provider of this message digest object. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](https://developer.android.com/reference/kotlin/java/security/MessageDigest#isEqual(kotlin.ByteArray,%20kotlin.ByteArray))`(`digesta:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `digestb:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Compares two digests for equality. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/security/MessageDigest#reset())`()` Resets the digest for further use. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/MessageDigest#toString())`()` Returns a string representation of this message digest object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/MessageDigest#update(kotlin.Byte))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/MessageDigest#update(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Updates the digest using the specified array of bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/MessageDigest#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/MessageDigest#update(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)`)` Update the digest using the specified ByteBuffer. |
 
@@ -170,6 +178,7 @@ Completes the hash computation by performing final operations such as padding. T
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):output buffer for the computed digest |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset into the output buffer to begin storing the digest |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of bytes within buf allotted for the digest |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------|
@@ -269,6 +278,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.IllegalArgumentException` | if the provider name is`null`or empty |
 | `java.security.NoSuchAlgorithmException` | if a`MessageDigestSpi`implementation for the specified algorithm is not available from the specified provider |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list |
+| --- | --- |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
 
 **See Also**
@@ -304,6 +314,7 @@ A new MessageDigest object encapsulating the MessageDigestSpi implementation fro
 | `java.lang.IllegalArgumentException` | if the specified provider is`null` |
 | `java.security.NoSuchAlgorithmException` | if a`MessageDigestSpi`implementation for the specified algorithm is not available from the specified`Provider`object |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
+| --- | --- |
 
 **See Also**
 
@@ -416,6 +427,7 @@ Updates the digest using the specified array of bytes, starting at the specified
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the array of bytes. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset to start from in the array of bytes. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to use, starting at`offset`. |
+| --- | --- |
 
 ### update
 

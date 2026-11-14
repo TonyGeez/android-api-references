@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Person
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/Person "View this page in Java")
+| --- | --- |
 
 ```
 class Person : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.Person](https://developer.android.com/reference/kotlin/android/app/Person#) |
 
 Provides an immutable reference to an entity that appears repeatedly on different surfaces of the platform. For example, this could represent the sender of a message.
@@ -28,12 +30,15 @@ Provides an immutable reference to an entity that appears repeatedly on differen
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | `https://developer.android.com/reference/kotlin/android/app/Person#getIcon()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Person#getKey()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Person#getName()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Person#getUri()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#isBot()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#isImportant()()` <br /> |
+| --- | --- |
 | [Person.Builder](https://developer.android.com/reference/kotlin/android/app/Person.Builder)! | `https://developer.android.com/reference/kotlin/android/app/Person#toBuilder()()` Creates and returns a new `https://developer.android.com/reference/kotlin/android/app/Person.Builder` initialized with this Person's data. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

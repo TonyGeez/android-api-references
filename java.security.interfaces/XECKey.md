@@ -11,6 +11,7 @@ interface XECKey
 | [java.security.interfaces.XECKey](https://developer.android.com/reference/kotlin/java/security/interfaces/XECKey#) |
 
 | Known Direct Subclasses [XECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/XECPrivateKey), [XECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/XECPublicKey) |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [XECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/XECPrivateKey) | An interface for an elliptic curve private key as defined by RFC 7748. | | [XECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/XECPublicKey) | An interface for an elliptic curve public key as defined by RFC 7748. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An interface for an elliptic curve public/private key as defined by RFC 7748. These keys are distinct from the keys represented by`ECKey`, and they are intended for use with algorithms based on RFC 7748 such as the XDH`KeyAgreement`algorithm. This interface allows access to the algorithm parameters associated with the key.
 

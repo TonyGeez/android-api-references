@@ -7,15 +7,18 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 # RequestSurfacePackageException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/sdksandbox/RequestSurfacePackageException "View this page in Java") 
+| --- | --- |
 
 ```
 class RequestSurfacePackageException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.app.sdksandbox.RequestSurfacePackageException](https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException#) |
+| --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 35.**
 |
@@ -75,6 +78,7 @@ Initializes a [RequestSurfacePackageException](https://developer.android.com/ref
 | `requestSurfacePackageErrorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The result code. Value is [android.app.sdksandbox.SdkSandboxManager#REQUEST_SURFACE_PACKAGE_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#REQUEST_SURFACE_PACKAGE_INTERNAL_ERROR:kotlin.Int), or [android.app.sdksandbox.SdkSandboxManager#REQUEST_SURFACE_PACKAGE_SDK_NOT_LOADED](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#REQUEST_SURFACE_PACKAGE_SDK_NOT_LOADED:kotlin.Int) |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The detailed message which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method. This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:The cause of the exception, which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method. A null value is permitted, and indicates that the cause is nonexistent or unknown. |
+| --- | --- |
 
 ### RequestSurfacePackageException
 
@@ -96,6 +100,7 @@ Initializes a [RequestSurfacePackageException](https://developer.android.com/ref
 | `requestSurfacePackageErrorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The result code. Value is [android.app.sdksandbox.SdkSandboxManager#REQUEST_SURFACE_PACKAGE_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#REQUEST_SURFACE_PACKAGE_INTERNAL_ERROR:kotlin.Int), or [android.app.sdksandbox.SdkSandboxManager#REQUEST_SURFACE_PACKAGE_SDK_NOT_LOADED](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#REQUEST_SURFACE_PACKAGE_SDK_NOT_LOADED:kotlin.Int) |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The detailed message which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method. This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:The cause of the exception, which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method. A null value is permitted, and indicates that the cause is nonexistent or unknown. |
+| --- | --- |
 | `extraInfo` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):Extra error information. This is empty if there is no such information. This value cannot be`null`. |
 
 ## Public methods

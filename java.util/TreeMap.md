@@ -7,6 +7,7 @@ open class TreeMap<K : Any!, V : Any!> : AbstractMap<K, V>, Cloneable, Na
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap)\<K, V\> ||
 | | ↳ | [java.util.TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap#) |
 
@@ -46,48 +47,63 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#ceilingEntry(java.util.TreeMap.K)(key: K)` <br /> |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#ceilingKey(java.util.TreeMap.K)(key: K)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#clear()()` Removes all of the mappings from this map. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#clone()()` Returns a shallow copy of this `TreeMap` instance. |
 | open [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in K\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#comparator()()` Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its keys. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#compute(java.util.TreeMap.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V?, out V?>)` Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
+| --- | --- |
 | open V | `https://developer.android.com/reference/kotlin/java/util/TreeMap#computeIfAbsent(java.util.TreeMap.K,%20java.util.function.Function)(key: K, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function<in K, out V>)` If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#computeIfPresent(java.util.TreeMap.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V, out V?>)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#containsKey(java.util.TreeMap.K)(key: K)` Returns `true` if this map contains a mapping for the specified key. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#containsKey(java.util.TreeMap.K)(key: K)` Returns `true` if this map contains a mapping for the specified key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#containsValue(java.util.TreeMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#containsValue(java.util.TreeMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
+| --- | --- |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<K\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#descendingKeySet()()` <br /> |
 | open [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#descendingMap()()` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#firstEntry()()` <br /> |
+| --- | --- |
 | open K | `https://developer.android.com/reference/kotlin/java/util/TreeMap#firstKey()()` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#floorEntry(java.util.TreeMap.K)(key: K)` <br /> |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#floorKey(java.util.TreeMap.K)(key: K)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer<in K, in V>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#get(java.util.TreeMap.K)(key: K)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#get(java.util.TreeMap.K)(key: K)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| --- | --- |
 | open [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#headMap(java.util.TreeMap.K)(toKey: K)` <br /> |
 | open [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#headMap(java.util.TreeMap.K,%20kotlin.Boolean)(toKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#higherEntry(java.util.TreeMap.K)(key: K)` <br /> |
+| --- | --- |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#higherKey(java.util.TreeMap.K)(key: K)` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#lastEntry()()` <br /> |
 | open K | `https://developer.android.com/reference/kotlin/java/util/TreeMap#lastKey()()` <br /> |
+| --- | --- |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#lowerEntry(java.util.TreeMap.K)(key: K)` <br /> |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#lowerKey(java.util.TreeMap.K)(key: K)` <br /> |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#merge(java.util.TreeMap.K,%20java.util.TreeMap.V,%20java.util.function.BiFunction)(key: K, value: V, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in V, in V, out V?>)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
+| --- | --- |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<K\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#navigableKeySet()()` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#pollFirstEntry()()` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#pollLastEntry()()` <br /> |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#put(java.util.TreeMap.K,%20java.util.TreeMap.V)(key: K, value: V)` Associates the specified value with the specified key in this map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#putFirst(java.util.TreeMap.K,%20java.util.TreeMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#putIfAbsent(java.util.TreeMap.K,%20java.util.TreeMap.V)(key: K, value: V)` If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#putLast(java.util.TreeMap.K,%20java.util.TreeMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#remove(java.util.TreeMap.K)(key: K)` Removes the mapping for this key from this TreeMap if present. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#remove(java.util.TreeMap.K)(key: K)` Removes the mapping for this key from this TreeMap if present. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/TreeMap#replace(java.util.TreeMap.K,%20java.util.TreeMap.V)(key: K, value: V)` Replaces the entry for the specified key only if it is currently mapped to some value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#replace(java.util.TreeMap.K,%20java.util.TreeMap.V,%20java.util.TreeMap.V)(key: K, oldValue: V, newValue: V)` Replaces the entry for the specified key only if currently mapped to the specified value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 | open [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#subMap(java.util.TreeMap.K,%20kotlin.Boolean,%20java.util.TreeMap.K,%20kotlin.Boolean)(fromKey: K, fromInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toKey: K, toInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#subMap(java.util.TreeMap.K,%20java.util.TreeMap.K)(fromKey: K, toKey: K)` <br /> |
+| --- | --- |
 | open [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#tailMap(java.util.TreeMap.K)(fromKey: K)` <br /> |
 | open [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#tailMap(java.util.TreeMap.K,%20kotlin.Boolean)(fromKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 
@@ -96,6 +112,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | From class `https://developer.android.com/reference/kotlin/java/util/SortedMap` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Comparator<in K>?` | `https://developer.android.com/reference/kotlin/java/util/SortedMap#comparator()()` Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its keys. <br /> | | `K` | `https://developer.android.com/reference/kotlin/java/util/SortedMap#firstKey()()` Returns the first (lowest) key currently in this map. <br /> | | `K` | `https://developer.android.com/reference/kotlin/java/util/SortedMap#lastKey()()` Returns the last (highest) key currently in this map. <br /> | | `V?` | `https://developer.android.com/reference/kotlin/java/util/SortedMap#putFirst(java.util.SortedMap.K,%20java.util.SortedMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. The encounter order induced by this map's comparison method determines the position of mappings, so explicit positioning is not supported. <br /> | | `V?` | `https://developer.android.com/reference/kotlin/java/util/SortedMap#putLast(java.util.SortedMap.K,%20java.util.SortedMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. The encounter order induced by this map's comparison method determines the position of mappings, so explicit positioning is not supported. <br /> | ||
 | From class `https://developer.android.com/reference/kotlin/java/util/AbstractMap` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this map for equality. Returns `true` if the given object is also a map and the two maps represent the same mappings. More formally, two maps `m1` and `m2` represent the same mappings if `m1.entrySet().equals(m2.entrySet())`. This ensures that the `equals` method works properly across different implementations of the `Map` interface. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap#hashCode()()` Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry in the map's `entrySet()` view. This ensures that `m1.equals(m2)` implies that `m1.hashCode()==m2.hashCode()` for any two maps `m1` and `m2`, as required by the general contract of `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()`. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap#isEmpty()()` Returns `true` if this map contains no key-value mappings. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap#toString()()` Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's `entrySet` view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters `", "` (comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`. <br /> | ||
 | From class `https://developer.android.com/reference/kotlin/java/util/SequencedMap` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<K, V>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#firstEntry()()` Returns the first key-value mapping in this map, or `null` if the map is empty. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<K, V>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#lastEntry()()` Returns the last key-value mapping in this map, or `null` if the map is empty. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<K, V>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#pollFirstEntry()()` Removes and returns the first key-value mapping in this map, or `null` if the map is empty (optional operation). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<K, V>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#pollLastEntry()()` Removes and returns the last key-value mapping in this map, or `null` if the map is empty (optional operation). <br /> | | `https://developer.android.com/reference/kotlin/java/util/SequencedSet<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<K, V>!>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#sequencedEntrySet()()` Returns a `SequencedSet` view of this map's `https://developer.android.com/reference/kotlin/java/util/Map#entrySet()`. <br /> | | `https://developer.android.com/reference/kotlin/java/util/SequencedSet<K>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#sequencedKeySet()()` Returns a `SequencedSet` view of this map's `https://developer.android.com/reference/kotlin/java/util/Map#keySet()`. <br /> | | `https://developer.android.com/reference/kotlin/java/util/SequencedCollection<V>!` | `https://developer.android.com/reference/kotlin/java/util/SequencedMap#sequencedValues()()` Returns a `SequencedCollection` view of this map's `https://developer.android.com/reference/kotlin/java/util/Map#values()` collection. <br /> | ||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | From class `https://developer.android.com/reference/kotlin/java/util/NavigableMap` |---|---| | `https://developer.android.com/reference/kotlin/java/util/NavigableMap<K, V>` | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this map. The encounter order of mappings in the returned view is the inverse of the encounter order of mappings in this map. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the implementation permits modifications to this view, the modifications "write through" to the underlying map. Changes to the underlying map might or might not be visible in this reversed view, depending upon the implementation. This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/NavigableMap#descendingMap()`. <br /> | ||
 
 | Properties ||
@@ -103,6 +120,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#keys:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/TreeMap#size:kotlin.Int` Returns the number of key-value mappings in this map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/java/util/TreeMap#values:kotlin.collections.MutableCollection` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection` view of the values contained in this map. |
 
 | Inherited properties ||
@@ -302,6 +320,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -350,6 +369,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the mappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the mapping function modified this map |
 
@@ -386,6 +406,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -669,6 +690,7 @@ open fun headMap(toKey: K): SortedMap<K, V>
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ### headMap
 
@@ -695,6 +717,7 @@ open fun headMap(
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ### higherEntry
 
@@ -840,6 +863,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `key` | K: key with which the resulting value is to be associated |
 | `value` | V: the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -850,6 +874,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys or the value or remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -924,6 +949,7 @@ Associates the specified value with the specified key in this map. If the map pr
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putAll
@@ -946,6 +972,7 @@ Copies all of the mappings from the specified map to this map. These mappings re
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null or the specified map contains a null key and this map does not permit null keys |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putAll` operation is not supported by this map |
 
 ### putFirst
@@ -1001,6 +1028,7 @@ If the specified key is not already associated with a value (or is mapped to `nu
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### putLast
@@ -1052,6 +1080,7 @@ Removes the mapping for this key from this TreeMap if present.
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.NullPointerException` | if the specified key is null and this map uses natural ordering, or its comparator does not permit null keys |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### remove
 
@@ -1076,6 +1105,7 @@ Removes the mapping for this key from this TreeMap if present.
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.NullPointerException` | if the specified key is null and this map uses natural ordering, or its comparator does not permit null keys |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### replace
 
@@ -1104,6 +1134,7 @@ Replaces the entry for the specified key only if it is currently mapped to some 
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### replace
@@ -1125,6 +1156,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `key` | K: key with which the specified value is associated |
 | `oldValue` | V: value expected to be associated with the specified key |
 | `newValue` | V: value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1135,6 +1167,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### replaceAll
@@ -1156,6 +1189,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this map's entry set iterator. |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 
@@ -1177,6 +1211,7 @@ open fun subMap(
 | `fromKey` | K: low endpoint of the keys in the returned map |
 | `fromInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the low endpoint is to be included in the returned view |
 | `toKey` | K: high endpoint of the keys in the returned map |
+| --- | --- |
 | `toInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the high endpoint is to be included in the returned view |
 
 | Return ||
@@ -1188,6 +1223,7 @@ open fun subMap(
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ### subMap
 
@@ -1214,6 +1250,7 @@ open fun subMap(
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ### tailMap
 
@@ -1236,6 +1273,7 @@ open fun tailMap(fromKey: K): SortedMap<K, V>
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ### tailMap
 
@@ -1262,6 +1300,7 @@ open fun tailMap(
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null and this map uses natural ordering, or its comparator does not permit null keys |
+| --- | --- |
 
 ## Properties
 

@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SatelliteStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/satellite/SatelliteStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SatelliteStateChangeListener

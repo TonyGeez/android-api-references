@@ -9,6 +9,7 @@ open class IvParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.IvParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/IvParameterSpec#) |
 
 This class specifies an*initialization vector*(IV). Examples which use IVs are ciphers in feedback mode, e.g., DES in CBC mode and RSA ciphers with OAEP encoding operation.
@@ -64,6 +65,7 @@ The bytes that constitute the IV are those between`iv[offset]`and`iv[offset+len-
 | `iv` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer with the IV. The first`len`bytes of the buffer beginning at`offset`inclusive are copied to protect against subsequent modification. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`iv`where the IV starts. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of IV bytes. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # NfcBarcode
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NfcBarcode "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcBarcode : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) |
 
 Provides access to tags containing just a barcode.
@@ -29,9 +31,11 @@ Acquire an [NfcBarcode](https://developer.android.com/reference/kotlin/android/n
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#connect())`()` <br /> |
 | static [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) for the given tag. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getBarcode())`()` Returns the barcode of an NfcBarcode tag. |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getTag())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getType())`()` Returns the NFC Barcode tag type. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#isConnected())`()` <br /> |
 
 ## Constants
@@ -73,6 +77,7 @@ fun close(): Unit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -87,6 +92,7 @@ fun connect(): Unit
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### get
 

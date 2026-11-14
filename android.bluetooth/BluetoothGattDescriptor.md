@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothGattDescriptor
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor "View this page in Java") 
+| --- | --- |
 
 ```
 open class BluetoothGattDescriptor : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#) |
 
 Represents a Bluetooth GATT Descriptor
@@ -24,9 +26,11 @@ GATT Descriptors contain additional information and attributes of a GATT charact
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_READ:kotlin.Int) Descriptor read permission |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_READ_ENCRYPTED:kotlin.Int) Descriptor permission: Allow encrypted read operations |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_READ_ENCRYPTED_MITM:kotlin.Int) Descriptor permission: Allow reading with person-in-the-middle protection |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_WRITE:kotlin.Int) Descriptor write permission |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_WRITE_ENCRYPTED:kotlin.Int) Descriptor permission: Allow encrypted writes |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_WRITE_ENCRYPTED_MITM:kotlin.Int) Descriptor permission: Allow encrypted writes with person-in-the-middle protection |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_WRITE_SIGNED:kotlin.Int) Descriptor permission: Allow signed write operations |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#PERMISSION_WRITE_SIGNED_MITM:kotlin.Int) Descriptor permission: Allow signed write operations with person-in-the-middle protection |
 
@@ -43,9 +47,11 @@ GATT Descriptors contain additional information and attributes of a GATT charact
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#describeContents())`()` <br /> |
 | open [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)! | [getCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#getCharacteristic())`()` Returns the characteristic this descriptor belongs to. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPermissions](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#getPermissions())`()` Returns the permissions for this descriptor. |
+| --- | --- |
 | open [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [getUuid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#getUuid())`()` Returns the UUID of this descriptor. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#getValue())`()` Returns the stored value for this descriptor |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#setValue(kotlin.ByteArray))`(`value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the locally stored value of this descriptor. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -53,6 +59,7 @@ GATT Descriptors contain additional information and attributes of a GATT charact
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#CREATOR:android.os.Parcelable.Creator) <br /> |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [DISABLE_NOTIFICATION_VALUE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#DISABLE_NOTIFICATION_VALUE:kotlin.ByteArray) Value used to disable notifications or indications |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [ENABLE_INDICATION_VALUE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#ENABLE_INDICATION_VALUE:kotlin.ByteArray) Value used to enable indication for a client configuration descriptor |
+| --- | --- |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [ENABLE_NOTIFICATION_VALUE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor#ENABLE_NOTIFICATION_VALUE:kotlin.ByteArray) Value used to enable notification for a client configuration descriptor |
 
 ## Constants

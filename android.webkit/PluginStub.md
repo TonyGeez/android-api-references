@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # PluginStub
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/PluginStub "View this page in Java") 
+| --- | --- |
 
 ```
 interface PluginStub

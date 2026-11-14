@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # OnModeChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioManager.OnModeChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnModeChangedListener

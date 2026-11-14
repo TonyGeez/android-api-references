@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Proxy
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/Proxy "View this page in Java") 
+| --- | --- |
 
 ```
 class Proxy
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.Proxy](https://developer.android.com/reference/kotlin/android/net/Proxy#) |
 
 A convenience class for accessing the user and default proxy settings.
@@ -30,6 +32,7 @@ A convenience class for accessing the user and default proxy settings.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultHost](https://developer.android.com/reference/kotlin/android/net/Proxy#getDefaultHost())`()` Return the default proxy host specified by the carrier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultPort](https://developer.android.com/reference/kotlin/android/net/Proxy#getDefaultPort())`()` Return the default proxy port specified by the carrier. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](https://developer.android.com/reference/kotlin/android/net/Proxy#getHost(android.content.Context))`(`ctx:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Return the proxy host set by the user. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/Proxy#getPort(android.content.Context))`(`ctx:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Return the proxy port set by the user. |
 
 ## Constants

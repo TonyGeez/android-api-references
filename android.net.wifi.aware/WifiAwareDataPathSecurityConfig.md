@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # WifiAwareDataPathSecurityConfig
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig "View this page in Java")
+| --- | --- |
 
 ```
 class WifiAwareDataPathSecurityConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#) |
 
 Wi-Fi Aware data-path security config. The config is used with `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier.Builder#setDataPathSecurityConfig(android.net.wifi.aware.WifiAwareDataPathSecurityConfig)` to request a secure data-path.
@@ -28,12 +30,15 @@ Wi-Fi Aware data-path security config. The config is used with `https://develope
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#getCipherSuite()()` Get the cipher suite specified in this config |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#getPmk()()` Get the specified PMK in this config. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#getPmkId()()` Get the specified PMKID in this config. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#getPskPassphrase()()` Get the specified passphrase in this config. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDiscoveryConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDiscoveryConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiP2pDiscoveryConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pDiscoveryConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#) |
 
 A class representing a Wi-Fi P2P scan configuration for setting up discovery.
@@ -30,6 +32,7 @@ A class representing a Wi-Fi P2P scan configuration for setting up discovery.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#describeContents())`()` Implement the Parcelable interface |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequencyMhz](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#getFrequencyMhz())`()` Get the frequency to scan in MHz. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScanType](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#getScanType())`()` Get the type of this scan. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDiscoveryConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

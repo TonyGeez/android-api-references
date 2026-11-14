@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # CellIdentity
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellIdentity "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CellIdentity : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#) |
 
 | Known Direct Subclasses [CellIdentityCdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma), [CellIdentityGsm](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm), [CellIdentityLte](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityLte), [CellIdentityNr](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityNr), [CellIdentityTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityTdscdma), [CellIdentityWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma) |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [CellIdentityCdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma) | CellIdentity is to represent a unique CDMA cell | | [CellIdentityGsm](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm) | CellIdentity to represent a unique GSM cell | | [CellIdentityLte](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityLte) | CellIdentity is to represent a unique LTE cell | | [CellIdentityNr](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityNr) | Information to represent a unique NR(New Radio 5G) cell. | | [CellIdentityTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityTdscdma) | CellIdentity is to represent a unique TD-SCDMA cell | | [CellIdentityWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma) | CellIdentity to represent a unique UMTS cell | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 CellIdentity represents the identity of a unique cell. This is the base class for CellIdentityXxx which represents cell identity for specific network access technology.
 
@@ -28,6 +31,7 @@ CellIdentity represents the identity of a unique cell. This is the base class fo
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#describeContents())`()` Implement the Parcelable interface |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaLong](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#getOperatorAlphaLong())`()` <br /> |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaShort](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#getOperatorAlphaShort())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity#hashCode())`()` <br /> |
 

@@ -9,9 +9,11 @@ open class UnsatisfiedLinkError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.UnsatisfiedLinkError](https://developer.android.com/reference/kotlin/java/lang/UnsatisfiedLinkError#) |
 
 Thrown if the Java Virtual Machine cannot find an appropriate native-language definition of a method declared`native`.

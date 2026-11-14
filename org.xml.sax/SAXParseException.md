@@ -9,9 +9,11 @@ open class SAXParseException : SAXException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [org.xml.sax.SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [org.xml.sax.SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#) |
 
 Encapsulate an XML parse error or warning.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -34,6 +36,7 @@ Since this exception is a subclass of [SAXException](https://developer.android.c
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getColumnNumber())`()` The column number of the end of the text where the exception occurred. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getLineNumber())`()` The line number of the end of the text where the exception occurred. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getPublicId())`()` Get the public identifier of the entity where the exception occurred. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getSystemId())`()` Get the system identifier of the entity where the exception occurred. |
 
 | Inherited functions ||
@@ -70,6 +73,7 @@ All parameters except the message are as if they were provided by a [Locator](ht
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The public identifier of the entity that generated the error or warning. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The system identifier of the entity that generated the error or warning. |
+| --- | --- |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The line number of the end of the text that caused the error or warning. |
 | `columnNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The column number of the end of the text that cause the error or warning. |
 
@@ -98,9 +102,11 @@ All parameters except the message and exception are as if they were provided by 
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message, or null to use the message from the embedded exception. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The public identifier of the entity that generated the error or warning. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The system identifier of the entity that generated the error or warning. |
+| --- | --- |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The line number of the end of the text that caused the error or warning. |
 | `columnNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The column number of the end of the text that cause the error or warning. |
 | `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:Another exception to embed in this one. |
+| --- | --- |
 
 ### SAXParseException
 
@@ -145,6 +151,7 @@ This constructor is especially useful when an application is creating its own ex
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message, or null to use the message from the embedded exception. |
 | `locator` | [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator)!:The locator object for the error or warning (may be null). |
 | `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:Any exception. |
+| --- | --- |
 
 **See Also**
 

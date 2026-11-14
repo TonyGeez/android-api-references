@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # ServiceConnectionLeakedViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/ServiceConnectionLeakedViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class ServiceConnectionLeakedViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.ServiceConnectionLeakedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ServiceConnectionLeakedViolation#) |
+| --- | --- | --- | --- |
 
 ## Summary
 

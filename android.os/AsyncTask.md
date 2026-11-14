@@ -8,6 +8,7 @@ abstract class AsyncTask<Params : Any!, Progress : Any!, Result : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.AsyncTask](https://developer.android.com/reference/kotlin/android/os/AsyncTask#) |
 
 > [!CAUTION]
@@ -133,9 +134,11 @@ If you truly want parallel execution, you can invoke `https://developer.android.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#cancel(kotlin.Boolean)(mayInterruptIfRunning: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Attempts to cancel execution of this task. |
 | [AsyncTask](https://developer.android.com/reference/kotlin/android/os/AsyncTask#)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(android.os.AsyncTask.Params)(vararg params: Params)` Executes the task with the specified parameters. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Convenience version of `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(android.os.AsyncTask.Params)` for use with a simple Runnable object. |
+| --- | --- |
 | [AsyncTask](https://developer.android.com/reference/kotlin/android/os/AsyncTask#)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#executeOnExecutor(java.util.concurrent.Executor,%20android.os.AsyncTask.Params)(exec: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#!, vararg params: Params)` Executes the task with the specified parameters. |
 | Result | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#get()()` Waits if necessary for the computation to complete, and then retrieves its result. |
 | Result | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#get(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Waits if necessary for at most the given time for the computation to complete, and then retrieves its result. |
+| --- | --- |
 | [AsyncTask.Status](https://developer.android.com/reference/kotlin/android/os/AsyncTask.Status)! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#getStatus()()` Returns the current status of this task. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#isCancelled()()` Returns true if this task was cancelled before it completed normally. |
 
@@ -144,9 +147,11 @@ If you truly want parallel execution, you can invoke `https://developer.android.
 | abstract Result | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#doInBackground(android.os.AsyncTask.Params)(vararg params: Params)` Override this method to perform a computation on a background thread. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onCancelled()()` Applications should preferably override `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onCancelled(android.os.AsyncTask.Result)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onCancelled(android.os.AsyncTask.Result)(result: Result)` Runs on the UI thread after `https://developer.android.com/reference/kotlin/android/os/AsyncTask#cancel(kotlin.Boolean)` is invoked and `https://developer.android.com/reference/kotlin/android/os/AsyncTask#doInBackground(android.os.AsyncTask.Params)` has finished. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onPostExecute(android.os.AsyncTask.Result)(result: Result)` Runs on the UI thread after `https://developer.android.com/reference/kotlin/android/os/AsyncTask#doInBackground(android.os.AsyncTask.Params)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onPreExecute()()` Runs on the UI thread before `https://developer.android.com/reference/kotlin/android/os/AsyncTask#doInBackground(android.os.AsyncTask.Params)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#onProgressUpdate(android.os.AsyncTask.Progress)(vararg values: Progress)` Runs on the UI thread after `https://developer.android.com/reference/kotlin/android/os/AsyncTask#publishProgress(android.os.AsyncTask.Progress)` is invoked. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#publishProgress(android.os.AsyncTask.Progress)(vararg values: Progress)` This method can be invoked from `https://developer.android.com/reference/kotlin/android/os/AsyncTask#doInBackground(android.os.AsyncTask.Params)` to publish updates on the UI thread while the background computation is still running. |
 
 | Properties ||
@@ -310,6 +315,7 @@ Waits if necessary for the computation to complete, and then retrieves its resul
 | `java.lang.InterruptedException` | If the current thread was interrupted while waiting. |
 | `java.util.concurrent.CancellationException` | If the computation was cancelled. |
 | `java.util.concurrent.ExecutionException` | If the computation threw an exception. |
+| --- | --- |
 
 ### get
 
@@ -340,6 +346,7 @@ Waits if necessary for at most the given time for the computation to complete, a
 | `java.lang.InterruptedException` | If the current thread was interrupted while waiting. |
 | `java.util.concurrent.CancellationException` | If the computation was cancelled. |
 | `java.util.concurrent.ExecutionException` | If the computation threw an exception. |
+| --- | --- |
 | `java.util.concurrent.TimeoutException` | If the wait timed out. |
 
 ### getStatus

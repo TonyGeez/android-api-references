@@ -7,6 +7,7 @@ open class PermissionGroupInfo : PackageItemInfo, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
 | | ↳ | [android.content.pm.PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#) |
 
@@ -40,6 +41,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#loadDescription(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Retrieve the textual description of this permission. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
@@ -99,6 +101,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#descriptionRes:kotlin.Int` A string resource identifier (in the package's resources) of this permission's description. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#flags:kotlin.Int` Additional flags about this group as given by `https://developer.android.com/reference/kotlin/android/R.attr.html#permissionGroupFlags:kotlin.Int`. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#nonLocalizedDescription:kotlin.CharSequence` The description string provided in the AndroidManifest file, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#priority:kotlin.Int` Prioritization of this group, for visually sorting with other groups. |
 

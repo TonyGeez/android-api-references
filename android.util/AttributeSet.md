@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AttributeSet
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/AttributeSet "View this page in Java") 
+| --- | --- |
 
 ```
 interface AttributeSet
@@ -13,6 +14,7 @@ interface AttributeSet
 | [android.util.AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet#) |
 
 | Known Direct Subclasses [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#) |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#) | The XML parsing interface returned for an XML resource. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A collection of attributes, as found associated with a tag in an XML document. Often you will not want to use this interface directly, instead passing it to [Resources.Theme.obtainStyledAttributes()](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))which will take care of parsing the attributes for you. In particular, the Resources API will convert resource references (attribute values such as "@string/my_label" in the original XML) to the desired type for you; if you use AttributeSet directly then you will need to manually check for resource references (with [getAttributeResourceValue(int,int)](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeResourceValue(kotlin.Int,%20kotlin.Int))) and do the resource lookup yourself if needed. Direct use of AttributeSet also prevents the application of themes and styles when retrieving attribute values.
 
@@ -34,24 +36,31 @@ This interface also provides additional information contained in the compiled XM
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAttributeBooleanValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeBooleanValue(kotlin.Int,%20kotlin.Boolean))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return the boolean value of attribute at 'index'. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAttributeBooleanValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeBooleanValue(kotlin.String,%20kotlin.String,%20kotlin.Boolean))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return the boolean value of 'attribute'. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeCount](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeCount())`()` Returns the number of attributes available in the set. |
+| --- | --- |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAttributeFloatValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeFloatValue(kotlin.Int,%20kotlin.Float))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return the float value of attribute at 'index'. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAttributeFloatValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeFloatValue(kotlin.String,%20kotlin.String,%20kotlin.Float))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return the float value of 'attribute'. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeIntValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeIntValue(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the integer value of attribute at 'index'. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeIntValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeIntValue(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the integer value of 'attribute'. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeListValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeListValue(kotlin.Int,%20kotlin.Array,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the value of attribute at 'index' in the list 'options'. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeListValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeListValue(kotlin.String,%20kotlin.String,%20kotlin.Array,%20kotlin.Int))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the value of 'attribute' in the list 'options'. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeName](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeName(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the name of the specified attribute. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeNameResource](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeNameResource(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the resource ID associated with the given attribute name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeNamespace](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeNamespace(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace of the specified attribute. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeResourceValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeResourceValue(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of attribute at 'index' as a resource identifier. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeResourceValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeResourceValue(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of 'attribute' as a resource identifier. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeUnsignedIntValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeUnsignedIntValue(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the integer value of attribute at 'index' that is formatted as an unsigned value. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeUnsignedIntValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeUnsignedIntValue(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the boolean value of 'attribute' that is formatted as an unsigned value. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeValue(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the specified attribute as a string representation. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getAttributeValue(kotlin.String,%20kotlin.String))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the specified attribute as a string representation. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getClassAttribute](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getClassAttribute())`()` Return the value of the "class" attribute or null if there is not one. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdAttribute](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getIdAttribute())`()` Return the value of the "id" attribute or null if there is not one. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIdAttributeResourceValue](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getIdAttributeResourceValue(kotlin.Int))`(`defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the integer value of the "id" attribute or defaultValue if there is none. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositionDescription](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getPositionDescription())`()` Returns a description of the current position of the attribute set. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStyleAttribute](https://developer.android.com/reference/kotlin/android/util/AttributeSet#getStyleAttribute())`()` Return the value of the "style" attribute or 0 if there is not one. |
 
@@ -98,6 +107,7 @@ Return the boolean value of 'attribute'.
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute to retrieve. |
 | `defaultValue` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):What to return if the attribute isn't found. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------|
@@ -160,6 +170,7 @@ Return the float value of 'attribute'.
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute to retrieve. |
 | `defaultValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):What to return if the attribute isn't found. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------|
@@ -206,6 +217,7 @@ Return the integer value of 'attribute'.
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute to retrieve. |
 | `defaultValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):What to return if the attribute isn't found. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------|
@@ -230,6 +242,7 @@ Return the index of the value of attribute at 'index' in the list 'options'.
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the desired attribute, 0...count-1. |
 | `options` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:List of strings whose values we are checking against. |
 | `defaultValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value returned if attribute doesn't exist or no match is found. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------|
@@ -255,6 +268,7 @@ Return the index of the value of 'attribute' in the list 'options'.
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of attribute to retrieve. |
 | `options` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:List of strings whose values we are checking against. |
+| --- | --- |
 | `defaultValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value returned if attribute doesn't exist or no match is found. |
 
 | Return ||
@@ -366,6 +380,7 @@ Note that this is different than [getAttributeNameResource](https://developer.an
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute to retrieve. |
 | `defaultValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):What to return if the attribute isn't found. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------|
@@ -412,6 +427,7 @@ Return the boolean value of 'attribute' that is formatted as an unsigned value. 
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace of attribute to retrieve. |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute to retrieve. |
 | `defaultValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):What to return if the attribute isn't found. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------|

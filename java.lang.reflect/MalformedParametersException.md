@@ -9,9 +9,11 @@ open class MalformedParametersException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.reflect.MalformedParametersException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParametersException#) |
 
 Thrown when [the](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters())attempts to read method parameters from a class file and determines that one or more parameters are malformed.

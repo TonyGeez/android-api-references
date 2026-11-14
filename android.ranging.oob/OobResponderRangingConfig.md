@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # OobResponderRangingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/oob/OobResponderRangingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class OobResponderRangingConfig : RangingConfig, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.ranging.RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig.html#) ||
 | | ↳ | [android.ranging.oob.OobResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig#) |
 
@@ -32,6 +34,7 @@ Represents the configuration for an Out-of-Band (OOB) responder in a ranging ses
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig#describeContents())`()` <br /> |
 | [DeviceHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle) | [getDeviceHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig#getDeviceHandle())`()` Returns the DeviceHandle associated with this OOB responder. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

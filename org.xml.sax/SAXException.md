@@ -9,11 +9,14 @@ open class SAXException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [org.xml.sax.SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [SAXNotRecognizedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotRecognizedException), [SAXNotSupportedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotSupportedException), [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [SAXNotRecognizedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotRecognizedException) | Exception class for an unrecognized identifier. | | [SAXNotSupportedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotSupportedException) | Exception class for an unsupported operation. | | [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException) | Encapsulate an XML parse error or warning. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Encapsulate a general SAX error or warning.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 

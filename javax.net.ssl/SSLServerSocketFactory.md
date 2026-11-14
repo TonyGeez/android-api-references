@@ -9,6 +9,7 @@ abstract class SSLServerSocketFactory : ServerSocketFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.net.ServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory.html#) ||
 | | ↳ | [javax.net.ssl.SSLServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory#) |
 
@@ -25,6 +26,7 @@ abstract class SSLServerSocketFactory : ServerSocketFactory
 | openstatic [ServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory.html#)! | [getDefault](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory#getDefault())`()` Returns the default SSL server socket factory. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDefaultCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory#getDefaultCipherSuites())`()` Returns the list of cipher suites which are enabled by default. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory#getSupportedCipherSuites())`()` Returns the names of the cipher suites which could be enabled for use on an SSL connection created by this factory. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

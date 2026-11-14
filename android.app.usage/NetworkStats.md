@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # NetworkStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/NetworkStats "View this page in Java") 
+| --- | --- |
 
 ```
 class NetworkStats : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.NetworkStats](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#) |
 
 Class providing enumeration over buckets of network usage statistics. [NetworkStats](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#) objects are returned as results to various queries in [NetworkStatsManager](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager).
@@ -26,6 +28,7 @@ Class providing enumeration over buckets of network usage statistics. [NetworkSt
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#close())`()` Closes the enumeration. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextBucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#getNextBucket(android.app.usage.NetworkStats.Bucket))`(`bucketOut:` ` [NetworkStats.Bucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats.Bucket)?`)` Fills the recycled bucket with data of the next bin in the enumeration. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextBucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#hasNextBucket())`()` Check if it is possible to ask for a next bucket in the enumeration. |
+| --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|

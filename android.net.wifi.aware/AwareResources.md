@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # AwareResources
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/AwareResources "View this page in Java") 
+| --- | --- |
 
 ```
 class AwareResources : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.AwareResources](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#) |
 
 The resources of the Aware service.
@@ -30,6 +32,7 @@ The resources of the Aware service.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailableDataPathsCount](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#getAvailableDataPathsCount())`()` Return the number of Aware data-paths (also known as NDPs - NAN Data Paths) which an app could create. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailablePublishSessionsCount](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#getAvailablePublishSessionsCount())`()` Return the number of Aware publish sessions which an app could create. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailableSubscribeSessionsCount](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#getAvailableSubscribeSessionsCount())`()` Return the number of Aware subscribe sessions which an app could create. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareResources#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -57,6 +60,7 @@ Construct a [AwareResources](https://developer.android.com/reference/kotlin/andr
 | `availableDataPathsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Number of available Aware data-path. Value is 0 or greater |
 | `availablePublishSessionsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Number of available Aware publish sessions. Value is 0 or greater |
 | `availableSubscribeSessionsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Number of available Aware subscribe sessions. Value is 0 or greater |
+| --- | --- |
 
 ## Public methods
 

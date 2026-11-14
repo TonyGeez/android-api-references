@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # WindowInsetsAnimation
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowInsetsAnimation "View this page in Java") 
+| --- | --- |
 
 ```
 class WindowInsetsAnimation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.WindowInsetsAnimation](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#) |
 
 Class representing an animation of a set of windows that cause insets.
@@ -31,9 +33,11 @@ Class representing an animation of a set of windows that cause insets.
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getAlpha())`()` Retrieves the translucency of the windows that are animating. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationMillis](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getDurationMillis())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFraction](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getFraction())`()` Returns the raw fractional progress of this animation between start state of the animation and the end state of the animation. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolatedFraction](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getInterpolatedFraction())`()` Returns the interpolated fractional progress of this animation between start state of the animation and the end state of the animation. |
 | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)? | [getInterpolator](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getInterpolator())`()` Retrieves the interpolator used for this animation, or`null`if this animation doesn't follow an interpolation curved. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTypeMask](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#getTypeMask())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#setAlpha(kotlin.Float))`(`alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the translucency of the windows that are animating. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFraction](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation#setFraction(kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set fraction of the progress if [WindowInsets.Type](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type) animation is controlled by the app. |
 
@@ -59,6 +63,7 @@ This should only be used for testing, as usually the system creates this object 
 | `typeMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The bitmask of [WindowInsets.Type](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type) s that are animating. Value is either`0`or a combination of android.view.WindowInsets.Type.STATUS_BARS, android.view.WindowInsets.Type.NAVIGATION_BARS, android.view.WindowInsets.Type.CAPTION_BAR, android.view.WindowInsets.Type.IME, android.view.WindowInsets.Type.SYSTEM_GESTURES, android.view.WindowInsets.Type.MANDATORY_SYSTEM_GESTURES, android.view.WindowInsets.Type.TAPPABLE_ELEMENT, android.view.WindowInsets.Type.DISPLAY_CUTOUT, and android.view.WindowInsets.Type.SYSTEM_OVERLAYS |
 | `interpolator` | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)?:The interpolator of the animation. This value may be`null`. |
 | `durationMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The duration of the animation in [java.util.concurrent.TimeUnit#MILLISECONDS](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#). |
+| --- | --- |
 
 ## Public methods
 

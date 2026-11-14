@@ -7,9 +7,11 @@ open class QuickContactBadge : ImageView, View.OnClickListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.widget.ImageView](https://developer.android.com/reference/kotlin/android/widget/ImageView) ||
 | | | ↳ | [android.widget.QuickContactBadge](https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#) |
+| --- | --- | --- | --- |
 
 Widget used to show an image with the standard QuickContact badge and on-click behavior.
 
@@ -338,6 +340,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -454,6 +457,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1639,15 +1643,19 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#assignContactFromEmail(kotlin.String,%20kotlin.Boolean)(emailAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lazyLookup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Assign a contact based on an email address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#assignContactFromEmail(kotlin.String,%20kotlin.Boolean,%20android.os.Bundle)(emailAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lazyLookup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Assign a contact based on an email address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#assignContactFromPhone(kotlin.String,%20kotlin.Boolean)(phoneNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lazyLookup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Assign a contact based on a phone number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#assignContactFromPhone(kotlin.String,%20kotlin.Boolean,%20android.os.Bundle)(phoneNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lazyLookup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Assign a contact based on a phone number. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#assignContactUri(android.net.Uri)(contactUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Assign the contact uri that this QuickContactBadge should be associated with. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#onClick(android.view.View)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Called when a view has been clicked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#setExcludeMimes(kotlin.Array)(excludeMimes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Set a list of specific MIME-types to exclude and not display. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#setImageToDefault()()` Resets the contact photo to the default state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#setMode(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This call has no effect anymore, as there is only one QuickContact mode |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#setOverlay(android.graphics.drawable.Drawable)(overlay: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Assigns the drawable that is to be drawn on top of the assigned contact photo. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#setPrioritizedMimeType(kotlin.String)(prioritizedMimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set which mimetype should be prioritized in the QuickContacts UI. |
 
 | Protected methods ||
@@ -1655,6 +1663,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -3421,6 +3430,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4765,6 +4775,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7527,6 +7538,7 @@ Assign a contact based on an email address. This should only be used when the co
 | `emailAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The email address of the contact. |
 | `lazyLookup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If this is true, the lookup query will not be performed until this view is clicked. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: A bundle of extras to populate the contact edit page with if the contact is not found and the user chooses to add the email address to an existing contact or create a new contact. Uses the same string constants as those found in `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Intents.Insert.html#` |
+| --- | --- |
 
 ### assignContactFromPhone
 
@@ -7565,6 +7577,7 @@ Assign a contact based on a phone number. This should only be used when the cont
 | `phoneNumber` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The phone number of the contact. |
 | `lazyLookup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If this is true, the lookup query will not be performed until this view is clicked. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: A bundle of extras to populate the contact edit page with if the contact is not found and the user chooses to add the phone number to an existing contact or create a new contact. Uses the same string constants as those found in `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Intents.Insert.html#` |
+| --- | --- |
 
 ### assignContactUri
 

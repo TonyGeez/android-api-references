@@ -5,15 +5,18 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # DeniedByServerException
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/DeniedByServerException "View this page in Java") 
+| --- | --- |
 
 ```
 class DeniedByServerException : MediaDrmException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.media.MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.DeniedByServerException](https://developer.android.com/reference/kotlin/android/media/DeniedByServerException#) |
 
 Exception thrown when the provisioning server or key server denies a certficate or license for a device.

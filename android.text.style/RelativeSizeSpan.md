@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RelativeSizeSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/RelativeSizeSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class RelativeSizeSpan : MetricAffectingSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
 | | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
 | | | ↳ | [android.text.style.RelativeSizeSpan](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#) |
+| --- | --- | --- | --- |
 
 Uniformly scales the size of the text to which it's attached by a certain proportion.
 
@@ -37,9 +40,11 @@ Text increased by 50% with`RelativeSizeSpan`.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#describeContents())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSizeChange](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#getSizeChange())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#getSpanTypeId())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#updateMeasureState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/RelativeSizeSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

@@ -6,12 +6,14 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 # Contacts
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts "View this page in Java") 
+| --- | --- |
 
 ```
 open class Contacts
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.Contacts](https://developer.android.com/reference/kotlin/android/provider/Contacts#) |
 
 | **This class was deprecated in API level 5.**
@@ -27,21 +29,27 @@ The Contacts provider stores all information about contacts.
 | | [ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethods) This table stores all non-phone contact methods and a reference to the person that the contact method belongs to. |
 | abstract | [ContactMethodsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns) Columns from the ContactMethods table that other tables join into themseleves. |
 | | [Extensions](https://developer.android.com/reference/kotlin/android/provider/Contacts.Extensions) The extensions for a person |
+| --- | --- |
 | abstract | [ExtensionsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.ExtensionsColumns) <br /> |
 | | [GroupMembership](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupMembership) <br /> |
 | | [Groups](https://developer.android.com/reference/kotlin/android/provider/Contacts.Groups) This table contains the groups for an account. |
+| --- | --- |
 | abstract | [GroupsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns) Columns from the groups table. |
 | | [Intents](https://developer.android.com/reference/kotlin/android/provider/Contacts.Intents) Contains helper classes used to create or manage [Intents](https://developer.android.com/reference/kotlin/android/content/Intent.html#) that involve contacts. |
 | abstract | [OrganizationColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns) Columns from the Organizations table that other columns join into themselves. |
+| --- | --- |
 | | [Organizations](https://developer.android.com/reference/kotlin/android/provider/Contacts.Organizations) A sub directory of a single person that contains all of their Phones. |
 | | [People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) This table contains people. |
 | abstract | [PeopleColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns) Columns from the People table that other tables join into themselves. |
+| --- | --- |
 | | [Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) This table stores phone numbers and a reference to the person that the contact method belongs to. |
 | abstract | [PhonesColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns) Columns from the Phones table that other columns join into themselves. |
 | | [Photos](https://developer.android.com/reference/kotlin/android/provider/Contacts.Photos) The photos over all of the people |
+| --- | --- |
 | abstract | [PhotosColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns) Columns from the Photos table that other columns join into themselves. |
 | abstract | [PresenceColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns) The IM presence columns with some contacts specific columns mixed in. |
 | | [Settings](https://developer.android.com/reference/kotlin/android/provider/Contacts.Settings) The settings over all of the people |
+| --- | --- |
 | abstract | [SettingsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns) Columns from the Settings table that other columns join into themselves. |
 
 | Constants ||
@@ -49,9 +57,11 @@ The Contacts provider stores all information about contacts.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/Contacts#AUTHORITY:kotlin.String) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_EMAIL](https://developer.android.com/reference/kotlin/android/provider/Contacts#KIND_EMAIL:kotlin.Int) Signifies an email address row that is stored in the ContactMethods table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_IM](https://developer.android.com/reference/kotlin/android/provider/Contacts#KIND_IM:kotlin.Int) Signifies an IM address row that is stored in the ContactMethods table |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_ORGANIZATION](https://developer.android.com/reference/kotlin/android/provider/Contacts#KIND_ORGANIZATION:kotlin.Int) Signifies an Organization row that is stored in the Organizations table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_PHONE](https://developer.android.com/reference/kotlin/android/provider/Contacts#KIND_PHONE:kotlin.Int) Signifies a Phone row that is stored in the Phones table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_POSTAL](https://developer.android.com/reference/kotlin/android/provider/Contacts#KIND_POSTAL:kotlin.Int) Signifies a postal address row that is stored in the ContactMethods table |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

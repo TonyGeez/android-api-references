@@ -9,6 +9,7 @@ class JapaneseEra : Era, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.chrono.JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#) |
 
 An era in the Japanese Imperial calendar system.
@@ -26,9 +27,11 @@ For convenience, this class declares a number of public static final fields that
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#getDisplayName(java.time.format.TextStyle,%20java.util.Locale))`(`style:` ` [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle.html#)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the textual representation of this era. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#getValue())`()` Gets the numeric era`int`value. |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#of(kotlin.Int))`(`japaneseEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`JapaneseEra`from an`int`value. |
+| --- | --- |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | [range](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` Gets the range of valid values for the specified field. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#toString())`()` <br /> |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [valueOf](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#valueOf(kotlin.String))`(`japaneseEra:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the`JapaneseEra`with the name. |
+| --- | --- |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)!\>! | [values](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#values())`()` Returns an array of JapaneseEras. |
 
 | Inherited functions ||
@@ -40,6 +43,7 @@ For convenience, this class declares a number of public static final fields that
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [HEISEI](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#HEISEI:java.time.chrono.JapaneseEra) The singleton instance for the 'Heisei' era (1989-01-08 - 2019-04-30) which has the value 2. |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [MEIJI](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#MEIJI:java.time.chrono.JapaneseEra) The singleton instance for the 'Meiji' era (1868-01-01 - 1912-07-29) which has the value -1. |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [REIWA](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#REIWA:java.time.chrono.JapaneseEra) The singleton instance for the 'Reiwa' era (2019-05-01 - ) which has the value 3. |
+| --- | --- |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [SHOWA](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#SHOWA:java.time.chrono.JapaneseEra) The singleton instance for the 'Showa' era (1926-12-25 - 1989-01-07) which has the value 1. |
 | static [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#)! | [TAISHO](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra#TAISHO:java.time.chrono.JapaneseEra) The singleton instance for the 'Taisho' era (1912-07-30 - 1926-12-24) which has the value 0. |
 

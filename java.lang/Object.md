@@ -7,6 +7,7 @@ open class Object
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Object](https://developer.android.com/reference/kotlin/java/lang/Object#) |
 
 Class `Object` is the root of the class hierarchy. Every class has `Object` as a superclass. All objects, including arrays, implement the methods of this class.
@@ -22,12 +23,15 @@ Class `Object` is the root of the class hierarchy. Every class has `Object` as a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Object#getClass()()` Returns the runtime class of this `Object`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#notify()()` Wakes up a single thread that is waiting on this object's monitor. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()()` Wakes up all threads that are waiting on this object's monitor. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait()()` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long)(timeoutMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)(timeoutMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -92,6 +96,7 @@ fun getClass(): Class<*>
 Returns the runtime class of this `Object`. The returned `Class` object is the object that is locked by `static synchronized` methods of the represented class.
 
 **The actual result type is `Class<? extends |X|>` where `|X|` is the erasure of the static type of the expression on which `getClass` is called.** For example, no cast is required in this code fragment:
+| --- | --- | --- | --- | --- |
 
 `Number n = 0; ` 
 `Class<? extends Number> c = n.getClass(); `
@@ -236,6 +241,7 @@ In all respects, this method behaves as if `wait(timeoutMillis, 0)` had been cal
 | `java.lang.IllegalArgumentException` | if `timeoutMillis` is negative |
 | `java.lang.IllegalMonitorStateException` | if the current thread is not the owner of the object's monitor |
 | `java.lang.InterruptedException` | if any thread interrupted the current thread before or while the current thread was waiting. The *interrupted status* of the current thread is cleared when this exception is thrown. |
+| --- | --- |
 
 **See Also**
 
@@ -287,6 +293,7 @@ If the current thread is [interrupted](https://developer.android.com/reference/k
 | `java.lang.IllegalArgumentException` | if `timeoutMillis` is negative, or if the value of `nanos` is out of range |
 | `java.lang.IllegalMonitorStateException` | if the current thread is not the owner of the object's monitor |
 | `java.lang.InterruptedException` | if any thread interrupted the current thread before or while the current thread was waiting. The *interrupted status* of the current thread is cleared when this exception is thrown. |
+| --- | --- |
 
 **See Also**
 

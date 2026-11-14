@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothStatusCodes
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothStatusCodes "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothStatusCodes
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothStatusCodes](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#) |
 
 A class with constants representing possible return values for Bluetooth APIs. General return values occupy the range 0 to 199. Profile-specific return values occupy the range 200-999. API-specific return values start at 1000. The exception to this is the "UNKNOWN" error code which occupies the max integer value.
@@ -22,15 +24,19 @@ A class with constants representing possible return values for Bluetooth APIs. G
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BLUETOOTH_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_BLUETOOTH_NOT_ALLOWED:kotlin.Int) Error code indicating that the API call was initiated by neither the system nor the active user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BLUETOOTH_NOT_ENABLED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_BLUETOOTH_NOT_ENABLED:kotlin.Int) Error code indicating that Bluetooth is not enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEVICE_NOT_BONDED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_DEVICE_NOT_BONDED:kotlin.Int) Error code indicating that the Bluetooth Device specified is not bonded. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_GATT_WRITE_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_GATT_WRITE_NOT_ALLOWED:kotlin.Int) A GATT writeCharacteristic request is not permitted on the remote device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_GATT_WRITE_REQUEST_BUSY](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_GATT_WRITE_REQUEST_BUSY:kotlin.Int) A GATT writeCharacteristic request is issued to a busy remote device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MISSING_BLUETOOTH_CONNECT_PERMISSION](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_MISSING_BLUETOOTH_CONNECT_PERMISSION:kotlin.Int) Error code indicating that the caller does not have the [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String) permission. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PROFILE_SERVICE_NOT_BOUND](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_PROFILE_SERVICE_NOT_BOUND:kotlin.Int) Error code indicating that the profile service is not bound. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_UNKNOWN:kotlin.Int) Indicates that an unknown error has occurred. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEATURE_NOT_CONFIGURED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#FEATURE_NOT_CONFIGURED:kotlin.Int) Indicates that the feature status is not configured yet. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEATURE_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#FEATURE_NOT_SUPPORTED:kotlin.Int) Indicates that the feature is not supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEATURE_SUPPORTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#FEATURE_SUPPORTED:kotlin.Int) Indicates that the feature is supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#SUCCESS:kotlin.Int) Indicates that the API call was successful. |
+| --- | --- |
 
 ## Constants
 

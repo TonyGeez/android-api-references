@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pPairingBootstrappingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiP2pPairingBootstrappingConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pPairingBootstrappingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#) |
 
 A class representing Wi-Fi Direct pairing bootstrapping configuration.
@@ -22,9 +24,11 @@ A class representing Wi-Fi Direct pairing bootstrapping configuration.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_DISPLAY_PASSPHRASE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_DISPLAY_PASSPHRASE:kotlin.Int) Pairing bootstrapping method display passphrase - The passphrase is displayed on the connection initiating device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_DISPLAY_PINCODE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_DISPLAY_PINCODE:kotlin.Int) Pairing bootstrapping method display pin-code - The pin-code is displayed on the connection initiating device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_KEYPAD_PASSPHRASE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_KEYPAD_PASSPHRASE:kotlin.Int) Pairing bootstrapping method keypad passphrase - The passphrase is displayed on the other device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_KEYPAD_PINCODE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_KEYPAD_PINCODE:kotlin.Int) Pairing bootstrapping method keypad pin-code - The pin-code is displayed on the other device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_OPPORTUNISTIC](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_OPPORTUNISTIC:kotlin.Int) Pairing bootstrapping method opportunistic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_METHOD_OUT_OF_BAND](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#PAIRING_BOOTSTRAPPING_METHOD_OUT_OF_BAND:kotlin.Int) Pairing bootstrapping done out of band (For example: Over Bluetooth LE. Refer Wi-Fi Alliance Wi-Fi Direct R2 specification Section 3.9 for the details). |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -39,6 +43,7 @@ A class representing Wi-Fi Direct pairing bootstrapping configuration.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#describeContents())`()` Implement the Parcelable interface |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPairingBootstrappingMethod](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#getPairingBootstrappingMethod())`()` Gets the current pairing bootstrapping method. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPairingBootstrappingPassword](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#getPairingBootstrappingPassword())`()` Retrieves the PIN or password used for the current pairing bootstrapping method. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#toString())`()` Generates a string of all the defined elements. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 

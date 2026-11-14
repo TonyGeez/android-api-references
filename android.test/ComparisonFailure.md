@@ -4,15 +4,18 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 # ComparisonFailure
 
 Kotlin | [Java](https://developer.android.com/reference/android/test/ComparisonFailure "View this page in Java")
+| --- | --- |
 
 ```
 open class ComparisonFailure : AssertionFailedError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) |||
 | | | ↳ | [android.test.AssertionFailedError](https://developer.android.com/reference/kotlin/android/test/AssertionFailedError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.test.ComparisonFailure](https://developer.android.com/reference/kotlin/android/test/ComparisonFailure#) |
 
 | **This exception was deprecated in API level 16.**

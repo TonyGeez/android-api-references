@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RangingPreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/RangingPreference "View this page in Java") 
+| --- | --- |
 
 ```
 class RangingPreference : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingPreference](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#) |
 
 Represents the configuration preferences for a ranging session.
@@ -37,9 +39,11 @@ The`RangingPreference`class allows users to specify various parameters required 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceRole](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#getDeviceRole())`()` Returns the device role. |
 | [RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig)? | [getRangingParams](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#getRangingParams())`()` Returns the ranging parameters associated with this preference. |
+| --- | --- |
 | [SessionConfig](https://developer.android.com/reference/kotlin/android/ranging/SessionConfig) | [getSessionConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#getSessionConfig())`()` Returns the ranging session configuration params. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|

@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # SectionRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/SectionRequest "View this page in Java")
+| --- | --- |
 
 ```
 class SectionRequest : BroadcastInfoRequest, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) ||
 | | ↳ | [android.media.tv.SectionRequest](https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#) |
 
@@ -30,6 +32,7 @@ A request for Section from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#getTableId()()` Gets the ID of the requested table. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#getTsPid()()` Gets the packet identifier (PID) of the TS (transport stream). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#getVersion()()` Gets the version number of requested session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

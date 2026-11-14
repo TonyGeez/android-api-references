@@ -8,9 +8,11 @@ open class ZoomButton : ImageButton, View.OnLongClickListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.widget.ImageView](https://developer.android.com/reference/kotlin/android/widget/ImageView) |||
 | | | ↳ | [android.widget.ImageButton](https://developer.android.com/reference/kotlin/android/widget/ImageButton) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.ZoomButton](https://developer.android.com/reference/kotlin/android/widget/ZoomButton#) |
 
 > [!CAUTION]
@@ -345,6 +347,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -461,6 +464,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1646,9 +1650,11 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#dispatchUnhandledMove(android.view.View,%20kotlin.Int)(focused: https://developer.android.com/reference/kotlin/android/view/View.html#!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is the last chance for the focused view and its ancestors to respond to an arrow key. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyUp(kotlin.Int,%20android.view.KeyEvent)`: perform clicking of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_SPACE:kotlin.Int` is released. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#onLongClick(android.view.View)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Called when a view has been clicked and held. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the enabled state of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButton#setZoomSpeed(kotlin.Long)(speed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the delay between calls to the widget's `https://developer.android.com/reference/kotlin/android/view/View.html#setOnClickListener(android.view.View.OnClickListener)`. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -3416,6 +3422,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4760,6 +4767,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7225,6 +7233,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }

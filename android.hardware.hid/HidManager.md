@@ -7,6 +7,7 @@ class HidManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.hid.HidManager](https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#) |
 
 Provides access to Human Interface Device (HID) nodes.
@@ -26,6 +27,7 @@ Device access may be restricted when the application is in the background or in 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#canEnumerateDevices()()` Checks if the calling app has the necessary permissions to enumerate connected HID devices. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HidDevice](https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice)!\> | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#getDevices()()` Returns a list of all currently connected HID devices. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#registerListener(android.hardware.hid.HidDeviceListener,%20java.util.concurrent.Executor)(listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)` Registers a listener to receive notifications about HID device lifecycle events. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#unregisterListener(android.hardware.hid.HidDeviceListener)(listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener)` Unregisters a previously registered listener for HID device lifecycle events. |
 
 ## Public methods

@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SuggestionUserApprovalStatusListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SuggestionUserApprovalStatusListener

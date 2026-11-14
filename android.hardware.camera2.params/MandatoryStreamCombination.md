@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # MandatoryStreamCombination
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination "View this page in Java") 
+| --- | --- |
 
 ```
 class MandatoryStreamCombination
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.MandatoryStreamCombination](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#) |
 
 Immutable class to store the available mandatory stream combination.
@@ -30,6 +32,7 @@ The list of stream combinations is available by invoking [CameraCharacteristics.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [MandatoryStreamCombination](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#) is equal to another [MandatoryStreamCombination](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#). |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDescription](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#getDescription())`()` Get the mandatory stream combination description. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MandatoryStreamCombination.MandatoryStreamInformation](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation)!\> | [getStreamsInformation](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#getStreamsInformation())`()` Get information about each stream in the mandatory combination. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#hashCode())`()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReprocessable](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination#isReprocessable())`()` Indicates whether the mandatory stream combination is reprocessable. |
 

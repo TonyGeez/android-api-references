@@ -9,6 +9,7 @@ open class PolicyQualifierInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.PolicyQualifierInfo](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#) |
 
 An immutable policy qualifier represented by the ASN.1 PolicyQualifierInfo structure.
@@ -43,6 +44,7 @@ All`PolicyQualifierInfo`objects must be immutable and thread-safe. That is, mult
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getEncoded())`()` Returns the ASN. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPolicyQualifier](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getPolicyQualifier())`()` Returns the ASN. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPolicyQualifierId](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getPolicyQualifierId())`()` Returns the`policyQualifierId`field of this`PolicyQualifierInfo`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#toString())`()` Return a printable representation of this`PolicyQualifierInfo`. |
 
 ## Public constructors

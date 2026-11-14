@@ -8,9 +8,11 @@ open class ActivityGroup : Activity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) ||
 | | | | | ↳ | [android.app.ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup#) |
 
@@ -1069,9 +1071,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onCreate(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called when the activity is starting. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onDestroy()()` Perform any final cleanup before an activity is destroyed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onPause()()` Called as part of the activity lifecycle when the user no longer actively interacts with the activity, but it is still visible on screen. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onResume()()` Called after #onRestoreInstanceState, `https://developer.android.com/reference/kotlin/android/app/Activity#onRestart()`, or `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onSaveInstanceState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called to retrieve per-instance state from an activity before being killed so that the state can be restored in #onCreate or #onRestoreInstanceState (the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` populated by this method will be passed to both). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#onStop()()` Called when you are no longer visible to the user. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Activity` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Activity#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)`
 

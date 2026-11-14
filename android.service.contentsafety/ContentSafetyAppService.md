@@ -7,9 +7,11 @@ abstract class ContentSafetyAppService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.contentsafety.ContentSafetyAppService](https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService#) |
 
 Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.

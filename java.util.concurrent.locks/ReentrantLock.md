@@ -9,6 +9,7 @@ open class ReentrantLock : Lock, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.locks.ReentrantLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#) |
 
 A reentrant mutual exclusion [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) with the same basic behavior and semantics as the implicit monitor lock accessed using`synchronized`methods and statements, but with extended capabilities.
@@ -53,18 +54,23 @@ This lock supports a maximum of 2147483647 recursive locks by the same thread. A
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHoldCount](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getHoldCount())`()` Queries the number of holds on this lock by the current thread. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueueLength](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getQueueLength())`()` Returns an estimate of the number of threads waiting to acquire this lock. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWaitQueueLength](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getWaitQueueLength(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Returns an estimate of the number of threads waiting on the given condition associated with this lock. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedThread](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#hasQueuedThread(java.lang.Thread))`(`thread:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Queries whether the given thread is waiting to acquire this lock. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#hasQueuedThreads())`()` Queries whether any threads are waiting to acquire this lock. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasWaiters](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#hasWaiters(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Queries whether any threads are waiting on the given condition associated with this lock. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFair](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#isFair())`()` Returns`true`if this lock has fairness set true. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHeldByCurrentThread](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#isHeldByCurrentThread())`()` Queries if this lock is held by the current thread. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLocked](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#isLocked())`()` Queries if this lock is held by any thread. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#lock())`()` Acquires the lock. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lockInterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#lockInterruptibly())`()` Acquires the lock unless the current thread is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()). |
 | open [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)! | [newCondition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#newCondition())`()` Returns a [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition) instance for use with this [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) instance. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#toString())`()` Returns a string identifying this lock, as well as its lock state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#tryLock())`()` Acquires the lock only if it is not held by another thread at the time of invocation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#tryLock(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Acquires the lock if it is not held by another thread within the given waiting time and the current thread has not been [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#unlock())`()` Attempts to release this lock. |
 
 | Protected methods ||
@@ -72,6 +78,7 @@ This lock supports a maximum of 2147483647 recursive locks by the same thread. A
 | open [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)! | [getOwner](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getOwner())`()` Returns the thread that currently owns this lock, or`null`if not owned. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getQueuedThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getQueuedThreads())`()` Returns a collection containing threads that may be waiting to acquire this lock. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getWaitingThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock#getWaitingThreads(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Returns a collection containing those threads that may be waiting on the given condition associated with this lock. |
+| --- | --- |
 
 ## Public constructors
 
@@ -172,6 +179,7 @@ Returns an estimate of the number of threads waiting on the given condition asso
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |
 
 ### hasQueuedThread
 
@@ -232,6 +240,7 @@ Queries whether any threads are waiting on the given condition associated with t
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |
 
 ### isFair
 
@@ -466,6 +475,7 @@ In this implementation, as this method is an explicit interruption point, prefer
 | `time` | the maximum time to wait for the lock |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!:the time unit of the timeout argument |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time to wait for the lock |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -545,3 +555,4 @@ Returns a collection containing those threads that may be waiting on the given c
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |

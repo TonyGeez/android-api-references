@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnCancelListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/SearchManager.OnCancelListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCancelListener

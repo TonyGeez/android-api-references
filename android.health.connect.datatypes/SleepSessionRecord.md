@@ -8,9 +8,11 @@ class SleepSessionRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.SleepSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#) |
+| --- | --- | --- | --- |
 
 Captures the user's sleep length and its stages. Each record represents a time interval for a full sleep session.
 
@@ -23,6 +25,7 @@ All `https://developer.android.com/reference/kotlin/android/health/connect/datat
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#` |
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord.Stage` Captures the user's length and type of sleep. |
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord.StageType` Identifier for sleeping stage, as returned by `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord.Stage#getType()`. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -33,6 +36,7 @@ All `https://developer.android.com/reference/kotlin/android/health/connect/datat
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#getNotes()()` Returns notes for the sleep session. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SleepSessionRecord.Stage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord.Stage)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#getStages()()` Returns stages of the sleep session. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#getTitle()()` Returns title of the sleep session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#hashCode()()` Returns a hash code value for the object. |
 
@@ -62,6 +66,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

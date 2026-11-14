@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Sanitizer
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/Sanitizer "View this page in Java") 
+| --- | --- |
 
 ```
 interface Sanitizer
@@ -13,6 +14,7 @@ interface Sanitizer
 | [android.service.autofill.Sanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/Sanitizer#) |
 
 | Known Direct Subclasses [DateValueSanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer), [TextValueSanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/TextValueSanitizer) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DateValueSanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer) | Sanitizes a date [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#) using a [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.html#). | | [TextValueSanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/TextValueSanitizer) | Sanitizes a text [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#) using a regular expression (regex) substitution. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Helper class used to sanitize user input before using it in a save request.
 

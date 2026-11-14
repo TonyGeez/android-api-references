@@ -7,9 +7,11 @@ abstract class MidiUmpDeviceService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.midi.MidiUmpDeviceService](https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#) |
 
 A service that implements a virtual MIDI device for Universal MIDI Packets (UMP). Subclasses must implement the `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onGetInputPortReceivers()` method to provide a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver`s to receive data sent to the device's input ports. Similarly, subclasses can call `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getOutputPortReceivers()` to fetch a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver`s for sending data out the output ports. Unlike traditional MIDI byte streams, only complete UMPs should be sent. Unlike with `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceService`, the number of input and output ports must be equal.
@@ -1059,9 +1061,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getDeviceInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` instance for this service |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getOutputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's output ports. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onClose()()` Called to notify when the virtual MIDI device running in this service has been closed by all its clients |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onDeviceStatusChanged(android.media.midi.MidiDeviceStatus)(status: https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus)` Called to notify when the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus` has changed |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onGetInputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's input ports. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`

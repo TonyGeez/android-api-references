@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SoundProfile
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/quality/SoundProfile "View this page in Java")
+| --- | --- |
 
 ```
 class SoundProfile : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.SoundProfile](https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#) |
 
 Profile for sound quality.
@@ -24,9 +26,11 @@ Profile for sound quality.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#ERROR_DUPLICATE:kotlin.Int` Error code for creating a profile with existing profile type and name. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#ERROR_INVALID_ARGUMENT:kotlin.Int` Error code for invalid argument. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#ERROR_NOT_ALLOWLISTED:kotlin.Int` Error code for the case when an operation requires an allowlist but the caller is not in the list. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#ERROR_NO_PERMISSION:kotlin.Int` Error code for missing necessary permission to handle the profiles. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#ERROR_UNKNOWN:kotlin.Int` Error code for unknown errors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#TYPE_APPLICATION:kotlin.Int` Application profile type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#TYPE_SYSTEM:kotlin.Int` System profile type. |
 
 | Inherited constants ||
@@ -38,9 +42,11 @@ Profile for sound quality.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getInputId()()` Gets the input ID if the profile is for a TV input. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getName()()` Gets the profile name. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getPackageName()()` Gets the package name of this profile. |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getParameters()()` Gets the parameters of this profile. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getProfileId()()` Gets profile ID. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getProfileType()()` Gets profile type. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

@@ -7,9 +7,11 @@ abstract class OffHostApduService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.nfc.cardemulation.OffHostApduService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/OffHostApduService#) |
 
 OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.

@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Observable
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/Observable "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Observable<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.Observable](https://developer.android.com/reference/kotlin/android/database/Observable#) |
 
 | Known Direct Subclasses [ContentObservable](https://developer.android.com/reference/kotlin/android/database/ContentObservable), [DataSetObservable](https://developer.android.com/reference/kotlin/android/database/DataSetObservable) |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ContentObservable](https://developer.android.com/reference/kotlin/android/database/ContentObservable) | A specialization of [Observable](https://developer.android.com/reference/kotlin/android/database/Observable#) for [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver) that provides methods for sending notifications to a list of [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver) objects. | | [DataSetObservable](https://developer.android.com/reference/kotlin/android/database/DataSetObservable) | A specialization of [Observable](https://developer.android.com/reference/kotlin/android/database/Observable#) for [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver) that provides methods for sending notifications to a list of [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver) objects. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Provides methods for registering or unregistering arbitrary observers in an [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#). This abstract class is intended to be subclassed and specialized to maintain a registry of observers of specific types and dispatch notifications to them.
 
@@ -28,6 +31,7 @@ Provides methods for registering or unregistering arbitrary observers in an [Arr
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerObserver](https://developer.android.com/reference/kotlin/android/database/Observable#registerObserver(android.database.Observable.T))`(`observer:` `T`)` Adds an observer to the list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAll](https://developer.android.com/reference/kotlin/android/database/Observable#unregisterAll())`()` Remove all registered observers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterObserver](https://developer.android.com/reference/kotlin/android/database/Observable#unregisterObserver(android.database.Observable.T))`(`observer:` `T`)` Removes a previously registered observer. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

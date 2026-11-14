@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # TextBoundsInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class TextBoundsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.TextBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#) |
 
 The text bounds information of a slice of text in the editor.
@@ -28,6 +30,7 @@ This class provides IME the layout information of the text within the range from
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CHARACTER_LINEFEED](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#FLAG_CHARACTER_LINEFEED:kotlin.Int) The flag indicating that the character is a linefeed character. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CHARACTER_PUNCTUATION](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#FLAG_CHARACTER_PUNCTUATION:kotlin.Int) The flag indicating that the character is a punctuation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CHARACTER_WHITESPACE](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#FLAG_CHARACTER_WHITESPACE:kotlin.Int) The flag indicating that the character is a whitespace. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_LINE_IS_RTL](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#FLAG_LINE_IS_RTL:kotlin.Int) The flag indicating that the line this character belongs to has RTL line direction. |
 
 | Inherited constants ||
@@ -39,15 +42,19 @@ This class provides IME the layout information of the text within the range from
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharacterBidiLevel](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getCharacterBidiLevel(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The BiDi level of the character at the given`index`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCharacterBounds](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getCharacterBounds(kotlin.Int,%20android.graphics.RectF))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)`)` Set the bounds of the character at the given`index`to the given [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#), in the coordinates of the editor. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharacterFlags](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getCharacterFlags(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the flags associated with the character at the given`index`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getEndIndex())`()` Returns the index of the last character whose bounds information is available in this [TextBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#), exclusive. |
 | [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) | [getGraphemeSegmentFinder](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getGraphemeSegmentFinder())`()` Returns the [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) that locates the grapheme boundaries. |
+| --- | --- |
 | [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) | [getLineSegmentFinder](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getLineSegmentFinder())`()` Returns the [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) that locates the line boundaries. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMatrix](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getMatrix(android.graphics.Matrix))`(`matrix:` ` [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#)`)` Set the given [android.graphics.Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#) to be the transformation matrix that is to be applied other positional data in this class. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetForPosition](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getOffsetForPosition(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return the index of the closest character to the given position. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getRangeForRect](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getRangeForRect(android.graphics.RectF,%20android.text.SegmentFinder,%20android.text.Layout.TextInclusionStrategy))`(`area:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)`, `segmentFinder:` ` [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#)`, `inclusionStrategy:` ` [Layout.TextInclusionStrategy](https://developer.android.com/reference/kotlin/android/text/Layout.TextInclusionStrategy.html#)`)` Finds the range of text which is inside the specified rectangle area. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartIndex](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getStartIndex())`()` Returns the index of the first character whose bounds information is available in this [TextBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#), inclusive. |
 | [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) | [getWordSegmentFinder](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#getWordSegmentFinder())`()` Returns the [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#) that locates the word boundaries. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -356,6 +363,7 @@ This method won't check the text ranges whose line information is missing. For e
 | `area` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#):area for which the text range will be found This value cannot be`null`. |
 | `segmentFinder` | [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.html#):SegmentFinder for determining the ranges of text to be considered as a text segment This value cannot be`null`. |
 | `inclusionStrategy` | [Layout.TextInclusionStrategy](https://developer.android.com/reference/kotlin/android/text/Layout.TextInclusionStrategy.html#):strategy for determining whether a text segment is inside the specified area This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

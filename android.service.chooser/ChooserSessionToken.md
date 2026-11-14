@@ -3,12 +3,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # ChooserSessionToken
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/chooser/ChooserSessionToken "View this page in Java")
+| --- | --- |
 
 ```
 class ChooserSessionToken : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserSessionToken](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken#) |
 
 An opaque token that serves as a Chooser session identifier.
@@ -26,6 +28,7 @@ A token can be saved in an Activity's saved state although it can not survive th
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

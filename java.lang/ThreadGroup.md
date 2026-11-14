@@ -9,6 +9,7 @@ open class ThreadGroup : Thread.UncaughtExceptionHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#) |
 
 A thread group represents a set of threads. In addition, a thread group can also include other thread groups. The thread groups form a tree in which every thread group except the initial thread group has a parent.
@@ -27,27 +28,35 @@ A thread is allowed to access information about its own thread group, but not to
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [activeCount](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#activeCount())`()` Returns an estimate of the number of active threads in this thread group and its subgroups. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [activeGroupCount](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#activeGroupCount())`()` Returns an estimate of the number of active groups in this thread group and its subgroups. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowThreadSuspension](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#allowThreadSuspension(kotlin.Boolean))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Used by VM to control lowmem implicit suspension. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#checkAccess())`()` Determines if the currently running thread has permission to modify this thread group. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#destroy())`()` Destroys this thread group and all of its subgroups. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#enumerate(kotlin.Array))`(`list:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)!>!`)` Copies into the specified array every active thread in this thread group and its subgroups. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#enumerate(kotlin.Array,%20kotlin.Boolean))`(`list:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)!>!`, `recurse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Copies into the specified array every active thread in this thread group. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#enumerate(kotlin.Array))`(`list:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#)!>!`)` Copies into the specified array references to every active subgroup in this thread group and its subgroups. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#enumerate(kotlin.Array,%20kotlin.Boolean))`(`list:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#)!>!`, `recurse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Copies into the specified array references to every active subgroup in this thread group. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxPriority](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#getMaxPriority())`()` Returns the maximum priority of this thread group. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#getName())`()` Returns the name of this thread group. |
 | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#)! | [getParent](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#getParent())`()` Returns the parent of this thread group. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [interrupt](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#interrupt())`()` Interrupts all threads in this thread group. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDaemon](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#isDaemon())`()` Tests if this thread group is a daemon thread group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#isDestroyed())`()` Tests if this thread group has been destroyed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [list](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#list())`()` Prints information about this thread group to the standard output. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [parentOf](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#parentOf(java.lang.ThreadGroup))`(`g:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#)!`)` Tests if this thread group is either the thread group argument or one of its ancestor thread groups. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#resume())`()` Resumes all threads in this thread group. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDaemon](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#setDaemon(kotlin.Boolean))`(`daemon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Changes the daemon status of this thread group. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxPriority](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#setMaxPriority(kotlin.Int))`(`pri:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum priority of the group. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#stop())`()` Stops all threads in this thread group. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [suspend](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#suspend())`()` Suspends all threads in this thread group. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#toString())`()` Returns a string representation of this Thread group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uncaughtException](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#uncaughtException(java.lang.Thread,%20kotlin.Throwable))`(`t:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` Called by the Java Virtual Machine when a thread in this thread group stops because of an uncaught exception, and the thread does not have a specific [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler) installed. |
+| --- | --- |
 
 ## Public constructors
 

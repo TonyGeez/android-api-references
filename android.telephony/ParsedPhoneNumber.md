@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # ParsedPhoneNumber
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ParsedPhoneNumber "View this page in Java") 
+| --- | --- |
 
 ```
 class ParsedPhoneNumber : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ParsedPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#) |
 
 Handles the results from PhoneNumberManager by providing Phone number, error code, and is valid number.
@@ -22,6 +24,7 @@ Handles the results from PhoneNumberManager by providing Phone number, error cod
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_FAILED_TO_VALIDATE_EXTRACTED_PHONE_NUMER](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_FAILED_TO_VALIDATE_EXTRACTED_PHONE_NUMER:kotlin.Int) The phone number failed to be validated. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_NONE](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_NONE:kotlin.Int) No error seen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_NUMBER_PARSE_EXCEPTION](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_NUMBER_PARSE_EXCEPTION:kotlin.Int) There was an error when trying to extract the phone number. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_UNKNOWN:kotlin.Int) Failed to extract phone number for unknown reason. |
 
 | Inherited constants ||
@@ -37,9 +40,11 @@ Handles the results from PhoneNumberManager by providing Phone number, error cod
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#getErrorCode())`()` If no phone number was able to be extracted this will report the failure reason to the user. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getParsedPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#getParsedPhoneNumber())`()` Parsed phone number. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#isValidPhoneNumber())`()` Whether or not we were able to extract a valid phone number |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -115,6 +120,7 @@ ParsedPhoneNumber(
 | `phoneNumber` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the phone number extracted. Empty if we weren't successful in parsing. This value cannot be`null`. |
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):ErrorType seen when trying to extract phone number. Value is [android.telephony.ParsedPhoneNumber#ERROR_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_UNKNOWN:kotlin.Int), [android.telephony.ParsedPhoneNumber#ERROR_TYPE_NONE](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_NONE:kotlin.Int), [android.telephony.ParsedPhoneNumber#ERROR_TYPE_FAILED_TO_VALIDATE_EXTRACTED_PHONE_NUMER](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_FAILED_TO_VALIDATE_EXTRACTED_PHONE_NUMER:kotlin.Int), or [android.telephony.ParsedPhoneNumber#ERROR_TYPE_NUMBER_PARSE_EXCEPTION](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber#ERROR_TYPE_NUMBER_PARSE_EXCEPTION:kotlin.Int) |
 | `isValidPhoneNumber` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not we succeeded in retrieving the number. |
+| --- | --- |
 
 ## Public methods
 

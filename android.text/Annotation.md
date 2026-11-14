@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Annotation
 
 Kotlin | [Java](https://developer.android.com/reference/android/text/Annotation "View this page in Java")
+| --- | --- |
 
 ```
 open class Annotation : ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.Annotation](https://developer.android.com/reference/kotlin/android/text/Annotation#) |
 
 Annotations are simple key-value pairs that are preserved across TextView save/restore cycles and can be used to keep application-specific data that needs to be maintained for regions of text.
@@ -25,6 +27,7 @@ Annotations are simple key-value pairs that are preserved across TextView save/r
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/Annotation#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/Annotation#getKey()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/Annotation#getSpanTypeId()()` Return a special type identifier for this span class. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/Annotation#getValue()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/Annotation#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

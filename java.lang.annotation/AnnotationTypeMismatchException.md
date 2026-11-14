@@ -9,9 +9,11 @@ open class AnnotationTypeMismatchException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.annotation.AnnotationTypeMismatchException](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationTypeMismatchException#) |
 
 Thrown to indicate that a program has attempted to access an element of an annotation whose type has changed after the annotation was compiled (or serialized). This exception can be thrown by the .

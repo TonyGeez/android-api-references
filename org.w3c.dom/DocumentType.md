@@ -27,9 +27,11 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [NamedNodeMap](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-named-node-map/index.html)! | [getEntities](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getEntities())`()` A`NamedNodeMap`containing the general entities, both external and internal, declared in the DTD. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInternalSubset](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getInternalSubset())`()` The internal subset as a string, or`null`if there is none. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getName())`()` The name of DTD; i. |
+| --- | --- |
 | abstract [NamedNodeMap](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-named-node-map/index.html)! | [getNotations](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getNotations())`()` A`NamedNodeMap`containing the notations declared in the DTD. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getPublicId())`()` The public identifier of the external subset. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/org/w3c/dom/DocumentType#getSystemId())`()` The system identifier of the external subset. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

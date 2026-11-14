@@ -9,6 +9,7 @@ abstract class SchemaFactoryLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.SchemaFactoryLoader](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactoryLoader#) |
 
 This class was removed from JAXP 1.3 before it was finalized but was mistakenly included in Java 5. It only exists now for compatibility reasons. Applications should avoid using it.

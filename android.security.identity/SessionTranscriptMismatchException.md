@@ -8,9 +8,11 @@ open class SessionTranscriptMismatchException : IdentityCredentialException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.security.identity.IdentityCredentialException](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.security.identity.SessionTranscriptMismatchException](https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#) |
 
 > [!CAUTION]

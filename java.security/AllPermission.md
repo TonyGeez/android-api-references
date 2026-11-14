@@ -9,6 +9,7 @@ class AllPermission : Permission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission) ||
 | | ↳ | [java.security.AllPermission](https://developer.android.com/reference/kotlin/java/security/AllPermission#) |
 

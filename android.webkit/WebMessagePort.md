@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # WebMessagePort
 
 Kotlin | [Java](https://developer.android.com/reference/android/webkit/WebMessagePort "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebMessagePort
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebMessagePort](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort#) |
 
 The Java representation of the [HTML5 message ports.](https://html.spec.whatwg.org/multipage/comms.html#messageport)
@@ -36,6 +38,7 @@ It is possible to transfer both ports of a channel to JS, for example for commun
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort#close())`()` Close the message port and free any resources associated with it. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postMessage](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort#postMessage(android.webkit.WebMessage))`(`message:` ` [WebMessage](https://developer.android.com/reference/kotlin/android/webkit/WebMessage)!`)` Post a WebMessage to the entangled port. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWebMessageCallback](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort#setWebMessageCallback(android.webkit.WebMessagePort.WebMessageCallback))`(`callback:` ` [WebMessagePort.WebMessageCallback](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort.WebMessageCallback)!`)` Sets a callback to receive message events on the main thread. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWebMessageCallback](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort#setWebMessageCallback(android.webkit.WebMessagePort.WebMessageCallback,%20android.os.Handler))`(`callback:` ` [WebMessagePort.WebMessageCallback](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort.WebMessageCallback)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Sets a callback to receive message events on the handler that is provided by the application. |
 
 ## Public methods

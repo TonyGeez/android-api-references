@@ -3,12 +3,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # BackupDataInputStream
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/backup/BackupDataInputStream "View this page in Java")
+| --- | --- |
 
 ```
 open class BackupDataInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) ||
 | | ↳ | [android.app.backup.BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#) |
 
@@ -25,6 +27,7 @@ When `https://developer.android.com/reference/kotlin/android/app/backup/BackupHe
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#getKey()()` Report the key string associated with this entity within the backup data set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#read()()` Read one byte of entity data from the stream, returning it as an integer value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#read(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Read enough entity data into a byte array to fill the array. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read up to `size` bytes of data into a byte array, beginning at position `offset` within the array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream#size()()` Report the total number of bytes of data available for the current entity. |
 
@@ -108,6 +111,7 @@ Read up to `size` bytes of data into a byte array, beginning at position `offset
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: Byte array into which the data will be read |
 | `off` | the start offset in array `b` at which the data is written. |
 | `len` | the maximum number of bytes to read. |
+| --- | --- |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The data will be stored in `b` beginning at this index within the array. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to read in this operation. If insufficient data exists within the entity to fulfill this request, only as much data will be read as is available. |
 
@@ -120,6 +124,7 @@ Read up to `size` bytes of data into a byte array, beginning at position `offset
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.IndexOutOfBoundsException` | If `off` is negative, `len` is negative, or `len` is greater than `b.length - off` |
 | `java.lang.NullPointerException` | If `b` is `null`. |
+| --- | --- |
 
 ### size
 

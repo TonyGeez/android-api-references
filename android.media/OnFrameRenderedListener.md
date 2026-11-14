@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnFrameRenderedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCodec.OnFrameRenderedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFrameRenderedListener
@@ -43,6 +44,7 @@ Called when an output frame has rendered on the output surface.
 | `codec` | [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec):the MediaCodec instance This value cannot be`null`. |
 | `presentationTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the presentation time (media time) of the frame rendered. This is usually the same as specified in [queueInputBuffer](https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)); however, some codecs may alter the media time by applying some time-based transformation, such as frame rate conversion. In that case, presentation time corresponds to the actual output frame rendered. |
 | `nanoTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The system time when the frame was rendered. |
+| --- | --- |
 
 **See Also**
 

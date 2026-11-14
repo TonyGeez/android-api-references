@@ -9,9 +9,11 @@ open class FileHandler : StreamHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler) |||
 | | ↳ | [java.util.logging.StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler) ||
 | | | ↳ | [java.util.logging.FileHandler](https://developer.android.com/reference/kotlin/java/util/logging/FileHandler#) |
+| --- | --- | --- | --- |
 
 Simple file logging Handler.
 
@@ -104,6 +106,7 @@ Construct a default FileHandler. This will be configured entirely from LogManage
 | `java.io.IOException` | if there are IO problems opening the files. |
 | `java.lang.SecurityException` | if a security manager exists and if the caller does not have LoggingPermission("control")). |
 | `java.lang.NullPointerException` | if pattern property is an empty String. |
+| --- | --- |
 
 ### FileHandler
 
@@ -128,6 +131,7 @@ There is no limit on the amount of data that may be written, so use this with ca
 | `java.io.IOException` | if there are IO problems opening the files. |
 | `java.lang.SecurityException` | if a security manager exists and if the caller does not have LoggingPermission("control"). |
 | `java.lang.IllegalArgumentException` | if pattern is an empty string |
+| --- | --- |
 
 ### FileHandler
 
@@ -155,6 +159,7 @@ There is no limit on the amount of data that may be written, so use this with ca
 | `java.io.IOException` | if there are IO problems opening the files. |
 | `java.lang.SecurityException` | if a security manager exists and if the caller does not have LoggingPermission("control"). |
 | `java.lang.IllegalArgumentException` | if pattern is an empty string |
+| --- | --- |
 
 ### FileHandler
 
@@ -178,12 +183,14 @@ The count must be at least 1.
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for naming the output file |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes to write to any one file |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of files to use |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if there are IO problems opening the files. |
 | `java.lang.SecurityException` | if a security manager exists and if the caller does not have LoggingPermission("control"). |
 | `java.lang.IllegalArgumentException` | if`limit < 0`, or`count < 1`. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if pattern is an empty string |
 
 ### FileHandler
@@ -209,6 +216,7 @@ The count must be at least 1.
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for naming the output file |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes to write to any one file |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of files to use |
+| --- | --- |
 | `append` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):specifies append mode |
 
 | Exceptions ||
@@ -216,6 +224,7 @@ The count must be at least 1.
 | `java.io.IOException` | if there are IO problems opening the files. |
 | `java.lang.SecurityException` | if a security manager exists and if the caller does not have LoggingPermission("control"). |
 | `java.lang.IllegalArgumentException` | if`limit < 0`, or`count < 1`. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if pattern is an empty string |
 
 ## Public methods

@@ -6,12 +6,14 @@ Deprecated in [API level 9](https://developer.android.com/guide/topics/manifest/
 # EventLogTags
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/EventLogTags "View this page in Java") 
+| --- | --- |
 
 ```
 open class EventLogTags
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.EventLogTags](https://developer.android.com/reference/kotlin/android/util/EventLogTags#) |
 
 | **This class was deprecated in API level 9.**

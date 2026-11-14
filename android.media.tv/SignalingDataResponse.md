@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SignalingDataResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/SignalingDataResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class SignalingDataResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.SignalingDataResponse](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse#) |
 
@@ -32,6 +34,7 @@ A response for the signaling data from the broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SignalingDataInfo](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo)!\> | [getSignalingDataInfoList](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse#getSignalingDataInfoList())`()` Gets a list of [SignalingDataInfo](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo) contained in this response. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSignalingDataTypes](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse#getSignalingDataTypes())`()` Gets a list of types of metadata that are contained in this response. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||
@@ -62,6 +65,7 @@ SignalingDataResponse(
 | `responseResult` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_ERROR:kotlin.Int), [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_OK](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_OK:kotlin.Int), or [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_CANCEL](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_CANCEL:kotlin.Int) |
 | `signalingDataTypes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:This value cannot be`null`. |
 | `signalingDataInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SignalingDataInfo](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo)!\>:This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # SyncBaseInstrumentation
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/SyncBaseInstrumentation "View this page in Java") 
+| --- | --- |
 
 ```
 open class SyncBaseInstrumentation : InstrumentationTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) ||
 | | ↳ | [android.test.SyncBaseInstrumentation](https://developer.android.com/reference/kotlin/android/test/SyncBaseInstrumentation#) |
 
@@ -32,6 +34,7 @@ If you would like to test sync a single provider with an [InstrumentationTestCas
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSyncsandDisableAutoSync](https://developer.android.com/reference/kotlin/android/test/SyncBaseInstrumentation#cancelSyncsandDisableAutoSync())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUp](https://developer.android.com/reference/kotlin/android/test/SyncBaseInstrumentation#setUp())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [syncProvider](https://developer.android.com/reference/kotlin/android/test/SyncBaseInstrumentation#syncProvider(android.net.Uri,%20kotlin.String,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `accountName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Syncs the specified provider. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

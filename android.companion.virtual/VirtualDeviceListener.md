@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # VirtualDeviceListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface VirtualDeviceListener

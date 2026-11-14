@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # ServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/ServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class ServiceInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.ServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#) |
 
 | Known Direct Subclasses [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo), [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------| | [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo) | Describes a file service available from the carrier from which files can be downloaded via cell-broadcast. | | [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) | Describes a single MBMS streaming service. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Describes a cell-broadcast service. This class should not be instantiated directly -- use [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) or [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo)
 
@@ -24,12 +27,15 @@ Describes a cell-broadcast service. This class should not be instantiated direct
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getLocales](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getLocales())`()` The languages available for this service content |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameForLocale](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNameForLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Get the user-displayable name for this cell-broadcast service corresponding to the provided [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\> | [getNamedContentLocales](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNamedContentLocales())`()` Return an unmodifiable set of the current [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) s that have a user-displayable name associated with them. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceClassName](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getServiceClassName())`()` The class name for this service - used to categorize and filter |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceId](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getServiceId())`()` The carrier's identifier for the service. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getSessionEndTime](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getSessionEndTime())`()` The end time indicating when this session stops being available. |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getSessionStartTime](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getSessionStartTime())`()` The start time indicating when this service will be available. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

@@ -6,15 +6,18 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 # TestSuiteBuilder
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/suitebuilder/TestSuiteBuilder "View this page in Java") 
+| --- | --- |
 
 ```
 open class TestSuiteBuilder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.suitebuilder.TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#) |
 
 | Known Direct Subclasses [UnitTestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/UnitTestSuiteBuilder) |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [UnitTestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/UnitTestSuiteBuilder) | A suite builder that finds unit tests. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 26.**
 |
@@ -38,6 +41,7 @@ Build suites based on a combination of included packages, excluded packages, and
 | TestSuite! | [build](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#build())`()` Call this method once you've configured your builder as desired. |
 | open [TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#)! | [excludePackages](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#excludePackages(kotlin.String))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Exclude all tests in the given packages and all sub-packages, unless otherwise specified. |
 | [TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#)! | [includeAllPackagesUnderHere](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#includeAllPackagesUnderHere())`()` Include all junit tests that satisfy the requirements in the calling class' package and all sub-packages. |
+| --- | --- |
 | open [TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#)! | [includePackages](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#includePackages(kotlin.String))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Include all tests that satisfy the requirements in the given packages and all sub-packages, unless otherwise specified. |
 | open [TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#)! | [named](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder#named(kotlin.String))`(`newSuiteName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Override the default name for the suite being built. |
 

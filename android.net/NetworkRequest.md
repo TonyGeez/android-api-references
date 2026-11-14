@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # NetworkRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/NetworkRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class NetworkRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.NetworkRequest](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#) |
 
 An object describing a network that the application is interested in.
@@ -53,15 +55,19 @@ Look up the specific capability to learn whether its usage requires this self-ce
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canBeSatisfiedBy](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#canBeSatisfiedBy(android.net.NetworkCapabilities))`(`nc:` ` [NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities)?`)` Returns true if and only if the capabilities requested in this NetworkRequest are satisfied by the provided [NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#getCapabilities())`()` Gets all the capabilities set on this`NetworkRequest`instance. |
 | open [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier)? | [getNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#getNetworkSpecifier())`()` <br /> |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getSubscriptionIds](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#getSubscriptionIds())`()` Gets all the subscription ids set on this`NetworkRequest`instance. |
+| --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getTransportTypes](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#getTransportTypes())`()` Gets all the transports set on this`NetworkRequest`instance. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCapability](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#hasCapability(kotlin.Int))`(`capability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasTransport](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#hasTransport(kotlin.Int))`(`transportType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#hashCode())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/NetworkRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|

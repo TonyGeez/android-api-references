@@ -11,6 +11,7 @@ interface DomainCombiner
 | [java.security.DomainCombiner](https://developer.android.com/reference/kotlin/java/security/DomainCombiner#) |
 
 | Known Direct Subclasses [SubjectDomainCombiner](https://developer.android.com/reference/kotlin/javax/security/auth/SubjectDomainCombiner.html#) |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------| | [SubjectDomainCombiner](https://developer.android.com/reference/kotlin/javax/security/auth/SubjectDomainCombiner.html#) | Legacy security code; do not use. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Legacy security code; do not use.
 

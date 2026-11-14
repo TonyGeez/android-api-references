@@ -7,9 +7,11 @@ abstract class MediaBrowserService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.media.MediaBrowserService](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#) |
 
 Base class for media browser services.
@@ -1066,15 +1068,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#dump(java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, writer: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Print the Service's state into the given stream. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#getBrowserRootHints()()` Gets the root hints sent from the currently connected `https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.html#`. |
 | [MediaSessionManager.RemoteUserInfo](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.RemoteUserInfo.html#)! | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#getCurrentBrowserInfo()()` Gets the browser information who sent the current request. |
+| --- | --- |
 | open [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token.html#)? | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#getSessionToken()()` Gets the session token, or null if it has not yet been created or if it has been destroyed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#notifyChildrenChanged(kotlin.String)(parentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Notifies all connected media browsers that the children of the specified parent id have changed in some way. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#notifyChildrenChanged(kotlin.String,%20android.os.Bundle)(parentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Notifies all connected media browsers that the children of the specified parent id have changed in some way. |
+| --- | --- |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onCreate()()` Called by the system when the service is first created. |
 | abstract [MediaBrowserService.BrowserRoot](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.BrowserRoot)? | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onGetRoot(kotlin.String,%20kotlin.Int,%20android.os.Bundle)(clientPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, clientUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rootHints: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called to get the root information for browsing by a particular client. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onLoadChildren(kotlin.String,%20android.service.media.MediaBrowserService.Result)(parentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, result: https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.Result<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem.html#!>!>)` Called to get information about the children of a media item. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onLoadChildren(kotlin.String,%20android.service.media.MediaBrowserService.Result,%20android.os.Bundle)(parentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, result: https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.Result<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem.html#!>!>, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called to get information about the children of a media item. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#onLoadItem(kotlin.String,%20android.service.media.MediaBrowserService.Result)(itemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.Result<https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem.html#!>!)` Called to get information about a specific media item. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService#setSessionToken(android.media.session.MediaSession.Token)(token: https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token.html#?)` Call to set the media session. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2803,6 +2809,7 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
+| --- | --- |
 
 ### getBrowserRootHints
 
@@ -2935,6 +2942,7 @@ The implementation should verify that the client package has permission to acces
 | `clientPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the application which is requesting access to browse media. This value cannot be `null`. |
 | `clientUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application which is requesting access to browse media. |
 | `rootHints` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: An optional bundle of service-specific arguments to send to the media browser service when connecting and retrieving the root id for browsing, or null if none. The contents of this bundle may affect the information returned when browsing. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2991,6 +2999,7 @@ In case the media item does not have any children, call `https://developer.andro
 | `parentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The id of the parent media item whose children are to be queried. This value cannot be `null`. |
 | `result` | [MediaBrowserService.Result](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.Result)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaBrowser.MediaItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem.html#)!\>!\>: The Result to send the list of children to. This value cannot be `null`. |
 | `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The bundle of service-specific arguments sent from the media browser. The information returned through the result should be affected by the contents of this bundle. This value cannot be `null`. |
+| --- | --- |
 
 ### onLoadItem
 

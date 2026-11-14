@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # Ikev2VpnProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/Ikev2VpnProfile "View this page in Java") 
+| --- | --- |
 
 ```
 class Ikev2VpnProfile : PlatformVpnProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.PlatformVpnProfile](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile) ||
 | | ↳ | [android.net.Ikev2VpnProfile](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#) |
 
@@ -33,21 +35,27 @@ Together with VpnManager, this allows apps to provision IKEv2/IPsec VPNs that do
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAllowedAlgorithms](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getAllowedAlgorithms())`()` Returns all the algorithms allowed by this VPN profile. |
 | [IkeTunnelConnectionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams)? | [getIkeTunnelConnectionParams](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getIkeTunnelConnectionParams())`()` Retrieves the ikeTunnelConnectionParams contains IKEv2 configurations, if any was set. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getMaxMtu())`()` Retrieves the maximum MTU set for this VPN profile. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassword](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getPassword())`()` Retrieves the password. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getPresharedKey](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getPresharedKey())`()` Retrieves the pre-shared key. |
+| --- | --- |
 | [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo)? | [getProxyInfo](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getProxyInfo())`()` Retrieves the proxy information if any was set |
 | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)? | [getRsaPrivateKey](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getRsaPrivateKey())`()` Retrieves the RSA private key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getServerAddr](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getServerAddr())`()` Retrieves the server address string. |
+| --- | --- |
 | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)? | [getServerRootCaCert](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getServerRootCaCert())`()` Retrieves the certificate for the server's root CA. |
 | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)? | [getUserCert](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getUserCert())`()` Retrieves the user certificate, if any was set. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getUserIdentity](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getUserIdentity())`()` Retrieves the user identity. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUsername](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#getUsername())`()` Retrieves the username. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutomaticIpVersionSelectionEnabled](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#isAutomaticIpVersionSelectionEnabled())`()` Returns whether automatic IP version selection is enabled. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutomaticNattKeepaliveTimerEnabled](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#isAutomaticNattKeepaliveTimerEnabled())`()` Returns whether automatic NAT-T keepalive timers are enabled. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBypassable](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#isBypassable())`()` Returns whether or not the VPN profile should be bypassable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetered](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#isMetered())`()` Returns whether or not the VPN profile should be always considered metered. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile#toString())`()` <br /> |
 
 | Inherited functions ||

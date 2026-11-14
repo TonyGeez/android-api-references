@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # URLSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/URLSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class URLSpan : ClickableSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
 | | ↳ | [android.text.style.ClickableSpan](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan) ||
 | | | ↳ | [android.text.style.URLSpan](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#) |
+| --- | --- | --- | --- |
 
 Implementation of the [ClickableSpan](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan) that allows setting a url string. When selecting and clicking on the text to which the span is attached, the`URLSpan`will try to open the url, by launching an an Activity with an [Intent.ACTION_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String) intent.
 
@@ -38,9 +41,11 @@ Text with`URLSpan`.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#getSpanTypeId())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURL](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#getURL())`()` Get the url string for this span. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#onClick(android.view.View))`(`widget:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/URLSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

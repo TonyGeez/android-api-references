@@ -7,6 +7,7 @@ class RttStationRangingParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.wifi.rtt.RttStationRangingParams](https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#) |
 
 Represents the parameters required to perform Wi-Fi Station-AP Round Trip Time (RTT) ranging.
@@ -38,9 +39,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#getBssid()()` Returns the BSSID associated with this RTT ranging session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#getChannelWidth()()` Returns the channel width associated with this RTT ranging session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#getRangingUpdateRate()()` Returns the ranging update rate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttStationRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

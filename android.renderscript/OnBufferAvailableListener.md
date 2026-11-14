@@ -6,6 +6,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # OnBufferAvailableListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnBufferAvailableListener

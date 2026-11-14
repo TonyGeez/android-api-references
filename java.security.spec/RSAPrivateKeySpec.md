@@ -9,9 +9,11 @@ open class RSAPrivateKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.RSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec#) |
 
 | Known Direct Subclasses [RSAMultiPrimePrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec), [RSAPrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec) |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RSAMultiPrimePrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec) | This class specifies an RSA multi-prime private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard using the Chinese Remainder Theorem (CRT) information values for efficiency. | | [RSAPrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec) | This class specifies an RSA private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the Chinese Remainder Theorem (CRT) information values for efficiency. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class specifies an RSA private key.
 
@@ -27,6 +29,7 @@ This class specifies an RSA private key.
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getModulus](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec#getModulus())`()` Returns the modulus. |
 | open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | [getParams](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec#getParams())`()` Returns the parameters associated with this key, may be null if not present. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrivateExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec#getPrivateExponent())`()` Returns the private exponent. |
+| --- | --- |
 
 ## Public constructors
 
@@ -65,6 +68,7 @@ Creates a new RSAPrivateKeySpec with additional key parameters.
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus |
 | `privateExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private exponent |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters associated with this key, may be null |
+| --- | --- |
 
 ## Public methods
 

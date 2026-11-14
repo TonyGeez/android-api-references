@@ -6,12 +6,14 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 # PdfPageImageObject
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/component/PdfPageImageObject "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageImageObject : PdfPageObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.component.PdfPageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject) ||
 | | ↳ | [android.graphics.pdf.component.PdfPageImageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageImageObject#) |
 

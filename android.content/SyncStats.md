@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # SyncStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/SyncStats "View this page in Java") 
+| --- | --- |
 
 ```
 open class SyncStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.SyncStats](https://developer.android.com/reference/kotlin/android/content/SyncStats#) |
 
 Used to record various statistics about the result of a sync operation. The SyncManager gets access to these via a [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult) and uses some of them to determine the disposition of the sync. See [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult) for further dicussion on how the SyncManager uses these values.
@@ -31,6 +33,7 @@ Used to record various statistics about the result of a sync operation. The Sync
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/content/SyncStats#clear())`()` Reset all the counters to 0. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/SyncStats#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/SyncStats#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/SyncStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -38,12 +41,15 @@ Used to record various statistics about the result of a sync operation. The Sync
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SyncStats](https://developer.android.com/reference/kotlin/android/content/SyncStats#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/SyncStats#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numAuthExceptions](https://developer.android.com/reference/kotlin/android/content/SyncStats#numAuthExceptions:kotlin.Long) The SyncAdapter was unable to authenticate the [android.accounts.Account](https://developer.android.com/reference/kotlin/android/accounts/Account.html#) that was specified in the request. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numConflictDetectedExceptions](https://developer.android.com/reference/kotlin/android/content/SyncStats#numConflictDetectedExceptions:kotlin.Long) The SyncAdapter detected that there was an unrecoverable version conflict when it attempted to update or delete a version of a resource on the server. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numDeletes](https://developer.android.com/reference/kotlin/android/content/SyncStats#numDeletes:kotlin.Long) Counter for tracking how many deletes were performed by the sync operation, as defined by the SyncAdapter. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numEntries](https://developer.android.com/reference/kotlin/android/content/SyncStats#numEntries:kotlin.Long) Counter for tracking how many entries were affected by the sync operation, as defined by the SyncAdapter. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numInserts](https://developer.android.com/reference/kotlin/android/content/SyncStats#numInserts:kotlin.Long) Counter for tracking how many inserts were performed by the sync operation, as defined by the SyncAdapter. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numIoExceptions](https://developer.android.com/reference/kotlin/android/content/SyncStats#numIoExceptions:kotlin.Long) The SyncAdapter had a problem, most likely with the network connectivity or a timeout while waiting for a network response. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numParseExceptions](https://developer.android.com/reference/kotlin/android/content/SyncStats#numParseExceptions:kotlin.Long) The SyncAdapter had a problem with the data it received from the server or the storage later. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numSkippedEntries](https://developer.android.com/reference/kotlin/android/content/SyncStats#numSkippedEntries:kotlin.Long) Counter for tracking how many entries, either from the server or the local store, were ignored during the sync operation. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numUpdates](https://developer.android.com/reference/kotlin/android/content/SyncStats#numUpdates:kotlin.Long) Counter for tracking how many updates were performed by the sync operation, as defined by the SyncAdapter. |
 
 ## Public constructors

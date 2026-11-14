@@ -8,6 +8,7 @@ open class SurfacePackageToken
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.SurfacePackageToken](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/SurfacePackageToken#) |
 
 > [!CAUTION]

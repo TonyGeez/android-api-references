@@ -7,6 +7,7 @@ class FactoryResetProtectionPolicy : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.FactoryResetProtectionPolicy](https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#) |
 
 The factory reset protection policy determines which accounts can unlock a device that has gone through untrusted factory reset.
@@ -38,6 +39,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#getFactoryResetProtectionAccounts()()` Get the list of accounts that can provision a device which has been factory reset. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#isFactoryResetProtectionEnabled()()` Return whether factory reset protection for the device is enabled or not. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

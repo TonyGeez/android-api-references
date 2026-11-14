@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # FloatEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/FloatEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class FloatEvaluator : TypeEvaluator<Number!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.FloatEvaluator](https://developer.android.com/reference/kotlin/android/animation/FloatEvaluator#) |
 
 This evaluator can be used to perform type interpolation between`float`values.
@@ -54,6 +56,7 @@ This function returns the result of linearly interpolating the start and end val
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:The start value; should be of type`float`or`Float` |
 | `endValue` | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:The end value; should be of type`float`or`Float` |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # NetworkEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/NetworkEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class NetworkEvent : Event, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event) ||
 | | ↳ | [android.media.metrics.NetworkEvent](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#) |
 
@@ -27,12 +29,15 @@ Media network event.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_2G](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_2G:kotlin.Int) 2G network |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_3G](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_3G:kotlin.Int) 3G network |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_4G](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_4G:kotlin.Int) 4G network |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_NSA](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_5G_NSA:kotlin.Int) 5G NSA network |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_SA](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_5G_SA:kotlin.Int) 5G SA network |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_ETHERNET](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_ETHERNET:kotlin.Int) Ethernet network |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OFFLINE](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_OFFLINE:kotlin.Int) Not network connected |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_OTHER:kotlin.Int) Other network type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_UNKNOWN:kotlin.Int) Network type is not known. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_WIFI](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#NETWORK_TYPE_WIFI:kotlin.Int) Wi-Fi network |
 
 | Inherited constants ||
@@ -44,9 +49,11 @@ Media network event.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#getNetworkType())`()` Gets network type. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#getTimeSinceCreatedMillis())`()` Gets timestamp since the creation of the log session in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

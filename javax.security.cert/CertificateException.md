@@ -9,11 +9,14 @@ open class CertificateException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [CertificateEncodingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateEncodingException), [CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException), [CertificateNotYetValidException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateNotYetValidException), [CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException) |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------| | [CertificateEncodingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateEncodingException) | Certificate Encoding Exception. | | [CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException) | Certificate Expired Exception. | | [CertificateNotYetValidException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateNotYetValidException) | Certificate is not yet valid exception. | | [CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException) | Certificate Parsing Exception. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This exception indicates one of a variety of certificate problems.
 

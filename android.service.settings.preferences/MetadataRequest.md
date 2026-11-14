@@ -7,6 +7,7 @@ class MetadataRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.MetadataRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest#) |
 
 Request parameters to retrieve all metadata for all available settings preferences within this application.

@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # FontFamily
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/fonts/FontFamily "View this page in Java") 
+| --- | --- |
 
 ```
 class FontFamily
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.fonts.FontFamily](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontFamily#) |
 
 A font family class can be used for creating Typeface.

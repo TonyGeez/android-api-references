@@ -7,6 +7,7 @@ class SetValueResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.SetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest`.
@@ -27,12 +28,15 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_DISABLED:kotlin.Int` Requested preference is disabled, thus unable to be set in this state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_DISALLOW:kotlin.Int` Requested preference is not allowed for access in this API under the current device policy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_INTERNAL_ERROR:kotlin.Int` API call failed due to an issue with the service binding. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_INVALID_REQUEST:kotlin.Int` Request object is not valid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_OK:kotlin.Int` Request is successful and the value was set. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_REQUIRE_APP_PERMISSION:kotlin.Int` Requested preference requires permissions not held by the calling application. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_REQUIRE_USER_CONSENT:kotlin.Int` User consent was not approved for this operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_RESTRICTED:kotlin.Int` Requested preference is restricted, thus unable to be set under this policy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_UNAVAILABLE:kotlin.Int` Preference is currently not available, likely due to device state or the state of a dependency. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#RESULT_UNSUPPORTED:kotlin.Int` Requested preference is not supported by this API. |
 
 | Inherited constants ||
@@ -44,6 +48,7 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#getResultCode()()` Returns the result code indicating status of the request. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

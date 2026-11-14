@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # UriRelativeFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/UriRelativeFilter "View this page in Java") 
+| --- | --- |
 
 ```
 class UriRelativeFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.UriRelativeFilter](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#) |
 
 A filter for matching Intent URI Data as part of a [UriRelativeFilterGroup](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup). A single filter can only be matched against either a URI path, query or fragment
@@ -22,6 +24,7 @@ A filter for matching Intent URI Data as part of a [UriRelativeFilterGroup](http
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAGMENT](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#FRAGMENT:kotlin.Int) Value to indicate that the filter is to be applied to a URI fragment. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATH](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#PATH:kotlin.Int) Value to indicate that the filter is to be applied to a URI path. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#QUERY:kotlin.Int) Value to indicate that the filter is to be applied to a URI query. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -32,9 +35,11 @@ A filter for matching Intent URI Data as part of a [UriRelativeFilterGroup](http
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFilter](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#getFilter())`()` The string used to filter the URI. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternType](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#getPatternType())`()` The pattern type of the filter. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUriPart](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#getUriPart())`()` The URI part this filter operates on. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchData](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#matchData(android.net.Uri))`(`data:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Match this URI filter against an Intent's data. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#toString())`()` <br /> |
 
 ## Constants
@@ -95,6 +100,7 @@ Creates a new UriRelativeFilter.
 | `uriPart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The URI part this filter operates on. Can be either a [UriRelativeFilter.PATH](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#PATH:kotlin.Int), [UriRelativeFilter.QUERY](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#QUERY:kotlin.Int), or [UriRelativeFilter.FRAGMENT](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#FRAGMENT:kotlin.Int). Value is [android.content.UriRelativeFilter#PATH](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#PATH:kotlin.Int), [android.content.UriRelativeFilter#QUERY](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#QUERY:kotlin.Int), or [android.content.UriRelativeFilter#FRAGMENT](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter#FRAGMENT:kotlin.Int) |
 | `patternType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The pattern type of the filter. Can be either a [PatternMatcher.PATTERN_LITERAL](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_LITERAL:kotlin.Int), [PatternMatcher.PATTERN_PREFIX](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_PREFIX:kotlin.Int), [PatternMatcher.PATTERN_SUFFIX](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_SUFFIX:kotlin.Int), [PatternMatcher.PATTERN_SIMPLE_GLOB](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_SIMPLE_GLOB:kotlin.Int), or [PatternMatcher.PATTERN_ADVANCED_GLOB](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_ADVANCED_GLOB:kotlin.Int). Value is [android.os.PatternMatcher#PATTERN_LITERAL](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_LITERAL:kotlin.Int), [android.os.PatternMatcher#PATTERN_PREFIX](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_PREFIX:kotlin.Int), [android.os.PatternMatcher#PATTERN_SIMPLE_GLOB](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_SIMPLE_GLOB:kotlin.Int), [android.os.PatternMatcher#PATTERN_ADVANCED_GLOB](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_ADVANCED_GLOB:kotlin.Int), or [android.os.PatternMatcher#PATTERN_SUFFIX](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#PATTERN_SUFFIX:kotlin.Int) |
 | `filter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):A literal or pattern string depedning on patterType used to match a uriPart . This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

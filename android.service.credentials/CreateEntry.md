@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CreateEntry
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/CreateEntry "View this page in Java") 
+| --- | --- |
 
 ```
 class CreateEntry : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.CreateEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CreateEntry#) |
 
 An entry to be shown on the UI. This entry represents where the credential to be created will be stored. Examples include user's account, family group etc.
@@ -32,6 +34,7 @@ If user selects this entry, the corresponding [PendingIntent](https://developer.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/CreateEntry#describeContents())`()` <br /> |
 | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | [getSlice](https://developer.android.com/reference/kotlin/android/service/credentials/CreateEntry#getSlice())`()` Returns the content to be displayed with this create entry on the UI. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/CreateEntry#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

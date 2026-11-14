@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # AppWidgetProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/appwidget/AppWidgetProvider "View this page in Java") 
+| --- | --- |
 
 ```
 open class AppWidgetProvider : BroadcastReceiver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#) ||
 | | ↳ | [android.appwidget.AppWidgetProvider](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#) |
 
@@ -33,9 +35,11 @@ Extend this class and override one or more of the [onUpdate](https://developer.a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAppWidgetOptionsChanged](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onAppWidgetOptionsChanged(android.content.Context,%20android.appwidget.AppWidgetManager,%20kotlin.Int,%20android.os.Bundle))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `appWidgetManager:` ` [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager)!`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newOptions:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_OPTIONS_CHANGED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_OPTIONS_CHANGED:kotlin.String) broadcast when this widget has been layed out at a new size or its options changed via [AppWidgetManager.updateAppWidgetOptions](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetOptions(kotlin.Int,%20android.os.Bundle)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDeleted](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onDeleted(android.content.Context,%20kotlin.IntArray))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `appWidgetIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_DELETED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_DELETED:kotlin.String) broadcast when one or more AppWidget instances have been deleted. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisabled](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onDisabled(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_DISABLED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_DISABLED:kotlin.String) broadcast, which is sent when the last AppWidget instance for this provider is deleted. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEnabled](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onEnabled(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_ENABLED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_ENABLED:kotlin.String) broadcast when the a AppWidget for this provider is instantiated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceive](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onReceive(android.content.Context,%20android.content.Intent))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Implements [BroadcastReceiver.onReceive](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent))to dispatch calls to the various other methods on AppWidgetProvider. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestored](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onRestored(android.content.Context,%20kotlin.IntArray,%20kotlin.IntArray))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `oldWidgetIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `newWidgetIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_RESTORED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_RESTORED:kotlin.String) broadcast when instances of this AppWidget provider have been restored from backup. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpdate](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onUpdate(android.content.Context,%20android.appwidget.AppWidgetManager,%20kotlin.IntArray))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `appWidgetManager:` ` [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager)!`, `appWidgetIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Called in response to the [AppWidgetManager.ACTION_APPWIDGET_UPDATE](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String) and [AppWidgetManager.ACTION_APPWIDGET_RESTORED](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_RESTORED:kotlin.String) broadcasts when this AppWidget provider is being asked to provide [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#) for a set of AppWidgets. |
 
 | Inherited functions ||
@@ -76,6 +80,7 @@ Called in response to the [AppWidgetManager.ACTION_APPWIDGET_OPTIONS_CHANGED](ht
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) in which this receiver is running. |
 | `appWidgetManager` | [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager)!:A [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager) object you can call android.appwidget.AppWidgetManager#updateAppWidget on. |
 | `appWidgetId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The appWidgetId of the widget whose size changed. |
+| --- | --- |
 | `newOptions` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The new options of the changed widget. |
 
 **See Also**
@@ -181,6 +186,7 @@ In addition, you should set [AppWidgetManager.OPTION_APPWIDGET_RESTORE_COMPLETED
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: |
 | `oldWidgetIds` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: |
 | `newWidgetIds` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: |
+| --- | --- |
 
 ### onUpdate
 
@@ -201,6 +207,7 @@ Called in response to the [AppWidgetManager.ACTION_APPWIDGET_UPDATE](https://dev
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) in which this receiver is running. |
 | `appWidgetManager` | [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager)!:A [AppWidgetManager](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager) object you can call android.appwidget.AppWidgetManager#updateAppWidget on. |
 | `appWidgetIds` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The appWidgetIds for which an update is needed. Note that this may be all of the AppWidget instances for this provider, or just a subset of them. |
+| --- | --- |
 
 **See Also**
 

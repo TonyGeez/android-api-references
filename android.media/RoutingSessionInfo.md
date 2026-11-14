@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # RoutingSessionInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/RoutingSessionInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class RoutingSessionInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.RoutingSessionInfo](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#) |
 
 Describes a routing session which is created when a media route is selected.
@@ -26,6 +28,7 @@ Describes a routing session which is created when a media route is selected.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFER_REASON_APP](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#TRANSFER_REASON_APP:kotlin.Int) Indicates that the transfer happened from a non-privileged app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFER_REASON_FALLBACK](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#TRANSFER_REASON_FALLBACK:kotlin.Int) Indicates that the transfer happened by the default logic without explicit system's or user's request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFER_REASON_SYSTEM_REQUEST](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#TRANSFER_REASON_SYSTEM_REQUEST:kotlin.Int) Indicates that the transfer happened from within a privileged application. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,18 +39,23 @@ Describes a routing session which is created when a media route is selected.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getClientPackageName](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getClientPackageName())`()` Gets the client package name of the session |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getControlHints](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getControlHints())`()` Gets the control hints |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDeselectableRoutes](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getDeselectableRoutes())`()` Gets the list of IDs of deselectable routes for the session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getId())`()` Gets the id of the session. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getName())`()` Gets the user-visible name of the session. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSelectableRoutes](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getSelectableRoutes())`()` Gets the list of IDs of selectable routes for the session. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSelectedRoutes](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getSelectedRoutes())`()` Gets the list of IDs of selected routes for the session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransferReason](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getTransferReason())`()` Returns the transfer reason for this routing session. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getTransferableRoutes](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getTransferableRoutes())`()` Gets the list of IDs of transferable routes for the session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolume](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getVolume())`()` Gets the current volume of the session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeHandling](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getVolumeHandling())`()` Gets the information about how volume is handled on the session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeMax](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getVolumeMax())`()` Gets the maximum volume of the session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

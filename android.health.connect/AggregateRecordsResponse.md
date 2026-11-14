@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AggregateRecordsResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/AggregateRecordsResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class AggregateRecordsResponse<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.AggregateRecordsResponse](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse#) |
 
 A class representing response for [HealthConnectManager.aggregate](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregate(android.health.connect.AggregateRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
@@ -22,6 +24,7 @@ A class representing response for [HealthConnectManager.aggregate](https://devel
 | T? | [get](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse#get(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | [getDataOrigins](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse#getDataOrigins(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` Returns a set of [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) s for the underlying aggregation record, empty set if the corresponding aggregation doesn't exist and or if multiple records were present. |
 | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#)? | [getZoneOffset](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse#getZoneOffset(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` <br /> |
+| --- | --- |
 
 ## Public methods
 

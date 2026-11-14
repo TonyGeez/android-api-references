@@ -3,12 +3,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # IpSecTransformState
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/IpSecTransformState "View this page in Java")
+| --- | --- |
 
 ```
 class IpSecTransformState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#) |
 
 This class represents a snapshot of the state of an IpSecTransform
@@ -30,9 +32,11 @@ This class provides the current state of an IpSecTransform, enabling link metric
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getByteCount()()` Retrieve the number of bytes processed so far as an unsigned long |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getPacketCount()()` Retrieve the number of packets processed so far as an unsigned long. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getReplayBitmap()()` Retrieve the replay bitmap |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getRxHighestSequenceNumber()()` Retrieve the highest sequence number received so far as an unsigned long |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getTimestampMillis()()` Retrieve the timestamp (milliseconds) when this state was created, as per `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#getTxHighestSequenceNumber()()` Retrieve the highest sequence number sent so far as an unsigned long |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecTransformState#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -167,6 +171,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

@@ -9,6 +9,7 @@ class EncryptedTopic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.topics.EncryptedTopic](https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#) |
 
 > [!CAUTION]
@@ -35,9 +36,11 @@ Detailed steps on decryption can be found on [Developer Guide](https://developer
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getEncapsulatedKey()()` Returns the encapsulated key generated during HPKE setup. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getEncryptedTopic()()` Returns encrypted bytes for the JSON version of the `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` object as cipher text. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getKeyIdentifier()()` Returns key identifier for the used encryption key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 
@@ -60,6 +63,7 @@ Creates encrypted version of the `https://developer.android.com/reference/kotlin
 | `encryptedTopic` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): byte array cipher text containing encrypted `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` json string. This value cannot be `null`. |
 | `keyIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): key used to identify the public key used for encryption. This value cannot be `null`. |
 | `encapsulatedKey` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): encapsulated key generated during HPKE setup. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

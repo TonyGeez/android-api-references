@@ -9,12 +9,15 @@ open class SQLNonTransientException : SQLException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.SQLNonTransientException](https://developer.android.com/reference/kotlin/java/sql/SQLNonTransientException#) |
 
 | Known Direct Subclasses [SQLDataException](https://developer.android.com/reference/kotlin/java/sql/SQLDataException), [SQLFeatureNotSupportedException](https://developer.android.com/reference/kotlin/java/sql/SQLFeatureNotSupportedException), [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException), [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException), [SQLNonTransientConnectionException](https://developer.android.com/reference/kotlin/java/sql/SQLNonTransientConnectionException), [SQLSyntaxErrorException](https://developer.android.com/reference/kotlin/java/sql/SQLSyntaxErrorException) |----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLDataException](https://developer.android.com/reference/kotlin/java/sql/SQLDataException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*22*', or under vendor-specified conditions. | | [SQLFeatureNotSupportedException](https://developer.android.com/reference/kotlin/java/sql/SQLFeatureNotSupportedException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*0A*' ( the value is 'zero' A). | | [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*23*', or under vendor-specified conditions. | | [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*28*', or under vendor-specified conditions. | | [SQLNonTransientConnectionException](https://developer.android.com/reference/kotlin/java/sql/SQLNonTransientConnectionException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown for the SQLState class value '*08*', or under vendor-specified conditions. | | [SQLSyntaxErrorException](https://developer.android.com/reference/kotlin/java/sql/SQLSyntaxErrorException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*42*', or under vendor-specified conditions. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when an instance where a retry of the same operation would fail unless the cause of the`SQLException`is corrected.
 
@@ -106,6 +109,7 @@ Constructs a`SQLNonTransientException`object with a given`reason`,`SQLState`and`
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor specific exception code |
+| --- | --- |
 
 ### SQLNonTransientException
 
@@ -128,6 +132,7 @@ Constructs a`SQLNonTransientException`object with a given`reason`,`SQLState`,`ve
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific exception code |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
 
 ### SQLNonTransientException
@@ -150,6 +155,7 @@ Constructs a`SQLNonTransientException`object with a given`reason`,`SQLState`and`
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception. |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
+| --- | --- |
 
 ### SQLNonTransientException
 

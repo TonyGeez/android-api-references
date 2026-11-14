@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AdvertisingSetParameters
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters "View this page in Java")
+| --- | --- |
 
 ```
 class AdvertisingSetParameters : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#) |
 
 The `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#` provide a way to adjust advertising preferences for each Bluetooth LE advertising set. Use `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters.Builder` to create an instance of this class.
@@ -24,12 +26,15 @@ The `https://developer.android.com/reference/kotlin/android/bluetooth/le/Adverti
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#INTERVAL_HIGH:kotlin.Int` Advertise on low frequency, around every 1000ms. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#INTERVAL_LOW:kotlin.Int` Perform high frequency, low latency advertising, around every 100ms. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#INTERVAL_MAX:kotlin.Int` Maximum value for advertising interval. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#INTERVAL_MEDIUM:kotlin.Int` Advertise on medium frequency, around every 250ms. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#INTERVAL_MIN:kotlin.Int` Minimum value for advertising interval. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_HIGH:kotlin.Int` Advertise using high TX power level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_LOW:kotlin.Int` Advertise using low TX power level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_MAX:kotlin.Int` Maximum value for TX power. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_MEDIUM:kotlin.Int` Advertise using medium TX power level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_MIN:kotlin.Int` Minimum value for TX power. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#TX_POWER_ULTRA_LOW:kotlin.Int` Advertise using the lowest transmission (TX) power level. |
 
@@ -42,15 +47,19 @@ The `https://developer.android.com/reference/kotlin/android/bluetooth/le/Adverti
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#getInterval()()` Returns the advertising interval. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#getPrimaryPhy()()` Returns the primary advertising phy. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#getSecondaryPhy()()` Returns the secondary advertising phy. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#getTxPowerLevel()()` Returns the TX power level for advertising. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#includeTxPower()()` Returns whether the TX Power will be included. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#isAnonymous()()` Returns whether the advertisement will be anonymous. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#isConnectable()()` Returns whether the advertisement will be connectable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#isDiscoverable()()` Returns whether the advertisement will be discoverable. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#isLegacy()()` Returns whether the legacy advertisement will be used. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#isScannable()()` Returns whether the advertisement will be scannable. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

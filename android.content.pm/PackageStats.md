@@ -6,12 +6,14 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 # PackageStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/PackageStats "View this page in Java") 
+| --- | --- |
 
 ```
 open class PackageStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.PackageStats](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#) |
 
 | **This class was deprecated in API level 26.**
@@ -37,6 +39,7 @@ implementation of PackageStats associated with a application package.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#hashCode())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -45,12 +48,15 @@ implementation of PackageStats associated with a application package.
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PackageStats](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [cacheSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#cacheSize:kotlin.Long) Size of cache used by the application. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [codeSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#codeSize:kotlin.Long) Size of the code (e.g., APK) |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dataSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#dataSize:kotlin.Long) Size of the internal data size for the application. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [externalCacheSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#externalCacheSize:kotlin.Long) Size of the external cache used by the application (i.e., on the SD card). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [externalCodeSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#externalCodeSize:kotlin.Long) Size of the secure container on external storage holding the application's code. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [externalDataSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#externalDataSize:kotlin.Long) Size of the external data used by the application (e.g., |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [externalMediaSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#externalMediaSize:kotlin.Long) Size of the external media size used by the application. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [externalObbSize](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#externalObbSize:kotlin.Long) Size of the package's OBBs placed on external media. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](https://developer.android.com/reference/kotlin/android/content/pm/PackageStats#packageName:kotlin.String) Name of the package to which this stats applies. |
 
 ## Public constructors

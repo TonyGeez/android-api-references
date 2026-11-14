@@ -3,12 +3,14 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 # Spatializer
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/Spatializer "View this page in Java")
+| --- | --- |
 
 ```
 open class Spatializer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer#) |
 
 Spatializer provides access to querying capabilities and behavior of sound spatialization on the device. Sound spatialization simulates sounds originating around the listener as if they were coming from virtual speakers placed around the listener. 
@@ -26,18 +28,22 @@ Support for spatialization is optional, use `https://developer.android.com/refer
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#SPATIALIZER_IMMERSIVE_LEVEL_MULTICHANNEL:kotlin.Int` Constant indicating the `Spatializer` on this device supports multichannel spatialization. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#SPATIALIZER_IMMERSIVE_LEVEL_NONE:kotlin.Int` Constant indicating there are no spatialization capabilities supported on this device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#SPATIALIZER_IMMERSIVE_LEVEL_OTHER:kotlin.Int` Constant indicating the `Spatializer` on this device supports a spatialization mode that differs from the ones available at this SDK level. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#addOnHeadTrackerAvailableListener(java.util.concurrent.Executor,%20android.media.Spatializer.OnHeadTrackerAvailableListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/media/Spatializer.OnHeadTrackerAvailableListener)` Adds a listener to be notified of changes to the availability of a head tracker. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#addOnSpatializerStateChangedListener(java.util.concurrent.Executor,%20android.media.Spatializer.OnSpatializerStateChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener)` Adds a listener to be notified of changes to the enabled state of the `Spatializer`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#canBeSpatialized(android.media.AudioAttributes,%20android.media.AudioFormat)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, format: https://developer.android.com/reference/kotlin/android/media/AudioFormat)` Returns whether audio of the given `https://developer.android.com/reference/kotlin/android/media/AudioFormat`, played with the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` can be spatialized. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#getImmersiveAudioLevel()()` Return the level of support for the spatialization feature on this device. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/Spatializer#getSpatializedChannelMasks()()` Returns a list of channel masks that represent the widest channel masks the spatializer is capable of rendering with individual channel positions. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#isAvailable()()` Returns whether spatialization is available. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#isEnabled()()` Returns whether spatialization is enabled or not. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#isHeadTrackerAvailable()()` Returns whether a head tracker is currently available for the audio device used by the spatializer effect. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#removeOnHeadTrackerAvailableListener(android.media.Spatializer.OnHeadTrackerAvailableListener)(listener: https://developer.android.com/reference/kotlin/android/media/Spatializer.OnHeadTrackerAvailableListener)` Removes a previously registered listener for the availability of a head tracker. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/Spatializer#removeOnSpatializerStateChangedListener(android.media.Spatializer.OnSpatializerStateChangedListener)(listener: https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener)` Removes a previously added listener for changes to the enabled state of the `Spatializer`. |
 
 ## Constants

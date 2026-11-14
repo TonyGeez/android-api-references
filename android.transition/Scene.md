@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # Scene
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/Scene "View this page in Java") 
+| --- | --- |
 
 ```
 class Scene
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.transition.Scene](https://developer.android.com/reference/kotlin/android/transition/Scene#) |
 
 A scene represents the collection of values that various properties in the View hierarchy will have when the scene is applied. A Scene can be configured to automatically run a Transition when it is applied, which will animate the various property changes that take place during the scene change.
@@ -28,9 +30,11 @@ A scene represents the collection of values that various properties in the View 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enter](https://developer.android.com/reference/kotlin/android/transition/Scene#enter())`()` Enters this scene, which entails changing all values that are specified by this scene. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exit](https://developer.android.com/reference/kotlin/android/transition/Scene#exit())`()` Exits this scene, if it is the current scene on the scene's [scene root](https://developer.android.com/reference/kotlin/android/transition/Scene#getSceneRoot()). |
 | static [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene#)? | [getCurrentScene](https://developer.android.com/reference/kotlin/android/transition/Scene#getCurrentScene(android.view.ViewGroup))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)`)` Gets the current [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene#) set on the given ViewGroup. |
+| --- | --- |
 | static [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene#)! | [getSceneForLayout](https://developer.android.com/reference/kotlin/android/transition/Scene#getSceneForLayout(android.view.ViewGroup,%20kotlin.Int,%20android.content.Context))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`, `layoutId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Returns a Scene described by the resource file associated with the given`layoutId`parameter. |
 | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)! | [getSceneRoot](https://developer.android.com/reference/kotlin/android/transition/Scene#getSceneRoot())`()` Gets the root of the scene, which is the root of the view hierarchy affected by changes due to this scene, and which will be animated when this scene is entered. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnterAction](https://developer.android.com/reference/kotlin/android/transition/Scene#setEnterAction(java.lang.Runnable))`(`action:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Scenes that are not defined with layout resources or hierarchies, or which need to perform additional steps after those hierarchies are changed to, should set an enter action, and possibly an exit action as well. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExitAction](https://developer.android.com/reference/kotlin/android/transition/Scene#setExitAction(java.lang.Runnable))`(`action:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Scenes that are not defined with layout resources or hierarchies, or which need to perform additional steps after those hierarchies are changed to, should set an enter action, and possibly an exit action as well. |
 
 ## Public constructors
@@ -137,6 +141,7 @@ Returns a Scene described by the resource file associated with the given`layoutI
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The root of the hierarchy in which scene changes and transitions will take place. |
 | `layoutId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id of a standard layout resource file. |
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The context used in the process of inflating the layout resource. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------|

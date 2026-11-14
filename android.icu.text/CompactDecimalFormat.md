@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # CompactDecimalFormat
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/CompactDecimalFormat "View this page in Java") 
+| --- | --- |
 
 ```
 open class CompactDecimalFormat : DecimalFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) |||||
 | | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) ||||
 | | | ↳ | [android.icu.text.NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.icu.text.DecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat) ||
 | | | | | ↳ | [android.icu.text.CompactDecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#) |
 
@@ -48,6 +51,7 @@ Note that important methods, like setting the number of decimals, will be moved 
 | openstatic [CompactDecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#getInstance(android.icu.util.ULocale,%20android.icu.text.CompactDecimalFormat.CompactStyle))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `style:` ` [CompactDecimalFormat.CompactStyle](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat.CompactStyle)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.html#) instead of NumberFormat. |
 | openstatic [CompactDecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#getInstance(java.util.Locale,%20android.icu.text.CompactDecimalFormat.CompactStyle))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `style:` ` [CompactDecimalFormat.CompactStyle](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat.CompactStyle)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.html#) instead of NumberFormat. |
 | open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#parse(kotlin.String,%20java.text.ParsePosition))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!`)` Parsing is currently unsupported, and throws an UnsupportedOperationException. |
+| --- | --- |
 | open [CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount.html#)! | [parseCurrency](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat#parseCurrency(kotlin.CharSequence,%20java.text.ParsePosition))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `parsePosition:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!`)` Parsing is currently unsupported, and throws an UnsupportedOperationException. |
 
 | Inherited functions ||

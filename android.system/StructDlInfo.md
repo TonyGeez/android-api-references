@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # StructDlInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/StructDlInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class StructDlInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructDlInfo](https://developer.android.com/reference/kotlin/android/system/StructDlInfo#) |
 
 Corresponds to C's`struct Dl_info`.
@@ -30,6 +32,7 @@ Corresponds to C's`struct Dl_info`.
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_fbase](https://developer.android.com/reference/kotlin/android/system/StructDlInfo#dli_fbase:kotlin.Long) Base address at which shared object is loaded |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_fname](https://developer.android.com/reference/kotlin/android/system/StructDlInfo#dli_fname:kotlin.String) Pathname of shared object that contains address |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_saddr](https://developer.android.com/reference/kotlin/android/system/StructDlInfo#dli_saddr:kotlin.Long) Exact address of symbol named in dli_sname |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_sname](https://developer.android.com/reference/kotlin/android/system/StructDlInfo#dli_sname:kotlin.String) Name of symbol whose definition overlaps addr |
 
 ## Public constructors

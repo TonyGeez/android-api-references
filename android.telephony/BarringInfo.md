@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # BarringInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/BarringInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class BarringInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.BarringInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#) |
 
 Provides the barring configuration for a particular service type. Provides indication about the barring of a particular service for use. Certain barring types are only valid for certain technology families. Any service that does not have a barring configuration is unbarred by default.
@@ -26,12 +28,15 @@ Provides the barring configuration for a particular service type. Provides indic
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_CS_FALLBACK](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_CS_FALLBACK:kotlin.Int) Barring indicator for circuit-switched fallback for voice; applicable to EUTRAN and NGRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_CS_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_CS_SERVICE:kotlin.Int) Barring indicator for circuit-switched service; applicable to UTRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_CS_VOICE](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_CS_VOICE:kotlin.Int) Barring indicator for circuit-switched voice service; applicable to UTRAN |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_EMERGENCY](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_EMERGENCY:kotlin.Int) Barring indicator for emergency services; applicable to UTRAN, EUTRAN, and NGRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_MMTEL_VIDEO](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_MMTEL_VIDEO:kotlin.Int) Barring indicator for MMTEL (IMS) video; applicable to EUTRAN and NGRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_MMTEL_VOICE](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_MMTEL_VOICE:kotlin.Int) Barring indicator for MMTEL (IMS) voice; applicable to EUTRAN and NGRAN |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_MO_DATA](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_MO_DATA:kotlin.Int) Barring indicator for mobile-originated data traffic; applicable to EUTRAN and NGRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_MO_SIGNALLING](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_MO_SIGNALLING:kotlin.Int) Barring indicator for mobile-originated signalling; applicable to EUTRAN and NGRAN |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_PS_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_PS_SERVICE:kotlin.Int) Barring indicator for packet-switched service; applicable to UTRAN |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BARRING_SERVICE_TYPE_SMS](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#BARRING_SERVICE_TYPE_SMS:kotlin.Int) Barring indicator for SMS sending; applicable to UTRAN, EUTRAN, and NGRAN |
 
 | Inherited constants ||
@@ -43,9 +48,11 @@ Provides the barring configuration for a particular service type. Provides indic
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [BarringInfo.BarringServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo.BarringServiceInfo) | [getBarringServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#getBarringServiceInfo(kotlin.Int))`(`service:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the BarringServiceInfo for a specified service. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|

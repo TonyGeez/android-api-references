@@ -9,9 +9,11 @@ abstract class MappedByteBuffer : ByteBuffer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) |||
 | | ↳ | [java.nio.ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer) ||
 | | | ↳ | [java.nio.MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#) |
+| --- | --- | --- | --- |
 
 A direct byte buffer whose content is a memory-mapped region of a file.
 
@@ -32,18 +34,23 @@ Mapped byte buffers otherwise behave no differently than ordinary direct byte bu
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [clear](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#clear())`()` Clears this buffer. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer) | [compact](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer) | [duplicate](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#duplicate())`()` Creates a new byte buffer that shares this buffer's content. |
+| --- | --- |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [flip](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#flip())`()` Flips this buffer. |
 | [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#)! | [force](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#force())`()` Forces any changes made to this buffer's content to be written to the storage device containing the mapped file. |
 | [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#)! | [force](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#force(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Forces any changes made to a region of this buffer's content to be written to the storage device containing the mapped file. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoaded](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#isLoaded())`()` Tells whether or not this buffer's content is resident in physical memory. |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [limit](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#)! | [load](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#load())`()` Loads this buffer's content into physical memory. |
+| --- | --- |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [mark](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#mark())`()` Sets this buffer's mark at its position. |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [position](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [reset](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| --- | --- |
 | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | [rewind](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#rewind())`()` Rewinds this buffer. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer) | [slice](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#slice())`()` Creates a new byte buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#) | [slice](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new byte buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

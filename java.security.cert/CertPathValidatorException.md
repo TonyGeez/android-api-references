@@ -7,9 +7,11 @@ open class CertPathValidatorException : GeneralSecurityException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.cert.CertPathValidatorException](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#) |
 
 An exception indicating one of a variety of problems encountered when validating a certification path.
@@ -43,6 +45,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getCertPath()()` Returns the certification path that was being validated when the exception was thrown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getIndex()()` Returns the index of the certificate in the certification path that caused the exception to be thrown. |
 | open [CertPathValidatorException.Reason](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException.Reason)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getReason()()` Returns the reason that the validation failed. |
+| --- | --- |
 
 ## Public constructors
 
@@ -106,6 +109,7 @@ Creates a `CertPathValidatorException` with the specified detail message, cause,
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (or `null` if none) |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (or `null` if none) |
 | `certPath` | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)!: the certification path that was in the process of being validated when the error was encountered |
+| --- | --- |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the certificate in the certification path that caused the error (or -1 if not applicable). Note that the list of certificates in a `CertPath` is zero based. |
 
 | Exceptions ||
@@ -133,6 +137,7 @@ Creates a `CertPathValidatorException` with the specified detail message, cause,
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (or `null` if none) |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (or `null` if none) |
 | `certPath` | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)!: the certification path that was in the process of being validated when the error was encountered |
+| --- | --- |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the certificate in the certification path that caused the error (or -1 if not applicable). Note that the list of certificates in a `CertPath` is zero based. |
 | `reason` | [CertPathValidatorException.Reason](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException.Reason)!: the reason the validation failed |
 
@@ -141,6 +146,7 @@ Creates a `CertPathValidatorException` with the specified detail message, cause,
 | `java.lang.IllegalArgumentException` | if `certPath` is `null` and `index` is not -1 |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range `(index < -1 || (certPath != null && index >= certPath.getCertificates().size()) ` |
 | `java.lang.NullPointerException` | if `reason` is `null` |
+| --- | --- |
 
 ### CertPathValidatorException
 

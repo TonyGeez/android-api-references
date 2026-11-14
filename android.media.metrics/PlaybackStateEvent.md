@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PlaybackStateEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/PlaybackStateEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class PlaybackStateEvent : Event, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event) ||
 | | ↳ | [android.media.metrics.PlaybackStateEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#) |
 
@@ -27,18 +29,23 @@ Playback state event.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ABANDONED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_ABANDONED:kotlin.Int) Playback is abandoned before reaching the end of the media. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BUFFERING](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_BUFFERING:kotlin.Int) Playback is buffering to resume active playback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ENDED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_ENDED:kotlin.Int) Playback has reached the end of the media. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_FAILED:kotlin.Int) Playback is stopped due a fatal error and can be retried. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INTERRUPTED_BY_AD](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_INTERRUPTED_BY_AD:kotlin.Int) Playback is interrupted by an ad. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_BACKGROUND](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_JOINING_BACKGROUND:kotlin.Int) Playback is buffering in the background for initial playback start |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_FOREGROUND](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_JOINING_FOREGROUND:kotlin.Int) Playback is buffering in the foreground for initial playback start |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_NOT_STARTED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_NOT_STARTED:kotlin.Int) Playback has not started (initial state) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_PAUSED:kotlin.Int) Playback is paused but ready to play |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED_BUFFERING](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_PAUSED_BUFFERING:kotlin.Int) Playback is buffering while paused. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PLAYING](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_PLAYING:kotlin.Int) Playback is actively playing |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SEEKING](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_SEEKING:kotlin.Int) Playback is handling a seek. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STOPPED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_STOPPED:kotlin.Int) Playback is stopped and can be restarted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_SUPPRESSED:kotlin.Int) Playback is suppressed (e.g. due to audio focus loss). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED_BUFFERING](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#STATE_SUPPRESSED_BUFFERING:kotlin.Int) Playback is suppressed (e.g. due to audio focus loss) while buffering to resume a playback. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -49,9 +56,11 @@ Playback state event.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#getState())`()` Gets playback state. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#getTimeSinceCreatedMillis())`()` Gets time since the corresponding playback session is created in millisecond. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

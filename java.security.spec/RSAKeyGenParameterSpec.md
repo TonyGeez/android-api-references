@@ -9,6 +9,7 @@ open class RSAKeyGenParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.RSAKeyGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#) |
 
 This class specifies the set of parameters used to generate an RSA key pair.
@@ -25,6 +26,7 @@ This class specifies the set of parameters used to generate an RSA key pair.
 | open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | [getKeyParams](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getKeyParams())`()` Returns the parameters to be associated with key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeysize](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getKeysize())`()` Returns the keysize. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getPublicExponent())`()` Returns the public-exponent value. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,6 +70,7 @@ Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-ex
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the modulus size (specified in number of bits) |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent |
 | `keyParams` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the key parameters, may be null |
+| --- | --- |
 
 ## Public methods
 

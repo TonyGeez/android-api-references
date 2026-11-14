@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Volume
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/units/Volume "View this page in Java") 
+| --- | --- |
 
 ```
 class Volume : Comparable<Volume!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.units.Volume](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#) |
 
 Represents a unit of volume. Supported units: liters
@@ -22,9 +24,11 @@ Represents a unit of volume. Supported units: liters
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#compareTo(android.health.connect.datatypes.units.Volume))`(`other:` ` [Volume](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#)`)` Compares this object with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [Volume](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#) | [fromLiters](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#fromLiters(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Volume object with the specified value in liters. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInLiters](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#getInLiters())`()` Returns volume in liters |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

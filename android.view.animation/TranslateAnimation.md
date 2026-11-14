@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TranslateAnimation
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/TranslateAnimation "View this page in Java") 
+| --- | --- |
 
 ```
 open class TranslateAnimation : Animation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation) ||
 | | ↳ | [android.view.animation.TranslateAnimation](https://developer.android.com/reference/kotlin/android/view/animation/TranslateAnimation#) |
 
@@ -78,6 +80,7 @@ Constructor to use when building a TranslateAnimation from code
 | `fromXDelta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in X coordinate to apply at the start of the animation |
 | `toXDelta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in X coordinate to apply at the end of the animation |
 | `fromYDelta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in Y coordinate to apply at the start of the animation |
+| --- | --- |
 | `toYDelta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in Y coordinate to apply at the end of the animation |
 
 ### TranslateAnimation
@@ -103,9 +106,11 @@ Constructor to use when building a TranslateAnimation from code
 | `fromXType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how fromXValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `fromXValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in X coordinate to apply at the start of the animation. This value can either be an absolute number if fromXType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
 | `toXType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how toXValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
+| --- | --- |
 | `toXValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in X coordinate to apply at the end of the animation. This value can either be an absolute number if toXType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
 | `fromYType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how fromYValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `fromYValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in Y coordinate to apply at the start of the animation. This value can either be an absolute number if fromYType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
+| --- | --- |
 | `toYType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how toYValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `toYValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Change in Y coordinate to apply at the end of the animation. This value can either be an absolute number if toYType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
 
@@ -129,6 +134,7 @@ open fun initialize(
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the object being animated |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the object being animated |
 | `parentWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the animated object's parent |
+| --- | --- |
 | `parentHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the animated object's parent |
 
 ## Protected methods

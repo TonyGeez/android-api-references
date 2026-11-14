@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # VoicemailContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/VoicemailContract "View this page in Java") 
+| --- | --- |
 
 ```
 open class VoicemailContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.VoicemailContract](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#) |
 
 The contract between the voicemail provider and applications. Contains definitions for the supported URIs and columns.
@@ -41,9 +43,11 @@ In addition to the [ContentObserver](https://developer.android.com/reference/kot
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_FETCH_VOICEMAIL](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#ACTION_FETCH_VOICEMAIL:kotlin.String) Broadcast intent to request a voicemail source to fetch voicemail content of a specific voicemail from the remote server. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_NEW_VOICEMAIL](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#ACTION_NEW_VOICEMAIL:kotlin.String) Broadcast intent when a new voicemail record is inserted. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SYNC_VOICEMAIL](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#ACTION_SYNC_VOICEMAIL:kotlin.String) Broadcast intent to request all voicemail sources to perform a sync with the remote server. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#AUTHORITY:kotlin.String) The authority used by the voicemail provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PHONE_ACCOUNT_HANDLE](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String) Extra included in [ACTION_SYNC_VOICEMAIL](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#ACTION_SYNC_VOICEMAIL:kotlin.String) broadcast intents to indicate which [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#) to sync. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SELF_CHANGE](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#EXTRA_SELF_CHANGE:kotlin.String) Extra included in [Intent.ACTION_PROVIDER_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROVIDER_CHANGED:kotlin.String) broadcast intents to indicate if the receiving package made this change. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PARAM_KEY_SOURCE_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract#PARAM_KEY_SOURCE_PACKAGE:kotlin.String) Parameter key used in the URI to specify the voicemail source package name. |
 
 ## Constants

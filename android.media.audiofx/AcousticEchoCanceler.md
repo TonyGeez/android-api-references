@@ -3,12 +3,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # AcousticEchoCanceler
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/AcousticEchoCanceler "View this page in Java")
+| --- | --- |
 
 ```
 open class AcousticEchoCanceler : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.AcousticEchoCanceler](https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#) |
 

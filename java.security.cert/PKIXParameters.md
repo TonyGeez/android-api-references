@@ -7,9 +7,11 @@ open class PKIXParameters : CertPathParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.PKIXParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#) |
 
 | Known Direct Subclasses [PKIXBuilderParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters) |---|---| | [PKIXBuilderParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters) | Parameters used as input for the PKIX `CertPathBuilder` algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Parameters used as input for the PKIX `CertPathValidator` algorithm.
 
@@ -37,30 +39,39 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#addCertPathChecker(java.security.cert.PKIXCertPathChecker)(checker: https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker!)` Adds a `PKIXCertPathChecker` to the list of certification path checkers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#addCertStore(java.security.cert.CertStore)(store: https://developer.android.com/reference/kotlin/java/security/cert/CertStore!)` Adds a `CertStore` to the end of the list of `CertStore`s used in finding certificates and CRLs. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#clone()()` Makes a copy of this `PKIXParameters` object. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertPathCheckers()()` Returns the `List` of certification path checkers. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertStores()()` Returns an immutable `List` of `CertStore`s that are used to find certificates and CRLs. |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getDate()()` Returns the time for which the validity of the certification path should be determined. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getInitialPolicies()()` Returns an immutable `Set` of initial policy identifiers (OID strings), indicating that any one of these policies would be acceptable to the certificate user for the purposes of certification path processing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getPolicyQualifiersRejected()()` Gets the PolicyQualifiersRejected flag. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getSigProvider()()` Returns the signature provider's name, or `null` if not set. |
+| --- | --- |
 | open [CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTargetCertConstraints()()` Returns the required constraints on the target certificate. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](https://developer.android.com/reference/kotlin/java/security/cert/TrustAnchor)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTrustAnchors()()` Returns an immutable `Set` of the most-trusted CAs. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isAnyPolicyInhibited()()` Checks whether the any policy OID should be processed if it is included in a certificate. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isExplicitPolicyRequired()()` Checks if explicit policy is required. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isPolicyMappingInhibited()()` Checks if policy mapping is inhibited. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isRevocationEnabled()()` Checks the RevocationEnabled flag. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setAnyPolicyInhibited(kotlin.Boolean)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets state to determine if the any policy OID should be processed if it is included in a certificate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setCertPathCheckers(kotlin.collections.MutableList)(checkers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker!>!)` Sets a `List` of additional certification path checkers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setCertStores(kotlin.collections.MutableList)(stores: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/CertStore!>!)` Sets the list of `CertStore`s to be used in finding certificates and CRLs. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setDate(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Sets the time for which the validity of the certification path should be determined. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setExplicitPolicyRequired(kotlin.Boolean)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the ExplicitPolicyRequired flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setInitialPolicies(kotlin.collections.MutableSet)(initialPolicies: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the `Set` of initial policy identifiers (OID strings), indicating that any one of these policies would be acceptable to the certificate user for the purposes of certification path processing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setPolicyMappingInhibited(kotlin.Boolean)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the PolicyMappingInhibited flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setPolicyQualifiersRejected(kotlin.Boolean)(qualifiersRejected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the PolicyQualifiersRejected flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setRevocationEnabled(kotlin.Boolean)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the RevocationEnabled flag. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setSigProvider(kotlin.String)(sigProvider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the signature provider's name. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setTargetCertConstraints(java.security.cert.CertSelector)(selector: https://developer.android.com/reference/kotlin/java/security/cert/CertSelector!)` Sets the required constraints on the target certificate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setTrustAnchors(kotlin.collections.MutableSet)(trustAnchors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/security/cert/TrustAnchor!>!)` Sets the `Set` of most-trusted CAs. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#toString()()` Returns a formatted string describing the parameters. |
 
 ## Public constructors
@@ -84,6 +95,7 @@ Creates an instance of `PKIXParameters` that populates the set of most-trusted C
 | `java.lang.NullPointerException` | if the keystore is `null` |
 | `java.security.InvalidAlgorithmParameterException` | if the keystore does not contain at least one trusted certificate entry |
 | `java.security.KeyStoreException` | if the keystore has not been initialized |
+| --- | --- |
 
 ### PKIXParameters
 
@@ -106,6 +118,7 @@ Note that the `Set` is copied to protect against subsequent modifications.
 | `java.lang.ClassCastException` | if any of the elements in the `Set` are not of type `java.security.cert.TrustAnchor` |
 | `java.lang.NullPointerException` | if the specified `Set` is `null` |
 | `java.security.InvalidAlgorithmParameterException` | if the specified `Set` is empty `(trustAnchors.isEmpty() == true)` |
+| --- | --- |
 
 ## Public methods
 
@@ -601,6 +614,7 @@ Note that the `Set` is copied to protect against subsequent modifications.
 | `java.lang.ClassCastException` | if any of the elements in the set are not of type `java.security.cert.TrustAnchor` |
 | `java.lang.NullPointerException` | if the specified `Set` is `null` |
 | `java.security.InvalidAlgorithmParameterException` | if the specified `Set` is empty `(trustAnchors.isEmpty() == true)` |
+| --- | --- |
 
 **See Also**
 

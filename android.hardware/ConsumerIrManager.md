@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # ConsumerIrManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/ConsumerIrManager "View this page in Java") 
+| --- | --- |
 
 ```
 class ConsumerIrManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.ConsumerIrManager](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#) |
 
 Class that operates consumer infrared on the device. 
@@ -27,6 +29,7 @@ Requires the [PackageManager#FEATURE_CONSUMER_IR](https://developer.android.com/
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ConsumerIrManager.CarrierFrequencyRange](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.CarrierFrequencyRange)!\>! | [getCarrierFrequencies](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#getCarrierFrequencies())`()` Query the infrared transmitter's supported carrier frequencies |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasIrEmitter](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#hasIrEmitter())`()` Check whether the device has an infrared emitter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transmit](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#transmit(kotlin.Int,%20kotlin.IntArray))`(`carrierFrequency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pattern:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Transmit an infrared pattern |
+| --- | --- |
 
 ## Public methods
 

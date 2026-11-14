@@ -9,6 +9,7 @@ abstract class CertPath : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#) |
 
 An immutable sequence of certificates (a certification path).
@@ -57,9 +58,11 @@ Requiring`CertPath`objects to be immutable and thread-safe allows them to be pas
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this certification path for equality with the specified object. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [getCertificates](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#getCertificates())`()` Returns the list of certificates in this certification path. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#getEncoded())`()` Returns the encoded form of this certification path, using the default encoding. |
+| --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#getEncoded(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the encoded form of this certification path, using the specified encoding. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEncodings](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#getEncodings())`()` Returns an iteration of the encodings supported by this certification path, with the default encoding first. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#getType())`()` Returns the type of`Certificate`s in this certification path. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#hashCode())`()` Returns the hashcode for this certification path. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/CertPath#toString())`()` Returns a string representation of this certification path. |
 

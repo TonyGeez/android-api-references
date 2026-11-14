@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # UsageStats
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/usage/UsageStats "View this page in Java")
+| --- | --- |
 
 ```
 class UsageStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#) |
 
 Contains usage statistics for an app package for a specific time range.
@@ -28,15 +30,19 @@ Contains usage statistics for an app package for a specific time range.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#add(android.app.usage.UsageStats)(right: https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#!)` Add the statistics from the right `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` to the left. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getFirstTimeStamp()()` Get the beginning of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeForegroundServiceUsed()()` Get the last time this package's foreground service was used, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeStamp()()` Get the end of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeUsed()()` Get the last time this package's activity was used, measured in milliseconds since the epoch. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeVisible()()` Get the last time this package's activity is visible in the UI, measured in milliseconds since the epoch. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getPackageName()()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeForegroundServiceUsed()()` Get the total time this package's foreground services are started, measured in milliseconds. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeInForeground()()` Get the total time this package spent in the foreground, measured in milliseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeVisible()()` Get the total time this package's activity is visible in the UI, measured in milliseconds. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

@@ -7,6 +7,7 @@ open class WifiP2pConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#) |
 
 A class representing a Wi-Fi P2p configuration for setting up a connection
@@ -22,15 +23,19 @@ A class representing a Wi-Fi P2p configuration for setting up a connection
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_CLIENT_IP_PROVISIONING_MODE_IPV4_DHCP:kotlin.Int` IP provisioning via IPv4 DHCP, when joining a group as a group client. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_CLIENT_IP_PROVISIONING_MODE_IPV6_LINK_LOCAL:kotlin.Int` IP provisioning via IPv6 link-local, when joining a group as a group client. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_BAND_2GHZ:kotlin.Int` Allow the system to pick the operating frequency from the 2. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_BAND_5GHZ:kotlin.Int` Allow the system to pick the operating frequency from the 5 GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_BAND_6GHZ:kotlin.Int` Allow the system to pick the operating frequency from the 6 GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_BAND_AUTO:kotlin.Int` Allow the system to pick the operating frequency from all supported bands. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_AUTO:kotlin.Int` The system can choose an appropriate owner intent value, to be filled in the field `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#groupOwnerIntent:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MAX:kotlin.Int` The most inclination to be a group owner, to be filled in the field `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#groupOwnerIntent:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MIN:kotlin.Int` The least inclination to be a group owner, to be filled in the field `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#groupOwnerIntent:kotlin.Int`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#P2P_VERSION_1:kotlin.Int` P2P Protocol version 1 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#P2P_VERSION_2:kotlin.Int` P2P Protocol version 2 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#PCC_MODE_CONNECTION_TYPE_LEGACY_ONLY:kotlin.Int` Legacy connection type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2:kotlin.Int` Wi-Fi Direct R1/R2 compatible mode connection type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#PCC_MODE_CONNECTION_TYPE_R2_ONLY:kotlin.Int` This configuration allows only Wi-Fi Direct R2 supported devices to establish connection. |
 
@@ -48,15 +53,19 @@ A class representing a Wi-Fi P2p configuration for setting up a connection
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#describeContents()()` Implement the Parcelable interface |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getGroupClientIpProvisioningMode()()` Get the IP provisioning mode when joining a group as a group client. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getGroupOwnerBand()()` Get the required band for the group owner. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getGroupOwnerVersion()()` Get the P2P Group Owner version. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getNetworkId()()` Get the network ID of this P2P configuration. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getNetworkName()()` Get the network name of this P2P configuration, or null if unset. |
+| --- | --- |
 | open [WifiP2pPairingBootstrappingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPairingBootstrappingConfig()()` Get the pairing bootstrapping configuration , or null if unset. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPairingDiscoveryChannelFrequencyMhz()()` Get the discovery channel frequency in MHz for pairing, or 0 if unset. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPassphrase()()` Get the passphrase of this P2P configuration, or null if unset. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPccModeConnectionType()()` Get the PCC Mode connection type. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#isAuthorizeConnectionFromPeerEnabled()()` Query to check if the configuration is for authorizing a connection request from the peer device. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#setGroupOwnerVersion(kotlin.Int)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the P2P Group Owner version. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
 
@@ -65,6 +74,7 @@ A class representing a Wi-Fi P2p configuration for setting up a connection
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiP2pConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#deviceAddress:kotlin.String` The device MAC address uniquely identifies a Wi-Fi p2p device |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#groupOwnerIntent:kotlin.Int` This is an integer value between `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MIN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MAX:kotlin.Int` where `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MIN:kotlin.Int` indicates the least inclination to be a group owner and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MAX:kotlin.Int` indicates the highest inclination to be a group owner. |
+| --- | --- |
 | [WpsInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo.html#)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#wps:android.net.wifi.WpsInfo` Wi-Fi Protected Setup information |
 
 ## Constants

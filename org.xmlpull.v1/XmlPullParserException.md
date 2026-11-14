@@ -7,9 +7,11 @@ open class XmlPullParserException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [org.xmlpull.v1.XmlPullParserException](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#) |
+| --- | --- | --- | --- |
 
 This exception is thrown to signal XML Pull Parser related faults.
 
@@ -25,6 +27,7 @@ This exception is thrown to signal XML Pull Parser related faults.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getColumnNumber()()` <br /> |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getDetail()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getLineNumber()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#printStackTrace()()` Prints this throwable and its backtrace to the standard error stream. |
 
 | Properties ||
@@ -32,6 +35,7 @@ This exception is thrown to signal XML Pull Parser related faults.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#column:kotlin.Int` <br /> |
 | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#detail:kotlin.Throwable` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#row:kotlin.Int` <br /> |
+| --- | --- |
 
 ## Public constructors
 

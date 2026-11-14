@@ -9,6 +9,7 @@ open class TrustManagerFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.TrustManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#) |
 
 This class acts as a factory for trust managers based on a source of trust material. Each trust manager manages a specific type of trust material for use by secure sockets. The trust material is based on a KeyStore and/or provider specific sources.
@@ -30,12 +31,15 @@ Android provides the following`TrustManagerFactory`algorithms:
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getAlgorithm())`()` Returns the algorithm name of this`TrustManagerFactory`object. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultAlgorithm](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getDefaultAlgorithm())`()` Obtains the default TrustManagerFactory algorithm name. |
 | static [TrustManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`TrustManagerFactory`object that acts as a factory for trust managers. |
+| --- | --- |
 | static [TrustManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`TrustManagerFactory`object that acts as a factory for trust managers. |
 | static [TrustManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`TrustManagerFactory`object that acts as a factory for trust managers. |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getProvider())`()` Returns the provider of this`TrustManagerFactory`object. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!\>! | [getTrustManagers](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#getTrustManagers())`()` Returns one trust manager for each type of trust material. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#init(java.security.KeyStore))`(`ks:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`)` Initializes this factory with a source of certificate authorities and related trust material. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#init(javax.net.ssl.ManagerFactoryParameters))`(`spec:` ` [ManagerFactoryParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/ManagerFactoryParameters)!`)` Initializes this factory with a source of provider-specific trust material. |
+| --- | --- |
 
 ## Protected constructors
 
@@ -57,6 +61,7 @@ Creates a TrustManagerFactory object.
 | `factorySpi` | [TrustManagerFactorySpi](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactorySpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -158,6 +163,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.security.NoSuchAlgorithmException` | if a TrustManagerFactorySpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
 | `java.lang.IllegalArgumentException` | if the provider name is null or empty. |
+| --- | --- |
 | `java.lang.NullPointerException` | if algorithm is null. |
 
 **See Also**
@@ -193,6 +199,7 @@ A new TrustManagerFactory object encapsulating the TrustManagerFactorySpi implem
 | `java.security.NoSuchAlgorithmException` | if a TrustManagerFactorySpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the provider is null. |
 | `java.lang.NullPointerException` | if algorithm is null. |
+| --- | --- |
 
 **See Also**
 

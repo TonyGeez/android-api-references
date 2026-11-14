@@ -5,15 +5,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # IkeTimeoutException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/exceptions/IkeTimeoutException "View this page in Java") 
+| --- | --- |
 
 ```
 class IkeTimeoutException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeTimeoutException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeTimeoutException#) |
 
 This exception is thrown when there is an IKE retransmission timeout.

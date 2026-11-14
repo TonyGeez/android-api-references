@@ -8,6 +8,7 @@ open class ExecuteInIsolatedServiceResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceResponse](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceResponse#) |
 
 > [!CAUTION]

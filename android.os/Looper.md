@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Looper
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Looper "View this page in Java") 
+| --- | --- |
 
 ```
 class Looper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Looper](https://developer.android.com/reference/kotlin/android/os/Looper#) |
 
 Class used to run a message loop for a thread. Threads by default do not have a message loop associated with them; to create one, call [prepare](https://developer.android.com/reference/kotlin/android/os/Looper#prepare())in the thread that is to run the loop, and then [loop](https://developer.android.com/reference/kotlin/android/os/Looper#loop())to have it process messages until the loop is stopped.
@@ -44,15 +46,19 @@ class LooperThread extends Thread {
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/os/Looper#dump(android.util.Printer,%20kotlin.String))`(`pw:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Dumps the state of the looper for debugging purposes. |
 | static [Looper](https://developer.android.com/reference/kotlin/android/os/Looper#)! | [getMainLooper](https://developer.android.com/reference/kotlin/android/os/Looper#getMainLooper())`()` Returns the application's main looper, which lives in the main thread of the application. |
 | [MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue) | [getQueue](https://developer.android.com/reference/kotlin/android/os/Looper#getQueue())`()` Gets this looper's message queue. |
+| --- | --- |
 | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#) | [getThread](https://developer.android.com/reference/kotlin/android/os/Looper#getThread())`()` Gets the Thread associated with this Looper. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCurrentThread](https://developer.android.com/reference/kotlin/android/os/Looper#isCurrentThread())`()` Returns true if the current thread is this looper's thread. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loop](https://developer.android.com/reference/kotlin/android/os/Looper#loop())`()` Run the message queue in this thread. |
+| --- | --- |
 | static [Looper](https://developer.android.com/reference/kotlin/android/os/Looper#)? | [myLooper](https://developer.android.com/reference/kotlin/android/os/Looper#myLooper())`()` Return the Looper object associated with the current thread. |
 | static [MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue) | [myQueue](https://developer.android.com/reference/kotlin/android/os/Looper#myQueue())`()` Return the [MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue) object associated with the current thread. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [prepare](https://developer.android.com/reference/kotlin/android/os/Looper#prepare())`()` Initialize the current thread as a looper. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [prepareMainLooper](https://developer.android.com/reference/kotlin/android/os/Looper#prepareMainLooper())`()` Initialize the current thread as a looper, marking it as an application's main looper. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [quit](https://developer.android.com/reference/kotlin/android/os/Looper#quit())`()` Quits the looper. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [quitSafely](https://developer.android.com/reference/kotlin/android/os/Looper#quitSafely())`()` Quits the looper safely. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMessageLogging](https://developer.android.com/reference/kotlin/android/os/Looper#setMessageLogging(android.util.Printer))`(`printer:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)?`)` Control logging of messages as they are processed by this Looper. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/Looper#toString())`()` <br /> |
 

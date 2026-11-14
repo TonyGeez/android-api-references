@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # OnWindowFocusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowFocusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnWindowFocusChangeListener

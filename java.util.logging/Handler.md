@@ -9,11 +9,14 @@ abstract class Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler#) |
 
 | Known Direct Subclasses [MemoryHandler](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler), [StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler) |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [MemoryHandler](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler) | Handler that buffers requests in a circular buffer in memory. | | [StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler) | Stream based logging Handler. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ConsoleHandler](https://developer.android.com/reference/kotlin/java/util/logging/ConsoleHandler), [FileHandler](https://developer.android.com/reference/kotlin/java/util/logging/FileHandler), [SocketHandler](https://developer.android.com/reference/kotlin/java/util/logging/SocketHandler) |---------------------------------------------------------------------------------------------------|---------------------------------------------------| | [ConsoleHandler](https://developer.android.com/reference/kotlin/java/util/logging/ConsoleHandler) | This Handler publishes log records to System.err. | | [FileHandler](https://developer.android.com/reference/kotlin/java/util/logging/FileHandler) | Simple file logging Handler. | | [SocketHandler](https://developer.android.com/reference/kotlin/java/util/logging/SocketHandler) | Simple network logging Handler. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Handler object takes log messages from a Logger and exports them. It might for example, write them to a console or write them to a file, or send them to a network logging service, or forward them to an OS log, or whatever.
 
@@ -32,15 +35,19 @@ Handler classes typically use LogManager properties to set default values for th
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/logging/Handler#close())`()` Close the Handler and free all associated resources. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/logging/Handler#flush())`()` Flush any buffered output. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](https://developer.android.com/reference/kotlin/java/util/logging/Handler#getEncoding())`()` Return the character encoding for this Handler. |
+| --- | --- |
 | open [ErrorManager](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager)! | [getErrorManager](https://developer.android.com/reference/kotlin/java/util/logging/Handler#getErrorManager())`()` Retrieves the ErrorManager for this Handler. |
 | open [Filter](https://developer.android.com/reference/kotlin/java/util/logging/Filter)! | [getFilter](https://developer.android.com/reference/kotlin/java/util/logging/Handler#getFilter())`()` Get the current Filter for this Handler. |
 | open [Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter)! | [getFormatter](https://developer.android.com/reference/kotlin/java/util/logging/Handler#getFormatter())`()` Return the Formatter for this Handler. |
+| --- | --- |
 | open [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)! | [getLevel](https://developer.android.com/reference/kotlin/java/util/logging/Handler#getLevel())`()` Get the log level specifying which messages will be logged by this Handler. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/java/util/logging/Handler#isLoggable(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Check if this Handler would actually log a given LogRecord. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](https://developer.android.com/reference/kotlin/java/util/logging/Handler#publish(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Publish a LogRecord. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](https://developer.android.com/reference/kotlin/java/util/logging/Handler#setEncoding(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the character encoding used by this Handler. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorManager](https://developer.android.com/reference/kotlin/java/util/logging/Handler#setErrorManager(java.util.logging.ErrorManager))`(`em:` ` [ErrorManager](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager)!`)` Define an ErrorManager for this Handler. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](https://developer.android.com/reference/kotlin/java/util/logging/Handler#setFilter(java.util.logging.Filter))`(`newFilter:` ` [Filter](https://developer.android.com/reference/kotlin/java/util/logging/Filter)!`)` Set a Filter to control output on this Handler. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatter](https://developer.android.com/reference/kotlin/java/util/logging/Handler#setFormatter(java.util.logging.Formatter))`(`newFormatter:` ` [Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter)!`)` Set a Formatter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](https://developer.android.com/reference/kotlin/java/util/logging/Handler#setLevel(java.util.logging.Level))`(`newLevel:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)!`)` Set the log level specifying which message levels will be logged by this Handler. |
 
@@ -326,3 +333,4 @@ Protected convenience method to report an error to this Handler's ErrorManager. 
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a descriptive string (may be null) |
 | `ex` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:an exception (may be null) |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an error code defined in ErrorManager |
+| --- | --- |

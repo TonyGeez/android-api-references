@@ -5,6 +5,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # DisplayListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DisplayListener
@@ -21,6 +22,7 @@ Listens for changes in available display devices.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayAdded](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayAdded(kotlin.Int))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a logical display has been added to the system. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayChanged](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayChanged(kotlin.Int))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever the properties of a logical [android.view.Display](https://developer.android.com/reference/kotlin/android/view/Display.html#), such as size and density, have changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayRemoved](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayRemoved(kotlin.Int))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a logical display has been removed from the system. |
+| --- | --- |
 
 ## Public methods
 

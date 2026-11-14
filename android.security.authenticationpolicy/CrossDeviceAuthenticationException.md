@@ -7,9 +7,11 @@ class CrossDeviceAuthenticationException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.security.authenticationpolicy.CrossDeviceAuthenticationException](https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#) |
+| --- | --- | --- | --- |
 
 Exception thrown when cross-device authentication fails.
 
@@ -20,9 +22,11 @@ Exception thrown when cross-device authentication fails.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_COMPANION_DEVICE_MANAGER_NOT_PRESENT:kotlin.Int` CompanionDeviceManager is not present on this device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_DECRYPTION_FAILED:kotlin.Int` Decryption of the payload failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_INVALID_PACKAGE:kotlin.Int` The calling package is invalid or not allowlisted. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_INVALID_TIMESTAMP:kotlin.Int` The request timestamp is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_NOT_IN_FOREGROUND:kotlin.Int` The calling package was not visible in the foreground. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_SERIALIZATION_FAILED:kotlin.Int` Serialization or deserialization of the request failed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_UNAUTHORIZED:kotlin.Int` The request is not authorized. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_UNKNOWN:kotlin.Int` Unknown error occurred. |
 
@@ -179,6 +183,7 @@ CrossDeviceAuthenticationException(
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_UNAUTHORIZED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_DECRYPTION_FAILED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_INVALID_PACKAGE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_INVALID_TIMESTAMP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_SERIALIZATION_FAILED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_NOT_IN_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#ERROR_COMPANION_DEVICE_MANAGER_NOT_PRESENT:kotlin.Int` |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html): This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

@@ -11,8 +11,10 @@ interface DTDHandler
 | [org.xml.sax.DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler#) |
 
 | Known Direct Subclasses [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler), [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase), [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler.html#), [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler) | Default base class for SAX2 event handlers. | | [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase) | Default base class for handlers. | | [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler.html#) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | | [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) | Base class for deriving an XML filter. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler), [DeclHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DeclHandler), and [EntityResolver2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/EntityResolver2) extensions. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Receive notification of basic DTD-related events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -58,6 +60,7 @@ There is no guarantee that the notation declaration will be reported before any 
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The notation name. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The notation's public identifier, or null if none was given. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The notation's system identifier, or null if none was given. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -92,6 +95,7 @@ If the system identifier is a URL, the parser must resolve it fully before passi
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The unparsed entity's name. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The entity's public identifier, or null if none was given. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The entity's system identifier. |
+| --- | --- |
 | `notationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the associated notation. |
 
 | Exceptions ||

@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Sampler
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Sampler "View this page in Java") 
+| --- | --- |
 
 ```
 open class Sampler : BaseObj
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
 | | ↳ | [android.renderscript.Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#) |
 
@@ -33,15 +35,19 @@ Sampler object that defines how Allocations can be read as textures within a ker
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [CLAMP_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#CLAMP_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to clamp. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [CLAMP_LINEAR_MIP_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#CLAMP_LINEAR_MIP_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to clamp. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [CLAMP_NEAREST](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#CLAMP_NEAREST(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to clamp. |
+| --- | --- |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [MIRRORED_REPEAT_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#MIRRORED_REPEAT_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [MIRRORED_REPEAT_LINEAR_MIP_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#MIRRORED_REPEAT_LINEAR_MIP_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [MIRRORED_REPEAT_NEAREST](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#MIRRORED_REPEAT_NEAREST(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to mirrored repeat. |
+| --- | --- |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [WRAP_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#WRAP_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to wrap. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [WRAP_LINEAR_MIP_LINEAR](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#WRAP_LINEAR_MIP_LINEAR(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to wrap. |
 | openstatic [Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#)! | [WRAP_NEAREST](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#WRAP_NEAREST(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to wrap. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAnisotropy](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#getAnisotropy())`()` <br /> |
 | open [Sampler.Value](https://developer.android.com/reference/kotlin/android/renderscript/Sampler.Value)! | [getMagnification](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#getMagnification())`()` <br /> |
 | open [Sampler.Value](https://developer.android.com/reference/kotlin/android/renderscript/Sampler.Value)! | [getMinification](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#getMinification())`()` <br /> |
+| --- | --- |
 | open [Sampler.Value](https://developer.android.com/reference/kotlin/android/renderscript/Sampler.Value)! | [getWrapS](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#getWrapS())`()` <br /> |
 | open [Sampler.Value](https://developer.android.com/reference/kotlin/android/renderscript/Sampler.Value)! | [getWrapT](https://developer.android.com/reference/kotlin/android/renderscript/Sampler#getWrapT())`()` <br /> |
 

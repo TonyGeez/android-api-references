@@ -9,11 +9,14 @@ abstract class AbstractSequentialList<E : Any!> : AbstractList<E>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> |||
 | | ↳ | [java.util.AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList)\<E\> ||
 | | | ↳ | [java.util.AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList) |-----------------------------------------------------------------------------------|---------------------------------------------------------------------| | [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList) | Doubly-linked list implementation of the`List`and`Deque`interfaces. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). For random access data (such as an array),`AbstractList`should be used in preference to this class.
 
@@ -38,9 +41,11 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#add(kotlin.Int,%20java.util.AbstractSequentialList.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Inserts the specified element at the specified position in this list (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#addAll(kotlin.Int,%20kotlin.collections.Collection))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Inserts all of the elements in the specified collection into this list at the specified position (optional operation). |
 | openE | [get](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the element at the specified position in this list. |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#iterator())`()` Returns an iterator over the elements in this list (in proper sequence). |
 | abstract [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#listIterator(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list iterator over the elements in this list (in proper sequence). |
 | openE | [removeAt](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#removeAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes the element at the specified position in this list (optional operation). |
+| --- | --- |
 | openE | [set](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#set(kotlin.Int,%20java.util.AbstractSequentialList.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Replaces the element at the specified position in this list with the specified element (optional operation). |
 
 | Inherited functions ||
@@ -94,6 +99,7 @@ Note that this implementation will throw an`UnsupportedOperationException`if the
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
 
@@ -128,6 +134,7 @@ Note that this implementation will throw an`UnsupportedOperationException`if the
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements, or if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
 
@@ -251,5 +258,6 @@ Note that this implementation will throw an`UnsupportedOperationException`if the
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index >= size()`) |

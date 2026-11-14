@@ -9,9 +9,11 @@ open class ServerSocket : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.ServerSocket](https://developer.android.com/reference/kotlin/java/net/ServerSocket#) |
 
 | Known Direct Subclasses [SSLServerSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket.html#) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLServerSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket.html#) | This class extends`ServerSocket`s and provides secure server sockets using protocols such as the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements server sockets. A server socket waits for requests to come in over the network. It performs some operation based on that request, and then possibly returns a result to the requester.
 
@@ -31,24 +33,31 @@ The actual work of the server socket is performed by an instance of the`SocketIm
 | open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket)! | [accept](https://developer.android.com/reference/kotlin/java/net/ServerSocket#accept())`()` Listens for a connection to be made to this socket and accepts it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](https://developer.android.com/reference/kotlin/java/net/ServerSocket#bind(java.net.SocketAddress))`(`endpoint:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`)` Binds the`ServerSocket`to a specific address (IP address and port number). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](https://developer.android.com/reference/kotlin/java/net/ServerSocket#bind(java.net.SocketAddress,%20kotlin.Int))`(`endpoint:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`, `backlog:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Binds the`ServerSocket`to a specific address (IP address and port number). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/net/ServerSocket#close())`()` Closes this socket. |
 | open [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#)! | [getChannel](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getChannel())`()` Returns the unique [java.nio.channels.ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#) object associated with this socket, if any. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getInetAddress](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getInetAddress())`()` Returns the local address of this server socket. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getLocalPort())`()` Returns the port number on which this socket is listening. |
 | open [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)! | [getLocalSocketAddress](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getLocalSocketAddress())`()` Returns the address of the endpoint this socket is bound to. |
 | openT | [getOption](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getOption(java.net.SocketOption))`(`name:` ` [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)<T>!`)` Returns the value of a socket option. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getReceiveBufferSize())`()` Gets the value of the [SO_RCVBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_RCVBUF:kotlin.Int) option for this`ServerSocket`, that is the proposed buffer size that will be used for Sockets accepted from this`ServerSocket`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getReuseAddress](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getReuseAddress())`()` Tests if [SO_REUSEADDR](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEADDR:kotlin.Int) is enabled. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](https://developer.android.com/reference/kotlin/java/net/ServerSocket#getSoTimeout())`()` Retrieve setting for [SO_TIMEOUT](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_TIMEOUT:kotlin.Int). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](https://developer.android.com/reference/kotlin/java/net/ServerSocket#isBound())`()` Returns the binding state of the ServerSocket. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/java/net/ServerSocket#isClosed())`()` Returns the closed state of the ServerSocket. |
 | open [ServerSocket](https://developer.android.com/reference/kotlin/java/net/ServerSocket#)! | [setOption](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setOption(java.net.SocketOption,%20java.net.ServerSocket.setOption.T))`(`name:` ` [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)<T>!`, `value:` `T`)` Sets the value of a socket option. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerformancePreferences](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setPerformancePreferences(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`connectionTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `latency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bandwidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets performance preferences for this ServerSocket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setReceiveBufferSize(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a default proposed value for the [SO_RCVBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_RCVBUF:kotlin.Int) option for sockets accepted from this`ServerSocket`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReuseAddress](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setReuseAddress(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable the [SO_REUSEADDR](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEADDR:kotlin.Int) socket option. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setSoTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_TIMEOUT](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_TIMEOUT:kotlin.Int) with the specified timeout, in milliseconds. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketFactory](https://developer.android.com/reference/kotlin/java/net/ServerSocket#setSocketFactory(java.net.SocketImplFactory))`(`fac:` ` [SocketImplFactory](https://developer.android.com/reference/kotlin/java/net/SocketImplFactory)!`)` Sets the server socket implementation factory for the application. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<\*\>!\>! | [supportedOptions](https://developer.android.com/reference/kotlin/java/net/ServerSocket#supportedOptions())`()` Returns a set of the socket options supported by this server socket. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/ServerSocket#toString())`()` Returns the implementation address and implementation port of this socket as a`String`. |
 
 | Protected methods ||
@@ -96,6 +105,7 @@ If there is a security manager, its`checkListen`method is called with the`port`a
 | `java.io.IOException` | if an I/O error occurs when opening the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -132,6 +142,7 @@ If there is a security manager, its`checkListen`method is called with the`port`a
 | `java.io.IOException` | if an I/O error occurs when opening the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -160,12 +171,14 @@ If there is a security manager, this method calls its`checkListen`method with th
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port number, or`0`to use a port number that is automatically allocated. |
 | `backlog` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):requested maximum length of the queue of incoming connections. |
 | `bindAddr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:the local InetAddress the server will bind to |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.io.IOException` | if an I/O error occurs when opening the socket. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -196,6 +209,7 @@ A new Socket`s`is created and, if there is a security manager, the security mana
 | `java.io.IOException` | if an I/O error occurs when waiting for a connection. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkAccept`method doesn't allow the operation. |
 | `java.net.SocketTimeoutException` | if a timeout was previously set with setSoTimeout and the timeout has been reached. |
+| --- | --- |
 | `java.nio.channels.IllegalBlockingModeException` | if this socket has an associated channel, the channel is in non-blocking mode, and there is no connection ready to be accepted |
 
 **See Also**
@@ -223,6 +237,7 @@ If the address is`null`, then the system will pick up an ephemeral port and a va
 | `java.io.IOException` | if the bind operation fails, or if the socket is already bound. |
 | `java.lang.SecurityException` | if a`SecurityManager`is present and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if endpoint is a SocketAddress subclass not supported by this socket |
+| --- | --- |
 
 ### bind
 
@@ -251,6 +266,7 @@ The`backlog`argument is the requested maximum number of pending connections on t
 | `java.io.IOException` | if the bind operation fails, or if the socket is already bound. |
 | `java.lang.SecurityException` | if a`SecurityManager`is present and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if endpoint is a SocketAddress subclass not supported by this socket |
+| --- | --- |
 
 ### close
 
@@ -269,6 +285,7 @@ If this socket has an associated channel then the channel is closed as well.
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.io.IOException` | if an I/O error occurs when closing the socket. |
+| --- | --- |
 
 ### getChannel
 
@@ -370,6 +387,7 @@ Returns the value of a socket option.
 | `java.lang.UnsupportedOperationException` | if the server socket does not support the option. |
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
 | `java.lang.NullPointerException` | if name is`null` |
+| --- | --- |
 | `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions) do not require any security permission. |
 
 ### getReceiveBufferSize
@@ -486,6 +504,7 @@ Sets the value of a socket option.
 | `<T>` | The type of the socket option value |
 | `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<T\>!:The socket option |
 | `value` | T:The value of the socket option. A value of`null`may be valid for some options. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------|
@@ -496,6 +515,7 @@ Sets the value of a socket option.
 | `java.lang.UnsupportedOperationException` | if the server socket does not support the option. |
 | `java.lang.IllegalArgumentException` | if the value is not valid for the option. |
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
+| --- | --- |
 | `java.lang.NullPointerException` | if name is`null` |
 | `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions) do not require any security permission. |
 
@@ -524,6 +544,7 @@ Invoking this method after this socket has been bound will have no effect. This 
 | `connectionTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of a short connection time |
 | `latency` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of low latency |
 | `bandwidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of high bandwidth |
+| --- | --- |
 
 ### setReceiveBufferSize
 
@@ -634,6 +655,7 @@ If there is a security manager, this method first calls the security manager's`c
 | `java.io.IOException` | if an I/O error occurs when setting the socket factory. |
 | `java.net.SocketException` | if the factory has already been defined. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkSetFactory`method doesn't allow the operation. |
+| --- | --- |
 
 **See Also**
 

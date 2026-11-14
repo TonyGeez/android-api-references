@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # GLDebugHelper
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLDebugHelper "View this page in Java") 
+| --- | --- |
 
 ```
 open class GLDebugHelper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.GLDebugHelper](https://developer.android.com/reference/kotlin/android/opengl/GLDebugHelper#) |
 
 A helper class for debugging OpenGL ES applications. Wraps the supplied GL interface with a new GL interface that adds support for error checking and logging.
@@ -22,6 +24,7 @@ A helper class for debugging OpenGL ES applications. Wraps the supplied GL inter
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_GL_ERROR](https://developer.android.com/reference/kotlin/android/opengl/GLDebugHelper#CONFIG_CHECK_GL_ERROR:kotlin.Int) Check glError() after every call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_THREAD](https://developer.android.com/reference/kotlin/android/opengl/GLDebugHelper#CONFIG_CHECK_THREAD:kotlin.Int) Check if all calls are on the same thread. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_LOG_ARGUMENT_NAMES](https://developer.android.com/reference/kotlin/android/opengl/GLDebugHelper#CONFIG_LOG_ARGUMENT_NAMES:kotlin.Int) Print argument names when logging GL Calls. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_WRONG_THREAD](https://developer.android.com/reference/kotlin/android/opengl/GLDebugHelper#ERROR_WRONG_THREAD:kotlin.Int) The Error number used in the GLException that is thrown if CONFIG_CHECK_THREAD is enabled and you call OpenGL ES on the a different thread. |
 
 | Public constructors ||
@@ -112,6 +115,7 @@ Wrap an existing EGL interface in a new EGL interface that adds support for erro
 | `egl` | [EGL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL.html#)!:the existing GL interface. Must implement EGL and EGL10. May optionally implement EGL11 as well. |
 | `configFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A bitmask of error checking flags. |
 | `log` | [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)!:- null to disable logging, non-null to enable logging. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------|

@@ -9,6 +9,7 @@ class ProcessBuilder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#) |
 
 This class is used to create operating system processes.
@@ -86,21 +87,27 @@ To start a process with an explicit set of environment variables, first call [Ma
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [command](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#command())`()` Returns this process builder's operating system program and arguments. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [command](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#command(kotlin.String))`(`vararg` `command:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets this process builder's operating system program and arguments. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [command](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#command(kotlin.collections.MutableList))`(`command:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets this process builder's operating system program and arguments. |
+| --- | --- |
 | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [directory](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#directory())`()` Returns this process builder's working directory. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [directory](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#directory(java.io.File))`(`directory:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Sets this process builder's working directory. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [environment](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#environment())`()` Returns a string map view of this process builder's environment. |
+| --- | --- |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [inheritIO](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#inheritIO())`()` Sets the source and destination for subprocess standard I/O to be the same as those of the current Java process. |
 | [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)! | [redirectError](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectError())`()` Returns this process builder's standard error destination. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectError](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectError(java.io.File))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Sets this process builder's standard error destination to a file. |
+| --- | --- |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectError](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectError(java.lang.ProcessBuilder.Redirect))`(`destination:` ` [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)!`)` Sets this process builder's standard error destination. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [redirectErrorStream](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectErrorStream())`()` Tells whether this process builder merges standard error and standard output. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectErrorStream](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectErrorStream(kotlin.Boolean))`(`redirectErrorStream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets this process builder's`redirectErrorStream`property. |
+| --- | --- |
 | [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)! | [redirectInput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectInput())`()` Returns this process builder's standard input source. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectInput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectInput(java.io.File))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Sets this process builder's standard input source to a file. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectInput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectInput(java.lang.ProcessBuilder.Redirect))`(`source:` ` [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)!`)` Sets this process builder's standard input source. |
+| --- | --- |
 | [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)! | [redirectOutput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectOutput())`()` Returns this process builder's standard output destination. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectOutput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectOutput(java.io.File))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Sets this process builder's standard output destination to a file. |
 | [ProcessBuilder](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#)! | [redirectOutput](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectOutput(java.lang.ProcessBuilder.Redirect))`(`destination:` ` [ProcessBuilder.Redirect](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder.Redirect)!`)` Sets this process builder's standard output destination. |
+| --- | --- |
 | [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [start](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#start())`()` Starts a new process using the attributes of this process builder. |
 
 ## Public constructors
@@ -545,6 +552,7 @@ Subsequent modifications to this process builder will not affect the returned [P
 | `java.lang.NullPointerException` | if an element of the command list is null |
 | `java.lang.IndexOutOfBoundsException` | if the command is an empty list (has size`0`) |
 | `java.lang.SecurityException` | if a security manager exists and - its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String))method doesn't allow creation of the subprocess, or - the standard input to the subprocess was #redirectInput and the security manager's java.lang.SecurityManager#checkRead method denies read access to the file, or - the standard output or standard error of the subprocess was #redirectOutput and the security manager's java.lang.SecurityManager#checkWrite method denies write access to the file |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
 
 **See Also**

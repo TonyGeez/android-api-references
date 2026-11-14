@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # MediaController2
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaController2 "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaController2 : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaController2](https://developer.android.com/reference/kotlin/android/media/MediaController2#) |
 
 This API is not generally intended for third party application developers. Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Media3 session Library](https://developer.android.com/media/media3/session/control-playback) for consistent behavior across all devices. Allows an app to interact with an active [MediaSession2](https://developer.android.com/reference/kotlin/android/media/MediaSession2) or a [MediaSession2Service](https://developer.android.com/reference/kotlin/android/media/MediaSession2Service) which would provide [MediaSession2](https://developer.android.com/reference/kotlin/android/media/MediaSession2).
@@ -27,6 +29,7 @@ This API is not generally intended for third party application developers. Use t
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSessionCommand](https://developer.android.com/reference/kotlin/android/media/MediaController2#cancelSessionCommand(kotlin.Any))`(`token:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Cancels the session command previously sent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/MediaController2#close())`()` <br /> |
 | open [Session2Token](https://developer.android.com/reference/kotlin/android/media/Session2Token)? | [getConnectedToken](https://developer.android.com/reference/kotlin/android/media/MediaController2#getConnectedToken())`()` Returns [Session2Token](https://developer.android.com/reference/kotlin/android/media/Session2Token) of the connected session. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPlaybackActive](https://developer.android.com/reference/kotlin/android/media/MediaController2#isPlaybackActive())`()` Returns whether the session's playback is active. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [sendSessionCommand](https://developer.android.com/reference/kotlin/android/media/MediaController2#sendSessionCommand(android.media.Session2Command,%20android.os.Bundle))`(`command:` ` [Session2Command](https://developer.android.com/reference/kotlin/android/media/Session2Command)`, `args:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Sends a session command to the session |
 

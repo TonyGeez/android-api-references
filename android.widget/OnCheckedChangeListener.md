@@ -3,6 +3,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnCheckedChangeListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/CompoundButton.OnCheckedChangeListener "View this page in Java")
+| --- | --- |
 
 ```
 interface OnCheckedChangeListener

@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SpellCheckerSubtype
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/SpellCheckerSubtype "View this page in Java") 
+| --- | --- |
 
 ```
 class SpellCheckerSubtype : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#) |
 
 This class is used to specify meta information of a subtype contained in a spell checker. Subtype can describe locale (e.g. en_US, fr_FR...) used for settings.
@@ -22,6 +24,7 @@ This class is used to specify meta information of a subtype contained in a spell
 | [`android:label`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The name of the subtype. |
 | [`android:languageTag`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The BCP-47 Language Tag of the subtype. |
 | [`android:subtypeExtraValue`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The extra value of the subtype. |
+| --- | --- |
 | [`android:subtypeId`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The unique id for the subtype. |
 | [`android:subtypeLocale`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The locale of the subtype. |
 
@@ -38,12 +41,15 @@ This class is used to specify meta information of a subtype contained in a spell
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#containsExtraValueKey(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getDisplayName(android.content.Context,%20kotlin.String,%20android.content.pm.ApplicationInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getExtraValue())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getExtraValueOf(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLanguageTag())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLocale())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getNameResId())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -122,6 +128,7 @@ Constructor.
 | `nameId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The name of the subtype |
 | `locale` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The locale supported by the subtype |
 | `extraValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The extra value of the subtype |
+| --- | --- |
 
 ## Public methods
 
@@ -201,6 +208,7 @@ fun getDisplayName(
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context will be used for getting Locale and PackageManager. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package name of the spell checker |
 | `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!:The application info of the spell checker |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

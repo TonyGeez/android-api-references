@@ -11,6 +11,7 @@ interface BasicFileAttributes
 | [java.nio.file.attribute.BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#) |
 
 | Known Direct Subclasses [DosFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes), [PosixFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes) |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DosFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes) | File attributes associated with a file in a file system that supports legacy "DOS" attributes. | | [PosixFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes) | File attributes associated with files on file systems used by operating systems that implement the Portable Operating System Interface (POSIX) family of standards. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Basic attributes associated with a file in a file system.
 
@@ -31,12 +32,15 @@ Path file = ...
 | abstract [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)! | [creationTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#creationTime())`()` Returns the creation time. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [fileKey](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#fileKey())`()` Returns an object that uniquely identifies the given file, or`null`if a file key is not available. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirectory](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#isDirectory())`()` Tells whether the file is a directory. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOther](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#isOther())`()` Tells whether the file is something other than a regular file, directory, or symbolic link. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRegularFile](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#isRegularFile())`()` Tells whether the file is a regular file with opaque content. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSymbolicLink](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#isSymbolicLink())`()` Tells whether the file is a symbolic link. |
+| --- | --- |
 | abstract [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)! | [lastAccessTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#lastAccessTime())`()` Returns the time of last access. |
 | abstract [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)! | [lastModifiedTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#lastModifiedTime())`()` Returns the time of last modification. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#size())`()` Returns the size of the file (in bytes). |
+| --- | --- |
 
 ## Public methods
 

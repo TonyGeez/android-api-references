@@ -5,15 +5,18 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # KeyChainException
 
 Kotlin | [Java](https://developer.android.com/reference/android/security/KeyChainException "View this page in Java") 
+| --- | --- |
 
 ```
 open class KeyChainException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.security.KeyChainException](https://developer.android.com/reference/kotlin/android/security/KeyChainException#) |
+| --- | --- | --- | --- |
 
 Thrown on problems accessing the [KeyChain](https://developer.android.com/reference/kotlin/android/security/KeyChain).
 

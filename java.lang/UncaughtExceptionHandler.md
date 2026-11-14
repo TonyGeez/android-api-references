@@ -11,6 +11,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 | [java.lang.Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler#) |
 
 | Known Direct Subclasses [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup) |-------------------------------------------------------------------------------------|---------------------------------------------| | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup) | A thread group represents a set of threads. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface for handlers invoked when a`Thread`abruptly terminates due to an uncaught exception.
 

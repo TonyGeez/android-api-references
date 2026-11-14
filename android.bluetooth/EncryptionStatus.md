@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # EncryptionStatus
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/EncryptionStatus "View this page in Java") 
+| --- | --- |
 
 ```
 class EncryptionStatus
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.EncryptionStatus](https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus#) |
 
 Represents the encryption status of a Bluetooth device.
@@ -28,6 +30,7 @@ This class is used to hold the encryption status details like key size and algor
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlgorithm](https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus#getAlgorithm())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeySize](https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus#getKeySize())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus#toString())`()` <br /> |
+| --- | --- |
 
 ## Public constructors
 

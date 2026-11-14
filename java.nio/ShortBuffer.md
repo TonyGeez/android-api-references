@@ -9,6 +9,7 @@ abstract class ShortBuffer : Buffer, Comparable<ShortBuffer!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
 | | ↳ | [java.nio.ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#) |
 
@@ -34,42 +35,55 @@ Methods in this class that do not otherwise have a value to return are specified
 | openstatic [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [allocate](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#allocate(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new short buffer. |
 | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#array())`()` Returns the short array that backs this buffer*(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| --- | --- |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [asReadOnlyBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#asReadOnlyBuffer())`()` Creates a new, read-only short buffer that shares this buffer's content. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [clear](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#clear())`()` Clears this buffer. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [compact](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#compareTo(java.nio.ShortBuffer))`(`other:` ` [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)!`)` Compares this buffer to another. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#duplicate())`()` Creates a new short buffer that shares this buffer's content. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [flip](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#flip())`()` Flips this buffer. |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get())`()` Relative*get*method. |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| --- | --- |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get(kotlin.Int,%20kotlin.ShortArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*get*method. |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get(kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get(kotlin.ShortArray))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*get*method. |
+| --- | --- |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#get(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible short array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#hashCode())`()` Returns the current hash code of this buffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#isDirect())`()` Tells whether or not this short buffer is direct. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [limit](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [mark](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#mark())`()` Sets this buffer's mark at its position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#mismatch(java.nio.ShortBuffer))`(`that:` ` [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
 | abstract [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | [order](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#order())`()` Retrieves this buffer's byte order. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [position](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| --- | --- |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.Int,%20java.nio.ShortBuffer,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.Int,%20kotlin.Short))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Absolute*put* method*(optional operation)*. |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.Int,%20kotlin.ShortArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(java.nio.ShortBuffer))`(`src:` ` [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)!`)` Relative bulk*put* method*(optional operation)*. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.Short))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Relative*put* method*(optional operation)*. |
+| --- | --- |
 | [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.ShortArray))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#put(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [reset](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#rewind())`()` Rewinds this buffer. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#slice())`()` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#toString())`()` Returns a string summarizing the state of this buffer. |
 | openstatic [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#wrap(kotlin.ShortArray))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Wraps a short array into a buffer. |
 | openstatic [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#wrap(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a short array into a buffer. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -411,6 +425,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer from which the first short will be read; must be non-negative and less than`limit()` |
 | `dst` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!:The destination array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first short to be written; must be non-negative and less than`dst.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of shorts to be written to the given array; must be non-negative and no larger than the smaller of`limit() - index`and`dst.length - offset` |
 
 | Return ||
@@ -481,6 +496,7 @@ except that it first checks that there are sufficient shorts in this buffer and 
 | `dst` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!:The array into which shorts are to be written |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first short to be written; must be non-negative and no larger than`dst.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of shorts to be written to the given array; must be non-negative and no larger than`dst.length - offset` |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
@@ -664,6 +680,7 @@ except that it first checks the consistency of the supplied parameters and it is
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first short will be written; must be non-negative and less than`limit()` |
 | `src` | [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer#)!:The buffer from which shorts are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first short to be read; must be non-negative and less than`src.limit()` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of shorts to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
@@ -767,6 +784,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first short will be written; must be non-negative and less than`limit()` |
 | `src` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!:The array from which shorts are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first short to be read; must be non-negative and less than`src.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of shorts to be read from the given array; must be non-negative and no larger than the smaller of`limit() - index`and`src.length - offset` |
 
 | Return ||
@@ -813,6 +831,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer for the remaining shorts in the source buffer |
 | `java.lang.IllegalArgumentException` | If the source buffer is this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -900,6 +919,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!:The array from which shorts are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first short to be read; must be non-negative and no larger than`src.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of shorts to be read from the given array; must be non-negative and no larger than`src.length - offset` |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
@@ -910,6 +930,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### reset
 
@@ -1056,6 +1077,7 @@ The new buffer will be backed by the given short array; that is, modifications t
 | `array` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!:The array that will back the new buffer |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset of the subarray to be used; must be non-negative and no larger than`array.length`. The new buffer's position will be set to this value. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the subarray to be used; must be non-negative and no larger than`array.length - offset`. The new buffer's limit will be set to`offset + length`. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|

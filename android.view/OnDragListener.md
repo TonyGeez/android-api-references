@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnDragListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/View.OnDragListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDragListener

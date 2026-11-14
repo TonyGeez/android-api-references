@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # GestureStore
 
 Kotlin | [Java](https://developer.android.com/reference/android/gesture/GestureStore "View this page in Java") 
+| --- | --- |
 
 ```
 open class GestureStore
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.gesture.GestureStore](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#) |
 
 GestureLibrary maintains gesture examples and makes predictions on a new gesture
@@ -22,6 +24,7 @@ GestureLibrary maintains gesture examples and makes predictions on a new gesture
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_INVARIANT](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#ORIENTATION_INVARIANT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_SENSITIVE](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#ORIENTATION_SENSITIVE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEQUENCE_INVARIANT](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#SEQUENCE_INVARIANT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEQUENCE_SENSITIVE](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#SEQUENCE_SENSITIVE:kotlin.Int) <br /> |
 
 | Public constructors ||
@@ -33,18 +36,23 @@ GestureLibrary maintains gesture examples and makes predictions on a new gesture
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addGesture](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#addGesture(kotlin.String,%20android.gesture.Gesture))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` Add a gesture for the entry |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getGestureEntries](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#getGestureEntries())`()` Get all the gesture entry names in the library |
 | open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!\>! | [getGestures](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#getGestures(kotlin.String))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get all the gestures of an entry |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrientationStyle](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#getOrientationStyle())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequenceType](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#getSequenceType())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasChanged](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#hasChanged())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#load(java.io.InputStream))`(`stream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Load the gesture library |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#load(java.io.InputStream,%20kotlin.Boolean))`(`stream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `closeStream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Prediction](https://developer.android.com/reference/kotlin/android/gesture/Prediction)!\>! | [recognize](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#recognize(android.gesture.Gesture))`(`gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` Recognize a gesture |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEntry](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#removeEntry(kotlin.String))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Remove a entry of gestures |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeGesture](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#removeGesture(kotlin.String,%20android.gesture.Gesture))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` Remove a gesture from the library. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [save](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#save(java.io.OutputStream))`(`stream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Save the gesture library |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [save](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#save(java.io.OutputStream,%20kotlin.Boolean))`(`stream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`, `closeStream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientationStyle](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#setOrientationStyle(kotlin.Int))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify how the gesture library will handle orientation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSequenceType](https://developer.android.com/reference/kotlin/android/gesture/GestureStore#setSequenceType(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 ## Constants
 

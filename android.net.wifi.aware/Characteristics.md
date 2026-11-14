@@ -7,6 +7,7 @@ class Characteristics : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.Characteristics](https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#) |
 
 The characteristics of the Wi-Fi Aware implementation.
@@ -18,9 +19,11 @@ The characteristics of the Wi-Fi Aware implementation.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_PK_128:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS PK 2WDH 128: 128 bit public-key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_PK_256:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS 2WDH 256: 256 bit public-key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_PK_PASN_128:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS PASN 128: 128 bit public-key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_PK_PASN_256:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS PASN 256: 256 bit public-key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_SK_128:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS SK 128: 128 bit shared-key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NCS_SK_256:kotlin.Int` Wi-Fi Aware supported cipher suite representing NCS SK 256: 256 bit shared-key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#WIFI_AWARE_CIPHER_SUITE_NONE:kotlin.Int` Wi-Fi Aware supported open (unencrypted) data-path. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
@@ -40,18 +43,23 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getMaxMatchFilterLength()()` Returns the maximum length of byte array that can be used to specify a Aware match filter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getMaxServiceNameLength()()` Returns the maximum string length that can be used to specify a Aware service name. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getMaxServiceSpecificInfoLength()()` Returns the maximum length of byte array that can be used to specify a Aware service specific information field: the arbitrary load used in discovery or the message length of Aware message exchange. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getNumberOfSupportedDataInterfaces()()` Returns the maximum number of Aware data interfaces supported by the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getNumberOfSupportedDataPaths()()` Returns the maximum number of Aware data paths(also known as NDPs - NAN Data Paths) supported by the device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getNumberOfSupportedPublishSessions()()` Returns the maximum number of Aware publish sessions supported by the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getNumberOfSupportedSubscribeSessions()()` Returns the maximum number of Aware subscribe session supported by the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getSupportedCipherSuites()()` Returns the set of cipher suites supported by the device for use in Wi-Fi Aware data-paths. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getSupportedOffloadBootstrappingMethods()()` Returns the supported bootstrapping methods for framework offloaded auto-pairing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#getSupportedPairingCipherSuites()()` Returns the set of cipher suites supported by the device for use in Wi-Fi Aware pairing. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#isAwarePairingSupported()()` Check if the Aware Pairing and all associated security features as defined in Wi-Fi Alliance (WFA) Wi-Fi Aware Specification version 4. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#isInstantCommunicationModeSupported()()` Check if instant communication mode is supported by device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#isSuspensionSupported()()` Check if Aware Suspension is supported. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

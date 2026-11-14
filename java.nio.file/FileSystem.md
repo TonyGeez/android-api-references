@@ -9,6 +9,7 @@ abstract class FileSystem : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#) |
 
 Provides an interface to a file system and is the factory for objects to access files and other objects in the file system.
@@ -42,15 +43,19 @@ File systems are safe for use by multiple concurrent threads. The #close method 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#close())`()` Closes this file system. |
 | abstract [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)\< [FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore)!\>! | [getFileStores](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getFileStores())`()` Returns an object to iterate over the underlying file stores. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)! | [getPath](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getPath(kotlin.String,%20kotlin.String))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a path string, or a sequence of strings that when joined form a path string, to a`Path`. |
+| --- | --- |
 | abstract [PathMatcher](https://developer.android.com/reference/kotlin/java/nio/file/PathMatcher)! | [getPathMatcher](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getPathMatcher(kotlin.String))`(`syntaxAndPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`PathMatcher`that performs match operations on the`String`representation of [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) objects by interpreting a given pattern. |
 | abstract [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)!\>! | [getRootDirectories](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getRootDirectories())`()` Returns an object to iterate over the paths of the root directories. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSeparator](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getSeparator())`()` Returns the name separator, represented as a string. |
+| --- | --- |
 | abstract [UserPrincipalLookupService](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipalLookupService)! | [getUserPrincipalLookupService](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getUserPrincipalLookupService())`()` Returns the`UserPrincipalLookupService`for this file system*(optional operation)*. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#isOpen())`()` Tells whether or not this file system is open. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#isReadOnly())`()` Tells whether or not this file system allows only read-only access to its file stores. |
+| --- | --- |
 | abstract [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)! | [newWatchService](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#newWatchService())`()` Constructs a new [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)*(optional operation)*. |
 | abstract [FileSystemProvider](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider)! | [provider](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#provider())`()` Returns the provider that created this file system. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [supportedFileAttributeViews](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#supportedFileAttributeViews())`()` Returns the set of the [names](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AttributeView#name())of the file attribute views supported by this`FileSystem`. |
+| --- | --- |
 
 ## Protected constructors
 
@@ -85,6 +90,7 @@ Closing a file system will close all open , [directory-streams](https://develope
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.UnsupportedOperationException` | Thrown in the case of the default file system |
+| --- | --- |
 
 ### getFileStores
 
@@ -170,9 +176,11 @@ A`FileSystem`implementation supports the "`glob`" and "`regex`" syntaxes, and ma
 When the syntax is "`glob`" then the`String`representation of the path is matched using a limited pattern language that resembles regular expressions but with a simpler syntax. For example:
 
 | Example | Description |
+| --- | --- |
 | `*.java` | Matches a path that represents a file name ending in`.java` |
 | `*.*` | Matches file names containing a dot |
 | `*.{java,class}` | Matches file names ending with`.java`or`.class` |
+| --- | --- |
 | `foo.?` | Matches file names starting with`foo.`and a single character extension |
 | `/home/*/*` | Matches`/home/gus/data` |
 | `/home/**` | Matches`/home/gus`and`/home/gus/data` |
@@ -209,6 +217,7 @@ For both the glob and regex syntaxes, the matching details, such as whether the 
 | `java.lang.IllegalArgumentException` | If the parameter does not take the form:`syntax:pattern` |
 | `java.util.regex.PatternSyntaxException` | If the pattern is invalid |
 | `java.lang.UnsupportedOperationException` | If the pattern syntax is not known to the implementation |
+| --- | --- |
 
 **See Also**
 

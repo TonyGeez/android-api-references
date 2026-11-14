@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # GeomagneticField
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/GeomagneticField "View this page in Java") 
+| --- | --- |
 
 ```
 open class GeomagneticField
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.GeomagneticField](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#) |
 
 Estimates magnetic field at a given point on Earth, and in particular, to compute the magnetic declination from true north.
@@ -28,9 +30,11 @@ This uses the World Magnetic Model produced by the United States National Geospa
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDeclination](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getDeclination())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFieldStrength](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getFieldStrength())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHorizontalStrength](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getHorizontalStrength())`()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInclination](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getInclination())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getX())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getY())`()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getZ](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField#getZ())`()` <br /> |
 
 ## Public constructors
@@ -54,6 +58,7 @@ Estimate the magnetic field at a given point and time.
 | `gdLatitudeDeg` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Latitude in WGS84 geodetic coordinates -- positive is east. |
 | `gdLongitudeDeg` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Longitude in WGS84 geodetic coordinates -- positive is north. |
 | `altitudeMeters` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Altitude in WGS84 geodetic coordinates, in meters. |
+| --- | --- |
 | `timeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Time at which to evaluate the declination, in milliseconds since January 1, 1970. (approximate is fine -- the declination changes very slowly). |
 
 ## Public methods

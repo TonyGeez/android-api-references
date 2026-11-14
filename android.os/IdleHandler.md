@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # IdleHandler
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/MessageQueue.IdleHandler "View this page in Java") 
+| --- | --- |
 
 ```
 interface IdleHandler

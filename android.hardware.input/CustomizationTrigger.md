@@ -7,9 +7,11 @@ abstract class CustomizationTrigger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.input.CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger#) |
 
 | Known Direct Subclasses [ButtonCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger), [KeyCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger) |---|---| | [ButtonCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger) | Represents a trigger based on a physical button press on a peripheral (e.g., a mouse). | | [KeyCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger) | Represents a trigger based on a physical key press on a peripheral. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents a trigger that initiates a peripheral customization action.
 

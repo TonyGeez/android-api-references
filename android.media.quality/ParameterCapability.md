@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # ParameterCapability
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/ParameterCapability "View this page in Java") 
+| --- | --- |
 
 ```
 class ParameterCapability : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.ParameterCapability](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#) |
 
 Capability info of media quality parameters
@@ -22,12 +24,15 @@ Capability info of media quality parameters
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAPABILITY_DEFAULT](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#CAPABILITY_DEFAULT:kotlin.String) The key for the default value of this parameter. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAPABILITY_ENUM](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#CAPABILITY_ENUM:kotlin.String) The key for the enumeration of this parameter. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAPABILITY_MAX](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#CAPABILITY_MAX:kotlin.String) The key for the max possible value of this parameter. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAPABILITY_MIN](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#CAPABILITY_MIN:kotlin.String) The key for the min possible value of this parameter. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DOUBLE](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#TYPE_DOUBLE:kotlin.Int) Double parameter type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_INT](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#TYPE_INT:kotlin.Int) Integer parameter type |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LONG](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#TYPE_LONG:kotlin.Int) Long integer parameter type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#TYPE_NONE:kotlin.Int) None parameter type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_STRING](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#TYPE_STRING:kotlin.Int) String parameter type |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -38,9 +43,11 @@ Capability info of media quality parameters
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCapabilities](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#getCapabilities())`()` Gets capability information. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getParameterName](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#getParameterName())`()` Gets parameter name. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameterType](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#getParameterType())`()` Gets parameter type. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#isSupported())`()` Returns whether this parameter is supported or not. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/quality/ParameterCapability#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

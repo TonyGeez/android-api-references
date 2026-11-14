@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # SensorEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class SensorEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#) |
 
 This class represents a [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) event and holds information such as the sensor's type, the time-stamp, accuracy and of course the sensor's [data](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray).
@@ -34,6 +36,7 @@ The X axis is horizontal and points to the right, the Y axis is vertical and poi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [accuracy](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#accuracy:kotlin.Int) The accuracy of this event. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [firstEventAfterDiscontinuity](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#firstEventAfterDiscontinuity:kotlin.Boolean) Set to true when this is the first sensor event after a discontinuity. |
 | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)! | [sensor](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#sensor:android.hardware.Sensor) The sensor that generated this event. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#timestamp:kotlin.Long) The time in nanoseconds at which the event happened. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) The length and contents of the [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) array depends on which [sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) type is being monitored (see also [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#) for a definition of the coordinate system used). |
 

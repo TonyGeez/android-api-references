@@ -9,6 +9,7 @@ open class URLDecoder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.URLDecoder](https://developer.android.com/reference/kotlin/java/net/URLDecoder#) |
 
 Utility class for HTML form decoding. This class contains static methods for decoding a String from the`application/x-www-form-urlencoded`MIME format.
@@ -35,6 +36,7 @@ There are two possible ways in which this decoder could deal with illegal string
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`x-www-form-urlencoded`string. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific encoding scheme. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20java.nio.charset.Charset))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). |
+| --- | --- |
 
 ## Public constructors
 

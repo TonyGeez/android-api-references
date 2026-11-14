@@ -4,15 +4,18 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # LoadSdkException
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/sdksandbox/LoadSdkException "View this page in Java")
+| --- | --- |
 
 ```
 class LoadSdkException : Exception, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.app.sdksandbox.LoadSdkException](https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#) |
+| --- | --- | --- | --- |
 
 Exception thrown by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
 
@@ -31,6 +34,7 @@ Exception thrown by `https://developer.android.com/reference/kotlin/android/app/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#getExtraInformation()()` Returns the extra error information this exception was constructed with. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#getLoadSdkErrorCode()()` Returns the result code this exception was constructed with. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -129,6 +133,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `destination` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

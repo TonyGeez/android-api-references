@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # MagnificationConfig
 
 Kotlin | [Java](https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class MagnificationConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.MagnificationConfig](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#) |
 
 This class describes the magnification config for [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService) to control the magnification.
@@ -34,6 +36,7 @@ If the other magnification configs, scale centerX and centerY, are not set by th
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGNIFICATION_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#MAGNIFICATION_MODE_DEFAULT:kotlin.Int) The controlling magnification mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGNIFICATION_MODE_FULLSCREEN](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#MAGNIFICATION_MODE_FULLSCREEN:kotlin.Int) The controlling magnification mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGNIFICATION_MODE_WINDOW](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#MAGNIFICATION_MODE_WINDOW:kotlin.Int) The controlling magnification mode. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -44,9 +47,11 @@ If the other magnification configs, scale centerX and centerY, are not set by th
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#describeContents())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCenterX](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#getCenterX())`()` Returns the screen-relative X coordinate of the center of the magnification viewport. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCenterY](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#getCenterY())`()` Returns the screen-relative Y coordinate of the center of the magnification viewport. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#getMode())`()` Returns the magnification mode that is the current activated mode or the controlling mode of the config. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getScale](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#getScale())`()` Returns the magnification scale of the controlling magnifier |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isActivated](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#isActivated())`()` Returns the activated state of the controlling magnifier. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/accessibilityservice/MagnificationConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -208,6 +213,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

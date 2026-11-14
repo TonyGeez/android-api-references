@@ -9,6 +9,7 @@ class OptionalLong
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong#) |
 
 A container object which may or may not contain a`long`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
@@ -24,18 +25,23 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | static [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong#)! | [empty](https://developer.android.com/reference/kotlin/java/util/OptionalLong#empty())`()` Returns an empty`OptionalLong`instance. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/OptionalLong#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalLong`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAsLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong#getAsLong())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/OptionalLong#hashCode())`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](https://developer.android.com/reference/kotlin/java/util/OptionalLong#ifPresent(java.util.function.LongConsumer))`(`action:` ` [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](https://developer.android.com/reference/kotlin/java/util/OptionalLong#ifPresentOrElse(java.util.function.LongConsumer,%20java.lang.Runnable))`(`action:` ` [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer)!`, `emptyAction:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/OptionalLong#isEmpty())`()` If a value is not present, returns`true`, otherwise`false`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/java/util/OptionalLong#isPresent())`()` If a value is present, returns`true`, otherwise`false`. |
 | static [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong#)! | [of](https://developer.android.com/reference/kotlin/java/util/OptionalLong#of(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an`OptionalLong`describing the given value. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElse](https://developer.android.com/reference/kotlin/java/util/OptionalLong#orElse(kotlin.Long))`(`other:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseGet](https://developer.android.com/reference/kotlin/java/util/OptionalLong#orElseGet(java.util.function.LongSupplier))`(`supplier:` ` [LongSupplier](https://developer.android.com/reference/kotlin/java/util/function/LongSupplier)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalLong#orElseThrow())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalLong#orElseThrow(java.util.function.Supplier))`(`exceptionSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
 | [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | [stream](https://developer.android.com/reference/kotlin/java/util/OptionalLong#stream())`()` If a value is present, returns a sequential [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream) containing only that value, otherwise returns an empty`LongStream`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/OptionalLong#toString())`()` Returns a non-empty string representation of this`OptionalLong`suitable for debugging. |
+| --- | --- |
 
 ## Public methods
 

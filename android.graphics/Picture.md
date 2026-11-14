@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Picture
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/Picture "View this page in Java") 
+| --- | --- |
 
 ```
 open class Picture
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture#) |
 
 A Picture records drawing calls (via the canvas returned by beginRecording) and can then play them back into Canvas (via [Picture.draw(Canvas)](https://developer.android.com/reference/kotlin/android/graphics/Picture#draw(android.graphics.Canvas))or [Canvas.drawPicture(Picture)](https://developer.android.com/reference/kotlin/android/graphics/Canvas#drawPicture(android.graphics.Picture))).For most content (e.g. text, lines, rectangles), drawing a sequence from a picture can be faster than the equivalent API calls, since the picture performs its playback without incurring any method-call overhead.
@@ -29,9 +31,11 @@ A Picture records drawing calls (via the canvas returned by beginRecording) and 
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas) | [beginRecording](https://developer.android.com/reference/kotlin/android/graphics/Picture#beginRecording(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` To record a picture, call beginRecording() and then draw into the Canvas that is returned. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/Picture#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas)`)` Draw this picture on the canvas. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endRecording](https://developer.android.com/reference/kotlin/android/graphics/Picture#endRecording())`()` Call endRecording when the picture is built. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/graphics/Picture#getHeight())`()` Get the height of the picture as passed to beginRecording. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/graphics/Picture#getWidth())`()` Get the width of the picture as passed to beginRecording. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresHardwareAcceleration](https://developer.android.com/reference/kotlin/android/graphics/Picture#requiresHardwareAcceleration())`()` Indicates whether or not this Picture contains recorded commands that only work when drawn to a hardware-accelerated canvas. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|

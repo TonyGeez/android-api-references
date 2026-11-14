@@ -9,6 +9,7 @@ abstract class X509ExtendedKeyManager : X509KeyManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.X509ExtendedKeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedKeyManager#) |
 
 Abstract class that provides for extension of the X509KeyManager interface.
@@ -65,6 +66,7 @@ The default implementation returns null.
 | `keyType` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the key algorithm type name(s), ordered with the most-preferred key type first. |
 | `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>!:the list of acceptable CA issuer subject names or null if it does not matter which issuers are used. |
 | `engine` | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!:the`SSLEngine`to be used for this connection. This parameter can be null, which indicates that implementations of this interface are free to select an alias applicable to any engine. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -91,6 +93,7 @@ The default implementation returns null.
 | `keyType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key algorithm type name. |
 | `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>!:the list of acceptable CA issuer subject names or null if it does not matter which issuers are used. |
 | `engine` | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!:the`SSLEngine`to be used for this connection. This parameter can be null, which indicates that implementations of this interface are free to select an alias applicable to any engine. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------|

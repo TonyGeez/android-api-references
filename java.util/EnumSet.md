@@ -9,9 +9,11 @@ abstract class EnumSet<E : Enum<E>!> : AbstractSet<E>, Cloneable, Serializab
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> |||
 | | ↳ | [java.util.AbstractSet](https://developer.android.com/reference/kotlin/java/util/AbstractSet)\<E\> ||
 | | | ↳ | [java.util.EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#) |
+| --- | --- | --- | --- |
 
 A specialized [Set](https://developer.android.com/reference/kotlin/java/util/Set) implementation for use with enum types. All of the elements in an enum set must come from a single enum type that is specified, explicitly or implicitly, when the set is created. Enum sets are represented internally as bit vectors. This representation is extremely compact and efficient. The space and time performance of this class should be good enough to allow its use as a high-quality, typesafe alternative to traditional`int`-based "bit flags." Even bulk operations (such as`containsAll`and`retainAll`) should run very quickly if their argument is also an enum set.
 
@@ -37,15 +39,19 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [allOf](https://developer.android.com/reference/kotlin/java/util/EnumSet#allOf(java.lang.Class))`(`elementType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>!`)` Creates an enum set containing all of the elements in the specified element type. |
 | open [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\> | [clone](https://developer.android.com/reference/kotlin/java/util/EnumSet#clone())`()` Returns a copy of this set. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [complementOf](https://developer.android.com/reference/kotlin/java/util/EnumSet#complementOf(java.util.EnumSet))`(`s:` ` [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)<E>!`)` Creates an enum set with the same element type as the specified enum set, initially containing all the elements of this type that are*not*contained in the specified set. |
+| --- | --- |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [copyOf](https://developer.android.com/reference/kotlin/java/util/EnumSet#copyOf(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<E>!`)` Creates an enum set initialized from the specified collection. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [copyOf](https://developer.android.com/reference/kotlin/java/util/EnumSet#copyOf(java.util.EnumSet))`(`s:` ` [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)<E>!`)` Creates an enum set with the same element type as the specified enum set, initially containing the same elements (if any). |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [noneOf](https://developer.android.com/reference/kotlin/java/util/EnumSet#noneOf(java.lang.Class))`(`elementType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>!`)` Creates an empty enum set with the specified element type. |
+| --- | --- |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E))`(`e:` `E`)` Creates an enum set initially containing the specified element. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E,%20java.util.EnumSet.of.E))`(`e1:` `E`, `e2:` `E`)` Creates an enum set initially containing the specified elements. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`)` Creates an enum set initially containing the specified elements. |
+| --- | --- |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`)` Creates an enum set initially containing the specified elements. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E,%20java.util.EnumSet.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`)` Creates an enum set initially containing the specified elements. |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [of](https://developer.android.com/reference/kotlin/java/util/EnumSet#of(java.util.EnumSet.of.E,%20java.util.EnumSet.of.E))`(`first:` `E`, `vararg` `rest:` `E`)` Creates an enum set initially containing the specified elements. |
+| --- | --- |
 | openstatic [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet#)\<E\>! | [range](https://developer.android.com/reference/kotlin/java/util/EnumSet#range(java.util.EnumSet.range.E,%20java.util.EnumSet.range.E))`(`from:` `E`, `to:` `E`)` Creates an enum set initially containing all of the elements in the range defined by the two specified endpoints. |
 
 | Inherited functions ||
@@ -234,6 +240,7 @@ Creates an enum set initially containing the specified elements. Overloadings of
 | `<E>` | The class of the parameter elements and of the set |
 | `e1` | E:an element that this set is to contain initially |
 | `e2` | E:another element that this set is to contain initially |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -262,6 +269,7 @@ Creates an enum set initially containing the specified elements. Overloadings of
 | `<E>` | The class of the parameter elements and of the set |
 | `e1` | E:an element that this set is to contain initially |
 | `e2` | E:another element that this set is to contain initially |
+| --- | --- |
 | `e3` | E:another element that this set is to contain initially |
 
 | Return ||
@@ -292,6 +300,7 @@ Creates an enum set initially containing the specified elements. Overloadings of
 | `<E>` | The class of the parameter elements and of the set |
 | `e1` | E:an element that this set is to contain initially |
 | `e2` | E:another element that this set is to contain initially |
+| --- | --- |
 | `e3` | E:another element that this set is to contain initially |
 | `e4` | E:another element that this set is to contain initially |
 
@@ -324,9 +333,11 @@ Creates an enum set initially containing the specified elements. Overloadings of
 | `<E>` | The class of the parameter elements and of the set |
 | `e1` | E:an element that this set is to contain initially |
 | `e2` | E:another element that this set is to contain initially |
+| --- | --- |
 | `e3` | E:another element that this set is to contain initially |
 | `e4` | E:another element that this set is to contain initially |
 | `e5` | E:another element that this set is to contain initially |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -354,6 +365,7 @@ Creates an enum set initially containing the specified elements. This factory, w
 | `<E>` | The class of the parameter elements and of the set |
 | `first` | E:an element that the set is to contain initially |
 | `rest` | E:the remaining elements the set is to contain initially |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -381,6 +393,7 @@ Creates an enum set initially containing all of the elements in the range define
 | `<E>` | The class of the parameter elements and of the set |
 | `from` | E:the first element in the range |
 | `to` | E:the last element in the range |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|

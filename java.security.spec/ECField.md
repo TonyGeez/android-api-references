@@ -11,6 +11,7 @@ interface ECField
 | [java.security.spec.ECField](https://developer.android.com/reference/kotlin/java/security/spec/ECField#) |
 
 | Known Direct Subclasses [ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m), [ECFieldFp](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp) |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m) | This immutable class defines an elliptic curve (EC) characteristic 2 finite field. | | [ECFieldFp](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp) | This immutable class defines an elliptic curve (EC) prime finite field. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This interface represents an elliptic curve (EC) finite field. All specialized EC fields must implements this interface.
 

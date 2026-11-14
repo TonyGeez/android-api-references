@@ -9,6 +9,7 @@ class EdECPublicKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.EdECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EdECPublicKeySpec#) |
 
 A class representing elliptic curve public keys as defined in [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032), including the curve and other algorithm parameters. The public key is a point on the curve, which is represented using an`EdECPoint`.

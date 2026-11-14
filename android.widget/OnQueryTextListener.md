@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnQueryTextListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/SearchView.OnQueryTextListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnQueryTextListener

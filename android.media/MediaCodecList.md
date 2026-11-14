@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaCodecList
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaCodecList "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaCodecList
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaCodecList](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#) |
 
 Allows you to enumerate available codecs, each specified as a [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo) object, find a codec supporting a given format and query the capabilities of a given codec.
@@ -33,6 +35,7 @@ See [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/medi
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findDecoderForFormat](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat))`(`format:` ` [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat)!`)` Find a decoder supporting a given [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat) in the list of media-codecs. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findEncoderForFormat](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findEncoderForFormat(android.media.MediaFormat))`(`format:` ` [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat)!`)` Find an encoder supporting a given [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat) in the list of media-codecs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodecCount](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#getCodecCount())`()` Count the number of available (regular) codecs. |
+| --- | --- |
 | static [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo)! | [getCodecInfoAt](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#getCodecInfoAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo) object for the codec at the given `index` in the regular list. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo)!\>! | [getCodecInfos](https://developer.android.com/reference/kotlin/android/media/MediaCodecList#getCodecInfos())`()` Returns the list of [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo) objects for the list of media-codecs. |
 

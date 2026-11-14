@@ -8,9 +8,11 @@ open class MockApplication : Application
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Application](https://developer.android.com/reference/kotlin/android/app/Application.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.test.mock.MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication#) |
 
 > [!CAUTION]
@@ -982,6 +984,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockApplication#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockApplication#onCreate()()` Called when the application is starting, before any activity, service, or receiver objects (excluding content providers) have been created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockApplication#onTerminate()()` This method is for use in emulated process environments. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#attachBaseContext(android.content.Context)(base: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 

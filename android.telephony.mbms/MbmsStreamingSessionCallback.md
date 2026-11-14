@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # MbmsStreamingSessionCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/MbmsStreamingSessionCallback "View this page in Java")
+| --- | --- |
 
 ```
 open class MbmsStreamingSessionCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#) |
 
 A callback class that is used to receive information from the middleware on MBMS streaming services. An instance of this object should be passed into `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsStreamingSessionCallback)`.
@@ -24,6 +26,7 @@ A callback class that is used to receive information from the middleware on MBMS
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onMiddlewareReady()()` Called to indicate that the middleware has been initialized and is ready. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onStreamingServicesUpdated(kotlin.collections.MutableList)(services: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo!>!)` Called to indicate published Streaming Services have changed. |
+| --- | --- |
 
 ## Public constructors
 

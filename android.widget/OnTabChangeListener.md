@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # OnTabChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTabChangeListener

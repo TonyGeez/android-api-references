@@ -3,6 +3,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # VsyncCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/Choreographer.VsyncCallback "View this page in Java")
+| --- | --- |
 
 ```
 interface VsyncCallback

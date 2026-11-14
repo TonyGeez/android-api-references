@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LocalSocketAddress
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/LocalSocketAddress "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocalSocketAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#) |
 
 A UNIX-domain (AF_LOCAL) socket address. For use with android.net.LocalSocket and android.net.LocalServerSocket. On the Android system, these names refer to names in the Linux abstract (non-filesystem) UNIX domain namespace.

@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # Authenticators
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Authenticators "View this page in Java") 
+| --- | --- |
 
 ```
 interface Authenticators
@@ -15,6 +16,7 @@ interface Authenticators
 Types of authenticators, defined at a level of granularity supported by [BiometricManager](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager) and [BiometricPrompt](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt).
 
 Types may combined via bitwise OR into a single integer representing multiple authenticators (e.g.`DEVICE_CREDENTIAL | BIOMETRIC_WEAK`).
+| --- | --- |
 
 ## Summary
 
@@ -23,6 +25,7 @@ Types may combined via bitwise OR into a single integer representing multiple au
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIOMETRIC_STRONG](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int) Any biometric (e.g. fingerprint, iris, or face) on the device that meets or exceeds the requirements for |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIOMETRIC_WEAK](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int) Any biometric (e.g. fingerprint, iris, or face) on the device that meets or exceeds the requirements for |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_CREDENTIAL](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int) The non-biometric credential used to secure the device (i.e., PIN, pattern, or password). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDENTITY_CHECK](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#IDENTITY_CHECK:kotlin.Int) The bit is used to request for Identity Check. |
 
 ## Constants
@@ -56,6 +59,7 @@ static val BIOMETRIC_WEAK: Int
 Any biometric (e.g. fingerprint, iris, or face) on the device that meets or exceeds the requirements for**Class 2** (formerly**Weak**), as defined by the Android CDD.
 
 Note that this is a superset of [BIOMETRIC_STRONG](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int) and is defined such that`BIOMETRIC_STRONG | BIOMETRIC_WEAK == BIOMETRIC_WEAK`. 
+| --- | --- |
 
  Value: 255
 

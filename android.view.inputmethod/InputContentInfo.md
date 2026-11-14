@@ -5,12 +5,14 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 # InputContentInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InputContentInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class InputContentInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) |
 
 A container object with which input methods can send content files to the target application.
@@ -31,9 +33,11 @@ A container object with which input methods can send content files to the target
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getContentUri](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getContentUri())`()` <br /> |
 | [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) | [getDescription](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getDescription())`()` <br /> |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getLinkUri](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getLinkUri())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releasePermission](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#releasePermission())`()` Releases a temporary read-only access permission for content URI associated with this object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestPermission](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission())`()` Requests a temporary [read-only](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int) access permission for the content URI associated with this object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 
 | Properties ||
@@ -77,6 +81,7 @@ Constructs [InputContentInfo](https://developer.android.com/reference/kotlin/and
 | `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):Content URI to be exported from the input method. This cannot be`null`. |
 | `description` | [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#):A [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) object that contains the metadata of`contentUri`such as MIME type(s). This object cannot be`null`. Also [ClipDescription.getLabel()](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#getLabel())should be describing the content specified by`contentUri`for accessibility reasons. |
 | `linkUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:An optional`http`or`https`URI. The editor author may provide a way to navigate the user to the specified web page if this is not`null`. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------|

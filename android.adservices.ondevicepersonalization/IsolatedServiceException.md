@@ -5,15 +5,18 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # IsolatedServiceException
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedServiceException "View this page in Java") 
+| --- | --- |
 
 ```
 class IsolatedServiceException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.adservices.ondevicepersonalization.IsolatedServiceException](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedServiceException#) |
+| --- | --- | --- | --- |
 
 A class that an [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService) can use to signal a failure in handling a request and return an error to be logged and aggregated. The error is not reported to the app that invoked the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService) in order to prevent data leakage from the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService) to an app. The platform does not interpret the error code, it only logs and aggregates it.
 
@@ -63,6 +66,7 @@ Creates an [IsolatedServiceException](https://developer.android.com/reference/ko
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An error code defined by the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService). |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the exception message. This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:the cause of this exception. This value may be`null`. |
+| --- | --- |
 
 ### IsolatedServiceException
 

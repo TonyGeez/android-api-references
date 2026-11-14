@@ -9,9 +9,11 @@ class SSLPermission : BasicPermission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) |||
 | | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission.html#) ||
 | | | ↳ | [javax.net.ssl.SSLPermission](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPermission#) |
+| --- | --- | --- | --- |
 
 Legacy security code; do not use.
 

@@ -9,6 +9,7 @@ open class ExecutorCompletionService<V : Any!> : CompletionService<V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.ExecutorCompletionService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#) |
 
 A [CompletionService](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionService) that uses a supplied [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) to execute tasks. This class arranges that submitted tasks are, upon completion, placed on a queue accessible using`take`. The class is lightweight enough to be suitable for transient use when processing groups of tasks.
@@ -72,6 +73,7 @@ Suppose instead that you would like to use the first non-null result of the set 
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<V\>! | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#poll())`()` <br /> |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<V\>! | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#poll(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<V\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#submit(java.lang.Runnable,%20java.util.concurrent.ExecutorCompletionService.V))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `result:` `V`)` <br /> |
+| --- | --- |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<V\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#submit(java.util.concurrent.Callable))`(`task:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<V>!`)` <br /> |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<V\>! | [take](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService#take())`()` <br /> |
 

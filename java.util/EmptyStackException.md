@@ -9,9 +9,11 @@ open class EmptyStackException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.EmptyStackException](https://developer.android.com/reference/kotlin/java/util/EmptyStackException#) |
 
 Thrown by methods in the`Stack`class to indicate that the stack is empty.

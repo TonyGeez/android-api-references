@@ -9,6 +9,7 @@ open class DoubleSummaryStatistics : DoubleConsumer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#) |
 
 A state object for collecting statistics such as count, min, max, sum, and average.
@@ -43,9 +44,11 @@ This computes, in a single pass, the count of people, as well as the minimum, ma
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#accept(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Records another value into the summary information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [combine](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#combine(java.util.DoubleSummaryStatistics))`(`other:` ` [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#)!`)` Combines the state of another`DoubleSummaryStatistics`into this one. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAverage](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getAverage())`()` Returns the arithmetic mean of values recorded, or zero if no values have been recorded. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getCount())`()` Return the count of values recorded. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMax](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getMax())`()` Returns the maximum recorded value,`Double.NaN`if any recorded value was NaN or`Double.NEGATIVE_INFINITY`if no values were recorded. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMin](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getMin())`()` Returns the minimum recorded value,`Double.NaN`if any recorded value was NaN or`Double.POSITIVE_INFINITY`if no values were recorded. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getSum](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getSum())`()` Returns the sum of values recorded, or zero if no values have been recorded. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#toString())`()` Returns a non-empty string representation of this object suitable for debugging. |
 
@@ -85,12 +88,14 @@ If the arguments are inconsistent then an`IllegalArgumentException`is thrown. Th
 
 - `count >= 0`
 - `(min <= max && !isNaN(sum)) || (isNaN(min) && isNaN(max) && isNaN(sum))`
+| --- | --- | --- |
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the count of values |
 | `min` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the minimum value |
 | `max` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the maximum value |
+| --- | --- |
 | `sum` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the sum of all values |
 
 | Exceptions ||

@@ -9,6 +9,7 @@ class URICertStoreParameters : CertStoreParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#) |
 
 Parameters used as input for`CertStore`algorithms which use information contained in a URI to retrieve certificates and CRLs.
@@ -30,6 +31,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#clone())`()` Returns a copy of this object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this parameters object for equality. |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | [getURI](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#getURI())`()` Returns the URI used to construct this`URICertStoreParameters`object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#hashCode())`()` Returns a hash code value for this parameters object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#toString())`()` Returns a formatted string describing the parameters including the URI used to construct this object. |
 

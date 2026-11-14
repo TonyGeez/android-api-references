@@ -5,18 +5,22 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BackgroundServiceStartNotAllowedException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/BackgroundServiceStartNotAllowedException "View this page in Java") 
+| --- | --- |
 
 ```
 class BackgroundServiceStartNotAllowedException : ServiceStartNotAllowedException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) |||
 | | | | | ↳ | [android.app.ServiceStartNotAllowedException](https://developer.android.com/reference/kotlin/android/app/ServiceStartNotAllowedException) ||
 | | | | | | ↳ | [android.app.BackgroundServiceStartNotAllowedException](https://developer.android.com/reference/kotlin/android/app/BackgroundServiceStartNotAllowedException#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Exception thrown when an app tries to start a background [Service](https://developer.android.com/reference/kotlin/android/app/Service) when it's not allowed to do so.
 

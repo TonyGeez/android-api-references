@@ -3,12 +3,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SuggestionsInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/textservice/SuggestionsInfo "View this page in Java")
+| --- | --- |
 
 ```
 class SuggestionsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#) |
 
 This class contains a metadata of suggestions from the text service
@@ -20,6 +22,7 @@ This class contains a metadata of suggestions from the text service
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_DONT_SHOW_UI_FOR_SUGGESTIONS:kotlin.Int` Flag of the attributes of the suggestions that can be obtained by `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()`: this tells that the text service has an alternative way to show UI for the list of correction suggestions to the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_HAS_RECOMMENDED_SUGGESTIONS:kotlin.Int` Flag of the attributes of the suggestions that can be obtained by `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()`: this tells that the text service thinks the result suggestions include highly recommended ones. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_IN_THE_DICTIONARY:kotlin.Int` Flag of the attributes of the suggestions that can be obtained by `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()`: this tells that the requested word was found in the dictionary in the text service. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_LOOKS_LIKE_GRAMMAR_ERROR:kotlin.Int` Flag of the attributes of the suggestions that can be obtained by `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()`: this tells that the text service thinks the requested sentence contains a grammar error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_LOOKS_LIKE_TYPO:kotlin.Int` Flag of the attributes of the suggestions that can be obtained by `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()`: this tells that the text service thinks the requested word looks like a typo. |
 
@@ -38,9 +41,11 @@ This class contains a metadata of suggestions from the text service
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#describeContents()()` Used to make this class parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getCookie()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSequence()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionAt(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsAttributes()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#getSuggestionsCount()()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#setCookieAndSequence(kotlin.Int,%20kotlin.Int)(cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sequence: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the cookie and the sequence of SuggestionsInfo which are set to TextInfo from a client application |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
@@ -156,6 +161,7 @@ Constructor.
 | `suggestionsAttributes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): from the text service. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_IN_THE_DICTIONARY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_LOOKS_LIKE_TYPO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_HAS_RECOMMENDED_SUGGESTIONS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_LOOKS_LIKE_GRAMMAR_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#RESULT_ATTR_DONT_SHOW_UI_FOR_SUGGESTIONS:kotlin.Int` |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: from the text service |
 | `cookie` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the cookie of the input TextInfo |
+| --- | --- |
 | `sequence` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the cookie of the input TextInfo |
 
 ## Public methods

@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TsResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/TsResponse "View this page in Java")
+| --- | --- |
 
 ```
 class TsResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.TsResponse](https://developer.android.com/reference/kotlin/android/media/tv/TsResponse#) |
 
@@ -30,6 +32,7 @@ A response for TS (transport stream) from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TsResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/tv/TsResponse#getSharedFilterToken()()` Gets a token of SharedFilter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TsResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

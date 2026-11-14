@@ -5,12 +5,14 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 # CrossProcessCursorWrapper
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/CrossProcessCursorWrapper "View this page in Java") 
+| --- | --- |
 
 ```
 open class CrossProcessCursorWrapper : CursorWrapper, CrossProcessCursor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.database.CursorWrapper](https://developer.android.com/reference/kotlin/android/database/CursorWrapper) ||
 | | ↳ | [android.database.CrossProcessCursorWrapper](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper#) |
 
@@ -35,6 +37,7 @@ This wrapper can be used to adapt an ordinary [Cursor](https://developer.android
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillWindow](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper#fillWindow(kotlin.Int,%20android.database.CursorWindow))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `window:` ` [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow)!`)` <br /> |
 | open [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow)! | [getWindow](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper#getWindow())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onMove](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper#onMove(kotlin.Int,%20kotlin.Int))`(`oldPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

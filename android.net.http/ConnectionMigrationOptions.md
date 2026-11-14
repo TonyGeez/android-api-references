@@ -6,12 +6,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # ConnectionMigrationOptions
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions "View this page in Java") 
+| --- | --- |
 
 ```
 open class ConnectionMigrationOptions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.http.ConnectionMigrationOptions](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#) |
 
 A class configuring the HTTP connection migration functionality.
@@ -31,12 +33,14 @@ The features are only available for QUIC connections and the server needs to sup
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_DISABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED:kotlin.Int) Option is disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_ENABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED:kotlin.Int) Option is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED:kotlin.Int) Option is unspecified, platform default value will be used. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAllowNonDefaultNetworkUsage](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getAllowNonDefaultNetworkUsage())`()` See [Builder.setAllowNonDefaultNetworkUsage(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setAllowNonDefaultNetworkUsage(kotlin.Int)) |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultNetworkMigration](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getDefaultNetworkMigration())`()` See [Builder.setDefaultNetworkMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setDefaultNetworkMigration(kotlin.Int)) |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPathDegradationMigration](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getPathDegradationMigration())`()` See [Builder.setPathDegradationMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setPathDegradationMigration(kotlin.Int)) |
+| --- | --- |
 
 ## Constants
 

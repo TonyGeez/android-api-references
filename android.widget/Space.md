@@ -7,6 +7,7 @@ class Space : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.widget.Space](https://developer.android.com/reference/kotlin/android/widget/Space#) |
 
@@ -292,6 +293,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -408,6 +410,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -3388,6 +3391,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4789,6 +4793,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }

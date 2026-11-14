@@ -6,6 +6,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 # OnUtteranceCompletedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnUtteranceCompletedListener

@@ -7,6 +7,7 @@ class TrustedPresentationThresholds : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.window.TrustedPresentationThresholds](https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#) |
 
 Threshold values that are sent with android.view.WindowManager#registerTrustedPresentationListener(IBinder,android.window.TrustedPresentationThresholds,Executor,Consumer)
@@ -40,12 +41,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#getMinAlpha()()` The min alpha the Window is required to have to be considered inside the threshold. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#getMinFractionRendered()()` The min fraction of the Window that was presented to the user to be considered inside the threshold. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#getSignalMode()()` Returns the mode that determines when to signal occlusion. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#getStabilityRequirementMillis()()` The time in milliseconds required for the Window to be in the threshold. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -97,6 +101,7 @@ Creates a new TrustedPresentationThresholds. The default signal mode is `https:/
 | `minAlpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The min alpha the Window is required to have to be considered inside the threshold. Value is between 0.0f and 1.0f inclusive |
 | `minFractionRendered` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The min fraction of the Window that was presented to the user to be considered inside the threshold. Value is between 0.0f and 1.0f inclusive |
 | `stabilityRequirementMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time in milliseconds required for the Window to be in the threshold. Value is 1 or greater |
+| --- | --- |
 
 ### TrustedPresentationThresholds
 
@@ -117,6 +122,7 @@ Creates a new TrustedPresentationThresholds.
 | `minAlpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The min alpha the Window is required to have to be considered inside the threshold. Value is between 0.0f and 1.0f inclusive |
 | `minFractionRendered` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The min fraction of the Window that was presented to the user to be considered inside the threshold. Value is between 0.0f and 1.0f inclusive |
 | `stabilityRequirementMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time in milliseconds required for the Window to be in the threshold. Value is 1 or greater |
+| --- | --- |
 | `signalMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The mode that determines when to signal occlusion. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#SIGNAL_MODE_TRUSTED_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds#SIGNAL_MODE_STRICT_OCCLUSION:kotlin.Int` |
 
 ## Public methods

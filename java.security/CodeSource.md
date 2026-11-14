@@ -9,6 +9,7 @@ open class CodeSource : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#) |
 
 Legacy security code; do not use.
@@ -25,6 +26,7 @@ Legacy security code; do not use.
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [getCertificates](https://developer.android.com/reference/kotlin/java/security/CodeSource#getCertificates())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](https://developer.android.com/reference/kotlin/java/security/CodeSigner)!\>! | [getCodeSigners](https://developer.android.com/reference/kotlin/java/security/CodeSource#getCodeSigners())`()` <br /> |
 | [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [getLocation](https://developer.android.com/reference/kotlin/java/security/CodeSource#getLocation())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/CodeSource#implies(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#)!`)` <br /> |
 
 ## Public constructors

@@ -6,6 +6,7 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 # ServiceInfoCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdManager.ServiceInfoCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ServiceInfoCallback
@@ -22,6 +23,7 @@ Callback to listen to service info updates. For use with [NsdManager.registerSer
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceInfoCallbackRegistrationFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback#onServiceInfoCallbackRegistrationFailed(kotlin.Int))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reports that registering the callback failed with an error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceInfoCallbackUnregistered](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback#onServiceInfoCallbackUnregistered())`()` Reports that service info updates have stopped. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceLost](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback#onServiceLost())`()` Reports when the service that this callback listens to becomes unavailable. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceUpdated](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback#onServiceUpdated(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)`)` Reports updated service info. |
 
 ## Public methods

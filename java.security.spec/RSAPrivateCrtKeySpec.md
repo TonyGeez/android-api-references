@@ -9,6 +9,7 @@ open class RSAPrivateCrtKeySpec : RSAPrivateKeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.RSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec) ||
 | | ↳ | [java.security.spec.RSAPrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#) |
 
@@ -26,9 +27,11 @@ This class specifies an RSA private key, as defined in the [PKCS#1 v2.2](https:/
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getCrtCoefficient())`()` Returns the crtCoefficient. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentP](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getPrimeExponentP())`()` Returns the primeExponentP. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentQ](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getPrimeExponentQ())`()` Returns the primeExponentQ. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeP](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getPrimeP())`()` Returns the primeP. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeQ](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getPrimeQ())`()` Returns the primeQ. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateCrtKeySpec#getPublicExponent())`()` Returns the public exponent. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -59,9 +62,11 @@ Creates a new`RSAPrivateCrtKeySpec`.
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus n |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent e |
 | `privateExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private exponent d |
+| --- | --- |
 | `primeP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor p of n |
 | `primeQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor q of n |
 | `primeExponentP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (p-1) |
+| --- | --- |
 | `primeExponentQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (q-1) |
 | `crtCoefficient` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the Chinese Remainder Theorem coefficient q-1 mod p |
 
@@ -89,12 +94,15 @@ Creates a new`RSAPrivateCrtKeySpec`with additional key parameters.
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus n |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent e |
 | `privateExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private exponent d |
+| --- | --- |
 | `primeP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor p of n |
 | `primeQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor q of n |
 | `primeExponentP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (p-1) |
+| --- | --- |
 | `primeExponentQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (q-1) |
 | `crtCoefficient` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the Chinese Remainder Theorem coefficient q-1 mod p |
 | `keyParams` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters associated with key |
+| --- | --- |
 
 ## Public methods
 

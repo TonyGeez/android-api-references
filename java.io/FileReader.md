@@ -9,9 +9,11 @@ open class FileReader : InputStreamReader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader) |||
 | | ↳ | [java.io.InputStreamReader](https://developer.android.com/reference/kotlin/java/io/InputStreamReader) ||
 | | | ↳ | [java.io.FileReader](https://developer.android.com/reference/kotlin/java/io/FileReader#) |
+| --- | --- | --- | --- |
 
 Reads text from character files using a default buffer size. Decoding from bytes to characters uses either a specified [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) or the platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
 

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # FrameMetrics
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/FrameMetrics "View this page in Java") 
+| --- | --- |
 
 ```
 class FrameMetrics
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.FrameMetrics](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#) |
 
 Class containing timing data for various milestones in a frame lifecycle reported by the rendering subsystem.
@@ -24,18 +26,23 @@ Supported metrics can be queried via their corresponding identifier.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ANIMATION_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#ANIMATION_DURATION:kotlin.Int) Metric identifier for animation callback duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMAND_ISSUE_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#COMMAND_ISSUE_DURATION:kotlin.Int) Metric identifier for command issue duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEADLINE](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#DEADLINE:kotlin.Int) Metric identifier for the total duration that was available to the app to produce a frame. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRAW_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#DRAW_DURATION:kotlin.Int) Metric identifier for draw duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIRST_DRAW_FRAME](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#FIRST_DRAW_FRAME:kotlin.Int) Metric identifier for a boolean value determining whether this frame was the first to draw in a new Window layout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_TIMELINE_VSYNC_ID](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#FRAME_TIMELINE_VSYNC_ID:kotlin.Int) Metric identifier for the frame's VSync identifier. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#GPU_DURATION:kotlin.Int) Metric identifier for GPU duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_HANDLING_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#INPUT_HANDLING_DURATION:kotlin.Int) Metric identifier for input handling duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTENDED_VSYNC_TIMESTAMP](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#INTENDED_VSYNC_TIMESTAMP:kotlin.Int) Metric identifier for the timestamp of the intended vsync for this frame. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAYOUT_MEASURE_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#LAYOUT_MEASURE_DURATION:kotlin.Int) Metric identifier for layout/measure duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWAP_BUFFERS_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#SWAP_BUFFERS_DURATION:kotlin.Int) Metric identifier for swap buffers duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#SYNC_DURATION:kotlin.Int) Metric identifier for sync duration. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOTAL_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#TOTAL_DURATION:kotlin.Int) Metric identifier for total frame duration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_DELAY_DURATION](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#UNKNOWN_DELAY_DURATION:kotlin.Int) Metric identifier for unknown delay. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSYNC_TIMESTAMP](https://developer.android.com/reference/kotlin/android/view/FrameMetrics#VSYNC_TIMESTAMP:kotlin.Int) Metric identifier for the timestamp of the actual vsync for this frame. |
+| --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|

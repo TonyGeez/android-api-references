@@ -9,6 +9,7 @@ open class ConnectionEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [javax.sql.ConnectionEvent](https://developer.android.com/reference/kotlin/javax/sql/ConnectionEvent#) |
 

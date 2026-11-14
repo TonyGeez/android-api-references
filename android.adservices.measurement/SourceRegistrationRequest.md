@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # SourceRegistrationRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/measurement/SourceRegistrationRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class SourceRegistrationRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.measurement.SourceRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#) |
 
 Class to hold input to measurement source registration calls.
@@ -31,9 +33,11 @@ Class to hold input to measurement source registration calls.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)? | [getInputEvent](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#getInputEvent())`()` User Interaction [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#) used by the AttributionReporting API to distinguish clicks from views. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | [getRegistrationUris](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#getRegistrationUris())`()` Registration URIs to fetch sources. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -125,6 +129,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

@@ -7,12 +7,15 @@ open class UnsupportedOperationException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException#) |
 
 | Known Direct Subclasses [ReadOnlyBufferException](https://developer.android.com/reference/kotlin/java/nio/ReadOnlyBufferException.html#), [ReadOnlyFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ReadOnlyFileSystemException.html#) |---|---| | [ReadOnlyBufferException](https://developer.android.com/reference/kotlin/java/nio/ReadOnlyBufferException.html#) | Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer. | | [ReadOnlyFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ReadOnlyFileSystemException.html#) | Unchecked exception thrown when an attempt is made to update an object associated with a `https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#isReadOnly()` `FileSystem`. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that the requested operation is not supported.
 

@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier#) |
 
 | Known Direct Subclasses [ServiceLoader.Provider](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider.html#) |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [ServiceLoader.Provider](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider.html#) | Represents a service provider located by`ServiceLoader`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represents a supplier of results.
 

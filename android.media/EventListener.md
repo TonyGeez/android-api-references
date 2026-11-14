@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # EventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCas.EventListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface EventListener
@@ -21,6 +22,7 @@ An interface registered by the caller to [setEventListener](https://developer.an
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](https://developer.android.com/reference/kotlin/android/media/MediaCas.EventListener#onEvent(android.media.MediaCas,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray))`(`mediaCas:` ` [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas)`, `event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Notify the listener of a scheme-specific event from the CA system. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPluginStatusUpdate](https://developer.android.com/reference/kotlin/android/media/MediaCas.EventListener#onPluginStatusUpdate(android.media.MediaCas,%20kotlin.Int,%20kotlin.Int))`(`mediaCas:` ` [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify the listener that the cas plugin status is updated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResourceLost](https://developer.android.com/reference/kotlin/android/media/MediaCas.EventListener#onResourceLost(android.media.MediaCas))`(`mediaCas:` ` [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas)`)` Notify the listener that the session resources was lost. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionEvent](https://developer.android.com/reference/kotlin/android/media/MediaCas.EventListener#onSessionEvent(android.media.MediaCas,%20android.media.MediaCas.Session,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray))`(`mediaCas:` ` [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas)`, `session:` ` [MediaCas.Session](https://developer.android.com/reference/kotlin/android/media/MediaCas.Session)`, `event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Notify the listener of a scheme-specific session event from CA system. |
 
 ## Public methods
@@ -45,6 +47,7 @@ Notify the listener of a scheme-specific event from the CA system.
 | `mediaCas` | [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas):the MediaCas object to receive this event. This value cannot be`null`. |
 | `event` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an integer whose meaning is scheme-specific. |
 | `arg` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an integer whose meaning is scheme-specific. |
+| --- | --- |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:a byte array of data whose format and meaning are scheme-specific. This value may be`null`. |
 
 ### onPluginStatusUpdate
@@ -66,6 +69,7 @@ Notify the listener that the cas plugin status is updated.
 | `mediaCas` | [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas):the MediaCas object to receive this event. This value cannot be`null`. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the plugin status which is updated. Value is [android.media.MediaCas#PLUGIN_STATUS_PHYSICAL_MODULE_CHANGED](https://developer.android.com/reference/kotlin/android/media/MediaCas#PLUGIN_STATUS_PHYSICAL_MODULE_CHANGED:kotlin.Int), or [android.media.MediaCas#PLUGIN_STATUS_SESSION_NUMBER_CHANGED](https://developer.android.com/reference/kotlin/android/media/MediaCas#PLUGIN_STATUS_SESSION_NUMBER_CHANGED:kotlin.Int) |
 | `arg` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an integer whose meaning is specific to the status to be updated. |
+| --- | --- |
 
 ### onResourceLost
 
@@ -102,5 +106,6 @@ Notify the listener of a scheme-specific session event from CA system.
 | `mediaCas` | [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas):the MediaCas object to receive this event. This value cannot be`null`. |
 | `session` | [MediaCas.Session](https://developer.android.com/reference/kotlin/android/media/MediaCas.Session):session object which the event is for. This value cannot be`null`. |
 | `event` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an integer whose meaning is scheme-specific. |
+| --- | --- |
 | `arg` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an integer whose meaning is scheme-specific. |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:a byte array of data whose format and meaning are scheme-specific. This value may be`null`. |

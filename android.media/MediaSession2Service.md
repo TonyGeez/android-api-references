@@ -8,9 +8,11 @@ abstract class MediaSession2Service : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.MediaSession2Service](https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#) |
 
 > [!CAUTION]
@@ -1058,9 +1060,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#addSession(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Adds a session to this service. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession2](https://developer.android.com/reference/kotlin/android/media/MediaSession2)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#getSessions()()` Gets the list of `https://developer.android.com/reference/kotlin/android/media/MediaSession2`s that you've added to this service. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onDestroy()()` Called by the system to notify that it is no longer used and is being removed. |
 | abstract [MediaSession2](https://developer.android.com/reference/kotlin/android/media/MediaSession2)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onGetSession(android.media.MediaSession2.ControllerInfo)(controllerInfo: https://developer.android.com/reference/kotlin/android/media/MediaSession2.ControllerInfo)` Called when a `https://developer.android.com/reference/kotlin/android/media/MediaController2` is created with the this service's `https://developer.android.com/reference/kotlin/android/media/Session2Token`. |
+| --- | --- |
 | abstract [MediaSession2Service.MediaNotification](https://developer.android.com/reference/kotlin/android/media/MediaSession2Service.MediaNotification)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onUpdateNotification(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Called to update the media notification when the playback state changes. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#removeSession(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Removes a session from this service. |
 

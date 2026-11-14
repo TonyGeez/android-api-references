@@ -54,6 +54,7 @@ If`genParams`is true, this method generates new p, q and g parameters. If it is 
 | `modlen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the modulus length in bits. Valid values are any multiple of 64 between 512 and 1024, inclusive, 2048, and 3072. |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the random bit source to use to generate key bits; can be null. |
 | `genParams` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not to generate new parameters for the modulus length requested. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|

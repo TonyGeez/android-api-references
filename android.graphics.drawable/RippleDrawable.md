@@ -7,9 +7,11 @@ open class RippleDrawable : LayerDrawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.LayerDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable) ||
 | | | ↳ | [android.graphics.drawable.RippleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#) |
+| --- | --- | --- | --- |
 
 Drawable that shows a ripple effect in response to state changes. The anchoring position of the ripple for a given state may be specified by calling #setHotspot(float,float) with the corresponding state attribute identifier.
 
@@ -73,6 +75,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#attr_LayerDrawable` Gravity used to align the layer within its container. If no value is specified, the default behavior depends on whether an explicit width or height has been set, If no dimension is set, gravity in that direction defaults to `fill_horizontal` or `fill_vertical`; otherwise, it defaults to `left` or `top`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description bottom 50 Push object to the bottom of its container, not changing its size. center 11 Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. center_horizontal 1 Place object in the horizontal center of its container, not changing its size. center_vertical 10 Place object in the vertical center of its container, not changing its size. clip_horizontal 8 Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. clip_vertical 80 Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. end 800005 Push object to the end of its container, not changing its size. fill 77 Grow the horizontal and vertical size of the object if needed so it completely fills its container. fill_horizontal 7 Grow the horizontal size of the object if needed so it completely fills its container. fill_vertical 70 Grow the vertical size of the object if needed so it completely fills its container. left 3 Push object to the left of its container, not changing its size. right 5 Push object to the right of its container, not changing its size. start 800003 Push object to the beginning of its container, not changing its size. top 30 Push object to the top of its container, not changing its size.
 
 <br />
@@ -157,27 +160,35 @@ Padding mode used to stack each layer directly atop the previous layer.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#applyTheme(android.content.res.Resources.Theme)(t: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)` Applies the specified theme to this Drawable and its children. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#canApplyTheme()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Optimized for drawing ripples with a mask layer and optional content. |
+| --- | --- |
 | open [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
 | open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getDirtyBounds()()` Return the drawable's dirty bounds Rect. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getEffectColor()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getHotspotBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Populates `outRect` with the hotspot bounds. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Populates `outline` with the first available layer outline, excluding the mask layer. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getRadius()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#hasFocusStateSpecified()()` Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#invalidateSelf()()` Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable redrawn. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#isProjected()()` Whether this drawable requests projection. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#jumpToCurrentState()()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#mutate()()` Make this drawable mutable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setColor(android.content.res.ColorStateList)(color: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)` Sets the ripple color. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setDrawableByLayerId(kotlin.Int,%20android.graphics.drawable.Drawable)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable!)` Replaces the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` for the layer with the given id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setEffectColor(android.content.res.ColorStateList)(color: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)` Sets the ripple effect color. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setHotspot(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Specifies the hotspot's location within the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setHotspotBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bounds to which the hotspot is constrained, if they should be different from the drawable bounds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setPaddingMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies how layer padding should affect the bounds of subsequent layers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setRadius(kotlin.Int)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the radius in pixels of the fully expanded ripple. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setVisible(kotlin.Boolean,%20kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, restart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this Drawable is visible. |
 
 | Protected methods ||
@@ -842,6 +853,7 @@ Creates a new ripple drawable with the specified ripple color and optional conte
 | `color` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#): The ripple color. This value cannot be `null`. |
 | `content` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)?: The content drawable, may be `null` |
 | `mask` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)?: The mask drawable, may be `null` |
+| --- | --- |
 
 ## Public methods
 
@@ -1019,6 +1031,7 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): This value cannot be `null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: This value may be `null`. |
 
 | Exceptions ||
@@ -1172,6 +1185,7 @@ Sets the bounds to which the hotspot is constrained, if they should be different
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position in pixels of the left bound |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position in pixels of the top bound |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position in pixels of the right bound |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position in pixels of the bottom bound |
 
 ### setPaddingMode

@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # Gesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/gesture/Gesture "View this page in Java") 
+| --- | --- |
 
 ```
 open class Gesture : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.gesture.Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture#) |
 
 A gesture is a hand-drawn shape on a touch screen. It can have one or multiple strokes. Each stroke is a sequence of timed points. A user-defined gesture can be recognized by a GestureLibrary.
@@ -30,18 +32,23 @@ A gesture is a hand-drawn shape on a touch screen. It can have one or multiple s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStroke](https://developer.android.com/reference/kotlin/android/gesture/Gesture#addStroke(android.gesture.GestureStroke))`(`stroke:` ` [GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke)!`)` Adds a stroke to the gesture. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/android/gesture/Gesture#clone())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/gesture/Gesture#describeContents())`()` <br /> |
+| --- | --- |
 | open [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)! | [getBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/Gesture#getBoundingBox())`()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getID](https://developer.android.com/reference/kotlin/android/gesture/Gesture#getID())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/gesture/Gesture#getLength())`()` Calculates the total length of the gesture. |
+| --- | --- |
 | open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke)!\>! | [getStrokes](https://developer.android.com/reference/kotlin/android/gesture/Gesture#getStrokes())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrokesCount](https://developer.android.com/reference/kotlin/android/gesture/Gesture#getStrokesCount())`()` <br /> |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [toBitmap](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toBitmap(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a bitmap of the gesture with a transparent background. |
+| --- | --- |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [toBitmap](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toBitmap(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edge:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numSample:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a bitmap of the gesture with a transparent background. |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [toPath](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toPath())`()` <br /> |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [toPath](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toPath(android.graphics.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` <br /> |
+| --- | --- |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [toPath](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toPath(android.graphics.Path,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edge:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numSample:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [toPath](https://developer.android.com/reference/kotlin/android/gesture/Gesture#toPath(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edge:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numSample:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/gesture/Gesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -183,6 +190,7 @@ Creates a bitmap of the gesture with a transparent background.
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `inset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
+| --- | --- |
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 
 | Return ||
@@ -210,6 +218,7 @@ Creates a bitmap of the gesture with a transparent background.
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):width of the target bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):height of the target bitmap |
 | `edge` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the edge |
+| --- | --- |
 | `numSample` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 

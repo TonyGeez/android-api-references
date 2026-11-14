@@ -7,6 +7,7 @@ abstract class ViewGroup : View, ViewManager, ViewParent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup#) |
 
@@ -83,18 +84,22 @@ Finally the layout manager can be used in an XML layout like so:
 | open | `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams` LayoutParams are used by views to tell their parents how they want to be laid out. |
 | open | `https://developer.android.com/reference/kotlin/android/view/ViewGroup.MarginLayoutParams` Per-child layout information for layouts that support margins. |
 | abstract | `https://developer.android.com/reference/kotlin/android/view/ViewGroup.OnHierarchyChangeListener` Interface definition for a callback to be invoked when the hierarchy within this view changed. |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:addStatesFromChildren`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Sets whether this ViewGroup's drawable states also include its children's drawable states. |
 | [`android:alwaysDrawnWithCache`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines whether the ViewGroup should always draw its children using their drawing cache or not. |
 | [`android:animateLayoutChanges`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines whether changes in layout (caused by adding and removing items) should cause a LayoutTransition to run. |
+| --- | --- |
 | [`android:animationCache`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines whether layout animations should create a drawing cache for their children. |
 | [`android:clipChildren`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines whether a child is limited to draw inside of its bounds or not. |
 | [`android:clipToPadding`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines whether the ViewGroup will clip its children and resize (but not clip) any EdgeEffect to its padding, if padding is not zero. |
+| --- | --- |
 | [`android:descendantFocusability`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines the relationship between the ViewGroup and its descendants when looking for a View to take focus. |
 | [`android:layoutAnimation`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines the layout animation to use the first time the ViewGroup is laid out. |
 | [`android:layoutMode`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines the layout mode of this ViewGroup. |
+| --- | --- |
 | [`android:persistentDrawingCache`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Defines the persistence of the drawing cache. |
 | [`android:splitMotionEvents`](https://developer.android.com/reference/kotlin/android/view/ViewGroup#attr_ViewGroup) | Sets whether this ViewGroup should split MotionEvents to separate child views during touch event dispatch. |
 
@@ -376,6 +381,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -492,6 +498,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -586,12 +593,15 @@ Constant Value Description gone 2 Completely hidden, as if the view had not been
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#CLIP_TO_PADDING_MASK:kotlin.Int` We clip to padding when FLAG_CLIP_TO_PADDING and FLAG_PADDING_NOT_NULL are set at the same time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#FOCUS_AFTER_DESCENDANTS:kotlin.Int` This view will get focus only if none of its descendants want it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#FOCUS_BEFORE_DESCENDANTS:kotlin.Int` This view will get focus before any of its descendants. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#FOCUS_BLOCK_DESCENDANTS:kotlin.Int` This view will block any of its descendants from getting focus, even if they are focusable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#LAYOUT_MODE_CLIP_BOUNDS:kotlin.Int` This constant is a `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutMode(kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#LAYOUT_MODE_OPTICAL_BOUNDS:kotlin.Int` This constant is a `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutMode(kotlin.Int)`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#PERSISTENT_ALL_CACHES:kotlin.Int` Used to indicate that all drawing caches should be kept in memory. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#PERSISTENT_ANIMATION_CACHE:kotlin.Int` Used to indicate that the animation drawing cache should be kept in memory. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#PERSISTENT_NO_CACHE:kotlin.Int` Used to indicate that no drawing cache should be kept in memory. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#PERSISTENT_SCROLLING_CACHE:kotlin.Int` Used to indicate that the scrolling drawing cache should be kept in memory. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
@@ -1690,147 +1700,195 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!)` Adds the children of this View relevant for accessibility to the given list as output. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addExtraDataToAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo,%20kotlin.String,%20android.os.Bundle)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo, extraDataKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Adds extra data to an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo` based on an explicit request for the additional data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addFocusables(java.util.ArrayList,%20kotlin.Int,%20kotlin.Int)(views: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, focusableMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds any focusable views that are descendants of this view (possibly including this view if it is focusable itself) to views. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addKeyboardNavigationClusters(kotlin.collections.MutableCollection,%20kotlin.Int)(views: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/view/View!>, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds any keyboard navigation cluster roots that are descendants of this view (possibly including this view if it is a cluster root itself) to views. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addStatesFromChildren()()` Returns whether this ViewGroup's drawable states also include its children's drawable states. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addTouchables(java.util.ArrayList)(views: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!)` Add any touchable views that are descendants of this view (possibly including this view if it is touchable itself) to views. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addView(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Adds a child view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Adds a child view with the specified layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addView(android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a child view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addView(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Adds a child view with the specified layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addView(android.view.View,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View!, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a child view with this ViewGroup's default layout parameters and the specified width and height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#bringChildToFront(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Change the z order of the child so it's on top of all other children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#childDrawableStateChanged(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View)` If `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addStatesFromChildren()` is true, refreshes this group's drawable state (to include the states from its children). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#childHasTransientStateChanged(android.view.View,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View, childHasTransientState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child view has changed whether or not it is tracking transient state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#clearChildFocus(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Called when a child of this parent is giving up focus |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#clearDisappearingChildren()()` Removes any pending animations for views that have been removed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#clearFocus()()` Called when this view wants to give up focus. |
 | open [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets!)` Request to apply the given window insets to this view or another view in its subtree. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchCapturedPointerEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Pass a captured pointer event down to the focused view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Dispatch a notification about a resource configuration change down the view hierarchy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchCreateViewTranslationRequest(kotlin.collections.MutableMap,%20kotlin.IntArray,%20android.view.translation.TranslationCapability,%20kotlin.collections.MutableList)(viewIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!>, supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, capability: https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability!, requests: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest!>)` Dispatch to collect the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`s for translation purpose by traversing the hierarchy when the app requests ui translation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchDisplayHint(kotlin.Int)(hint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch a hint about whether this view is displayed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchDragEvent(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent!)` Detects if this View is enabled and has a drag event listener. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchDrawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Dispatches drawable hotspot changes to child views that meet at least one of the following criteria: - Returns `false` from both `https://developer.android.com/reference/kotlin/android/view/View#isClickable()` and `https://developer.android.com/reference/kotlin/android/view/View#isLongClickable()` - Requests duplication of parent state via `https://developer.android.com/reference/kotlin/android/view/View#setDuplicateParentStateEnabled(kotlin.Boolean)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchFinishTemporaryDetach()()` Dispatch `https://developer.android.com/reference/kotlin/android/view/View#onFinishTemporaryDetach()` to this View and its direct children if this is a container View. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Dispatch a key event to the next view on the focus path. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchKeyEventPreIme(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Dispatch a key event before it is processed by any input method associated with the view hierarchy. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchKeyShortcutEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Dispatches a key shortcut event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchPointerCaptureChanged(kotlin.Boolean)(hasCapture: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchProvideAutofillStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatches creation of a `https://developer.android.com/reference/kotlin/android/view/ViewStructure`s for autofill purposes down the hierarchy, when an Assist structure is being created as part of an autofill request. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchProvideStructure(android.view.ViewStructure)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure!)` Dispatch creation of `https://developer.android.com/reference/kotlin/android/view/ViewStructure` down the hierarchy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchScrollCaptureSearch(android.graphics.Rect,%20android.graphics.Point,%20java.util.function.Consumer)(localVisibleRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#, windowOffset: https://developer.android.com/reference/kotlin/android/graphics/Point.html#, targets: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget!>)` Handle the scroll capture search request by checking this view if applicable, then to each child view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchSetActivated(kotlin.Boolean)(activated: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setActivated to all of this View's children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchSetSelected(kotlin.Boolean)(selected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setSelected to all of this View's children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchStartTemporaryDetach()()` Dispatch `https://developer.android.com/reference/kotlin/android/view/View#onStartTemporaryDetach()` to this View and its direct children if this is a container View. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchSystemUiVisibilityChanged(kotlin.Int)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch callbacks to `https://developer.android.com/reference/kotlin/android/view/View#setOnSystemUiVisibilityChangeListener(android.view.View.OnSystemUiVisibilityChangeListener)` down the view hierarchy. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Pass the touch screen motion event down to the target view, or this view if it is the target. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchTrackballEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Pass a trackball motion event down to the focused view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchUnhandledMove(android.view.View,%20kotlin.Int)(focused: https://developer.android.com/reference/kotlin/android/view/View!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is the last chance for the focused view and its ancestors to respond to an arrow key. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowFocusChanged(kotlin.Boolean)(hasFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses window focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowInsetsAnimationEnd(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onEnd(android.view.WindowInsetsAnimation)` when Window Insets animation ends. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowInsetsAnimationPrepare(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onPrepare(android.view.WindowInsetsAnimation)` when Window Insets animation is being prepared. |
+| --- | --- |
 | open [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowInsetsAnimationProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets, runningAnimations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation!>)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)` when Window Insets animation makes progress. |
 | open [WindowInsetsAnimation.Bounds](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowInsetsAnimationStart(android.view.WindowInsetsAnimation,%20android.view.WindowInsetsAnimation.Bounds)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation, bounds: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onStart(android.view.WindowInsetsAnimation,%20android.view.WindowInsetsAnimation.Bounds)` when Window Insets animation is started. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowSystemUiVisiblityChanged(kotlin.Int)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch callbacks to `https://developer.android.com/reference/kotlin/android/view/View#onWindowSystemUiVisibilityChanged(kotlin.Int)` down the view hierarchy. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchWindowVisibilityChanged(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch a window visibility change down the view hierarchy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#endViewTransition(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` This method should always be called following an earlier call to `https://developer.android.com/reference/kotlin/android/view/ViewGroup#startViewTransition(android.view.View)`. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
+| --- | --- |
 | open [OnBackInvokedDispatcher](https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#)? | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#findOnBackInvokedDispatcherForChild(android.view.View,%20android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View, requester: https://developer.android.com/reference/kotlin/android/view/View)` Walk up the View hierarchy to find the nearest `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#findViewsWithText(java.util.ArrayList,%20kotlin.CharSequence,%20kotlin.Int)(outViews: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds the Views that contain given text. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#focusSearch(android.view.View,%20kotlin.Int)(focused: https://developer.android.com/reference/kotlin/android/view/View!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the nearest view in the specified direction that wants to take focus. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#focusableViewAvailable(android.view.View)(v: https://developer.android.com/reference/kotlin/android/view/View!)` Tells the parent that a new focusable view has become available. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#gatherTransparentRegion(android.graphics.Region)(region: https://developer.android.com/reference/kotlin/android/graphics/Region.html#?)` This is used by the ViewRoot to perform an optimization when the view hierarchy contains one or several SurfaceView. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the view at the specified position in the group. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildCount()()` Returns the number of children in the group. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildDrawingOrder(kotlin.Int)(drawingPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts drawing order position to container position. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildMeasureSpec(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(spec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, padding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childDimension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Does the hard part of measureChildren: figuring out the MeasureSpec to pass to a particular child. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildVisibleRect(android.view.View,%20android.graphics.Rect,%20android.graphics.Point)(child: https://developer.android.com/reference/kotlin/android/view/View!, r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, offset: https://developer.android.com/reference/kotlin/android/graphics/Point.html#!)` Compute the visible part of a rectangular region defined in terms of a child view's coordinates. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getClipChildren()()` Returns whether this group's children are clipped to their bounds before drawing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getClipToPadding()()` Returns whether this ViewGroup will clip its children to its padding, and resize (but not clip) any EdgeEffect to the padded region, if padding is present. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getDescendantFocusability()()` Gets the descendant focusability of this view group. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getFocusedChild()()` Returns the focused child of this view, if any. |
 | open [LayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getLayoutAnimation()()` Returns the layout animation controller used to animate the group's children. |
 | open [Animation.AnimationListener](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getLayoutAnimationListener()()` Returns the animation listener to which layout animation events are sent. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getLayoutMode()()` Returns the basis of alignment during layout operations on this ViewGroup: either `https://developer.android.com/reference/kotlin/android/view/ViewGroup#LAYOUT_MODE_CLIP_BOUNDS:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/ViewGroup#LAYOUT_MODE_OPTICAL_BOUNDS:kotlin.Int`. |
 | open [LayoutTransition](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition.html#)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getLayoutTransition()()` Gets the LayoutTransition object for this ViewGroup. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getNestedScrollAxes()()` Return the current axes of nested scrolling for this ViewGroup. |
+| --- | --- |
 | open [ViewGroupOverlay](https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getOverlay()()` Returns the ViewGroupOverlay for this view group, creating it if it does not yet exist. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getPersistentDrawingCache()()` Returns an integer indicating what types of drawing caches are kept in memory. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getTouchscreenBlocksFocus()()` Check whether this ViewGroup should ignore focus requests for itself and its children. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#hasFocus()()` Returns true if this view has or contains focus |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#hasTransientState()()` Indicates whether the view is currently tracking transient state that the app should not need to concern itself with saving and restoring, but that the framework should take special note to preserve when possible. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#indexOfChild(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Returns the position in the group of the specified child view. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#invalidateChild(android.view.View,%20android.graphics.Rect)(child: https://developer.android.com/reference/kotlin/android/view/View!, dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Don't call or override this method. |
 | open [ViewParent](https://developer.android.com/reference/kotlin/android/view/ViewParent)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#invalidateChildInParent(kotlin.IntArray,%20android.graphics.Rect)(location: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Don't call or override this method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isAlwaysDrawnWithCacheEnabled()()` Indicates whether this ViewGroup will always try to draw its children using their drawing cache. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isAnimationCacheEnabled()()` Indicates whether the children's drawing cache is used during a layout animation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isLayoutSuppressed()()` Returns whether layout calls on this container are currently being suppressed, due to an earlier call to `https://developer.android.com/reference/kotlin/android/view/ViewGroup#suppressLayout(kotlin.Boolean)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isMotionEventSplittingEnabled()()` Returns true if MotionEvents dispatched to this ViewGroup can be split to multiple children. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()()` Returns true if this ViewGroup should be considered as a single entity for removal when executing an Activity transition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#layout(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Assign a size and position to a view and all of its descendants |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#notifySubtreeAccessibilityStateChanged(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View, source: https://developer.android.com/reference/kotlin/android/view/View, changeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies a view parent that the accessibility state of one of its descendants has changed and that the structure of the subtree is different. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#offsetDescendantRectToMyCoords(android.view.View,%20android.graphics.Rect)(descendant: https://developer.android.com/reference/kotlin/android/view/View!, rect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Offset a rectangle that is in a descendant's coordinate space into our coordinate space. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#offsetRectIntoDescendantCoords(android.view.View,%20android.graphics.Rect)(descendant: https://developer.android.com/reference/kotlin/android/view/View!, rect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Offset a rectangle that is in our coordinate space into an ancestor's coordinate space. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onDescendantInvalidated(android.view.View,%20android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View, target: https://developer.android.com/reference/kotlin/android/view/View)` The target View has been invalidated, or has had a drawing property changed that requires the hierarchy to re-render. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onInterceptHoverEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Implement this method to intercept hover events before they are handled by child views. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onInterceptTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Implement this method to intercept all touch screen motion events. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedFling(android.view.View,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean)(target: https://developer.android.com/reference/kotlin/android/view/View, velocityX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, consumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Request a fling from a nested scroll. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedPreFling(android.view.View,%20kotlin.Float,%20kotlin.Float)(target: https://developer.android.com/reference/kotlin/android/view/View, velocityX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` React to a nested fling before the target view consumes it. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedPrePerformAccessibilityAction(android.view.View,%20kotlin.Int,%20android.os.Bundle)(target: https://developer.android.com/reference/kotlin/android/view/View, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` React to an accessibility action delegated by a target descendant view before the target processes it. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedPreScroll(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(target: https://developer.android.com/reference/kotlin/android/view/View, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, consumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` React to a nested scroll in progress before the target view consumes a portion of the scroll. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedScroll(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(target: https://developer.android.com/reference/kotlin/android/view/View, dxConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dxUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a nested scroll in progress. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onNestedScrollAccepted(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View, target: https://developer.android.com/reference/kotlin/android/view/View, axes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to the successful claiming of a nested scroll operation. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onRequestSendAccessibilityEvent(android.view.View,%20android.view.accessibility.AccessibilityEvent)(child: https://developer.android.com/reference/kotlin/android/view/View!, event: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent!)` Called when a child has requested sending an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent` and gives an opportunity to its parent to augment the event. |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onStartNestedScroll(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View, target: https://developer.android.com/reference/kotlin/android/view/View, nestedScrollAxes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onStopNestedScroll(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View)` React to a nested scroll operation ending. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onViewAdded(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Called when a new child is added to this ViewGroup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onViewRemoved(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Called when a child view is removed from this ViewGroup. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#propagateRequestedFrameRate(kotlin.Float,%20kotlin.Boolean)(frameRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, forceOverride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` You can set the preferred frame rate for a ViewGroup and its children using a positive number or by specifying the preferred frame rate category using constants, including REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCE, REQUESTED_FRAME_RATE_CATEGORY_LOW, REQUESTED_FRAME_RATE_CATEGORY_NORMAL, REQUESTED_FRAME_RATE_CATEGORY_HIGH. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#recomputeViewAttributes(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Tell view hierarchy that the global view attributes need to be re-evaluated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeAllViews()()` Call this method to remove all child views from the ViewGroup. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeAllViewsInLayout()()` Called by a ViewGroup subclass to remove child views from itself, when it must first know its size on screen before it can calculate how many child views it will render. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` **Note:** do not invoke this method from `https://developer.android.com/reference/kotlin/android/view/View#draw(android.graphics.Canvas)`, `https://developer.android.com/reference/kotlin/android/view/View#onDraw(android.graphics.Canvas)`, `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchDraw(android.graphics.Canvas)` or any related method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeViewAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the view at the specified position in the group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeViewInLayout(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` Removes a view during layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeViews(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the specified range of views from the group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeViewsInLayout(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a range of views during layout. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestChildFocus(android.view.View,%20android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!, focused: https://developer.android.com/reference/kotlin/android/view/View!)` Called when a child of this parent wants focus |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestChildRectangleOnScreen(android.view.View,%20android.graphics.Rect,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View, rectangle: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, immediate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestChildRectangleOnScreen(android.view.View,%20android.graphics.Rect,%20kotlin.Boolean,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View, rectangle: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#, immediate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestDisallowInterceptTouchEvent(kotlin.Boolean)(disallowIntercept: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child does not want this parent and its ancestors to intercept touch events with `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onInterceptTouchEvent(android.view.MotionEvent)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestFocus(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Call this to try to give focus to a specific view or to one of its descendants and give it hints about the direction and a specific rectangle that the focus is coming from. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestSendAccessibilityEvent(android.view.View,%20android.view.accessibility.AccessibilityEvent)(child: https://developer.android.com/reference/kotlin/android/view/View, event: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent!)` Called by a child to request from its parent to send an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#requestTransparentRegion(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Called when a child wants the view hierarchy to gather and report transparent regions to the window compositor. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#restoreDefaultFocus()()` Gives focus to the default-focus view in the view hierarchy that has this view as a root. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#scheduleLayoutAnimation()()` Schedules the layout animation to be played after the next layout pass of this view group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setAddStatesFromChildren(kotlin.Boolean)(addsStates: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this ViewGroup's drawable states also include its children's drawable states. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setAlwaysDrawnWithCacheEnabled(kotlin.Boolean)(always: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Indicates whether this ViewGroup will always try to draw its children using their drawing cache. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setAnimationCacheEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the children's drawing cache during a layout animation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setClipChildren(kotlin.Boolean)(clipChildren: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` By default, children are clipped to their bounds before drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setClipToPadding(kotlin.Boolean)(clipToPadding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this ViewGroup will clip its children to its padding and resize (but not clip) any EdgeEffect to the padded region, if padding is present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setDescendantFocusability(kotlin.Int)(focusability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the descendant focusability of this view group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutAnimation(android.view.animation.LayoutAnimationController)(controller: https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController!)` Sets the layout animation controller used to animate the group's children after the first layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutAnimationListener(android.view.animation.Animation.AnimationListener)(animationListener: https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener!)` Specifies the animation listener to which layout animation events must be sent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutMode(kotlin.Int)(layoutMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the basis of alignment during the layout of this ViewGroup. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setLayoutTransition(android.animation.LayoutTransition)(transition: https://developer.android.com/reference/kotlin/android/animation/LayoutTransition.html#!)` Sets the LayoutTransition object for this ViewGroup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setMotionEventSplittingEnabled(kotlin.Boolean)(split: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable the splitting of MotionEvents to multiple children during touch event dispatch. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setOnHierarchyChangeListener(android.view.ViewGroup.OnHierarchyChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewGroup.OnHierarchyChangeListener!)` Register a callback to be invoked when a child is added to or removed from this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setPersistentDrawingCache(kotlin.Int)(drawingCacheToKeep: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Indicates what types of drawing caches should be kept in memory after they have been created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setRequestedFrameRate(kotlin.Float)(frameRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` You can set the preferred frame rate for a ViewGroup using a positive number or by specifying the preferred frame rate category using constants, including REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCE, REQUESTED_FRAME_RATE_CATEGORY_LOW, REQUESTED_FRAME_RATE_CATEGORY_NORMAL, REQUESTED_FRAME_RATE_CATEGORY_HIGH. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setTouchscreenBlocksFocus(kotlin.Boolean)(touchscreenBlocksFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this ViewGroup should ignore focus requests for itself and its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setTransitionGroup(kotlin.Boolean)(isTransitionGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Changes whether or not this ViewGroup should be treated as a single entity during Activity Transitions. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setWindowInsetsAnimationCallback(android.view.WindowInsetsAnimation.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback?)` Sets a `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback` to be notified about animations of windows that cause insets. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#shouldDelayChildPressedState()()` Return true if the pressed state should be delayed for children or descendants of this ViewGroup. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#showContextMenuForChild(android.view.View)(originalView: https://developer.android.com/reference/kotlin/android/view/View!)` Shows the context menu for the specified view or its ancestors. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#showContextMenuForChild(android.view.View,%20kotlin.Float,%20kotlin.Float)(originalView: https://developer.android.com/reference/kotlin/android/view/View!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate. |
 | open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#startActionModeForChild(android.view.View,%20android.view.ActionMode.Callback)(originalView: https://developer.android.com/reference/kotlin/android/view/View!, callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!)` Start an action mode for the specified view with the default type `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_PRIMARY:kotlin.Int`. |
+| --- | --- |
 | open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#startActionModeForChild(android.view.View,%20android.view.ActionMode.Callback,%20kotlin.Int)(originalView: https://developer.android.com/reference/kotlin/android/view/View!, callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start an action mode of a specific type for the specified view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#startLayoutAnimation()()` Runs the layout animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#startViewTransition(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` This method tells the ViewGroup that the given View object, which should have this ViewGroup as its parent, should be kept around (re-displayed when the ViewGroup draws its children) even if it is removed from its parent. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#suppressLayout(kotlin.Boolean)(suppress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Tells this ViewGroup to suppress all layout() calls until layout suppression is disabled with a later call to suppressLayout(false). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#updateViewLayout(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` <br /> |
 
@@ -1839,45 +1897,59 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addViewInLayout(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Adds a view during layout. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#addViewInLayout(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!, preventRequestLayout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Adds a view during layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#attachLayoutAnimationParameters(android.view.View,%20android.view.ViewGroup.LayoutParams,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclasses should override this method to set layout animation parameters on the supplied child. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#attachViewToParent(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Attaches a view to this view group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#canAnimate()()` Indicates whether the view group has the ability to animate its children after the first layout. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#cleanupLayoutState(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Prevents the specified child to be laid out during the next layout pass. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#debug(kotlin.Int)(depth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#detachAllViewsFromParent()()` Detaches all views from the parent. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#detachViewFromParent(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View!)` Detaches a view from its parent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#detachViewFromParent(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Detaches a view from its parent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#detachViewsFromParent(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Detaches a range of views from their parents. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchFreezeSelfOnly(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Perform dispatching of a `https://developer.android.com/reference/kotlin/android/view/View#saveHierarchyState(android.util.SparseArray)` freeze()} to only this view, not to its children. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchGenericFocusedEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Dispatch a generic motion event to the currently focused view. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchGenericPointerEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Dispatch a generic motion event to the view under the first pointer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchHoverEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Dispatch a hover event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchRestoreInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Called by `https://developer.android.com/reference/kotlin/android/view/View#restoreHierarchyState(android.util.SparseArray)` to retrieve the state for this view and its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchSaveInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Called by `https://developer.android.com/reference/kotlin/android/view/View#saveHierarchyState(android.util.SparseArray)` to store the state for this view and its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchSetPressed(kotlin.Boolean)(pressed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setPressed to all of this View's children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchThawSelfOnly(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Perform dispatching of a `https://developer.android.com/reference/kotlin/android/view/View#restoreHierarchyState(android.util.SparseArray)` to only this view, not to its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#dispatchVisibilityChanged(android.view.View,%20kotlin.Int)(changedView: https://developer.android.com/reference/kotlin/android/view/View, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch a view visibility change down the view hierarchy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#drawChild(android.graphics.Canvas,%20android.view.View,%20kotlin.Long)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, child: https://developer.android.com/reference/kotlin/android/view/View!, drawingTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Draw one child of this View Group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
+| --- | --- |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Returns a safe set of layout parameters based on the supplied layout params. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildDrawingOrder(kotlin.Int,%20kotlin.Int)(childCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, drawingPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts drawing order position to container position. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildStaticTransformation(android.view.View,%20android.view.animation.Transformation)(child: https://developer.android.com/reference/kotlin/android/view/View!, t: https://developer.android.com/reference/kotlin/android/view/animation/Transformation!)` Sets `t` to be the static transformation of the child, if set, returning a boolean to indicate whether a static transform was set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isChildrenDrawingOrderEnabled()()` Indicates whether the ViewGroup is drawing its children in the order defined by `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildDrawingOrder(kotlin.Int,%20kotlin.Int)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isChildrenDrawnWithCacheEnabled()()` Indicates whether the ViewGroup is currently drawing its children using their drawing cache. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#measureChild(android.view.View,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View!, parentWidthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentHeightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask one of the children of this view to measure itself, taking into account both the MeasureSpec requirements for this view and its padding. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#measureChildWithMargins(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View!, parentWidthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widthUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentHeightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask one of the children of this view to measure itself, taking into account both the MeasureSpec requirements for this view and its padding and margins. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#measureChildren(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask all of the children of this view to measure themselves, taking into account both the MeasureSpec requirements for this view and its padding. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onCreateDrawableState(kotlin.Int)(extraSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generate the new `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` state for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onDetachedFromWindow()()` This is called when the view is detached from a window. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#onRequestFocusInDescendants(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Look for a descendant to call android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#removeDetachedView(android.view.View,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View!, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Finishes the removal of a detached view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setChildrenDrawingCacheEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the drawing cache for each child of this view group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setChildrenDrawingOrderEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Tells the ViewGroup whether to draw its children in the order defined by the method `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildDrawingOrder(kotlin.Int,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setChildrenDrawnWithCacheEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Tells the ViewGroup to draw its children using their drawing cache. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewGroup#setStaticTransformationsEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When this property is set to true, this ViewGroup supports static transformations on children; this causes `https://developer.android.com/reference/kotlin/android/view/ViewGroup#getChildStaticTransformation(android.view.View,%20android.view.animation.Transformation)` to be invoked when a child is drawn. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View#addFocusables(java.util.ArrayList,%20kotlin.Int)(views: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
@@ -3341,6 +3413,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -7070,6 +7143,7 @@ Must be one of the following constant values.
 | afterDescendants | 1 | The ViewGroup will get focus only if none of its descendants want it. |
 | beforeDescendants | 0 | The ViewGroup will get focus before any of its descendants. |
 | blocksDescendants | 2 | The ViewGroup will block its descendants from receiving focus. |
+| --- | --- | --- |
 
 ### android:layoutAnimation
 
@@ -7102,12 +7176,14 @@ android:persistentDrawingCache
 Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | all | 3 | The drawing cache is always persisted. |
 | animation | 1 | The drawing cache is persisted after a layout animation. |
 | none | 0 | The drawing cache is not persisted after use. |
+| --- | --- | --- |
 | scrolling | 2 | The drawing cache is persisted after a scroll. |
 
 ### android:splitMotionEvents
@@ -7335,6 +7411,7 @@ If you override this method you *must* call through to the superclass implementa
 | `info` | [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo): The info to which to add the extra data. Never `null`. |
 | `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A key specifying the type of extra data to add to the info. The extra data should be added to the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` returned by the info's `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras()` method. Never `null`. |
 | `arguments` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` holding any arguments relevant for this request. May be `null` if the service provided no arguments. |
+| --- | --- |
 
 ### addFocusables
 
@@ -7355,6 +7432,7 @@ Adds any focusable views that are descendants of this view (possibly including t
 | `views` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [View](https://developer.android.com/reference/kotlin/android/view/View)!\>!: Focusable views found so far or null if all we are interested is the number of focusables. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction of the focus. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 | `focusableMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of focusables to be added. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUSABLES_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUSABLES_TOUCH_MODE:kotlin.Int` |
+| --- | --- |
 
 ### addKeyboardNavigationClusters
 
@@ -7438,6 +7516,7 @@ Adds a child view with the specified layout parameters.
 | `view` | The view to be added to this window. |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the layout parameters to set on the child |
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the child view to add |
+| --- | --- |
 
 ### addView
 
@@ -7484,6 +7563,7 @@ Adds a child view with the specified layout parameters.
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the layout parameters to set on the child |
+| --- | --- |
 
 ### addView
 
@@ -7666,6 +7746,7 @@ The implementation calls `https://developer.android.com/reference/kotlin/android
 | `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int` |
 | `capability` | [TranslationCapability](https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability)!: This value may be `null`. |
+| --- | --- |
 | `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest)!\>: This value cannot be `null`. |
 
 ### dispatchDisplayHint
@@ -7858,6 +7939,7 @@ Handle the scroll capture search request by checking this view if applicable, th
 | `localVisibleRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): the visible area of this ViewGroup in local coordinates, according to the parent. This value cannot be `null`. |
 | `windowOffset` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#): the offset of this view within the window. This value cannot be `null`. |
 | `targets` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [ScrollCaptureTarget](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget)!\>: accepts potential scroll capture targets; `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#accept(java.util.function.Consumer.T)` may be called zero or more times on the calling thread before onScrollCaptureSearch returns. This value cannot be `null`. |
+| --- | --- |
 
 ### dispatchSetActivated
 
@@ -8149,6 +8231,7 @@ Finds the Views that contain given text. The containment is case insensitive. Th
 | `outViews` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [View](https://developer.android.com/reference/kotlin/android/view/View)!\>!: The output list of matching Views. |
 | `searched` | The text to match against. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FIND_VIEWS_WITH_TEXT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FIND_VIEWS_WITH_CONTENT_DESCRIPTION:kotlin.Int` |
+| --- | --- |
 
 ### focusSearch
 
@@ -8168,6 +8251,7 @@ Find the nearest view in the specified direction that wants to take focus.
 | `v` | The view that currently has focus |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT, or 0 for not applicable. |
 | `focused` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: The view that currently has focus |
+| --- | --- |
 
 ### focusableViewAvailable
 
@@ -8304,6 +8388,7 @@ Does the hard part of measureChildren: figuring out the MeasureSpec to pass to a
 | `spec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The requirements for this view |
 | `padding` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The padding of this view for the current dimension and margins, if applicable |
 | `childDimension` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): How big the child wants to be in the current dimension |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8332,6 +8417,7 @@ The resulting rectangle is always axis aligned. If a rotation is applied to a no
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: A child View, whose rectangular visible region we want to compute |
 | `r` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The input rectangle, defined in the child coordinate system. Will be overwritten to contain the resulting visible rectangle, expressed in global (root) coordinates |
 | `offset` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)!: The input coordinates of a point, defined in the child coordinate system. As with the `r` parameter, this will be overwritten to contain the global (root) coordinates of that point. A `null` value is valid (in case you are not interested in this result) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8751,6 +8837,7 @@ Derived classes should not override this method. Derived classes with children s
 | `l` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `t` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
 | `r` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
+| --- | --- |
 | `b` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |
 
 ### notifySubtreeAccessibilityStateChanged
@@ -8772,6 +8859,7 @@ Notifies a view parent that the accessibility state of one of its descendants ha
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View): The direct child whose subtree has changed. This value cannot be `null`. |
 | `source` | [View](https://developer.android.com/reference/kotlin/android/view/View): The descendant view that changed. May not be `null`. |
 | `changeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A bit mask of the types of changes that occurred. One or more of: - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_STATE_DESCRIPTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_SUBTREE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_TEXT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_UNDEFINED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_DRAG_STARTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_DRAG_CANCELLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#CONTENT_CHANGE_TYPE_DRAG_DROPPED:kotlin.Int` |
+| --- | --- |
 
 ### offsetDescendantRectToMyCoords
 
@@ -8904,6 +8992,7 @@ If a nested scrolling child view would normally fling but it is at the edge of i
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): View that initiated the nested scroll. This value cannot be `null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Vertical velocity in pixels per second |
+| --- | --- |
 | `consumed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the child consumed the fling, false otherwise |
 
 | Return ||
@@ -8933,6 +9022,7 @@ If a nested scrolling parent is consuming motion as part of a `https://developer
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): View that initiated the nested scroll. This value cannot be `null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Vertical velocity in pixels per second |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8961,6 +9051,7 @@ Subclasses should always call `super.onNestedPrePerformAccessibilityAction`
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): The target view dispatching this action |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action being performed; see `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo` |
 | `arguments` | Optional action arguments. This value may be `null`. |
+| --- | --- |
 | `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Optional action arguments |
 
 | Return ||
@@ -8991,6 +9082,7 @@ When working with nested scrolling often the parent view may want an opportunity
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): View that initiated the nested scroll. This value cannot be `null`. |
 | `dx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels |
 | `dy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels |
+| --- | --- |
 | `consumed` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): Output. The horizontal and vertical scroll distance consumed by this parent. This value cannot be `null`. |
 
 ### onNestedScroll
@@ -9018,6 +9110,7 @@ Both the consumed and unconsumed portions of the scroll distance are reported to
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): The descendent view controlling the nested scroll. This value cannot be `null`. |
 | `dxConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels already consumed by target |
 | `dyConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels already consumed by target |
+| --- | --- |
 | `dxUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels not consumed by target |
 | `dyUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels not consumed by target |
 
@@ -9042,6 +9135,7 @@ This method will be called after `https://developer.android.com/reference/kotlin
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 ### onRequestSendAccessibilityEvent
 
@@ -9092,6 +9186,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -9137,6 +9232,7 @@ This method may be overridden by ViewParent implementations to indicate when the
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9373,6 +9469,7 @@ Called when a child of this group wants a particular rectangle to be positioned 
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View): The direct child making the request. This value cannot be `null`. |
 | `rectangle` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9408,6 +9505,7 @@ Called when a child of this group wants a particular rectangle to be positioned 
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View): This value cannot be `null`. |
 | `rectangle` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): This value cannot be `null`. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
+| --- | --- |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_UNDEFINED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_SCROLL_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_TEXT_CURSOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_INPUT_FOCUS:kotlin.Int` |
 
 | Return ||
@@ -9850,6 +9948,7 @@ If a subclass overrides this method it should also override `https://developer.a
 | `originalView` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the source view where the context menu was first invoked |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the X coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the Y coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9900,6 +9999,7 @@ In most cases, a subclass does not need to override this. However, if the subcla
 | `originalView` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: The source view where the action mode was first invoked |
 | `callback` | [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback)!: The callback that will handle lifecycle events for the action mode |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_PRIMARY:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_FLOATING:kotlin.Int`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9971,6 +10071,7 @@ Adds a view during layout. This is useful if in your onLayout() method, you need
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the view to add to the group |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index at which the child must be added or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the layout parameters to associate with the child |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9996,6 +10097,7 @@ Adds a view during layout. This is useful if in your onLayout() method, you need
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the view to add to the group |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index at which the child must be added or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the layout parameters to associate with the child |
+| --- | --- |
 | `preventRequestLayout` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true, calling this method will not trigger a layout request on child |
 
 | Return ||
@@ -10022,6 +10124,7 @@ Subclasses should override this method to set layout animation parameters on the
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the child to associate with animation parameters |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the child's layout parameters which hold the animation parameters |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the child in the view group |
+| --- | --- |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of children in the view group |
 
 ### attachViewToParent
@@ -10047,6 +10150,7 @@ This method should be called only for views which were detached from their paren
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: the child to attach |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index at which the child should be attached |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams)!: the layout parameters of the child |
+| --- | --- |
 
 **See Also**
 
@@ -10367,6 +10471,7 @@ Draw one child of this View Group. This method is responsible for getting the ca
 | `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The canvas on which to draw the child. This value cannot be `null`. |
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: Who to draw |
 | `drawingTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time at which draw is occurring |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10533,6 +10638,7 @@ Ask one of the children of this view to measure itself, taking into account both
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `parentHeightMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height requirements for this view |
+| --- | --- |
 
 ### measureChildWithMargins
 
@@ -10555,6 +10661,7 @@ Ask one of the children of this view to measure itself, taking into account both
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `widthUsed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space that has been used up by the parent horizontally (possibly by other children of the parent) |
+| --- | --- |
 | `parentHeightMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height requirements for this view |
 | `heightUsed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space that has been used up by the parent vertically (possibly by other children of the parent) |
 
@@ -10637,6 +10744,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 

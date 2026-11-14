@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # OnHoverListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnHoverListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnHoverListener

@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # EffectUpdateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/effect/EffectUpdateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface EffectUpdateListener

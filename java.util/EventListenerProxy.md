@@ -9,9 +9,11 @@ abstract class EventListenerProxy<T : EventListener!> : EventListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.EventListenerProxy](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy#) |
 
 | Known Direct Subclasses [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy.html#) |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------| | [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy.html#) | A class which extends the`EventListenerProxy`specifically for adding a`PropertyChangeListener`with a "bound" property. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An abstract wrapper class for an`EventListener`class which associates a set of additional parameters with the listener. Subclasses must provide the storage and accessor methods for the additional arguments or parameters.
 

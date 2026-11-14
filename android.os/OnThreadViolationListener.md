@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnThreadViolationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/StrictMode.OnThreadViolationListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnThreadViolationListener

@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # IndicSyllabicCategory
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.IndicSyllabicCategory "View this page in Java") 
+| --- | --- |
 
 ```
 interface IndicSyllabicCategory
@@ -21,39 +22,51 @@ Indic Syllabic Category constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAGRAHA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#AVAGRAHA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINDU](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#BINDU:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BRAHMI_JOINING_NUMBER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#BRAHMI_JOINING_NUMBER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANTILLATION_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CANTILLATION_MARK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_DEAD](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_DEAD:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_FINAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_FINAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_HEAD_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_HEAD_LETTER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_INITIAL_POSTFIXED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_INITIAL_POSTFIXED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_KILLER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_KILLER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_MEDIAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_MEDIAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_PLACEHOLDER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_PLACEHOLDER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_PRECEDING_REPHA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_PRECEDING_REPHA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_PREFIXED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_PREFIXED:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_SUBJOINED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_SUBJOINED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_SUCCEEDING_REPHA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_SUCCEEDING_REPHA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONSONANT_WITH_STACKER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#CONSONANT_WITH_STACKER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GEMINATION_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#GEMINATION_MARK:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVISIBLE_STACKER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#INVISIBLE_STACKER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOINER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#JOINER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFYING_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#MODIFYING_LETTER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NON_JOINER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#NON_JOINER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUKTA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#NUKTA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMBER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#NUMBER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMBER_JOINER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#NUMBER_JOINER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#OTHER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURE_KILLER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#PURE_KILLER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTER_SHIFTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#REGISTER_SHIFTER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REORDERING_KILLER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#REORDERING_KILLER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYLLABLE_MODIFIER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#SYLLABLE_MODIFIER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#TONE_LETTER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#TONE_MARK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRAMA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#VIRAMA:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VISARGA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#VISARGA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOWEL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#VOWEL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOWEL_DEPENDENT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#VOWEL_DEPENDENT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOWEL_INDEPENDENT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory#VOWEL_INDEPENDENT:kotlin.Int) <br /> |
 
 ## Constants

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CursorJoiner
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/CursorJoiner "View this page in Java") 
+| --- | --- |
 
 ```
 class CursorJoiner : MutableIterable<CursorJoiner.Result!>, MutableIterator<CursorJoiner.Result!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.CursorJoiner](https://developer.android.com/reference/kotlin/android/database/CursorJoiner#) |
 
 Does a join on two cursors using the specified columns. The cursors must already be sorted on each of the specified columns in ascending order. This joiner only supports the case where the tuple of key column values is unique.
@@ -50,6 +52,7 @@ CursorJoiner joiner = new CursorJoiner(cursorA, keyColumnsofA, cursorB, keyColum
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/android/database/CursorJoiner#hasNext())`()` Returns whether or not there are more rows to compare using next(). |
 | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [CursorJoiner.Result](https://developer.android.com/reference/kotlin/android/database/CursorJoiner.Result)!\> | [iterator](https://developer.android.com/reference/kotlin/android/database/CursorJoiner#iterator())`()` <br /> |
 | [CursorJoiner.Result](https://developer.android.com/reference/kotlin/android/database/CursorJoiner.Result)! | [next](https://developer.android.com/reference/kotlin/android/database/CursorJoiner#next())`()` Returns the comparison result of the next row from each cursor. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/android/database/CursorJoiner#remove())`()` <br /> |
 
 ## Public constructors
@@ -73,6 +76,7 @@ Initializes the CursorJoiner and resets the cursors to the first row. The left a
 | `cursorLeft` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor)!:The left cursor to compare |
 | `columnNamesLeft` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The column names to compare from the left cursor |
 | `cursorRight` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor)!:The right cursor to compare |
+| --- | --- |
 | `columnNamesRight` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The column names to compare from the right cursor |
 
 ## Public methods

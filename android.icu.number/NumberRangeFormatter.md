@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # NumberRangeFormatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/NumberRangeFormatter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class NumberRangeFormatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.NumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#) |
 
 The main entrypoint to the formatting of ranges of numbers, including currencies and other units of measurement.
@@ -38,12 +40,14 @@ Like NumberFormatter, NumberRangeFormatter instances (i.e., LocalizedNumberRange
 | | [RangeCollapse](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeCollapse) Defines how to merge fields that are identical across the range sign. |
 | | [RangeIdentityFallback](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityFallback) Defines the behavior when the two numbers in the range are identical after rounding. |
 | | [RangeIdentityResult](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityResult) Used in the result class FormattedNumberRange to indicate to the user whether the numbers formatted in the range were equal or not, and whether or not the identity fallback was applied. |
+| --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | openstatic [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter)! | [with](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#with())`()` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is not currently known at the call site. |
 | openstatic [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#withLocale(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
 | openstatic [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#withLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
+| --- | --- |
 
 ## Public methods
 

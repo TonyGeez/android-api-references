@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # UnregisterCredentialDescriptionRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/UnregisterCredentialDescriptionRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class UnregisterCredentialDescriptionRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.UnregisterCredentialDescriptionRequest](https://developer.android.com/reference/kotlin/android/credentials/UnregisterCredentialDescriptionRequest#) |
 
 A request to unregister a [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) that contains an actively provisioned [Credential](https://developer.android.com/reference/kotlin/android/credentials/Credential) represented by a [CredentialDescription](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription). \*
@@ -31,6 +33,7 @@ A request to unregister a [ComponentName](https://developer.android.com/referenc
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/UnregisterCredentialDescriptionRequest#describeContents())`()` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CredentialDescription](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription)!\> | [getCredentialDescriptions](https://developer.android.com/reference/kotlin/android/credentials/UnregisterCredentialDescriptionRequest#getCredentialDescriptions())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/UnregisterCredentialDescriptionRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

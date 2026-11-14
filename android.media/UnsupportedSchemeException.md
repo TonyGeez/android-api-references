@@ -5,15 +5,18 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # UnsupportedSchemeException
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/UnsupportedSchemeException "View this page in Java") 
+| --- | --- |
 
 ```
 class UnsupportedSchemeException : MediaDrmException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.media.MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.UnsupportedSchemeException](https://developer.android.com/reference/kotlin/android/media/UnsupportedSchemeException#) |
 
 Exception thrown when an attempt is made to construct a MediaDrm object using a crypto scheme UUID that is not supported by the device

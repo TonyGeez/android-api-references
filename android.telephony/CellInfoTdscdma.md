@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # CellInfoTdscdma
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/CellInfoTdscdma "View this page in Java") 
+| --- | --- |
 
 ```
 class CellInfoTdscdma : CellInfo, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) ||
 | | ↳ | [android.telephony.CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#) |
 
@@ -28,9 +30,11 @@ A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/Ce
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [CellIdentityTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityTdscdma) | [getCellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#getCellIdentity())`()` <br /> |
+| --- | --- |
 | [CellSignalStrengthTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthTdscdma) | [getCellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#getCellSignalStrength())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Inherited functions ||

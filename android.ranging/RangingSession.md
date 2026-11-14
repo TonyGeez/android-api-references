@@ -7,6 +7,7 @@ class RangingSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingSession](https://developer.android.com/reference/kotlin/android/ranging/RangingSession#) |
 
 Represents a session for performing ranging operations. A `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#` manages the lifecycle of a ranging operation, including start, stop, and event callbacks.
@@ -26,9 +27,11 @@ This class implements `https://developer.android.com/reference/kotlin/java/lang/
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#addDeviceToRangingSession(android.ranging.RangingConfig)(deviceRangingParams: https://developer.android.com/reference/kotlin/android/ranging/RangingConfig)` Adds a new device to an ongoing ranging session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#reconfigureRangingInterval(kotlin.Int)(intervalSkipCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reconfigures the ranging interval for the current session by setting the interval skip count. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#removeDeviceFromRangingSession(android.ranging.RangingDevice)(rangingDevice: https://developer.android.com/reference/kotlin/android/ranging/RangingDevice)` Removes a specific device from an ongoing ranging session. |
 | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#start(android.ranging.RangingPreference)(rangingPreference: https://developer.android.com/reference/kotlin/android/ranging/RangingPreference)` Starts the ranging session with the provided ranging preferences. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#stop()()` Stops the ranging session. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#toString()()` Returns a string representation of the object. |
 
 ## Public methods

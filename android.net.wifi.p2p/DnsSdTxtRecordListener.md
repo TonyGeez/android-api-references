@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # DnsSdTxtRecordListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DnsSdTxtRecordListener
@@ -43,3 +44,4 @@ This function is invoked when the device with the specified full service domain 
 | `fullDomainName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: full domain name. e.g) "MyPrinter._ipp._tcp.local.". |
 | `txtRecordMap` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: TXT record data as a map of key/value pairs |
 | `srcDevice` | [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!: source device. |
+| --- | --- |

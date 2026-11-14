@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # AutomaticGainControl
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/AutomaticGainControl "View this page in Java") 
+| --- | --- |
 
 ```
 open class AutomaticGainControl : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.AutomaticGainControl](https://developer.android.com/reference/kotlin/android/media/audiofx/AutomaticGainControl#) |
 

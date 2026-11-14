@@ -9,6 +9,7 @@ abstract class CharsetProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.charset.spi.CharsetProvider](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider#) |
 
 Charset service-provider class.

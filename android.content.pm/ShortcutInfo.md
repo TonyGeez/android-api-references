@@ -5,12 +5,14 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 # ShortcutInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ShortcutInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ShortcutInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#) |
 
 Represents a shortcut that can be published via [ShortcutManager](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager).
@@ -26,12 +28,15 @@ Represents a shortcut that can be published via [ShortcutManager](https://develo
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_APP_CHANGED](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_APP_CHANGED:kotlin.Int) Shortcut has been disabled due to changes to the publisher app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BACKUP_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_BACKUP_NOT_SUPPORTED:kotlin.Int) Shortcut has not been restored because the publisher app does not support backup and restore. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BY_APP](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_BY_APP:kotlin.Int) Shortcut has been disabled by the publisher app with the [ShortcutManager.disableShortcuts(List)](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#disableShortcuts(kotlin.collections.MutableList))API. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_NOT_DISABLED](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_NOT_DISABLED:kotlin.Int) Shortcut is not disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_OTHER_RESTORE_ISSUE](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_OTHER_RESTORE_ISSUE:kotlin.Int) Shortcut has not been restored for unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_SIGNATURE_MISMATCH](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_SIGNATURE_MISMATCH:kotlin.Int) Shortcut has not been restored because the publisher app's signature has changed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_UNKNOWN](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_UNKNOWN:kotlin.Int) Shortcut is disabled for an unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_VERSION_LOWER](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#DISABLED_REASON_VERSION_LOWER:kotlin.Int) Shortcut has been restored from the previous device, but the publisher app on the current device is of a lower version. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHORTCUT_CATEGORY_CONVERSATION](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#SHORTCUT_CATEGORY_CONVERSATION:kotlin.String) Shortcut category for messaging related actions, such as chat. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_LAUNCHER](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#SURFACE_LAUNCHER:kotlin.Int) Indicates system surfaces managed by a launcher app. |
 
 | Inherited constants ||
@@ -43,33 +48,43 @@ Represents a shortcut that can be published via [ShortcutManager](https://develo
 | static [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#) | [createFromGenericDocument](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#createFromGenericDocument(android.content.Context,%20android.app.appsearch.GenericDocument))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `document:` ` [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#)`)` Convert a [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#) into a ShortcutInfo. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#describeContents())`()` <br /> |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getActivity](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getActivity())`()` Return the target activity. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Capability](https://developer.android.com/reference/kotlin/android/content/pm/Capability)!\> | [getCapabilities](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getCapabilities())`()` Return a list of [Capability](https://developer.android.com/reference/kotlin/android/content/pm/Capability) associated with the shortcut. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CapabilityParams](https://developer.android.com/reference/kotlin/android/content/pm/CapabilityParams)!\> | [getCapabilityParams](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getCapabilityParams(android.content.pm.Capability))`(`capability:` ` [Capability](https://developer.android.com/reference/kotlin/android/content/pm/Capability)`)` Returns the [CapabilityParams](https://developer.android.com/reference/kotlin/android/content/pm/CapabilityParams) in associated with given capability. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getCategories](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getCategories())`()` Return the shortcut's categories. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDisabledMessage](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getDisabledMessage())`()` Return the message that should be shown when the user attempts to start a shortcut that is disabled. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisabledReason](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getDisabledReason())`()` Returns why a shortcut has been disabled. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExcludedFromSurfaces](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getExcludedFromSurfaces())`()` Returns a bitmask of all surfaces this shortcut is excluded from. |
+| --- | --- |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getExtras())`()` Extras that the app can set for any purpose. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getId())`()` Returns the ID of a shortcut. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | [getIntent](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getIntent())`()` Returns the intent that is executed when the user selects this shortcut. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>? | [getIntents](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getIntents())`()` Return the intent set with[Builder.setIntents(Intent[])](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setIntents(kotlin.Array)). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastChangedTimestamp](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getLastChangedTimestamp())`()` Last time when any of the fields was updated. |
 | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)? | [getLocusId](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getLocusId())`()` Gets the [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#) associated with this shortcut. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getLongLabel](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getLongLabel())`()` Return the long description of a shortcut. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackage](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getPackage())`()` Return the package name of the publisher app. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRank](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getRank())`()` "Rank" of a shortcut, which is a non-negative, sequential value that's unique for each [getActivity](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getActivity())for each of the two types of shortcuts (static and dynamic). |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getShortLabel](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getShortLabel())`()` Return the short description of a shortcut. |
 | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | [getUserHandle](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#getUserHandle())`()` [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) on which the publisher created this shortcut. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasKeyFieldsOnly](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#hasKeyFieldsOnly())`()` Return whether a shortcut only contains "key" information only or not. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCached](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isCached())`()` Return whether a shortcut is cached. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclaredInManifest](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isDeclaredInManifest())`()` Return whether a shortcut is static; that is, whether a shortcut is published from AndroidManifest. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDynamic](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isDynamic())`()` Return whether a shortcut is dynamic. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isEnabled())`()` Returns`false`if a shortcut is disabled with android. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExcludedFromSurfaces](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isExcludedFromSurfaces(kotlin.Int))`(`surface:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the shortcut is excluded from specified surface. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImmutable](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isImmutable())`()` Return if a shortcut is immutable, in which case it cannot be modified with any of [ShortcutManager](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager) APIs. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#isPinned())`()` Return whether a shortcut is pinned. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#toString())`()` Return a string representation, intended for logging. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

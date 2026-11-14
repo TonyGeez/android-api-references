@@ -8,12 +8,15 @@ open class TabActivity : ActivityGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) |||
 | | | | | ↳ | [android.app.ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup) ||
 | | | | | | ↳ | [android.app.TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 > [!CAUTION]
 > **This class was deprecated in API level 13.**
@@ -1062,6 +1065,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [TabHost](https://developer.android.com/reference/kotlin/android/widget/TabHost.html#)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabHost()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabHost.html#` the activity is using to host its tabs. |
 | open [TabWidget](https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabWidget()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#` the activity is using to draw the actual tabs. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onContentChanged()()` Updates the screen state (current list and other views) when the content changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#setDefaultTab(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the default tab that is the first tab highlighted. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#setDefaultTab(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the default tab that is the first tab highlighted. |
 
@@ -1070,6 +1074,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onChildTitleChanged(android.app.Activity,%20kotlin.CharSequence)(childActivity: https://developer.android.com/reference/kotlin/android/app/Activity!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onPostCreate(android.os.Bundle)(icicle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called when activity start-up is complete (after `https://developer.android.com/reference/kotlin/android/app/Activity#onStart()` and #onRestoreInstanceState have been called). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onRestoreInstanceState(android.os.Bundle)(state: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` This method is called after `https://developer.android.com/reference/kotlin/android/app/Activity#onStart()` when the activity is being re-initialized from a previously saved state, given here in savedInstanceState. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onSaveInstanceState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called to retrieve per-instance state from an activity before being killed so that the state can be restored in #onCreate or #onRestoreInstanceState (the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` populated by this method will be passed to both). |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Activity` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Activity#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)`

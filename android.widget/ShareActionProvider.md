@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # ShareActionProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ShareActionProvider "View this page in Java") 
+| --- | --- |
 
 ```
 open class ShareActionProvider : ActionProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.ActionProvider](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#) ||
 | | ↳ | [android.widget.ShareActionProvider](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#) |
 
@@ -61,9 +63,11 @@ Here is how to use the action provider with custom backing file in a [MenuItem](
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSubMenu](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#hasSubMenu())`()` Determines if this ActionProvider has a submenu associated with it. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | [onCreateActionView](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onCreateActionView())`()` Factory method called by the Android framework to create new action views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareSubMenu](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onPrepareSubMenu(android.view.SubMenu))`(`subMenu:` ` [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu.html#)`)` Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setOnShareTargetSelectedListener(android.widget.ShareActionProvider.OnShareTargetSelectedListener))`(`listener:` ` [ShareActionProvider.OnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener)!`)` Sets a listener to be notified when a share target has been selected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareHistoryFileName](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setShareHistoryFileName(kotlin.String))`(`shareHistoryFile:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the file name of a file for persisting the share history which history will be used for ordering share targets. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareIntent](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setShareIntent(android.content.Intent))`(`shareIntent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Sets an intent with information about the share action. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -19,285 +19,379 @@ A list of all normal (not implementation-specific) Dalvik opcodes.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_DOUBLE_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_FLOAT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_FLOAT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_INT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_INT_LIT16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_LONG:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ADD_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_BOOLEAN:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_BYTE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_CHAR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_OBJECT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_SHORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AGET_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_INT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_INT_LIT16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_INT_LIT8:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_AND_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_BOOLEAN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_BYTE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_CHAR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_OBJECT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_SHORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_APUT_WIDE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ARRAY_LENGTH](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_ARRAY_LENGTH:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_BREAKPOINT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_BREAKPOINT:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CHECK_CAST:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CHECK_CAST_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CMPG_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CMPG_FLOAT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CMPL_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CMPL_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMP_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CMP_LONG:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_4](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_4:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_CLASS:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_CLASS_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_HIGH16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_HIGH16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_HANDLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_METHOD_HANDLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_TYPE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_METHOD_TYPE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_STRING:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_STRING_JUMBO:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_WIDE_16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_32](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_WIDE_32:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_HIGH16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_CONST_WIDE_HIGH16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_DOUBLE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_DOUBLE_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_FLOAT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_INT_LIT16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DIV_LONG_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DOUBLE_TO_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DOUBLE_TO_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_DOUBLE_TO_LONG:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_EXECUTE_INLINE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_EXECUTE_INLINE_RANGE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FILLED_NEW_ARRAY:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FILLED_NEW_ARRAY_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FILLED_NEW_ARRAY_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILL_ARRAY_DATA](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FILL_ARRAY_DATA:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FLOAT_TO_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FLOAT_TO_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_FLOAT_TO_LONG:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_GOTO:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_GOTO_16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_32](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_GOTO_32:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_EQ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_EQZ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_GE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GEZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_GEZ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_GT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GTZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_GTZ:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_LE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LEZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_LEZ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_LT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LTZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_LTZ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_NE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NEZ](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IF_NEZ:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_BOOLEAN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_BOOLEAN_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_BYTE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_BYTE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_CHAR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_CHAR_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_OBJECT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_OBJECT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_OBJECT_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_QUICK:kotlin.Int) Implementation detail. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_SHORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_SHORT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_WIDE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_WIDE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_WIDE_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_VOLATILE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IGET_WIDE_VOLATILE:kotlin.Int) Implementation detail. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INSTANCE_OF:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INSTANCE_OF_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_BYTE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_CHAR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_FLOAT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INT_TO_SHORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_CUSTOM:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_CUSTOM_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_DIRECT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_EMPTY](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_DIRECT_EMPTY:kotlin.Int) Implementation detail. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_DIRECT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_DIRECT_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_INTERFACE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_INTERFACE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_INTERFACE_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_POLYMORPHIC:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_POLYMORPHIC_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_STATIC:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_STATIC_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_STATIC_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_SUPER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_SUPER_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_SUPER_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_SUPER_QUICK_RANGE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_SUPER_RANGE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_VIRTUAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_VIRTUAL_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_VIRTUAL_QUICK:kotlin.Int) Implementation detail. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_VIRTUAL_QUICK_RANGE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_RANGE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_INVOKE_VIRTUAL_RANGE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_BOOLEAN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_BOOLEAN_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_BYTE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_BYTE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_CHAR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_CHAR_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_OBJECT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_OBJECT_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_OBJECT_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_SHORT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_SHORT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_WIDE_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_QUICK](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_WIDE_QUICK:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_VOLATILE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_IPUT_WIDE_VOLATILE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_LONG_TO_DOUBLE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_LONG_TO_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_LONG_TO_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_ENTER](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MONITOR_ENTER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_EXIT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MONITOR_EXIT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_EXCEPTION](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_EXCEPTION:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_FROM16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_FROM16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_OBJECT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_OBJECT_16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_FROM16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_OBJECT_FROM16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_RESULT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_RESULT_OBJECT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_RESULT_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_WIDE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_WIDE_16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_FROM16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MOVE_WIDE_FROM16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_DOUBLE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_DOUBLE_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_FLOAT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_INT_LIT16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_MUL_LONG_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEG_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEG_FLOAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEG_INT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEG_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEW_ARRAY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEW_ARRAY_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEW_INSTANCE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NEW_INSTANCE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOP](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NOP:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NOT_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_NOT_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_INT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_INT_LIT16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_INT_LIT8:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_OR_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_PACKED_SWITCH](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_PACKED_SWITCH:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_DOUBLE_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_FLOAT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_FLOAT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_INT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_INT_LIT16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_LONG:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_REM_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RETURN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RETURN_OBJECT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_VOID](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RETURN_VOID:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RETURN_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RSUB_INT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_RSUB_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_BOOLEAN:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_BOOLEAN_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_BYTE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_BYTE_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_CHAR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_CHAR_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_OBJECT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_OBJECT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_SHORT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_SHORT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_WIDE_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_VOLATILE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SGET_WIDE_VOLATILE:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHL_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHL_INT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHL_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHL_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHL_LONG_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHR_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHR_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHR_INT_LIT8:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHR_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SHR_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPARSE_SWITCH](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPARSE_SWITCH:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_BOOLEAN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_BOOLEAN_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_BYTE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_BYTE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_CHAR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_CHAR_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_OBJECT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_OBJECT_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_SHORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_SHORT_JUMBO:kotlin.Int) Never implemented; do not use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_WIDE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_JUMBO](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_WIDE_JUMBO:kotlin.Int) Never implemented; do not use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_VOLATILE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SPUT_WIDE_VOLATILE:kotlin.Int) Implementation detail. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_DOUBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_DOUBLE_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_FLOAT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_FLOAT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_INT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_SUB_LONG_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_THROW:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW_VERIFICATION_ERROR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_THROW_VERIFICATION_ERROR:kotlin.Int) Implementation detail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_USHR_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_USHR_INT_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_USHR_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_USHR_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_USHR_LONG_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_INT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_INT_2ADDR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT16](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_INT_LIT16:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT8](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_INT_LIT8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_LONG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG_2ADDR](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes#OP_XOR_LONG_2ADDR:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Constants
 

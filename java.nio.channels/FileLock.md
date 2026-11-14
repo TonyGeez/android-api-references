@@ -9,6 +9,7 @@ abstract class FileLock : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#) |
 
 A token representing a lock on a region of a file.
@@ -53,12 +54,15 @@ Some network filesystems permit file locking to be used with memory-mapped files
 | open [Channel](https://developer.android.com/reference/kotlin/java/nio/channels/Channel)! | [acquiredBy](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#acquiredBy())`()` Returns the channel upon whose file this lock was acquired. |
 | [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel)! | [channel](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#channel())`()` Returns the file channel upon whose file this lock was acquired. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#close())`()` This method invokes the [release](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#release())method. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShared](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#isShared())`()` Tells whether this lock is shared. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#isValid())`()` Tells whether or not this lock is valid. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overlaps](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#overlaps(kotlin.Long,%20kotlin.Long))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether or not this lock overlaps the given lock range. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#position())`()` Returns the position within the file of the first byte of the locked region. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#release())`()` Releases this lock. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#size())`()` Returns the size of the locked region in bytes. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock#toString())`()` Returns a string describing the range, type, and validity of this lock. |
 
 ## Protected constructors
@@ -82,6 +86,7 @@ Initializes a new instance of this class.
 | `channel` | [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel)!:The channel upon whose file this lock is held |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the locked region starts; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
+| --- | --- |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if this lock is shared,`false`if it is exclusive |
 
 | Exceptions ||
@@ -107,6 +112,7 @@ Initializes a new instance of this class.
 | `channel` | [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel)!:The file channel upon whose file this lock is held |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the locked region starts; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
+| --- | --- |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if this lock is shared,`false`if it is exclusive |
 
 | Exceptions ||

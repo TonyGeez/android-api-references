@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # SyncResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/SyncResult "View this page in Java") 
+| --- | --- |
 
 ```
 class SyncResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult#) |
 
 This class is used to communicate the results of a sync operation to the SyncManager. Based on the values here the SyncManager will determine the disposition of the sync and whether or not a new sync operation needs to be scheduled in the future.
@@ -30,24 +32,30 @@ This class is used to communicate the results of a sync operation to the SyncMan
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/content/SyncResult#clear())`()` Clears the SyncResult to a clean state. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/SyncResult#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasError](https://developer.android.com/reference/kotlin/android/content/SyncResult#hasError())`()` A convenience method for determining of the SyncResult indicates that an error occurred. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHardError](https://developer.android.com/reference/kotlin/android/content/SyncResult#hasHardError())`()` Convenience method for determining if the SyncResult indicates that a hard error occurred. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSoftError](https://developer.android.com/reference/kotlin/android/content/SyncResult#hasSoftError())`()` Convenience method for determining if the SyncResult indicates that a soft error occurred. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [madeSomeProgress](https://developer.android.com/reference/kotlin/android/content/SyncResult#madeSomeProgress())`()` Convenience method for determining if the Sync should be rescheduled after failing for some reason. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toDebugString](https://developer.android.com/reference/kotlin/android/content/SyncResult#toDebugString())`()` Generates a debugging string indicating the status. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/SyncResult#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/SyncResult#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult#)! | [ALREADY_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/content/SyncResult#ALREADY_IN_PROGRESS:android.content.SyncResult) This instance of a SyncResult is returned by the SyncAdapter in response to a sync request when a sync is already underway. |
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/SyncResult#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [databaseError](https://developer.android.com/reference/kotlin/android/content/SyncResult#databaseError:kotlin.Boolean) Used to indicate that the SyncAdapter experienced a hard error due to an error it received from interacting with the storage layer. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [delayUntil](https://developer.android.com/reference/kotlin/android/content/SyncResult#delayUntil:kotlin.Long) Used to indicate to the SyncManager that future sync requests that match the request's Account and authority should be delayed until a time in seconds since Java epoch. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [fullSyncRequested](https://developer.android.com/reference/kotlin/android/content/SyncResult#fullSyncRequested:kotlin.Boolean) If set the SyncManager will request an immediate sync with the same Account and authority (but empty extras Bundle) as was used in the sync request. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moreRecordsToGet](https://developer.android.com/reference/kotlin/android/content/SyncResult#moreRecordsToGet:kotlin.Boolean) This field is ignored by the SyncManager. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [partialSyncUnavailable](https://developer.android.com/reference/kotlin/android/content/SyncResult#partialSyncUnavailable:kotlin.Boolean) This field is ignored by the SyncManager. |
 | [SyncStats](https://developer.android.com/reference/kotlin/android/content/SyncStats)! | [stats](https://developer.android.com/reference/kotlin/android/content/SyncResult#stats:android.content.SyncStats) Used to hold extras statistics about the sync operation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [syncAlreadyInProgress](https://developer.android.com/reference/kotlin/android/content/SyncResult#syncAlreadyInProgress:kotlin.Boolean) Used to indicate that the SyncAdapter is already performing a sync operation, though not necessarily for the requested account and authority and that it wasn't able to process this request. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tooManyDeletions](https://developer.android.com/reference/kotlin/android/content/SyncResult#tooManyDeletions:kotlin.Boolean) Used to indicate that the SyncAdapter determined that it would need to issue too many delete operations to the server in order to satisfy the request (as defined by the SyncAdapter). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tooManyRetries](https://developer.android.com/reference/kotlin/android/content/SyncResult#tooManyRetries:kotlin.Boolean) Used to indicate that the SyncAdapter experienced a hard error due to trying the same operation too many times (as defined by the SyncAdapter). |
 

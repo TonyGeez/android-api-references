@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AccountManagerCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/AccountManagerCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface AccountManagerCallback<V : Any!>

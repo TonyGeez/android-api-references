@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ContentInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/ContentInfo "View this page in Java")
+| --- | --- |
 
 ```
 class ContentInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo#) |
 
 Holds all the relevant data for a request to `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)`.
@@ -24,9 +26,11 @@ Holds all the relevant data for a request to `https://developer.android.com/refe
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#FLAG_CONVERT_TO_PLAIN_TEXT:kotlin.Int` Flag requesting that the content should be converted to plain text prior to inserting. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_APP:kotlin.Int` Specifies that the operation was triggered by the app that contains the target view. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_AUTOFILL:kotlin.Int` Specifies that the operation was triggered by the autofill framework. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_CLIPBOARD:kotlin.Int` Specifies that the operation was triggered by a paste from the clipboard (e.g. "Paste" or "Paste as plain text" action in the insertion/selection menu). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_DRAG_AND_DROP:kotlin.Int` Specifies that the operation was triggered by the drag/drop framework. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_INPUT_METHOD:kotlin.Int` Specifies that the operation was triggered from the soft keyboard (also known as input method editor or IME). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_PROCESS_TEXT:kotlin.Int` Specifies that the operation was triggered by a result from a `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROCESS_TEXT:kotlin.String` action in the selection menu. |
 
 | Inherited constants ||
@@ -38,9 +42,11 @@ Holds all the relevant data for a request to `https://developer.android.com/refe
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getClip()()` The data to be inserted. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getExtras()()` Optional additional metadata. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getFlags()()` Optional flags that control the insertion behavior. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getLinkUri()()` Optional http/https URI for the content that may be provided by the IME. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getSource()()` The source of the operation. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes this object into the given parcel. |
 

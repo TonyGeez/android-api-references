@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # AudioDescriptionRequestedChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface AudioDescriptionRequestedChangeListener

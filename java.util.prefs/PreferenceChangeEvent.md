@@ -9,6 +9,7 @@ open class PreferenceChangeEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [java.util.prefs.PreferenceChangeEvent](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeEvent#) |
 
@@ -27,6 +28,7 @@ Note, that although PreferenceChangeEvent inherits Serializable interface from E
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKey](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeEvent#getKey())`()` Returns the key of the preference that was changed. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNewValue](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeEvent#getNewValue())`()` Returns the new value for the preference. |
 | open [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | [getNode](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeEvent#getNode())`()` Returns the preference node that emitted the event. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -56,6 +58,7 @@ Constructs a new`PreferenceChangeEvent`instance.
 | `node` | [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)!:The Preferences node that emitted the event. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The key of the preference that was changed. |
 | `newValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The new value of the preference, or null if the preference is being removed. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Session
 
 Kotlin| [Java](https://developer.android.com/reference/android/se/omapi/Session "View this page in Java") 
+| --- | --- |
 
 ```
 class Session
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.se.omapi.Session](https://developer.android.com/reference/kotlin/android/se/omapi/Session#) |
 
 Instances of this class represent a connection session to one of the Secure Elements available on the device. These objects can be used to get a communication channel with an Applet in the Secure Element. This channel can be the basic channel or a logical channel.
@@ -22,12 +24,15 @@ Instances of this class represent a connection session to one of the Secure Elem
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/se/omapi/Session#close())`()` Close the connection with the Secure Element. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeChannels](https://developer.android.com/reference/kotlin/android/se/omapi/Session#closeChannels())`()` Close any channel opened on this session. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getATR](https://developer.android.com/reference/kotlin/android/se/omapi/Session#getATR())`()` Get the Answer to Reset of this Secure Element. |
+| --- | --- |
 | [Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader) | [getReader](https://developer.android.com/reference/kotlin/android/se/omapi/Session#getReader())`()` Get the reader that provides this session. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/android/se/omapi/Session#isClosed())`()` Tells if this session is closed. |
 | [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openBasicChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openBasicChannel(kotlin.ByteArray))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
+| --- | --- |
 | [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openBasicChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openBasicChannel(kotlin.ByteArray,%20kotlin.Byte))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Get an access to the basic channel, as defined in the ISO/IEC 7816-4 specification (the one that has number 0). |
 | [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openLogicalChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openLogicalChannel(kotlin.ByteArray))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
 | [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openLogicalChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openLogicalChannel(kotlin.ByteArray,%20kotlin.Byte))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Open a logical channel with the Secure Element, selecting the Applet represented by the given AID. |
+| --- | --- |
 
 ## Public methods
 
@@ -121,9 +126,11 @@ This method is provided to ease the development of mobile application and for co
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalStateException` | if the Secure Element session is used after being closed. |
 | `java.lang.IllegalArgumentException` | if the aid's length is not within 5 to 16 (inclusive). |
+| --- | --- |
 | `java.lang.SecurityException` | if the calling application cannot be granted access to this AID or the default Applet on this session. |
 | `java.util.NoSuchElementException` | if the AID on the Secure Element is not available or cannot be selected. |
 | `java.lang.UnsupportedOperationException` | if the given P2 parameter is not supported by the device |
+| --- | --- |
 
 ### openBasicChannel
 
@@ -160,9 +167,11 @@ The select response data can be retrieved with byte\[\] getSelectResponse(). The
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalStateException` | if the Secure Element session is used after being closed. |
 | `java.lang.IllegalArgumentException` | if the aid's length is not within 5 to 16 (inclusive). |
+| --- | --- |
 | `java.lang.SecurityException` | if the calling application cannot be granted access to this AID or the default Applet on this session. |
 | `java.util.NoSuchElementException` | if the AID on the Secure Element is not available or cannot be selected. |
 | `java.lang.UnsupportedOperationException` | if the given P2 parameter is not supported by the device |
+| --- | --- |
 
 ### openLogicalChannel
 
@@ -187,9 +196,11 @@ This method is provided to ease the development of mobile application and for co
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalStateException` | if the Secure Element is used after being closed. |
 | `java.lang.IllegalArgumentException` | if the aid's length is not within 5 to 16 (inclusive). |
+| --- | --- |
 | `java.lang.SecurityException` | if the calling application cannot be granted access to this AID or the default Applet on this session. |
 | `java.util.NoSuchElementException` | if the AID on the Secure Element is not available or cannot be selected or a logical channel is already open to a non-multiselectable Applet. |
 | `java.lang.UnsupportedOperationException` | if the given P2 parameter is not supported by the device. |
+| --- | --- |
 
 ### openLogicalChannel
 
@@ -226,6 +237,8 @@ The select response data can be retrieved with byte\[\] getSelectResponse(). The
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalStateException` | if the Secure Element is used after being closed. |
 | `java.lang.IllegalArgumentException` | if the aid's length is not within 5 to 16 (inclusive). |
+| --- | --- |
 | `java.lang.SecurityException` | if the calling application cannot be granted access to this AID or the default Applet on this session. |
 | `java.util.NoSuchElementException` | if the AID on the Secure Element is not available or cannot be selected or a logical channel is already open to a non-multiselectable Applet. |
 | `java.lang.UnsupportedOperationException` | if the given P2 parameter is not supported by the device. |
+| --- | --- |

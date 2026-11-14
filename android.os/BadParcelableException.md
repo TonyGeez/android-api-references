@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # BadParcelableException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/BadParcelableException "View this page in Java") 
+| --- | --- |
 
 ```
 open class BadParcelableException : AndroidRuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.util.AndroidRuntimeException](https://developer.android.com/reference/kotlin/android/util/AndroidRuntimeException.html#) ||
 | | | | | ↳ | [android.os.BadParcelableException](https://developer.android.com/reference/kotlin/android/os/BadParcelableException#) |
 

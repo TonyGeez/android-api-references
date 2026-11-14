@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # EventLogRecord
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventLogRecord "View this page in Java") 
+| --- | --- |
 
 ```
 class EventLogRecord : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#) |
 
 Data to be logged in the EVENTS table. Each record in the EVENTS table is associated with one row from an existing [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord) in the requests table [RequestLogRecord.getRows()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#getRows()). The purpose of the EVENTS table is to add supplemental information to logged data from a prior request, e.g., logging an event when a link in a rendered WebView is clicked`IsolatedWorker#onEvent(EventInput, android.os.OutcomeReceiver)`. The contents of the EVENTS table can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
@@ -30,12 +32,15 @@ Data to be logged in the EVENTS table. Each record in the EVENTS table is associ
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)? | [getData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#getData())`()` Additional data to be logged. |
+| --- | --- |
 | [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord)? | [getRequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#getRequestLogRecord())`()` The existing [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord) that this payload should be associated with. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRowIndex](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#getRowIndex())`()` The index of the row in an existing [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord) that this payload should be associated with. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getTime](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#getTime())`()` Returns the timestamp of this record. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#getType())`()` The service-assigned identifier that identifies this payload. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|

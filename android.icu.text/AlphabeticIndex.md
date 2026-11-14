@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # AlphabeticIndex
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/AlphabeticIndex "View this page in Java") 
+| --- | --- |
 
 ```
 class AlphabeticIndex<V : Any!> : MutableIterable<AlphabeticIndex.Bucket<V>!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#) |
 
 AlphabeticIndex supports the creation of a UI index appropriate for a given language. It can support either direct use, or use with a client that doesn't support localized collation. The following is an example of what an index might look like in a UI: 
@@ -93,6 +95,7 @@ The ImmutableIndex is both immutable and thread-safe. The corresponding Alphabet
 | | [Bucket](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex.Bucket) An index "bucket" with a label string and type. |
 | | [ImmutableIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex.ImmutableIndex) Immutable, thread-safe version of [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#). |
 | | [Record](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex.Record) A (name, data) pair, to be sorted by name into one of the index buckets. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -105,21 +108,27 @@ The ImmutableIndex is both immutable and thread-safe. The corresponding Alphabet
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [addLabels](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#addLabels(android.icu.text.UnicodeSet))`(`additions:` ` [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)!`)` Add more index characters (aside from what are in the locale) |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [addLabels](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#addLabels(android.icu.util.ULocale))`(`vararg` `additions:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Add more index characters (aside from what are in the locale) |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [addLabels](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#addLabels(java.util.Locale))`(`vararg` `additions:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Add more index characters (aside from what are in the locale) |
+| --- | --- |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [addRecord](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#addRecord(kotlin.CharSequence,%20android.icu.text.AlphabeticIndex.V))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `data:` `V`)` Add a record (name and data) to the index. |
 | [AlphabeticIndex.ImmutableIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex.ImmutableIndex)\<V\>! | [buildImmutableIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#buildImmutableIndex())`()` Builds an immutable, thread-safe version of this instance, without data records. |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [clearRecords](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#clearRecords())`()` Clear the index. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBucketCount](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getBucketCount())`()` Return the number of buckets in the index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBucketIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getBucketIndex(kotlin.CharSequence))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Get the bucket number for the given name. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getBucketLabels](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getBucketLabels())`()` Get the labels. |
+| --- | --- |
 | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator)! | [getCollator](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getCollator())`()` Get a clone of the collator used internally. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getInflowLabel())`()` Get the default label used for abbreviated buckets*between*other labels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLabelCount](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getMaxLabelCount())`()` Get the limit on the number of labels in the index. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOverflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getOverflowLabel())`()` Get the default label used in the IndexCharacters' locale for overflow, eg the first item in: . |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRecordCount](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getRecordCount())`()` Return the number of records in the index: that is, the total number of distinct \<name,data\> pairs added with addRecord(...), over all the buckets. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnderflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#getUnderflowLabel())`()` Get the default label used in the IndexCharacters' locale for underflow, eg the last item in: X Y Z . |
+| --- | --- |
 | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [AlphabeticIndex.Bucket](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex.Bucket)\<V\>!\> | [iterator](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#iterator())`()` Return an iterator over the buckets. |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [setInflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#setInflowLabel(kotlin.String))`(`inflowLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the inflowLabel label |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [setMaxLabelCount](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#setMaxLabelCount(kotlin.Int))`(`maxLabelCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set a limit on the number of labels in the index. |
+| --- | --- |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [setOverflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#setOverflowLabel(kotlin.String))`(`overflowLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the overflow label |
 | [AlphabeticIndex](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#)\<V\>! | [setUnderflowLabel](https://developer.android.com/reference/kotlin/android/icu/text/AlphabeticIndex#setUnderflowLabel(kotlin.String))`(`underflowLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the underflowLabel label |
 

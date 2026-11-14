@@ -9,9 +9,11 @@ open class StackOverflowError : VirtualMachineError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError#) |
 
 Thrown when a stack overflow occurs because an application recurses too deeply.

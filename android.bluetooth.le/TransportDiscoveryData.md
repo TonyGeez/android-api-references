@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TransportDiscoveryData
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData "View this page in Java") 
+| --- | --- |
 
 ```
 class TransportDiscoveryData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.TransportDiscoveryData](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#) |
 
 Wrapper for Transport Discovery Data AD Type. This class contains the Transport Discovery Data AD Type Code as well as a list of potential Transport Blocks.
@@ -31,9 +33,11 @@ Wrapper for Transport Discovery Data AD Type. This class contains the Transport 
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TransportBlock](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock)!\> | [getTransportBlocks](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#getTransportBlocks())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportDataType](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#getTransportDataType())`()` Gets the transport data type. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [toByteArray](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#toByteArray())`()` Converts this TransportDiscoveryData to byte array |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#toString())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [totalBytes](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#totalBytes())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

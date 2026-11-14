@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # TimeUnit
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/TimeUnit "View this page in Java") 
+| --- | --- |
 
 ```
 open class TimeUnit : MeasureUnit
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit) ||
 | | ↳ | [android.icu.util.TimeUnit](https://developer.android.com/reference/kotlin/android/icu/util/TimeUnit#) |
 

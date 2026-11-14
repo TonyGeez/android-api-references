@@ -9,9 +9,11 @@ open class Cipher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#) |
 
 | Known Direct Subclasses [NullCipher](https://developer.android.com/reference/kotlin/javax/crypto/NullCipher) |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [NullCipher](https://developer.android.com/reference/kotlin/javax/crypto/NullCipher) | The NullCipher class is a class that provides an "identity cipher" -- one that does not transform the plain text. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class provides the functionality of a cryptographic cipher for encryption and decryption. It forms the core of the Java Cryptographic Extension (JCE) framework.
 
@@ -66,21 +68,27 @@ Android provides the following`Cipher`transformations:
 | AES | CBC CFB CTR CTS ECB OFB | ISO10126Padding NoPadding PKCS5Padding | 1+ | |
 | AES | GCM | NoPadding | 10+ | |
 | AES | GCM-SIV | NoPadding | 30+ | |
+| --- | --- | --- | --- | --- |
 | AES_128 | CBC ECB | NoPadding PKCS5Padding | 26+ | |
 | AES_128 | GCM | NoPadding | 26+ | |
 | AES_128 | GCM-SIV | NoPadding | 30+ | |
+| --- | --- | --- | --- | --- |
 | AES_256 | CBC ECB | NoPadding PKCS5Padding | 26+ | |
 | AES_256 | GCM | NoPadding | 26+ | |
 | AES_256 | GCM-SIV | NoPadding | 30+ | |
+| --- | --- | --- | --- | --- |
 | ARC4 | ECB | NoPadding | 10+ | |
 | ARC4 | NONE | NoPadding | 28+ | |
 | BLOWFISH | CBC CFB CTR CTS ECB OFB | ISO10126Padding NoPadding PKCS5Padding | 10+ | |
+| --- | --- | --- | --- | --- |
 | ChaCha20 | NONE Poly1305 | NoPadding | 28+ | ChaCha with 20 rounds, 96-bit nonce, and 32-bit counter as described in RFC 7539. |
 | DES | CBC CFB CTR CTS ECB OFB | ISO10126Padding NoPadding PKCS5Padding | 1+ | |
 | DESede | CBC CFB CTR CTS ECB OFB | ISO10126Padding NoPadding PKCS5Padding | 1+ | |
+| --- | --- | --- | --- | --- |
 | RSA | ECB NONE | NoPadding OAEPPadding PKCS1Padding | 1+ | |
 | RSA | ECB NONE | OAEPwithSHA-1andMGF1Padding OAEPwithSHA-256andMGF1Padding | 10+ | |
 | RSA | ECB NONE | OAEPwithSHA-224andMGF1Padding OAEPwithSHA-384andMGF1Padding OAEPwithSHA-512andMGF1Padding | 23+ | |
+| --- | --- | --- | --- | --- |
 
 These transformations are described in the [Cipher section](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#Cipher) of the Java Cryptography Architecture Standard Algorithm Name Documentation.
 
@@ -91,9 +99,11 @@ These transformations are described in the [Cipher section](https://docs.oracle.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECRYPT_MODE](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#DECRYPT_MODE:kotlin.Int) Constant used to initialize cipher to decryption mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCRYPT_MODE](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#ENCRYPT_MODE:kotlin.Int) Constant used to initialize cipher to encryption mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE_KEY](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#PRIVATE_KEY:kotlin.Int) Constant used to indicate the to-be-unwrapped key is a "private key". |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC_KEY](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#PUBLIC_KEY:kotlin.Int) Constant used to indicate the to-be-unwrapped key is a "public key". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECRET_KEY](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#SECRET_KEY:kotlin.Int) Constant used to indicate the to-be-unwrapped key is a "secret key". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNWRAP_MODE](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#UNWRAP_MODE:kotlin.Int) Constant used to initialize cipher to key-unwrapping mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRAP_MODE](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#WRAP_MODE:kotlin.Int) Constant used to initialize cipher to key-wrapping mode. |
 
 | Protected constructors ||
@@ -105,39 +115,51 @@ These transformations are described in the [Cipher section](https://docs.oracle.
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal())`()` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(kotlin.ByteArray,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#doFinal(java.nio.ByteBuffer,%20java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `output:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getAlgorithm())`()` Returns the algorithm name of this`Cipher`object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockSize](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getBlockSize())`()` Returns the block size (in bytes). |
+| --- | --- |
 | [ExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism)! | [getExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getExemptionMechanism())`()` Returns the exemption mechanism object used with this cipher. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getIV())`()` Returns the initialization vector (IV) in a new buffer. |
 | static [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getInstance(kotlin.String))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
+| --- | --- |
 | static [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getInstance(kotlin.String,%20kotlin.String))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
 | static [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getInstance(kotlin.String,%20java.security.Provider))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`Cipher`object that implements the specified transformation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAllowedKeyLength](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getMaxAllowedKeyLength(kotlin.String))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the maximum key length for the specified transformation according to the installed JCE jurisdiction policy files. |
+| --- | --- |
 | static [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getMaxAllowedParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getMaxAllowedParameterSpec(kotlin.String))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterSpec object which contains the maximum cipher parameter value according to the jurisdiction policy file. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOutputSize](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getOutputSize(kotlin.Int))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next`update`or`doFinal`operation, given the input length`inputLen`(in bytes). |
 | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)! | [getParameters](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getParameters())`()` Returns the parameters used with this cipher. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#getProvider())`()` Returns the provider of this`Cipher`object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.cert.Certificate))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!`)` Initializes this cipher with the public key from the given certificate. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.cert.Certificate,%20java.security.SecureRandom))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this cipher with the public key from the given certificate and a source of randomness. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Initializes this cipher with a key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key,%20java.security.AlgorithmParameters))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key,%20java.security.AlgorithmParameters,%20java.security.SecureRandom))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key,%20java.security.SecureRandom))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this cipher with a key and a source of randomness. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#init(kotlin.Int,%20java.security.Key,%20java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| --- | --- |
 | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)! | [unwrap](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#unwrap(kotlin.ByteArray,%20kotlin.String,%20kotlin.Int))`(`wrappedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappedKeyAlgorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `wrappedKeyType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unwrap a previously wrapped key. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#update(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#update(java.nio.ByteBuffer,%20java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `output:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#updateAAD(kotlin.ByteArray))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#updateAAD(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multi-part update of the Additional Authentication Data (AAD), using a subset of the provided buffer. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#updateAAD(java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [wrap](https://developer.android.com/reference/kotlin/javax/crypto/Cipher#wrap(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Wrap a key. |
 
 ## Constants
@@ -246,6 +268,7 @@ Creates a Cipher object.
 | `cipherSpi` | [CipherSpi](https://developer.android.com/reference/kotlin/javax/crypto/CipherSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `transformation` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the transformation |
+| --- | --- |
 
 ## Public methods
 
@@ -274,6 +297,7 @@ Note: if any exception is thrown, this cipher object may need to be reset before
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
+| --- | --- |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
 ### doFinal
@@ -305,6 +329,7 @@ Note: if any exception is thrown, this cipher object may need to be reset before
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
+| --- | --- |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
 ### doFinal
@@ -342,6 +367,7 @@ Note: if any exception is thrown, this cipher object may need to be reset before
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.ShortBufferException` | if the given output buffer is too small to hold the result |
+| --- | --- |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
@@ -370,6 +396,7 @@ Note: if any exception is thrown, this cipher object may need to be reset before
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------|
@@ -380,6 +407,7 @@ Note: if any exception is thrown, this cipher object may need to be reset before
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
+| --- | --- |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
 ### doFinal
@@ -412,6 +440,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer for the result |
 
 | Return ||
@@ -423,6 +452,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.ShortBufferException` | if the given output buffer is too small to hold the result |
+| --- | --- |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
@@ -457,6 +487,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer for the result |
 | `outputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`output`where the result is stored |
 
@@ -469,6 +500,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.ShortBufferException` | if the given output buffer is too small to hold the result |
+| --- | --- |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
@@ -509,9 +541,11 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `java.lang.IllegalArgumentException` | if input and output are the same object |
 | `java.nio.ReadOnlyBufferException` | if the output buffer is read-only |
+| --- | --- |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested (only in encryption mode), and the total input length of the data processed by this cipher is not a multiple of block size; or if this encryption algorithm is unable to process the input data provided. |
 | `javax.crypto.ShortBufferException` | if there is insufficient space in the output buffer |
 | `javax.crypto.BadPaddingException` | if this cipher is in decryption mode, and (un)padding has been requested, but the decrypted data is not bounded by the appropriate padding bytes |
+| --- | --- |
 | `javax.crypto.AEADBadTagException` | if this cipher is decrypting in an AEAD mode (such as GCM/CCM), and the received authentication tag does not match the calculated value |
 
 ### getAlgorithm
@@ -636,6 +670,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.security.NoSuchAlgorithmException` | if`transformation`is null, empty, in an invalid format, or if a CipherSpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
 | `javax.crypto.NoSuchPaddingException` | if`transformation`contains a padding scheme that is not available. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
 
 **See Also**
@@ -671,6 +706,7 @@ A new Cipher object encapsulating the CipherSpi implementation from the specifie
 | `java.security.NoSuchAlgorithmException` | if`transformation`is null, empty, in an invalid format, or if a CipherSpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `javax.crypto.NoSuchPaddingException` | if`transformation`contains a padding scheme that is not available. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null. |
+| --- | --- |
 
 **See Also**
 
@@ -844,6 +880,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `certificate` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!:the certificate |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -912,12 +949,14 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the encryption key |
 | `params` | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!:the algorithm parameters |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if (@code opmode} is`WRAP_MODE`or`UNWRAP_MODE`but the mode is not implemented by the underlying`CipherSpi`. |
 | `java.security.InvalidKeyException` | if the given key is inappropriate for initializing this cipher, or its keysize exceeds the maximum allowable keysize (as determined from the configured jurisdiction policy files). |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this cipher, or this cipher requires algorithm parameters and`params`is null, or the given algorithm parameters imply a cryptographic strength that would exceed the legal limits (as determined from the configured jurisdiction policy files). |
+| --- | --- |
 
 ### init
 
@@ -949,6 +988,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the encryption key |
 | `params` | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!:the algorithm parameters |
+| --- | --- |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
 
 | Exceptions ||
@@ -956,6 +996,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `java.lang.UnsupportedOperationException` | if (@code opmode} is`WRAP_MODE`or`UNWRAP_MODE`but the mode is not implemented by the underlying`CipherSpi`. |
 | `java.security.InvalidKeyException` | if the given key is inappropriate for initializing this cipher, or its keysize exceeds the maximum allowable keysize (as determined from the configured jurisdiction policy files). |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this cipher, or this cipher requires algorithm parameters and`params`is null, or the given algorithm parameters imply a cryptographic strength that would exceed the legal limits (as determined from the configured jurisdiction policy files). |
+| --- | --- |
 
 ### init
 
@@ -986,6 +1027,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the encryption key |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1021,12 +1063,14 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the encryption key |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the algorithm parameters |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if (@code opmode} is`WRAP_MODE`or`UNWRAP_MODE`but the mode is not implemented by the underlying`CipherSpi`. |
 | `java.security.InvalidKeyException` | if the given key is inappropriate for initializing this cipher, or its keysize exceeds the maximum allowable keysize (as determined from the configured jurisdiction policy files). |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this cipher, or this cipher requires algorithm parameters and`params`is null, or the given algorithm parameters imply a cryptographic strength that would exceed the legal limits (as determined from the configured jurisdiction policy files). |
+| --- | --- |
 
 ### init
 
@@ -1058,6 +1102,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the encryption key |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the algorithm parameters |
+| --- | --- |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
 
 | Exceptions ||
@@ -1065,6 +1110,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | `java.lang.UnsupportedOperationException` | if (@code opmode} is`WRAP_MODE`or`UNWRAP_MODE`but the mode is not implemented by the underlying`CipherSpi`. |
 | `java.security.InvalidKeyException` | if the given key is inappropriate for initializing this cipher, or its keysize exceeds the maximum allowable keysize (as determined from the configured jurisdiction policy files). |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this cipher, or this cipher requires algorithm parameters and`params`is null, or the given algorithm parameters imply a cryptographic strength that would exceed the legal limits (as determined from the configured jurisdiction policy files). |
+| --- | --- |
 
 ### unwrap
 
@@ -1085,6 +1131,7 @@ Unwrap a previously wrapped key.
 | `wrappedKey` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the key to be unwrapped. |
 | `wrappedKeyAlgorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm associated with the wrapped key. |
 | `wrappedKeyType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of the wrapped key. This must be one of`SECRET_KEY`,`PRIVATE_KEY`, or`PUBLIC_KEY`. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------|
@@ -1095,6 +1142,7 @@ Unwrap a previously wrapped key.
 | `java.lang.UnsupportedOperationException` | if the corresponding method in the`CipherSpi`is not supported. |
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized). |
 | `java.security.NoSuchAlgorithmException` | if no installed providers can create keys of type`wrappedKeyType`for the`wrappedKeyAlgorithm`. |
+| --- | --- |
 | `java.security.InvalidKeyException` | if`wrappedKey`does not represent a wrapped key of type`wrappedKeyType`for the`wrappedKeyAlgorithm`. |
 
 ### update
@@ -1146,6 +1194,7 @@ If`inputLen`is zero, this method returns`null`.
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1183,6 +1232,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer for the result |
 
 | Return ||
@@ -1223,6 +1273,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer |
 | `inputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts |
 | `inputLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input length |
+| --- | --- |
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer for the result |
 | `outputOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`output`where the result is stored |
 
@@ -1268,6 +1319,7 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized) |
 | `java.lang.IllegalArgumentException` | if input and output are the same object |
 | `java.nio.ReadOnlyBufferException` | if the output buffer is read-only |
+| --- | --- |
 | `javax.crypto.ShortBufferException` | if there is insufficient space in the output buffer |
 
 ### updateAAD
@@ -1291,6 +1343,7 @@ Calls to this method provide AAD to the cipher when operating in modes such as A
 | `java.lang.IllegalArgumentException` | if the`src`byte array is null |
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized), does not accept AAD, or if operating in either GCM or CCM mode and one of the`update`methods has already been called for the active encryption/decryption operation |
 | `java.lang.UnsupportedOperationException` | if the corresponding method in the`CipherSpi`has not been overridden by an implementation |
+| --- | --- |
 
 ### updateAAD
 
@@ -1313,12 +1366,14 @@ Calls to this method provide AAD to the cipher when operating in modes such as A
 | `src` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer containing the AAD |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`src`where the AAD input starts |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of AAD bytes |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if the`src`byte array is null, or the`offset`or`length`is less than 0, or the sum of the`offset`and`len`is greater than the length of the`src`byte array |
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized), does not accept AAD, or if operating in either GCM or CCM mode and one of the`update`methods has already been called for the active encryption/decryption operation |
 | `java.lang.UnsupportedOperationException` | if the corresponding method in the`CipherSpi`has not been overridden by an implementation |
+| --- | --- |
 
 ### updateAAD
 
@@ -1343,6 +1398,7 @@ All`src.remaining()`bytes starting at`src.position()`are processed. Upon return,
 | `java.lang.IllegalArgumentException` | if the`src ByteBuffer`is null |
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized), does not accept AAD, or if operating in either GCM or CCM mode and one of the`update`methods has already been called for the active encryption/decryption operation |
 | `java.lang.UnsupportedOperationException` | if the corresponding method in the`CipherSpi`has not been overridden by an implementation |
+| --- | --- |
 
 ### wrap
 
@@ -1367,4 +1423,5 @@ Wrap a key.
 | `java.lang.UnsupportedOperationException` | if the corresponding method in the`CipherSpi`is not supported. |
 | `java.lang.IllegalStateException` | if this cipher is in a wrong state (e.g., has not been initialized). |
 | `javax.crypto.IllegalBlockSizeException` | if this cipher is a block cipher, no padding has been requested, and the length of the encoding of the key to be wrapped is not a multiple of the block size. |
+| --- | --- |
 | `java.security.InvalidKeyException` | if it is impossible or unsafe to wrap the key with this cipher (e.g., a hardware protected key is being passed to a software-only cipher). |

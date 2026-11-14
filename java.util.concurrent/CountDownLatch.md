@@ -9,6 +9,7 @@ open class CountDownLatch
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.CountDownLatch](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#) |
 
 A synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes.
@@ -103,6 +104,7 @@ Memory consistency effects: Until the count reaches zero, actions in a thread pr
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#await())`()` Causes the current thread to wait until the latch has counted down to zero, unless the thread is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#await(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Causes the current thread to wait until the latch has counted down to zero, unless the thread is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()), or the specified waiting time elapses. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [countDown](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#countDown())`()` Decrements the count of the latch, releasing all waiting threads if the count reaches zero. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#getCount())`()` Returns the current count. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch#toString())`()` Returns a string identifying this latch, as well as its state. |
 

@@ -5,15 +5,18 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AuthenticatorException
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/AuthenticatorException "View this page in Java") 
+| --- | --- |
 
 ```
 open class AuthenticatorException : AccountsException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.accounts.AccountsException](https://developer.android.com/reference/kotlin/android/accounts/AccountsException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.accounts.AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#) |
 
 ## Summary

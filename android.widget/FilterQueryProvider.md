@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # FilterQueryProvider
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/FilterQueryProvider "View this page in Java") 
+| --- | --- |
 
 ```
 interface FilterQueryProvider

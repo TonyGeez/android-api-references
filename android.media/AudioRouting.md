@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # AudioRouting
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioRouting "View this page in Java") 
+| --- | --- |
 
 ```
 interface AudioRouting
@@ -13,6 +14,7 @@ interface AudioRouting
 | [android.media.AudioRouting](https://developer.android.com/reference/kotlin/android/media/AudioRouting#) |
 
 | Known Direct Subclasses [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord), [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack), [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer), [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. | | [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) | The AudioTrack class manages and plays a single audio resource for Java applications. | | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) | MediaPlayer class can be used to control playback of audio/video files and streams. | | [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) | Used to record audio and video. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 AudioRouting defines an interface for controlling routing and routing notifications in AudioTrack and AudioRecord objects.
 
@@ -27,9 +29,11 @@ AudioRouting defines an interface for controlling routing and routing notificati
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,%20android.os.Handler))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Adds an [AudioRouting.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener) to receive notifications of routing changes on this AudioTrack/AudioRecord. |
 | abstract [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)! | [getPreferredDevice](https://developer.android.com/reference/kotlin/android/media/AudioRouting#getPreferredDevice())`()` Returns the selected output/input specified by [setPreferredDevice](https://developer.android.com/reference/kotlin/android/media/AudioRouting#setPreferredDevice(android.media.AudioDeviceInfo)). |
 | abstract [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)! | [getRoutedDevice](https://developer.android.com/reference/kotlin/android/media/AudioRouting#getRoutedDevice())`()` Returns an [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) identifying the current routing of this AudioTrack/AudioRecord. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!\> | [getRoutedDevices](https://developer.android.com/reference/kotlin/android/media/AudioRouting#getRoutedDevices())`()` Returns a List of [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) identifying the current routing of this AudioTrack/AudioRecord. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeOnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting#removeOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener)!`)` Removes an [AudioRouting.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener) which has been previously added to receive rerouting notifications. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredDevice](https://developer.android.com/reference/kotlin/android/media/AudioRouting#setPreferredDevice(android.media.AudioDeviceInfo))`(`deviceInfo:` ` [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!`)` Specifies an audio device (via an [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) object) to route the output/input to/from. |
+| --- | --- |
 
 ## Public methods
 

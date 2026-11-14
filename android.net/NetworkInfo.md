@@ -6,12 +6,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # NetworkInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/NetworkInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class NetworkInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.NetworkInfo](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#) |
 
 | **This class was deprecated in API level 29.**
@@ -42,18 +44,23 @@ Use [ConnectivityManager.getActiveNetworkInfo()](https://developer.android.com/r
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#describeContents())`()` <br /> |
 | open [NetworkInfo.DetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.DetailedState) | [getDetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getDetailedState())`()` Reports the current fine-grained state of the network. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraInfo](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getExtraInfo())`()` Report the extra information about the network state, if any was provided by the lower networking layers. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getReason())`()` Report the reason an attempt to establish connectivity failed, if one is available. |
 | open [NetworkInfo.State](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.State)! | [getState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getState())`()` Reports the current coarse-grained state of the network. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubtype](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getSubtype())`()` Return a network-type-specific integer describing the subtype of the network. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubtypeName](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getSubtypeName())`()` Return a human-readable name describing the subtype of the network. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getType())`()` Reports the type of network to which the info in this`NetworkInfo`pertains. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTypeName](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#getTypeName())`()` Return a human-readable name describe the type of the network, for example "WIFI" or "MOBILE". |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#isAvailable())`()` Indicates whether network connectivity is possible. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#isConnected())`()` Indicates whether network connectivity exists and it is possible to establish connections and pass data. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectedOrConnecting](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#isConnectedOrConnecting())`()` Indicates whether network connectivity exists or is in the process of being established. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailover](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#isFailover())`()` Indicates whether the current attempt to connect to the network resulted from the ConnectivityManager trying to fail over to this network following a disconnect from another network. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRoaming](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#isRoaming())`()` Indicates whether the device is currently roaming on this network. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#setDetailedState(android.net.NetworkInfo.DetailedState,%20kotlin.String,%20kotlin.String))`(`detailedState:` ` [NetworkInfo.DetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.DetailedState)`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extraInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the fine-grained state of the network. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/NetworkInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -82,6 +89,7 @@ Create a new instance of NetworkInfo. This may be useful for apps to write unit 
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the legacy type of the network, as one of the ConnectivityManager.TYPE_\* constants. |
 | `subtype` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the subtype if applicable, as one of the TelephonyManager.NETWORK_TYPE_\* constants. |
 | `typeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a human-readable string for the network type, or an empty string or null. |
+| --- | --- |
 | `subtypeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a human-readable string for the subtype, or an empty string or null. |
 
 ## Public methods
@@ -350,6 +358,7 @@ Sets the fine-grained state of the network. This is only useful for testing.
 | `detailedState` | [NetworkInfo.DetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.DetailedState):the [DetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.DetailedState). This value cannot be`null`. |
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a`String`indicating the reason for the state change, if one was supplied. May be`null`. |
 | `extraInfo` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:an optional`String`providing additional network state information passed up from the lower networking layers. This value may be`null`. |
+| --- | --- |
 
 ### toString
 

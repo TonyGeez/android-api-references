@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # OnSystemUiVisibilityChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnSystemUiVisibilityChangeListener

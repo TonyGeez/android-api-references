@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # BlobHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/blob/BlobHandle "View this page in Java") 
+| --- | --- |
 
 ```
 class BlobHandle : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.blob.BlobHandle](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#) |
 
 An identifier to represent a blob.
@@ -26,12 +28,15 @@ An identifier to represent a blob.
 | static [BlobHandle](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#) | [createWithSha256](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.CharSequence,%20kotlin.Long,%20kotlin.String))`(`digest:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `expiryTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a new blob identifier. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getExpiryTimeMillis](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#getExpiryTimeMillis())`()` Returns the expiry time in milliseconds of the blob that this object is representing, in [System.currentTimeMillis()](https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis())timebase. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLabel](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#getLabel())`()` Returns the label associated with the blob that this object is representing. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getSha256Digest](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#getSha256Digest())`()` Returns the SHA-256 hash of the blob that this object is representing. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTag](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#getTag())`()` Returns the opaque [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) associated with the blob this object is representing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -67,6 +72,7 @@ For two objects of [BlobHandle](https://developer.android.com/reference/kotlin/a
 | `digest` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the SHA-256 hash of the blob this is representing. This value cannot be`null`. |
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):a label indicating what the blob is, that can be surfaced to the user. The length of the label cannot be more than 100 characters. It is recommended to keep this brief. This may be truncated and ellipsized if it is too long to be displayed to the user. This value cannot be`null`. |
 | `expiryTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time in secs after which the blob should be invalidated and not allowed to be accessed by any other app, in [System.currentTimeMillis()](https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis())timebase or`0`to indicate that there is no expiry time associated with this blob. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
+| --- | --- |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):an opaque [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) associated with the blob. The length of the tag cannot be more than 128 characters. This value cannot be`null`. |
 
 | Return ||

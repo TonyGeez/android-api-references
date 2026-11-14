@@ -9,9 +9,11 @@ abstract class PKIXCertPathChecker : CertPathChecker, Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#) |
 
 | Known Direct Subclasses [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) | A`PKIXCertPathChecker`for checking the revocation status of certificates with the PKIX algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An abstract class that performs one or more checks on an`X509Certificate`.
 
@@ -40,9 +42,11 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#check(java.security.cert.Certificate))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Performs the check(s) on the specified certificate using its internal state. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#check(java.security.cert.Certificate,%20kotlin.collections.MutableCollection))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`, `unresolvedCritExts:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Performs the check(s) on the specified certificate using its internal state and removes any critical extensions that it processes from the specified collection of OID strings that represent the unresolved critical extensions. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#clone())`()` Returns a clone of this object. |
+| --- | --- |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedExtensions](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#getSupportedExtensions())`()` Returns an immutable`Set`of X. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#init(kotlin.Boolean))`(`forward:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes the internal state of this`PKIXCertPathChecker`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForwardCheckingSupported](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#isForwardCheckingSupported())`()` Indicates if forward checking is supported. |
+| --- | --- |
 
 ## Protected constructors
 

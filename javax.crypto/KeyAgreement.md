@@ -9,6 +9,7 @@ open class KeyAgreement
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.KeyAgreement](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#) |
 
 This class provides the functionality of a key agreement (or key exchange) protocol.
@@ -24,6 +25,7 @@ Android provides the following`KeyAgreement`algorithms:
 | DH | 1+ |
 | ECDH | 11+ |
 | XDH | 33+ |
+| --- | --- |
 
 This algorithm is described in the [KeyAgreement section](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#keyagreement-algorithms) of the Java Cryptography Architecture Standard Algorithm Name Documentation.
 
@@ -38,15 +40,19 @@ This algorithm is described in the [KeyAgreement section](https://docs.oracle.co
 | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)! | [doPhase](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#doPhase(java.security.Key,%20kotlin.Boolean))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `lastPhase:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Executes the next phase of this key agreement with the given key that was received from one of the other parties involved in this key agreement. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [generateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#generateSecret())`()` Generates the shared secret and returns it in a new buffer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [generateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#generateSecret(kotlin.ByteArray,%20kotlin.Int))`(`sharedSecret:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the shared secret, and places it into the buffer`sharedSecret`, beginning at`offset`inclusive. |
+| --- | --- |
 | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [generateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#generateSecret(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates the shared secret and returns it as a`SecretKey`object of the specified algorithm. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#getAlgorithm())`()` Returns the algorithm name of this`KeyAgreement`object. |
 | static [KeyAgreement](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyAgreement`object that implements the specified key agreement algorithm. |
+| --- | --- |
 | static [KeyAgreement](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyAgreement`object that implements the specified key agreement algorithm. |
 | static [KeyAgreement](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`KeyAgreement`object that implements the specified key agreement algorithm. |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#getProvider())`()` Returns the provider of this`KeyAgreement`object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#init(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Initializes this key agreement with the given key, which is required to contain all the algorithm parameters required for this key agreement. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#init(java.security.Key,%20java.security.SecureRandom))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key agreement with the given key and source of randomness. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#init(java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this key agreement with the given key and set of algorithm parameters. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement#init(java.security.Key,%20java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key agreement with the given key, set of algorithm parameters, and source of randomness. |
 
 ## Protected constructors
@@ -69,6 +75,7 @@ Creates a KeyAgreement object.
 | `keyAgreeSpi` | [KeyAgreementSpi](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -175,6 +182,7 @@ This method resets this`KeyAgreement`object, so that it can be reused for furthe
 | `java.lang.IllegalStateException` | if this key agreement has not been completed yet |
 | `java.security.NoSuchAlgorithmException` | if the specified secret-key algorithm is not available |
 | `java.security.InvalidKeyException` | if the shared secret-key material cannot be used to generate a secret key of the specified algorithm (e.g., the key material is too short) |
+| --- | --- |
 
 ### getAlgorithm
 
@@ -254,6 +262,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
 | `java.security.NoSuchAlgorithmException` | if a KeyAgreementSpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
 
 **See Also**
@@ -289,6 +298,7 @@ A new KeyAgreement object encapsulating the KeyAgreementSpi implementation from 
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
 | `java.security.NoSuchAlgorithmException` | if a KeyAgreementSpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null. |
+| --- | --- |
 
 **See Also**
 
@@ -396,6 +406,7 @@ Initializes this key agreement with the given key, set of algorithm parameters, 
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the key agreement parameters |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|

@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SyncColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.SyncColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface SyncColumns : CalendarContract.CalendarSyncColumns
@@ -13,6 +14,7 @@ protected interface SyncColumns : CalendarContract.CalendarSyncColumns
 | [android.provider.CalendarContract.SyncColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#) |
 
 | Known Direct Subclasses [CalendarContract.CalendarEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarEntity), [CalendarContract.Calendars](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Calendars), [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events), [CalendarContract.EventsEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsEntity) |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarEntity) | Class that represents a Calendar Entity. | | [CalendarContract.Calendars](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Calendars) | Constants and helpers for the Calendars table, which contains details for individual calendars. | | [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events) | Constants and helpers for the Events table, which contains details for individual events. | | [CalendarContract.EventsEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsEntity) | Class that represents an Event Entity. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Columns for Sync information used by Calendars and Events tables. These have specific uses which are expected to be consistent by the app and sync adapter.
 
@@ -23,9 +25,11 @@ Columns for Sync information used by Calendars and Events tables. These have spe
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#ACCOUNT_NAME:kotlin.String) The account that was used to sync the entry to the device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_TYPE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#ACCOUNT_TYPE:kotlin.String) The type of the account that was used to sync the entry to the device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_PARTIALLY_UPDATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#CAN_PARTIALLY_UPDATE:kotlin.String) If set to 1 this causes events on this calendar to be duplicated with [Events.LAST_SYNCED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#LAST_SYNCED:kotlin.String) set to 1 whenever the event transitions from non-dirty to dirty. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DELETED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#DELETED:kotlin.String) Whether the row has been deleted but not synced to the server. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIRTY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#DIRTY:kotlin.String) Used to indicate that local, unsynced, changes are present. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MUTATORS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#MUTATORS:kotlin.String) Used in conjunction with [DIRTY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#DIRTY:kotlin.String) to indicate what packages wrote local changes. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_SYNC_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#_SYNC_ID:kotlin.String) The unique ID for a row assigned by the sync source. |
 
 | Inherited constants ||

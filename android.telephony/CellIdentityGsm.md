@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # CellIdentityGsm
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellIdentityGsm "View this page in Java") 
+| --- | --- |
 
 ```
 class CellIdentityGsm : CellIdentity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) ||
 | | ↳ | [android.telephony.CellIdentityGsm](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#) |
 
@@ -27,18 +29,23 @@ CellIdentity to represent a unique GSM cell
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getAdditionalPlmns())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getArfcn](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getArfcn())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBsic](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getBsic())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCid](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getCid())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLac](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getLac())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMcc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getMcc())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getMccString())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMnc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getMnc())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getMncString())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMobileNetworkOperator](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getMobileNetworkOperator())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#getPsc())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

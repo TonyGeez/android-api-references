@@ -9,6 +9,7 @@ abstract class JarURLConnection : URLConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection) ||
 | | ↳ | [java.net.JarURLConnection](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#) |
 
@@ -77,9 +78,11 @@ When constructing a JAR url via`new URL(context, spec)`, the following rules app
 | open [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes.html#)! | [getAttributes](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getAttributes())`()` Return the Attributes object for this connection if the URL for it points to a JAR file entry, null otherwise. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getCertificates](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getCertificates())`()` Return the Certificate object for this connection if the URL for it points to a JAR file entry, null otherwise. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEntryName](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getEntryName())`()` Return the entry name for this connection. |
+| --- | --- |
 | open [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry.html#)! | [getJarEntry](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getJarEntry())`()` Return the JAR entry object for this connection, if any. |
 | abstract [JarFile](https://developer.android.com/reference/kotlin/java/util/jar/JarFile.html#)! | [getJarFile](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getJarFile())`()` Return the JAR file for this connection. |
 | open [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [getJarFileURL](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getJarFileURL())`()` Returns the URL for the Jar file for this connection. |
+| --- | --- |
 | open [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes.html#)! | [getMainAttributes](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getMainAttributes())`()` Returns the main Attributes for the JAR file for this connection. |
 | open [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest.html#)! | [getManifest](https://developer.android.com/reference/kotlin/java/net/JarURLConnection#getManifest())`()` Returns the Manifest for this connection, or null if none. |
 

@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # LocalOnlyConnectionFailureListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface LocalOnlyConnectionFailureListener

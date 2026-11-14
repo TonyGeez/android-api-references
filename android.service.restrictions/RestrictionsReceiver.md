@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # RestrictionsReceiver
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/restrictions/RestrictionsReceiver "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class RestrictionsReceiver : BroadcastReceiver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#) ||
 | | ↳ | [android.service.restrictions.RestrictionsReceiver](https://developer.android.com/reference/kotlin/android/service/restrictions/RestrictionsReceiver#) |
 
@@ -84,6 +86,7 @@ If the request bundle contains the key [RestrictionsManager.REQUEST_KEY_NEW_REQU
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the application requesting permission. |
 | `requestType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the type of request, which determines the content and presentation of the request data. |
 | `request` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)!: the request data bundle containing at a minimum a request id. |
+| --- | --- |
 
 **See Also**
 

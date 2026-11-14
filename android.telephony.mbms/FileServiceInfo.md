@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # FileServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/FileServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class FileServiceInfo : ServiceInfo, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.mbms.ServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo) ||
 | | ↳ | [android.telephony.mbms.FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo#) |
 
@@ -27,6 +29,7 @@ Describes a file service available from the carrier from which files can be down
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FileInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileInfo)!\>! | [getFiles](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo#getFiles())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

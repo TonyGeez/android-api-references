@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # FeatureGroupInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/FeatureGroupInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class FeatureGroupInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.FeatureGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureGroupInfo#) |
 
 A set of features that can be requested by an application. This corresponds to information collected from the AndroidManifest.xml's`<feature-group>`tag.

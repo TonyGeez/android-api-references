@@ -9,6 +9,7 @@ abstract class IntBuffer : Buffer, Comparable<IntBuffer!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
 | | ↳ | [java.nio.IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#) |
 
@@ -34,42 +35,55 @@ Methods in this class that do not otherwise have a value to return are specified
 | openstatic [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [allocate](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#allocate(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new int buffer. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#array())`()` Returns the int array that backs this buffer*(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| --- | --- |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [asReadOnlyBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#asReadOnlyBuffer())`()` Creates a new, read-only int buffer that shares this buffer's content. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [clear](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#clear())`()` Clears this buffer. |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [compact](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#compareTo(java.nio.IntBuffer))`(`other:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)!`)` Compares this buffer to another. |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#duplicate())`()` Creates a new int buffer that shares this buffer's content. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [flip](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#flip())`()` Flips this buffer. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get())`()` Relative*get*method. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| --- | --- |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get(kotlin.Int,%20kotlin.IntArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Absolute bulk*get*method. |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get(kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get(kotlin.IntArray))`(`dst:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Relative bulk*get*method. |
+| --- | --- |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#get(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`dst:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible int array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#hashCode())`()` Returns the current hash code of this buffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#isDirect())`()` Tells whether or not this int buffer is direct. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [limit](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [mark](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#mark())`()` Sets this buffer's mark at its position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#mismatch(java.nio.IntBuffer))`(`that:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
 | abstract [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | [order](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#order())`()` Retrieves this buffer's byte order. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [position](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| --- | --- |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative*put* method*(optional operation)*. |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*put* method*(optional operation)*. |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.Int,%20kotlin.IntArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.Int,%20java.nio.IntBuffer,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.IntArray))`(`src:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
 | open [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#put(java.nio.IntBuffer))`(`src:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [reset](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#rewind())`()` Rewinds this buffer. |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#slice())`()` Creates a new int buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new int buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#toString())`()` Returns a string summarizing the state of this buffer. |
 | openstatic [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#wrap(kotlin.IntArray))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Wraps an int array into a buffer. |
 | openstatic [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#wrap(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps an int array into a buffer. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -411,6 +425,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer from which the first int will be read; must be non-negative and less than`limit()` |
 | `dst` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The destination array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first int to be written; must be non-negative and less than`dst.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of ints to be written to the given array; must be non-negative and no larger than the smaller of`limit() - index`and`dst.length - offset` |
 
 | Return ||
@@ -481,6 +496,7 @@ except that it first checks that there are sufficient ints in this buffer and it
 | `dst` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The array into which ints are to be written |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first int to be written; must be non-negative and no larger than`dst.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of ints to be written to the given array; must be non-negative and no larger than`dst.length - offset` |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
@@ -750,6 +766,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first int will be written; must be non-negative and less than`limit()` |
 | `src` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The array from which ints are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first int to be read; must be non-negative and less than`src.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of ints to be read from the given array; must be non-negative and no larger than the smaller of`limit() - index`and`src.length - offset` |
 
 | Return ||
@@ -792,6 +809,7 @@ except that it first checks the consistency of the supplied parameters and it is
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first int will be written; must be non-negative and less than`limit()` |
 | `src` | [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer#)!:The buffer from which ints are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first int to be read; must be non-negative and less than`src.limit()` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of ints to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
@@ -864,6 +882,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The array from which ints are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first int to be read; must be non-negative and no larger than`src.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of ints to be read from the given array; must be non-negative and no larger than`src.length - offset` |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
@@ -874,6 +893,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -910,6 +930,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer for the remaining ints in the source buffer |
 | `java.lang.IllegalArgumentException` | If the source buffer is this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### reset
 
@@ -1056,6 +1077,7 @@ The new buffer will be backed by the given int array; that is, modifications to 
 | `array` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The array that will back the new buffer |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset of the subarray to be used; must be non-negative and no larger than`array.length`. The new buffer's position will be set to this value. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the subarray to be used; must be non-negative and no larger than`array.length - offset`. The new buffer's limit will be set to`offset + length`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------|

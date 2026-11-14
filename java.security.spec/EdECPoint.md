@@ -9,6 +9,7 @@ class EdECPoint
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint#) |
 
 An elliptic curve point used to specify keys as defined by [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032). These points are distinct from the points represented by`ECPoint`, and they are intended for use with algorithms based on RFC 8032 such as the EdDSA`Signature`algorithm.

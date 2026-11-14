@@ -9,9 +9,11 @@ open class CertificateParsingException : CertificateException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.security.cert.CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException#) |
 
 Certificate Parsing Exception. This is thrown whenever invalid DER encoded certificate is parsed or unsupported DER features are found in the Certificate.

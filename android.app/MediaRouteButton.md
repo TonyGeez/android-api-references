@@ -7,6 +7,7 @@ open class MediaRouteButton : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.app.MediaRouteButton](https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#) |
 
@@ -290,6 +291,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -406,6 +408,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1591,12 +1594,15 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#getRouteTypes()()` Gets the media route types for filtering the routes that the user can select using the media route chooser dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#onAttachedToWindow()()` This is called when the view is attached to a window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#performClick()()` Call this view's OnClickListener, if it is defined. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#setContentDescription(kotlin.CharSequence)(contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the `https://developer.android.com/reference/kotlin/android/view/View.html#`'s content description. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#setExtendedSettingsClickListener(android.view.View.OnClickListener)(listener: https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#setRouteTypes(kotlin.Int)(types: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the types of routes that will be shown in the media route chooser dialog launched by this button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#setVisibility(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the visibility state of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#showDialog()()` Show the route chooser or controller dialog. |
 
 | Protected methods ||
@@ -1604,6 +1610,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#onCreateDrawableState(kotlin.Int)(extraSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generate the new `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` state for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton#verifyDrawable(android.graphics.drawable.Drawable)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
 
@@ -3395,6 +3402,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4761,6 +4769,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }

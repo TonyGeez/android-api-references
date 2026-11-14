@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # PresetReverb
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/PresetReverb "View this page in Java") 
+| --- | --- |
 
 ```
 open class PresetReverb : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.PresetReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#) |
 
@@ -38,9 +40,11 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_PRESET](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PARAM_PRESET:kotlin.Int) Preset. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_LARGEHALL](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_LARGEHALL:kotlin.Short) Reverb preset representing a large-sized hall suitable for a full orchestra |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_LARGEROOM](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_LARGEROOM:kotlin.Short) Reverb preset representing a large-sized room suitable for live performances |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_MEDIUMHALL](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_MEDIUMHALL:kotlin.Short) Reverb preset representing a medium-sized hall |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_MEDIUMROOM](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_MEDIUMROOM:kotlin.Short) Reverb preset representing a medium room with a length of ten meters or less |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_NONE](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_NONE:kotlin.Short) No reverb or reflections |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_PLATE](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_PLATE:kotlin.Short) Reverb preset representing a synthesis of the traditional plate reverb |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PRESET_SMALLROOM](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#PRESET_SMALLROOM:kotlin.Short) Reverb preset representing a small room less than five meters in length |
 
@@ -57,6 +61,7 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getPreset](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#getPreset())`()` Gets current reverb preset. |
 | open [PresetReverb.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb.Settings)! | [getProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#getProperties())`()` Gets the preset reverb properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameterListener](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#setParameterListener(android.media.audiofx.PresetReverb.OnParameterChangeListener))`(`listener:` ` [PresetReverb.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb.OnParameterChangeListener)!`)` Registers an OnParameterChangeListener interface. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreset](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#setPreset(kotlin.Short))`(`preset:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Enables a preset on the reverb. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb#setProperties(android.media.audiofx.PresetReverb.Settings))`(`settings:` ` [PresetReverb.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb.Settings)!`)` Sets the preset reverb properties. |
 
@@ -190,6 +195,7 @@ Class constructor.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
 | `java.lang.RuntimeException` | |
+| --- | --- |
 
 ## Public methods
 
@@ -212,6 +218,7 @@ Gets current reverb preset.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getProperties
 
@@ -232,6 +239,7 @@ Gets the preset reverb properties. This method is useful when a snapshot of curr
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setParameterListener
 
@@ -268,6 +276,7 @@ The reverb PRESET_NONE disables any reverb from the current output but does not 
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setProperties
 
@@ -288,3 +297,4 @@ Sets the preset reverb properties. This method is useful when preset reverb sett
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |

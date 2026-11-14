@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer#) |
 
 | Known Direct Subclasses [LongStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.Builder.html#), [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics.html#) |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [LongStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.Builder.html#) | A mutable builder for a`LongStream`. | | [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics.html#) | A state object for collecting statistics such as count, min, max, sum, and average. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents an operation that accepts a single`long`-valued argument and returns no result. This is the primitive type specialization of [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer) for`long`. Unlike most other functional interfaces,`LongConsumer`is expected to operate via side-effects.
 

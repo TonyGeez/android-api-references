@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # OobInitiatorRangingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/oob/OobInitiatorRangingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class OobInitiatorRangingConfig : RangingConfig, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.ranging.RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig.html#) ||
 | | ↳ | [android.ranging.oob.OobInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#) |
 
@@ -27,9 +29,11 @@ Represents the configuration for an Out-of-Band (OOB) initiator in a ranging ses
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_AUTO](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#RANGING_MODE_AUTO:kotlin.Int) Automatic ranging mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_FUSED](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#RANGING_MODE_FUSED:kotlin.Int) Starts ranging with all the ranging technologies both devices support. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY:kotlin.Int) High accuracy ranging mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY_PREFERRED](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY_PREFERRED:kotlin.Int) High accuracy ranging mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_BASIC](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#SECURITY_LEVEL_BASIC:kotlin.Int) Basic security level for the ranging session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_SECURE](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#SECURITY_LEVEL_SECURE:kotlin.Int) Basic security level for the ranging session. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -41,12 +45,15 @@ Represents the configuration for an Out-of-Band (OOB) initiator in a ranging ses
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DeviceHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle)!\> | [getDeviceHandles](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getDeviceHandles())`()` Returns the list of DeviceHandles associated with the OOB initiator. |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | [getFastestRangingInterval](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getFastestRangingInterval())`()` Returns the fastest requested ranging interval. |
+| --- | --- |
 | [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | [getRangingIntervalRange](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getRangingIntervalRange())`()` Returns the ranging interval range configuration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRangingMode](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getRangingMode())`()` Returns the ranging mode for the session. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getRangingTechnologyFilter](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getRangingTechnologyFilter())`()` Returns the set of ranging technologies that can be used for the session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityLevel](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getSecurityLevel())`()` Returns the security level set for the ranging session. |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | [getSlowestRangingInterval](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#getSlowestRangingInterval())`()` Returns the slowest acceptable ranging. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

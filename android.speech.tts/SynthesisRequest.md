@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SynthesisRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/tts/SynthesisRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class SynthesisRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.speech.tts.SynthesisRequest](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#) |
 
 Contains data required by engines to synthesize speech. This data is:
@@ -37,12 +39,15 @@ Any additional parameters sent to the text to speech service are passed in unint
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallerUid](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getCallerUid())`()` Gets the request caller Uid. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getCharSequenceText](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getCharSequenceText())`()` Gets the text which should be synthesized. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountry](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getCountry())`()` Gets the ISO 3-letter country code for the language to use. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLanguage](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getLanguage())`()` Gets the ISO 3-letter language code for the language to use. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getParams](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getParams())`()` Gets the additional params, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPitch](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getPitch())`()` Gets the pitch to use. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpeechRate](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getSpeechRate())`()` Gets the speech rate to use. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getText())`()` Gets the text which should be synthesized. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVariant](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getVariant())`()` Gets the language variant to use. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVoiceName](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest#getVoiceName())`()` Gets the name of the voice to use. |
 
 ## Public constructors

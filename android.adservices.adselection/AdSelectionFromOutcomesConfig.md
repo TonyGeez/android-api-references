@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # AdSelectionFromOutcomesConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/AdSelectionFromOutcomesConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class AdSelectionFromOutcomesConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#) |
 
 Contains the configuration of the ad selection process that select a winner from a given list of ad selection ids.
@@ -33,9 +35,11 @@ Instances of this class are created by SDKs to be provided as arguments to the a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | [getAdSelectionIds](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#getAdSelectionIds())`()` <br /> |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getSelectionLogicUri](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#getSelectionLogicUri())`()` <br /> |
 | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#) | [getSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#getSelectionSignals())`()` <br /> |
 | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | [getSeller](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#getSeller())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

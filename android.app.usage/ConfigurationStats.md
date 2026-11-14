@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ConfigurationStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/ConfigurationStats "View this page in Java") 
+| --- | --- |
 
 ```
 class ConfigurationStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.ConfigurationStats](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#) |
 
 Represents the usage statistics of a device [android.content.res.Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#) for a specific time range.
@@ -30,9 +32,11 @@ Represents the usage statistics of a device [android.content.res.Configuration](
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActivationCount](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getActivationCount())`()` Get the number of times this configuration was active. |
 | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)! | [getConfiguration](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getConfiguration())`()` <br /> |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFirstTimeStamp](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getFirstTimeStamp())`()` Get the beginning of the time range this [ConfigurationStats](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#) represents, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastTimeActive](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getLastTimeActive())`()` Get the last time this configuration was active, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastTimeStamp](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getLastTimeStamp())`()` Get the end of the time range this [ConfigurationStats](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#) represents, measured in milliseconds since the epoch. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalTimeActive](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#getTotalTimeActive())`()` Get the total time this configuration was active, measured in milliseconds. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

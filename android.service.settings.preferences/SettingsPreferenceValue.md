@@ -7,6 +7,7 @@ class SettingsPreferenceValue : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#) |
 
 This objects represents a value that can be used for a particular settings preference.
@@ -26,6 +27,7 @@ See documentation on the constants for which getter method should be used.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int` Value is of type boolean. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_DOUBLE:kotlin.Int` Value is of type double. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_INT:kotlin.Int` Value is of type int. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_LONG:kotlin.Int` Value is of type long. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int` Value is of type string. |
 
@@ -38,9 +40,11 @@ See documentation on the constants for which getter method should be used.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getBooleanValue()()` Returns the boolean value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int`. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getDoubleValue()()` Returns the double value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_DOUBLE:kotlin.Int`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getIntValue()()` Returns the int value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_INT:kotlin.Int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getLongValue()()` Returns the long value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_LONG:kotlin.Int`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getStringValue()()` Returns the string value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getType()()` Returns the type indicator for Preference value. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

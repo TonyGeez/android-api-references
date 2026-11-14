@@ -7,6 +7,7 @@ class BleRssiRangingParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.ble.rssi.BleRssiRangingParams](https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#) |
 
 BleRssiRangingParams encapsulates the parameters required for a bluetooth rssi based ranging session.
@@ -26,9 +27,11 @@ BleRssiRangingParams encapsulates the parameters required for a bluetooth rssi b
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#getPeerBluetoothAddress()()` Returns the Bluetooth address of the peer device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#getRangingUpdateRate()()` Returns the ranging update rate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/rssi/BleRssiRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

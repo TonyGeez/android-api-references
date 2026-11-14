@@ -6,15 +6,18 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # AndroidTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/AndroidTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 open class AndroidTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.AndroidTestCase](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#) |
 
 | Known Direct Subclasses [ApplicationTestCase](https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase), [LoaderTestCase](https://developer.android.com/reference/kotlin/android/test/LoaderTestCase), [ProviderTestCase2](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase2), [ServiceTestCase](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ApplicationTestCase](https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase) | This test case provides a framework in which you can test Application classes in a controlled environment. | | [LoaderTestCase](https://developer.android.com/reference/kotlin/android/test/LoaderTestCase) | A convenience class for testing [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#) s. | | [ProviderTestCase2](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase2) | This test case class provides a framework for testing a single [ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#) and for testing your app code with an isolated content provider. | | [ServiceTestCase](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase) | This test case provides a framework in which you can test Service classes in a controlled environment. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 24.**
 |
@@ -33,9 +36,11 @@ Extend this if you need to access Resources or other things that depend on Activ
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertActivityRequiresPermission](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#assertActivityRequiresPermission(kotlin.String,%20kotlin.String,%20kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `className:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `permission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that launching a given activity is protected by a particular permission by attempting to start the activity and validating that a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) is thrown that mentions the permission in its error message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertReadingContentUriRequiresPermission](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#assertReadingContentUriRequiresPermission(android.net.Uri,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `permission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that reading from the content uri requires a particular permission by querying the uri and ensuring a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) is thrown mentioning the particular permission. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertWritingContentUriRequiresPermission](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#assertWritingContentUriRequiresPermission(android.net.Uri,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `permission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that writing to the content uri requires a particular permission by inserting into the uri and ensuring a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) is thrown mentioning the particular permission. |
+| --- | --- |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | [getContext](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#getContext())`()` <br /> |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | [getTestContext](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#getTestContext())`()` Returns the test context that was set via [setTestContext(android.content.Context)](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#setTestContext(android.content.Context)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#setContext(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTestContext](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#setTestContext(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Test context can be used to access resources from the test's own package as opposed to the resources from the test target package. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testAndroidTestCaseSetupProperly](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#testAndroidTestCaseSetupProperly())`()` <br /> |
 
@@ -44,6 +49,7 @@ Extend this if you need to access Resources or other things that depend on Activ
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrubClass](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#scrubClass(java.lang.Class))`(`testCaseClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` This function is called by various TestCase implementations, at tearDown() time, in order to scrub out any class variables. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUp](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#setUp())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase#tearDown())`()` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -81,6 +87,7 @@ Asserts that launching a given activity is protected by a particular permission 
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package name of the activity to launch. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The class of the activity to launch. |
 | `permission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the permission. |
+| --- | --- |
 
 ### assertReadingContentUriRequiresPermission
 

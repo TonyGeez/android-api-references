@@ -8,6 +8,7 @@ class ObserverSpec : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.observer.ObserverSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#) |
 
 Configures the types, namespaces and other properties that `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback` instances match against.
@@ -27,6 +28,7 @@ Configures the types, namespaces and other properties that `https://developer.an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#getFilterSchemas()()` Returns the list of schema types which observers using this spec will trigger on. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

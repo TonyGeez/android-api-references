@@ -9,6 +9,7 @@ open class Package : AnnotatedElement
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Package](https://developer.android.com/reference/kotlin/java/lang/Package#) |
 
 `Package`objects contain version information about the implementation and specification of a Java package. This versioning information is retrieved and made available by the [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader) instance that loaded the class(es). Typically, it is stored in the manifest that is distributed with the classes.
@@ -42,24 +43,31 @@ Within each`ClassLoader`instance all classes from the same java package have the
 | openA? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/Package#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<A>`)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getAnnotations](https://developer.android.com/reference/kotlin/java/lang/Package#getAnnotations())`()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\>! | [getAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/Package#getAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<A>`)` <br /> |
+| --- | --- |
 | openA? | [getDeclaredAnnotation](https://developer.android.com/reference/kotlin/java/lang/Package#getDeclaredAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<A>`)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/Package#getDeclaredAnnotations())`()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\>! | [getDeclaredAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/Package#getDeclaredAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<A>`)` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getImplementationTitle](https://developer.android.com/reference/kotlin/java/lang/Package#getImplementationTitle())`()` Return the title of this package. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getImplementationVendor](https://developer.android.com/reference/kotlin/java/lang/Package#getImplementationVendor())`()` Returns the name of the organization, vendor or company that provided this implementation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getImplementationVersion](https://developer.android.com/reference/kotlin/java/lang/Package#getImplementationVersion())`()` Return the version of this implementation. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/lang/Package#getName())`()` Return the name of this package. |
 | openstatic [Package](https://developer.android.com/reference/kotlin/java/lang/Package#)! | [getPackage](https://developer.android.com/reference/kotlin/java/lang/Package#getPackage(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Find a package by name in the callers`ClassLoader`instance. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Package](https://developer.android.com/reference/kotlin/java/lang/Package#)!\>! | [getPackages](https://developer.android.com/reference/kotlin/java/lang/Package#getPackages())`()` Get all the packages currently known for the caller's`ClassLoader`instance. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSpecificationTitle](https://developer.android.com/reference/kotlin/java/lang/Package#getSpecificationTitle())`()` Return the title of the specification that this package implements. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSpecificationVendor](https://developer.android.com/reference/kotlin/java/lang/Package#getSpecificationVendor())`()` Return the name of the organization, vendor, or company that owns and maintains the specification of the classes that implement this package. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSpecificationVersion](https://developer.android.com/reference/kotlin/java/lang/Package#getSpecificationVersion())`()` Returns the version number of the specification that this package implements. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Package#hashCode())`()` Return the hash code computed from the package name. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnnotationPresent](https://developer.android.com/reference/kotlin/java/lang/Package#isAnnotationPresent(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<out` ` [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!>`)` Returns true if an annotation for the specified type is*present*on this element, else false. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompatibleWith](https://developer.android.com/reference/kotlin/java/lang/Package#isCompatibleWith(kotlin.String))`(`desired:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compare this package's specification version with a desired version. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSealed](https://developer.android.com/reference/kotlin/java/lang/Package#isSealed())`()` Returns true if this package is sealed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSealed](https://developer.android.com/reference/kotlin/java/lang/Package#isSealed(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Returns true if this package is sealed with respect to the specified code source url. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Package#toString())`()` Returns the string representation of this Package. |
+| --- | --- |
 
 ## Public methods
 

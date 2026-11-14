@@ -7,6 +7,7 @@ abstract class DatagramSocketImpl : SocketOptions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.DatagramSocketImpl](https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#) |
 
 Abstract datagram and multicast socket implementation base class.
@@ -26,24 +27,31 @@ Abstract datagram and multicast socket implementation base class.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#bind(kotlin.Int,%20java.net.InetAddress)(lport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, laddr: https://developer.android.com/reference/kotlin/java/net/InetAddress!)` Binds a datagram socket to a local port and address. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#close()()` Close the socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#connect(java.net.InetAddress,%20kotlin.Int)(address: https://developer.android.com/reference/kotlin/java/net/InetAddress!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects a datagram socket to a remote destination. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#create()()` Creates a datagram socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#disconnect()()` Disconnects a datagram socket from its remote destination. |
 | open [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getFileDescriptor()()` Gets the datagram socket file descriptor. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getLocalPort()()` Gets the local port. |
 | open T | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!)` Called to get a socket option. |
 | abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getTTL()()` Retrieve the TTL (time-to-live) option. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getTimeToLive()()` Retrieve the TTL (time-to-live) option. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#join(java.net.InetAddress)(inetaddr: https://developer.android.com/reference/kotlin/java/net/InetAddress!)` Join the multicast group. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#joinGroup(java.net.SocketAddress,%20java.net.NetworkInterface)(mcastaddr: https://developer.android.com/reference/kotlin/java/net/SocketAddress!, netIf: https://developer.android.com/reference/kotlin/java/net/NetworkInterface!)` Join the multicast group. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#leave(java.net.InetAddress)(inetaddr: https://developer.android.com/reference/kotlin/java/net/InetAddress!)` Leave the multicast group. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#leaveGroup(java.net.SocketAddress,%20java.net.NetworkInterface)(mcastaddr: https://developer.android.com/reference/kotlin/java/net/SocketAddress!, netIf: https://developer.android.com/reference/kotlin/java/net/NetworkInterface!)` Leave the multicast group. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#peek(java.net.InetAddress)(i: https://developer.android.com/reference/kotlin/java/net/InetAddress!)` Peek at the packet to see who it is from. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#peekData(java.net.DatagramPacket)(p: https://developer.android.com/reference/kotlin/java/net/DatagramPacket!)` Peek at the packet to see who it is from. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#receive(java.net.DatagramPacket)(p: https://developer.android.com/reference/kotlin/java/net/DatagramPacket!)` Receive the datagram packet. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#send(java.net.DatagramPacket)(p: https://developer.android.com/reference/kotlin/java/net/DatagramPacket!)` Sends a datagram packet. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#setOption(java.net.SocketOption,%20java.net.DatagramSocketImpl.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!, value: T)` Called to set a socket option. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#setTTL(kotlin.Byte)(ttl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Set the TTL (time-to-live) option. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#setTimeToLive(kotlin.Int)(ttl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the TTL (time-to-live) option. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#supportedOptions()()` Returns a set of SocketOptions supported by this impl and by this impl's socket (DatagramSocket or MulticastSocket) |
 
 | Inherited functions ||
@@ -199,6 +207,7 @@ Called to get a socket option.
 | `java.io.IOException` | if an I/O problem occurs while attempting to set the option |
 | `java.lang.NullPointerException` | if name is `null` |
 | `java.lang.UnsupportedOperationException` | if the DatagramSocketImpl does not support the option |
+| --- | --- |
 
 ### getTTL
 
@@ -429,12 +438,14 @@ Called to set a socket option.
 | `<T>` | The type of the socket option value |
 | `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be valid for some options. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | if an I/O problem occurs while attempting to set the option |
 | `java.lang.NullPointerException` | if name is `null` |
 | `java.lang.UnsupportedOperationException` | if the DatagramSocketImpl does not support the option |
+| --- | --- |
 
 ### setTTL
 

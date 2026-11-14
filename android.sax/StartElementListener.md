@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # StartElementListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/sax/StartElementListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface StartElementListener
@@ -13,6 +14,7 @@ interface StartElementListener
 | [android.sax.StartElementListener](https://developer.android.com/reference/kotlin/android/sax/StartElementListener#) |
 
 | Known Direct Subclasses [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener), [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener) | Listens for the beginning and ending of elements. | | [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) | Listens for the beginning and ending of text elements. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the beginning of elements.
 

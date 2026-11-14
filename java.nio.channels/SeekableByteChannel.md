@@ -11,6 +11,7 @@ interface SeekableByteChannel : ByteChannel
 | [java.nio.channels.SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#) |
 
 | Known Direct Subclasses [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel) |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------| | [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel) | A channel for reading, writing, mapping, and manipulating a file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A byte channel that maintains a current*position*and allows the position to be changed.
 
@@ -25,9 +26,11 @@ The [position](https://developer.android.com/reference/kotlin/java/nio/channels/
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#position())`()` Returns this channel's position. |
 | abstract [SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#)! | [position](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#position(kotlin.Long))`(`newPosition:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this channel's position. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#read(java.nio.ByteBuffer))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Reads a sequence of bytes from this channel into the given buffer. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#size())`()` Returns the current size of entity to which this channel is connected. |
 | abstract [SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#)! | [truncate](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#truncate(kotlin.Long))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates the entity, to which this channel is connected, to the given size. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel#write(java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Writes a sequence of bytes to this channel from the given buffer. |
+| --- | --- |
 
 ## Public methods
 
@@ -77,6 +80,7 @@ Setting the channel's position is not recommended when connected to an entity, t
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.lang.IllegalArgumentException` | If the new position is negative |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 ### read
 
@@ -103,6 +107,7 @@ Bytes are read starting at this channel's current position, and then the positio
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the read operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the read operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -152,6 +157,7 @@ An implementation of this interface may prohibit truncation when connected to an
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.lang.IllegalArgumentException` | If the new size is negative |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 ### write
@@ -179,5 +185,6 @@ Bytes are written starting at this channel's current position, unless the channe
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |

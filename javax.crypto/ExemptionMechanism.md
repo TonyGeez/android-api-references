@@ -9,6 +9,7 @@ open class ExemptionMechanism
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.ExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#) |
 
 This class provides the functionality of an exemption mechanism, examples of which are*key recovery* ,*key weakening* , and*key escrow*.
@@ -26,15 +27,19 @@ Applications or applets that use an exemption mechanism may be granted stronger 
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [genExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#genExemptionBlob())`()` Generates the exemption mechanism key blob. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [genExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#genExemptionBlob(kotlin.ByteArray))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates the exemption mechanism key blob, and stores the result in the`output`buffer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [genExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#genExemptionBlob(kotlin.ByteArray,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the exemption mechanism key blob, and stores the result in the`output`buffer, starting at`outputOffset`inclusive. |
+| --- | --- |
 | static [ExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an`ExemptionMechanism`object that implements the specified exemption mechanism algorithm. |
 | static [ExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an`ExemptionMechanism`object that implements the specified exemption mechanism algorithm. |
 | static [ExemptionMechanism](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns an`ExemptionMechanism`object that implements the specified exemption mechanism algorithm. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getName())`()` Returns the exemption mechanism name of this`ExemptionMechanism`object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOutputSize](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getOutputSize(kotlin.Int))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next [genExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#genExemptionBlob(kotlin.ByteArray))operation, given the input length`inputLen`(in bytes). |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#getProvider())`()` Returns the provider of this`ExemptionMechanism`object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#init(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Initializes this exemption mechanism with a key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#init(java.security.Key,%20java.security.AlgorithmParameters))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!`)` Initializes this exemption mechanism with a key and a set of algorithm parameters. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#init(java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this exemption mechanism with a key and a set of algorithm parameters. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCryptoAllowed](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanism#isCryptoAllowed(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Returns whether the result blob has been generated successfully by this exemption mechanism. |
 
 ## Protected constructors
@@ -57,6 +62,7 @@ Creates a ExemptionMechanism object.
 | `exmechSpi` | [ExemptionMechanismSpi](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `mechanism` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the exemption mechanism |
+| --- | --- |
 
 ## Public methods
 
@@ -104,6 +110,7 @@ If the`output`buffer is too small to hold the result, a`ShortBufferException`is 
 | `java.lang.IllegalStateException` | if this exemption mechanism is in a wrong state (e.g., has not been initialized). |
 | `javax.crypto.ShortBufferException` | if the given output buffer is too small to hold the result. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of generating. |
+| --- | --- |
 
 ### genExemptionBlob
 
@@ -134,6 +141,7 @@ If the`output`buffer is too small to hold the result, a`ShortBufferException`is 
 | `java.lang.IllegalStateException` | if this exemption mechanism is in a wrong state (e.g., has not been initialized). |
 | `javax.crypto.ShortBufferException` | if the given output buffer is too small to hold the result. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of generating. |
+| --- | --- |
 
 ### getInstance
 
@@ -197,6 +205,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.NullPointerException` | if`algorithm`is null. |
 | `java.security.NoSuchAlgorithmException` | if an ExemptionMechanismSpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
 
 **See Also**
@@ -232,6 +241,7 @@ A new ExemptionMechanism object encapsulating the ExemptionMechanismSpi implemen
 | `java.lang.NullPointerException` | if`algorithm`is null. |
 | `java.security.NoSuchAlgorithmException` | if an ExemptionMechanismSpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null. |
+| --- | --- |
 
 **See Also**
 
@@ -337,6 +347,7 @@ If this exemption mechanism requires any algorithm parameters and`params`is null
 | `java.security.InvalidKeyException` | if the given key is inappropriate for this exemption mechanism. |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this exemption mechanism. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of initializing. |
+| --- | --- |
 
 ### init
 
@@ -363,6 +374,7 @@ If this exemption mechanism requires any algorithm parameters and`params`is null
 | `java.security.InvalidKeyException` | if the given key is inappropriate for this exemption mechanism. |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this exemption mechanism. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of initializing. |
+| --- | --- |
 
 ### isCryptoAllowed
 

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Log
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Log "View this page in Java") 
+| --- | --- |
 
 ```
 class Log
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Log](https://developer.android.com/reference/kotlin/android/util/Log#) |
 
 API for sending log output.
@@ -46,27 +48,34 @@ Note: The return value from the logging functions in this class may vary between
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASSERT](https://developer.android.com/reference/kotlin/android/util/Log#ASSERT:kotlin.Int) Priority constant for the println method. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#DEBUG:kotlin.Int) Priority constant for the println method; use Log. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](https://developer.android.com/reference/kotlin/android/util/Log#ERROR:kotlin.Int) Priority constant for the println method; use Log. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFO](https://developer.android.com/reference/kotlin/android/util/Log#INFO:kotlin.Int) Priority constant for the println method; use Log. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log#VERBOSE:kotlin.Int) Priority constant for the println method; use Log. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int) Priority constant for the println method; use Log. |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](https://developer.android.com/reference/kotlin/android/util/Log#d(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#DEBUG:kotlin.Int) log message. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](https://developer.android.com/reference/kotlin/android/util/Log#d(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#DEBUG:kotlin.Int) log message and log the exception. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](https://developer.android.com/reference/kotlin/android/util/Log#e(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [ERROR](https://developer.android.com/reference/kotlin/android/util/Log#ERROR:kotlin.Int) log message. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](https://developer.android.com/reference/kotlin/android/util/Log#e(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [ERROR](https://developer.android.com/reference/kotlin/android/util/Log#ERROR:kotlin.Int) log message and log the exception. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getStackTraceString](https://developer.android.com/reference/kotlin/android/util/Log#getStackTraceString(kotlin.Throwable))`(`tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Handy function to get a loggable stack trace from a Throwable |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](https://developer.android.com/reference/kotlin/android/util/Log#i(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [INFO](https://developer.android.com/reference/kotlin/android/util/Log#INFO:kotlin.Int) log message. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](https://developer.android.com/reference/kotlin/android/util/Log#i(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [INFO](https://developer.android.com/reference/kotlin/android/util/Log#INFO:kotlin.Int) log message and log the exception. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/android/util/Log#isLoggable(kotlin.String,%20kotlin.Int))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks to see whether or not a log for the specified tag is loggable at the specified level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [println](https://developer.android.com/reference/kotlin/android/util/Log#println(kotlin.Int,%20kotlin.String,%20kotlin.String))`(`priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Low-level logging call. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](https://developer.android.com/reference/kotlin/android/util/Log#v(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log#VERBOSE:kotlin.Int) log message. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](https://developer.android.com/reference/kotlin/android/util/Log#v(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log#VERBOSE:kotlin.Int) log message and log the exception. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](https://developer.android.com/reference/kotlin/android/util/Log#w(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int) log message. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](https://developer.android.com/reference/kotlin/android/util/Log#w(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int) log message and log the exception. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](https://developer.android.com/reference/kotlin/android/util/Log#w(kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int) log message and log the exception. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](https://developer.android.com/reference/kotlin/android/util/Log#wtf(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` What a Terrible Failure: Report a condition that should never happen. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](https://developer.android.com/reference/kotlin/android/util/Log#wtf(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` What a Terrible Failure: Report an exception that should never happen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](https://developer.android.com/reference/kotlin/android/util/Log#wtf(kotlin.String,%20kotlin.Throwable))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` What a Terrible Failure: Report an exception that should never happen. |
 
@@ -187,6 +196,7 @@ Send a [DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#D
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -233,6 +243,7 @@ Send a [ERROR](https://developer.android.com/reference/kotlin/android/util/Log#E
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -299,6 +310,7 @@ Send a [INFO](https://developer.android.com/reference/kotlin/android/util/Log#IN
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. This value may be`null`. |
+| --- | --- |
 
 ### isLoggable
 
@@ -345,6 +357,7 @@ Low-level logging call.
 | `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The priority/type of this log message Value is [android.util.Log#ASSERT](https://developer.android.com/reference/kotlin/android/util/Log#ASSERT:kotlin.Int), [android.util.Log#ERROR](https://developer.android.com/reference/kotlin/android/util/Log#ERROR:kotlin.Int), [android.util.Log#WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int), [android.util.Log#INFO](https://developer.android.com/reference/kotlin/android/util/Log#INFO:kotlin.Int), [android.util.Log#DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#DEBUG:kotlin.Int), or [android.util.Log#VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log#VERBOSE:kotlin.Int) |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The message you would like logged. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -391,6 +404,7 @@ Send a [VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -437,6 +451,7 @@ Send a [WARN](https://developer.android.com/reference/kotlin/android/util/Log#WA
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -505,6 +520,7 @@ What a Terrible Failure: Report an exception that should never happen. Similar t
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The message you would like logged. This value may be`null`. |
 | `tr` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:An exception to log. May be null. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

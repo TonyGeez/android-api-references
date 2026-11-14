@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # TouchExplorationStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TouchExplorationStateChangeListener

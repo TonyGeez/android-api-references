@@ -7,6 +7,7 @@ class AssistantQueryResponse : EgressResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.privatecompute.EgressResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse) ||
 | | ↳ | [android.app.privatecompute.AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#) |
 
@@ -23,6 +24,7 @@ Specialized response for Assistant Query use-cases. Includes the specific query 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getMetadata()()` Returns the metadata bytes associated with this egress response. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getQueryId()()` Returns the unique identifier of the query associated with this egress response. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getQueryResponse()()` Returns the raw query response payload generated for the query. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

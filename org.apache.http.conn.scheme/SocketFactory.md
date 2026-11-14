@@ -12,8 +12,10 @@ interface SocketFactory
 | [org.apache.http.conn.scheme.SocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#) |
 
 | Known Direct Subclasses [LayeredSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/LayeredSocketFactory) |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------| | [LayeredSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/LayeredSocketFactory) | A [SocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#) for layered sockets (SSL/TLS). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory.html#) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------| | [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory.html#) | Layered socket factory for TLS/SSL connections, based on JSSE. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 22.**
 |
@@ -29,6 +31,7 @@ Both [Object.equals()](https://developer.android.com/reference/kotlin/java/lang/
 | abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [connectSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#connectSocket(java.net.Socket,%20kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int,%20org.apache.http.params.HttpParams))`(`sock:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [HttpParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#)!`)` Connects a socket to the given host. |
 | abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#createSocket())`()` Creates a new, unconnected socket. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecure](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#isSecure(java.net.Socket))`(`sock:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Checks whether a socket provides a secure connection. |
+| --- | --- |
 
 ## Public methods
 
@@ -56,9 +59,11 @@ Connects a socket to the given host.
 | `sock` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the socket to connect, as obtained from [createSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory#createSocket()).`null`indicates that a new socket should be created and connected. |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host to connect to |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port to connect to on the host |
+| --- | --- |
 | `localAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the local address to bind the socket to, or`null`for any |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port on the local machine, 0 or a negative number for any |
 | `params` | [HttpParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#)!:additional [parameters](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#) for connecting |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -69,6 +74,7 @@ Connects a socket to the given host.
 | `java.io.IOException` | if an I/O error occurs |
 | `java.net.UnknownHostException` | if the IP address of the target host can not be determined |
 | `org.apache.http.conn.ConnectTimeoutException` | if the socket cannot be connected within the time limit defined in the`params` |
+| --- | --- |
 
 ### createSocket
 

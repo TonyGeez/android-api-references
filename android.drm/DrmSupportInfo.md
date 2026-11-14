@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmSupportInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmSupportInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmSupportInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmSupportInfo](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#) |
 
 | **This class was deprecated in API level 30.**
@@ -33,12 +35,15 @@ Plug-in developers can expose the capability of their plug-in by passing an inst
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFileSuffix](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#addFileSuffix(kotlin.String))`(`fileSuffix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds the specified file suffix to the list of file suffixes this DRM plug-in supports. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#addMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds the specified MIME type to the list of MIME types this DRM plug-in supports. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overridden`equals`implementation. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescriprition](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#getDescriprition())`()` Retrieves the DRM plug-in (agent) description. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#getDescription())`()` Retrieves the DRM plug-in (agent) description. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getFileSuffixIterator](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#getFileSuffixIterator())`()` Retrieves an iterator object that you can use to iterate over the file suffixes that this DRM plug-in supports. |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMimeTypeIterator](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#getMimeTypeIterator())`()` Retrieves an iterator object that you can use to iterate over the MIME types that this DRM plug-in supports. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#hashCode())`()` Overridden hash code implementation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo#setDescription(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets a description for the DRM plug-in (agent). |
+| --- | --- |
 
 ## Public constructors
 

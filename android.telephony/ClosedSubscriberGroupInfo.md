@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ClosedSubscriberGroupInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ClosedSubscriberGroupInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ClosedSubscriberGroupInfo](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#) |
 
 Information to represent a closed subscriber group.
@@ -26,9 +28,11 @@ Information to represent a closed subscriber group.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCsgIdentity](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#getCsgIdentity())`()` The identity of the closed subscriber group that the cell belongs to. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getCsgIndicator](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#getCsgIndicator())`()` Indicates whether the cell is restricted to only CSG members. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHomeNodebName](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#getHomeNodebName())`()` Returns human-readable name of the closed subscriber group operating this cell (Node-B). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

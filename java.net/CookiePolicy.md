@@ -25,6 +25,7 @@ See RFC 2965 sec. 3.3 and 7 for more detail.
 | static [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#)! | [ACCEPT_ALL](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#ACCEPT_ALL:java.net.CookiePolicy) One pre-defined policy which accepts all cookies. |
 | static [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#)! | [ACCEPT_NONE](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#ACCEPT_NONE:java.net.CookiePolicy) One pre-defined policy which accepts no cookies. |
 | static [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#)! | [ACCEPT_ORIGINAL_SERVER](https://developer.android.com/reference/kotlin/java/net/CookiePolicy#ACCEPT_ORIGINAL_SERVER:java.net.CookiePolicy) One pre-defined policy which only accepts cookies from original server. |
+| --- | --- |
 
 ## Public methods
 

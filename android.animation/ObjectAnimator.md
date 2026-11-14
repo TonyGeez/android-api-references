@@ -5,15 +5,18 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # ObjectAnimator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/ObjectAnimator "View this page in Java") 
+| --- | --- |
 
 ```
 class ObjectAnimator : ValueAnimator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.animation.Animator](https://developer.android.com/reference/kotlin/android/animation/Animator) |||
 | | ↳ | [android.animation.ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) ||
 | | | ↳ | [android.animation.ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) |
+| --- | --- | --- | --- |
 
 This subclass of [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) provides support for animating properties on target objects. The constructors of this class take parameters to define the target object that will be animated as well as the name of the property that will be animated. Appropriate set/get functions are then determined internally and the animation will call these functions as necessary to animate the property.
 
@@ -43,39 +46,51 @@ Using Keyframes allows animations to follow more complex paths from the start to
 | [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [clone](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#clone())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPropertyName](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#getPropertyName())`()` Gets the name of the property that will be animated. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [getTarget](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#getTarget())`()` The target object whose property will be animated by this animation |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofArgb](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofArgb(kotlin.Any,%20kotlin.String,%20kotlin.Int))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns an ObjectAnimator that animates between color values. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofArgb](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofArgb(android.animation.ObjectAnimator.ofArgb.T,%20android.util.Property,%20kotlin.Int))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!`, `vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns an ObjectAnimator that animates between color values. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofFloat(kotlin.Any,%20kotlin.String,%20kotlin.Float))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs and returns an ObjectAnimator that animates between float values. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofFloat(kotlin.Any,%20kotlin.String,%20kotlin.String,%20android.graphics.Path))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `xPropertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `yPropertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates coordinates along a`Path`using two properties. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofFloat(android.animation.ObjectAnimator.ofFloat.T,%20android.util.Property,%20android.util.Property,%20android.graphics.Path))`(`target:` `T`, `xProperty:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!>!`, `yProperty:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!>!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates coordinates along a`Path`using two properties. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofFloat(android.animation.ObjectAnimator.ofFloat.T,%20android.util.Property,%20kotlin.Float))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!>!`, `vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs and returns an ObjectAnimator that animates between float values. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofInt(kotlin.Any,%20kotlin.String,%20kotlin.Int))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns an ObjectAnimator that animates between int values. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofInt(kotlin.Any,%20kotlin.String,%20kotlin.String,%20android.graphics.Path))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `xPropertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `yPropertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates coordinates along a`Path`using two properties. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofInt(android.animation.ObjectAnimator.ofInt.T,%20android.util.Property,%20android.util.Property,%20android.graphics.Path))`(`target:` `T`, `xProperty:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!`, `yProperty:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates coordinates along a`Path`using two properties. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofInt(android.animation.ObjectAnimator.ofInt.T,%20android.util.Property,%20kotlin.Int))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!`, `vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns an ObjectAnimator that animates between int values. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiFloat(kotlin.Any,%20kotlin.String,%20android.animation.TypeConverter,%20android.animation.TypeEvaluator,%20android.animation.ObjectAnimator.ofMultiFloat.T))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `converter:` ` [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)<T,` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!>!`, `evaluator:` ` [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)<T>!`, `vararg` `values:` `T`)` Constructs and returns an ObjectAnimator that animates over values for a multiple float parameters setter. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiFloat(kotlin.Any,%20kotlin.String,%20android.graphics.Path))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates the target using a multi-float setter along the given`Path`. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiFloat](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiFloat(kotlin.Any,%20kotlin.String,%20kotlin.Array))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `values:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!>!`)` Constructs and returns an ObjectAnimator that animates over float values for a multiple parameters setter. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiInt(kotlin.Any,%20kotlin.String,%20android.animation.TypeConverter,%20android.animation.TypeEvaluator,%20android.animation.ObjectAnimator.ofMultiInt.T))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `converter:` ` [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)<T,` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!>!`, `evaluator:` ` [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)<T>!`, `vararg` `values:` `T`)` Constructs and returns an ObjectAnimator that animates over values for a multiple int parameters setter. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiInt(kotlin.Any,%20kotlin.String,%20android.graphics.Path))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates the target using a multi-int setter along the given`Path`. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofMultiInt](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofMultiInt(kotlin.Any,%20kotlin.String,%20kotlin.Array))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `values:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!>!`)` Constructs and returns an ObjectAnimator that animates over int values for a multiple parameters setter. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [ofObject](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofObject(kotlin.Any,%20kotlin.String,%20android.animation.TypeConverter,%20android.graphics.Path))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `converter:` ` [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)< [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!,` `*>?`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates a property along a`Path`. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#)! | [ofObject](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofObject(kotlin.Any,%20kotlin.String,%20android.animation.TypeEvaluator,%20kotlin.Any))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `evaluator:` ` [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs and returns an ObjectAnimator that animates between Object values. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [ofObject](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofObject(android.animation.ObjectAnimator.ofObject.T,%20android.util.Property,%20android.animation.TypeConverter,%20android.animation.TypeEvaluator,%20android.animation.ObjectAnimator.ofObject.V))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` `P>!`, `converter:` ` [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)<V,` `P>!`, `evaluator:` ` [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)<V>!`, `vararg` `values:` `V`)` Constructs and returns an ObjectAnimator that animates between Object values. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [ofObject](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofObject(android.animation.ObjectAnimator.ofObject.T,%20android.util.Property,%20android.animation.TypeConverter,%20android.graphics.Path))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` `V>`, `converter:` ` [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)< [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!,` `V>?`, `path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Constructs and returns an ObjectAnimator that animates a property along a`Path`. |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [ofObject](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofObject(android.animation.ObjectAnimator.ofObject.T,%20android.util.Property,%20android.animation.TypeEvaluator,%20android.animation.ObjectAnimator.ofObject.V))`(`target:` `T`, `property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)<T,` `V>!`, `evaluator:` ` [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)<V>!`, `vararg` `values:` `V`)` Constructs and returns an ObjectAnimator that animates between Object values. |
+| --- | --- |
 | static [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [ofPropertyValuesHolder](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#ofPropertyValuesHolder(kotlin.Any,%20android.animation.PropertyValuesHolder))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `vararg` `values:` ` [PropertyValuesHolder](https://developer.android.com/reference/kotlin/android/animation/PropertyValuesHolder)!`)` Constructs and returns an ObjectAnimator that animates between the sets of values specified in`PropertyValueHolder`objects. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoCancel](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setAutoCancel(kotlin.Boolean))`(`cancel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` autoCancel controls whether an ObjectAnimator will be canceled automatically when any other ObjectAnimator with the same target and properties is started. |
 | [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#) | [setDuration](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setDuration(kotlin.Long))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the length of the animation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatValues](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setFloatValues(kotlin.Float))`(`vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntValues](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setIntValues(kotlin.Int))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setObjectValues](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setObjectValues(kotlin.Any))`(`vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setProperty(android.util.Property))`(`property:` ` [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`)` Sets the property that will be animated. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPropertyName](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setPropertyName(kotlin.String))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the name of the property that will be animated. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setTarget(kotlin.Any))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the target object whose property will be animated by this animation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupEndValues](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setupEndValues())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupStartValues](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#setupStartValues())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#start())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator#toString())`()` Returns a string representation of the object. |
 
 | Inherited functions ||
@@ -158,6 +173,7 @@ Constructs and returns an ObjectAnimator that animates between color values. A s
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object should have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated. |
 | `values` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -182,6 +198,7 @@ Constructs and returns an ObjectAnimator that animates between color values. A s
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!:The property being animated. |
 | `values` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -206,6 +223,7 @@ Constructs and returns an ObjectAnimator that animates between float values. A s
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object should have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated. |
 | `values` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -231,6 +249,7 @@ Constructs and returns an ObjectAnimator that animates coordinates along a`Path`
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose properties are to be animated. This object should have public methods on it called`setNameX()`and`setNameY`, where`nameX`and`nameY`are the value of the`xPropertyName`and`yPropertyName`parameters, respectively. |
 | `xPropertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property for the x coordinate being animated. |
 | `yPropertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property for the y coordinate being animated. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -257,6 +276,7 @@ Constructs and returns an ObjectAnimator that animates coordinates along a`Path`
 | `target` | T:The object whose properties are to be animated. |
 | `xProperty` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>!:The property for the x coordinate being animated. |
 | `yProperty` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>!:The property for the y coordinate being animated. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -282,6 +302,7 @@ Constructs and returns an ObjectAnimator that animates between float values. A s
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>!:The property being animated. |
 | `values` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -306,6 +327,7 @@ Constructs and returns an ObjectAnimator that animates between int values. A sin
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object should have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated. |
 | `values` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -331,6 +353,7 @@ Constructs and returns an ObjectAnimator that animates coordinates along a`Path`
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose properties are to be animated. This object should have public methods on it called`setNameX()`and`setNameY`, where`nameX`and`nameY`are the value of`xPropertyName`and`yPropertyName`parameters, respectively. |
 | `xPropertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property for the x coordinate being animated. |
 | `yPropertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property for the y coordinate being animated. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -357,6 +380,7 @@ Constructs and returns an ObjectAnimator that animates coordinates along a`Path`
 | `target` | T:The object whose properties are to be animated. |
 | `xProperty` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!:The property for the x coordinate being animated. |
 | `yProperty` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!:The property for the y coordinate being animated. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -382,6 +406,7 @@ Constructs and returns an ObjectAnimator that animates between int values. A sin
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!:The property being animated. |
 | `values` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -410,6 +435,7 @@ At least two values must be provided, a start and end. More than two values impl
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `converter` | [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\<T, [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!\>!:Converts T objects into float parameters for the multi-value setter. |
+| --- | --- |
 | `evaluator` | [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)\<T\>!:A TypeEvaluator that will be called on each animation frame to provide the necessary interpolation between the Object values to derive the animated value. |
 | `values` | T:A set of values that the animation will animate between over time. |
 
@@ -436,6 +462,7 @@ Constructs and returns an ObjectAnimator that animates the target using a multi-
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -460,6 +487,7 @@ Constructs and returns an ObjectAnimator that animates over float values for a m
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!\>!:A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -488,6 +516,7 @@ At least two values must be provided, a start and end. More than two values impl
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `converter` | [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\<T, [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\>!:Converts T objects into int parameters for the multi-value setter. |
+| --- | --- |
 | `evaluator` | [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)\<T\>!:A TypeEvaluator that will be called on each animation frame to provide the necessary interpolation between the Object values to derive the animated value. |
 | `values` | T:A set of values that the animation will animate between over time. |
 
@@ -514,6 +543,7 @@ Constructs and returns an ObjectAnimator that animates the target using a multi-
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -538,6 +568,7 @@ Constructs and returns an ObjectAnimator that animates over int values for a mul
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object may have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter.`propertyName`may also be the case-sensitive complete name of the public setter method. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated or the name of the setter method. |
 | `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\>!:A set of values that the animation will animate between over time. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -563,6 +594,7 @@ Constructs and returns an ObjectAnimator that animates a property along a`Path`.
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object should have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated. |
 | `converter` | [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\< [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!,\*\>?:Converts a PointF to the type associated with the setter. May be null if conversion is unnecessary. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -591,6 +623,7 @@ Constructs and returns an ObjectAnimator that animates between Object values. A 
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object whose property is to be animated. This object should have a public method on it called`setName()`, where`name`is the value of the`propertyName`parameter. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property being animated. |
 | `evaluator` | [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:A TypeEvaluator that will be called on each animation frame to provide the necessary interpolation between the Object values to derive the animated value. |
+| --- | --- |
 | `values` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:A set of values that the animation will animate between over time. |
 
 | Return ||
@@ -620,6 +653,7 @@ Constructs and returns an ObjectAnimator that animates between Object values. A 
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T,P\>!:The property being animated. |
 | `converter` | [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\<V,P\>!:Converts the animated object to the Property type. |
+| --- | --- |
 | `evaluator` | [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)\<V\>!:A TypeEvaluator that will be called on each animation frame to provide the necessary interpolation between the Object values to derive the animated value. |
 | `values` | V:A set of values that the animation will animate between over time. |
 
@@ -649,6 +683,7 @@ The PointF passed to`converter`or`property`, if`converter`is`null`, is reused on
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T,V\>:The property being animated. Should not be null. |
 | `converter` | [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\< [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!,V\>?:Converts a PointF to the type associated with the setter. May be null if conversion is unnecessary. |
+| --- | --- |
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!:The`Path`to animate values along. |
 
 | Return ||
@@ -677,6 +712,7 @@ Constructs and returns an ObjectAnimator that animates between Object values. A 
 | `target` | T:The object whose property is to be animated. |
 | `property` | [Property](https://developer.android.com/reference/kotlin/android/util/Property.html#)\<T,V\>!:The property being animated. |
 | `evaluator` | [TypeEvaluator](https://developer.android.com/reference/kotlin/android/animation/TypeEvaluator)\<V\>!:A TypeEvaluator that will be called on each animation frame to provide the necessary interpolation between the Object values to derive the animated value. |
+| --- | --- |
 | `values` | V:A set of values that the animation will animate between over time. |
 
 | Return ||

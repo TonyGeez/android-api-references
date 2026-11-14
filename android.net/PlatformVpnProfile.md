@@ -5,15 +5,18 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # PlatformVpnProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/PlatformVpnProfile "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PlatformVpnProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.PlatformVpnProfile](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#) |
 
 | Known Direct Subclasses [Ikev2VpnProfile](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile) |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [Ikev2VpnProfile](https://developer.android.com/reference/kotlin/android/net/Ikev2VpnProfile) | The Ikev2VpnProfile is a configuration for the platform setup of IKEv2/IPsec VPNs. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 PlatformVpnProfile represents a configuration for a platform-based VPN implementation.
 
@@ -26,12 +29,14 @@ Platform-based VPNs allow VPN applications to provide configuration and authenti
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IKEV2_IPSEC_PSK](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#TYPE_IKEV2_IPSEC_PSK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IKEV2_IPSEC_RSA](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#TYPE_IKEV2_IPSEC_RSA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IKEV2_IPSEC_USER_PASS](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#TYPE_IKEV2_IPSEC_USER_PASS:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areLocalRoutesExcluded](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#areLocalRoutesExcluded())`()` Returns whether the local traffic is exempted from the VPN. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#getType())`()` Returns the profile integer type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTypeString](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#getTypeString())`()` Returns a type string describing the VPN profile type |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInternetValidationRequired](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile#isInternetValidationRequired())`()` Returns whether this VPN should undergo Internet validation. |
 
 ## Constants

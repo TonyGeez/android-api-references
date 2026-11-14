@@ -7,9 +7,11 @@ open class VoiceInteractionService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.voice.VoiceInteractionService](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#) |
 
 Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.html#`, etc. The current VoiceInteractionService that has been selected by the user is kept always running by the system, to allow it to do things like listen for hotwords in the background to instigate voice interactions.
@@ -1049,15 +1051,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#getDisabledShowContext()()` Return the value set by `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#setDisabledShowContext(kotlin.Int)`. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#isActiveService(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Check whether the given service component is the currently active VoiceInteractionService. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onGetSupportedVoiceActions(kotlin.collections.MutableSet)(voiceActions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Request to query for what extended voice actions this service supports. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onLaunchVoiceAssistFromKeyguard()()` Called when a user has activated an affordance to launch voice assist from the Keyguard. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onPrepareToShowSession(android.os.Bundle,%20kotlin.Int)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notify the interactor when the system prepares to show session. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onReady()()` Called during service initialization to tell you when the system is ready to receive interaction from it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onShowSessionFailed(android.os.Bundle)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when the show session failed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#onShutdown()()` Called during service de-initialization to tell you when the system is shutting the service down. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#setDisabledShowContext(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set contextual options you would always like to have disabled when a session is shown. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#setInvocationEffectEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the enabled state for the invocation effect, a graphical indication displayed when a voice session is launched by the system. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#setUiHints(android.os.Bundle)(hints: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Provide hints to be reflected in the system UI. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService#showSession(android.os.Bundle,%20kotlin.Int)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request that the associated `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession` be shown to the user, starting it if necessary. |
 
 | Protected methods ||
@@ -3026,3 +3032,4 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
+| --- | --- |

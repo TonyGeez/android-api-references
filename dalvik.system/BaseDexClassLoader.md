@@ -9,12 +9,15 @@ open class BaseDexClassLoader : ClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) ||
 | | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader#) |
 
 | Known Direct Subclasses [DexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DexClassLoader), [InMemoryDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/InMemoryDexClassLoader), [PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader) |---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DexClassLoader) | A class loader that loads classes from`.jar`and`.apk`files containing a`classes.dex`entry. | | [InMemoryDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/InMemoryDexClassLoader) | A [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) implementation that loads classes from a buffer containing a DEX file. | | [PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader) | Provides a simple [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) implementation that operates on a list of files and directories in the local file system, but does not attempt to load classes from the network. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader) |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------| | [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader) | A`ClassLoader`implementation that implements a**delegate last**lookup policy. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Base class for common functionality between various dex-based [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) implementations.
 
@@ -34,6 +37,7 @@ Base class for common functionality between various dex-based [ClassLoader](http
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [findClass](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader#findClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [findResource](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader#findResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!\>! | [findResources](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader#findResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| --- | --- |
 | open [Package](https://developer.android.com/reference/kotlin/java/lang/Package.html#)! | [getPackage](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader#getPackage(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns package information for the given package. |
 
 | Inherited functions ||
@@ -61,6 +65,7 @@ Constructs an instance. Note that all the \*.jar and \*.apk files from`dexPath`m
 | `dexPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of jar/apk files containing classes and resources, delimited by`File.pathSeparator`, which defaults to`":"`on Android. |
 | `optimizedDirectory` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:this parameter is deprecated and has no effect since API level 26. |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null` |
+| --- | --- |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!:the parent class loader |
 
 ## Public methods

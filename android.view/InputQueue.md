@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # InputQueue
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/InputQueue "View this page in Java") 
+| --- | --- |
 
 ```
 class InputQueue
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.InputQueue](https://developer.android.com/reference/kotlin/android/view/InputQueue#) |
 
 An input queue provides a mechanism for an application to receive incoming input events. Currently only usable from native code.

@@ -9,9 +9,11 @@ open class CertificateRevokedException : CertificateException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.cert.CertificateException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateException) ||
 | | | | | ↳ | [java.security.cert.CertificateRevokedException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#) |
 
@@ -28,6 +30,7 @@ An exception that indicates an X.509 certificate is revoked. A`CertificateRevoke
 | open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | [getAuthorityName](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#getAuthorityName())`()` Returns the name of the authority that signed the certificate's revocation status information. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Extension](https://developer.android.com/reference/kotlin/java/security/cert/Extension)!\>! | [getExtensions](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#getExtensions())`()` Returns a map of X. |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getInvalidityDate](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#getInvalidityDate())`()` Returns the invalidity date, as specified in the Invalidity Date extension of this`CertificateRevokedException`. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getRevocationDate](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#getRevocationDate())`()` Returns the date on which the certificate was revoked. |
 | open [CRLReason](https://developer.android.com/reference/kotlin/java/security/cert/CRLReason)! | [getRevocationReason](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException#getRevocationReason())`()` Returns the reason the certificate was revoked. |
 
@@ -56,6 +59,7 @@ Constructs a`CertificateRevokedException`with the specified revocation date, rea
 | `revocationDate` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!:the date on which the certificate was revoked. The date is copied to protect against subsequent modification. |
 | `reason` | [CRLReason](https://developer.android.com/reference/kotlin/java/security/cert/CRLReason)!:the revocation reason |
 | `extensions` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Extension](https://developer.android.com/reference/kotlin/java/security/cert/Extension)!\>!:a map of X.509 Extensions. Each key is an OID String that maps to the corresponding Extension. The map is copied to prevent subsequent modification. |
+| --- | --- |
 | `authority` | [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!:the`X500Principal`that represents the name of the authority that signed the certificate's revocation status information |
 
 | Exceptions ||

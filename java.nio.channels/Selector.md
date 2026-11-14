@@ -9,9 +9,11 @@ abstract class Selector : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#) |
 
 | Known Direct Subclasses [AbstractSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector) |-----------------------------------------------------------------------------------------------------------|------------------------------------------| | [AbstractSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector) | Base implementation class for selectors. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A multiplexor of [SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel) objects.
 
@@ -97,15 +99,19 @@ A selector's selected-key set is not, in general, safe for use by multiple concu
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#close())`()` Closes this selector. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#isOpen())`()` Tells whether or not this selector is open. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)!\>! | [keys](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#keys())`()` Returns this selector's key set. |
+| --- | --- |
 | openstatic [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#open())`()` Opens a selector. |
 | abstract [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider)! | [provider](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#provider())`()` Returns the provider that created this channel. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#select())`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#select(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#select(java.util.function.Consumer,%20kotlin.Long))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#select(kotlin.Long))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects a set of keys whose corresponding channels are ready for I/O operations. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#selectNow())`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#selectNow(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)!\>! | [selectedKeys](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#selectedKeys())`()` Returns this selector's selected-key set. |
+| --- | --- |
 | abstract [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#)! | [wakeup](https://developer.android.com/reference/kotlin/java/nio/channels/Selector#wakeup())`()` Causes the first selection operation that has not yet returned to return immediately. |
 
 ## Protected constructors
@@ -296,6 +302,7 @@ This method does not offer real-time guarantees: It schedules the timeout as if 
 | `java.io.IOException` | If an I/O error occurs |
 | `java.nio.channels.ClosedSelectorException` | If this selector is closed or is closed by the action |
 | `java.lang.IllegalArgumentException` | If the value of the timeout argument is negative |
+| --- | --- |
 
 ### select
 
@@ -324,6 +331,7 @@ This method does not offer real-time guarantees: It schedules the timeout as if 
 | `java.io.IOException` | If an I/O error occurs |
 | `java.nio.channels.ClosedSelectorException` | If this selector is closed |
 | `java.lang.IllegalArgumentException` | If the value of the timeout argument is negative |
+| --- | --- |
 
 ### selectNow
 

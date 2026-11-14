@@ -4,12 +4,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PageMatchBounds
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/models/PageMatchBounds "View this page in Java")
+| --- | --- |
 
 ```
 class PageMatchBounds : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.models.PageMatchBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#) |
 
 Represents the bounds of a single search match on a page of the PDF document.
@@ -29,6 +31,7 @@ Represents the bounds of a single search match on a page of the PDF document.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#getBounds()()` Represents the `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` bounds of a match. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#getTextStartIndex()()` Gets the starting index of the match found on the page. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

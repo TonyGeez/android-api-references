@@ -9,12 +9,15 @@ open class ZipOutputStream : DeflaterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) ||||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) |||
 | | | ↳ | [java.util.zip.DeflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.zip.ZipOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#) |
 
 | Known Direct Subclasses [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream.html#) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream.html#) | The`JarOutputStream`class is used to write the contents of a JAR file to any output stream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements an output stream filter for writing files in the ZIP file format. Includes support for both compressed and uncompressed entries.
 
@@ -25,45 +28,59 @@ This class implements an output stream filter for writing files in the ZIP file 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENATT:kotlin.Int) Central directory (CEN) header internal file attributes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENATX:kotlin.Int) Central directory (CEN) header external file attributes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENCOM:kotlin.Int) Central directory (CEN) header comment length field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENCRC:kotlin.Int) Central directory (CEN) header uncompressed file crc-32 value field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENDSK:kotlin.Int) Central directory (CEN) header disk number start field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENEXT:kotlin.Int) Central directory (CEN) header extra field length field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENFLG:kotlin.Int) Central directory (CEN) header encrypt, decrypt flags field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENHDR:kotlin.Int) Central directory (CEN) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENHOW:kotlin.Int) Central directory (CEN) header compression method field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENLEN:kotlin.Int) Central directory (CEN) header uncompressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENNAM:kotlin.Int) Central directory (CEN) header filename length field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENOFF:kotlin.Int) Central directory (CEN) header LOC header offset field offset. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENSIG:kotlin.Long) Central directory (CEN) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENSIZ:kotlin.Int) Central directory (CEN) header compressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENTIM:kotlin.Int) Central directory (CEN) header modification time field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENVEM:kotlin.Int) Central directory (CEN) header version made by field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#CENVER:kotlin.Int) Central directory (CEN) header version needed to extract field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#DEFLATED:kotlin.Int) Compression method for compressed (DEFLATED) entries. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDCOM:kotlin.Int) End of central directory (END) header zip file comment length field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDHDR:kotlin.Int) End of central directory (END) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDOFF:kotlin.Int) End of central directory (END) header offset for the first CEN header field offset. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDSIG:kotlin.Long) End of central directory (END) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDSIZ:kotlin.Int) End of central directory (END) header central directory size in bytes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDSUB:kotlin.Int) End of central directory (END) header number of entries on this disk field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#ENDTOT:kotlin.Int) End of central directory (END) header total number of entries field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#EXTCRC:kotlin.Int) Extra local (EXT) header uncompressed file crc-32 value field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#EXTHDR:kotlin.Int) Extra local (EXT) header size in bytes (including signature). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#EXTLEN:kotlin.Int) Extra local (EXT) header uncompressed size field offset. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#EXTSIG:kotlin.Long) Extra local (EXT) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#EXTSIZ:kotlin.Int) Extra local (EXT) header compressed size field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCCRC:kotlin.Int) Local file (LOC) header uncompressed file crc-32 value field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCEXT:kotlin.Int) Local file (LOC) header extra field length field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCFLG:kotlin.Int) Local file (LOC) header general purpose bit flag field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCHDR:kotlin.Int) Local file (LOC) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCHOW:kotlin.Int) Local file (LOC) header compression method field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCLEN:kotlin.Int) Local file (LOC) header uncompressed size field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCNAM:kotlin.Int) Local file (LOC) header filename length field offset. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCSIG:kotlin.Long) Local file (LOC) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCSIZ:kotlin.Int) Local file (LOC) header compressed size field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCTIM:kotlin.Int) Local file (LOC) header modification time field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#LOCVER:kotlin.Int) Local file (LOC) header version needed to extract field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STORED](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#STORED:kotlin.Int) Compression method for uncompressed (STORED) entries. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -75,9 +92,11 @@ This class implements an output stream filter for writing files in the ZIP file 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#close())`()` Closes the ZIP output stream as well as the stream being filtered. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#closeEntry())`()` Closes the current ZIP entry and positions the stream for writing the next entry. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#finish())`()` Finishes writing the contents of the ZIP output stream without closing the underlying stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putNextEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#putNextEntry(java.util.zip.ZipEntry))`(`e:` ` [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry)!`)` Begins writing a new ZIP file entry and positions the stream to the start of the entry data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#setComment(kotlin.String))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the ZIP file comment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#setLevel(kotlin.Int))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level for subsequent entries which are DEFLATED. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMethod](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#setMethod(kotlin.Int))`(`method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the default compression method for subsequent entries. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the current ZIP entry data. |
 
@@ -86,6 +105,7 @@ This class implements an output stream filter for writing files in the ZIP file 
 | From class [DeflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#deflate())`()` <br /> Writes next block of compressed data to the output stream. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#flush())`()` <br /> Flushes the compressed output stream. If [syncFlush](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#DeflaterOutputStream(java.io.OutputStream,%20java.util.zip.Deflater,%20kotlin.Int,%20kotlin.Boolean))is`true`when this compressed output stream is constructed, this method first flushes the underlying`compressor`with the flush mode [Deflater.SYNC_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#SYNC_FLUSH:kotlin.Int) to force all pending data to be flushed out to the output stream and then flushes the output stream. Otherwise this method only flushes the output stream without flushing the`compressor`. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Writes a byte to the compressed output stream. This method will block until the byte can be written. <br /> | ||
 | From class [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [nullOutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#nullOutputStream())`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
 | From class [FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Writes`b.length`bytes to this output stream. The`write`method of`FilterOutputStream`calls its`write`method of three arguments with the arguments`b`,`0`, and`b.length`. Note that this method does not call the one-argument`write`method of its underlying output stream with the single argument`b`. <br /> | ||
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Inherited properties ||
 |---|---|
@@ -650,6 +670,7 @@ Closes the ZIP output stream as well as the stream being filtered.
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.util.zip.ZipException` | if a ZIP file error has occurred |
+| --- | --- |
 
 ### closeEntry
 
@@ -777,6 +798,7 @@ Writes an array of bytes to the current ZIP entry data. This method will block u
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to be written |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes that are written |
+| --- | --- |
 
 | Exceptions ||
 |------------------------------|----------------------------------|

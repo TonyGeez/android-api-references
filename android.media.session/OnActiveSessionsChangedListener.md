@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # OnActiveSessionsChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnActiveSessionsChangedListener

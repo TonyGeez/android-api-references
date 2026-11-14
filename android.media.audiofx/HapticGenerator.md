@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # HapticGenerator
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/HapticGenerator "View this page in Java")
+| --- | --- |
 
 ```
 open class HapticGenerator : AudioEffect, AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#) |
 
@@ -50,6 +52,7 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#close()()` Release the resources that are held by the effect. |
 | open static [HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#create(kotlin.Int)(audioSession: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a HapticGenerator and attaches it to the given audio session. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#isAvailable()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#release()()` Releases the native AudioEffect resources. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable the effect. |
 
@@ -100,6 +103,7 @@ Creates a HapticGenerator and attaches it to the given audio session. Use `https
 | `java.lang.IllegalArgumentException` | when HapticGenerator is not supported |
 | `java.lang.RuntimeException` | for all other error |
 | `java.lang.UnsupportedOperationException` | when the effect library is not loaded. |
+| --- | --- |
 
 ### isAvailable
 

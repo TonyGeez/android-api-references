@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TableResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/TableResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class TableResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.TableResponse](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#) |
 
@@ -36,9 +38,11 @@ A response for Table from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#getSize())`()` Gets the Size number of table. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getTableByteArray](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#getTableByteArray())`()` Gets the data of the table as a byte array. |
+| --- | --- |
 | [SharedMemory](https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#)? | [getTableSharedMemory](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#getTableSharedMemory())`()` Gets the data of the table as a [SharedMemory](https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#) object. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getTableUri](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#getTableUri())`()` Gets the URI in TvProvider database. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#getVersion())`()` Gets the version number of requested table. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||
@@ -74,9 +78,11 @@ Constructs a TableResponse with a table URI.
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The ID is used to associate the response with the request. |
 | `sequence` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The sequence number which indicates the order of related responses. |
 | `responseResult` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The result for the response. It's one of [RESPONSE_RESULT_OK](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_OK:kotlin.Int), [RESPONSE_RESULT_CANCEL](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_CANCEL:kotlin.Int), [RESPONSE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_ERROR:kotlin.Int). Value is [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_ERROR:kotlin.Int), [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_OK](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_OK:kotlin.Int), or [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_CANCEL](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_CANCEL:kotlin.Int) |
+| --- | --- |
 | `tableUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The URI of the table in the database. This value may be `null`. |
 | `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The version number of requested table. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Size number of table in bytes. |
+| --- | --- |
 
 ## Public methods
 

@@ -8,9 +8,11 @@ class ActivityIntensityRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.ActivityIntensityRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#) |
+| --- | --- | --- | --- |
 
 Represents intensity of an activity.
 
@@ -38,6 +40,7 @@ Each record requires the start time, the end time and the activity intensity typ
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#getActivityIntensityType()()` Returns the type of the activity intensity. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -49,6 +52,7 @@ Each record requires the start time, the end time and the activity intensity typ
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of activity intensity regardless of the type using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#INTENSITY_MINUTES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the number of weighted intensity minutes using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#MODERATE_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of moderate activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| --- | --- |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#VIGOROUS_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of vigorous activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 
 ## Constants
@@ -96,6 +100,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

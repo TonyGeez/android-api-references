@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # StorageVolume
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/storage/StorageVolume "View this page in Java") 
+| --- | --- |
 
 ```
 class StorageVolume : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.storage.StorageVolume](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#) |
 
 Information about a shared/external storage volume for a specific user.
@@ -44,18 +46,23 @@ See [Environment.getExternalStorageDirectory()](https://developer.android.com/re
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | [createAccessIntent](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#createAccessIntent(kotlin.String))`(`directoryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Builds an intent to give access to a standard storage directory or entire volume after obtaining the user's approval. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | [createOpenDocumentTreeIntent](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#createOpenDocumentTreeIntent())`()` Builds an [Intent.ACTION_OPEN_DOCUMENT_TREE](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT_TREE:kotlin.String) to allow the user to grant access to any directory subtree (or entire volume) from the [android.provider.DocumentsProvider](https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#) s available on the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#describeContents())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getDescription(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Returns a user-visible description of the volume. |
 | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)? | [getDirectory](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getDirectory())`()` Returns the directory where this volume is currently mounted. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMediaStoreVolumeName](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getMediaStoreVolumeName())`()` Return the volume name that can be used to interact with this storage device through [MediaStore](https://developer.android.com/reference/kotlin/android/provider/MediaStore.html#). |
 | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) | [getOwner](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getOwner())`()` Returns the user that owns this volume |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getState](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getState())`()` Returns the current state of the volume. |
+| --- | --- |
 | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)? | [getStorageUuid](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getStorageUuid())`()` Gets the converted volume UUID. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUuid](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#getUuid())`()` Gets the volume UUID, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmulated](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#isEmulated())`()` Returns true if the volume is emulated. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrimary](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#isPrimary())`()` Returns true if the volume is the primary shared/external storage, which is the volume backed by [Environment.getExternalStorageDirectory()](https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageDirectory()). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRemovable](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#isRemovable())`()` Returns true if the volume is removable. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

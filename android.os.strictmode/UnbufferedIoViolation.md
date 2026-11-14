@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # UnbufferedIoViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/UnbufferedIoViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class UnbufferedIoViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.UnbufferedIoViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/UnbufferedIoViolation#) |
+| --- | --- | --- | --- |
 
 See # [Builder.detectUnbufferedIo()](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder.html#detectUnbufferedIo())
 

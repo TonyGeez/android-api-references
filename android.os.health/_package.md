@@ -3,14 +3,18 @@
 # android.os.health
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/health/package-summary "View this page in Java")
+| --- | --- |
 
 ## Classes
 
 | [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) | A HealthStats object contains system health data about an application. |
+| --- | --- |
 | [PackageHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PackageHealthStats) | Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [UidHealthStats.STATS_PACKAGES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PACKAGES:kotlin.Int) key. |
 | [PidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats) | Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [UidHealthStats.STATS_PIDS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PIDS:kotlin.Int) key. |
 | [ProcessHealthStats](https://developer.android.com/reference/kotlin/android/os/health/ProcessHealthStats) | Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [UidHealthStats.STATS_PROCESSES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PROCESSES:kotlin.Int) key. |
+| --- | --- |
 | [ServiceHealthStats](https://developer.android.com/reference/kotlin/android/os/health/ServiceHealthStats) | Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [PackageHealthStats.STATS_SERVICES](https://developer.android.com/reference/kotlin/android/os/health/PackageHealthStats#STATS_SERVICES:kotlin.Int) key. |
 | [SystemHealthManager](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager) | Provides access to data about how various system resources are used by applications. |
 | [TimerStat](https://developer.android.com/reference/kotlin/android/os/health/TimerStat) | A TimerStat object stores a count and a time. |
+| --- | --- |
 | [UidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats) | Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [SystemHealthManager.takeUidSnapshot(int)](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshot(kotlin.Int)), [SystemHealthManager.takeMyUidSnapshot()](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeMyUidSnapshot()), and[SystemHealthManager.takeUidSnapshots(int[])](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)). |

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ExecuteInput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteInput "View this page in Java") 
+| --- | --- |
 
 ```
 class ExecuteInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.ExecuteInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#) |
 
 The input data for [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)).

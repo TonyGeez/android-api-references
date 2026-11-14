@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ClearCredentialStateException
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/ClearCredentialStateException "View this page in Java") 
+| --- | --- |
 
 ```
 open class ClearCredentialStateException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.credentials.ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#) |
+| --- | --- | --- | --- |
 
 Represents an error encountered during the [CredentialManager.clearCredentialState(ClearCredentialStateRequest,](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#clearCredentialState(android.credentials.ClearCredentialStateRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))operation.
 
@@ -107,6 +110,7 @@ Constructs a [ClearCredentialStateException](https://developer.android.com/refer
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:This value may be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------|

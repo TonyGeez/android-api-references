@@ -9,9 +9,11 @@ open class TypeNotPresentException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.TypeNotPresentException](https://developer.android.com/reference/kotlin/java/lang/TypeNotPresentException#) |
 
 Thrown when an application tries to access a type using a string representing the type's name, but no definition for the type with the specified name can be found. This exception differs from [ClassNotFoundException](https://developer.android.com/reference/kotlin/java/lang/ClassNotFoundException) in that`ClassNotFoundException`is a checked exception, whereas this exception is unchecked.

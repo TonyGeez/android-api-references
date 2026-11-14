@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # SentenceSuggestionsInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/SentenceSuggestionsInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SentenceSuggestionsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.SentenceSuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#) |
 
 This class contains a metadata of suggestions returned from a text service (e.g. [android.service.textservice.SpellCheckerService](https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService.html#)). The text service uses this class to return the suggestions for a sentence. See [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo) which is used for suggestions for a word. This class extends the functionality of [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo) as far as this class enables you to put multiple [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo) s on a sentence with the offsets and the lengths of all [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo) s.
@@ -31,9 +33,11 @@ This class contains a metadata of suggestions returned from a text service (e.g.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLengthAt](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#getLengthAt(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetAt](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#getOffsetAt(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSuggestionsCount](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#getSuggestionsCount())`()` <br /> |
 | [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo)! | [getSuggestionsInfoAt](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#getSuggestionsInfoAt(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textservice/SentenceSuggestionsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -67,6 +71,7 @@ Constructor.
 | `suggestionsInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo)!\>!:from the text service |
 | `offsets` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:the array of offsets of suggestions |
 | `lengths` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:the array of lengths of suggestions |
+| --- | --- |
 
 ## Public methods
 

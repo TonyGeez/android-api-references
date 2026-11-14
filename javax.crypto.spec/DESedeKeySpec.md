@@ -9,6 +9,7 @@ open class DESedeKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.DESedeKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#) |
 
 This class specifies a DES-EDE ("triple-DES") key.

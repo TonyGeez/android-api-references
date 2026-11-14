@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # AudioTimestamp
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioTimestamp "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioTimestamp : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioTimestamp](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#) |
 
 Structure that groups a position in frame units relative to an assumed audio stream, together with the estimated time when that frame enters or leaves the audio processing pipeline on that device. This can be used to coordinate events and interactions with the external environment.
@@ -37,12 +39,14 @@ The time is based on the implementation's best effort, using whatever knowledge 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AudioTimestamp](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#CREATOR:android.os.Parcelable.Creator) Creates an instance from a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [framePosition](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#framePosition:kotlin.Long) Position in frames relative to start of an assumed audio stream. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [nanoTime](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp#nanoTime:kotlin.Long) Time associated with the frame in the audio pipeline. |
+| --- | --- |
 
 ## Constants
 

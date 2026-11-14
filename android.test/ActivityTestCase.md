@@ -6,16 +6,19 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # ActivityTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ActivityTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ActivityTestCase : InstrumentationTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) ||
 | | ↳ | [android.test.ActivityTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase#) |
 
 | Known Direct Subclasses [ActivityInstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase), [ActivityInstrumentationTestCase2](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2), [ActivityUnitTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase) |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------| | [ActivityInstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase) | This class provides functional testing of a single activity. | | [ActivityInstrumentationTestCase2](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2) | This class provides functional testing of a single activity. | | [ActivityUnitTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase) | This class provides isolated testing of a single activity. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 24.**
 |
@@ -34,6 +37,7 @@ This is common code used to support Activity test cases. For more useful classes
 | open [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#)! | [getActivity](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase#getActivity())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrubClass](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase#scrubClass(java.lang.Class))`(`testCaseClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` This function is called by various TestCase implementations, at tearDown() time, in order to scrub out any class variables. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActivity](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase#setActivity(android.app.Activity))`(`testActivity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#)!`)` Set the activity under test. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

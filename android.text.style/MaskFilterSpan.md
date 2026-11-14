@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MaskFilterSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/MaskFilterSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class MaskFilterSpan : CharacterStyle, UpdateAppearance
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
 | | ↳ | [android.text.style.MaskFilterSpan](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#) |
 
@@ -37,6 +39,7 @@ Text blurred with the`MaskFilterSpan`.
 | open [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#)! | [getMaskFilter](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#getMaskFilter())`()` Return the mask filter for this span. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

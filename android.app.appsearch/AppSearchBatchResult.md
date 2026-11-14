@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # AppSearchBatchResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult "View this page in Java") 
+| --- | --- |
 
 ```
 class AppSearchBatchResult<KeyType : Any!, ValueType : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#) |
 
 Provides results for AppSearch batch operations which encompass multiple documents.
@@ -30,6 +32,7 @@ Alternatively, [getAll()](https://developer.android.com/reference/kotlin/android
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<KeyType, [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult)\<ValueType\>!\> | [getAll](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#getAll())`()` Returns a [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) of keys mapped to instances of [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult) for all individual results. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<KeyType, [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult)\<ValueType\>!\> | [getFailures](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#getFailures())`()` Returns a [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) of keys mapped to instances of [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult) for all failed individual results. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<KeyType,ValueType\> | [getSuccesses](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#getSuccesses())`()` Returns a [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) of keys mapped to instances of the value type for all successful individual results. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSuccess](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#isSuccess())`()` Returns`true`if this [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#) has no failures. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult#toString())`()` Returns a string representation of the object. |
 

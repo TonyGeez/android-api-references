@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WallpaperDescription
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/wallpaper/WallpaperDescription "View this page in Java") 
+| --- | --- |
 
 ```
 class WallpaperDescription : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.wallpaper.WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#) |
 
 Describes a wallpaper, including associated metadata and optional content to be used by its [android.service.wallpaper.WallpaperService.Engine](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html#), the [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) to be used by [android.app.WallpaperManager](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#), and an optional id to differentiate between different distinct wallpapers rendered by the same wallpaper service.
@@ -32,15 +34,19 @@ This class is used to communicate among a wallpaper rendering service, a wallpap
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getComponent](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getComponent())`()` <br /> |
+| --- | --- |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getContent](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContent())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getContextDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContextDescription())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getContextUri](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContextUri())`()` <br /> |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getDescription())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getId())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getThumbnail](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getThumbnail())`()` <br /> |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getTitle](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getTitle())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#hashCode())`()` <br /> |
 | [WallpaperDescription.Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder) | [toBuilder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#toBuilder())`()` Convert the current description to a [Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder). |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

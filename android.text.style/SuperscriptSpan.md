@@ -7,9 +7,11 @@ open class SuperscriptSpan : MetricAffectingSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
 | | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
 | | | ↳ | [android.text.style.SuperscriptSpan](https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#) |
+| --- | --- | --- | --- |
 
 The span that moves the position of the text baseline higher.
 
@@ -33,9 +35,11 @@ Text with `SuperscriptSpan`. Note: Since the span affects the position of the te
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#updateDrawState(android.text.TextPaint)(textPaint: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#updateMeasureState(android.text.TextPaint)(textPaint: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying()()`
 

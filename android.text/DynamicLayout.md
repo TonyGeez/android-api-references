@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DynamicLayout
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/DynamicLayout "View this page in Java") 
+| --- | --- |
 
 ```
 open class DynamicLayout : Layout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.Layout](https://developer.android.com/reference/kotlin/android/text/Layout) ||
 | | ↳ | [android.text.DynamicLayout](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#) |
 
@@ -39,15 +41,19 @@ This is used by widgets to control text layout. You should not need to use this 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBottomPadding](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getBottomPadding())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisCount](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getEllipsisCount(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisStart](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getEllipsisStart(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsizedWidth](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getEllipsizedWidth())`()` <br /> |
 | open [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.html#) | [getLineBreakConfig](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineBreakConfig())`()` Gets the [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.html#) used in this DynamicLayout. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLineContainsTab](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineContainsTab(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineCount](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineCount())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineDescent](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineDescent(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | [Layout.Directions](https://developer.android.com/reference/kotlin/android/text/Layout.Directions)! | [getLineDirections](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineDirections(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineStart](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineStart(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineTop](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getLineTop(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphDirection](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getParagraphDirection(kotlin.Int))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTopPadding](https://developer.android.com/reference/kotlin/android/text/DynamicLayout#getTopPadding())`()` <br /> |
 
 | Inherited functions ||
@@ -82,6 +88,7 @@ DynamicLayout(
 | `base` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint):This value cannot be`null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is 0 or greater |
+| --- | --- |
 | `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment):This value cannot be`null`. |
 | `spacingmult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Value is 0.0f or greater |
 
@@ -108,9 +115,11 @@ DynamicLayout(
 | `base` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `display` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint):This value cannot be`null`. |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is 0 or greater |
 | `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment):This value cannot be`null`. |
 | `spacingmult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Value is 0.0f or greater |
+| --- | --- |
 
 ### DynamicLayout
 
@@ -137,9 +146,11 @@ DynamicLayout(
 | `base` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `display` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint):This value cannot be`null`. |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is 0 or greater |
 | `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment):This value cannot be`null`. |
 | `spacingmult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Value is 0.0f or greater |
+| --- | --- |
 | `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)?:This value may be`null`. |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is 0 or greater |
 

@@ -9,6 +9,7 @@ abstract class CharBuffer : Buffer, Appendable, CharSequence, Comparable<CharB
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
 | | ↳ | [java.nio.CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#) |
 
@@ -48,54 +49,71 @@ cb.put("text/").put(subtype).put("; charset=").put(enc);
 | openstatic [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [allocate](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#allocate(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new char buffer. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#) | [append](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#append(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified char to this buffer*(optional operation)*. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#) | [append](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#append(kotlin.CharSequence))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this buffer*(optional operation)*. |
+| --- | --- |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#) | [append](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this buffer*(optional operation)*. |
 | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#array())`()` Returns the char array that backs this buffer*(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [asReadOnlyBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#asReadOnlyBuffer())`()` Creates a new, read-only char buffer that shares this buffer's content. |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#) | [chars](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#chars())`()` <br /> |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [clear](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#clear())`()` Clears this buffer. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [compact](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#compareTo(java.nio.CharBuffer))`(`other:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!`)` Compares this buffer to another. |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#duplicate())`()` Creates a new char buffer that shares this buffer's content. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [flip](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#flip())`()` Flips this buffer. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get())`()` Relative*get*method. |
+| --- | --- |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.CharArray))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*get*method. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| --- | --- |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.Int,%20kotlin.CharArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*get*method. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible char array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#hashCode())`()` Returns the current hash code of this buffer. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#isDirect())`()` Tells whether or not this char buffer is direct. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#isEmpty())`()` Returns`true`if this character buffer is empty. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [limit](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [mark](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#mark())`()` Sets this buffer's mark at its position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#mismatch(java.nio.CharBuffer))`(`that:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
 | abstract [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | [order](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#order())`()` Retrieves this buffer's byte order. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [position](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Relative*put* method*(optional operation)*. |
 | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.CharArray))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.Int,%20kotlin.Char))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Absolute*put* method*(optional operation)*. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.Int,%20kotlin.CharArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.Int,%20java.nio.CharBuffer,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.String))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#put(java.nio.CharBuffer))`(`src:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#read(java.nio.CharBuffer))`(`target:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!`)` Attempts to read characters into the specified character buffer. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [reset](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#rewind())`()` Rewinds this buffer. |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#slice())`()` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#) | [subSequence](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#subSequence(kotlin.Int,%20kotlin.Int))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new character buffer that represents the specified subsequence of this buffer, relative to the current position. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#toString())`()` Returns a string containing the characters in this buffer. |
 | openstatic [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#wrap(kotlin.CharArray))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Wraps a char array into a buffer. |
+| --- | --- |
 | openstatic [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#wrap(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a char array into a buffer. |
 | openstatic [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#wrap(kotlin.CharSequence))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Wraps a character sequence into a buffer. |
 | openstatic [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#wrap(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a character sequence into a buffer. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -160,6 +178,7 @@ dst.put(c)
 | `java.io.IOException` | If an I/O error occurs |
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### append
 
@@ -192,6 +211,7 @@ Depending on the specification of`toString`for the character sequence`csq`, the 
 | `java.io.IOException` | If an I/O error occurs |
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### append
 
@@ -218,6 +238,7 @@ dst.put(csq.subSequence(start, end).toString())
 | `csq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?:The character sequence from which a subsequence will be appended. If`csq`is`null`, then characters will be appended as if`csq`contained the four characters`"null"`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the first character in the subsequence |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the character following the last character in the subsequence |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------|
@@ -228,6 +249,7 @@ dst.put(csq.subSequence(start, end).toString())
 | `java.lang.IndexOutOfBoundsException` | If`start`or`end`are negative,`start`is greater than`end`, or`end`is greater than`csq.length()` |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
+| --- | --- |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
 
 ### array
@@ -528,6 +550,7 @@ except that it first checks that there are sufficient chars in this buffer and i
 | `dst` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The array into which chars are to be written |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first char to be written; must be non-negative and no larger than`dst.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of chars to be written to the given array; must be non-negative and no larger than`dst.length - offset` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
@@ -622,6 +645,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer from which the first char will be read; must be non-negative and less than`limit()` |
 | `dst` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The destination array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first char to be written; must be non-negative and less than`dst.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of chars to be written to the given array; must be non-negative and no larger than the smaller of`limit() - index`and`dst.length - offset` |
 
 | Return ||
@@ -880,6 +904,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The array from which chars are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first char to be read; must be non-negative and no larger than`src.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of chars to be read from the given array; must be non-negative and no larger than`src.length - offset` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
@@ -890,6 +915,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -983,6 +1009,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first char will be written; must be non-negative and less than`limit()` |
 | `src` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The array from which chars are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first char to be read; must be non-negative and less than`src.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of chars to be read from the given array; must be non-negative and no larger than the smaller of`limit() - index`and`src.length - offset` |
 
 | Return ||
@@ -1025,6 +1052,7 @@ except that it first checks the consistency of the supplied parameters and it is
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first char will be written; must be non-negative and less than`limit()` |
 | `src` | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer#)!:The buffer from which chars are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first char to be read; must be non-negative and less than`src.limit()` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of chars to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
@@ -1097,6 +1125,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The string from which chars are to be read |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the string of the first char to be read; must be non-negative and no larger than`string.length()` |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the string of the last char to be read, plus one; must be non-negative and no larger than`string.length()` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
@@ -1107,6 +1136,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`start`and`end`parameters do not hold |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -1143,6 +1173,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer for the remaining chars in the source buffer |
 | `java.lang.IllegalArgumentException` | If the source buffer is this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### read
 
@@ -1168,6 +1199,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.NullPointerException` | if target is null |
 | `java.nio.ReadOnlyBufferException` | if target is a read only buffer |
+| --- | --- |
 
 ### reset
 
@@ -1344,6 +1376,7 @@ The new buffer will be backed by the given char array; that is, modifications to
 | `array` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The array that will back the new buffer |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset of the subarray to be used; must be non-negative and no larger than`array.length`. The new buffer's position will be set to this value. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the subarray to be used; must be non-negative and no larger than`array.length - offset`. The new buffer's limit will be set to`offset + length`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
@@ -1394,6 +1427,7 @@ The content of the new, read-only buffer will be the content of the given charac
 | `csq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The character sequence from which the new character buffer is to be created |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the first character to be used; must be non-negative and no larger than`csq.length()`. The new buffer's position will be set to this value. |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the character following the last character to be used; must be no smaller than`start`and no larger than`csq.length()`. The new buffer's limit will be set to this value. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------|

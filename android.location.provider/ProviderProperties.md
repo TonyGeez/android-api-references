@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ProviderProperties
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/provider/ProviderProperties "View this page in Java") 
+| --- | --- |
 
 ```
 class ProviderProperties : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.provider.ProviderProperties](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#) |
 
 Location provider properties.
@@ -26,6 +28,7 @@ Location provider properties.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_COARSE](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#ACCURACY_COARSE:kotlin.Int) A constant indicating a coarser location accuracy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_FINE](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#ACCURACY_FINE:kotlin.Int) A constant indicating a finer location accuracy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_USAGE_HIGH](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#POWER_USAGE_HIGH:kotlin.Int) A constant indicating high power usage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_USAGE_LOW](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#POWER_USAGE_LOW:kotlin.Int) A constant indicating low power usage. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_USAGE_MEDIUM](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#POWER_USAGE_MEDIUM:kotlin.Int) A constant indicating a medium power usage. |
 
@@ -38,15 +41,19 @@ Location provider properties.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccuracy](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#getAccuracy())`()` Rough location accuracy for this provider, primarily with respect to horizontal location accuracy. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPowerUsage](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#getPowerUsage())`()` Power usage for this provider. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAltitudeSupport](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasAltitudeSupport())`()` True if the provider is able to provide altitude under at least some conditions. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBearingSupport](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasBearingSupport())`()` True if the provider is able to provide bearing under at least some conditions. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCellRequirement](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasCellRequirement())`()` True if the provider requires access to a cellular network (e.g., for cell tower IDs). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMonetaryCost](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasMonetaryCost())`()` True if this provider may result in a monetary charge to the user. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNetworkRequirement](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasNetworkRequirement())`()` True if provider requires access to a data network (e.g., the Internet). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSatelliteRequirement](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasSatelliteRequirement())`()` True if the provider requires access to a satellite-based positioning system (e.g., GPS). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSpeedSupport](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hasSpeedSupport())`()` True if the provider is able to provide speed under at least some conditions. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -286,6 +293,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

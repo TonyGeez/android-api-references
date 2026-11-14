@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # VerifiedKeyEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/VerifiedKeyEvent "View this page in Java")
+| --- | --- |
 
 ```
 class VerifiedKeyEvent : VerifiedInputEvent, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.VerifiedInputEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent) ||
 | | ↳ | [android.view.VerifiedKeyEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#) |
 
@@ -25,12 +27,15 @@ KeyEvent that has been verified by the system. The data contained in this class 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getAction()()` The action of this key event. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getDownTimeNanos()()` Retrieve the time of the most recent key down event, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base, but in nanoseconds. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getFlag(kotlin.Int)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a specific flag of this key event, if possible. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getKeyCode()()` Retrieve the key code of the key event. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getMetaState()()` Returns the state of the meta keys. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getRepeatCount()()` Retrieve the repeat count of the event. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#getScanCode()()` Retrieve the hardware key id of this key event. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

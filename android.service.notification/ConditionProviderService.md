@@ -8,9 +8,11 @@ abstract class ConditionProviderService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.notification.ConditionProviderService](https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#) |
 
 > [!CAUTION]
@@ -49,6 +51,7 @@ Condition providers cannot be bound by the system on `https://developer.android.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#EXTRA_RULE_ID:kotlin.String` A String rule id extra passed to `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#META_DATA_CONFIGURATION_ACTIVITY:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#META_DATA_CONFIGURATION_ACTIVITY:kotlin.String` The name of the `meta-data` tag containing the `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of an activity that allows users to configure the conditions provided by this service. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#META_DATA_RULE_INSTANCE_LIMIT:kotlin.String` The name of the `meta-data` tag containing the maximum number of rule instances that can be created for this rule type. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#META_DATA_RULE_TYPE:kotlin.String` The name of the `meta-data` tag containing a localized name of the type of zen rules provided by this service. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#SERVICE_INTERFACE:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that must be declared as handled by the service. |
 
@@ -1078,12 +1081,15 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#notifyCondition(android.service.notification.Condition)(condition: https://developer.android.com/reference/kotlin/android/service/notification/Condition!)` Informs the notification manager that the state of a Condition has changed. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#notifyConditions(android.service.notification.Condition)(vararg conditions: https://developer.android.com/reference/kotlin/android/service/notification/Condition!)` Informs the notification manager that the state of one or more Conditions has changed. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onConnected()()` Called when this service is connected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onRequestConditions(kotlin.Int)(relevance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onSubscribe(android.net.Uri)(conditionId: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Called by the system when there is a new `https://developer.android.com/reference/kotlin/android/service/notification/Condition` to be managed by this provider. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onUnsubscribe(android.net.Uri)(conditionId: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Called by the system when a `https://developer.android.com/reference/kotlin/android/service/notification/Condition` has been deleted. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#requestRebind(android.content.ComponentName)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Request that the provider be rebound, after a previous call to (@link #requestUnbind). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#requestUnbind()()` Request that the provider service be unbound. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 

@@ -9,6 +9,7 @@ class FileDescriptor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#) |
 
 Instances of the file descriptor class serve as an opaque handle to the underlying machine-specific structure representing an open file, an open socket, or another source or sink of bytes. The main practical use for a file descriptor is to create a`FileInputStream`or`FileOutputStream`to contain it.
@@ -31,6 +32,7 @@ Applications should not create their own file descriptors.
 | static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [err](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#err:java.io.FileDescriptor) A handle to the standard error stream. |
 | static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [in](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#in:java.io.FileDescriptor) A handle to the standard input stream. |
 | static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [out](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#out:java.io.FileDescriptor) A handle to the standard output stream. |
+| --- | --- |
 
 ## Public constructors
 

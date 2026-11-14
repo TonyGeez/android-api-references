@@ -3,15 +3,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # SearchIterator
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/text/SearchIterator "View this page in Java")
+| --- | --- |
 
 ```
 abstract class SearchIterator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.SearchIterator](https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#) |
 
 | Known Direct Subclasses [StringSearch](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch) |---|---| | [StringSearch](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch) | `StringSearch` is a `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#` that provides language-sensitive text searching based on the comparison rules defined in a `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator` object. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 `SearchIterator` is an abstract base class that provides methods to search for a pattern within a text string. Instances of `SearchIterator` maintain a current position and scan over the target text, returning the indices the pattern is matched and the length of each match.
 
@@ -53,21 +56,27 @@ Other options for searching include using a BreakIterator to restrict the points
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#first()()` Returns the first index at which the string text matches the search pattern. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#following(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the first index equal or greater than `position` at which the string text matches the search pattern. |
 | open [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getBreakIterator()()` Returns the BreakIterator that is used to restrict the indexes at which matches are detected. |
+| --- | --- |
 | open [SearchIterator.ElementComparisonType](https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator.ElementComparisonType)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getElementComparisonType()()` Returns the collation element comparison type. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getIndex()()` Return the current index in the text being searched. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getMatchLength()()` Returns the length of text in the string which matches the search pattern. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getMatchStart()()` Returns the index to the match in the text string that was searched. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getMatchedText()()` Returns the text that was matched by the most recent call to `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#first()`, `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#next()`, `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#previous()`, or `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#last()`. |
 | open [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getTarget()()` Return the string text to be searched. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#isOverlapping()()` Return true if the overlapping property has been set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#last()()` Returns the last index in the target text at which it matches the search pattern. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#next()()` Returns the index of the next point at which the text matches the search pattern, starting from the current position The iterator is adjusted so that its current index (as returned by `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#getIndex()`) is the match position if one was found. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#preceding(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the first index less than `position` at which the string text matches the search pattern. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#previous()()` Returns the index of the previous point at which the string text matches the search pattern, starting at the current position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#reset()()` Resets the iteration. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setBreakIterator(android.icu.text.BreakIterator)(breakiter: https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator!)` Set the BreakIterator that will be used to restrict the points at which matches are detected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setElementComparisonType(android.icu.text.SearchIterator.ElementComparisonType)(type: https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator.ElementComparisonType!)` Sets the collation element comparison type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setIndex(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the position in the target text at which the next search will start. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setOverlapping(kotlin.Boolean)(allowOverlap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Determines whether overlapping matches are returned. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setTarget(java.text.CharacterIterator)(text: https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#!)` Set the target text to be searched. |
 
@@ -76,12 +85,14 @@ Other options for searching include using a BreakIterator to restrict the points
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#handleNext(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Abstract method which subclasses override to provide the mechanism for finding the next match in the target text. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#handlePrevious(kotlin.Int)(startAt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Abstract method which subclasses override to provide the mechanism for finding the previous match in the target text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#setMatchLength(kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the length of the most recent match in the target text. |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#breakIterator:android.icu.text.BreakIterator` The BreakIterator to define the boundaries of a logical match. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#matchLength:kotlin.Int` Length of the most current match in target text. |
 | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator#targetText:java.text.CharacterIterator` Target text for searching. |
+| --- | --- |
 
 ## Constants
 

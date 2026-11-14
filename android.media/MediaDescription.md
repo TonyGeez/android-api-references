@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # MediaDescription
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaDescription "View this page in Java")
+| --- | --- |
 
 ```
 open class MediaDescription : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription#) |
 
 A simple set of metadata for a media item suitable for display. This can be created using the Builder or retrieved from existing metadata using `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()`.
@@ -24,9 +26,11 @@ A simple set of metadata for a media item suitable for display. This can be crea
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_ALBUMS:kotlin.Long` The type of folder that contains folders categorized by album as specified in the section 6. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_ARTISTS:kotlin.Long` The type of folder that contains folders categorized by artist as specified in the section 6. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_GENRES:kotlin.Long` The type of folder that contains folders categorized by genre as specified in the section 6. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_MIXED:kotlin.Long` The type of folder that is unknown or contains media elements of mixed types as specified in the section 6. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_PLAYLISTS:kotlin.Long` The type of folder that contains folders categorized by playlist as specified in the section 6. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_TITLES:kotlin.Long` The type of folder that contains media elements only as specified in the section 6. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#BT_FOLDER_TYPE_YEARS:kotlin.Long` The type of folder that contains folders categorized by year as specified in the section 6. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#EXTRA_BT_FOLDER_TYPE:kotlin.String` Used as a long extra field to indicate the bluetooth folder type of the media item as specified in the section 6. |
 
@@ -39,15 +43,19 @@ A simple set of metadata for a media item suitable for display. This can be crea
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getDescription()()` Returns a description suitable for display or null. |
+| --- | --- |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getExtras()()` Returns any extras that were added to the description. |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconBitmap()()` Returns a bitmap icon suitable for display or null. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconUri()()` Returns a Uri for an icon suitable for display or null. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaId()()` Returns the media id or null. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaUri()()` Returns a Uri representing this content or null. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getSubtitle()()` Returns a subtitle suitable for display or null. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getTitle()()` Returns a title suitable for display or null. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

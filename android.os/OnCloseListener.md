@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # OnCloseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/ParcelFileDescriptor.OnCloseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCloseListener

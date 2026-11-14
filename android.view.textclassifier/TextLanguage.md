@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # TextLanguage
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextLanguage "View this page in Java") 
+| --- | --- |
 
 ```
 class TextLanguage : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.TextLanguage](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#) |
 
 Represents the result of language detection of a piece of text.
@@ -33,9 +35,11 @@ This contains a list of locales, each paired with a confidence score, sorted in 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#describeContents())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getConfidenceScore](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#getConfidenceScore(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`)` Returns the confidence score for the specified language locale. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#getExtras())`()` Returns a bundle containing non-structured extra information about this result. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#getId())`()` Returns the id, if one exists, for this object. |
 | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) | [getLocale](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#getLocale(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the language locale at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocaleHypothesisCount](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#getLocaleHypothesisCount())`()` Returns the number of possible locales for the processed text. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

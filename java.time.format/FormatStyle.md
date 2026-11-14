@@ -9,10 +9,12 @@ class FormatStyle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#)\> ||
 | | ↳ | [java.time.format.FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#) |
 
 | Known Direct Subclasses [FormatStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:FULL), [FormatStyle.LONG](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:LONG), [FormatStyle.MEDIUM](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:MEDIUM), [FormatStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:SHORT) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [FormatStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:FULL) | Full text style, with the most detail. | | [FormatStyle.LONG](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:LONG) | Long text style, with lots of detail. | | [FormatStyle.MEDIUM](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:MEDIUM) | Medium text style, with some detail. | | [FormatStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:SHORT) | Short text style, typically numeric. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of the style of a localized date, time or date-time formatter.
 

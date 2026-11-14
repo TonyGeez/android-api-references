@@ -5,15 +5,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # VcnUnderlyingNetworkTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class VcnUnderlyingNetworkTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#) |
 
 | Known Direct Subclasses [VcnCellUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate), [VcnWifiUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate) |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [VcnCellUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate) | This class represents a configuration for a network template class of underlying cellular networks. | | [VcnWifiUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate) | This class represents a configuration for a network template class of underlying Carrier WiFi networks. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents a template containing set of underlying network requirements for doing route selection.
 
@@ -26,15 +29,18 @@ Apps provisioning a VCN can configure the underlying network priority for each G
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int) Used to configure the matching criteria of a network characteristic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) Used to configure the matching criteria of a network characteristic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int) Used to configure the matching criteria of a network characteristic. |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetered](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMetered())`()` Return the matching criteria for metered networks. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryDownstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryDownstreamBandwidthKbps())`()` Returns the minimum entry downstream bandwidth allowed by this template. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryUpstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryUpstreamBandwidthKbps())`()` Returns the minimum entry upstream bandwidth allowed by this template. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitDownstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitDownstreamBandwidthKbps())`()` Returns the minimum exit downstream bandwidth allowed by this template. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitUpstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitUpstreamBandwidthKbps())`()` Returns the minimum exit upstream bandwidth allowed by this template. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#hashCode())`()` <br /> |
 
 ## Constants

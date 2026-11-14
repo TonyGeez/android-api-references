@@ -9,9 +9,11 @@ class SerializablePermission : BasicPermission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) |||
 | | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission.html#) ||
 | | | ↳ | [java.io.SerializablePermission](https://developer.android.com/reference/kotlin/java/io/SerializablePermission#) |
+| --- | --- | --- | --- |
 
 This legacy security is not supported on Android. Do not use.
 

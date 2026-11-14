@@ -9,6 +9,7 @@ class Formatter : Closeable, Flushable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter#) |
 
 An interpreter for printf-style format strings. This class provides support for layout justification and alignment, common formats for numeric, string, and date/time data, and locale-specific output. Common Java types such as [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#) are supported. Limited formatting customization for arbitrary user types is provided through the [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable) interface.
@@ -145,18 +146,23 @@ For category*General* ,*Character* ,*Numeric* ,*Integral* and*Date/Time* convers
 The following table summarizes the supported conversions. Conversions denoted by an upper-case character (i.e.`'B'`,`'H'`,`'S'`,`'C'`,`'X'`,`'E'`,`'G'`,`'A'`, and`'T'`) are the same as those for the corresponding lower-case conversion characters except that the result is converted to upper case according to the rules of the prevailing [Locale](https://developer.android.com/reference/kotlin/java/util/Locale). If there is no explicit locale specified, either at the construction of the instance or as a parameter to its method invocation, then the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.Category) is used.
 
 | Conversion | Argument Category | Description |
+| --- | --- | --- |
 | `'b'`,`'B'` | general | If the argument*arg* is`null`, then the result is "`false`". If*arg* is a`boolean`or [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#), then the result is the string returned by [String.valueOf(arg)](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Boolean)). Otherwise, the result is "true". |
 | `'h'`,`'H'` | general | The result is obtained by invoking`Integer.toHexString(arg.hashCode())`. |
 | `'s'`,`'S'` | general | If*arg* implements [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable), then [arg.formatTo](https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))is invoked. Otherwise, the result is obtained by invoking`arg.toString()`. |
+| --- | --- | --- |
 | `'c'`,`'C'` | character | The result is a Unicode character |
 | `'d'` | integral | The result is formatted as a decimal integer |
 | `'o'` | integral | The result is formatted as an octal integer |
+| --- | --- | --- |
 | `'x'`,`'X'` | integral | The result is formatted as a hexadecimal integer |
 | `'e'`,`'E'` | floating point | The result is formatted as a decimal number in computerized scientific notation |
 | `'f'` | floating point | The result is formatted as a decimal number |
+| --- | --- | --- |
 | `'g'`,`'G'` | floating point | The result is formatted using computerized scientific notation or decimal format, depending on the precision and the value after rounding. |
 | `'a'`,`'A'` | floating point | The result is formatted as a hexadecimal floating-point number with a significand and an exponent. This conversion is**not** supported for the`BigDecimal`type despite the latter's being in the*floating point*argument category. |
 | `'t'`,`'T'` | date/time | Prefix for date and time conversion characters. See [Date/Time Conversions](https://developer.android.com/reference/kotlin/java/util/Formatter#dt). |
+| --- | --- | --- |
 | `'%'` | percent | The result is a literal`'%'`(`'\u0025'`) |
 | `'n'` | line separator | The result is the platform-specific line separator |
 |-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -170,15 +176,19 @@ The following date and time conversion suffix characters are defined for the`'t'
 The following conversion characters are used for formatting times:
 
 | `'H'` | Hour of the day for the 24-hour clock, formatted as two digits with a leading zero as necessary i.e.`00 - 23`. |
+| --- | --- |
 | `'I'` | Hour for the 12-hour clock, formatted as two digits with a leading zero as necessary, i.e.`01 - 12`. |
 | `'k'` | Hour of the day for the 24-hour clock, i.e.`0 - 23`. |
 | `'l'` | Hour for the 12-hour clock, i.e.`1 - 12`. |
+| --- | --- |
 | `'M'` | Minute within the hour formatted as two digits with a leading zero as necessary, i.e.`00 - 59`. |
 | `'S'` | Seconds within the minute, formatted as two digits with a leading zero as necessary, i.e.`00 - 60`("`60`" is a special value required to support leap seconds). |
 | `'L'` | Millisecond within the second formatted as three digits with leading zeros as necessary, i.e.`000 - 999`. |
+| --- | --- |
 | `'N'` | Nanosecond within the second, formatted as nine digits with leading zeros as necessary, i.e.`000000000 - 999999999`. |
 | `'p'` | Locale-specific [morning or afternoon](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getAmPmStrings())marker in lower case, e.g."`am`" or "`pm`". Use of the conversion prefix`'T'`forces this output to upper case. |
 | `'z'` | [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) style numeric time zone offset from GMT, e.g.`-0800`. This value will be adjusted as necessary for Daylight Saving Time. For`long`, [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), and [Date](https://developer.android.com/reference/kotlin/java/util/Date) the time zone used is the [default time zone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault())for this instance of the Java virtual machine. |
+| --- | --- |
 | `'Z'` | A string representing the abbreviation for the time zone. This value will be adjusted as necessary for Daylight Saving Time. For`long`, [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), and [Date](https://developer.android.com/reference/kotlin/java/util/Date) the time zone used is the [default time zone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault())for this instance of the Java virtual machine. The Formatter's locale will supersede the locale of the argument (if any). |
 | `'s'` | Seconds since the beginning of the epoch starting at 1 January 1970`00:00:00`UTC, i.e.`Long.MIN_VALUE/1000`to`Long.MAX_VALUE/1000`. |
 | `'Q'` | Milliseconds since the beginning of the epoch starting at 1 January 1970`00:00:00`UTC, i.e.`Long.MIN_VALUE`to`Long.MAX_VALUE`. |
@@ -187,15 +197,19 @@ The following conversion characters are used for formatting times:
 The following conversion characters are used for formatting dates:
 
 | `'B'` | Locale-specific [full month name](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getMonths()), e.g.`"January"`,`"February"`. |
+| --- | --- |
 | `'b'` | Locale-specific [abbreviated month name](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getShortMonths()), e.g.`"Jan"`,`"Feb"`. |
 | `'h'` | Same as`'b'`. |
 | `'A'` | Locale-specific full name of the [day of the week](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getWeekdays()), e.g.`"Sunday"`,`"Monday"` |
+| --- | --- |
 | `'a'` | Locale-specific short name of the [day of the week](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getShortWeekdays()), e.g.`"Sun"`,`"Mon"` |
 | `'C'` | Four-digit year divided by`100`, formatted as two digits with leading zero as necessary, i.e.`00 - 99` |
 | `'Y'` | Year, formatted as at least four digits with leading zeros as necessary, e.g.`0092`equals`92`CE for the Gregorian calendar. |
+| --- | --- |
 | `'y'` | Last two digits of the year, formatted with leading zeros as necessary, i.e.`00 - 99`. |
 | `'j'` | Day of year, formatted as three digits with leading zeros as necessary, e.g.`001 - 366`for the Gregorian calendar. |
 | `'m'` | Month, formatted as two digits with leading zeros as necessary, i.e.`01 - 13`. |
+| --- | --- |
 | `'d'` | Day of month, formatted as two digits with leading zeros as necessary, i.e.`01 - 31` |
 | `'e'` | Day of month, formatted as two digits, i.e.`1 - 31`. |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -203,9 +217,11 @@ The following conversion characters are used for formatting dates:
 The following conversion characters are used for formatting common date/time compositions.
 
 | `'R'` | Time formatted for the 24-hour clock as`"%tH:%tM"` |
+| --- | --- |
 | `'T'` | Time formatted for the 24-hour clock as`"%tH:%tM:%tS"`. |
 | `'r'` | Time formatted for the 12-hour clock as`"%tI:%tM:%tS %Tp"`. The location of the morning or afternoon marker (`'%Tp'`) may be locale-dependent. |
 | `'D'` | Date formatted as`"%tm/%td/%ty"`. |
+| --- | --- |
 | `'F'` | [ISO 8601](http://www.w3.org/TR/NOTE-datetime) complete date formatted as`"%tY-%tm-%td"`. |
 | `'c'` | Date and time formatted as`"%ta %tb %td %tT %tZ %tY"`, e.g.`"Sun Jul 20 16:17:00 EDT 1969"`. |
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -217,12 +233,15 @@ Any characters not explicitly defined as date/time conversion suffixes are illeg
 The following table summarizes the supported flags.*y*means the flag is supported for the indicated argument types.
 
 | Flag | General | Character | Integral | Floating Point | Date/Time | Description |
+| --- | --- | --- | --- | --- | --- | --- |
 | '-' | y | y | y | y | y | The result will be left-justified. |
 | '#' | y1 | - | y3 | y | - | The result should use a conversion-dependent alternate form |
 | '+' | - | - | y4 | y | - | The result will always include a sign |
+| --- | --- | --- | --- | --- | --- | --- |
 | ' ' | - | - | y4 | y | - | The result will include a leading space for positive values |
 | '0' | - | - | y | y | - | The result will be zero-padded |
 | ',' | - | - | y2 | y5 | - | The result will include locale-specific [grouping separators](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols.html#getGroupingSeparator()) |
+| --- | --- | --- | --- | --- | --- | --- |
 | '(' | - | - | y4 | y5 | - | The result will enclose negative numbers in parentheses |
 |------|---------|-----------|----------|----------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -291,9 +310,11 @@ Conversions denoted by an upper-case character (i.e.`'B'`,`'H'`,`'S'`,`'C'`,`'X'
 The following general conversions may be applied to any argument type:
 
 | `'b'` | `'\u0062'` | Produces either "`true`" or "`false`" as returned by [Boolean.toString(boolean)](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#toString(kotlin.Boolean)). If the argument is`null`, then the result is "`false`". If the argument is a`boolean`or [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#), then the result is the string returned by [String.valueOf()](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Boolean)). Otherwise, the result is "`true`". If the`'#'`flag is given, then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'B'` | `'\u0042'` | The upper-case variant of`'b'`. |
 | `'h'` | `'\u0068'` | Produces a string representing the hash code value of the object. The result is obtained by invoking`Integer.toHexString(arg.hashCode())`. If the`'#'`flag is given, then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'H'` | `'\u0048'` | The upper-case variant of`'h'`. |
+| --- | --- | --- |
 | `'s'` | `'\u0073'` | Produces a string. If the argument implements [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable), then its [formatTo](https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method is invoked. Otherwise, the result is obtained by invoking the argument's`toString()`method. If the`'#'`flag is given and the argument is not a [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable), then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'S'` | `'\u0053'` | The upper-case variant of`'s'`. |
 |-------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -301,6 +322,7 @@ The following general conversions may be applied to any argument type:
 The following flags apply to general conversions:
 
 | `'-'` | `'\u002d'` | Left justifies the output. Spaces (`'\u0020'`) will be added at the end of the converted value as required to fill the minimum width of the field. If the width is not provided, then a [MissingFormatWidthException](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException) will be thrown. If this flag is not given then the output will be right-justified. |
+| --- | --- | --- |
 | `'#'` | `'\u0023'` | Requires the output use an alternate form. The definition of the form is specified by the conversion. |
 |-------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -313,6 +335,7 @@ The precision is the maximum number of characters to be written to the output. T
 This conversion may be applied to`char`and [Character](https://developer.android.com/reference/kotlin/java/lang/Character.html#). It may also be applied to the types`byte`, [Byte](https://developer.android.com/reference/kotlin/java/lang/Byte.html#),`short`, and [Short](https://developer.android.com/reference/kotlin/java/lang/Short.html#),`int`and [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer.html#) when [Character.isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int))returns`true`. If it returns`false`then an [IllegalFormatCodePointException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException) will be thrown.
 
 | `'c'` | `'\u0063'` | Formats the argument as a Unicode character as described in [Unicode Character Representation](https://developer.android.com/reference/kotlin/java/lang/Character.html#unicode). This may be more than one 16-bit`char`in the case where the argument represents a supplementary character. If the`'#'`flag is given, then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'C'` | `'\u0043'` | The upper-case variant of`'c'`. |
 |-------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -352,6 +375,7 @@ If the value is NaN or positive infinity the literal strings "NaN" or "Infinity"
 The following conversions may be applied to`byte`, [Byte](https://developer.android.com/reference/kotlin/java/lang/Byte.html#),`short`, [Short](https://developer.android.com/reference/kotlin/java/lang/Short.html#),`int`and [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer.html#),`long`, and [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#).
 
 | `'d'` | `'\u0064'` | Formats the argument as a decimal integer. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. If the`'0'`flag is given and the value is negative, then the zero padding will occur after the sign. If the`'#'`flag is given then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'o'` | `'\u006f'` | Formats the argument as an integer in base eight. No localization is applied. If*x* is negative then the result will be an unsigned value generated by adding 2n to the value where`n`is the number of bits in the type as returned by the static`SIZE`field in the [Byte](https://developer.android.com/reference/kotlin/java/lang/Byte.html#SIZE:kotlin.Int), [Short](https://developer.android.com/reference/kotlin/java/lang/Short.html#SIZE:kotlin.Int), [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer.html#SIZE:kotlin.Int), or [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#SIZE:kotlin.Int) classes as appropriate. If the`'#'`flag is given then the output will always begin with the radix indicator`'0'`. If the`'0'`flag is given then the output will be padded with leading zeros to the field width following any indication of sign. If`'('`,`'+'`, ' ', or`','`flags are given then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'x'` | `'\u0078'` | Formats the argument as an integer in base sixteen. No localization is applied. If*x* is negative then the result will be an unsigned value generated by adding 2n to the value where`n`is the number of bits in the type as returned by the static`SIZE`field in the [Byte](https://developer.android.com/reference/kotlin/java/lang/Byte.html#SIZE:kotlin.Int), [Short](https://developer.android.com/reference/kotlin/java/lang/Short.html#SIZE:kotlin.Int), [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer.html#SIZE:kotlin.Int), or [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#SIZE:kotlin.Int) classes as appropriate. If the`'#'`flag is given then the output will always begin with the radix indicator`"0x"`. If the`'0'`flag is given then the output will be padded to the field width with leading zeros after the radix indicator or sign (if present). If`'('`,`' '`,`'+'`, or`','`flags are given then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'X'` | `'\u0058'` | The upper-case variant of`'x'`. The entire string representing the number will be converted to java.lang.String#toUpperCase including the`'x'`(if any) and all hexadecimal digits`'a'`-`'f'`(`'\u0061'`-`'\u0066'`). |
@@ -364,9 +388,11 @@ If the`'-'`flag is not given, then the space padding will occur before the sign.
 The following flags apply to numeric integral conversions:
 
 | `'+'` | `'\u002b'` | Requires the output to include a positive sign for all positive numbers. If this flag is not given then only negative values will include a sign. If both the`'+'`and`' '`flags are given then an [IllegalFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatFlagsException) will be thrown. |
+| --- | --- | --- |
 | `' '` | `'\u0020'` | Requires the output to include a single extra space (`'\u0020'`) for non-negative values. If both the`'+'`and`' '`flags are given then an [IllegalFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatFlagsException) will be thrown. |
 | `'0'` | `'\u0030'` | Requires the output to be padded with leading [zeros](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols.html#getZeroDigit())to the minimum field width following any sign or radix indicator except when converting NaN or infinity. If the width is not provided, then a [MissingFormatWidthException](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException) will be thrown. If both the`'-'`and`'0'`flags are given then an [IllegalFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatFlagsException) will be thrown. |
 | `','` | `'\u002c'` | Requires the output to include the locale-specific [group separators](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols.html#getGroupingSeparator())as described in the ["group" section](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nGroup) of the localization algorithm. |
+| --- | --- | --- |
 | `'('` | `'\u0028'` | Requires the output to prepend a`'('`(`'\u0028'`) and append a`')'`(`'\u0029'`) to negative values. |
 |-------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -386,6 +412,7 @@ The precision is not applicable. If precision is specified then an [IllegalForma
 The following conversions may be applied to .
 
 | `'d'` | `'\u0064'` | Requires the output to be formatted as a decimal integer. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. If the`'#'`flag is given [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'o'` | `'\u006f'` | Requires the output to be formatted as an integer in base eight. No localization is applied. If*x* is negative then the result will be a signed value beginning with`'-'`(`'\u002d'`). Signed output is allowed for this type because unlike the primitive types it is not possible to create an unsigned equivalent without assuming an explicit data-type size. If*x* is positive or zero and the`'+'`flag is given then the result will begin with`'+'`(`'\u002b'`). If the`'#'`flag is given then the output will always begin with`'0'`prefix. If the`'0'`flag is given then the output will be padded with leading zeros to the field width following any indication of sign. If the`','`flag is given then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'x'` | `'\u0078'` | Requires the output to be formatted as an integer in base sixteen. No localization is applied. If*x* is negative then the result will be a signed value beginning with`'-'`(`'\u002d'`). Signed output is allowed for this type because unlike the primitive types it is not possible to create an unsigned equivalent without assuming an explicit data-type size. If*x* is positive or zero and the`'+'`flag is given then the result will begin with`'+'`(`'\u002b'`). If the`'#'`flag is given then the output will always begin with the radix indicator`"0x"`. If the`'0'`flag is given then the output will be padded to the field width with leading zeros after the radix indicator or sign (if present). If the`','`flag is given then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'X'` | `'\u0058'` | The upper-case variant of`'x'`. The entire string representing the number will be converted to java.lang.String#toUpperCase including the`'x'`(if any) and all hexadecimal digits`'a'`-`'f'`(`'\u0061'`-`'\u0066'`). |
@@ -408,9 +435,11 @@ The precision is not applicable. If precision is specified then an [IllegalForma
 The following conversions may be applied to`float`, [Float](https://developer.android.com/reference/kotlin/java/lang/Float.html#),`double`and [Double](https://developer.android.com/reference/kotlin/java/lang/Double.html#).
 
 | `'e'` | `'\u0065'` | Requires the output to be formatted using computerized scientific notation. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. The formatting of the magnitude*m*depends upon its value. If*m*is NaN or infinite, the literal strings "NaN" or "Infinity", respectively, will be output. These values are not localized. If*m* is positive-zero or negative-zero, then the exponent will be`"+00"`. Otherwise, the result is a string that represents the sign and magnitude (absolute value) of the argument. The formatting of the sign is described in the [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm). The formatting of the magnitude*m*depends upon its value. Let*n* be the unique integer such that 10*n* \<=*m* \< 10*n* +1; then let*a* be the mathematically exact quotient of*m* and 10*n* so that 1 \<=*a* \< 10. The magnitude is then represented as the integer part of*a* , as a single decimal digit, followed by the decimal separator followed by decimal digits representing the fractional part of*a* , followed by the lower-case locale-specific [exponent separator](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols.html#getExponentSeparator())(e.g.`'e'`), followed by the sign of the exponent, followed by a representation of*n* as a decimal integer, as produced by the method [Long.toString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long.html#toString(kotlin.Long,%20kotlin.Int)), and zero-padded to include at least two digits. The number of digits in the result for the fractional part of*m* or*a* is equal to the precision. If the precision is not specified then the default value is`6`. If the precision is less than the number of digits which would appear after the decimal point in the string returned by [Float.toString(float)](https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float))or [java.lang.Double#toString(double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double))respectively, then the value will be rounded using the [round half up](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). Otherwise, zeros may be appended to reach the precision. For a canonical representation of the value, use [java.lang.Float#toString(float)](https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float))or [Double.toString(double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double))as appropriate. If the`','`flag is given, then an [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'E'` | `'\u0045'` | The upper-case variant of`'e'`. The exponent symbol will be the upper-case locale-specific [exponent separator](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols.html#getExponentSeparator())(e.g.`'E'`). |
 | `'g'` | `'\u0067'` | Requires the output to be formatted in general scientific notation as described below. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. After rounding for the precision, the formatting of the resulting magnitude*m*depends on its value. If*m* is greater than or equal to 10-4 but less than 10precision then it is represented in* [decimal format](https://developer.android.com/reference/kotlin/java/util/Formatter#decimal)*. If*m* is less than 10-4 or greater than or equal to 10precision, then it is represented in* [computerized scientific notation](https://developer.android.com/reference/kotlin/java/util/Formatter#scientific)*. The total number of significant digits in*m* is equal to the precision. If the precision is not specified, then the default value is`6`. If the precision is`0`, then it is taken to be`1`. If the`'#'`flag is given then an [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'G'` | `'\u0047'` | The upper-case variant of`'g'`. |
+| --- | --- | --- |
 | `'f'` | `'\u0066'` | Requires the output to be formatted using decimal format. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. The result is a string that represents the sign and magnitude (absolute value) of the argument. The formatting of the sign is described in the [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm). The formatting of the magnitude*m*depends upon its value. If*m*NaN or infinite, the literal strings "NaN" or "Infinity", respectively, will be output. These values are not localized. The magnitude is formatted as the integer part of*m* , with no leading zeroes, followed by the decimal separator followed by one or more decimal digits representing the fractional part of*m*. The number of digits in the result for the fractional part of*m* or*a* is equal to the precision. If the precision is not specified then the default value is`6`. If the precision is less than the number of digits which would appear after the decimal point in the string returned by [Float.toString(float)](https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float))or [java.lang.Double#toString(double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double))respectively, then the value will be rounded using the [round half up](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). Otherwise, zeros may be appended to reach the precision. For a canonical representation of the value, use [java.lang.Float#toString(float)](https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float))or [Double.toString(double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double))as appropriate. |
 | `'a'` | `'\u0061'` | Requires the output to be formatted in hexadecimal exponential form. No localization is applied. The result is a string that represents the sign and magnitude (absolute value) of the argument*x*. If*x* is negative or a negative-zero value then the result will begin with`'-'`(`'\u002d'`). If*x* is positive or a positive-zero value and the`'+'`flag is given then the result will begin with`'+'`(`'\u002b'`). The formatting of the magnitude*m*depends upon its value. - If the value is NaN or infinite, the literal strings "NaN" or "Infinity", respectively, will be output. - If*m* is zero then it is represented by the string`"0x0.0p0"`. - If*m* is a`double`value with a normalized representation then substrings are used to represent the significand and exponent fields. The significand is represented by the characters`"0x1."`followed by the hexadecimal representation of the rest of the significand as a fraction. The exponent is represented by`'p'`(`'\u0070'`) followed by a decimal string of the unbiased exponent as if produced by invoking [Integer.toString](https://developer.android.com/reference/kotlin/java/lang/Integer.html#toString(kotlin.Int))on the exponent value. If the precision is specified, the value is rounded to the given number of hexadecimal digits. - If*m* is a`double`value with a subnormal representation then, unless the precision is specified to be in the range 1 through 12, inclusive, the significand is represented by the characters`'0x0.'`followed by the hexadecimal representation of the rest of the significand as a fraction, and the exponent represented by`'p-1022'`. If the precision is in the interval \[1, 12\], the subnormal value is normalized such that it begins with the characters`'0x1.'`, rounded to the number of hexadecimal digits of precision, and the exponent adjusted accordingly. Note that there must be at least one nonzero digit in a subnormal significand. If the`'('`or`','`flags are given, then a [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'A'` | `'\u0041'` | The upper-case variant of`'a'`. The entire string representing the number will be converted to upper case including the`'x'`(`'\u0078'`) and`'p'`(`'\u0070'`and all hexadecimal digits`'a'`-`'f'`(`'\u0061'`-`'\u0066'`). |
@@ -441,9 +470,11 @@ If the conversion is`'a'`or`'A'`, then the precision is the number of hexadecima
 The following conversions may be applied [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#).
 
 | `'e'` | `'\u0065'` | Requires the output to be formatted using computerized scientific notation. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. The formatting of the magnitude*m*depends upon its value. If*m* is positive-zero or negative-zero, then the exponent will be`"+00"`. Otherwise, the result is a string that represents the sign and magnitude (absolute value) of the argument. The formatting of the sign is described in the [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm). The formatting of the magnitude*m*depends upon its value. Let*n* be the unique integer such that 10*n* \<=*m* \< 10*n* +1; then let*a* be the mathematically exact quotient of*m* and 10*n* so that 1 \<=*a* \< 10. The magnitude is then represented as the integer part of*a* , as a single decimal digit, followed by the decimal separator followed by decimal digits representing the fractional part of*a* , followed by the exponent symbol`'e'`(`'\u0065'`), followed by the sign of the exponent, followed by a representation of*n* as a decimal integer, as produced by the method [Long.toString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long.html#toString(kotlin.Long,%20kotlin.Int)), and zero-padded to include at least two digits. The number of digits in the result for the fractional part of*m* or*a* is equal to the precision. If the precision is not specified then the default value is`6`. If the precision is less than the number of digits to the right of the decimal point then the value will be rounded using the [round half up](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). Otherwise, zeros may be appended to reach the precision. For a canonical representation of the value, use [java.math.BigDecimal#toString()](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#toString()). If the`','`flag is given, then an [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
+| --- | --- | --- |
 | `'E'` | `'\u0045'` | The upper-case variant of`'e'`. The exponent symbol will be`'E'`(`'\u0045'`). |
 | `'g'` | `'\u0067'` | Requires the output to be formatted in general scientific notation as described below. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. After rounding for the precision, the formatting of the resulting magnitude*m*depends on its value. If*m* is greater than or equal to 10-4 but less than 10precision then it is represented in* [decimal format](https://developer.android.com/reference/kotlin/java/util/Formatter#bdecimal)*. If*m* is less than 10-4 or greater than or equal to 10precision, then it is represented in* [computerized scientific notation](https://developer.android.com/reference/kotlin/java/util/Formatter#bscientific)*. The total number of significant digits in*m* is equal to the precision. If the precision is not specified, then the default value is`6`. If the precision is`0`, then it is taken to be`1`. If the`'#'`flag is given then an [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) will be thrown. |
 | `'G'` | `'\u0047'` | The upper-case variant of`'g'`. |
+| --- | --- | --- |
 | `'f'` | `'\u0066'` | Requires the output to be formatted using decimal format. The [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm) is applied. The result is a string that represents the sign and magnitude (absolute value) of the argument. The formatting of the sign is described in the [localization algorithm](https://developer.android.com/reference/kotlin/java/util/Formatter#L10nAlgorithm). The formatting of the magnitude*m*depends upon its value. The magnitude is formatted as the integer part of*m* , with no leading zeroes, followed by the decimal separator followed by one or more decimal digits representing the fractional part of*m*. The number of digits in the result for the fractional part of*m* or*a* is equal to the precision. If the precision is not specified then the default value is`6`. If the precision is less than the number of digits to the right of the decimal point then the value will be rounded using the [round half up](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). Otherwise, zeros may be appended to reach the precision. For a canonical representation of the value, use [java.math.BigDecimal#toString()](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#toString()). |
 |-------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -460,6 +491,7 @@ The specification of [width](https://developer.android.com/reference/kotlin/java
 This conversion may be applied to`long`, [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar), [Date](https://developer.android.com/reference/kotlin/java/util/Date) and [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)
 
 | `'t'` | `'\u0074'` | Prefix for date and time conversion characters. |
+| --- | --- | --- |
 | `'T'` | `'\u0054'` | The upper-case variant of`'t'`. |
 |-------|------------|-------------------------------------------------|
 
@@ -468,15 +500,19 @@ The following date and time conversion character suffixes are defined for the`'t
 The following conversion characters are used for formatting times:
 
 | `'H'` | `'\u0048'` | Hour of the day for the 24-hour clock, formatted as two digits with a leading zero as necessary i.e.`00 - 23`.`00`corresponds to midnight. |
+| --- | --- | --- |
 | `'I'` | `'\u0049'` | Hour for the 12-hour clock, formatted as two digits with a leading zero as necessary, i.e.`01 - 12`.`01`corresponds to one o'clock (either morning or afternoon). |
 | `'k'` | `'\u006b'` | Hour of the day for the 24-hour clock, i.e.`0 - 23`.`0`corresponds to midnight. |
 | `'l'` | `'\u006c'` | Hour for the 12-hour clock, i.e.`1 - 12`.`1`corresponds to one o'clock (either morning or afternoon). |
+| --- | --- | --- |
 | `'M'` | `'\u004d'` | Minute within the hour formatted as two digits with a leading zero as necessary, i.e.`00 - 59`. |
 | `'S'` | `'\u0053'` | Seconds within the minute, formatted as two digits with a leading zero as necessary, i.e.`00 - 60`("`60`" is a special value required to support leap seconds). |
 | `'L'` | `'\u004c'` | Millisecond within the second formatted as three digits with leading zeros as necessary, i.e.`000 - 999`. |
+| --- | --- | --- |
 | `'N'` | `'\u004e'` | Nanosecond within the second, formatted as nine digits with leading zeros as necessary, i.e.`000000000 - 999999999`. The precision of this value is limited by the resolution of the underlying operating system or hardware. |
 | `'p'` | `'\u0070'` | Locale-specific [morning or afternoon](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getAmPmStrings())marker in lower case, e.g."`am`" or "`pm`". Use of the conversion prefix`'T'`forces this output to upper case. (Note that`'p'`produces lower-case output. This is different from GNU`date`and POSIX`strftime(3c)`which produce upper-case output.) |
 | `'z'` | `'\u007a'` | [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) style numeric time zone offset from GMT, e.g.`-0800`. This value will be adjusted as necessary for Daylight Saving Time. For`long`, [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), and [Date](https://developer.android.com/reference/kotlin/java/util/Date) the time zone used is the [default time zone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault())for this instance of the Java virtual machine. |
+| --- | --- | --- |
 | `'Z'` | `'\u005a'` | A string representing the abbreviation for the time zone. This value will be adjusted as necessary for Daylight Saving Time. For`long`, [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), and [Date](https://developer.android.com/reference/kotlin/java/util/Date) the time zone used is the [default time zone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault())for this instance of the Java virtual machine. The Formatter's locale will supersede the locale of the argument (if any). |
 | `'s'` | `'\u0073'` | Seconds since the beginning of the epoch starting at 1 January 1970`00:00:00`UTC, i.e.`Long.MIN_VALUE/1000`to`Long.MAX_VALUE/1000`. |
 | `'Q'` | `'\u004f'` | Milliseconds since the beginning of the epoch starting at 1 January 1970`00:00:00`UTC, i.e.`Long.MIN_VALUE`to`Long.MAX_VALUE`. The precision of this value is limited by the resolution of the underlying operating system or hardware. |
@@ -485,15 +521,19 @@ The following conversion characters are used for formatting times:
 The following conversion characters are used for formatting dates:
 
 | `'B'` | `'\u0042'` | Locale-specific [full month name](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getMonths()), e.g.`"January"`,`"February"`. |
+| --- | --- | --- |
 | `'b'` | `'\u0062'` | Locale-specific [abbreviated month name](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getShortMonths()), e.g.`"Jan"`,`"Feb"`. |
 | `'h'` | `'\u0068'` | Same as`'b'`. |
 | `'A'` | `'\u0041'` | Locale-specific full name of the [day of the week](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getWeekdays()), e.g.`"Sunday"`,`"Monday"` |
+| --- | --- | --- |
 | `'a'` | `'\u0061'` | Locale-specific short name of the [day of the week](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getShortWeekdays()), e.g.`"Sun"`,`"Mon"` |
 | `'C'` | `'\u0043'` | Four-digit year divided by`100`, formatted as two digits with leading zero as necessary, i.e.`00 - 99` |
 | `'Y'` | `'\u0059'` | Year, formatted to at least four digits with leading zeros as necessary, e.g.`0092`equals`92`CE for the Gregorian calendar. |
+| --- | --- | --- |
 | `'y'` | `'\u0079'` | Last two digits of the year, formatted with leading zeros as necessary, i.e.`00 - 99`. |
 | `'j'` | `'\u006a'` | Day of year, formatted as three digits with leading zeros as necessary, e.g.`001 - 366`for the Gregorian calendar.`001`corresponds to the first day of the year. |
 | `'m'` | `'\u006d'` | Month, formatted as two digits with leading zeros as necessary, i.e.`01 - 13`, where "`01`" is the first month of the year and ("`13`" is a special value required to support lunar calendars). |
+| --- | --- | --- |
 | `'d'` | `'\u0064'` | Day of month, formatted as two digits with leading zeros as necessary, i.e.`01 - 31`, where "`01`" is the first day of the month. |
 | `'e'` | `'\u0065'` | Day of month, formatted as two digits, i.e.`1 - 31`where "`1`" is the first day of the month. |
 |-------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -501,9 +541,11 @@ The following conversion characters are used for formatting dates:
 The following conversion characters are used for formatting common date/time compositions.
 
 | `'R'` | `'\u0052'` | Time formatted for the 24-hour clock as`"%tH:%tM"` |
+| --- | --- | --- |
 | `'T'` | `'\u0054'` | Time formatted for the 24-hour clock as`"%tH:%tM:%tS"`. |
 | `'r'` | `'\u0072'` | Time formatted for the 12-hour clock as`"%tI:%tM:%tS %Tp"`. The location of the morning or afternoon marker (`'%Tp'`) may be locale-dependent. |
 | `'D'` | `'\u0044'` | Date formatted as`"%tm/%td/%ty"`. |
+| --- | --- | --- |
 | `'F'` | `'\u0046'` | [ISO 8601](http://www.w3.org/TR/NOTE-datetime) complete date formatted as`"%tY-%tm-%td"`. |
 | `'c'` | `'\u0063'` | Date and time formatted as`"%ta %tb %td %tT %tZ %tY"`, e.g.`"Sun Jul 20 16:17:00 EDT 1969"`. |
 |-------|------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -606,9 +648,11 @@ Unless otherwise specified, passing a`null`argument to any method or constructor
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/Formatter#close())`()` Closes this formatter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/Formatter#flush())`()` Flushes this formatter. |
 | [Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter#)! | [format](https://developer.android.com/reference/kotlin/java/util/Formatter#format(kotlin.String,%20kotlin.Any))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes a formatted string to this object's destination using the specified format string and arguments. |
+| --- | --- |
 | [Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter#)! | [format](https://developer.android.com/reference/kotlin/java/util/Formatter#format(java.util.Locale,%20kotlin.String,%20kotlin.Any))`(`l:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes a formatted string to this object's destination using the specified locale, format string, and arguments. |
 | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)! | [ioException](https://developer.android.com/reference/kotlin/java/util/Formatter#ioException())`()` Returns the`IOException`last thrown by this formatter's [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#). |
 | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)! | [locale](https://developer.android.com/reference/kotlin/java/util/Formatter#locale())`()` Returns the locale set by the construction of this formatter. |
+| --- | --- |
 | [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)! | [out](https://developer.android.com/reference/kotlin/java/util/Formatter#out())`()` Returns the destination for the output. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Formatter#toString())`()` Returns the result of invoking`toString()`on the destination for the output. |
 
@@ -673,6 +717,7 @@ The locale used is the [default locale](https://developer.android.com/reference/
 | `java.io.FileNotFoundException` | If the given file object does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### Formatter
 
@@ -692,12 +737,14 @@ Constructs a new formatter with the specified file, charset, and locale.
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:The file to use as the destination of this formatter. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
 | `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.FileNotFoundException` | If the given file object does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### Formatter
 
@@ -717,12 +764,14 @@ Constructs a new formatter with the specified file, charset, and locale.
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:The file to use as the destination of this formatter. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:A [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.lang.NullPointerException` | if`file`or`charset`is`null`. |
+| --- | --- |
 
 ### Formatter
 
@@ -783,6 +832,7 @@ Constructs a new formatter with the specified output stream, charset, and locale
 | `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:The output stream to use as the destination of this formatter. The output will be buffered. |
 | `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------|---------------------------------------|
@@ -806,6 +856,7 @@ Constructs a new formatter with the specified output stream, charset, and locale
 | `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:The output stream to use as the destination of this formatter. The output will be buffered. |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:A [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|----------------------------|
@@ -909,6 +960,7 @@ The locale used is the [default locale](https://developer.android.com/reference/
 | `java.io.FileNotFoundException` | If the given file name does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### Formatter
 
@@ -928,12 +980,14 @@ Constructs a new formatter with the specified file name, charset, and locale.
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the file to use as the destination of this formatter. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
 | `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.FileNotFoundException` | If the given file name does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### Formatter
 
@@ -953,12 +1007,14 @@ Constructs a new formatter with the specified file name, charset, and locale.
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the file to use as the destination of this formatter. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:A [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.lang.NullPointerException` | if`fileName`or`charset`is`null`. |
+| --- | --- |
 
 ### Formatter
 
@@ -1060,6 +1116,7 @@ Writes a formatted string to this object's destination using the specified local
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale) to apply during formatting. If`l`is`null`then no localization is applied. This does not change this object's locale that was set during construction. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A format string as described in [Format string syntax](https://developer.android.com/reference/kotlin/java/util/Formatter#syntax) |
 | `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java Virtual Machine Specification. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------|

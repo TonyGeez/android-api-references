@@ -21,15 +21,18 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SEVERITY_ERROR](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#SEVERITY_ERROR:kotlin.Short) The severity of the error described by the`DOMError`is error. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SEVERITY_FATAL_ERROR](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#SEVERITY_FATAL_ERROR:kotlin.Short) The severity of the error described by the`DOMError`is fatal error. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SEVERITY_WARNING](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#SEVERITY_WARNING:kotlin.Short) The severity of the error described by the`DOMError`is warning. |
+| --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract [DOMLocator](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-locator/index.html)! | [getLocation](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getLocation())`()` The location of the error. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessage](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getMessage())`()` An implementation specific string describing the error that occurred. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getRelatedData](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getRelatedData())`()` The related`DOMError.type`dependent data if any. |
+| --- | --- |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getRelatedException](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getRelatedException())`()` The related platform dependent exception if any. |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getSeverity](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getSeverity())`()` The severity of the error, either`SEVERITY_WARNING`,`SEVERITY_ERROR`, or`SEVERITY_FATAL_ERROR`. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMError#getType())`()` A`DOMString`indicating which related data is expected in`relatedData`. |
+| --- | --- |
 
 ## Constants
 

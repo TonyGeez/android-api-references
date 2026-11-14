@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PromptContentViewWithMoreOptionsButton
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton "View this page in Java") 
+| --- | --- |
 
 ```
 class PromptContentViewWithMoreOptionsButton : Parcelable, PromptContentView
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.PromptContentViewWithMoreOptionsButton](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton#) |
 
 Contains the information of the template of content view with a more options button for Biometric Prompt.
@@ -48,6 +50,7 @@ BiometricPrompt biometricPrompt = new BiometricPrompt.Builder(...)
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton#getDescription())`()` Gets the description for the content view, as set by [PromptContentViewWithMoreOptionsButton.Builder.setDescription(String)](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton.Builder#setDescription(kotlin.String)). |
 | [DialogInterface.OnClickListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#) | [getMoreOptionsButtonListener](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton#getMoreOptionsButtonListener())`()` Gets the click listener for the more options button on the content view, as set by [PromptContentViewWithMoreOptionsButton.Builder.setMoreOptionsButtonListener(Executor,](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton.Builder#setMoreOptionsButtonListener(java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentViewWithMoreOptionsButton#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

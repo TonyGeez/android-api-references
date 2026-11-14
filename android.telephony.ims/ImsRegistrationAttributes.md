@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ImsRegistrationAttributes
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes "View this page in Java") 
+| --- | --- |
 
 ```
 class ImsRegistrationAttributes : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ims.ImsRegistrationAttributes](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#) |
 
 Contains the attributes associated with the current IMS registration.
@@ -22,6 +24,7 @@ Contains the attributes associated with the current IMS registration.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_EPDG_OVER_CELL_INTERNET](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#ATTR_EPDG_OVER_CELL_INTERNET:kotlin.Int) Attribute to specify if an EPDG tunnel is setup over the cellular internet APN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_REGISTRATION_TYPE_EMERGENCY](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#ATTR_REGISTRATION_TYPE_EMERGENCY:kotlin.Int) Attribute to specify if ims registration is of type normal or emergency. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL:kotlin.Int) Attribute to specify if virtual registration is required. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,12 +35,15 @@ Contains the attributes associated with the current IMS registration.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeFlags](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getAttributeFlags())`()` <br /> |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getFeatureTags](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getFeatureTags())`()` Gets the Set of feature tags associated with the current IMS registration, if the IMS service supports supplying this information. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagRegistrationTypeEmergency](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getFlagRegistrationTypeEmergency())`()` Get the attribute flag ATTR_REGISTRATION_TYPE_EMERGENCY. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagVirtualRegistrationForEmergencyCall](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getFlagVirtualRegistrationForEmergencyCall())`()` Get the attribute flag ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL. |
+| --- | --- |
 | [SipDetails](https://developer.android.com/reference/kotlin/android/telephony/ims/SipDetails)? | [getSipDetails](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getSipDetails())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportType](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#getTransportType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRegistrationAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

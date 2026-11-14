@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ApplicationMediaCapabilities
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/ApplicationMediaCapabilities "View this page in Java") 
+| --- | --- |
 
 ```
 class ApplicationMediaCapabilities : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.ApplicationMediaCapabilities](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#) |
 
 ApplicationMediaCapabilities is an immutable class that encapsulates an application's capabilities for handling newer video codec format and media features.
@@ -54,12 +56,15 @@ There are four types of HDR video(Dolby-Vision, HDR10, HDR10+, HLG) supported by
 | static [ApplicationMediaCapabilities](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#) | [createFromXml](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#createFromXml(org.xmlpull.v1.XmlPullParser))`(`xmlParser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`)` Creates [ApplicationMediaCapabilities](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#) from an xml. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedHdrTypes](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#getSupportedHdrTypes())`()` Query all hdr types that are supported by the application. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedVideoMimeTypes](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#getSupportedVideoMimeTypes())`()` Query the video codec mime types supported by the application. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedHdrTypes](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#getUnsupportedHdrTypes())`()` Query all hdr types that are not supported by the application. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedVideoMimeTypes](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#getUnsupportedVideoMimeTypes())`()` Query the video codec mime types that are not supported by the application. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFormatSpecified](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#isFormatSpecified(kotlin.String))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a format is specified by the application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdrTypeSupported](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#isHdrTypeSupported(kotlin.String))`(`hdrType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a HDR type is supported by the application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVideoMimeTypeSupported](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#isVideoMimeTypeSupported(kotlin.String))`(`videoMime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a video codec format is supported by the application. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

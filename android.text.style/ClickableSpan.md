@@ -5,16 +5,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ClickableSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/ClickableSpan "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ClickableSpan : CharacterStyle, UpdateAppearance
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
 | | ↳ | [android.text.style.ClickableSpan](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#) |
 
 | Known Direct Subclasses [TextLinks.TextLinkSpan](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan.html#), [URLSpan](https://developer.android.com/reference/kotlin/android/text/style/URLSpan) |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [TextLinks.TextLinkSpan](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.TextLinkSpan.html#) | A ClickableSpan for a TextLink. | | [URLSpan](https://developer.android.com/reference/kotlin/android/text/style/URLSpan) | Implementation of the [ClickableSpan](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#) that allows setting a url string. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 If an object of this type is attached to the text of a TextView with a movement method of LinkMovementMethod, the affected spans of text can be selected. If selected and clicked, the [onClick](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#onClick(android.view.View))method will be called.
 
@@ -37,6 +40,7 @@ Text with`ClickableSpan`.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#onClick(android.view.View))`(`widget:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` Performs the click action associated with this span. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` Makes the text underlined and in the link color. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

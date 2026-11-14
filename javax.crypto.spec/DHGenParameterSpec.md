@@ -9,6 +9,7 @@ open class DHGenParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.DHGenParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHGenParameterSpec#) |
 
 This class specifies the set of parameters used for generating Diffie-Hellman (system) parameters for use in Diffie-Hellman key agreement. This is typically done by a central authority.

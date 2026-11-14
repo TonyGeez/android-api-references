@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # HttpAuthHandler
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/HttpAuthHandler "View this page in Java") 
+| --- | --- |
 
 ```
 open class HttpAuthHandler : Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.os.Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) ||
 | | ↳ | [android.webkit.HttpAuthHandler](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler#) |
 
@@ -23,6 +25,7 @@ Represents a request for HTTP authentication. Instances of this class are create
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler#cancel())`()` Instructs the WebView to cancel the authentication request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [proceed](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler#proceed(kotlin.String,%20kotlin.String))`(`username:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Instructs the WebView to proceed with the authentication with the given credentials. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useHttpAuthUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler#useHttpAuthUsernamePassword())`()` Gets whether the credentials stored for the current host (i.e. the host for which |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

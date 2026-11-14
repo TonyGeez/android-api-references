@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # CameraProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/CameraProfile "View this page in Java") 
+| --- | --- |
 
 ```
 open class CameraProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.CameraProfile](https://developer.android.com/reference/kotlin/android/media/CameraProfile#) |
 
 The CameraProfile class is used to retrieve the pre-defined still image capture (jpeg) quality levels (0-100) used for low, medium, and high quality settings in the Camera application.
@@ -22,6 +24,7 @@ The CameraProfile class is used to retrieve the pre-defined still image capture 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_HIGH:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_LOW](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_LOW:kotlin.Int) Define three quality levels for JPEG image encoding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_MEDIUM](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_MEDIUM:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------|---|

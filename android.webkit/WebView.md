@@ -7,9 +7,11 @@ open class WebView : AbsoluteLayout, ViewGroup.OnHierarchyChangeListener, View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.AbsoluteLayout](https://developer.android.com/reference/kotlin/android/widget/AbsoluteLayout.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.webkit.WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView#) |
 
 A View that displays web pages.
@@ -31,6 +33,7 @@ To learn more about WebView and alternatives for serving web content, read the d
 | abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener` Interface to listen for find results. |
 | open | `https://developer.android.com/reference/kotlin/android/webkit/WebView.HitTestResult` <br /> |
 | abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebView.PictureListener` Interface to listen for new pictures as they change. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebView.VisualStateCallback` Callback interface supplied to `https://developer.android.com/reference/kotlin/android/webkit/WebView#postVisualStateCallback(kotlin.Long,%20android.webkit.WebView.VisualStateCallback)` for receiving notifications about the visual state. |
 | open | `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport` Transportation object for returning WebView across thread boundaries. |
 
@@ -312,6 +315,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -428,6 +432,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -576,6 +581,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -591,9 +597,11 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#RENDERER_PRIORITY_BOUND:kotlin.Int` This is the medium binding priority for the WebView renderer process. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#RENDERER_PRIORITY_IMPORTANT:kotlin.Int` This is the highest binding priority for the WebView renderer process, and the default value WebView uses to bind to the renderer process. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#RENDERER_PRIORITY_WAIVED:kotlin.Int` This is the lowest binding priority for the WebView renderer process. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#SCHEME_GEO:kotlin.String` URI scheme for map address. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#SCHEME_MAILTO:kotlin.String` URI scheme for email address. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#SCHEME_TEL:kotlin.String` URI scheme for telephone number. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
 
@@ -1752,147 +1760,195 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#addJavascriptInterface(kotlin.Any,%20kotlin.String)(object: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Injects the supplied Java object into this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#autofill(android.util.SparseArray)(values: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#!>)` Automatically fills the content of the virtual children within this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canGoBack()()` Gets whether this WebView has a back history item. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canGoBackOrForward(kotlin.Int)(steps: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets whether the page can go back or forward the given number of steps. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canGoForward()()` Gets whether this WebView has a forward history item. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canZoomIn()()` Gets whether this WebView can be zoomed in. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canZoomOut()()` Gets whether this WebView can be zoomed out. |
 | open [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#capturePicture()()` Gets a new picture that captures the current contents of this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearCache(kotlin.Boolean)(includeDiskFiles: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Clears the resource cache. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearClientCertPreferences(java.lang.Runnable)(onCleared: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#?)` Clears the client certificate preferences stored in response to proceeding/cancelling client cert requests. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearFormData()()` Removes the autocomplete popup from the currently focused form field, if present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearHistory()()` Tells this WebView to clear its internal back/forward list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearMatches()()` Clears the highlighting surrounding text matches created by `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearSslPreferences()()` Clears the SSL preferences table stored in response to proceeding with SSL certificate errors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearView()()` Clears this WebView so that onDraw() will draw nothing but white background, and onMeasure() will return 0 if MeasureSpec is not MeasureSpec. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeScroll()()` Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary. |
 | open [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#copyBackForwardList()()` Gets the WebBackForwardList for this WebView. |
 | open [PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter()()` This method must be called on the thread that originally created this UI element. |
+| --- | --- |
 | open [PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.html#) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter(kotlin.String)(documentName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a PrintDocumentAdapter that provides the content of this WebView for printing. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](https://developer.android.com/reference/kotlin/android/webkit/WebMessagePort)!\> | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createWebMessageChannel()()` Creates a message channel to communicate with JS and returns the message ports that represent the endpoints of this message channel. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#destroy()()` Destroys the internal state of this WebView. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#disableWebView()()` Indicate that the current process does not intend to use WebView, and that an exception should be thrown if a WebView is created or any other methods in the android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#dispatchCreateViewTranslationRequest(kotlin.collections.MutableMap,%20kotlin.IntArray,%20android.view.translation.TranslationCapability,%20kotlin.collections.MutableList)(viewIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!>, supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, capability: https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability.html#?, requests: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#!>)` Dispatch to collect the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#`s for translation purpose by traversing the hierarchy when the app requests ui translation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#dispatchKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Dispatch a key event to the next view on the focus path. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#documentHasImages(android.os.Message)(response: https://developer.android.com/reference/kotlin/android/os/Message.html#)` Queries the document to see if it contains any image references. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#enableSlowWholeDocumentDraw()()` For apps targeting the L release, WebView has a new default behavior that reduces memory footprint and increases performance by intelligently choosing the portion of the HTML document that needs to be drawn. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#evaluateJavascript(kotlin.String,%20android.webkit.ValueCallback)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resultCallback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Asynchronously evaluates JavaScript in the context of the currently displayed page. |
+| --- | --- |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAddress(kotlin.String)(addr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the first substring which appears to be the address of a physical location. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAll(kotlin.String)(find: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds all instances of find on the page and highlights them. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)(find: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds all instances of find on the page and highlights them, asynchronously. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findNext(kotlin.Boolean)(forward: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Highlights and scrolls to the next match found by `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)`, wrapping around page boundaries as necessary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#flingScroll(kotlin.Int,%20kotlin.Int)(vx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method must be called on the thread that originally created this UI element. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#freeMemory()()` Informs this WebView that memory is low so that it can free any available memory. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [AccessibilityNodeProvider](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getAccessibilityNodeProvider()()` Gets the provider for managing a virtual view hierarchy rooted at this View and reported to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`s that explore the window content. |
+| --- | --- |
 | open [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCertificate()()` Gets the SSL certificate for the main top-level page or `null` if there is no certificate (the site is not secure). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getContentHeight()()` Gets the height of the HTML content. |
 | open static [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCurrentWebViewPackage()()` If WebView has already been loaded into the current process this method will return the package that was used to load it. |
+| --- | --- |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getFavicon()()` Gets the favicon for the current page. |
 | open [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHandler()()` <br /> |
 | open [WebView.HitTestResult](https://developer.android.com/reference/kotlin/android/webkit/WebView.HitTestResult) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHitTestResult()()` Gets a HitTestResult based on the current cursor node. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHttpAuthUsernamePassword(kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, realm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieves HTTP authentication credentials for a given host and realm from the `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase` instance. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getOriginalUrl()()` Gets the original URL for the current page. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getProgress()()` Gets the progress for the current page. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getRendererPriorityWaivedWhenNotVisible()()` Return whether this WebView requests a priority of `https://developer.android.com/reference/kotlin/android/webkit/WebView#RENDERER_PRIORITY_WAIVED:kotlin.Int` when not visible. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getRendererRequestedPriority()()` Get the requested renderer priority for this WebView. |
 | open static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSafeBrowsingPrivacyPolicyUrl()()` Returns a URL pointing to the privacy policy for Safe Browsing reporting. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getScale()()` Gets the current scale of this WebView. |
 | open [WebSettings](https://developer.android.com/reference/kotlin/android/webkit/WebSettings) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSettings()()` Gets the WebSettings object used to control the settings for this WebView. |
 | open [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getTextClassifier()()` Returns the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` used by this WebView. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getTitle()()` Gets the title for the current page. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getUrl()()` Gets the URL for the current page. |
 | open [WebChromeClient](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebChromeClient()()` Gets the chrome handler. |
+| --- | --- |
 | open static [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClassLoader()()` Returns the `https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#` used to load internal WebView classes. |
 | open [WebViewClient](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClient()()` Gets the WebViewClient. |
 | open [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewLooper()()` Returns the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` corresponding to the thread on which WebView calls must be made. |
+| --- | --- |
 | open [WebViewRenderProcess](https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcess)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcess()()` Gets a handle to the WebView renderer process associated with this WebView. |
 | open [WebViewRenderProcessClient](https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcessClient()()` Gets the renderer client object associated with this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#goBack()()` Goes back in the history of this WebView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#goBackOrForward(kotlin.Int)(steps: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Goes to the history item that is the number of steps away from the current item. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#goForward()()` Goes forward in the history of this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#invokeZoomPicker()()` Invokes the graphical zoom picker widget for this WebView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#isPrivateBrowsingEnabled()()` Gets whether private browsing is enabled in this WebView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#isVisibleToUserForAutofill(kotlin.Int)(virtualId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Computes whether this virtual autofill view is visible to the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadData(kotlin.String,%20kotlin.String,%20kotlin.String)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, encoding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Loads the given data into this WebView using a 'data' scheme URL. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadDataWithBaseURL(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)(baseUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, encoding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, historyUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Loads the given data into this WebView, using baseUrl as the base URL for the content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the given URL. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String,%20kotlin.collections.MutableMap)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, additionalHttpHeaders: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Loads the given URL with additional HTTP headers, specified as a map from name to value. |
+| --- | --- |
 | open [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#!)` Called when the view should apply `https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#` according to its internal policy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCheckIsTextEditor()()` Check whether the called view is a text editor, in which case it would make sense to automatically display a soft input window for it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onChildViewAdded(android.view.View,%20android.view.View)(parent: https://developer.android.com/reference/kotlin/android/view/View.html#!, child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onChildViewRemoved(android.view.View,%20android.view.View)(p: https://developer.android.com/reference/kotlin/android/view/View.html#!, child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | open [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#!)` Creates a new InputConnection for an InputMethod to interact with the WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)(virtualIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, requestsCollector: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#!>)` Collects `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#`s which represents the content to be translated for the virtual views in the host view. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onDragEvent(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent.html#!)` Handles drag events sent by the system following a call to `https://developer.android.com/reference/kotlin/android/view/View.html#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onFinishTemporaryDetach()()` Called after `https://developer.android.com/reference/kotlin/android/view/View.html#onStartTemporaryDetach()` when the container is done changing the view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle generic motion events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onGlobalFocusChanged(android.view.View,%20android.view.View)(oldFocus: https://developer.android.com/reference/kotlin/android/view/View.html#!, newFocus: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onHoverEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle hover events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyDown(kotlin.Int,%20android.view.KeyEvent)`: perform press of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` is released, if the view is enabled and clickable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onKeyMultiple(kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeatCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyMultiple(kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent)`: always returns false (doesn't handle the event). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyUp(kotlin.Int,%20android.view.KeyEvent)`: perform clicking of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_SPACE:kotlin.Int` is released. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onPause()()` Does a best-effort attempt to pause any processing that can be paused safely, such as animations and geolocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onProvideAutofillVirtualStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Populates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` containing virtual children to fullfil an autofill request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onProvideContentCaptureStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Populates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for content capture. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onProvideVirtualStructure(android.view.ViewStructure)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#!)` Called when assist structure is being retrieved from a view as part of `https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistData(android.os.Bundle)` to generate additional virtual structure under this view. |
+| --- | --- |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResume()()` Resumes a WebView after a previous call to `https://developer.android.com/reference/kotlin/android/webkit/WebView#onPause()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onStartTemporaryDetach()()` This is called when a container is going to temporarily detach a child, with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#detachViewFromParent(android.view.View)`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onTrackballEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle trackball motion events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onVirtualViewTranslationResponses(android.util.LongSparseArray)(response: https://developer.android.com/reference/kotlin/android/util/LongSparseArray.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse.html#!>)` Called when the content from `https://developer.android.com/reference/kotlin/android/view/View.html#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)` had been translated by the TranslationService. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses focus. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#overlayHorizontalScrollbar()()` Gets whether horizontal scrollbar has overlay style. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#overlayVerticalScrollbar()()` Gets whether vertical scrollbar has overlay style. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#pageDown(kotlin.Boolean)(bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Scrolls the contents of this WebView down by half the page size. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#pageUp(kotlin.Boolean)(top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Scrolls the contents of this WebView up by half the view size. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#pauseTimers()()` Pauses all layout, parsing, and JavaScript timers for all WebViews. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#performLongClick()()` Calls this view's OnLongClickListener, if it is defined. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#postUrl(kotlin.String,%20kotlin.ByteArray)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, postData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Loads the URL with postData using "POST" method into this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#postVisualStateCallback(kotlin.Long,%20android.webkit.WebView.VisualStateCallback)(requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, callback: https://developer.android.com/reference/kotlin/android/webkit/WebView.VisualStateCallback)` Posts a `https://developer.android.com/reference/kotlin/android/webkit/WebView.VisualStateCallback`, which will be called when the current state of the WebView is ready to be drawn. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#postWebMessage(android.webkit.WebMessage,%20android.net.Uri)(message: https://developer.android.com/reference/kotlin/android/webkit/WebMessage, targetOrigin: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Post a message to main frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#reload()()` Reloads the current URL. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#removeJavascriptInterface(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a previously injected Java object from this WebView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestChildRectangleOnScreen(android.view.View,%20android.graphics.Rect,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, rect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, immediate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestFocus(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Call this to try to give focus to a specific view or to one of its descendants and give it hints about the direction and a specific rectangle that the focus is coming from. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestFocusNodeHref(android.os.Message)(hrefMsg: https://developer.android.com/reference/kotlin/android/os/Message.html#?)` Requests the anchor or image element URL at the last tapped point. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestImageRef(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message.html#)` Requests the URL of the image last touched by the user. |
 | open [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#restoreState(android.os.Bundle)(inState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Restores the state of this WebView from the given Bundle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#resumeTimers()()` Resumes all layout, parsing, and JavaScript timers for all WebViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#savePassword(kotlin.String,%20kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, username: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets a username and password pair for the specified host. |
 | open [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Saves the state of this WebView used in android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveWebArchive(kotlin.String)(filename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Saves the current view as a web archive. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveWebArchive(kotlin.String,%20kotlin.Boolean,%20android.webkit.ValueCallback)(basename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, autoname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Saves the current view as a web archive. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setBackgroundColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the background color for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setCertificate(android.net.http.SslCertificate)(certificate: https://developer.android.com/reference/kotlin/android/net/http/SslCertificate.html#!)` Sets the SSL certificate for the main top-level page. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setDataDirectorySuffix(kotlin.String)(suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Define the directory used to store WebView data for the current process. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setDownloadListener(android.webkit.DownloadListener)(listener: https://developer.android.com/reference/kotlin/android/webkit/DownloadListener?)` Registers the interface to be used when content can not be handled by the rendering engine, and should be downloaded instead. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setFindListener(android.webkit.WebView.FindListener)(listener: https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener?)` Registers the listener to be notified as find-on-page operations progress. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setHorizontalScrollbarOverlay(kotlin.Boolean)(overlay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether the horizontal scrollbar has overlay style. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setHttpAuthUsernamePassword(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, realm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, username: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Stores HTTP authentication credentials for a given host and realm to the `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase` instance. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setInitialScale(kotlin.Int)(scaleInPercent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the initial scale for this WebView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setLayerType(kotlin.Int,%20android.graphics.Paint)(layerType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#?)` Specifies the type of layer backing this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setLayoutParams(android.view.ViewGroup.LayoutParams)(params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Set the layout parameters associated with this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setMapTrackballToArrowKeys(kotlin.Boolean)(setMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` This method must be called on the thread that originally created this UI element. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setNetworkAvailable(kotlin.Boolean)(networkUp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Informs WebView of the network state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setOverScrollMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the over-scroll mode for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setPictureListener(android.webkit.WebView.PictureListener)(listener: https://developer.android.com/reference/kotlin/android/webkit/WebView.PictureListener!)` Sets the Picture listener. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setRendererPriorityPolicy(kotlin.Int,%20kotlin.Boolean)(rendererRequestedPriority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, waivedWhenNotVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the renderer priority policy for this `https://developer.android.com/reference/kotlin/android/webkit/WebView#`. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setSafeBrowsingWhitelist(kotlin.collections.MutableList,%20android.webkit.ValueCallback)(hosts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>?)` Sets the list of hosts (domain names/IP addresses) that are exempt from SafeBrowsing checks. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setScrollBarStyle(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify the style of the scrollbars. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setTextClassifier(android.view.textclassifier.TextClassifier)(textClassifier: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#?)` Sets the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` for this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setVerticalScrollbarOverlay(kotlin.Boolean)(overlay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether the vertical scrollbar has overlay style. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebChromeClient(android.webkit.WebChromeClient)(client: https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient?)` Sets the chrome handler. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebContentsDebuggingEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables debugging of web contents (HTML / CSS / JavaScript) loaded into any WebViews of this application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebViewClient(android.webkit.WebViewClient)(client: https://developer.android.com/reference/kotlin/android/webkit/WebViewClient)` Sets the WebViewClient that will receive various notifications and requests. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebViewRenderProcessClient(android.webkit.WebViewRenderProcessClient)(webViewRenderProcessClient: https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient?)` Sets the renderer client object associated with this WebView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebViewRenderProcessClient(java.util.concurrent.Executor,%20android.webkit.WebViewRenderProcessClient)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, webViewRenderProcessClient: https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient)` Sets the renderer client object associated with this WebView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#shouldDelayChildPressedState()()` Return true if the pressed state should be delayed for children or descendants of this ViewGroup. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#showFindDialog(kotlin.String,%20kotlin.Boolean)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, showIme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Starts an ActionMode for finding text in this WebView. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#startSafeBrowsing(android.content.Context,%20android.webkit.ValueCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>?)` Starts Safe Browsing initialization. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#stopLoading()()` Stops the current load. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#zoomBy(kotlin.Float)(zoomFactor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Performs a zoom operation in this WebView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#zoomIn()()` Performs zoom in in this WebView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#zoomOut()()` Performs zoom out in this WebView. |
 
@@ -1901,18 +1957,23 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeHorizontalScrollOffset()()` Compute the horizontal offset of the horizontal scrollbar's thumb within the horizontal range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeHorizontalScrollRange()()` Compute the horizontal range that the horizontal scrollbar represents. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeVerticalScrollExtent()()` Compute the vertical extent of the vertical scrollbar's thumb within the vertical range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeVerticalScrollOffset()()` Compute the vertical offset of the vertical scrollbar's thumb within the horizontal range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeVerticalScrollRange()()` Compute the vertical range that the vertical scrollbar represents. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Called when the current configuration of the resources being used by the application have changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onFocusChanged(kotlin.Boolean,%20kotlin.Int,%20android.graphics.Rect)(focused: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Called by the view system when the focus state of this view changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onOverScrolled(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean)(scrollX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scrollY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clampedX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, clampedY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#overScrollBy(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)` to respond to the results of an over-scroll operation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onScrollChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called in response to an internal scroll in this view (i.e., the view scrolled its own contents). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onVisibilityChanged(android.view.View,%20kotlin.Int)(changedView: https://developer.android.com/reference/kotlin/android/view/View.html#, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the visibility of the view or an ancestor of the view has changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onWindowVisibilityChanged(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the window containing has change its visibility (between `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`). |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2837,6 +2898,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4689,6 +4751,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8527,6 +8590,7 @@ This method must be called on the thread that originally created this UI element
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): an Activity Context to access application assets. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 
 ### WebView
 
@@ -8550,6 +8614,7 @@ This method must be called on the thread that originally created this UI element
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): an Activity Context to access application assets. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `privateBrowsing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether this WebView will be initialized in private mode |
 
 ### WebView
@@ -8572,6 +8637,7 @@ This method must be called on the thread that originally created this UI element
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): an Activity Context to access application assets. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 
 ## Public methods
@@ -8959,6 +9025,7 @@ The implementation calls `https://developer.android.com/reference/kotlin/android
 | `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec.html#DATA_FORMAT_TEXT:kotlin.Int` |
 | `capability` | [TranslationCapability](https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability.html#)?: This value may be `null`. |
+| --- | --- |
 | `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#)!\>: This value cannot be `null`. |
 
 ### dispatchKeyEvent
@@ -9680,6 +9747,7 @@ This method must be called on the thread that originally created this UI element
 | `data` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): a String of data in the given encoding. This value cannot be `null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the MIME type of the data, e.g. 'text/html'. This value may be `null`. |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the encoding of the data. This value may be `null`. |
+| --- | --- |
 
 ### loadDataWithBaseURL
 
@@ -9713,6 +9781,7 @@ This method must be called on the thread that originally created this UI element
 | `baseUrl` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the URL to use as the page's base URL. If `null` defaults to 'about:blank'. |
 | `data` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): a String of data in the given encoding. This value cannot be `null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the MIME type of the data, e.g. 'text/html'. This value may be `null`. |
+| --- | --- |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the encoding of the data. This value may be `null`. |
 | `historyUrl` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the URL to use as the history entry. If `null` defaults to 'about:blank'. If non-null, this must be a valid URL. |
 
@@ -9869,6 +9938,7 @@ The default implementation does nothing.
 | `virtualIds` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec.html#DATA_FORMAT_TEXT:kotlin.Int` |
 | `requestsCollector` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [ViewTranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#)!\>: This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10045,6 +10115,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`. |
 | `count` | Number of pairs as returned by event.getRepeatCount(). |
 | `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The KeyEvent object that defines the button action. |
+| --- | --- |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of times the action was made. |
 
 | Return ||
@@ -10258,6 +10329,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -10616,6 +10688,7 @@ Called when a child of this group wants a particular rectangle to be positioned 
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): The direct child making the request. This value cannot be `null`. |
 | `rectangle` | The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10726,6 +10799,7 @@ This method must be called on the thread that originally created this UI element
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the host that required the credentials |
 | `username` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the username for the given host |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the password for the given host |
+| --- | --- |
 
 **See Also**
 
@@ -10786,6 +10860,7 @@ This method must be called on the thread that originally created this UI element
 | `basename` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the filename where the archive should be placed. This value cannot be `null`. |
 | `autoname` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if `false`, takes basename to be a file. If `true`, basename is assumed to be a directory in which a filename will be chosen according to the URL of the current page. |
 | `callback` | [ValueCallback](https://developer.android.com/reference/kotlin/android/webkit/ValueCallback)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: called after the web archive has been saved. The parameter for onReceiveValue will either be the filename under which the file was saved, or `null` if saving the file failed. |
+| --- | --- |
 
 ### setBackgroundColor
 
@@ -10911,6 +10986,7 @@ This method must be called on the thread that originally created this UI element
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the host to which the credentials apply |
 | `realm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the realm to which the credentials apply |
 | `username` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the username |
+| --- | --- |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the password |
 
 ### setInitialScale
@@ -11076,6 +11152,7 @@ Each rule should take one of these:
 | HOSTNAME | example.com | Yes |
 | .HOSTNAME | .example.com | No |
 | IPV4_LITERAL | 192.168.1.1 | No |
+| --- | --- | --- |
 | IPV6_LITERAL_WITH_BRACKETS | \[10:20:30:40:50:60:70:80\] | No |
 
 All other rules, including wildcards, are invalid.
@@ -11512,6 +11589,7 @@ If you override this method you *must* call through to the superclass implementa
 | `gainFocus` | True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
 | `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| --- | --- |
 
 ### onMeasure
 
@@ -11557,6 +11635,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View.html
 | `scrollX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New X scroll value in pixels |
 | `scrollY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New Y scroll value in pixels |
 | `clampedX` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollX was clamped to an over-scroll boundary |
+| --- | --- |
 | `clampedY` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollY was clamped to an over-scroll boundary |
 
 ### onScrollChanged
@@ -11579,6 +11658,7 @@ This is called in response to an internal scroll in this view (i.e., the view sc
 | `l` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current horizontal scroll origin. |
 | `t` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current vertical scroll origin. |
 | `oldl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Previous horizontal scroll origin. |
+| --- | --- |
 | `oldt` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Previous vertical scroll origin. |
 
 ### onSizeChanged
@@ -11601,6 +11681,7 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | Old width of this view. |
+| --- | --- |
 | `oldh` | Old height of this view. |
 
 ### onVisibilityChanged

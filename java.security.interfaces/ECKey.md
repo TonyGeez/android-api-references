@@ -11,6 +11,7 @@ interface ECKey
 | [java.security.interfaces.ECKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey#) |
 
 | Known Direct Subclasses [ECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPrivateKey), [ECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey) |------------------------------------------------------------------------------------------------------|------------------------------------------------------| | [ECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPrivateKey) | The interface to an elliptic curve (EC) private key. | | [ECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey) | The interface to an elliptic curve (EC) public key. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The interface to an elliptic curve (EC) key.
 

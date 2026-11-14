@@ -7,6 +7,7 @@ open class ChangeClipBounds : Transition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) ||
 | | ↳ | [android.transition.ChangeClipBounds](https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds#) |
 
@@ -28,6 +29,7 @@ ChangeClipBounds captures the `https://developer.android.com/reference/kotlin/an
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds#captureEndValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the end scene for the properties that this transition monitors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)? | `https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds#getTransitionProperties()()` Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. |
 
 | Inherited functions ||
@@ -115,6 +117,7 @@ The method is called for every applicable target object, which is stored in the 
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#): This value cannot be `null`. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: This value may be `null`. |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

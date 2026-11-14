@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothLeDeviceFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/companion/BluetoothLeDeviceFilter "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothLeDeviceFilter : DeviceFilter<ScanResult!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.BluetoothLeDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#) |
 
 A filter for Bluetooth LE devices
@@ -26,9 +28,11 @@ A filter for Bluetooth LE devices
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRenamePrefixLengthLimit](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#getRenamePrefixLengthLimit())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

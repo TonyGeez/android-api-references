@@ -9,6 +9,7 @@ abstract class KeyGeneratorSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.KeyGeneratorSpi](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyGenerator`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a key generator for a particular algorithm.
@@ -24,6 +25,7 @@ This class defines the*Service Provider Interface* (**SPI** ) for the`KeyGenerat
 | abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineGenerateKey](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi#engineGenerateKey())`()` Generates a secret key. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi#engineInit(kotlin.Int,%20java.security.SecureRandom))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key generator for a certain keysize, using the given source of randomness. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi#engineInit(java.security.SecureRandom))`(`random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes the key generator. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi#engineInit(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes the key generator with the specified parameter set and a user-provided source of randomness. |
 
 ## Public constructors

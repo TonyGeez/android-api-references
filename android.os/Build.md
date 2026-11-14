@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Build
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/Build "View this page in Java")
+| --- | --- |
 
 ```
 open class Build
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Build](https://developer.android.com/reference/kotlin/android/os/Build#) |
 
 Information about the current build, extracted from system properties.
@@ -20,6 +22,7 @@ Information about the current build, extracted from system properties.
 | open | `https://developer.android.com/reference/kotlin/android/os/Build.Partition` Build information for a particular device partition. |
 | open | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION` Various version strings. |
 | open | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES` Enumeration of the currently known SDK version codes. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES_FULL` Enumeration of the currently known SDK major and minor version codes. |
 
 | Constants ||
@@ -27,6 +30,7 @@ Information about the current build, extracted from system properties.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#BACKPORTED_FIX_STATUS_FIXED:kotlin.Int` The known issue is fixed on this device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#BACKPORTED_FIX_STATUS_NOT_APPLICABLE:kotlin.Int` The known issue is not applicable to this device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#BACKPORTED_FIX_STATUS_NOT_FIXED:kotlin.Int` The known issue is not fixed on this device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#BACKPORTED_FIX_STATUS_UNKNOWN:kotlin.Int` The status of the known issue on this device is not known. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#UNKNOWN:kotlin.String` Value used for when a build property is unknown. |
 
@@ -39,39 +43,50 @@ Information about the current build, extracted from system properties.
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getBackportedFixStatus(kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` The status of the backported fix for a known issue on this device. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Build.Partition](https://developer.android.com/reference/kotlin/android/os/Build.Partition)!\> | `https://developer.android.com/reference/kotlin/android/os/Build#getFingerprintedPartitions()()` Get build information about partitions that have a separate fingerprint defined. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMajorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the major version encoded in a VERSION_CODES_FULL value. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMinorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the minor version encoded in a VERSION_CODES_FULL value. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#getRadioVersion()()` Returns the version string for the radio firmware. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#getSerial()()` Gets the hardware serial number, if available. |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#BOARD:kotlin.String` The name of the underlying board, like "goldfish". |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#BOOTLOADER:kotlin.String` The system bootloader version number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#BRAND:kotlin.String` The consumer-visible brand with which the product/hardware will be associated, if any. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#CPU_ABI:kotlin.String` The name of the instruction set (CPU type + ABI convention) of native code. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#CPU_ABI2:kotlin.String` The name of the second instruction set (CPU type + ABI convention) of native code. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#DEVICE:kotlin.String` The name of the industrial design. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#DISPLAY:kotlin.String` A build ID string meant for displaying to the user |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#FINGERPRINT:kotlin.String` A string that uniquely identifies this build. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#HARDWARE:kotlin.String` The name of the hardware (from the kernel command line or /proc). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#HOST:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#ID:kotlin.String` Either a changelist number, or a label like "M4-rc20". |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#MANUFACTURER:kotlin.String` The manufacturer of the product/hardware. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#MODEL:kotlin.String` The end-user-visible name for the end product. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#ODM_SKU:kotlin.String` The SKU of the device as set by the original design manufacturer (ODM). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#PRODUCT:kotlin.String` The name of the overall product. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#RADIO:kotlin.String` The radio firmware version number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#SERIAL:kotlin.String` A hardware serial number, if available. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#SKU:kotlin.String` The SKU of the hardware (from the kernel command line). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#SOC_MANUFACTURER:kotlin.String` The manufacturer of the device's primary system-on-chip. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#SOC_MODEL:kotlin.String` The model name of the device's primary system-on-chip. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#STRONGBOX_MANUFACTURER:kotlin.String` The manufacturer of the device's StrongBox chip. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#STRONGBOX_MODEL:kotlin.String` The model of the device's StrongBox chip. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/os/Build#SUPPORTED_32_BIT_ABIS:kotlin.Array` An ordered list of **32 bit** ABIs supported by this device. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/os/Build#SUPPORTED_64_BIT_ABIS:kotlin.Array` An ordered list of **64 bit** ABIs supported by this device. |
+| --- | --- |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/os/Build#SUPPORTED_ABIS:kotlin.Array` An ordered list of ABIs supported by this device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#TAGS:kotlin.String` Comma-separated tags describing the build, like "unsigned,debug". |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#TIME:kotlin.Long` The time at which the build was produced, given in milliseconds since the UNIX epoch. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#TYPE:kotlin.String` The type of build, like "user" or "eng". |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#USER:kotlin.String` <br /> |
 

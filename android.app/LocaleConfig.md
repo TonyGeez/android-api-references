@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # LocaleConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/LocaleConfig "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocaleConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.LocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#) |
 
 The LocaleConfig of an application. There are two sources. One is from an XML resource file with an`<locale-config>`element and referenced in the manifest via`android:localeConfig`on`<application>`. The other is that the application dynamically provides an override version which is persisted in [LocaleManager.setOverrideLocaleConfig(LocaleConfig)](https://developer.android.com/reference/kotlin/android/app/LocaleManager#setOverrideLocaleConfig(android.app.LocaleConfig)).
@@ -29,6 +31,7 @@ For more information about the LocaleConfig from an XML resource file, see [the 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NOT_SPECIFIED](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#STATUS_NOT_SPECIFIED:kotlin.Int) No android:localeConfig tag on . |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARSING_FAILED](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#STATUS_PARSING_FAILED:kotlin.Int) Malformed input in the XML file where the LocaleConfig was stored. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESS](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#STATUS_SUCCESS:kotlin.Int) succeeded reading the LocaleConfig structure stored in an XML file. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_LOCALE](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#TAG_LOCALE:kotlin.String) <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_LOCALE_CONFIG](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#TAG_LOCALE_CONFIG:kotlin.String) <br /> |
 
@@ -46,9 +49,11 @@ For more information about the LocaleConfig from an XML resource file, see [the 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#describeContents())`()` <br /> |
 | openstatic [LocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#) | [fromContextIgnoringOverride](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#fromContextIgnoringOverride(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`)` Returns a LocaleConfig from the application resources regardless of whether any LocaleConfig is overridden via [LocaleManager.setOverrideLocaleConfig(LocaleConfig)](https://developer.android.com/reference/kotlin/android/app/LocaleManager#setOverrideLocaleConfig(android.app.LocaleConfig)). |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | [getDefaultLocale](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#getDefaultLocale())`()` Returns the locale the strings in values/strings. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#getStatus())`()` Get the status of reading the resource file where the LocaleConfig was stored. |
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)? | [getSupportedLocales](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#getSupportedLocales())`()` Returns the locales supported by the specified application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/LocaleConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|

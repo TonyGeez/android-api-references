@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TrafficDescriptor
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/data/TrafficDescriptor "View this page in Java")
+| --- | --- |
 
 ```
 class TrafficDescriptor : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.data.TrafficDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#) |
 
 A traffic descriptor, as defined in 3GPP TS 24.526 Section 5.2. It is used for UE Route Selection Policy(URSP) traffic matching as described in 3GPP TS 24.526 Section 4.2.2. It includes optional components like Data Network Name (DNN), an OS/App ID, and/or Connection Capabilities, which, if present, must be used for traffic matching. This descriptor does not specify the end point to be used for the data call.
@@ -24,18 +26,23 @@ A traffic descriptor, as defined in 3GPP TS 24.526 Section 5.2. It is used for U
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_BACKGROUND:kotlin.Int` Any traffic that is not time-sensitive, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_DOWNLINK_STREAMING:kotlin.Int` Downlink streaming, characterized as downlink high data rates content and low latency. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_IMS:kotlin.Int` IMS Voice + Video comprising voice, video telephony and multimedia communications over IP networks. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_INTERNET:kotlin.Int` Internet data traffic with wide availability but no critical requirements on latency or data rates. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_IOT_DELAY_TOLERANT:kotlin.Int` Delay-tolerant, low sustained data rate IoT traffic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_IOT_NON_DELAY_TOLERANT:kotlin.Int` Non-delay-tolerant, low sustained data rate IoT traffic |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_LCS_USER_PLANE_POSITIONING:kotlin.Int` LCS user plane positioning |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_LOW_LATENCY_LOSS_TOLERANT_UNACK:kotlin.Int` Traffic which has low latency requirements and is tolerant to some loss, hence using un-acknowledged mode at the Radio Link Control (RLC) layer. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_MISSION_CRITICAL_COMMUNICATIONS:kotlin.Int` Mission-critical communications, may include MC-PTT, MC video, and MC data. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_MMS:kotlin.Int` MMS (Multimedia Messaging Service) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_REAL_TIME_INTERACTIVE:kotlin.Int` Real time interactive traffic, for example, for gaming or AR/VR. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_SUPL:kotlin.Int` SUPL (Secure User Plane Location) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_TIME_CRITICAL_COMMUNICATIONS:kotlin.Int` Time Critical Communications, with bounded, low to very low latency requirements, and high availability. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_UNIFIED_COMMUNICATIONS:kotlin.Int` Unified communications traffic, which comprise communications through a single user interface at the UE, for instance instant messaging, VoIP, and video collaboration through the same application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_UNKNOWN:kotlin.Int` Unknown connection capability. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_UPLINK_STREAMING:kotlin.Int` Uplink streaming, characterized as uplink high data rates content and low latency |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CONNECTION_CAPABILITY_VEHICULAR_COMMUNICATIONS:kotlin.Int` Vehicle-to-Everything (V2X) traffic comprising V2X messages, characterized by low latency, high reliability, and high availability. |
 
@@ -48,9 +55,11 @@ A traffic descriptor, as defined in 3GPP TS 24.526 Section 5.2. It is used for U
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#getConnectionCapability()()` Get the connection capability of the traffic. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#getDataNetworkName()()` DNN stands for Data Network Name and represents an APN as defined in 3GPP TS 23. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#getOsAppId()()` OsAppId identifies a broader traffic category. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

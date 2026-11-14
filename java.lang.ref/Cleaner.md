@@ -9,6 +9,7 @@ class Cleaner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ref.Cleaner](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#) |
 
 `Cleaner`manages a set of object references and corresponding cleaning actions.
@@ -34,6 +35,7 @@ Unless otherwise noted, passing a`null`argument to a constructor or method in th
 | static [Cleaner](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#)! | [create](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#create())`()` Returns a new`Cleaner`. |
 | static [Cleaner](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#)! | [create](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#create(java.util.concurrent.ThreadFactory))`(`threadFactory:` ` [ThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory.html#)!`)` Returns a new`Cleaner`using a`Thread`from the`ThreadFactory`. |
 | [Cleaner.Cleanable](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner.Cleanable)! | [register](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner#register(kotlin.Any,%20java.lang.Runnable))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `action:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Registers an object and a cleaning action to run when the object becomes phantom reachable. |
+| --- | --- |
 
 ## Public methods
 

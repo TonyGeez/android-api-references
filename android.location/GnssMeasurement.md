@@ -7,6 +7,7 @@ class GnssMeasurement : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssMeasurement](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#) |
 
 A class representing a GNSS satellite measurement, containing raw and computed information.
@@ -18,45 +19,59 @@ A class representing a GNSS satellite measurement, containing raw and computed i
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_CYCLE_SLIP:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has a cycle slip detected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_REPORTED:kotlin.Int` Reports whether the flag `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` has been reported by the GNSS hardware. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` Reports whether the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has resolved the half cycle ambiguity. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_RESET:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has detected a reset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_UNKNOWN:kotlin.Int` The state of the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is invalid or unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_VALID:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is valid. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_A:kotlin.String` Code type for: GALILEO E1A, GALILEO E6A, NavIC L5A SPS, NavIC SA SPS, GLONASS G1a L1OCd, GLONASS G2a L2CSI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_B:kotlin.String` Code type for: GALILEO E1B, GALILEO E6B, NavIC L5B RS (D), NavIC SB RS (D), GLONASS G1a L1OCp, GLONASS G2a L2OCp, QZSS L1Sb. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_C:kotlin.String` Code type for: GPS L1 C/A, GPS L2 C/A, GLONASS G1 C/A, GLONASS G2 C/A, GALILEO E1C, GALILEO E6C, SBAS L1 C/A, QZSS L1 C/A, NavIC L5C RS (P), NavIC SC RS (P). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_D:kotlin.String` Code type for: GPS L2 (L1(C/A) + (P2-P1) (semi-codeless)), QZSS L5S(I), BDS B1C Data, BDS B2a Data, BDS B2b Data, BDS B2 (B2a+B2b) Data, BDS B3a Data, NavIC L1 Data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_E:kotlin.String` Code type for: QZSS L1 C/B, QZSS L6E. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_I:kotlin.String` Code type for: GPS L5 I, GLONASS G3 I, GALILEO E5a I, GALILEO E5b I, GALILEO E5a+b I, SBAS L5 I, QZSS L5 I, BDS B1 I, BDS B2 I, BDS B3 I. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_L:kotlin.String` Code type for: GPS L1C (P), GPS L2C (L), QZSS L1C (P), QZSS L2C (L), QZSS L6P, BDS B1a Pilot. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_M:kotlin.String` Code type for: GPS L1M, GPS L2M. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_N:kotlin.String` Code type for: GPS L1 codeless, GPS L2 codeless. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_P:kotlin.String` Code type for: GPS L1P, GPS L2P, GLONASS G1P, GLONASS G2P, BDS B1C Pilot, BDS B2a Pilot, BDS B2b Pilot, BDS B2 (B2a+B2b) Pilot, BDS B3a Pilot, QZSS L5S(Q), NavIC L1 Pilot. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_Q:kotlin.String` Code type for: GPS L5 Q, GLONASS G3 Q, GALILEO E5a Q, GALILEO E5b Q, GALILEO E5a+b Q, SBAS L5 Q, QZSS L5 Q, BDS B1 Q, BDS B2 Q, BDS B3 Q. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_S:kotlin.String` Code type for: GPS L1C (D), GPS L2C (M), QZSS L1C (D), QZSS L2C (M), QZSS L6D, BDS B1a Data. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_UNKNOWN:kotlin.String` Code type when the code type is unknown. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_W:kotlin.String` Code type for: GPS L1 Z-tracking, GPS L2 Z-tracking. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_X:kotlin.String` Code type for: GPS L1C (D+P), GPS L2C (M+L), GPS L5 (I+Q), GLONASS G1a L1OCd+L1OCp, GLONASS G2a L2CSI+L2OCp, GLONASS G3 (I+Q), GALILEO E1 (B+C), GALILEO E5a (I+Q), GALILEO E5b (I+Q), GALILEO E5a+b (I+Q), GALILEO E6 (B+C), SBAS L5 (I+Q), QZSS L1C (D+P), QZSS L2C (M+L), QZSS L5 (I+Q), QZSS L6 (D+P), BDS B1 (I+Q), BDS B1C Data+Pilot, BDS B2a Data+Pilot, BDS B2 (I+Q), BDS B2 (B2a+B2b) Data+Pilot, BDS B3 (I+Q), NavIC L5 (B+C), NavIC S (B+C), NavIC L1 Data+Pilot. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_Y:kotlin.String` Code type for: GPS L1Y, GPS L2Y. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_Z:kotlin.String` Code type for: GALILEO E1 (A+B+C), GALILEO E6 (A+B+C), QZSS L1S/L1-SAIF, QZSS L5S (I+Q), QZSS L6(D+E), BDS B1A Data+Pilot, BDS B2b Data+Pilot, BDS B3a Data+Pilot. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#MULTIPATH_INDICATOR_DETECTED:kotlin.Int` The measurement shows signs of multi-path. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#MULTIPATH_INDICATOR_NOT_DETECTED:kotlin.Int` The measurement shows no signs of multi-path. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#MULTIPATH_INDICATOR_UNKNOWN:kotlin.Int` The indicator is not available or the presence or absence of multipath is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_2ND_CODE_LOCK:kotlin.Int` This GNSS measurement's tracking state has secondary code lock. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_BDS_D2_BIT_SYNC:kotlin.Int` This Beidou measurement's tracking state has D2 bit sync. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_BDS_D2_SUBFRAME_SYNC:kotlin.Int` This Beidou measurement's tracking state has D2 sub-frame sync. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_BIT_SYNC:kotlin.Int` This GNSS measurement's tracking state has bit sync. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_CODE_LOCK:kotlin.Int` This GNSS measurement's tracking state has code lock. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GAL_E1BC_CODE_LOCK:kotlin.Int` This Galileo measurement's tracking state has E1B/C code lock. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GAL_E1B_PAGE_SYNC:kotlin.Int` This Galileo measurement's tracking state has E1B page sync. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GAL_E1C_2ND_CODE_LOCK:kotlin.Int` This Galileo measurement's tracking state has E1C secondary code lock. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GLO_STRING_SYNC:kotlin.Int` This Glonass measurement's tracking state has string sync. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GLO_TOD_DECODED:kotlin.Int` This Glonass measurement's tracking state has time-of-day decoded. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_GLO_TOD_KNOWN:kotlin.Int` This Glonass measurement's tracking state has time-of-day known, possibly not decoded over the air but has been determined from other sources. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_MSEC_AMBIGUOUS:kotlin.Int` This GNSS measurement's tracking state contains millisecond ambiguity. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_SBAS_SYNC:kotlin.Int` This SBAS measurement's tracking state has whole second level sync. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_SUBFRAME_SYNC:kotlin.Int` This GNSS measurement's tracking state has sub-frame sync. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_SYMBOL_SYNC:kotlin.Int` This GNSS measurement's tracking state has symbol sync. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_TOW_DECODED:kotlin.Int` This GNSS measurement's tracking state has time-of-week decoded. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_TOW_KNOWN:kotlin.Int` This GNSS measurement's tracking state has time-of-week known, possibly not decoded over the air but has been determined from other sources. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#STATE_UNKNOWN:kotlin.Int` This GNSS measurement's tracking state is invalid or unknown. |
 
@@ -69,42 +84,55 @@ A class representing a GNSS satellite measurement, containing raw and computed i
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()()` Gets the accumulated delta range since the last channel reset, in meters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()()` Gets 'Accumulated Delta Range' state. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()()` Gets the accumulated delta range's uncertainty (1-Sigma) in meters. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAutomaticGainControlLevelDb()()` Gets the Automatic Gain Control level in dB. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getBasebandCn0DbHz()()` Gets the baseband carrier-to-noise density in dB-Hz. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierCycles()()` The number of full carrier cycles between the satellite and the receiver. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()()` Gets the carrier frequency of the tracked signal. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()()` Gets the RF phase detected by the receiver. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()()` Gets the carrier-phase's uncertainty (1-Sigma). |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCn0DbHz()()` Gets the Carrier-to-noise density in dB-Hz. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()()` Gets the GNSS measurement's code type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getConstellationType()()` Gets the constellation type. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasNanos()()` Gets the GNSS measurement's inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasUncertaintyNanos()()` Gets the GNSS measurement's inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getMultipathIndicator()()` Gets a value indicating the 'multipath' state of the event. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getPseudorangeRateMetersPerSecond()()` Gets the Pseudorange rate at the timestamp in m/s. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getPseudorangeRateUncertaintyMetersPerSecond()()` Gets the pseudorange's rate uncertainty (1-Sigma) in m/s. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeNanos()()` Gets the received GNSS satellite time, at the measurement time, in nanoseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeUncertaintyNanos()()` Gets the error estimate (1-sigma) for the received GNSS time, in nanoseconds. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasNanos()()` Gets the GNSS measurement's satellite inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasUncertaintyNanos()()` Gets the GNSS measurement's satellite inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSnrInDb()()` Gets the (post-correlation \& integration) Signal-to-Noise ratio (SNR) in dB. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getState()()` Gets per-satellite-signal sync state. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSvid()()` Gets the satellite ID. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getTimeOffsetNanos()()` Gets the time offset at which the measurement was taken in nanoseconds. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasAutomaticGainControlLevelDb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAutomaticGainControlLevelDb()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasBasebandCn0DbHz()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getBasebandCn0DbHz()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierCycles()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierCycles()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierFrequencyHz()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhase()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhaseUncertainty()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCodeType()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasUncertaintyNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasNanos()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasUncertaintyNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSnrInDb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSnrInDb()` is available, `false` otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -713,9 +741,11 @@ This indicates the state of the `https://developer.android.com/reference/kotlin/
 | UNKNOWN | ADR(t) | No valid carrier phase information is available at time t. |
 | VALID | ADR(t) | Valid carrier phase information is available at time t. This indicates that this measurement can be used as a reference for future measurements. However, to compare it to previous measurements to compute delta range, other bits should be checked. Specifically, it can be used for delta range computation if it is valid and has no reset or cycle slip at this epoch i.e. if VALID_BIT == 1 \&\& CYCLE_SLIP_BIT == 0 \&\& RESET_BIT == 0. |
 | RESET | ADR(t) - ADR(t-1) | Carrier phase accumulation has been restarted between current time t and previous time t-1. This indicates that this measurement can be used as a reference for future measurements, but it should not be compared to previous measurements to compute delta range. |
+| --- | --- | --- |
 | CYCLE_SLIP | ADR(t) - ADR(t-1) | Cycle slip(s) have been detected between the current time t and previous time t-1. This indicates that this measurement can be used as a reference for future measurements. Clients can use a measurement with a cycle slip to compute delta range against previous measurements at their own risk. |
 | HALF_CYCLE_RESOLVED | ADR(t) | Half cycle ambiguity is resolved at time t. |
 | HALF_CYCLE_REPORTED | ADR(t) | Half cycle ambiguity is reported at time t. |
+| --- | --- | --- |
 
 | Return ||
 |---|---|
@@ -1016,24 +1046,31 @@ The table below indicates the valid range of the received GNSS satellite time. T
 For example, for GPS L1 C/A, if STATE_TOW_KNOWN is set, this field can be any value from 0 to 1 week (in nanoseconds), and for GAL E1B code, if only STATE_GAL_E1BC_CODE_LOCK is set, then this field can be any value from 0 to 4 milliseconds (in nanoseconds.)
 
 | | **GPS/QZSS** |||| **GLNS** | **BDS** |||| **GAL** ||| **SBAS** | **NavIC** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **State Flag** | **L1 C/A** | **L1 C(P)** | **L5I** | **L5Q** | **L1OF** | **B1I (D1)** | **B1I (D2)** | **B1C (P)** | **B2AQ** | **E1B** | **E1C** | **E5AQ** | **L1 C/A** | **L5C** |
 | **STATE_UNKNOWN** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **STATE_CODE_LOCK** | 1 ms | 10 ms | 1 ms | 1 ms | 1 ms | 1 ms | 1 ms | 10 ms | 1 ms | - | - | 1 ms | 1 ms | 1 ms |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **STATE_SYMBOL_SYNC** | - | - | 10 ms | - | 10 ms | - | 2 ms | - | - | - | - | - | 2 ms | - |
 | **STATE_BIT_SYNC** | 20 ms | - | 20 ms | - | 20 ms | 20 ms | - | - | - | 8 ms | - | - | 4 ms | 20 ms |
 | **STATE_SUBFRAME_SYNC** | 6 s | - | 6 s | - | - | 6 s | - | - | 100 ms | - | - | 100 ms | - | 6 s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **STATE_TOW_DECODED** | 1 week | - | 1 week | - | - | 1 week | 1 week | - | - | 1 week | 1 week | - | 1 week | 1 week |
 | **STATE_TOW_KNOWN** | 1 week | 1 week | 1 week | 1 week | - | 1 week | 1 week | 1 week | 1 week | 1 week | 1 week | 1 week | 1 week | 1 week |
 | **STATE_GLO_STRING_SYNC** | - | - | - | - | 2 s | - | - | - | - | - | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **STATE_GLO_TOD_DECODED** | - | - | - | - | 1 day | - | - | - | - | - | - | - | - | - |
 | **STATE_GLO_TOD_KNOWN** | - | - | - | - | 1 day | - | - | - | - | - | - | - | - | - |
 | **STATE_BDS_D2_BIT_SYNC** | - | - | - | - | - | - | 2 ms | - | - | - | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **STATE_BDS_D2_SUBFRAME_SYNC** | - | - | - | - | - | - | 600 ms | - | - | - | - | - | - | - |
 | **STATE_GAL_E1BC_CODE_LOCK** | - | - | - | - | - | - | - | - | - | 4 ms | 4 ms | - | - | - |
 | **STATE_GAL_E1C_2ND_CODE_LOCK** | - | - | - | - | - | - | - | - | - | - | 100 ms | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **STATE_2ND_CODE_LOCK** | - | 18000 ms | 10 ms | 20 ms | - | - | - | 18000 ms | 100 ms | - | - | 100 ms | - | - |
 | **STATE_GAL_E1B_PAGE_SYNC** | - | - | - | - | - | - | - | - | - | 2 s | - | - | - | - |
 | **STATE_SBAS_SYNC** | - | - | - | - | - | - | - | - | - | - | - | - | 1 s | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Note: TOW Known refers to the case where TOW is possibly not decoded over the air but has been determined from other sources. If TOW decoded is set then TOW Known must also be set.
 

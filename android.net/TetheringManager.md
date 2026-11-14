@@ -7,6 +7,7 @@ open class TetheringManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.TetheringManager](https://developer.android.com/reference/kotlin/android/net/TetheringManager#) |
 
 This class provides the APIs to control the tethering service.
@@ -20,6 +21,7 @@ The primary responsibilities of this class are to provide the APIs for applicati
 | abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback` Callback for use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)` to find out whether tethering succeeded. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback` Callback for use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#stopTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StopTetheringCallback)` to find out whether stop tethering succeeded. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback` Callback for use with registerTetheringEventCallback to find out tethering upstream status. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest` Use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)` to specify additional parameters when starting tethering. |
 
 | Constants ||
@@ -27,30 +29,38 @@ The primary responsibilities of this class are to provide the APIs for applicati
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#CONNECTIVITY_SCOPE_GLOBAL:kotlin.Int` Indicates that this tethering connection will provide connectivity beyond this device (e.g., global Internet access). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHERING_WIFI:kotlin.Int` Wifi tethering type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_DHCPSERVER_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_DISABLE_FORWARDING_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_DUPLICATE_REQUEST:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_ENABLE_FORWARDING_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_ENTITLEMENT_UNKNOWN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_IFACE_CFG_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_INTERNAL_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_NO_ACCESS_TETHERING_PERMISSION:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_NO_CHANGE_TETHERING_PERMISSION:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_NO_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_PROVISIONING_FAILED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_SERVICE_UNAVAIL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_TETHER_IFACE_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNAVAIL_IFACE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNKNOWN_IFACE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNKNOWN_REQUEST:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNKNOWN_TYPE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNSUPPORTED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHER_ERROR_UNTETHER_IFACE_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#registerTetheringEventCallback(java.util.concurrent.Executor,%20android.net.TetheringManager.TetheringEventCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback)` Start listening to tethering change events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)(request: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback)` Starts tethering and runs tether provisioning for the given type if needed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#stopTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StopTetheringCallback)(request: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback)` Stops tethering for the given request. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#unregisterTetheringEventCallback(android.net.TetheringManager.TetheringEventCallback)(callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback)` Remove tethering event callback previously registered with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#registerTetheringEventCallback(java.util.concurrent.Executor,%20android.net.TetheringManager.TetheringEventCallback)`. |
 
 | Protected methods ||
@@ -317,6 +327,7 @@ Starts tethering and runs tether provisioning for the given type if needed. If p
 | `request` | [TetheringManager.TetheringRequest](https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest): a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest` which can specify the preferred configuration. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to specify the thread upon which the callback of TetheringRequest will be invoked. This value cannot be `null`. |
 | `callback` | [TetheringManager.StartTetheringCallback](https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback): A callback that will be called to indicate the success status of the tethering start request. This value cannot be `null`. |
+| --- | --- |
 
 ### stopTethering
 
@@ -337,6 +348,7 @@ Stops tethering for the given request. Operation will fail with `https://develop
 | `request` | [TetheringManager.TetheringRequest](https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest): This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. |
 | `callback` | [TetheringManager.StopTetheringCallback](https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback): This value cannot be `null`. |
+| --- | --- |
 
 ### unregisterTetheringEventCallback
 

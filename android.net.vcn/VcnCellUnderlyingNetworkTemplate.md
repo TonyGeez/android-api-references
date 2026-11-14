@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # VcnCellUnderlyingNetworkTemplate
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class VcnCellUnderlyingNetworkTemplate : VcnUnderlyingNetworkTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) ||
 | | ↳ | [android.net.vcn.VcnCellUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#) |
 
@@ -33,15 +35,19 @@ See [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotli
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCbs](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getCbs())`()` Returns the matching criteria for CBS networks. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDun](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getDun())`()` Returns the matching criteria for DUN networks. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIms](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getIms())`()` Returns the matching criteria for IMS networks. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInternet](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getInternet())`()` Returns the matching criteria for INTERNET networks. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMms](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getMms())`()` Returns the matching criteria for MMS networks. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getOperatorPlmnIds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getOperatorPlmnIds())`()` Retrieve the matching operator PLMN IDs, or an empty set if any PLMN ID is acceptable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpportunistic](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getOpportunistic())`()` Return the matching criteria for opportunistic cellular subscriptions. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRcs](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getRcs())`()` Returns the matching criteria for RCS networks. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoaming](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getRoaming())`()` Return the matching criteria for roaming networks. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getSimSpecificCarrierIds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getSimSpecificCarrierIds())`()` Retrieve the matching sim specific carrier IDs, or an empty set if any sim specific carrier ID is acceptable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#hashCode())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

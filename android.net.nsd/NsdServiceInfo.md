@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # NsdServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class NsdServiceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.nsd.NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#) |
 
 A class representing service information for network service discovery
@@ -30,24 +32,31 @@ A class representing service information for network service discovery
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#describeContents())`()` Implement the Parcelable interface |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getAttributes](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getAttributes())`()` Retrieve attributes as a map of String keys to byte\[\] values. |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [getHost](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getHost())`()` Get the host address. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\> | [getHostAddresses](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getHostAddresses())`()` Get the host addresses. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostname](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getHostname())`()` Get the hostname. |
 | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)? | [getNetwork](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getNetwork())`()` Get the network where the service can be found. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getPort())`()` Get port number. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceName](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getServiceName())`()` Get the service name |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceType](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getServiceType())`()` Get the service type |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSubtypes](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#getSubtypes())`()` Returns subtypes of this service instance. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAttribute](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#removeAttribute(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Remove an attribute by key |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setAttribute(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a service attribute as a key/value pair. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHost](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setHost(java.net.InetAddress))`(`s:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` Set the host address |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHostAddresses](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setHostAddresses(kotlin.collections.MutableList))`(`addresses:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!>`)` Set the host addresses. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNetwork](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setNetwork(android.net.Network))`(`network:` ` [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)?`)` Set the network where the service can be found. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPort](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setPort(kotlin.Int))`(`p:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set port number |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setServiceName](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setServiceName(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the service name |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setServiceType](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setServiceType(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the service type |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSubtypes](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#setSubtypes(kotlin.collections.MutableSet))`(`subtypes:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Sets the subtypes to be advertised for this service instance. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

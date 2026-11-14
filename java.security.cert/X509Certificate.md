@@ -7,6 +7,7 @@ abstract class X509Certificate : Certificate, X509Extension
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.cert.Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate) ||
 | | ↳ | [java.security.cert.X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#) |
 
@@ -70,24 +71,31 @@ try (InputStream inStream = new FileInputStream("fileName-of-cert")) {
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#checkValidity()()` Checks that the certificate is currently valid. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#checkValidity(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Checks that the given date is within the certificate's validity period. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getBasicConstraints()()` Gets the certificate constraints path length from the critical `BasicConstraints` extension, (OID = 2.5.29.19). |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getExtendedKeyUsage()()` Gets an unmodifiable list of Strings representing the OBJECT IDENTIFIERs of the `ExtKeyUsageSyntax` field of the extended key usage extension, (OID = 2.5.29.37). |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getIssuerAlternativeNames()()` Gets an immutable collection of issuer alternative names from the `IssuerAltName` extension, (OID = 2.5.29.18). |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getIssuerDN()()` **Denigrated** , replaced by [getIssuerX500Principal()](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getIssuerX500Principal()). |
+| --- | --- |
 | abstract [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getIssuerUniqueID()()` Gets the `issuerUniqueID` value from the certificate. |
 | open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getIssuerX500Principal()()` Returns the issuer (issuer distinguished name) value from the certificate as an `X500Principal`. |
 | abstract [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getKeyUsage()()` Gets a boolean array representing bits of the `KeyUsage` extension, (OID = 2.5.29.15). |
+| --- | --- |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getNotAfter()()` Gets the `notAfter` date from the validity period of the certificate. |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getNotBefore()()` Gets the `notBefore` date from the validity period of the certificate. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSerialNumber()()` Gets the `serialNumber` value from the certificate. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSigAlgName()()` Gets the signature algorithm name for the certificate signature algorithm. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSigAlgOID()()` Gets the signature algorithm OID string from the certificate. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSigAlgParams()()` Gets the DER-encoded signature algorithm parameters from this certificate's signature algorithm. |
+| --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSignature()()` Gets the `signature` value (the raw signature bits) from the certificate. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSubjectAlternativeNames()()` Gets an immutable collection of subject alternative names from the `SubjectAltName` extension, (OID = 2.5.29.17). |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSubjectDN()()` **Denigrated** , replaced by [getSubjectX500Principal()](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSubjectX500Principal()). |
+| --- | --- |
 | abstract [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSubjectUniqueID()()` Gets the `subjectUniqueID` value from the certificate. |
 | open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getSubjectX500Principal()()` Returns the subject (subject distinguished name) value from the certificate as an `X500Principal`. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getTBSCertificate()()` Gets the DER-encoded certificate information, the `tbsCertificate` from this certificate. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#getVersion()()` Gets the `version` (version number) value from the certificate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate#verify(java.security.PublicKey,%20java.security.Provider)(key: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#!, sigProvider: https://developer.android.com/reference/kotlin/java/security/Provider.html#!)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
 
@@ -205,6 +213,7 @@ ExtKeyUsageSyntax ::= SEQUENCE SIZE (1..MAX) OF KeyPurposeId
   
 ```
 Key purposes may be defined by any organization with a need. Object identifiers used to identify key purposes shall be assigned in accordance with IANA or ITU-T Rec. X.660 | ISO/IEC/ITU 9834-1.
+| --- | --- |
 
 <br />
 
@@ -682,5 +691,6 @@ Verifies that this certificate was signed using the private key that corresponds
 | `java.lang.UnsupportedOperationException` | if the method is not supported |
 | `java.security.InvalidKeyException` | on incorrect key. |
 | `java.security.NoSuchAlgorithmException` | on unsupported signature algorithms. |
+| --- | --- |
 | `java.security.SignatureException` | on signature errors. |
 | `java.security.cert.CertificateException` | on encoding errors. |

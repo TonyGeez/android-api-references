@@ -7,6 +7,7 @@ open class SubscribeDiscoverySession : DiscoverySession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.aware.DiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession) ||
 | | ↳ | [android.net.wifi.aware.SubscribeDiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeDiscoverySession#) |
 

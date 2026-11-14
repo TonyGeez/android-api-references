@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # HapticFeedbackRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/vibrator/HapticFeedbackRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class HapticFeedbackRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.vibrator.HapticFeedbackRequest](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#) |
 
 Encapsulates a request to perform a haptic feedback.
@@ -28,6 +30,7 @@ Use [Builder](https://developer.android.com/reference/kotlin/android/os/vibrator
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFeedbackConstant](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#getFeedbackConstant())`()` Returns the haptic feedback constant used to define the vibration effect to be played by this request. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#getFlags())`()` Returns the [HapticFeedbackConstants](https://developer.android.com/reference/kotlin/android/view/HapticFeedbackConstants.html#) flags for the haptic feedback request. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUsage](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#getUsage())`()` Returns the [VibrationAttributes](https://developer.android.com/reference/kotlin/android/os/VibrationAttributes.html#) usage for the haptic feedback request. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest#hashCode())`()` <br /> |
 

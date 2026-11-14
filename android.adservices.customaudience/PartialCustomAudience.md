@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 14](https://developer.android.com/sdkExtensions)
 # PartialCustomAudience
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience "View this page in Java") 
+| --- | --- |
 
 ```
 class PartialCustomAudience : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.customaudience.PartialCustomAudience](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#) |
 
 Represents a partial custom audience that is passed along to the buyer ad tech, when scheduling a delayed update for Custom Audience. Any field set by the caller cannot be overridden by the custom audience fetched from the`updateUri`
@@ -37,12 +39,15 @@ For more information about each field refer to [CustomAudience](https://develope
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getActivationTime](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#getActivationTime())`()` Reference [CustomAudience.getActivationTime()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getActivationTime())for details. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getExpirationTime](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#getExpirationTime())`()` Reference [CustomAudience.getExpirationTime()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getExpirationTime())for details. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#getName())`()` Reference [CustomAudience.getName()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getName())for details. |
 | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#)? | [getUserBiddingSignals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#getUserBiddingSignals())`()` Reference [CustomAudience.getUserBiddingSignals()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getUserBiddingSignals())for details. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/customaudience/PartialCustomAudience#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

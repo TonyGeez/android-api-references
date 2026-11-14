@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # Validators
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/Validators "View this page in Java") 
+| --- | --- |
 
 ```
 class Validators
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.Validators](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#) |
 
 Factory for [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) operations.
@@ -24,6 +26,7 @@ See [SaveInfo.Builder.setValidator(Validator)](https://developer.android.com/ref
 | static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [and](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#and(android.service.autofill.Validator))`(`vararg` `validators:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!`)` Creates a validator that is only valid if all`validators`are valid. |
 | static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [not](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#not(android.service.autofill.Validator))`(`validator:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)`)` Creates a validator that is valid when`validator`is not, and vice versa. |
 | static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [or](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#or(android.service.autofill.Validator))`(`vararg` `validators:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!`)` Creates a validator that is valid if any of the`validators`is valid. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # SystemUpdateInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/admin/SystemUpdateInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SystemUpdateInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.SystemUpdateInfo](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#) |
 
 A class containing information about a pending system update.
@@ -22,6 +24,7 @@ A class containing information about a pending system update.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_PATCH_STATE_FALSE](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#SECURITY_PATCH_STATE_FALSE:kotlin.Int) Represents the system update is not a security patch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_PATCH_STATE_TRUE](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#SECURITY_PATCH_STATE_TRUE:kotlin.Int) Represents the system update is a security patch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_PATCH_STATE_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#SECURITY_PATCH_STATE_UNKNOWN:kotlin.Int) Represents it is unknown whether the system update is a security patch. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,9 +35,11 @@ A class containing information about a pending system update.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getReceivedTime](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#getReceivedTime())`()` Gets time when the update was first available in milliseconds since midnight, January 1, 1970 UTC. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityPatchState](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#getSecurityPatchState())`()` Gets whether the update is a security patch. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdateInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

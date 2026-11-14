@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # ETC1Util
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/ETC1Util "View this page in Java") 
+| --- | --- |
 
 ```
 open class ETC1Util
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.ETC1Util](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#) |
 
 Utility methods for using ETC1 compressed textures.
@@ -30,9 +32,11 @@ Utility methods for using ETC1 compressed textures.
 | openstatic [ETC1Util.ETC1Texture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util.ETC1Texture)! | [compressTexture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#compressTexture(java.nio.Buffer,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pixelSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Helper function that compresses an image into an ETC1Texture. |
 | openstatic [ETC1Util.ETC1Texture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util.ETC1Texture)! | [createTexture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#createTexture(java.io.InputStream))`(`input:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Create a new ETC1Texture from an input stream containing a PKM formatted compressed texture. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isETC1Supported](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#isETC1Supported())`()` Check if ETC1 texture compression is supported by the active OpenGL ES context. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#loadTexture(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.opengl.ETC1Util.ETC1Texture))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `texture:` ` [ETC1Util.ETC1Texture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util.ETC1Texture)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#loadTexture(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.io.InputStream))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `input:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTexture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util#writeTexture(android.opengl.ETC1Util.ETC1Texture,%20java.io.OutputStream))`(`texture:` ` [ETC1Util.ETC1Texture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util.ETC1Texture)!`, `output:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Helper function that writes an ETC1Texture to an output stream formatted as a PKM file. |
+| --- | --- |
 
 ## Public constructors
 
@@ -65,6 +69,7 @@ Helper function that compresses an image into an ETC1Texture.
 | `input` | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#)!:a native order direct buffer containing the image data |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the width of the image in pixels |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the height of the image in pixels |
+| --- | --- |
 | `pixelSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size of a pixel in bytes (2 or 3) |
 | `stride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the width of a line of the image in bytes |
 
@@ -130,9 +135,11 @@ Convenience method to load an ETC1 texture whether or not the active OpenGL cont
 | `target` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the texture target. |
 | `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the texture level |
 | `border` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the border size. Typically 0. |
+| --- | --- |
 | `fallbackFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the format to use if ETC1 texture compression is not supported. Must be GL_RGB. |
 | `fallbackType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type to use if ETC1 texture compression is not supported. Can be either GL_UNSIGNED_SHORT_5_6_5, which implies 16-bits-per-pixel, or GL_UNSIGNED_BYTE, which implies 24-bits-per-pixel. |
 | `texture` | [ETC1Util.ETC1Texture](https://developer.android.com/reference/kotlin/android/opengl/ETC1Util.ETC1Texture)!:the ETC1 to load. |
+| --- | --- |
 
 ### loadTexture
 
@@ -156,9 +163,11 @@ Convenience method to load an ETC1 texture whether or not the active OpenGL cont
 | `target` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the texture target. |
 | `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the texture level |
 | `border` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the border size. Typically 0. |
+| --- | --- |
 | `fallbackFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the format to use if ETC1 texture compression is not supported. Must be GL_RGB. |
 | `fallbackType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type to use if ETC1 texture compression is not supported. Can be either GL_UNSIGNED_SHORT_5_6_5, which implies 16-bits-per-pixel, or GL_UNSIGNED_BYTE, which implies 24-bits-per-pixel. |
 | `input` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream containing an ETC1 texture in PKM format. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|---|

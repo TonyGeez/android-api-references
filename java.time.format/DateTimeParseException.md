@@ -9,9 +9,11 @@ open class DateTimeParseException : DateTimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.time.DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException.html#) ||
 | | | | | ↳ | [java.time.format.DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException#) |
 
@@ -51,6 +53,7 @@ Constructs a new exception with the specified message.
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the message to use for this exception, may be null |
 | `parsedData` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the parsed text, should not be null |
 | `errorIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index in the parsed string that was invalid, should be a valid index |
+| --- | --- |
 
 ### DateTimeParseException
 
@@ -71,6 +74,7 @@ Constructs a new exception with the specified message and cause.
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the message to use for this exception, may be null |
 | `parsedData` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the parsed text, should not be null |
 | `errorIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index in the parsed string that was invalid, should be a valid index |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause exception, may be null |
 
 ## Public methods

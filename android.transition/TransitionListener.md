@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # TransitionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/Transition.TransitionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TransitionListener
@@ -13,6 +14,7 @@ interface TransitionListener
 | [android.transition.Transition.TransitionListener](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#) |
 
 | Known Direct Subclasses [TransitionListenerAdapter](https://developer.android.com/reference/kotlin/android/transition/TransitionListenerAdapter) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [TransitionListenerAdapter](https://developer.android.com/reference/kotlin/android/transition/TransitionListenerAdapter) | This adapter class provides empty implementations of the methods from . | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A transition listener receives notifications from a transition. Notifications indicate transition lifecycle events.
 
@@ -23,6 +25,7 @@ A transition listener receives notifications from a transition. Notifications in
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionCancel](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#onTransitionCancel(android.transition.Transition))`(`transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`)` Notification about the cancellation of the transition. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionEnd](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#onTransitionEnd(android.transition.Transition))`(`transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`)` Notification about the end of the transition. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionPause](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#onTransitionPause(android.transition.Transition))`(`transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`)` Notification when a transition is paused. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionResume](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#onTransitionResume(android.transition.Transition))`(`transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`)` Notification when a transition is resumed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionStart](https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener#onTransitionStart(android.transition.Transition))`(`transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`)` Notification about the start of the transition. |
 

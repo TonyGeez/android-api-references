@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # VolumeShaper
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/VolumeShaper "View this page in Java") 
+| --- | --- |
 
 ```
 class VolumeShaper : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.VolumeShaper](https://developer.android.com/reference/kotlin/android/media/VolumeShaper#) |
 
 The`VolumeShaper`class is used to automatically control audio volume during media playback, allowing simple implementation of transition effects and ducking. It is created from implementations of`VolumeAutomation`, such as`MediaPlayer`and`AudioTrack`(referred to as "players" below), by [MediaPlayer.createVolumeShaper](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#createVolumeShaper(android.media.VolumeShaper.Configuration))or [AudioTrack.createVolumeShaper](https://developer.android.com/reference/kotlin/android/media/AudioTrack#createVolumeShaper(android.media.VolumeShaper.Configuration)). A`VolumeShaper`is intended for short volume changes. If the audio output sink changes during a`VolumeShaper`transition, the precise curve position may be lost, and the`VolumeShaper`may advance to the end of the curve for the new audio output sink. The`VolumeShaper`appears as an additional scaling on the audio output, and adjusts independently of track or stream volume controls.
@@ -27,6 +29,7 @@ The`VolumeShaper`class is used to automatically control audio volume during medi
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/media/VolumeShaper#apply(android.media.VolumeShaper.Operation))`(`operation:` ` [VolumeShaper.Operation](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Operation)`)` Applies the [VolumeShaper.Operation](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Operation) to the`VolumeShaper`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/VolumeShaper#close())`()` Releases the`VolumeShaper`object; any volume scale due to the`VolumeShaper`is removed after closing. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](https://developer.android.com/reference/kotlin/android/media/VolumeShaper#getVolume())`()` Returns the current volume scale attributable to the`VolumeShaper`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replace](https://developer.android.com/reference/kotlin/android/media/VolumeShaper#replace(android.media.VolumeShaper.Configuration,%20android.media.VolumeShaper.Operation,%20kotlin.Boolean))`(`configuration:` ` [VolumeShaper.Configuration](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Configuration)`, `operation:` ` [VolumeShaper.Operation](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Operation)`, `join:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Replaces the current`VolumeShaper``configuration`with a new`configuration`. |
 
 | Protected methods ||
@@ -104,6 +107,7 @@ Replaces the current`VolumeShaper``configuration`with a new`configuration`. This
 | `configuration` | [VolumeShaper.Configuration](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Configuration):the new`configuration`to use. This value cannot be`null`. |
 | `operation` | [VolumeShaper.Operation](https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Operation):the`operation`to apply to the`VolumeShaper`This value cannot be`null`. |
 | `join` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, match the start volume of the new`configuration`to the current volume of the existing`VolumeShaper`, to avoid discontinuity. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------|

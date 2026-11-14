@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WallpaperInstance
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/wallpaper/WallpaperInstance "View this page in Java")
+| --- | --- |
 
 ```
 class WallpaperInstance : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.wallpaper.WallpaperInstance](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#) |
 
 Describes a wallpaper that has been set as a current wallpaper.
@@ -36,9 +38,11 @@ specified in the description
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#getDescription()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#getId()()` See `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getId()` for rules about id uniqueness. |
 | [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo.html#)? | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#getInfo()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperInstance#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

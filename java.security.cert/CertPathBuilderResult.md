@@ -11,6 +11,7 @@ interface CertPathBuilderResult : Cloneable
 | [java.security.cert.CertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderResult#) |
 
 | Known Direct Subclasses [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) | This class represents the successful result of the PKIX certification path builder algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A specification of the result of a certification path builder algorithm. All results returned by the [CertPathBuilder.build](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#build(java.security.cert.CertPathParameters))method must implement this interface.
 

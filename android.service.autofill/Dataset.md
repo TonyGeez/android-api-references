@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # Dataset
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/Dataset "View this page in Java") 
+| --- | --- |
 
 ```
 class Dataset : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.Dataset](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#) |
 
 A`Dataset`object represents a group of fields (key / value pairs) used to autofill parts of a screen.
@@ -65,6 +67,7 @@ Note: If user enters four or more characters, all datasets will be hidden
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|

@@ -7,6 +7,7 @@ class Arrays
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Arrays](https://developer.android.com/reference/kotlin/java/util/Arrays#) |
 
 This class contains various methods for manipulating arrays (such as sorting and searching). This class also contains a static factory that allows arrays to be viewed as lists.
@@ -24,216 +25,287 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#asList(java.util.Arrays.asList.T)(vararg a: T)` Returns a fixed-size list backed by the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.ByteArray,%20kotlin.Byte)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Searches the specified array of bytes for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Byte)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Searches a range of the specified array of bytes for the specified value using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.CharArray,%20kotlin.Char)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Searches the specified array of chars for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Char)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Searches a range of the specified array of chars for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.DoubleArray,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Searches the specified array of doubles for the specified value using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Searches a range of the specified array of doubles for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.FloatArray,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Searches the specified array of floats for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Searches a range of the specified array of floats for the specified value using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.IntArray,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the specified array of ints for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches a range of the specified array of ints for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` Searches a range of the specified array for the specified object using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.Array,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` Searches the specified array for the specified object using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Searches a range of the specified array of longs for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.LongArray,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Searches the specified array of longs for the specified value using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Short)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Searches a range of the specified array of shorts for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.ShortArray,%20kotlin.Short)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Searches the specified array of shorts for the specified value using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Arrays.binarySearch.T,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: T, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Searches a range of the specified array for the specified object using the binary search algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#binarySearch(kotlin.Array,%20java.util.Arrays.binarySearch.T,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, key: T, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Searches the specified array for the specified object using the binary search algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.BooleanArray,%20kotlin.BooleanArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Compares two `boolean` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `boolean` arrays lexicographically over the specified ranges. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.ByteArray,%20kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Compares two `byte` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `byte` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.CharArray,%20kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Compares two `char` arrays lexicographically. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `char` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.DoubleArray,%20kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Compares two `double` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `double` arrays lexicographically over the specified ranges. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.FloatArray,%20kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Compares two `float` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `float` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `int` arrays lexicographically over the specified ranges. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.IntArray,%20kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Compares two `int` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `long` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.LongArray,%20kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Compares two `long` arrays lexicographically. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `short` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.ShortArray,%20kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Compares two `short` arrays lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `Object` arrays lexicographically over the specified ranges. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Compares two `Object` arrays lexicographically over the specified ranges. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.Array,%20kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?)` Compares two `Object` arrays, within comparable elements, lexicographically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compare(kotlin.Array,%20kotlin.Array,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Compares two `Object` arrays lexicographically using a specified comparator. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.ByteArray,%20kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Compares two `byte` arrays lexicographically, numerically treating elements as unsigned. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `byte` arrays lexicographically over the specified ranges, numerically treating elements as unsigned. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `int` arrays lexicographically over the specified ranges, numerically treating elements as unsigned. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.IntArray,%20kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Compares two `int` arrays lexicographically, numerically treating elements as unsigned. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `long` arrays lexicographically over the specified ranges, numerically treating elements as unsigned. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.LongArray,%20kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Compares two `long` arrays lexicographically, numerically treating elements as unsigned. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two `short` arrays lexicographically over the specified ranges, numerically treating elements as unsigned. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#compareUnsigned(kotlin.ShortArray,%20kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Compares two `short` arrays lexicographically, numerically treating elements as unsigned. |
 | static [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.BooleanArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with `false` (if necessary) so the copy has the specified length. |
+| --- | --- |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.ByteArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
 | static [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.CharArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with null characters (if necessary) so the copy has the specified length. |
 | static [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.DoubleArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
+| --- | --- |
 | static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.FloatArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.IntArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
 | static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.LongArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
+| --- | --- |
 | static [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.ShortArray,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with zeros (if necessary) so the copy has the specified length. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.Array,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified array, truncating or padding with nulls (if necessary) so the copy has the specified length. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOf(kotlin.Array,%20kotlin.Int,%20java.lang.Class)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<U>, newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newType: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>!>)` Copies the specified array, truncating or padding with nulls (if necessary) so the copy has the specified length. |
+| --- | --- |
 | static [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
+| --- | --- |
 | static [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
+| --- | --- |
 | static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.Array,%20kotlin.Int,%20kotlin.Int)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies the specified range of the specified array into a new array. |
+| --- | --- |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#copyOfRange(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.lang.Class)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<U>, from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, to: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newType: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>!>)` Copies the specified range of the specified array into a new array. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#deepEquals(kotlin.Array,%20kotlin.Array)(a1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns `true` if the two specified arrays are *deeply equal* to one another. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#deepHashCode(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns a hash code based on the "deep contents" of the specified array. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#deepToString(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns a string representation of the "deep contents" of the specified array. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.BooleanArray,%20kotlin.BooleanArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Returns `true` if the two specified arrays of booleans are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of booleans, over the specified ranges, are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.ByteArray,%20kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Returns `true` if the two specified arrays of bytes are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of bytes, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.CharArray,%20kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Returns `true` if the two specified arrays of chars are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of chars, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.DoubleArray,%20kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Returns `true` if the two specified arrays of doubles are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of doubles, over the specified ranges, are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.FloatArray,%20kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Returns `true` if the two specified arrays of floats are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of floats, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of ints, over the specified ranges, are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.IntArray,%20kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Returns `true` if the two specified arrays of ints are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of Objects, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.Array,%20kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns `true` if the two specified arrays of Objects are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of longs, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.LongArray,%20kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Returns `true` if the two specified arrays of longs are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two specified arrays of shorts, over the specified ranges, are *equal* to one another. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.ShortArray,%20kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Returns `true` if the two specified arrays of shorts are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Returns true if the two specified arrays of Objects, over the specified ranges, are *equal* to one another. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#equals(kotlin.Array,%20kotlin.Array,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, a2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Returns `true` if the two specified arrays of Objects are *equal* to one another. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.BooleanArray,%20kotlin.Boolean)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Assigns the specified boolean value to each element of the specified array of booleans. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Assigns the specified boolean value to each element of the specified range of the specified array of booleans. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.ByteArray,%20kotlin.Byte)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Assigns the specified byte value to each element of the specified array of bytes. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Byte)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Assigns the specified byte value to each element of the specified range of the specified array of bytes. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.CharArray,%20kotlin.Char)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Assigns the specified char value to each element of the specified array of chars. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Char)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Assigns the specified char value to each element of the specified range of the specified array of chars. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.DoubleArray,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Assigns the specified double value to each element of the specified array of doubles. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Assigns the specified double value to each element of the specified range of the specified array of doubles. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.FloatArray,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Assigns the specified float value to each element of the specified array of floats. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Assigns the specified float value to each element of the specified range of the specified array of floats. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.IntArray,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Assigns the specified int value to each element of the specified array of ints. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Assigns the specified int value to each element of the specified range of the specified array of ints. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Assigns the specified Object reference to each element of the specified range of the specified array of Objects. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.Array,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Assigns the specified Object reference to each element of the specified array of Objects. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Assigns the specified long value to each element of the specified range of the specified array of longs. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.LongArray,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Assigns the specified long value to each element of the specified array of longs. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Short)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Assigns the specified short value to each element of the specified range of the specified array of shorts. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#fill(kotlin.ShortArray,%20kotlin.Short)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Assigns the specified short value to each element of the specified array of shorts. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.BooleanArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Returns a hash code based on the contents of the specified array. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Returns a hash code based on the contents of the specified array. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Returns a hash code based on the contents of the specified array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Returns a hash code based on the contents of the specified array. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.BooleanArray,%20kotlin.BooleanArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)` Finds and returns the index of the first mismatch between two `boolean` arrays, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.BooleanArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `boolean` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.ByteArray,%20kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Finds and returns the index of the first mismatch between two `byte` arrays, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `byte` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.CharArray,%20kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)` Finds and returns the index of the first mismatch between two `char` arrays, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `char` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.DoubleArray,%20kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` Finds and returns the index of the first mismatch between two `double` arrays, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `double` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.FloatArray,%20kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Finds and returns the index of the first mismatch between two `float` arrays, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `float` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `int` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.IntArray,%20kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Finds and returns the index of the first mismatch between two `int` arrays, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `Object` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.Array,%20kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` Finds and returns the index of the first mismatch between two `Object` arrays, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `long` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.LongArray,%20kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Finds and returns the index of the first mismatch between two `long` arrays, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds and returns the relative index of the first mismatch between two `short` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.ShortArray,%20kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)` Finds and returns the index of the first mismatch between two `short` arrays, otherwise return -1 if no mismatch is found. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, aFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, bFromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bToIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Finds and returns the relative index of the first mismatch between two `Object` arrays over the specified ranges, otherwise return -1 if no mismatch is found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#mismatch(kotlin.Array,%20kotlin.Array,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` Finds and returns the index of the first mismatch between two `Object` arrays, otherwise return -1 if no mismatch is found. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20java.util.function.DoubleBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator)` Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.DoubleArray,%20java.util.function.DoubleBinaryOperator)` for the given subrange of the array. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.DoubleArray,%20java.util.function.DoubleBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator)` Cumulates, in parallel, each element of the given array in place, using the supplied function. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20java.util.function.IntBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator)` Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.IntArray,%20java.util.function.IntBinaryOperator)` for the given subrange of the array. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.IntArray,%20java.util.function.IntBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator)` Cumulates, in parallel, each element of the given array in place, using the supplied function. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20java.util.function.LongBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator)` Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.LongArray,%20java.util.function.LongBinaryOperator)` for the given subrange of the array. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.LongArray,%20java.util.function.LongBinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator)` Cumulates, in parallel, each element of the given array in place, using the supplied function. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.function.BinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator<T>)` Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.Array,%20java.util.function.BinaryOperator)` for the given subrange of the array. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelPrefix(kotlin.Array,%20java.util.function.BinaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator<T>)` Cumulates, in parallel, each element of the given array in place, using the supplied function. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSetAll(kotlin.DoubleArray,%20java.util.function.IntToDoubleFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntToDoubleFunction)` Set all elements of the specified array, in parallel, using the provided generator function to compute each element. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSetAll(kotlin.IntArray,%20java.util.function.IntUnaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator)` Set all elements of the specified array, in parallel, using the provided generator function to compute each element. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSetAll(kotlin.LongArray,%20java.util.function.IntToLongFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntToLongFunction)` Set all elements of the specified array, in parallel, using the provided generator function to compute each element. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSetAll(kotlin.Array,%20java.util.function.IntFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, generator: https://developer.android.com/reference/kotlin/java/util/function/IntFunction<out T>)` Set all elements of the specified array, in parallel, using the provided generator function to compute each element. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Sorts the specified array of objects into ascending order, according to the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.Array,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the specified array of objects into ascending order, according to the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Sorts the specified range of the specified array of objects according to the order induced by the specified comparator. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#parallelSort(kotlin.Array,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, cmp: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Sorts the specified array of objects according to the order induced by the specified comparator. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#setAll(kotlin.DoubleArray,%20java.util.function.IntToDoubleFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntToDoubleFunction)` Set all elements of the specified array, using the provided generator function to compute each element. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#setAll(kotlin.IntArray,%20java.util.function.IntUnaryOperator)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator)` Set all elements of the specified array, using the provided generator function to compute each element. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#setAll(kotlin.LongArray,%20java.util.function.IntToLongFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, generator: https://developer.android.com/reference/kotlin/java/util/function/IntToLongFunction)` Set all elements of the specified array, using the provided generator function to compute each element. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#setAll(kotlin.Array,%20java.util.function.IntFunction)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, generator: https://developer.android.com/reference/kotlin/java/util/function/IntFunction<out T>)` Set all elements of the specified array, using the provided generator function to compute each element. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` Sorts the specified array of objects into ascending order, according to the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.Array,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the specified array of objects into ascending order, according to the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Sorts the specified array into ascending numerical order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)` Sorts the specified array into ascending numerical order. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sorts the specified range of the array into ascending order. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Sorts the specified range of the specified array of objects according to the order induced by the specified comparator. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.Array,%20java.util.Comparator)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>?)` Sorts the specified array of objects according to the order induced by the specified comparator. |
+| --- | --- |
 | static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.DoubleArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble` covering all of the specified array. |
 | static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble` covering the specified range of the specified array. |
 | static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.IntArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt` covering all of the specified array. |
+| --- | --- |
 | static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt` covering the specified range of the specified array. |
 | static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.LongArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong` covering all of the specified array. |
 | static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong) | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong` covering the specified range of the specified array. |
+| --- | --- |
 | static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.Array)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator` covering all of the specified array. |
 | static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#spliterator(kotlin.Array,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator` covering the specified range of the specified array. |
 | static [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.DoubleArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream` with the specified array as its source. |
+| --- | --- |
 | static [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream` with the specified range of the specified array as its source. |
 | static [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.IntArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/IntStream` with the specified array as its source. |
 | static [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/IntStream` with the specified range of the specified array as its source. |
+| --- | --- |
 | static [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.LongArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/LongStream` with the specified array as its source. |
 | static [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream) | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/LongStream` with the specified range of the specified array as its source. |
 | static [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.Array)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/Stream` with the specified array as its source. |
+| --- | --- |
 | static [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<T\> | `https://developer.android.com/reference/kotlin/java/util/Arrays#stream(kotlin.Array,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, startInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endExclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a sequential `https://developer.android.com/reference/kotlin/java/util/stream/Stream` with the specified range of the specified array as its source. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.BooleanArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Returns a string representation of the contents of the specified array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.ByteArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Returns a string representation of the contents of the specified array. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.CharArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Returns a string representation of the contents of the specified array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.DoubleArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Returns a string representation of the contents of the specified array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.FloatArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Returns a string representation of the contents of the specified array. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.IntArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Returns a string representation of the contents of the specified array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Returns a string representation of the contents of the specified array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.LongArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Returns a string representation of the contents of the specified array. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Arrays#toString(kotlin.ShortArray)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Returns a string representation of the contents of the specified array. |
 
 ## Public methods
@@ -307,6 +379,7 @@ Searches a range of the specified array of bytes for the specified value using t
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html): the value to be searched for |
 
 | Return ||
@@ -360,6 +433,7 @@ Searches a range of the specified array of chars for the specified value using t
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html): the value to be searched for |
 
 | Return ||
@@ -413,6 +487,7 @@ Searches a range of the specified array of doubles for the specified value using
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): the value to be searched for |
 
 | Return ||
@@ -466,6 +541,7 @@ Searches a range of the specified array of floats for the specified value using 
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the value to be searched for |
 
 | Return ||
@@ -519,6 +595,7 @@ Searches a range of the specified array of ints for the specified value using th
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value to be searched for |
 
 | Return ||
@@ -550,6 +627,7 @@ Searches a range of the specified array for the specified object using the binar
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the value to be searched for |
 
 | Return ||
@@ -561,6 +639,7 @@ Searches a range of the specified array for the specified object using the binar
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0 or toIndex > a.length` |
 | `java.lang.ClassCastException` | if the search key is not comparable to the elements of the array within the specified range. |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
+| --- | --- |
 
 ### binarySearch
 
@@ -608,6 +687,7 @@ Searches a range of the specified array of longs for the specified value using t
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the value to be searched for |
 
 | Return ||
@@ -661,6 +741,7 @@ Searches a range of the specified array of shorts for the specified value using 
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
+| --- | --- |
 | `key` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html): the value to be searched for |
 
 | Return ||
@@ -715,9 +796,11 @@ Searches a range of the specified array for the specified object using the binar
 | `<T>` | the class of the objects in the array |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be searched |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be searched |
+| --- | --- |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be searched |
 | `key` | T: the value to be searched for |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator by which the array is ordered. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -728,6 +811,7 @@ Searches a range of the specified array for the specified object using the binar
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0 or toIndex > a.length` |
 | `java.lang.ClassCastException` | if the range contains elements that are not *mutually comparable* using the specified comparator, or the search key is not comparable to the elements in the range using this comparator. |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
+| --- | --- |
 
 ### binarySearch
 
@@ -748,6 +832,7 @@ Searches the specified array for the specified object using the binary search al
 | `<T>` | the class of the objects in the array |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be searched |
 | `key` | T: the value to be searched for |
+| --- | --- |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator by which the array is ordered. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
 
 | Return ||
@@ -823,9 +908,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -836,6 +923,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -902,9 +990,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -915,6 +1005,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -981,9 +1072,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -994,6 +1087,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1060,9 +1154,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1073,6 +1169,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1139,9 +1236,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1152,6 +1251,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1185,9 +1285,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1198,6 +1300,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1264,9 +1367,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1277,6 +1382,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1343,9 +1449,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1356,6 +1464,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1429,9 +1538,11 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `<T>` | the type of comparable array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
+| --- | --- |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
+| --- | --- |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
 
 | Return ||
@@ -1443,6 +1554,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1469,9 +1581,11 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
+| --- | --- |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
+| --- | --- |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
@@ -1484,6 +1598,7 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array or the comparator is `null` |
+| --- | --- |
 
 ### compare
 
@@ -1521,6 +1636,7 @@ The comparison is consistent with `https://developer.android.com/reference/kotli
 | `<T>` | the type of comparable array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: the first array to compare |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: the second array to compare |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1549,6 +1665,7 @@ A `null` array reference is considered lexicographically less than a non-`null` 
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: the first array to compare |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: the second array to compare |
+| --- | --- |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
 | Return ||
@@ -1609,9 +1726,11 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1622,6 +1741,7 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is null |
+| --- | --- |
 
 ### compareUnsigned
 
@@ -1647,9 +1767,11 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1660,6 +1782,7 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is null |
+| --- | --- |
 
 ### compareUnsigned
 
@@ -1711,9 +1834,11 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1724,6 +1849,7 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is null |
+| --- | --- |
 
 ### compareUnsigned
 
@@ -1775,9 +1901,11 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the first array to compare |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be compared |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be compared |
+| --- | --- |
 | `b` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the second array to compare |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be compared |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be compared |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1788,6 +1916,7 @@ If the two arrays, over the specified ranges, share a common prefix then the lex
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is null |
+| --- | --- |
 
 ### compareUnsigned
 
@@ -2049,6 +2178,7 @@ Copies the specified array, truncating or padding with nulls (if necessary) so t
 | `<T>` | the class of the objects in the array |
 | `original` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be copied |
 | `newLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the copy to be returned |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2078,6 +2208,7 @@ Copies the specified array, truncating or padding with nulls (if necessary) so t
 | `<T>` | the class of the objects in the returned array |
 | `<U>` | the class of the objects in the original array |
 | `original` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<U\>: the array to be copied |
+| --- | --- |
 | `newLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the copy to be returned |
 | `newType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>!\>: the class of the copy to be returned |
 
@@ -2090,6 +2221,7 @@ Copies the specified array, truncating or padding with nulls (if necessary) so t
 | `java.lang.ArrayStoreException` | if an element copied from `original` is not of a runtime type that can be stored in an array of class `newType` |
 | `java.lang.NegativeArraySizeException` | if `newLength` is negative |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2110,6 +2242,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2120,6 +2253,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2140,6 +2274,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2150,6 +2285,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2170,6 +2306,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2180,6 +2317,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2200,6 +2338,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2210,6 +2349,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2230,6 +2370,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2240,6 +2381,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2260,6 +2402,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2270,6 +2413,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2290,6 +2434,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2300,6 +2445,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2320,6 +2466,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `original` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2330,6 +2477,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2352,6 +2500,7 @@ The resulting array is of exactly the same class as the original array.
 | `<T>` | the class of the objects in the array |
 | `original` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array from which a range is to be copied |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
+| --- | --- |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
 
 | Return ||
@@ -2363,6 +2512,7 @@ The resulting array is of exactly the same class as the original array.
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.IllegalArgumentException` | if `from > to` |
 | `java.lang.NullPointerException` | if `original` is null |
+| --- | --- |
 
 ### copyOfRange
 
@@ -2384,9 +2534,11 @@ Copies the specified range of the specified array into a new array. The initial 
 | `<T>` | the class of the objects in the returned array |
 | `<U>` | the class of the objects in the original array |
 | `original` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<U\>: the array from which a range is to be copied |
+| --- | --- |
 | `from` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the initial index of the range to be copied, inclusive |
 | `to` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the final index of the range to be copied, exclusive. (This index may lie outside the array.) |
 | `newType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>!\>: the class of the copy to be returned |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2397,6 +2549,7 @@ Copies the specified range of the specified array into a new array. The initial 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `from < 0` or `from > original.length` |
 | `java.lang.ArrayStoreException` | if an element copied from `original` is not of a runtime type that can be stored in an array of class `newType`. |
 | `java.lang.IllegalArgumentException` | if `from > to` |
+| --- | --- |
 | `java.lang.NullPointerException` | if `original` is null |
 
 ### deepEquals
@@ -2541,9 +2694,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2554,6 +2709,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -2601,9 +2757,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2614,6 +2772,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -2661,9 +2820,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2674,6 +2835,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -2739,9 +2901,11 @@ Two doubles `d1` and `d2` are considered equal if:
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2752,6 +2916,7 @@ Two doubles `d1` and `d2` are considered equal if:
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 **See Also**
 
@@ -2821,9 +2986,11 @@ Two floats `f1` and `f2` are considered equal if:
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2834,6 +3001,7 @@ Two floats `f1` and `f2` are considered equal if:
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 **See Also**
 
@@ -2863,9 +3031,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2876,6 +3046,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -2925,9 +3096,11 @@ Two objects `e1` and `e2` are considered *equal* if `Objects.equals(e1, e2)`.
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2938,6 +3111,7 @@ Two objects `e1` and `e2` are considered *equal* if `Objects.equals(e1, e2)`.
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -2985,9 +3159,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2998,6 +3174,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -3045,9 +3222,11 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -3058,6 +3237,7 @@ Two arrays are considered equal if the number of elements covered by each range 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### equals
 
@@ -3108,9 +3288,11 @@ Two objects `e1` and `e2` are considered *equal* if, given the specified compara
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the first array to be tested for equality |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
+| --- | --- |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the second array to be tested for equality |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
+| --- | --- |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
@@ -3123,6 +3305,7 @@ Two objects `e1` and `e2` are considered *equal* if, given the specified compara
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array or the comparator is `null` |
+| --- | --- |
 
 ### equals
 
@@ -3147,6 +3330,7 @@ Two objects `e1` and `e2` are considered *equal* if, given the specified compara
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: one array to be tested for equality |
 | `a2` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: the other array to be tested for equality |
+| --- | --- |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
 | Return ||
@@ -3195,6 +3379,7 @@ Assigns the specified boolean value to each element of the specified range of th
 | `a` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3240,6 +3425,7 @@ Assigns the specified byte value to each element of the specified range of the s
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3285,6 +3471,7 @@ Assigns the specified char value to each element of the specified range of the s
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3330,6 +3517,7 @@ Assigns the specified double value to each element of the specified range of the
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3375,6 +3563,7 @@ Assigns the specified float value to each element of the specified range of the 
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3420,6 +3609,7 @@ Assigns the specified int value to each element of the specified range of the sp
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3447,6 +3637,7 @@ Assigns the specified Object reference to each element of the specified range of
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?: the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3454,6 +3645,7 @@ Assigns the specified Object reference to each element of the specified range of
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > a.length` |
 | `java.lang.ArrayStoreException` | if the specified value is not of a runtime type that can be stored in the specified array |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
+| --- | --- |
 
 ### fill
 
@@ -3497,6 +3689,7 @@ Assigns the specified long value to each element of the specified range of the s
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3542,6 +3735,7 @@ Assigns the specified short value to each element of the specified range of the 
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the array to be filled |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be filled with the specified value |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be filled with the specified value |
+| --- | --- |
 | `val` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html): the value to be stored in all elements of the array |
 
 | Exceptions ||
@@ -3845,9 +4039,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -3858,6 +4054,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -3951,9 +4148,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -3964,6 +4163,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4057,9 +4257,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4070,6 +4272,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4163,9 +4366,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4176,6 +4381,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4269,9 +4475,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4282,6 +4490,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4327,9 +4536,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4340,6 +4551,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4433,9 +4645,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4446,6 +4660,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4539,9 +4754,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4552,6 +4769,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4645,9 +4863,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
+| --- | --- |
 | `b` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -4658,6 +4878,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4753,9 +4974,11 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the first array to be tested for a mismatch |
 | `aFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the first array to be tested |
+| --- | --- |
 | `aToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the first array to be tested |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the second array to be tested for a mismatch |
 | `bFromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (inclusive) of the first element in the second array to be tested |
+| --- | --- |
 | `bToIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index (exclusive) of the last element in the second array to be tested |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
@@ -4768,6 +4991,7 @@ Two non-`null` arrays, `a` and `b` with specified ranges \[`aFromIndex`, `aToInd
 | `java.lang.ArrayIndexOutOfBoundsException` | if `aFromIndex < 0 or aToIndex > a.length` or if `bFromIndex < 0 or bToIndex > b.length` |
 | `java.lang.IllegalArgumentException` | if `aFromIndex > aToIndex` or if `bFromIndex > bToIndex` |
 | `java.lang.NullPointerException` | if either array or the comparator is `null` |
+| --- | --- |
 
 ### mismatch
 
@@ -4813,6 +5037,7 @@ Two non-`null` arrays, `a` and `b`, share a proper prefix if the following expre
 | `<T>` | the type of array elements |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the first array to be tested for a mismatch |
 | `b` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the second array to be tested for a mismatch |
+| --- | --- |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the comparator to compare array elements |
 
 | Return ||
@@ -4843,6 +5068,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `array` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive |
+| --- | --- |
 | `op` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator): a side-effect-free, associative function to perform the cumulation |
 
 | Exceptions ||
@@ -4850,6 +5076,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > array.length` |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
 | `java.lang.NullPointerException` | if the specified array or function is null |
+| --- | --- |
 
 ### parallelPrefix
 
@@ -4895,6 +5122,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `array` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive |
+| --- | --- |
 | `op` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator): a side-effect-free, associative function to perform the cumulation |
 
 | Exceptions ||
@@ -4902,6 +5130,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > array.length` |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
 | `java.lang.NullPointerException` | if the specified array or function is null |
+| --- | --- |
 
 ### parallelPrefix
 
@@ -4945,6 +5174,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `array` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive |
+| --- | --- |
 | `op` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator): a side-effect-free, associative function to perform the cumulation |
 
 | Exceptions ||
@@ -4952,6 +5182,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > array.length` |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
 | `java.lang.NullPointerException` | if the specified array or function is null |
+| --- | --- |
 
 ### parallelPrefix
 
@@ -4995,6 +5226,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `<T>` | the class of the objects in the array |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive |
+| --- | --- |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive |
 | `op` | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator)\<T\>: a side-effect-free, associative function to perform the cumulation |
 
@@ -5003,6 +5235,7 @@ Performs `https://developer.android.com/reference/kotlin/java/util/Arrays#parall
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > array.length` |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` |
 | `java.lang.NullPointerException` | if the specified array or function is null |
+| --- | --- |
 
 ### parallelPrefix
 
@@ -5022,6 +5255,7 @@ Cumulates, in parallel, each element of the given array in place, using the supp
 | `<T>` | the class of the objects in the array |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array, which is modified in-place by this method |
 | `op` | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator)\<T\>: a side-effect-free, associative function to perform the cumulation |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5119,6 +5353,7 @@ If the generator function throws an exception, an unchecked exception is thrown 
 | `<T>` | type of elements of the array |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: array to be initialized |
 | `generator` | [IntFunction](https://developer.android.com/reference/kotlin/java/util/function/IntFunction)\<out T\>: a function accepting an index and producing the desired value for that position |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5157,6 +5392,7 @@ Sorts the specified range of the array into ascending numerical order. The range
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5196,6 +5432,7 @@ Sorts the specified range of the array into ascending numerical order. The range
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5239,6 +5476,7 @@ The `<` relation does not provide a total order on all double values: `-0.0d == 
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5282,6 +5520,7 @@ The `<` relation does not provide a total order on all float values: `-0.0f == 0
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5321,6 +5560,7 @@ Sorts the specified range of the array into ascending numerical order. The range
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5360,6 +5600,7 @@ Sorts the specified range of the array into ascending numerical order. The range
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5399,6 +5640,7 @@ Sorts the specified range of the array into ascending numerical order. The range
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5448,6 +5690,7 @@ This sort is guaranteed to be *stable*: equal elements will not be reordered as 
 | `<T>` | the class of the objects to be sorted |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be sorted |
+| --- | --- |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be sorted |
 
 | Exceptions ||
@@ -5455,6 +5698,7 @@ This sort is guaranteed to be *stable*: equal elements will not be reordered as 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > a.length` |
 | `java.lang.ClassCastException` | if the array contains elements that are not *mutually comparable* (for example, strings and integers). |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` or (optional) if the natural ordering of the array elements is found to violate the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` contract |
+| --- | --- |
 
 ### parallelSort
 
@@ -5478,6 +5722,7 @@ This sort is guaranteed to be *stable*: equal elements will not be reordered as 
 | `<T>` | the class of the objects to be sorted |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be sorted |
+| --- | --- |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be sorted |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator to determine the order of the array. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
 
@@ -5486,6 +5731,7 @@ This sort is guaranteed to be *stable*: equal elements will not be reordered as 
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > a.length` |
 | `java.lang.ClassCastException` | if the array contains elements that are not *mutually comparable* (for example, strings and integers). |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` or (optional) if the natural ordering of the array elements is found to violate the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` contract |
+| --- | --- |
 
 ### parallelSort
 
@@ -5507,6 +5753,7 @@ This sort is guaranteed to be *stable*: equal elements will not be reordered as 
 | `<T>` | the class of the objects to be sorted |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be sorted |
 | `cmp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator to determine the order of the array. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5605,6 +5852,7 @@ If the generator function throws an exception, it is relayed to the caller and t
 | `<T>` | type of elements of the array |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: array to be initialized |
 | `generator` | [IntFunction](https://developer.android.com/reference/kotlin/java/util/function/IntFunction)\<out T\>: a function accepting an index and producing the desired value for that position |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5643,6 +5891,7 @@ Sorts the specified range of the array into ascending order. The range to be sor
 | `a` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5682,6 +5931,7 @@ Sorts the specified range of the array into ascending order. The range to be sor
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5725,6 +5975,7 @@ The `<` relation does not provide a total order on all double values: `-0.0d == 
 | `a` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5768,6 +6019,7 @@ The `<` relation does not provide a total order on all float values: `-0.0f == 0
 | `a` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5807,6 +6059,7 @@ Sorts the specified range of the array into ascending order. The range to be sor
 | `a` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5867,12 +6120,14 @@ The implementation was adapted from Tim Peters's list sort for Python ([TimSort]
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > a.length` |
 | `java.lang.ClassCastException` | if the array contains elements that are not *mutually comparable* (for example, strings and integers). |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` or (optional) if the natural ordering of the array elements is found to violate the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` contract |
+| --- | --- |
 
 ### sort
 
@@ -5907,6 +6162,7 @@ Sorts the specified range of the array into ascending order. The range to be sor
 | `a` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5946,6 +6202,7 @@ Sorts the specified range of the array into ascending order. The range to be sor
 | `a` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html): the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element, inclusive, to be sorted |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element, exclusive, to be sorted |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -5980,6 +6237,7 @@ The implementation was adapted from Tim Peters's list sort for Python ([TimSort]
 | `<T>` | the class of the objects to be sorted |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be sorted |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first element (inclusive) to be sorted |
+| --- | --- |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the last element (exclusive) to be sorted |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator to determine the order of the array. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
 
@@ -5988,6 +6246,7 @@ The implementation was adapted from Tim Peters's list sort for Python ([TimSort]
 | `java.lang.ArrayIndexOutOfBoundsException` | if `fromIndex < 0` or `toIndex > a.length` |
 | `java.lang.ClassCastException` | if the array contains elements that are not *mutually comparable* using the specified comparator. |
 | `java.lang.IllegalArgumentException` | if `fromIndex > toIndex` or (optional) if the comparator is found to violate the `https://developer.android.com/reference/kotlin/java/util/Comparator` contract |
+| --- | --- |
 
 ### sort
 
@@ -6015,6 +6274,7 @@ The implementation was adapted from Tim Peters's list sort for Python ([TimSort]
 | `<T>` | the class of the objects to be sorted |
 | `a` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array to be sorted |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>?: the comparator to determine the order of the array. A `null` value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -6062,6 +6322,7 @@ The spliterator reports `https://developer.android.com/reference/kotlin/java/uti
 | `array` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6112,6 +6373,7 @@ The spliterator reports `https://developer.android.com/reference/kotlin/java/uti
 | `array` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6162,6 +6424,7 @@ The spliterator reports `https://developer.android.com/reference/kotlin/java/uti
 | `array` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6213,6 +6476,7 @@ The spliterator reports `https://developer.android.com/reference/kotlin/java/uti
 | `<T>` | type of elements |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
+| --- | --- |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
 
 | Return ||
@@ -6260,6 +6524,7 @@ Returns a sequential `https://developer.android.com/reference/kotlin/java/util/s
 | `array` | [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6306,6 +6571,7 @@ Returns a sequential `https://developer.android.com/reference/kotlin/java/util/s
 | `array` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6352,6 +6618,7 @@ Returns a sequential `https://developer.android.com/reference/kotlin/java/util/s
 | `array` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -6399,6 +6666,7 @@ Returns a sequential `https://developer.android.com/reference/kotlin/java/util/s
 | `<T>` | the type of the array elements |
 | `array` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>: the array, assumed to be unmodified during use |
 | `startInclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the first index to cover, inclusive |
+| --- | --- |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index immediately past the last index to cover |
 
 | Return ||

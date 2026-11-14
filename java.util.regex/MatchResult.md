@@ -11,6 +11,7 @@ interface MatchResult
 | [java.util.regex.MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#) |
 
 | Known Direct Subclasses [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher) |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher) | An engine that performs match operations on a by interpreting a [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The result of a match operation.
 
@@ -23,9 +24,11 @@ This interface contains query methods used to determine the results of a match a
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#end())`()` Returns the offset after the last character matched. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#end(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the offset after the last character of the subsequence captured by the given group during this match. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#group())`()` Returns the input subsequence matched by the previous match. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#group(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the input subsequence captured by the given group during the previous match operation. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [groupCount](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#groupCount())`()` Returns the number of capturing groups in this match result's pattern. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#start())`()` Returns the start index of the match. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult#start(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the start index of the subsequence captured by the given group during this match. |
 
 ## Public methods

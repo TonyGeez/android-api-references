@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OnEditorActionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/TextView.OnEditorActionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnEditorActionListener
@@ -41,6 +42,7 @@ Called when an action is being performed.
 | `v` | [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView)!:The view that was clicked. |
 | `actionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Identifier of the action. This will be either the identifier you supplied, or [EditorInfo.IME_NULL](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_NULL:kotlin.Int) if being called due to the enter key being pressed. Starting from Android 14, the action identifier will also be included when triggered by an enter key if the input is constrained to a single line. |
 | `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!:If triggered by an enter key, this is the event; otherwise, this is null. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|

@@ -11,6 +11,7 @@ interface CertSelector : Cloneable
 | [java.security.cert.CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector#) |
 
 | Known Direct Subclasses [X509CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [X509CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector) | A`CertSelector`that selects`X509Certificates`that match all specified criteria. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A selector that defines a set of criteria for selecting`Certificate`s. Classes that implement this interface are often used to specify which`Certificate`s should be retrieved from a`CertStore`.
 

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # MbmsStreamingSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/MbmsStreamingSession "View this page in Java") 
+| --- | --- |
 
 ```
 open class MbmsStreamingSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#) |
 
 This class provides functionality for streaming media over MBMS.
@@ -22,6 +24,7 @@ This class provides functionality for streaming media over MBMS.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#close())`()` Terminates this instance. |
 | openstatic [MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#)! | [create](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#create(android.content.Context,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsStreamingSessionCallback))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback)`)` Create a new [MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#) using the system default data subscription ID. |
 | openstatic [MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#)? | [create](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsStreamingSessionCallback))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `callback:` ` [MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback)`)` Create a new [MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#) using the given subscription ID. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestUpdateStreamingServices](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#requestUpdateStreamingServices(kotlin.collections.MutableList))`(`serviceClassList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` An inspection API to retrieve the list of streaming media currently be advertised. |
 | open [StreamingService](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService)? | [startStreaming](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession#startStreaming(android.telephony.mbms.StreamingServiceInfo,%20java.util.concurrent.Executor,%20android.telephony.mbms.StreamingServiceCallback))`(`serviceInfo:` ` [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo)!`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [StreamingServiceCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback)!`)` Starts streaming a requested service, reporting status to the indicated callback. |
 
@@ -60,6 +63,7 @@ Create a new [MbmsStreamingSession](https://developer.android.com/reference/kotl
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):This value cannot be`null`. |
 | `callback` | [MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback):This value cannot be`null`. |
+| --- | --- |
 
 ### create
 
@@ -81,6 +85,7 @@ Create a new [MbmsStreamingSession](https://developer.android.com/reference/kotl
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) to use. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which you wish to execute callbacks. This value cannot be`null`. |
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The subscription ID to use. |
+| --- | --- |
 | `callback` | [MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback):A callback object on which you wish to receive results of asynchronous operations. This value cannot be`null`. |
 
 | Return ||
@@ -120,6 +125,7 @@ Starts streaming a requested service, reporting status to the indicated callback
 | `serviceInfo` | [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo)!:The information about the service to stream. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which you wish to execute callbacks for this stream. This value cannot be`null`. |
 | `callback` | [StreamingServiceCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback)!:A callback that'll be called when something about the stream changes. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

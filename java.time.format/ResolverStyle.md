@@ -9,10 +9,12 @@ class ResolverStyle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#)\> ||
 | | ↳ | [java.time.format.ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#) |
 
 | Known Direct Subclasses [ResolverStyle.LENIENT](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:LENIENT), [ResolverStyle.SMART](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:SMART), [ResolverStyle.STRICT](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:STRICT) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ResolverStyle.LENIENT](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:LENIENT) | Style to resolve dates and times leniently. | | [ResolverStyle.SMART](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:SMART) | Style to resolve dates and times in a smart, or intelligent, manner. | | [ResolverStyle.STRICT](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle#ENUM_VALUE:STRICT) | Style to resolve dates and times strictly. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of different ways to resolve dates and times.
 

@@ -6,15 +6,18 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # ReadMedicalResourcesRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadMedicalResourcesRequest "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ReadMedicalResourcesRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest#) |
 
 | Known Direct Subclasses [ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest), [ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest) |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------| | [ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest) | An initial read request with specified filters for android. | | [ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest) | A page read request with specified`pageToken`for android. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A base class to represent a read request for android.health.connect.HealthConnectManager#readMedicalResources.
 

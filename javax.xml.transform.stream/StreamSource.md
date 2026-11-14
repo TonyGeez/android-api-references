@@ -7,6 +7,7 @@ open class StreamSource : Source
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#) |
 
 Acts as an holder for a transformation Source in the form of a stream of XML markup.
@@ -34,12 +35,15 @@ Acts as an holder for a transformation Source in the form of a stream of XML mar
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getInputStream()()` Get the byte stream that was set with setByteStream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getPublicId()()` Get the public identifier that was set with setPublicId. |
 | open [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getReader()()` Get the character stream that was set with setReader. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getSystemId()()` Get the system identifier that was set with setSystemId. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setInputStream(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Set the byte stream to be used as input. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setPublicId(kotlin.String)(publicId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the public identifier for this Source. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setReader(java.io.Reader)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!)` Set the input to be a character reader. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setSystemId(java.io.File)(f: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Set the system ID from a File reference. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setSystemId(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the system identifier for this Source. |
+| --- | --- |
 
 ## Constants
 

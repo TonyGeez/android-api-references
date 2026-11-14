@@ -25,6 +25,7 @@ An application programmer will not normally call`SQLData`methods directly, and t
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLTypeName](https://developer.android.com/reference/kotlin/java/sql/SQLData#getSQLTypeName())`()` Returns the fully-qualified name of the SQL user-defined type that this object represents. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readSQL](https://developer.android.com/reference/kotlin/java/sql/SQLData#readSQL(java.sql.SQLInput,%20kotlin.String))`(`stream:` ` [SQLInput](https://developer.android.com/reference/kotlin/java/sql/SQLInput)!`, `typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Populates this object with data read from the database. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeSQL](https://developer.android.com/reference/kotlin/java/sql/SQLData#writeSQL(java.sql.SQLOutput))`(`stream:` ` [SQLOutput](https://developer.android.com/reference/kotlin/java/sql/SQLOutput)!`)` Writes this object to the given SQL data stream, converting it back to its SQL value in the data source. |
+| --- | --- |
 
 ## Public methods
 

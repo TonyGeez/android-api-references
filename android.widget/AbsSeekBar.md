@@ -7,9 +7,11 @@ abstract class AbsSeekBar : ProgressBar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.widget.ProgressBar](https://developer.android.com/reference/kotlin/android/widget/ProgressBar) ||
 | | | ↳ | [android.widget.AbsSeekBar](https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar), [SeekBar](https://developer.android.com/reference/kotlin/android/widget/SeekBar) [RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar) A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars.
 [SeekBar](https://developer.android.com/reference/kotlin/android/widget/SeekBar) A SeekBar is an extension of ProgressBar that adds a draggable thumb.
@@ -374,6 +376,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -490,6 +493,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1675,33 +1679,43 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getKeyProgressIncrement()()` Returns the amount of progress changed via the arrow keys. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getSplitTrack()()` Returns whether the track should be split by the thumb. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getThumb()()` Return the drawable used to represent the scroll thumb - the component that the user can drag back and forth indicating the current value by its position. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getThumbOffset()()` <br /> |
+| --- | --- |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getThumbTintBlendMode()()` Returns the blending mode used to apply the tint to the thumb drawable, if specified. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getThumbTintList()()` Returns the tint applied to the thumb drawable, if specified. |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getThumbTintMode()()` Returns the blending mode used to apply the tint to the thumb drawable, if specified. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getTickMark()()` <br /> |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getTickMarkTintBlendMode()()` Returns the blending mode used to apply the tint to the tick mark drawable, if specified. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getTickMarkTintList()()` Returns the tint applied to the tick mark drawable, if specified. |
+| --- | --- |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#getTickMarkTintMode()()` Returns the blending mode used to apply the tint to the tick mark drawable, if specified. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyDown(kotlin.Int,%20android.view.KeyEvent)`: perform press of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` is released, if the view is enabled and clickable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setKeyProgressIncrement(kotlin.Int)(increment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the amount of progress changed via the arrow keys. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setMax(kotlin.Int)(max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the upper range of the progress bar max. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setMin(kotlin.Int)(min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the lower range of the progress bar to min. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setSplitTrack(kotlin.Boolean)(splitTrack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether the track should be split by the thumb. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setSystemGestureExclusionRects(kotlin.collections.MutableList)(rects: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!>)` Sets a list of areas within this view's post-layout coordinate space where the system should not intercept touch or other pointing device gestures. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumb(android.graphics.drawable.Drawable)(thumb: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the thumb that will be drawn at the end of the progress meter within the SeekBar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbOffset(kotlin.Int)(thumbOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the thumb offset that allows the thumb to extend out of the range of the track. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbTintList(android.content.res.ColorStateList)`} to the thumb drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the thumb drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setThumbTintList(android.content.res.ColorStateList)`} to the thumb drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMark(android.graphics.drawable.Drawable)(tickMark: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the drawable displayed at each progress position, e. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMarkTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMarkTintList(android.content.res.ColorStateList)`} to the tick mark drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMarkTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the tick mark drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMarkTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#setTickMarkTintList(android.content.res.ColorStateList)`} to the tick mark drawable. |
 
 | Protected methods ||
@@ -1709,6 +1723,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar#verifyDrawable(android.graphics.drawable.Drawable)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
 
@@ -3483,6 +3498,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4849,6 +4865,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -8204,6 +8221,7 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |
 
 ### verifyDrawable

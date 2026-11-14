@@ -4,12 +4,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # ChooserTarget
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/chooser/ChooserTarget "View this page in Java")
+| --- | --- |
 
 ```
 class ChooserTarget : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserTarget](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#) |
 
 > [!CAUTION]
@@ -38,9 +40,11 @@ Creators of chooser targets should consult the relevant design guidelines for th
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getComponentName()()` Returns the ComponentName of the Activity that should be launched for this ChooserTarget. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIcon()()` Returns the icon representing this target for display to a user. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIntentExtras()()` Returns the Bundle of extras to be added to an intent launched to this target. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getScore()()` Returns the ranking score supplied by the creator of this ChooserTarget. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getTitle()()` Returns the title of this target for display to a user. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -78,6 +82,7 @@ Take care not to place custom `https://developer.android.com/reference/kotlin/an
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: title of this target that will be shown to a user |
 | `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)!: icon to represent this target |
 | `score` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): ranking score for this target between 0.0f and 1.0f, inclusive |
+| --- | --- |
 | `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!: Name of the component to be launched if this target is chosen |
 | `intentExtras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Bundle of extras to merge with the extras of the launched intent. This value may be `null`. |
 

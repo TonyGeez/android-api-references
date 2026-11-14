@@ -9,9 +9,11 @@ open class AssertionError : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||
 | | | ↳ | [java.lang.AssertionError](https://developer.android.com/reference/kotlin/java/lang/AssertionError#) |
+| --- | --- | --- | --- |
 
 Thrown to indicate that an assertion has failed.
 

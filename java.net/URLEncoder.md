@@ -7,6 +7,7 @@ open class URLEncoder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.URLEncoder](https://developer.android.com/reference/kotlin/java/net/URLEncoder#) |
 
 Utility class for HTML form encoding. This class contains static methods for converting a String to the `application/x-www-form-urlencoded` MIME format. For more information about HTML form encoding, consult the HTML [specification](http://www.w3.org/TR/html4/).
@@ -27,6 +28,7 @@ For example using UTF-8 as the encoding scheme the string "The string ü@foo-bar
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Translates a string into `x-www-form-urlencoded` format. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, enc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Translates a string into `application/x-www-form-urlencoded` format using a specific encoding scheme. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20java.nio.charset.Charset)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#!)` Translates a string into `application/x-www-form-urlencoded` format using a specific [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). |
+| --- | --- |
 
 ## Public methods
 

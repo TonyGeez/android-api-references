@@ -5,15 +5,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BackendBusyException
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/BackendBusyException "View this page in Java") 
+| --- | --- |
 
 ```
 open class BackendBusyException : ProviderException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.ProviderException](https://developer.android.com/reference/kotlin/java/security/ProviderException.html#) ||
 | | | | | ↳ | [android.security.keystore.BackendBusyException](https://developer.android.com/reference/kotlin/android/security/keystore/BackendBusyException#) |
 
@@ -82,6 +85,7 @@ Constructs a new`BackendBusyException`with the provided detail message and cause
 | `backOffHintMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Value is a non-negative duration in milliseconds. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html):This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

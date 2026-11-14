@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # NfcEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#) |
 
 Wraps information associated with any NFC event.
@@ -28,6 +30,7 @@ This wrapper object is used (instead of parameters in the callback) because it a
 | [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter)! | [nfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#nfcAdapter:android.nfc.NfcAdapter) The [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter) associated with the NFC event. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMajorVersion](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#peerLlcpMajorVersion:kotlin.Int) The major LLCP version number of the peer associated with the NFC event. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMinorVersion](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#peerLlcpMinorVersion:kotlin.Int) The minor LLCP version number of the peer associated with the NFC event. |
+| --- | --- |
 
 ## Properties
 

@@ -9,6 +9,7 @@ class Normalizer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.Normalizer](https://developer.android.com/reference/kotlin/java/text/Normalizer#) |
 
 This class provides the method`normalize`which transforms Unicode text into an equivalent composed or decomposed form, allowing for easier sorting and searching of text. The`normalize`method supports the standard normalization forms described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/).

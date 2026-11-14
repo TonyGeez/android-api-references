@@ -9,6 +9,7 @@ abstract class Schema
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema#) |
 
 Immutable in-memory representation of grammar.

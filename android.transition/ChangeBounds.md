@@ -3,12 +3,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # ChangeBounds
 
 Kotlin | [Java](https://developer.android.com/reference/android/transition/ChangeBounds "View this page in Java")
+| --- | --- |
 
 ```
 open class ChangeBounds : Transition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) ||
 | | ↳ | [android.transition.ChangeBounds](https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#) |
 
@@ -32,9 +34,11 @@ A ChangeBounds transition can be described in a resource file by using the tag `
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#captureEndValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the end scene for the properties that this transition monitors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)? | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#getResizeClip()()` Returns true when the ChangeBounds will resize by changing the clip bounds during the view animation or false when bounds are changed. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#getTransitionProperties()()` Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#setReparent(kotlin.Boolean)(reparent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Setting this flag tells ChangeBounds to track the before/after parent of every view using this transition. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds#setResizeClip(kotlin.Boolean)(resizeClip: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When `resizeClip` is true, ChangeBounds resizes the view using the clipBounds instead of changing the dimensions of the view during the animation. |
 
 | Inherited functions ||
@@ -122,6 +126,7 @@ The method is called for every applicable target object, which is stored in the 
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#): This value cannot be `null`. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: This value may be `null`. |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

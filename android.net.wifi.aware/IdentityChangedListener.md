@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # IdentityChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 open class IdentityChangedListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.IdentityChangedListener](https://developer.android.com/reference/kotlin/android/net/wifi/aware/IdentityChangedListener#) |
 
 Base class for Aware identity/cluster changes callbacks. Should be extended by applications and set when calling [WifiAwareManager.attach(AttachCallback, IdentityChangedListener,](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#attach(android.net.wifi.aware.AttachCallback,%20android.net.wifi.aware.IdentityChangedListener,%20android.os.Handler)). These are callbacks applying to the Aware connection as a whole - not to specific publish or subscribe sessions - for that see [DiscoverySessionCallback](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback).

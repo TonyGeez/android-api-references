@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # OnErrorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnErrorListener

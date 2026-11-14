@@ -9,6 +9,7 @@ open class ReentrantReadWriteLock : ReadWriteLock, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.locks.ReentrantReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#) |
 
 An implementation of [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock) supporting similar semantics to [ReentrantLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantLock).
@@ -138,15 +139,19 @@ This lock supports a maximum of 65535 recursive write locks and 65535 read locks
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueueLength](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getQueueLength())`()` Returns an estimate of the number of threads waiting to acquire either the read or write lock. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReadHoldCount](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getReadHoldCount())`()` Queries the number of reentrant read holds on this lock by the current thread. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReadLockCount](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getReadLockCount())`()` Queries the number of read locks held for this lock. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWaitQueueLength](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getWaitQueueLength(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Returns an estimate of the number of threads waiting on the given condition associated with the write lock. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWriteHoldCount](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getWriteHoldCount())`()` Queries the number of reentrant write holds on this lock by the current thread. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedThread](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#hasQueuedThread(java.lang.Thread))`(`thread:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Queries whether the given thread is waiting to acquire either the read or write lock. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#hasQueuedThreads())`()` Queries whether any threads are waiting to acquire the read or write lock. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasWaiters](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#hasWaiters(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Queries whether any threads are waiting on the given condition associated with the write lock. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFair](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#isFair())`()` Returns`true`if this lock has fairness set true. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteLocked](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#isWriteLocked())`()` Queries if the write lock is held by any thread. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteLockedByCurrentThread](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#isWriteLockedByCurrentThread())`()` Queries if the write lock is held by the current thread. |
 | open [ReentrantReadWriteLock.ReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock)! | [readLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#readLock())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#toString())`()` Returns a string identifying this lock, as well as its lock state. |
 | open [ReentrantReadWriteLock.WriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock)! | [writeLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#writeLock())`()` <br /> |
 
@@ -155,6 +160,7 @@ This lock supports a maximum of 65535 recursive write locks and 65535 read locks
 | open [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)! | [getOwner](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getOwner())`()` Returns the thread that currently owns the write lock, or`null`if not owned. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getQueuedReaderThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getQueuedReaderThreads())`()` Returns a collection containing threads that may be waiting to acquire the read lock. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getQueuedThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getQueuedThreads())`()` Returns a collection containing threads that may be waiting to acquire either the read or write lock. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getQueuedWriterThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getQueuedWriterThreads())`()` Returns a collection containing threads that may be waiting to acquire the write lock. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | [getWaitingThreads](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReentrantReadWriteLock#getWaitingThreads(java.util.concurrent.locks.Condition))`(`condition:` ` [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition)!`)` Returns a collection containing those threads that may be waiting on the given condition associated with the write lock. |
 
@@ -251,6 +257,7 @@ Returns an estimate of the number of threads waiting on the given condition asso
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |
 
 ### getWriteHoldCount
 
@@ -325,6 +332,7 @@ Queries whether any threads are waiting on the given condition associated with t
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |
 
 ### isFair
 
@@ -487,3 +495,4 @@ Returns a collection containing those threads that may be waiting on the given c
 | `java.lang.IllegalMonitorStateException` | if this lock is not held |
 | `java.lang.IllegalArgumentException` | if the given condition is not associated with this lock |
 | `java.lang.NullPointerException` | if the condition is null |
+| --- | --- |

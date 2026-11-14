@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PictureDrawable
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/PictureDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class PictureDrawable : Drawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.PictureDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#) |
 
@@ -27,9 +29,11 @@ Drawable subclass that wraps a Picture, allowing the picture to be used wherever
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#getIntrinsicHeight())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#getIntrinsicWidth())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#getOpacity())`()` <br /> |
 | open [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture.html#)! | [getPicture](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#getPicture())`()` Return the picture associated with the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPicture](https://developer.android.com/reference/kotlin/android/graphics/drawable/PictureDrawable#setPicture(android.graphics.Picture))`(`picture:` ` [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture.html#)!`)` Associate a picture with this drawable. |
 

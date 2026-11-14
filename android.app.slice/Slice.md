@@ -8,6 +8,7 @@ class Slice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.slice.Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice#) |
 
 > [!CAUTION]
@@ -30,33 +31,43 @@ They are constructed using `https://developer.android.com/reference/kotlin/andro
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#EXTRA_RANGE_VALUE:kotlin.String` Key to retrieve an extra added to an intent when the value of an input range is changed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#EXTRA_TOGGLE_STATE:kotlin.String` Key to retrieve an extra added to an intent when a control is changed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ACTIONS:kotlin.String` Hint that this slice contains a number of actions that can be grouped together in a sort of controls area of the UI. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ERROR:kotlin.String` A hint to indicate that this slice represents an error. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_HORIZONTAL:kotlin.String` Hint that list items within this slice or subslice would appear better if organized horizontally. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_KEYWORDS:kotlin.String` A hint to indicate that the contents of this subslice represent a list of keywords related to the parent slice. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LARGE:kotlin.String` Hint that this content is important and should be larger when displayed if possible. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LAST_UPDATED:kotlin.String` Hint indicating an item representing when the content was created or last updated. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST:kotlin.String` Hint that all sub-items/sub-slices within this content should be considered to have `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST_ITEM:kotlin.String`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST_ITEM:kotlin.String` Hint that this item is part of a list and should be formatted as if is part of a list. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_NO_TINT:kotlin.String` Hint to indicate that this content should not be tinted. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PARTIAL:kotlin.String` Hint to indicate that this slice is incomplete and an update will be sent once loading is complete. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PERMISSION_REQUEST:kotlin.String` A hint to indicate that this slice represents a permission request for showing slices. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SEE_MORE:kotlin.String` A hint representing that this item should be used to indicate that there's more content associated with this slice. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SELECTED:kotlin.String` Hint indicating that this item (and its sub-items) are the current selection. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SHORTCUT:kotlin.String` Hint to indicate that this content should only be displayed if the slice is presented as a shortcut. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SUMMARY:kotlin.String` Hint indicating this content should be shown instead of the normal content when the slice is in small format. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TITLE:kotlin.String` Hint that this content is a title of other content in the slice. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TTL:kotlin.String` Hint indicating an item representing a time-to-live for the content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_COLOR:kotlin.String` Subtype to tag an item as representing a color. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_CONTENT_DESCRIPTION:kotlin.String` Subtype to tag an item to use as a content description. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_LAYOUT_DIRECTION:kotlin.String` Subtype to indicate that this item indicates the layout direction for content in the slice. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_MAX:kotlin.String` Subtype to tag an item as representing the max int value for a `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_RANGE:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_MESSAGE:kotlin.String` Subtype to indicate that this is a message as part of a communication sequence in this slice. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_MILLIS:kotlin.String` Subtype to tag an item as representing a time in milliseconds since midnight, January 1, 1970 UTC. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_PRIORITY:kotlin.String` Subtype to tag an item representing priority. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_RANGE:kotlin.String` Subtype to tag an item as representing a range. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_SOURCE:kotlin.String` Subtype to tag the source (i.e. sender) of a |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_TOGGLE:kotlin.String` Subtype to indicate that this content has a toggle action associated with it. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_VALUE:kotlin.String` Subtype to tag an item as representing the current int value for a `https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_RANGE:kotlin.String`. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
@@ -79,9 +90,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getHints()()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getItems()()` <br /> |
+| --- | --- |
 | [SliceSpec](https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec)? | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getSpec()()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getUri()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#isCallerNeeded()()` Returns whether the caller for this slice matters. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#toString()()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

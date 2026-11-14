@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnHierarchyChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnHierarchyChangeListener
@@ -13,6 +14,7 @@ interface OnHierarchyChangeListener
 | [android.view.ViewGroup.OnHierarchyChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewGroup.OnHierarchyChangeListener#) |
 
 | Known Direct Subclasses [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) |----------------------------------------------------------------------------------------|---------------------------------| | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) | A View that displays web pages. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the hierarchy within this view changed. The hierarchy changes whenever a child is added to or removed from this view.
 

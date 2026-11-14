@@ -21,6 +21,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [createDocument](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMImplementation#createDocument(kotlin.String,%20kotlin.String,%20org.w3c.dom.DocumentType))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qualifiedName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `doctype:` ` [DocumentType](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document-type/index.html)!`)` Creates a DOM Document object of the specified type with its document element. |
 | abstract [DocumentType](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document-type/index.html)! | [createDocumentType](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMImplementation#createDocumentType(kotlin.String,%20kotlin.String,%20kotlin.String))`(`qualifiedName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an empty`DocumentType`node. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getFeature](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMImplementation#getFeature(kotlin.String,%20kotlin.String))`(`feature:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `version:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method returns a specialized object which implements the specialized APIs of the specified feature and version, as specified in . |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFeature](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMImplementation#hasFeature(kotlin.String,%20kotlin.String))`(`feature:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `version:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if the DOM implementation implements a specific feature and version, as specified in . |
 
 ## Public methods
@@ -45,6 +46,7 @@ Note that based on the`DocumentType`given to create the document, the implementa
 | `namespaceURI` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The namespace URI of the document element to create or`null`. |
 | `qualifiedName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified name of the document element to be created or`null`. |
 | `doctype` | [DocumentType](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document-type/index.html)!:The type of document to be created or`null`. When`doctype`is not`null`, its`Node.ownerDocument`attribute is set to the document being created. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,6 +75,7 @@ Creates an empty`DocumentType`node. Entity declarations and notations are not ma
 | `qualifiedName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified name of the document type to be created. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The external subset public identifier. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The external subset system identifier. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------|

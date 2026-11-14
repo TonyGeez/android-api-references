@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # VelocityTracker
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/VelocityTracker "View this page in Java") 
+| --- | --- |
 
 ```
 class VelocityTracker
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.VelocityTracker](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#) |
 
 Helper for tracking the velocity of motion events, for implementing flinging and other such gestures. Use [obtain](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#obtain()) to retrieve a new instance of the class when you are going to begin tracking. Put the motion events you receive into it with [addMovement(android.view.MotionEvent)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#addMovement(android.view.MotionEvent)). When you want to determine the velocity, call [computeCurrentVelocity(int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#computeCurrentVelocity(kotlin.Int)) and then call the velocity-getter methods like [getXVelocity(int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getXVelocity(kotlin.Int)), [getYVelocity(int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getYVelocity(kotlin.Int)), or [getAxisVelocity(int,int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getAxisVelocity(kotlin.Int,%20kotlin.Int)) to retrieve velocity for different axes and/or pointer IDs.
@@ -22,15 +24,19 @@ Helper for tracking the velocity of motion events, for implementing flinging and
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMovement](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#addMovement(android.view.MotionEvent))`(`event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)!`)` Add a user's movement to the tracker. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#clear())`()` Reset the velocity tracker back to its initial state. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [computeCurrentVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#computeCurrentVelocity(kotlin.Int))`(`units:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to invoking [computeCurrentVelocity(int,float)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#computeCurrentVelocity(kotlin.Int,%20kotlin.Float)) with a maximum velocity of Float. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [computeCurrentVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#computeCurrentVelocity(kotlin.Int,%20kotlin.Float))`(`units:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxVelocity:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Compute the current velocity based on the points that have been collected. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getAxisVelocity(kotlin.Int))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to calling [getAxisVelocity(int,int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getAxisVelocity(kotlin.Int,%20kotlin.Int)) for `axis` and the active pointer. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getAxisVelocity(kotlin.Int,%20kotlin.Int))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the last computed velocity for a given motion axis. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getXVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getXVelocity())`()` Retrieve the last computed X velocity. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getXVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getXVelocity(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the last computed X velocity. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getYVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getYVelocity())`()` Retrieve the last computed Y velocity. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getYVelocity](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getYVelocity(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the last computed Y velocity. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAxisSupported](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#isAxisSupported(kotlin.Int))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether a given velocity-trackable [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent) axis is supported for velocity tracking by this [VelocityTracker](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#) instance (refer to [getAxisVelocity(int,int)](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#getAxisVelocity(kotlin.Int,%20kotlin.Int)) for a list of potentially velocity-trackable axes). |
 | static [VelocityTracker](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#)! | [obtain](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#obtain())`()` Retrieve a new VelocityTracker object to watch the velocity of a motion. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](https://developer.android.com/reference/kotlin/android/view/VelocityTracker#recycle())`()` Return a VelocityTracker object back to be re-used by others. |
 
 | Protected methods ||

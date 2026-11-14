@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PorterDuffXfermode
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/PorterDuffXfermode "View this page in Java") 
+| --- | --- |
 
 ```
 open class PorterDuffXfermode : Xfermode
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode) ||
 | | ↳ | [android.graphics.PorterDuffXfermode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuffXfermode#) |
 

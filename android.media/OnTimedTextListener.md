@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # OnTimedTextListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnTimedTextListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTimedTextListener

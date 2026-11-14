@@ -9,6 +9,7 @@ class OptionalInt
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.OptionalInt](https://developer.android.com/reference/kotlin/java/util/OptionalInt#) |
 
 A container object which may or may not contain an`int`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
@@ -24,18 +25,23 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | static [OptionalInt](https://developer.android.com/reference/kotlin/java/util/OptionalInt#)! | [empty](https://developer.android.com/reference/kotlin/java/util/OptionalInt#empty())`()` Returns an empty`OptionalInt`instance. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/OptionalInt#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalInt`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsInt](https://developer.android.com/reference/kotlin/java/util/OptionalInt#getAsInt())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/OptionalInt#hashCode())`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](https://developer.android.com/reference/kotlin/java/util/OptionalInt#ifPresent(java.util.function.IntConsumer))`(`action:` ` [IntConsumer](https://developer.android.com/reference/kotlin/java/util/function/IntConsumer)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](https://developer.android.com/reference/kotlin/java/util/OptionalInt#ifPresentOrElse(java.util.function.IntConsumer,%20java.lang.Runnable))`(`action:` ` [IntConsumer](https://developer.android.com/reference/kotlin/java/util/function/IntConsumer)!`, `emptyAction:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/OptionalInt#isEmpty())`()` If a value is not present, returns`true`, otherwise`false`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/java/util/OptionalInt#isPresent())`()` If a value is present, returns`true`, otherwise`false`. |
 | static [OptionalInt](https://developer.android.com/reference/kotlin/java/util/OptionalInt#)! | [of](https://developer.android.com/reference/kotlin/java/util/OptionalInt#of(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`OptionalInt`describing the given value. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElse](https://developer.android.com/reference/kotlin/java/util/OptionalInt#orElse(kotlin.Int))`(`other:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseGet](https://developer.android.com/reference/kotlin/java/util/OptionalInt#orElseGet(java.util.function.IntSupplier))`(`supplier:` ` [IntSupplier](https://developer.android.com/reference/kotlin/java/util/function/IntSupplier)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalInt#orElseThrow())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalInt#orElseThrow(java.util.function.Supplier))`(`exceptionSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
 | [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [stream](https://developer.android.com/reference/kotlin/java/util/OptionalInt#stream())`()` If a value is present, returns a sequential [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream) containing only that value, otherwise returns an empty`IntStream`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/OptionalInt#toString())`()` Returns a non-empty string representation of this`OptionalInt`suitable for debugging. |
+| --- | --- |
 
 ## Public methods
 

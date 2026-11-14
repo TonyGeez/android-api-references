@@ -9,9 +9,11 @@ open class BootstrapMethodError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.BootstrapMethodError](https://developer.android.com/reference/kotlin/java/lang/BootstrapMethodError#) |
 
 Thrown to indicate that an`invokedynamic`instruction or a dynamic constant failed to resolve its bootstrap method and arguments, or for`invokedynamic`instruction the bootstrap method has failed to provide a [call site](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) with a [target](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#getTarget())of the correct [method type](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#type()), or for a dynamic constant the bootstrap method has failed to provide a constant value of the required type.

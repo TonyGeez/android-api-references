@@ -9,6 +9,7 @@ abstract class CertPathBuilderSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertPathBuilderSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi#) |
 
 The*Service Provider Interface* (**SPI** ) for the [CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder) class. All`CertPathBuilder`implementations must include a class (the SPI class) that extends this class (`CertPathBuilderSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the`CertPathBuilder`class. For details, see the Java Cryptography Architecture.

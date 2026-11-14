@@ -8,9 +8,11 @@ class MindfulnessSessionRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.MindfulnessSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#) |
+| --- | --- | --- | --- |
 
 Captures a mindfulness session.
 
@@ -29,9 +31,11 @@ Each record needs a start time, end time and a mindfulness session type. In addi
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_BREATHING:kotlin.Int` Guided breathing mindfulness session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_MEDITATION:kotlin.Int` Meditation mindfulness session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_MOVEMENT:kotlin.Int` Stretches/movement mindfulness session. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_MUSIC:kotlin.Int` Music/soundscapes mindfulness session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_OTHER:kotlin.Int` Other mindfulness session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_UNGUIDED:kotlin.Int` Unguided mindfulness session. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_SESSION_TYPE_UNKNOWN:kotlin.Int` Use this type if the mindfulness session type is unknown. |
 
 | Inherited constants ||
@@ -43,6 +47,7 @@ Each record needs a start time, end time and a mindfulness session type. In addi
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#getMindfulnessSessionType()()` Returns type of the mindfulness session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#getNotes()()` Returns notes for the mindfulness session. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#getTitle()()` Returns title of the mindfulness session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#hashCode()()` Returns a hash code value for the object. |
 
@@ -165,6 +170,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

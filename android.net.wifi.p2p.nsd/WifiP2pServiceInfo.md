@@ -5,15 +5,18 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pServiceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#) |
 
 | Known Direct Subclasses [WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo), [WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo) |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo) | A class for storing Bonjour service information that is advertised over a Wi-Fi peer-to-peer setup. | | [WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo) | A class for storing Upnp service information that is advertised over a Wi-Fi peer-to-peer setup. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A class for storing service information that is advertised over a Wi-Fi peer-to-peer setup
 
@@ -24,6 +27,7 @@ A class for storing service information that is advertised over a Wi-Fi peer-to-
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_ALL](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int) All service protocol types. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_BONJOUR](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_BONJOUR:kotlin.Int) DNS based service discovery protocol. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_UPNP](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_UPNP:kotlin.Int) UPnP protocol. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_VENDOR_SPECIFIC](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int) Vendor Specific protocol |
 
 | Inherited constants ||
@@ -39,6 +43,7 @@ A class for storing service information that is advertised over a Wi-Fi peer-to-
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig)? | [getWifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#getWifiP2pUsdBasedServiceConfig())`()` Get the service information configured to advertise using un-synchronized service discovery (USD) protocol. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Constants
 

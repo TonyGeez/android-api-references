@@ -4,15 +4,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptC
 
 Kotlin | [Java](https://developer.android.com/reference/android/renderscript/ScriptC "View this page in Java")
+| --- | --- |
 
 ```
 open class ScriptC : Script
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) |||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) ||
 | | | ↳ | [android.renderscript.ScriptC](https://developer.android.com/reference/kotlin/android/renderscript/ScriptC#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
 |
@@ -54,6 +57,7 @@ Only intended for use by the generated derived classes.
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: |
 | `resources` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!: |
 | `resourceID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
+| --- | --- |
 
 ### ScriptC
 

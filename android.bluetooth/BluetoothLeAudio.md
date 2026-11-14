@@ -7,6 +7,7 @@ class BluetoothLeAudio : AutoCloseable, BluetoothProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothLeAudio](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#) |
 
 This class provides the public APIs to control the LeAudio profile.
@@ -139,9 +140,11 @@ The profile is in disconnecting state
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#close()()` Closes this resource, relinquishing any underlying resources. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#getConnectedDevices()()` Get connected devices for this specific profile. |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#getConnectedGroupLeadDevice(kotlin.Int)(groupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get Lead device for the group. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#getConnectionState(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)` Get the current connection state of the profile For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Get a list of devices that match any of the given connection states. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio#getGroupId(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)` Get device group id. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|

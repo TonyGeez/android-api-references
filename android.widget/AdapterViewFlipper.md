@@ -7,9 +7,11 @@ open class AdapterViewFlipper : AdapterViewAnimator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter)\> |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AdapterViewAnimator](https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator) ||
 | | | | | ↳ | [android.widget.AdapterViewFlipper](https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#) |
 
@@ -324,6 +326,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -440,6 +443,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -588,6 +592,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1778,21 +1783,26 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#fyiWillBeAdvancedByHostKThx()()` Called by an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost.html#` to indicate that it will be automatically advancing the views of this `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#` by calling `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#advance()` at some point in the future. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#getFlipInterval()()` Returns the flip interval, in milliseconds. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#isAutoStart()()` Returns true if this view automatically calls `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#startFlipping()` when it becomes attached to a window. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#isFlipping()()` Returns true if the child views are flipping. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#setAdapter(android.widget.Adapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/Adapter!)` Sets the adapter that provides the data and the views to represent the data in this widget. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#setAutoStart(kotlin.Boolean)(autoStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set if this view automatically calls `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#startFlipping()` when it becomes attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#setFlipInterval(kotlin.Int)(flipInterval: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` How long to wait before flipping to the next view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#showNext()()` Manually shows the next child. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#showPrevious()()` Manually shows the previous child. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#startFlipping()()` Start a timer to cycle through child views |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#stopFlipping()()` No more flips |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewFlipper#onWindowVisibilityChanged(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the window containing has change its visibility (between `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`). |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2675,6 +2685,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4511,6 +4522,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 

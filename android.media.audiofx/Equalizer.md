@@ -3,12 +3,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # Equalizer
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/Equalizer "View this page in Java")
+| --- | --- |
 
 ```
 open class Equalizer : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#) |
 
@@ -38,12 +40,15 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_BAND_FREQ_RANGE:kotlin.Int` Band frequency range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_BAND_LEVEL:kotlin.Int` Band level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_CENTER_FREQ:kotlin.Int` Band center frequency. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_CURRENT_PRESET:kotlin.Int` Current preset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_GET_BAND:kotlin.Int` Band for a given frequency. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_GET_NUM_OF_PRESETS:kotlin.Int` Request number of presets. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_GET_PRESET_NAME:kotlin.Int` Request preset name. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_LEVEL_RANGE:kotlin.Int` Band level range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_NUM_BANDS:kotlin.Int` Number of bands. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_STRING_SIZE_MAX:kotlin.Int` Maximum size for preset name |
 
 | Inherited constants ||
@@ -59,15 +64,19 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getBand(kotlin.Int)(frequency: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the band that has the most effect on the given frequency. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getBandFreqRange(kotlin.Short)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Gets the frequency range of the given frequency band. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getBandLevel(kotlin.Short)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Gets the gain set for the given equalizer band. |
+| --- | --- |
 | open [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getBandLevelRange()()` Gets the level range for use by `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setBandLevel(kotlin.Short,%20kotlin.Short)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getCenterFreq(kotlin.Short)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Gets the center frequency of the given band. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getCurrentPreset()()` Gets current preset. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getNumberOfBands()()` Gets the number of frequency bands supported by the Equalizer engine. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getNumberOfPresets()()` Gets the total number of presets the equalizer supports. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getPresetName(kotlin.Short)(preset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Gets the preset name based on the index. |
+| --- | --- |
 | open [Equalizer.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.Settings)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getProperties()()` Gets the equalizer properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setBandLevel(kotlin.Short,%20kotlin.Short)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Sets the given equalizer band to the given gain value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setParameterListener(android.media.audiofx.Equalizer.OnParameterChangeListener)(listener: https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.OnParameterChangeListener!)` Registers an OnParameterChangeListener interface. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setProperties(android.media.audiofx.Equalizer.Settings)(settings: https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.Settings!)` Sets the equalizer properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#usePreset(kotlin.Short)(preset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Sets the equalizer according to the given preset. |
 
@@ -225,6 +234,7 @@ Class constructor.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.RuntimeException` | |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | |
 
 ## Public methods
@@ -252,6 +262,7 @@ Gets the band that has the most effect on the given frequency.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getBandFreqRange
 
@@ -276,6 +287,7 @@ Gets the frequency range of the given frequency band.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getBandLevel
 
@@ -300,6 +312,7 @@ Gets the gain set for the given equalizer band.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getBandLevelRange
 
@@ -320,6 +333,7 @@ Gets the level range for use by `https://developer.android.com/reference/kotlin/
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getCenterFreq
 
@@ -344,6 +358,7 @@ Gets the center frequency of the given band.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getCurrentPreset
 
@@ -364,6 +379,7 @@ Gets current preset.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getNumberOfBands
 
@@ -384,6 +400,7 @@ Gets the number of frequency bands supported by the Equalizer engine.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getNumberOfPresets
 
@@ -404,6 +421,7 @@ Gets the total number of presets the equalizer supports. The presets will have i
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getPresetName
 
@@ -428,6 +446,7 @@ Gets the preset name based on the index.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getProperties
 
@@ -448,6 +467,7 @@ Gets the equalizer properties. This method is useful when a snapshot of current 
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setBandLevel
 
@@ -472,6 +492,7 @@ Sets the given equalizer band to the given gain value.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 **See Also**
 
@@ -510,6 +531,7 @@ Sets the equalizer properties. This method is useful when equalizer settings hav
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### usePreset
 
@@ -530,6 +552,7 @@ Sets the equalizer according to the given preset.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 **See Also**
 

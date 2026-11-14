@@ -9,6 +9,7 @@ open class DeletionRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.measurement.DeletionRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#) |
 
 > [!CAUTION]
@@ -29,6 +30,7 @@ Deletion Request.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#DELETION_MODE_ALL:kotlin.Int` Deletion mode to delete all data associated with the selected records. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#DELETION_MODE_EXCLUDE_INTERNAL_DATA:kotlin.Int` Deletion mode to delete all data except the internal data (e.g. rate limits) for the selected records. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#MATCH_BEHAVIOR_DELETE:kotlin.Int` Match behavior option to delete the supplied params (Origin/Domains). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#MATCH_BEHAVIOR_PRESERVE:kotlin.Int` Match behavior option to preserve the supplied params (Origin/Domains) and delete everything else. |
 
 | Public methods ||
@@ -36,9 +38,11 @@ Deletion Request.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getDeletionMode()()` Get the deletion mode. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getDomainUris()()` Get the list of domain URIs. |
 | open [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getEnd()()` Get the end of the deletion range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getMatchBehavior()()` Get the match behavior. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getOriginUris()()` Get the list of origin URIs. |
 | open [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest#getStart()()` Get the start of the deletion range. |
+| --- | --- |
 
 ## Constants
 

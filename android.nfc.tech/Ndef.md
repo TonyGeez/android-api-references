@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # Ndef
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/Ndef "View this page in Java") 
+| --- | --- |
 
 ```
 class Ndef : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) |
 
 Provides access to NDEF content and operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
@@ -43,6 +45,7 @@ For guaranteed compatibility across all Android devices with NFC, it is recommen
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MIFARE_CLASSIC](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#MIFARE_CLASSIC:kotlin.String) NDEF on MIFARE Classic |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_1](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_1:kotlin.String) NFC Forum Tag Type 1 |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_2](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_2:kotlin.String) NFC Forum Tag Type 2 |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_3](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_3:kotlin.String) NFC Forum Tag Type 3 |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_4](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_4:kotlin.String) NFC Forum Tag Type 4 |
 
@@ -51,15 +54,19 @@ For guaranteed compatibility across all Android devices with NFC, it is recommen
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canMakeReadOnly](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#canMakeReadOnly())`()` Indicates whether a tag can be made read-only with [makeReadOnly()](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#makeReadOnly()). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#connect())`()` <br /> |
+| --- | --- |
 | static [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) for the given tag. |
 | [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | [getCachedNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getCachedNdefMessage())`()` Get the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) that was read from the tag at discovery time. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSize](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getMaxSize())`()` Get the maximum NDEF message size in bytes. |
+| --- | --- |
 | [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | [getNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getNdefMessage())`()` Read the current [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag. |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getTag())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getType())`()` Get the NDEF tag type. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#isConnected())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#isWritable())`()` Determine if the tag is writable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [makeReadOnly](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#makeReadOnly())`()` Make a tag read-only. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#writeNdefMessage(android.nfc.NdefMessage))`(`msg:` ` [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)!`)` Overwrite the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag. |
 
 ## Constants
@@ -159,6 +166,7 @@ fun close(): Unit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -173,6 +181,7 @@ fun connect(): Unit
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### get
 
@@ -259,6 +268,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or the operation is canceled |
 | `android.nfc.FormatException` | if the NDEF Message on the tag is malformed |
+| --- | --- |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
 
 ### getTag
@@ -350,6 +360,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or the operation is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### writeNdefMessage
 
@@ -374,4 +385,5 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or the operation is canceled |
 | `android.nfc.FormatException` | if the NDEF Message to write is malformed |
+| --- | --- |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |

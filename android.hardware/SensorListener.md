@@ -6,6 +6,7 @@ Deprecated in [API level 3](https://developer.android.com/guide/topics/manifest/
 # SensorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SensorListener
@@ -14,6 +15,7 @@ interface SensorListener
 | [android.hardware.SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#) |
 
 | Known Direct Subclasses [OrientationListener](https://developer.android.com/reference/kotlin/android/view/OrientationListener.html#) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------| | [OrientationListener](https://developer.android.com/reference/kotlin/android/view/OrientationListener.html#) | Helper class for receiving notifications from the SensorManager when the orientation of the device has changed. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 3.**
 |

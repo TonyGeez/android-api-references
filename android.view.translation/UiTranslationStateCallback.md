@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # UiTranslationStateCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface UiTranslationStateCallback
@@ -31,9 +32,11 @@ In Android version [android.os.Build.VERSION_CODES#TIRAMISU](https://developer.a
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinished](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onFinished())`()` The UI Translation session has ended. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinished](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onFinished(kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` The UI Translation session has ended. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPaused](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onPaused())`()` The system is requesting that the application temporarily show the UI contents in their original language. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPaused](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onPaused(kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` The system is requesting that the application temporarily show the UI contents in their original language. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResumed](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onResumed(android.icu.util.ULocale,%20android.icu.util.ULocale))`(`sourceLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `targetLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`)` The system is requesting that the application restore from the temporarily paused state and show the content in the translated language. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResumed](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onResumed(android.icu.util.ULocale,%20android.icu.util.ULocale,%20kotlin.String))`(`sourceLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `targetLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` The system is requesting that the application restore from the temporarily paused state and show the content in the translated language. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStarted](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onStarted(android.icu.util.ULocale,%20android.icu.util.ULocale))`(`sourceLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `targetLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`)` The system is requesting translation of the UI from`sourceLocale`to`targetLocale`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStarted](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationStateCallback#onStarted(android.icu.util.ULocale,%20android.icu.util.ULocale,%20kotlin.String))`(`sourceLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `targetLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` The system is requesting translation of the UI from`sourceLocale`to`targetLocale`. |
 
@@ -144,6 +147,7 @@ Apps with minSdkVersion lower than [android.os.Build.VERSION_CODES#TIRAMISU](htt
 | `sourceLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#): [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) the UI is being translated from. This value cannot be`null`. |
 | `targetLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#): [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) the UI is being translated to. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the package that owns the activity being translated. This value cannot be`null`. |
+| --- | --- |
 
 ### onStarted
 
@@ -194,3 +198,4 @@ Apps with minSdkVersion lower than [android.os.Build.VERSION_CODES#TIRAMISU](htt
 | `sourceLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#): [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) the UI is being translated from. This value cannot be`null`. |
 | `targetLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#): [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) the UI is being translated to. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the package that owns the activity being translated. This value cannot be`null`. |
+| --- | --- |

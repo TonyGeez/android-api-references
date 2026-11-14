@@ -3,12 +3,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # AtomicFile
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/AtomicFile "View this page in Java")
+| --- | --- |
 
 ```
 open class AtomicFile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.AtomicFile](https://developer.android.com/reference/kotlin/android/util/AtomicFile#) |
 
 Helper class for performing atomic operations on a file by writing to a new file and renaming it into the place of the original file after the write has successfully completed. If you need this on older versions of the platform you can use androidx.core.util.AtomicFile in AndroidX.
@@ -28,12 +30,15 @@ Atomic file does not confer any file locking semantics. Do not use this class wh
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#delete()()` Delete the atomic file. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#failWrite(java.io.FileOutputStream)(str: https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#!)` Call when you have failed for some reason at writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#finishWrite(java.io.FileOutputStream)(str: https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#!)` Call when you have successfully finished writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. |
+| --- | --- |
 | open [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#getBaseFile()()` Return the path to the base file. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#getLastModifiedTime()()` Gets the last modified time of the atomic file. |
 | open [FileInputStream](https://developer.android.com/reference/kotlin/java/io/FileInputStream.html#)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#openRead()()` Open the atomic file for reading. |
+| --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#readFully()()` A convenience for `https://developer.android.com/reference/kotlin/android/util/AtomicFile#openRead()` that also reads all of the file contents into a byte array which is returned. |
 | open [FileOutputStream](https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()()` Start a new write operation on the file. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 

@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # AnimatorListenerAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/AnimatorListenerAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AnimatorListenerAdapter : Animator.AnimatorListener, Animator.AnimatorPauseListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.AnimatorListenerAdapter](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#) |
 
 This adapter class provides empty implementations of the methods from [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener). Any custom listener that cares only about a subset of the methods of this listener can simply subclass this adapter class instead of implementing the interface directly.
@@ -26,9 +28,11 @@ This adapter class provides empty implementations of the methods from [android.a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationCancel](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationCancel(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the cancellation of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationEnd(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the end of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationPause](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationPause(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies that the animation was paused. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationRepeat(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the repetition of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationResume](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationResume(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies that the animation was resumed, after being previously paused. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter#onAnimationStart(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the start of the animation. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -6,6 +6,7 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 # EmbeddedPhotoPickerProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/photopicker/EmbeddedPhotoPickerProvider "View this page in Java") 
+| --- | --- |
 
 ```
 interface EmbeddedPhotoPickerProvider
@@ -68,7 +69,9 @@ Open a new session for displaying content with an initial size of width x height
 | `hostToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#):Token used for constructing [android.view.SurfaceControlViewHost](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.html#). Use [AttachedSurfaceControl.getInputTransferToken()](https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl.html#getInputTransferToken())to get token of attached [android.view.SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#). This value cannot be`null`. |
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Application display id. Use [DisplayManager.getDisplays()](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplays())to get the id. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):width of the view, in pixels. |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):height of the view, in pixels. |
 | `featureInfo` | [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo): [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo) object containing all the required features for the given session. This value cannot be`null`. |
 | `clientExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) to invoke callbacks. This value cannot be`null`. |
+| --- | --- |
 | `callback` | [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient): [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient) object to receive callbacks from photopicker. This value cannot be`null`. |

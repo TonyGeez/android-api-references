@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # LocalizedNumberRangeFormatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocalizedNumberRangeFormatter : NumberRangeFormatterSettings<LocalizedNumberRangeFormatter!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.number.NumberRangeFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings)\< [android.icu.number.LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#)\> ||
 | | ↳ | [android.icu.number.LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#) |
 
@@ -23,6 +25,7 @@ A NumberRangeFormatter that has a locale associated with it; this means .formatR
 | open [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange)! | [formatRange](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#formatRange(kotlin.Double,%20kotlin.Double))`(`first:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `second:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Format the given doubles to a string using the settings specified in the NumberRangeFormatter fluent setting chain. |
 | open [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange)! | [formatRange](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#formatRange(kotlin.Int,%20kotlin.Int))`(`first:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Format the given integers to a string using the settings specified in the NumberRangeFormatter fluent setting chain. |
 | open [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange)! | [formatRange](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#formatRange(kotlin.Number,%20kotlin.Number))`(`first:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`, `second:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`)` Format the given Numbers to a string using the settings specified in the NumberRangeFormatter fluent setting chain. |
+| --- | --- |
 | open [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter)! | [withoutLocale](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter#withoutLocale())`()` Disassociate the locale from this formatter. |
 
 | Inherited functions ||

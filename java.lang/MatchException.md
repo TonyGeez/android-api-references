@@ -9,9 +9,11 @@ class MatchException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.MatchException](https://developer.android.com/reference/kotlin/java/lang/MatchException#) |
 
 Thrown to indicate an unexpected failure in pattern matching.

@@ -9,9 +9,11 @@ open class DatatypeConfigurationException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [javax.xml.datatype.DatatypeConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConfigurationException#) |
+| --- | --- | --- | --- |
 
 Indicates a serious configuration error.
 
@@ -29,6 +31,7 @@ Indicates a serious configuration error.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConfigurationException#printStackTrace())`()` Print the the trace of methods from where the error originated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConfigurationException#printStackTrace(java.io.PrintStream))`(`s:` ` [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)`)` Print the the trace of methods from where the error originated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConfigurationException#printStackTrace(java.io.PrintWriter))`(`s:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)`)` Print the the trace of methods from where the error originated. |
+| --- | --- |
 
 ## Public constructors
 

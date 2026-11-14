@@ -7,6 +7,7 @@ class CollationElementIterator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.CollationElementIterator](https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#) |
 
 `CollationElementIterator` is an iterator created by a RuleBasedCollator to walk through a string. The return result of each iteration is a 32-bit collation element (CE) that defines the ordering priority of the next character or sequence of characters in the source string.
@@ -73,15 +74,19 @@ This class is not subclassable.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tests that argument object is equals to this CollationElementIterator. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#getMaxExpansion(kotlin.Int)(ce: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum length of any expansion sequence that ends with the specified collation element. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#getOffset()()` Returns the character offset in the source string corresponding to the next collation element. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#hashCode()()` Mock implementation of hashCode(). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#next()()` Get the next collation element in the source string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#previous()()` Get the previous collation element in the source string. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#primaryOrder(kotlin.Int)(ce: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the primary order of the specified collation element, i. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#reset()()` Resets the cursor to the beginning of the string. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#secondaryOrder(kotlin.Int)(ce: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the secondary order of the specified collation element, i. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#setOffset(kotlin.Int)(newOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the iterator to point to the collation element corresponding to the character at the specified offset. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#setText(android.icu.text.UCharacterIterator)(source: https://developer.android.com/reference/kotlin/android/icu/text/UCharacterIterator!)` Set a new source string iterator for iteration, and reset the offset to the beginning of the text. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#setText(kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set a new source string for iteration, and reset the offset to the beginning of the text. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#setText(java.text.CharacterIterator)(source: https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#!)` Set a new source string iterator for iteration, and reset the offset to the beginning of the text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#tertiaryOrder(kotlin.Int)(ce: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the tertiary order of the specified collation element, i. |
 

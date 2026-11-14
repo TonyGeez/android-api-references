@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnActivityResultListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnActivityResultListener
@@ -14,6 +15,7 @@ interface OnActivityResultListener
 | [android.preference.PreferenceManager.OnActivityResultListener](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager.OnActivityResultListener#) |
 
 | Known Direct Subclasses [RingtonePreference](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RingtonePreference](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that allows the user to choose a ringtone from those on the device. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 29.**
 |

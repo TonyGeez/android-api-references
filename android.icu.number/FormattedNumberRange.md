@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # FormattedNumberRange
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/FormattedNumberRange "View this page in Java") 
+| --- | --- |
 
 ```
 open class FormattedNumberRange : FormattedValue
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#) |
 
 The result of a number range formatting operation. This class allows the result to be exported in several data types, including a String, an AttributedCharacterIterator, and a BigDecimal. Instances of this class are immutable and thread-safe.
@@ -22,12 +24,15 @@ The result of a number range formatting operation. This class allows the result 
 | openA | [appendTo](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#appendTo(android.icu.number.FormattedNumberRange.appendTo.A))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | [getFirstBigDecimal](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#getFirstBigDecimal())`()` Export the first formatted number as a BigDecimal. |
 | open [NumberRangeFormatter.RangeIdentityResult](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityResult)! | [getIdentityResult](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#getIdentityResult())`()` Returns whether the pair of numbers was successfully formatted as a range or whether an identity fallback was used. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | [getSecondBigDecimal](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#getSecondBigDecimal())`()` Export the second formatted number as a BigDecimal. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#hashCode())`()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#nextPosition(android.icu.text.ConstrainedFieldPosition))`(`cfpos:` ` [ConstrainedFieldPosition](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition.html#)!`)` Iterates over field positions in the FormattedValue. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#subSequence(kotlin.Int,%20kotlin.Int))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
+| --- | --- |
 | open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | [toCharacterIterator](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#toCharacterIterator())`()` Exports the formatted number as an AttributedCharacterIterator. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange#toString())`()` Returns a string representation of the object. |
 

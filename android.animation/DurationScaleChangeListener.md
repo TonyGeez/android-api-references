@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # DurationScaleChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DurationScaleChangeListener

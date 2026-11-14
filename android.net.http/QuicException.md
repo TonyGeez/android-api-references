@@ -6,18 +6,22 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # QuicException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/QuicException "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class QuicException : NetworkException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.http.HttpException](https://developer.android.com/reference/kotlin/android/net/http/HttpException) |||
 | | | | | ↳ | [android.net.http.NetworkException](https://developer.android.com/reference/kotlin/android/net/http/NetworkException) ||
 | | | | | | ↳ | [android.net.http.QuicException](https://developer.android.com/reference/kotlin/android/net/http/QuicException#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Subclass of [NetworkException](https://developer.android.com/reference/kotlin/android/net/http/NetworkException) which contains a detailed [QUIC](https://www.chromium.org/quic) error code from [QuicErrorCode](https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb). An instance of`QuicException`is passed to`onFailed`callbacks when the error code is [NetworkException.ERROR_QUIC_PROTOCOL_FAILED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_QUIC_PROTOCOL_FAILED:kotlin.Int).
 

@@ -9,6 +9,7 @@ open class SSLContext
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#) |
 
 Instances of this class represent a secure socket protocol implementation which acts as a factory for secure socket factories or`SSLEngine`s. This class is initialized with an optional set of key and trust managers and source of secure random bytes.
@@ -20,9 +21,11 @@ Android provides the following`SSLContext`protocols:
 | Default | 10+ |
 | SSL | 10+ |
 | SSLv3 | 10-25 |
+| --- | --- |
 | TLS | 1+ |
 | TLSv1 | 10+ |
 | TLSv1.1 | 16+ |
+| --- | --- |
 | TLSv1.2 | 16+ |
 | TLSv1.3 | 29+ |
 
@@ -39,18 +42,23 @@ This protocol is described in the [SSLContext section](https://docs.oracle.com/j
 | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | [createSSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#createSSLEngine())`()` Creates a new`SSLEngine`using this context. |
 | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | [createSSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#createSSLEngine(kotlin.String,%20kotlin.Int))`(`peerHost:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `peerPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`SSLEngine`using this context using advisory peer information. |
 | [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | [getClientSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getClientSessionContext())`()` Returns the client session context, which represents the set of SSL sessions available for use during the handshake phase of client-side SSL sockets. |
+| --- | --- |
 | openstatic [SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#)! | [getDefault](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getDefault())`()` Returns the default SSL context. |
 | [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [getDefaultSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getDefaultSSLParameters())`()` Returns a copy of the SSLParameters indicating the default settings for this SSL context. |
 | openstatic [SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getInstance(kotlin.String))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SSLContext`object that implements the specified secure socket protocol. |
+| --- | --- |
 | openstatic [SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getInstance(kotlin.String,%20kotlin.String))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SSLContext`object that implements the specified secure socket protocol. |
 | openstatic [SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getInstance(kotlin.String,%20java.security.Provider))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`SSLContext`object that implements the specified secure socket protocol. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProtocol](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getProtocol())`()` Returns the protocol name of this`SSLContext`object. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getProvider())`()` Returns the provider of this`SSLContext`object. |
 | [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | [getServerSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getServerSessionContext())`()` Returns the server session context, which represents the set of SSL sessions available for use during the handshake phase of server-side SSL sockets. |
 | [SSLServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory)! | [getServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getServerSocketFactory())`()` Returns a`ServerSocketFactory`object for this context. |
+| --- | --- |
 | [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory)! | [getSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getSocketFactory())`()` Returns a`SocketFactory`object for this context. |
 | [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [getSupportedSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getSupportedSSLParameters())`()` Returns a copy of the SSLParameters indicating the supported settings for this SSL context. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#init(kotlin.Array,%20kotlin.Array,%20java.security.SecureRandom))`(`km:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!>!`, `tm:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!>!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this context. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#setDefault(javax.net.ssl.SSLContext))`(`context:` ` [SSLContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#)!`)` Sets the default SSL context. |
 
 ## Protected constructors
@@ -73,6 +81,7 @@ Creates an SSLContext object.
 | `contextSpi` | [SSLContextSpi](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the protocol |
+| --- | --- |
 
 ## Public methods
 
@@ -250,6 +259,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.security.NoSuchAlgorithmException` | if a SSLContextSpi implementation for the specified protocol is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
 | `java.lang.IllegalArgumentException` | if the provider name is null or empty. |
+| --- | --- |
 | `java.lang.NullPointerException` | if protocol is null. |
 
 **See Also**
@@ -285,6 +295,7 @@ A new SSLContext object encapsulating the SSLContextSpi implementation from the 
 | `java.security.NoSuchAlgorithmException` | if a SSLContextSpi implementation for the specified protocol is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the provider is null. |
 | `java.lang.NullPointerException` | if protocol is null. |
+| --- | --- |
 
 **See Also**
 
@@ -413,6 +424,7 @@ Only the first instance of a particular key and/or trust manager implementation 
 | `km` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!\>!:the sources of authentication keys or null |
 | `tm` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!\>!:the sources of peer authentication trust decisions or null |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness for this generator or null |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------|-------------------------|

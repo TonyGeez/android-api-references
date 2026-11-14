@@ -9,10 +9,12 @@ class FileVisitResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#)\> ||
 | | ↳ | [java.nio.file.FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#) |
 
 | Known Direct Subclasses [FileVisitResult.CONTINUE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:CONTINUE), [FileVisitResult.SKIP_SIBLINGS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:SKIP_SIBLINGS), [FileVisitResult.SKIP_SUBTREE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:SKIP_SUBTREE), [FileVisitResult.TERMINATE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:TERMINATE) |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------| | [FileVisitResult.CONTINUE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:CONTINUE) | Continue. | | [FileVisitResult.SKIP_SIBLINGS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:SKIP_SIBLINGS) | Continue without visiting the*siblings*of this file or directory. | | [FileVisitResult.SKIP_SUBTREE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:SKIP_SUBTREE) | Continue without visiting the entries in this directory. | | [FileVisitResult.TERMINATE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult#ENUM_VALUE:TERMINATE) | Terminate. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The result type of a [FileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor).
 

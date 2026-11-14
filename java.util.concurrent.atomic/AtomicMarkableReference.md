@@ -9,6 +9,7 @@ open class AtomicMarkableReference<V : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.atomic.AtomicMarkableReference](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#) |
 
 An`AtomicMarkableReference`maintains an object reference along with a mark bit, that can be updated atomically.
@@ -26,9 +27,11 @@ Implementation note: This implementation maintains markable references by creati
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [attemptMark](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#attemptMark(java.util.concurrent.atomic.AtomicMarkableReference.V,%20kotlin.Boolean))`(`expectedReference:` `V`, `newMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Atomically sets the value of the mark to the given update value if the current reference is`==`to the expected reference. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#compareAndSet(java.util.concurrent.atomic.AtomicMarkableReference.V,%20java.util.concurrent.atomic.AtomicMarkableReference.V,%20kotlin.Boolean,%20kotlin.Boolean))`(`expectedReference:` `V`, `newReference:` `V`, `expectedMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Atomically sets the value of both the reference and mark to the given update values if the current reference is`==`to the expected reference and the current mark is equal to the expected mark. |
 | openV | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#get(kotlin.BooleanArray))`(`markHolder:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` Returns the current values of both the reference and the mark. |
+| --- | --- |
 | openV | [getReference](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#getReference())`()` Returns the current value of the reference. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMarked](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#isMarked())`()` Returns the current value of the mark. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#set(java.util.concurrent.atomic.AtomicMarkableReference.V,%20kotlin.Boolean))`(`newReference:` `V`, `newMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Unconditionally sets the value of both the reference and mark. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicMarkableReference#weakCompareAndSet(java.util.concurrent.atomic.AtomicMarkableReference.V,%20java.util.concurrent.atomic.AtomicMarkableReference.V,%20kotlin.Boolean,%20kotlin.Boolean))`(`expectedReference:` `V`, `newReference:` `V`, `expectedMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newMark:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Atomically sets the value of both the reference and mark to the given update values if the current reference is`==`to the expected reference and the current mark is equal to the expected mark. |
 
 ## Public constructors
@@ -94,6 +97,7 @@ Atomically sets the value of both the reference and mark to the given update val
 | `expectedReference` | V:the expected value of the reference |
 | `newReference` | V:the new value for the reference |
 | `expectedMark` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):the expected value of the mark |
+| --- | --- |
 | `newMark` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):the new value for the mark |
 
 | Return ||
@@ -184,6 +188,7 @@ Atomically sets the value of both the reference and mark to the given update val
 | `expectedReference` | V:the expected value of the reference |
 | `newReference` | V:the new value for the reference |
 | `expectedMark` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):the expected value of the mark |
+| --- | --- |
 | `newMark` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):the new value for the mark |
 
 | Return ||

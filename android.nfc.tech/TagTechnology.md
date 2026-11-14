@@ -5,6 +5,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # TagTechnology
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/TagTechnology "View this page in Java") 
+| --- | --- |
 
 ```
 interface TagTechnology : Closeable
@@ -13,6 +14,7 @@ interface TagTechnology : Closeable
 | [android.nfc.tech.TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#) |
 
 | Known Direct Subclasses [IsoDep](https://developer.android.com/reference/kotlin/android/nfc/tech/IsoDep), [MifareClassic](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic), [MifareUltralight](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight), [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef), [NdefFormatable](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable), [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA), [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB), [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode), [NfcF](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcF), [NfcV](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcV) |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [IsoDep](https://developer.android.com/reference/kotlin/android/nfc/tech/IsoDep) | Provides access to ISO-DEP (ISO 14443-4) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [MifareClassic](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic) | Provides access to MIFARE Classic properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [MifareUltralight](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight) | Provides access to MIFARE Ultralight properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef) | Provides access to NDEF content and operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [NdefFormatable](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable) | Provide access to NDEF format operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA) | Provides access to NFC-A (ISO 14443-3A) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB) | Provides access to NFC-B (ISO 14443-3B) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode) | Provides access to tags containing just a barcode. | | [NfcF](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcF) | Provides access to NFC-F (JIS 6319-4) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | | [NfcV](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcV) | Provides access to NFC-V (ISO 15693) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 is an interface to a technology in a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)
 
@@ -60,6 +62,7 @@ I/O operations may require RF activity, and may block. They have the following s
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#close())`()` Disable I/O operations to the tag from this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#) object, and release resources. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#connect())`()` Enable I/O operations to the tag from this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#) object. |
 | abstract [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#getTag())`()` Get the [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#) object backing this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#) object. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology#isConnected())`()` Helper to indicate if I/O operations should be possible. |
 
 ## Public methods
@@ -83,6 +86,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 **See Also**
 
@@ -111,6 +115,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 **See Also**
 

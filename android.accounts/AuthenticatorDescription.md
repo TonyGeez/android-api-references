@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AuthenticatorDescription
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/AuthenticatorDescription "View this page in Java") 
+| --- | --- |
 
 ```
 open class AuthenticatorDescription : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accounts.AuthenticatorDescription](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#) |
 
 A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) value type that contains information about an account authenticator.
@@ -31,18 +33,22 @@ A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcela
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the type only, suitable for key comparisons. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#hashCode())`()` Returns the hashcode of the type only. |
+| --- | --- |
 | openstatic [AuthenticatorDescription](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#)! | [newKey](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#newKey(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A factory method for creating an AuthenticatorDescription that can be used as a key to identify the authenticator by its type. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AuthenticatorDescription](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#CREATOR:android.os.Parcelable.Creator) Used to create the object from a parcel. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [accountPreferencesId](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#accountPreferencesId:kotlin.Int) A resource id for a hierarchy of PreferenceScreen to be added to the settings page for the account. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [customTokens](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#customTokens:kotlin.Boolean) Authenticator handles its own token caching and permission screen |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [iconId](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#iconId:kotlin.Int) A resource id of a icon for the authenticator |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [labelId](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#labelId:kotlin.Int) A resource id of a label for the authenticator that is suitable for displaying |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#packageName:kotlin.String) The package name that can be used to lookup the resources from above. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [smallIconId](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#smallIconId:kotlin.Int) A resource id of a smaller icon for the authenticator |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [type](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorDescription#type:kotlin.String) The string that uniquely identifies an authenticator |
 

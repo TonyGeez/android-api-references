@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # KeyboardShortcutInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/KeyboardShortcutInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class KeyboardShortcutInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.KeyboardShortcutInfo](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#) |
 
 Information about a Keyboard Shortcut.
@@ -31,9 +33,11 @@ Information about a Keyboard Shortcut.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#describeContents())`()` <br /> |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getBaseCharacter](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#getBaseCharacter())`()` Returns the base character that, combined with the modifiers, triggers this shortcut. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeycode](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#getKeycode())`()` Returns the base keycode that, combined with the modifiers, triggers this shortcut. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getLabel](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#getLabel())`()` Returns the label to be used to describe this shortcut. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#getModifiers())`()` Returns the set of modifiers that, combined with the key, trigger this shortcut. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,6 +61,7 @@ KeyboardShortcutInfo(
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The label that identifies the action performed by this shortcut. |
 | `baseCharacter` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html):The character that triggers the shortcut. |
 | `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The set of modifiers that, combined with the key, trigger the shortcut. These should be a combination of [KeyEvent.META_CTRL_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CTRL_ON:kotlin.Int), [KeyEvent.META_SHIFT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SHIFT_ON:kotlin.Int), [KeyEvent.META_META_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_META_ON:kotlin.Int), [KeyEvent.META_ALT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_ON:kotlin.Int), [KeyEvent.META_FUNCTION_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_FUNCTION_ON:kotlin.Int) and [KeyEvent.META_SYM_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SYM_ON:kotlin.Int). |
+| --- | --- |
 
 ### KeyboardShortcutInfo
 
@@ -74,6 +79,7 @@ KeyboardShortcutInfo(
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The label that identifies the action performed by this shortcut. |
 | `keycode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The keycode that triggers the shortcut. This should be a valid constant defined in [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent). |
 | `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The set of modifiers that, combined with the key, trigger the shortcut. These should be a combination of [KeyEvent.META_CTRL_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CTRL_ON:kotlin.Int), [KeyEvent.META_SHIFT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SHIFT_ON:kotlin.Int), [KeyEvent.META_META_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_META_ON:kotlin.Int), [KeyEvent.META_ALT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_ON:kotlin.Int), [KeyEvent.META_FUNCTION_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_FUNCTION_ON:kotlin.Int) and [KeyEvent.META_SYM_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SYM_ON:kotlin.Int). |
+| --- | --- |
 
 ## Public methods
 

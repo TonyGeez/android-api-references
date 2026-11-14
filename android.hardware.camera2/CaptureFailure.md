@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # CaptureFailure
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/CaptureFailure "View this page in Java") 
+| --- | --- |
 
 ```
 open class CaptureFailure
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.CaptureFailure](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#) |
 
 A report of failed capture for a single image capture from the image sensor.
@@ -31,9 +33,11 @@ Receiving a CaptureFailure means that the metadata associated with that frame nu
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrameNumber](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#getFrameNumber())`()` Get the frame number associated with this failed capture. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPhysicalCameraId](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#getPhysicalCameraId())`()` The physical camera device ID in case the capture failure comes from a [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest) with configured physical camera streams for a logical camera. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReason](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#getReason())`()` Determine why the request was dropped, whether due to an error or to a user action. |
+| --- | --- |
 | open [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest) | [getRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#getRequest())`()` Get the request associated with this failed capture. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequenceId](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#getSequenceId())`()` The sequence ID for this failed capture that was returned by the [CameraCaptureSession.capture](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#capture(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler))family of functions. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasImageCaptured](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure#wasImageCaptured())`()` Determine if the image was captured from the camera. |
+| --- | --- |
 
 ## Constants
 

@@ -9,9 +9,11 @@ abstract class Formatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#) |
 
 | Known Direct Subclasses [SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter), [XMLFormatter](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter) | Print a brief summary of the`LogRecord`in a human readable format. | | [XMLFormatter](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter) | Format a LogRecord into a standard XML format. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Formatter provides support for formatting LogRecords.
 
@@ -30,6 +32,7 @@ Some formatters (such as the XMLFormatter) need to wrap head and tail strings ar
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#format(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Format the given log record and return the formatted string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Localize and format the message string from a log record. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getHead(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the header string for a set of formatted records. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getTail(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the tail string for a set of formatted records. |
 
 ## Protected constructors

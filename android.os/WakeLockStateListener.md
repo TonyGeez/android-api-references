@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # WakeLockStateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface WakeLockStateListener

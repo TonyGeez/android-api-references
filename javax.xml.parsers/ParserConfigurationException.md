@@ -9,9 +9,11 @@ open class ParserConfigurationException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [javax.xml.parsers.ParserConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/parsers/ParserConfigurationException#) |
+| --- | --- | --- | --- |
 
 Indicates a serious configuration error.
 

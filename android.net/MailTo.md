@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MailTo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/MailTo "View this page in Java") 
+| --- | --- |
 
 ```
 open class MailTo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.MailTo](https://developer.android.com/reference/kotlin/android/net/MailTo#) |
 
 MailTo URL parser This class parses a mailto scheme URL and then can be queried for the parsed parameters. This implements RFC 2368.
@@ -26,9 +28,11 @@ MailTo URL parser This class parses a mailto scheme URL and then can be queried 
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBody](https://developer.android.com/reference/kotlin/android/net/MailTo#getBody())`()` Retrieve the body line from the parsed mailto URL. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCc](https://developer.android.com/reference/kotlin/android/net/MailTo#getCc())`()` Retrieve the CC address line from the parsed mailto URL. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getHeaders](https://developer.android.com/reference/kotlin/android/net/MailTo#getHeaders())`()` Retrieve all the parsed email headers from the mailto URL |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubject](https://developer.android.com/reference/kotlin/android/net/MailTo#getSubject())`()` Retrieve the subject line from the parsed mailto URL. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTo](https://developer.android.com/reference/kotlin/android/net/MailTo#getTo())`()` Retrieve the To address line from the parsed mailto URL. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMailTo](https://developer.android.com/reference/kotlin/android/net/MailTo#isMailTo(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test to see if the given string is a mailto URL |
+| --- | --- |
 | openstatic [MailTo](https://developer.android.com/reference/kotlin/android/net/MailTo#)! | [parse](https://developer.android.com/reference/kotlin/android/net/MailTo#parse(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse and decode a mailto scheme string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/MailTo#toString())`()` <br /> |
 

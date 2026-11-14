@@ -7,6 +7,7 @@ class CompletionInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.CompletionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#) |
 
 Information about a single text completion that an editor has reported to an input method.
@@ -41,9 +42,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getId()()` Return the abstract identifier for this completion, typically corresponding to the id associated with it in the original adapter. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getLabel()()` Return the user-visible label for the completion, or null if the plain text should be shown. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getPosition()()` Return the original position of this completion, typically corresponding to its position in the original adapter. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getText()()` Return the actual text associated with this completion. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 | Properties ||
@@ -70,6 +73,7 @@ Create a simple completion with just text, no label.
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): An id that get passed as is (to the editor's discretion) |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An index that get passed as is. Typically this is the index in the list of completions inside the editor. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text that should be inserted into the editor when this completion is chosen. |
+| --- | --- |
 
 ### CompletionInfo
 
@@ -90,6 +94,7 @@ Create a full completion with both text and label. The text is what will get ins
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): An id that get passed as is (to the editor's discretion) |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An index that get passed as is. Typically this is the index in the list of completions inside the editor. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text that should be inserted into the editor when this completion is chosen. |
+| --- | --- |
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text that the IME should be showing among the completions list. |
 
 ## Public methods

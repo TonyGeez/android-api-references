@@ -9,9 +9,11 @@ class ReflectPermission : BasicPermission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) |||
 | | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission.html#) ||
 | | | ↳ | [java.lang.reflect.ReflectPermission](https://developer.android.com/reference/kotlin/java/lang/reflect/ReflectPermission#) |
+| --- | --- | --- | --- |
 
 Legacy security code; do not use.
 

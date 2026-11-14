@@ -9,9 +9,11 @@ open class PushbackReader : FilterReader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader) |||
 | | ↳ | [java.io.FilterReader](https://developer.android.com/reference/kotlin/java/io/FilterReader) ||
 | | | ↳ | [java.io.PushbackReader](https://developer.android.com/reference/kotlin/java/io/PushbackReader#) |
+| --- | --- | --- | --- |
 
 A character-stream reader that allows characters to be pushed back into the stream.
 
@@ -27,12 +29,15 @@ A character-stream reader that allows characters to be pushed back into the stre
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/PushbackReader#close())`()` Closes the stream and releases any system resources associated with it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/io/PushbackReader#mark(kotlin.Int))`(`readAheadLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the present position in the stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/io/PushbackReader#markSupported())`()` Tells whether this stream supports the mark() operation, which it does not. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PushbackReader#read())`()` Reads a single character. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PushbackReader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads characters into a portion of an array. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ready](https://developer.android.com/reference/kotlin/java/io/PushbackReader#ready())`()` Tells whether this stream is ready to be read. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/PushbackReader#reset())`()` Resets the stream. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/PushbackReader#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unread](https://developer.android.com/reference/kotlin/java/io/PushbackReader#unread(kotlin.CharArray))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Pushes back an array of characters by copying it to the front of the pushback buffer. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unread](https://developer.android.com/reference/kotlin/java/io/PushbackReader#unread(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pushes back a portion of an array of characters by copying it to the front of the pushback buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unread](https://developer.android.com/reference/kotlin/java/io/PushbackReader#unread(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pushes back a single character by copying it to the front of the pushback buffer. |
 
@@ -99,6 +104,7 @@ Closes the stream and releases any system resources associated with it. Once the
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 
 ### mark
 
@@ -169,6 +175,7 @@ Reads characters into a portion of an array.
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:Destination buffer |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset at which to start writing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum number of characters to read |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -271,6 +278,7 @@ Pushes back a portion of an array of characters by copying it to the front of th
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:Character array |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset of first character to push back |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Number of characters to push back |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-----------------------------------------------------------------------------------------|

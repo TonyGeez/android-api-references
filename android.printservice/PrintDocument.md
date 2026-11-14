@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintDocument
 
 Kotlin| [Java](https://developer.android.com/reference/android/printservice/PrintDocument "View this page in Java") 
+| --- | --- |
 
 ```
 class PrintDocument
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.printservice.PrintDocument](https://developer.android.com/reference/kotlin/android/printservice/PrintDocument#) |
 
 This class represents a printed document from the perspective of a print service. It exposes APIs to query the document and obtain its data.

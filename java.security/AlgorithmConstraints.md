@@ -23,6 +23,7 @@ Note that`AlgorithmConstraints`can be used to represent the restrictions describ
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [permits](https://developer.android.com/reference/kotlin/java/security/AlgorithmConstraints#permits(kotlin.collections.MutableSet,%20kotlin.String,%20java.security.AlgorithmParameters))`(`primitives:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CryptoPrimitive](https://developer.android.com/reference/kotlin/java/security/CryptoPrimitive)!>!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parameters:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)!`)` Determines whether an algorithm is granted permission for the specified cryptographic primitives. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [permits](https://developer.android.com/reference/kotlin/java/security/AlgorithmConstraints#permits(kotlin.collections.MutableSet,%20kotlin.String,%20java.security.Key,%20java.security.AlgorithmParameters))`(`primitives:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CryptoPrimitive](https://developer.android.com/reference/kotlin/java/security/CryptoPrimitive)!>!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key)!`, `parameters:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)!`)` Determines whether an algorithm and the corresponding key are granted permission for the specified cryptographic primitives. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [permits](https://developer.android.com/reference/kotlin/java/security/AlgorithmConstraints#permits(kotlin.collections.MutableSet,%20java.security.Key))`(`primitives:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CryptoPrimitive](https://developer.android.com/reference/kotlin/java/security/CryptoPrimitive)!>!`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key)!`)` Determines whether a key is granted permission for the specified cryptographic primitives. |
+| --- | --- |
 
 ## Public methods
 
@@ -45,6 +46,7 @@ Determines whether an algorithm is granted permission for the specified cryptogr
 | `primitives` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CryptoPrimitive](https://developer.android.com/reference/kotlin/java/security/CryptoPrimitive)!\>!:a set of cryptographic primitives |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name |
 | `parameters` | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)!:the algorithm parameters, or null if no additional parameters |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -74,6 +76,7 @@ Determines whether an algorithm and the corresponding key are granted permission
 | `primitives` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CryptoPrimitive](https://developer.android.com/reference/kotlin/java/security/CryptoPrimitive)!\>!:a set of cryptographic primitives |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key)!:the key |
+| --- | --- |
 | `parameters` | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)!:the algorithm parameters, or null if no additional parameters |
 
 | Return ||

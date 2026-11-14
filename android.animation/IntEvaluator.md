@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # IntEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/IntEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class IntEvaluator : TypeEvaluator<Int!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.IntEvaluator](https://developer.android.com/reference/kotlin/android/animation/IntEvaluator#) |
 
 This evaluator can be used to perform type interpolation between`int`values.
@@ -54,6 +56,7 @@ This function returns the result of linearly interpolating the start and end val
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!:The start value; should be of type`int`or`Integer` |
 | `endValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!:The end value; should be of type`int`or`Integer` |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

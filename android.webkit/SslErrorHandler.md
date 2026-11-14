@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SslErrorHandler
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/SslErrorHandler "View this page in Java") 
+| --- | --- |
 
 ```
 open class SslErrorHandler : Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.os.Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) ||
 | | ↳ | [android.webkit.SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler#) |
 

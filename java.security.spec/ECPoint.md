@@ -9,6 +9,7 @@ open class ECPoint
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint#) |
 
 This immutable class represents a point on an elliptic curve (EC) in affine coordinates. Other coordinate systems can extend this class to represent this point in other coordinates.
@@ -24,6 +25,7 @@ This immutable class represents a point on an elliptic curve (EC) in affine coor
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve point for equality with the specified object. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getAffineX](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint#getAffineX())`()` Returns the affine x-coordinate`x`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getAffineY](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint#getAffineY())`()` Returns the affine y-coordinate`y`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint#hashCode())`()` Returns a hash code value for this elliptic curve point. |
 
 | Properties ||

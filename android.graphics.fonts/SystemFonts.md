@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # SystemFonts
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/fonts/SystemFonts "View this page in Java") 
+| --- | --- |
 
 ```
 class SystemFonts
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.fonts.SystemFonts](https://developer.android.com/reference/kotlin/android/graphics/fonts/SystemFonts#) |
 
 Provides the system font configurations.

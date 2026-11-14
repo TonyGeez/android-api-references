@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # ClipData
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ClipData "View this page in Java") 
+| --- | --- |
 
 ```
 open class ClipData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#) |
 
 Representation of a clipped data on the clipboard.
@@ -74,15 +76,19 @@ Note if a paste operation needs this clip as text (for example to paste into an 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addItem](https://developer.android.com/reference/kotlin/android/content/ClipData#addItem(android.content.ClipData.Item))`(`item:` ` [ClipData.Item](https://developer.android.com/reference/kotlin/android/content/ClipData.Item)!`)` Add a new Item to the overall ClipData container. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addItem](https://developer.android.com/reference/kotlin/android/content/ClipData#addItem(android.content.ContentResolver,%20android.content.ClipData.Item))`(`resolver:` ` [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver)!`, `item:` ` [ClipData.Item](https://developer.android.com/reference/kotlin/android/content/ClipData.Item)!`)` Add a new Item to the overall ClipData container. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/ClipData#describeContents())`()` <br /> |
+| --- | --- |
 | open [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription)! | [getDescription](https://developer.android.com/reference/kotlin/android/content/ClipData#getDescription())`()` Return the [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription) associated with this data, describing what it contains. |
 | open [ClipData.Item](https://developer.android.com/reference/kotlin/android/content/ClipData.Item)! | [getItemAt](https://developer.android.com/reference/kotlin/android/content/ClipData#getItemAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a single item inside of the clip data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemCount](https://developer.android.com/reference/kotlin/android/content/ClipData#getItemCount())`()` Return the number of items in the clip data. |
+| --- | --- |
 | openstatic [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#)! | [newHtmlText](https://developer.android.com/reference/kotlin/android/content/ClipData#newHtmlText(kotlin.CharSequence,%20kotlin.CharSequence,%20kotlin.String))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `htmlText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new ClipData holding data of the type [ClipDescription.MIMETYPE_TEXT_HTML](https://developer.android.com/reference/kotlin/android/content/ClipDescription#MIMETYPE_TEXT_HTML:kotlin.String). |
 | openstatic [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#)! | [newIntent](https://developer.android.com/reference/kotlin/android/content/ClipData#newIntent(kotlin.CharSequence,%20android.content.Intent))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)!`)` Create a new ClipData holding an Intent with MIME type [ClipDescription.MIMETYPE_TEXT_INTENT](https://developer.android.com/reference/kotlin/android/content/ClipDescription#MIMETYPE_TEXT_INTENT:kotlin.String). |
 | openstatic [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#)! | [newPlainText](https://developer.android.com/reference/kotlin/android/content/ClipData#newPlainText(kotlin.CharSequence,%20kotlin.CharSequence))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Create a new ClipData holding data of the type [ClipDescription.MIMETYPE_TEXT_PLAIN](https://developer.android.com/reference/kotlin/android/content/ClipDescription#MIMETYPE_TEXT_PLAIN:kotlin.String). |
+| --- | --- |
 | openstatic [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#)! | [newRawUri](https://developer.android.com/reference/kotlin/android/content/ClipData#newRawUri(kotlin.CharSequence,%20android.net.Uri))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Create a new ClipData holding an URI with MIME type [ClipDescription.MIMETYPE_TEXT_URILIST](https://developer.android.com/reference/kotlin/android/content/ClipDescription#MIMETYPE_TEXT_URILIST:kotlin.String). |
 | openstatic [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData#)! | [newUri](https://developer.android.com/reference/kotlin/android/content/ClipData#newUri(android.content.ContentResolver,%20kotlin.CharSequence,%20android.net.Uri))`(`resolver:` ` [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver)!`, `label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Create a new ClipData holding a URI. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/ClipData#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/ClipData#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -140,6 +146,7 @@ Create a new clip.
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:Label to show to the user describing this clip. |
 | `mimeTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:An array of MIME types this data is available as. |
 | `item` | [ClipData.Item](https://developer.android.com/reference/kotlin/android/content/ClipData.Item)!:The contents of the first item in the clip. |
+| --- | --- |
 
 ## Public methods
 
@@ -240,6 +247,7 @@ Create a new ClipData holding data of the type [ClipDescription.MIMETYPE_TEXT_HT
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:User-visible label for the clip data. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The text of clip as plain text, for receivers that don't handle HTML. This is required. |
 | `htmlText` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The actual HTML text in the clip. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -330,6 +338,7 @@ Create a new ClipData holding a URI. If the URI is a content: URI, this will que
 | `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver)!:ContentResolver used to get information about the URI. |
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:User-visible label for the clip data. |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The URI in the clip. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------|

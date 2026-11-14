@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # MeasureFormat
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/MeasureFormat "View this page in Java") 
+| --- | --- |
 
 ```
 open class MeasureFormat : UFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) |||
 | | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) ||
 | | | ↳ | [android.icu.text.MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#) |
+| --- | --- | --- | --- |
 
 A formatter for Measure objects.
 
@@ -69,18 +72,23 @@ This class is immutable and thread-safe so long as its deprecated subclass, Time
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Two MeasureFormats, a and b, are equal if and only if they have the same formatWidth, locale, and equal number formats. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!`, `fpos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!`)` Able to format Collection\<? extends Measure\>, Measure\[\], and Measure by delegating to formatMeasures. |
 | open [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | [formatMeasurePerUnit](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#formatMeasurePerUnit(android.icu.util.Measure,%20android.icu.util.MeasureUnit,%20java.lang.StringBuilder,%20java.text.FieldPosition))`(`measure:` ` [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!`, `perUnit:` ` [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#)!`, `appendTo:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!`)` Formats a single measure per unit. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMeasures](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#formatMeasures(android.icu.util.Measure))`(`vararg` `measures:` ` [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!`)` Format a sequence of measures. |
 | open [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | [formatMeasures](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#formatMeasures(java.lang.StringBuilder,%20java.text.FieldPosition,%20android.icu.util.Measure))`(`appendTo:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!`, `fpos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!`, `vararg` `measures:` ` [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!`)` Formats a sequence of measures. |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getCurrencyFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getCurrencyFormat())`()` Return a formatter for CurrencyAmount objects in the default`FORMAT`locale. |
+| --- | --- |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getCurrencyFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getCurrencyFormat(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Return a formatter for CurrencyAmount objects in the given locale. |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getCurrencyFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getCurrencyFormat(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Return a formatter for CurrencyAmount objects in the given [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getInstance(android.icu.util.ULocale,%20android.icu.text.MeasureFormat.FormatWidth))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `formatWidth:` ` [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!`)` Create a format from the locale, formatWidth, and format. |
+| --- | --- |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getInstance(android.icu.util.ULocale,%20android.icu.text.MeasureFormat.FormatWidth,%20android.icu.text.NumberFormat))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `formatWidth:` ` [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!`, `format:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` Create a format from the locale, formatWidth, and format. |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getInstance(java.util.Locale,%20android.icu.text.MeasureFormat.FormatWidth))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `formatWidth:` ` [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!`)` Create a format from the [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) and formatWidth. |
 | openstatic [MeasureFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getInstance(java.util.Locale,%20android.icu.text.MeasureFormat.FormatWidth,%20android.icu.text.NumberFormat))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `formatWidth:` ` [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!`, `format:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` Create a format from the [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#), formatWidth, and format. |
+| --- | --- |
 | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | [getLocale](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getLocale())`()` Get the locale of this instance. |
 | open [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | [getNumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getNumberFormat())`()` Get a copy of the number format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnitDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getUnitDisplayName(android.icu.util.MeasureUnit))`(`unit:` ` [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#)!`)` Gets the display name of the specified [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#) corresponding to the current locale and format width. |
+| --- | --- |
 | open [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)! | [getWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#getWidth())`()` Get the format width this instance is using. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat#hashCode())`()` Returns a hash code value for the object. |
 
@@ -123,6 +131,7 @@ Able to format Collection\<? extends Measure\>, Measure\[\], and Measure by dele
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:must be a Collection\<? extends Measure\>, Measure\[\], or Measure object. |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!:Formatted string appended here. |
 | `pos` | A`FieldPosition`identifying a field in the formatted text |
+| --- | --- |
 | `fpos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!:Identifies a field in the formatted text. |
 
 | Return ||
@@ -158,6 +167,7 @@ Formats a single measure per unit. An example of such a formatted string is "3.5
 | `measure` | [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!:the measure object. In above example, 3.5 meters. |
 | `perUnit` | [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#)!:the per unit. In above example, it is MeasureUnit.SECOND |
 | `appendTo` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!:formatted string appended here. |
+| --- | --- |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!:The field position. |
 
 | Return ||
@@ -201,6 +211,7 @@ Formats a sequence of measures. If the fieldPosition argument identifies a Numbe
 | `appendTo` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!:the formatted string appended here. |
 | `fpos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!:Identifies a field in the formatted text. |
 | `measures` | [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!:the measures to format. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------|
@@ -305,6 +316,7 @@ Create a format from the locale, formatWidth, and format.
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale. |
 | `formatWidth` | [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!:hints how long formatted strings should be. |
 | `format` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!:This is defensively copied. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------|
@@ -351,6 +363,7 @@ Create a format from the [java.util.Locale](https://developer.android.com/refere
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
 | `formatWidth` | [MeasureFormat.FormatWidth](https://developer.android.com/reference/kotlin/android/icu/text/MeasureFormat.FormatWidth)!:hints how long formatted strings should be. |
 | `format` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!:This is defensively copied. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------|

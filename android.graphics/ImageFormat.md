@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # ImageFormat
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/ImageFormat "View this page in Java") 
+| --- | --- |
 
 ```
 open class ImageFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.ImageFormat](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#) |
 
 ## Summary
@@ -20,27 +22,35 @@ open class ImageFormat
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH16:kotlin.Int) Android dense depth image format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_JPEG:kotlin.Int) Depth augmented compressed JPEG format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_POINT_CLOUD](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_POINT_CLOUD:kotlin.Int) Android sparse depth point cloud format. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGBA_8888:kotlin.Int) Multi-plane Android RGBA format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGB_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGB_888:kotlin.Int) Multi-plane Android RGB format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC:kotlin.Int) Compressed HEIC format. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC_ULTRAHDR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC_ULTRAHDR:kotlin.Int) High Efficiency Image File Format (HEIF) with embedded HDR gain map |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG:kotlin.Int) Compressed JPEG format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG_R](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG_R:kotlin.Int) Compressed JPEG format that includes an embedded recovery map. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV16:kotlin.Int) YCbCr format, used for video. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV21](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV21:kotlin.Int) YCrCb format used for images, which uses the NV21 encoding format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#PRIVATE:kotlin.Int) Android private opaque image format. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW10](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW10:kotlin.Int) Android 10-bit raw format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW12:kotlin.Int) Android 12-bit raw format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_PRIVATE:kotlin.Int) Private raw camera sensor image format, a single channel image with implementation dependent pixel layout. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_SENSOR:kotlin.Int) General raw camera sensor image format, usually representing a single-channel Bayer-mosaic image. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_565](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RGB_565:kotlin.Int) RGB format used for pictures encoded as RGB_565. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#UNKNOWN:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [Y8](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#Y8:kotlin.Int) Android Y8 format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P010](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P010:kotlin.Int) Android YUV P010 format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P210](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P210:kotlin.Int) Android YUV P210 format. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) Multi-plane Android YUV 420 format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_422_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_422_888:kotlin.Int) Multi-plane Android YUV 422 format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_444_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_444_888:kotlin.Int) Multi-plane Android YUV 444 format |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUY2](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUY2:kotlin.Int) YCbCr format used for images, which uses YUYV (YUY2) encoding format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YV12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YV12:kotlin.Int) Android YUV format. |
 
@@ -319,6 +329,7 @@ In an image buffer with this format, starting from the first pixel of each row, 
 | Byte 0: | P0\[9\] | P0\[8\] | P0\[7\] | P0\[6\] | P0\[5\] | P0\[4\] | P0\[3\] | P0\[2\] |
 | Byte 1: | P1\[9\] | P1\[8\] | P1\[7\] | P1\[6\] | P1\[5\] | P1\[4\] | P1\[3\] | P1\[2\] |
 | Byte 2: | P2\[9\] | P2\[8\] | P2\[7\] | P2\[6\] | P2\[5\] | P2\[4\] | P2\[3\] | P2\[2\] |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Byte 3: | P3\[9\] | P3\[8\] | P3\[7\] | P3\[6\] | P3\[5\] | P3\[4\] | P3\[3\] | P3\[2\] |
 | Byte 4: | P3\[1\] | P3\[0\] | P2\[1\] | P2\[0\] | P1\[1\] | P1\[0\] | P0\[1\] | P0\[0\] |
 
@@ -365,6 +376,7 @@ In an image buffer with this format, starting from the first pixel of each row, 
 | Byte 0: | P0\[11\] | P0\[10\] | P0\[ 9\] | P0\[ 8\] | P0\[ 7\] | P0\[ 6\] | P0\[ 5\] | P0\[ 4\] |
 | Byte 1: | P1\[11\] | P1\[10\] | P1\[ 9\] | P1\[ 8\] | P1\[ 7\] | P1\[ 6\] | P1\[ 5\] | P1\[ 4\] |
 | Byte 2: | P1\[ 3\] | P1\[ 2\] | P1\[ 1\] | P1\[ 0\] | P0\[ 3\] | P0\[ 2\] | P0\[ 1\] | P0\[ 0\] |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This format assumes
 

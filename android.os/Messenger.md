@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Messenger
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Messenger "View this page in Java") 
+| --- | --- |
 
 ```
 class Messenger : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Messenger](https://developer.android.com/reference/kotlin/android/os/Messenger#) |
 
 Reference to a Handler, which others can use to send messages to it. This allows for the implementation of message-based communication across processes, by creating a Messenger pointing to a Handler in one process, and handing that Messenger to another process.
@@ -33,9 +35,11 @@ Note: the implementation underneath is just a simple wrapper around a [Binder](h
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/Messenger#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/Messenger#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Comparison operator on two Messenger objects, such that true is returned then they both point to the same Handler. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder)! | [getBinder](https://developer.android.com/reference/kotlin/android/os/Messenger#getBinder())`()` Retrieve the IBinder that this Messenger is using to communicate with its associated Handler. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/Messenger#hashCode())`()` <br /> |
 | static [Messenger](https://developer.android.com/reference/kotlin/android/os/Messenger#)! | [readMessengerOrNullFromParcel](https://developer.android.com/reference/kotlin/android/os/Messenger#readMessengerOrNullFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)!`)` Convenience function for reading either a Messenger or null pointer from a Parcel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [send](https://developer.android.com/reference/kotlin/android/os/Messenger#send(android.os.Message))`(`message:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message)!`)` Send a Message to this Messenger's Handler. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeMessengerOrNullToParcel](https://developer.android.com/reference/kotlin/android/os/Messenger#writeMessengerOrNullToParcel(android.os.Messenger,%20android.os.Parcel))`(`messenger:` ` [Messenger](https://developer.android.com/reference/kotlin/android/os/Messenger#)!`, `out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)!`)` Convenience function for writing either a Messenger or null pointer to a Parcel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Messenger#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

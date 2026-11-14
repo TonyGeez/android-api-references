@@ -9,6 +9,7 @@ abstract class X509ExtendedTrustManager : X509TrustManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.X509ExtendedTrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager#) |
 
 Extensions to the`X509TrustManager`interface to support SSL/TLS connection sensitive trust management.
@@ -28,6 +29,7 @@ RFC 2830 defines the server identification specification for the "LDAPS" algorit
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkClientTrusted](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager#checkClientTrusted(kotlin.Array,%20kotlin.String,%20java.net.Socket))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Given the partial or complete certificate chain provided by the peer, build and validate the certificate path based on the authentication type and ssl parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkClientTrusted](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager#checkClientTrusted(kotlin.Array,%20kotlin.String,%20javax.net.ssl.SSLEngine))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `engine:` ` [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!`)` Given the partial or complete certificate chain provided by the peer, build and validate the certificate path based on the authentication type and ssl parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkServerTrusted](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager#checkServerTrusted(kotlin.Array,%20kotlin.String,%20java.net.Socket))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Given the partial or complete certificate chain provided by the peer, build and validate the certificate path based on the authentication type and ssl parameters. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkServerTrusted](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager#checkServerTrusted(kotlin.Array,%20kotlin.String,%20javax.net.ssl.SSLEngine))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `engine:` ` [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!`)` Given the partial or complete certificate chain provided by the peer, build and validate the certificate path based on the authentication type and ssl parameters. |
 
 | Inherited functions ||
@@ -71,6 +73,7 @@ If the`socket`parameter is an instance of [javax.net.ssl.SSLSocket](https://deve
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key exchange algorithm used |
 | `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the socket used for this connection. This parameter can be null, which indicates that implementations need not check the ssl parameters |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -108,6 +111,7 @@ If the`engine`parameter is available, and the algorithm constraints of the`SSLPa
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key exchange algorithm used |
 | `engine` | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!:the engine used for this connection. This parameter can be null, which indicates that implementations need not check the ssl parameters |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -145,6 +149,7 @@ If the`socket`parameter is an instance of [javax.net.ssl.SSLSocket](https://deve
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key exchange algorithm used |
 | `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the socket used for this connection. This parameter can be null, which indicates that implementations need not check the ssl parameters |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -182,6 +187,7 @@ If the`engine`parameter is available, and the algorithm constraints of the`SSLPa
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key exchange algorithm used |
 | `engine` | [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)!:the engine used for this connection. This parameter can be null, which indicates that implementations need not check the ssl parameters |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|

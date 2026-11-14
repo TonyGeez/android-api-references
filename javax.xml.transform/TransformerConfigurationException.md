@@ -9,9 +9,11 @@ open class TransformerConfigurationException : TransformerException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.xml.transform.TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.xml.transform.TransformerConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerConfigurationException#) |
 
 Indicates a serious configuration error.
@@ -115,6 +117,7 @@ Wrap an existing exception in a TransformerConfigurationException.
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message, or null to use the message from the embedded exception. |
 | `locator` | [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!:The locator object for the error or warning. |
 | `e` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:Any exception. |
+| --- | --- |
 
 ### TransformerConfigurationException
 

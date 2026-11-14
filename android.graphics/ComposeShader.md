@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ComposeShader
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/ComposeShader "View this page in Java") 
+| --- | --- |
 
 ```
 open class ComposeShader : Shader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
 | | ↳ | [android.graphics.ComposeShader](https://developer.android.com/reference/kotlin/android/graphics/ComposeShader#) |
 
@@ -48,6 +50,7 @@ Create a new compose shader, given shaders A, B, and a combining PorterDuff mode
 | `shaderA` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "dst" by the mode This value cannot be`null`. |
 | `shaderB` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "src" by the mode This value cannot be`null`. |
 | `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode):The blend mode that combines the colors from the two shaders. This value cannot be`null`. |
+| --- | --- |
 
 ### ComposeShader
 
@@ -67,6 +70,7 @@ Create a new compose shader, given shaders A, B, and a combining PorterDuff mode
 | `shaderA` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "dst" by the mode This value cannot be`null`. |
 | `shaderB` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "src" by the mode This value cannot be`null`. |
 | `mode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode):The PorterDuff mode that combines the colors from the two shaders. This value cannot be`null`. |
+| --- | --- |
 
 ### ComposeShader
 
@@ -86,3 +90,4 @@ Create a new compose shader, given shaders A, B, and a combining mode. When the 
 | `shaderA` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "dst" by the mode This value cannot be`null`. |
 | `shaderB` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader):The colors from this shader are seen as the "src" by the mode This value cannot be`null`. |
 | `mode` | [Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode):The mode that combines the colors from the two shaders. If mode is null, then SRC_OVER is assumed. |
+| --- | --- |

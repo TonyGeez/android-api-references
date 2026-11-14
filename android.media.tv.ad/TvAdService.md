@@ -7,9 +7,11 @@ abstract class TvAdService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.tv.ad.TvAdService](https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#) |
 
 The TvAdService class represents a TV client-side advertisement service.
@@ -1051,6 +1053,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onAppLinkCommand(android.os.Bundle)(command: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when app link command is received. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [TvAdService.Session](https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService.Session)? | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onCreateSession(kotlin.String,%20kotlin.String)(serviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService.Session`. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 

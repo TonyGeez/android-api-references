@@ -12,6 +12,7 @@ interface Owner
 | [java.security.acl.Owner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#) |
 
 | Known Direct Subclasses [Acl](https://developer.android.com/reference/kotlin/java/security/acl/Acl) |-----------------------------------------------------------------------------|------------------------------------------------------| | [Acl](https://developer.android.com/reference/kotlin/java/security/acl/Acl) | Interface representing an Access Control List (ACL). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 33.**
 |
@@ -26,6 +27,7 @@ Interface for managing owners of Access Control Lists (ACLs) or ACL configuratio
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#addOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Adds an owner. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#deleteOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Deletes an owner. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#isOwner(java.security.Principal))`(`owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Returns true if the given principal is an owner of the ACL. |
+| --- | --- |
 
 ## Public methods
 

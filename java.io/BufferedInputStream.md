@@ -9,9 +9,11 @@ open class BufferedInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) ||
 | | | ↳ | [java.io.BufferedInputStream](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#) |
+| --- | --- | --- | --- |
 
 A `BufferedInputStream` adds functionality to another input stream-namely, the ability to buffer the input and to support the `mark` and `reset` methods. When the `BufferedInputStream` is created, an internal buffer array is created. As bytes from the stream are read or skipped, the internal buffer is refilled as necessary from the contained input stream, many bytes at a time. The `mark` operation remembers a point in the input stream and the `reset` operation causes all the bytes read since the most recent `mark` operation to be reread before new bytes are taken from the contained input stream.
 
@@ -27,9 +29,11 @@ A `BufferedInputStream` adds functionality to another input stream-namely, the a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#available())`()` Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next invocation of a method for this input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#close())`()` Closes this input stream and releases any system resources associated with the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#mark(kotlin.Int))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the `mark` method of `InputStream`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#markSupported())`()` Tests if this input stream supports the `mark` and `reset` methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#read())`()` See the general contract of the `read` method of `InputStream`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads bytes from this byte-input stream into the specified byte array, starting at the given offset. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#reset())`()` See the general contract of the `reset` method of `InputStream`. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` See the general contract of the `skip` method of `InputStream`. |
 
@@ -43,6 +47,7 @@ A `BufferedInputStream` adds functionality to another input stream-namely, the a
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#buf:kotlin.ByteArray) The internal buffer array where the data is stored. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [count](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#count:kotlin.Int) The index one greater than the index of the last valid byte in the buffer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [marklimit](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#marklimit:kotlin.Int) The maximum read ahead allowed after a call to the `mark` method before subsequent calls to the `reset` method fail. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [markpos](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#markpos:kotlin.Int) The value of the `pos` field at the time the last `mark` method was called. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [pos](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream#pos:kotlin.Int) The current position in the buffer. |
 
@@ -210,6 +215,7 @@ Subclasses of this class are encouraged, but not required, to attempt to read as
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: destination buffer. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): offset at which to start storing bytes. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): maximum number of bytes to read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -220,6 +226,7 @@ Subclasses of this class are encouraged, but not required, to attempt to read as
 | `java.io.IOException` | if this input stream has been closed by invoking its #close() method, or an I/O error occurs. |
 | `java.lang.NullPointerException` | If `b` is `null`. |
 | `java.lang.IndexOutOfBoundsException` | If `off` is negative, `len` is negative, or `len` is greater than `b.length - off` |
+| --- | --- |
 
 ### reset
 

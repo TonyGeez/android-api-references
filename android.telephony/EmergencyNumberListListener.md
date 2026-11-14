@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # EmergencyNumberListListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.EmergencyNumberListListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface EmergencyNumberListListener

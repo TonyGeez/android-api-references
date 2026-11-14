@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ScanRecord
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/ScanRecord "View this page in Java")
+| --- | --- |
 
 ```
 class ScanRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#) |
 
 Represents a scan record from Bluetooth LE scan.
@@ -20,48 +22,63 @@ Represents a scan record from Bluetooth LE scan.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_3D_INFORMATION_DATA:kotlin.Int` Data type is 3D Information Data, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_ADVERTISING_INTERVAL:kotlin.Int` Data type is Advertising Interval, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_ADVERTISING_INTERVAL_LONG:kotlin.Int` Data type is Advertising Interval - long, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_APPEARANCE:kotlin.Int` Data type is Appearance, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_BIG_INFO:kotlin.Int` Data type is BIGInfo, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_BROADCAST_CODE:kotlin.Int` Data type is Broadcast_Code, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION:kotlin.Int` Data type is Channel Map Update Indication, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_CLASS_OF_DEVICE:kotlin.Int` Data type is Class of Device, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_DEVICE_ID:kotlin.Int` Data type is Device ID, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_FLAGS:kotlin.Int` Data type is Flags, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_INDOOR_POSITIONING:kotlin.Int` Data type is Indoor Positioning, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS:kotlin.Int` Data type is LE Bluetooth Device Address, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LE_ROLE:kotlin.Int` Data type is LE Role, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE:kotlin.Int` Data type is LE Secure Connections Confirmation Value, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE:kotlin.Int` Data type is LE Secure Connections Random Value, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LE_SUPPORTED_FEATURES:kotlin.Int` Data type is LE Supported Features, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LOCAL_NAME_COMPLETE:kotlin.Int` Data type is Complete Local Name, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_LOCAL_NAME_SHORT:kotlin.Int` Data type is Shortened Local Name, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_MANUFACTURER_SPECIFIC_DATA:kotlin.Int` Data type is Manufacturer Specific Data, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_MESH_BEACON:kotlin.Int` Data type is Mesh Beacon, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_MESH_MESSAGE:kotlin.Int` Data type is Mesh Message, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_NONE:kotlin.Int` Data type is not set for the filter. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_PB_ADV:kotlin.Int` Data type is PB-ADV, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_PUBLIC_TARGET_ADDRESS:kotlin.Int` Data type is Public Target Address, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_RANDOM_TARGET_ADDRESS:kotlin.Int` Data type is Random Target Address, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_RESOLVABLE_SET_IDENTIFIER:kotlin.Int` Data type is Resolvable Set Identifier, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS:kotlin.Int` Data type is Security Manager Out of Band Flags, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_DATA_128_BIT:kotlin.Int` Data type is Service Data - 128-bit UUID, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_DATA_16_BIT:kotlin.Int` Data type is Service Data - 16-bit UUID, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_DATA_32_BIT:kotlin.Int` Data type is Service Data - 32-bit UUID, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT:kotlin.Int` Data type is List of 128-bit Service Solicitation UUIDs, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT:kotlin.Int` Data type is List of 16-bit Service Solicitation UUIDs, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT:kotlin.Int` Data type is List of 32-bit Service Solicitation UUIDs, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE:kotlin.Int` Data type is Complete List of 128-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL:kotlin.Int` Data type is Incomplete List of 128-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for the details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE:kotlin.Int` Data type is Complete List of 16-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL:kotlin.Int` Data type is Incomplete List of 16-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for the details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE:kotlin.Int` Data type is Complete List of 32-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL:kotlin.Int` Data type is Incomplete List of 32-bit Service Class UUIDs, see the Bluetooth Generic Access Profile for the details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SIMPLE_PAIRING_HASH_C:kotlin.Int` Data type is Simple Pairing Hash C, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SIMPLE_PAIRING_HASH_C_256:kotlin.Int` Data type is Simple Pairing Hash C-256, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R:kotlin.Int` Data type is Simple Pairing Randomizer R, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256:kotlin.Int` Data type is Simple Pairing Randomizer R-256, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE:kotlin.Int` Data type is Slave Connection Interval Range, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_TRANSPORT_DISCOVERY_DATA:kotlin.Int` Data type is Transport Discovery Data, see the Bluetooth Generic Access Profile for more details. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_TX_POWER_LEVEL:kotlin.Int` Data type is Tx Power Level, see the Bluetooth Generic Access Profile for more details. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#DATA_TYPE_URI:kotlin.Int` Data type is URI, see the Bluetooth Generic Access Profile for more details. |
 
@@ -70,15 +87,19 @@ Represents a scan record from Bluetooth LE scan.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getAdvertiseFlags()()` Returns the advertising flags indicating the discoverable mode and capability of the device. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getAdvertisingDataMap()()` Returns a map of advertising data type and its corresponding advertising data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getBytes()()` Returns raw bytes of scan record. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getDeviceName()()` Returns the local name of the BLE device. |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getManufacturerSpecificData()()` Returns a sparse array of manufacturer identifier and its corresponding manufacturer specific data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getManufacturerSpecificData(kotlin.Int)(manufacturerId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the manufacturer specific data associated with the manufacturer id. |
+| --- | --- |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceData()()` Returns a map of service UUID and its corresponding service data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceData(android.os.ParcelUuid)(serviceDataUuid: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#!)` Returns the service data byte array associated with the `serviceUuid`. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceSolicitationUuids()()` Returns a list of service solicitation UUIDs within the advertisement that are used to identify the Bluetooth GATT services. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceUuids()()` Returns a list of service UUIDs within the advertisement that are used to identify the bluetooth GATT services. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getTxPowerLevel()()` Returns the transmission power level of the packet in dBm. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Constants
 

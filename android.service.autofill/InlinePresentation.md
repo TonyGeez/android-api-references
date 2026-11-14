@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InlinePresentation
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/InlinePresentation "View this page in Java") 
+| --- | --- |
 
 ```
 class InlinePresentation : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.InlinePresentation](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#) |
 
 Wrapper class holding a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) and an [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) for rendering UI for an Inline Suggestion.
@@ -30,12 +32,15 @@ Wrapper class holding a [Slice](https://developer.android.com/reference/kotlin/a
 | static [InlinePresentation](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#) | [createTooltipPresentation](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#createTooltipPresentation(android.app.slice.Slice,%20android.widget.inline.InlinePresentationSpec))`(`slice:` ` [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#)`, `spec:` ` [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)`)` Creates a presentation for the inline suggestion tooltip |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) | [getInlinePresentationSpec](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#getInlinePresentationSpec())`()` Specifies the UI specification for the inline suggestion. |
 | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | [getSlice](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#getSlice())`()` Represents the UI content and the action for the inline suggestion. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#isPinned())`()` Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,6 +66,7 @@ Creates a new InlinePresentation.
 | `slice` | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#):Represents the UI content and the action for the inline suggestion. The Slice should be constructed using the Content builder provided in the androidx autofill library e.g.`androidx.autofill.inline.v1.InlineSuggestionUi.Content.Builder`and then converted to a Slice with`androidx.autofill.inline.UiVersions.Content#getSlice()`. This value cannot be`null`. |
 | `inlinePresentationSpec` | [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#):Specifies the UI specification for the inline suggestion. This value cannot be`null`. |
 | `pinned` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. However, it's eventually up to the host whether the UI is pinned or not. Also a [Dataset](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset) with a pinned inline presentation will not be replaced by the new data set returned from authentication intent. See [Dataset.Builder.setAuthentication(android.content.IntentSender)](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset.Builder#setAuthentication(android.content.IntentSender))for more information. |
+| --- | --- |
 
 ## Public methods
 

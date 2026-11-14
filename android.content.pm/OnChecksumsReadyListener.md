@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # OnChecksumsReadyListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener "View this page in Java") 
+| --- | --- |
 
 ```
 @FunctionalInterface interface OnChecksumsReadyListener

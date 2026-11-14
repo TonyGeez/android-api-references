@@ -6,19 +6,23 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # NetworkException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/NetworkException "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class NetworkException : HttpException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.http.HttpException](https://developer.android.com/reference/kotlin/android/net/http/HttpException) ||
 | | | | | ↳ | [android.net.http.NetworkException](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#) |
 
 | Known Direct Subclasses [QuicException](https://developer.android.com/reference/kotlin/android/net/http/QuicException) |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [QuicException](https://developer.android.com/reference/kotlin/android/net/http/QuicException) | Subclass of [NetworkException](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#) which contains a detailed [QUIC](https://www.chromium.org/quic) error code from [QuicErrorCode](https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Exception passed to [UrlRequest.Callback.onFailed()](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException))when the HTTP stack fails to process a network request. In this case [getErrorCode](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#getErrorCode())can be used to get more information about the specific type of failure.
 
@@ -29,12 +33,15 @@ Exception passed to [UrlRequest.Callback.onFailed()](https://developer.android.c
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ADDRESS_UNREACHABLE](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_ADDRESS_UNREACHABLE:kotlin.Int) Error code indicating the IP address being contacted is unreachable, meaning there is no route to the specified host or network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONNECTION_CLOSED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_CONNECTION_CLOSED:kotlin.Int) Error code indicating the connection was closed unexpectedly. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONNECTION_REFUSED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_CONNECTION_REFUSED:kotlin.Int) Error code indicating the connection attempt was refused. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONNECTION_RESET](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_CONNECTION_RESET:kotlin.Int) Error code indicating the connection was unexpectedly reset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONNECTION_TIMED_OUT](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_CONNECTION_TIMED_OUT:kotlin.Int) Error code indicating the connection attempt timed out. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_HOSTNAME_NOT_RESOLVED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_HOSTNAME_NOT_RESOLVED:kotlin.Int) Error code indicating the host being sent the request could not be resolved to an IP address. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERNET_DISCONNECTED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_INTERNET_DISCONNECTED:kotlin.Int) Error code indicating the device was not connected to any network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NETWORK_CHANGED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_NETWORK_CHANGED:kotlin.Int) Error code indicating that as the request was processed the network configuration changed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_OTHER](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_OTHER:kotlin.Int) Error code indicating another type of error was encountered. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_QUIC_PROTOCOL_FAILED](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_QUIC_PROTOCOL_FAILED:kotlin.Int) Error code indicating an error related to the [QUIC](https://www.chromium.org/quic) protocol. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TIMED_OUT](https://developer.android.com/reference/kotlin/android/net/http/NetworkException#ERROR_TIMED_OUT:kotlin.Int) Error code indicating a timeout expired. |
 

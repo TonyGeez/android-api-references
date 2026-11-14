@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # LightState
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/lights/LightState "View this page in Java") 
+| --- | --- |
 
 ```
 class LightState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.lights.LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#) |
 
 Represents the state of a device light.
@@ -32,6 +34,7 @@ Controlling the color and brightness of a light is done on a best-effort basis. 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColor](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#getColor())`()` Returns the color and intensity associated with this LightState. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPlayerId](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#getPlayerId())`()` Returns the player ID associated with this LightState for Light with type [android.hardware.lights.Light#LIGHT_TYPE_PLAYER_ID](https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_PLAYER_ID:kotlin.Int), or 0 for other types. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

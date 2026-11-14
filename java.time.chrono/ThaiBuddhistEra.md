@@ -9,10 +9,12 @@ class ThaiBuddhistEra : Era
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.chrono.ThaiBuddhistEra](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#)\> ||
 | | ↳ | [java.time.chrono.ThaiBuddhistEra](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#) |
 
 | Known Direct Subclasses [ThaiBuddhistEra.BE](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#ENUM_VALUE:BE), [ThaiBuddhistEra.BEFORE_BE](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#ENUM_VALUE:BEFORE_BE) |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [ThaiBuddhistEra.BE](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#ENUM_VALUE:BE) | The singleton instance for the current era, 'Buddhist Era', which has the numeric value 1. | | [ThaiBuddhistEra.BEFORE_BE](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#ENUM_VALUE:BEFORE_BE) | The singleton instance for the era before the current one, 'Before Buddhist Era', which has the numeric value 0. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An era in the Thai Buddhist calendar system.
 
@@ -23,6 +25,7 @@ The Thai Buddhist calendar system has two eras. The current era, for years from 
 | 2 | BE | 2 | -542 |
 | 1 | BE | 1 | -543 |
 | 1 | BEFORE_BE | 0 | -544 |
+| --- | --- | --- | --- |
 | 2 | BEFORE_BE | -1 | -545 |
 
 **Do not use`ordinal()`to obtain the numeric representation of`ThaiBuddhistEra`. Use`getValue()`instead.**
@@ -39,6 +42,7 @@ The Thai Buddhist calendar system has two eras. The current era, for years from 
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#getDisplayName(java.time.format.TextStyle,%20java.util.Locale))`(`style:` ` [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle.html#)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the textual representation of this era. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#getValue())`()` Gets the numeric era`int`value. |
 | static [ThaiBuddhistEra](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra#of(kotlin.Int))`(`thaiBuddhistEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`ThaiBuddhistEra`from an`int`value. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

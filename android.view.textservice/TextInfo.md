@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # TextInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/TextInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class TextInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.TextInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#) |
 
 This class contains a metadata of the input of TextService
@@ -33,9 +35,11 @@ This class contains a metadata of the input of TextService
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#describeContents())`()` Used to make this class parcelable. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getCharSequence](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#getCharSequence())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCookie](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#getCookie())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequence](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#getSequence())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#getText())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,6 +75,7 @@ Constructor.
 | `charSequence` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the text which will be input to TextService. Attached spans that implement [ParcelableSpan](https://developer.android.com/reference/kotlin/android/text/ParcelableSpan.html#) will also be marshaled alongside with the text. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the beginning of the range of text (inclusive). |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the end of the range of text (exclusive). |
+| --- | --- |
 | `cookie` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the cookie for this TextInfo |
 | `sequenceNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the sequence number for this TextInfo |
 
@@ -106,6 +111,7 @@ Constructor.
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the text which will be input to TextService |
 | `cookie` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the cookie for this TextInfo |
 | `sequenceNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the sequence number for this TextInfo |
+| --- | --- |
 
 ## Public methods
 

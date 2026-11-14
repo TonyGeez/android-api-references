@@ -9,6 +9,7 @@ class PasswordAuthentication
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication#) |
 
 The class PasswordAuthentication is a data holder that is used by Authenticator. It is simply a repository for a user name and a password.

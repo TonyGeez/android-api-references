@@ -11,6 +11,7 @@ interface Text : CharacterData
 | [org.w3c.dom.Text](https://developer.android.com/reference/kotlin/org/w3c/dom/Text#) |
 
 | Known Direct Subclasses [CDATASection](https://developer.android.com/reference/kotlin/org/w3c/dom/CDATASection) |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [CDATASection](https://developer.android.com/reference/kotlin/org/w3c/dom/CDATASection) | CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The`Text`interface inherits from`CharacterData`and represents the textual content (termed [character data](http://www.w3.org/TR/2004/REC-xml-20040204#syntax) in XML) of an`Element`or`Attr`. If there is no markup inside an element's content, the text is contained in a single object implementing the`Text`interface that is the only child of the element. If there is markup, it is parsed into the information items (elements, comments, etc.) and`Text`nodes that form the list of children of the element.
 
@@ -31,6 +32,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getWholeText](https://developer.android.com/reference/kotlin/org/w3c/dom/Text#getWholeText())`()` Returns all text of`Text`nodes logically-adjacent text nodes to this node, concatenated in document order. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isElementContentWhitespace](https://developer.android.com/reference/kotlin/org/w3c/dom/Text#isElementContentWhitespace())`()` Returns whether this text node contains [element content whitespace](http://www.w3.org/TR/2004/REC-xml-infoset-20040204#infoitem.character), often abusively called "ignorable whitespace". |
 | abstract [Text](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-text/index.html)! | [replaceWholeText](https://developer.android.com/reference/kotlin/org/w3c/dom/Text#replaceWholeText(kotlin.String))`(`content:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replaces the text of the current node and all logically-adjacent text nodes with the specified text. |
+| --- | --- |
 | abstract [Text](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-text/index.html)! | [splitText](https://developer.android.com/reference/kotlin/org/w3c/dom/Text#splitText(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Breaks this node into two nodes at the specified`offset`, keeping both in the tree as siblings. |
 
 | Inherited functions ||

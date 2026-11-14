@@ -11,6 +11,7 @@ interface DirectoryStream<T : Any!> : Closeable, MutableIterable<T>
 | [java.nio.file.DirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryStream#) |
 
 | Known Direct Subclasses [SecureDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream) |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [SecureDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream) | A`DirectoryStream`that defines operations on files that are located relative to an open directory. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An object to iterate over the entries in a directory. A directory stream allows for the convenient use of the for-each construct to iterate over a directory.
 

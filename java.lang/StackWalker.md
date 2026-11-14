@@ -9,6 +9,7 @@ class StackWalker
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.StackWalker](https://developer.android.com/reference/kotlin/java/lang/StackWalker#) |
 
 A stack walker.
@@ -31,9 +32,11 @@ The [*stack walking options*](https://developer.android.com/reference/kotlin/jav
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/lang/StackWalker#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` ` [StackWalker.StackFrame](https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame)!>!`)` Performs the given action on each element of`StackFrame`stream of the current thread, traversing from the top frame of the stack, which is the method calling this`forEach`method. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [getCallerClass](https://developer.android.com/reference/kotlin/java/lang/StackWalker#getCallerClass())`()` Gets the`Class`object of the caller who invoked the method that invoked`getCallerClass`. |
 | static [StackWalker](https://developer.android.com/reference/kotlin/java/lang/StackWalker#)! | [getInstance](https://developer.android.com/reference/kotlin/java/lang/StackWalker#getInstance())`()` Returns a`StackWalker`instance. |
+| --- | --- |
 | static [StackWalker](https://developer.android.com/reference/kotlin/java/lang/StackWalker#)! | [getInstance](https://developer.android.com/reference/kotlin/java/lang/StackWalker#getInstance(java.lang.StackWalker.Option))`(`option:` ` [StackWalker.Option](https://developer.android.com/reference/kotlin/java/lang/StackWalker.Option)!`)` Returns a`StackWalker`instance with the given option specifying the stack frame information it can access. |
 | static [StackWalker](https://developer.android.com/reference/kotlin/java/lang/StackWalker#)! | [getInstance](https://developer.android.com/reference/kotlin/java/lang/StackWalker#getInstance(kotlin.collections.MutableSet))`(`options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [StackWalker.Option](https://developer.android.com/reference/kotlin/java/lang/StackWalker.Option)!>!`)` Returns a`StackWalker`instance with the given`options`specifying the stack frame information it can access. |
 | static [StackWalker](https://developer.android.com/reference/kotlin/java/lang/StackWalker#)! | [getInstance](https://developer.android.com/reference/kotlin/java/lang/StackWalker#getInstance(kotlin.collections.MutableSet,%20kotlin.Int))`(`options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [StackWalker.Option](https://developer.android.com/reference/kotlin/java/lang/StackWalker.Option)!>!`, `estimateDepth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`StackWalker`instance with the given`options`specifying the stack frame information it can access. |
+| --- | --- |
 | T | [walk](https://developer.android.com/reference/kotlin/java/lang/StackWalker#walk(java.util.function.Function))`(`function:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` ` [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)< [StackWalker.StackFrame](https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame)!>!,` `out` `T>!`)` Applies the given function to the stream of`StackFrame`s for the current thread, traversing from the top frame of the stack, which is the method calling this`walk`method. |
 
 ## Public methods

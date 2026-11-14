@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # MotionPredictor
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/MotionPredictor "View this page in Java")
+| --- | --- |
 
 ```
 class MotionPredictor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.MotionPredictor](https://developer.android.com/reference/kotlin/android/view/MotionPredictor#) |
 
 Calculate motion predictions. Feed motion events to this class in order to generate predicted future events. The prediction functionality may not be available on all devices: check if a specific source is supported on a given input device using `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#isPredictionAvailable(kotlin.Int,%20kotlin.Int)`. Send all of the events that were received from the system to `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#record(android.view.MotionEvent)` to generate complete, accurate predictions from `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#predict(kotlin.Long)`. When processing the returned predictions, make sure to consider all of the android.view.MotionEvent#getHistoricalAxisValue.
@@ -24,6 +26,7 @@ Calculate motion predictions. Feed motion events to this class in order to gener
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#isPredictionAvailable(kotlin.Int,%20kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check whether a device supports motion predictions for a given source type. |
 | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)? | `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#predict(kotlin.Long)(predictionTimeNanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Get a predicted event for the gesture that has been provided to `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#record(android.view.MotionEvent)`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/MotionPredictor#record(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent)` Record a movement so that in the future, a prediction for the current gesture can be generated. |
+| --- | --- |
 
 ## Public constructors
 

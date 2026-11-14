@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # DragAndDropPermissions
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/DragAndDropPermissions "View this page in Java") 
+| --- | --- |
 
 ```
 class DragAndDropPermissions : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.DragAndDropPermissions](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions#) |
 
 [DragAndDropPermissions](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions#) controls the access permissions for the content URIs associated with a [DragEvent](https://developer.android.com/reference/kotlin/android/view/DragEvent).
@@ -34,6 +36,7 @@ Learn more about [drag permissions in multi-window mode](https://developer.andro
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions#describeContents())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions#release())`()` Revoke permissions explicitly. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`destination:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|

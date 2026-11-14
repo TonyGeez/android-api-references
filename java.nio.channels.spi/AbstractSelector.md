@@ -9,6 +9,7 @@ abstract class AbstractSelector : Selector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.channels.Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#) ||
 | | ↳ | [java.nio.channels.spi.AbstractSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#) |
 
@@ -39,15 +40,18 @@ This class also defines methods for maintaining a selector's cancelled-key set a
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#close())`()` Closes this selector. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#isOpen())`()` <br /> |
 | [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider)! | [provider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#provider())`()` Returns the provider that created this channel. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [begin](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#begin())`()` Marks the beginning of an I/O operation that might block indefinitely. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey.html#)!\>! | [cancelledKeys](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#cancelledKeys())`()` Retrieves this selector's cancelled-key set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deregister](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#deregister(java.nio.channels.spi.AbstractSelectionKey))`(`key:` ` [AbstractSelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectionKey)!`)` Removes the given key from its channel's key set. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#end())`()` Marks the end of an I/O operation that might block indefinitely. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implCloseSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#implCloseSelector())`()` Closes this selector. |
 | abstract [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey.html#)! | [register](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector#register(java.nio.channels.spi.AbstractSelectableChannel,%20kotlin.Int,%20kotlin.Any))`(`ch:` ` [AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel)!`, `ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `att:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Registers the given channel with this selector. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -213,6 +217,7 @@ This method is invoked by a channel's java.nio.channels.spi.AbstractSelectableCh
 | `ch` | [AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel)!:The channel to be registered |
 | `ops` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The initial interest set, which must be valid |
 | `att` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The initial attachment for the resulting key |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|

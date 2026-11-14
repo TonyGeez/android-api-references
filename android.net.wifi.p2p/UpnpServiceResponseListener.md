@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # UpnpServiceResponseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface UpnpServiceResponseListener

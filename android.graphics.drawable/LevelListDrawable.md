@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LevelListDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/LevelListDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class LevelListDrawable : DrawableContainer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.DrawableContainer](https://developer.android.com/reference/kotlin/android/graphics/drawable/DrawableContainer) ||
 | | | ↳ | [android.graphics.drawable.LevelListDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#) |
+| --- | --- | --- | --- |
 
 A resource that manages a number of alternate Drawables, each assigned a maximum numerical value. Setting the level value of the object with [setLevel(int)](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLevel(kotlin.Int))will load the image with the next greater or equal value assigned to its max attribute. A good example use of a LevelListDrawable would be a battery level indicator icon, with different images to indicate the current battery level.
 
@@ -38,6 +41,7 @@ With this XML saved into the res/drawable/ folder of the project, it can be refe
 | [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#attr_LevelListDrawable) | Reference to a drawable resource to use for the frame. |
 | [`android:maxLevel`](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#attr_LevelListDrawable) | The maximum level allowed for this item. |
 | [`android:minLevel`](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#attr_LevelListDrawable) | The minimum level allowed for this item. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -48,6 +52,7 @@ With this XML saved into the res/drawable/ folder of the project, it can be refe
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLevel](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#addLevel(kotlin.Int,%20kotlin.Int,%20android.graphics.drawable.Drawable))`(`low:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `high:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `drawable:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable#mutate())`()` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -130,6 +135,7 @@ open fun inflate(
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):Resources used to resolve attribute values This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):XML parser from which to inflate this Drawable This value cannot be`null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#):Base set of attribute values This value cannot be`null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?:Theme to apply, may be null |
 
 | Exceptions ||

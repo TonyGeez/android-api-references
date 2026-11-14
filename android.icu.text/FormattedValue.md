@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # FormattedValue
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/FormattedValue "View this page in Java") 
+| --- | --- |
 
 ```
 interface FormattedValue : CharSequence
@@ -13,6 +14,7 @@ interface FormattedValue : CharSequence
 | [android.icu.text.FormattedValue](https://developer.android.com/reference/kotlin/android/icu/text/FormattedValue#) |
 
 | Known Direct Subclasses [DateIntervalFormat.FormattedDateInterval](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat.FormattedDateInterval), [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber.html#), [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange.html#), [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList), [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [DateIntervalFormat.FormattedDateInterval](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat.FormattedDateInterval) | An immutable class containing the result of a date interval formatting operation. | | [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber.html#) | The result of a number formatting operation. | | [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange.html#) | The result of a number range formatting operation. | | [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList) | An immutable class containing the result of a list formatting operation. | | [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime) | Represents the result of a formatting operation of a relative datetime. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract formatted value: a string with associated field attributes. Many formatters format to classes implementing FormattedValue.
 
@@ -23,6 +25,7 @@ An abstract formatted value: a string with associated field attributes. Many for
 | abstractA | [appendTo](https://developer.android.com/reference/kotlin/android/icu/text/FormattedValue#appendTo(android.icu.text.FormattedValue.appendTo.A))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](https://developer.android.com/reference/kotlin/android/icu/text/FormattedValue#nextPosition(android.icu.text.ConstrainedFieldPosition))`(`cfpos:` ` [ConstrainedFieldPosition](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition)!`)` Iterates over field positions in the FormattedValue. |
 | abstract [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | [toCharacterIterator](https://developer.android.com/reference/kotlin/android/icu/text/FormattedValue#toCharacterIterator())`()` Exports the formatted number as an AttributedCharacterIterator. |
+| --- | --- |
 
 ## Public methods
 

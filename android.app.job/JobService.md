@@ -7,9 +7,11 @@ abstract class JobService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.job.JobService](https://developer.android.com/reference/kotlin/android/app/job/JobService#) |
 
 Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler`.
@@ -31,6 +33,7 @@ As a subclass of `https://developer.android.com/reference/kotlin/android/app/Ser
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_DETACH:kotlin.Int` Detach the notification supplied to `https://developer.android.com/reference/kotlin/android/app/job/JobService#setNotification(android.app.job.JobParameters,%20kotlin.Int,%20android.app.Notification,%20kotlin.Int)` when the job ends. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_REMOVE:kotlin.Int` Cancel and remove the notification supplied to `https://developer.android.com/reference/kotlin/android/app/job/JobService#setNotification(android.app.job.JobParameters,%20kotlin.Int,%20android.app.Notification,%20kotlin.Int)` when the job ends. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#PERMISSION_BIND:kotlin.String` Job services must be protected with this permission: ```kotlin <service android:name="MyJobService" android:permission="android.permission.BIND_JOB_SERVICE" > ... </service> ``` <br /> |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
 
@@ -1058,12 +1061,15 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#jobFinished(android.app.job.JobParameters,%20kotlin.Boolean)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters!, wantsReschedule: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Call this to inform the JobScheduler that the job has finished its work. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onNetworkChanged(android.app.job.JobParameters)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters)` This method is called that for a job that has a network constraint when the network to be used by the job changes. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters!)` Called to indicate that the job has begun executing. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStopJob(android.app.job.JobParameters)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters!)` This method is called if the system has determined that you must stop execution of your job even before you've had a chance to call `https://developer.android.com/reference/kotlin/android/app/job/JobService#jobFinished(android.app.job.JobParameters,%20kotlin.Boolean)`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#setNotification(android.app.job.JobParameters,%20kotlin.Int,%20android.app.Notification,%20kotlin.Int)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters, notificationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, notification: https://developer.android.com/reference/kotlin/android/app/Notification.html#, jobEndNotificationPolicy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provide JobScheduler with a notification to post and tie to this job's lifecycle. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#updateEstimatedNetworkBytes(android.app.job.JobParameters,%20android.app.job.JobWorkItem,%20kotlin.Long,%20kotlin.Long)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters, jobWorkItem: https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem, downloadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, uploadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Update the amount of data this JobWorkItem is estimated to transfer after the job has started. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#updateEstimatedNetworkBytes(android.app.job.JobParameters,%20kotlin.Long,%20kotlin.Long)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters, downloadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, uploadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Update the amount of data this job is estimated to transfer after the job has started. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#updateTransferredNetworkBytes(android.app.job.JobParameters,%20android.app.job.JobWorkItem,%20kotlin.Long,%20kotlin.Long)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters, item: https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem, transferredDownloadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, transferredUploadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Tell JobScheduler how much data has been transferred for the data transfer `https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#updateTransferredNetworkBytes(android.app.job.JobParameters,%20kotlin.Long,%20kotlin.Long)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters, transferredDownloadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, transferredUploadBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Tell JobScheduler how much data has successfully been transferred for the data transfer job. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2958,6 +2964,7 @@ If separate jobs use the same notification ID with this API, the most recently p
 | `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): The parameters identifying this job, as supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback. This value cannot be `null`. |
 | `notificationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The ID for this notification, as per `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`. |
 | `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification.html#): The notification to be displayed. This value cannot be `null`. |
+| --- | --- |
 | `jobEndNotificationPolicy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The policy to apply to the notification when the job stops. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_DETACH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_REMOVE:kotlin.Int` |
 
 ### updateEstimatedNetworkBytes
@@ -2980,6 +2987,7 @@ Update the amount of data this JobWorkItem is estimated to transfer after the jo
 | `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
 | `jobWorkItem` | [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem): This value cannot be `null`. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
+| --- | --- |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 
 **See Also**
@@ -3005,6 +3013,7 @@ Update the amount of data this job is estimated to transfer after the job has st
 | `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
+| --- | --- |
 
 **See Also**
 
@@ -3030,6 +3039,7 @@ Tell JobScheduler how much data has been transferred for the data transfer `http
 | `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
 | `item` | [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem): This value cannot be `null`. |
 | `transferredDownloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
+| --- | --- |
 | `transferredUploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 
 ### updateTransferredNetworkBytes
@@ -3051,3 +3061,4 @@ Tell JobScheduler how much data has successfully been transferred for the data t
 | `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
 | `transferredDownloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | `transferredUploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
+| --- | --- |

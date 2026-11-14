@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # CreateMedicalDataSourceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/CreateMedicalDataSourceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class CreateMedicalDataSourceRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.CreateMedicalDataSourceRequest](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#) |
 
 A create request for [HealthConnectManager.createMedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMedicalDataSource(android.health.connect.CreateMedicalDataSourceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).
@@ -33,9 +35,11 @@ Medical data is represented using the [Fast Healthcare Interoperability Resource
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDisplayName](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#getDisplayName())`()` Returns the display name. |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getFhirBaseUri](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#getFhirBaseUri())`()` Returns the FHIR base URI. |
 | [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion) | [getFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#getFhirVersion())`()` Returns the FHIR version. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

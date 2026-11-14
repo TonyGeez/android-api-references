@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PathMotion
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/PathMotion "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PathMotion
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.transition.PathMotion](https://developer.android.com/reference/kotlin/android/transition/PathMotion#) |
 
 | Known Direct Subclasses [ArcMotion](https://developer.android.com/reference/kotlin/android/transition/ArcMotion), [PatternPathMotion](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion) |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------| | [ArcMotion](https://developer.android.com/reference/kotlin/android/transition/ArcMotion) | A PathMotion that generates a curved path along an arc on an imaginary circle containing the two points. | | [PatternPathMotion](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion) | A PathMotion that takes a Path pattern and applies it to the separation between two points. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This base class can be extended to provide motion along a Path to Transitions.
 
@@ -81,6 +84,7 @@ Provide a Path to interpolate between two points`(startX, startY)`and`(endX, end
 | `startX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the starting point. |
 | `startY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the starting point. |
 | `endX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the ending point. |
+| --- | --- |
 | `endY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the ending point. |
 
 | Return ||

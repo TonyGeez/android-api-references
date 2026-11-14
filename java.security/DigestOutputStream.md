@@ -7,9 +7,11 @@ open class DigestOutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [java.security.DigestOutputStream](https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#) |
+| --- | --- | --- | --- |
 
 A transparent stream that updates the associated message digest using the bits going through the stream.
 
@@ -28,9 +30,11 @@ It is possible to turn this stream on or off (see `https://developer.android.com
 | open [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest)! | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#getMessageDigest()()` Returns the message digest associated with this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#on(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Turns the digest function on or off. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#setMessageDigest(java.security.MessageDigest)(digest: https://developer.android.com/reference/kotlin/java/security/MessageDigest!)` Associates the specified message digest with this stream. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#toString()()` Prints a string representation of this digest output stream and its associated message digest object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Updates the message digest (if the digest function is on) using the specified subarray, and in any case writes the subarray to the output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#write(kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Updates the message digest (if the digest function is on) using the specified byte, and in any case writes the byte to the output stream. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -149,6 +153,7 @@ Updates the message digest (if the digest function is on) using the specified su
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the array containing the subarray to be used for updating and writing to the output stream. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset into `b` of the first byte to be updated and written. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of bytes of data to be updated and written from `b`, starting at offset `off`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

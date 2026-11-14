@@ -9,6 +9,7 @@ open class ObjectStreamClass : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#) |
 
 Serialization's descriptor for classes. It contains the name and serialVersionUID of the class. The ObjectStreamClass for a specific class loaded in this Java VM can be found/created using the lookup method.
@@ -22,9 +23,11 @@ The algorithm to compute the SerialVersionUID is described in [Object Serializat
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [forClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#forClass())`()` Return the class in the local VM that this version is mapped to. |
 | open [ObjectStreamField](https://developer.android.com/reference/kotlin/java/io/ObjectStreamField)! | [getField](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#getField(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the field of this class by name. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ObjectStreamField](https://developer.android.com/reference/kotlin/java/io/ObjectStreamField)!\>! | [getFields](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#getFields())`()` Return an array of the fields of this serializable class. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#getName())`()` Returns the name of the class described by this descriptor. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSerialVersionUID](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#getSerialVersionUID())`()` Return the serialVersionUID for this class. |
 | openstatic [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#)! | [lookup](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#lookup(java.lang.Class))`(`cl:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Find the descriptor for a class that can be serialized. |
+| --- | --- |
 | openstatic [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#)! | [lookupAny](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#lookupAny(java.lang.Class))`(`cl:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Returns the descriptor for any class, regardless of whether it implements [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass#toString())`()` Return a string describing this ObjectStreamClass. |
 

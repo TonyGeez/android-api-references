@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # StructMsghdr
 
 Kotlin | [Java](https://developer.android.com/reference/android/system/StructMsghdr "View this page in Java") 
+| --- | --- |
 
 ```
 class StructMsghdr
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructMsghdr](https://developer.android.com/reference/kotlin/android/system/StructMsghdr#) |
 
 Corresponds to C's `struct msghdr`
@@ -26,6 +28,7 @@ Corresponds to C's `struct msghdr`
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr)!\>? | [msg_control](https://developer.android.com/reference/kotlin/android/system/StructMsghdr#msg_control:kotlin.Array) Ancillary data |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [msg_flags](https://developer.android.com/reference/kotlin/android/system/StructMsghdr#msg_flags:kotlin.Int) Flags on received message. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\> | [msg_iov](https://developer.android.com/reference/kotlin/android/system/StructMsghdr#msg_iov:kotlin.Array) Scatter/gather array |
+| --- | --- |
 | [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#)? | [msg_name](https://developer.android.com/reference/kotlin/android/system/StructMsghdr#msg_name:java.net.SocketAddress) Optional address. |
 
 ## Public constructors
@@ -49,6 +52,7 @@ Constructs an instance with the given field values
 | `msg_name` | [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#)?: This value may be `null`. |
 | `msg_iov` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>: This value cannot be `null`. |
 | `msg_control` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](https://developer.android.com/reference/kotlin/android/system/StructCmsghdr)!\>?: This value may be `null`. |
+| --- | --- |
 
 ## Properties
 

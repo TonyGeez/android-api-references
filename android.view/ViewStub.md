@@ -7,6 +7,7 @@ class ViewStub : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
 | | ↳ | [android.view.ViewStub](https://developer.android.com/reference/kotlin/android/view/ViewStub#) |
 
@@ -320,6 +321,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -436,6 +438,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1622,12 +1625,15 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#getInflatedId()()` Returns the id taken by the inflated view. |
 | [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater)! | `https://developer.android.com/reference/kotlin/android/view/ViewStub#getLayoutInflater()()` Get current `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` used in `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#getLayoutResource()()` Returns the layout resource that will be used by `https://developer.android.com/reference/kotlin/android/view/ViewStub#setVisibility(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()` to replace this StubbedView in its parent by another view. |
 | [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()()` Inflates the layout resource identified by `https://developer.android.com/reference/kotlin/android/view/ViewStub#getLayoutResource()` and replaces this StubbedView in its parent by the inflated layout resource. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#setInflatedId(kotlin.Int)(inflatedId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Defines the id taken by the inflated view. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#setLayoutInflater(android.view.LayoutInflater)(inflater: https://developer.android.com/reference/kotlin/android/view/LayoutInflater!)` Set `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` to use in `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()`, or `null` to use the default. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#setLayoutResource(kotlin.Int)(layoutResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the layout resource to inflate when this StubbedView becomes visible or invisible or when `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()` is invoked. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#setOnInflateListener(android.view.ViewStub.OnInflateListener)(inflateListener: https://developer.android.com/reference/kotlin/android/view/ViewStub.OnInflateListener!)` Specifies the inflate listener to be notified after this ViewStub successfully inflated its layout resource. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewStub#setVisibility(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` When visibility is set to `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/ViewStub#inflate()` is invoked and this StubbedView is replaced in its parent by the inflated layout resource. |
 
 | Protected methods ||
@@ -3421,6 +3427,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4822,6 +4829,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }

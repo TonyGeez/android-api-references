@@ -7,6 +7,7 @@ class GetByDocumentIdRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.GetByDocumentIdRequest](https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#) |
 
 Encapsulates a request to retrieve documents by namespace and IDs from the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession` database.
@@ -30,9 +31,11 @@ Encapsulates a request to retrieve documents by namespace and IDs from the `http
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#getIds()()` Returns the set of document IDs attached to the request. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#getNamespace()()` Returns the namespace attached to the request. |
+| --- | --- |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#getProjectionPaths()()` Returns a map from schema type to property paths to be used for projection. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#getProjections()()` Returns a map from schema type to property paths to be used for projection. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetByDocumentIdRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

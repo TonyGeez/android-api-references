@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnFocusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnFocusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFocusChangeListener
@@ -13,6 +14,7 @@ interface OnFocusChangeListener
 | [android.view.View.OnFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/View.OnFocusChangeListener#) |
 
 | Known Direct Subclasses [TabWidget](https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------| | [TabWidget](https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#) | Displays a list of tab labels representing each page in the parent's tab collection. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the focus state of a view changed.
 

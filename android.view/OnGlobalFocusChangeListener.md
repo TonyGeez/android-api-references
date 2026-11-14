@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnGlobalFocusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnGlobalFocusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnGlobalFocusChangeListener
@@ -13,6 +14,7 @@ interface OnGlobalFocusChangeListener
 | [android.view.ViewTreeObserver.OnGlobalFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener#) |
 
 | Known Direct Subclasses [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) |----------------------------------------------------------------------------------------|---------------------------------| | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) | A View that displays web pages. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the focus state within the view tree changes.
 

@@ -9,12 +9,15 @@ open class Hashtable<K : Any!, V : Any!> : Dictionary<K, V>, Cloneable, M
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary)\<K, V\> ||
 | | ↳ | [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable#) |
 
 | Known Direct Subclasses [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------| | [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) | The`Properties`class represents a persistent set of properties. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#), [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#) | Legacy security code; do not use. | | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class implements a hash table, which maps keys to values. Any non-`null`object can be used as a key or as a value.
 
@@ -67,27 +70,35 @@ As of the Java 2 platform v1.2, this class was retrofitted to implement the [Map
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/Hashtable#clear())`()` Clears this hashtable so that it contains no keys. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/Hashtable#clone())`()` Creates a shallow copy of this hashtable. |
 | openV? | [compute](https://developer.android.com/reference/kotlin/java/util/Hashtable#compute(java.util.Hashtable.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
+| --- | --- |
 | openV | [computeIfAbsent](https://developer.android.com/reference/kotlin/java/util/Hashtable#computeIfAbsent(java.util.Hashtable.K,%20java.util.function.Function))`(`key:` `K`, `mappingFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
 | openV? | [computeIfPresent](https://developer.android.com/reference/kotlin/java/util/Hashtable#computeIfPresent(java.util.Hashtable.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/Hashtable#contains(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Tests if some key maps into the specified value in this hashtable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/Hashtable#containsKey(java.util.Hashtable.K))`(`key:` `K`)` Tests if the specified object is a key in this hashtable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/Hashtable#containsValue(java.util.Hashtable.V))`(`value:` `V`)` Returns true if this hashtable maps one or more keys to this value. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<V\>! | [elements](https://developer.android.com/reference/kotlin/java/util/Hashtable#elements())`()` Returns an enumeration of the values in this hashtable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/Hashtable#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this Map for equality, as per the definition in the Map interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/Hashtable#forEach(java.util.function.BiConsumer))`(`action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer)<in` `K,` `in` `V>`)` <br /> |
 | openV? | [get](https://developer.android.com/reference/kotlin/java/util/Hashtable#get(java.util.Hashtable.K))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| --- | --- |
 | openV | [getOrDefault](https://developer.android.com/reference/kotlin/java/util/Hashtable#getOrDefault(java.util.Hashtable.K,%20java.util.Hashtable.V))`(`key:` `K`, `defaultValue:` `V`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/Hashtable#hashCode())`()` Returns the hash code value for this Map as per the definition in the Map interface. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Hashtable#isEmpty())`()` Tests if this hashtable maps no keys to values. |
+| --- | --- |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<K\>! | [keys](https://developer.android.com/reference/kotlin/java/util/Hashtable#keys())`()` Returns an enumeration of the keys in this hashtable. |
 | openV? | [merge](https://developer.android.com/reference/kotlin/java/util/Hashtable#merge(java.util.Hashtable.K,%20java.util.Hashtable.V,%20java.util.function.BiFunction))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
 | openV? | [put](https://developer.android.com/reference/kotlin/java/util/Hashtable#put(java.util.Hashtable.K,%20java.util.Hashtable.V))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this hashtable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/Hashtable#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this hashtable. |
 | openV? | [putIfAbsent](https://developer.android.com/reference/kotlin/java/util/Hashtable#putIfAbsent(java.util.Hashtable.K,%20java.util.Hashtable.V))`(`key:` `K`, `value:` `V`)` <br /> |
 | openV? | [remove](https://developer.android.com/reference/kotlin/java/util/Hashtable#remove(java.util.Hashtable.K))`(`key:` `K`)` Removes the key (and its corresponding value) from this hashtable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Hashtable#remove(java.util.Hashtable.K,%20java.util.Hashtable.V))`(`key:` `K`, `value:` `V`)` <br /> |
 | openV? | [replace](https://developer.android.com/reference/kotlin/java/util/Hashtable#replace(java.util.Hashtable.K,%20java.util.Hashtable.V))`(`key:` `K`, `value:` `V`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](https://developer.android.com/reference/kotlin/java/util/Hashtable#replace(java.util.Hashtable.K,%20java.util.Hashtable.V,%20java.util.Hashtable.V))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/Hashtable#replaceAll(java.util.function.BiFunction))`(`function:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Hashtable#toString())`()` Returns a string representation of this`Hashtable`object in the form of a set of entries, enclosed in braces and separated by the ASCII characters "` , `" (comma and space). |
 
@@ -100,6 +111,7 @@ As of the Java 2 platform v1.2, this class was retrofitted to implement the [Map
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/Hashtable#entries:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/Hashtable#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/Hashtable#size:kotlin.Int) Returns the number of keys in this hashtable. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/Hashtable#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
 
 ## Public constructors
@@ -245,6 +257,7 @@ This method will, on a best-effort basis, throw a [java.util.ConcurrentModificat
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -293,6 +306,7 @@ This method will, on a best-effort basis, throw a [java.util.ConcurrentModificat
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the mappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the mapping function modified this map |
 
@@ -329,6 +343,7 @@ This method will, on a best-effort basis, throw a [java.util.ConcurrentModificat
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -608,6 +623,7 @@ This method will, on a best-effort basis, throw a [java.util.ConcurrentModificat
 | `key` | K:key with which the resulting value is to be associated |
 | `value` | V:the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |----|-------------------------------------------------------------------------------------------------|
@@ -618,6 +634,7 @@ This method will, on a best-effort basis, throw a [java.util.ConcurrentModificat
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys or the value or remappingFunction is null |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -650,6 +667,7 @@ The value can be retrieved by calling the`get`method with a key that is equal to
 | `java.lang.NullPointerException` | if the key or value is`null` |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 **See Also**
@@ -677,6 +695,7 @@ Copies all of the mappings from the specified map to this hashtable. These mappi
 | `java.lang.UnsupportedOperationException` | if the`putAll`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 
 ### putIfAbsent
@@ -704,6 +723,7 @@ open fun putIfAbsent(
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 
 ### remove
@@ -729,6 +749,7 @@ Removes the key (and its corresponding value) from this hashtable. This method d
 | `java.lang.NullPointerException` | if the key is`null` |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
+| --- | --- |
 
 ### remove
 
@@ -755,6 +776,7 @@ open fun remove(
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 
 ### replace
 
@@ -781,6 +803,7 @@ open fun replace(
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 ### replace
@@ -800,6 +823,7 @@ open fun replace(
 | `key` | K:key with which the specified value is associated |
 | `oldValue` | V:value expected to be associated with the specified key |
 | `newValue` | V:value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------|
@@ -810,6 +834,7 @@ open fun replace(
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 
 ### replaceAll
@@ -829,6 +854,7 @@ open fun replaceAll(function: BiFunction<in K, in V, out V>): Unit
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this map's entry set iterator. |
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 

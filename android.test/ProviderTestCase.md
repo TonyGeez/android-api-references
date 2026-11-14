@@ -6,12 +6,14 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 # ProviderTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ProviderTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ProviderTestCase<T : ContentProvider!> : InstrumentationTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) ||
 | | ↳ | [android.test.ProviderTestCase](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase#) |
 
@@ -32,6 +34,7 @@ If you would like to test a single content provider with an [InstrumentationTest
 | open [MockContentResolver](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver)! | [getMockContentResolver](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase#getMockContentResolver())`()` <br /> |
 | open [IsolatedContext](https://developer.android.com/reference/kotlin/android/test/IsolatedContext)! | [getMockContext](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase#getMockContext())`()` <br /> |
 | openT | [getProvider](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase#getProvider())`()` <br /> |
+| --- | --- |
 | openstatic [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)! | [newResolverWithContentProviderFromSql](https://developer.android.com/reference/kotlin/android/test/ProviderTestCase#newResolverWithContentProviderFromSql(android.content.Context,%20java.lang.Class,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String))`(`targetContext:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `providerClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `databaseName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `databaseVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Protected methods ||

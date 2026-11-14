@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaCrypto
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCrypto "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaCrypto
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaCrypto](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#) |
 
 MediaCrypto class can be used in conjunction with [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) to decode encrypted media data. Crypto schemes are assigned 16 byte UUIDs, the method [isCryptoSchemeSupported](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#isCryptoSchemeSupported(java.util.UUID))can be used to query if a given scheme is supported on the device.
@@ -26,6 +28,7 @@ MediaCrypto class can be used in conjunction with [android.media.MediaCodec](htt
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCryptoSchemeSupported](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#isCryptoSchemeSupported(java.util.UUID))`(`uuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`)` Query if the given scheme identified by its UUID is supported on this device. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#release())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresSecureDecoderComponent](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#requiresSecureDecoderComponent(kotlin.String))`(`mime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if the crypto scheme requires the use of a secure decoder to decode data of the given mime type. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMediaDrmSession](https://developer.android.com/reference/kotlin/android/media/MediaCrypto#setMediaDrmSession(kotlin.ByteArray))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Associate a new MediaDrm session with this MediaCrypto instance. |
 
 | Protected methods ||

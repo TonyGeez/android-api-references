@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ContentCaptureContext
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext "View this page in Java") 
+| --- | --- |
 
 ```
 class ContentCaptureContext : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.contentcapture.ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) |
 
 Context associated with a [ContentCaptureSession](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession)- see [ContentCaptureManager](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager) for more info.
@@ -30,9 +32,11 @@ Context associated with a [ContentCaptureSession](https://developer.android.com/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#describeContents())`()` <br /> |
 | static [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) | [forLocusId](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#forLocusId(kotlin.String))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Helper that creates a [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) associated with the given`id`. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getExtras())`()` Gets the (optional) extras set by the app (through [Builder.setExtras(Bundle)](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.Builder#setExtras(android.os.Bundle))). |
+| --- | --- |
 | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)? | [getLocusId](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getLocusId())`()` Gets the context id. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|

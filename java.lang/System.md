@@ -7,6 +7,7 @@ class System
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.System](https://developer.android.com/reference/kotlin/java/lang/System#) |
 
 The `System` class contains several useful class fields and methods. It cannot be instantiated.
@@ -20,36 +21,46 @@ Among the facilities provided by the `System` class are standard input, standard
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#arraycopy(kotlin.Any,%20kotlin.Int,%20kotlin.Any,%20kotlin.Int,%20kotlin.Int)(src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, srcPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, destPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#clearProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes the system property indicated by the specified key. |
 | static [Console](https://developer.android.com/reference/kotlin/java/io/Console.html#)? | `https://developer.android.com/reference/kotlin/java/lang/System#console()()` Returns the unique `https://developer.android.com/reference/kotlin/java/io/Console.html#` object associated with the current Java virtual machine, if any. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#currentTimeMillis()()` Returns the current time in milliseconds. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#exit(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Terminates the currently running Java Virtual Machine. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#gc()()` Runs the garbage collector. |
+| --- | --- |
 | static [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#) | `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()()` Determines the current system properties. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the system property indicated by the specified key. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Gets the system property indicated by the specified key. |
+| --- | --- |
 | static [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager)? | `https://developer.android.com/reference/kotlin/java/lang/System#getSecurityManager()()` Always returns `null` in Android |
 | static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/System#getenv()()` Returns an unmodifiable string map view of the current system environment. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getenv(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the value of the specified environment variable. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#identityHashCode(kotlin.Any)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the same hash code for the given object as would be returned by the default method hashCode(), whether or not the given object's class overrides hashCode(). |
 | static [Channel](https://developer.android.com/reference/kotlin/java/nio/channels/Channel.html#)? | `https://developer.android.com/reference/kotlin/java/lang/System#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#lineSeparator()()` Returns the system-dependent line separator string. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#load(kotlin.String)(filename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the native library specified by the filename argument. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#loadLibrary(kotlin.String)(libname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the native library specified by the `libname` argument. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#mapLibraryName(kotlin.String)(libname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Maps a library name into a platform-specific string representing a native library. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#nanoTime()()` Returns the current value of the running Java Virtual Machine's high-resolution time source, in nanoseconds. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#runFinalization()()` Runs the finalization methods of any objects pending finalization. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#runFinalizersOnExit(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable finalization on exit; doing so specifies that the finalizers of all objects that have finalizers that have not yet been automatically invoked are to be run before the Java runtime exits. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setErr(java.io.PrintStream)(err: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#?)` Reassigns the "standard" error output stream. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setIn(java.io.InputStream)(in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?)` Reassigns the "standard" input stream. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setOut(java.io.PrintStream)(out: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#?)` Reassigns the "standard" output stream. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setProperties(java.util.Properties)(props: https://developer.android.com/reference/kotlin/java/util/Properties.html#?)` Attempts to set all system properties. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#setProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the system property indicated by the specified key. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setSecurityManager(java.lang.SecurityManager)(s: https://developer.android.com/reference/kotlin/java/lang/SecurityManager?)` Throws `SecurityException` (except in case `sm == null`). |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | static [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#err:java.io.PrintStream` The "standard" error output stream. |
 | static [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#in:java.io.InputStream` The "standard" input stream. |
 | static [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#out:java.io.PrintStream` The "standard" output stream. |
+| --- | --- |
 
 ## Public methods
 
@@ -98,6 +109,7 @@ Otherwise, if any actual component of the source array from position `srcPos` th
 | `src` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the source array. |
 | `srcPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): starting position in the source array. |
 | `dest` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the destination array. |
+| --- | --- |
 | `destPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): starting position in the destination data. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of array elements to be copied. |
 
@@ -106,6 +118,7 @@ Otherwise, if any actual component of the source array from position `srcPos` th
 | `java.lang.ArrayStoreException` | if an element in the `src` array could not be stored into the `dest` array because of a type mismatch. |
 | `java.lang.IndexOutOfBoundsException` | if copying would cause access of data outside array bounds. |
 | `java.lang.NullPointerException` | if either `src` or `dest` is `null`. |
+| --- | --- |
 
 ### clearProperty
 
@@ -134,6 +147,7 @@ First, if a security manager exists, its `SecurityManager.checkPermission` metho
 | `java.lang.IllegalArgumentException` | if `key` is empty. |
 | `java.lang.NullPointerException` | if `key` is `null`. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkPropertyAccess` method doesn't allow access to the specified system property. |
+| --- | --- |
 
 **See Also**
 
@@ -247,33 +261,43 @@ The following properties are always provided by the Dalvik VM:
 <br />
 
 | **Name** | **Meaning** | **Example** |
+| --- | --- | --- |
 | file.separator | `https://developer.android.com/reference/kotlin/java/io/File.html#separator:kotlin.String` | `/` |
 | java.class.path | System class path | `.` |
 | java.class.version | (Not useful on Android) | `50.0` |
+| --- | --- | --- |
 | java.compiler | (Not useful on Android) | Empty |
 | java.ext.dirs | (Not useful on Android) | Empty |
 | java.home | Location of the VM on the file system | `/apex/com.android.art/` |
+| --- | --- | --- |
 | java.io.tmpdir | Location of a temporary directory. The location varies by application. See java.io.File#createTempFile | `/data/user/0/com.android.app/cache` |
 | java.library.path | Search path for JNI libraries | `/system/lib:/system_ext/lib` |
 | java.vendor | Human-readable VM vendor | `The Android Project` |
+| --- | --- | --- |
 | java.vendor.url | URL for VM vendor's web site | `http://www.android.com/` |
 | java.version | (Not useful on Android) | `0` |
 | java.specification.version | VM libraries version | `0.9` |
+| --- | --- | --- |
 | java.specification.vendor | VM libraries vendor | `The Android Project` |
 | java.specification.name | VM libraries name | `Dalvik Core Library` |
 | java.vm.version | VM implementation version | `1.2.0` |
+| --- | --- | --- |
 | java.vm.vendor | VM implementation vendor | `The Android Project` |
 | java.vm.name | VM implementation name | `Dalvik` |
 | java.vm.specification.version | VM specification version | `0.9` |
+| --- | --- | --- |
 | java.vm.specification.vendor | VM specification vendor | `The Android Project` |
 | java.vm.specification.name | VM specification name | `Dalvik Virtual Machine Specification` |
 | line.separator | The system line separator | `\n` |
+| --- | --- | --- |
 | os.arch | OS architecture | `aarch64` |
 | os.name | OS (kernel) name | `Linux` |
 | os.version | OS (kernel) version | `5.10.98-g6ea688a79989` |
+| --- | --- | --- |
 | path.separator | See `https://developer.android.com/reference/kotlin/java/io/File.html#pathSeparator:kotlin.String` | `:` |
 | user.dir | Base of non-absolute paths | `/` |
 | user.home | (Not useful on Android) | Empty |
+| --- | --- | --- |
 | user.name | (Not useful on Android) | Empty |
 
 Multiple paths in a system property value are separated by the path separator character of the platform.
@@ -322,6 +346,7 @@ If there is no current set of system properties, a set of system properties is f
 | `java.lang.IllegalArgumentException` | if `key` is empty. |
 | `java.lang.NullPointerException` | if `key` is `null`. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkPropertyAccess` method doesn't allow access to the specified system property. |
+| --- | --- |
 
 **See Also**
 
@@ -361,6 +386,7 @@ If there is no current set of system properties, a set of system properties is f
 | `java.lang.IllegalArgumentException` | if `key` is empty. |
 | `java.lang.NullPointerException` | if `key` is `null`. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkPropertyAccess` method doesn't allow access to the specified system property. |
+| --- | --- |
 
 **See Also**
 
@@ -534,6 +560,7 @@ Runtime.getRuntime().load(name)
 | `java.lang.NullPointerException` | if `filename` is `null` |
 | `java.lang.SecurityException` | if a security manager exists and its `checkLink` method doesn't allow loading of the specified dynamic library |
 | `java.lang.UnsatisfiedLinkError` | if either the filename is not an absolute path name, the native library is not statically linked with the VM, or the library cannot be mapped to a native library image by the host system. |
+| --- | --- |
 
 **See Also**
 
@@ -566,6 +593,7 @@ Runtime.getRuntime().loadLibrary(name)
 | `java.lang.NullPointerException` | if `libname` is `null` |
 | `java.lang.SecurityException` | if a security manager exists and its `checkLink` method doesn't allow loading of the specified dynamic library |
 | `java.lang.UnsatisfiedLinkError` | if either the libname argument contains a file path, the native library is not statically linked with the VM, or the library cannot be mapped to a native library image by the host system. |
+| --- | --- |
 
 **See Also**
 
@@ -806,6 +834,7 @@ First, if a security manager exists, its `SecurityManager.checkPermission` metho
 | `java.lang.IllegalArgumentException` | if `key` is empty. |
 | `java.lang.NullPointerException` | if `key` or `value` is `null`. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkPermission` method doesn't allow setting of the specified property. |
+| --- | --- |
 
 **See Also**
 

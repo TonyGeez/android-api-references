@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # Animatable2
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/Animatable2 "View this page in Java") 
+| --- | --- |
 
 ```
 interface Animatable2 : Animatable
@@ -13,6 +14,7 @@ interface Animatable2 : Animatable
 | [android.graphics.drawable.Animatable2](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#) |
 
 | Known Direct Subclasses [AnimatedImageDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable), [AnimatedVectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatedImageDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable) | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) for drawing animated images (like GIF). | | [AnimatedVectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable) | This class animates properties of a [android.graphics.drawable.VectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable) with animations defined using [android.animation.ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#) or [android.animation.AnimatorSet](https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.html#). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class that drawables supporting animations and callbacks should extend.
 
@@ -27,6 +29,7 @@ Abstract class that drawables supporting animations and callbacks should extend.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#clearAnimationCallbacks())`()` Removes all existing animation callbacks. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#registerAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Adds a callback to listen to the animation events. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#unregisterAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Removes the specified animation callback. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

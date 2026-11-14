@@ -7,9 +7,11 @@ abstract class InCallService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.telecom.InCallService](https://developer.android.com/reference/kotlin/android/telecom/InCallService#) |
 
 This service is implemented by an app that wishes to provide functionality for managing phone calls.
@@ -1175,24 +1177,31 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#canAddCall()()` Returns if the device can support additional calls. |
 | [CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState)! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCallAudioState()()` Obtains the current phone call audio state. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Call](https://developer.android.com/reference/kotlin/android/telecom/Call)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCalls()()` Obtains the current list of `Call`s to be displayed by this in-call service. |
+| --- | --- |
 | [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCurrentCallEndpoint()()` Obtains the current CallEndpoint. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onAvailableCallEndpointsChanged(kotlin.collections.MutableList)(availableEndpoints: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint!>)` Called when the available CallEndpoint changes. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onBringToForeground(kotlin.Boolean)(showDialpad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called to bring the in-call screen to the foreground. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallAdded(android.telecom.Call)(call: https://developer.android.com/reference/kotlin/android/telecom/Call!)` Called when a `Call` has been added to this in-call session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallAudioStateChanged(android.telecom.CallAudioState)(audioState: https://developer.android.com/reference/kotlin/android/telecom/CallAudioState!)` Called when the audio state changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallEndpointChanged(android.telecom.CallEndpoint)(callEndpoint: https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint)` Called when the current CallEndpoint changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallEndpointRequested(android.telecom.CallEndpoint)(callEndpoint: https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint)` Called by the platform when an `https://developer.android.com/reference/kotlin/android/telecom/InCallService#` changes the audio route using `https://developer.android.com/reference/kotlin/android/telecom/InCallService#requestCallEndpointChange(android.telecom.CallEndpoint,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` to initiate a call endpoint change. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallRemoved(android.telecom.Call)(call: https://developer.android.com/reference/kotlin/android/telecom/Call!)` Called when a `Call` has been removed from this in-call session. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCanAddCallChanged(kotlin.Boolean)(canAddCall: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the ability to add more calls changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onConnectionEvent(android.telecom.Call,%20kotlin.String,%20android.os.Bundle)(call: https://developer.android.com/reference/kotlin/android/telecom/Call!, event: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Unused; to handle connection events issued by a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, implement the `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#onConnectionEvent(android.telecom.Call,%20kotlin.String,%20android.os.Bundle)` callback. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onMuteStateChanged(kotlin.Boolean)(isMuted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the mute state changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onSilenceRinger()()` Called to silence the ringer if a ringing call exists. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onUnbind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Called when all clients have disconnected from a particular interface published by the service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#requestBluetoothAudio(android.bluetooth.BluetoothDevice)(bluetoothDevice: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)` Request audio routing to a specific bluetooth device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#requestCallEndpointChange(android.telecom.CallEndpoint,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(endpoint: https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException!>)` Request audio routing to a specific CallEndpoint. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#setAudioRoute(kotlin.Int)(route: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the audio route (speaker, bluetooth, etc...). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#setMuted(kotlin.Boolean)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the microphone mute state. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -3120,6 +3129,7 @@ See `https://developer.android.com/reference/kotlin/android/telecom/Connection#s
 | `call` | [Call](https://developer.android.com/reference/kotlin/android/telecom/Call)!: The call the event is associated with. |
 | `event` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The event. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Any associated extras. |
+| --- | --- |
 
 ### onMuteStateChanged
 
@@ -3199,6 +3209,7 @@ Request audio routing to a specific CallEndpoint. Clients should not define thei
 | `endpoint` | [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint): The call endpoint to use. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [CallEndpointException](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException)!\>: The callback to notify the result of the endpoint change. This value cannot be `null`. |
+| --- | --- |
 
 ### setAudioRoute
 

@@ -9,9 +9,11 @@ open class LinkedTransferQueue<E : Any!> : AbstractQueue<E>, Serializable, T
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#)\<E\> |||
 | | ↳ | [java.util.AbstractQueue](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#)\<E\> ||
 | | | ↳ | [java.util.concurrent.LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#) |
+| --- | --- | --- | --- |
 
 An unbounded [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) based on linked nodes. This queue orders elements FIFO (first-in-first-out) with respect to any given producer. The*head* of the queue is that element that has been on the queue the longest time for some producer. The*tail*of the queue is that element that has been on the queue the shortest time for some producer.
 
@@ -37,30 +39,39 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#add(java.util.concurrent.LinkedTransferQueue.E))`(`element:` `E`)` Inserts the specified element at the tail of this queue. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#clear())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#contains(java.util.concurrent.LinkedTransferQueue.E))`(`element:` `E?`)` Returns`true`if this queue contains the specified element. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#drainTo(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#drainTo(kotlin.collections.MutableCollection,%20kotlin.Int))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`, `maxElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `E>`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWaitingConsumerCount](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#getWaitingConsumerCount())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasWaitingConsumer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#hasWaitingConsumer())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#isEmpty())`()` Returns`true`if this queue contains no elements. |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#iterator())`()` Returns an iterator over the elements in this queue in proper sequence. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#offer(java.util.concurrent.LinkedTransferQueue.E))`(`e:` `E`)` Inserts the specified element at the tail of this queue. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#offer(java.util.concurrent.LinkedTransferQueue.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Inserts the specified element at the tail of this queue. |
+| --- | --- |
 | openE? | [peek](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#peek())`()` <br /> |
 | openE? | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#poll())`()` <br /> |
 | openE | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#poll(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#put(java.util.concurrent.LinkedTransferQueue.E))`(`e:` `E`)` Inserts the specified element at the tail of this queue. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainingCapacity](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#remainingCapacity())`()` Always returns`Integer.MAX_VALUE`because a`LinkedTransferQueue`is not capacity constrained. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#remove(java.util.concurrent.LinkedTransferQueue.E))`(`element:` `E?`)` Removes a single instance of the specified element from this queue, if it is present. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)<in` `E>`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
+| --- | --- |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#spliterator())`()` Returns a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#) over the elements in this queue. |
 | openE | [take](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#take())`()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#toArray())`()` Returns an array containing all of the elements in this queue, in proper sequence. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this queue, in proper sequence; the runtime type of the returned array is that of the specified array. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transfer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#transfer(java.util.concurrent.LinkedTransferQueue.E))`(`e:` `E`)` Transfers the element to a consumer, waiting if necessary to do so. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryTransfer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#tryTransfer(java.util.concurrent.LinkedTransferQueue.E))`(`e:` `E`)` Transfers the element to a waiting consumer immediately, if possible. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryTransfer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue#tryTransfer(java.util.concurrent.LinkedTransferQueue.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Transfers the element to a consumer if it is possible to do so before the timeout elapses. |
 
@@ -69,6 +80,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | From class [AbstractQueue](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Adds all of the elements in the specified collection to this queue. Attempts to addAll of a queue to itself result in`IllegalArgumentException`. Further, the behavior of this operation is undefined if the specified collection is modified while the operation is in progress. This implementation iterates over the specified collection, and adds each element returned by the iterator to this queue, in turn. A runtime exception encountered while trying to add an element (including, in particular, a`null`element) may result in only some of the elements having been successfully added when the associated exception is thrown. <br /> | | E | [element](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#element())`()` <br /> Retrieves, but does not remove, the head of this queue. This method differs from [peek](https://developer.android.com/reference/kotlin/java/util/Queue.html#peek())only in that it throws an exception if this queue is empty. This implementation returns the result of`peek`unless the queue is empty. <br /> | | E | [remove](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#remove())`()` <br /> Retrieves and removes the head of this queue. This method differs from [poll](https://developer.android.com/reference/kotlin/java/util/Queue.html#poll())only in that it throws an exception if this queue is empty. This implementation returns the result of`poll`unless the queue is empty. <br /> | ||
 | From class [AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#) |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#contains(java.util.AbstractCollection.E))`(`element:` `E?`)` <br /> Returns`true`if this collection contains the specified element. More formally, returns`true`if and only if this collection contains at least one element`e`such that`Objects.equals(o, e)`. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Returns`true`if this collection contains all of the elements in the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#isEmpty())`()` <br /> Returns`true`if this collection contains no elements. <br /> | | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<E> | [iterator](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#iterator())`()` <br /> Returns an iterator over the elements contained in this collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#remove(java.util.AbstractCollection.E))`(`element:` `E?`)` <br /> Removes a single instance of the specified element from this collection, if it is present (optional operation). More formally, removes an element`e`such that`Objects.equals(o, e)`, if this collection contains one or more such elements. Returns`true`if this collection contained the specified element (or equivalently, if this collection changed as a result of the call). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Removes all of this collection's elements that are also contained in the specified collection (optional operation). After this call returns, this collection will contain no elements in common with the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Retains only the elements in this collection that are contained in the specified collection (optional operation). In other words, removes from this collection all of its elements that are not contained in the specified collection. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!> | [toArray](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#toArray())`()` <br /> Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](https://developer.android.com/reference/kotlin/java/lang/Class.html#getComponentType())is`Object`. The returned array will be "safe" in that no references to it are maintained by this collection. (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T> | [toArray](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` <br /> Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. If the collection fits in the specified array, it is returned therein. Otherwise, a new array is allocated with the runtime type of the specified array and the size of this collection. If this collection fits in the specified array with room to spare (i.e., the array has more elements than this collection), the element in the array immediately following the end of the collection is set to`null`. (This is useful in determining the length of this collection*only* if the caller knows that this collection does not contain any`null`elements.) If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#toString())`()` <br /> Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)). <br /> | ||
 | From class [Queue](https://developer.android.com/reference/kotlin/java/util/Queue.html#) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/Queue.html#offer(java.util.Queue.E))`(`e:` `E`)` <br /> Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions. When using a capacity-restricted queue, this method is generally preferable to [add](https://developer.android.com/reference/kotlin/java/util/Queue.html#add(java.util.Queue.E)), which can fail to insert an element only by throwing an exception. <br /> | | E? | [peek](https://developer.android.com/reference/kotlin/java/util/Queue.html#peek())`()` <br /> Retrieves, but does not remove, the head of this queue, or returns`null`if this queue is empty. <br /> | | E? | [poll](https://developer.android.com/reference/kotlin/java/util/Queue.html#poll())`()` <br /> Retrieves and removes the head of this queue, or returns`null`if this queue is empty. <br /> | ||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -133,6 +145,7 @@ Inserts the specified element at the tail of this queue. As the queue is unbound
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 
@@ -192,6 +205,7 @@ open fun drainTo(c: MutableCollection<in E>!): Int
 | `java.lang.UnsupportedOperationException` | if addition of elements is not supported by the specified collection |
 | `java.lang.ClassCastException` | if the class of an element of this queue prevents it from being added to the specified collection |
 | `java.lang.NullPointerException` | if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the specified collection is this queue, or some property of an element of this queue prevents it from being added to the specified collection |
 
 ### drainTo
@@ -219,6 +233,7 @@ open fun drainTo(
 | `java.lang.UnsupportedOperationException` | if addition of elements is not supported by the specified collection |
 | `java.lang.ClassCastException` | if the class of an element of this queue prevents it from being added to the specified collection |
 | `java.lang.NullPointerException` | if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the specified collection is this queue, or some property of an element of this queue prevents it from being added to the specified collection |
 
 ### forEach
@@ -314,6 +329,7 @@ Inserts the specified element at the tail of this queue. As the queue is unbound
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
+| --- | --- |
 
 ### offer
 
@@ -334,6 +350,7 @@ Inserts the specified element at the tail of this queue. As the queue is unbound
 | `e` | E:the element to add |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -344,6 +361,7 @@ Inserts the specified element at the tail of this queue. As the queue is unbound
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### peek
@@ -413,6 +431,7 @@ Inserts the specified element at the tail of this queue. As the queue is unbound
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### remainingCapacity
@@ -452,6 +471,7 @@ Removes a single instance of the specified element from this queue, if it is pre
 | `java.lang.ClassCastException` | if the class of the specified element is incompatible with this queue ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this collection |
+| --- | --- |
 
 ### removeAll
 
@@ -474,6 +494,7 @@ open fun removeAll(elements: Collection<E>): Boolean
 | `java.lang.UnsupportedOperationException` | if the`removeAll`method is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not support null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 ### removeIf
 
@@ -517,6 +538,7 @@ open fun retainAll(elements: Collection<E>): Boolean
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not permit null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 ### spliterator
 
@@ -638,6 +660,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case the element is not left enqueued |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### tryTransfer
@@ -665,6 +688,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
+| --- | --- |
 
 ### tryTransfer
 
@@ -687,6 +711,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `e` | E:the element to transfer |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -697,6 +722,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case the element is not left enqueued |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ## Properties

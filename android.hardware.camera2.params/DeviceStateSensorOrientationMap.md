@@ -5,12 +5,14 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 # DeviceStateSensorOrientationMap
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/DeviceStateSensorOrientationMap "View this page in Java") 
+| --- | --- |
 
 ```
 class DeviceStateSensorOrientationMap
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.DeviceStateSensorOrientationMap](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DeviceStateSensorOrientationMap#) |
 
 Immutable class that maps the device fold state to sensor orientation.
@@ -35,6 +37,7 @@ The device fold state to sensor orientation map will contain information about t
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DeviceStateSensorOrientationMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this DeviceStateSensorOrientationMap is equal to another DeviceStateSensorOrientationMap. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSensorOrientation](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DeviceStateSensorOrientationMap#getSensorOrientation(kotlin.Long))`(`deviceState:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Return the logical camera sensor orientation given a specific device fold state. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DeviceStateSensorOrientationMap#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 
 ## Constants
 

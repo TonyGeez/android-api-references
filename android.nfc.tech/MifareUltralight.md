@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # MifareUltralight
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/MifareUltralight "View this page in Java") 
+| --- | --- |
 
 ```
 class MifareUltralight : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.MifareUltralight](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#) |
 
 Provides access to MIFARE Ultralight properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
@@ -34,6 +36,7 @@ Implementation of this class on a Android NFC device is optional. If it is not i
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAGE_SIZE](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#PAGE_SIZE:kotlin.Int) Size of a MIFARE Ultralight page in bytes |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ULTRALIGHT](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#TYPE_ULTRALIGHT:kotlin.Int) A MIFARE Ultralight tag |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ULTRALIGHT_C](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#TYPE_ULTRALIGHT_C:kotlin.Int) A MIFARE Ultralight C tag |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#TYPE_UNKNOWN:kotlin.Int) A MIFARE Ultralight compatible tag of unknown type |
 
 | Public methods ||
@@ -41,15 +44,19 @@ Implementation of this class on a Android NFC device is optional. If it is not i
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#connect())`()` <br /> |
 | static [MifareUltralight](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [MifareUltralight](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#) for the given tag. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#getMaxTransceiveLength())`()` Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#transceive(kotlin.ByteArray)). |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#getTag())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#getTimeout())`()` Get the current [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#transceive(kotlin.ByteArray))timeout in milliseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#getType())`()` Return the MIFARE Ultralight type of the tag. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#isConnected())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readPages](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#readPages(kotlin.Int))`(`pageOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Read 4 pages (16 bytes). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#setTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#transceive(kotlin.ByteArray))timeout in milliseconds. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#transceive(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NfcA data to a tag and receive the response. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writePage](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareUltralight#writePage(kotlin.Int,%20kotlin.ByteArray))`(`pageOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Write 1 page (4 bytes). |
+| --- | --- |
 
 ## Constants
 
@@ -116,6 +123,7 @@ fun close(): Unit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -130,6 +138,7 @@ fun connect(): Unit
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### get
 

@@ -7,6 +7,7 @@ class RecordingSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.RecordingSession](https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#) |
 
 An instances of this class represents a session of media recording.
@@ -18,6 +19,7 @@ An instances of this class represents a session of media recording.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#getSessionId()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` <br /> |
 

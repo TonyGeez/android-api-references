@@ -9,6 +9,7 @@ open class RC5ParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.RC5ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#) |
 
 This class specifies the parameters used with the [*RC5*](http://www.ietf.org/rfc/rfc2040.txt) algorithm.
@@ -30,9 +31,11 @@ This class can be used to initialize a`Cipher`object that implements the*RC5* al
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this object. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#getIV())`()` Returns the IV or null if this parameter set does not contain an IV. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRounds](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#getRounds())`()` Returns the number of rounds. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#getVersion())`()` Returns the version. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWordSize](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#getWordSize())`()` Returns the word size in bits. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC5ParameterSpec#hashCode())`()` Calculates a hash code value for the object. |
+| --- | --- |
 
 ## Public constructors
 
@@ -54,6 +57,7 @@ Constructs a parameter set for RC5 from the given version, number of rounds and 
 | `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the version. |
 | `rounds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of rounds. |
 | `wordSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the word size in bits. |
+| --- | --- |
 
 ### RC5ParameterSpec
 
@@ -76,6 +80,7 @@ Note that the size of the IV (block size) must be twice the word size. The bytes
 | `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the version. |
 | `rounds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of rounds. |
 | `wordSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the word size in bits. |
+| --- | --- |
 | `iv` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer with the IV. The first`2*(wordSize/8) `bytes of the buffer are copied to protect against subsequent modification. |
 
 | Exceptions ||
@@ -104,6 +109,7 @@ The IV is taken from`iv`, starting at`offset`inclusive. Note that the size of th
 | `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the version. |
 | `rounds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of rounds. |
 | `wordSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the word size in bits. |
+| --- | --- |
 | `iv` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer with the IV. The first`2*(wordSize/8) `bytes of the buffer beginning at`offset`inclusive are copied to protect against subsequent modification. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`iv`where the IV starts. |
 

@@ -9,9 +9,11 @@ open class XPathFactoryConfigurationException : XPathException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.xml.xpath.XPathException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.xml.xpath.XPathFactoryConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFactoryConfigurationException#) |
 
 `XPathFactoryConfigurationException`represents a configuration error in a`XPathFactory`environment.

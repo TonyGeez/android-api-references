@@ -9,6 +9,7 @@ open class DOMResult : Result
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.dom.DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#) |
 
 Acts as a holder for a transformation result tree in the form of a Document Object Model (DOM) tree.
@@ -38,9 +39,11 @@ If no output DOM source is set, the transformation will create a Document node a
 | open [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [getNextSibling](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#getNextSibling())`()` Get the child node before which the result nodes will be inserted. |
 | open [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [getNode](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#getNode())`()` Get the node that will contain the result DOM tree. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#getSystemId())`()` Get the System Identifier. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextSibling](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#setNextSibling(org.w3c.dom.Node))`(`nextSibling:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` Set the child node before which the result nodes will be inserted. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNode](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#setNode(org.w3c.dom.Node))`(`node:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` Set the node that will contain the result DOM tree. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the systemId that may be used in association with the node. |
+| --- | --- |
 
 ## Constants
 
@@ -160,6 +163,7 @@ Use`nextSibling`to specify the child node where the result nodes should be inser
 | `node` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:The DOM node that will contain the result tree. |
 | `nextSibling` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:The child node where the result nodes should be inserted before. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The system identifier which may be used in association with this node. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------|

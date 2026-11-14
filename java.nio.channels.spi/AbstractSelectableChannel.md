@@ -9,11 +9,14 @@ abstract class AbstractSelectableChannel : SelectableChannel
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.nio.channels.spi.AbstractInterruptibleChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractInterruptibleChannel) |||
 | | ↳ | [java.nio.channels.SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel.html#) ||
 | | | ↳ | [java.nio.channels.spi.AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#), [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel.html#), [Pipe.SourceChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SourceChannel.html#), [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#), [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#) |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------| | [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#) | A selectable channel for datagram-oriented sockets. | | [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel.html#) | A channel representing the writable end of a [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.html#). | | [Pipe.SourceChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SourceChannel.html#) | A channel representing the readable end of a [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.html#). | | [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#) | A selectable channel for stream-oriented listening sockets. | | [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#) | A selectable channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base implementation class for selectable channels.
 
@@ -30,9 +33,11 @@ This class defines methods that handle the mechanics of channel registration, de
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [blockingLock](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#blockingLock())`()` <br /> |
 | [SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel.html#)! | [configureBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#configureBlocking(kotlin.Boolean))`(`block:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adjusts this channel's blocking mode. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#isBlocking())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRegistered](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#isRegistered())`()` <br /> |
 | [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey.html#)! | [keyFor](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#keyFor(java.nio.channels.Selector))`(`sel:` ` [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#)!`)` <br /> |
 | [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider)! | [provider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#provider())`()` Returns the provider that created this channel. |
+| --- | --- |
 | [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey.html#)! | [register](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#register(java.nio.channels.Selector,%20kotlin.Int,%20kotlin.Any))`(`sel:` ` [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#)!`, `ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `att:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Registers this channel with the given selector, returning a selection key. |
 
 | Protected methods ||
@@ -40,6 +45,7 @@ This class defines methods that handle the mechanics of channel registration, de
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implCloseChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#implCloseChannel())`()` Closes this channel. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implCloseSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#implCloseSelectableChannel())`()` Closes this selectable channel. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implConfigureBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel#implConfigureBlocking(kotlin.Boolean))`(`block:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adjusts this channel's blocking mode. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -101,6 +107,7 @@ If the given blocking mode is different from the current blocking mode then this
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.IllegalBlockingModeException` | If`block`is`true`and this channel is registered with one or more selectors |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 
 ### isBlocking
 
@@ -181,6 +188,7 @@ Otherwise this channel has not yet been registered with the given selector, so t
 | `sel` | [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#)!:The selector with which this channel is to be registered |
 | `ops` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The interest set for the resulting key |
 | `att` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The attachment for the resulting key; may be`null` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -191,9 +199,11 @@ Otherwise this channel has not yet been registered with the given selector, so t
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.ClosedSelectorException` | If the selector is closed |
 | `java.nio.channels.IllegalBlockingModeException` | If this channel is in blocking mode |
+| --- | --- |
 | `java.nio.channels.IllegalSelectorException` | If this channel was not created by the same provider as the given selector |
 | `java.nio.channels.CancelledKeyException` | If this channel is currently registered with the given selector but the corresponding key has already been cancelled |
 | `java.lang.IllegalArgumentException` | If a bit in the`ops`set does not correspond to an operation that is supported by this channel, that is, if`set & ~validOps() != 0` |
+| --- | --- |
 
 ## Protected methods
 

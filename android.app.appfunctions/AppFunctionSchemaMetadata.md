@@ -7,6 +7,7 @@ class AppFunctionSchemaMetadata : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appfunctions.AppFunctionSchemaMetadata](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#) |
 
 Contains identifying metadata for a predefined schema, which can describe well-known function signatures.
@@ -28,9 +29,11 @@ Returned from `https://developer.android.com/reference/kotlin/android/app/appfun
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getCategory()()` Returns the category of the schema used by this function. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getName()()` Returns the unique name of the schema within its category. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getVersion()()` Returns the version of the schema. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -58,6 +61,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/app/appfun
 | `schemaCategory` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The category of the schema, used to group related schemas. This value cannot be `null`. |
 | `schemaName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique name of the schema within its category. This value cannot be `null`. |
 | `schemaVersion` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The version of the schema. This is used to track the changes to the schema over time. |
+| --- | --- |
 
 ## Public methods
 

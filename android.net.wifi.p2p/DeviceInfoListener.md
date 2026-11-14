@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # DeviceInfoListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DeviceInfoListener

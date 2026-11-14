@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmInfoStatus
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmInfoStatus "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmInfoStatus
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmInfoStatus](https://developer.android.com/reference/kotlin/android/drm/DrmInfoStatus#) |
 
 | **This class was deprecated in API level 30.**
@@ -38,6 +40,7 @@ This class contains the [ProcessedData](https://developer.android.com/reference/
 | [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData)! | [data](https://developer.android.com/reference/kotlin/android/drm/DrmInfoStatus#data:android.drm.ProcessedData) The processed data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [infoType](https://developer.android.com/reference/kotlin/android/drm/DrmInfoStatus#infoType:kotlin.Int) The type of DRM information processed. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [mimeType](https://developer.android.com/reference/kotlin/android/drm/DrmInfoStatus#mimeType:kotlin.String) The MIME type of the content. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [statusCode](https://developer.android.com/reference/kotlin/android/drm/DrmInfoStatus#statusCode:kotlin.Int) The status of the communication. |
 
 ## Constants
@@ -91,6 +94,7 @@ Creates a`DrmInfoStatus`object with the specified parameters.
 | `statusCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The status of the communication. Must be one of the defined status constants above. |
 | `infoType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the DRM information processed. Must be a valid type for [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest). |
 | `data` | [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData)!:The processed data. |
+| --- | --- |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The MIME type. |
 
 ## Properties

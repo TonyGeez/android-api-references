@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnMediaTimeDiscontinuityListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnMediaTimeDiscontinuityListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnMediaTimeDiscontinuityListener

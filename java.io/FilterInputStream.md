@@ -7,12 +7,15 @@ open class FilterInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#) |
 
 | Known Direct Subclasses [Base64InputStream](https://developer.android.com/reference/kotlin/android/util/Base64InputStream.html#), [BufferedInputStream](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream), [CheckedInputStream](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream.html#), [CipherInputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream.html#), [DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream), [DeflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream.html#), [DigestInputStream](https://developer.android.com/reference/kotlin/java/security/DigestInputStream.html#), [InflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream.html#), [LineNumberInputStream](https://developer.android.com/reference/kotlin/java/io/LineNumberInputStream), [PushbackInputStream](https://developer.android.com/reference/kotlin/java/io/PushbackInputStream) |---|---| | [Base64InputStream](https://developer.android.com/reference/kotlin/android/util/Base64InputStream.html#) | An InputStream that does Base64 decoding on the data read through it. | | [BufferedInputStream](https://developer.android.com/reference/kotlin/java/io/BufferedInputStream) | A `BufferedInputStream` adds functionality to another input stream-namely, the ability to buffer the input and to support the `mark` and `reset` methods. | | [CheckedInputStream](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream.html#) | An input stream that also maintains a checksum of the data being read. | | [CipherInputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream.html#) | A CipherInputStream is composed of an InputStream and a Cipher so that read() methods return data that are read in from the underlying InputStream but have been additionally processed by the Cipher. | | [DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [DeflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream.html#) | Implements an input stream filter for compressing data in the "deflate" compression format. | | [DigestInputStream](https://developer.android.com/reference/kotlin/java/security/DigestInputStream.html#) | A transparent stream that updates the associated message digest using the bits going through the stream. | | [InflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream.html#) | This class implements a stream filter for uncompressing data in the "deflate" compression format. | | [LineNumberInputStream](https://developer.android.com/reference/kotlin/java/io/LineNumberInputStream) | This class is an input stream filter that provides the added functionality of keeping track of the current line number. | | [PushbackInputStream](https://developer.android.com/reference/kotlin/java/io/PushbackInputStream) | A `PushbackInputStream` adds functionality to another input stream, namely the ability to "push back" or "unread" bytes, by storing pushed-back bytes in an internal buffer. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [GZIPInputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPInputStream.html#), [JarInputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream.html#), [ZipInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipInputStream.html#) |---|---| | [GZIPInputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPInputStream.html#) | This class implements a stream filter for reading compressed data in the GZIP file format. | | [JarInputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream.html#) | The `JarInputStream` class is used to read the contents of a JAR file from any input stream. | | [ZipInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipInputStream.html#) | This class implements an input stream filter for reading files in the ZIP file format. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A `FilterInputStream` contains some other input stream, which it uses as its basic source of data, possibly transforming the data along the way or providing additional functionality. The class `FilterInputStream` itself simply overrides all methods of `InputStream` with versions that pass all requests to the contained input stream. Subclasses of `FilterInputStream` may further override some of these methods and may also provide additional methods and fields.
 
@@ -27,12 +30,15 @@ A `FilterInputStream` contains some other input stream, which it uses as its bas
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#available()()` Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next caller of a method for this input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#close()()` Closes this input stream and releases any system resources associated with the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#mark(kotlin.Int)(readlimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Marks the current position in this input stream. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#markSupported()()` Tests if this input stream supports the `mark` and `reset` methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#read()()` Reads the next byte of data from this input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#read(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reads up to `b.length` bytes of data from this input stream into an array of bytes. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads up to `len` bytes of data from this input stream into an array of bytes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#reset()()` Repositions this stream to the position at the time the `mark` method was last called on this input stream. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/FilterInputStream#skip(kotlin.Long)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Skips over and discards `n` bytes of data from the input stream. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -216,6 +222,7 @@ This method simply performs `in.read(b, off, len)` and returns the result.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset in the destination array `b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -226,6 +233,7 @@ This method simply performs `in.read(b, off, len)` and returns the result.
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.lang.IndexOutOfBoundsException` | If `off` is negative, `len` is negative, or `len` is greater than `b.length - off` |
 | `java.lang.NullPointerException` | If `b` is `null`. |
+| --- | --- |
 
 **See Also**
 

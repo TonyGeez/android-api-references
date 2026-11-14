@@ -6,15 +6,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # SwitchPreference
 
 Kotlin | [Java](https://developer.android.com/reference/android/preference/SwitchPreference "View this page in Java") 
+| --- | --- |
 
 ```
 open class SwitchPreference : TwoStatePreference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.TwoStatePreference](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference) ||
 | | | ↳ | [android.preference.SwitchPreference](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -31,6 +34,7 @@ This preference will store a boolean into the SharedPreferences.
 | [`android:disableDependentsState`](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#attr_SwitchPreference) | The state (true for on, or false for off) that causes dependents to be disabled. |
 | [`android:summaryOff`](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#attr_SwitchPreference) | The summary for the Preference in a PreferenceActivity screen when the SwitchPreference is unchecked. |
 | [`android:summaryOn`](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#attr_SwitchPreference) | The summary for the Preference in a PreferenceActivity screen when the SwitchPreference is checked. |
+| --- | --- |
 | [`android:switchTextOff`](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#attr_SwitchPreference) | The text used on the switch itself when in the "off" state. |
 | [`android:switchTextOn`](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#attr_SwitchPreference) | The text used on the switch itself when in the "on" state. |
 
@@ -54,9 +58,11 @@ This preference will store a boolean into the SharedPreferences.
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSwitchTextOff](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#getSwitchTextOff())`()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSwitchTextOn](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#getSwitchTextOn())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSwitchTextOff](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#setSwitchTextOff(kotlin.Int))`(`resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the text displayed on the switch widget in the off state. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSwitchTextOff](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#setSwitchTextOff(kotlin.CharSequence))`(`offText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Set the text displayed on the switch widget in the off state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSwitchTextOn](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#setSwitchTextOn(kotlin.Int))`(`resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the text displayed on the switch widget in the on state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSwitchTextOn](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference#setSwitchTextOn(kotlin.CharSequence))`(`onText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Set the text displayed on the switch widget in the on state. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,6 +171,7 @@ Construct a new SwitchPreference with the given style options.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context that will style this preference |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: Style attributes that differ from the default |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 
 ### SwitchPreference
 
@@ -185,6 +192,7 @@ Construct a new SwitchPreference with the given style options.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context that will style this preference |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: Style attributes that differ from the default |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 
 ## Public methods

@@ -5,15 +5,18 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # Base64OutputStream
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Base64OutputStream "View this page in Java") 
+| --- | --- |
 
 ```
 open class Base64OutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [android.util.Base64OutputStream](https://developer.android.com/reference/kotlin/android/util/Base64OutputStream#) |
+| --- | --- | --- | --- |
 
 An OutputStream that does Base64 encoding on the data written to it, writing the resulting data to another OutputStream.
 
@@ -28,6 +31,7 @@ An OutputStream that does Base64 encoding on the data written to it, writing the
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/util/Base64OutputStream#close())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/Base64OutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/Base64OutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -89,6 +93,7 @@ open fun write(
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to write. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------------------------------------------|

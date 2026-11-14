@@ -9,6 +9,7 @@ class Parameter : AnnotatedElement
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.reflect.Parameter](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#) |
 
 Information about method parameters. A`Parameter`provides information about method parameters, including its name and modifiers. It also provides an alternate means of obtaining attributes for the parameter.
@@ -20,21 +21,27 @@ Information about method parameters. A`Parameter`provides information about meth
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares based on the executable and the index. |
 | T? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns this element's annotation for the specified type if such an annotation is*present*, else null. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getAnnotations())`()` Returns annotations that are*present*on this element. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns annotations that are*associated*with this element. |
 | T? | [getDeclaredAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getDeclaredAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getDeclaredAnnotations())`()` Returns annotations that are*directly present*on this element. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getDeclaredAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getDeclaredAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` <br /> |
 | [Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) | [getDeclaringExecutable](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getDeclaringExecutable())`()` Return the`Executable`which declares this parameter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getModifiers())`()` Get the modifier flags for this the parameter represented by this`Parameter`object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getName())`()` Returns the name of the parameter. |
 | [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | [getParameterizedType](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getParameterizedType())`()` Returns a`Type`object that identifies the parameterized type for the parameter represented by this`Parameter`object. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getType](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#getType())`()` Returns a`Class`object that identifies the declared type for the parameter represented by this`Parameter`object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#hashCode())`()` Returns a hash code based on the executable's hash code and the index. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImplicit](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#isImplicit())`()` Returns`true`if this parameter is implicitly declared in source code; returns`false`otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamePresent](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#isNamePresent())`()` Returns true if the parameter has a name; returns false otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#isSynthetic())`()` Returns`true`if this parameter is neither implicitly nor explicitly declared in source code; returns`false`otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#isVarArgs())`()` Returns`true`if this parameter represents a variable argument list; returns`false`otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/Parameter#toString())`()` Returns a string describing this parameter. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

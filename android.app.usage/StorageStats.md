@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # StorageStats
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/usage/StorageStats "View this page in Java")
+| --- | --- |
 
 ```
 class StorageStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#) |
 
 Storage statistics for a UID, package, or `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on a single storage volume.
@@ -20,9 +22,11 @@ Storage statistics for a UID, package, or `https://developer.android.com/referen
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_FILE_TYPE_APK:kotlin.Int` Represents all . |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILE:kotlin.Int` Represents current profile of application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACT:kotlin.Int` Represents all nonstale dexopt and runtime artifacts of application. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_FILE_TYPE_DM:kotlin.Int` Represents all . |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILE:kotlin.Int` Represents reference profile of application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#APP_DATA_TYPE_LIB:kotlin.Int` Represents lib/ in application code path. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -33,9 +37,11 @@ Storage statistics for a UID, package, or `https://developer.android.com/referen
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#getAppBytes()()` Return the size of app. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#getAppBytesByDataType(kotlin.Int)(dataType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the size of the specified data type. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#getCacheBytes()()` Return the size of all cached data. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#getDataBytes()()` Return the size of all data. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#getExternalCacheBytes()()` Return the size of all cached data in the primary external/shared storage. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

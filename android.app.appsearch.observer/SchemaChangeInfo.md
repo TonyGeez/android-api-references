@@ -6,12 +6,14 @@ Also in [T Extensions 3](https://developer.android.com/sdkExtensions)
 # SchemaChangeInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SchemaChangeInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.observer.SchemaChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#) |
 
 Contains information about a schema change detected by an [ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback).
@@ -31,9 +33,11 @@ Note that schema changes may cause documents to be migrated or removed. When thi
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getChangedSchemaNames](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#getChangedSchemaNames())`()` Returns the names of schema types affected by this change notification. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDatabaseName](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#getDatabaseName())`()` Returns the database in which the schema that was changed resides. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#getPackageName())`()` Returns the package name of the app which owns the schema that changed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 
@@ -56,6 +60,7 @@ Constructs a new [SchemaChangeInfo](https://developer.android.com/reference/kotl
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package name of the app which owns the schema that changed. This value cannot be`null`. |
 | `databaseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The database in which the schema that changed resides. This value cannot be`null`. |
 | `changedSchemaNames` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:Names of schemas that have changed as part of this notification. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

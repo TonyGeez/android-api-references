@@ -51,6 +51,7 @@ RFC 3530 allows for special user identities to be used on platforms that support
 Where dynamic access to file attributes is required, the attributes supported by this attribute view are as follows:
 
 | Name | Type |
+| --- | --- |
 | "acl" | [List](https://developer.android.com/reference/kotlin/java/util/List.html#)\< [AclEntry](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry)\> |
 | "owner" | [UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal) |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,6 +73,7 @@ Where an implementation supports an ACL model that differs from the NFSv4 define
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AclEntry](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry)!\>! | [getAcl](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclFileAttributeView#getAcl())`()` Reads the access control list. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclFileAttributeView#name())`()` Returns the name of the attribute view. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAcl](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclFileAttributeView#setAcl(kotlin.collections.MutableList))`(`acl:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AclEntry](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry)!>!`)` Updates (replace) the access control list. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

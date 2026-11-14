@@ -7,9 +7,11 @@ abstract class AbsSpinner : AdapterView<SpinnerAdapter!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)\> ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#) |
 
 Known Direct Subclasses [Gallery](https://developer.android.com/reference/kotlin/android/widget/Gallery), [Spinner](https://developer.android.com/reference/kotlin/android/widget/Spinner) [Gallery](https://developer.android.com/reference/kotlin/android/widget/Gallery) A view that shows items in a center-locked, horizontally scrolling list.
@@ -301,6 +303,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -417,6 +420,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -565,6 +569,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1755,15 +1760,19 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#autofill(android.view.autofill.AutofillValue)(value: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#!)` Automatically fills the content of this view with the `value`. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getAdapter()()` Returns the adapter currently associated with this widget. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getAutofillType()()` Describes the autofill type of this view, so an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` can create the proper `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#` when autofilling the view. |
 | open [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View.html#`'s current autofill value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getCount()()` <br /> |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#getSelectedView()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#pointToPosition(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Maps a point to a position in the list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#requestLayout()()` Override to prevent spamming ourselves with layout requests as we place views |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#setAdapter(android.widget.SpinnerAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter!)` The Adapter is used to provide the data which backs this Spinner. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#setSelection(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the currently selected item. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#setSelection(kotlin.Int,%20kotlin.Boolean)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Jump directly to a specific item in the adapter data. |
 
@@ -1772,6 +1781,7 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#dispatchRestoreInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Override to prevent thawing of any views created by the adapter. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2654,6 +2664,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4490,6 +4501,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 

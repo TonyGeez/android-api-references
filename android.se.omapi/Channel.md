@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Channel
 
 Kotlin | [Java](https://developer.android.com/reference/android/se/omapi/Channel "View this page in Java")
+| --- | --- |
 
 ```
 class Channel : Channel
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.se.omapi.Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel#) |
 
 Instances of this class represent an ISO/IEC 7816-4 channel opened to a Secure Element. It can be either a logical channel or the basic channel. They can be used to send APDUs to the secure element. Channels are opened by calling the Session.openBasicChannel(byte\[\]) or Session.openLogicalChannel(byte\[\]) methods.
@@ -20,9 +22,11 @@ Instances of this class represent an ISO/IEC 7816-4 channel opened to a Secure E
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#close()()` Closes this channel to the Secure Element. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#getSelectResponse()()` Returns the data as received from the application select command inclusively the status word received at applet selection. |
 | [Session](https://developer.android.com/reference/kotlin/android/se/omapi/Session) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#getSession()()` Get the session that has opened this channel. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#isBasicChannel()()` Returns a boolean telling if this channel is the basic channel. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#isOpen()()` Tells if this channel is open. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#selectNext()()` Performs a selection of the next Applet on this channel that matches to the partial AID specified in the openBasicChannel(byte\[\] aid) or openLogicalChannel(byte\[\] aid) method. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/se/omapi/Channel#transmit(kotlin.ByteArray)(command: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Transmit an APDU command (as per ISO/IEC 7816-4) to the Secure Element. |
 
 ## Public methods
@@ -121,6 +125,7 @@ The select response stored in the Channel object shall be updated with the APDU 
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalStateException` | if the channel is used after being closed. |
 | `java.lang.UnsupportedOperationException` | if this operation is not supported by the card. |
+| --- | --- |
 
 ### transmit
 
@@ -155,5 +160,6 @@ The channel information in the class byte in the APDU will be ignored. The syste
 | `java.io.IOException` | if there is a communication problem to the reader or the Secure Element. |
 | `java.lang.IllegalArgumentException` | if INS byte is invalid according to \[2\] (0x6x or 0x9x). |
 | `java.lang.IllegalStateException` | if the channel is used after being closed. |
+| --- | --- |
 | `java.lang.NullPointerException` | if command is NULL. |
 | `java.lang.SecurityException` | if the command is filtered by the security policy. |

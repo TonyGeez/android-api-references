@@ -5,18 +5,22 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CursorAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/CursorAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CursorAdapter : BaseAdapter, Filterable, ThemedSpinnerAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.widget.BaseAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseAdapter) ||
 | | ↳ | [android.widget.CursorAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#) |
 
 | Known Direct Subclasses [ResourceCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter) |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [ResourceCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter) | An easy adapter that creates views defined in an XML file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Adapter that exposes data from a [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) to a [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView) widget.
 
@@ -40,21 +44,27 @@ The Cursor must include a column named "_id" or this class will not work. Additi
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindView](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#bindView(android.view.View,%20android.content.Context,%20android.database.Cursor))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Bind an existing view to the data pointed to by cursor |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [changeCursor](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#changeCursor(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Change the underlying cursor to a new cursor. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [convertToString](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#convertToString(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Converts the cursor into a CharSequence. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getCount())`()` <br /> |
 | open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [getCursor](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getCursor())`()` Returns the cursor. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getDropDownView](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getDropDownView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` <br /> |
+| --- | --- |
 | open [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)? | [getDropDownViewTheme](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getDropDownViewTheme())`()` <br /> |
 | open [Filter](https://developer.android.com/reference/kotlin/android/widget/Filter)! | [getFilter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getFilter())`()` <br /> |
 | open [FilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider)! | [getFilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getFilterQueryProvider())`()` Returns the query filter provider used for filtering. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getItem](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getItem(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getItemId(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getView](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#getView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#hasStableIds())`()` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [newDropDownView](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#newDropDownView(android.content.Context,%20android.database.Cursor,%20android.view.ViewGroup))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Makes a new drop down view to hold the data pointed to by cursor. |
 | abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [newView](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#newView(android.content.Context,%20android.database.Cursor,%20android.view.ViewGroup))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Makes a new view to hold the data pointed to by cursor. |
+| --- | --- |
 | open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [runQueryOnBackgroundThread](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#runQueryOnBackgroundThread(kotlin.CharSequence))`(`constraint:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Runs a query with the specified constraint. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownViewTheme](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#setDropDownViewTheme(android.content.res.Resources.Theme))`(`theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Sets the [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#) against which drop-down views are inflated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#setFilterQueryProvider(android.widget.FilterQueryProvider))`(`filterQueryProvider:` ` [FilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider)!`)` Sets the query filter provider used to filter the current Cursor. |
+| --- | --- |
 | open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [swapCursor](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#swapCursor(android.database.Cursor))`(`newCursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Swap in a new Cursor, returning the old Cursor. |
 
 | Protected methods ||
@@ -134,6 +144,7 @@ Constructor that allows control over auto-requery. It is recommended you not use
 | `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor from which to get the data. |
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The context |
 | `autoRequery` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true the adapter will call requery() on the cursor whenever it changes so the most recent data is always displayed. Using true here is discouraged. |
+| --- | --- |
 
 ### CursorAdapter
 
@@ -153,6 +164,7 @@ Recommended constructor.
 | `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor from which to get the data. |
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The context |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags used to determine the behavior of the adapter; may be any combination of [FLAG_AUTO_REQUERY](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#FLAG_AUTO_REQUERY:kotlin.Int) and [FLAG_REGISTER_CONTENT_OBSERVER](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#FLAG_REGISTER_CONTENT_OBSERVER:kotlin.Int). |
+| --- | --- |
 
 ## Public methods
 
@@ -175,6 +187,7 @@ Bind an existing view to the data pointed to by cursor
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:Existing view, returned earlier by newView |
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Interface to application's global information |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor from which to get the data. The cursor is already moved to the correct position. |
+| --- | --- |
 
 ### changeCursor
 
@@ -255,6 +268,7 @@ open fun getDropDownView(
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the item whose view we want. |
 | `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:the parent that this view will eventually be attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -360,6 +374,7 @@ open fun getView(
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the item within the adapter's data set of the item whose view we want. |
 | `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. Heterogeneous lists can specify their number of view types, so that this View is always of the right type (see [getViewTypeCount()](https://developer.android.com/reference/kotlin/android/widget/Adapter#getViewTypeCount())and [getItemViewType(int)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getItemViewType(kotlin.Int))). |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The parent that this view will eventually be attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -400,6 +415,7 @@ Makes a new drop down view to hold the data pointed to by cursor.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Interface to application's global information |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor from which to get the data. The cursor is already moved to the correct position. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The parent to which the new view is attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------|
@@ -424,6 +440,7 @@ Makes a new view to hold the data pointed to by cursor.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Interface to application's global information |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor from which to get the data. The cursor is already moved to the correct position. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The parent to which the new view is attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------|

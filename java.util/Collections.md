@@ -9,6 +9,7 @@ open class Collections
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Collections](https://developer.android.com/reference/kotlin/java/util/Collections#) |
 
 This class consists exclusively of static methods that operate on or return collections. It contains polymorphic algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, and a few other odds and ends.
@@ -28,72 +29,95 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/Collections#addAll(kotlin.collections.MutableCollection,%20java.util.Collections.addAll.T))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `T>`, `vararg` `elements:` `T`)` Adds all of the specified elements to the specified collection. |
 | openstatic [Queue](https://developer.android.com/reference/kotlin/java/util/Queue)\<T\> | [asLifoQueue](https://developer.android.com/reference/kotlin/java/util/Collections#asLifoQueue(java.util.Deque))`(`deque:` ` [Deque](https://developer.android.com/reference/kotlin/java/util/Deque)<T>`)` Returns a view of a [Deque](https://developer.android.com/reference/kotlin/java/util/Deque) as a Last-in-first-out (Lifo) [Queue](https://developer.android.com/reference/kotlin/java/util/Queue). |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](https://developer.android.com/reference/kotlin/java/util/Collections#binarySearch(kotlin.collections.MutableList,%20java.util.Collections.binarySearch.T))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Comparable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html)<T>!>`, `key:` `T`)` Searches the specified list for the specified object using the binary search algorithm. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](https://developer.android.com/reference/kotlin/java/util/Collections#binarySearch(kotlin.collections.MutableList,%20java.util.Collections.binarySearch.T,%20java.util.Comparator))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`, `key:` `T`, `c:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `T>?`)` Searches the specified list for the specified object using the binary search algorithm. |
 | openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<E\> | [checkedCollection](https://developer.android.com/reference/kotlin/java/util/Collections#checkedCollection(kotlin.collections.MutableCollection,%20java.lang.Class))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified collection. |
 | openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [checkedList](https://developer.android.com/reference/kotlin/java/util/Collections#checkedList(kotlin.collections.MutableList,%20java.lang.Class))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified list. |
+| --- | --- |
 | openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [checkedMap](https://developer.android.com/reference/kotlin/java/util/Collections#checkedMap(kotlin.collections.MutableMap,%20java.lang.Class,%20java.lang.Class))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`, `keyType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<K>`, `valueType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>`)` Returns a dynamically typesafe view of the specified map. |
 | openstatic [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\> | [checkedNavigableMap](https://developer.android.com/reference/kotlin/java/util/Collections#checkedNavigableMap(java.util.NavigableMap,%20java.lang.Class,%20java.lang.Class))`(`m:` ` [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)<K,` `V>`, `keyType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<K>`, `valueType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>`)` Returns a dynamically typesafe view of the specified navigable map. |
 | openstatic [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<E\> | [checkedNavigableSet](https://developer.android.com/reference/kotlin/java/util/Collections#checkedNavigableSet(java.util.NavigableSet,%20java.lang.Class))`(`s:` ` [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified navigable set. |
+| --- | --- |
 | openstatic [Queue](https://developer.android.com/reference/kotlin/java/util/Queue)\<E\> | [checkedQueue](https://developer.android.com/reference/kotlin/java/util/Collections#checkedQueue(java.util.Queue,%20java.lang.Class))`(`queue:` ` [Queue](https://developer.android.com/reference/kotlin/java/util/Queue)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified queue. |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [checkedSet](https://developer.android.com/reference/kotlin/java/util/Collections#checkedSet(kotlin.collections.MutableSet,%20java.lang.Class))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified set. |
 | openstatic [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\> | [checkedSortedMap](https://developer.android.com/reference/kotlin/java/util/Collections#checkedSortedMap(java.util.SortedMap,%20java.lang.Class,%20java.lang.Class))`(`m:` ` [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)<K,` `V>`, `keyType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<K>`, `valueType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>`)` Returns a dynamically typesafe view of the specified sorted map. |
+| --- | --- |
 | openstatic [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\> | [checkedSortedSet](https://developer.android.com/reference/kotlin/java/util/Collections#checkedSortedSet(java.util.SortedSet,%20java.lang.Class))`(`s:` ` [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)<E>`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<E>`)` Returns a dynamically typesafe view of the specified sorted set. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](https://developer.android.com/reference/kotlin/java/util/Collections#copy(kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`dest:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `src:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Copies all of the elements from one list into another. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disjoint](https://developer.android.com/reference/kotlin/java/util/Collections#disjoint(kotlin.collections.MutableCollection,%20kotlin.collections.MutableCollection))`(`c1:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `c2:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Returns`true`if the two specified collections have no elements in common. |
+| --- | --- |
 | openstatic [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<T\> | [emptyEnumeration](https://developer.android.com/reference/kotlin/java/util/Collections#emptyEnumeration())`()` Returns an enumeration that has no elements. |
 | openstatic [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [emptyIterator](https://developer.android.com/reference/kotlin/java/util/Collections#emptyIterator())`()` Returns an iterator that has no elements. |
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [emptyList](https://developer.android.com/reference/kotlin/java/util/Collections#emptyList())`()` Returns an empty list (immutable). |
+| --- | --- |
 | openstatic [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<T\> | [emptyListIterator](https://developer.android.com/reference/kotlin/java/util/Collections#emptyListIterator())`()` Returns a list iterator that has no elements. |
 | static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [emptyMap](https://developer.android.com/reference/kotlin/java/util/Collections#emptyMap())`()` Returns an empty map (immutable). |
 | static [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\> | [emptyNavigableMap](https://developer.android.com/reference/kotlin/java/util/Collections#emptyNavigableMap())`()` Returns an empty navigable map (immutable). |
+| --- | --- |
 | openstatic [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<E\> | [emptyNavigableSet](https://developer.android.com/reference/kotlin/java/util/Collections#emptyNavigableSet())`()` Returns an empty navigable set (immutable). |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [emptySet](https://developer.android.com/reference/kotlin/java/util/Collections#emptySet())`()` Returns an empty set (immutable). |
 | static [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\> | [emptySortedMap](https://developer.android.com/reference/kotlin/java/util/Collections#emptySortedMap())`()` Returns an empty sorted map (immutable). |
+| --- | --- |
 | openstatic [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\> | [emptySortedSet](https://developer.android.com/reference/kotlin/java/util/Collections#emptySortedSet())`()` Returns an empty sorted set (immutable). |
 | openstatic [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<T\> | [enumeration](https://developer.android.com/reference/kotlin/java/util/Collections#enumeration(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns an enumeration over the specified collection. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fill](https://developer.android.com/reference/kotlin/java/util/Collections#fill(kotlin.collections.MutableList,%20java.util.Collections.fill.T))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `obj:` `T`)` Replaces all of the elements of the specified list with the specified element. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [frequency](https://developer.android.com/reference/kotlin/java/util/Collections#frequency(kotlin.collections.MutableCollection,%20kotlin.Any))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns the number of elements in the specified collection equal to the specified object. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOfSubList](https://developer.android.com/reference/kotlin/java/util/Collections#indexOfSubList(kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the first occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOfSubList](https://developer.android.com/reference/kotlin/java/util/Collections#lastIndexOfSubList(kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the last occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
+| --- | --- |
 | openstatic [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList)\<T\> | [list](https://developer.android.com/reference/kotlin/java/util/Collections#list(java.util.Enumeration))`(`e:` ` [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)<T>`)` Returns an array list containing the elements returned by the specified enumeration in the order they are returned by the enumeration. |
 | openstaticT | [max](https://developer.android.com/reference/kotlin/java/util/Collections#max(kotlin.collections.MutableCollection))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the maximum element of the given collection, according to the*natural ordering*of its elements. |
 | openstaticT | [max](https://developer.android.com/reference/kotlin/java/util/Collections#max(kotlin.collections.MutableCollection,%20java.util.Comparator))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `T>?`)` Returns the maximum element of the given collection, according to the order induced by the specified comparator. |
+| --- | --- |
 | openstaticT | [min](https://developer.android.com/reference/kotlin/java/util/Collections#min(kotlin.collections.MutableCollection))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the minimum element of the given collection, according to the*natural ordering*of its elements. |
 | openstaticT | [min](https://developer.android.com/reference/kotlin/java/util/Collections#min(kotlin.collections.MutableCollection,%20java.util.Comparator))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `T>?`)` Returns the minimum element of the given collection, according to the order induced by the specified comparator. |
 | openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [nCopies](https://developer.android.com/reference/kotlin/java/util/Collections#nCopies(kotlin.Int,%20java.util.Collections.nCopies.T))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `o:` `T`)` Returns an immutable list consisting of`n`copies of the specified object. |
+| --- | --- |
 | openstatic [SequencedSet](https://developer.android.com/reference/kotlin/java/util/SequencedSet)\<E\> | [newSequencedSetFromMap](https://developer.android.com/reference/kotlin/java/util/Collections#newSequencedSetFromMap(java.util.SequencedMap))`(`map:` ` [SequencedMap](https://developer.android.com/reference/kotlin/java/util/SequencedMap)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a sequenced set backed by the specified map. |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [newSetFromMap](https://developer.android.com/reference/kotlin/java/util/Collections#newSetFromMap(kotlin.collections.MutableMap))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a set backed by the specified map. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/Collections#replaceAll(kotlin.collections.MutableList,%20java.util.Collections.replaceAll.T,%20java.util.Collections.replaceAll.T))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `oldVal:` `T`, `newVal:` `T`)` Replaces all occurrences of one specified value in a list with another. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reverse](https://developer.android.com/reference/kotlin/java/util/Collections#reverse(kotlin.collections.MutableList))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Reverses the order of the elements in the specified list. |
 | openstatic [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<T\> | [reverseOrder](https://developer.android.com/reference/kotlin/java/util/Collections#reverseOrder())`()` Returns a comparator that imposes the reverse of the*natural ordering* on a collection of objects that implement the`Comparable`interface. |
 | openstatic [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<T\> | [reverseOrder](https://developer.android.com/reference/kotlin/java/util/Collections#reverseOrder(java.util.Comparator))`(`cmp:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<T>?`)` Returns a comparator that imposes the reverse ordering of the specified comparator. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](https://developer.android.com/reference/kotlin/java/util/Collections#rotate(kotlin.collections.MutableList,%20kotlin.Int))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Rotates the elements in the specified list by the specified distance. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](https://developer.android.com/reference/kotlin/java/util/Collections#shuffle(kotlin.collections.MutableList))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Randomly permutes the specified list using a default source of randomness. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](https://developer.android.com/reference/kotlin/java/util/Collections#shuffle(kotlin.collections.MutableList,%20java.util.Random))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [Random](https://developer.android.com/reference/kotlin/java/util/Random)`)` Randomly permute the specified list using the specified source of randomness. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](https://developer.android.com/reference/kotlin/java/util/Collections#shuffle(kotlin.collections.MutableList,%20java.util.random.RandomGenerator))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator)`)` Randomly permute the specified list using the specified source of randomness. |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [singleton](https://developer.android.com/reference/kotlin/java/util/Collections#singleton(java.util.Collections.singleton.T))`(`o:` `T`)` Returns an immutable set containing only the specified object. |
 | openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [singletonList](https://developer.android.com/reference/kotlin/java/util/Collections#singletonList(java.util.Collections.singletonList.T))`(`o:` `T`)` Returns an immutable list containing only the specified object. |
+| --- | --- |
 | openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [singletonMap](https://developer.android.com/reference/kotlin/java/util/Collections#singletonMap(java.util.Collections.singletonMap.K,%20java.util.Collections.singletonMap.V))`(`key:` `K`, `value:` `V`)` Returns an immutable map, mapping only the specified key to the specified value. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](https://developer.android.com/reference/kotlin/java/util/Collections#sort(kotlin.collections.MutableList))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Sorts the specified list into ascending order, according to the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](https://developer.android.com/reference/kotlin/java/util/Collections#sort(kotlin.collections.MutableList,%20java.util.Comparator))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `c:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `T>?`)` Sorts the specified list according to the order induced by the specified comparator. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swap](https://developer.android.com/reference/kotlin/java/util/Collections#swap(kotlin.collections.MutableList,%20kotlin.Int,%20kotlin.Int))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `j:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Swaps the elements at the specified positions in the specified list. |
 | openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [synchronizedCollection](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedCollection(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns a synchronized (thread-safe) collection backed by the specified collection. |
 | openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [synchronizedList](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedList(kotlin.collections.MutableList))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Returns a synchronized (thread-safe) list backed by the specified list. |
+| --- | --- |
 | openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [synchronizedMap](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedMap(kotlin.collections.MutableMap))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`)` Returns a synchronized (thread-safe) map backed by the specified map. |
 | openstatic [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\> | [synchronizedNavigableMap](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedNavigableMap(java.util.NavigableMap))`(`m:` ` [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)<K,` `V>`)` Returns a synchronized (thread-safe) navigable map backed by the specified navigable map. |
 | openstatic [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<T\> | [synchronizedNavigableSet](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedNavigableSet(java.util.NavigableSet))`(`s:` ` [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)<T>`)` Returns a synchronized (thread-safe) navigable set backed by the specified navigable set. |
+| --- | --- |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [synchronizedSet](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedSet(kotlin.collections.MutableSet))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<T>`)` Returns a synchronized (thread-safe) set backed by the specified set. |
 | openstatic [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\> | [synchronizedSortedMap](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedSortedMap(java.util.SortedMap))`(`m:` ` [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)<K,` `V>`)` Returns a synchronized (thread-safe) sorted map backed by the specified sorted map. |
 | openstatic [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<T\> | [synchronizedSortedSet](https://developer.android.com/reference/kotlin/java/util/Collections#synchronizedSortedSet(java.util.SortedSet))`(`s:` ` [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)<T>`)` Returns a synchronized (thread-safe) sorted set backed by the specified sorted set. |
+| --- | --- |
 | openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [unmodifiableCollection](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableCollection(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified collection. |
 | openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [unmodifiableList](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableList(kotlin.collections.MutableList))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified list. |
 | openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [unmodifiableMap](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableMap(kotlin.collections.MutableMap))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified map. |
+| --- | --- |
 | openstatic [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\> | [unmodifiableNavigableMap](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableNavigableMap(java.util.NavigableMap))`(`m:` ` [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)<K,` `out` `V>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified navigable map. |
 | openstatic [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<T\> | [unmodifiableNavigableSet](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableNavigableSet(java.util.NavigableSet))`(`s:` ` [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)<T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified navigable set. |
 | openstatic [SequencedCollection](https://developer.android.com/reference/kotlin/java/util/SequencedCollection)\<T\> | [unmodifiableSequencedCollection](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSequencedCollection(java.util.SequencedCollection))`(`c:` ` [SequencedCollection](https://developer.android.com/reference/kotlin/java/util/SequencedCollection)<out` `T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified`SequencedCollection`. |
+| --- | --- |
 | openstatic [SequencedMap](https://developer.android.com/reference/kotlin/java/util/SequencedMap)\<K,V\> | [unmodifiableSequencedMap](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSequencedMap(java.util.SequencedMap))`(`m:` ` [SequencedMap](https://developer.android.com/reference/kotlin/java/util/SequencedMap)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified`SequencedMap`. |
 | openstatic [SequencedSet](https://developer.android.com/reference/kotlin/java/util/SequencedSet)\<T\> | [unmodifiableSequencedSet](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSequencedSet(java.util.SequencedSet))`(`s:` ` [SequencedSet](https://developer.android.com/reference/kotlin/java/util/SequencedSet)<out` `T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified`SequencedSet`. |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [unmodifiableSet](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSet(kotlin.collections.MutableSet))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` `T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified set. |
+| --- | --- |
 | openstatic [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\> | [unmodifiableSortedMap](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSortedMap(java.util.SortedMap))`(`m:` ` [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)<K,` `out` `V>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified sorted map. |
 | openstatic [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<T\> | [unmodifiableSortedSet](https://developer.android.com/reference/kotlin/java/util/Collections#unmodifiableSortedSet(java.util.SortedSet))`(`s:` ` [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)<T>`)` Returns an [unmodifiable view](https://developer.android.com/reference/kotlin/java/util/Collection#unmodview) of the specified sorted set. |
 
@@ -102,6 +126,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_LIST](https://developer.android.com/reference/kotlin/java/util/Collections#EMPTY_LIST:kotlin.collections.MutableList) The empty list (immutable). |
 | static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_MAP](https://developer.android.com/reference/kotlin/java/util/Collections#EMPTY_MAP:kotlin.collections.MutableMap) The empty map (immutable). |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_SET](https://developer.android.com/reference/kotlin/java/util/Collections#EMPTY_SET:kotlin.collections.MutableSet) The empty set (immutable). |
+| --- | --- |
 
 ## Public methods
 
@@ -130,6 +155,7 @@ Collections.addAll(flavors, "Peaches 'n Plutonium", "Rocky Racoon");
 | `<T>` | the class of the elements to add and of the collection |
 | `c` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<inT\>:the collection into which`elements`are to be inserted |
 | `elements` | T:the elements to insert into`c` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -140,6 +166,7 @@ Collections.addAll(flavors, "Peaches 'n Plutonium", "Rocky Racoon");
 | `java.lang.UnsupportedOperationException` | if`c`does not support the`add`operation |
 | `java.lang.NullPointerException` | if`elements`contains one or more null values and`c`does not permit null elements, or if`c`or`elements`are`null` |
 | `java.lang.IllegalArgumentException` | if some property of a value in`elements`prevents it from being added to`c` |
+| --- | --- |
 
 **See Also**
 
@@ -186,6 +213,7 @@ This method runs in log(n) time for a "random access" list (which provides near-
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Comparable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html)\<T\>!\>:the list to be searched. |
 | `key` | T:the key to be searched for. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -216,6 +244,7 @@ This method runs in log(n) time for a "random access" list (which provides near-
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<outT\>:the list to be searched. |
 | `key` | T:the key to be searched for. |
+| --- | --- |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inT\>?:the comparator by which the list is ordered. A`null`value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used. |
 
 | Return ||
@@ -267,6 +296,7 @@ Since`null`is considered to be a value of any reference type, the returned colle
 | `<E>` | the class of the objects in the collection |
 | `c` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<E\>:the collection for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`c`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -296,6 +326,7 @@ Since`null`is considered to be a value of any reference type, the returned list 
 | `<E>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\>:the list for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`list`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -328,6 +359,7 @@ Since`null`is considered to be a value of any reference type, the returned map p
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
+| --- | --- |
 | `keyType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<K\>:the type of key that`m`is permitted to hold |
 | `valueType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<V\>:the type of value that`m`is permitted to hold |
 
@@ -362,6 +394,7 @@ Since`null`is considered to be a value of any reference type, the returned map p
 | `<K>` | type of map keys |
 | `<V>` | type of map values |
 | `m` | [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
+| --- | --- |
 | `keyType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<K\>:the type of key that`m`is permitted to hold |
 | `valueType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<V\>:the type of value that`m`is permitted to hold |
 
@@ -393,6 +426,7 @@ Since`null`is considered to be a value of any reference type, the returned navig
 | `<E>` | the class of the objects in the set |
 | `s` | [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<E\>:the navigable set for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`s`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -422,6 +456,7 @@ Since`null`is considered to be a value of any reference type, the returned queue
 | `<E>` | the class of the objects in the queue |
 | `queue` | [Queue](https://developer.android.com/reference/kotlin/java/util/Queue)\<E\>:the queue for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`queue`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
@@ -451,6 +486,7 @@ Since`null`is considered to be a value of any reference type, the returned set p
 | `<E>` | the class of the objects in the set |
 | `s` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\>:the set for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`s`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -483,6 +519,7 @@ Since`null`is considered to be a value of any reference type, the returned map p
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
+| --- | --- |
 | `keyType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<K\>:the type of key that`m`is permitted to hold |
 | `valueType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<V\>:the type of value that`m`is permitted to hold |
 
@@ -514,6 +551,7 @@ Since`null`is considered to be a value of any reference type, the returned sorte
 | `<E>` | the class of the objects in the set |
 | `s` | [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\>:the sorted set for which a dynamically typesafe view is to be returned |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<E\>:the type of element that`s`is permitted to hold |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -539,6 +577,7 @@ This method runs in linear time.
 | `<T>` | the class of the objects in the lists |
 | `dest` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<inT\>:The destination list. |
 | `src` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<outT\>:The source list. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------|
@@ -893,6 +932,7 @@ This method runs in linear time.
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<inT\>:the list to be filled with the specified element. |
 | `obj` | T:The element with which to fill the specified list. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------|
@@ -1046,6 +1086,7 @@ This method iterates over the entire collection, hence it requires time proporti
 | `<T>` | the class of the objects in the collection |
 | `coll` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<outT\>:the collection whose maximum element is to be determined. |
 | `comp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inT\>?:the comparator with which to determine the maximum element. A`null`value indicates that the elements'*natural ordering*should be used. |
+| --- | --- |
 
 | Return ||
 |---|-------------------------------------------------------------------------------------|
@@ -1110,6 +1151,7 @@ This method iterates over the entire collection, hence it requires time proporti
 | `<T>` | the class of the objects in the collection |
 | `coll` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<outT\>:the collection whose minimum element is to be determined. |
 | `comp` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inT\>?:the comparator with which to determine the minimum element. A`null`value indicates that the elements'*natural ordering*should be used. |
+| --- | --- |
 
 | Return ||
 |---|-------------------------------------------------------------------------------------|
@@ -1142,6 +1184,7 @@ Returns an immutable list consisting of`n`copies of the specified object. The ne
 | `<T>` | the class of the object to copy and of the objects in the returned list. |
 | `n` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of elements in the returned list. |
 | `o` | T:the element to appear repeatedly in the returned list. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1235,6 +1278,7 @@ Replaces all occurrences of one specified value in a list with another. More for
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>:the list in which replacement is to occur. |
 | `oldVal` | T:the old value to be replaced. |
+| --- | --- |
 | `newVal` | T:the new value with which`oldVal`is to be replaced. |
 
 | Return ||
@@ -1490,6 +1534,7 @@ Returns an immutable map, mapping only the specified key to the specified value.
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `key` | K:the sole key to be stored in the returned map. |
+| --- | --- |
 | `value` | V:the value to which the returned map maps`key`. |
 
 | Return ||
@@ -1520,6 +1565,7 @@ The specified list must be modifiable, but need not be resizable.
 | `java.lang.ClassCastException` | if the list contains elements that are not*mutually comparable*(for example, strings and integers). |
 | `java.lang.UnsupportedOperationException` | if the specified list's list-iterator does not support the`set`operation. |
 | `java.lang.IllegalArgumentException` | (optional) if the implementation detects that the natural ordering of the list elements is found to violate the [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) contract |
+| --- | --- |
 
 **See Also**
 
@@ -1547,12 +1593,14 @@ The specified list must be modifiable, but need not be resizable.
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>:the list to be sorted. |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inT\>?:the comparator to determine the order of the list. A`null`value indicates that the elements'*natural ordering*should be used. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassCastException` | if the list contains elements that are not*mutually comparable*using the specified comparator. |
 | `java.lang.UnsupportedOperationException` | if the specified list's list-iterator does not support the`set`operation. |
 | `java.lang.IllegalArgumentException` | (optional) if the comparator is found to violate the [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator) contract |
+| --- | --- |
 
 **See Also**
 
@@ -1577,6 +1625,7 @@ Swaps the elements at the specified positions in the specified list. (If the spe
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>:The list in which to swap elements. |
 | `i` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of one element to be swapped. |
 | `j` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the other element to be swapped. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -1687,6 +1736,7 @@ The returned map will be serializable if the specified map is serializable.
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\>:the map to be "wrapped" in a synchronized map. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------|
@@ -1740,6 +1790,7 @@ The returned navigable map will be serializable if the specified navigable map i
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,V\>:the navigable map to be "wrapped" in a synchronized navigable map |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
@@ -1876,6 +1927,7 @@ The returned sorted map will be serializable if the specified sorted map is seri
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,V\>:the sorted map to be "wrapped" in a synchronized sorted map. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -1990,6 +2042,7 @@ The returned map will be serializable if the specified map is serializable.
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<outK,outV\>:the map for which an unmodifiable view is to be returned. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------|
@@ -2012,6 +2065,7 @@ The returned navigable map will be serializable if the specified navigable map i
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap)\<K,outV\>:the navigable map for which an unmodifiable view is to be returned |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
@@ -2078,6 +2132,7 @@ The returned map will be serializable if the specified map is serializable.
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [SequencedMap](https://developer.android.com/reference/kotlin/java/util/SequencedMap)\<outK,outV\>:the map for which an unmodifiable view is to be returned. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------|
@@ -2142,6 +2197,7 @@ The returned sorted map will be serializable if the specified sorted map is seri
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
 | `m` | [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K,outV\>:the sorted map for which an unmodifiable view is to be returned. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------|

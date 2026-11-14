@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # EasyEditSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/EasyEditSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class EasyEditSpan : ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.style.EasyEditSpan](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#) |
 
 Provides an easy way to edit a portion of text.
@@ -28,6 +30,7 @@ This span can be also used to receive notification when the user deletes or modi
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TEXT_CHANGED_TYPE](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#EXTRA_TEXT_CHANGED_TYPE:kotlin.String) The extra key field in the pending intent that describes how the text changed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT_DELETED](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#TEXT_DELETED:kotlin.Int) The value of [EXTRA_TEXT_CHANGED_TYPE](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#EXTRA_TEXT_CHANGED_TYPE:kotlin.String) when the text wrapped by this span is deleted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT_MODIFIED](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#TEXT_MODIFIED:kotlin.Int) The value of [EXTRA_TEXT_CHANGED_TYPE](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#EXTRA_TEXT_CHANGED_TYPE:kotlin.String) when the text wrapped by this span is modified. |
+| --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -40,6 +43,7 @@ This span can be also used to receive notification when the user deletes or modi
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#getSpanTypeId())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/EasyEditSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 ## Constants
 

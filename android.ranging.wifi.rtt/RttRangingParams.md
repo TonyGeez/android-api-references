@@ -7,6 +7,7 @@ class RttRangingParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.wifi.rtt.RttRangingParams](https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#) |
 
 Represents the parameters required to perform Wi-Fi Round Trip Time (RTT) ranging.
@@ -26,12 +27,15 @@ Represents the parameters required to perform Wi-Fi Round Trip Time (RTT) rangin
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#getMatchFilter()()` Returns the match filter for this ranging session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#getRangingUpdateRate()()` Returns the ranging update rate. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#getServiceName()()` Returns the service name associated with this RTT ranging session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#isPeriodicRangingHwFeatureEnabled()()` Returns whether the periodic ranging hardware feature was enabled. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

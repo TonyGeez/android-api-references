@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # FetchAndJoinCustomAudienceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class FetchAndJoinCustomAudienceRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.customaudience.FetchAndJoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#) |
 
 The request object wrapping the required and optional parameters needed to fetch a [CustomAudience](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience).
@@ -29,9 +31,11 @@ The request object wrapping the required and optional parameters needed to fetch
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getActivationTime](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#getActivationTime())`()` Reference [CustomAudience.getActivationTime()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getActivationTime())for details. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getExpirationTime](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#getExpirationTime())`()` Reference [CustomAudience.getExpirationTime()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getExpirationTime())for details. |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getFetchUri](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#getFetchUri())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#getName())`()` Reference [CustomAudience.getName()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getName())for details. |
 | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#)? | [getUserBiddingSignals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#getUserBiddingSignals())`()` Reference [CustomAudience.getUserBiddingSignals()](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience#getUserBiddingSignals())for details. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/adservices/customaudience/FetchAndJoinCustomAudienceRequest#toString())`()` <br /> |
 

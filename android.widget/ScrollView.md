@@ -7,9 +7,11 @@ open class ScrollView : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.ScrollView](https://developer.android.com/reference/kotlin/android/widget/ScrollView#) |
 
 A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example `https://developer.android.com/reference/kotlin/android/widget/LinearLayout`, and place additional views within that LinearLayout.
@@ -312,6 +314,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -428,6 +431,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -576,6 +580,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1742,42 +1747,55 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#addView(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Adds a child view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Adds a child view with the specified layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#addView(android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a child view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#addView(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Adds a child view with the specified layout parameters. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#arrowScroll(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Handle scrolling in response to an up or down arrow click. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#computeScroll()()` Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#dispatchKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Dispatch a key event to the next view on the focus path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#executeKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` You can call this function yourself to have the scroll view perform scrolling from a key event, just as if the event had been dispatched to it by the view hierarchy. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#fling(kotlin.Int)(velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Fling the scroll view |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#fullScroll(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Handles scrolling in response to a "home/end" shortcut press. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getBottomEdgeEffectColor()()` Returns the bottom edge effect color. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getMaxScrollAmount()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getTopEdgeEffectColor()()` Returns the top edge effect color. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#isFillViewport()()` Indicates whether this ScrollView's content is stretched to fill the viewport. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#isSmoothScrollingEnabled()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle generic motion events. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onInterceptTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to intercept all touch screen motion events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onNestedFling(android.view.View,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean)(target: https://developer.android.com/reference/kotlin/android/view/View.html#, velocityX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, consumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Request a fling from a nested scroll. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onNestedScroll(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(target: https://developer.android.com/reference/kotlin/android/view/View.html#, dxConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dxUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a nested scroll in progress. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onNestedScrollAccepted(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, target: https://developer.android.com/reference/kotlin/android/view/View.html#, axes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to the successful claiming of a nested scroll operation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onStartNestedScroll(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, target: https://developer.android.com/reference/kotlin/android/view/View.html#, nestedScrollAxes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onStopNestedScroll(android.view.View)(target: https://developer.android.com/reference/kotlin/android/view/View.html#)` React to a nested scroll operation ending. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#pageScroll(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Handles scrolling in response to a "page up/down" shortcut press. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#requestChildFocus(android.view.View,%20android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, focused: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Called when a child of this parent wants focus |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#requestChildRectangleOnScreen(android.view.View,%20android.graphics.Rect,%20kotlin.Boolean)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, rectangle: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, immediate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#requestDisallowInterceptTouchEvent(kotlin.Boolean)(disallowIntercept: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child does not want this parent and its ancestors to intercept touch events with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#onInterceptTouchEvent(android.view.MotionEvent)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#requestLayout()()` Call this when something has changed which has invalidated the layout of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#scrollTo(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the scrolled position of your view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#scrollToDescendant(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#)` Scrolls the view to the given child. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#setBottomEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bottom edge effect color. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#setEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the edge effect color for both top and bottom edge effects. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#setFillViewport(kotlin.Boolean)(fillViewport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Indicates this ScrollView whether it should stretch its content height to fill the viewport or not. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#setSmoothScrollingEnabled(kotlin.Boolean)(smoothScrollingEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether arrow scrolling will animate its transition. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#setTopEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the top edge effect color. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#shouldDelayChildPressedState()()` Return true if the pressed state should be delayed for children or descendants of this ViewGroup. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#smoothScrollBy(kotlin.Int,%20kotlin.Int)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Like `https://developer.android.com/reference/kotlin/android/view/View.html#scrollBy(kotlin.Int,%20kotlin.Int)`, but scroll smoothly instead of immediately. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#smoothScrollTo(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Like `https://developer.android.com/reference/kotlin/android/widget/ScrollView#scrollTo(kotlin.Int,%20kotlin.Int)`, but scroll smoothly instead of immediately. |
 
 | Protected methods ||
@@ -1785,18 +1803,23 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#computeScrollDeltaToGetChildRectOnScreen(android.graphics.Rect)(rect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Compute the amount to scroll in the Y direction in order to get a rectangle completely on the screen (or, if taller than the screen, at least the first screen size chunk of it). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#computeVerticalScrollOffset()()` Compute the vertical offset of the vertical scrollbar's thumb within the horizontal range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#computeVerticalScrollRange()()` The scroll range of a scroll view is the overall height of all of its children. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getBottomFadingEdgeStrength()()` Returns the strength, or intensity, of the bottom faded edge. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#getTopFadingEdgeStrength()()` Returns the strength, or intensity, of the top faded edge. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#measureChild(android.view.View,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, parentWidthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentHeightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask one of the children of this view to measure itself, taking into account both the MeasureSpec requirements for this view and its padding. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#measureChildWithMargins(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, parentWidthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widthUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentHeightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask one of the children of this view to measure itself, taking into account both the MeasureSpec requirements for this view and its padding and margins. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onOverScrolled(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean)(scrollX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scrollY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clampedX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, clampedY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#overScrollBy(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)` to respond to the results of an over-scroll operation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onRequestFocusInDescendants(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` When looking for focus in children of a scroll view, need to be a little more careful not to give focus to something that is scrolled off screen. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ScrollView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2714,6 +2737,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4566,6 +4590,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8363,6 +8388,7 @@ Adds a child view with the specified layout parameters.
 | `view` | The view to be added to this window. |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: the layout parameters to set on the child |
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the child view to add |
+| --- | --- |
 
 ### addView
 
@@ -8405,6 +8431,7 @@ Adds a child view with the specified layout parameters.
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: the layout parameters to set on the child |
+| --- | --- |
 
 ### arrowScroll
 
@@ -8700,6 +8727,7 @@ If a nested scrolling child view would normally fling but it is at the edge of i
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Vertical velocity in pixels per second |
+| --- | --- |
 | `consumed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the child consumed the fling, false otherwise |
 
 | Return ||
@@ -8731,6 +8759,7 @@ Both the consumed and unconsumed portions of the scroll distance are reported to
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): The descendent view controlling the nested scroll. This value cannot be `null`. |
 | `dxConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels already consumed by target |
 | `dyConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels already consumed by target |
+| --- | --- |
 | `dxUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels not consumed by target |
 | `dyUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels not consumed by target |
 
@@ -8755,6 +8784,7 @@ This method will be called after `https://developer.android.com/reference/kotlin
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 ### onStartNestedScroll
 
@@ -8779,6 +8809,7 @@ This method may be overridden by ViewParent implementations to indicate when the
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8893,6 +8924,7 @@ Called when a child of this group wants a particular rectangle to be positioned 
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): The direct child making the request. This value cannot be `null`. |
 | `rectangle` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9198,6 +9230,7 @@ Ask one of the children of this view to measure itself, taking into account both
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `parentHeightMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height requirements for this view |
+| --- | --- |
 
 ### measureChildWithMargins
 
@@ -9220,6 +9253,7 @@ Ask one of the children of this view to measure itself, taking into account both
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `widthUsed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space that has been used up by the parent horizontally (possibly by other children of the parent) |
+| --- | --- |
 | `parentHeightMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height requirements for this view |
 | `heightUsed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space that has been used up by the parent vertically (possibly by other children of the parent) |
 
@@ -9255,6 +9289,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 
@@ -9302,6 +9337,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View.html
 | `scrollX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New X scroll value in pixels |
 | `scrollY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New Y scroll value in pixels |
 | `clampedX` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollX was clamped to an over-scroll boundary |
+| --- | --- |
 | `clampedY` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollY was clamped to an over-scroll boundary |
 
 ### onRequestFocusInDescendants
@@ -9378,4 +9414,5 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |

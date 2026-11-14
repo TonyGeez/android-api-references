@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # NetworkSlicingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class NetworkSlicingConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.data.NetworkSlicingConfig](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#) |
 
 Represents a slicing configuration
@@ -30,9 +32,11 @@ Represents a slicing configuration
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkSliceInfo](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSliceInfo)!\> | [getSliceInfo](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#getSliceInfo())`()` <br /> |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UrspRule](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule)!\> | [getUrspRules](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#getUrspRules())`()` This list contains the current URSP rules. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

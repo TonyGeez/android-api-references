@@ -11,14 +11,17 @@ interface BlockingQueue<E : Any!> : Queue<E>
 | [java.util.concurrent.BlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) |
 
 | Known Direct Subclasses [ArrayBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/ArrayBlockingQueue), [BlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque), [DelayQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/DelayQueue), [LinkedBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingQueue), [PriorityBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/PriorityBlockingQueue), [SynchronousQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/SynchronousQueue), [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ArrayBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/ArrayBlockingQueue) | A bounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) backed by an array. | | [BlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque) | A [Deque](https://developer.android.com/reference/kotlin/java/util/Deque.html#) that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. | | [DelayQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/DelayQueue) | An unbounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) of [Delayed](https://developer.android.com/reference/kotlin/java/util/concurrent/Delayed) elements, in which an element generally becomes eligible for removal when its delay has expired. | | [LinkedBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingQueue) | An optionally-bounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) based on linked nodes. | | [PriorityBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/PriorityBlockingQueue) | An unbounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) that uses the same ordering rules as class [PriorityQueue](https://developer.android.com/reference/kotlin/java/util/PriorityQueue.html#) and supplies blocking retrieval operations. | | [SynchronousQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/SynchronousQueue) | A [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa. | | [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) | A [BlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#) in which producers may wait for consumers to receive elements. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque), [LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue) |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque) | An optionally-bounded [blocking deque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque) based on linked nodes. | | [LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue) | An unbounded [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) based on linked nodes. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A [Queue](https://developer.android.com/reference/kotlin/java/util/Queue.html#) that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element.
 
 `BlockingQueue`methods come in four forms, with different ways of handling operations that cannot be satisfied immediately, but may be satisfied at some point in the future: one throws an exception, the second returns a special value (either`null`or`false`, depending on the operation), the third blocks the current thread indefinitely until the operation can succeed, and the fourth blocks for only a given maximum time limit before giving up. These methods are summarized in the following table:
 
 | | Throws exception | Special value | Blocks | Times out |
+| --- | --- | --- | --- | --- |
 
 A`BlockingQueue`does not accept`null`elements. Implementations throw`NullPointerException`on attempts to`add`,`put`or`offer`a`null`. A`null`is used as a sentinel value to indicate failure of`poll`operations.
 
@@ -79,12 +82,15 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#add(java.util.concurrent.BlockingQueue.E))`(`element:` `E`)` Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning`true`upon success and throwing an`IllegalStateException`if no space is currently available. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#contains(java.util.concurrent.BlockingQueue.E))`(`element:` `E`)` Returns`true`if this queue contains the specified element. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#drainTo(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`)` Removes all available elements from this queue and adds them to the given collection. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#drainTo(kotlin.collections.MutableCollection,%20kotlin.Int))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`, `maxElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes at most the given number of available elements from this queue and adds them to the given collection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#offer(java.util.concurrent.BlockingQueue.E))`(`e:` `E`)` Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning`true`upon success and`false`if no space is currently available. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#offer(java.util.concurrent.BlockingQueue.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Inserts the specified element into this queue, waiting up to the specified wait time if necessary for space to become available. |
+| --- | --- |
 | abstractE | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#poll(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Retrieves and removes the head of this queue, waiting up to the specified wait time if necessary for an element to become available. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#put(java.util.concurrent.BlockingQueue.E))`(`e:` `E`)` Inserts the specified element into this queue, waiting if necessary for space to become available. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainingCapacity](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#remainingCapacity())`()` Returns the number of additional elements that this queue can ideally (in the absence of memory or resource constraints) accept without blocking, or`Integer.MAX_VALUE`if there is no intrinsic limit. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#remove(java.util.concurrent.BlockingQueue.E))`(`element:` `E`)` Removes a single instance of the specified element from this queue, if it is present. |
 | abstractE | [take](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#take())`()` Retrieves and removes the head of this queue, waiting if necessary until an element becomes available. |
 
@@ -117,6 +123,7 @@ Inserts the specified element into this queue if it is possible to do so immedia
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 
@@ -166,6 +173,7 @@ Removes all available elements from this queue and adds them to the given collec
 | `java.lang.UnsupportedOperationException` | if addition of elements is not supported by the specified collection |
 | `java.lang.ClassCastException` | if the class of an element of this queue prevents it from being added to the specified collection |
 | `java.lang.NullPointerException` | if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the specified collection is this queue, or some property of an element of this queue prevents it from being added to the specified collection |
 
 ### drainTo
@@ -195,6 +203,7 @@ Removes at most the given number of available elements from this queue and adds 
 | `java.lang.UnsupportedOperationException` | if addition of elements is not supported by the specified collection |
 | `java.lang.ClassCastException` | if the class of an element of this queue prevents it from being added to the specified collection |
 | `java.lang.NullPointerException` | if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the specified collection is this queue, or some property of an element of this queue prevents it from being added to the specified collection |
 
 ### offer
@@ -220,6 +229,7 @@ Inserts the specified element into this queue if it is possible to do so immedia
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
+| --- | --- |
 
 ### offer
 
@@ -240,6 +250,7 @@ Inserts the specified element into this queue, waiting up to the specified wait 
 | `e` | E:the element to add |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -250,6 +261,7 @@ Inserts the specified element into this queue, waiting up to the specified wait 
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### poll
@@ -297,6 +309,7 @@ Inserts the specified element into this queue, waiting if necessary for space to
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### remainingCapacity
@@ -338,6 +351,7 @@ Removes a single instance of the specified element from this queue, if it is pre
 | `java.lang.ClassCastException` | if the class of the specified element is incompatible with this queue ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this collection |
+| --- | --- |
 
 ### take
 

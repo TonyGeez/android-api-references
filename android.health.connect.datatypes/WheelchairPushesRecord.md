@@ -8,9 +8,11 @@ class WheelchairPushesRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.WheelchairPushesRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#) |
+| --- | --- | --- | --- |
 
 Captures the number of wheelchair pushes done over a time interval. Each push is only reported once so records shouldn't have overlapping time. The start time of each record should represent the start of the interval in which pushes were made.
 
@@ -29,6 +31,7 @@ Captures the number of wheelchair pushes done over a time interval. Each push is
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#getCount()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

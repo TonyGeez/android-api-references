@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # RecoverySystem
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/RecoverySystem "View this page in Java") 
+| --- | --- |
 
 ```
 open class RecoverySystem
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.RecoverySystem](https://developer.android.com/reference/kotlin/android/os/RecoverySystem#) |
 
 RecoverySystem contains methods for interacting with the Android recovery system (the separate partition that can be used to install system updates, wipe user data, etc.)
@@ -26,6 +28,7 @@ RecoverySystem contains methods for interacting with the Android recovery system
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installPackage](https://developer.android.com/reference/kotlin/android/os/RecoverySystem#installPackage(android.content.Context,%20java.io.File))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `packageFile:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Reboots the device in order to install the given update package. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeCache](https://developer.android.com/reference/kotlin/android/os/RecoverySystem#rebootWipeCache(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Reboot into the recovery system to wipe the /cache partition. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeUserData](https://developer.android.com/reference/kotlin/android/os/RecoverySystem#rebootWipeUserData(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Reboots the device and wipes the user data and cache partitions. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verifyPackage](https://developer.android.com/reference/kotlin/android/os/RecoverySystem#verifyPackage(java.io.File,%20android.os.RecoverySystem.ProgressListener,%20java.io.File))`(`packageFile:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `listener:` ` [RecoverySystem.ProgressListener](https://developer.android.com/reference/kotlin/android/os/RecoverySystem.ProgressListener)!`, `deviceCertsZipFile:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Verify the cryptographic signature of a system update package before installing it. |
 
 ## Public methods
@@ -105,6 +108,7 @@ Verify the cryptographic signature of a system update package before installing 
 | `packageFile` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:the package to be verified |
 | `listener` | [RecoverySystem.ProgressListener](https://developer.android.com/reference/kotlin/android/os/RecoverySystem.ProgressListener)!:an object to receive periodic progress updates as verification proceeds. May be null. |
 | `deviceCertsZipFile` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:the zip file of certificates whose public keys we will accept. Verification succeeds if the package is signed by the private key corresponding to any public key in this file. May be null to use the system default file (currently "/system/etc/security/otacerts.zip"). |
+| --- | --- |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------|

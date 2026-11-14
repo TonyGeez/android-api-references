@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CallControlCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/CallControlCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface CallControlCallback
@@ -25,6 +26,7 @@ Note: Each CallEventCallback has a timeout of 5000 milliseconds. Failing to comp
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnswer](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback#onAnswer(kotlin.Int,%20java.util.function.Consumer))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `wasCompleted:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Telecom is informing the client to answer an incoming call and set it to active. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallStreamingStarted](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback#onCallStreamingStarted(java.util.function.Consumer))`(`wasCompleted:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Telecom is informing the client to set the call in streaming. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisconnect](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback#onDisconnect(android.telecom.DisconnectCause,%20java.util.function.Consumer))`(`disconnectCause:` ` [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)`, `wasCompleted:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Telecom is informing the client to disconnect the call |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetActive](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback#onSetActive(java.util.function.Consumer))`(`wasCompleted:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Telecom is informing the client to set the call active |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInactive](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback#onSetInactive(java.util.function.Consumer))`(`wasCompleted:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Telecom is informing the client to set the call inactive. |
 

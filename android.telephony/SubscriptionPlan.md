@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SubscriptionPlan
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/SubscriptionPlan "View this page in Java") 
+| --- | --- |
 
 ```
 class SubscriptionPlan : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.SubscriptionPlan](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#) |
 
 Description of a billing relationship plan between a carrier and a specific subscriber. This information is used to present more useful UI to users, such as explaining how much mobile data they have remaining, and what will happen when they run out. If specifying network types, the developer must supply at least one plan that applies to all network types (default), and all additional plans may not include a particular network type more than once. This is enforced by [SubscriptionManager](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager) when setting the plans. Plan selection will prefer plans that have specific network types defined over plans that apply to all network types.
@@ -26,15 +28,19 @@ Description of a billing relationship plan between a carrier and a specific subs
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [BYTES_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#BYTES_UNKNOWN:kotlin.Long) Value indicating a number of bytes is unknown. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [BYTES_UNLIMITED](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#BYTES_UNLIMITED:kotlin.Long) Value indicating a number of bytes is unlimited. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMIT_BEHAVIOR_BILLED](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#LIMIT_BEHAVIOR_BILLED:kotlin.Int) When a resource limit is hit, the user is billed automatically. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMIT_BEHAVIOR_DISABLED](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#LIMIT_BEHAVIOR_DISABLED:kotlin.Int) When a resource limit is hit, access is disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMIT_BEHAVIOR_THROTTLED](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#LIMIT_BEHAVIOR_THROTTLED:kotlin.Int) When a resource limit is hit, access is throttled to a slower rate. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMIT_BEHAVIOR_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#LIMIT_BEHAVIOR_UNKNOWN:kotlin.Int) When a resource limit is hit, the behavior is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBSCRIPTION_STATUS_ACTIVE](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#SUBSCRIPTION_STATUS_ACTIVE:kotlin.Int) Subscription is active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBSCRIPTION_STATUS_INACTIVE](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#SUBSCRIPTION_STATUS_INACTIVE:kotlin.Int) Subscription is inactive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBSCRIPTION_STATUS_SUSPENDED](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#SUBSCRIPTION_STATUS_SUSPENDED:kotlin.Int) Subscription is suspended. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBSCRIPTION_STATUS_TRIAL](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#SUBSCRIPTION_STATUS_TRIAL:kotlin.Int) Subscription is in a trial period. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBSCRIPTION_STATUS_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#SUBSCRIPTION_STATUS_UNKNOWN:kotlin.Int) Subscription status is unknown. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [TIME_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#TIME_UNKNOWN:kotlin.Long) Value indicating a timestamp is unknown. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -45,18 +51,23 @@ Description of a billing relationship plan between a carrier and a specific subs
 | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)!\>!\>! | [cycleIterator](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#cycleIterator())`()` Return an iterator that will return all valid data usage cycles based on any recurrence rules. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataLimitBehavior](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataLimitBehavior())`()` Return the behavior of data access when usage reaches [getDataLimitBytes()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataLimitBytes()). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataLimitBytes](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataLimitBytes())`()` Return the usage threshold at which data access changes according to [getDataLimitBehavior()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataLimitBehavior()). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataUsageBytes](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataUsageBytes())`()` Return a snapshot of currently known mobile data usage at [getDataUsageTime()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataUsageTime()). |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataUsageTime](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataUsageTime())`()` Return the time at which [getDataUsageBytes()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getDataUsageBytes())was valid. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getNetworkTypes](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getNetworkTypes())`()` Return an array containing all network types this SubscriptionPlan applies to. |
 | [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)? | [getPlanEndDate](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getPlanEndDate())`()` Return the end date of this plan, or null if no end date exists. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionStatus](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getSubscriptionStatus())`()` Returns the status of the subscription plan. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getSummary](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getSummary())`()` Return the short summary of this plan. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getTitle](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#getTitle())`()` Return the short title of this plan. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|

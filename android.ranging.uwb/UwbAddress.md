@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # UwbAddress
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/uwb/UwbAddress "View this page in Java") 
+| --- | --- |
 
 ```
 class UwbAddress : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.uwb.UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#) |
 
 A class representing a UWB address
@@ -31,9 +33,11 @@ A class representing a UWB address
 | static [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#) | [createRandomShortAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#createRandomShortAddress())`()` Generates a new random 2 bytes [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | static [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#) | [fromBytes](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#fromBytes(kotlin.ByteArray))`(`address:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Create a [android.uwb.UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#) from a byte array. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getAddressBytes](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#getAddressBytes())`()` Get the address as a byte array |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

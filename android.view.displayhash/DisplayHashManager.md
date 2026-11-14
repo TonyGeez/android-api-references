@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DisplayHashManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/displayhash/DisplayHashManager "View this page in Java") 
+| --- | --- |
 
 ```
 class DisplayHashManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.displayhash.DisplayHashManager](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager#) |
 
 Manages DisplayHash requests. The manager object can be retrieved by calling`Context.getSystemService(Context.DISPLAY_HASH_SERVICE)`

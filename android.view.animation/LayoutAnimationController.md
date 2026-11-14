@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LayoutAnimationController
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/LayoutAnimationController "View this page in Java") 
+| --- | --- |
 
 ```
 open class LayoutAnimationController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.animation.LayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#) |
 
 | Known Direct Subclasses [GridLayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController) |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [GridLayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController) | A layout animation controller is used to animated a grid layout's children. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A layout animation controller is used to animate the children of a layout or a view group. Each child uses the same animation but for every one of them, the animation starts at a different time. A layout animation controller is used by [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) to compute the delay by which each child's animation start must be offset. The delay is computed by using characteristics of each child, like its index in the view group. This standard implementation computes the delay by multiplying a fixed amount of miliseconds by the index of the child in its parent view group. Subclasses are supposed to override [getDelayForView(android.view.View)](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getDelayForView(android.view.View))to implement a different way of computing the delay. For instance, a [android.view.animation.GridLayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController) will compute the delay based on the column and row indices of the child in its parent view group. Information used to compute the animation delay of each child are stored in an instance of [android.view.animation.LayoutAnimationController.AnimationParameters](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController.AnimationParameters), itself stored in the [android.view.ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#) of the view.
 
@@ -28,6 +31,7 @@ A layout animation controller is used to animate the children of a layout or a v
 | [`android:animation`](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#attr_LayoutAnimationController) | Animation to use on each child. |
 | [`android:animationOrder`](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#attr_LayoutAnimationController) | The order in which the animations will be started. |
 | [`android:delay`](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#attr_LayoutAnimationController) | Fraction of the animation duration used to delay the beginning of the animation of each child. |
+| --- | --- |
 | [`android:interpolator`](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#attr_LayoutAnimationController) | Interpolator used to interpolate the delay between the start of each animation. |
 
 | Constants ||
@@ -35,6 +39,7 @@ A layout animation controller is used to animate the children of a layout or a v
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORDER_NORMAL](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#ORDER_NORMAL:kotlin.Int) Distributes the animation delays in the order in which view were added to their view group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORDER_RANDOM](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#ORDER_RANDOM:kotlin.Int) Randomly distributes the animation delays. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORDER_REVERSE](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#ORDER_REVERSE:kotlin.Int) Distributes the animation delays in the reverse order in which view were added to their view group. |
+| --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -47,15 +52,19 @@ A layout animation controller is used to animate the children of a layout or a v
 | open [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | [getAnimation](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getAnimation())`()` Returns the animation applied to each child of the view group on which this controller is set. |
 | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | [getAnimationForView](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getAnimationForView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` Returns the animation to be applied to the specified view. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDelay](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getDelay())`()` Returns the delay by which the children's animation are offset. |
+| --- | --- |
 | open [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)! | [getInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getInterpolator())`()` Returns the interpolator used to interpolate the delays between the children. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrder](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#getOrder())`()` Returns the order used to compute the delay of each child's animation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDone](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#isDone())`()` Indicates whether the layout animation is over or not. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnimation](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setAnimation(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `resourceID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the animation to be run on each child of the view group on which this layout animation controller is . |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnimation](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setAnimation(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Sets the animation to be run on each child of the view group on which this layout animation controller is . |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDelay](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setDelay(kotlin.Float))`(`delay:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the delay, as a fraction of the animation duration, by which the children's animations are offset. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setInterpolator(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `resourceID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the interpolator used to interpolate the delays between the children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setInterpolator(android.view.animation.Interpolator))`(`interpolator:` ` [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)!`)` Sets the interpolator used to interpolate the delays between the children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrder](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#setOrder(kotlin.Int))`(`order:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the order used to compute the delay of each child's animation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#start())`()` Starts the animation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willOverlap](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#willOverlap())`()` Indicates whether two children's animations will overlap. |
 
@@ -69,6 +78,7 @@ A layout animation controller is used to animate the children of a layout or a v
 | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | [mAnimation](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#mAnimation:android.view.animation.Animation) The animation applied on each child of the view group on which this layout animation controller is set. |
 | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)! | [mInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#mInterpolator:android.view.animation.Interpolator) The interpolator used to interpolate the delays. |
 | [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#)! | [mRandomizer](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController#mRandomizer:java.util.Random) The randomizer used when the order is set to random. |
+| --- | --- |
 
 ## XML attributes
 
@@ -95,6 +105,7 @@ Must be one of the following constant values.
 | normal | 0 | Animations are started in the natural order. |
 | random | 2 | Animations are started randomly. |
 | reverse | 1 | Animations are started in the reverse order. |
+| --- | --- | --- |
 
 ### android:delay
 

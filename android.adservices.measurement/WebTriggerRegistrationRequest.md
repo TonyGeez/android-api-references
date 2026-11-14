@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # WebTriggerRegistrationRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class WebTriggerRegistrationRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.measurement.WebTriggerRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#) |
 
 Class to hold input to measurement trigger registration calls from web context.
@@ -31,9 +33,11 @@ Class to hold input to measurement trigger registration calls from web context.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getDestination](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#getDestination())`()` Getter for destination. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WebTriggerParams](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerParams)!\> | [getTriggerParams](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#getTriggerParams())`()` Getter for trigger params. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -129,6 +133,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

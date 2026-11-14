@@ -5,15 +5,18 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # RecoverableSecurityException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/RecoverableSecurityException "View this page in Java") 
+| --- | --- |
 
 ```
 class RecoverableSecurityException : SecurityException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) ||
 | | | | | ↳ | [android.app.RecoverableSecurityException](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException#) |
 
@@ -40,6 +43,7 @@ Note: legacy code that receives this exception may treat it as a general [Securi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException#describeContents())`()` <br /> |
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction) | [getUserAction](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException#getUserAction())`()` Return primary action that will initiate the recovery. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getUserMessage](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException#getUserMessage())`()` Return short message describing the issue for end user audiences, which may be shown in a notification or dialog. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -66,6 +70,7 @@ Create an instance ready to be thrown.
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html):original cause with details designed for engineering audiences. This value cannot be`null`. |
 | `userMessage` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):short message describing the issue for end user audiences, which may be shown in a notification or dialog. This should be localized and less than 64 characters. For example:*PIN required to access Document.pdf* This value cannot be`null`. |
 | `userAction` | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction):primary action that will initiate the recovery. The title should be localized and less than 24 characters. For example:*Enter PIN* . This action must launch an activity that is expected to set [Activity.setResult(int)](https://developer.android.com/reference/kotlin/android/app/Activity#setResult(kotlin.Int))before finishing to communicate the final status of the recovery. For example, apps that observe [Activity.RESULT_OK](https://developer.android.com/reference/kotlin/android/app/Activity#RESULT_OK:kotlin.Int) may choose to immediately retry their operation. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

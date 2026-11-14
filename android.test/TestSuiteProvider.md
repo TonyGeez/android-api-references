@@ -6,6 +6,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # TestSuiteProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/TestSuiteProvider "View this page in Java") 
+| --- | --- |
 
 ```
 interface TestSuiteProvider
@@ -14,6 +15,7 @@ interface TestSuiteProvider
 | [android.test.TestSuiteProvider](https://developer.android.com/reference/kotlin/android/test/TestSuiteProvider#) |
 
 | Known Direct Subclasses [InstrumentationTestRunner](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [InstrumentationTestRunner](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner) | An [Instrumentation](https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#) that runs various types of junit. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 24.**
 |

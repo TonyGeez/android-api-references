@@ -9,6 +9,7 @@ open class Timestamp : Date
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) ||
 | | ↳ | [java.sql.Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#) |
 
@@ -35,15 +36,19 @@ Due to the differences between the`Timestamp`class and the`java.util.Date`class 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [after](https://developer.android.com/reference/kotlin/java/sql/Timestamp#after(java.sql.Timestamp))`(`ts:` ` [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#)!`)` Indicates whether this`Timestamp`object is later than the given`Timestamp`object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [before](https://developer.android.com/reference/kotlin/java/sql/Timestamp#before(java.sql.Timestamp))`(`ts:` ` [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#)!`)` Indicates whether this`Timestamp`object is earlier than the given`Timestamp`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/sql/Timestamp#compareTo(java.sql.Timestamp))`(`ts:` ` [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#)!`)` Compares this`Timestamp`object to the given`Timestamp`object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/sql/Timestamp#compareTo(java.util.Date))`(`other:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Compares this`Timestamp`object to the given`Date`object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/sql/Timestamp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests to see if this`Timestamp`object is equal to the given object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/sql/Timestamp#equals(java.sql.Timestamp))`(`ts:` ` [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#)!`)` Tests to see if this`Timestamp`object is equal to the given`Timestamp`object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNanos](https://developer.android.com/reference/kotlin/java/sql/Timestamp#getNanos())`()` Gets this`Timestamp`object's`nanos`value. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](https://developer.android.com/reference/kotlin/java/sql/Timestamp#getTime())`()` Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this`Timestamp`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/sql/Timestamp#hashCode())`()` Returns a hash code value for this object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNanos](https://developer.android.com/reference/kotlin/java/sql/Timestamp#setNanos(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this`Timestamp`object's`nanos`field to the given value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](https://developer.android.com/reference/kotlin/java/sql/Timestamp#setTime(kotlin.Long))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this`Timestamp`object to represent a point in time that is time milliseconds after January 1, 1970 00:00:00 GMT. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/sql/Timestamp#toString())`()` Formats a timestamp in JDBC timestamp escape format. |
+| --- | --- |
 | openstatic [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp#)! | [valueOf](https://developer.android.com/reference/kotlin/java/sql/Timestamp#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a`String`object in JDBC timestamp escape format to a`Timestamp`value. |
 
 | Inherited functions ||
@@ -76,9 +81,11 @@ Constructs a`Timestamp`object initialized with the given values.
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900 |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 11 |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):1 to 31 |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 23 |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 59 |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 59 |
+| --- | --- |
 | `nano` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 999,999,999 |
 
 | Exceptions ||

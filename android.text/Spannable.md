@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Spannable
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/Spannable "View this page in Java") 
+| --- | --- |
 
 ```
 interface Spannable : Spanned
@@ -13,8 +14,10 @@ interface Spannable : Spanned
 | [android.text.Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable#) |
 
 | Known Direct Subclasses [Editable](https://developer.android.com/reference/kotlin/android/text/Editable), [PrecomputedText](https://developer.android.com/reference/kotlin/android/text/PrecomputedText), [SpannableString](https://developer.android.com/reference/kotlin/android/text/SpannableString), [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------| | [Editable](https://developer.android.com/reference/kotlin/android/text/Editable) | This is the interface for text whose content and markup can be changed (as opposed to immutable text like Strings). | | [PrecomputedText](https://developer.android.com/reference/kotlin/android/text/PrecomputedText) | A text which has the character metrics data. | | [SpannableString](https://developer.android.com/reference/kotlin/android/text/SpannableString) | This is the class for text whose content is immutable but to which markup objects can be attached and detached. | | [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder) | This is the class for text whose content and markup can both be changed. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder) |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder) | This is the class for text whose content and markup can both be changed. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This is the interface for text to which markup objects can be attached and detached. Not all Spannable classes have mutable text; see [Editable](https://developer.android.com/reference/kotlin/android/text/Editable) for that.
 

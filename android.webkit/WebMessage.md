@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # WebMessage
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebMessage "View this page in Java") 
+| --- | --- |
 
 ```
 open class WebMessage
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebMessage](https://developer.android.com/reference/kotlin/android/webkit/WebMessage#) |
 
 The Java representation of the HTML5 PostMessage event. See https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interfaces for definition of a MessageEvent in HTML5.

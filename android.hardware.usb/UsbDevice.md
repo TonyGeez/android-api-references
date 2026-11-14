@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # UsbDevice
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbDevice "View this page in Java") 
+| --- | --- |
 
 ```
 open class UsbDevice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#) |
 
 This class represents a USB device attached to the android device with the android device acting as the USB host. Each device contains one or more [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface) s, each of which contains a number of [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) s (the channels via which data is transmitted over USB).
@@ -32,24 +34,31 @@ This class contains information (along with [UsbInterface](https://developer.and
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration) | [getConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getConfiguration(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration) at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfigurationCount](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getConfigurationCount())`()` Returns the number of [UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration) s this device contains. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceClass())`()` Returns the devices's class field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceId())`()` Returns a unique integer ID for the device. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceId(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceName())`()` Returns the name of the device. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDeviceName](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceName(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceProtocol](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceProtocol())`()` Returns the device's protocol field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceSubclass](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getDeviceSubclass())`()` Returns the device's subclass field. |
 | open [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface) | [getInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getInterface(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface) at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceCount](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getInterfaceCount())`()` Returns the number of [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface) s this device contains. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getManufacturerName](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getManufacturerName())`()` Returns the manufacturer name of the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProductId](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getProductId())`()` Returns a product ID for the device. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getProductName](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getProductName())`()` Returns the product name of the device. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSerialNumber](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getSerialNumber())`()` Returns the serial number of the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorId](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getVendorId())`()` Returns a vendor ID for the device. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#getVersion())`()` Returns the version number of the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#hashCode())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

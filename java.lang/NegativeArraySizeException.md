@@ -9,9 +9,11 @@ open class NegativeArraySizeException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.NegativeArraySizeException](https://developer.android.com/reference/kotlin/java/lang/NegativeArraySizeException#) |
 
 Thrown if an application tries to create an array with negative size.

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # KeyCharacterMap
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/KeyCharacterMap "View this page in Java") 
+| --- | --- |
 
 ```
 open class KeyCharacterMap : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.KeyCharacterMap](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#) |
 
 Describes the keys provided by a keyboard device and their associated labels.
@@ -27,15 +29,19 @@ Describes the keys provided by a keyboard device and their associated labels.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#ALPHA:kotlin.Int) A keyboard with all the letters, and maybe some numbers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUILT_IN_KEYBOARD](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#BUILT_IN_KEYBOARD:kotlin.Int) The id of the device's primary built in keyboard is always 0. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMBINING_ACCENT](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMBINING_ACCENT_MASK](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT_MASK:kotlin.Int) Mask the return value from [get(int,int)](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#get(kotlin.Int,%20kotlin.Int)) with this value to get a printable representation of the accent character of a "dead key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#FULL:kotlin.Int) A full PC-style keyboard. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [HEX_INPUT](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#HEX_INPUT:kotlin.Char) This private-use character is used to trigger Unicode character input by hex digits. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFIER_BEHAVIOR_CHORDED](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#MODIFIER_BEHAVIOR_CHORDED:kotlin.Int) Modifier keys may be chorded with character keys. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFIER_BEHAVIOR_CHORDED_OR_TOGGLED](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#MODIFIER_BEHAVIOR_CHORDED_OR_TOGGLED:kotlin.Int) Modifier keys may be chorded with character keys or they may toggle into latched or locked states when pressed independently. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#NUMERIC:kotlin.Int) A numeric (12-key) keyboard. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [PICKER_DIALOG_INPUT](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#PICKER_DIALOG_INPUT:kotlin.Char) This private-use character is used to bring up a character picker for miscellaneous symbols. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREDICTIVE](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#PREDICTIVE:kotlin.Int) A keyboard with all the letters, but with more than one letter per key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPECIAL_FUNCTION](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#SPECIAL_FUNCTION:kotlin.Int) A keyboard that is only used to control special functions rather than for typing. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUAL_KEYBOARD](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#VIRTUAL_KEYBOARD:kotlin.Int) The id of a generic virtual keyboard with a full layout that can be used to synthesize key events. |
 
 | Inherited constants ||
@@ -47,18 +53,23 @@ Describes the keys provided by a keyboard device and their associated labels.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#describeContents())`()` <br /> |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deviceHasKey](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#deviceHasKey(kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Queries the framework about whether any physical keys exist on any currently attached input devices that are capable of producing the given key code. |
 | open static [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [deviceHasKeys](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#deviceHasKeys(kotlin.IntArray))`(`keyCodes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Queries the framework about whether any physical keys exist on any currently attached input devices that are capable of producing the given array of key codes. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#get(kotlin.Int,%20kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the Unicode character generated by the specified key and meta key state combination. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeadChar](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getDeadChar(kotlin.Int,%20kotlin.Int))`(`accent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the character that is produced by combining the dead key producing accent with the key producing character c. |
+| --- | --- |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDisplayLabel](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getDisplayLabel(kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the primary character for this key. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!\>! | [getEvents](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getEvents(kotlin.CharArray))`(`chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Get an array of KeyEvent objects that if put into the input stream could plausibly generate the provided sequence of characters. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getKeyData](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getKeyData(kotlin.Int,%20android.view.KeyCharacterMap.KeyData))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `results:` ` [KeyCharacterMap.KeyData](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData)!`)` Get the character conversion data for a given key code. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyboardType](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getKeyboardType())`()` Gets the keyboard type. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMatch](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getMatch(kotlin.Int,%20kotlin.CharArray))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Gets the first character in the character array that can be generated by the specified key code. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMatch](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getMatch(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the first character in the character array that can be generated by the specified key code. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifierBehavior](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getModifierBehavior())`()` Gets a constant that describes the behavior of this keyboard's modifier keys such as [KeyEvent.KEYCODE_SHIFT_LEFT](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SHIFT_LEFT:kotlin.Int). |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getNumber](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getNumber(kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the number or symbol associated with the key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrintingKey](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#isPrintingKey(kotlin.Int))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the specified key produces a glyph. |
+| --- | --- |
 | open static [KeyCharacterMap](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#)! | [load](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#load(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads the key character maps for the keyboard with the specified device id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -501,6 +512,7 @@ Gets the first character in the character array that can be generated by the spe
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
 | `chars` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: The array of matching characters to consider. |
 | `metaState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The preferred meta key modifier state. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------|

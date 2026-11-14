@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # InspectionCompanion
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/InspectionCompanion "View this page in Java") 
+| --- | --- |
 
 ```
 interface InspectionCompanion<T : Any!>

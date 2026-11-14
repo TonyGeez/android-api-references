@@ -7,9 +7,11 @@ open class Properties : Hashtable<Any!, Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary)\<K, V\> |||
 | | ↳ | [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> ||
 | | | ↳ | [java.util.Properties](https://developer.android.com/reference/kotlin/java/util/Properties#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security.
 Known Indirect Subclasses [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#) [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#) Legacy security code; do not use.
@@ -64,45 +66,59 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#clear()()` Clears this hashtable so that it contains no keys. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#clone()()` Creates a shallow copy of this hashtable. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#compute(kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, *>)` Attempts to compute a mapping for the specified key and its current mapped value, or `null` if there is no current mapping (optional operation). |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Properties#computeIfAbsent(kotlin.Any,%20java.util.function.Function)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, *>)` If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null` (optional operation). |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#computeIfPresent(kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#contains(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Tests if some key maps into the specified value in this hashtable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#containsKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Tests if the specified object is a key in this hashtable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#containsValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns true if this hashtable maps one or more keys to this value. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#elements()()` Returns an enumeration of the values in this hashtable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified Object with this Map for equality, as per the definition in the Map interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#get(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Properties#getOrDefault(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns the value to which the specified key is mapped, or `defaultValue` if this map contains no mapping for the key. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Properties#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Searches for the property with the specified key in this property list. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Properties#getProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Searches for the property with the specified key in this property list. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#hashCode()()` Returns the hash code value for this Map as per the definition in the Map interface. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#isEmpty()()` Tests if this hashtable maps no keys to values. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#keys()()` Returns an enumeration of the keys in this hashtable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#list(java.io.PrintStream)(out: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#!)` Prints this property list out to the specified output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#list(java.io.PrintWriter)(out: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!)` Prints this property list out to the specified output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#load(java.io.InputStream)(inStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Reads a property list (key and element pairs) from the input byte stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#load(java.io.Reader)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!)` Reads a property list (key and element pairs) from the input character stream in a simple line-oriented format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#loadFromXML(java.io.InputStream)(in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Loads all of the properties represented by the XML document on the specified input stream into this properties table. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#merge(kotlin.Any,%20kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value (optional operation). |
+| --- | --- |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#propertyNames()()` Returns an enumeration of all the keys in this property list, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#put(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Maps the specified `key` to the specified `value` in this hashtable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<*, *>)` Copies all of the mappings from the specified map to this hashtable. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#putIfAbsent(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value (optional operation). |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#remove(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Removes the key (and its corresponding value) from this hashtable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#remove(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Removes the entry for the specified key only if it is currently mapped to the specified value (optional operation). |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#replace(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Replaces the entry for the specified key only if it is currently mapped to some value (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#replace(kotlin.Any,%20kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, oldValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Replaces the entry for the specified key only if currently mapped to the specified value (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, *>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception (optional operation). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#save(java.io.OutputStream,%20kotlin.String)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Calls the `store(OutputStream out, String comments)` method and suppresses IOExceptions that were thrown. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Properties#setProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Calls the `Hashtable` method `put`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#store(java.io.OutputStream,%20kotlin.String)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes this property list (key and element pairs) in this `Properties` table to the output stream in a format suitable for loading into a `Properties` table using the `https://developer.android.com/reference/kotlin/java/util/Properties#load(java.io.InputStream)` method. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#store(java.io.Writer,%20kotlin.String)(writer: https://developer.android.com/reference/kotlin/java/io/Writer.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes this property list (key and element pairs) in this `Properties` table to the output character stream in a format suitable for using the `https://developer.android.com/reference/kotlin/java/util/Properties#load(java.io.Reader)` method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#storeToXML(java.io.OutputStream,%20kotlin.String)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Emits an XML document representing all of the properties contained in this table. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#storeToXML(java.io.OutputStream,%20kotlin.String,%20kotlin.String)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, encoding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Emits an XML document representing all of the properties contained in this table, using the specified encoding. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#storeToXML(java.io.OutputStream,%20kotlin.String,%20java.nio.charset.Charset)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#!)` Emits an XML document representing all of the properties contained in this table, using the specified encoding. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#stringPropertyNames()()` Returns an unmodifiable set of keys from this property list where the key and its corresponding value are strings, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#toString()()` Returns a string representation of this `Hashtable` object in the form of a set of entries, enclosed in braces and separated by the ASCII characters "` , `" (comma and space). |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -113,6 +129,7 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 | [Properties](https://developer.android.com/reference/kotlin/java/util/Properties#)! | `https://developer.android.com/reference/kotlin/java/util/Properties#defaults:java.util.Properties` A property list that contains default values for any keys not found in this property list. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>\> | `https://developer.android.com/reference/kotlin/java/util/Properties#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Properties#keys:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the keys contained in this map. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#size:kotlin.Int` Returns the number of keys in this hashtable. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Properties#values:kotlin.collections.MutableCollection` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection` view of the values contained in this map. |
 
@@ -234,6 +251,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `compute` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -282,6 +300,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the mappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfAbsent` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the mapping function modified this map |
 
@@ -318,6 +337,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfPresent` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -646,6 +666,7 @@ The specified stream remains open after this method returns.
 | `java.io.IOException` | if an error occurred when reading from the input stream. |
 | `java.lang.IllegalArgumentException` | if the input stream contains a malformed Unicode escape sequence. |
 | `java.lang.NullPointerException` | if `inStream` is null. |
+| --- | --- |
 
 ### load
 
@@ -719,6 +740,7 @@ The specified stream remains open after this method returns.
 | `java.io.IOException` | if an error occurred when reading from the input stream. |
 | `java.lang.IllegalArgumentException` | if a malformed Unicode escape appears in the input. |
 | `java.lang.NullPointerException` | if `reader` is null. |
+| --- | --- |
 
 ### loadFromXML
 
@@ -751,6 +773,7 @@ The specified stream is closed after this method returns.
 | `java.io.IOException` | if reading from the specified input stream results in an `IOException`. |
 | `java.io.UnsupportedEncodingException` | if the document's encoding declaration can be read and it specifies an encoding that is not supported |
 | `java.lang.NullPointerException` | if `in` is null. |
+| --- | --- |
 | `java.util.InvalidPropertiesFormatException` | Data on input stream does not constitute a valid XML document with the mandated document type. |
 
 **See Also**
@@ -789,6 +812,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the resulting value is to be associated |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -799,6 +823,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys or the value or remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `merge` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
 
@@ -855,6 +880,7 @@ The value can be retrieved by calling the `get` method with a key that is equal 
 | `java.lang.NullPointerException` | if the key or value is `null` |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putAll
@@ -877,6 +903,7 @@ Copies all of the mappings from the specified map to this hashtable. These mappi
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putAll` operation is not supported by this map |
 
 ### putIfAbsent
@@ -906,6 +933,7 @@ If the specified key is not already associated with a value (or is mapped to `nu
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putIfAbsent` operation is not supported by this map (java.util.Collection#) |
 
 ### remove
@@ -931,6 +959,7 @@ Removes the key (and its corresponding value) from this hashtable. This method d
 | `java.lang.NullPointerException` | if the key is `null` |
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### remove
 
@@ -959,6 +988,7 @@ Removes the entry for the specified key only if it is currently mapped to the sp
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map (java.util.Collection#) |
+| --- | --- |
 
 ### replace
 
@@ -987,6 +1017,7 @@ Replaces the entry for the specified key only if it is currently mapped to some 
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replace` operation is not supported by this map (java.util.Collection#) |
 
 ### replace
@@ -1008,6 +1039,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is associated |
 | `oldValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: value expected to be associated with the specified key |
 | `newValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1018,6 +1050,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replace` operation is not supported by this map (java.util.Collection#) |
 
 ### replaceAll
@@ -1039,6 +1072,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replaceAll` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 
@@ -1124,6 +1158,7 @@ After the entries have been written, the output stream is flushed. The output st
 | `java.io.IOException` | if writing this property list to the specified output stream throws an `IOException`. |
 | `java.lang.ClassCastException` | if this `Properties` object contains any keys or values that are not `Strings`. |
 | `java.lang.NullPointerException` | if `out` is null. |
+| --- | --- |
 
 ### store
 
@@ -1158,6 +1193,7 @@ After the entries have been written, the output stream is flushed. The output st
 | `java.io.IOException` | if writing this property list to the specified output stream throws an `IOException`. |
 | `java.lang.ClassCastException` | if this `Properties` object contains any keys or values that are not `Strings`. |
 | `java.lang.NullPointerException` | if `writer` is null. |
+| --- | --- |
 
 ### storeToXML
 
@@ -1184,6 +1220,7 @@ An invocation of this method of the form `props.storeToXML(os, comment)` behaves
 | `java.io.IOException` | if writing to the specified output stream results in an `IOException`. |
 | `java.lang.ClassCastException` | if this `Properties` object contains any keys or values that are not `Strings`. |
 | `java.lang.NullPointerException` | if `os` is null. |
+| --- | --- |
 
 **See Also**
 
@@ -1223,12 +1260,14 @@ This method behaves the same as [storeToXML(OutputStream,String,Charset)](https:
 | `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the output stream on which to emit the XML document. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list, or `null` if no comment is desired. |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of a supported [character encoding](https://developer.android.com/reference/kotlin/java/lang/package-summary.html#charenc) |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | if writing to the specified output stream results in an `IOException`. |
 | `java.io.UnsupportedEncodingException` | if the encoding is not supported by the implementation. |
 | `java.lang.ClassCastException` | if this `Properties` object contains any keys or values that are not `Strings`. |
+| --- | --- |
 | `java.lang.NullPointerException` | if `os` is `null`, or if `encoding` is `null`. |
 
 **See Also**
@@ -1269,12 +1308,14 @@ The specified stream remains open after this method returns.
 | `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the output stream on which to emit the XML document. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list, or `null` if no comment is desired. |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!: the charset |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | if writing to the specified output stream results in an `IOException`. |
 | `java.lang.ClassCastException` | if this `Properties` object contains any keys or values that are not `Strings`. |
 | `java.lang.NullPointerException` | if `os` or `charset` is `null`. |
+| --- | --- |
 
 **See Also**
 

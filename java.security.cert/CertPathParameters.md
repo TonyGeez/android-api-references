@@ -11,8 +11,10 @@ interface CertPathParameters : Cloneable
 | [java.security.cert.CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters#) |
 
 | Known Direct Subclasses [PKIXParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters) |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [PKIXParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters) | Parameters used as input for the PKIX`CertPathValidator`algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [PKIXBuilderParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters) |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------| | [PKIXBuilderParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters) | Parameters used as input for the PKIX`CertPathBuilder`algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A specification of certification path algorithm parameters. The purpose of this interface is to group (and provide type safety for) all`CertPath`parameter specifications. All`CertPath`parameter specifications must implement this interface.
 

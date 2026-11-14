@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # NfcA
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NfcA "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcA : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) |
 
 Provides access to NFC-A (ISO 14443-3A) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
@@ -28,12 +30,15 @@ The primary NFC-A I/O operation is [transceive](https://developer.android.com/re
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#connect())`()` <br /> |
 | static [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) for the given tag. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAtqa](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getAtqa())`()` Return the ATQA/SENS_RES bytes from tag discovery. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getMaxTransceiveLength())`()` Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)). |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getSak](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getSak())`()` Return the SAK/SEL_RES bytes from tag discovery. |
+| --- | --- |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getTag())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getTimeout())`()` Get the current [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#isConnected())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#setTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-A commands to the tag and receive the response. |
 
@@ -52,6 +57,7 @@ fun close(): Unit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -66,6 +72,7 @@ fun connect(): Unit
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### get
 

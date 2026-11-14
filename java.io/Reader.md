@@ -7,11 +7,14 @@ abstract class Reader : Closeable, Readable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader#) |
 
 | Known Direct Subclasses [BufferedReader](https://developer.android.com/reference/kotlin/java/io/BufferedReader), [CharArrayReader](https://developer.android.com/reference/kotlin/java/io/CharArrayReader), [FilterReader](https://developer.android.com/reference/kotlin/java/io/FilterReader), [InputStreamReader](https://developer.android.com/reference/kotlin/java/io/InputStreamReader), [PipedReader](https://developer.android.com/reference/kotlin/java/io/PipedReader), [StringReader](https://developer.android.com/reference/kotlin/java/io/StringReader) |---|---| | [BufferedReader](https://developer.android.com/reference/kotlin/java/io/BufferedReader) | Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines. | | [CharArrayReader](https://developer.android.com/reference/kotlin/java/io/CharArrayReader) | This class implements a character buffer that can be used as a character-input stream. | | [FilterReader](https://developer.android.com/reference/kotlin/java/io/FilterReader) | Abstract class for reading filtered character streams. | | [InputStreamReader](https://developer.android.com/reference/kotlin/java/io/InputStreamReader) | An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`. | | [PipedReader](https://developer.android.com/reference/kotlin/java/io/PipedReader) | Piped character-input streams. | | [StringReader](https://developer.android.com/reference/kotlin/java/io/StringReader) | A character stream whose source is a string. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [FileReader](https://developer.android.com/reference/kotlin/java/io/FileReader), [LineNumberReader](https://developer.android.com/reference/kotlin/java/io/LineNumberReader), [PushbackReader](https://developer.android.com/reference/kotlin/java/io/PushbackReader) |---|---| | [FileReader](https://developer.android.com/reference/kotlin/java/io/FileReader) | Reads text from character files using a default buffer size. | | [LineNumberReader](https://developer.android.com/reference/kotlin/java/io/LineNumberReader) | A buffered character-input stream that keeps track of line numbers. | | [PushbackReader](https://developer.android.com/reference/kotlin/java/io/PushbackReader) | A character-stream reader that allows characters to be pushed back into the stream. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for reading character streams. The only methods that a subclass must implement are read(char\[\], int, int) and close(). Most subclasses, however, will override some of the methods defined here in order to provide higher efficiency, additional functionality, or both.
 
@@ -27,15 +30,19 @@ Abstract class for reading character streams. The only methods that a subclass m
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#close()()` Closes the stream and releases any system resources associated with it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#mark(kotlin.Int)(readAheadLimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Marks the present position in the stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#markSupported()()` Tells whether this stream supports the mark() operation. |
+| --- | --- |
 | open static [Reader](https://developer.android.com/reference/kotlin/java/io/Reader#)! | `https://developer.android.com/reference/kotlin/java/io/Reader#nullReader()()` Returns a new `Reader` that reads no characters. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read()()` Reads a single character. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(kotlin.CharArray)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Reads characters into an array. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads characters into a portion of an array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(java.nio.CharBuffer)(target: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Attempts to read characters into the specified character buffer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#ready()()` Tells whether this stream is ready to be read. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#reset()()` Resets the stream. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#skip(kotlin.Long)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Skips characters. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#transferTo(java.io.Writer)(out: https://developer.android.com/reference/kotlin/java/io/Writer!)` Reads all characters from this reader and writes the characters to the given writer in the order that they are read. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -197,6 +204,7 @@ Reads characters into a portion of an array. This method will block until some i
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: Destination buffer |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset at which to start storing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Maximum number of characters to read |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -231,6 +239,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.NullPointerException` | if target is null |
 | `java.nio.ReadOnlyBufferException` | if target is a read only buffer |
+| --- | --- |
 
 ### ready
 

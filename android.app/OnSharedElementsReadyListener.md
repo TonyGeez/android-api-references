@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnSharedElementsReadyListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/SharedElementCallback.OnSharedElementsReadyListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnSharedElementsReadyListener

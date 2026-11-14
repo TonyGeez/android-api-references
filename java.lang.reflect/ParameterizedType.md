@@ -21,6 +21,7 @@ Instances of classes that implement this interface must implement an equals() me
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getActualTypeArguments()()` Returns an array of `Type` objects representing the actual type arguments to this type. |
 | abstract [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)? | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getOwnerType()()` Returns a `Type` object representing the type that this type is a member of. |
 | abstract [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getRawType()()` Returns the `Type` object representing the class or interface that declared this type. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ImageGetter
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/Html.ImageGetter "View this page in Java") 
+| --- | --- |
 
 ```
 interface ImageGetter

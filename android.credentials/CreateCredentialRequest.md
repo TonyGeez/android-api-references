@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CreateCredentialRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/CreateCredentialRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class CreateCredentialRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.CreateCredentialRequest](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#) |
 
 A request to register a specific type of user credential, potentially launching UI flows to collect user consent and any other operation needed.
@@ -30,12 +32,15 @@ A request to register a specific type of user credential, potentially launching 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [alwaysSendAppInfoToProvider](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#alwaysSendAppInfoToProvider())`()` Return true/false value to determine if the calling app info should always be sent to providers (if true), or removed from the query phase (if false). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCandidateQueryData](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#getCandidateQueryData())`()` Returns the partial request data that will be sent to the provider during the initial creation candidate query stage. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCredentialData](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#getCredentialData())`()` Returns the full credential creation request data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getOrigin](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#getOrigin())`()` Returns the origin of the calling app if set otherwise returns null. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#getType())`()` Returns the requested credential type. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemProviderRequired](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#isSystemProviderRequired())`()` Returns true if the request must only be fulfilled by a system provider, and false otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

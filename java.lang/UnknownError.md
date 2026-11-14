@@ -9,9 +9,11 @@ open class UnknownError : VirtualMachineError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError#) |
 
 Thrown when an unknown but serious exception has occurred in the Java Virtual Machine.

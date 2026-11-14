@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 12](https://developer.android.com/sdkExtensions)
 # ProtectedSignalsManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/signals/ProtectedSignalsManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class ProtectedSignalsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.signals.ProtectedSignalsManager](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#) |
 
 ProtectedSignalsManager provides APIs for apps and ad-SDKs to manage their protected signals.
@@ -99,3 +101,4 @@ Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_PROT
 | `updateSignalsRequest` | [UpdateSignalsRequest](https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest): This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| --- | --- |

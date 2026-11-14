@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # WindowContentFrameStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowContentFrameStats "View this page in Java") 
+| --- | --- |
 
 ```
 class WindowContentFrameStats : FrameStats, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.FrameStats](https://developer.android.com/reference/kotlin/android/view/FrameStats) ||
 | | ↳ | [android.view.WindowContentFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#) |
 
@@ -32,6 +34,7 @@ An application posts a frame for presentation by synchronously rendering its con
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFramePostedTimeNano](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#getFramePostedTimeNano(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the time a frame at a given index was posted by the producer (e.g. the application). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrameReadyTimeNano](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#getFrameReadyTimeNano(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the time a frame at a given index was ready for presentation. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

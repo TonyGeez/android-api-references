@@ -3,12 +3,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # LoaderTestCase
 
 Kotlin | [Java](https://developer.android.com/reference/android/test/LoaderTestCase "View this page in Java")
+| --- | --- |
 
 ```
 open class LoaderTestCase : AndroidTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.AndroidTestCase](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase) ||
 | | ↳ | [android.test.LoaderTestCase](https://developer.android.com/reference/kotlin/android/test/LoaderTestCase#) |
 

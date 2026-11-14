@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # OnInfoListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnInfoListener

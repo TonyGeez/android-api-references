@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BeginGetCredentialResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/BeginGetCredentialResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class BeginGetCredentialResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.BeginGetCredentialResponse](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#) |
 
 Response from a credential provider, containing credential entries and other associated data to be shown on the account selector UI.
@@ -34,9 +36,11 @@ Response from a credential provider, containing credential entries and other ass
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Action](https://developer.android.com/reference/kotlin/android/service/credentials/Action)!\> | [getActions](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#getActions())`()` Returns the list of actions to be displayed on the UI. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Action](https://developer.android.com/reference/kotlin/android/service/credentials/Action)!\> | [getAuthenticationActions](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#getAuthenticationActions())`()` Returns the list of authentication entries to be displayed on the UI. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry)!\> | [getCredentialEntries](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#getCredentialEntries())`()` Returns the list of credential entries to be displayed on the UI. |
 | [RemoteEntry](https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry)? | [getRemoteCredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#getRemoteCredentialEntry())`()` Returns the remote credential entry to be displayed on the UI. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|

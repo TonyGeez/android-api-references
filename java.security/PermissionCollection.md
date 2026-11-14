@@ -7,9 +7,11 @@ abstract class PermissionCollection : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection#) |
 
 | Known Direct Subclasses [Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions) |---|---| | [Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions) | Android doesn't support `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Android doesn't support `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#`. Do not use this class.
 
@@ -24,6 +26,7 @@ Android doesn't support `https://developer.android.com/reference/kotlin/java/lan
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#add(java.security.Permission)(permission: https://developer.android.com/reference/kotlin/java/security/Permission!)` Adds a permission object to the current collection of permission objects. |
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!\>! | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#elements()()` Returns an enumeration of all the Permission objects in the collection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#implies(java.security.Permission)(permission: https://developer.android.com/reference/kotlin/java/security/Permission!)` Checks to see if the specified permission is implied by the collection of Permission objects held in this PermissionCollection. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#isReadOnly()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#setReadOnly()()` <br /> |
 

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Ringtone
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Ringtone "View this page in Java") 
+| --- | --- |
 
 ```
 open class Ringtone
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.Ringtone](https://developer.android.com/reference/kotlin/android/media/Ringtone#) |
 
 Ringtone provides a quick method for playing a ringtone, notification, or other similar types of sounds.
@@ -24,15 +26,19 @@ For ways of retrieving [Ringtone](https://developer.android.com/reference/kotlin
 | open [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes)! | [getAudioAttributes](https://developer.android.com/reference/kotlin/android/media/Ringtone#getAudioAttributes())`()` Returns the [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) used by this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamType](https://developer.android.com/reference/kotlin/android/media/Ringtone#getStreamType())`()` Gets the stream type where this ringtone will be played. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](https://developer.android.com/reference/kotlin/android/media/Ringtone#getTitle(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Returns a human-presentable title for ringtone. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](https://developer.android.com/reference/kotlin/android/media/Ringtone#getVolume())`()` Returns the volume scalar set on this player. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHapticGeneratorEnabled](https://developer.android.com/reference/kotlin/android/media/Ringtone#isHapticGeneratorEnabled())`()` Return whether the [android.media.audiofx.HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator) effect is enabled or not. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLooping](https://developer.android.com/reference/kotlin/android/media/Ringtone#isLooping())`()` Returns whether the looping mode was enabled on this player. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPlaying](https://developer.android.com/reference/kotlin/android/media/Ringtone#isPlaying())`()` Whether this ringtone is currently playing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](https://developer.android.com/reference/kotlin/android/media/Ringtone#play())`()` Plays the ringtone. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioAttributes](https://developer.android.com/reference/kotlin/android/media/Ringtone#setAudioAttributes(android.media.AudioAttributes))`(`attributes:` ` [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes)!`)` Sets the [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) for this ringtone. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setHapticGeneratorEnabled](https://developer.android.com/reference/kotlin/android/media/Ringtone#setHapticGeneratorEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the [android.media.audiofx.HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator) effect. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLooping](https://developer.android.com/reference/kotlin/android/media/Ringtone#setLooping(kotlin.Boolean))`(`looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the player to be looping or non-looping. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStreamType](https://developer.android.com/reference/kotlin/android/media/Ringtone#setStreamType(kotlin.Int))`(`streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the stream type where this ringtone will be played. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolume](https://developer.android.com/reference/kotlin/android/media/Ringtone#setVolume(kotlin.Float))`(`volume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the volume on this player. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/media/Ringtone#stop())`()` Stops a playing ringtone. |
 

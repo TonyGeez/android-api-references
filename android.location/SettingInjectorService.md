@@ -7,9 +7,11 @@ abstract class SettingInjectorService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.location.SettingInjectorService](https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#) |
 
 Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
@@ -63,6 +65,7 @@ For compactness, only one copy of a given setting should be injected. If each ac
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#ACTION_INJECTED_SETTING_CHANGED:kotlin.String` Intent action a client should broadcast when the value of one of its injected settings has changed, so that the setting can be updated in the UI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#ACTION_SERVICE_INTENT:kotlin.String` Intent action that must be declared in the manifest for the subclass. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#ATTRIBUTES_NAME:kotlin.String` Name of the XML tag that includes the attributes for the setting. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#META_DATA_NAME:kotlin.String` Name of the meta-data tag used to specify the resource file that includes the settings attributes. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1091,6 +1094,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onStart(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by the system every time a client explicitly starts the service by calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, providing the arguments it supplied and a unique integer token representing the start request. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#refreshSettings(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Sends a broadcast to refresh the injected settings on location settings page. |
 
 | Protected methods ||
@@ -2897,6 +2901,7 @@ Note that the system calls this on your service's main thread. A service's main 
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent supplied to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, as given. This may be null if the service is being restarted after its process has gone away, and it had previously returned anything except `https://developer.android.com/reference/kotlin/android/app/Service.html#START_STICKY_COMPATIBILITY:kotlin.Int`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional data about this start request. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/Service.html#START_FLAG_REDELIVERY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Service.html#START_FLAG_RETRY:kotlin.Int` |
 | `startId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A unique integer representing this specific request to start. Use with `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelfResult(kotlin.Int)`. |
+| --- | --- |
 
 | Return ||
 |---|---|

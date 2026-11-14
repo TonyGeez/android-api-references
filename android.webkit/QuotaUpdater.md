@@ -6,6 +6,7 @@ Deprecated in [API level 19](https://developer.android.com/guide/topics/manifest
 # QuotaUpdater
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebStorage.QuotaUpdater "View this page in Java") 
+| --- | --- |
 
 ```
 interface QuotaUpdater

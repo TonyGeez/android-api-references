@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # BluetoothServerSocket
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothServerSocket : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothServerSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#) |
 
 A listening Bluetooth socket.
@@ -38,6 +40,7 @@ After the listening [BluetoothServerSocket](https://developer.android.com/refere
 | [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket)! | [accept](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#accept())`()` Block until a connection is established. |
 | [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket)! | [accept](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#accept(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Block until a connection is established, with timeout. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#close())`()` Immediately close this socket, and release all associated resources. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsm](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#getPsm())`()` Returns the assigned dynamic protocol/service multiplexer (PSM) value for the listening L2CAP Connection-oriented Channel (CoC) server socket. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket#toString())`()` <br /> |
 

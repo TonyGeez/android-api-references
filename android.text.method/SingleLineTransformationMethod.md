@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SingleLineTransformationMethod
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/method/SingleLineTransformationMethod "View this page in Java") 
+| --- | --- |
 
 ```
 open class SingleLineTransformationMethod : ReplacementTransformationMethod
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.method.ReplacementTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod) ||
 | | ↳ | [android.text.method.SingleLineTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/SingleLineTransformationMethod#) |
 

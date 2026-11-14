@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction#) |
 
 | Known Direct Subclasses [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator) | Represents an operation upon two operands of the same type, producing a result of the same type as the operands. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represents a function that accepts two arguments and produces a result. This is the two-arity specialization of [Function](https://developer.android.com/reference/kotlin/java/util/function/Function).
 

@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # SharedMemory
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/SharedMemory "View this page in Java") 
+| --- | --- |
 
 ```
 class SharedMemory : Closeable, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.SharedMemory](https://developer.android.com/reference/kotlin/android/os/SharedMemory#) |
 
 SharedMemory enables the creation, mapping, and protection control over anonymous shared memory.
@@ -26,12 +28,15 @@ SharedMemory enables the creation, mapping, and protection control over anonymou
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/os/SharedMemory#close())`()` Close the backing [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#) of this SharedMemory instance. |
 | static [SharedMemory](https://developer.android.com/reference/kotlin/android/os/SharedMemory#) | [create](https://developer.android.com/reference/kotlin/android/os/SharedMemory#create(kotlin.String,%20kotlin.Int))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an anonymous SharedMemory instance with the provided debug name and size. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/SharedMemory#describeContents())`()` <br /> |
+| --- | --- |
 | static [SharedMemory](https://developer.android.com/reference/kotlin/android/os/SharedMemory#) | [fromFileDescriptor](https://developer.android.com/reference/kotlin/android/os/SharedMemory#fromFileDescriptor(android.os.ParcelFileDescriptor))`(`fd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor)`)` Creates an instance from existing shared memory passed as [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/os/SharedMemory#getSize())`()` <br /> |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | [map](https://developer.android.com/reference/kotlin/android/os/SharedMemory#map(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`prot:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an mmap of the SharedMemory with the specified prot, offset, and length. |
+| --- | --- |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | [mapReadOnly](https://developer.android.com/reference/kotlin/android/os/SharedMemory#mapReadOnly())`()` Creates a read-only mapping of the entire shared memory region. |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | [mapReadWrite](https://developer.android.com/reference/kotlin/android/os/SharedMemory#mapReadWrite())`()` Creates a read/write mapping of the entire shared memory region. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setProtect](https://developer.android.com/reference/kotlin/android/os/SharedMemory#setProtect(kotlin.Int))`(`prot:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the protection on the shared memory to the combination specified in prot, which is either a bitwise-or'd combination of [android.system.OsConstants#PROT_READ](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_READ:kotlin.Int), [android.system.OsConstants#PROT_WRITE](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_WRITE:kotlin.Int), [android.system.OsConstants#PROT_EXEC](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_EXEC:kotlin.Int) from [android.system.OsConstants](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#), or [android.system.OsConstants#PROT_NONE](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_NONE:kotlin.Int), to remove all further access. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unmap](https://developer.android.com/reference/kotlin/android/os/SharedMemory#unmap(java.nio.ByteBuffer))`(`buffer:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)`)` Unmaps a buffer previously returned by [map(int,int,int)](https://developer.android.com/reference/kotlin/android/os/SharedMemory#map(kotlin.Int,%20kotlin.Int,%20kotlin.Int)). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/SharedMemory#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -147,6 +152,7 @@ Creates an mmap of the SharedMemory with the specified prot, offset, and length.
 | `prot` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A bitwise-or'd combination of PROT_READ, PROT_WRITE, PROT_EXEC, or PROT_NONE. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset into the shared memory to begin mapping. Must be \>= 0 and less than getSize(). |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the region to map. Must be \> 0 and offset + length must not exceed getSize(). |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -183,6 +189,7 @@ fun mapReadWrite(): ByteBuffer
 ```
 
 Creates a read/write mapping of the entire shared memory region. This requires the the protection level of the shared memory is at least PROT_READ|PROT_WRITE or the map will fail. Use [map(int,int,int)](https://developer.android.com/reference/kotlin/android/os/SharedMemory#map(kotlin.Int,%20kotlin.Int,%20kotlin.Int))to have more control over the mapping if desired. This is equivalent to map(OsConstants.PROT_READ | OsConstants.PROT_WRITE, 0, getSize())
+| --- | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -201,6 +208,7 @@ fun setProtect(prot: Int): Boolean
 ```
 
 Sets the protection on the shared memory to the combination specified in prot, which is either a bitwise-or'd combination of [android.system.OsConstants#PROT_READ](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_READ:kotlin.Int), [android.system.OsConstants#PROT_WRITE](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_WRITE:kotlin.Int), [android.system.OsConstants#PROT_EXEC](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_EXEC:kotlin.Int) from [android.system.OsConstants](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#), or [android.system.OsConstants#PROT_NONE](https://developer.android.com/reference/kotlin/android/system/OsConstants.html#PROT_NONE:kotlin.Int), to remove all further access. Note that protection can only ever be removed, not added. By default shared memory is created with protection set to PROT_READ | PROT_WRITE | PROT_EXEC. The protection passed here also only applies to any mappings created after calling this method. Existing mmaps of the shared memory retain whatever protection they had when they were created. A common usage of this is to share a read-only copy of the data with something else. To do that first create the read/write mapping with PROT_READ | PROT_WRITE, then call setProtect(PROT_READ) to remove write capability, then send the SharedMemory to another process. That process will only be able to mmap with PROT_READ.
+| --- | --- | --- | --- |
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

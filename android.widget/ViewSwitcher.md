@@ -7,9 +7,11 @@ open class ViewSwitcher : ViewAnimator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.ViewAnimator](https://developer.android.com/reference/kotlin/android/widget/ViewAnimator) ||
 | | | | | ↳ | [android.widget.ViewSwitcher](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#) |
 
@@ -308,6 +310,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -424,6 +427,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -590,6 +594,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1754,6 +1759,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#addView(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Adds a child view with the specified layout parameters. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#getNextView()()` Returns the next view to be displayed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#reset()()` Reset the ViewSwitcher to hide all of the existing views and to make it think that the first time animation has not yet played. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher#setFactory(android.widget.ViewSwitcher.ViewFactory)(factory: https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.ViewFactory!)` Sets the factory used to create the two views between which the ViewSwitcher will flip. |
 
@@ -2673,6 +2679,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4525,6 +4532,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8440,6 +8448,7 @@ Adds a child view with the specified layout parameters.
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: the layout parameters to set on the child |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

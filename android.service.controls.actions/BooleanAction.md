@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # BooleanAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/actions/BooleanAction "View this page in Java") 
+| --- | --- |
 
 ```
 class BooleanAction : ControlAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.actions.ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) ||
 | | ↳ | [android.service.controls.actions.BooleanAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/BooleanAction#) |
 
@@ -69,6 +71,7 @@ BooleanAction(
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier of the template that originated this action. This value cannot be`null`. |
 | `newState` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):new value for the state displayed by the template. |
 | `challengeValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a value sent by the user along with the action to authenticate.null is sent when no authentication is needed or has not been requested. |
+| --- | --- |
 
 ## Public methods
 

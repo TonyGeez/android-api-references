@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # EGLConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLConfig "View this page in Java") 
+| --- | --- |
 
 ```
 open class EGLConfig : EGLObjectHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.opengl.EGLObjectHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle) ||
 | | ↳ | [android.opengl.EGLConfig](https://developer.android.com/reference/kotlin/android/opengl/EGLConfig#) |
 

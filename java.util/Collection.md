@@ -63,21 +63,27 @@ This interface is a member of the [Java Collections Framework](https://docs.orac
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/Collection#add(java.util.Collection.E))`(`e:` `E`)` Ensures that this collection contains the specified element (optional operation). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/Collection#addAll(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Adds all of the elements in the specified collection to this collection (optional operation). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/Collection#clear())`()` Removes all of the elements from this collection (optional operation). |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/Collection#contains(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns`true`if this collection contains the specified element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/Collection#containsAll(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Returns`true`if this collection contains all of the elements in the specified collection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Collection#isEmpty())`()` Returns`true`if this collection contains no elements. |
+| --- | --- |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/Collection#iterator())`()` Returns an iterator over the elements in this collection. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<E\> | [parallelStream](https://developer.android.com/reference/kotlin/java/util/Collection#parallelStream())`()` Returns a possibly parallel`Stream`with this collection as its source. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Collection#remove(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes a single instance of the specified element from this collection, if it is present (optional operation). |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/Collection#removeAll(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Removes all of this collection's elements that are also contained in the specified collection (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/Collection#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)<in` `E>`)` Removes all of the elements of this collection that satisfy the given predicate. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/Collection#retainAll(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Retains only the elements in this collection that are contained in the specified collection (optional operation). |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/Collection#size())`()` Returns the number of elements in this collection. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/Collection#spliterator())`()` Creates a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this collection. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<E\> | [stream](https://developer.android.com/reference/kotlin/java/util/Collection#stream())`()` Returns a sequential`Stream`with this collection as its source. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Collection#toArray())`()` Returns an array containing all of the elements in this collection. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Collection#toArray(java.util.function.IntFunction))`(`generator:` ` [IntFunction](https://developer.android.com/reference/kotlin/java/util/function/IntFunction)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>!>`)` Returns an array containing all of the elements in this collection, using the provided`generator`function to allocate the returned array. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Collection#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. |
+| --- | --- |
 
 ## Public methods
 
@@ -108,6 +114,7 @@ If a collection refuses to add a particular element for any reason other than th
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this collection |
 | `java.lang.NullPointerException` | if the specified element is null and this collection does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the element prevents it from being added to this collection |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
 
@@ -134,6 +141,7 @@ Adds all of the elements in the specified collection to this collection (optiona
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this collection |
 | `java.lang.NullPointerException` | if the specified collection contains a null element and this collection does not permit null elements, or if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this collection |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
 
@@ -272,6 +280,7 @@ Removes a single instance of the specified element from this collection, if it i
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified element is null and this collection does not permit null elements (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this collection |
+| --- | --- |
 
 ### removeAll
 
@@ -296,6 +305,7 @@ Removes all of this collection's elements that are also contained in the specifi
 | `java.lang.UnsupportedOperationException` | if the`removeAll`method is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not support null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 **See Also**
 
@@ -348,6 +358,7 @@ Retains only the elements in this collection that are contained in the specified
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not permit null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 **See Also**
 

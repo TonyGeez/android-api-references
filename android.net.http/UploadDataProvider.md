@@ -6,12 +6,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # UploadDataProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/UploadDataProvider "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class UploadDataProvider : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.http.UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider#) |
 
 Abstract class allowing the embedder to provide an upload body to [UrlRequest](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest). It supports both non-chunked (size known in advanced) and chunked (size not known in advance) uploads. Be aware that not all servers support chunked uploads.
@@ -29,6 +31,7 @@ An upload is either always chunked, across multiple uploads if the data ends up 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider#close())`()` Called when this UploadDataProvider is no longer needed by a request, so that resources (like a file) can be explicitly released. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider#getLength())`()` If this is a non-chunked upload, returns the length of the upload. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [read](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider#read(android.net.http.UploadDataSink,%20java.nio.ByteBuffer))`(`uploadDataSink:` ` [UploadDataSink](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink)`, `byteBuffer:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)`)` Reads upload data into`byteBuffer`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rewind](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider#rewind(android.net.http.UploadDataSink))`(`uploadDataSink:` ` [UploadDataSink](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink)`)` Rewinds upload data. |
 
 ## Public constructors

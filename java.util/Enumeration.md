@@ -11,6 +11,7 @@ interface Enumeration<E : Any!>
 | [java.util.Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration#) |
 
 | Known Direct Subclasses [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer) | The string tokenizer class allows an application to break a string into tokens. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An object that implements the Enumeration interface generates a series of elements, one at a time. Successive calls to the`nextElement`method return successive elements of the series.
 
@@ -30,6 +31,7 @@ Methods are provided to enumerate through the elements of a vector, the keys of 
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [asIterator](https://developer.android.com/reference/kotlin/java/util/Enumeration#asIterator())`()` Returns an [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator) that traverses the remaining elements covered by this enumeration. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](https://developer.android.com/reference/kotlin/java/util/Enumeration#hasMoreElements())`()` Tests if this enumeration contains more elements. |
 | abstractE | [nextElement](https://developer.android.com/reference/kotlin/java/util/Enumeration#nextElement())`()` Returns the next element of this enumeration if this enumeration object has at least one more element to provide. |
+| --- | --- |
 
 ## Public methods
 

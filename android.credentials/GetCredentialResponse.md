@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # GetCredentialResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/GetCredentialResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class GetCredentialResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.GetCredentialResponse](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse#) |
 
 A response object that encapsulates the credential successfully retrieved from the user.
@@ -30,6 +32,7 @@ A response object that encapsulates the credential successfully retrieved from t
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse#describeContents())`()` <br /> |
 | [Credential](https://developer.android.com/reference/kotlin/android/credentials/Credential) | [getCredential](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse#getCredential())`()` Returns the credential that can be used to authenticate the user, or`null`if no credential is available. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

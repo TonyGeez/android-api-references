@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # GLES10Ext
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLES10Ext "View this page in Java") 
+| --- | --- |
 
 ```
 open class GLES10Ext
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.GLES10Ext](https://developer.android.com/reference/kotlin/android/opengl/GLES10Ext#) |
 
 ## Summary

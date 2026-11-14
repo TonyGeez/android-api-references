@@ -9,6 +9,7 @@ class TextAttribute : AttributedCharacterIterator.Attribute
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.text.AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute.html#) ||
 | | ↳ | [java.awt.font.TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#) |
 
@@ -55,60 +56,79 @@ For each text attribute, the documentation provides:
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [BACKGROUND](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#BACKGROUND:java.awt.font.TextAttribute) Attribute key for the paint used to render the background of the text. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [BIDI_EMBEDDING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#BIDI_EMBEDDING:java.awt.font.TextAttribute) Attribute key for the embedding level of the text. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [CHAR_REPLACEMENT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#CHAR_REPLACEMENT:java.awt.font.TextAttribute) Attribute key for a user-defined glyph to display in lieu of the font's standard glyph for a character. |
+| --- | --- |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [FAMILY](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#FAMILY:java.awt.font.TextAttribute) Attribute key for the font name. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [FONT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#FONT:java.awt.font.TextAttribute) Attribute key used to provide the font to use to render text. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [FOREGROUND](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#FOREGROUND:java.awt.font.TextAttribute) Attribute key for the paint used to render the text. |
+| --- | --- |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [INPUT_METHOD_HIGHLIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#INPUT_METHOD_HIGHLIGHT:java.awt.font.TextAttribute) Attribute key for input method highlight styles. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [INPUT_METHOD_UNDERLINE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#INPUT_METHOD_UNDERLINE:java.awt.font.TextAttribute) Attribute key for input method underlines. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [JUSTIFICATION](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#JUSTIFICATION:java.awt.font.TextAttribute) Attribute key for the justification of a paragraph. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [JUSTIFICATION_FULL](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#JUSTIFICATION_FULL:kotlin.Float) Justify the line to the full requested width. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [JUSTIFICATION_NONE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#JUSTIFICATION_NONE:kotlin.Float) Do not allow the line to be justified. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [KERNING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#KERNING:java.awt.font.TextAttribute) Attribute key to request kerning. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [KERNING_ON](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#KERNING_ON:kotlin.Int) Request standard kerning. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [LIGATURES](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#LIGATURES:java.awt.font.TextAttribute) Attribute key for enabling optional ligatures. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [LIGATURES_ON](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#LIGATURES_ON:kotlin.Int) Request standard optional ligatures. |
+| --- | --- |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [NUMERIC_SHAPING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#NUMERIC_SHAPING:java.awt.font.TextAttribute) Attribute key for converting ASCII decimal digits to other decimal ranges. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [POSTURE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#POSTURE:java.awt.font.TextAttribute) Attribute key for the posture of a font. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [POSTURE_OBLIQUE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#POSTURE_OBLIQUE:kotlin.Float) The standard italic posture. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [POSTURE_REGULAR](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#POSTURE_REGULAR:kotlin.Float) The standard posture, upright. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [RUN_DIRECTION](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#RUN_DIRECTION:java.awt.font.TextAttribute) Attribute key for the run direction of the line. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | [RUN_DIRECTION_LTR](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#RUN_DIRECTION_LTR:kotlin.Boolean) Left-to-right run direction. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | [RUN_DIRECTION_RTL](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#RUN_DIRECTION_RTL:kotlin.Boolean) Right-to-left run direction. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [SIZE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SIZE:java.awt.font.TextAttribute) Attribute key for the font size. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [STRIKETHROUGH](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#STRIKETHROUGH:java.awt.font.TextAttribute) Attribute key for strikethrough. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | [STRIKETHROUGH_ON](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#STRIKETHROUGH_ON:kotlin.Boolean) A single strikethrough. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [SUPERSCRIPT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SUPERSCRIPT:java.awt.font.TextAttribute) Attribute key for superscripting and subscripting. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [SUPERSCRIPT_SUB](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SUPERSCRIPT_SUB:kotlin.Int) Standard subscript. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [SUPERSCRIPT_SUPER](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SUPERSCRIPT_SUPER:kotlin.Int) Standard superscript. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [SWAP_COLORS](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SWAP_COLORS:java.awt.font.TextAttribute) Attribute key for swapping foreground and background`Paints`. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | [SWAP_COLORS_ON](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#SWAP_COLORS_ON:kotlin.Boolean) Swap foreground and background. |
+| --- | --- |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [TRACKING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#TRACKING:java.awt.font.TextAttribute) Attribute key to control tracking. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [TRACKING_LOOSE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#TRACKING_LOOSE:kotlin.Float) Perform loose tracking. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [TRACKING_TIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#TRACKING_TIGHT:kotlin.Float) Perform tight tracking. |
+| --- | --- |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [TRANSFORM](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#TRANSFORM:java.awt.font.TextAttribute) Attribute key for the transform of a font. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [UNDERLINE](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE:java.awt.font.TextAttribute) Attribute key for underline. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_LOW_DASHED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_LOW_DASHED:kotlin.Int) Single pixel dashed low underline. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_LOW_DOTTED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_LOW_DOTTED:kotlin.Int) Single pixel dotted low underline. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_LOW_GRAY](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_LOW_GRAY:kotlin.Int) Double pixel gray low underline. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_LOW_ONE_PIXEL](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_LOW_ONE_PIXEL:kotlin.Int) Single pixel solid low underline. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_LOW_TWO_PIXEL](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_LOW_TWO_PIXEL:kotlin.Int) Double pixel solid low underline. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [UNDERLINE_ON](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#UNDERLINE_ON:kotlin.Int) Standard underline. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [WEIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT:java.awt.font.TextAttribute) Attribute key for the weight of a font. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_BOLD](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_BOLD:kotlin.Float) The standard bold weight. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_DEMIBOLD](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_DEMIBOLD:kotlin.Float) A moderately lighter weight than`WEIGHT_BOLD`. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_DEMILIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_DEMILIGHT:kotlin.Float) An intermediate weight between`WEIGHT_LIGHT`and`WEIGHT_STANDARD`. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_EXTRABOLD](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_EXTRABOLD:kotlin.Float) An extra heavy weight. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_EXTRA_LIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_EXTRA_LIGHT:kotlin.Float) The lightest predefined weight. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_HEAVY](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_HEAVY:kotlin.Float) A moderately heavier weight than`WEIGHT_BOLD`. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_LIGHT](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_LIGHT:kotlin.Float) The standard light weight. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_MEDIUM](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_MEDIUM:kotlin.Float) An intermediate weight between`WEIGHT_REGULAR`and`WEIGHT_BOLD`. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_REGULAR](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_REGULAR:kotlin.Float) The standard weight. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_SEMIBOLD](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_SEMIBOLD:kotlin.Float) A moderately heavier weight than`WEIGHT_REGULAR`. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WEIGHT_ULTRABOLD](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WEIGHT_ULTRABOLD:kotlin.Float) The heaviest predefined weight. |
 | static [TextAttribute](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#)! | [WIDTH](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH:java.awt.font.TextAttribute) Attribute key for the width of a font. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WIDTH_CONDENSED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH_CONDENSED:kotlin.Float) The most condensed predefined width. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WIDTH_EXTENDED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH_EXTENDED:kotlin.Float) The most extended predefined width. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WIDTH_REGULAR](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH_REGULAR:kotlin.Float) The standard width. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WIDTH_SEMI_CONDENSED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH_SEMI_CONDENSED:kotlin.Float) A moderately condensed width. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [WIDTH_SEMI_EXTENDED](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute#WIDTH_SEMI_EXTENDED:kotlin.Float) A moderately extended width. |
 

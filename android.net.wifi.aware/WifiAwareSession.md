@@ -7,6 +7,7 @@ open class WifiAwareSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.WifiAwareSession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#) |
 
 This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware service through which the app can execute discovery operations.
@@ -18,6 +19,7 @@ This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#close()()` Destroy the Wi-Fi Aware service session and, if no other applications are attached to Aware, also disable Aware. |
 | open [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierOpen(kotlin.Int,%20kotlin.ByteArray)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an unencrypted WiFi Aware connection (link) to the specified peer. |
 | open [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierPassphrase(kotlin.Int,%20kotlin.ByteArray,%20kotlin.String)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, passphrase: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an encrypted WiFi Aware connection (link) to the specified peer. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#publish(android.net.wifi.aware.PublishConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)(publishConfig: https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig, callback: https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Issue a request to the Aware service to create a new Aware publish discovery session, using the specified `publishConfig` configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#subscribe(android.net.wifi.aware.SubscribeConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)(subscribeConfig: https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig, callback: https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Issue a request to the Aware service to create a new Aware subscribe discovery session, using the specified `subscribeConfig` configuration. |
 
@@ -96,6 +98,7 @@ This API is targeted for applications which can obtain the peer MAC address usin
 | `role` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The role of this device: `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#WIFI_AWARE_DATA_PATH_ROLE_INITIATOR:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#WIFI_AWARE_DATA_PATH_ROLE_RESPONDER:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#WIFI_AWARE_DATA_PATH_ROLE_INITIATOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#WIFI_AWARE_DATA_PATH_ROLE_RESPONDER:kotlin.Int` |
 | `peer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The MAC address of the peer's Aware discovery interface. On a RESPONDER this value is used to gate the acceptance of a connection request from only that peer. This value cannot be `null`. |
 | `passphrase` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The passphrase to be used to encrypt the link. The PMK is generated from the passphrase. Use `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierOpen(kotlin.Int,%20kotlin.ByteArray)` to specify an open (unencrypted) link. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -133,6 +136,7 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | `publishConfig` | [PublishConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig` specifying the configuration of the requested publish session. This value cannot be `null`. |
 | `callback` | [DiscoverySessionCallback](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
+| --- | --- |
 
 ### subscribe
 
@@ -166,6 +170,7 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | `subscribeConfig` | [SubscribeConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig` specifying the configuration of the requested subscribe session. This value cannot be `null`. |
 | `callback` | [DiscoverySessionCallback](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
+| --- | --- |
 
 ## Protected methods
 

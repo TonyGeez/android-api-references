@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # FullRestoreDataInput
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/backup/FullRestoreDataInput "View this page in Java") 
+| --- | --- |
 
 ```
 open class FullRestoreDataInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.FullRestoreDataInput](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#) |
 
 Provides the interface through which a [BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) reads entire files from a full backup data set, via its [BackupAgent.onRestoreFile(FullRestoreDataInput)](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestoreFile(android.app.backup.FullRestoreDataInput))method.
@@ -22,12 +24,15 @@ Provides the interface through which a [BackupAgent](https://developer.android.c
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAppVersionCode](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getAppVersionCode())`()` The version code of the app that created the backup. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getContentVersion](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getContentVersion())`()` Content version set by the source device during a cross-platform transfer. |
 | open [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | [getData](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getData())`()` Read-only file descriptor containing the file data. |
+| --- | --- |
 | open [File](https://developer.android.com/reference/kotlin/java/io/File.html#) | [getDestination](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getDestination())`()` The file on disk to be restored with the given data. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMode](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getMode())`()` The access mode to be assigned to the destination after its data is written. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getModificationTimeSeconds](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getModificationTimeSeconds())`()` A timestamp in the standard Unix epoch that represents the last modification time of the file when it was backed up, suitable to be assigned to the file after its data is written. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getSize())`()` Size of the file in bytes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportFlags](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getTransportFlags())`()` Flags with additional information about the transport. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput#getType())`()` The kind of file system object being restored. |
+| --- | --- |
 
 ## Public methods
 

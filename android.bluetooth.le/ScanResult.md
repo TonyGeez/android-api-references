@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ScanResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/ScanResult "View this page in Java") 
+| --- | --- |
 
 ```
 class ScanResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#) |
 
 ScanResult for Bluetooth LE scan.
@@ -22,9 +24,11 @@ ScanResult for Bluetooth LE scan.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_COMPLETE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_COMPLETE:kotlin.Int) For chained advertisements, indicates that the data contained in this scan result is complete. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_TRUNCATED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_TRUNCATED:kotlin.Int) For chained advertisements, indicates that the controller was unable to receive all chained packets and the scan result contains incomplete truncated data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERIODIC_INTERVAL_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PERIODIC_INTERVAL_NOT_PRESENT:kotlin.Int) Periodic advertising interval is not present in the packet. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHY_UNUSED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PHY_UNUSED:kotlin.Int) Indicates that the secondary physical layer was not used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SID_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#SID_NOT_PRESENT:kotlin.Int) Advertising Set ID is not present in the packet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TX_POWER_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#TX_POWER_NOT_PRESENT:kotlin.Int) TX power is not present in the packet. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -40,18 +44,23 @@ ScanResult for Bluetooth LE scan.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvertisingSid](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getAdvertisingSid())`()` Returns the advertising set id. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataStatus](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getDataStatus())`()` Returns the data status. |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)! | [getDevice](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getDevice())`()` Returns the remote Bluetooth device identified by the Bluetooth device address. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeriodicAdvertisingInterval](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getPeriodicAdvertisingInterval())`()` Returns the periodic advertising interval in units of 1. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimaryPhy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getPrimaryPhy())`()` Returns the primary Physical Layer on which this advertisement was received. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getRssi())`()` Returns the received signal strength in dBm. |
 | [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)? | [getScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getScanRecord())`()` Returns the scan record, which is a combination of advertisement and scan response. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecondaryPhy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getSecondaryPhy())`()` Returns the secondary Physical Layer on which this advertisement was received. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getTimestampNanos())`()` Returns timestamp since boot when the scan record was observed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxPower](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getTxPower())`()` Returns the transmit power in dBm. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#isConnectable())`()` Returns true if this object represents connectable scan result. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegacy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#isLegacy())`()` Returns true if this object represents legacy scan result. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -156,6 +165,7 @@ Constructs a new ScanResult.
 | `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!:Remote Bluetooth device found. |
 | `scanRecord` | [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!:Scan record including both advertising data and scan response data. |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Received signal strength. |
+| --- | --- |
 | `timestampNanos` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Timestamp at which the scan result was observed. |
 
 ### ScanResult
@@ -183,12 +193,15 @@ Constructs a new ScanResult.
 | `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!:Remote Bluetooth device found. |
 | `eventType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Event type. |
 | `primaryPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Primary advertising phy. |
+| --- | --- |
 | `secondaryPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Secondary advertising phy. |
 | `advertisingSid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Advertising set ID. |
 | `txPower` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Transmit power. |
+| --- | --- |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Received signal strength. |
 | `periodicAdvertisingInterval` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Periodic advertising interval. |
 | `scanRecord` | [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!:Scan record including both advertising data and scan response data. |
+| --- | --- |
 | `timestampNanos` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Timestamp at which the scan result was observed. |
 
 ## Public methods

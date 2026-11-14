@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # OnShareTargetSelectedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ShareActionProvider.OnShareTargetSelectedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnShareTargetSelectedListener

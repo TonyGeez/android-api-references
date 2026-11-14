@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ResponderLocation
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation "View this page in Java") 
+| --- | --- |
 
 ```
 class ResponderLocation : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.rtt.ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#) |
 
 ResponderLocation is both a Location Configuration Information (LCI) decoder and a Location Civic Report (LCR) decoder for information received from a Wi-Fi Access Point (AP) during Wi-Fi RTT ranging process.
@@ -26,15 +28,19 @@ Note: The information provided by this class is broadcast by a responder (usuall
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_FLOORS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_FLOORS:kotlin.Int) Responder Altitude is measured in floors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_METERS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_METERS:kotlin.Int) Responder Altitude is measured in meters. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_UNDEFINED:kotlin.Int) Altitude is not defined for the Responder. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_MLLW](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_MLLW:kotlin.Int) Datum used is NAD83 MLLW. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_NAV88](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_NAV88:kotlin.Int) Datum used is NAD83 NAV88. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_UNDEFINED:kotlin.Int) Datum is not defined. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_WGS84](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_WGS84:kotlin.Int) Datum used is WGS84. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LCI_VERSION_1](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LCI_VERSION_1:kotlin.Int) Version of the LCI protocol is 1. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_FIXED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_FIXED:kotlin.Int) Location of responder is fixed (does not move) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_MOVEMENT_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_MOVEMENT_UNKNOWN:kotlin.Int) Location of the responder is not known to be either fixed or variable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_RESERVED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_RESERVED:kotlin.Int) Location of the responder status is a reserved value |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_VARIABLE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_VARIABLE:kotlin.Int) Location of the responder is variable, and may move |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -45,27 +51,35 @@ Note: The information provided by this class is broadcast by a responder (usuall
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitude())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAltitudeType](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitudeType())`()` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitudeUncertainty())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)!\>! | [getColocatedBssids](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getColocatedBssids())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatum](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getDatum())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExpectedToMove](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getExpectedToMove())`()` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getFloorNumber](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getFloorNumber())`()` <br /> |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorMeters](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getHeightAboveFloorMeters())`()` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorUncertaintyMeters](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getHeightAboveFloorUncertaintyMeters())`()` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLatitude())`()` <br /> |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLatitudeUncertainty())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLciVersion](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLciVersion())`()` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLongitude())`()` <br /> |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLongitudeUncertainty())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMapImageMimeType](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getMapImageMimeType())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getMapImageUri](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getMapImageUri())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRegisteredLocationAgreementIndication](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getRegisteredLocationAgreementIndication())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLciSubelementValid](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZaxisSubelementValid](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())`()` <br /> |
 | [Address](https://developer.android.com/reference/kotlin/android/location/Address.html#)? | [toCivicLocationAddress](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toCivicLocationAddress())`()` <br /> |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [toCivicLocationSparseArray](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toCivicLocationSparseArray())`()` <br /> |
+| --- | --- |
 | [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#) | [toLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toLocation())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

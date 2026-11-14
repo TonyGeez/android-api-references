@@ -9,6 +9,7 @@ open class Date : Date
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) ||
 | | ↳ | [java.sql.Date](https://developer.android.com/reference/kotlin/java/sql/Date#) |
 
@@ -28,12 +29,15 @@ To conform with the definition of SQL`DATE`, the millisecond values wrapped by a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](https://developer.android.com/reference/kotlin/java/sql/Date#getHours())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](https://developer.android.com/reference/kotlin/java/sql/Date#getMinutes())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](https://developer.android.com/reference/kotlin/java/sql/Date#getSeconds())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHours](https://developer.android.com/reference/kotlin/java/sql/Date#setHours(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinutes](https://developer.android.com/reference/kotlin/java/sql/Date#setMinutes(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSeconds](https://developer.android.com/reference/kotlin/java/sql/Date#setSeconds(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](https://developer.android.com/reference/kotlin/java/sql/Date#setTime(kotlin.Long))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets an existing`Date`object using the given milliseconds time value. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/sql/Date#toString())`()` Formats a date in the date escape format yyyy-mm-dd. |
 | openstatic [Date](https://developer.android.com/reference/kotlin/java/sql/Date#)! | [valueOf](https://developer.android.com/reference/kotlin/java/sql/Date#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a string in JDBC date escape format to a`Date`value. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -63,6 +67,7 @@ The result is undefined if a given argument is out of bounds.
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900; must be 0 to 8099. (Note that 8099 is 9999 minus 1900.) |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0 to 11 |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):1 to 31 |
+| --- | --- |
 
 ### Date
 

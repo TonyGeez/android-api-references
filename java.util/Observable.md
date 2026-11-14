@@ -10,9 +10,11 @@ open class Observable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Observable](https://developer.android.com/reference/kotlin/java/util/Observable#) |
 
 | Known Direct Subclasses [ContentQueryMap](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap.html#) |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ContentQueryMap](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap.html#) | Caches the contents of a cursor into a Map of String-\>ContentValues and optionally keeps the cache fresh by registering for updates on the content backing the cursor. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 33.**
 |
@@ -39,9 +41,11 @@ When an observable object is newly created, its set of observers is empty. Two o
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addObserver](https://developer.android.com/reference/kotlin/java/util/Observable#addObserver(java.util.Observer))`(`o:` ` [Observer](https://developer.android.com/reference/kotlin/java/util/Observer)!`)` Adds an observer to the set of observers for this object, provided that it is not the same as some observer already in the set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countObservers](https://developer.android.com/reference/kotlin/java/util/Observable#countObservers())`()` Returns the number of observers of this`Observable`object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteObserver](https://developer.android.com/reference/kotlin/java/util/Observable#deleteObserver(java.util.Observer))`(`o:` ` [Observer](https://developer.android.com/reference/kotlin/java/util/Observer)!`)` Deletes an observer from the set of observers of this object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteObservers](https://developer.android.com/reference/kotlin/java/util/Observable#deleteObservers())`()` Clears the observer list so that this object no longer has any observers. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasChanged](https://developer.android.com/reference/kotlin/java/util/Observable#hasChanged())`()` Tests if this object has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyObservers](https://developer.android.com/reference/kotlin/java/util/Observable#notifyObservers())`()` If this object has changed, as indicated by the`hasChanged`method, then notify all of its observers and then call the`clearChanged`method to indicate that this object has no longer changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyObservers](https://developer.android.com/reference/kotlin/java/util/Observable#notifyObservers(kotlin.Any))`(`arg:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` If this object has changed, as indicated by the`hasChanged`method, then notify all of its observers and then call the`clearChanged`method to indicate that this object has no longer changed. |
 
 | Protected methods ||

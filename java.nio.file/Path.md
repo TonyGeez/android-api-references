@@ -45,30 +45,39 @@ Implementations of this interface are immutable and safe for use by multiple con
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/file/Path#compareTo(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Compares two abstract paths lexicographically. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [endsWith](https://developer.android.com/reference/kotlin/java/nio/file/Path#endsWith(kotlin.String))`(`other:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tests if this path ends with a`Path`, constructed by converting the given path string, in exactly the manner specified by the [endsWith(Path)](https://developer.android.com/reference/kotlin/java/nio/file/Path#endsWith(java.nio.file.Path))method. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [endsWith](https://developer.android.com/reference/kotlin/java/nio/file/Path#endsWith(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Tests if this path ends with the given path. |
+| --- | --- |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [getFileName](https://developer.android.com/reference/kotlin/java/nio/file/Path#getFileName())`()` Returns the name of the file or directory denoted by this path as a`Path`object. |
 | abstract [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | [getFileSystem](https://developer.android.com/reference/kotlin/java/nio/file/Path#getFileSystem())`()` Returns the file system that created this object. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [getName](https://developer.android.com/reference/kotlin/java/nio/file/Path#getName(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a name element of this path as a`Path`object. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameCount](https://developer.android.com/reference/kotlin/java/nio/file/Path#getNameCount())`()` Returns the number of name elements in the path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [getParent](https://developer.android.com/reference/kotlin/java/nio/file/Path#getParent())`()` Returns the*parent path* , or`null`if this path does not have a parent. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [getRoot](https://developer.android.com/reference/kotlin/java/nio/file/Path#getRoot())`()` Returns the root component of this path as a`Path`object, or`null`if this path does not have a root component. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](https://developer.android.com/reference/kotlin/java/nio/file/Path#isAbsolute())`()` Tells whether or not this path is absolute. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!\> | [iterator](https://developer.android.com/reference/kotlin/java/nio/file/Path#iterator())`()` Returns an iterator over the name elements of this path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [normalize](https://developer.android.com/reference/kotlin/java/nio/file/Path#normalize())`()` Returns a path that is this path with redundant name elements eliminated. |
+| --- | --- |
 | openstatic [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [of](https://developer.android.com/reference/kotlin/java/nio/file/Path#of(kotlin.String,%20kotlin.String))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Path`by converting a path string, or a sequence of strings that when joined form a path string. |
 | openstatic [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [of](https://developer.android.com/reference/kotlin/java/nio/file/Path#of(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`)` Returns a by converting a URI. |
 | abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | [register](https://developer.android.com/reference/kotlin/java/nio/file/Path#register(java.nio.file.WatchService,%20java.nio.file.WatchEvent.Kind))`(`watcher:` ` [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!`, `vararg` `events:` ` [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)<*>!`)` Registers the file located by this path with a watch service. |
+| --- | --- |
 | abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | [register](https://developer.android.com/reference/kotlin/java/nio/file/Path#register(java.nio.file.WatchService,%20kotlin.Array,%20java.nio.file.WatchEvent.Modifier))`(`watcher:` ` [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!`, `events:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)<*>!>!`, `vararg` `modifiers:` ` [WatchEvent.Modifier](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier)!`)` Registers the file located by this path with a watch service. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [relativize](https://developer.android.com/reference/kotlin/java/nio/file/Path#relativize(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Constructs a relative path between this path and a given path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [resolve](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolve(kotlin.String))`(`other:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a given path string to a`Path`and resolves it against this`Path`in exactly the manner specified by the [resolve](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolve(java.nio.file.Path))method. |
+| --- | --- |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [resolve](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolve(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Resolve the given path against this path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [resolveSibling](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolveSibling(kotlin.String))`(`other:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a given path string to a`Path`and resolves it against this path's [parent](https://developer.android.com/reference/kotlin/java/nio/file/Path#getParent())path in exactly the manner specified by the [resolveSibling](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolveSibling(java.nio.file.Path))method. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [resolveSibling](https://developer.android.com/reference/kotlin/java/nio/file/Path#resolveSibling(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Resolves the given path against this path's [parent](https://developer.android.com/reference/kotlin/java/nio/file/Path#getParent())path. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startsWith](https://developer.android.com/reference/kotlin/java/nio/file/Path#startsWith(kotlin.String))`(`other:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tests if this path starts with a`Path`, constructed by converting the given path string, in exactly the manner specified by the [startsWith(Path)](https://developer.android.com/reference/kotlin/java/nio/file/Path#startsWith(java.nio.file.Path))method. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startsWith](https://developer.android.com/reference/kotlin/java/nio/file/Path#startsWith(java.nio.file.Path))`(`other:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)!`)` Tests if this path starts with the given path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [subpath](https://developer.android.com/reference/kotlin/java/nio/file/Path#subpath(kotlin.Int,%20kotlin.Int))`(`beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a relative`Path`that is a subsequence of the name elements of this path. |
+| --- | --- |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [toAbsolutePath](https://developer.android.com/reference/kotlin/java/nio/file/Path#toAbsolutePath())`()` Returns a`Path`object representing the absolute path of this path. |
 | abstract [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [toFile](https://developer.android.com/reference/kotlin/java/nio/file/Path#toFile())`()` Returns a [File](https://developer.android.com/reference/kotlin/java/io/File.html#) object representing this path. |
 | abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path#)! | [toRealPath](https://developer.android.com/reference/kotlin/java/nio/file/Path#toRealPath(java.nio.file.LinkOption))`(`vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption)!`)` Returns the*real*path of an existing file. |
+| --- | --- |
 | abstract [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | [toUri](https://developer.android.com/reference/kotlin/java/nio/file/Path#toUri())`()` Returns a URI to represent this path. |
 
 ## Public methods
@@ -373,6 +382,7 @@ The default provider provides a similar*round-trip* guarantee to the [java.io.Fi
 | `java.lang.IllegalArgumentException` | if preconditions on the`uri`parameter do not hold. The format of the URI is provider specific. |
 | `java.nio.file.FileSystemNotFoundException` | The file system, identified by the URI, does not exist and cannot be created automatically, or the provider identified by the URI's scheme component is not installed |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission to access the file system |
+| --- | --- |
 
 ### register
 
@@ -418,9 +428,11 @@ Path dir = ...
 | `java.lang.UnsupportedOperationException` | If unsupported events are specified |
 | `java.lang.IllegalArgumentException` | If an invalid combination of events is specified |
 | `java.nio.file.ClosedWatchServiceException` | If the watch service is closed |
+| --- | --- |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file. |
 | `java.nio.file.NotDirectoryException` | If the file is registered to watch the entries in a directory and the file is not a directory*(optional specific exception)* |
+| --- | --- |
 
 ### register
 
@@ -455,6 +467,7 @@ Where a file is registered with a watch service by means of a symbolic link then
 | `watcher` | [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!:the watch service to which this object is to be registered |
 | `events` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\<\*\>!\>!:the events for which this object should be registered |
 | `modifiers` | [WatchEvent.Modifier](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier)!:the modifiers, if any, that modify how the object is registered |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -465,9 +478,11 @@ Where a file is registered with a watch service by means of a symbolic link then
 | `java.lang.UnsupportedOperationException` | if unsupported events or modifiers are specified |
 | `java.lang.IllegalArgumentException` | if an invalid combination of events or modifiers is specified |
 | `java.nio.file.ClosedWatchServiceException` | if the watch service is closed |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file. |
 | `java.nio.file.NotDirectoryException` | if the file is registered to watch the entries in a directory and the file is not a directory*(optional specific exception)* |
+| --- | --- |
 
 ### relativize
 

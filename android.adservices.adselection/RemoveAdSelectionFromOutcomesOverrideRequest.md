@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # RemoveAdSelectionFromOutcomesOverrideRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class RemoveAdSelectionFromOutcomesOverrideRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.RemoveAdSelectionFromOutcomesOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest#) |
 
 This POJO represents the [RemoveAdSelectionFromOutcomesOverrideRequest, Executor, OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager) request

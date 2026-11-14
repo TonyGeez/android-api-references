@@ -9,6 +9,7 @@ class Topic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.topics.Topic](https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#) |
 
 > [!CAUTION]
@@ -29,9 +30,11 @@ Represent the topic result from the getTopics API.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#getModelVersion()()` Get the ModelVersion. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#getTaxonomyVersion()()` Get the TaxonomyVersion. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#getTopicId()()` Get the Topic ID. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 
@@ -54,6 +57,7 @@ Creates an object which represents the result from the getTopics API.
 | `mTaxonomyVersion` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): a long representing the version of the taxonomy. |
 | `mModelVersion` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): a long representing the version of the model. |
 | `mTopicId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an integer representing the unique id of a topic. |
+| --- | --- |
 
 ## Public methods
 

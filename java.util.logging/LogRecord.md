@@ -9,6 +9,7 @@ open class LogRecord : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#) |
 
 LogRecord objects are used to pass logging requests between the logging framework and individual log Handlers.
@@ -34,27 +35,35 @@ Note that if the client application has not specified an explicit source method 
 | open [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)! | [getLevel](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getLevel())`()` Get the logging message level, for example Level. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLoggerName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getLoggerName())`()` Get the source Logger's name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessage](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getMessage())`()` Get the "raw" log message, before localization or formatting. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMillis](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getMillis())`()` Get event time in milliseconds since 1970. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getParameters](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getParameters())`()` Get the parameters to the log message. |
 | open [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)! | [getResourceBundle](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getResourceBundle())`()` Get the localization resource bundle |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResourceBundleName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getResourceBundleName())`()` Get the localization resource bundle name |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSequenceNumber](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getSequenceNumber())`()` Get the sequence number. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSourceClassName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getSourceClassName())`()` Get the name of the class that (allegedly) issued the logging request. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSourceMethodName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getSourceMethodName())`()` Get the name of the method that (allegedly) issued the logging request. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadID](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getThreadID())`()` Get an identifier for the thread where the message originated. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getThrown](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getThrown())`()` Get any throwable associated with the log record. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setLevel(java.util.logging.Level))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)!`)` Set the logging message level, for example Level. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoggerName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setLoggerName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the source Logger's name. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMessage](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setMessage(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the "raw" log message, before localization or formatting. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMillis](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setMillis(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Set event time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameters](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setParameters(kotlin.Array))`(`parameters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Set the parameters to the log message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceBundle](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setResourceBundle(java.util.ResourceBundle))`(`bundle:` ` [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)!`)` Set the localization resource bundle. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceBundleName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setResourceBundleName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the localization resource bundle name. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSequenceNumber](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setSequenceNumber(kotlin.Long))`(`seq:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Set the sequence number. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSourceClassName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setSourceClassName(kotlin.String))`(`sourceClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the name of the class that (allegedly) issued the logging request. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSourceMethodName](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setSourceMethodName(kotlin.String))`(`sourceMethodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the name of the method that (allegedly) issued the logging request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThreadID](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setThreadID(kotlin.Int))`(`threadID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set an identifier for the thread where the message originated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThrown](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#setThrown(kotlin.Throwable))`(`thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Set a throwable associated with the log event. |
+| --- | --- |
 
 ## Public constructors
 

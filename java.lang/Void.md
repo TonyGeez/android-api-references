@@ -9,6 +9,7 @@ class Void
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Void](https://developer.android.com/reference/kotlin/java/lang/Void#) |
 
 The`Void`class is an uninstantiable placeholder class to hold a reference to the`Class`object representing the Java keyword void.

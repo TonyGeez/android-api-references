@@ -7,6 +7,7 @@ open class ImageView : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.widget.ImageView](https://developer.android.com/reference/kotlin/android/widget/ImageView#) |
 
@@ -46,9 +47,11 @@ To learn more about Drawables, see: [Drawable Resources](https://developer.andro
 | [`android:adjustViewBounds`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | Set this to true if you want the ImageView to adjust its bounds to preserve the aspect ratio of its drawable. |
 | [`android:cropToPadding`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | If true, the image will be cropped to fit within its padding. |
 | [`android:maxHeight`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | An optional argument to supply a maximum height for this view. |
+| --- | --- |
 | [`android:maxWidth`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | An optional argument to supply a maximum width for this view. |
 | [`android:scaleType`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | Controls how the image should be resized or moved to match the size of this ImageView. |
 | [`android:src`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | Sets a drawable as the content of this ImageView. |
+| --- | --- |
 | [`android:tint`](https://developer.android.com/reference/kotlin/android/widget/ImageView#attr_ImageView) | The tinting color for the image. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -329,6 +332,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -445,6 +449,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1630,51 +1635,67 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#animateTransform(android.graphics.Matrix)(matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#?)` Applies a temporary transformation `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` to the view's drawable when it is drawn. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#clearColorFilter()()` Removes the image's `https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getAdjustViewBounds()()` True when ImageView is adjusting its bounds to preserve the aspect ratio of its drawable |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getBaselineAlignBottom()()` Checks whether this view's baseline is considered the bottom of the view. |
 | open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getColorFilter()()` Returns the active color filter for this ImageView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getCropToPadding()()` Return whether this ImageView crops to padding. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getDrawable()()` Gets the current Drawable, or null if no Drawable has been assigned. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageAlpha()()` Returns the alpha that will be applied to the drawable of this ImageView. |
 | open [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageMatrix()()` Returns the view's optional matrix. |
+| --- | --- |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintBlendMode()()` Gets the blending mode used to apply the tint to the image Drawable |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintList()()` Get the current `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#` used to tint the image Drawable, or null if no tint is applied. |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintMode()()` Gets the blending mode used to apply the tint to the image Drawable |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getMaxHeight()()` The maximum height of this view. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getMaxWidth()()` The maximum width of this view. |
 | open [ImageView.ScaleType](https://developer.android.com/reference/kotlin/android/widget/ImageView.ScaleType)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getScaleType()()` Returns the current ScaleType that is used to scale the bounds of an image to the bounds of the ImageView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#hasOverlappingRendering()()` Returns whether this View has content which overlaps. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#invalidateDrawable(android.graphics.drawable.Drawable)(dr: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Invalidates the specified Drawable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#isOpaque()()` Indicates whether this View is opaque. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onCreateDrawableState(kotlin.Int)(extraSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generate the new `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` state for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setAdjustViewBounds(kotlin.Boolean)(adjustViewBounds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set this to true if you want the ImageView to adjust its bounds to preserve the aspect ratio of its drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the alpha value that should be applied to the image. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setBaseline(kotlin.Int)(baseline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the offset of the widget's text baseline from the widget's top boundary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setBaselineAlignBottom(kotlin.Boolean)(aligned: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the baseline of this view to the bottom of the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setColorFilter(android.graphics.ColorFilter)(cf: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!)` Apply an arbitrary colorfilter to the image. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setColorFilter(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a tinting option for the image. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#!)` Sets a tinting option for the image. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setCropToPadding(kotlin.Boolean)(cropToPadding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this ImageView will crop to padding. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the alpha value that should be applied to the image. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageBitmap(android.graphics.Bitmap)(bm: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Sets a Bitmap as the content of this ImageView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets a drawable as the content of this ImageView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageIcon(android.graphics.drawable.Icon)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?)` Sets the content of this ImageView to the specified Icon. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageLevel(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the image level, when it is constructed from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageMatrix(android.graphics.Matrix)(matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#!)` Adds a transformation `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` that is applied to the view's drawable when it is drawn. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageResource(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets a drawable as the content of this ImageView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageState(kotlin.IntArray,%20kotlin.Boolean)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, merge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the state of the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageTintList(android.content.res.ColorStateList)`} to the image drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the image drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageTintList(android.content.res.ColorStateList)`} to the image drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageURI(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Sets the content of this ImageView to the specified Uri. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setMaxHeight(kotlin.Int)(maxHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` An optional argument to supply a maximum height for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setMaxWidth(kotlin.Int)(maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` An optional argument to supply a maximum width for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setScaleType(android.widget.ImageView.ScaleType)(scaleType: https://developer.android.com/reference/kotlin/android/widget/ImageView.ScaleType!)` Controls how the image should be resized or moved to match the size of this ImageView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setSelected(kotlin.Boolean)(selected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Changes the selection state of this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setVisibility(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the visibility state of this view. |
 
@@ -1683,9 +1704,11 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#setFrame(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#verifyDrawable(android.graphics.drawable.Drawable)(dr: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -3453,6 +3476,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4797,6 +4821,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7173,9 +7198,11 @@ Must be one of the following constant values.
 | center | 5 | Center the image in the view, but perform no scaling. |
 | centerCrop | 6 | Scale the image uniformly (maintain the image's aspect ratio) so both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the view (minus padding). The image is then centered in the view. |
 | centerInside | 7 | Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or less than the corresponding dimension of the view (minus padding). The image is then centered in the view. |
+| --- | --- | --- |
 | fitCenter | 3 | Scale the image using `https://developer.android.com/reference/kotlin/android/graphics/Matrix.ScaleToFit.html#`. |
 | fitEnd | 4 | Scale the image using `https://developer.android.com/reference/kotlin/android/graphics/Matrix.ScaleToFit.html#`. |
 | fitStart | 2 | Scale the image using `https://developer.android.com/reference/kotlin/android/graphics/Matrix.ScaleToFit.html#`. |
+| --- | --- | --- |
 | fitXY | 1 | Scale the image using `https://developer.android.com/reference/kotlin/android/graphics/Matrix.ScaleToFit.html#`. |
 | matrix | 0 | Scale using the image matrix when drawing. See android.widget.ImageView#setImageMatrix(Matrix). |
 
@@ -7586,6 +7613,7 @@ Invalidates the specified Drawable.
 | `who` | The drawable that is requesting the update. This value cannot be `null`. |
 | `drawable` | the drawable to invalidate. This value cannot be `null`. |
 | `dr` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): This value cannot be `null`. |
+| --- | --- |
 
 ### isOpaque
 

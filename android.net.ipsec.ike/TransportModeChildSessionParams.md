@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TransportModeChildSessionParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TransportModeChildSessionParams "View this page in Java") 
+| --- | --- |
 
 ```
 class TransportModeChildSessionParams : ChildSessionParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.ipsec.ike.ChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams) ||
 | | ↳ | [android.net.ipsec.ike.TransportModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TransportModeChildSessionParams#) |
 

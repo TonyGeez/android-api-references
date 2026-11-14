@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Byte4
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Byte4 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Byte4
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Byte4](https://developer.android.com/reference/kotlin/android/renderscript/Byte4#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Class for exposing the native RenderScript byte4 type back to the Android system
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [w](https://developer.android.com/reference/kotlin/android/renderscript/Byte4#w:kotlin.Byte) <br /> |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Byte4#x:kotlin.Byte) <br /> |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Byte4#y:kotlin.Byte) <br /> |
+| --- | --- |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Byte4#z:kotlin.Byte) <br /> |
 
 ## Public constructors

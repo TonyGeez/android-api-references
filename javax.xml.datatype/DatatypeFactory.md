@@ -9,6 +9,7 @@ abstract class DatatypeFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.datatype.DatatypeFactory](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#) |
 
 Factory that creates new`javax.xml.datatype``Object`s that map XML to/from Java`Object`s.
@@ -37,24 +38,31 @@ Note that you must supply your own implementation (such as Xerces); Android does
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDuration](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDuration(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a new instance of a`Duration`specifying the`Duration`as isPositive, years, months, days, hours, minutes, seconds. |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDuration](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDuration(kotlin.Boolean,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigDecimal))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `years:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `months:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `days:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `hours:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `minutes:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `seconds:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`)` Obtain a new instance of a`Duration`specifying the`Duration`as isPositive, years, months, days, hours, minutes, seconds. |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDuration](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDuration(kotlin.String))`(`lexicalRepresentation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Obtain a new instance of a`Duration`specifying the`Duration`as its string representation, "PnYnMnDTnHnMnS", as defined in XML Schema 1. |
+| --- | --- |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDuration](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDuration(kotlin.Long))`(`durationInMilliSeconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtain a new instance of a`Duration`specifying the`Duration`as milliseconds. |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationDayTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationDayTime(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hour:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a`Duration`of type`xdt:dayTimeDuration`using the specified`day`,`hour`,`minute`and`second`as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:dayTimeDuration](http://www.w3.org/TR/xpath-datamodel#dt-dayTimeDuration). |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationDayTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationDayTime(kotlin.Boolean,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `day:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `hour:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `minute:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `second:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Create a`Duration`of type`xdt:dayTimeDuration`using the specified`day`,`hour`,`minute`and`second`as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:dayTimeDuration](http://www.w3.org/TR/xpath-datamodel#dt-dayTimeDuration). |
+| --- | --- |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationDayTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationDayTime(kotlin.String))`(`lexicalRepresentation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`Duration`of type`xdt:dayTimeDuration`by parsing its`String`representation, "*PnDTnHnMnS* ", [XQuery 1.0 and XPath 2.0 Data Model, xdt:dayTimeDuration](http://www.w3.org/TR/xpath-datamodel#dt-dayTimeDuration). |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationDayTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationDayTime(kotlin.Long))`(`durationInMilliseconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Create a`Duration`of type`xdt:dayTimeDuration`using the specified milliseconds as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:dayTimeDuration](http://www.w3.org/TR/xpath-datamodel#dt-dayTimeDuration). |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationYearMonth](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationYearMonth(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a`Duration`of type`xdt:yearMonthDuration`using the specified`year`and`month`as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:yearMonthDuration](http://www.w3.org/TR/xpath-datamodel#dt-yearMonthyDuration). |
+| --- | --- |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationYearMonth](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationYearMonth(kotlin.Boolean,%20java.math.BigInteger,%20java.math.BigInteger))`(`isPositive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `year:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `month:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Create a`Duration`of type`xdt:yearMonthDuration`using the specified`year`and`month`as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:yearMonthDuration](http://www.w3.org/TR/xpath-datamodel#dt-yearMonthyDuration). |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationYearMonth](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationYearMonth(kotlin.String))`(`lexicalRepresentation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`Duration`of type`xdt:yearMonthDuration`by parsing its`String`representation, "*PnYnM* ", [XQuery 1.0 and XPath 2.0 Data Model, xdt:yearMonthDuration](http://www.w3.org/TR/xpath-datamodel#dt-yearMonthDuration). |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)! | [newDurationYearMonth](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newDurationYearMonth(kotlin.Long))`(`durationInMilliseconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Create a`Duration`of type`xdt:yearMonthDuration`using the specified milliseconds as defined in [XQuery 1.0 and XPath 2.0 Data Model, xdt:yearMonthDuration](http://www.w3.org/TR/xpath-datamodel#dt-yearMonthDuration). |
+| --- | --- |
 | openstatic [DatatypeFactory](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newInstance())`()` Obtain a new instance of a`DatatypeFactory`. |
 | openstatic [DatatypeFactory](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newInstance(kotlin.String,%20java.lang.ClassLoader))`(`factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Returns an instance of the named implementation of`DatatypeFactory`. |
 | abstract [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendar())`()` Create a new instance of an`XMLGregorianCalendar`. |
+| --- | --- |
 | open [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendar(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hour:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `millisecond:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor of value spaces that a`java.util.GregorianCalendar`instance would need to convert to an`XMLGregorianCalendar`instance. |
 | abstract [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendar(kotlin.String))`(`lexicalRepresentation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new XMLGregorianCalendar by parsing the String as a lexical representation. |
 | abstract [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendar(java.math.BigInteger,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.math.BigDecimal,%20kotlin.Int))`(`year:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hour:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fractionalSecond:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor allowing for complete value spaces allowed by W3C XML Schema 1. |
+| --- | --- |
 | abstract [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendar(java.util.GregorianCalendar))`(`cal:` ` [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#)!`)` Create an`XMLGregorianCalendar`from a [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#). |
 | open [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendarDate](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendarDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Java representation of XML Schema builtin datatype`date`or`g*`. |
 | open [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendarTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendarTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Java instance of XML Schema builtin datatype`time`. |
+| --- | --- |
 | open [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendarTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendarTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `milliseconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Java instance of XML Schema builtin datatype time. |
 | open [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar)! | [newXMLGregorianCalendarTime](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory#newXMLGregorianCalendarTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.math.BigDecimal,%20kotlin.Int))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fractionalSecond:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`, `timezone:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Java instance of XML Schema builtin datatype time. |
 
@@ -119,9 +127,11 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `years` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
 | `months` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
+| --- | --- |
 | `days` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
 | `hours` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
 | `minutes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
+| --- | --- |
 | `seconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of this`Duration` |
 
 | Return ||
@@ -170,9 +180,11 @@ A`null`value indicates that field is not set.
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `years` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of this`Duration` |
 | `months` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of this`Duration` |
+| --- | --- |
 | `days` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of this`Duration` |
 | `hours` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of this`Duration` |
 | `minutes` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of this`Duration` |
+| --- | --- |
 | `seconds` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!:of this`Duration` |
 
 | Return ||
@@ -214,6 +226,7 @@ The XML Schema specification states that values can be of an arbitrary size. Imp
 | `java.lang.IllegalArgumentException` | If`lexicalRepresentation`is not a valid representation of a`Duration`. |
 | `java.lang.UnsupportedOperationException` | If implementation cannot support requested values. |
 | `java.lang.NullPointerException` | if`lexicalRepresentation`is`null`. |
+| --- | --- |
 
 ### newDuration
 
@@ -269,6 +282,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Day of`Duration`. |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Hour of`Duration`. |
+| --- | --- |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Minute of`Duration`. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Second of`Duration`. |
 
@@ -307,6 +321,7 @@ A`null`value indicates that field is not set.
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `day` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Day of`Duration`. |
 | `hour` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Hour of`Duration`. |
+| --- | --- |
 | `minute` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Minute of`Duration`. |
 | `second` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Second of`Duration`. |
 
@@ -348,6 +363,7 @@ The XML Schema specification states that values can be of an arbitrary size. Imp
 | `java.lang.IllegalArgumentException` | If the given string does not conform to the aforementioned specification. |
 | `java.lang.UnsupportedOperationException` | If implementation cannot support requested values. |
 | `java.lang.NullPointerException` | If`lexicalRepresentation`is`null`. |
+| --- | --- |
 
 ### newDurationDayTime
 
@@ -402,6 +418,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Year of`Duration`. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Month of`Duration`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -434,6 +451,7 @@ A`null`value indicates that field is not set.
 | `isPositive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set to`false`to create a negative duration. When the length of the duration is zero, this parameter will be ignored. |
 | `year` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Year of`Duration`. |
 | `month` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:Month of`Duration`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -473,6 +491,7 @@ The XML Schema specification states that values can be of an arbitrary size. Imp
 | `java.lang.IllegalArgumentException` | If the`lexicalRepresentation`does not conform to the specification. |
 | `java.lang.UnsupportedOperationException` | If implementation cannot support requested values. |
 | `java.lang.NullPointerException` | If`lexicalRepresentation`is`null`. |
+| --- | --- |
 
 ### newDurationYearMonth
 
@@ -587,9 +606,11 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
+| --- | --- |
 | `millisecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 
@@ -663,9 +684,11 @@ A`null`value indicates that field is not set.
 | `year` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:of`XMLGregorianCalendar`to be created. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
+| --- | --- |
 | `fractionalSecond` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!:of`XMLGregorianCalendar`to be created. |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 
@@ -688,11 +711,13 @@ abstract fun newXMLGregorianCalendar(cal: GregorianCalendar!): XMLGregorianCale
 Create an`XMLGregorianCalendar`from a [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#).
 
 | Field by Field Conversion from [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#) to an [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar) ||
+| --- | --- |
 | `java.util.GregorianCalendar`field | `javax.xml.datatype.XMLGregorianCalendar`field |
 |---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `ERA == GregorianCalendar.BC ? -YEAR : YEAR` | [XMLGregorianCalendar.setYear(int year)](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setYear(kotlin.Int)) |
 | `MONTH + 1` | [XMLGregorianCalendar.setMonth(int month)](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setMonth(kotlin.Int)) |
 | `DAY_OF_MONTH` | [XMLGregorianCalendar.setDay(int day)](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setDay(kotlin.Int)) |
+| --- | --- |
 | `HOUR_OF_DAY, MINUTE, SECOND, MILLISECOND` | [XMLGregorianCalendar.setTime(int hour, int minute, int second, BigDecimal fractional)](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.math.BigDecimal)) |
 | `(ZONE_OFFSET + DST_OFFSET) / (60*1000)` *(in minutes)* | [XMLGregorianCalendar.setTimezone(int offset)](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setTimezone(kotlin.Int))*\** |
 
@@ -739,6 +764,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):of`XMLGregorianCalendar`to be created. |
+| --- | --- |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset in minutes. [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int) indicates optional field is not set. |
 
 | Return ||
@@ -775,6 +801,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `hours` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of hours |
 | `minutes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of minutes |
 | `seconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of seconds |
+| --- | --- |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset in minutes. [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int) indicates optional field is not set. |
 
 | Return ||
@@ -812,6 +839,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `hours` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of hours |
 | `minutes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of minutes |
 | `seconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of seconds |
+| --- | --- |
 | `milliseconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of milliseconds |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset in minutes. [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int) indicates optional field is not set. |
 
@@ -852,6 +880,7 @@ A [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/ko
 | `hours` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of hours |
 | `minutes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of minutes |
 | `seconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of seconds |
+| --- | --- |
 | `fractionalSecond` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!:value of`null`indicates that this optional field is not set. |
 | `timezone` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset in minutes. [DatatypeConstants.FIELD_UNDEFINED](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int) indicates optional field is not set. |
 

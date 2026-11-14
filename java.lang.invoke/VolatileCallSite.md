@@ -9,6 +9,7 @@ open class VolatileCallSite : CallSite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) ||
 | | ↳ | [java.lang.invoke.VolatileCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite#) |
 
@@ -28,6 +29,7 @@ In other respects, a`VolatileCallSite`is interchangeable with`MutableCallSite`.
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dynamicInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite#dynamicInvoker())`()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [getTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite#getTarget())`()` Returns the target method of the call site, which behaves like a`volatile`field of the`VolatileCallSite`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite#setTarget(java.lang.invoke.MethodHandle))`(`newTarget:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Updates the target method of this call site, as a volatile variable. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

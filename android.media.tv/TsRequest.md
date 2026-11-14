@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TsRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/TsRequest "View this page in Java")
+| --- | --- |
 
 ```
 class TsRequest : BroadcastInfoRequest, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) ||
 | | ↳ | [android.media.tv.TsRequest](https://developer.android.com/reference/kotlin/android/media/tv/TsRequest#) |
 
@@ -30,6 +32,7 @@ A request for TS (transport stream) from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TsRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TsRequest#getTsPid()()` Gets the packet identifier (PID) of the TS (transport stream). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TsRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

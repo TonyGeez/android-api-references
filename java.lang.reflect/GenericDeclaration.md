@@ -11,8 +11,10 @@ interface GenericDeclaration : AnnotatedElement
 | [java.lang.reflect.GenericDeclaration](https://developer.android.com/reference/kotlin/java/lang/reflect/GenericDeclaration#) |
 
 | Known Direct Subclasses [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#), [Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) | Instances of the class represent classes and interfaces in a running Java application. | | [Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) | A shared superclass for the common functionality of [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) and [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor), [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor) | `Constructor`provides information about, and access to, a single constructor for a class. | | [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) | A`Method`provides information about, and access to, a single method on a class or interface. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A common interface for all entities that declare type variables.
 

@@ -6,16 +6,19 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # DialogPreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/DialogPreference "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class DialogPreference : Preference, DialogInterface.OnClickListener, DialogInterface.OnDismissListener, PreferenceManager.OnActivityDestroyListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) ||
 | | ↳ | [android.preference.DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#) |
 
 | Known Direct Subclasses [EditTextPreference](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference), [ListPreference](https://developer.android.com/reference/kotlin/android/preference/ListPreference), [MultiSelectListPreference](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------| | [EditTextPreference](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that allows for string input. | | [ListPreference](https://developer.android.com/reference/kotlin/android/preference/ListPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that displays a list of entries as a dialog. | | [MultiSelectListPreference](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that displays a list of entries as a dialog. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -30,9 +33,11 @@ A base class for [Preference](https://developer.android.com/reference/kotlin/and
 | [`android:dialogIcon`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | The icon for the dialog. |
 | [`android:dialogLayout`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | A layout to be used as the content View for the dialog. |
 | [`android:dialogMessage`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | The message in the dialog. |
+| --- | --- |
 | [`android:dialogTitle`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | The title in the dialog. |
 | [`android:negativeButtonText`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | The negative button text for the dialog. |
 | [`android:positiveButtonText`](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#attr_DialogPreference) | The positive button text for the dialog. |
+| --- | --- |
 
 | Inherited XML attributes ||
 |---|---|
@@ -54,33 +59,42 @@ A base class for [Preference](https://developer.android.com/reference/kotlin/and
 | open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#)! | [getDialog](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getDialog())`()` Gets the dialog that is shown by this preference. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [getDialogIcon](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getDialogIcon())`()` Returns the icon to be shown on subsequent dialogs. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDialogLayoutResource](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getDialogLayoutResource())`()` Returns the layout resource that is used as the content View for subsequent dialogs. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDialogMessage](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getDialogMessage())`()` Returns the message to be shown on subsequent dialogs. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDialogTitle](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getDialogTitle())`()` Returns the title to be shown on subsequent dialogs. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getNegativeButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getNegativeButtonText())`()` Returns the text of the negative button to be shown on subsequent dialogs. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getPositiveButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#getPositiveButtonText())`()` Returns the text of the positive button to be shown on subsequent dialogs. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityDestroy](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onActivityDestroy())`()` See Activity's onDestroy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onClick(android.content.DialogInterface,%20kotlin.Int))`(`dialog:` ` [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismiss](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onDismiss(android.content.DialogInterface))`(`dialog:` ` [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogIcon](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogIcon(android.graphics.drawable.Drawable))`(`dialogIcon:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Sets the icon of the dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogIcon](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogIcon(kotlin.Int))`(`dialogIconRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the icon (resource ID) of the dialog. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogLayoutResource](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogLayoutResource(kotlin.Int))`(`dialogLayoutResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource that is inflated as the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be shown as the content View of subsequent dialogs. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogMessage](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogMessage(kotlin.Int))`(`dialogMessageResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogMessage](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogMessage(kotlin.CharSequence))`(`dialogMessage:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the message of the dialog. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogTitle](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogTitle(kotlin.Int))`(`dialogTitleResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDialogTitle](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setDialogTitle(kotlin.CharSequence))`(`dialogTitle:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the title of the dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativeButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setNegativeButtonText(kotlin.Int))`(`negativeButtonTextResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativeButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setNegativeButtonText(kotlin.CharSequence))`(`negativeButtonText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the text of the negative button of the dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositiveButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setPositiveButtonText(kotlin.Int))`(`positiveButtonTextResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositiveButtonText](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#setPositiveButtonText(kotlin.CharSequence))`(`positiveButtonText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the text of the positive button of the dialog. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBindDialogView](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onBindDialogView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` Binds views in the content View of the dialog to data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onClick())`()` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [onCreateDialogView](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onCreateDialogView())`()` Creates the content view for the dialog (if a custom content view is required). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDialogClosed](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onDialogClosed(kotlin.Boolean))`(`positiveResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the dialog is dismissed and should be used to save data to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareDialogBuilder](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onPrepareDialogBuilder(android.app.AlertDialog.Builder))`(`builder:` ` [AlertDialog.Builder](https://developer.android.com/reference/kotlin/android/app/AlertDialog.Builder.html#)!`)` Prepares the dialog builder to be shown when the preference is clicked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onRestoreInstanceState(android.os.Parcelable))`(`state:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!`)` <br /> |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#onSaveInstanceState())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showDialog](https://developer.android.com/reference/kotlin/android/preference/DialogPreference#showDialog(android.os.Bundle))`(`state:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Shows the dialog associated with this Preference. |
 

@@ -5,15 +5,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # IkeInternalException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/exceptions/IkeInternalException "View this page in Java") 
+| --- | --- |
 
 ```
 class IkeInternalException : IkeNonProtocolException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeNonProtocolException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeNonProtocolException) ||
 | | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeInternalException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeInternalException#) |
 

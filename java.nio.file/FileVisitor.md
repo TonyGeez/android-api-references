@@ -11,6 +11,7 @@ interface FileVisitor<T : Any!>
 | [java.nio.file.FileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#) |
 
 | Known Direct Subclasses [SimpleFileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor) |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------| | [SimpleFileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor) | A simple visitor of files with default behavior to visit all files and to re-throw I/O errors. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A visitor of files. An implementation of this interface is provided to the java.nio.file.Files#walkFileTree methods to visit each file in a file tree.
 
@@ -81,6 +82,7 @@ final Path source = ...
 | abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [postVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#postVisitDirectory(java.nio.file.FileVisitor.T,%20java.io.IOException))`(`dir:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a directory after entries in the directory, and all of their descendants, have been visited. |
 | abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [preVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#preVisitDirectory(java.nio.file.FileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`dir:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a directory before entries in the directory are visited. |
 | abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFile](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#visitFile(java.nio.file.FileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`file:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a file in a directory. |
+| --- | --- |
 | abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFileFailed](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#visitFileFailed(java.nio.file.FileVisitor.T,%20java.io.IOException))`(`file:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a file that could not be visited. |
 
 ## Public methods

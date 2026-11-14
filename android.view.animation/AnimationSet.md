@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AnimationSet
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/AnimationSet "View this page in Java") 
+| --- | --- |
 
 ```
 open class AnimationSet : Animation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation) ||
 | | ↳ | [android.view.animation.AnimationSet](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#) |
 
@@ -42,21 +44,27 @@ Starting with [android.os.Build.VERSION_CODES#ICE_CREAM_SANDWICH](https://develo
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAnimation](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#addAnimation(android.view.animation.Animation))`(`a:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Add a child animation to this animation set. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [computeDurationHint](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#computeDurationHint())`()` The duration hint of an animation set is the maximum of the duration hints of all of its component animations. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!\>! | [getAnimations](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#getAnimations())`()` <br /> |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#getDuration())`()` The duration of an AnimationSet is defined to be the duration of the longest child animation. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTime](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#getStartTime())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getTransformation](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#getTransformation(kotlin.Long,%20android.view.animation.Transformation))`(`currentTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `t:` ` [Transformation](https://developer.android.com/reference/kotlin/android/view/animation/Transformation)!`)` The transformation of an animation set is the concatenation of all of its component animations. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#initialize(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parentWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parentHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#reset())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restrictDuration](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#restrictDuration(kotlin.Long))`(`durationMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scaleCurrentDuration](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#scaleCurrentDuration(kotlin.Float))`(`scale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDuration](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setDuration(kotlin.Long))`(`durationMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the duration of every child animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFillAfter](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setFillAfter(kotlin.Boolean))`(`fillAfter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFillBefore](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setFillBefore(kotlin.Boolean))`(`fillBefore:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatMode](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setRepeatMode(kotlin.Int))`(`repeatMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartOffset](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setStartOffset(kotlin.Long))`(`startOffset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartTime](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#setStartTime(kotlin.Long))`(`startTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the start time of this animation and all child animations |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willChangeBounds](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#willChangeBounds())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willChangeTransformationMatrix](https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet#willChangeTransformationMatrix())`()` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -212,6 +220,7 @@ open fun initialize(
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the object being animated |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the object being animated |
 | `parentWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the animated object's parent |
+| --- | --- |
 | `parentHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the animated object's parent |
 
 **See Also**

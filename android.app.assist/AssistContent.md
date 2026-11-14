@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # AssistContent
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/assist/AssistContent "View this page in Java") 
+| --- | --- |
 
 ```
 open class AssistContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.assist.AssistContent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#) |
 
 Holds information about the content an application is viewing, to hand to an assistant at the user's request. This is filled in by [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)).
@@ -34,18 +36,23 @@ Holds information about the content an application is viewing, to hand to an ass
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#describeContents())`()` <br /> |
 | open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)! | [getClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getClipData())`()` Return the current [setClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setClipData(android.content.ClipData)), which you can modify in-place. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getExtras())`()` Return Bundle for extra vendor-specific data that can be modified and examined. |
+| --- | --- |
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [getIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getIntent())`()` Returns the current [setIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setIntent(android.content.Intent))if one is set, else the default Intent obtained from [Activity.getIntent](https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()). |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getSessionTransferUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getSessionTransferUri())`()` Return the content's session transfer web URI as per [setSessionTransferUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setSessionTransferUri(android.net.Uri)), or null if there is none. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getStructuredData())`()` Returns the current [setStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setStructuredData(kotlin.String)). |
+| --- | --- |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getWebUri())`()` Return the content's web URI as per [setWebUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri)), or null if there is none. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#isAppProvidedIntent())`()` Returns whether or not the current Intent was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#isAppProvidedWebUri())`()` Returns whether or not the current [getWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getWebUri())was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setClipData(android.content.ClipData))`(`clip:` ` [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)!`)` Optional additional content items that are involved with the current UI. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Sets the Intent associated with the content, describing the current top-level context of the activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTransferUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setSessionTransferUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`)` This method can be used to provide a [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) which will be utilized when transitioning a user's session to another surface. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setStructuredData(kotlin.String))`(`structuredData:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets optional structured data regarding the content being viewed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Set a web URI associated with the current data being shown to the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|

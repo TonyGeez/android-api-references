@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # SyncFence
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SyncFence "View this page in Java") 
+| --- | --- |
 
 ```
 class SyncFence : AutoCloseable, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.SyncFence](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#) |
 
 A SyncFence represents a synchronization primitive which signals when hardware units have completed work on a particular resource. They initially start in an unsignaled state and make a one-time transition to either a signaled or error state. SyncFences are created by various device APIs in response to submitting tasks to the device. They cannot be created nor signaled by userspace. As a result, this means that a SyncFence will make always make forward progress.
@@ -41,9 +43,11 @@ Similarly when using an [android.media.ImageWriter](https://developer.android.co
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [await](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#await(java.time.Duration))`(`timeout:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)`)` Waits for a SyncFence to signal for up to the timeout duration. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitForever](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#awaitForever())`()` Waits forever for a SyncFence to signal. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#close())`()` Close the SyncFence. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSignalTime](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#getSignalTime())`()` Returns the time in nanoseconds that the fence signaled in the CLOCK_MONOTONIC time domain. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#isValid())`()` Checks if the SyncFile object is valid. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/SyncFence#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object into a Parcel. |
 
 | Properties ||
@@ -198,6 +202,7 @@ Flatten this object into a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be`0`or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

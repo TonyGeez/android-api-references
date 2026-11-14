@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Highlights
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/Highlights "View this page in Java") 
+| --- | --- |
 
 ```
 open class Highlights
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.Highlights](https://developer.android.com/reference/kotlin/android/text/Highlights#) |
 
 A class that represents of the highlight of the text.
@@ -26,6 +28,7 @@ A class that represents of the highlight of the text.
 | open [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#) | [getPaint](https://developer.android.com/reference/kotlin/android/text/Highlights#getPaint(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a paint used for the i-th highlight. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getRanges](https://developer.android.com/reference/kotlin/android/text/Highlights#getRanges(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns ranges of the i-th highlight. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/text/Highlights#getSize())`()` Returns the number of highlight. |
+| --- | --- |
 
 ## Public methods
 

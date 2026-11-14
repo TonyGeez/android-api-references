@@ -9,6 +9,7 @@ open class ECPublicKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.ECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/ECPublicKeySpec#) |
 
 This immutable class specifies an elliptic curve public key with its associated parameters.

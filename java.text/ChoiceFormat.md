@@ -9,9 +9,11 @@ open class ChoiceFormat : NumberFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format) |||
 | | ↳ | [java.text.NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat) ||
 | | | ↳ | [java.text.ChoiceFormat](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#) |
+| --- | --- | --- | --- |
 
 A`ChoiceFormat`allows you to attach a format to a range of numbers. It is generally used in a`MessageFormat`for handling plurals. The choice is specified with an ascending list of doubles, where each item specifies a half-open interval up to the next item: 
 
@@ -120,15 +122,19 @@ Choice formats are not synchronized. It is recommended to create separate format
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#applyPattern(kotlin.String))`(`newPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#clone())`()` Overrides Cloneable |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Equality comparison between two |
+| --- | --- |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#format(kotlin.Double,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `status:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Returns pattern with formatted double. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#format(kotlin.Long,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `status:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Specialization of format. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getFormats](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#getFormats())`()` <br /> |
+| --- | --- |
 | open [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)! | [getLimits](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#getLimits())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#hashCode())`()` Generates a hash code for the message format object. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [nextDouble](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#nextDouble(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Finds the least double greater than`d`. |
+| --- | --- |
 | openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [nextDouble](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#nextDouble(kotlin.Double,%20kotlin.Boolean))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `positive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Finds the least double greater than`d`(if`positive`is`true`), or the greatest double less than`d`(if`positive`is`false`). |
 | open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#parse(kotlin.String,%20java.text.ParsePosition))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `status:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Parses a Number from the input text. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [previousDouble](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#previousDouble(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Finds the greatest double less than`d`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoices](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#setChoices(kotlin.DoubleArray,%20kotlin.Array))`(`limits:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `formats:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set the choices to be used in formatting. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat#toPattern())`()` Gets the pattern. |
 
@@ -261,6 +267,7 @@ Returns pattern with formatted double.
 | `number` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):number to be formatted and substituted. |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):where text is appended. |
 | `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| --- | --- |
 | `status` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):ignore no useful status is returned. |
 
 | Return ||
@@ -291,6 +298,7 @@ Specialization of format. This method really calls`format(double, StringBuffer, 
 | `number` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the long number to format |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):the StringBuffer to which the formatted text is to be appended |
 | `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------|
@@ -402,6 +410,7 @@ Parses a Number from the input text.
 | `source` | the String to parse |
 | `parsePosition` | the parse position |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the source text. |
+| --- | --- |
 | `status` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition):an input-output parameter. On input, the status.index field indicates the first character of the source text that should be parsed. On exit, if no error occurred, status.index is set to the first unparsed character in the source text. On exit, if an error did occur, status.index is unchanged and status.errorIndex is set to the first index of the character that caused the parse to fail. |
 
 | Return ||

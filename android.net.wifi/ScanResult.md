@@ -6,12 +6,14 @@ ScanResult
 ==========
 
 Kotlin | [Java](/reference/android/net/wifi/ScanResult "View this page in Java") 
+| --- | --- |
 
 ```
 class ScanResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.ScanResult](#) |
 
 Describes information about a detected access point. In addition to the attributes described here, the supplicant keeps track of `quality`, `noise`, and `maxbitrate` attributes, but does not currently report them to external clients.
@@ -28,24 +30,31 @@ Summary
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_160MHZ](#CHANNEL_WIDTH_160MHZ:kotlin.Int) AP Channel bandwidth is 160 MHZ |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_20MHZ](#CHANNEL_WIDTH_20MHZ:kotlin.Int) AP Channel bandwidth is 20 MHZ |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_320MHZ](#CHANNEL_WIDTH_320MHZ:kotlin.Int) AP Channel bandwidth is 320 MHZ |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_40MHZ](#CHANNEL_WIDTH_40MHZ:kotlin.Int) AP Channel bandwidth is 40 MHZ |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_80MHZ](#CHANNEL_WIDTH_80MHZ:kotlin.Int) AP Channel bandwidth is 80 MHZ |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](#CHANNEL_WIDTH_80MHZ_PLUS_MHZ:kotlin.Int) AP Channel bandwidth is 160 MHZ, but 80MHZ + 80MHZ |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREAMBLE_EHT](#PREAMBLE_EHT:kotlin.Int) Preamble type: EHT. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREAMBLE_HE](#PREAMBLE_HE:kotlin.Int) Preamble type: HE. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREAMBLE_HT](#PREAMBLE_HT:kotlin.Int) Preamble type: HT. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREAMBLE_LEGACY](#PREAMBLE_LEGACY:kotlin.Int) Preamble type: Legacy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREAMBLE_VHT](#PREAMBLE_VHT:kotlin.Int) Preamble type: VHT. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSPECIFIED](#UNSPECIFIED:kotlin.Int) The unspecified value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_BAND_24_GHZ](#WIFI_BAND_24_GHZ:kotlin.Int) Wi-Fi 2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_BAND_5_GHZ](#WIFI_BAND_5_GHZ:kotlin.Int) Wi-Fi 5 GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_BAND_60_GHZ](#WIFI_BAND_60_GHZ:kotlin.Int) Wi-Fi 60 GHz band. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_BAND_6_GHZ](#WIFI_BAND_6_GHZ:kotlin.Int) Wi-Fi 6 GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_11AC](#WIFI_STANDARD_11AC:kotlin.Int) Wi-Fi 802. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_11AD](#WIFI_STANDARD_11AD:kotlin.Int) Wi-Fi 802. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_11AX](#WIFI_STANDARD_11AX:kotlin.Int) Wi-Fi 802. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_11BE](#WIFI_STANDARD_11BE:kotlin.Int) Wi-Fi 802. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_11N](#WIFI_STANDARD_11N:kotlin.Int) Wi-Fi 802. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_LEGACY](#WIFI_STANDARD_LEGACY:kotlin.Int) Wi-Fi 802. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STANDARD_UNKNOWN](#WIFI_STANDARD_UNKNOWN:kotlin.Int) Wi-Fi unknown standard |
 
@@ -63,36 +72,46 @@ Summary
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [convertChannelToFrequencyMhzIfSupported](#convertChannelToFrequencyMhzIfSupported(kotlin.Int,%20kotlin.Int))`(`channel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `band:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Utility function to convert Wi-Fi channel number to frequency in MHz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [convertFrequencyMhzToChannelIfSupported](#convertFrequencyMhzToChannelIfSupported(kotlin.Int))`(`freqMhz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Utility function to convert frequency in MHz to channel number. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](#describeContents())`()` Implement the Parcelable interface {@hide} |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MloLink](/reference/kotlin/android/net/wifi/MloLink)!\> | [getAffiliatedMloLinks](#getAffiliatedMloLinks())`()` Return the Multi-Link Operation (MLO) affiliated Links for Wi-Fi 7 access points. |
 | [MacAddress](../MacAddress.html#)? | [getApMldMacAddress](#getApMldMacAddress())`()` Return the access point Multi-Link Device (MLD) MAC Address for Wi-Fi 7 access points. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApMloLinkId](#getApMloLinkId())`()` Return the access point Multi-Link Operation (MLO) link-id for Wi-Fi 7 access points. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult.InformationElement](/reference/kotlin/android/net/wifi/ScanResult.InformationElement)!\> | [getInformationElements](#getInformationElements())`()` Get all information elements found in the beacon. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getSecurityTypes](#getSecurityTypes())`()` Get all the security types supported by this ScanResult. |
 | [WifiSsid](/reference/kotlin/android/net/wifi/WifiSsid)? | [getWifiSsid](#getWifiSsid())`()` The SSID of the access point. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWifiStandard](#getWifiStandard())`()` return the AP wifi standard. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211azNtbResponder](#is80211azNtbResponder())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211mcResponder](#is80211mcResponder())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPasspointNetwork](#isPasspointNetwork())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRangingFrameProtectionRequired](#isRangingFrameProtectionRequired())`()` Returns whether the AP requires frame protection for ranging measurement. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecureHeLtfSupported](#isSecureHeLtfSupported())`()` Returns whether the AP supports secure HE-LTF for ranging measurement. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTwtResponder](#isTwtResponder())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](../../os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface {@hide} |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [BSSID](#BSSID:kotlin.String) The address of the access point. |
 | static [Parcelable.Creator](../../os/Parcelable.Creator.html#)\< [ScanResult](#)!\> | [CREATOR](#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [SSID](#SSID:kotlin.String) The network name. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [capabilities](#capabilities:kotlin.String) Describes the authentication, key management, and encryption schemes supported by the access point. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [centerFreq0](#centerFreq0:kotlin.Int) Not used if the AP bandwidth is 20 MHz If the AP use 40, 80, 160 or 320MHz, this is the center frequency (in MHz) if the AP use 80 + 80 MHz, this is the center frequency of the first segment (in MHz) |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [centerFreq1](#centerFreq1:kotlin.Int) Only used if the AP bandwidth is 80 + 80 MHz if the AP use 80 + 80 MHz, this is the center frequency of the second segment (in MHz) |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [channelWidth](#channelWidth:kotlin.Int) AP Channel bandwidth; one of [CHANNEL_WIDTH_20MHZ](#CHANNEL_WIDTH_20MHZ:kotlin.Int), [CHANNEL_WIDTH_40MHZ](#CHANNEL_WIDTH_40MHZ:kotlin.Int), [CHANNEL_WIDTH_80MHZ](#CHANNEL_WIDTH_80MHZ:kotlin.Int), [CHANNEL_WIDTH_160MHZ](#CHANNEL_WIDTH_160MHZ:kotlin.Int), [CHANNEL_WIDTH_320MHZ](#CHANNEL_WIDTH_320MHZ:kotlin.Int), or [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](#CHANNEL_WIDTH_80MHZ_PLUS_MHZ:kotlin.Int), or [CHANNEL_WIDTH_320MHZ](#CHANNEL_WIDTH_320MHZ:kotlin.Int) Value is [android.net.wifi.ScanResult#CHANNEL_WIDTH_20MHZ](#CHANNEL_WIDTH_20MHZ:kotlin.Int), [android.net.wifi.ScanResult#CHANNEL_WIDTH_40MHZ](#CHANNEL_WIDTH_40MHZ:kotlin.Int), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ](#CHANNEL_WIDTH_80MHZ:kotlin.Int), [android.net.wifi.ScanResult#CHANNEL_WIDTH_160MHZ](#CHANNEL_WIDTH_160MHZ:kotlin.Int), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ_PLUS_MHZ](#CHANNEL_WIDTH_80MHZ_PLUS_MHZ:kotlin.Int), or [android.net.wifi.ScanResult#CHANNEL_WIDTH_320MHZ](#CHANNEL_WIDTH_320MHZ:kotlin.Int) |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [frequency](#frequency:kotlin.Int) The center frequency of the primary 20 MHz frequency (in MHz) of the channel over which the client is communicating with the access point. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [level](#level:kotlin.Int) The detected signal level in dBm, also known as the RSSI. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [operatorFriendlyName](#operatorFriendlyName:kotlin.CharSequence) Indicates Passpoint operator name published by access point. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](#timestamp:kotlin.Long) timestamp in microseconds (since boot) when this result was last seen. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [venueName](#venueName:kotlin.CharSequence) Indicates venue name (such as 'San Francisco Airport') published by access point; only available on Passpoint network and if published by access point. |
+| --- | --- |
 
 Constants
 ---------

@@ -3,12 +3,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # AppWidgetProviderInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo "View this page in Java")
+| --- | --- |
 
 ```
 open class AppWidgetProviderInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.appwidget.AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#) |
 
 Describes the meta data for an installed AppWidget provider. The fields in this class correspond to the fields in the `<appwidget-provider>` xml tag.
@@ -20,12 +22,15 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#RESIZE_BOTH:kotlin.Int` Widget is resizable in both the horizontal and vertical axes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#RESIZE_HORIZONTAL:kotlin.Int` Widget is resizable in the horizontal axis only. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#RESIZE_NONE:kotlin.Int` Widget is not resizable. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#RESIZE_VERTICAL:kotlin.Int` Widget is resizable in the vertical axis only. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_HOME_SCREEN:kotlin.Int` Indicates that the widget can be displayed on the home screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_KEYGUARD:kotlin.Int` Indicates that the widget can be displayed on the keyguard. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_NOT_KEYGUARD:kotlin.Int` Indicates that the widget should never be shown on the keyguard. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_SEARCHBOX:kotlin.Int` Indicates that the widget can be displayed within a space reserved for the search box. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_FEATURE_CONFIGURATION_OPTIONAL:kotlin.Int` The widget provides a default configuration. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_FEATURE_HIDE_FROM_PICKER:kotlin.Int` The widget is added directly by the app, and the host may hide this widget when providing the user with the list of available widgets to choose from. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_FEATURE_RECONFIGURABLE:kotlin.Int` The widget can be reconfigured anytime after it is bound by starting the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#configure:android.content.ComponentName` activity. |
 
@@ -43,12 +48,15 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 | open [AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#clone()()` Creates and returns a copy of this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getActivityInfo()()` Returns the broadcast receiver that is providing this widget. |
+| --- | --- |
 | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getProfile()()` Gets the user profile in which the provider resides. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadDescription(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Loads localized description for the app widget. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadIcon(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads the icon to display for this AppWidget in the AppWidget picker. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadLabel(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Loads the localized label to display to the user in the AppWidget picker. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadPreviewImage(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a preview of what the AppWidget will look like after it's configured. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -56,27 +64,35 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#CREATOR:android.os.Parcelable.Creator` Parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#autoAdvanceViewId:kotlin.Int` The view id of the AppWidget subview which should be auto-advanced by the widget's host. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#configure:android.content.ComponentName` The activity to launch that will configure the AppWidget. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#descriptionRes:kotlin.Int` Resource id for the description of the AppWidget. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#generatedPreviewCategories:kotlin.Int` Flags indicating the widget categories for which generated previews are available. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#icon:kotlin.Int` The icon to display for this AppWidget in the AppWidget picker. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#initialKeyguardLayout:kotlin.Int` The resource id of the initial layout for this AppWidget when it is displayed on keyguard. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#initialLayout:kotlin.Int` The resource id of the initial layout for this AppWidget. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#label:kotlin.String` The label to display to the user in the AppWidget picker. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#maxResizeHeight:kotlin.Int` Maximum height (in px) which the widget can be resized to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#maxResizeWidth:kotlin.Int` Maximum width (in px) which the widget can be resized to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#minHeight:kotlin.Int` The default height of the widget when added to a host, in px. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#minResizeHeight:kotlin.Int` Minimum height (in px) which the widget can be resized to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#minResizeWidth:kotlin.Int` Minimum width (in px) which the widget can be resized to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#minWidth:kotlin.Int` The default width of the widget when added to a host, in px. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#previewImage:kotlin.Int` A preview of what the AppWidget will look like after it's configured. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#previewLayout:kotlin.Int` The layout resource id of a preview of what the AppWidget will look like after it's configured. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#provider:android.content.ComponentName` Identity of this AppWidget component. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#resizeMode:kotlin.Int` The rules by which a widget can be resized. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#targetCellHeight:kotlin.Int` The default height of a widget when added to a host, in units of launcher grid cells. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#targetCellWidth:kotlin.Int` The default width of a widget when added to a host, in units of launcher grid cells. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#updatePeriodMillis:kotlin.Int` How often, in milliseconds, that this AppWidget wants to be updated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#widgetCategory:kotlin.Int` Determines whether this widget can be displayed on the home screen, the keyguard, or both. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#widgetFeatures:kotlin.Int` Flags indicating various features supported by the widget. |
+| --- | --- |
 
 ## Constants
 

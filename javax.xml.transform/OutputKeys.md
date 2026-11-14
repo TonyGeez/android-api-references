@@ -9,6 +9,7 @@ open class OutputKeys
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.OutputKeys](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#) |
 
 Provides string constants that can be used to set output properties for a Transformer, or to retrieve output properties from a Transformer or Templates object.
@@ -22,12 +23,15 @@ All the fields in this class are read-only.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CDATA_SECTION_ELEMENTS](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#CDATA_SECTION_ELEMENTS:kotlin.String) cdata-section-elements = expanded names. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_PUBLIC](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#DOCTYPE_PUBLIC:kotlin.String) doctype-public = string. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_SYSTEM](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#DOCTYPE_SYSTEM:kotlin.String) doctype-system = string. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCODING](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#ENCODING:kotlin.String) encoding = string. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INDENT](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#INDENT:kotlin.String) indent = "yes" | "no". |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_TYPE](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#MEDIA_TYPE:kotlin.String) media-type = string. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METHOD](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#METHOD:kotlin.String) method = "xml" | "html" | "text" | expanded name. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [OMIT_XML_DECLARATION](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#OMIT_XML_DECLARATION:kotlin.String) omit-xml-declaration = "yes" | "no". |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STANDALONE](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#STANDALONE:kotlin.String) standalone = "yes" | "no". |
+| --- | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VERSION](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#VERSION:kotlin.String) version = nmtoken. |
 
 ## Constants
@@ -111,6 +115,7 @@ static val INDENT: String
 ```
 
 indent = "yes" | "no".
+| --- | --- |
 
 `indent`specifies whether the Transformer may add additional whitespace when outputting the result tree; the value must be`yes`or`no`. 
 
@@ -143,6 +148,7 @@ static val METHOD: String
 ```
 
 method = "xml" | "html" | "text" | expanded name.
+| --- | --- | --- | --- |
 
 The value of the method property identifies the overall method that should be used for outputting the result tree. Other non-namespaced values may be used, such as "xhtml", but, if accepted, the handling of such values is implementation defined. If any of the method values are not accepted and are not namespace qualified, then [javax.xml.transform.Transformer#setOutputProperty](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperty(kotlin.String,%20kotlin.String))or [javax.xml.transform.Transformer#setOutputProperties](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperties(java.util.Properties))will throw a [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#). 
 
@@ -159,6 +165,7 @@ static val OMIT_XML_DECLARATION: String
 ```
 
 omit-xml-declaration = "yes" | "no".
+| --- | --- |
 
 `omit-xml-declaration`specifies whether the XSLT processor should output an XML declaration; the value must be`yes`or`no`. 
 
@@ -175,6 +182,7 @@ static val STANDALONE: String
 ```
 
 standalone = "yes" | "no".
+| --- | --- |
 
 `standalone`specifies whether the Transformer should output a standalone document declaration; the value must be`yes`or`no`. 
 

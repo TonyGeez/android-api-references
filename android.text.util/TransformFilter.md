@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TransformFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/util/Linkify.TransformFilter "View this page in Java") 
+| --- | --- |
 
 ```
 interface TransformFilter

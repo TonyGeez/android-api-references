@@ -9,6 +9,7 @@ class OffsetTime : Comparable<OffsetTime!>, Serializable, Temporal, TemporalAd
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#) |
 
 A time with an offset from UTC/Greenwich in the ISO-8601 calendar system, such as`10:15:30+01:00`.
@@ -22,57 +23,75 @@ A time with an offset from UTC/Greenwich in the ISO-8601 calendar system, such a
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [adjustInto](https://developer.android.com/reference/kotlin/java/time/OffsetTime#adjustInto(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adjusts the specified temporal object to have the same offset and time as this object. |
 | [OffsetDateTime](https://developer.android.com/reference/kotlin/java/time/OffsetDateTime)! | [atDate](https://developer.android.com/reference/kotlin/java/time/OffsetTime#atDate(java.time.LocalDate))`(`date:` ` [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!`)` Combines this time with a date to create an`OffsetDateTime`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/time/OffsetTime#compareTo(java.time.OffsetTime))`(`other:` ` [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)!`)` Compares this`OffsetTime`to another time. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/OffsetTime#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this time is equal to another time. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/time/OffsetTime#format(java.time.format.DateTimeFormatter))`(`formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!`)` Formats this time using the specified formatter. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [from](https://developer.android.com/reference/kotlin/java/time/OffsetTime#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Obtains an instance of`OffsetTime`from a temporal object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/OffsetTime#get(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this time as an`int`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHour](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getHour())`()` Gets the hour-of-day field. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getLong(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this time as a`long`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinute](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getMinute())`()` Gets the minute-of-hour field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNano](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getNano())`()` Gets the nano-of-second field. |
 | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)! | [getOffset](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getOffset())`()` Gets the zone offset, such as '+01:00'. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecond](https://developer.android.com/reference/kotlin/java/time/OffsetTime#getSecond())`()` Gets the second-of-minute field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/OffsetTime#hashCode())`()` A hash code for this time. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](https://developer.android.com/reference/kotlin/java/time/OffsetTime#isAfter(java.time.OffsetTime))`(`other:` ` [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)!`)` Checks if the instant of this`OffsetTime`is after that of the specified time applying both times to a common date. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](https://developer.android.com/reference/kotlin/java/time/OffsetTime#isBefore(java.time.OffsetTime))`(`other:` ` [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)!`)` Checks if the instant of this`OffsetTime`is before that of the specified time applying both times to a common date. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](https://developer.android.com/reference/kotlin/java/time/OffsetTime#isEqual(java.time.OffsetTime))`(`other:` ` [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)!`)` Checks if the instant of this`OffsetTime`is equal to that of the specified time applying both times to a common date. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/OffsetTime#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Checks if the specified field is supported. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/OffsetTime#isSupported(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Checks if the specified unit is supported. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minus](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minus(java.time.temporal.TemporalAmount))`(`amountToSubtract:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this time with the specified amount subtracted. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minus](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this time with the specified amount subtracted. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minusHours](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minusHours(kotlin.Long))`(`hours:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of hours subtracted. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minusMinutes](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minusMinutes(kotlin.Long))`(`minutes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of minutes subtracted. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minusNanos](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minusNanos(kotlin.Long))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of nanoseconds subtracted. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [minusSeconds](https://developer.android.com/reference/kotlin/java/time/OffsetTime#minusSeconds(kotlin.Long))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of seconds subtracted. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [now](https://developer.android.com/reference/kotlin/java/time/OffsetTime#now())`()` Obtains the current time from the system clock in the default time-zone. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [now](https://developer.android.com/reference/kotlin/java/time/OffsetTime#now(java.time.Clock))`(`clock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock)!`)` Obtains the current time from the specified clock. |
+| --- | --- |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [now](https://developer.android.com/reference/kotlin/java/time/OffsetTime#now(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains the current time from the system clock in the specified time-zone. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [of](https://developer.android.com/reference/kotlin/java/time/OffsetTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.time.ZoneOffset))`(`hour:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nanoOfSecond:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!`)` Obtains an instance of`OffsetTime`from an hour, minute, second and nanosecond. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [of](https://developer.android.com/reference/kotlin/java/time/OffsetTime#of(java.time.LocalTime,%20java.time.ZoneOffset))`(`time:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime)!`, `offset:` ` [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!`)` Obtains an instance of`OffsetTime`from a local time and an offset. |
+| --- | --- |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [ofInstant](https://developer.android.com/reference/kotlin/java/time/OffsetTime#ofInstant(java.time.Instant,%20java.time.ZoneId))`(`instant:` ` [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)!`, `zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains an instance of`OffsetTime`from an`Instant`and zone ID. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [parse](https://developer.android.com/reference/kotlin/java/time/OffsetTime#parse(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains an instance of`OffsetTime`from a text string such as`10:15:30+01:00`. |
 | static [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [parse](https://developer.android.com/reference/kotlin/java/time/OffsetTime#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!`)` Obtains an instance of`OffsetTime`from a text string using a specific formatter. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plus](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plus(java.time.temporal.TemporalAmount))`(`amountToAdd:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this time with the specified amount added. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plus](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this time with the specified amount added. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plusHours](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plusHours(kotlin.Long))`(`hours:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of hours added. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plusMinutes](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plusMinutes(kotlin.Long))`(`minutes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of minutes added. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plusNanos](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plusNanos(kotlin.Long))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of nanoseconds added. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [plusSeconds](https://developer.android.com/reference/kotlin/java/time/OffsetTime#plusSeconds(kotlin.Long))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this`OffsetTime`with the specified number of seconds added. |
+| --- | --- |
 | R | [query](https://developer.android.com/reference/kotlin/java/time/OffsetTime#query(java.time.temporal.TemporalQuery))`(`query:` ` [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)<R>!`)` Queries this time using the specified query. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | [range](https://developer.android.com/reference/kotlin/java/time/OffsetTime#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the range of valid values for the specified field. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochSecond](https://developer.android.com/reference/kotlin/java/time/OffsetTime#toEpochSecond(java.time.LocalDate))`(`date:` ` [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!`)` Converts this`OffsetTime`to the number of seconds since the epoch of 1970-01-01T00:00:00Z. |
+| --- | --- |
 | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime)! | [toLocalTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#toLocalTime())`()` Gets the`LocalTime`part of this date-time. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/OffsetTime#toString())`()` Outputs this time as a`String`, such as`10:15:30+01:00`. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [truncatedTo](https://developer.android.com/reference/kotlin/java/time/OffsetTime#truncatedTo(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this`OffsetTime`with the time truncated. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](https://developer.android.com/reference/kotlin/java/time/OffsetTime#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit))`(`endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Calculates the amount of time until another time in terms of the specified unit. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [with](https://developer.android.com/reference/kotlin/java/time/OffsetTime#with(java.time.temporal.TemporalAdjuster))`(`adjuster:` ` [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster)!`)` Returns an adjusted copy of this time. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [with](https://developer.android.com/reference/kotlin/java/time/OffsetTime#with(java.time.temporal.TemporalField,%20kotlin.Long))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this time with the specified field set to a new value. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withHour](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withHour(kotlin.Int))`(`hour:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this`OffsetTime`with the hour-of-day altered. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withMinute](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withMinute(kotlin.Int))`(`minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this`OffsetTime`with the minute-of-hour altered. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withNano](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withNano(kotlin.Int))`(`nanoOfSecond:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this`OffsetTime`with the nano-of-second altered. |
+| --- | --- |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withOffsetSameInstant](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withOffsetSameInstant(java.time.ZoneOffset))`(`offset:` ` [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!`)` Returns a copy of this`OffsetTime`with the specified offset ensuring that the result is at the same instant on an implied day. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withOffsetSameLocal](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withOffsetSameLocal(java.time.ZoneOffset))`(`offset:` ` [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!`)` Returns a copy of this`OffsetTime`with the specified offset ensuring that the result has the same local time. |
 | [OffsetTime](https://developer.android.com/reference/kotlin/java/time/OffsetTime#)! | [withSecond](https://developer.android.com/reference/kotlin/java/time/OffsetTime#withSecond(kotlin.Int))`(`second:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this`OffsetTime`with the second-of-minute altered. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -281,6 +300,7 @@ If the field is not a`ChronoField`, then the result of this method is obtained b
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an`int` |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### getHour
 
@@ -325,6 +345,7 @@ If the field is not a`ChronoField`, then the result of this method is obtained b
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### getMinute
 
@@ -598,6 +619,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the subtraction cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### minusHours
 
@@ -774,6 +796,7 @@ This method exists primarily for writing test cases. Non test-code will typicall
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hour-of-day to represent, from 0 to 23 |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minute-of-hour to represent, from 0 to 59 |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the second-of-minute to represent, from 0 to 59 |
+| --- | --- |
 | `nanoOfSecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the nano-of-second to represent, from 0 to 999,999,999 |
 | `offset` | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!:the zone offset, not null |
 
@@ -950,6 +973,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the addition cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### plusHours
 
@@ -1236,6 +1260,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to an`OffsetTime` |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### with
 
@@ -1317,6 +1342,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### withHour
 

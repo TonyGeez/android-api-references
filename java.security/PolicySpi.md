@@ -9,6 +9,7 @@ abstract class PolicySpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.PolicySpi](https://developer.android.com/reference/kotlin/java/security/PolicySpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Policy`class. All the abstract methods in this class must be implemented by each service provider who wishes to supply a Policy implementation.
@@ -26,6 +27,7 @@ Subclass implementations of this abstract class must provide a public constructo
 | open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [engineGetPermissions](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineGetPermissions(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified CodeSource. |
 | open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [engineGetPermissions](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineGetPermissions(java.security.ProtectionDomain))`(`domain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified ProtectionDomain. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineImplies](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineImplies(java.security.ProtectionDomain,%20java.security.Permission))`(`domain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!`, `permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` Check whether the policy has granted a Permission to a ProtectionDomain. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineRefresh](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineRefresh())`()` Refreshes/reloads the policy configuration. |
 
 ## Public constructors

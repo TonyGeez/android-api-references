@@ -9,6 +9,7 @@ abstract class MembershipKey
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.MembershipKey](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#) |
 
 A token representing the membership of an Internet Protocol (IP) multicast group.
@@ -30,9 +31,11 @@ Where a membership key is not source-specific and the underlying operation syste
 | abstract [MembershipKey](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#)! | [block](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#block(java.net.InetAddress))`(`source:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` Block multicast datagrams from the given source address. |
 | abstract [MulticastChannel](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel)! | [channel](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#channel())`()` Returns the channel for which this membership key was created. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drop](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#drop())`()` Drop membership. |
+| --- | --- |
 | abstract [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [group](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#group())`()` Returns the multicast group for which this membership key was created. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#isValid())`()` Tells whether or not this membership is valid. |
 | abstract [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface.html#)! | [networkInterface](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#networkInterface())`()` Returns the network interface for which this membership key was created. |
+| --- | --- |
 | abstract [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [sourceAddress](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#sourceAddress())`()` Returns the source address if this membership key is source-specific, or`null`if this membership is not source-specific. |
 | abstract [MembershipKey](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#)! | [unblock](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#unblock(java.net.InetAddress))`(`source:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` Unblock multicast datagrams from the given source address that was previously blocked using the [block](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey#block(java.net.InetAddress))method. |
 
@@ -75,6 +78,7 @@ If this membership key is not source-specific, and the underlying operating syst
 | `java.lang.IllegalArgumentException` | If the`source`parameter is not a unicast address or is not the same address type as the multicast group |
 | `java.lang.IllegalStateException` | If this membership key is source-specific or is no longer valid |
 | `java.lang.UnsupportedOperationException` | If the underlying operating system does not support source filtering |
+| --- | --- |
 | `java.io.IOException` | If an I/O error occurs |
 
 ### channel

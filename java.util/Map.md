@@ -51,39 +51,51 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#clear()()` Removes all of the mappings from this map (optional operation). |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#compute(java.util.Map.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V?, out V?>)` Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
 | open V | `https://developer.android.com/reference/kotlin/java/util/Map#computeIfAbsent(java.util.Map.K,%20java.util.function.Function)(key: K, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function<in K, out V>)` If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#computeIfPresent(java.util.Map.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V, out V?>)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#containsKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns `true` if this map contains a mapping for the specified key. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#containsValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns `true` if this map maps one or more keys to the specified value. |
+| --- | --- |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#copyOf(kotlin.collections.MutableMap)(map: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>)` Returns an [unmodifiable Map](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) containing the entries of the given Map. |
 | open static [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#entry(java.util.Map.entry.K,%20java.util.Map.entry.V)(k: K, v: V)` Returns an unmodifiable `https://developer.android.com/reference/kotlin/java/util/Map.Entry` containing the given key and value. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>!\> | `https://developer.android.com/reference/kotlin/java/util/Map#entrySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer<in K, in V>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | abstract V? | `https://developer.android.com/reference/kotlin/java/util/Map#get(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#getOrDefault(kotlin.Any,%20java.util.Map.V)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, defaultValue: V?)` Returns the value to which the specified key is mapped, or `defaultValue` if this map contains no mapping for the key. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#isEmpty()()` Returns `true` if this map contains no key-value mappings. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | `https://developer.android.com/reference/kotlin/java/util/Map#keySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the keys contained in this map. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)(key: K, value: V, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in V, in V, out V?>)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
+| --- | --- |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of()()` Returns an unmodifiable map containing zero mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V)` Returns an unmodifiable map containing a single mapping. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V)` Returns an unmodifiable map containing two mappings. |
+| --- | --- |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V)` Returns an unmodifiable map containing three mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V)` Returns an unmodifiable map containing four mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V)` Returns an unmodifiable map containing five mappings. |
+| --- | --- |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V, k6: K, v6: V)` Returns an unmodifiable map containing six mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V, k6: K, v6: V, k7: K, v7: V)` Returns an unmodifiable map containing seven mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V, k6: K, v6: V, k7: K, v7: V, k8: K, v8: V)` Returns an unmodifiable map containing eight mappings. |
+| --- | --- |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V, k6: K, v6: V, k7: K, v7: V, k8: K, v8: V, k9: K, v9: V)` Returns an unmodifiable map containing nine mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#of(java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V,%20java.util.Map.of.K,%20java.util.Map.of.V)(k1: K, v1: V, k2: K, v2: V, k3: K, v3: V, k4: K, v4: V, k5: K, v5: V, k6: K, v6: V, k7: K, v7: V, k8: K, v8: V, k9: K, v9: V, k10: K, v10: V)` Returns an unmodifiable map containing ten mappings. |
 | open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#ofEntries(kotlin.collections.MutableMap.MutableEntry)(vararg entries: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html<out K, out V>!)` Returns an unmodifiable map containing keys and values extracted from the given entries. |
+| --- | --- |
 | abstract V? | `https://developer.android.com/reference/kotlin/java/util/Map#put(java.util.Map.K,%20java.util.Map.V)(key: K, value: V)` Associates the specified value with the specified key in this map (optional operation). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#putAll(kotlin.collections.MutableMap)(m: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>)` Copies all of the mappings from the specified map to this map (optional operation). |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#putIfAbsent(java.util.Map.K,%20java.util.Map.V)(key: K, value: V)` If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value. |
+| --- | --- |
 | abstract V? | `https://developer.android.com/reference/kotlin/java/util/Map#remove(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the mapping for a key from this map if it is present (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#remove(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/Map#replace(java.util.Map.K,%20java.util.Map.V)(key: K, value: V)` Replaces the entry for the specified key only if it is currently mapped to some value. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#replace(java.util.Map.K,%20java.util.Map.V,%20java.util.Map.V)(key: K, oldValue: V, newValue: V)` Replaces the entry for the specified key only if currently mapped to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#size()()` Returns the number of key-value mappings in this map. |
+| --- | --- |
 | abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/java/util/Map#values()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection` view of the values contained in this map. |
 
 ## Public methods
@@ -140,6 +152,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### computeIfAbsent
@@ -185,6 +198,7 @@ The mapping function should not modify this map during computation.
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the mappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### computeIfPresent
@@ -218,6 +232,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### containsKey
@@ -281,6 +296,7 @@ Returns an [unmodifiable Map](https://developer.android.com/reference/kotlin/jav
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<out K, out V\>: a `Map` from which entries are drawn, must be non-null |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -315,6 +331,7 @@ Returns an unmodifiable `https://developer.android.com/reference/kotlin/java/uti
 | `<K>` | the key's type |
 | `<V>` | the value's type |
 | `k` | K: the key |
+| --- | --- |
 | `v` | V: the value |
 
 | Return ||
@@ -474,6 +491,7 @@ The remapping function should not modify this map during computation.
 | `key` | K: key with which the resulting value is to be associated |
 | `value` | V: the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -484,6 +502,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys or the value or remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### of
@@ -523,6 +542,7 @@ Returns an unmodifiable map containing a single mapping. See [Unmodifiable Maps]
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the mapping's key |
+| --- | --- |
 | `v1` | V: the mapping's value |
 
 | Return ||
@@ -553,9 +573,11 @@ Returns an unmodifiable map containing two mappings. See [Unmodifiable Maps](htt
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -588,9 +610,11 @@ Returns an unmodifiable map containing three mappings. See [Unmodifiable Maps](h
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 
@@ -627,12 +651,15 @@ Returns an unmodifiable map containing four mappings. See [Unmodifiable Maps](ht
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 
 | Return ||
@@ -670,15 +697,19 @@ Returns an unmodifiable map containing five mappings. See [Unmodifiable Maps](ht
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -717,15 +748,19 @@ Returns an unmodifiable map containing six mappings. See [Unmodifiable Maps](htt
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 | `k6` | K: the sixth mapping's key |
 | `v6` | V: the sixth mapping's value |
 
@@ -768,18 +803,23 @@ Returns an unmodifiable map containing seven mappings. See [Unmodifiable Maps](h
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 | `k6` | K: the sixth mapping's key |
 | `v6` | V: the sixth mapping's value |
 | `k7` | K: the seventh mapping's key |
+| --- | --- |
 | `v7` | V: the seventh mapping's value |
 
 | Return ||
@@ -823,21 +863,27 @@ Returns an unmodifiable map containing eight mappings. See [Unmodifiable Maps](h
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 | `k6` | K: the sixth mapping's key |
 | `v6` | V: the sixth mapping's value |
 | `k7` | K: the seventh mapping's key |
+| --- | --- |
 | `v7` | V: the seventh mapping's value |
 | `k8` | K: the eighth mapping's key |
 | `v8` | V: the eighth mapping's value |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -882,21 +928,27 @@ Returns an unmodifiable map containing nine mappings. See [Unmodifiable Maps](ht
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 | `k6` | K: the sixth mapping's key |
 | `v6` | V: the sixth mapping's value |
 | `k7` | K: the seventh mapping's key |
+| --- | --- |
 | `v7` | V: the seventh mapping's value |
 | `k8` | K: the eighth mapping's key |
 | `v8` | V: the eighth mapping's value |
+| --- | --- |
 | `k9` | K: the ninth mapping's key |
 | `v9` | V: the ninth mapping's value |
 
@@ -945,24 +997,31 @@ Returns an unmodifiable map containing ten mappings. See [Unmodifiable Maps](htt
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `k1` | K: the first mapping's key |
+| --- | --- |
 | `v1` | V: the first mapping's value |
 | `k2` | K: the second mapping's key |
 | `v2` | V: the second mapping's value |
+| --- | --- |
 | `k3` | K: the third mapping's key |
 | `v3` | V: the third mapping's value |
 | `k4` | K: the fourth mapping's key |
+| --- | --- |
 | `v4` | V: the fourth mapping's value |
 | `k5` | K: the fifth mapping's key |
 | `v5` | V: the fifth mapping's value |
+| --- | --- |
 | `k6` | K: the sixth mapping's key |
 | `v6` | V: the sixth mapping's value |
 | `k7` | K: the seventh mapping's key |
+| --- | --- |
 | `v7` | V: the seventh mapping's value |
 | `k8` | K: the eighth mapping's key |
 | `v8` | V: the eighth mapping's value |
+| --- | --- |
 | `k9` | K: the ninth mapping's key |
 | `v9` | V: the ninth mapping's value |
 | `k10` | K: the tenth mapping's key |
+| --- | --- |
 | `v10` | V: the tenth mapping's value |
 
 | Return ||
@@ -989,6 +1048,7 @@ Returns an unmodifiable map containing keys and values extracted from the given 
 | `<K>` | the `Map`'s key type |
 | `<V>` | the `Map`'s value type |
 | `entries` | [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<out K, out V\>!: `Map.Entry`s containing the keys and values from which the map is populated |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1030,6 +1090,7 @@ Associates the specified value with the specified key in this map (optional oper
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putAll
@@ -1051,6 +1112,7 @@ Copies all of the mappings from the specified map to this map (optional operatio
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null, or if this map does not permit null keys or values, and the specified map contains null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putAll` operation is not supported by this map |
 
 ### putIfAbsent
@@ -1080,6 +1142,7 @@ If the specified key is not already associated with a value (or is mapped to `nu
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### remove
@@ -1111,6 +1174,7 @@ The map will not contain a mapping for the specified key once the call returns.
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### remove
 
@@ -1139,6 +1203,7 @@ Removes the entry for the specified key only if it is currently mapped to the sp
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map (java.util.Collection#) |
+| --- | --- |
 
 ### replace
 
@@ -1167,6 +1232,7 @@ Replaces the entry for the specified key only if it is currently mapped to some 
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### replace
@@ -1188,6 +1254,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `key` | K: key with which the specified value is associated |
 | `oldValue` | V: value expected to be associated with the specified key |
 | `newValue` | V: value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1198,6 +1265,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map (java.util.Collection#) |
 
 ### replaceAll
@@ -1219,6 +1287,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this map's entry set iterator. |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 

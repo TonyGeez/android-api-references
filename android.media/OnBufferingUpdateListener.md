@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnBufferingUpdateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnBufferingUpdateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnBufferingUpdateListener

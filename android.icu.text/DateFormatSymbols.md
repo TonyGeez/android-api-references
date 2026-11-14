@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # DateFormatSymbols
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/DateFormatSymbols "View this page in Java") 
+| --- | --- |
 
 ```
 open class DateFormatSymbols : Cloneable, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#) |
 
 **\[icu enhancement\]** ICU's replacement for [java.text.DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -37,9 +39,11 @@ New`DateFormatSymbols`subclasses may be added to support`SimpleDateFormat`for da
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABBREVIATED](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#ABBREVIATED:kotlin.Int) **\[icu\]**Constant for width. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#FORMAT:kotlin.Int) **\[icu\]**Constant for context. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#NARROW:kotlin.Int) **\[icu\]**Constant for width. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#SHORT:kotlin.Int) **\[icu\]**Constant for width; only supported for weekdays. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDALONE](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#STANDALONE:kotlin.Int) **\[icu\]**Constant for context. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#WIDE:kotlin.Int) **\[icu\]**Constant for width. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -58,39 +62,51 @@ New`DateFormatSymbols`subclasses may be added to support`SimpleDateFormat`for da
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#clone())`()` Overrides clone. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAmPmStrings](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getAmPmStrings())`()` Returns am/pm strings. |
+| --- | --- |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getAvailableLocales())`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEraNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getEraNames())`()` **\[icu\]**Returns full era name strings. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEras](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getEras())`()` Returns abbreviated era strings. |
+| --- | --- |
 | openstatic [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getInstance())`()` Returns a DateFormatSymbols instance for the default locale. |
 | openstatic [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a DateFormatSymbols instance for the given locale. |
 | openstatic [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a DateFormatSymbols instance for the given locale. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPatternChars](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getLocalPatternChars())`()` Returns localized date-time pattern characters. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getMonths())`()` Returns month strings. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getMonths(kotlin.Int,%20kotlin.Int))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns month strings. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNarrowEras](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getNarrowEras())`()` **\[icu\]**Returns narrow era name strings. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQuarters](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getQuarters(kotlin.Int,%20kotlin.Int))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns quarter strings. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getShortMonths())`()` Returns short month strings. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getShortWeekdays())`()` Returns abbreviated weekday strings; for example: "Sun", "Mon", etc. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getWeekdays())`()` Returns wide weekday strings. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getWeekdays(kotlin.Int,%20kotlin.Int))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns weekday strings. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getYearNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getYearNames(kotlin.Int,%20kotlin.Int))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns cyclic year name strings if the calendar has them, for example: "jia-zi", "yi-chou", etc. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getZodiacNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getZodiacNames(kotlin.Int,%20kotlin.Int))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns calendar zodiac name strings if the calendar has them, for example: "Rat", "Ox", "Tiger", etc. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getZoneStrings](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#getZoneStrings())`()` Returns time zone strings. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#hashCode())`()` Override hashCode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAmPmStrings](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setAmPmStrings(kotlin.Array))`(`newAmpms:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets am/pm strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEraNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setEraNames(kotlin.Array))`(`newEraNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets full era name strings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEras](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setEras(kotlin.Array))`(`newEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated era strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalPatternChars](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setLocalPatternChars(kotlin.String))`(`newLocalPatternChars:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets localized date-time pattern characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setMonths(kotlin.Array))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets month strings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setMonths(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets month strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNarrowEras](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setNarrowEras(kotlin.Array))`(`newNarrowEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets narrow era name strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQuarters](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setQuarters(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`newQuarters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Sets quarter strings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortMonths](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setShortMonths(kotlin.Array))`(`newShortMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short month strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setShortWeekdays(kotlin.Array))`(`newAbbrevWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated weekday strings; for example: "Sun", "Mon", etc. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setWeekdays(kotlin.Array))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets wide weekday strings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setWeekdays(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets weekday strings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYearNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setYearNames(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`yearNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets cyclic year name strings, for example: "jia-zi", "yi-chou", etc. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZodiacNames](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setZodiacNames(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`zodiacNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets calendar zodiac name strings, for example: "Rat", "Ox", "Tiger", etc. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoneStrings](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols#setZoneStrings(kotlin.Array))`(`newZoneStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets time zone strings. |
 
 | Protected methods ||
@@ -790,6 +806,7 @@ Sets month strings. For example: "January", "February", etc.
 | `newMonths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new month strings. |
 | `context` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The formatting context, FORMAT or STANDALONE. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the month string, either WIDE, ABBREVIATED, or NARROW. |
+| --- | --- |
 
 ### setNarrowEras
 
@@ -824,6 +841,7 @@ open fun setQuarters(
 | `newQuarters` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new quarter strings. |
 | `context` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The formatting context, FORMAT or STANDALONE. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the quarter string, WIDE, NARROW, or ABBREVIATED. |
+| --- | --- |
 
 ### setShortMonths
 
@@ -886,6 +904,7 @@ Sets weekday strings. For example: "Sunday", "Monday", etc.
 | `newWeekdays` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The new weekday strings. |
 | `context` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The formatting context, FORMAT or STANDALONE. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the strings, either WIDE, ABBREVIATED, SHORT, or NARROW. |
+| --- | --- |
 
 ### setYearNames
 
@@ -906,6 +925,7 @@ Sets cyclic year name strings, for example: "jia-zi", "yi-chou", etc.
 | `yearNames` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The new cyclic year name strings. |
 | `context` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The usage context: FORMAT, STANDALONE (currently only FORMAT is supported). |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The name width: WIDE, ABBREVIATED, NARROW (currently only ABBREVIATED is supported). |
+| --- | --- |
 
 ### setZodiacNames
 
@@ -926,6 +946,7 @@ Sets calendar zodiac name strings, for example: "Rat", "Ox", "Tiger", etc.
 | `zodiacNames` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The new zodiac name strings. |
 | `context` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The usage context: FORMAT, STANDALONE (currently only FORMAT is supported). |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The name width: WIDE, ABBREVIATED, NARROW (currently only ABBREVIATED is supported). |
+| --- | --- |
 
 ### setZoneStrings
 

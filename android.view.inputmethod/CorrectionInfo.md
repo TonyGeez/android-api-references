@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # CorrectionInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class CorrectionInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.CorrectionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#) |
 
 Information about a single text correction that an editor has reported to an input method.
@@ -30,9 +32,11 @@ Information about a single text correction that an editor has reported to an inp
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#describeContents())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getNewText](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#getNewText())`()` Return the new text that corrects what was typed by the user. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#getOffset())`()` Return the offset position of this correction in the text. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getOldText](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#getOldText())`()` Return the text that has actually been typed by the user, and which has been corrected. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,6 +60,7 @@ CorrectionInfo(
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset in the edited text where the old and new text start. |
 | `oldText` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The old text that has been replaced. |
 | `newText` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The replacement text. |
+| --- | --- |
 
 ## Public methods
 

@@ -7,9 +7,11 @@ abstract class BackupAgent : ContextWrapper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
 | | | ↳ | [android.app.backup.BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix.
 
@@ -48,6 +50,7 @@ The constructor, as well as `https://developer.android.com/reference/kotlin/andr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED:kotlin.Int` Transport flag indicating that the transport has client-side encryption enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#FLAG_CROSS_PLATFORM_DATA_TRANSFER_IOS:kotlin.Int` Transport flag indicating that the transport is used for a cross-platform transfer to or from iOS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#FLAG_DEVICE_TO_DEVICE_TRANSFER:kotlin.Int` Transport flag indicating that the transport is used for a device-to-device transfer. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#TYPE_DIRECTORY:kotlin.Int` During a full restore, indicates that the file system object being restored is a directory. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#TYPE_FILE:kotlin.Int` During a full restore, indicates that the file system object being restored is an ordinary file. |
 
@@ -969,15 +972,19 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#fullBackupFile(java.io.File,%20android.app.backup.FullBackupDataOutput)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, output: https://developer.android.com/reference/kotlin/android/app/backup/FullBackupDataOutput!)` Write an entire file as part of a full-backup operation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)(oldState: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!, data: https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput!, newState: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!)` The application is being asked to write any data changed since the last time it performed a backup operation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onCreate()()` Provided as a convenience for agent implementations that need an opportunity to do one-time initialization before the actual backup or restore operation is begun. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onDestroy()()` Provided as a convenience for agent implementations that need to do some sort of shutdown process after backup or restore is completed. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onEstimateFullBackupBytes(kotlin.Long,%20kotlin.Int)(quotaBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, transportFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Estimate how much data in bytes a full backup will deliver. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onFullBackup(android.app.backup.FullBackupDataOutput)(data: https://developer.android.com/reference/kotlin/android/app/backup/FullBackupDataOutput!)` The application is having its entire file system contents backed up. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onQuotaExceeded(kotlin.Long,%20kotlin.Long)(backupDataBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, quotaBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Notification that the application's current backup operation causes it to exceed the maximum size permitted by the transport. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor)(data: https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput!, appVersionCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newState: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!)` The application is being restored from backup and should replace any existing data with the contents of the backup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Long,%20android.os.ParcelFileDescriptor)(data: https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput!, appVersionCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newState: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!)` New version of `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor)` that handles a long app version code. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestoreFile(android.app.backup.FullRestoreDataInput)(data: https://developer.android.com/reference/kotlin/android/app/backup/FullRestoreDataInput)` Handle the data delivered via the given file descriptor during a full restore operation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestoreFile(android.os.ParcelFileDescriptor,%20kotlin.Long,%20java.io.File,%20kotlin.Int,%20kotlin.Long,%20kotlin.Long)(data: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, destination: https://developer.android.com/reference/kotlin/java/io/File.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, mtime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Handle the data delivered via the given file descriptor during a full restore operation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestoreFinished()()` The application's restore operation has completed. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#attachBaseContext(android.content.Context)(base: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2577,6 +2584,7 @@ Each entity written to the `https://developer.android.com/reference/kotlin/andro
 | `oldState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read-only ParcelFileDescriptor pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
 | `data` | [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!: A structured wrapper around an open, read/write file descriptor pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
 | `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
+| --- | --- |
 
 ### onCreate
 
@@ -2701,6 +2709,7 @@ The application is responsible for properly erasing its old data and replacing i
 | `data` | [BackupDataInput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput)!: A structured wrapper around an open, read-only file descriptor pointing to a full snapshot of the application's data. The application should consume every entity represented in this data stream. |
 | `appVersionCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value of the [`android:versionCode`](https://developer.android.com/guide/topics/manifest/manifest-element.html#vcode) manifest attribute, from the application that backed up this particular data set. This makes it possible for an application's agent to distinguish among any possible older data versions when asked to perform the restore operation. |
 | `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after restoring its data from the `data` stream. When a full-backup dataset is being restored, this will be `null`. |
+| --- | --- |
 
 ### onRestore
 
@@ -2764,9 +2773,11 @@ The default implementation creates the destination file/directory and populates 
 | `data` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: A read-only file descriptor from which the agent can read `size` bytes of file data. |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The number of bytes of file content to be restored to the given destination. If the file system object being restored is a directory, `size` will be zero. |
 | `destination` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: The File on disk to be restored with the given data. |
+| --- | --- |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The kind of file system object being restored. This will be either `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#TYPE_FILE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#TYPE_DIRECTORY:kotlin.Int`. |
 | `mode` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The access mode to be assigned to the destination after its data is written. This is in the standard format used by `chmod()`. |
 | `mtime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The modification time of the file when it was backed up, suitable to be assigned to the file after its data is written. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

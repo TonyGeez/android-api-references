@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # SaveRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/SaveRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class SaveRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.SaveRequest](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#) |
 
 This class represents a request to an [autofill provider](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) to save applicable data entered by the user.
@@ -26,6 +28,7 @@ This class represents a request to an [autofill provider](https://developer.andr
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getClientState](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#getClientState())`()` Gets the latest client state bundle set by the service in a [fill response](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setClientState(android.os.Bundle)). |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getDatasetIds](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#getDatasetIds())`()` Gets the ids of the datasets selected by the user, in the order in which they were selected. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FillContext](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext)!\> | [getFillContexts](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#getFillContexts())`()` Gets the contexts associated with each previous fill request. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

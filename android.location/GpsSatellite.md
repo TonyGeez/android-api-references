@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # GpsSatellite
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/GpsSatellite "View this page in Java") 
+| --- | --- |
 
 ```
 class GpsSatellite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GpsSatellite](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#) |
 
 | **This class was deprecated in API level 24.**
@@ -27,9 +29,11 @@ This class represents the current state of a GPS satellite. This class is used i
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAzimuth](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#getAzimuth())`()` Returns the azimuth of the satellite in degrees. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getElevation](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#getElevation())`()` Returns the elevation of the satellite in degrees. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrn](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#getPrn())`()` Returns the PRN (pseudo-random number) for the satellite. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSnr](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#getSnr())`()` Returns the signal to noise ratio for the satellite. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlmanac](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#hasAlmanac())`()` Returns true if the GPS engine has almanac data for the satellite. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasEphemeris](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#hasEphemeris())`()` Returns true if the GPS engine has ephemeris data for the satellite. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usedInFix](https://developer.android.com/reference/kotlin/android/location/GpsSatellite#usedInFix())`()` Returns true if the satellite was used by the GPS engine when calculating the most recent GPS fix. |
 
 ## Public methods

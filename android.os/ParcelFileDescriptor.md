@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ParcelFileDescriptor
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/ParcelFileDescriptor "View this page in Java") 
+| --- | --- |
 
 ```
 open class ParcelFileDescriptor : Closeable, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#) |
 
 The FileDescriptor returned by [Parcel.readFileDescriptor](https://developer.android.com/reference/kotlin/android/os/Parcel#readFileDescriptor()), allowing you to close it when done with it.
@@ -22,6 +24,7 @@ The FileDescriptor returned by [Parcel.readFileDescriptor](https://developer.and
 | open | [AutoCloseInputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseInputStream) An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. |
 | open | [AutoCloseOutputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseOutputStream) An OutputStream you can create on a ParcelFileDescriptor, which will take care of calling android. |
 | open | [FileDescriptorDetachedException](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.FileDescriptorDetachedException) Exception that indicates that the file descriptor was detached. |
+| --- | --- |
 | abstract | [OnCloseListener](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.OnCloseListener) Callback indicating that a ParcelFileDescriptor has been closed. |
 
 | Constants ||
@@ -29,9 +32,11 @@ The FileDescriptor returned by [Parcel.readFileDescriptor](https://developer.and
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_APPEND](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_APPEND:kotlin.Int) For use with #open: append to end of file while writing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_CREATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_CREATE:kotlin.Int) For use with #open: create the file if it doesn't already exist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_READ_ONLY](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_READ_ONLY:kotlin.Int) For use with #open: open the file with read-only access. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_READ_WRITE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_READ_WRITE:kotlin.Int) For use with #open: open the file with read and write access. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_TRUNCATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_TRUNCATE:kotlin.Int) For use with #open: erase contents of file when opening. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_WORLD_READABLE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WORLD_READABLE:kotlin.Int) For use with #open: if [MODE_CREATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_CREATE:kotlin.Int) has been supplied and this file doesn't already exist, then create the file with permissions such that any application can read it. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_WORLD_WRITEABLE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WORLD_WRITEABLE:kotlin.Int) For use with #open: if [MODE_CREATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_CREATE:kotlin.Int) has been supplied and this file doesn't already exist, then create the file with permissions such that any application can write it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_WRITE_ONLY](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WRITE_ONLY:kotlin.Int) For use with #open: open the file with write-only access. |
 
@@ -48,27 +53,35 @@ The FileDescriptor returned by [Parcel.readFileDescriptor](https://developer.and
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [adoptFd](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#adoptFd(kotlin.Int))`(`fd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Take ownership of a raw native fd in to a new ParcelFileDescriptor. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canDetectErrors](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#canDetectErrors())`()` Indicates if this ParcelFileDescriptor can communicate and detect remote errors/crashes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkError](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#checkError())`()` Detect and throw if the other end of a pipe or socket pair encountered an error or crashed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#close())`()` Close the ParcelFileDescriptor. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeWithError](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#closeWithError(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Close the ParcelFileDescriptor, informing any peer that an error occurred while processing. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)!\>! | [createPipe](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#createPipe())`()` Create two ParcelFileDescriptors structured as a data pipe. |
+| --- | --- |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)!\>! | [createReliablePipe](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#createReliablePipe())`()` Create two ParcelFileDescriptors structured as a data pipe. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)!\>! | [createReliableSocketPair](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#createReliableSocketPair())`()` Create two ParcelFileDescriptors structured as a pair of sockets connected to each other. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)!\>! | [createSocketPair](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#createSocketPair())`()` Create two ParcelFileDescriptors structured as a pair of sockets connected to each other. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [detachFd](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#detachFd())`()` Return the native fd int for this ParcelFileDescriptor and detach it from the object here. |
 | open [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [dup](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#dup())`()` Create a new ParcelFileDescriptor that is a dup of the existing FileDescriptor. |
+| --- | --- |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [dup](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#dup(java.io.FileDescriptor))`(`orig:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` Create a new ParcelFileDescriptor that is a dup of an existing FileDescriptor. |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [fromDatagramSocket](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#fromDatagramSocket(java.net.DatagramSocket))`(`datagramSocket:` ` [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#)!`)` Create a new ParcelFileDescriptor from the specified DatagramSocket. |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [fromFd](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#fromFd(kotlin.Int))`(`fd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new ParcelFileDescriptor from a raw native fd. |
+| --- | --- |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [fromSocket](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#fromSocket(java.net.Socket))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Create a new ParcelFileDescriptor from the specified Socket. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFd](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#getFd())`()` Return the native fd int for this ParcelFileDescriptor. |
 | open [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | [getFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#getFileDescriptor())`()` Retrieve the actual FileDescriptor associated with this object. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStatSize](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#getStatSize())`()` Return the total size of the file representing this fd, as determined by`stat()`. |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [open](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#open(java.io.File,%20kotlin.Int))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new ParcelFileDescriptor accessing a given file. |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)! | [open](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#open(java.io.File,%20kotlin.Int,%20android.os.Handler,%20android.os.ParcelFileDescriptor.OnCloseListener))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `listener:` ` [ParcelFileDescriptor.OnCloseListener](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.OnCloseListener)!`)` Create a new ParcelFileDescriptor accessing a given file. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseMode](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#parseMode(kotlin.String))`(`mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a string representing a file mode, such as "rw", into a bitmask suitable for use with #open. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#toString())`()` <br /> |
 | openstatic [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#) | [wrap](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#wrap(android.os.ParcelFileDescriptor,%20android.os.Handler,%20android.os.ParcelFileDescriptor.OnCloseListener))`(`pfd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)`, `listener:` ` [ParcelFileDescriptor.OnCloseListener](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.OnCloseListener)`)` Create a new ParcelFileDescriptor wrapping an already-opened file. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Protected methods ||
@@ -537,6 +550,7 @@ This method should only be used for files that you have direct access to; if you
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:The file to be opened. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired access mode, must be one of [MODE_READ_ONLY](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_READ_ONLY:kotlin.Int), [MODE_WRITE_ONLY](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WRITE_ONLY:kotlin.Int), or [MODE_READ_WRITE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_READ_WRITE:kotlin.Int); may also be any combination of [MODE_CREATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_CREATE:kotlin.Int), [MODE_TRUNCATE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_TRUNCATE:kotlin.Int), [MODE_WORLD_READABLE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WORLD_READABLE:kotlin.Int), and [MODE_WORLD_WRITEABLE](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#MODE_WORLD_WRITEABLE:kotlin.Int). |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:to call listener from; must not be null. |
+| --- | --- |
 | `listener` | [ParcelFileDescriptor.OnCloseListener](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.OnCloseListener)!:to be invoked when the returned descriptor has been closed; must not be null. |
 
 | Return ||
@@ -617,6 +631,7 @@ Create a new ParcelFileDescriptor wrapping an already-opened file.
 | `pfd` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#):The already-opened file. This value cannot be`null`. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler):to call listener from. This value cannot be`null`. |
 | `listener` | [ParcelFileDescriptor.OnCloseListener](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.OnCloseListener):to be invoked when the returned descriptor has been closed. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|

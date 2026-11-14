@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # TextDirectionHeuristic
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/TextDirectionHeuristic "View this page in Java") 
+| --- | --- |
 
 ```
 interface TextDirectionHeuristic
@@ -42,6 +43,7 @@ Guess if a chars array is in the RTL direction or not.
 | `array` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the char array. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):start index, inclusive. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length to check, must not be negative and not greater than`array.length - start`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -66,6 +68,7 @@ Guess if a`CharSequence`is in the RTL direction or not.
 | `cs` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the CharSequence. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):start index, inclusive. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length to check, must not be negative and not greater than`CharSequence.length() - start`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|

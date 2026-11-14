@@ -7,6 +7,7 @@ open class PackageIdentifier
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.PackageIdentifier](https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier#) |
 
 This class represents a uniquely identifiable package.
@@ -22,6 +23,7 @@ This class represents a uniquely identifiable package.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier#getPackageName()()` Returns the name for a package. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier#getSha256Certificate()()` Returns the SHA-256 certificate for a single-signer package. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier#hashCode()()` Returns a hash code value for the object. |
 
 ## Public constructors

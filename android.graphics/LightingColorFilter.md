@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LightingColorFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/LightingColorFilter "View this page in Java") 
+| --- | --- |
 
 ```
 open class LightingColorFilter : ColorFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter) ||
 | | ↳ | [android.graphics.LightingColorFilter](https://developer.android.com/reference/kotlin/android/graphics/LightingColorFilter#) |
 

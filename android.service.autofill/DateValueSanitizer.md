@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # DateValueSanitizer
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/DateValueSanitizer "View this page in Java") 
+| --- | --- |
 
 ```
 class DateValueSanitizer : Parcelable, Sanitizer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.DateValueSanitizer](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer#) |
 
 Sanitizes a date [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#) using a [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.html#).
@@ -37,6 +39,7 @@ new DateValueSanitizer(new java.text.SimpleDateFormat("MM/yyyy");
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/DateValueSanitizer#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

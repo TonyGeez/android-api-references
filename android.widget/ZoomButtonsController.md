@@ -8,6 +8,7 @@ open class ZoomButtonsController : View.OnTouchListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.ZoomButtonsController](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#) |
 
 > [!CAUTION]
@@ -36,15 +37,19 @@ If you are using this with a custom View, please call `https://developer.android
 | open [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getContainer()()` Gets the container that is the parent of the zoom controls. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getZoomControls()()` Gets the view for the zoom controls. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isAutoDismissed()()` Whether the zoom controls will be automatically dismissed after showing. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isVisible()()` Whether the zoom controls are visible to the user. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#onTouch(android.view.View,%20android.view.MotionEvent)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!, event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` The ZoomButtonsController implements the OnTouchListener, but this does not need to be shown in its public API. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setAutoDismissed(kotlin.Boolean)(autoDismiss: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls will be automatically dismissed after showing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setFocusable(kotlin.Boolean)(focusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls should be focusable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setOnZoomListener(android.widget.ZoomButtonsController.OnZoomListener)(listener: https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener!)` Sets the `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener` listener that receives callbacks to zoom. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setVisible(kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls should be visible to the user. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomInEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to enable the zoom in control. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomOutEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to enable the zoom out control. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomSpeed(kotlin.Long)(speed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the delay between zoom callbacks as the user holds a zoom button. |
+| --- | --- |
 
 ## Public constructors
 

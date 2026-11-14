@@ -8,6 +8,7 @@ class CookieSyncManager : Runnable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#) |
 
 > [!CAUTION]
@@ -53,9 +54,11 @@ The sync interval is 5 minutes, so you will want to force syncs manually anyway,
 | static [CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#createInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Create a singleton CookieSyncManager within a context |
 | static [CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#getInstance()()` Singleton access to a `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#resetSync()()` resetSync() resets sync manager's timer. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#run()()` When an object implementing interface `Runnable` is used to create a thread, starting the thread causes the object's `run` method to be called in that separately executing thread. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#startSync()()` startSync() requests sync manager to start sync. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#stopSync()()` stopSync() requests sync manager to stop sync. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#sync()()` sync() forces sync manager to sync now |
 
 | Protected methods ||

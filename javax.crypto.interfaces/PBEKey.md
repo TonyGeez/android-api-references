@@ -23,6 +23,7 @@ The interface to a PBE key.
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getIterationCount())`()` Returns the iteration count or 0 if not specified. |
 | abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getPassword())`()` Returns the password. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getSalt())`()` Returns the salt or null if not specified. |
+| --- | --- |
 
 ## Constants
 

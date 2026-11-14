@@ -38,6 +38,7 @@ This interface is designed to provide access to a single extension, unlike [java
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [encode](https://developer.android.com/reference/kotlin/java/security/cert/Extension#encode(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Generates the extension's DER encoding and writes it to the output stream. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getId](https://developer.android.com/reference/kotlin/java/security/cert/Extension#getId())`()` Gets the extensions's object identifier. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/security/cert/Extension#getValue())`()` Gets the extensions's DER-encoded value. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCritical](https://developer.android.com/reference/kotlin/java/security/cert/Extension#isCritical())`()` Gets the extension's criticality setting. |
 
 ## Public methods

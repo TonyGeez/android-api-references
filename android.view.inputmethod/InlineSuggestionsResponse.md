@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InlineSuggestionsResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsResponse "View this page in Java")
+| --- | --- |
 
 ```
 class InlineSuggestionsResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InlineSuggestionsResponse](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#) |
 
 This class represents an inline suggestion response. See `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion` for more information.
@@ -24,9 +26,11 @@ This class represents an inline suggestion response. See `https://developer.andr
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InlineSuggestion](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#getInlineSuggestions()()` List of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion`s returned as a part of this response. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

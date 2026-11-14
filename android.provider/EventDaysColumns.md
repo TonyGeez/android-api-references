@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # EventDaysColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.EventDaysColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface EventDaysColumns
@@ -13,6 +14,7 @@ protected interface EventDaysColumns
 | [android.provider.CalendarContract.EventDaysColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDaysColumns#) |
 
 | Known Direct Subclasses [CalendarContract.EventDays](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDays) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [CalendarContract.EventDays](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDays) | Fields and helpers for querying for a list of days that contain events. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 

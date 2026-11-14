@@ -9,6 +9,7 @@ abstract class SchemaFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#) |
 
 Factory that creates [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema) objects. Entry-point to the validation API.
@@ -45,18 +46,23 @@ Note that because the XML DTD is strongly tied to the parsing process and has a 
 | abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | [getErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#getErrorHandler())`()` Gets the current [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) set to this [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| --- | --- |
 | abstract [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | [getResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#getResourceResolver())`()` Gets the current [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) set to this [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSchemaLanguageSupported](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#isSchemaLanguageSupported(kotlin.String))`(`schemaLanguage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Is specified schema supported by this`SchemaFactory`? |
 | openstatic [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newInstance(kotlin.String))`(`schemaLanguage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Lookup an implementation of the`SchemaFactory`that supports the specified schema language and return it. |
+| --- | --- |
 | openstatic [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newInstance(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader))`(`schemaLanguage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Returns an instance of the named implementation of`SchemaFactory`. |
 | abstract [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema)! | [newSchema](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newSchema())`()` Creates a special [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema) object. |
 | open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema)! | [newSchema](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newSchema(java.io.File))`(`schema:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Parses the specified`File`as a schema and returns it as a`Schema`. |
+| --- | --- |
 | open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema)! | [newSchema](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newSchema(java.net.URL))`(`schema:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Parses the specified`URL`as a schema and returns it as a`Schema`. |
 | open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema)! | [newSchema](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newSchema(javax.xml.transform.Source))`(`schema:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`)` Parses the specified source as a schema and returns it as a schema. |
 | abstract [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema)! | [newSchema](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#newSchema(kotlin.Array))`(`schemas:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!>!`)` Parses the specified source(s) as a schema and returns it as a schema. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#setErrorHandler(org.xml.sax.ErrorHandler))`(`errorHandler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!`)` Sets the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to receive errors encountered during the`newSchema`method invocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#setProperty(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#setResourceResolver(org.w3c.dom.ls.LSResourceResolver))`(`resourceResolver:` ` [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)!`)` Sets the [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) to customize resource resolution when parsing schemas. |
 
 ## Protected constructors
@@ -122,6 +128,7 @@ Implementers are free (and encouraged) to invent their own features, using names
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#) recognizes the feature name but cannot determine its value at this time. |
 | `java.lang.NullPointerException` | if the name parameter is null. |
+| --- | --- |
 
 **See Also**
 
@@ -156,6 +163,7 @@ Implementers are free (and encouraged) to invent their own properties, using nam
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the XMLReader recognizes the property name but cannot determine its value at this time. |
 | `java.lang.NullPointerException` | if the name parameter is null. |
+| --- | --- |
 
 **See Also**
 
@@ -413,6 +421,7 @@ For RELAX NG, this method must throw [UnsupportedOperationException](https://dev
 | `org.xml.sax.SAXException` | If an error is found during processing the specified inputs. When an [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) is set, errors are reported to there first. See [setErrorHandler(org.xml.sax.ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#setErrorHandler(org.xml.sax.ErrorHandler)). |
 | `java.lang.NullPointerException` | If the`schemas`parameter itself is null or any item in the array is null. |
 | `java.lang.IllegalArgumentException` | If any item in the array is not recognized by this method. |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | If the schema language doesn't support this operation. |
 
 ### setErrorHandler
@@ -490,6 +499,7 @@ All implementations are required to support the [javax.xml.XMLConstants#FEATURE_
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#) recognizes the feature name but cannot set the requested value. |
 | `java.lang.NullPointerException` | if the name parameter is null. |
+| --- | --- |
 
 **See Also**
 
@@ -522,6 +532,7 @@ The property name is any fully-qualified URI. It is possible for a [SchemaFactor
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory#) recognizes the property name but cannot set the requested value. |
 | `java.lang.NullPointerException` | if the name parameter is null. |
+| --- | --- |
 
 ### setResourceResolver
 

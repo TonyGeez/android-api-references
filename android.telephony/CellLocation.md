@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # CellLocation
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellLocation "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CellLocation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation#) |
 
 | Known Direct Subclasses [CdmaCellLocation](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation), [GsmCellLocation](https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [CdmaCellLocation](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation) | Represents the cell location on a CDMA phone. | | [GsmCellLocation](https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation) | Represents the cell location on a GSM phone. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
 |

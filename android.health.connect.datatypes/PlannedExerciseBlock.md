@@ -6,12 +6,14 @@ Also in [U Extensions 13](https://developer.android.com/sdkExtensions)
 # PlannedExerciseBlock
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/PlannedExerciseBlock "View this page in Java") 
+| --- | --- |
 
 ```
 class PlannedExerciseBlock
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.PlannedExerciseBlock](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#) |
 
 Represents a series of [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep). Part of a [PlannedExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord).
@@ -27,6 +29,7 @@ Represents a series of [PlannedExerciseStep](https://developer.android.com/refer
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#getDescription())`()` A description for this block, e. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepetitions](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#getRepetitions())`()` The number of times this block should be repeated by the user. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep)!\> | [getSteps](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#getSteps())`()` The steps associated with this block. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock#hashCode())`()` <br /> |
 

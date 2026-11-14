@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # IccOpenLogicalChannelResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse "View this page in Java") 
+| --- | --- |
 
 ```
 open class IccOpenLogicalChannelResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.IccOpenLogicalChannelResponse](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#) |
 
 Response to the android.telephony.TelephonyManager#iccOpenLogicalChannel command.
@@ -22,6 +24,7 @@ Response to the android.telephony.TelephonyManager#iccOpenLogicalChannel command
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_CHANNEL](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#INVALID_CHANNEL:kotlin.Int) Indicates an invalid channel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_MISSING_RESOURCE](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#STATUS_MISSING_RESOURCE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NO_ERROR](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#STATUS_NO_ERROR:kotlin.Int) Possible status values returned by open channel command. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NO_SUCH_ELEMENT](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#STATUS_NO_SUCH_ELEMENT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN_ERROR](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#STATUS_UNKNOWN_ERROR:kotlin.Int) <br /> |
 
@@ -34,9 +37,11 @@ Response to the android.telephony.TelephonyManager#iccOpenLogicalChannel command
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannel](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#getChannel())`()` <br /> |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSelectResponse](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#getSelectResponse())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#getStatus())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|

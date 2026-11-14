@@ -9,10 +9,12 @@ abstract class NumberFormat : Format
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format) ||
 | | ↳ | [java.text.NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) |
 
 | Known Direct Subclasses [ChoiceFormat](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat), [DecimalFormat](https://developer.android.com/reference/kotlin/java/text/DecimalFormat) |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ChoiceFormat](https://developer.android.com/reference/kotlin/java/text/ChoiceFormat) | A`ChoiceFormat`allows you to attach a format to a range of numbers. | | [DecimalFormat](https://developer.android.com/reference/kotlin/java/text/DecimalFormat) | is a concrete subclass of`NumberFormat`that formats decimal numbers. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 `NumberFormat`is the abstract base class for all number formats. This class provides the interface for formatting and parsing numbers.`NumberFormat`also provides methods for determining which locales have number formats, and what their names are.
 
@@ -92,39 +94,51 @@ Number formats are generally not synchronized. It is recommended to create separ
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/NumberFormat#clone())`()` Overrides Cloneable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/NumberFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](https://developer.android.com/reference/kotlin/java/text/NumberFormat#format(kotlin.Double))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Specialization of format. |
+| --- | --- |
 | abstract [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/NumberFormat#format(kotlin.Double,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Specialization of format. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/NumberFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Formats a number and appends the resulting text to the given string buffer. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](https://developer.android.com/reference/kotlin/java/text/NumberFormat#format(kotlin.Long))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Specialization of format. |
+| --- | --- |
 | abstract [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/NumberFormat#format(kotlin.Long,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Specialization of format. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\> | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getAvailableLocales())`()` Returns a scientific format for the current default locale. |
 | open [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)? | [getCurrency](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getCurrency())`()` Gets the currency used by this number format when formatting currency values. |
+| --- | --- |
 | static [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getCurrencyInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getCurrencyInstance())`()` Returns a currency format for the current default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
 | openstatic [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getCurrencyInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getCurrencyInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Returns a currency format for the specified locale. |
 | static [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getInstance())`()` Returns a general-purpose number format for the current default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
+| --- | --- |
 | openstatic [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Returns a general-purpose number format for the specified locale. |
 | static [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getIntegerInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getIntegerInstance())`()` Returns an integer number format for the current default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
 | openstatic [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getIntegerInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getIntegerInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Returns an integer number format for the specified locale. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumFractionDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getMaximumFractionDigits())`()` Returns the maximum number of digits allowed in the fraction portion of a number. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumIntegerDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getMaximumIntegerDigits())`()` Returns the maximum number of digits allowed in the integer portion of a number. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumFractionDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getMinimumFractionDigits())`()` Returns the minimum number of digits allowed in the fraction portion of a number. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumIntegerDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getMinimumIntegerDigits())`()` Returns the minimum number of digits allowed in the integer portion of a number. |
 | static [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getNumberInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getNumberInstance())`()` Returns a general-purpose number format for the current default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
 | openstatic [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getNumberInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getNumberInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Returns a general-purpose number format for the specified locale. |
+| --- | --- |
 | static [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getPercentInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getPercentInstance())`()` Returns a percentage format for the current default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
 | openstatic [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat#) | [getPercentInstance](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getPercentInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Returns a percentage format for the specified locale. |
 | open [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#) | [getRoundingMode](https://developer.android.com/reference/kotlin/java/text/NumberFormat#getRoundingMode())`()` Gets the [java.math.RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#) used in this NumberFormat. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/NumberFormat#hashCode())`()` Overrides hashCode. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupingUsed](https://developer.android.com/reference/kotlin/java/text/NumberFormat#isGroupingUsed())`()` Returns true if grouping is used in this format. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseIntegerOnly](https://developer.android.com/reference/kotlin/java/text/NumberFormat#isParseIntegerOnly())`()` Returns true if this format will parse numbers as integers only. |
+| --- | --- |
 | open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](https://developer.android.com/reference/kotlin/java/text/NumberFormat#parse(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses text from the beginning of the given string to produce a number. |
 | abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](https://developer.android.com/reference/kotlin/java/text/NumberFormat#parse(kotlin.String,%20java.text.ParsePosition))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `parsePosition:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Returns a Long if possible (e.g., within the range \[Long.MIN_VALUE, Long.MAX_VALUE\] and with no decimals), otherwise a Double. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [parseObject](https://developer.android.com/reference/kotlin/java/text/NumberFormat#parseObject(kotlin.String,%20java.text.ParsePosition))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Parses text from a string to produce a`Number`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setCurrency(java.util.Currency))`(`currency:` ` [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)`)` Sets the currency used by this number format when formatting currency values. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingUsed](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setGroupingUsed(kotlin.Boolean))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not grouping will be used in this format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumFractionDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setMaximumFractionDigits(kotlin.Int))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the fraction portion of a number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumIntegerDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setMaximumIntegerDigits(kotlin.Int))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the integer portion of a number. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumFractionDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setMinimumFractionDigits(kotlin.Int))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the fraction portion of a number. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumIntegerDigits](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setMinimumIntegerDigits(kotlin.Int))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the integer portion of a number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseIntegerOnly](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setParseIntegerOnly(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not numbers should be parsed as integers only. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoundingMode](https://developer.android.com/reference/kotlin/java/text/NumberFormat#setRoundingMode(java.math.RoundingMode))`(`roundingMode:` ` [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#)?`)` Sets the [java.math.RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#) used in this NumberFormat. |
 
@@ -259,6 +273,7 @@ Specialization of format.
 | `number` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the double number to format |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):the StringBuffer to which the formatted text is to be appended |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------|
@@ -291,6 +306,7 @@ This implementation extracts the number's value using [java.lang.Number#longValu
 | `obj` | The object to format |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):the`StringBuffer`to which the formatted text is to be appended |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| --- | --- |
 | `number` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html):the number to format |
 
 | Return ||
@@ -302,6 +318,7 @@ This implementation extracts the number's value using [java.lang.Number#longValu
 | `java.lang.NullPointerException` | if`toAppendTo`or`pos`is null |
 | `java.lang.IllegalArgumentException` | if`number`is null or not an instance of`Number`. |
 | `java.lang.ArithmeticException` | if rounding is needed with rounding mode being set to RoundingMode.UNNECESSARY |
+| --- | --- |
 
 **See Also**
 
@@ -350,6 +367,7 @@ Specialization of format.
 | `number` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the long number to format |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):the StringBuffer to which the formatted text is to be appended |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------|

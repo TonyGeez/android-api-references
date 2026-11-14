@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Xml
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Xml "View this page in Java") 
+| --- | --- |
 
 ```
 open class Xml
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Xml](https://developer.android.com/reference/kotlin/android/util/Xml#) |
 
 XML utility methods.
@@ -26,9 +28,11 @@ XML utility methods.
 | openstatic [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet)! | [asAttributeSet](https://developer.android.com/reference/kotlin/android/util/Xml#asAttributeSet(org.xmlpull.v1.XmlPullParser))`(`parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`)` Return an AttributeSet interface for use with the given XmlPullParser. |
 | openstatic [Xml.Encoding](https://developer.android.com/reference/kotlin/android/util/Xml.Encoding)! | [findEncodingByName](https://developer.android.com/reference/kotlin/android/util/Xml#findEncodingByName(kotlin.String))`(`encodingName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds an encoding by name. |
 | openstatic [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)! | [newPullParser](https://developer.android.com/reference/kotlin/android/util/Xml#newPullParser())`()` Returns a new pull parser with namespace support. |
+| --- | --- |
 | openstatic [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer.html#)! | [newSerializer](https://developer.android.com/reference/kotlin/android/util/Xml#newSerializer())`()` Creates a new xml serializer. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/android/util/Xml#parse(java.io.InputStream,%20android.util.Xml.Encoding,%20org.xml.sax.ContentHandler))`(`in:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `encoding:` ` [Xml.Encoding](https://developer.android.com/reference/kotlin/android/util/Xml.Encoding)!`, `contentHandler:` ` [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)!`)` Parses xml from the given input stream and fires events on the given SAX handler. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/android/util/Xml#parse(java.io.Reader,%20org.xml.sax.ContentHandler))`(`in:` ` [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!`, `contentHandler:` ` [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)!`)` Parses xml from the given reader and fires events on the given SAX handler. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/android/util/Xml#parse(kotlin.String,%20org.xml.sax.ContentHandler))`(`xml:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentHandler:` ` [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)!`)` Parses the given xml string and fires events on the given SAX handler. |
 
 | Properties ||

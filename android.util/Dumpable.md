@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # Dumpable
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Dumpable "View this page in Java") 
+| --- | --- |
 
 ```
 interface Dumpable

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ScanSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/ScanSettings "View this page in Java") 
+| --- | --- |
 
 ```
 class ScanSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.ScanSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#) |
 
 Bluetooth LE scan settings are passed to android.bluetooth.le.BluetoothLeScanner#startScan to define the parameters for the scan.
@@ -26,21 +28,27 @@ Bluetooth LE scan settings are passed to android.bluetooth.le.BluetoothLeScanner
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [AUTO_BATCH_MIN_REPORT_DELAY_MILLIS](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#AUTO_BATCH_MIN_REPORT_DELAY_MILLIS:kotlin.Long) Minimum report delay for [ScanSettings.CALLBACK_TYPE_ALL_MATCHES_AUTO_BATCH](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#CALLBACK_TYPE_ALL_MATCHES_AUTO_BATCH:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_TYPE_ALL_MATCHES](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#CALLBACK_TYPE_ALL_MATCHES:kotlin.Int) Trigger a callback for every Bluetooth advertisement found that matches the filter criteria. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_TYPE_ALL_MATCHES_AUTO_BATCH](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#CALLBACK_TYPE_ALL_MATCHES_AUTO_BATCH:kotlin.Int) A result callback for every Bluetooth advertisement found that matches the filter criteria is only triggered when screen is turned on. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_TYPE_FIRST_MATCH](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#CALLBACK_TYPE_FIRST_MATCH:kotlin.Int) A result callback is only triggered for the first advertisement packet received that matches the filter criteria. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_TYPE_MATCH_LOST](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#CALLBACK_TYPE_MATCH_LOST:kotlin.Int) Receive a callback when advertisements are no longer received from a device that has been previously reported by a first match callback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_MODE_AGGRESSIVE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#MATCH_MODE_AGGRESSIVE:kotlin.Int) In Aggressive mode, hw will determine a match sooner even with feeble signal strength and few number of sightings/match in a duration. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_MODE_STICKY](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#MATCH_MODE_STICKY:kotlin.Int) For sticky mode, higher threshold of signal strength and sightings is required before reporting by hw. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_NUM_FEW_ADVERTISEMENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#MATCH_NUM_FEW_ADVERTISEMENT:kotlin.Int) Match few advertisement per filter, depends on current capability and availability of the resources in hw. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_NUM_MAX_ADVERTISEMENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#MATCH_NUM_MAX_ADVERTISEMENT:kotlin.Int) Match as many advertisement per filter as hw could allow, depends on current capability and availability of the resources in hw. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_NUM_ONE_ADVERTISEMENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#MATCH_NUM_ONE_ADVERTISEMENT:kotlin.Int) Determines how many advertisements to match per filter, as this is scarce hw resource. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHY_LE_ALL_SUPPORTED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#PHY_LE_ALL_SUPPORTED:kotlin.Int) Use all supported PHYs for scanning. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_MODE_BALANCED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_MODE_BALANCED:kotlin.Int) Perform Bluetooth LE scan in balanced power mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_MODE_LOW_LATENCY](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_MODE_LOW_LATENCY:kotlin.Int) Scan using highest duty cycle. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_MODE_LOW_POWER](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_MODE_LOW_POWER:kotlin.Int) Perform Bluetooth LE scan in low power mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_MODE_OPPORTUNISTIC](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_MODE_OPPORTUNISTIC:kotlin.Int) A special Bluetooth LE scan mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_TYPE_ACTIVE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_TYPE_ACTIVE:kotlin.Int) Does active scanning, scan results are delivered upon scan responses arrive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_TYPE_PASSIVE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_TYPE_PASSIVE:kotlin.Int) Does passive scanning, scan responses are ignored. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCAN_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#SCAN_TYPE_UNKNOWN:kotlin.Int) Scan type is unknown. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -51,12 +59,15 @@ Bluetooth LE scan settings are passed to android.bluetooth.le.BluetoothLeScanner
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallbackType](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getCallbackType())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLegacy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getLegacy())`()` Returns whether only legacy advertisements will be returned. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getPhy())`()` Returns the physical layer used during a scan. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getReportDelayMillis](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getReportDelayMillis())`()` Returns report delay timestamp based on the device clock. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssiThreshold](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getRssiThreshold())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScanMode](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getScanMode())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScanResultType](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getScanResultType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScanType](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getScanType())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

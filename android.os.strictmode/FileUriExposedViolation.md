@@ -3,15 +3,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # FileUriExposedViolation
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/strictmode/FileUriExposedViolation "View this page in Java")
+| --- | --- |
 
 ```
 class FileUriExposedViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.FileUriExposedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/FileUriExposedViolation#) |
+| --- | --- | --- | --- |
 
 ## Summary
 

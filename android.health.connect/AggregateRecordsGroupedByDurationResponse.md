@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AggregateRecordsGroupedByDurationResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByDurationResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class AggregateRecordsGroupedByDurationResponse<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.AggregateRecordsGroupedByDurationResponse](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#) |
 
 Class to represent the response from [HealthConnectManager.aggregateGroupByDuration](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregateGroupByDuration(android.health.connect.AggregateRecordsRequest,%20java.time.Duration,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
@@ -22,6 +24,7 @@ Class to represent the response from [HealthConnectManager.aggregateGroupByDurat
 | T? | [get](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#get(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | [getDataOrigins](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#getDataOrigins(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` Returns a set of [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) s for the underlying aggregation record, empty set if the corresponding aggregation doesn't exist and or if multiple records were present. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getEndTime](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#getEndTime())`()` <br /> |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getStartTime](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#getStartTime())`()` <br /> |
 | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#)? | [getZoneOffset](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse#getZoneOffset(android.health.connect.datatypes.AggregationType))`(`aggregationType:` ` [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>`)` <br /> |
 

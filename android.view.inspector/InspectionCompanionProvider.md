@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # InspectionCompanionProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/InspectionCompanionProvider "View this page in Java") 
+| --- | --- |
 
 ```
 interface InspectionCompanionProvider
@@ -13,6 +14,7 @@ interface InspectionCompanionProvider
 | [android.view.inspector.InspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanionProvider#) |
 
 | Known Direct Subclasses [StaticInspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/StaticInspectionCompanionProvider) |----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [StaticInspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/StaticInspectionCompanionProvider) | An inspection companion provider that finds companions as inner classes or generated code. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An interface for services that can provide inspection companions for a class.
 

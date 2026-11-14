@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # TextClassificationSessionFactory
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface TextClassificationSessionFactory

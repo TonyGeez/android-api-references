@@ -8,6 +8,7 @@ open class Time
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.format.Time](https://developer.android.com/reference/kotlin/android/text/format/Time#) |
 
 > [!CAUTION]
@@ -33,21 +34,27 @@ Known issues:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#EPOCH_JULIAN_DAY:kotlin.Int` The Julian day of the epoch, that is, January 1, 1970 on the Gregorian calendar. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#FRIDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#HOUR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#MINUTE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#MONDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#MONDAY_BEFORE_JULIAN_EPOCH:kotlin.Int` The Julian day of the Monday in the week of the epoch, December 29, 1969 on the Gregorian calendar. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#MONTH:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#MONTH_DAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#SATURDAY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#SECOND:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#SUNDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#THURSDAY:kotlin.Int` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#TIMEZONE_UTC:kotlin.String` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#TUESDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#WEDNESDAY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#WEEK_DAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#WEEK_NUM:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#YEAR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#YEAR_DAY:kotlin.Int` <br /> |
 
 | Public constructors ||
@@ -61,27 +68,35 @@ Known issues:
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#after(android.text.format.Time)(that: https://developer.android.com/reference/kotlin/android/text/format/Time#!)` Returns true if the time represented by this Time object occurs after the given time. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#before(android.text.format.Time)(that: https://developer.android.com/reference/kotlin/android/text/format/Time#!)` Returns true if the time represented by this Time object occurs before the given time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#clear(kotlin.String)(timezoneId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Clears all values, setting the timezone to the given timezone. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#compare(android.text.format.Time,%20android.text.format.Time)(a: https://developer.android.com/reference/kotlin/android/text/format/Time#!, b: https://developer.android.com/reference/kotlin/android/text/format/Time#!)` Compare two `Time` objects and return a negative number if `a` is less than `b`, a positive number if `a` is greater than `b`, or 0 if they are equal. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/format/Time#format(kotlin.String)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Print the current value given the format string provided. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/format/Time#format2445()()` Format according to RFC 2445 DATE-TIME type. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/format/Time#format3339(kotlin.Boolean)(allDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Return a string in the RFC 3339 format. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the maximum possible value for the given field given the value of the other fields. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/format/Time#getCurrentTimezone()()` Returns the timezone string that is currently set for the device. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#getJulianDay(kotlin.Long,%20kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, gmtoffSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Computes the Julian day number for a point in time in a particular timezone. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#getJulianMondayFromWeeksSinceEpoch(kotlin.Int)(week: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Takes a number of weeks since the epoch and calculates the Julian day of the Monday for that week. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#getWeekNumber()()` Computes the week number according to ISO 8601. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#getWeeksSinceEpochFromJulianDay(kotlin.Int,%20kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, firstDayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the week since `https://developer.android.com/reference/kotlin/android/text/format/Time#EPOCH_JULIAN_DAY:kotlin.Int` (Jan 1, 1970) adjusted for first day of week. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#isEpoch(android.text.format.Time)(time: https://developer.android.com/reference/kotlin/android/text/format/Time#!)` Returns true if the instant of the supplied time would be for the Gregorian calendar date January 1, 1970 *for a user observing UTC*, i. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#normalize(kotlin.Boolean)(ignoreDst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Ensures the values in each field are in range. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#parse(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses a date-time string in either the RFC 2445 format or an abbreviated format that does not include the "time" field. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#parse3339(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parse a time in RFC 3339 format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#set(android.text.format.Time)(that: https://developer.android.com/reference/kotlin/android/text/format/Time#!)` Copy the value of that to this Time object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(monthDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the date from the given fields. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, monthDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the fields. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#set(kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the fields in this Time object given the UTC milliseconds. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#setJulianDay(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the time from the given Julian day number, which must be based on the same timezone that is set in this Time object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#setToNow()()` Sets the time of the given Time object to the current time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#switchTimezone(kotlin.String)(timezone: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Convert this time object so the time represented remains the same, but is instead located in a different timezone. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#toMillis(kotlin.Boolean)(ignoreDst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Converts this time to milliseconds. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#toString()()` Return the current time in YYYYMMDDTHHMMSS\<tz\> format |
 
@@ -90,15 +105,19 @@ Known issues:
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#allDay:kotlin.Boolean` True if this is an allDay event. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#gmtoff:kotlin.Long` Offset in seconds from UTC including any DST offset. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#hour:kotlin.Int` Hour of day \[0-23\] |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#isDst:kotlin.Int` This time is in daylight savings time. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#minute:kotlin.Int` Minute \[0-59\] |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#month:kotlin.Int` Month \[0-11\] |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#monthDay:kotlin.Int` Day of month \[1-31\] |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#second:kotlin.Int` Seconds \[0-61\] (2 leap seconds allowed) |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/format/Time#timezone:kotlin.String` The timezone for this Time. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#weekDay:kotlin.Int` Day of week \[0-6\] |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#year:kotlin.Int` Year. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/format/Time#yearDay:kotlin.Int` Day of year \[0-365\] |
+| --- | --- |
 
 ## Constants
 
@@ -808,6 +827,7 @@ Sets the date from the given fields. Also sets allDay to true. Sets weekDay, yea
 | `monthDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day of the month (in the range \[1,31\]) |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the zero-based month number (in the range \[0,11\]) |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year |
+| --- | --- |
 
 ### set
 

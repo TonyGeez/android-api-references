@@ -7,9 +7,11 @@ open class GLSurfaceView : SurfaceView, SurfaceHolder.Callback2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#) ||
 | | | ↳ | [android.opengl.GLSurfaceView](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#) |
+| --- | --- | --- | --- |
 
 An implementation of SurfaceView that uses the dedicated surface for displaying OpenGL rendering.
 
@@ -107,6 +109,7 @@ class MyGLSurfaceView extends GLSurfaceView {
 | abstract | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLConfigChooser` An interface for choosing an EGLConfig configuration from a list of potential configurations. |
 | abstract | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLContextFactory` An interface for customizing the eglCreateContext and eglDestroyContext calls. |
 | abstract | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory` An interface for customizing the eglCreateWindowSurface and eglDestroySurface calls. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.GLWrapper` An interface used to wrap a GL interface. |
 | abstract | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer` A generic renderer interface. |
 
@@ -388,6 +391,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -504,6 +508,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -598,6 +603,7 @@ Constant Value Description gone 2 Completely hidden, as if the view had not been
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#DEBUG_CHECK_GL_ERROR:kotlin.Int` Check glError() after every GL call and throw an exception if glError indicates that an error has occurred. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#DEBUG_LOG_GL_CALLS:kotlin.Int` Log GL calls to the system log at "verbose" level with tag "GLSurfaceView". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#RENDERMODE_CONTINUOUSLY:kotlin.Int` The renderer is called continuously to re-render the scene. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#RENDERMODE_WHEN_DIRTY:kotlin.Int` The renderer only renders when the surface is created, or when `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#requestRender()` is called. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
@@ -1712,24 +1718,31 @@ The Surface lifecycle is tied to SurfaceView visibility. The Surface is created 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#getDebugFlags()()` Get the current value of the debug flags. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#getPreserveEGLContextOnPause()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#getRenderMode()()` Get the current rendering mode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#onPause()()` Pause the rendering thread, optionally tearing down the EGL context depending upon the value of `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setPreserveEGLContextOnPause(kotlin.Boolean)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#onResume()()` Resumes the rendering thread, re-creating the OpenGL context if necessary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#queueEvent(java.lang.Runnable)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Queue a runnable to be run on the GL rendering thread. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#requestRender()()` Request that the renderer render a frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setDebugFlags(kotlin.Int)(debugFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the debug flags to a new value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLConfigChooser(android.opengl.GLSurfaceView.EGLConfigChooser)(configChooser: https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLConfigChooser!)` Install a custom EGLConfigChooser. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLConfigChooser(kotlin.Boolean)(needDepth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Install a config chooser which will choose a config as close to 16-bit RGB as possible, with or without an optional depth buffer as close to 16-bits as possible. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLConfigChooser(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(redSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, greenSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, blueSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alphaSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, depthSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stencilSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Install a config chooser which will choose a config with at least the specified depthSize and stencilSize, and exactly the specified redSize, greenSize, blueSize and alphaSize. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLContextClientVersion(kotlin.Int)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inform the default EGLContextFactory and default EGLConfigChooser which EGLContext client version to pick. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLContextFactory(android.opengl.GLSurfaceView.EGLContextFactory)(factory: https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLContextFactory!)` Install a custom EGLContextFactory. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLWindowSurfaceFactory(android.opengl.GLSurfaceView.EGLWindowSurfaceFactory)(factory: https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory!)` Install a custom EGLWindowSurfaceFactory. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setGLWrapper(android.opengl.GLSurfaceView.GLWrapper)(glWrapper: https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.GLWrapper!)` Set the glWrapper. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setPreserveEGLContextOnPause(kotlin.Boolean)(preserveOnPause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the EGL context is preserved when the GLSurfaceView is paused and resumed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setRenderMode(kotlin.Int)(renderMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the rendering mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setRenderer(android.opengl.GLSurfaceView.Renderer)(renderer: https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer!)` Set the renderer associated with this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#surfaceChanged(android.view.SurfaceHolder,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(holder: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is part of the SurfaceHolder. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#surfaceCreated(android.view.SurfaceHolder)(holder: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#)` This method is part of the SurfaceHolder. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#surfaceDestroyed(android.view.SurfaceHolder)(holder: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#)` This method is part of the SurfaceHolder. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#surfaceRedrawNeeded(android.view.SurfaceHolder)(holder: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#)` This method is part of the SurfaceHolder. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#surfaceRedrawNeededAsync(android.view.SurfaceHolder,%20java.lang.Runnable)(holder: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#, finishDrawing: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` This method is part of the SurfaceHolder. |
 
@@ -1738,6 +1751,7 @@ The Surface lifecycle is tied to SurfaceView visibility. The Surface is created 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#onAttachedToWindow()()` This method is used as part of the View class and is not normally called or subclassed by clients of GLSurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -3507,6 +3521,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4877,6 +4892,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7854,6 +7870,7 @@ This method is part of the SurfaceHolder.Callback interface, and is not normally
 | `holder` | [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` of the surface. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_F16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_1010102:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_565:kotlin.Int` |
 | `width` | The new width of the surface. Value is 0 or greater |
+| --- | --- |
 | `height` | The new height of the surface. Value is 0 or greater |
 
 ### surfaceCreated

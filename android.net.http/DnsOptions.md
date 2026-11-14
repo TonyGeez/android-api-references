@@ -4,12 +4,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # DnsOptions
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/http/DnsOptions "View this page in Java")
+| --- | --- |
 
 ```
 class DnsOptions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.http.DnsOptions](https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#) |
 
 A class configuring the host resolution functionality. Note that while we refer to `DNS` as the most common mechanism being used for brevity, settings apply to other means of resolving hostnames like hosts file resolution.
@@ -37,15 +39,18 @@ Most configuration in this class is only applicable if the built-in DNS resolver
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#DNS_OPTION_DISABLED:kotlin.Int` Option is disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#DNS_OPTION_ENABLED:kotlin.Int` Option is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#DNS_OPTION_UNSPECIFIED:kotlin.Int` Option is unspecified, platform default value will be used. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCache()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCache(kotlin.Int)` |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCachePeriod()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCachePeriod(java.time.Duration)` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPreestablishConnectionsToStaleDnsResults()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPreestablishConnectionsToStaleDnsResults(kotlin.Int)` |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getStaleDns()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDns(kotlin.Int)` |
 | [DnsOptions.StaleDnsOptions](https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.StaleDnsOptions)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getStaleDnsOptions()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDnsOptions(android.net.http.DnsOptions.StaleDnsOptions)` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getUseHttpStackDnsResolver()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setUseHttpStackDnsResolver(kotlin.Int)` |
+| --- | --- |
 
 ## Constants
 

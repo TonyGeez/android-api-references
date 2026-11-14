@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ViewAnimationUtils
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewAnimationUtils "View this page in Java") 
+| --- | --- |
 
 ```
 class ViewAnimationUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.ViewAnimationUtils](https://developer.android.com/reference/kotlin/android/view/ViewAnimationUtils#) |
 
 Defines common utilities for working with View's animations.
@@ -65,5 +67,6 @@ Note that if any start delay is set on the reveal animator, the start radius wil
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The View will be clipped to the animating circle. |
 | `centerX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The x coordinate of the center of the animating circle, relative to`view`. |
 | `centerY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The y coordinate of the center of the animating circle, relative to`view`. |
+| --- | --- |
 | `startRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The starting radius of the animating circle. |
 | `endRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The ending radius of the animating circle. |

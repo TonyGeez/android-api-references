@@ -6,12 +6,14 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 # SliceMetrics
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/slice/SliceMetrics "View this page in Java") 
+| --- | --- |
 
 ```
 open class SliceMetrics
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.slice.SliceMetrics](https://developer.android.com/reference/kotlin/android/app/slice/SliceMetrics#) |
 
 | **This class was deprecated in API level 35.**
@@ -31,6 +33,7 @@ Metrics interface for slices. This is called by SliceView, so Slice developers s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logHidden](https://developer.android.com/reference/kotlin/android/app/slice/SliceMetrics#logHidden())`()` To be called whenever the slice becomes invisible to the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logTouch](https://developer.android.com/reference/kotlin/android/app/slice/SliceMetrics#logTouch(kotlin.Int,%20android.net.Uri))`(`actionType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subSlice:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` To be called whenever the user invokes a discrete action via a slice. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logVisible](https://developer.android.com/reference/kotlin/android/app/slice/SliceMetrics#logVisible())`()` To be called whenever the slice becomes visible to the user. |
+| --- | --- |
 
 ## Public constructors
 

@@ -9,12 +9,15 @@ open class ZipException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.zip.ZipException](https://developer.android.com/reference/kotlin/java/util/zip/ZipException#) |
 
 | Known Direct Subclasses [JarException](https://developer.android.com/reference/kotlin/java/util/jar/JarException.html#) |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [JarException](https://developer.android.com/reference/kotlin/java/util/jar/JarException.html#) | Signals that an error of some sort has occurred while reading from or writing to a JAR file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Signals that a Zip exception of some sort has occurred.
 

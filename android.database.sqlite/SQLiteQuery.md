@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SQLiteQuery
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteQuery "View this page in Java") 
+| --- | --- |
 
 ```
 class SQLiteQuery : SQLiteProgram
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.database.sqlite.SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable) |||
 | | ↳ | [android.database.sqlite.SQLiteProgram](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram) ||
 | | | ↳ | [android.database.sqlite.SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery#) |
+| --- | --- | --- | --- |
 
 Represents a query that reads the resulting rows into a [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery#). This class is used by [SQLiteCursor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor) and isn't useful itself.
 

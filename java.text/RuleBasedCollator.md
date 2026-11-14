@@ -9,6 +9,7 @@ open class RuleBasedCollator : Collator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.text.Collator](https://developer.android.com/reference/kotlin/java/text/Collator) ||
 | | ↳ | [java.text.RuleBasedCollator](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#) |
 
@@ -143,9 +144,11 @@ The following example demonstrates how to change the order of non-spacing accent
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#clone())`()` Standard override; no change in semantics. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#compare(kotlin.String,%20kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the character data stored in two different strings based on the collation rules. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two collation objects. |
+| --- | --- |
 | open [CollationElementIterator](https://developer.android.com/reference/kotlin/java/text/CollationElementIterator)! | [getCollationElementIterator](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#getCollationElementIterator(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a CollationElementIterator for the given String. |
 | open [CollationElementIterator](https://developer.android.com/reference/kotlin/java/text/CollationElementIterator)! | [getCollationElementIterator](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#getCollationElementIterator(java.text.CharacterIterator))`(`source:` ` [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator)!`)` Returns a CollationElementIterator for the given CharacterIterator. |
 | open [CollationKey](https://developer.android.com/reference/kotlin/java/text/CollationKey)! | [getCollationKey](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#getCollationKey(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Transforms the string into a series of characters that can be compared with CollationKey. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRules](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#getRules())`()` Gets the table-based rules for the collation object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator#hashCode())`()` Generates the hash code for the table-based collation object |
 

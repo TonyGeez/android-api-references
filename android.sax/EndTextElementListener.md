@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # EndTextElementListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/sax/EndTextElementListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface EndTextElementListener
@@ -13,6 +14,7 @@ interface EndTextElementListener
 | [android.sax.EndTextElementListener](https://developer.android.com/reference/kotlin/android/sax/EndTextElementListener#) |
 
 | Known Direct Subclasses [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) | Listens for the beginning and ending of text elements. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the end of text elements.
 

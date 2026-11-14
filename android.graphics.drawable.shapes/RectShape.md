@@ -5,16 +5,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RectShape
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/RectShape "View this page in Java") 
+| --- | --- |
 
 ```
 open class RectShape : Shape
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) ||
 | | ↳ | [android.graphics.drawable.shapes.RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#) |
 
 | Known Direct Subclasses [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape), [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape), [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape) |------------------------------------------------------------------------------------------------------------------|-------------------------------------| | [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape) | Creates an arc shape. | | [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape) | Defines an oval shape. | | [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape) | Creates a rounded-corner rectangle. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines a rectangle shape.
 
@@ -31,6 +34,7 @@ The rectangle can be drawn to a Canvas with its own draw() method, but more grap
 | open [RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#) | [clone](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#clone())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#draw(android.graphics.Canvas,%20android.graphics.Paint))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#hashCode())`()` <br /> |
 

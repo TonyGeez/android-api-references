@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CreateCredentialResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/CreateCredentialResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class CreateCredentialResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.CreateCredentialResponse](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialResponse#) |
 
 A response object that encapsulates the result of a successful credential creation execution.
@@ -30,6 +32,7 @@ A response object that encapsulates the result of a successful credential creati
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialResponse#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getData](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialResponse#getData())`()` Returns the response data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialResponse#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

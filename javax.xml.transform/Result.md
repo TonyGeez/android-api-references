@@ -11,6 +11,7 @@ interface Result
 | [javax.xml.transform.Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#) |
 
 | Known Direct Subclasses [DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult), [SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult), [StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult) |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult) | Acts as a holder for a transformation result tree in the form of a Document Object Model (DOM) tree. | | [SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult) | Acts as an holder for a transformation Result. | | [StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult) | Acts as an holder for a transformation result, which may be XML, plain Text, HTML, or some other form of markup. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An object that implements this interface contains the information needed to build a transformation result tree.
 

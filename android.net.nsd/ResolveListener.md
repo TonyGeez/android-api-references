@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # ResolveListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface ResolveListener
@@ -21,6 +22,7 @@ Callback for use with android.net.nsd.NsdManager#resolveService to resolve the s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolutionStopped](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onResolutionStopped(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)`)` Called on the internal thread or with an executor passed to android. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolveFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onResolveFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called on the internal thread or with an executor passed to android. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceResolved](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onServiceResolved(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` Called on the internal thread or with an executor passed to android. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopResolutionFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onStopResolutionFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called once on the internal thread or with an executor passed to android. |
 
 ## Public methods

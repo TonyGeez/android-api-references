@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # BlockingOption
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/BlockingOption "View this page in Java")
+| --- | --- |
 
 ```
 class BlockingOption : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.BlockingOption](https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#) |
 
 Options for blocking a network through `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#disallowCurrentSuggestedNetwork(android.net.wifi.BlockingOption)`
@@ -28,9 +30,11 @@ Options for blocking a network through `https://developer.android.com/reference/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#getBlockingTimeSeconds()()` Get the blocking time which is set by `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption.Builder#Builder(kotlin.Int)` |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#isBlockingBssidOnly()()` Return whether or not a single BSSID is being blocked, which is set by `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption.Builder#setBlockingBssidOnly(kotlin.Boolean)` |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

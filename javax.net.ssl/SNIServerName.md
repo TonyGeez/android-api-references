@@ -9,9 +9,11 @@ abstract class SNIServerName
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.SNIServerName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#) |
 
 | Known Direct Subclasses [SNIHostName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SNIHostName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName) | Instances of this class represent a server name of type [host_name](https://developer.android.com/reference/kotlin/javax/net/ssl/StandardConstants#SNI_HOST_NAME:kotlin.Int) in a Server Name Indication (SNI) extension. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Instances of this class represent a server name in a Server Name Indication (SNI) extension.
 
@@ -30,6 +32,7 @@ The SNI extension is a feature that extends the SSL/TLS protocols to indicate wh
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this server name. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#getEncoded())`()` Returns a copy of the encoded server name value of this server name. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#getType())`()` Returns the name type of this server name. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#hashCode())`()` Returns a hash code value for this server name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName#toString())`()` Returns a string representation of this server name, including the server name type and the encoded server name value in this`SNIServerName`object. |
 

@@ -6,12 +6,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # HeaderBlock
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/HeaderBlock "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class HeaderBlock
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.http.HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock#) |
 
 Unmodifiable container of headers or trailers.

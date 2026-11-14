@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LayoutInflater
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/LayoutInflater "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class LayoutInflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#) |
 
 Instantiates a layout XML file into its corresponding [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) objects. It is never used directly. Instead, use [android.app.Activity#getLayoutInflater()](https://developer.android.com/reference/kotlin/android/app/Activity.html#getLayoutInflater()) or android.content.Context#getSystemService to retrieve a standard LayoutInflater instance that is already hooked up to the current context and correctly configured for the device you are running on.
@@ -28,6 +30,7 @@ For performance reasons, view inflation relies heavily on pre-processing of XML 
 | abstract | [Factory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory) <br /> |
 | abstract | [Factory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2) <br /> |
 | abstract | [Filter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Filter) Hook to allow clients of the LayoutInflater to restrict the set of Views that are allowed to be inflated. |
+| --- | --- |
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -39,18 +42,23 @@ For performance reasons, view inflation relies heavily on pre-processing of XML 
 | abstract [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#)! | [cloneInContext](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#cloneInContext(android.content.Context))`(`newContext:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Create a copy of the existing LayoutInflater object, with the copy pointing to a different Context than the original. |
 | [View](https://developer.android.com/reference/kotlin/android/view/View)? | [createView](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#createView(android.content.Context,%20kotlin.String,%20kotlin.String,%20android.util.AttributeSet))`(`viewContext:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?`)` Low-level function for instantiating a view by name. |
 | [View](https://developer.android.com/reference/kotlin/android/view/View)! | [createView](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#createView(kotlin.String,%20kotlin.String,%20android.util.AttributeSet))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`)` Low-level function for instantiating a view by name. |
+| --- | --- |
 | open static [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#)! | [from](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#from(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Obtains the LayoutInflater from the given context. |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | [getContext](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#getContext())`()` Return the context we are running in, for access to resources, class loader, etc. |
 | [LayoutInflater.Factory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory)! | [getFactory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#getFactory())`()` Return the current [Factory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory) (or null). |
+| --- | --- |
 | [LayoutInflater.Factory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2)! | [getFactory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#getFactory2())`()` Return the current [Factory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2). |
 | open [LayoutInflater.Filter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Filter)! | [getFilter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#getFilter())`()` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | [inflate](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#inflate(kotlin.Int,%20android.view.ViewGroup))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?`)` Inflate a new view hierarchy from the specified xml resource. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | [inflate](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#inflate(kotlin.Int,%20android.view.ViewGroup,%20kotlin.Boolean))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified xml resource. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | [inflate](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#inflate(org.xmlpull.v1.XmlPullParser,%20android.view.ViewGroup))`(`parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`, `root:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?`)` Inflate a new view hierarchy from the specified xml node. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)! | [inflate](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#inflate(org.xmlpull.v1.XmlPullParser,%20android.view.ViewGroup,%20kotlin.Boolean))`(`parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`, `root:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified XML node. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View)? | [onCreateView](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#onCreateView(android.content.Context,%20android.view.View,%20kotlin.String,%20android.util.AttributeSet))`(`viewContext:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `parent:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?`)` Version of [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#onCreateView(android.view.View,%20kotlin.String,%20android.util.AttributeSet)) that also takes the inflation context. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#setFactory(android.view.LayoutInflater.Factory))`(`factory:` ` [LayoutInflater.Factory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory)!`)` Attach a custom Factory interface for creating views while using this LayoutInflater. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#setFactory2(android.view.LayoutInflater.Factory2))`(`factory:` ` [LayoutInflater.Factory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2)!`)` Like [setFactory](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#setFactory(android.view.LayoutInflater.Factory)), but allows you to set a [Factory2](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2) interface. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater#setFilter(android.view.LayoutInflater.Filter))`(`filter:` ` [LayoutInflater.Filter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Filter)!`)` Sets the [Filter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Filter) to by this LayoutInflater. |
 
 | Protected methods ||
@@ -133,6 +141,7 @@ There are two things that can happen in an error case: either the exception desc
 | `viewContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context used as the context parameter of the View constructor This value cannot be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The full name of the class to be instantiated. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The XML attributes supplied for this instance. This value may be `null`. |
+| --- | --- |
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 | Return ||
@@ -257,6 +266,7 @@ Inflate a new view hierarchy from the specified xml resource. Throws [InflateExc
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): ID for an XML layout resource to load (e.g., `R.layout.main_page`) |
 | `root` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
 | `attachToRoot` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the inflated hierarchy should be attached to the root parameter? If false, root is only used to create the correct subclass of LayoutParams for the root view in the XML. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -307,6 +317,7 @@ Inflate a new view hierarchy from the specified XML node. Throws [InflateExcepti
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!: XML dom node containing the description of the view hierarchy. |
 | `root` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
 | `attachToRoot` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the inflated hierarchy should be attached to the root parameter? If false, root is only used to create the correct subclass of LayoutParams for the root view in the XML. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -332,6 +343,7 @@ Version of [onCreateView(android.view.View,java.lang.String,android.util.Attribu
 | `viewContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The Context to be used as a constructor parameter for the View This value cannot be `null`. |
 | `parent` | [View](https://developer.android.com/reference/kotlin/android/view/View)?: The future parent of the returned view. *Note that this may be null.* |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The fully qualified class name of the View to be create. This value cannot be `null`. |
+| --- | --- |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: An AttributeSet of attributes to apply to the View. This value may be `null`. |
 
 | Return ||
@@ -395,6 +407,7 @@ Version of [onCreateView(java.lang.String,android.util.AttributeSet)](https://de
 | `parent` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: The future parent of the returned view. *Note that this may be null.* |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The fully qualified class name of the View to be create. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: An AttributeSet of attributes to apply to the View. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------|

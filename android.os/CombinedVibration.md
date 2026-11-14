@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # CombinedVibration
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/CombinedVibration "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CombinedVibration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#) |
 
 A CombinedVibration describes a combination of haptic effects to be performed by one or more [Vibrators](https://developer.android.com/reference/kotlin/android/os/Vibrator). These effects may be any number of things, from single shot vibrations to complex waveforms.
@@ -30,6 +32,7 @@ A CombinedVibration describes a combination of haptic effects to be performed by
 | openstatic [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#) | [createParallel](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#createParallel(android.os.VibrationEffect))`(`effect:` ` [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect)`)` Create a vibration that plays a single effect in parallel on all vibrators. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#describeContents())`()` <br /> |
 | openstatic [CombinedVibration.ParallelCombination](https://developer.android.com/reference/kotlin/android/os/CombinedVibration.ParallelCombination) | [startParallel](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#startParallel())`()` Start creating a vibration that plays effects in parallel on one or more vibrators. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

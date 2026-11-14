@@ -9,6 +9,7 @@ open class CertPathBuilder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#) |
 
 A class for building certification paths (also known as certificate chains).
@@ -51,9 +52,11 @@ However, this is not true for the non-static methods defined by this class. Unle
 | [CertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderResult)! | [build](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#build(java.security.cert.CertPathParameters))`(`params:` ` [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters)!`)` Attempts to build a certification path using the specified algorithm parameter set. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getAlgorithm())`()` Returns the name of the algorithm of this`CertPathBuilder`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getDefaultType())`()` Returns the default`CertPathBuilder`type as specified by the`certpathbuilder.type`security property, or the string "PKIX" if no such property exists. |
+| --- | --- |
 | openstatic [CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
 | openstatic [CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
 | openstatic [CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getProvider())`()` Returns the provider of this`CertPathBuilder`. |
 | [CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker)! | [getRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder#getRevocationChecker())`()` Returns a`CertPathChecker`that the encapsulated`CertPathBuilderSpi`implementation uses to check the revocation status of certificates. |
 
@@ -77,6 +80,7 @@ Creates a`CertPathBuilder`object of the given algorithm, and encapsulates the gi
 | `builderSpi` | [CertPathBuilderSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi)!:the provider implementation |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name |
+| --- | --- |
 
 ## Public methods
 
@@ -201,6 +205,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.IllegalArgumentException` | if the`provider`is`null`or empty |
 | `java.security.NoSuchAlgorithmException` | if a`CertPathBuilderSpi`implementation for the specified algorithm is not available from the specified provider |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list |
+| --- | --- |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
 
 **See Also**
@@ -236,6 +241,7 @@ A new CertPathBuilder object encapsulating the CertPathBuilderSpi implementation
 | `java.lang.IllegalArgumentException` | if the`provider`is`null` |
 | `java.security.NoSuchAlgorithmException` | if a`CertPathBuilderSpi`implementation for the specified algorithm is not available from the specified`Provider`object |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
+| --- | --- |
 
 **See Also**
 

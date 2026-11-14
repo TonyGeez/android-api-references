@@ -7,6 +7,7 @@ class InputMethodInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InputMethodInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#) |
 
 This class is used to specify meta information of an input method.
@@ -20,9 +21,11 @@ It should be defined in an XML resource file with an `<input-method>` element. F
 | [`android:configChanges`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Specify one or more configuration changes that the IME will handle itself. |
 | [`android:isDefault`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Set to true in all of the configurations for which this input method should be considered an option as the default. |
 | [`android:settingsActivity`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Component name of an activity that allows the user to modify the settings for this service. |
+| --- | --- |
 | [`android:showInInputMethodPicker`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Specifies whether the IME wants to be shown in the Input Method picker. |
 | [`android:supportsInlineSuggestions`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Specifies whether the IME supports showing inline suggestions. |
 | [`android:supportsInlineSuggestionsWithTouchExploration`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Specifies whether the IME supports showing inline suggestions when touch exploration is enabled. |
+| --- | --- |
 | [`android:supportsSwitchingToNextInputMethod`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Set to true if this input method supports ways to switch to a next input method (for example, a globe key.). |
 | [`android:suppressesSpellChecker`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#attr_InputMethodInfo) | Specifies whether the IME suppresses system spell checker. |
 
@@ -45,27 +48,35 @@ It should be defined in an XML resource file with an `<input-method>` element. F
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createImeLanguageSettingsActivityIntent()()` Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for IME language settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String`. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createStylusHandwritingSettingsActivityIntent()()` Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for stylus handwriting settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` if IME `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`, else `null` if there are no associated settings for stylus handwriting / handwriting is not supported or if `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_stylusHandwritingSettingsActivity:kotlin.Int` is not defined. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Used to test whether the given parameter object is an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#` and its Id is the same to this one. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getComponent()()` Return the component of the service that implements this input method. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getConfigChanges()()` Returns the bit mask of kinds of configuration changes that this IME can handle itself (without being restarted by the system). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getId()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getIsDefaultResourceId()()` Return the resource identifier of a resource inside of this input method's . |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getPackageName()()` Return the . |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getServiceInfo()()` Return the raw information about the Service implementing this input method. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getServiceName()()` Return the class name of the service component that implements this input method. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSettingsActivity()()` Return the class name of an activity that provides a settings UI for the input method. |
 | [InputMethodSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSubtypeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the Input Method's subtype at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSubtypeCount()()` Return the count of the subtypes of Input Method. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#hashCode()()` Returns a hash code value for the object. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed icon for this input method. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed label for this input method. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#shouldShowInInputMethodPicker()()` Returns `true` if this input method should be shown in menus for selecting an Input Method, such as the system Input Method Picker. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsConnectionlessStylusHandwriting()()` Returns whether the IME supports connectionless stylus handwriting sessions. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()()` Returns if IME supports handwriting using stylus input. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#suppressesSpellChecker()()` Return `true` if this input method suppresses spell checker. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -83,27 +94,34 @@ Specify one or more configuration changes that the IME will handle itself. If no
 Note that all of these configuration changes can impact the resource values seen by the application, so you will generally need to re-retrieve all resources (including view layouts, drawables, etc) to correctly handle any configuration change.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | assetsPaths | 80000000 | The assets paths have changed. For example a runtime overlay is installed and enabled. Corresponds to `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_ASSETS_PATHS:kotlin.Int`. |
 | colorMode | 4000 | The color mode of the screen has changed (color gamut or dynamic range). By default from Android 17, we don't recreate the activity even the app doesn't specify colorMode in configChanges. If the app wants to recreate the activity, specify colorMode in recreateOnConfigChanges. |
 | density | 1000 | The display density has changed. This might be caused by the user specifying a different display scale, or it might be caused by a different display being activated. |
+| --- | --- | --- |
 | fontScale | 40000000 | The font scaling factor has changed, that is the user has selected a new global font size. |
 | fontWeightAdjustment | 10000000 | The font weight adjustment value has changed. Used to reflect the user increasing font weight. |
 | grammaticalGender | 8000 | The grammatical gender has changed, for example the user set the grammatical gender from the UI. |
+| --- | --- | --- |
 | keyboard | 10 | The keyboard type has changed, for example the user has plugged in an external keyboard. By default from Android 17, we don't recreate the activity even the app doesn't specify keyboard in configChanges. If the app wants to recreate the activity, specify keyboard in recreateOnConfigChanges. |
 | keyboardHidden | 20 | The keyboard or navigation accessibility has changed, for example the user has slid the keyboard out to expose it. Note that despite its name, this applied to any accessibility: keyboard or navigation. By default from Android 17, we don't recreate the activity even the app doesn't specify keyboardHidden in configChanges. If the app wants to recreate the activity, specify keyboardHidden in recreateOnConfigChanges. |
 | layoutDirection | 2000 | The layout direction has changed. For example going from LTR to RTL. |
+| --- | --- | --- |
 | locale | 4 | The locale has changed, that is the user has selected a new language that text should be displayed in. |
 | mcc | 1 | The IMSI MCC has changed, that is a SIM has been detected and updated the Mobile Country Code. By default from Android O, we don't recreate the activity even the app doesn't specify mcc in configChanges. If the app wants to recreate the activity, specify mcc in recreateOnConfigChanges. |
 | mnc | 2 | The IMSI MNC has changed, that is a SIM has been detected and updated the Mobile Network Code. By default from Android O, we don't recreate the activity even the app doesn't specify mnc in configChanges. If the app wants to recreate the acvitity, specify mnc in recreateOnConfigChanges. |
+| --- | --- | --- |
 | navigation | 40 | The navigation type has changed. Should never normally happen. By default from Android 17, we don't recreate the activity even the app doesn't specify navigation in configChanges. If the app wants to recreate the activity, specify navigation in recreateOnConfigChanges. |
 | orientation | 80 | The screen orientation has changed, that is the user has rotated the device. |
 | resourcesUnused | 8000000 | This is probably not the flag you want, the resources compiler supports a less dangerous version of it, 'allKnown', that only suppresses all currently existing configuration change restarts depending on your target SDK rather than whatever the latest SDK supports, allowing the application to work with resources on future Platform versions. Activity doesn't use Android Resources at all and doesn't need to be restarted on any configuration changes. This overrides all other flags, and this is recommended to be used individually. Corresponds to `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_RESOURCES_UNUSED:kotlin.Int`. |
+| --- | --- | --- |
 | screenLayout | 100 | The screen layout has changed. This might be caused by a different display being activated. |
 | screenSize | 400 | The current available screen size has changed. If applications don't target at least `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB_MR2:kotlin.Int` then the activity will always handle this itself (the change will not result in a restart). This represents a change in the currently available size, so will change when the user switches between landscape and portrait. |
 | smallestScreenSize | 800 | The physical screen size has changed. If applications don't target at least `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB_MR2:kotlin.Int` then the activity will always handle this itself (the change will not result in a restart). This represents a change in size regardless of orientation, so will only change when the actual physical screen size has changed such as switching to an external display. |
+| --- | --- | --- |
 | touchscreen | 8 | The touchscreen has changed, for example the user has moved the app across displays with different touchscreen abilities. By default from Android 17, we don't recreate the activity even the app doesn't specify touchscreen in configChanges. If the app wants to recreate the activity, specify touchscreen in recreateOnConfigChanges. |
 | uiMode | 200 | The global user interface mode has changed. For example, going in or out of car mode, night mode changing, etc. |
 

@@ -7,6 +7,7 @@ class MediaProjectionConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.projection.MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) |
 
 Configure the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session requested from `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig)`.
@@ -24,6 +25,7 @@ This configuration should be used to provide the user with options for choosing 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#PROJECTION_SOURCE_APP:kotlin.Int` Bitmask for setting whether this configuration is for projecting the a single application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#PROJECTION_SOURCE_APP_CONTENT:kotlin.Int` Bitmask for setting whether this configuration is for projecting the content provided by an application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#PROJECTION_SOURCE_DISPLAY:kotlin.Int` Bitmask for setting whether this configuration is for projecting the whole display. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,15 +36,19 @@ This configuration should be used to provide the user with options for choosing 
 | static [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForDefaultDisplay()()` Returns an instance which restricts the user to capturing the default display. |
 | static [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForUserChoice()()` Returns an instance which allows the user to decide which region is captured. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getInitiallySelectedSource()()` Returns a bit mask of one, and only one, of the projection type flag. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getProjectionSources()()` A bitmask representing of requested projection sources. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getRequesterHint()()` A hint set by the requesting app indicating who the requester of this `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session is. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isAudioRequested()()` Returns true if the application requesting the media projection session is requesting to capture audio as well. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isOwnAppContentProvided()()` Returns true if the application requesting the media projection session is offering its own content to be picked in the UI picker. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isSourceEnabled(kotlin.Int)(projectionSource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the provided source should be enabled. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

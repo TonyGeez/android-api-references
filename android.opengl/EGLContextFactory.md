@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # EGLContextFactory
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.EGLContextFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface EGLContextFactory

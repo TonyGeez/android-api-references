@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # LensIntrinsicsSample
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/LensIntrinsicsSample "View this page in Java") 
+| --- | --- |
 
 ```
 class LensIntrinsicsSample
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.LensIntrinsicsSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#) |
 
 Immutable class to store an [lens intrinsics intra-frame sample](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.html#STATISTICS_LENS_INTRINSICS_SAMPLES:android.hardware.camera2.CaptureResult.Key).
@@ -26,6 +28,7 @@ Immutable class to store an [lens intrinsics intra-frame sample](https://develop
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [LensIntrinsicsSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#) is equal to another [LensIntrinsicsSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#). |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getLensIntrinsics](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#getLensIntrinsics())`()` Get the lens [intrinsics](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.html#LENS_INTRINSIC_CALIBRATION:android.hardware.camera2.CaptureResult.Key) calibration |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#getTimestampNanos())`()` Get the timestamp in nanoseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensIntrinsicsSample#toString())`()` Return the LensIntrinsicsSample as a string representation. |
 

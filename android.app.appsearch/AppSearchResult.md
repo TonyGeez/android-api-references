@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # AppSearchResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/AppSearchResult "View this page in Java") 
+| --- | --- |
 
 ```
 class AppSearchResult<ValueType : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#) |
 
 Information about the success or failure of an AppSearch call.
@@ -22,27 +24,34 @@ Information about the success or failure of an AppSearch call.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_ALREADY_EXISTS](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_ALREADY_EXISTS:kotlin.Int) The operation is invalid because the resource already exists and can't be replaced. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_DENIED](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_DENIED:kotlin.Int) The requested operation is denied for the caller. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_INTERNAL_ERROR:kotlin.Int) An internal error occurred within AppSearch, which the caller cannot address. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_ARGUMENT](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_INVALID_ARGUMENT:kotlin.Int) The caller supplied invalid arguments to the call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_SCHEMA](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_INVALID_SCHEMA:kotlin.Int) The caller supplied a schema which is invalid or incompatible with the previous schema. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_IO_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_IO_ERROR:kotlin.Int) An issue occurred reading or writing to storage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_NOT_FOUND](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_NOT_FOUND:kotlin.Int) An entity the caller requested to interact with does not exist in the system. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OK](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_OK:kotlin.Int) The call was successful. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OUT_OF_SPACE](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_OUT_OF_SPACE:kotlin.Int) Storage is out of space, and no more space could be reclaimed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_RATE_LIMITED](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_RATE_LIMITED:kotlin.Int) The caller has hit AppSearch's rate limit and the requested operation has been rejected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_SECURITY_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_SECURITY_ERROR:kotlin.Int) The caller requested an operation it does not have privileges for. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_UNKNOWN_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_UNKNOWN_ERROR:kotlin.Int) An unknown error occurred while processing the call. |
+| --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getErrorMessage](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#getErrorMessage())`()` Returns the error message associated with this result. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#getResultCode())`()` Returns one of the`RESULT`constants defined in [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#). |
+| --- | --- |
 | ValueType? | [getResultValue](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#getResultValue())`()` Returns the result value associated with this result, if it was successful. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSuccess](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#isSuccess())`()` Returns`true`if [getResultCode](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#getResultCode())equals [AppSearchResult.RESULT_OK](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#RESULT_OK:kotlin.Int). |
+| --- | --- |
 | static [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#)\<ValueType\> | [newFailedResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#newFailedResult(kotlin.Int,%20kotlin.String))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a new failed [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#). |
 | static [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#)\<ValueType\> | [newSuccessfulResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#newSuccessfulResult(android.app.appsearch.AppSearchResult.newSuccessfulResult.ValueType))`(`value:` `ValueType?`)` Creates a new successful [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Constants
 

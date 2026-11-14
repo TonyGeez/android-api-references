@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # DisplayCutout
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/DisplayCutout "View this page in Java") 
+| --- | --- |
 
 ```
 class DisplayCutout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.DisplayCutout](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#) |
 
 Represents the area of the display that is not functional for displaying content.
@@ -34,15 +36,19 @@ Represents the area of the display that is not functional for displaying content
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBoundingRectBottom](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getBoundingRectBottom())`()` Returns a bounding rectangle for a non-functional area on the display which is located on the bottom of the screen. |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBoundingRectLeft](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getBoundingRectLeft())`()` Returns a bounding rectangle for a non-functional area on the display which is located on the left of the screen. |
+| --- | --- |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBoundingRectRight](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getBoundingRectRight())`()` Returns a bounding rectangle for a non-functional area on the display which is located on the right of the screen. |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBoundingRectTop](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getBoundingRectTop())`()` Returns a bounding rectangle for a non-functional area on the display which is located on the top of the screen. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\> | [getBoundingRects](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getBoundingRects())`()` Returns a list of`Rect`s, each of which is the bounding rectangle for a non-functional area on the display. |
+| --- | --- |
 | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)? | [getCutoutPath](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getCutoutPath())`()` Returns a [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) that contains the cutout paths of all sides on the display. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetBottom](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetBottom())`()` Returns the inset from the bottom which avoids the display cutout in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetLeft](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetLeft())`()` Returns the inset from the left which avoids the display cutout in pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetRight](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetRight())`()` Returns the inset from the right which avoids the display cutout in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetTop](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetTop())`()` Returns the inset from the top which avoids the display cutout in pixels. |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getWaterfallInsets](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getWaterfallInsets())`()` Returns the insets representing the curved areas of a waterfall display. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#toString())`()` <br /> |
 
@@ -70,6 +76,7 @@ Note that this is only useful for tests. For production code, developers should 
 | `safeInsets` | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetTop())etc. This value cannot be`null`. |
 | `boundLeft` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | `boundTop` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| --- | --- |
 | `boundRight` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | `boundBottom` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 
@@ -96,9 +103,11 @@ Note that this is only useful for tests. For production code, developers should 
 | `safeInsets` | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](https://developer.android.com/reference/kotlin/android/view/DisplayCutout#getSafeInsetTop())etc. This value cannot be`null`. |
 | `boundLeft` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | `boundTop` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| --- | --- |
 | `boundRight` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | `boundBottom` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | `waterfallInsets` | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#):the insets for the curved areas in waterfall display. This value cannot be`null`. |
+| --- | --- |
 
 ### DisplayCutout
 

@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # CameraAccessException
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/CameraAccessException "View this page in Java") 
+| --- | --- |
 
 ```
 open class CameraAccessException : AndroidException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.util.AndroidException](https://developer.android.com/reference/kotlin/android/util/AndroidException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.hardware.camera2.CameraAccessException](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#) |
 
 `CameraAccessException`is thrown if a camera device could not be queried or opened by the [CameraManager](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager), or if the connection to an opened [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice) is no longer valid.
@@ -25,6 +28,7 @@ open class CameraAccessException : AndroidException
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISABLED](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#CAMERA_DISABLED:kotlin.Int) The camera is disabled due to a device policy, and cannot be opened. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISCONNECTED](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#CAMERA_DISCONNECTED:kotlin.Int) The camera device is removable and has been disconnected from the Android device, or the camera id used with android. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#CAMERA_ERROR:kotlin.Int) The camera device is currently in the error state. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_IN_USE](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#CAMERA_IN_USE:kotlin.Int) The camera device is in use already. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_CAMERAS_IN_USE](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraAccessException#MAX_CAMERAS_IN_USE:kotlin.Int) The system-wide limit for number of open cameras or camera resources has been reached, and more camera devices cannot be opened or torch mode cannot be turned on until previous instances are closed. |
 

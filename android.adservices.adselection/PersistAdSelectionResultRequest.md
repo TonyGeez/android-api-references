@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # PersistAdSelectionResultRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/PersistAdSelectionResultRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class PersistAdSelectionResultRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.PersistAdSelectionResultRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#) |
 
 Represents a request containing the seller, the ad selection data id and data.
@@ -29,6 +31,7 @@ Instances of this class are created by SDKs to be provided as arguments to the [
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionDataId](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getAdSelectionDataId())`()` Returns the id that identifies the [android.adservices.adselection.AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))payload that generated this result. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getAdSelectionId())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAdSelectionResult](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getAdSelectionResult())`()` <br /> |
+| --- | --- |
 | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#)? | [getSeller](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getSeller())`()` <br /> |
 
 ## Public methods

@@ -5,6 +5,7 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 # OnSpatializerStateChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Spatializer.OnSpatializerStateChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnSpatializerStateChangedListener

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # WindowMetrics
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowMetrics "View this page in Java") 
+| --- | --- |
 
 ```
 class WindowMetrics
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#) |
 
 Metrics about a Window, consisting of the bounds and [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets).
@@ -48,6 +50,7 @@ float densityDp = DisplayMetrics.DENSITY_DEFAULT * windowMetrics.getDensity();
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBounds](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getBounds())`()` Returns the bounds of the area associated with this window or`UiContext`. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDensity](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getDensity())`()` Returns the density of the area associated with this window or`UiContext`, which uses the same units as [android.util.DisplayMetrics#density](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#density:kotlin.Float). |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) | [getWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getWindowInsets())`()` Returns the [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the area associated with this window or`UiContext`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#toString())`()` <br /> |
 
 ## Public constructors
@@ -89,6 +92,7 @@ Note that in most cases [WindowMetrics](https://developer.android.com/reference/
 | `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The window bounds This value cannot be`null`. |
 | `windowInsets` | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets):The [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the window This value cannot be`null`. |
 | `density` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The window density |
+| --- | --- |
 
 ## Public methods
 

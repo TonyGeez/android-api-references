@@ -9,6 +9,7 @@ open class Exchanger<V : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.Exchanger](https://developer.android.com/reference/kotlin/java/util/concurrent/Exchanger#) |
 
 A synchronization point at which threads can pair and swap elements within pairs. Each thread presents some object on entry to the #exchange method, matches with a partner thread, and receives its partner's object on return. An Exchanger may be viewed as a bidirectional form of a [SynchronousQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/SynchronousQueue). Exchangers may be useful in applications such as genetic algorithms and pipeline designs.
@@ -153,6 +154,7 @@ If the specified waiting time elapses then [TimeoutException](https://developer.
 | `x` | V:the object to exchange |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the`timeout`argument |
+| --- | --- |
 
 | Return ||
 |---|-----------------------------------------|

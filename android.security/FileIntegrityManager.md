@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # FileIntegrityManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/FileIntegrityManager "View this page in Java") 
+| --- | --- |
 
 ```
 class FileIntegrityManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.FileIntegrityManager](https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager#) |
 
 This class provides access to file integrity related operations. 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ChangeLogTokenRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class ChangeLogTokenRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.changelog.ChangeLogTokenRequest](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#) |
 
 A class to request changelog token using [HealthConnectManager.getChangeLogToken](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
@@ -30,9 +32,11 @@ A class to request changelog token using [HealthConnectManager.getChangeLogToken
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin.html#)!\> | [getDataOriginFilters](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#getDataOriginFilters())`()` Returns a set of data origin filters to filter the change logs |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getMedicalResourceTypes](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#getMedicalResourceTypes())`()` Returns a set of medical resource types for which logs are requested |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record.html#)!\>!\> | [getRecordTypes](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#getRecordTypes())`()` Returns a set of record classes for which logs are requested |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -7,6 +7,7 @@ open class QuoteSpan : LeadingMarginSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.style.QuoteSpan](https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#) |
 
 A span which styles paragraphs by adding a vertical stripe at the beginning of the text (respecting layout direction).
@@ -43,6 +44,7 @@ Customized `QuoteSpan`.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#STANDARD_COLOR:kotlin.Int` Default color for the quote stripe. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#STANDARD_GAP_WIDTH_PX:kotlin.Int` Default gap width in pixels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#STANDARD_STRIPE_WIDTH_PX:kotlin.Int` Default stripe width in pixels. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -56,12 +58,15 @@ Customized `QuoteSpan`.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#drawLeadingMargin(android.graphics.Canvas,%20android.graphics.Paint,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.text.Layout)(c: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, p: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, layout: https://developer.android.com/reference/kotlin/android/text/Layout.html#)` Renders the leading margin. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getColor()()` Get the color of the quote stripe. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getGapWidth()()` Get the width of the gap between the stripe and the text. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getLeadingMargin(kotlin.Boolean)(first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the amount by which to adjust the leading margin. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getStripeWidth()()` Get the width of the quote stripe. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 ## Constants
 
@@ -159,6 +164,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/text/style/Quo
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the color of the quote stripe. |
 | `stripeWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width of the stripe. Value is 0 or greater |
 | `gapWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width of the gap between the stripe and the text. Value is 0 or greater |
+| --- | --- |
 
 ## Public methods
 
@@ -204,15 +210,19 @@ Renders the leading margin. This is called before the margin has been adjusted b
 | `c` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): This value cannot be `null`. |
 | `p` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#): This value cannot be `null`. |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the current position of the margin |
+| --- | --- |
 | `dir` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the base direction of the paragraph; if negative, the margin is to the right of the text, otherwise it is to the left. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the top of the line |
 | `baseline` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the baseline of the line |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bottom of the line |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): This value cannot be `null`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start of the line |
+| --- | --- |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end of the line |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if this is the first line of its paragraph |
 | `layout` | [Layout](https://developer.android.com/reference/kotlin/android/text/Layout.html#): This value cannot be `null`. |
+| --- | --- |
 
 ### getColor
 

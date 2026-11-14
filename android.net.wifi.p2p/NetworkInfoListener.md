@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # NetworkInfoListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface NetworkInfoListener

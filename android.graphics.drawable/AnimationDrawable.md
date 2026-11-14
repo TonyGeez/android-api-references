@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AnimationDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class AnimationDrawable : DrawableContainer, Animatable, Runnable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.DrawableContainer](https://developer.android.com/reference/kotlin/android/graphics/drawable/DrawableContainer) ||
 | | | ↳ | [android.graphics.drawable.AnimationDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#) |
+| --- | --- | --- | --- |
 
 An object used to create frame-by-frame animations, defined by a series of Drawable objects, which can be used as a View object's background.
 
@@ -63,6 +66,7 @@ Here is the code to load and play this animation.
 | [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#attr_AnimationDrawable) | Reference to a drawable resource to use for the frame. |
 | [`android:duration`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#attr_AnimationDrawable) | Amount of time (in milliseconds) to display this frame. |
 | [`android:oneshot`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#attr_AnimationDrawable) | If true, the animation will only run a single time and then stop. |
+| --- | --- |
 | [`android:variablePadding`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#attr_AnimationDrawable) | If true, allows the drawable's padding to change based on the current state that is selected. |
 | [`android:visible`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#attr_AnimationDrawable) | Provides initial visibility state of the drawable; the default value is false. |
 
@@ -75,15 +79,19 @@ Here is the code to load and play this animation.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFrame](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#addFrame(android.graphics.drawable.Drawable,%20kotlin.Int))`(`frame:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a frame to the animation |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuration](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#getDuration(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)! | [getFrame](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#getFrame(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberOfFrames](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#getNumberOfFrames())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOneShot](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#isOneShot())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#isRunning())`()` Indicates whether the animation is currently running or not. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#mutate())`()` Make this drawable mutable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#run())`()` This method exists for implementation purpose only and should not be called directly. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOneShot](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#setOneShot(kotlin.Boolean))`(`oneShot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the animation should play once or repeat. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setVisible](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#setVisible(kotlin.Boolean,%20kotlin.Boolean))`(`visible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `restart:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this AnimationDrawable is visible. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#start())`()` Starts the animation from the first frame, looping if necessary. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#stop())`()` Stops the animation at the current frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unscheduleSelf](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimationDrawable#unscheduleSelf(java.lang.Runnable))`(`what:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` <br /> |
 
@@ -227,6 +235,7 @@ open fun inflate(
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):Resources used to resolve attribute values This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):XML parser from which to inflate this Drawable This value cannot be`null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#):Base set of attribute values This value cannot be`null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?:Theme to apply, may be null |
 
 | Exceptions ||

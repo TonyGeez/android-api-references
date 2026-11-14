@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # UriMatcher
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/UriMatcher "View this page in Java") 
+| --- | --- |
 
 ```
 open class UriMatcher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.UriMatcher](https://developer.android.com/reference/kotlin/android/content/UriMatcher#) |
 
 Utility class to aid in matching URIs in content providers.
@@ -182,6 +184,7 @@ Starting from API level [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](https://
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the authority to match |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the path to match. \* may be used as a wild card for any text, and # may be used as a wild card for numbers. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the code that is returned when a URI is matched against the given components. Must be positive. |
+| --- | --- |
 
 ### match
 

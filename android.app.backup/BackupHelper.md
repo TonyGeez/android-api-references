@@ -5,6 +5,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # BackupHelper
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/backup/BackupHelper "View this page in Java") 
+| --- | --- |
 
 ```
 interface BackupHelper
@@ -13,6 +14,7 @@ interface BackupHelper
 | [android.app.backup.BackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper#) |
 
 | Known Direct Subclasses [FileBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper), [SharedPreferencesBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper) |----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [FileBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper) | A helper class that can be used in conjunction with [android.app.backup.BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) to manage the backup of a set of files. | | [SharedPreferencesBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper) | A helper class that can be used in conjunction with [android.app.backup.BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) to manage the backup of [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the calling interface that [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) uses when dispatching backup and restore operations to the installed helpers. Applications can define and install their own helpers as well as using those provided as part of the Android framework.
 
@@ -25,6 +27,7 @@ Although multiple helper objects may be installed simultaneously, each helper is
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [performBackup](https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper#performBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor))`(`oldState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`, `data:` ` [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!`, `newState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` Based on`oldState`, determine what application content needs to be backed up, write it to`data`, and fill in`newState`with the complete state as it exists now. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreEntity](https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper#restoreEntity(android.app.backup.BackupDataInputStream))`(`data:` ` [BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream)!`)` Called by [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) to restore a single entity from the restore data set. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNewStateDescription](https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper#writeNewStateDescription(android.os.ParcelFileDescriptor))`(`newState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` Called by [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) after a restore operation to write the backup state file corresponding to the data as processed by the helper. |
+| --- | --- |
 
 ## Public methods
 
@@ -51,6 +54,7 @@ Implementing this method is much like implementing [onBackup()](https://develope
 | `oldState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:An open, read-only [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to the last backup state provided by the application. May be`null`, in which case no prior state is being provided and the application should perform a full backup. |
 | `data` | [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!:An open, read/write [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput) pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
 | `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:An open, read/write [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to an empty file. The application should record the final backup state here after writing the requested data to the`data`output stream. |
+| --- | --- |
 
 ### restoreEntity
 

@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # VibratorManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/VibratorManager "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class VibratorManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.VibratorManager](https://developer.android.com/reference/kotlin/android/os/VibratorManager#) |
 
 Provides access to all vibrators from the device, as well as the ability to run them in a synchronized fashion.
@@ -24,9 +26,11 @@ If your process exits, any vibration you started will stop.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/os/VibratorManager#cancel())`()` Turn all the vibrators off. |
 | abstract [Vibrator](https://developer.android.com/reference/kotlin/android/os/Vibrator) | [getDefaultVibrator](https://developer.android.com/reference/kotlin/android/os/VibratorManager#getDefaultVibrator())`()` Returns the default Vibrator for the device. |
 | abstract [Vibrator](https://developer.android.com/reference/kotlin/android/os/Vibrator) | [getVibrator](https://developer.android.com/reference/kotlin/android/os/VibratorManager#getVibrator(kotlin.Int))`(`vibratorId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve a single vibrator by id. |
+| --- | --- |
 | abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getVibratorIds](https://developer.android.com/reference/kotlin/android/os/VibratorManager#getVibratorIds())`()` List all available vibrator ids, returning a possible empty list. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [vibrate](https://developer.android.com/reference/kotlin/android/os/VibratorManager#vibrate(android.os.CombinedVibration))`(`effect:` ` [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration)`)` Vibrate with a given combination of effects. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [vibrate](https://developer.android.com/reference/kotlin/android/os/VibratorManager#vibrate(android.os.CombinedVibration,%20android.os.VibrationAttributes))`(`effect:` ` [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration)`, `attributes:` ` [VibrationAttributes](https://developer.android.com/reference/kotlin/android/os/VibrationAttributes)?`)` Vibrate with a given combination of effects. |
+| --- | --- |
 
 ## Public methods
 

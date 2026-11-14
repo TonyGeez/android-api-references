@@ -7,6 +7,7 @@ class Bitmap : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) |
 
 ## Summary
@@ -29,72 +30,95 @@ class Bitmap : Parcelable
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#asShared()()` Return an immutable bitmap backed by shared memory which can be efficiently passed between processes via Parcelable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#compress(android.graphics.Bitmap.CompressFormat,%20kotlin.Int,%20java.io.OutputStream)(format: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.CompressFormat, quality: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stream: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)` Write a compressed version of the bitmap to the specified outputstream. |
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#)! | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#copy(android.graphics.Bitmap.Config,%20kotlin.Boolean)(config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config, isMutable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Tries to make a new bitmap based on the dimensions of this bitmap, setting the new bitmap's config to the one specified, and then copying this bitmap's pixels into the new bitmap. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#copyPixelsFromBuffer(java.nio.Buffer)(src: https://developer.android.com/reference/kotlin/java/nio/Buffer.html#)` Copy the pixels from the buffer, beginning at the current position, overwriting the bitmap's pixels. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#copyPixelsToBuffer(java.nio.Buffer)(dst: https://developer.android.com/reference/kotlin/java/nio/Buffer.html#)` Copy the bitmap's pixels into the specified buffer (allocated by the caller). |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.graphics.Bitmap)(src: https://developer.android.com/reference/kotlin/android/graphics/Bitmap#)` Returns a bitmap from the source bitmap. |
+| --- | --- |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/graphics/Bitmap#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a bitmap from the specified subset of the source bitmap. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Matrix,%20kotlin.Boolean)(source: https://developer.android.com/reference/kotlin/android/graphics/Bitmap#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, m: https://developer.android.com/reference/kotlin/android/graphics/Matrix?, filter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a bitmap from subset of the source bitmap, transformed by the optional matrix. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.graphics.Picture)(source: https://developer.android.com/reference/kotlin/android/graphics/Picture)` Creates a Bitmap from the given `https://developer.android.com/reference/kotlin/android/graphics/Picture` source of recorded drawing commands. |
+| --- | --- |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.graphics.Picture,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(source: https://developer.android.com/reference/kotlin/android/graphics/Picture, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Creates a Bitmap from the given `https://developer.android.com/reference/kotlin/android/graphics/Picture` source of recorded drawing commands. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.util.DisplayMetrics,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(display: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#?, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Returns a mutable bitmap with the specified width and height. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.util.DisplayMetrics,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config,%20kotlin.Boolean)(display: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#?, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config, hasAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a mutable bitmap with the specified width and height. |
+| --- | --- |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.util.DisplayMetrics,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config,%20kotlin.Boolean,%20android.graphics.ColorSpace)(display: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#?, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config, hasAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)` Returns a mutable bitmap with the specified width and height. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.util.DisplayMetrics,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(display: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#?, colors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Returns a immutable bitmap with the specified width and height, with each pixel value set to the corresponding value in the colors array. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(android.util.DisplayMetrics,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(display: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#, colors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Returns a immutable bitmap with the specified width and height, with each pixel value set to the corresponding value in the colors array. |
+| --- | --- |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Returns a mutable bitmap with the specified width and height. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config,%20kotlin.Boolean)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config, hasAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a mutable bitmap with the specified width and height. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config,%20kotlin.Boolean,%20android.graphics.ColorSpace)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config, hasAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)` Returns a mutable bitmap with the specified width and height. |
+| --- | --- |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(colors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config!)` Returns a immutable bitmap with the specified width and height, with each pixel value set to the corresponding value in the colors array. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createBitmap(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(colors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Returns a immutable bitmap with the specified width and height, with each pixel value set to the corresponding value in the colors array. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#createScaledBitmap(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(src: https://developer.android.com/reference/kotlin/android/graphics/Bitmap#, dstWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dstHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, filter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new bitmap, scaled from an existing bitmap, when possible. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#describeContents()()` No special parcel contents. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#eraseColor(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Fills the bitmap's pixels with the specified `https://developer.android.com/reference/kotlin/android/graphics/Color`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#eraseColor(kotlin.Long)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Fills the bitmap's pixels with the specified `ColorLong`. |
+| --- | --- |
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#extractAlpha()()` Returns a new bitmap that captures the alpha values of the original. |
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#extractAlpha(android.graphics.Paint,%20kotlin.IntArray)(paint: https://developer.android.com/reference/kotlin/android/graphics/Paint?, offsetXY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Returns a new bitmap that captures the alpha values of the original. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getAllocationByteCount()()` Returns the size of the allocated memory used to store this bitmap's pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getByteCount()()` Returns the minimum number of bytes that can be used to store this bitmap's pixels. |
 | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getColor(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/graphics/Color` at the specified location. |
 | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)? | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getColorSpace()()` Returns the color space associated with this bitmap. |
+| --- | --- |
 | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)? | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getConfig()()` If the bitmap's internal config is in one of the public formats, return that config, otherwise return null. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getDensity()()` Returns the density for this bitmap. |
 | [Gainmap](https://developer.android.com/reference/kotlin/android/graphics/Gainmap)? | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getGainmap()()` Returns the gainmap or null if the bitmap doesn't contain a gainmap |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getGenerationId()()` Returns the generation ID of this bitmap. |
 | [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getHardwareBuffer()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getHeight()()` Returns the bitmap's height |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getNinePatchChunk()()` Returns an optional array of private data, used by the UI system for some bitmaps. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getPixel(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/graphics/Color` at the specified location. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getPixels(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns in pixels\[\] a copy of the data in the bitmap. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getRowBytes()()` Return the number of bytes between rows in the bitmap's pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledHeight(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas)` Convenience for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledHeight(kotlin.Int)` with the target density of the given `https://developer.android.com/reference/kotlin/android/graphics/Canvas`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledHeight(android.util.DisplayMetrics)(metrics: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)` Convenience for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledHeight(kotlin.Int)` with the target density of the given `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledHeight(kotlin.Int)(targetDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method that returns the height of this bitmap divided by the density scale factor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledWidth(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas)` Convenience for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledWidth(kotlin.Int)` with the target density of the given `https://developer.android.com/reference/kotlin/android/graphics/Canvas`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledWidth(android.util.DisplayMetrics)(metrics: https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)` Convenience for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledWidth(kotlin.Int)` with the target density of the given `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getScaledWidth(kotlin.Int)(targetDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method that returns the width of this bitmap divided by the density scale factor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getWidth()()` Returns the bitmap's width |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#hasAlpha()()` Returns true if the bitmap's config supports per-pixel alpha, and if the pixels may contain non-opaque alpha values. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#hasGainmap()()` Returns whether or not this Bitmap contains a Gainmap. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#hasMipMap()()` Indicates whether the renderer responsible for drawing this bitmap should attempt to use mipmaps when this bitmap is drawn scaled down. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#isMutable()()` Returns true if the bitmap is marked as mutable (i.e. can be drawn into) |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#isPremultiplied()()` Indicates whether pixels stored in this bitmaps are stored pre-multiplied. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#isRecycled()()` Returns true if this bitmap has been recycled. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#prepareToDraw()()` Builds caches associated with the bitmap that are used for drawing it. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#reconfigure(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Modifies the bitmap to have a specified width, height, and `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config`, without affecting the underlying allocation backing the bitmap. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#recycle()()` Immediately releases the pixel data associated with this Bitmap. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#sameAs(android.graphics.Bitmap)(other: https://developer.android.com/reference/kotlin/android/graphics/Bitmap#?)` Given another bitmap, return true if it has the same dimensions, config, and pixel data as this bitmap. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setColorSpace(android.graphics.ColorSpace)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)` Modifies the bitmap to have the specified `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace`, without affecting the underlying allocation backing the bitmap. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setConfig(android.graphics.Bitmap.Config)(config: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)` Convenience method for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#reconfigure(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)` with the current height and width. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setDensity(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the density for this bitmap. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setGainmap(android.graphics.Gainmap)(gainmap: https://developer.android.com/reference/kotlin/android/graphics/Gainmap?)` Sets a gainmap on this bitmap, or removes the gainmap if null |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setHasAlpha(kotlin.Boolean)(hasAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Tell the bitmap if all of the pixels are known to be opaque (false) or if some of the pixels may contain non-opaque alpha values (true). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setHasMipMap(kotlin.Boolean)(hasMipMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set a hint for the renderer responsible for drawing this bitmap indicating that it should attempt to use mipmaps when this bitmap is drawn scaled down. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setHeight(kotlin.Int)(height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#reconfigure(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)` with the current width and config. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setPixel(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write the specified `https://developer.android.com/reference/kotlin/android/graphics/Color` into the bitmap (assuming it is mutable) at the x,y coordinate. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setPixels(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Replace pixels in the bitmap with the colors in the array. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setPremultiplied(kotlin.Boolean)(premultiplied: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the bitmap should treat its data as pre-multiplied. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#setWidth(kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method for calling `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#reconfigure(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap.Config)` with the current height and config. |
 | static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#)? | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#wrapHardwareBuffer(android.hardware.HardwareBuffer,%20android.graphics.ColorSpace)(hardwareBuffer: https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#, colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace?)` Create a hardware bitmap backed by a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#writeToParcel(android.os.Parcel,%20kotlin.Int)(p: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write the bitmap and its pixels to the parcel. |
 
 | Properties ||
@@ -158,6 +182,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `format` | [Bitmap.CompressFormat](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.CompressFormat): The format of the compressed image. This value cannot be `null`. |
 | `quality` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Hint to the compressor, 0-100. The value is interpreted differently depending on the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.CompressFormat`. |
 | `stream` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#): The outputstream to write the compressed data. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -274,6 +299,7 @@ Returns a bitmap from the specified subset of the source bitmap. The new bitmap 
 | `source` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#): The bitmap we are subsetting. This value cannot be `null`. |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x coordinate of the first pixel in source |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y coordinate of the first pixel in source |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of pixels in each row |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of rows |
 
@@ -308,9 +334,11 @@ Returns a bitmap from subset of the source bitmap, transformed by the optional m
 | `source` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#): The bitmap we are subsetting. This value cannot be `null`. |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x coordinate of the first pixel in source |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y coordinate of the first pixel in source |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of pixels in each row |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of rows |
 | `m` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix)?: Optional matrix to be applied to the pixels. This value may be `null`. |
+| --- | --- |
 | `filter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the source should be filtered. Only applies if the matrix contains more than just translation. |
 
 | Return ||
@@ -359,6 +387,7 @@ Creates a Bitmap from the given `https://developer.android.com/reference/kotlin/
 | `source` | [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture): The recorded `https://developer.android.com/reference/kotlin/android/graphics/Picture` of drawing commands that will be drawn into the returned Bitmap. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap to create. The picture's width will be scaled to match if necessary. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap to create. The picture's height will be scaled to match if necessary. |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` of the created bitmap. This value cannot be `null`. |
 
 | Return ||
@@ -385,6 +414,7 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `display` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)?: Display metrics for the display this bitmap will be drawn on. This value may be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
 
 | Return ||
@@ -416,6 +446,7 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `display` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)?: Display metrics for the display this bitmap will be drawn on. This value may be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
 | `hasAlpha` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If the bitmap is ARGB_8888, RGBA_16F, or RGBA_1010102 this flag can be used to mark the bitmap as opaque. Doing so will clear the bitmap in black instead of transparent. |
 
@@ -449,9 +480,11 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `display` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)?: Display metrics for the display this bitmap will be drawn on. This value may be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
 | `hasAlpha` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If the bitmap is ARGB_8888, RGBA_16F, or RGBA_1010102 this flag can be used to mark the bitmap as opaque. Doing so will clear the bitmap in black instead of transparent. |
 | `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace): The color space of the bitmap. If the config is `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` and `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` or `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` is provided then the corresponding extended range variant is assumed. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -482,6 +515,7 @@ Returns a immutable bitmap with the specified width and height, with each pixel 
 | `display` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)?: Display metrics for the display this bitmap will be drawn on. This value may be `null`. |
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): Array of sRGB `https://developer.android.com/reference/kotlin/android/graphics/Color` used to initialize the pixels. This array must be at least as large as width \* height. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. If the config does not support per-pixel alpha (e.g. RGB_565), then the alpha bytes in the colors\[\] will be ignored (assumed to be FF). This value cannot be `null`. |
 
@@ -516,9 +550,11 @@ Returns a immutable bitmap with the specified width and height, with each pixel 
 | `display` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#): Display metrics for the display this bitmap will be drawn on. This value cannot be `null`. |
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): Array of sRGB `https://developer.android.com/reference/kotlin/android/graphics/Color` used to initialize the pixels. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of values to skip before the first color in the array of colors. |
+| --- | --- |
 | `stride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of colors in the array between rows (must be \>= width or \<= -width). |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. If the config does not support per-pixel alpha (e.g. RGB_565), then the alpha bytes in the colors\[\] will be ignored (assumed to be FF). This value cannot be `null`. |
 
 | Return ||
@@ -548,6 +584,7 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -577,6 +614,7 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
+| --- | --- |
 | `hasAlpha` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If the bitmap is ARGB_8888, RGBA_16F, or RGBA_1010102 this flag can be used to mark the bitmap as opaque. Doing so will clear the bitmap in black instead of transparent. |
 
 | Return ||
@@ -608,6 +646,7 @@ Returns a mutable bitmap with the specified width and height. Its initial densit
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. This value cannot be `null`. |
+| --- | --- |
 | `hasAlpha` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If the bitmap is ARGB_8888, RGBA_16F, or RGBA_1010102 this flag can be used to mark the bitmap as opaque. Doing so will clear the bitmap in black instead of transparent. |
 | `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace): The color space of the bitmap. If the config is `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` and `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` or `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` is provided then the corresponding extended range variant is assumed. This value cannot be `null`. |
 
@@ -639,6 +678,7 @@ Returns a immutable bitmap with the specified width and height, with each pixel 
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): Array of sRGB `https://developer.android.com/reference/kotlin/android/graphics/Color` used to initialize the pixels. This array must be at least as large as width \* height. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
+| --- | --- |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config)!: The bitmap config to create. If the config does not support per-pixel alpha (e.g. RGB_565), then the alpha bytes in the colors\[\] will be ignored (assumed to be FF) |
 
 | Return ||
@@ -671,9 +711,11 @@ Returns a immutable bitmap with the specified width and height, with each pixel 
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): Array of sRGB `https://developer.android.com/reference/kotlin/android/graphics/Color` used to initialize the pixels. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of values to skip before the first color in the array of colors. |
 | `stride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of colors in the array between rows (must be \>= width or \<= -width). |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the bitmap |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `config` | [Bitmap.Config](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config): The bitmap config to create. If the config does not support per-pixel alpha (e.g. RGB_565), then the alpha bytes in the colors\[\] will be ignored (assumed to be FF). This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -703,6 +745,7 @@ Creates a new bitmap, scaled from an existing bitmap, when possible. If the spec
 | `src` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap#): The source bitmap. This value cannot be `null`. |
 | `dstWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new bitmap's desired width. |
 | `dstHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new bitmap's desired height. |
+| --- | --- |
 | `filter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether or not bilinear filtering should be used when scaling the bitmap. If this is true then bilinear filtering will be used when scaling which has better image quality at the cost of worse performance. If this is false then nearest-neighbor scaling is used instead which will have worse image quality but is faster. Recommended default is to set filter to 'true' as the cost of bilinear filtering is typically minimal and the improved image quality is significant. |
 
 | Return ||
@@ -1011,9 +1054,11 @@ Returns in pixels\[\] a copy of the data in the bitmap. Each value is a packed i
 | `pixels` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): The array to receive the bitmap's colors. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The first index to write into pixels\[\] |
 | `stride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of entries in pixels\[\] to skip between rows (must be \>= bitmap's width). Can be negative. |
+| --- | --- |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x coordinate of the first pixel to read from the bitmap |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y coordinate of the first pixel to read from the bitmap |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of pixels to read from each row |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of rows to read |
 
 | Exceptions ||
@@ -1021,6 +1066,7 @@ Returns in pixels\[\] a copy of the data in the bitmap. Each value is a packed i
 | `java.lang.ArrayIndexOutOfBoundsException` | if the pixels array is too small to receive the specified number of pixels. |
 | `java.lang.IllegalArgumentException` | if x, y, width, height exceed the bounds of the bitmap, or if abs(stride) \< width. |
 | `java.lang.IllegalStateException` | if the bitmap's config is `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` |
+| --- | --- |
 
 ### getRowBytes
 
@@ -1466,6 +1512,7 @@ Write the specified `https://developer.android.com/reference/kotlin/android/grap
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x coordinate of the pixel to replace (0...width-1) |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y coordinate of the pixel to replace (0...height-1) |
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The ARGB color to write into the bitmap |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -1495,9 +1542,11 @@ Replace pixels in the bitmap with the colors in the array. Each element in the a
 | `pixels` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): The colors to write to the bitmap. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the first color to read from pixels\[\] |
 | `stride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of colors in pixels\[\] to skip between rows. Normally this value will be the same as the width of the bitmap, but it can be larger (or negative). |
+| --- | --- |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x coordinate of the first pixel to write to in the bitmap. |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y coordinate of the first pixel to write to in the bitmap. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of colors to copy from pixels\[\] per row |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of rows to write to the bitmap |
 
 | Exceptions ||
@@ -1505,6 +1554,7 @@ Replace pixels in the bitmap with the colors in the array. Each element in the a
 | `java.lang.ArrayIndexOutOfBoundsException` | if the pixels array is too small to receive the specified number of pixels. |
 | `java.lang.IllegalArgumentException` | if x, y, width, height are outside of the bitmap's bounds. |
 | `java.lang.IllegalStateException` | if the bitmap is not mutable |
+| --- | --- |
 
 ### setPremultiplied
 
@@ -1591,6 +1641,7 @@ Write the bitmap and its pixels to the parcel. The bitmap can be rebuilt from th
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `p` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): Parcel object to write the bitmap data into. This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

@@ -7,9 +7,11 @@ abstract class TvInputService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.tv.TvInputService](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#) |
 
 The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
@@ -23,15 +25,18 @@ Applications will not normally use this service themselves, instead relying on t
 | abstract | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.HardwareSession` Base class for a TV input session which represents an external device connected to a hardware TV input. |
 | abstract | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession` Base class for derived classes to implement to provide a TV input recording session. |
 | abstract | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session` Base class for derived classes to implement to provide a TV input session. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#PRIORITY_HINT_USE_CASE_TYPE_BACKGROUND:kotlin.Int` Use case of priority hint for `https://developer.android.com/reference/kotlin/android/media/MediaCas.html#MediaCas(android.content.Context,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)`: Background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#PRIORITY_HINT_USE_CASE_TYPE_LIVE:kotlin.Int` Use case of priority hint for `https://developer.android.com/reference/kotlin/android/media/MediaCas.html#MediaCas(android.content.Context,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)`: Live. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#PRIORITY_HINT_USE_CASE_TYPE_PLAYBACK:kotlin.Int` Use case of priority hint for `https://developer.android.com/reference/kotlin/android/media/MediaCas.html#MediaCas(android.content.Context,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)`: Playback. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#PRIORITY_HINT_USE_CASE_TYPE_RECORD:kotlin.Int` Use case of priority hint for `https://developer.android.com/reference/kotlin/android/media/MediaCas.html#MediaCas(android.content.Context,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)`: Record. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#PRIORITY_HINT_USE_CASE_TYPE_SCAN:kotlin.Int` Use case of priority hint for `https://developer.android.com/reference/kotlin/android/media/MediaCas.html#MediaCas(android.content.Context,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)`: Scan. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#SERVICE_INTERFACE:kotlin.String` This is the interface name that a service implementing a TV input should say that it support -- that is, this is the action it uses for its intent filter. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#SERVICE_META_DATA:kotlin.String` Name under which a TvInputService component publishes information about itself. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1060,9 +1065,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [TvInputService.RecordingSession](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateRecordingSession(kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession`. |
 | open [TvInputService.RecordingSession](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateRecordingSession(kotlin.String,%20kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession`. |
+| --- | --- |
 | abstract [TvInputService.Session](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateSession(kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session`. |
 | open [TvInputService.Session](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateSession(kotlin.String,%20kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session`. |
 | open [TvInputService.Session](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateSession(kotlin.String,%20kotlin.String,%20android.content.AttributionSource)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, tvAppAttributionSource: https://developer.android.com/reference/kotlin/android/content/AttributionSource.html#)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session`. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2972,6 +2979,7 @@ For any apps that needs sessionId to request tuner resources from TunerResourceM
 | `inputId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The ID of the TV input associated with the session. This value cannot be `null`. |
 | `sessionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the unique sessionId created by TIF when session is created. This value cannot be `null`. |
 | `tvAppAttributionSource` | [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource.html#): The Attribution Source of the TV App. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

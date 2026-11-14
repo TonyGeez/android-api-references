@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableFloat
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableFloat "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableFloat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableFloat](https://developer.android.com/reference/kotlin/android/util/MutableFloat#) |
 
 | **This class was deprecated in API level 28.**

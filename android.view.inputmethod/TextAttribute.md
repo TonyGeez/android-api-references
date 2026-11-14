@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TextAttribute
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/TextAttribute "View this page in Java") 
+| --- | --- |
 
 ```
 class TextAttribute : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.TextAttribute](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute#) |
 
 The data class that IME can take extra information to applications when setting the text. See [InputConnection.commitText(CharSequence, int, TextAttribute)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute))and [InputConnection.setComposingRegion(int, int, TextAttribute)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int,%20android.view.inputmethod.TextAttribute))and [InputConnection.setComposingText(CharSequence, int, TextAttribute)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute))
@@ -30,6 +32,7 @@ The data class that IME can take extra information to applications when setting 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute#describeContents())`()` <br /> |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute#getExtras())`()` Get the extras data. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getTextConversionSuggestions](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute#getTextConversionSuggestions())`()` Get the list of text conversion suggestions. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

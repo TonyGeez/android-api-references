@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableBoolean
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableBoolean "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableBoolean
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableBoolean](https://developer.android.com/reference/kotlin/android/util/MutableBoolean#) |
 
 | **This class was deprecated in API level 28.**

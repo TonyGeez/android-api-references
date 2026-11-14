@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # WebHistoryItem
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebHistoryItem "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebHistoryItem : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#) |
 
 A convenience class for accessing fields in an entry in the back/forward list of a WebView. Each WebHistoryItem is a snapshot of the requested history item.
@@ -26,6 +28,7 @@ A convenience class for accessing fields in an entry in the back/forward list of
 | abstract [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [getFavicon](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getFavicon())`()` Return the favicon of this history item or`null`if no favicon was found. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalUrl](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getOriginalUrl())`()` Return the original url of this history item. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getTitle())`()` Return the document title of this history item. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUrl](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getUrl())`()` Return the url of this history item. |
 
 | Protected methods ||

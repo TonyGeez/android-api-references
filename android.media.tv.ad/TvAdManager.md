@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # TvAdManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/ad/TvAdManager "View this page in Java")
+| --- | --- |
 
 ```
 class TvAdManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.ad.TvAdManager](https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#) |
 
 Central system API to the overall client-side TV AD architecture, which arbitrates interaction between applications and AD services.
@@ -24,30 +26,39 @@ Central system API to the overall client-side TV AD architecture, which arbitrat
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ACTION_APP_LINK_COMMAND:kotlin.String` Broadcast intent action to send app command to TV app. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#APP_LINK_KEY_BACK_URI:kotlin.String` Key for back URI in app link command. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#APP_LINK_KEY_CLASS_NAME:kotlin.String` Key for class name in app link. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#APP_LINK_KEY_COMMAND_TYPE:kotlin.String` Key for command type in app link command. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#APP_LINK_KEY_PACKAGE_NAME:kotlin.String` Key for package name in app link. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#APP_LINK_KEY_SERVICE_ID:kotlin.String` Key for service ID in app link command. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_BLOCKED:kotlin.Int` Error code for blocked contents. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_ENCRYPTED:kotlin.Int` Error code when the key or module is missing for the encrypted channel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_NONE:kotlin.Int` No error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_NOT_SUPPORTED:kotlin.Int` Error code for an unsupported channel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_RESOURCE_UNAVAILABLE:kotlin.Int` Error code when resource (e.g. tuner) is unavailable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_UNKNOWN:kotlin.Int` Unknown error code. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_UNKNOWN_CHANNEL:kotlin.Int` Error code when the current channel is an unknown channel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#ERROR_WEAK_SIGNAL:kotlin.Int` Error code for weak signal. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#INTENT_KEY_AD_SERVICE_ID:kotlin.String` Intent key for TV AD service ID. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#INTENT_KEY_CHANNEL_URI:kotlin.String` Intent key for TV channel URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#INTENT_KEY_COMMAND_TYPE:kotlin.String` Intent key for command type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#INTENT_KEY_TV_INPUT_ID:kotlin.String` Intent key for TV input ID. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_KEY_AD_BUFFER:kotlin.String` An object of `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_KEY_AD_REQUEST:kotlin.String` An object of `https://developer.android.com/reference/kotlin/android/media/tv/AdRequest.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_KEY_BROADCAST_INFO_REQUEST:kotlin.String` An object of `https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest.html#`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_KEY_REQUEST_ID:kotlin.String` The ID of `https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_TYPE_AD_BUFFER_READY:kotlin.String` Notifies the advertisement buffer is ready. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_TYPE_AD_REQUEST:kotlin.String` Sends an advertisement request to be processed by the related TV input. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_TYPE_BROADCAST_INFO_REQUEST:kotlin.String` Sends request for broadcast info. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_DATA_TYPE_REMOVE_BROADCAST_INFO_REQUEST:kotlin.String` Removes request for broadcast info. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_STATE_ERROR:kotlin.Int` Error state of AD service session. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_STATE_RUNNING:kotlin.Int` Running state of AD service session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#SESSION_STATE_STOPPED:kotlin.Int` Stopped (or not started) state of AD service session. |
 
@@ -56,6 +67,7 @@ Central system API to the overall client-side TV AD architecture, which arbitrat
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvAdServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdServiceInfo)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#getTvAdServiceList()()` Returns the complete list of TV AD services on the system. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#registerCallback(java.util.concurrent.Executor,%20android.media.tv.ad.TvAdManager.TvAdServiceCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.TvAdServiceCallback)` Registers a `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.TvAdServiceCallback`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)(serviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, command: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Sends app link command. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager#unregisterCallback(android.media.tv.ad.TvAdManager.TvAdServiceCallback)(callback: https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.TvAdServiceCallback)` Unregisters the existing `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.TvAdServiceCallback`. |
 
 ## Constants

@@ -9,10 +9,12 @@ class HijrahEra : Era
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.chrono.HijrahEra](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#)\> ||
 | | ↳ | [java.time.chrono.HijrahEra](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#) |
 
 | Known Direct Subclasses [HijrahEra.AH](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#ENUM_VALUE:AH) |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [HijrahEra.AH](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#ENUM_VALUE:AH) | The singleton instance for the current era, 'Anno Hegirae', which has the numeric value 1. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An era in the Hijrah calendar system.
 
@@ -31,6 +33,7 @@ The Hijrah calendar system has only one era covering the proleptic years greater
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#getDisplayName(java.time.format.TextStyle,%20java.util.Locale))`(`style:` ` [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle.html#)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the textual representation of this era. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#getValue())`()` Gets the numeric era`int`value. |
 | static [HijrahEra](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#of(kotlin.Int))`(`hijrahEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`HijrahEra`from an`int`value. |
+| --- | --- |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | [range](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` Gets the range of valid values for the specified field. |
 
 | Inherited functions ||

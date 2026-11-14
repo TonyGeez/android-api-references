@@ -3,6 +3,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LocationListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/LocationListener "View this page in Java")
+| --- | --- |
 
 ```
 interface LocationListener
@@ -25,9 +26,11 @@ Used for receiving notifications when the device location has changed. These met
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onFlushComplete(kotlin.Int)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Invoked when a flush operation is complete and after flushed locations have been delivered. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onLocationChanged(android.location.Location)(location: https://developer.android.com/reference/kotlin/android/location/Location)` Called when the location has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onLocationChanged(kotlin.collections.MutableList)(locations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/location/Location!>)` Called when the location has changed and locations are being delivered in batches. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onProviderDisabled(kotlin.String)(provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when the provider this listener is registered with becomes disabled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onProviderEnabled(kotlin.String)(provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when a provider this listener is registered with becomes enabled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationListener#onStatusChanged(kotlin.String,%20kotlin.Int,%20android.os.Bundle)(provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` This callback will never be invoked on Android Q and above, and providers can be considered as always in the `https://developer.android.com/reference/kotlin/android/location/LocationProvider#AVAILABLE:kotlin.Int` state. |
+| --- | --- |
 
 ## Public methods
 

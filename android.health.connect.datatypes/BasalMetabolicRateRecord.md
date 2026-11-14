@@ -8,9 +8,11 @@ class BasalMetabolicRateRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.BasalMetabolicRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#) |
+| --- | --- | --- | --- |
 
 Captures the BMR of a user. Each record represents the energy a user would burn if at rest all day, based on their height and weight.
 
@@ -29,6 +31,7 @@ Captures the BMR of a user. Each record represents the energy a user would burn 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Power](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Power) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#getBasalMetabolicRate()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -56,6 +59,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

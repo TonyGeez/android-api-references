@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AsyncQueryHandler
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/AsyncQueryHandler "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AsyncQueryHandler : Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.os.Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) ||
 | | ↳ | [android.content.AsyncQueryHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#) |
 
@@ -32,15 +34,18 @@ A helper class to help make handling asynchronous [ContentResolver](https://deve
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelOperation](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#cancelOperation(kotlin.Int))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to cancel operation that has not already started. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handleMessage](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#handleMessage(android.os.Message))`(`msg:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDelete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startDelete(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.String,%20kotlin.Array))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` This method begins an asynchronous delete. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startInsert](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startInsert(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `initialValues:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)!`)` This method begins an asynchronous insert. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startQuery](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startQuery(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `orderBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method begins an asynchronous query. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startUpdate](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startUpdate(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `values:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` This method begins an asynchronous update. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)! | [createHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#createHandler(android.os.Looper))`(`looper:` ` [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDeleteComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onDeleteComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `result:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an asynchronous delete is completed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInsertComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onInsertComplete(kotlin.Int,%20kotlin.Any,%20android.net.Uri))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Called when an asynchronous insert is completed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onQueryComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onQueryComplete(kotlin.Int,%20kotlin.Any,%20android.database.Cursor))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Called when an asynchronous query is completed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpdateComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onUpdateComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cookie:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `result:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an asynchronous update is completed. |
 
@@ -107,6 +112,7 @@ This method begins an asynchronous delete. When the delete operation is done [on
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A token passed into [onDeleteComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onDeleteComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int))to identify the delete operation. |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:An object that gets passed into [onDeleteComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onDeleteComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int)) |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:the Uri passed to the delete operation. |
+| --- | --- |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the where clause. |
 
 ### startInsert
@@ -129,6 +135,7 @@ This method begins an asynchronous insert. When the insert operation is done [on
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A token passed into [onInsertComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onInsertComplete(kotlin.Int,%20kotlin.Any,%20android.net.Uri))to identify the insert operation. |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:An object that gets passed into [onInsertComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onInsertComplete(kotlin.Int,%20kotlin.Any,%20android.net.Uri)) |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:the Uri passed to the insert operation. |
+| --- | --- |
 | `initialValues` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)!:the ContentValues parameter passed to the insert operation. |
 
 ### startQuery
@@ -154,9 +161,11 @@ This method begins an asynchronous query. When the query is done [onQueryComplet
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A token passed into [onQueryComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onQueryComplete(kotlin.Int,%20kotlin.Any,%20android.database.Cursor))to identify the query. |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:An object that gets passed into [onQueryComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onQueryComplete(kotlin.Int,%20kotlin.Any,%20android.database.Cursor)) |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The URI, using the content:// scheme, for the content to retrieve. |
+| --- | --- |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:A list of which columns to return. Passing null will return all columns, which is discouraged to prevent reading data from storage that isn't going to be used. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A filter declaring which rows to return, formatted as an SQL WHERE clause (excluding the WHERE itself). Passing null will return all rows for the given URI. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:You may include ?s in selection, which will be replaced by the values from selectionArgs, in the order that they appear in the selection. The values will be bound as Strings. |
+| --- | --- |
 | `orderBy` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:How to order the rows, formatted as an SQL ORDER BY clause (excluding the ORDER BY itself). Passing null will use the default sort order, which may be unordered. |
 
 ### startUpdate
@@ -181,6 +190,7 @@ This method begins an asynchronous update. When the update operation is done [on
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A token passed into [onUpdateComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onUpdateComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int))to identify the update operation. |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:An object that gets passed into [onUpdateComplete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#onUpdateComplete(kotlin.Int,%20kotlin.Any,%20kotlin.Int)) |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:the Uri passed to the update operation. |
+| --- | --- |
 | `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)!:the ContentValues parameter passed to the update operation. |
 
 ## Protected methods
@@ -212,6 +222,7 @@ Called when an asynchronous delete is completed.
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the token to identify the query, passed in from [startDelete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startDelete(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.String,%20kotlin.Array)). |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the cookie object that's passed in from [startDelete](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startDelete(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.String,%20kotlin.Array)). |
 | `result` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the result returned from the delete operation |
+| --- | --- |
 
 ### onInsertComplete
 
@@ -232,6 +243,7 @@ Called when an asynchronous insert is completed.
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the token to identify the query, passed in from [startInsert](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startInsert(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues)). |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the cookie object that's passed in from [startInsert](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startInsert(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues)). |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:the uri returned from the insert operation. |
+| --- | --- |
 
 ### onQueryComplete
 
@@ -252,6 +264,7 @@ Called when an asynchronous query is completed.
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the token to identify the query, passed in from [startQuery](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startQuery(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)). |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the cookie object passed in from [startQuery](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startQuery(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)). |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:The cursor holding the results from the query. |
+| --- | --- |
 
 ### onUpdateComplete
 
@@ -272,3 +285,4 @@ Called when an asynchronous update is completed.
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the token to identify the query, passed in from [startUpdate](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startUpdate(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)). |
 | `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the cookie object that's passed in from [startUpdate](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler#startUpdate(kotlin.Int,%20kotlin.Any,%20android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)). |
 | `result` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the result returned from the update operation |
+| --- | --- |

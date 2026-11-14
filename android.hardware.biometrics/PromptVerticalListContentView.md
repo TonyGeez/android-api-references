@@ -3,12 +3,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PromptVerticalListContentView
 
 Kotlin | [Java](https://developer.android.com/reference/android/hardware/biometrics/PromptVerticalListContentView "View this page in Java")
+| --- | --- |
 
 ```
 class PromptVerticalListContentView : Parcelable, PromptContentView
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.PromptVerticalListContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#) |
 
 Contains the information of the template of vertical list content view for Biometric Prompt.
@@ -44,9 +46,11 @@ BiometricPrompt biometricPrompt = new BiometricPrompt.Builder(...)
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#getDescription()()` Gets the description for the content view, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView.Builder#setDescription(kotlin.String)`. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PromptContentItem](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItem)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#getListItems()()` Gets the list of items on the content view, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView.Builder#addListItem(android.hardware.biometrics.PromptContentItem)`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#getMaxEachItemCharacterNumber()()` Returns the maximum number of characters allowed for each item's text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#getMaxItemCount()()` Returns the maximum count of the list items. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

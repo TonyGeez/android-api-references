@@ -9,6 +9,7 @@ open class Proxy
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy#) |
 
 This class represents a proxy setting, typically a type (http, socks) and a socket address. A`Proxy`is an immutable object.
@@ -28,6 +29,7 @@ This class represents a proxy setting, typically a type (http, socks) and a sock
 | open [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)! | [address](https://developer.android.com/reference/kotlin/java/net/Proxy#address())`()` Returns the socket address of the proxy, or`null`if its a direct connection. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/Proxy#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/Proxy#hashCode())`()` Returns a hashcode for this Proxy. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/Proxy#toString())`()` Constructs a string representation of this Proxy. |
 | open [Proxy.Type](https://developer.android.com/reference/kotlin/java/net/Proxy.Type)! | [type](https://developer.android.com/reference/kotlin/java/net/Proxy#type())`()` Returns the proxy type. |
 

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # LinkProperties
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/LinkProperties "View this page in Java") 
+| --- | --- |
 
 ```
 class LinkProperties : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.LinkProperties](https://developer.android.com/reference/kotlin/android/net/LinkProperties#) |
 
 Describes the properties of a network link. A link represents a connection to a network. It may have multiple addresses and multiple gateways, multiple dns servers but only one http proxy and one network interface. Note that this is just a holder of data. Modifying it does not affect live networks.
@@ -30,30 +32,39 @@ Describes the properties of a network link. A link represents a connection to a 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addRoute](https://developer.android.com/reference/kotlin/android/net/LinkProperties#addRoute(android.net.RouteInfo))`(`route:` ` [RouteInfo](https://developer.android.com/reference/kotlin/android/net/RouteInfo)`)` Adds a [RouteInfo](https://developer.android.com/reference/kotlin/android/net/RouteInfo) to this`LinkProperties`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/net/LinkProperties#clear())`()` Clears this object to its initial state. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/LinkProperties#describeContents())`()` Implement the Parcelable interface |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/LinkProperties#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`LinkProperties`instance against the target LinkProperties in`obj`. |
 | [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address.html#)? | [getDhcpServerAddress](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getDhcpServerAddress())`()` Get DHCP server address |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\> | [getDnsServers](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getDnsServers())`()` Returns all the [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) for DNS servers on this link. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDomains](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getDomains())`()` Get the DNS domains search path set for this link. |
 | [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo)? | [getHttpProxy](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getHttpProxy())`()` Gets the recommended [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo)(or`null`) set on this link. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInterfaceName](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getInterfaceName())`()` Gets the interface name for this link. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress)!\> | [getLinkAddresses](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getLinkAddresses())`()` Returns all the [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress) on this link. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMtu](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getMtu())`()` Gets any non-default MTU size set for this link. |
 | [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix)? | [getNat64Prefix](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getNat64Prefix())`()` Returns the NAT64 prefix in use on this link, if any. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPrivateDnsServerName](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getPrivateDnsServerName())`()` Returns the private DNS server name that is in use. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RouteInfo](https://developer.android.com/reference/kotlin/android/net/RouteInfo)!\> | [getRoutes](https://developer.android.com/reference/kotlin/android/net/LinkProperties#getRoutes())`()` Returns all the [RouteInfo](https://developer.android.com/reference/kotlin/android/net/RouteInfo) set on this link. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/LinkProperties#hashCode())`()` Generate hashcode based on significant fields Equal objects must produce the same hash code, while unequal objects may have the same hash codes. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivateDnsActive](https://developer.android.com/reference/kotlin/android/net/LinkProperties#isPrivateDnsActive())`()` Returns whether private DNS is currently in use on this network. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWakeOnLanSupported](https://developer.android.com/reference/kotlin/android/net/LinkProperties#isWakeOnLanSupported())`()` Returns whether the network interface supports WakeOnLAN |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDhcpServerAddress](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setDhcpServerAddress(java.net.Inet4Address))`(`serverAddress:` ` [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address.html#)?`)` Set DHCP server address. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDnsServers](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setDnsServers(kotlin.collections.MutableCollection))`(`dnsServers:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!>`)` Replaces the DNS servers in this`LinkProperties`with the given [Collection](https://developer.android.com/reference/kotlin/java/util/Collection.html#) of [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) objects. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDomains](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setDomains(kotlin.String))`(`domains:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the DNS domain search path used on this link. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpProxy](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setHttpProxy(android.net.ProxyInfo))`(`proxy:` ` [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo)?`)` Sets the recommended [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo) to use on this link, or`null`for none. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterfaceName](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setInterfaceName(kotlin.String))`(`iface:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the interface name for this link. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLinkAddresses](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setLinkAddresses(kotlin.collections.MutableCollection))`(`addresses:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress)!>`)` Replaces the [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress) in this`LinkProperties`with the given [Collection](https://developer.android.com/reference/kotlin/java/util/Collection.html#) of [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMtu](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setMtu(kotlin.Int))`(`mtu:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the Maximum Transmission Unit size to use on this link. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNat64Prefix](https://developer.android.com/reference/kotlin/android/net/LinkProperties#setNat64Prefix(android.net.IpPrefix))`(`prefix:` ` [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix)?`)` Sets the NAT64 prefix in use on this link. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/LinkProperties#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/LinkProperties#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

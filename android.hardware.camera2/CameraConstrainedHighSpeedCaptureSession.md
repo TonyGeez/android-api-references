@@ -7,6 +7,7 @@ abstract class CameraConstrainedHighSpeedCaptureSession : CameraCaptureSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.camera2.CameraCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession) ||
 | | ↳ | [android.hardware.camera2.CameraConstrainedHighSpeedCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#) |
 
@@ -369,6 +370,7 @@ Submitting a request list created by this method to a normal capture session wil
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the set of output Surfaces in the request do not meet the high speed video capability requirements, or the camera device doesn't support high speed video capability, or the request doesn't meet the high speed video capability requirements, or the request doesn't contain the required controls for high speed capture. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 
 **See Also**
 

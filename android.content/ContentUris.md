@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ContentUris
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ContentUris "View this page in Java") 
+| --- | --- |
 
 ```
 open class ContentUris
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.ContentUris](https://developer.android.com/reference/kotlin/android/content/ContentUris#) |
 
 Utility methods useful for working with [android.net.Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) objects that use the "content" (content://) scheme.
@@ -42,6 +44,7 @@ Content URIs have the syntax
 | openstatic [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#) | [appendId](https://developer.android.com/reference/kotlin/android/content/ContentUris#appendId(android.net.Uri.Builder,%20kotlin.Long))`(`builder:` ` [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseId](https://developer.android.com/reference/kotlin/android/content/ContentUris#parseId(android.net.Uri))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Converts the last path segment to a long. |
 | openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [removeId](https://developer.android.com/reference/kotlin/android/content/ContentUris#removeId(android.net.Uri))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Removes any ID from the end of the path. |
+| --- | --- |
 | openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [withAppendedId](https://developer.android.com/reference/kotlin/android/content/ContentUris#withAppendedId(android.net.Uri,%20kotlin.Long))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
 
 ## Public constructors

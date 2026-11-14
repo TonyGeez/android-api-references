@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PlaybackState
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/session/PlaybackState "View this page in Java") 
+| --- | --- |
 
 ```
 class PlaybackState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.session.PlaybackState](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#) |
 
 Playback state for a [MediaSession](https://developer.android.com/reference/kotlin/android/media/session/MediaSession). This includes a state like [PlaybackState.STATE_PLAYING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_PLAYING:kotlin.Int), the current playback position, and the current control capabilities.
@@ -27,33 +29,43 @@ Playback state for a [MediaSession](https://developer.android.com/reference/kotl
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_FAST_FORWARD](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_FAST_FORWARD:kotlin.Long) Indicates this session supports the fast forward command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PAUSE](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PAUSE:kotlin.Long) Indicates this session supports the pause command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PLAY](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PLAY:kotlin.Long) Indicates this session supports the play command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PLAY_FROM_MEDIA_ID](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PLAY_FROM_MEDIA_ID:kotlin.Long) Indicates this session supports the play from media id command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PLAY_FROM_SEARCH](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PLAY_FROM_SEARCH:kotlin.Long) Indicates this session supports the play from search command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PLAY_FROM_URI](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PLAY_FROM_URI:kotlin.Long) Indicates this session supports the play from URI command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PLAY_PAUSE](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PLAY_PAUSE:kotlin.Long) Indicates this session supports the play/pause toggle command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PREPARE](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PREPARE:kotlin.Long) Indicates this session supports the prepare command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PREPARE_FROM_MEDIA_ID](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PREPARE_FROM_MEDIA_ID:kotlin.Long) Indicates this session supports the prepare from media id command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PREPARE_FROM_SEARCH](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PREPARE_FROM_SEARCH:kotlin.Long) Indicates this session supports the prepare from search command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_PREPARE_FROM_URI](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_PREPARE_FROM_URI:kotlin.Long) Indicates this session supports the prepare from URI command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_REWIND](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_REWIND:kotlin.Long) Indicates this session supports the rewind command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SEEK_TO](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SEEK_TO:kotlin.Long) Indicates this session supports the seek to command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SET_PLAYBACK_SPEED](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SET_PLAYBACK_SPEED:kotlin.Long) Indicates this session supports the set playback speed command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SET_RATING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SET_RATING:kotlin.Long) Indicates this session supports the set rating command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SKIP_TO_NEXT](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SKIP_TO_NEXT:kotlin.Long) Indicates this session supports the next command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SKIP_TO_PREVIOUS](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SKIP_TO_PREVIOUS:kotlin.Long) Indicates this session supports the previous command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_SKIP_TO_QUEUE_ITEM](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_SKIP_TO_QUEUE_ITEM:kotlin.Long) Indicates this session supports the skip to queue item command. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ACTION_STOP](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#ACTION_STOP:kotlin.Long) Indicates this session supports the stop command. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [PLAYBACK_POSITION_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#PLAYBACK_POSITION_UNKNOWN:kotlin.Long) Use this value for the position to indicate the position is not known. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BUFFERING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_BUFFERING:kotlin.Int) State indicating this item is currently buffering and will begin playing when enough data has buffered. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_CONNECTING:kotlin.Int) State indicating the class doing playback is currently connecting to a new destination. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ERROR](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_ERROR:kotlin.Int) State indicating this item is currently in an error state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAST_FORWARDING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_FAST_FORWARDING:kotlin.Int) State indicating this item is currently fast forwarding. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_NONE](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_NONE:kotlin.Int) This is the default playback state and indicates that no media has been added yet, or the performer has been reset and has no content to play. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_PAUSED:kotlin.Int) State indicating this item is currently paused. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PLAYING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_PLAYING:kotlin.Int) State indicating this item is currently playing. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_REWINDING](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_REWINDING:kotlin.Int) State indicating this item is currently rewinding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SKIPPING_TO_NEXT](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_SKIPPING_TO_NEXT:kotlin.Int) State indicating the player is currently skipping to the next item. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SKIPPING_TO_PREVIOUS](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_SKIPPING_TO_PREVIOUS:kotlin.Int) State indicating the player is currently skipping to the previous item. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SKIPPING_TO_QUEUE_ITEM](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_SKIPPING_TO_QUEUE_ITEM:kotlin.Int) State indicating the player is currently skipping to a specific item in the queue. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STOPPED](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#STATE_STOPPED:kotlin.Int) State indicating this item is currently stopped. |
 
@@ -66,15 +78,19 @@ Playback state for a [MediaSession](https://developer.android.com/reference/kotl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActions](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getActions())`()` Get the current actions available on this session. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActiveQueueItemId](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getActiveQueueItemId())`()` Get the id of the currently active item in the queue. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBufferedPosition](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getBufferedPosition())`()` Get the current buffered position in ms. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlaybackState.CustomAction](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState.CustomAction)!\>! | [getCustomActions](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getCustomActions())`()` Get the list of custom actions. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getErrorMessage](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getErrorMessage())`()` Get a user readable error message. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getExtras())`()` Get any custom extras that were set on this playback state. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastPositionUpdateTime](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getLastPositionUpdateTime())`()` Get the elapsed real time at which position was last updated. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPlaybackSpeed](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getPlaybackSpeed())`()` Get the current playback speed as a multiple of normal playback. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPosition](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getPosition())`()` Get the current playback position in ms. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#getState())`()` Get the current state of playback. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isActive](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#isActive())`()` Returns whether this is considered as an active playback state. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

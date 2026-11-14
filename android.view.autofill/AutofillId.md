@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AutofillId
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/autofill/AutofillId "View this page in Java") 
+| --- | --- |
 
 ```
 class AutofillId : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.autofill.AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) |
 
 A unique identifier for an autofill node inside an [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#).
@@ -26,12 +28,15 @@ A unique identifier for an autofill node inside an [android.app.Activity](https:
 | static [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) | [create](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#create(android.view.View,%20kotlin.Int))`(`host:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`, `virtualId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) with the virtual id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAutofillVirtualId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getAutofillVirtualId())`()` Gets the virtual id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getSessionId())`()` Used to get the Session identifier associated with this AutofillId. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getViewId())`()` Returns the assigned unique identifier of this AutofillID. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInAutofillSession](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#isInAutofillSession())`()` Checks if this node is generate as part of a [android.app.assist.AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#isVirtual())`()` Checks whether this AutofillId represents a virtual view. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

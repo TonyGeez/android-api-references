@@ -6,12 +6,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # BluetoothHealthCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothHealthCallback "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class BluetoothHealthCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothHealthCallback](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthCallback#) |
 
 | **This class was deprecated in API level 29.**
@@ -91,6 +93,8 @@ It's the responsibility of the implementer of this callback to close the parcel 
 | `config` | [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!:The Health app configuration |
 | `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!:The Bluetooth Device |
 | `prevState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous state of the channel |
+| --- | --- |
 | `newState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new state of the channel. |
 | `fd` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:The Parcel File Descriptor when the channel state is connected. |
 | `channelId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id associated with the channel. This id will be used in future calls like when disconnecting the channel. |
+| --- | --- |

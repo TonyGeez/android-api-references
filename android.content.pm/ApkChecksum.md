@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ApkChecksum
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ApkChecksum "View this page in Java") 
+| --- | --- |
 
 ```
 class ApkChecksum : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ApkChecksum](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#) |
 
 A typed checksum of an APK.
@@ -26,9 +28,11 @@ A typed checksum of an APK.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#describeContents())`()` <br /> |
 | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)? | [getInstallerCertificate](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#getInstallerCertificate())`()` For Installer-provided checksums, certificate of the Installer. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInstallerPackageName](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#getInstallerPackageName())`()` For Installer-provided checksums, package name of the Installer. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSplitName](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#getSplitName())`()` Checksum for which split. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#getType())`()` Checksum type. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getValue](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#getValue())`()` Checksum value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/ApkChecksum#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

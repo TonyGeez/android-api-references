@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # TransitionValues
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/TransitionValues "View this page in Java") 
+| --- | --- |
 
 ```
 open class TransitionValues
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.transition.TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#) |
 
 Data structure which holds cached values for the transition. The view field is the target which all of the values pertain to. The values field is a map which holds information for fields according to names selected by the transitions. These names should be unique to avoid clobbering values stored by other transitions, such as the convention project:transition_name:property_name. For example, the platform might store a property "alpha" in a transition "Fader" as "android:fader:alpha".
@@ -29,6 +31,7 @@ These values are cached during the [Transition.captureStartValues(TransitionValu
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#hashCode())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#toString())`()` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AudioMixerAttributes
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMixerAttributes "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioMixerAttributes : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioMixerAttributes](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#) |
 
 Class to represent the attributes of the audio mixer: its format, which represents by an [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat) object and mixer behavior.
@@ -35,9 +37,11 @@ Class to represent the attributes of the audio mixer: its format, which represen
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat) | [getFormat](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#getFormat())`()` Return the format of the audio mixer. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMixerBehavior](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#getMixerBehavior())`()` Returns the mixer behavior for this set of mixer attributes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

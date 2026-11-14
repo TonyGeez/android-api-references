@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SoftApConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/SoftApConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class SoftApConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.SoftApConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#) |
 
 Configuration for a soft access point (a.k.a. Soft AP, SAP, Hotspot).
@@ -32,12 +34,15 @@ Instances of this class are immutable.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_2GHZ](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#BAND_2GHZ:kotlin.Int) 2GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_5GHZ](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#BAND_5GHZ:kotlin.Int) 5GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_60GHZ](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#BAND_60GHZ:kotlin.Int) 60GHz band. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_6GHZ](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#BAND_6GHZ:kotlin.Int) 6GHz band. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OPEN](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_OPEN:kotlin.Int) THe definition of security type OPEN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WPA2_PSK](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_WPA2_PSK:kotlin.Int) The definition of security type WPA2-PSK. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WPA3_OWE](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_WPA3_OWE:kotlin.Int) The definition of security type WPA3-OWE. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WPA3_OWE_TRANSITION](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_WPA3_OWE_TRANSITION:kotlin.Int) The definition of security type WPA3-OWE Transition. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WPA3_SAE](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_WPA3_SAE:kotlin.Int) The definition of security type WPA3-SAE. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WPA3_SAE_TRANSITION](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#SECURITY_TYPE_WPA3_SAE_TRANSITION:kotlin.Int) The definition of security type WPA3-SAE Transition mode. |
 
 | Inherited constants ||
@@ -49,15 +54,19 @@ Instances of this class are immutable.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | [getBssid](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getBssid())`()` Returns MAC address set to be BSSID for the AP. |
+| --- | --- |
 | [SparseIntArray](https://developer.android.com/reference/kotlin/android/util/SparseIntArray.html#) | [getChannels](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getChannels())`()` Returns SparseIntArray (key:`BandType`, value: channel) that consists of the configured bands and channels for the AP(s). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassphrase](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getPassphrase())`()` Returns String set to be passphrase for current AP. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityType](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getSecurityType())`()` Get security type params which depends on which security passphrase to set. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSsid](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getSsid())`()` Return the UTF-8 String set to be the SSID for the AP. |
 | [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid)? | [getWifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#getWifiSsid())`()` Return WifiSsid set to be the SSID for the AP. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHiddenSsid](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#isHiddenSsid())`()` Returns Boolean set to be indicate hidden (true: doesn't broadcast its SSID) or not (false: broadcasts its SSID) for the AP. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

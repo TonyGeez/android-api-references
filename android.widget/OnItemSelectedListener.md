@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnItemSelectedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnItemSelectedListener
@@ -44,6 +45,7 @@ Implementers can call getItemAtPosition(position) if they need to access the dat
 | `parent` | [AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\<\*\>!:The AdapterView where the selection happened |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The view within the AdapterView that was clicked |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the view in the adapter |
+| --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The row id of the item that is selected |
 
 ### onNothingSelected

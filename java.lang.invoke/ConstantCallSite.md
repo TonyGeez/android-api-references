@@ -9,6 +9,7 @@ open class ConstantCallSite : CallSite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) ||
 | | ↳ | [java.lang.invoke.ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#) |
 
@@ -29,6 +30,7 @@ A`ConstantCallSite`is a [CallSite](https://developer.android.com/reference/kotli
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dynamicInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#dynamicInvoker())`()` Returns this call site's permanent target. |
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [getTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#getTarget())`()` Returns the target method of the call site, which behaves like a`final`field of the`ConstantCallSite`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#setTarget(java.lang.invoke.MethodHandle))`(`ignore:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Always throws an [UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#). |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -88,6 +90,7 @@ While the hook is being called, the new`ConstantCallSite`object is in a partiall
 | `java.lang.invoke.WrongMethodTypeException` | if the hook cannot be invoked on the required arguments, or if the target returned by the hook is not of the given`targetType` |
 | `java.lang.NullPointerException` | if the hook returns a null value |
 | `java.lang.ClassCastException` | if the hook returns something other than a`MethodHandle` |
+| --- | --- |
 | `java.lang.Throwable` | anything else thrown by the hook function |
 
 ## Public methods
@@ -148,3 +151,4 @@ Always throws an [UnsupportedOperationException](https://developer.android.com/r
 | `java.lang.NullPointerException` | if the proposed new target is null |
 | `java.lang.invoke.WrongMethodTypeException` | if the proposed new target has a method type that differs from the previous target |
 | `java.lang.UnsupportedOperationException` | because this kind of call site cannot change its target |
+| --- | --- |

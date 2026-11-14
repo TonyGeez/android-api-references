@@ -8,9 +8,11 @@ open class AccountAuthenticatorActivity : Activity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) ||
 | | | | | ↳ | [android.accounts.AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity#) |
 

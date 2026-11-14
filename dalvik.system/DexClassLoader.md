@@ -9,9 +9,11 @@ open class DexClassLoader : BaseDexClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) |||
 | | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader) ||
 | | | ↳ | [dalvik.system.DexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DexClassLoader#) |
+| --- | --- | --- | --- |
 
 A class loader that loads classes from`.jar`and`.apk`files containing a`classes.dex`entry. This can be used to execute code not installed as part of an application.
 
@@ -58,4 +60,5 @@ The path lists are separated using the character specified by the`path.separator
 | `dexPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of jar/apk files containing classes and resources, delimited by`File.pathSeparator`, which defaults to`":"`on Android |
 | `optimizedDirectory` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:this parameter is deprecated and has no effect since API level 26. |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null` |
+| --- | --- |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!:the parent class loader |

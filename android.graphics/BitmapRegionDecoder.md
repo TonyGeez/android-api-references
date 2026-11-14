@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # BitmapRegionDecoder
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/BitmapRegionDecoder "View this page in Java") 
+| --- | --- |
 
 ```
 class BitmapRegionDecoder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) |
 
 BitmapRegionDecoder can be used to decode a rectangle region from an image. BitmapRegionDecoder is particularly useful when an original image is large and you only need parts of the image.
@@ -24,15 +26,19 @@ To create a BitmapRegionDecoder, call newInstance(...). Given a BitmapRegionDeco
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap)! | [decodeRegion](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#decodeRegion(android.graphics.Rect,%20android.graphics.BitmapFactory.Options))`(`rect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)!`, `options:` ` [BitmapFactory.Options](https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options)!`)` Decodes a rectangle region in the image specified by rect. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#getHeight())`()` Returns the original image's height |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#getWidth())`()` Returns the original image's width |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecycled](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#isRecycled())`()` Returns true if this region decoder has been recycled. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(android.os.ParcelFileDescriptor))`(`pfd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`)` Create a BitmapRegionDecoder from the file descriptor. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
+| --- | --- |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(java.io.FileDescriptor,%20kotlin.Boolean))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the file descriptor. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#)? | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(java.io.InputStream))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)`)` Create a BitmapRegionDecoder from an input stream. |
+| --- | --- |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#)? | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(java.io.InputStream,%20kotlin.Boolean))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from an input stream. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(kotlin.String))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a BitmapRegionDecoder from a file path. |
 | static [BitmapRegionDecoder](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#) | [newInstance](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#newInstance(kotlin.String,%20kotlin.Boolean))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from a file path. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder#recycle())`()` Frees up the memory associated with this region decoder, and mark the region decoder as "dead", meaning it will throw an exception if decodeRegion(), getWidth() or getHeight() is called. |
 
 | Protected methods ||
@@ -142,6 +148,7 @@ Create a BitmapRegionDecoder from the specified byte array. Currently only the J
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):byte array of compressed image data. This value cannot be`null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset into data for where the decoder should begin parsing. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes, beginning at offset, to parse |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
@@ -174,6 +181,7 @@ Create a BitmapRegionDecoder from the specified byte array. Currently only the J
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):byte array of compressed image data. This value cannot be`null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset into data for where the decoder should begin parsing. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes, beginning at offset, to parse |
+| --- | --- |
 | `isShareable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):This field has been ignored since [Build.VERSION_CODES.GINGERBREAD](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#GINGERBREAD:kotlin.Int). |
 
 | Return ||

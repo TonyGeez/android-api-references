@@ -9,6 +9,7 @@ abstract class ProxySelector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.ProxySelector](https://developer.android.com/reference/kotlin/java/net/ProxySelector#) |
 
 Selects the proxy server to use, if any, when connecting to the network resource referenced by a URL. A proxy selector is a concrete sub-class of this class and is registered by invoking the [setDefault](https://developer.android.com/reference/kotlin/java/net/ProxySelector#setDefault(java.net.ProxySelector))method. The currently registered proxy selector can be retrieved by calling [getDefault](https://developer.android.com/reference/kotlin/java/net/ProxySelector#getDefault())method.
@@ -30,6 +31,7 @@ The default proxy selector does enforce a [set of System Properties](https://dev
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connectFailed](https://developer.android.com/reference/kotlin/java/net/ProxySelector#connectFailed(java.net.URI,%20java.net.SocketAddress,%20java.io.IOException))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `sa:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`, `ioe:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Called to indicate that a connection could not be established to a proxy/socks server. |
 | openstatic [ProxySelector](https://developer.android.com/reference/kotlin/java/net/ProxySelector#)! | [getDefault](https://developer.android.com/reference/kotlin/java/net/ProxySelector#getDefault())`()` Gets the system-wide proxy selector. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy)!\>! | [select](https://developer.android.com/reference/kotlin/java/net/ProxySelector#select(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`)` Selects all the applicable proxies based on the protocol to access the resource with and a destination address to access the resource at. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/ProxySelector#setDefault(java.net.ProxySelector))`(`ps:` ` [ProxySelector](https://developer.android.com/reference/kotlin/java/net/ProxySelector#)!`)` Sets (or unsets) the system-wide proxy selector. |
 
 ## Public constructors
@@ -63,6 +65,7 @@ Called to indicate that a connection could not be established to a proxy/socks s
 | `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:The URI that the proxy at sa failed to serve. |
 | `sa` | [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!:The socket address of the proxy/SOCKS server |
 | `ioe` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!:The I/O exception thrown when the connect failed. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------|

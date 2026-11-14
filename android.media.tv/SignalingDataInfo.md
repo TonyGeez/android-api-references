@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SignalingDataInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/SignalingDataInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SignalingDataInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.SignalingDataInfo](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#) |
 
 Describes a metadata object of a [SignalingDataResponse](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse).
@@ -22,6 +24,7 @@ Describes a metadata object of a [SignalingDataResponse](https://developer.andro
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTENT_ENCODING_BASE64](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#CONTENT_ENCODING_BASE64:kotlin.String) A/344:2023-5 9. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTENT_ENCODING_UTF_8](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#CONTENT_ENCODING_UTF_8:kotlin.String) The encoding of the content is UTF-8. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LLS_NO_GROUP_ID](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#LLS_NO_GROUP_ID:kotlin.Int) This value for [getGroup()](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getGroup())denotes that there's no group associated with this metadata. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -37,9 +40,11 @@ Describes a metadata object of a [SignalingDataResponse](https://developer.andro
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getEncoding](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getEncoding())`()` The content encoding of the data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroup](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getGroup())`()` Gets the LLS group ID. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSignalingDataType](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getSignalingDataType())`()` Gets the signaling data type contained in this metadata object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTable](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getTable())`()` The signaling table data, represented as a XML, JSON or BASE64 string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#getVersion())`()` Gets the version of the signalling element. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -121,6 +126,7 @@ SignalingDataInfo(
 | `table` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `signalingDataType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

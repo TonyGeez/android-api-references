@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # AudioStream
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/rtp/AudioStream "View this page in Java") 
+| --- | --- |
 
 ```
 open class AudioStream : RtpStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.rtp.RtpStream](https://developer.android.com/reference/kotlin/android/net/rtp/RtpStream) ||
 | | ↳ | [android.net.rtp.AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#) |
 
@@ -40,9 +42,11 @@ Using this class requires [android.Manifest.permission#INTERNET](https://develop
 | open [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec)! | [getCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#getCodec())`()` Returns the [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec), or`null`if it is not set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDtmfType](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#getDtmfType())`()` Returns the RTP payload type for dual-tone multi-frequency (DTMF) digits, or`-1`if it is not enabled. |
 | open [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup)! | [getGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#getGroup())`()` Returns the joined [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBusy](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#isBusy())`()` Returns`true`if the stream has already joined an [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#join(android.net.rtp.AudioGroup))`(`group:` ` [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup)!`)` Joins an [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#setCodec(android.net.rtp.AudioCodec))`(`codec:` ` [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec)!`)` Sets the [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDtmfType](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream#setDtmfType(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the RTP payload type for dual-tone multi-frequency (DTMF) digits. |
 
 | Inherited functions ||

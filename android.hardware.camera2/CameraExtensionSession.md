@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # CameraExtensionSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CameraExtensionSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.CameraExtensionSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#) |
 
 A camera capture session that enables access to device-specific camera extensions, which often use multi-frame bursts and sophisticated post-process algorithms for image capture.
@@ -28,15 +30,18 @@ Information about support for specific device-specific extensions can be queried
 | abstract | [ExtensionCaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback) A callback object for tracking the progress of a [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest) submitted to the camera device. |
 | abstract | [StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.StateCallback) A callback object for receiving updates about the state of a camera extension session. |
 | | [StillCaptureLatency](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency) Realtime calculated still [capture](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback))latency. |
+| --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capture](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback))`(`request:` ` [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [CameraExtensionSession.ExtensionCaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback)`)` Submit a request for device-specific processing using input from the camera device, to produce a single high-quality output result. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#close())`()` Close this capture session asynchronously. |
 | open [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice) | [getDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#getDevice())`()` Get the camera device that this session is created for. |
+| --- | --- |
 | open [CameraExtensionSession.StillCaptureLatency](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency)? | [getRealtimeStillCaptureLatency](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#getRealtimeStillCaptureLatency())`()` Return the realtime still [capture](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback))latency. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setRepeatingRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback))`(`request:` ` [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [CameraExtensionSession.ExtensionCaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback)`)` Request endlessly repeating device-specific extension processing of camera images. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRepeating](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#stopRepeating())`()` Cancel any ongoing repeating capture set by [setRepeatingRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)). |
+| --- | --- |
 
 ## Public methods
 
@@ -71,6 +76,7 @@ Requests submitted through this method have higher priority than those submitted
 | `request` | [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest):the settings for this capture This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):the executor which will be used for invoking the listener. This value cannot be`null`. |
 | `listener` | [CameraExtensionSession.ExtensionCaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback):The callback object to notify once this request has been processed. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,6 +87,7 @@ Requests submitted through this method have higher priority than those submitted
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalStateException` | if this session is no longer active, either because the session was explicitly closed, a new session has been created or the camera device has been closed. |
 | `java.lang.IllegalArgumentException` | if the request targets no Surfaces or Surfaces that are not configured as outputs for this session; or the request targets a set of Surfaces that cannot be submitted simultaneously. |
+| --- | --- |
 
 ### close
 
@@ -167,6 +174,7 @@ Calling this method will replace any earlier repeating request.
 | `request` | [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest):the request to repeat indefinitely This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):the executor which will be used for invoking the listener. This value cannot be`null`. |
 | `listener` | [CameraExtensionSession.ExtensionCaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback):The callback object to notify every time the request finishes processing. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,6 +185,7 @@ Calling this method will replace any earlier repeating request.
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalStateException` | if this session is no longer active, either because the session was explicitly closed, a new session has been created or the camera device has been closed. |
 | `java.lang.IllegalArgumentException` | If the request references no Surfaces or references Surfaces that are not currently configured as outputs. |
+| --- | --- |
 
 **See Also**
 

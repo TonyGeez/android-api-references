@@ -7,6 +7,7 @@ class IkeSessionParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.IkeSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#) |
 
 IkeSessionParams contains all user provided configurations for negotiating an `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession`.
@@ -20,36 +21,45 @@ Note that all negotiated configurations will be reused during rekey including SA
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder` This class can be used to incrementally construct a `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig` This class contains common information of an IKEv2 authentication configuration. |
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig` This class represents the configuration to support IKEv2 public-key-signature-based authentication of the local side. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignRemoteConfig` This class represents the configuration to support IKEv2 public-key-signature-based authentication of the remote side. |
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthEapConfig` This class represents the configuration to support EAP authentication of the local side. |
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthPskConfig` This class represents the configuration to support IKEv2 pre-shared-key-based authentication of local or remote side. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_DPD_DELAY_SEC_DISABLED:kotlin.Int` Setting timer to this value will disable the Dead Peer Detection(DPD). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_ACCEPT_ANY_REMOTE_ID:kotlin.Int` If set, the IKE library will accept any remote (server) identity, even if it does not match the configured remote identity |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_EAP_ONLY_AUTH:kotlin.Int` If set, and EAP has been configured as the authentication method, the IKE library will request that the remote (also) use an EAP-only authentication flow. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_FORCE_PORT_4500:kotlin.Int` Configures the IKE session to always send to port 4500. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_INITIAL_CONTACT:kotlin.Int` If set, the IKE library will send INITIAL_CONTACT notification to the peers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_MOBIKE:kotlin.Int` If set, the IKE Session will attempt to handle IP address changes using RFC4555 MOBIKE. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getDpdDelaySeconds()()` Retrieves the Dead Peer Detection(DPD) delay in seconds |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getHardLifetimeSeconds()()` Retrieves hard lifetime in seconds |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeOptions()()` Return all the enabled IKE Options |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeSaProposals()()` Retrieves all IkeSaProposals configured |
 | [IkeSessionParams.IkeAuthConfig](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalAuthConfig()()` Retrieves the local (client) authentication configuration |
+| --- | --- |
 | [IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalIdentification()()` Retrieves the local (client) identity |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNattKeepAliveDelaySeconds()()` Retrieves the Network Address Translation Traversal (NATT) keepalive delay in seconds |
 | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)? | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNetwork()()` Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set. |
+| --- | --- |
 | [IkeSessionParams.IkeAuthConfig](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteAuthConfig()()` Retrieves the remote (server) authentication configuration |
 | [IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteIdentification()()` Retrieves the required remote (server) identity |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRetransmissionTimeoutsMillis()()` Retrieves the relative retransmission timeout list in milliseconds |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getServerHostname()()` Retrieves the configured server hostname |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getSoftLifetimeSeconds()()` Retrieves soft lifetime in seconds |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#hasIkeOption(kotlin.Int)(ikeOption: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the given IKE Session negotiation option is set |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#hashCode()()` Returns a hash code value for the object. |
 
 ## Constants

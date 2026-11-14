@@ -9,6 +9,7 @@ abstract class SAXTransformerFactory : TransformerFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.xml.transform.TransformerFactory](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#) ||
 | | ↳ | [javax.xml.transform.sax.SAXTransformerFactory](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#) |
 
@@ -32,9 +33,11 @@ If an application wants to set the ErrorHandler or EntityResolver for an XMLRead
 | abstract [TemplatesHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TemplatesHandler)! | [newTemplatesHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newTemplatesHandler())`()` Get a TemplatesHandler object that can process SAX ContentHandler events into a Templates object. |
 | abstract [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler)! | [newTransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newTransformerHandler())`()` Get a TransformerHandler object that can process SAX ContentHandler events into a Result. |
 | abstract [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler)! | [newTransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newTransformerHandler(javax.xml.transform.Source))`(`src:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`)` Get a TransformerHandler object that can process SAX ContentHandler events into a Result, based on the transformation instructions specified by the argument. |
+| --- | --- |
 | abstract [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler)! | [newTransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newTransformerHandler(javax.xml.transform.Templates))`(`templates:` ` [Templates](https://developer.android.com/reference/kotlin/javax/xml/transform/Templates.html#)!`)` Get a TransformerHandler object that can process SAX ContentHandler events into a Result, based on the Templates argument. |
 | abstract [XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter.html#)! | [newXMLFilter](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newXMLFilter(javax.xml.transform.Source))`(`src:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`)` Create an XMLFilter that uses the given Source as the transformation instructions. |
 | abstract [XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter.html#)! | [newXMLFilter](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory#newXMLFilter(javax.xml.transform.Templates))`(`templates:` ` [Templates](https://developer.android.com/reference/kotlin/javax/xml/transform/Templates.html#)!`)` Create an XMLFilter, based on the Templates argument. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

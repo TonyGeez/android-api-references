@@ -9,6 +9,7 @@ open class DHPrivateKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.DHPrivateKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHPrivateKeySpec#) |
 
 This class specifies a Diffie-Hellman private key with its associated parameters.
@@ -26,6 +27,7 @@ Note that this class does not perform any validation on specified parameters. Th
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHPrivateKeySpec#getG())`()` Returns the base generator`g`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHPrivateKeySpec#getP())`()` Returns the prime modulus`p`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getX](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHPrivateKeySpec#getX())`()` Returns the private value`x`. |
+| --- | --- |
 
 ## Public constructors
 
@@ -47,6 +49,7 @@ Constructor that takes a private value`x`, a prime modulus`p`, and a base genera
 | `x` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:private value x |
 | `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:prime modulus p |
 | `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:base generator g |
+| --- | --- |
 
 ## Public methods
 

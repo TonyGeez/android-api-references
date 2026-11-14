@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PdfRendererPreV
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfRendererPreV : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.PdfRendererPreV](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#) |
 
 This class enables rendering a PDF document and selecting, searching, fast scrolling, annotations, etc from Android R till Android U. This class is thread safe and can be called by multiple threads however only one thread will be executed at a time as the access is synchronized by internal locking.
@@ -56,9 +58,11 @@ Please refer to [PdfRenderer](https://developer.android.com/reference/kotlin/and
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOCUMENT_LINEARIZED_TYPE_LINEARIZED](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#DOCUMENT_LINEARIZED_TYPE_LINEARIZED:kotlin.Int) Represents a linearized PDF document. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED:kotlin.Int) Represents a non-linearized PDF document. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDF_FORM_TYPE_ACRO_FORM](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#PDF_FORM_TYPE_ACRO_FORM:kotlin.Int) Represents a PDF with form fields specified using the AcroForm spec |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDF_FORM_TYPE_NONE](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#PDF_FORM_TYPE_NONE:kotlin.Int) Represents a PDF without form fields |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDF_FORM_TYPE_XFA_FOREGROUND](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#PDF_FORM_TYPE_XFA_FOREGROUND:kotlin.Int) Represents a PDF with form fields specified using the XFAF subset of the XFA spec |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDF_FORM_TYPE_XFA_FULL](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#PDF_FORM_TYPE_XFA_FULL:kotlin.Int) Represents a PDF with form fields specified using the entire XFA spec |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -70,9 +74,11 @@ Please refer to [PdfRenderer](https://developer.android.com/reference/kotlin/and
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#close())`()` Closes this renderer and destroys any cached instance of the document. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDocumentLinearizationType](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#getDocumentLinearizationType())`()` Gets the type of the PDF document. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageCount](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#getPageCount())`()` Gets the number of pages in the document. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPdfFormType](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#getPdfFormType())`()` Returns the form type of the loaded PDF |
 | [PdfRendererPreV.Page](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV.Page) | [openPage](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#openPage(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Opens a [Page](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV.Page) for rendering. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV#write(android.os.ParcelFileDescriptor,%20kotlin.Boolean))`(`destination:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`, `removePasswordProtection:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Saves the current state of the loaded PDF document to the given writable [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#). |
+| --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -186,6 +192,7 @@ If the file is from an untrusted source it is recommended to run the renderer in
 | `java.io.IOException` | If an error occurs while reading the file. |
 | `java.lang.SecurityException` | If the file requires a password or the security scheme is not supported by the renderer. |
 | `java.lang.IllegalArgumentException` | If the [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) is not seekable. |
+| --- | --- |
 | `java.lang.NullPointerException` | If the file descriptor is null. |
 
 ### PdfRendererPreV
@@ -217,6 +224,7 @@ If the file is from an untrusted source it is recommended to run the renderer in
 | `java.io.IOException` | If an error occurs while reading the file. |
 | `java.lang.SecurityException` | If the file requires a password or the security scheme is not supported by the renderer. |
 | `java.lang.IllegalArgumentException` | If the [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) is not seekable. |
+| --- | --- |
 | `java.lang.NullPointerException` | If the file descriptor or load params is null. |
 
 ## Public methods

@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableChar
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableChar "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableChar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableChar](https://developer.android.com/reference/kotlin/android/util/MutableChar#) |
 
 | **This class was deprecated in API level 28.**

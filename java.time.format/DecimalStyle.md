@@ -9,6 +9,7 @@ class DecimalStyle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.format.DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#) |
 
 Localized decimal style used in date and time formatting.
@@ -22,15 +23,19 @@ A significant part of dealing with dates and times is the localization. This cla
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this DecimalStyle is equal to another DecimalStyle. |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#getAvailableLocales())`()` Lists all the locales that are supported. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDecimalSeparator](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#getDecimalSeparator())`()` Gets the character that represents the decimal point. |
+| --- | --- |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getNegativeSign](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#getNegativeSign())`()` Gets the character that represents the negative sign. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPositiveSign](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#getPositiveSign())`()` Gets the character that represents the positive sign. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getZeroDigit](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#getZeroDigit())`()` Gets the character that represents zero. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#hashCode())`()` A hash code for this DecimalStyle. |
 | static [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [of](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#of(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Obtains the DecimalStyle for the specified locale. |
 | static [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [ofDefaultLocale](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#ofDefaultLocale())`()` Obtains the DecimalStyle for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#toString())`()` Returns a string describing this DecimalStyle. |
 | [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [withDecimalSeparator](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#withDecimalSeparator(kotlin.Char))`(`decimalSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the decimal point. |
 | [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [withNegativeSign](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#withNegativeSign(kotlin.Char))`(`negativeSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the negative sign. |
+| --- | --- |
 | [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [withPositiveSign](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#withPositiveSign(kotlin.Char))`(`positiveSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the positive sign. |
 | [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#)! | [withZeroDigit](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle#withZeroDigit(kotlin.Char))`(`zeroDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents zero. |
 

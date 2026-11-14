@@ -6,15 +6,18 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # FragmentContainer
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/FragmentContainer "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class FragmentContainer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.FragmentContainer](https://developer.android.com/reference/kotlin/android/app/FragmentContainer#) |
 
 | Known Direct Subclasses [FragmentHostCallback](https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback) |---------------------------------------------------------------------------------------------------------|--------------------------------------------| | [FragmentHostCallback](https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback) | Integration points with the Fragment host. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
 |

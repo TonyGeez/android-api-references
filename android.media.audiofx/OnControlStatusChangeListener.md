@@ -5,6 +5,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # OnControlStatusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnControlStatusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnControlStatusChangeListener

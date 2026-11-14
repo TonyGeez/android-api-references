@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # StringBuilderPrinter
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/StringBuilderPrinter "View this page in Java")
+| --- | --- |
 
 ```
 open class StringBuilderPrinter : Printer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.StringBuilderPrinter](https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter#) |
 
 Implementation of a `https://developer.android.com/reference/kotlin/android/util/Printer` that sends its output to a `https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#`.

@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RecyclerListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/AbsListView.RecyclerListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface RecyclerListener

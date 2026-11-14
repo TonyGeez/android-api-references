@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OnChronometerTickListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/Chronometer.OnChronometerTickListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnChronometerTickListener

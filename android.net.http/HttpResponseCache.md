@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # HttpResponseCache
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/HttpResponseCache "View this page in Java") 
+| --- | --- |
 
 ```
 class HttpResponseCache : ResponseCache, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#) ||
 | | ↳ | [android.net.http.HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#) |
 
@@ -121,15 +123,19 @@ This class was added in Android 4.0 (Ice Cream Sandwich). Use reflection to enab
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#close())`()` Uninstalls the cache and releases any active resources. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [delete](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#delete())`()` Uninstalls the cache and deletes all of its stored contents. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#flush())`()` Force buffered operations to the filesystem. |
+| --- | --- |
 | [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse.html#)! | [get](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#get(java.net.URI,%20kotlin.String,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `requestMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHitCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getHitCount())`()` Returns the number of HTTP requests whose response was provided by the cache. |
 | static [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#)! | [getInstalled](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getInstalled())`()` Returns the currently-installed`HttpResponseCache`, or null if there is no cache installed or it is not a`HttpResponseCache`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getNetworkCount())`()` Returns the number of HTTP requests that required the network to either supply a response or validate a locally cached response. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getRequestCount())`()` Returns the total number of HTTP requests that were made. |
 | static [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#)! | [install](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#install(java.io.File,%20kotlin.Long))`(`directory:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new HTTP response cache and sets it as the system default cache. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [maxSize](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#maxSize())`()` Returns the maximum number of bytes that this cache should use to store its data. |
 | [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest.html#)! | [put](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#put(java.net.URI,%20java.net.URLConnection))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `urlConnection:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)!`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#size())`()` Returns the number of bytes currently being used to store the values in this cache. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -189,6 +195,7 @@ fun get(
 | `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:a`URI`used to reference the requested network resource |
 | `rqstMethod` | a`String`representing the request method |
 | `rqstHeaders` | - a Map from request header field names to lists of field values representing the current request headers |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|

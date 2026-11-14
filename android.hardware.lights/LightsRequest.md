@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # LightsRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/hardware/lights/LightsRequest "View this page in Java")
+| --- | --- |
 
 ```
 class LightsRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.lights.LightsRequest](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#) |
 
 Encapsulates a request to modify the state of multiple lights.
@@ -24,6 +26,7 @@ Encapsulates a request to modify the state of multiple lights.
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLightStates()()` Get a list of LightState. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLights()()` Get a list of Light as ids. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light)!, [LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLightsAndStates()()` Get a map of lights and states. |
+| --- | --- |
 
 ## Public methods
 

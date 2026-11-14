@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WifiStateChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface WifiStateChangedListener

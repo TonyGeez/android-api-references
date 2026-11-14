@@ -9,6 +9,7 @@ open class SequenceInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.SequenceInputStream](https://developer.android.com/reference/kotlin/java/io/SequenceInputStream#) |
 
@@ -26,6 +27,7 @@ A`SequenceInputStream`represents the logical concatenation of other input stream
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/SequenceInputStream#available())`()` Returns an estimate of the number of bytes that can be read (or skipped over) from the current underlying input stream without blocking by the next invocation of a method for the current underlying input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/SequenceInputStream#close())`()` Closes this input stream and releases any system resources associated with the stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/SequenceInputStream#read())`()` Reads the next byte of data from this input stream. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/SequenceInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from this input stream into an array of bytes. |
 
 | Inherited functions ||
@@ -109,6 +111,7 @@ If this stream was created from an enumeration, all remaining elements are reque
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### read
 
@@ -152,6 +155,7 @@ The`read`method of`SequenceInputStream`tries to read the data from the current s
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in array`b`at which the data is written. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------|
@@ -162,6 +166,8 @@ The`read`method of`SequenceInputStream`tries to read the data from the current s
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |

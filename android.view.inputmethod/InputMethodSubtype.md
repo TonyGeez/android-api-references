@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # InputMethodSubtype
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype "View this page in Java") 
+| --- | --- |
 
 ```
 class InputMethodSubtype : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InputMethodSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#) |
 
 This class is used to specify meta information of a subtype contained in an input method editor (IME). Subtype can describe locale (e.g. en_US, fr_FR...) and mode (e.g. voice, keyboard...), and is used for IME switch and settings. The input method subtype allows the system to bring up the specified subtype of the designated IME directly.
@@ -28,12 +30,15 @@ It should be defined in an XML resource file of the input method with the`<subty
 | [`android:icon`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The icon of the subtype. |
 | [`android:imeSubtypeExtraValue`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The extra value of the subtype. |
 | [`android:imeSubtypeLocale`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The locale of the subtype. |
+| --- | --- |
 | [`android:imeSubtypeMode`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The mode of the subtype. |
 | [`android:isAsciiCapable`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | Set to true if this subtype is ASCII capable. |
 | [`android:isAuxiliary`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | Set true if the subtype is auxiliary. |
+| --- | --- |
 | [`android:label`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The name of the subtype. |
 | [`android:languageTag`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The BCP-47 Language Tag of the subtype. |
 | [`android:overridesImplicitlyEnabledSubtype`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | Set true when this subtype should be selected by default if no other subtypes are selected explicitly. |
+| --- | --- |
 | [`android:subtypeId`](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#attr_InputMethodSubtype) | The unique id for the subtype. |
 
 | Inherited constants ||
@@ -50,24 +55,31 @@ It should be defined in an XML resource file of the input method with the`<subty
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#containsExtraValueKey(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getDisplayName(android.content.Context,%20kotlin.String,%20android.content.pm.ApplicationInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!`)` Returns a display name for this subtype. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getExtraValue())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getExtraValueOf(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconResId](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getIconResId())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getLanguageTag())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutDisplayName](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getLayoutDisplayName(android.content.Context,%20android.content.pm.ApplicationInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `imeAppInfo:` ` [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)`)` Returns the layout display name. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutLabelNonLocalized](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getLayoutLabelNonLocalized())`()` Returns the non-localized layout label. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutLabelResource](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getLayoutLabelResource())`()` Returns the layout label string resource identifier. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getLocale())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getMode())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameOverride](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getNameOverride())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getNameResId())`()` <br /> |
+| --- | --- |
 | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)? | [getPhysicalKeyboardHintLanguageTag](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getPhysicalKeyboardHintLanguageTag())`()` Returns the physical keyboard BCP-47 language tag. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPhysicalKeyboardHintLayoutType](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getPhysicalKeyboardHintLayoutType())`()` Returns the physical keyboard layout type string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsciiCapable](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#isAsciiCapable())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuxiliary](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#isAuxiliary())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overridesImplicitlyEnabledSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#overridesImplicitlyEnabledSubtype())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -216,9 +228,11 @@ Constructor.
 | `nameId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID of the subtype name string. The string resource may have exactly one %s in it. If there is, the %s part will be replaced with the locale's display name by the formatter. Please refer to [getDisplayName](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getDisplayName(android.content.Context,%20kotlin.String,%20android.content.pm.ApplicationInfo))for details. |
 | `iconId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID of the subtype icon drawable. |
 | `locale` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The locale supported by the subtype |
+| --- | --- |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The mode supported by the subtype |
 | `extraValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The extra value of the subtype. This string is free-form, but the API supplies tools to deal with a key-value comma-separated list; see [containsExtraValueKey](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#containsExtraValueKey(kotlin.String))and [getExtraValueOf](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype#getExtraValueOf(kotlin.String)). |
 | `isAuxiliary` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true when this subtype is auxiliary, false otherwise. An auxiliary subtype will not be shown in the list of enabled IMEs for choosing the current IME in the Settings even when this subtype is enabled. Please note that this subtype will still be shown in the list of IMEs in the IME switcher to allow the user to tentatively switch to this subtype while an IME is shown. The framework will never switch the current IME to this subtype by [android.view.inputmethod.InputMethodManager#switchToLastInputMethod](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#switchToLastInputMethod(android.os.IBinder)). The intent of having this flag is to allow for IMEs that are invoked in a one-shot way as auxiliary input mode, and return to the previous IME once it is finished (e.g. voice input). |
+| --- | --- |
 | `overridesImplicitlyEnabledSubtype` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true when this subtype should be enabled by default if no other subtypes in the IME are enabled explicitly. Note that a subtype with this parameter being true will not be shown in the list of subtypes in each IME's subtype enabler. Having an "automatic" subtype is an example use of this flag. |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The unique ID for the subtype. The input method framework keeps track of enabled subtypes by ID. When the IME package gets upgraded, enabled IDs will stay enabled even if other attributes are different. If the ID is unspecified or 0, Arrays.hashCode(new Object\[\] {locale, mode, extraValue, isAuxiliary, overridesImplicitlyEnabledSubtype, isAsciiCapable}) will be used instead. |
 
@@ -306,6 +320,7 @@ If`subtypeNameResId`is not specified (== 0) the framework returns the display na
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) will be used for getting [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) and [android.content.pm.PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#). |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package name of the input method. |
 | `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!:The [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#) of the input method. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|

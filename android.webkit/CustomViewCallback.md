@@ -5,6 +5,7 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 # CustomViewCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebChromeClient.CustomViewCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface CustomViewCallback

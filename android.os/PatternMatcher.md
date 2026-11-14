@@ -3,15 +3,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PatternMatcher
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/PatternMatcher "View this page in Java")
+| --- | --- |
 
 ```
 open class PatternMatcher : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.PatternMatcher](https://developer.android.com/reference/kotlin/android/os/PatternMatcher#) |
 
 | Known Direct Subclasses [PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission.html#) |---|---| | [PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission.html#) | Description of permissions needed to access a particular path in a `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A simple pattern matcher, which is safe to use on untrusted data: it does not provide full reg-exp support, only simple globbing that can not be used maliciously.
 
@@ -22,6 +25,7 @@ A simple pattern matcher, which is safe to use on untrusted data: it does not pr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#PATTERN_ADVANCED_GLOB:kotlin.Int` Pattern type: the given pattern is interpreted with a regular expression-like syntax for matching against the string it is tested against. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#PATTERN_LITERAL:kotlin.Int` Pattern type: the given pattern must exactly match the string it is tested against. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#PATTERN_PREFIX:kotlin.Int` Pattern type: the given pattern must match the beginning of the string it is tested against. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#PATTERN_SIMPLE_GLOB:kotlin.Int` Pattern type: the given pattern is interpreted with a simple glob syntax for matching against the string it is tested against. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#PATTERN_SUFFIX:kotlin.Int` Pattern type: the given pattern must match the end of the string it is tested against. |
 
@@ -39,9 +43,11 @@ A simple pattern matcher, which is safe to use on untrusted data: it does not pr
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#getPath()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#getType()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#match(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

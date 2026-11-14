@@ -9,11 +9,14 @@ abstract class Buffer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#) |
 
 | Known Direct Subclasses [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer), [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer), [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer), [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer), [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer), [LongBuffer](https://developer.android.com/reference/kotlin/java/nio/LongBuffer), [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer) |--------------------------------------------------------------------------------------|------------------| | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer) | A byte buffer. | | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer) | A char buffer. | | [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer) | A double buffer. | | [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer) | A float buffer. | | [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer) | An int buffer. | | [LongBuffer](https://developer.android.com/reference/kotlin/java/nio/LongBuffer) | A long buffer. | | [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer) | A short buffer. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer) |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer) | A direct byte buffer whose content is a memory-mapped region of a file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A container for data of a specific primitive type.
 
@@ -88,21 +91,27 @@ b.flip().position(23).limit(42);
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/Buffer#array())`()` Returns the array that backs this buffer*(optional operation)*. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/Buffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](https://developer.android.com/reference/kotlin/java/nio/Buffer#capacity())`()` Returns this buffer's capacity. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [clear](https://developer.android.com/reference/kotlin/java/nio/Buffer#clear())`()` Clears this buffer. |
 | abstract [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/Buffer#duplicate())`()` Creates a new buffer that shares this buffer's content. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [flip](https://developer.android.com/reference/kotlin/java/nio/Buffer#flip())`()` Flips this buffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/Buffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible array. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](https://developer.android.com/reference/kotlin/java/nio/Buffer#hasRemaining())`()` Tells whether there are any elements between the current position and the limit. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/Buffer#isDirect())`()` Tells whether or not this buffer is [*direct*](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#direct). |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/nio/Buffer#isReadOnly())`()` Tells whether or not this buffer is read-only. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](https://developer.android.com/reference/kotlin/java/nio/Buffer#limit())`()` Returns this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [limit](https://developer.android.com/reference/kotlin/java/nio/Buffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [mark](https://developer.android.com/reference/kotlin/java/nio/Buffer#mark())`()` Sets this buffer's mark at its position. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](https://developer.android.com/reference/kotlin/java/nio/Buffer#position())`()` Returns this buffer's position. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [position](https://developer.android.com/reference/kotlin/java/nio/Buffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](https://developer.android.com/reference/kotlin/java/nio/Buffer#remaining())`()` Returns the number of elements between the current position and the limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [reset](https://developer.android.com/reference/kotlin/java/nio/Buffer#reset())`()` Resets this buffer's position to the previously-marked position. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/Buffer#rewind())`()` Rewinds this buffer. |
+| --- | --- |
 | abstract [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/Buffer#slice())`()` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/Buffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
 

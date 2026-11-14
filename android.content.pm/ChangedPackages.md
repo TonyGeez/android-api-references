@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # ChangedPackages
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ChangedPackages "View this page in Java") 
+| --- | --- |
 
 ```
 class ChangedPackages : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ChangedPackages](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages#) |
 
 Packages that have been changed since the last time they were requested.
@@ -30,6 +32,7 @@ Packages that have been changed since the last time they were requested.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getPackageNames](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages#getPackageNames())`()` Returns the names of the packages that have changed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequenceNumber](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages#getSequenceNumber())`()` Returns the last known sequence number for these changes. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

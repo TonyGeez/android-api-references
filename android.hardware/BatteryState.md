@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BatteryState
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/BatteryState "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class BatteryState
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.BatteryState](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#) |
 
 The BatteryState class is a representation of a single battery on a device.
@@ -22,6 +24,7 @@ The BatteryState class is a representation of a single battery on a device.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_CHARGING](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#STATUS_CHARGING:kotlin.Int) Battery is charging. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_DISCHARGING](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#STATUS_DISCHARGING:kotlin.Int) Battery is discharging. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FULL](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#STATUS_FULL:kotlin.Int) Battery is full. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NOT_CHARGING](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#STATUS_NOT_CHARGING:kotlin.Int) Battery is connected to power but not charging. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#STATUS_UNKNOWN:kotlin.Int) Battery status is unknown. |
 
@@ -34,6 +37,7 @@ The BatteryState class is a representation of a single battery on a device.
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCapacity](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#getCapacity())`()` Get remaining battery capacity as float percentage \[0. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#getStatus())`()` Get the battery status. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/android/hardware/BatteryState#isPresent())`()` Check whether the hardware has a battery. |
+| --- | --- |
 
 ## Constants
 

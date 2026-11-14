@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # NetworkScan
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/NetworkScan "View this page in Java") 
+| --- | --- |
 
 ```
 open class NetworkScan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.NetworkScan](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#) |
 
 The caller of android.telephony.TelephonyManager#requestNetworkScan(android.telephony.NetworkScanRequest,Executor,NetworkScanCallback) will receive an instance of [NetworkScan](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#), which contains a callback method [stopScan()](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#stopScan())for stopping the in-progress scan.
@@ -22,9 +24,11 @@ The caller of android.telephony.TelephonyManager#requestNetworkScan(android.tele
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERRUPTED](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_INTERRUPTED:kotlin.Int) The scan has been interrupted by another scan with higher priority. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_SCAN](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_INVALID_SCAN:kotlin.Int) The parameters of the scan is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_SCANID](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_INVALID_SCANID:kotlin.Int) The scan ID is invalid. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MODEM_ERROR](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_MODEM_ERROR:kotlin.Int) The scan has failed due to some modem errors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MODEM_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_MODEM_UNAVAILABLE:kotlin.Int) The modem can not perform the scan because it is doing something else. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RADIO_INTERFACE_ERROR](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_RADIO_INTERFACE_ERROR:kotlin.Int) The RIL returns nothing or exceptions. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#ERROR_UNSUPPORTED:kotlin.Int) The modem does not support the request scan. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan#SUCCESS:kotlin.Int) The RIL has successfully performed the network scan. |
 

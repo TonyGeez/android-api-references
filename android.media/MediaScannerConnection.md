@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MediaScannerConnection
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaScannerConnection "View this page in Java")
+| --- | --- |
 
 ```
 open class MediaScannerConnection : ServiceConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaScannerConnection](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#) |
 
 MediaScannerConnection provides a way for applications to pass a newly created or downloaded media file to the media scanner service. The media scanner service will read metadata from the file and add the file to the media content provider. The MediaScannerConnectionClient provides an interface for the media scanner service to return the Uri for a newly scanned file to the client of the MediaScannerConnection class.
@@ -29,9 +31,11 @@ MediaScannerConnection provides a way for applications to pass a newly created o
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#connect()()` Initiates a connection to the media scanner service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#disconnect()()` Releases the connection to the media scanner service. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#isConnected()()` Returns whether we are connected to the media scanner service |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#onServiceConnected(android.content.ComponentName,%20android.os.IBinder)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, service: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!)` Part of the ServiceConnection interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#onServiceDisconnected(android.content.ComponentName)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Part of the ServiceConnection interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Requests the media scanner to scan a file. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(android.content.Context,%20kotlin.Array,%20kotlin.Array,%20android.media.MediaScannerConnection.OnScanCompletedListener)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, paths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, mimeTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener!)` Convenience for constructing a `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#`, calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#connect()` on it, and calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)` with the given path and mimeType when the connection is established. |
 
 | Inherited functions ||
@@ -163,6 +167,7 @@ Convenience for constructing a `https://developer.android.com/reference/kotlin/a
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The caller's Context, required for establishing a connection to the media scanner service. Success or failure of the scanning operation cannot be determined until `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri)` is called. |
 | `paths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Array of paths to be scanned. |
 | `mimeTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Optional array of MIME types for each path. If mimeType is null, then the mimeType will be inferred from the file extension. |
+| --- | --- |
 | `callback` | [MediaScannerConnection.OnScanCompletedListener](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener)!: Optional callback through which you can receive the scanned URI and MIME type; If null, the file will be scanned but you will not get a result back. |
 
 **See Also**

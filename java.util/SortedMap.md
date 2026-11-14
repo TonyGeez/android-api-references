@@ -11,8 +11,10 @@ interface SortedMap<K : Any!, V : Any!> : MutableMap<K, V>, SequencedMap<
 | [java.util.SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#) |
 
 | Known Direct Subclasses [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) | A [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#) extended with navigation methods returning the closest matches for given search targets. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap), [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap), [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) | A [ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap) supporting [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) operations, and recursively so for its navigable sub-maps. | | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. | | [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) | A Red-Black tree based [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) implementation. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A [Map](https://developer.android.com/reference/kotlin/java/util/Map) that further provides a*total ordering* on its keys. The map is ordered according to the [ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its keys, or by a [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator) typically provided at sorted map creation time. This order is reflected when iterating over the sorted map's collection views (returned by the`entrySet`,`keySet``values`methods). Several additional operations are provided to take advantage of the ordering. (This interface is the map analogue of [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet).)
 
@@ -47,12 +49,15 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inK\>? | [comparator](https://developer.android.com/reference/kotlin/java/util/SortedMap#comparator())`()` Returns the comparator used to order the keys in this map, or`null`if this map uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its keys. |
 | abstractK | [firstKey](https://developer.android.com/reference/kotlin/java/util/SortedMap#firstKey())`()` Returns the first (lowest) key currently in this map. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#)\<K,V\> | [headMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#headMap(java.util.SortedMap.K))`(`toKey:` `K`)` Returns a view of the portion of this map whose keys are strictly less than`toKey`. |
+| --- | --- |
 | abstractK | [lastKey](https://developer.android.com/reference/kotlin/java/util/SortedMap#lastKey())`()` Returns the last (highest) key currently in this map. |
 | openV? | [putFirst](https://developer.android.com/reference/kotlin/java/util/SortedMap#putFirst(java.util.SortedMap.K,%20java.util.SortedMap.V))`(`k:` `K`, `v:` `V`)` Throws`UnsupportedOperationException`. |
 | openV? | [putLast](https://developer.android.com/reference/kotlin/java/util/SortedMap#putLast(java.util.SortedMap.K,%20java.util.SortedMap.V))`(`k:` `K`, `v:` `V`)` Throws`UnsupportedOperationException`. |
+| --- | --- |
 | open [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#)\<K,V\> | [reversed](https://developer.android.com/reference/kotlin/java/util/SortedMap#reversed())`()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this map. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#)\<K,V\> | [subMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#subMap(java.util.SortedMap.K,%20java.util.SortedMap.K))`(`fromKey:` `K`, `toKey:` `K`)` Returns a view of the portion of this map whose keys range from`fromKey`, inclusive, to`toKey`, exclusive. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#)\<K,V\> | [tailMap](https://developer.android.com/reference/kotlin/java/util/SortedMap#tailMap(java.util.SortedMap.K))`(`fromKey:` `K`)` Returns a view of the portion of this map whose keys are greater than or equal to`fromKey`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -63,6 +68,7 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/SortedMap#entries:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the mappings contained in this map. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/SortedMap#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. |
 | abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/SortedMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
+| --- | --- |
 
 ## Public methods
 
@@ -123,6 +129,7 @@ The returned map will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`toKey`is not compatible with this map's comparator (or, if the map has no comparator, if`toKey`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`toKey`cannot be compared to keys currently in the map. |
 | `java.lang.NullPointerException` | if`toKey`is null and this map does not permit null keys |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and`toKey`lies outside the bounds of the range |
+| --- | --- |
 
 ### lastKey
 
@@ -237,6 +244,7 @@ The returned map will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`fromKey`and`toKey`cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if`fromKey`or`toKey`cannot be compared to keys currently in the map. |
 | `java.lang.NullPointerException` | if`fromKey`or`toKey`is null and this map does not permit null keys |
 | `java.lang.IllegalArgumentException` | if`fromKey`is greater than`toKey`; or if this map itself has a restricted range, and`fromKey`or`toKey`lies outside the bounds of the range |
+| --- | --- |
 
 ### tailMap
 
@@ -263,6 +271,7 @@ The returned map will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`fromKey`is not compatible with this map's comparator (or, if the map has no comparator, if`fromKey`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`fromKey`cannot be compared to keys currently in the map. |
 | `java.lang.NullPointerException` | if`fromKey`is null and this map does not permit null keys |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and`fromKey`lies outside the bounds of the range |
+| --- | --- |
 
 ## Properties
 

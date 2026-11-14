@@ -9,6 +9,7 @@ open class RSAPublicKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.RSAPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPublicKeySpec#) |
 
 This class specifies an RSA public key.
@@ -25,6 +26,7 @@ This class specifies an RSA public key.
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getModulus](https://developer.android.com/reference/kotlin/java/security/spec/RSAPublicKeySpec#getModulus())`()` Returns the modulus. |
 | open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | [getParams](https://developer.android.com/reference/kotlin/java/security/spec/RSAPublicKeySpec#getParams())`()` Returns the parameters associated with this key, may be null if not present. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAPublicKeySpec#getPublicExponent())`()` Returns the public exponent. |
+| --- | --- |
 
 ## Public constructors
 
@@ -63,6 +65,7 @@ Creates a new RSAPublicKeySpec with additional key parameters.
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters associated with this key, may be null |
+| --- | --- |
 
 ## Public methods
 

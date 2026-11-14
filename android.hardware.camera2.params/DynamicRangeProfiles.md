@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # DynamicRangeProfiles
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/DynamicRangeProfiles "View this page in Java") 
+| --- | --- |
 
 ```
 class DynamicRangeProfiles
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.DynamicRangeProfiles](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#) |
 
 Immutable class with information about supported 10-bit dynamic range profiles.
@@ -28,15 +30,19 @@ Some devices may not be able to support 8-bit and/or 10-bit output with differen
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_10B_HDR_OEM](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_10B_HDR_OEM:kotlin.Long) This is the camera mode for the default Dolby Vision capture mode for the specific device. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_10B_HDR_OEM_PO](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_10B_HDR_OEM_PO:kotlin.Long) This is the power optimized mode for 10-bit Dolby Vision HDR device specific capture Mode. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_10B_HDR_REF](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_10B_HDR_REF:kotlin.Long) This is a camera mode for Dolby Vision capture optimized for a more scene accurate capture. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_10B_HDR_REF_PO](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_10B_HDR_REF_PO:kotlin.Long) This is the power optimized mode for 10-bit Dolby Vision HDR Reference Mode. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_8B_HDR_OEM](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_8B_HDR_OEM:kotlin.Long) This is the 8-bit version of device specific tuned and optimized Dolby Vision capture mode. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_8B_HDR_OEM_PO](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_8B_HDR_OEM_PO:kotlin.Long) This is the power optimized mode for 8-bit Dolby Vision HDR device specific capture Mode. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_8B_HDR_REF](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_8B_HDR_REF:kotlin.Long) This is the 8-bit version of the Dolby Vision reference capture mode optimized for scene accuracy. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DOLBY_VISION_8B_HDR_REF_PO](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#DOLBY_VISION_8B_HDR_REF_PO:kotlin.Long) This is the power optimized mode for 8-bit Dolby Vision HDR Reference Mode. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [HDR10](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#HDR10:kotlin.Long) 10-bit pixel samples encoded using the SMPTE ST 2084 transfer function. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [HDR10_PLUS](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#HDR10_PLUS:kotlin.Long) 10-bit pixel samples encoded using the SMPTE ST 2084 transfer function. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [HLG10](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#HLG10:kotlin.Long) 10-bit pixel samples encoded using the Hybrid log-gamma transfer function |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [PUBLIC_MAX](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#PUBLIC_MAX:kotlin.Long) <br /> |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [STANDARD](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#STANDARD:kotlin.Long) This the default 8-bit standard profile that will be used in case where camera clients do not explicitly configure a supported dynamic range profile by calling [OutputConfiguration.setDynamicRangeProfile](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)). |
 
 | Public constructors ||
@@ -48,6 +54,7 @@ Some devices may not be able to support 8-bit and/or 10-bit output with differen
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | [getProfileCaptureRequestConstraints](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getProfileCaptureRequestConstraints(kotlin.Long))`(`profile:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Return a list of supported dynamic range profiles that can be referenced in a single capture request along with a given profile. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | [getSupportedProfiles](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getSupportedProfiles())`()` Return a set of supported dynamic range profiles. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExtraLatencyPresent](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#isExtraLatencyPresent(kotlin.Long))`(`profile:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Check whether a given dynamic range profile is suitable for latency sensitive use cases. |
+| --- | --- |
 
 ## Constants
 

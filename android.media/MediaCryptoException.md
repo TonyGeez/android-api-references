@@ -5,15 +5,18 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaCryptoException
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCryptoException "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaCryptoException : Exception, MediaDrmThrowable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.media.MediaCryptoException](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#) |
+| --- | --- | --- | --- |
 
 Exception thrown if MediaCrypto object could not be instantiated or if unable to perform an operation on the MediaCrypto object.
 
@@ -28,6 +31,7 @@ Exception thrown if MediaCrypto object could not be instantiated or if unable to
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getErrorContext())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getOemError())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getVendorError())`()` <br /> |
+| --- | --- |
 
 ## Public constructors
 

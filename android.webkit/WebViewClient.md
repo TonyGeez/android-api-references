@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # WebViewClient
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebViewClient "View this page in Java") 
+| --- | --- |
 
 ```
 open class WebViewClient
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebViewClient](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#) |
 
 ## Summary
@@ -20,24 +22,31 @@ open class WebViewClient
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_AUTHENTICATION:kotlin.Int) User authentication failed on server |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BAD_URL](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_BAD_URL:kotlin.Int) Malformed URL |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONNECT](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_CONNECT:kotlin.Int) Failed to connect to the server |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FAILED_SSL_HANDSHAKE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_FAILED_SSL_HANDSHAKE:kotlin.Int) Failed to perform SSL handshake |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_FILE:kotlin.Int) Generic file error |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE_NOT_FOUND](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_FILE_NOT_FOUND:kotlin.Int) File not found |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_HOST_LOOKUP](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_HOST_LOOKUP:kotlin.Int) Server or proxy hostname lookup failed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_IO:kotlin.Int) Failed to read or write to the server |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PROXY_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_PROXY_AUTHENTICATION:kotlin.Int) User authentication failed on proxy |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REDIRECT_LOOP](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_REDIRECT_LOOP:kotlin.Int) Too many redirects |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TIMEOUT](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_TIMEOUT:kotlin.Int) Connection timed out |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TOO_MANY_REQUESTS](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_TOO_MANY_REQUESTS:kotlin.Int) Too many requests during this load |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_UNKNOWN:kotlin.Int) Generic error |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSAFE_RESOURCE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_UNSAFE_RESOURCE:kotlin.Int) Resource load was canceled by Safe Browsing |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED_AUTH_SCHEME](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_UNSUPPORTED_AUTH_SCHEME:kotlin.Int) Unsupported authentication scheme (not basic or digest) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED_SCHEME](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#ERROR_UNSUPPORTED_SCHEME:kotlin.Int) Unsupported URI scheme |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFE_BROWSING_THREAT_BILLING](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_BILLING:kotlin.Int) The resource was blocked because it may trick the user into a billing agreement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFE_BROWSING_THREAT_MALWARE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_MALWARE:kotlin.Int) The resource was blocked because it contains malware. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFE_BROWSING_THREAT_PHISHING](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_PHISHING:kotlin.Int) The resource was blocked because it contains deceptive content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFE_BROWSING_THREAT_UNKNOWN](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_UNKNOWN:kotlin.Int) The resource was blocked for an unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE:kotlin.Int) The resource was blocked because it contains unwanted software. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
@@ -48,24 +57,31 @@ open class WebViewClient
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doUpdateVisitedHistory](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#doUpdateVisitedHistory(android.webkit.WebView,%20kotlin.String,%20kotlin.Boolean))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isReload:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify the host application to update its visited links database. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFormResubmission](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onFormResubmission(android.webkit.WebView,%20android.os.Message,%20android.os.Message))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `dontResend:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!`, `resend:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!`)` As the host application if the browser should resend data as the requested page was a result of a POST. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLoadResource](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onLoadResource(android.webkit.WebView,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notify the host application that the WebView will load the resource specified by the given url. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPageCommitVisible](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onPageCommitVisible(android.webkit.WebView,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notify the host application that [android.webkit.WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView) content left over from previous page navigations will no longer be drawn. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPageFinished](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onPageFinished(android.webkit.WebView,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notify the host application that a page has finished loading. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPageStarted](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onPageStarted(android.webkit.WebView,%20kotlin.String,%20android.graphics.Bitmap))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `favicon:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`)` Notify the host application that a page has started loading. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedClientCertRequest](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedClientCertRequest(android.webkit.WebView,%20android.webkit.ClientCertRequest))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [ClientCertRequest](https://developer.android.com/reference/kotlin/android/webkit/ClientCertRequest)!`)` Notify the host application to handle a SSL client certificate request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedError](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedError(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20android.webkit.WebResourceError))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`, `error:` ` [WebResourceError](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError)!`)` Report web resource loading error to the host application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedError](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedError(android.webkit.WebView,%20kotlin.Int,%20kotlin.String,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `failingUrl:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an error to the host application. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedHttpAuthRequest](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedHttpAuthRequest(android.webkit.WebView,%20android.webkit.HttpAuthHandler,%20kotlin.String,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `handler:` ` [HttpAuthHandler](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notifies the host application that the WebView received an HTTP authentication request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedHttpError](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedHttpError(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20android.webkit.WebResourceResponse))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`, `errorResponse:` ` [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)!`)` Notify the host application that an HTTP error has been received from the server while loading a resource. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedLoginRequest](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedLoginRequest(android.webkit.WebView,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `account:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `args:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notify the host application that a request to automatically log in the user has been processed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedSslError](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedSslError(android.webkit.WebView,%20android.webkit.SslErrorHandler,%20android.net.http.SslError))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `handler:` ` [SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler)!`, `error:` ` [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError.html#)!`)` Notifies the host application that an SSL error occurred while loading a resource. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onRenderProcessGone](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onRenderProcessGone(android.webkit.WebView,%20android.webkit.RenderProcessGoneDetail))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `detail:` ` [RenderProcessGoneDetail](https://developer.android.com/reference/kotlin/android/webkit/RenderProcessGoneDetail)!`)` Notify host application that the given WebView's render process has exited. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSafeBrowsingHit](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onSafeBrowsingHit(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20kotlin.Int,%20android.webkit.SafeBrowsingResponse))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`, `threatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `callback:` ` [SafeBrowsingResponse](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse)!`)` Notify the host application that a loading URL has been flagged by Safe Browsing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScaleChanged](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onScaleChanged(android.webkit.WebView,%20kotlin.Float,%20kotlin.Float))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `oldScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `newScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Notify the host application that the scale applied to the WebView has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTooManyRedirects](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onTooManyRedirects(android.webkit.WebView,%20android.os.Message,%20android.os.Message))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `cancelMsg:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!`, `continueMsg:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!`)` Notify the host application that there have been an excessive number of HTTP redirects. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUnhandledKeyEvent](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onUnhandledKeyEvent(android.webkit.WebView,%20android.view.KeyEvent))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` Notify the host application that a key was not handled by the WebView. |
+| --- | --- |
 | open [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)? | [shouldInterceptRequest](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldInterceptRequest(android.webkit.WebView,%20android.webkit.WebResourceRequest))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`)` Notify the host application of a resource request and allow the application to return the data. |
 | open [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)? | [shouldInterceptRequest](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldInterceptRequest(android.webkit.WebView,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Notify the host application of a resource request and allow the application to return the data. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldOverrideKeyEvent](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldOverrideKeyEvent(android.webkit.WebView,%20android.view.KeyEvent))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` Give the host application a chance to handle the key event synchronously. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldOverrideUrlLoading](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldOverrideUrlLoading(android.webkit.WebView,%20android.webkit.WebResourceRequest))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`)` Give the host application a chance to take control when a URL is about to be loaded in the current WebView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldOverrideUrlLoading](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldOverrideUrlLoading(android.webkit.WebView,%20kotlin.String))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Give the host application a chance to take control when a URL is about to be loaded in the current WebView. |
 
@@ -354,6 +370,7 @@ Notify the host application to update its visited links database.
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The url being visited. |
 | `isReload` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if this url is being reloaded. |
+| --- | --- |
 
 ### onFormResubmission
 
@@ -374,6 +391,7 @@ As the host application if the browser should resend data as the requested page 
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `dontResend` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!:The message to send if the browser should not resend |
 | `resend` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!:The message to send if the browser should resend data |
+| --- | --- |
 
 ### onLoadResource
 
@@ -458,6 +476,7 @@ Notify the host application that a page has started loading. This method is call
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The url to be loaded. |
 | `favicon` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!:The favicon for this page if it already exists in the database. |
+| --- | --- |
 
 ### onReceivedClientCertRequest
 
@@ -496,6 +515,7 @@ Report web resource loading error to the host application. These errors usually 
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `request` | [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!:The originating request. |
 | `error` | [WebResourceError](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError)!:Information about the error occurred. |
+| --- | --- |
 
 ### onReceivedError
 
@@ -520,6 +540,7 @@ Report an error to the host application. These errors are unrecoverable (i.e. th
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The error code corresponding to an ERROR_\* value. |
 | `description` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A String describing the error. |
+| --- | --- |
 | `failingUrl` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The url that failed to load. |
 
 ### onReceivedHttpAuthRequest
@@ -544,6 +565,7 @@ Notifies the host application that the WebView received an HTTP authentication r
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:the WebView that is initiating the callback |
 | `handler` | [HttpAuthHandler](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler)!:the HttpAuthHandler used to set the WebView's response |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host requiring authentication |
+| --- | --- |
 | `realm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the realm for which authentication is required |
 
 **See Also**
@@ -569,6 +591,7 @@ Notify the host application that an HTTP error has been received from the server
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `request` | [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!:The originating request. |
 | `errorResponse` | [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)!:Information about the error occurred. |
+| --- | --- |
 
 ### onReceivedLoginRequest
 
@@ -590,6 +613,7 @@ Notify the host application that a request to automatically log in the user has 
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView requesting the login. |
 | `realm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The account realm used to look up accounts. |
 | `account` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional account. If not`null`, the account should be checked against accounts on the device. If it is a valid account, it should be used to log in the user. |
+| --- | --- |
 | `args` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Authenticator specific arguments used to log in the user. |
 
 ### onReceivedSslError
@@ -619,6 +643,7 @@ This API is called only for recoverable SSL certificate errors. For non-recovera
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:`WebView`that initiated the callback. |
 | `handler` | [SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler)!: [SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler) that handles the user's response. |
 | `error` | [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError.html#)!:SSL error object. |
+| --- | --- |
 
 ### onRenderProcessGone
 
@@ -662,6 +687,7 @@ Notify the host application that a loading URL has been flagged by Safe Browsing
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that hit the malicious resource. |
 | `request` | [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!:Object containing the details of the request. |
 | `threatType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason the resource was caught by Safe Browsing, corresponding to a`SAFE_BROWSING_THREAT_*`value. Value is [android.webkit.WebViewClient#SAFE_BROWSING_THREAT_UNKNOWN](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_UNKNOWN:kotlin.Int), [android.webkit.WebViewClient#SAFE_BROWSING_THREAT_MALWARE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_MALWARE:kotlin.Int), [android.webkit.WebViewClient#SAFE_BROWSING_THREAT_PHISHING](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_PHISHING:kotlin.Int), [android.webkit.WebViewClient#SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE:kotlin.Int), or [android.webkit.WebViewClient#SAFE_BROWSING_THREAT_BILLING](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#SAFE_BROWSING_THREAT_BILLING:kotlin.Int) |
+| --- | --- |
 | `callback` | [SafeBrowsingResponse](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse)!:Applications must invoke one of the callback methods. |
 
 ### onScaleChanged
@@ -683,6 +709,7 @@ Notify the host application that the scale applied to the WebView has changed.
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `oldScale` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The old scale factor |
 | `newScale` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The new scale factor |
+| --- | --- |
 
 ### onTooManyRedirects
 
@@ -706,6 +733,7 @@ Notify the host application that there have been an excessive number of HTTP red
 | `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:The WebView that is initiating the callback. |
 | `cancelMsg` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!:The message to send if the host wants to cancel |
 | `continueMsg` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!:The message to send if the host wants to continue |
+| --- | --- |
 
 ### onUnhandledKeyEvent
 

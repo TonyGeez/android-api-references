@@ -9,6 +9,7 @@ class JulianFields
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.temporal.JulianFields](https://developer.android.com/reference/kotlin/java/time/temporal/JulianFields#) |
 
 A set of date fields that provide access to Julian Days.
@@ -24,6 +25,7 @@ The fields are implemented relative to [EPOCH_DAY](https://developer.android.com
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [JULIAN_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/JulianFields#JULIAN_DAY:java.time.temporal.TemporalField) Julian Day field. |
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [MODIFIED_JULIAN_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/JulianFields#MODIFIED_JULIAN_DAY:java.time.temporal.TemporalField) Modified Julian Day field. |
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [RATA_DIE](https://developer.android.com/reference/kotlin/java/time/temporal/JulianFields#RATA_DIE:java.time.temporal.TemporalField) Rata Die field. |
+| --- | --- |
 
 ## Properties
 

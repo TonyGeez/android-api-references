@@ -9,6 +9,7 @@ class Permissions : PermissionCollection, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection) ||
 | | ↳ | [java.security.Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions#) |
 
@@ -25,6 +26,7 @@ Android doesn't support [SecurityManager](https://developer.android.com/referenc
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/security/Permissions#add(java.security.Permission))`(`permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
 | [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!\>! | [elements](https://developer.android.com/reference/kotlin/java/security/Permissions#elements())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/Permissions#implies(java.security.Permission))`(`permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

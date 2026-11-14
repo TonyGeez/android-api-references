@@ -3,12 +3,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # MtpObjectInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/mtp/MtpObjectInfo "View this page in Java")
+| --- | --- |
 
 ```
 class MtpObjectInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.mtp.MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#) |
 
 This class encapsulates information about an object on an MTP device. This corresponds to the ObjectInfo Dataset described in section 5.3.1 of the MTP specification.
@@ -24,30 +26,39 @@ This class encapsulates information about an object on an MTP device. This corre
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getAssociationDesc()()` Returns the association description for the MTP object Will be zero objects that are not of format `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#FORMAT_ASSOCIATION:kotlin.Int` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getAssociationType()()` Returns the association type for the MTP object Will be zero objects that are not of format `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#FORMAT_ASSOCIATION:kotlin.Int` For directories the association type is typically `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#ASSOCIATION_TYPE_GENERIC_FOLDER:kotlin.Int` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getCompressedSize()()` Returns the size of the MTP object |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getCompressedSizeLong()()` Returns the size of the MTP object |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getDateCreated()()` Returns the creation date of the MTP object The value is represented as milliseconds since January 1, 1970 |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getDateModified()()` Returns the modification date of the MTP object The value is represented as milliseconds since January 1, 1970 |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getFormat()()` Returns the format code for the MTP object |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixDepth()()` Returns the depth of the MTP object in bits per pixel Will be zero for non-image objects |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixDepthLong()()` Returns the depth of the MTP object in bits per pixel Will be zero for non-image objects |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixHeight()()` Returns the height of the MTP object in pixels Will be zero for non-image objects |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixHeightLong()()` Returns the height of the MTP object in pixels Will be zero for non-image objects |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixWidth()()` Returns the width of the MTP object in pixels Will be zero for non-image objects |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getImagePixWidthLong()()` Returns the width of the MTP object in pixels Will be zero for non-image objects |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getKeywords()()` Returns a comma separated list of keywords for the MTP object |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getName()()` Returns the name of the MTP object |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getObjectHandle()()` Returns the object handle for the MTP object |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getParent()()` Returns the object handle for the object's parent Will be zero for the root directory of a storage unit |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getProtectionStatus()()` Returns the protection status for the MTP object Possible values are: - `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#PROTECTION_STATUS_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#PROTECTION_STATUS_READ_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/mtp/MtpConstants#PROTECTION_STATUS_NON_TRANSFERABLE_DATA:kotlin.Int` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getSequenceNumber()()` Returns the sequence number for the MTP object This field is typically not used for MTP devices, but is sometimes used to define a sequence of photos on PTP cameras. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getSequenceNumberLong()()` Returns the sequence number for the MTP object This field is typically not used for MTP devices, but is sometimes used to define a sequence of photos on PTP cameras. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getStorageId()()` Returns the storage ID for the MTP object's storage unit |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbCompressedSize()()` Returns the size of the MTP object's thumbnail Will be zero for objects with no thumbnail |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbCompressedSizeLong()()` Returns the size of the MTP object's thumbnail Will be zero for objects with no thumbnail |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbFormat()()` Returns the format code for the MTP object's thumbnail Will be zero for objects with no thumbnail |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbPixHeight()()` Returns the height of the MTP object's thumbnail in pixels Will be zero for objects with no thumbnail |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbPixHeightLong()()` Returns the height of the MTP object's thumbnail in pixels Will be zero for objects with no thumbnail |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbPixWidth()()` Returns the width of the MTP object's thumbnail in pixels Will be zero for objects with no thumbnail |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#getThumbPixWidthLong()()` Returns the width of the MTP object's thumbnail in pixels Will be zero for objects with no thumbnail |
 
 ## Public methods

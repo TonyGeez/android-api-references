@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SelectionEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/SelectionEvent "View this page in Java")
+| --- | --- |
 
 ```
 class SelectionEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) |
 
 A selection event. Specify index parameters as word token indices.
@@ -20,21 +22,27 @@ A selection event. Specify index parameters as word token indices.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_ABANDON:kotlin.Int` User abandoned the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_COPY:kotlin.Int` User copied the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_CUT:kotlin.Int` User cut the selection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_DRAG:kotlin.Int` User dragged+dropped the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OTHER:kotlin.Int` User performed an action on the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OVERTYPE:kotlin.Int` User typed over the selection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_PASTE:kotlin.Int` User pasted over the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_RESET:kotlin.Int` User reset the smart selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SELECT_ALL:kotlin.Int` User activated Select All |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SHARE:kotlin.Int` User shared the selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SMART_SHARE:kotlin.Int` User clicked the textAssist menu item. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#EVENT_AUTO_SELECTION:kotlin.Int` Something else other than User or the default TextClassifier triggered a selection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#EVENT_SELECTION_MODIFIED:kotlin.Int` User modified an existing selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#EVENT_SELECTION_STARTED:kotlin.Int` User started a new selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#EVENT_SMART_SELECTION_MULTI:kotlin.Int` Smart selection triggered spanning multiple tokens (words). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#EVENT_SMART_SELECTION_SINGLE:kotlin.Int` Smart selection triggered for a single token (word). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#INVOCATION_LINK:kotlin.Int` Selection was invoked by the user tapping on a link. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#INVOCATION_MANUAL:kotlin.Int` Selection was invoked by the user long pressing, double tapping, or dragging to select. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#INVOCATION_UNKNOWN:kotlin.Int` Unknown invocation method |
 
 | Inherited constants ||
@@ -46,30 +54,39 @@ A selection event. Specify index parameters as word token indices.
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionActionEvent(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, actionType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an event specifying an action taken on a selection. |
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionActionEvent(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.textclassifier.TextClassification)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, actionType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, classification: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification)` Creates an event specifying an action taken on a selection. |
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionModifiedEvent(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a "selection modified" event. |
+| --- | --- |
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionModifiedEvent(kotlin.Int,%20kotlin.Int,%20android.view.textclassifier.TextClassification)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, classification: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification)` Creates a "selection modified" event. |
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionModifiedEvent(kotlin.Int,%20kotlin.Int,%20android.view.textclassifier.TextSelection)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, selection: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection)` Creates a "selection modified" event. |
 | static [SelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#createSelectionStartedEvent(kotlin.Int,%20kotlin.Int)(invocationMethod: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a "selection started" event. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getDurationSincePreviousEvent()()` Returns the duration in ms between when this event was triggered and when the previous event in the selection session was triggered. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getDurationSinceSessionStart()()` Returns the duration in ms between when this event was triggered and when the first event in the selection session was triggered. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getEnd()()` Returns the end index of this events relative to the index of the start selection event in the selection session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getEntityType()()` Returns the type of entity that is associated with this event. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getEventIndex()()` Returns the index (e.g. 1st event, 2nd event, etc.) of this event in the selection session. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getEventTime()()` Returns the time this event was triggered. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getEventType()()` Returns the type of event that was triggered. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getInvocationMethod()()` Returns the way the selection mode was invoked. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getPackageName()()` Returns the package name of the app that this event originated in. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getResultId()()` Returns the id of the text classifier result associated with this event. |
+| --- | --- |
 | [TextClassificationSessionId](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationSessionId)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getSessionId()()` Returns the selection session id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getSmartEnd()()` Returns the end index of this events relative to the index of the smart selection event in the selection session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getSmartStart()()` Returns the start index of this events relative to the index of the smart selection event in the selection session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getStart()()` Returns the start index of this events relative to the index of the start selection event in the selection session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getWidgetType()()` Returns the type of widget that was involved in triggering this event. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#getWidgetVersion()()` Returns a string version info for the widget this event was triggered in. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#hashCode()()` Returns a hash code value for the object. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#isTerminal(kotlin.Int)(eventType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the eventType is a terminal event type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -327,6 +344,7 @@ Creates an event specifying an action taken on a selection. Use when the user cl
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start (inclusive) index of the selection |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end (exclusive) index of the selection |
 | `actionType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the action that was performed on the selection. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OVERTYPE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_COPY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_PASTE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_CUT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SHARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SMART_SHARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_DRAG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_ABANDON:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OTHER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SELECT_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_RESET:kotlin.Int` |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -356,6 +374,7 @@ Creates an event specifying an action taken on a selection. Use when the user cl
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start (inclusive) index of the selection |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end (exclusive) index of the selection |
 | `actionType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the action that was performed on the selection. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OVERTYPE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_COPY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_PASTE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_CUT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SHARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SMART_SHARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_DRAG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_ABANDON:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_OTHER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_SELECT_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent#ACTION_RESET:kotlin.Int` |
+| --- | --- |
 | `classification` | [TextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification): the TextClassification object returned by the TextClassifier that classified the selected text. This value cannot be `null`. |
 
 | Return ||
@@ -411,6 +430,7 @@ Creates a "selection modified" event. Use when the user modifies the selection a
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start (inclusive) index of the selection |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end (exclusive) index of the selection |
 | `classification` | [TextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification): the TextClassification object returned by the TextClassifier that classified the selected text. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -439,6 +459,7 @@ Creates a "selection modified" event. Use when a TextClassifier modifies the sel
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start (inclusive) index of the selection |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end (exclusive) index of the selection |
 | `selection` | [TextSelection](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection): the TextSelection object returned by the TextClassifier for the specified selection. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

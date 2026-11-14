@@ -9,6 +9,7 @@ class Timestamp : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.Timestamp](https://developer.android.com/reference/kotlin/java/security/Timestamp#) |
 
 This class encapsulates information about a signed timestamp. It is immutable. It includes the timestamp's date and time as well as information about the Timestamping Authority (TSA) which generated and signed the timestamp.
@@ -24,6 +25,7 @@ This class encapsulates information about a signed timestamp. It is immutable. I
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/Timestamp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this timestamp. |
 | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | [getSignerCertPath](https://developer.android.com/reference/kotlin/java/security/Timestamp#getSignerCertPath())`()` Returns the certificate path for the Timestamping Authority. |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getTimestamp](https://developer.android.com/reference/kotlin/java/security/Timestamp#getTimestamp())`()` Returns the date and time when the timestamp was generated. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/Timestamp#hashCode())`()` Returns the hash code value for this timestamp. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/Timestamp#toString())`()` Returns a string describing this timestamp. |
 

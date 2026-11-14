@@ -5,6 +5,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # StateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/ChooserSession.StateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface StateListener

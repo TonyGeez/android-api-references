@@ -9,6 +9,7 @@ open class SAXResult : Result
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.sax.SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#) |
 
 Acts as an holder for a transformation Result.
@@ -33,9 +34,11 @@ Acts as an holder for a transformation Result.
 | open [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)! | [getHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#getHandler())`()` Get the [org.xml.sax.ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#) that is the Result. |
 | open [LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler.html#)! | [getLexicalHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#getLexicalHandler())`()` Get a SAX2 [org.xml.sax.ext.LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler.html#) for the output. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#getSystemId())`()` Get the system identifier that was set with setSystemId. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#setHandler(org.xml.sax.ContentHandler))`(`handler:` ` [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)!`)` Set the target to be a SAX2 [org.xml.sax.ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLexicalHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#setLexicalHandler(org.xml.sax.ext.LexicalHandler))`(`handler:` ` [LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler.html#)!`)` Set the SAX2 [org.xml.sax.ext.LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler.html#) for the output. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Method setSystemId Set the systemID that may be used in association with the [org.xml.sax.ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#). |
+| --- | --- |
 
 ## Constants
 

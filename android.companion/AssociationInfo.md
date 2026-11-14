@@ -7,6 +7,7 @@ class AssociationInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#) |
 
 Details for a specific "association" that has been established between an app and companion device.
@@ -32,21 +33,27 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [AssociatedDevice](https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociatedDevice()()` Companion device that was associated. |
+| --- | --- |
 | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociationToken()()` Association owner app can give this token to other apps to execute actions e. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceIcon()()` Get the device icon of the associated device. |
 | [DeviceId](https://developer.android.com/reference/kotlin/android/companion/DeviceId)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceId()()` <br /> |
+| --- | --- |
 | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceMacAddress()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceProfile()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDisplayName()()` <br /> |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getExtraPermissions()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getSystemDataSyncFlags()()` <br /> |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getTrustTypes()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isRemoteAiAgentSupported()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isSelfManaged()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isTrusted()()` Returns whether an association is a trusted device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

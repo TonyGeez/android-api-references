@@ -7,9 +7,11 @@ abstract class AutofillService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.autofill.AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#) |
 
 An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
@@ -333,6 +335,7 @@ Notice that compatibility mode has limitations such as:
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#EXTRA_FILL_RESPONSE:kotlin.String` Name of the `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` extra used to return a delayed fill response. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#SERVICE_INTERFACE:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that must be declared as handled by the service. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#SERVICE_META_DATA:kotlin.String` Name under which a AutoFillService component publishes information about itself. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
 
@@ -1360,12 +1363,15 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#getFillEventHistory()()` Gets the events that happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onConnected()()` Called when the Android system connects to service. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onDisconnected()()` Called when the Android system disconnects from the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)(request: https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback)` Called by the Android system do decide if a screen can be autofilled by the service. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback)(request: https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest, callback: https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback)` Called when the user requests the service to save the contents of a screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)(callback: https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback)` Called from system settings to display information about the datasets the user saved to this service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSessionDestroyed(android.service.autofill.FillEventHistory)(history: https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory?)` Called when an Autofill context has ended and the Autofill session is finished. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -3211,6 +3217,7 @@ Service must call one of the `https://developer.android.com/reference/kotlin/and
 | `request` | [FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest): the `https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): signal for observing cancellation requests. The system will use this to notify you that the fill result is no longer needed and you should stop handling this fill request in order to save resources. This value cannot be `null`. |
 | `callback` | [FillCallback](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback): object used to notify the result of the request. This value cannot be `null`. |
+| --- | --- |
 
 ### onSaveRequest
 

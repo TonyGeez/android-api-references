@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # Insets
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/Insets "View this page in Java") 
+| --- | --- |
 
 ```
 class Insets : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) |
 
 An Insets instance holds four integer offsets which describe changes to the four edges of a Rectangle. By convention, positive values move edges towards the centre of the rectangle.
@@ -28,12 +30,15 @@ Insets are immutable so may be treated as values.
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [add](https://developer.android.com/reference/kotlin/android/graphics/Insets#add(android.graphics.Insets,%20android.graphics.Insets))`(`a:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`, `b:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`)` Add two Insets. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/Insets#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/Insets#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Two Insets instances are equal iff they belong to the same class and their fields are pairwise equal. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/Insets#hashCode())`()` <br /> |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [max](https://developer.android.com/reference/kotlin/android/graphics/Insets#max(android.graphics.Insets,%20android.graphics.Insets))`(`a:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`, `b:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`)` Retrieves the maximum of two Insets. |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [min](https://developer.android.com/reference/kotlin/android/graphics/Insets#min(android.graphics.Insets,%20android.graphics.Insets))`(`a:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`, `b:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`)` Retrieves the minimum of two Insets. |
+| --- | --- |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [of](https://developer.android.com/reference/kotlin/android/graphics/Insets#of(android.graphics.Rect))`(`r:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)?`)` Return an Insets instance with the appropriate values. |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [of](https://developer.android.com/reference/kotlin/android/graphics/Insets#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an Insets instance with the appropriate values. |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [subtract](https://developer.android.com/reference/kotlin/android/graphics/Insets#subtract(android.graphics.Insets,%20android.graphics.Insets))`(`a:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`, `b:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)`)` Subtract two Insets. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/Insets#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/Insets#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -42,9 +47,11 @@ Insets are immutable so may be treated as values.
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/graphics/Insets#CREATOR:android.os.Parcelable.Creator) <br /> |
 | static [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets#) | [NONE](https://developer.android.com/reference/kotlin/android/graphics/Insets#NONE:android.graphics.Insets) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bottom](https://developer.android.com/reference/kotlin/android/graphics/Insets#bottom:kotlin.Int) <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [left](https://developer.android.com/reference/kotlin/android/graphics/Insets#left:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [right](https://developer.android.com/reference/kotlin/android/graphics/Insets#right:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [top](https://developer.android.com/reference/kotlin/android/graphics/Insets#top:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Public methods
 
@@ -195,6 +202,7 @@ Return an Insets instance with the appropriate values.
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the left inset |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the top inset |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the right inset |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the bottom inset |
 
 | Return ||

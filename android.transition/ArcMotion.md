@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ArcMotion
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/ArcMotion "View this page in Java") 
+| --- | --- |
 
 ```
 open class ArcMotion : PathMotion
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.PathMotion](https://developer.android.com/reference/kotlin/android/transition/PathMotion) ||
 | | ↳ | [android.transition.ArcMotion](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#) |
 
@@ -40,9 +42,11 @@ This may be used in XML as an element inside a transition.
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaximumAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#getMaximumAngle())`()` Returns the maximum arc along the circle between two points. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumHorizontalAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#getMinimumHorizontalAngle())`()` Returns the minimum arc along the circle between two points aligned near horizontally. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumVerticalAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#getMinimumVerticalAngle())`()` Returns the minimum arc along the circle between two points aligned near vertically. |
+| --- | --- |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [getPath](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#getPath(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#setMaximumAngle(kotlin.Float))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the maximum arc along the circle between two points. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumHorizontalAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#setMinimumHorizontalAngle(kotlin.Float))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near horizontally. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumVerticalAngle](https://developer.android.com/reference/kotlin/android/transition/ArcMotion#setMinimumVerticalAngle(kotlin.Float))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near vertically. |
 
 ## Public constructors
@@ -133,6 +137,7 @@ open fun getPath(
 | `startX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the starting point. |
 | `startY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the starting point. |
 | `endX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the ending point. |
+| --- | --- |
 | `endY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the ending point. |
 
 | Return ||

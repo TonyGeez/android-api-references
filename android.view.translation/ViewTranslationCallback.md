@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ViewTranslationCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/ViewTranslationCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ViewTranslationCallback
@@ -23,6 +24,7 @@ When the platform intelligence starts translation of an app's ui, the system wil
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onClearTranslation](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationCallback#onClearTranslation(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` Called when the translation state is no longer needed. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHideTranslation](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationCallback#onHideTranslation(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` Called when user wants to view the original content instead of the translated content. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onShowTranslation](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationCallback#onShowTranslation(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` Called when the translated text is ready to show or if the user has requested to reshow the translated content after hiding it. |
+| --- | --- |
 
 ## Public methods
 

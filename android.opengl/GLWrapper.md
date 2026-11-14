@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # GLWrapper
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.GLWrapper "View this page in Java") 
+| --- | --- |
 
 ```
 interface GLWrapper

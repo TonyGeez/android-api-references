@@ -7,6 +7,7 @@ class Instant : Comparable<Instant!>, Serializable, Temporal, TemporalAdjuster
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.Instant](https://developer.android.com/reference/kotlin/java/time/Instant#) |
 
 An instantaneous point on the time-line.
@@ -56,42 +57,55 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/Instant#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this instant. |
 | [OffsetDateTime](https://developer.android.com/reference/kotlin/java/time/OffsetDateTime)! | `https://developer.android.com/reference/kotlin/java/time/Instant#atOffset(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Combines this instant with an offset to create an `OffsetDateTime`. |
 | [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime)! | `https://developer.android.com/reference/kotlin/java/time/Instant#atZone(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Combines this instant with a time-zone to create a `ZonedDateTime`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#compareTo(java.time.Instant)(other: https://developer.android.com/reference/kotlin/java/time/Instant#!)` Compares this instant to the specified instant. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this instant is equal to the specified instant. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `Instant` from a temporal object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this instant as an `int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#getEpochSecond()()` Gets the number of seconds from the Java epoch of 1970-01-01T00:00:00Z. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this instant as a `long`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#getNano()()` Gets the number of nanoseconds, later along the time-line, from the start of the second. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#hashCode()()` Returns a hash code for this instant. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#isAfter(java.time.Instant)(otherInstant: https://developer.android.com/reference/kotlin/java/time/Instant#!)` Checks if this instant is after the specified instant. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#isBefore(java.time.Instant)(otherInstant: https://developer.android.com/reference/kotlin/java/time/Instant#!)` Checks if this instant is before the specified instant. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#isSupported(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Checks if the specified unit is supported. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this instant with the specified amount subtracted. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this instant with the specified amount subtracted. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#minusMillis(kotlin.Long)(millisToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in milliseconds subtracted. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#minusNanos(kotlin.Long)(nanosToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in nanoseconds subtracted. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#minusSeconds(kotlin.Long)(secondsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in seconds subtracted. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#now()()` Obtains the current instant from the system clock. |
+| --- | --- |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current instant from the specified clock. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#ofEpochMilli(kotlin.Long)(epochMilli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an instance of `Instant` using milliseconds from the epoch of 1970-01-01T00:00:00Z. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#ofEpochSecond(kotlin.Long)(epochSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an instance of `Instant` using seconds from the epoch of 1970-01-01T00:00:00Z. |
+| --- | --- |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#ofEpochSecond(kotlin.Long,%20kotlin.Long)(epochSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanoAdjustment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an instance of `Instant` using seconds from the epoch of 1970-01-01T00:00:00Z and nanosecond fraction of second. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `Instant` from a text string such as `2007-12-03T10:15:30.00Z`. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this instant with the specified amount added. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this instant with the specified amount added. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#plusMillis(kotlin.Long)(millisToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in milliseconds added. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#plusNanos(kotlin.Long)(nanosToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in nanoseconds added. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#plusSeconds(kotlin.Long)(secondsToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified duration in seconds added. |
 | R | `https://developer.android.com/reference/kotlin/java/time/Instant#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this instant using the specified query. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/Instant#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#toEpochMilli()()` Converts this instant to the number of milliseconds from the epoch of 1970-01-01T00:00:00Z. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#toString()()` A string representation of this instant using ISO-8601 representation. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#truncatedTo(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this `Instant` truncated to the specified unit. |
+| --- | --- |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration) | `https://developer.android.com/reference/kotlin/java/time/Instant#until(java.time.Instant)(endExclusive: https://developer.android.com/reference/kotlin/java/time/Instant#)` Calculates the `Duration` until another `Instant`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/Instant#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Calculates the amount of time until another instant in terms of the specified unit. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this instant. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this instant with the specified field set to a new value. |
 
 | Properties ||
@@ -99,6 +113,7 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#EPOCH:java.time.Instant` Constant for the 1970-01-01T00:00:00Z epoch instant. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#MAX:java.time.Instant` The maximum supported `Instant`, '1000000000-12-31T23:59:59. |
 | static [Instant](https://developer.android.com/reference/kotlin/java/time/Instant#)! | `https://developer.android.com/reference/kotlin/java/time/Instant#MIN:java.time.Instant` The minimum supported `Instant`, '-1000000000-01-01T00:00Z'. |
+| --- | --- |
 
 ## Public methods
 
@@ -301,6 +316,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an `int` |
+| --- | --- |
 
 ### getEpochSecond
 
@@ -347,6 +363,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### getNano
 
@@ -555,6 +572,7 @@ This instance is immutable and unaffected by this method call.
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the subtraction cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### minusMillis
 
@@ -851,6 +869,7 @@ This instance is immutable and unaffected by this method call.
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the addition cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### plusMillis
 
@@ -1122,6 +1141,7 @@ This instance is immutable and unaffected by this method call.
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to an `Instant` |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### with
 
@@ -1196,6 +1216,7 @@ This instance is immutable and unaffected by this method call.
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ## Properties
 

@@ -5,15 +5,18 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # MediaCasStateException
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCasStateException "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaCasStateException : IllegalStateException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
 | | | | | ↳ | [android.media.MediaCasStateException](https://developer.android.com/reference/kotlin/android/media/MediaCasStateException#) |
 

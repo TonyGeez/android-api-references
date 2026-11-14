@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnTimedMetaDataAvailableListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnTimedMetaDataAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTimedMetaDataAvailableListener

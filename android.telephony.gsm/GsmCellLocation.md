@@ -4,12 +4,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # GsmCellLocation
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation "View this page in Java")
+| --- | --- |
 
 ```
 open class GsmCellLocation : CellLocation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#) ||
 | | ↳ | [android.telephony.gsm.GsmCellLocation](https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#) |
 
@@ -31,12 +33,15 @@ Represents the cell location on a GSM phone.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#fillInNotifierBundle(android.os.Bundle)(m: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set intent notifier Bundle based on service state |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getCid()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getLac()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getPsc()()` On a UMTS network, returns the primary scrambling code of the serving cell. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#setLacAndCid(kotlin.Int,%20kotlin.Int)(lac: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the location area code and the cell id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#setStateInvalid()()` Invalidate this object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

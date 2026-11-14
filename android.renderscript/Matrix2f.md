@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Matrix2f
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Matrix2f "View this page in Java") 
+| --- | --- |
 
 ```
 open class Matrix2f
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,15 +34,19 @@ Class for exposing the native RenderScript rs_matrix2x2 type back to the Android
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#get(kotlin.Int,%20kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for a given row and column |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getArray](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#getArray())`()` Return a reference to the internal array representing matrix values. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#load(android.renderscript.Matrix2f))`(`src:` ` [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#)!`)` Sets the values of the matrix to those of the parameter |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadIdentity](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#loadIdentity())`()` Sets the matrix values to identity |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadMultiply](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#loadMultiply(android.renderscript.Matrix2f,%20android.renderscript.Matrix2f))`(`lhs:` ` [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#)!`, `rhs:` ` [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#)!`)` Sets current values to be the result of multiplying two given matrices |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadRotate](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#loadRotate(kotlin.Float))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a rotation matrix of given angle |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadScale](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#loadScale(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a scale matrix of given dimensions |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [multiply](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#multiply(android.renderscript.Matrix2f))`(`rhs:` ` [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#)!`)` Post-multiplies the current matrix by a given parameter |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#rotate(kotlin.Float))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a rotation matrix of given angle |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scale](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#scale(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a scale matrix of given dimensions |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#set(kotlin.Int,%20kotlin.Int,%20kotlin.Float))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `v:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value for a given row and column |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transpose](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f#transpose())`()` Sets the current matrix to its transpose |
+| --- | --- |
 
 ## Public constructors
 

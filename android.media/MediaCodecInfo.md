@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaCodecInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCodecInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaCodecInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#) |
 
 Provides information about a given media codec available on the device. You can iterate through all codecs available by querying [MediaCodecList](https://developer.android.com/reference/kotlin/android/media/MediaCodecList). For example, here's how to find an encoder that supports a given MIME type: 
@@ -45,6 +47,7 @@ private static MediaCodecInfo selectCodec(String mimeType) {
 | | [AudioCapabilities](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.AudioCapabilities) A class that supports querying the audio capabilities of a codec. |
 | | [CodecCapabilities](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities) Encapsulates the capabilities of a given codec component. |
 | | [CodecProfileLevel](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecProfileLevel) Encapsulates the profiles available for a codec component. |
+| --- | --- |
 | | [EncoderCapabilities](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.EncoderCapabilities) A class that supports querying the encoding capabilities of a codec. |
 | | [VideoCapabilities](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.VideoCapabilities) A class that supports querying the video capabilities of a codec. |
 
@@ -58,12 +61,15 @@ private static MediaCodecInfo selectCodec(String mimeType) {
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalName](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getCanonicalName())`()` Retrieve the underlying codec name. |
 | [MediaCodecInfo.CodecCapabilities](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities)! | [getCapabilitiesForType](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getCapabilitiesForType(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Enumerates the capabilities of the codec component. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getName())`()` Retrieve the codec name. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityModel](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getSecurityModel())`()` Query the security model of the codec. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedTypes](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getSupportedTypes())`()` Query the media types supported by the codec. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlias](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#isAlias())`()` Query if the codec is an alias for another underlying codec. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncoder](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#isEncoder())`()` Query if the codec is an encoder. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHardwareAccelerated](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#isHardwareAccelerated())`()` Query if the codec is hardware accelerated. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSoftwareOnly](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#isSoftwareOnly())`()` Query if the codec is software only. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVendor](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#isVendor())`()` Query if the codec is provided by the Android platform (false) or the device manufacturer (true). |
 
 ## Constants

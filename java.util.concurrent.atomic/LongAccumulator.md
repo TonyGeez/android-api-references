@@ -7,6 +7,7 @@ open class LongAccumulator : Number, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.util.concurrent.atomic.LongAccumulator](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#) |
 
@@ -31,12 +32,15 @@ This class extends `https://developer.android.com/reference/kotlin/java/lang/Num
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#accumulate(kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Updates with the given value. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()()` Returns the current value. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#getThenReset()()` Equivalent in effect to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()` followed by `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#reset()`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#reset()()` Resets variables maintaining updates to the identity value. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#toDouble()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()) as a `double` after a widening primitive conversion. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#toFloat()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()) as a `float` after a widening primitive conversion. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#toInt()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()) as an `int` after a narrowing primitive conversion. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#toLong()()` Equivalent to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#get()`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAccumulator#toString()()` {@return the String representation of the current value} |
+| --- | --- |
 
 ## Public constructors
 

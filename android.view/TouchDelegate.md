@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TouchDelegate
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/TouchDelegate "View this page in Java") 
+| --- | --- |
 
 ```
 open class TouchDelegate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.TouchDelegate](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#) |
 
 Helper class to handle situations where you want a view to have a larger touch area than its actual view bounds. The view whose touch area is changed is called the delegate view. This class should be used by an ancestor of the delegate. To use a TouchDelegate, first create an instance that specifies the bounds that should be mapped to the delegate and the delegate view itself.
@@ -24,6 +26,7 @@ The ancestor should then forward all of its touch events received in its [androi
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABOVE](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#ABOVE:kotlin.Int) The touchable region of the View extends above its actual extent. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BELOW](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#BELOW:kotlin.Int) The touchable region of the View extends below its actual extent. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_LEFT](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#TO_LEFT:kotlin.Int) The touchable region of the View extends to the left of its actual extent. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_RIGHT](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#TO_RIGHT:kotlin.Int) The touchable region of the View extends to the right of its actual extent. |
 
 | Public constructors ||
@@ -35,6 +38,7 @@ The ancestor should then forward all of its touch events received in its [androi
 | open [AccessibilityNodeInfo.TouchDelegateInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo) | [getTouchDelegateInfo](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#getTouchDelegateInfo())`()` Return a [TouchDelegateInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo) mapping from regions (in view coordinates) to delegated views for accessibility usage. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#onTouchEvent(android.view.MotionEvent))`(`event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)`)` Forward touch events to the delegate view if the event is within the bounds specified in the constructor. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchExplorationHoverEvent](https://developer.android.com/reference/kotlin/android/view/TouchDelegate#onTouchExplorationHoverEvent(android.view.MotionEvent))`(`event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)`)` Forward hover events to the delegate view if the event is within the bounds specified in the constructor and touch exploration is enabled. |
+| --- | --- |
 
 ## Constants
 

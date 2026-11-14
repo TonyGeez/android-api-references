@@ -9,6 +9,7 @@ class OpcodeInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [dalvik.bytecode.OpcodeInfo](https://developer.android.com/reference/kotlin/dalvik/bytecode/OpcodeInfo#) |
 
 Information about Dalvik opcodes.

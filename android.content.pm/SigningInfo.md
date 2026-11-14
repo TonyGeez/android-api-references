@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SigningInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/SigningInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SigningInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#) |
 
 Information pertaining to the signing certificates used to sign a package.
@@ -22,6 +24,7 @@ Information pertaining to the signing certificates used to sign a package.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERSION_JAR](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#VERSION_JAR:kotlin.Int) JAR signing (v1 scheme). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERSION_SIGNING_BLOCK_V2](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#VERSION_SIGNING_BLOCK_V2:kotlin.Int) APK signature scheme v2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERSION_SIGNING_BLOCK_V3](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#VERSION_SIGNING_BLOCK_V3:kotlin.Int) APK signature scheme v3. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERSION_SIGNING_BLOCK_V4](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#VERSION_SIGNING_BLOCK_V4:kotlin.Int) APK signature scheme v4. |
 
 | Inherited constants ||
@@ -39,12 +42,15 @@ Information pertaining to the signing certificates used to sign a package.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#describeContents())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Signature](https://developer.android.com/reference/kotlin/android/content/pm/Signature)!\>! | [getApkContentsSigners](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#getApkContentsSigners())`()` Returns the signing certificates used to sign the APK contents of this application. |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!\> | [getPublicKeys](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#getPublicKeys())`()` Returns the public keys for the signing certificates. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSchemeVersion](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#getSchemeVersion())`()` Returns the version of signing schema used to sign the APK. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Signature](https://developer.android.com/reference/kotlin/android/content/pm/Signature)!\>! | [getSigningCertificateHistory](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#getSigningCertificateHistory())`()` Returns the signing certificates this package has proven it is authorized to use. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMultipleSigners](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#hasMultipleSigners())`()` Although relatively uncommon, packages may be signed by more than one signer, in which case their identity is viewed as being the set of all signers, not just any one. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPastSigningCertificates](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#hasPastSigningCertificates())`()` APK Signature Scheme v3 enables packages to provide a proof-of-rotation record that the platform verifies, and uses, to allow the use of new signing certificates. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [signersMatchExactly](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#signersMatchExactly(android.content.pm.SigningInfo))`(`other:` ` [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#)`)` Returns true if the signing certificates in this and other match exactly. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -137,6 +143,7 @@ Creates a new instance of information used to sign the APK.
 | `schemeVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):version of signing schema. Value is android.content.pm.SigningDetails.SignatureSchemeVersion.UNKNOWN, android.content.pm.SigningDetails.SignatureSchemeVersion.JAR, android.content.pm.SigningDetails.SignatureSchemeVersion.SIGNING_BLOCK_V2, android.content.pm.SigningDetails.SignatureSchemeVersion.SIGNING_BLOCK_V3, or android.content.pm.SigningDetails.SignatureSchemeVersion.SIGNING_BLOCK_V4 |
 | `apkContentsSigners` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Signature](https://developer.android.com/reference/kotlin/android/content/pm/Signature)!\>?:signing certificates. This value may be`null`. |
 | `publicKeys` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!\>?:for the signing certificates. This value may be`null`. |
+| --- | --- |
 | `signingCertificateHistory` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Signature](https://developer.android.com/reference/kotlin/android/content/pm/Signature)!\>?:All signing certificates the package has proven it is authorized to use. This value may be`null`. |
 
 **See Also**

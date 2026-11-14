@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ServiceWorkerController
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/ServiceWorkerController "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ServiceWorkerController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.ServiceWorkerController](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController#) |
 
 Manages Service Workers used by WebView.
@@ -41,6 +43,7 @@ ServiceWorkerController swController = ServiceWorkerController.getInstance();
 | openstatic [ServiceWorkerController](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController#) | [getInstance](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController#getInstance())`()` Returns the default ServiceWorkerController instance. |
 | abstract [ServiceWorkerWebSettings](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings) | [getServiceWorkerWebSettings](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController#getServiceWorkerWebSettings())`()` Gets the settings for all service workers. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setServiceWorkerClient](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController#setServiceWorkerClient(android.webkit.ServiceWorkerClient))`(`client:` ` [ServiceWorkerClient](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerClient)?`)` Sets the client to capture service worker related callbacks. |
+| --- | --- |
 
 ## Public constructors
 

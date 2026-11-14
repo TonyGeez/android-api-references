@@ -12,6 +12,7 @@ interface DocumentHandler
 | [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#) |
 
 | Known Direct Subclasses [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase), [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter) |---------------------------------------------------------------------------------------------------|------------------------------------------| | [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase) | Default base class for handlers. | | [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter) | Adapt a SAX1 Parser as a SAX2 XMLReader. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 9.**
 |
@@ -32,9 +33,11 @@ Application writers who do not want to implement the entire interface can derive
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#characters(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of character data. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#endDocument())`()` Receive notification of the end of a document. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#endElement(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of an element. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#ignorableWhitespace(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of ignorable whitespace in element content. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#processingInstruction(kotlin.String,%20kotlin.String))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a processing instruction. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#setDocumentLocator(org.xml.sax.Locator))`(`locator:` ` [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator)!`)` Receive an object for locating the origin of SAX document events. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#startDocument())`()` Receive notification of the beginning of a document. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#startElement(kotlin.String,%20org.xml.sax.AttributeList))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList)!`)` Receive notification of the beginning of an element. |
 
@@ -67,6 +70,7 @@ Note that some parsers will report whitespace using the ignorableWhitespace() me
 | `ch` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The characters from the XML document. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start position in the array. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of characters to read from the array. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -146,6 +150,7 @@ The application must not attempt to read from the array outside of the specified
 | `ch` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:The characters from the XML document. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start position in the array. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of characters to read from the array. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|

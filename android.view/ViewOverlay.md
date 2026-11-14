@@ -3,15 +3,18 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # ViewOverlay
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/ViewOverlay "View this page in Java")
+| --- | --- |
 
 ```
 open class ViewOverlay
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.ViewOverlay](https://developer.android.com/reference/kotlin/android/view/ViewOverlay#) |
 
 | Known Direct Subclasses [ViewGroupOverlay](https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay) |---|---| | [ViewGroupOverlay](https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay) | A group overlay is an extra layer that sits on top of a ViewGroup (the "host view") which is drawn after all other content in that view (including the view group's children). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An overlay is an extra layer that sits on top of a View (the "host view") which is drawn after all other content in that view (including children, if the view is a ViewGroup). Interaction with the overlay layer is done by adding and removing drawables.
 
@@ -24,6 +27,7 @@ An overlay requested from a ViewGroup is of type `https://developer.android.com/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#add(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Adds a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to the overlay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#clear()()` Removes all content from the overlay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#remove(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Removes the specified `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` from the overlay. |
+| --- | --- |
 
 ## Public methods
 

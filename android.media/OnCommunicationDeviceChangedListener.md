@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # OnCommunicationDeviceChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCommunicationDeviceChangedListener

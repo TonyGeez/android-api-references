@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # PendingJobReasonsInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/job/PendingJobReasonsInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class PendingJobReasonsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.job.PendingJobReasonsInfo](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo#) |
 
 A simple wrapper which includes a timestamp (in millis since epoch) and an array of android.app.job.JobScheduler.PendingJobReason at that timestamp for why a particular job may be pending.
@@ -30,6 +32,7 @@ A simple wrapper which includes a timestamp (in millis since epoch) and an array
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo#describeContents())`()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getPendingJobReasons](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo#getPendingJobReasons())`()` Returns a set of android. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo#getTimestampMillis())`()` <br /> Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

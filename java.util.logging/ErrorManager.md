@@ -9,6 +9,7 @@ open class ErrorManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.ErrorManager](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#) |
 
 ErrorManager objects can be attached to Handlers to process any error that occurs on a Handler during Logging.
@@ -22,9 +23,11 @@ When processing logging output, if a Handler encounters problems then rather tha
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#CLOSE_FAILURE:kotlin.Int) CLOSE_FAILURE is used when a close of an output stream fails. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLUSH_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#FLUSH_FAILURE:kotlin.Int) FLUSH_FAILURE is used when a flush to an output stream fails. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#FORMAT_FAILURE:kotlin.Int) FORMAT_FAILURE is used when formatting fails for any reason. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERIC_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#GENERIC_FAILURE:kotlin.Int) GENERIC_FAILURE is used for failure that don't fit into one of the other categories. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#OPEN_FAILURE:kotlin.Int) OPEN_FAILURE is used when an open of an output stream fails. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_FAILURE](https://developer.android.com/reference/kotlin/java/util/logging/ErrorManager#WRITE_FAILURE:kotlin.Int) WRITE_FAILURE is used when a write to an output stream fails. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
@@ -141,3 +144,4 @@ This method may be overridden in subclasses. The default behavior in this base c
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a descriptive string (may be null) |
 | `ex` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:an exception (may be null) |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an error code defined in ErrorManager |
+| --- | --- |

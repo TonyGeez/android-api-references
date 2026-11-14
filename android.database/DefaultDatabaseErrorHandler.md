@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # DefaultDatabaseErrorHandler
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/DefaultDatabaseErrorHandler "View this page in Java") 
+| --- | --- |
 
 ```
 class DefaultDatabaseErrorHandler : DatabaseErrorHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.DefaultDatabaseErrorHandler](https://developer.android.com/reference/kotlin/android/database/DefaultDatabaseErrorHandler#) |
 
 Default class used to define the action to take when database corruption is reported by sqlite.

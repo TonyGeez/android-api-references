@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # CreateBeamUrisCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.CreateBeamUrisCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface CreateBeamUrisCallback

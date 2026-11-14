@@ -21,6 +21,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_ADOPTED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_ADOPTED:kotlin.Short) The node is adopted, using`Document.adoptNode()`. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_CLONED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_CLONED:kotlin.Short) The node is cloned, using`Node.cloneNode()`. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_DELETED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_DELETED:kotlin.Short) The node is deleted. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_IMPORTED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_IMPORTED:kotlin.Short) The node is imported, using`Document.importNode()`. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_RENAMED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_RENAMED:kotlin.Short) The node is renamed, using`Document.renameNode()`. |
 
@@ -116,5 +117,6 @@ DOM applications must not raise exceptions in a`UserDataHandler`. The effect of 
 | `operation` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html):Specifies the type of operation that is being performed on the node. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Specifies the key for which this handler is being called. |
 | `data` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:Specifies the data for which this handler is being called. |
+| --- | --- |
 | `src` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:Specifies the node being cloned, adopted, imported, or renamed. This is`null`when the node is being deleted. |
 | `dst` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:Specifies the node newly created if any, or`null`. |

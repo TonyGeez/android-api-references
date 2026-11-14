@@ -11,6 +11,7 @@ interface LexicalHandler
 | [org.xml.sax.ext.LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#) |
 
 | Known Direct Subclasses [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2), [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler.html#) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#), [DeclHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DeclHandler), and [EntityResolver2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/EntityResolver2) extensions. | | [TransformerHandler](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TransformerHandler.html#) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 SAX2 extension handler for lexical events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -27,9 +28,11 @@ To set the LexicalHandler for an XML reader, use the [setProperty](https://devel
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [comment](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#comment(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Report an XML comment anywhere in the document. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endCDATA](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#endCDATA())`()` Report the end of a CDATA section. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDTD](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#endDTD())`()` Report the end of DTD declarations. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endEntity](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#endEntity(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the end of an entity. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startCDATA](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#startCDATA())`()` Report the start of a CDATA section. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDTD](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#startDTD(kotlin.String,%20kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the start of DTD declarations, if any. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startEntity](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler#startEntity(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the beginning of some internal and external XML entities. |
 
 ## Public methods
@@ -55,6 +58,7 @@ This callback will be used for comments inside or outside the document element, 
 | `ch` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:An array holding the characters in the comment. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The starting position in the array. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of characters to use from the array. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------|
@@ -165,6 +169,7 @@ Note that the start/endDTD events will appear within the start/endDocument event
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The document type name. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The declared public identifier for the external DTD subset, or null if none was declared. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The declared system identifier for the external DTD subset, or null if none was declared. (Note that this is not resolved against the document base URI.) |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------|

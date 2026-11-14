@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # FloatAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/actions/FloatAction "View this page in Java") 
+| --- | --- |
 
 ```
 class FloatAction : ControlAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.actions.ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) ||
 | | ↳ | [android.service.controls.actions.FloatAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/FloatAction#) |
 
@@ -69,6 +71,7 @@ FloatAction(
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier of the [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate.html#) that originated this action. This value cannot be`null`. |
 | `newValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):new value for the state of the [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate.html#). |
 | `challengeValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a value sent by the user along with the action to authenticate.null is sent when no authentication is needed or has not been requested. |
+| --- | --- |
 
 ## Public methods
 

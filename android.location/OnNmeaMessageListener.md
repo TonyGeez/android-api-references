@@ -3,6 +3,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # OnNmeaMessageListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/OnNmeaMessageListener "View this page in Java")
+| --- | --- |
 
 ```
 interface OnNmeaMessageListener

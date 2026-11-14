@@ -7,6 +7,7 @@ open class SAXSource : Source
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#) |
 
 Acts as an holder for SAX-style Source.
@@ -30,9 +31,11 @@ Note that XSLT requires namespace support. Attempting to transform an input sour
 | open [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getInputSource()()` Get the SAX InputSource to be used for the Source. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getSystemId()()` Get the base ID (URI or system ID) from where URIs will be resolved. |
 | open [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getXMLReader()()` Get the XMLReader to be used for the Source. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setInputSource(org.xml.sax.InputSource)(inputSource: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Set the SAX InputSource to be used for the Source. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setSystemId(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the system identifier for this Source. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setXMLReader(org.xml.sax.XMLReader)(reader: https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#!)` Set the XMLReader to be used for the Source. |
+| --- | --- |
 | open static [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#sourceToInputSource(javax.xml.transform.Source)(source: https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#!)` Attempt to obtain a SAX InputSource object from a Source object. |
 
 ## Constants

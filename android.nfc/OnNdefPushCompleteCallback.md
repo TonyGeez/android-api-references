@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnNdefPushCompleteCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.OnNdefPushCompleteCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnNdefPushCompleteCallback

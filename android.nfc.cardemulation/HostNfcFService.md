@@ -7,9 +7,11 @@ abstract class HostNfcFService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.nfc.cardemulation.HostNfcFService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#) |
 
 HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
@@ -77,6 +79,7 @@ When the NFC link is broken, `https://developer.android.com/reference/kotlin/and
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#DEACTIVATION_LINK_LOSS:kotlin.Int` Reason for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onDeactivated(kotlin.Int)`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#SERVICE_INTERFACE:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that must be declared as handled by the service. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#SERVICE_META_DATA:kotlin.String` The name of the meta-data element that contains more information about this service. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
 
@@ -1104,6 +1107,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onDeactivated(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be called in following possible scenarios: - The NFC link has been lost |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#processNfcFPacket(kotlin.ByteArray,%20android.os.Bundle)(commandPacket: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` This method will be called when a NFC-F packet has been received from a remote device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#sendResponsePacket(kotlin.ByteArray)(responsePacket: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Sends a response packet back to the remote device. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`

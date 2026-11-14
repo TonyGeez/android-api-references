@@ -9,10 +9,12 @@ abstract class FilterReader : Reader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader) ||
 | | ↳ | [java.io.FilterReader](https://developer.android.com/reference/kotlin/java/io/FilterReader#) |
 
 | Known Direct Subclasses [PushbackReader](https://developer.android.com/reference/kotlin/java/io/PushbackReader) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [PushbackReader](https://developer.android.com/reference/kotlin/java/io/PushbackReader) | A character-stream reader that allows characters to be pushed back into the stream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for reading filtered character streams. The abstract class`FilterReader`itself provides default methods that pass all requests to the contained stream. Subclasses of`FilterReader`should override some of these methods and may also provide additional methods and fields.
 
@@ -27,9 +29,11 @@ Abstract class for reading filtered character streams. The abstract class`Filter
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/FilterReader#close())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/io/FilterReader#mark(kotlin.Int))`(`readAheadLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the present position in the stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/io/FilterReader#markSupported())`()` Tells whether this stream supports the mark() operation. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FilterReader#read())`()` Reads a single character. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FilterReader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads characters into a portion of an array. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ready](https://developer.android.com/reference/kotlin/java/io/FilterReader#ready())`()` Tells whether this stream is ready to be read. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/FilterReader#reset())`()` Resets the stream. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/FilterReader#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips characters. |
 
@@ -149,6 +153,7 @@ Reads characters into a portion of an array.
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:Destination buffer |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset at which to start storing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum number of characters to read |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------|

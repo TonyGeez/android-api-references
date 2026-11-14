@@ -9,6 +9,7 @@ open class NodeChangeEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [java.util.prefs.NodeChangeEvent](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeEvent#) |
 

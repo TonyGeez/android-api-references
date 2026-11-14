@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # HdrConversionMode
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/HdrConversionMode "View this page in Java") 
+| --- | --- |
 
 ```
 class HdrConversionMode : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.display.HdrConversionMode](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#) |
 
 Describes the HDR conversion mode for a device. HDR conversion mode has a conversionMode and preferredHdrOutputType.
@@ -26,6 +28,7 @@ The conversionMode can be one of: [HdrConversionMode.HDR_CONVERSION_UNSUPPORTED]
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_CONVERSION_FORCE](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_FORCE:kotlin.Int) HDR output conversion is set by the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_CONVERSION_PASSTHROUGH](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_PASSTHROUGH:kotlin.Int) HDR output conversion is disabled |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_CONVERSION_SYSTEM](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_SYSTEM:kotlin.Int) HDR output conversion is managed by the device manufacturer's implementation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_CONVERSION_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_UNSUPPORTED:kotlin.Int) HDR output conversion is unsupported |
 
 | Inherited constants ||
@@ -42,9 +45,11 @@ The conversionMode can be one of: [HdrConversionMode.HDR_CONVERSION_UNSUPPORTED]
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConversionMode](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#getConversionMode())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPreferredHdrOutputType](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#getPreferredHdrOutputType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

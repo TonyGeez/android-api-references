@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AlternativeSpans
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/AlternativeSpans "View this page in Java") 
+| --- | --- |
 
 ```
 class AlternativeSpans : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.speech.AlternativeSpans](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#) |
 
 List of [AlternativeSpan](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan) for a specific speech recognition result.
@@ -32,9 +34,11 @@ A single [SpeechRecognizer](https://developer.android.com/reference/kotlin/andro
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AlternativeSpan](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan)!\> | [getSpans](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#getSpans())`()` List of [AlternativeSpan](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan) for a specific speech recognition result. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

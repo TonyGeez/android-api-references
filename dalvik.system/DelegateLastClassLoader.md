@@ -9,9 +9,11 @@ class DelegateLastClassLoader : PathClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) ||||
 | | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader) |||
 | | | ↳ | [dalvik.system.PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [dalvik.system.DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#) |
 
 A`ClassLoader`implementation that implements a**delegate last**lookup policy. For every class or resource this loader is requested to load, the following lookup order is employed:
@@ -98,6 +100,7 @@ Note that this is in contrast to other standard classloaders that follow the del
 | `dexPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the list of jar/apk files containing classes and resources, delimited by`File.pathSeparator`, which defaults to`":"`on Android. This value cannot be`null`. |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null`. |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?:the parent class loader. May be`null`for the boot classloader. |
+| --- | --- |
 | `delegateResourceLoading` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether to delegate resource loading to the parent if the resource is not found. This does not affect class loading delegation. |
 
 ## Public methods

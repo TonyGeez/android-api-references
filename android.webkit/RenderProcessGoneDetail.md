@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # RenderProcessGoneDetail
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/RenderProcessGoneDetail "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class RenderProcessGoneDetail
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.RenderProcessGoneDetail](https://developer.android.com/reference/kotlin/android/webkit/RenderProcessGoneDetail#) |
 
 This class provides more specific information about why the render process exited. The application may use this to decide how to handle the situation.

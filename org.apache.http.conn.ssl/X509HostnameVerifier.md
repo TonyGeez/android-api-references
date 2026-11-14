@@ -10,8 +10,10 @@ interface X509HostnameVerifier : HostnameVerifier
 | [org.apache.http.conn.ssl.X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#) |
 
 | Known Direct Subclasses [AbstractVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/AbstractVerifier) |---|---| | [AbstractVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/AbstractVerifier) | Abstract base class for all standard `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#` implementations. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AllowAllHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/AllowAllHostnameVerifier), [BrowserCompatHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/BrowserCompatHostnameVerifier), [StrictHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/StrictHostnameVerifier) |---|---| | [AllowAllHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/AllowAllHostnameVerifier) | The ALLOW_ALL HostnameVerifier essentially turns hostname verification off. | | [BrowserCompatHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/BrowserCompatHostnameVerifier) | The HostnameVerifier that works the same way as Curl and Firefox. | | [StrictHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/StrictHostnameVerifier) | The Strict HostnameVerifier works the same way as Sun Java 1. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 22.**
 |
@@ -34,6 +36,7 @@ Inspired by Sebastian Hauer's original StrictSSLProtocolSocketFactory in the Htt
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20kotlin.Array,%20kotlin.Array)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, subjectAlts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Checks to see if the supplied hostname matches any of the supplied CNs or "DNS" Subject-Alts. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20java.security.cert.X509Certificate)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cert: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#!)` <br /> |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20javax.net.ssl.SSLSession)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, session: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession.html#!)` Verify that the host name is an acceptable match with the server's authentication scheme. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20javax.net.ssl.SSLSocket)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, ssl: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#!)` <br /> |
 
 ## Public methods
@@ -59,6 +62,7 @@ Checks to see if the supplied hostname matches any of the supplied CNs or "DNS" 
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The hostname to verify. |
 | `cns` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: CN fields, in order, as extracted from the X.509 certificate. |
 | `subjectAlts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Subject-Alt fields of type 2 ("DNS"), as extracted from the X.509 certificate. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

@@ -8,9 +8,11 @@ class BodyFatRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.BodyFatRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#) |
+| --- | --- | --- | --- |
 
 Captures the body fat percentage of a user. Each record represents a person's total body fat as a percentage of their total body mass.
 
@@ -29,6 +31,7 @@ Captures the body fat percentage of a user. Each record represents a person's to
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#getPercentage()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -52,6 +55,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

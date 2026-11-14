@@ -7,6 +7,7 @@ open class StreamTokenizer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.StreamTokenizer](https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#) |
 
 The `StreamTokenizer` class takes an input stream and parses it into "tokens", allowing the tokens to be read one at a time. The parsing process is controlled by a table and a number of flags that can be set to various states. The stream tokenizer can recognize identifiers, numbers, quoted strings, and various comment styles.
@@ -29,6 +30,7 @@ A typical application first constructs an instance of this class, sets up the sy
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#TT_EOF:kotlin.Int` A constant indicating that the end of the stream has been read. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#TT_EOL:kotlin.Int` A constant indicating that the end of the line has been read. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#TT_NUMBER:kotlin.Int` A constant indicating that a number token has been read. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#TT_WORD:kotlin.Int` A constant indicating that a word token has been read. |
 
 | Public constructors ||
@@ -41,18 +43,23 @@ A typical application first constructs an instance of this class, sets up the sy
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#commentChar(kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specified that the character argument starts a single-line comment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#eolIsSignificant(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Determines whether or not ends of line are treated as tokens. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#lineno()()` Return the current line number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#lowerCaseMode(kotlin.Boolean)(fl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Determines whether or not word token are automatically lowercased. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#nextToken()()` Parses the next token from the input stream of this tokenizer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#ordinaryChar(kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies that the character argument is "ordinary" in this tokenizer. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#ordinaryChars(kotlin.Int,%20kotlin.Int)(low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies that all characters *c* in the range `low <= c <= high` are "ordinary" in this tokenizer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#parseNumbers()()` Specifies that numbers should be parsed by this tokenizer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#pushBack()()` Causes the next call to the `nextToken` method of this tokenizer to return the current value in the `ttype` field, and not to modify the value in the `nval` or `sval` field. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#quoteChar(kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies that matching pairs of this character delimit string constants in this tokenizer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#resetSyntax()()` Resets this tokenizer's syntax table so that all characters are "ordinary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#slashSlashComments(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Determines whether or not the tokenizer recognizes C++-style comments. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#slashStarComments(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Determines whether or not the tokenizer recognizes C-style comments. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#toString()()` Returns the string representation of the current stream token and the line number it occurs on. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#whitespaceChars(kotlin.Int,%20kotlin.Int)(low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies that all characters *c* in the range `low <= c <= high` are white space characters. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#wordChars(kotlin.Int,%20kotlin.Int)(low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies that all characters *c* in the range `low <= c <= high` are word constituents. |
 
 | Properties ||
@@ -60,6 +67,7 @@ A typical application first constructs an instance of this class, sets up the sy
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#nval:kotlin.Double` If the current token is a number, this field contains the value of that number. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#sval:kotlin.String` If the current token is a word token, this field contains a string giving the characters of the word token. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/StreamTokenizer#ttype:kotlin.Int` After a call to the `nextToken` method, this field contains the type of the token just read. |
+| --- | --- |
 
 ## Constants
 

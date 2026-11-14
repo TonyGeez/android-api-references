@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothHidDeviceAppQosSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothHidDeviceAppQosSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothHidDeviceAppQosSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#) |
 
 Represents the Quality of Service (QoS) settings for a Bluetooth HID Device application.
@@ -24,6 +26,7 @@ The BluetoothHidDevice framework will update the L2CAP QoS settings for the app 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#MAX:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_BEST_EFFORT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#SERVICE_BEST_EFFORT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_GUARANTEED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#SERVICE_GUARANTEED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_NO_TRAFFIC](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#SERVICE_NO_TRAFFIC:kotlin.Int) <br /> |
 
 | Inherited constants ||
@@ -39,9 +42,11 @@ The BluetoothHidDevice framework will update the L2CAP QoS settings for the app 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDelayVariation](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getDelayVariation())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLatency](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getLatency())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeakBandwidth](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getPeakBandwidth())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getServiceType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getServiceType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTokenBucketSize](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getTokenBucketSize())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTokenRate](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#getTokenRate())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppQosSettings#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -114,9 +119,11 @@ Create a BluetoothHidDeviceAppQosSettings object for the Bluetooth L2CAP channel
 | `serviceType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP service type, default = SERVICE_BEST_EFFORT |
 | `tokenRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP token rate, default = 0 |
 | `tokenBucketSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP token bucket size, default = 0 |
+| --- | --- |
 | `peakBandwidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP peak bandwidth, default = 0 |
 | `latency` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP latency, default = MAX |
 | `delayVariation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):L2CAP delay variation, default = MAX |
+| --- | --- |
 
 ## Public methods
 

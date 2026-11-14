@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AdSelectionSignals
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/common/AdSelectionSignals "View this page in Java") 
+| --- | --- |
 
 ```
 class AdSelectionSignals : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.common.AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#) |
 
 This class holds JSON that will be passed into a JavaScript function during ad selection. Its contents are not used by [FLEDGE](https://developer.android.com/design-for-safety/privacy-sandbox/fledge) platform code, but are merely validated and then passed to the appropriate JavaScript ad selection function.
@@ -27,9 +29,11 @@ This class holds JSON that will be passed into a JavaScript function during ad s
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this AdSelectionSignals to the specified object. |
 | static [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#) | [fromString](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#fromString(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates an AdSelectionSignals from a given JSON in String form. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#hashCode())`()` Returns a hash code corresponding to the string representation of this class obtained by calling [toString()](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#toString()). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

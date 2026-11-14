@@ -3,12 +3,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # LruCache
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/LruCache "View this page in Java")
+| --- | --- |
 
 ```
 open class LruCache<K : Any!, V : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.LruCache](https://developer.android.com/reference/kotlin/android/util/LruCache#) |
 
 A cache that holds strong references to a limited number of values. Each time a value is accessed, it is moved to the head of a queue. When a value is added to a full cache, the value at the end of that queue is evicted and may become eligible for garbage collection.
@@ -53,24 +55,30 @@ This class appeared in Android 3.1 (Honeycomb MR1); it's available as part of [A
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#createCount()()` Returns the number of times `https://developer.android.com/reference/kotlin/android/util/LruCache#create(android.util.LruCache.K)` returned a value. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#evictAll()()` Clear the cache, calling `https://developer.android.com/reference/kotlin/android/util/LruCache#entryRemoved(kotlin.Boolean,%20android.util.LruCache.K,%20android.util.LruCache.V,%20android.util.LruCache.V)` on each removed entry. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#evictionCount()()` Returns the number of values that have been evicted. |
+| --- | --- |
 | V | `https://developer.android.com/reference/kotlin/android/util/LruCache#get(android.util.LruCache.K)(key: K)` Returns the value for `key` if it exists in the cache or can be created by `create`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#hitCount()()` Returns the number of times `https://developer.android.com/reference/kotlin/android/util/LruCache#get(android.util.LruCache.K)` returned a value that was already present in the cache. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#maxSize()()` For caches that do not override `https://developer.android.com/reference/kotlin/android/util/LruCache#sizeOf(android.util.LruCache.K,%20android.util.LruCache.V)`, this returns the maximum number of entries in the cache. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#missCount()()` Returns the number of times `https://developer.android.com/reference/kotlin/android/util/LruCache#get(android.util.LruCache.K)` returned null or required a new value to be created. |
 | V | `https://developer.android.com/reference/kotlin/android/util/LruCache#put(android.util.LruCache.K,%20android.util.LruCache.V)(key: K, value: V)` Caches `value` for `key`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#putCount()()` Returns the number of times `https://developer.android.com/reference/kotlin/android/util/LruCache#put(android.util.LruCache.K,%20android.util.LruCache.V)` was called. |
+| --- | --- |
 | V | `https://developer.android.com/reference/kotlin/android/util/LruCache#remove(android.util.LruCache.K)(key: K)` Removes the entry for `key` if it exists. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#resize(kotlin.Int)(maxSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the size of the cache. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#size()()` For caches that do not override `https://developer.android.com/reference/kotlin/android/util/LruCache#sizeOf(android.util.LruCache.K,%20android.util.LruCache.V)`, this returns the number of entries in the cache. |
+| --- | --- |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\>! | `https://developer.android.com/reference/kotlin/android/util/LruCache#snapshot()()` Returns a copy of the current contents of the cache, ordered from least recently accessed to most recently accessed. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#trimToSize(kotlin.Int)(maxSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove the eldest entries until the total of remaining entries is at or below the requested size. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open V | `https://developer.android.com/reference/kotlin/android/util/LruCache#create(android.util.LruCache.K)(key: K)` Called after a cache miss to compute a value for the corresponding key. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#entryRemoved(kotlin.Boolean,%20android.util.LruCache.K,%20android.util.LruCache.V,%20android.util.LruCache.V)(evicted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, key: K, oldValue: V, newValue: V)` Called for entries that have been evicted or removed. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LruCache#sizeOf(android.util.LruCache.K,%20android.util.LruCache.V)(key: K, value: V)` Returns the size of the entry for `key` and `value` in user-defined units. |
+| --- | --- |
 
 ## Public constructors
 

@@ -3,12 +3,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintDocumentAdapter
 
 Kotlin | [Java](https://developer.android.com/reference/android/print/PrintDocumentAdapter "View this page in Java")
+| --- | --- |
 
 ```
 abstract class PrintDocumentAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter#) |
 
 Base class that provides the content of a document to be printed.
@@ -58,6 +60,7 @@ You can also do work on different threads, for example if you print UI content, 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter#onFinish()()` Called when printing finishes. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter#onLayout(android.print.PrintAttributes,%20android.print.PrintAttributes,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.LayoutResultCallback,%20android.os.Bundle)(oldAttributes: https://developer.android.com/reference/kotlin/android/print/PrintAttributes!, newAttributes: https://developer.android.com/reference/kotlin/android/print/PrintAttributes!, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!, callback: https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.LayoutResultCallback!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called when the print attributes (page size, density, etc) changed giving you a chance to layout the content such that it matches the new constraints. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter#onStart()()` Called when printing starts. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter#onWrite(kotlin.Array,%20android.os.ParcelFileDescriptor,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.WriteResultCallback)(pages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/print/PageRange!>!, destination: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#!, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!, callback: https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.WriteResultCallback!)` Called when specific pages of the content should be written in the form of a PDF file to the given file descriptor. |
 
 ## Constants
@@ -135,6 +138,7 @@ cancellationSignal.setOnCancelListener(new OnCancelListener() {
 | `oldAttributes` | [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes)!: The old print attributes. |
 | `newAttributes` | [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes)!: The new print attributes. |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)!: Signal for observing cancel layout requests. |
+| --- | --- |
 | `callback` | [PrintDocumentAdapter.LayoutResultCallback](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.LayoutResultCallback)!: Callback to inform the system for the layout result. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Additional information about how to layout the content. |
 
@@ -190,6 +194,7 @@ cancellationSignal.setOnCancelListener(new OnCancelListener() {
 | `pages` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](https://developer.android.com/reference/kotlin/android/print/PageRange)!\>!: The pages whose content to print - non-overlapping in ascending order. |
 | `destination` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: The destination file descriptor to which to write. |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)!: Signal for observing cancel writing requests. |
+| --- | --- |
 | `callback` | [PrintDocumentAdapter.WriteResultCallback](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.WriteResultCallback)!: Callback to inform the system for the write result. |
 
 **See Also**

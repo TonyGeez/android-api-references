@@ -9,12 +9,15 @@ open class SecurityException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException#) |
 
 | Known Direct Subclasses [AccessControlException](https://developer.android.com/reference/kotlin/java/security/AccessControlException.html#), [AuthenticationRequiredException](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException.html#), [RecoverableSecurityException](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException.html#) |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AccessControlException](https://developer.android.com/reference/kotlin/java/security/AccessControlException.html#) | This exception is thrown by the AccessController to indicate that a requested access (to a critical system resource such as the file system or the network) is denied. | | [AuthenticationRequiredException](https://developer.android.com/reference/kotlin/android/app/AuthenticationRequiredException.html#) | Specialization of [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException#) that is thrown when authentication is needed from the end user before viewing the content. | | [RecoverableSecurityException](https://developer.android.com/reference/kotlin/android/app/RecoverableSecurityException.html#) | Specialization of [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException#) that contains additional information about how to involve the end user to recover from the exception. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown by the security manager to indicate a security violation.
 

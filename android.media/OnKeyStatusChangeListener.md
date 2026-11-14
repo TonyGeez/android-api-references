@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnKeyStatusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnKeyStatusChangeListener
@@ -42,4 +43,5 @@ Called when the keys in a session change status, such as when the license is ren
 | `md` | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm):the MediaDrm object on which the event occurred This value cannot be`null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the DRM session ID on which the event occurred This value cannot be`null`. |
 | `keyInformation` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaDrm.KeyStatus](https://developer.android.com/reference/kotlin/android/media/MediaDrm.KeyStatus)!\>:a list of [MediaDrm.KeyStatus](https://developer.android.com/reference/kotlin/android/media/MediaDrm.KeyStatus) instances indicating the status for each key in the session This value cannot be`null`. |
+| --- | --- |
 | `hasNewUsableKey` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. |

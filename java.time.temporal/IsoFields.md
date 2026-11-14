@@ -9,6 +9,7 @@ class IsoFields
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.temporal.IsoFields](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#) |
 
 Fields and units specific to the ISO-8601 calendar system, including quarter-of-year and week-based-year.
@@ -54,9 +55,11 @@ There are 52 weeks in most week-based years, however on occasion there are 53 we
 For example:
 
 | Date | Day-of-week | Field values |
+| --- | --- | --- |
 | 2008-12-28 | Sunday | Week 52 of week-based-year 2008 |
 | 2008-12-29 | Monday | Week 1 of week-based-year 2009 |
 | 2008-12-31 | Wednesday | Week 1 of week-based-year 2009 |
+| --- | --- | --- |
 | 2009-01-01 | Thursday | Week 1 of week-based-year 2009 |
 | 2009-01-04 | Sunday | Week 1 of week-based-year 2009 |
 | 2009-01-05 | Monday | Week 2 of week-based-year 2009 |
@@ -69,9 +72,11 @@ For example:
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [DAY_OF_QUARTER](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#DAY_OF_QUARTER:java.time.temporal.TemporalField) The field that represents the day-of-quarter. |
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [QUARTER_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#QUARTER_OF_YEAR:java.time.temporal.TemporalField) The field that represents the quarter-of-year. |
 | static [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | [QUARTER_YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#QUARTER_YEARS:java.time.temporal.TemporalUnit) Unit that represents the concept of a quarter-year. |
+| --- | --- |
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [WEEK_BASED_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#WEEK_BASED_YEAR:java.time.temporal.TemporalField) The field that represents the week-based-year. |
 | static [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | [WEEK_BASED_YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#WEEK_BASED_YEARS:java.time.temporal.TemporalUnit) The unit that represents week-based-years for the purpose of addition and subtraction. |
 | static [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [WEEK_OF_WEEK_BASED_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields#WEEK_OF_WEEK_BASED_YEAR:java.time.temporal.TemporalField) The field that represents the week-of-week-based-year. |
+| --- | --- |
 
 ## Properties
 

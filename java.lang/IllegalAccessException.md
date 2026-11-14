@@ -9,9 +9,11 @@ open class IllegalAccessException : ReflectiveOperationException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.ReflectiveOperationException](https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalAccessException](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessException#) |
 
 An IllegalAccessException is thrown when an application tries to reflectively create an instance (other than an array), set or get a field, or invoke a method, but the currently executing method does not have access to the definition of the specified class, field, method or constructor.

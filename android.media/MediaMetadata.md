@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # MediaMetadata
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMetadata "View this page in Java")
+| --- | --- |
 
 ```
 class MediaMetadata : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata#) |
 
 Contains metadata about an item, such as the title, artist, etc.
@@ -24,30 +26,39 @@ Contains metadata about an item, such as the title, artist, etc.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ALBUM:kotlin.String` The album title for the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ALBUM_ART:kotlin.String` The artwork for the album of the media's original source as a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ALBUM_ARTIST:kotlin.String` The artist for the album of the media's original source. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ALBUM_ART_URI:kotlin.String` The artwork for the album of the media's original source as a Uri formatted String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ART:kotlin.String` The artwork for the media as a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ARTIST:kotlin.String` The artist of the media. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_ART_URI:kotlin.String` The artwork for the media as a Uri formatted String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_AUTHOR:kotlin.String` The author of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_BT_FOLDER_TYPE:kotlin.String` The bluetooth folder type of the media specified in the section 6. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_COMPILATION:kotlin.String` The compilation status of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_COMPOSER:kotlin.String` The composer of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DATE:kotlin.String` The date the media was created or published. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISC_NUMBER:kotlin.String` The disc number for the media's original source. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISPLAY_DESCRIPTION:kotlin.String` A description that is suitable for display to the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISPLAY_ICON:kotlin.String` An icon or thumbnail that is suitable for display to the user. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISPLAY_ICON_URI:kotlin.String` A Uri formatted String for an icon or thumbnail that is suitable for display to the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISPLAY_SUBTITLE:kotlin.String` A subtitle that is suitable for display to the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DISPLAY_TITLE:kotlin.String` A title that is suitable for display to the user. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_DURATION:kotlin.String` The duration of the media in ms. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_GENRE:kotlin.String` The genre of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_MEDIA_ID:kotlin.String` A String key for identifying the content. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_MEDIA_URI:kotlin.String` A Uri formatted String representing the content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_NUM_TRACKS:kotlin.String` The number of tracks in the media's original source. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_RATING:kotlin.String` The overall rating for the media. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_TITLE:kotlin.String` The title of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_TRACK_NUMBER:kotlin.String` The track number for the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_USER_RATING:kotlin.String` The user's rating for the media. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_WRITER:kotlin.String` The writer of the media. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#METADATA_KEY_YEAR:kotlin.String` The year the media was created or published as a long. |
 
@@ -60,15 +71,19 @@ Contains metadata about an item, such as the title, artist, etc.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#containsKey(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the given key is contained in the metadata |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the contents of this object to another MediaMetadata object. |
+| --- | --- |
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmap(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` for the given key or null if no bitmap exists for the given key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmapDimensionLimit()()` Gets the width/height limit (in pixels) for the bitmaps when this metadata was created. |
 | [MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()()` Returns a simple description of this metadata for display purposes. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getLong(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or 0L if no long exists for the given key. |
 | [Rating](https://developer.android.com/reference/kotlin/android/media/Rating)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getRating(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` for the given key or null if no rating exists for the given key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getString(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getText(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#hashCode()()` Returns a hash code value for the object. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#keySet()()` Returns a Set containing the Strings used as keys in this metadata. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#size()()` Returns the number of fields in this metadata. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

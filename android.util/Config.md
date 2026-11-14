@@ -6,12 +6,14 @@ Deprecated in [API level 14](https://developer.android.com/guide/topics/manifest
 # Config
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Config "View this page in Java") 
+| --- | --- |
 
 ```
 class Config
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Config](https://developer.android.com/reference/kotlin/android/util/Config#) |
 
 | **This class was deprecated in API level 14.**
@@ -25,6 +27,7 @@ class Config
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [DEBUG](https://developer.android.com/reference/kotlin/android/util/Config#DEBUG:kotlin.Boolean) <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGD](https://developer.android.com/reference/kotlin/android/util/Config#LOGD:kotlin.Boolean) <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGV](https://developer.android.com/reference/kotlin/android/util/Config#LOGV:kotlin.Boolean) <br /> |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [PROFILE](https://developer.android.com/reference/kotlin/android/util/Config#PROFILE:kotlin.Boolean) <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [RELEASE](https://developer.android.com/reference/kotlin/android/util/Config#RELEASE:kotlin.Boolean) <br /> |
 

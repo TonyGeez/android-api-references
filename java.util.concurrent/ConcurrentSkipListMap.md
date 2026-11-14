@@ -7,6 +7,7 @@ open class ConcurrentSkipListMap<K : Any!, V : Any!> : AbstractMap<K, V>,
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#)\<K, V\> ||
 | | ↳ | [java.util.concurrent.ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#) |
 
@@ -40,51 +41,67 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ceilingEntry(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns a key-value mapping associated with the least key greater than or equal to the given key, or `null` if there is no such entry. |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ceilingKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#clear()()` Removes all of the mappings from this map. |
+| --- | --- |
 | open [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#clone()()` Returns a shallow copy of this `ConcurrentSkipListMap` instance. |
 | open [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\<in K\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#comparator()()` Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its keys. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#compute(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V?, out V?>)` Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
+| --- | --- |
 | open V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#computeIfAbsent(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.function.Function)(key: K, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in K, out V>)` If the specified key is not already associated with a value, attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#computeIfPresent(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V, out V?>)` If the value for the specified key is present, attempts to compute a new mapping given the key and its current mapped value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns `true` if this map contains a mapping for the specified key. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns `true` if this map contains a mapping for the specified key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsValue(java.util.concurrent.ConcurrentSkipListMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsValue(java.util.concurrent.ConcurrentSkipListMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
+| --- | --- |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingKeySet()()` Returns a reverse order `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingMap()()` Returns a reverse order view of the mappings contained in this map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this map for equality. |
+| --- | --- |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#firstEntry()()` Returns a key-value mapping associated with the least key in this map, or `null` if the map is empty. |
 | open K | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#firstKey()()` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#floorEntry(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns a key-value mapping associated with the greatest key less than or equal to the given key, or `null` if there is no such key. |
+| --- | --- |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#floorKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in K, in V>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#get(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#get(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#getOrDefault(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, defaultValue: V)` Returns the value to which the specified key is mapped, or the given defaultValue if this map contains no mapping for the key. |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K)(toKey: K)` <br /> |
+| --- | --- |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(toKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#higherEntry(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns a key-value mapping associated with the least key strictly greater than the given key, or `null` if there is no such key. |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#higherKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#isEmpty()()` Returns `true` if this map contains no key-value mappings. |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#lastEntry()()` Returns a key-value mapping associated with the greatest key in this map, or `null` if the map is empty. |
 | open K | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#lastKey()()` <br /> |
+| --- | --- |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#lowerEntry(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns a key-value mapping associated with the greatest key strictly less than the given key, or `null` if there is no such key. |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#lowerKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#merge(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V,%20java.util.function.BiFunction)(key: K, value: V, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in V, in V, out V?>)` If the specified key is not already associated with a value, associates it with the given value. |
+| --- | --- |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#navigableKeySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#pollFirstEntry()()` Removes and returns a key-value mapping associated with the least key in this map, or `null` if the map is empty. |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#pollLastEntry()()` Removes and returns a key-value mapping associated with the greatest key in this map, or `null` if the map is empty. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#put(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, value: V)` Associates the specified value with the specified key in this map. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#putFirst(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#putIfAbsent(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, value: V)` If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value (optional operation). |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#putLast(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(k: K, v: V)` Throws `UnsupportedOperationException`. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#remove(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Removes the mapping for the specified key from this map if present. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#remove(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, value: V)` Removes the entry for the specified key only if it is currently mapped to the specified value (optional operation). |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#remove(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Removes the mapping for the specified key from this map if present. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#replace(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, value: V)` Replaces the entry for the specified key only if it is currently mapped to some value (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#replace(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, oldValue: V, newValue: V)` Replaces the entry for the specified key only if currently mapped to the specified value (optional operation). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception (optional operation). |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean,%20java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, fromInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toKey: K, toInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K, toKey: K)` <br /> |
+| --- | --- |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K)` <br /> |
 | open [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 
@@ -97,6 +114,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the mappings contained in this map. |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#keys:java.util.NavigableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#size:kotlin.Int` Returns the number of key-value mappings in this map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#values:kotlin.collections.MutableCollection` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection.html#` view of the values contained in this map. |
 
 ## Public constructors
@@ -281,6 +299,7 @@ Attempts to compute a mapping for the specified key and its current mapped value
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `compute` operation is not supported by this map (java.util.Collection#) |
 
 ### computeIfAbsent
@@ -310,6 +329,7 @@ If the specified key is not already associated with a value, attempts to compute
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null or the mappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfAbsent` operation is not supported by this map (java.util.Collection#) |
 
 ### computeIfPresent
@@ -339,6 +359,7 @@ If the value for the specified key is present, attempts to compute a new mapping
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfPresent` operation is not supported by this map (java.util.Collection#) |
 
 ### containsKey
@@ -675,6 +696,7 @@ open fun headMap(toKey: K): ConcurrentNavigableMap<K, V>
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null |
+| --- | --- |
 
 ### headMap
 
@@ -701,6 +723,7 @@ open fun headMap(
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null |
+| --- | --- |
 
 ### higherEntry
 
@@ -853,6 +876,7 @@ If the specified key is not already associated with a value, associates it with 
 | `key` | K: key with which the specified value is to be associated |
 | `value` | V: the value to use if absent |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in V, in V, out V?\>: the function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -863,6 +887,7 @@ If the specified key is not already associated with a value, associates it with 
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null or the remappingFunction is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `merge` operation is not supported by this map (java.util.Collection#) |
 
 ### navigableKeySet
@@ -944,6 +969,7 @@ Associates the specified value with the specified key in this map. If the map pr
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putFirst
@@ -999,6 +1025,7 @@ If the specified key is not already associated with a value (or is mapped to `nu
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putLast
@@ -1050,6 +1077,7 @@ Removes the mapping for the specified key from this map if present.
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.NullPointerException` | if the specified key is null |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### remove
 
@@ -1078,6 +1106,7 @@ Removes the entry for the specified key only if it is currently mapped to the sp
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.NullPointerException` | if the specified key is null |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### remove
 
@@ -1102,6 +1131,7 @@ Removes the mapping for the specified key from this map if present.
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.NullPointerException` | if the specified key is null |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### replace
 
@@ -1130,6 +1160,7 @@ Replaces the entry for the specified key only if it is currently mapped to some 
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### replace
@@ -1151,6 +1182,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `key` | K: key with which the specified value is associated |
 | `oldValue` | V: value expected to be associated with the specified key |
 | `newValue` | V: value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1161,6 +1193,7 @@ Replaces the entry for the specified key only if currently mapped to the specifi
 | `java.lang.ClassCastException` | if the specified key cannot be compared with the keys currently in the map |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if any of the arguments are null |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### replaceAll
@@ -1182,6 +1215,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replaceAll` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 
@@ -1203,6 +1237,7 @@ open fun subMap(
 | `fromKey` | K: low endpoint of the keys in the returned map |
 | `fromInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the low endpoint is to be included in the returned view |
 | `toKey` | K: high endpoint of the keys in the returned map |
+| --- | --- |
 | `toInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the high endpoint is to be included in the returned view |
 
 | Return ||
@@ -1214,6 +1249,7 @@ open fun subMap(
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null |
+| --- | --- |
 
 ### subMap
 
@@ -1240,6 +1276,7 @@ open fun subMap(
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null |
+| --- | --- |
 
 ### tailMap
 
@@ -1262,6 +1299,7 @@ open fun tailMap(fromKey: K): ConcurrentNavigableMap<K, V>
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null |
+| --- | --- |
 
 ### tailMap
 
@@ -1288,6 +1326,7 @@ open fun tailMap(
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null |
+| --- | --- |
 
 ## Properties
 

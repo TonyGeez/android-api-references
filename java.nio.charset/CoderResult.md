@@ -9,6 +9,7 @@ open class CoderResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.charset.CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#) |
 
 A description of the result state of a coder.
@@ -29,12 +30,15 @@ For convenience, the [isError](https://developer.android.com/reference/kotlin/ja
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isError](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#isError())`()` Tells whether or not this object describes an error condition. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMalformed](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#isMalformed())`()` Tells whether or not this object describes a malformed-input error. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOverflow](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#isOverflow())`()` Tells whether or not this object describes an overflow condition. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnderflow](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#isUnderflow())`()` Tells whether or not this object describes an underflow condition. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnmappable](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#isUnmappable())`()` Tells whether or not this object describes an unmappable-character error. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#length())`()` Returns the length of the erroneous input described by this object*(optional operation)*. |
+| --- | --- |
 | openstatic [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#)! | [malformedForLength](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#malformedForLength(kotlin.Int))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Static factory method that returns the unique object describing a malformed-input error of the given length. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [throwException](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#throwException())`()` Throws an exception appropriate to the result described by this object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#toString())`()` Returns a string describing this coder result. |
+| --- | --- |
 | openstatic [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#)! | [unmappableForLength](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#unmappableForLength(kotlin.Int))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Static factory method that returns the unique result object describing an unmappable-character error of the given length. |
 
 | Properties ||
@@ -165,6 +169,7 @@ Throws an exception appropriate to the result described by this object.
 | `java.nio.BufferUnderflowException` | If this object is [UNDERFLOW](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#UNDERFLOW:java.nio.charset.CoderResult) |
 | `java.nio.BufferOverflowException` | If this object is [OVERFLOW](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#OVERFLOW:java.nio.charset.CoderResult) |
 | `java.nio.charset.MalformedInputException` | If this object represents a malformed-input error; the exception's length value will be that of this object |
+| --- | --- |
 | `java.nio.charset.UnmappableCharacterException` | If this object represents an unmappable-character error; the exceptions length value will be that of this object |
 
 ### toString

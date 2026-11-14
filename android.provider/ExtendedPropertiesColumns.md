@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # ExtendedPropertiesColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.ExtendedPropertiesColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface ExtendedPropertiesColumns
@@ -13,6 +14,7 @@ protected interface ExtendedPropertiesColumns
 | [android.provider.CalendarContract.ExtendedPropertiesColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#) |
 
 | Known Direct Subclasses [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) | Fields for accessing the Extended Properties. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
@@ -21,6 +23,7 @@ protected interface ExtendedPropertiesColumns
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#EVENT_ID:kotlin.String) The event the extended property belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#NAME:kotlin.String) The name of the extended property. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#VALUE:kotlin.String) The value of the extended property. |
+| --- | --- |
 
 ## Constants
 

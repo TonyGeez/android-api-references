@@ -21,6 +21,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMStringList#contains(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if a string is part of this`DOMStringList`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMStringList#getLength())`()` The number of`DOMString`s in the list. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [item](https://developer.android.com/reference/kotlin/org/w3c/dom/DOMStringList#item(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
+| --- | --- |
 
 ## Public methods
 

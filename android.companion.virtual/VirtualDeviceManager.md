@@ -7,6 +7,7 @@ class VirtualDeviceManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.virtual.VirtualDeviceManager](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#) |
 
 System level service for creation and management of virtual devices.
@@ -48,6 +49,7 @@ Restricted for SDK Runtime environment in API level 34.
 | [VirtualDevice](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice)? | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#getVirtualDevice(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the details of the virtual device with the given ID, if any. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VirtualDevice](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice)!\> | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#getVirtualDevices()()` Returns the details of all available virtual devices. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#isVirtualCameraSupported()()` Returns true if virtual cameras can be added to virtual devices on this device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener)` Registers a virtual device listener to receive notifications when virtual devices are created or closed. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#unregisterVirtualDeviceListener(android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)(listener: https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener)` Unregisters a virtual device listener previously registered with `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)`. |
 

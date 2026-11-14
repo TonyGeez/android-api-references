@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # TetheringInterface
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/TetheringInterface "View this page in Java")
+| --- | --- |
 
 ```
 class TetheringInterface : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.TetheringInterface](https://developer.android.com/reference/kotlin/android/net/TetheringInterface#) |
 
 The mapping of tethering interface and type.
@@ -29,9 +31,11 @@ The mapping of tethering interface and type.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getInterface()()` Get tethering interface. |
+| --- | --- |
 | [SoftApConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration)? | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getSoftApConfiguration()()` Get the SoftApConfiguration provided for this interface, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getType()()` Get tethering type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -72,6 +76,7 @@ TetheringInterface(
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHERING_WIFI:kotlin.Int` |
 | `iface` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `softApConfig` | [SoftApConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration)?: This value may be `null`. |
+| --- | --- |
 
 ## Public methods
 

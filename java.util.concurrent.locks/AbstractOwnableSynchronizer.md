@@ -7,6 +7,7 @@ abstract class AbstractOwnableSynchronizer : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#) |
 
 Known Direct Subclasses [AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer), [AbstractQueuedSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer) [AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer) A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`.

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # WorkDuration
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/WorkDuration "View this page in Java") 
+| --- | --- |
 
 ```
 class WorkDuration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.WorkDuration](https://developer.android.com/reference/kotlin/android/os/WorkDuration#) |
 
 WorkDuration contains the measured time in nano seconds of the workload in each component, see [PerformanceHintManager.Session.reportActualWorkDuration(WorkDuration)](https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.Session#reportActualWorkDuration(android.os.WorkDuration)). All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos())and measured in wall time.
@@ -26,12 +28,15 @@ WorkDuration contains the measured time in nano seconds of the workload in each 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/WorkDuration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualCpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualCpuDurationNanos())`()` Returns the actual CPU duration in nanoseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualGpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualGpuDurationNanos())`()` Returns the actual GPU duration in nanoseconds. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualTotalDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualTotalDurationNanos())`()` Returns the actual total duration in nanoseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWorkPeriodStartTimestampNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getWorkPeriodStartTimestampNanos())`()` Returns the work period start timestamp based in nanoseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/WorkDuration#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualCpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualCpuDurationNanos(kotlin.Long))`(`actualCpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual CPU duration in nanoseconds. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualGpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualGpuDurationNanos(kotlin.Long))`(`actualGpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual GPU duration in nanoseconds. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualTotalDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualTotalDurationNanos(kotlin.Long))`(`actualTotalDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual total duration in nanoseconds. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWorkPeriodStartTimestampNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setWorkPeriodStartTimestampNanos(kotlin.Long))`(`workPeriodStartTimestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the work period start timestamp in nanoseconds. |
 
 ## Public constructors

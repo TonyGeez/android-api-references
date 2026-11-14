@@ -9,6 +9,7 @@ class ZipPathValidator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [dalvik.system.ZipPathValidator](https://developer.android.com/reference/kotlin/dalvik/system/ZipPathValidator#) |
 
 Enables validation of zip file entry paths to prevent exploitation of the path traversal vulnerability, e.g. zip path entries containing ".." or "/". For more details, read [this](https://developer.android.com/topic/security/risks/zip-path-traversal).

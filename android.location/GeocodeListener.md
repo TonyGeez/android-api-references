@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # GeocodeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/Geocoder.GeocodeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface GeocodeListener

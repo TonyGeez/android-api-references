@@ -9,6 +9,7 @@ class AdData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.common.AdData](https://developer.android.com/reference/kotlin/android/adservices/common/AdData#) |
 
 > [!CAUTION]
@@ -33,12 +34,15 @@ Represents data specific to an ad that is necessary for ad selection and renderi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` objects contain the same information. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdCounterKeys()()` Gets the set of keys used in counting events. |
+| --- | --- |
 | [AdFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdFilters()()` Gets all `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters` associated with the ad. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdRenderId()()` Gets the ad render id for server auctions. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getMetadata()()` Gets the buyer ad metadata used during the ad selection process. |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getRenderUri()()` Gets the URI that points to the ad's rendering assets. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` object's data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

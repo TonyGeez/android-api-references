@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SQLiteStatement
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteStatement "View this page in Java") 
+| --- | --- |
 
 ```
 class SQLiteStatement : SQLiteProgram
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.database.sqlite.SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable) |||
 | | ↳ | [android.database.sqlite.SQLiteProgram](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram) ||
 | | | ↳ | [android.database.sqlite.SQLiteStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#) |
+| --- | --- | --- | --- |
 
 Represents a statement that can be executed against a database. The statement cannot return multiple rows or columns, but single value (1 x 1) result sets are supported.
 
@@ -26,9 +29,11 @@ This class is not thread-safe.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#execute())`()` Execute this SQL statement, if it is not a SELECT / INSERT / DELETE / UPDATE, for example CREATE / DROP table, view, trigger, index etc. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [executeInsert](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#executeInsert())`()` Execute this SQL statement and return the ID of the row inserted due to this call. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdateDelete](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#executeUpdateDelete())`()` Execute this SQL statement, if the number of rows affected by execution of this SQL statement is of any importance to the caller - for example, UPDATE / DELETE SQL statements. |
+| --- | --- |
 | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)! | [simpleQueryForBlobFileDescriptor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#simpleQueryForBlobFileDescriptor())`()` Executes a statement that returns a 1 by 1 table with a blob value. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [simpleQueryForLong](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#simpleQueryForLong())`()` Execute a statement that returns a 1 by 1 table with a numeric value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [simpleQueryForString](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#simpleQueryForString())`()` Execute a statement that returns a 1 by 1 table with a text value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement#toString())`()` <br /> |
 
 | Inherited functions ||

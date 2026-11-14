@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SettingsSlicesContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/SettingsSlicesContract "View this page in Java") 
+| --- | --- |
 
 ```
 open class SettingsSlicesContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.SettingsSlicesContract](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#) |
 
 Provides a contract for platform-supported Settings [Slices](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#).
@@ -42,9 +44,11 @@ Uri wifiActionUri = BASE_URI
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#AUTHORITY:kotlin.String) Authority for platform Settings Slices. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_AIRPLANE_MODE](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#KEY_AIRPLANE_MODE:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) key for the Airplane Mode setting. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_BATTERY_SAVER](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#KEY_BATTERY_SAVER:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) key for the Battery Saver setting. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_BLUETOOTH](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#KEY_BLUETOOTH:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) key for the Bluetooth setting. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_LOCATION](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#KEY_LOCATION:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) key for the Location setting. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_WIFI](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#KEY_WIFI:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) key for the Wi-fi setting. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PATH_SETTING_ACTION](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#PATH_SETTING_ACTION:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) path indicating that the requested [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) should have inline controls for the corresponding setting. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PATH_SETTING_INTENT](https://developer.android.com/reference/kotlin/android/provider/SettingsSlicesContract#PATH_SETTING_INTENT:kotlin.String) [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) path indicating that the requested [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) should be [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)-only. |
 

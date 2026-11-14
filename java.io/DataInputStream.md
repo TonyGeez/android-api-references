@@ -9,9 +9,11 @@ open class DataInputStream : FilterInputStream, DataInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) ||
 | | | ↳ | [java.io.DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream#) |
+| --- | --- | --- | --- |
 
 A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. An application uses a data output stream to write data that can later be read by a data input stream.
 
@@ -28,21 +30,27 @@ DataInputStream is not necessarily safe for multithreaded access. Thread safety 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/DataInputStream#read(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some number of bytes from the contained input stream and stores them into the buffer array`b`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/DataInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from the contained input stream into an array of bytes. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readBoolean())`()` See the general contract of the`readBoolean`method of`DataInput`. |
+| --- | --- |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readByte())`()` See the general contract of the`readByte`method of`DataInput`. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readChar())`()` See the general contract of the`readChar`method of`DataInput`. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readDouble())`()` See the general contract of the`readDouble`method of`DataInput`. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFloat())`()` See the general contract of the`readFloat`method of`DataInput`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFully(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` See the general contract of the`readFully`method of`DataInput`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFully(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`readFully`method of`DataInput`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readInt())`()` See the general contract of the`readInt`method of`DataInput`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readLine())`()` See the general contract of the`readLine`method of`DataInput`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readLong())`()` See the general contract of the`readLong`method of`DataInput`. |
+| --- | --- |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readShort())`()` See the general contract of the`readShort`method of`DataInput`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUTF())`()` See the general contract of the`readUTF`method of`DataInput`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUTF(java.io.DataInput))`(`in:` ` [DataInput](https://developer.android.com/reference/kotlin/java/io/DataInput)!`)` Reads from the stream`in`a representation of a Unicode character string encoded in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format; this string of characters is then returned as a`String`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUnsignedByte())`()` See the general contract of the`readUnsignedByte`method of`DataInput`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUnsignedShort())`()` See the general contract of the`readUnsignedShort`method of`DataInput`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](https://developer.android.com/reference/kotlin/java/io/DataInputStream#skipBytes(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`skipBytes`method of`DataInput`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -105,6 +113,7 @@ read(b, 0, b.length)
 | `java.io.IOException` | If the first byte cannot be read for any reason other than the end of the file, if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.io.IOException` | if the first byte cannot be read for any reason other than end of file, the stream has been closed and the underlying input stream does not support reading after close, or another I/O error occurs. |
+| --- | --- |
 
 **See Also**
 
@@ -138,6 +147,7 @@ In every case, elements`b[0]`through`b[off]`and elements`b[off+len]`through`b[b.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -148,9 +158,11 @@ In every case, elements`b[0]`through`b[off]`and elements`b[off+len]`through`b[b.
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
 | `java.io.IOException` | if the first byte cannot be read for any reason other than end of file, the stream has been closed and the underlying input stream does not support reading after close, or another I/O error occurs. |
+| --- | --- |
 
 **See Also**
 
@@ -305,6 +317,7 @@ Bytes for this operation are read from the contained input stream.
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.io.EOFException` | if this input stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs. |
+| --- | --- |
 
 **See Also**
 
@@ -331,15 +344,18 @@ Bytes for this operation are read from the contained input stream.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data array`b`. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to read. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | if`off`is negative,`len`is negative, or`len`is greater than`b.length - off`. |
 | `java.io.EOFException` | if this stream reaches the end before reading all the bytes. |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | if`off`is negative,`len`is negative, or`len`is greater than`b.length - off`. |
+| --- | --- |
 | `java.io.EOFException` | if this input stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs. |
 
@@ -483,6 +499,7 @@ Bytes for this operation are read from the contained input stream.
 | `java.io.EOFException` | if this input stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs. |
 | `java.io.UTFDataFormatException` | if the bytes do not represent a valid modified UTF-8 encoding of a string. |
+| --- | --- |
 
 **See Also**
 
@@ -511,6 +528,7 @@ Reads from the stream`in`a representation of a Unicode character string encoded 
 | `java.io.EOFException` | if the input stream reaches the end before all the bytes. |
 | `java.io.IOException` | the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs. |
 | `java.io.UTFDataFormatException` | if the bytes do not represent a valid modified UTF-8 encoding of a Unicode string. |
+| --- | --- |
 
 **See Also**
 

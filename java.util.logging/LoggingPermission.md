@@ -9,9 +9,11 @@ class LoggingPermission : BasicPermission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) |||
 | | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission.html#) ||
 | | | ↳ | [java.util.logging.LoggingPermission](https://developer.android.com/reference/kotlin/java/util/logging/LoggingPermission#) |
+| --- | --- | --- | --- |
 
 Legacy security code; do not use.
 

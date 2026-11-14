@@ -9,6 +9,7 @@ interface Watchable
 | [java.nio.file.Watchable](https://developer.android.com/reference/kotlin/java/nio/file/Watchable#) |
 
 | Known Direct Subclasses [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) |---|---| | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) | An object that may be used to locate a file in a file system. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An object that may be registered with a watch service so that it can be *watched* for changes and events.
 
@@ -57,6 +58,7 @@ watchable.<code><a docref="java.nio.file.Watchable$register(java.nio.file.WatchS
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.IllegalArgumentException` | if an invalid of combination of events are specified |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission required to monitor this object. Implementations of this interface should specify the permission checks. |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if unsupported events are specified |
 | `java.nio.file.ClosedWatchServiceException` | if the watch service is closed |
 
@@ -85,6 +87,7 @@ Implementations of this interface should specify the events they support.
 | `watcher` | [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!: the watch service to which this object is to be registered |
 | `events` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\<\*\>!\>!: the events for which this object should be registered |
 | `modifiers` | [WatchEvent.Modifier](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier)!: the modifiers, if any, that modify how the object is registered |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -95,5 +98,6 @@ Implementations of this interface should specify the events they support.
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.IllegalArgumentException` | if an invalid of combination of events are modifiers are specified |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission required to monitor this object. Implementations of this interface should specify the permission checks. |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if unsupported events or modifiers are specified |
 | `java.nio.file.ClosedWatchServiceException` | if the watch service is closed |

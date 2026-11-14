@@ -7,9 +7,11 @@ abstract class VoiceInteractionSessionService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.voice.VoiceInteractionSessionService](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#) |
 
 An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService`.
@@ -1042,9 +1044,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onCreate()()` Called by the system when the service is first created. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onLowMemory()()` This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. |
 | abstract [VoiceInteractionSession](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession)! | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onNewSession(android.os.Bundle)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onTrimMemory(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -2818,3 +2822,4 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
+| --- | --- |

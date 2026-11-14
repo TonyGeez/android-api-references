@@ -9,6 +9,7 @@ open class Phaser
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.Phaser](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#) |
 
 A reusable synchronization barrier, similar in functionality to [CyclicBarrier](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier) and [CountDownLatch](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch) but supporting more flexible usage.
@@ -132,18 +133,23 @@ The best value of`TASKS_PER_PHASER`depends mainly on expected synchronization ra
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrive](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#arrive())`()` Arrives at this phaser, without waiting for others to arrive. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arriveAndAwaitAdvance](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#arriveAndAwaitAdvance())`()` Arrives at this phaser and awaits others. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arriveAndDeregister](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#arriveAndDeregister())`()` Arrives at this phaser and deregisters from it without waiting for others to arrive. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [awaitAdvance](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#awaitAdvance(kotlin.Int))`(`phase:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Awaits the phase of this phaser to advance from the given phase value, returning immediately if the current phase is not equal to the given phase value or this phaser is terminated. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [awaitAdvanceInterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#awaitAdvanceInterruptibly(kotlin.Int))`(`phase:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Awaits the phase of this phaser to advance from the given phase value, throwing`InterruptedException`if interrupted while waiting, or returning immediately if the current phase is not equal to the given phase value or this phaser is terminated. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [awaitAdvanceInterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#awaitAdvanceInterruptibly(kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`phase:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Awaits the phase of this phaser to advance from the given phase value or the given timeout to elapse, throwing`InterruptedException`if interrupted while waiting, or returning immediately if the current phase is not equal to the given phase value or this phaser is terminated. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkRegister](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#bulkRegister(kotlin.Int))`(`parties:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds the given number of new unarrived parties to this phaser. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forceTermination](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#forceTermination())`()` Forces this phaser to enter termination state. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getArrivedParties](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getArrivedParties())`()` Returns the number of registered parties that have arrived at the current phase of this phaser. |
+| --- | --- |
 | open [Phaser](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#)! | [getParent](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getParent())`()` Returns the parent of this phaser, or`null`if none. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhase](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getPhase())`()` Returns the current phase number. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRegisteredParties](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getRegisteredParties())`()` Returns the number of parties registered at this phaser. |
+| --- | --- |
 | open [Phaser](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#)! | [getRoot](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getRoot())`()` Returns the root ancestor of this phaser, which is the same as this phaser if it has no parent. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnarrivedParties](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#getUnarrivedParties())`()` Returns the number of registered parties that have not yet arrived at the current phase of this phaser. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminated](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#isTerminated())`()` Returns`true`if this phaser has been terminated. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [register](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#register())`()` Adds a new unarrived party to this phaser. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser#toString())`()` Returns a string identifying this phaser, as well as its state. |
 
@@ -337,6 +343,7 @@ Awaits the phase of this phaser to advance from the given phase value or the giv
 | `phase` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an arrival phase number, or negative value if terminated; this argument is normally the value returned by a previous call to`arrive`or`arriveAndDeregister`. |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

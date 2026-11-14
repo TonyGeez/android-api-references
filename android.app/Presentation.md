@@ -7,6 +7,7 @@ open class Presentation : Dialog
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog) ||
 | | ↳ | [android.app.Presentation](https://developer.android.com/reference/kotlin/android/app/Presentation#) |
 
@@ -85,6 +86,7 @@ The following sample code from `ApiDemos` demonstrates how to use the display ma
 | open [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)! | `https://developer.android.com/reference/kotlin/android/app/Presentation#getDisplay()()` Gets the `https://developer.android.com/reference/kotlin/android/view/Display.html#` that this presentation appears on. |
 | open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)! | `https://developer.android.com/reference/kotlin/android/app/Presentation#getResources()()` Gets the `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` that should be used to inflate the layout of this presentation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Presentation#onDisplayChanged()()` Called by the system when the properties of the `https://developer.android.com/reference/kotlin/android/view/Display.html#` to which the presentation is attached have changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Presentation#onDisplayRemoved()()` Called by the system when the `https://developer.android.com/reference/kotlin/android/view/Display.html#` to which the presentation is attached has been removed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Presentation#show()()` Inherited from `https://developer.android.com/reference/kotlin/android/app/Dialog#show()`. |
 
@@ -135,6 +137,7 @@ Creates a new presentation that is attached to the specified display using the o
 | `outerContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context of the application that is showing the presentation. The presentation will create its own context (see `https://developer.android.com/reference/kotlin/android/app/Dialog#getContext()`) based on this context and information about the associated display. The presentation is associated with the UID of this context for policy enforcement. From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, the presentation will create its own window context based on this context, information about the associated display. Customizing window type by `https://developer.android.com/reference/kotlin/android/view/Window.html#setType(kotlin.Int)` causes the mismatch of the window and the created window context, which leads to `https://developer.android.com/reference/kotlin/android/view/WindowManager.InvalidDisplayException.html#` when invoking `https://developer.android.com/reference/kotlin/android/app/Presentation#show()`. |
 | `display` | [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)!: The display to which the presentation should be attached. |
 | `theme` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A style resource describing the theme to use for the window. See [Style and Theme Resources](https://developer.android.com/guide/topics/resources/available-resources.html#stylesandthemes) for more information about defining and using styles. This theme is applied on top of the current theme in outerContext. If 0, the default presentation theme will be used. |
+| --- | --- |
 
 ## Public methods
 

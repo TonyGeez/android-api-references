@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PlaybackErrorEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/PlaybackErrorEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class PlaybackErrorEvent : Event, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event) ||
 | | ↳ | [android.media.metrics.PlaybackErrorEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#) |
 
@@ -27,39 +29,51 @@ Playback error event.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_AUDIO_TRACK_INIT_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_AUDIO_TRACK_INIT_FAILED:kotlin.Int) Error code for an AudioTrack initialization failure |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_AUDIO_TRACK_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_AUDIO_TRACK_OTHER:kotlin.Int) Error code for other AudioTrack errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_AUDIO_TRACK_WRITE_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_AUDIO_TRACK_WRITE_FAILED:kotlin.Int) Error code for an AudioTrack write operation failure |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DECODER_INIT_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DECODER_INIT_FAILED:kotlin.Int) Error code for a decoder initialization failure |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DECODING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DECODING_FAILED:kotlin.Int) Error code for a failure while trying to decode media samples |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DECODING_FORMAT_EXCEEDS_CAPABILITIES](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DECODING_FORMAT_EXCEEDS_CAPABILITIES:kotlin.Int) Error code for trying to decode content whose format exceeds the capabilities of the device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DECODING_FORMAT_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DECODING_FORMAT_UNSUPPORTED:kotlin.Int) Error code for trying to decode content whose format is not supported |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DECODING_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DECODING_OTHER:kotlin.Int) Error code for other decoding errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_CONTENT_ERROR](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_CONTENT_ERROR:kotlin.Int) Error code for attempting to play incompatible DRM-protected content |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_DEVICE_REVOKED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_DEVICE_REVOKED:kotlin.Int) Error code for the device having revoked DRM privileges |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_DISALLOWED_OPERATION](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_DISALLOWED_OPERATION:kotlin.Int) Error code an operation being disallowed by a license policy |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_LICENSE_ACQUISITION_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_LICENSE_ACQUISITION_FAILED:kotlin.Int) Error code for a failure while trying to obtain a license |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_OTHER:kotlin.Int) Error code for other DRM errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_PROVISIONING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_PROVISIONING_FAILED:kotlin.Int) Error code for a failure while provisioning the device |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_SCHEME_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_SCHEME_UNSUPPORTED:kotlin.Int) Error code for a chosen DRM protection scheme not being supported by the device |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DRM_SYSTEM_ERROR](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_DRM_SYSTEM_ERROR:kotlin.Int) Error code for an error in the DRM system |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_BAD_HTTP_STATUS](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_BAD_HTTP_STATUS:kotlin.Int) Error code for an HTTP server returning an unexpected HTTP response status code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_CONNECTION_CLOSED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_CONNECTION_CLOSED:kotlin.Int) Error code for an existing network connection being unexpectedly closed |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_CONNECTION_TIMEOUT](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_CONNECTION_TIMEOUT:kotlin.Int) Error code for a network timeout, meaning the server is taking too long to fulfill a request |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_DNS_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_DNS_FAILED:kotlin.Int) Error code for failing to resolve a hostname |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_FILE_NOT_FOUND](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_FILE_NOT_FOUND:kotlin.Int) Error code for a non-existent file |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_NETWORK_CONNECTION_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_NETWORK_CONNECTION_FAILED:kotlin.Int) Error code for a failure while establishing a network connection |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_NETWORK_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_NETWORK_UNAVAILABLE:kotlin.Int) Error code for lack of network connectivity while trying to access a network resource |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_NO_PERMISSION](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_NO_PERMISSION:kotlin.Int) Error code for lack of permission to perform an IO operation, for example, lack of permission to access internet or external storage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_IO_OTHER:kotlin.Int) Error code for other Input/Output errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_OTHER:kotlin.Int) Error code for other errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PARSING_CONTAINER_MALFORMED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PARSING_CONTAINER_MALFORMED:kotlin.Int) Error code for a parsing error associated to a media container format bitstream |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PARSING_CONTAINER_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PARSING_CONTAINER_UNSUPPORTED:kotlin.Int) Error code for attempting to extract a file with an unsupported media container format, or an unsupported media container feature |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PARSING_MANIFEST_MALFORMED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PARSING_MANIFEST_MALFORMED:kotlin.Int) Error code for a parsing error associated to a media manifest |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PARSING_MANIFEST_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PARSING_MANIFEST_UNSUPPORTED:kotlin.Int) Error code for an unsupported feature in a media manifest |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PARSING_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PARSING_OTHER:kotlin.Int) Error code for other media parsing errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PLAYER_BEHIND_LIVE_WINDOW](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PLAYER_BEHIND_LIVE_WINDOW:kotlin.Int) Error code for the loading position falling behind the sliding window of available live content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PLAYER_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PLAYER_OTHER:kotlin.Int) Error code for other player errors |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PLAYER_REMOTE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_PLAYER_REMOTE:kotlin.Int) Error code for an unidentified error in a remote controller or player |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RUNTIME](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_RUNTIME:kotlin.Int) Error code for runtime errors |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#ERROR_UNKNOWN:kotlin.Int) Unknown error code. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -70,12 +84,15 @@ Playback error event.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#getErrorCode())`()` Gets error code. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubErrorCode](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#getSubErrorCode())`()` Gets sub error code. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#getTimeSinceCreatedMillis())`()` Gets the timestamp since creation of the playback session in milliseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|

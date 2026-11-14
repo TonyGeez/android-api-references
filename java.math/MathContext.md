@@ -9,6 +9,7 @@ class MathContext : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.math.MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext#) |
 
 Immutable objects which encapsulate the context settings which describe certain rules for numerical operators, such as those implemented by the [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal) class.
@@ -31,6 +32,7 @@ The base-independent settings are:
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/math/MathContext#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`MathContext`with the specified`Object`for equality. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecision](https://developer.android.com/reference/kotlin/java/math/MathContext#getPrecision())`()` Returns the`precision`setting. |
 | [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode)! | [getRoundingMode](https://developer.android.com/reference/kotlin/java/math/MathContext#getRoundingMode())`()` Returns the roundingMode setting. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/math/MathContext#hashCode())`()` Returns the hash code for this`MathContext`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/math/MathContext#toString())`()` Returns the string representation of this`MathContext`. |
 
@@ -39,6 +41,7 @@ The base-independent settings are:
 | static [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext#)! | [DECIMAL128](https://developer.android.com/reference/kotlin/java/math/MathContext#DECIMAL128:java.math.MathContext) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal128 format, 34 digits, and a rounding mode of [HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/RoundingMode). |
 | static [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext#)! | [DECIMAL32](https://developer.android.com/reference/kotlin/java/math/MathContext#DECIMAL32:java.math.MathContext) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal32 format, 7 digits, and a rounding mode of [HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/RoundingMode). |
 | static [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext#)! | [DECIMAL64](https://developer.android.com/reference/kotlin/java/math/MathContext#DECIMAL64:java.math.MathContext) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal64 format, 16 digits, and a rounding mode of [HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/RoundingMode). |
+| --- | --- |
 | static [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext#)! | [UNLIMITED](https://developer.android.com/reference/kotlin/java/math/MathContext#UNLIMITED:java.math.MathContext) A`MathContext`object whose settings have the values required for unlimited precision arithmetic. |
 
 ## Public constructors

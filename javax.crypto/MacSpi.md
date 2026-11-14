@@ -9,6 +9,7 @@ abstract class MacSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.MacSpi](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Mac`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular MAC algorithm.
@@ -30,9 +31,11 @@ Implementations are free to implement the Cloneable interface.
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDoFinal](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineDoFinal())`()` Completes the MAC computation and resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetMacLength](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineGetMacLength())`()` Returns the length of the MAC in bytes. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineInit(java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes the MAC with the given (secret) key and algorithm parameters. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineReset())`()` Resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineUpdate(kotlin.Byte))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineUpdate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi#engineUpdate(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
 
 ## Public constructors
@@ -162,6 +165,7 @@ Processes the first`len`bytes in`input`, starting at`offset`inclusive.
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to process. |
+| --- | --- |
 
 ### engineUpdate
 

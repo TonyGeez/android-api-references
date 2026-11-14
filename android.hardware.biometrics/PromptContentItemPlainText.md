@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PromptContentItemPlainText
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/PromptContentItemPlainText "View this page in Java") 
+| --- | --- |
 
 ```
 class PromptContentItemPlainText : Parcelable, PromptContentItem
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.PromptContentItemPlainText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemPlainText#) |
 
 A list item with plain text shown on [PromptVerticalListContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView).

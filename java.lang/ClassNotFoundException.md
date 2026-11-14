@@ -9,9 +9,11 @@ open class ClassNotFoundException : ReflectiveOperationException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.ReflectiveOperationException](https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ClassNotFoundException](https://developer.android.com/reference/kotlin/java/lang/ClassNotFoundException#) |
 
 Thrown when an application tries to load in a class through its string name using:

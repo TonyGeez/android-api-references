@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # GroupCall
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/GroupCall "View this page in Java") 
+| --- | --- |
 
 ```
 open class GroupCall : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.GroupCall](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#) |
 
 Class used to represent a single MBMS group call. After a call has been started with [MbmsGroupCallSession.startGroupCall](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession.html#startGroupCall(kotlin.Long,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.telephony.mbms.GroupCallCallback)), this class is used to hold information about the call and control it.
@@ -22,18 +24,22 @@ Class used to represent a single MBMS group call. After a call has been started 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_BY_USER_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_BY_USER_REQUEST:kotlin.Int) State changed due to a call to [close()](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#close())or [MbmsGroupCallSession.startGroupCall](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession.html#startGroupCall(kotlin.Long,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.telephony.mbms.GroupCallCallback)) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_FREQUENCY_CONFLICT](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_FREQUENCY_CONFLICT:kotlin.Int) State changed due to a frequency conflict with another requested call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_LEFT_MBMS_BROADCAST_AREA](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_LEFT_MBMS_BROADCAST_AREA:kotlin.Int) State changed due to the device leaving the area where this call is being broadcast. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NONE](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_NONE:kotlin.Int) Indicates that the middleware does not have a reason to provide for the state change. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NOT_CONNECTED_TO_HOMECARRIER_LTE](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_NOT_CONNECTED_TO_HOMECARRIER_LTE:kotlin.Int) State changed due to the device leaving the home carrier's LTE network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_OUT_OF_MEMORY](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_OUT_OF_MEMORY:kotlin.Int) State changed due to the middleware running out of memory |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STALLED](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STALLED:kotlin.Int) Indicates that the group call is stalled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STARTED:kotlin.Int) Indicates that the group call is started. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STOPPED](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STOPPED:kotlin.Int) Indicates that the group call is in a stopped state This can be reported after network action or after calling [close](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#close()). |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#close())`()` Stop this group call. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTmgi](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#getTmgi())`()` Retrieve the TMGI (Temporary Mobile Group Identity) corresponding to this call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateGroupCall](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#updateGroupCall(kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`saiList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `frequencyList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` Send an update to the middleware when the SAI (Service Area Identifier) list and frequency information of the group call has \* changed. |
+| --- | --- |
 
 ## Constants
 

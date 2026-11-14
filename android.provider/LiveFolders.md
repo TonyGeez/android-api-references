@@ -6,12 +6,14 @@ Deprecated in [API level 14](https://developer.android.com/guide/topics/manifest
 # LiveFolders
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/LiveFolders "View this page in Java") 
+| --- | --- |
 
 ```
 class LiveFolders : BaseColumns
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.LiveFolders](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#) |
 
 | **This class was deprecated in API level 14.**
@@ -71,9 +73,11 @@ public static class MyLiveFolder extends Activity {
 The live folder is described by an [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) as follows:
 
 | Component | Type | Description | Required |
+| --- | --- | --- | --- |
 | URI | URI | The ContentProvider URI | Yes |
 | [EXTRA_LIVE_FOLDER_NAME](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_NAME:kotlin.String) | Extra String | The name of the live folder | Yes |
 | [EXTRA_LIVE_FOLDER_ICON](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_ICON:kotlin.String) | Extra [android.content.Intent.ShortcutIconResource](https://developer.android.com/reference/kotlin/android/content/Intent.ShortcutIconResource.html#) | The icon of the live folder | Yes |
+| --- | --- | --- | --- |
 | [EXTRA_LIVE_FOLDER_DISPLAY_MODE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_DISPLAY_MODE:kotlin.String) | Extra int | The display mode of the live folder. The value must be either [DISPLAY_MODE_GRID](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DISPLAY_MODE_GRID:kotlin.Int) or [DISPLAY_MODE_LIST](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DISPLAY_MODE_LIST:kotlin.Int). | Yes |
 | [EXTRA_LIVE_FOLDER_BASE_INTENT](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_BASE_INTENT:kotlin.String) | Extra Intent | When the user clicks an item inside a live folder, the system will either fire the intent associated with that item or, if present, the live folder's base intent with the id of the item appended to the base intent's URI. | No |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -83,9 +87,11 @@ The live folder is described by an [android.content.Intent](https://developer.an
 The live folder's content provider must, upon query, return a [android.database.Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) whose columns match the following names:
 
 | Column | Type | Description | Required |
+| --- | --- | --- | --- |
 | [NAME](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#NAME:kotlin.String) | String | The name of the item | Yes |
 | [DESCRIPTION](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DESCRIPTION:kotlin.String) | String | The description of the item. The description is ignored when the live folder's display mode is [DISPLAY_MODE_GRID](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DISPLAY_MODE_GRID:kotlin.Int). | No |
 | [INTENT](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#INTENT:kotlin.String) | [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | The intent to fire when the item is clicked. Ignored when the live folder defines a base intent. | No |
+| --- | --- | --- | --- |
 | [ICON_BITMAP](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_BITMAP:kotlin.String) | Bitmap | The icon for the item. When this column value is not null, the values for the columns [ICON_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_PACKAGE:kotlin.String) and [ICON_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_RESOURCE:kotlin.String) must be null. | No |
 | [ICON_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_PACKAGE:kotlin.String) | String | The package of the item's icon. When this value is not null, the value for the column [ICON_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_RESOURCE:kotlin.String) must be specified and the value for the column [ICON_BITMAP](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_BITMAP:kotlin.String) must be null. | No |
 | [ICON_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_RESOURCE:kotlin.String) | String | The resource name of the item's icon. When this value is not null, the value for the column [ICON_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_PACKAGE:kotlin.String) must be specified and the value for the column [ICON_BITMAP](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_BITMAP:kotlin.String) must be null. | No |
@@ -98,15 +104,19 @@ The live folder's content provider must, upon query, return a [android.database.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_CREATE_LIVE_FOLDER](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ACTION_CREATE_LIVE_FOLDER:kotlin.String) Activity Action: Creates a live folder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DESCRIPTION](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DESCRIPTION:kotlin.String) Content provider column. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_MODE_GRID](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DISPLAY_MODE_GRID:kotlin.Int) Displays a live folder's content in a grid. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_MODE_LIST](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#DISPLAY_MODE_LIST:kotlin.Int) Displays a live folder's content in a list. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LIVE_FOLDER_BASE_INTENT](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_BASE_INTENT:kotlin.String) The name of the extra used to define the base Intent of a live folder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LIVE_FOLDER_DISPLAY_MODE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_DISPLAY_MODE:kotlin.String) The name of the extra used to define the display mode of a live folder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LIVE_FOLDER_ICON](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_ICON:kotlin.String) The name of the extra used to define the icon of a live folder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LIVE_FOLDER_NAME](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#EXTRA_LIVE_FOLDER_NAME:kotlin.String) The name of the extra used to define the name of a live folder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ICON_BITMAP](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_BITMAP:kotlin.String) Content provider column. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ICON_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_PACKAGE:kotlin.String) Content provider column. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ICON_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#ICON_RESOURCE:kotlin.String) Content provider column. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#INTENT:kotlin.String) Content provider column. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](https://developer.android.com/reference/kotlin/android/provider/LiveFolders#NAME:kotlin.String) Content provider column. |
 
 | Inherited constants ||

@@ -7,6 +7,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 # AdServicesOutcomeReceiver
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver "View this page in Java") 
+| --- | --- |
 
 ```
 interface AdServicesOutcomeReceiver<R : Any!, E : Throwable!>

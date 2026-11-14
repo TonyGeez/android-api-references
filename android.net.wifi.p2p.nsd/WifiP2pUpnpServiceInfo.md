@@ -3,12 +3,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pUpnpServiceInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo "View this page in Java")
+| --- | --- |
 
 ```
 open class WifiP2pUpnpServiceInfo : WifiP2pServiceInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo) ||
 | | ↳ | [android.net.wifi.p2p.nsd.WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo#) |
 
@@ -50,6 +52,7 @@ Create UPnP service information object.
 | `uuid` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a string representation of this UUID in the following format, as per [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt). e.g) 6859dede-8574-59ab-9332-123456789012 |
 | `device` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a string representation of this device in the following format, as per [UPnP Device Architecture1.1](http://www.upnp.org/specs/arch/UPnP-arch-DeviceArchitecture-v1.1.pdf) e.g) urn:schemas-upnp-org:device:MediaServer:1 |
 | `services` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: a string representation of this service in the following format, as per [UPnP Device Architecture1.1](http://www.upnp.org/specs/arch/UPnP-arch-DeviceArchitecture-v1.1.pdf) e.g) urn:schemas-upnp-org:service:ContentDirectory:1 |
+| --- | --- |
 
 | Return ||
 |---|---|

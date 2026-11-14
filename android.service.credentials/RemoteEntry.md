@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # RemoteEntry
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/credentials/RemoteEntry "View this page in Java")
+| --- | --- |
 
 ```
 class RemoteEntry : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.RemoteEntry](https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry#) |
 
 An entry to be shown on the UI. This entry represents remote execution of a get/create flow whereby credentials are retrieved from, or stored to a remote device.
@@ -30,6 +32,7 @@ If user selects this entry, the corresponding `https://developer.android.com/ref
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | `https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry#getSlice()()` Returns the content to be displayed with this remote entry on the UI. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

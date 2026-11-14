@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # PesRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/PesRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class PesRequest : BroadcastInfoRequest, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) ||
 | | ↳ | [android.media.tv.PesRequest](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest#) |
 
@@ -32,6 +34,7 @@ A request for PES from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamId](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest#getStreamId())`()` Gets the StreamID of requested PES. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTsPid](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest#getTsPid())`()` Gets the packet identifier (PID) of the TS (transport stream). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

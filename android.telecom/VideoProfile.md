@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # VideoProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/VideoProfile "View this page in Java") 
+| --- | --- |
 
 ```
 open class VideoProfile : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.VideoProfile](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#) |
 
 Represents attributes of video calls.
@@ -26,12 +28,15 @@ Represents attributes of video calls.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_DEFAULT](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#QUALITY_DEFAULT:kotlin.Int) Use default video quality. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#QUALITY_HIGH:kotlin.Int) "High" video quality. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_LOW](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#QUALITY_LOW:kotlin.Int) "Low" video quality. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_MEDIUM](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#QUALITY_MEDIUM:kotlin.Int) "Medium" video quality. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_AUDIO_ONLY](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int) Used when answering or dialing a call to indicate that the call does not have a video component. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BIDIRECTIONAL](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int) Video signal is bi-directional. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_PAUSED:kotlin.Int) Video is paused. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_RX_ENABLED](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_RX_ENABLED:kotlin.Int) Video reception is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_TX_ENABLED](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_TX_ENABLED:kotlin.Int) Video transmission is enabled. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -47,15 +52,19 @@ Represents attributes of video calls.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#describeContents())`()` Describe the kinds of special objects contained in this Parcelable's marshalled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQuality](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#getQuality())`()` The desired video quality for the call. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoState](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#getVideoState())`()` The video state of the call. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAudioOnly](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isAudioOnly(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether the video state is audio only. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBidirectional](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isBidirectional(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether the video state is bi-directional. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPaused](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isPaused(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether the video state is paused. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReceptionEnabled](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isReceptionEnabled(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether the video state has video reception enabled. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTransmissionEnabled](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isTransmissionEnabled(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether the video state has video transmission enabled. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVideo](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#isVideo(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates whether video transmission or reception is enabled for a video state. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#toString())`()` <br /> |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [videoStateToString](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#videoStateToString(kotlin.Int))`(`videoState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates a string representation of a video state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

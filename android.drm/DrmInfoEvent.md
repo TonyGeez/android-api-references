@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmInfoEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmInfoEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmInfoEvent : DrmEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.drm.DrmEvent](https://developer.android.com/reference/kotlin/android/drm/DrmEvent) ||
 | | ↳ | [android.drm.DrmInfoEvent](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#) |
 
@@ -28,9 +30,11 @@ An entity class that is passed to the [onInfo()](https://developer.android.com/r
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACCOUNT_ALREADY_REGISTERED](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_ACCOUNT_ALREADY_REGISTERED:kotlin.Int) The registration has already been done for the given account. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT:kotlin.Int) The registration has already been done by another account ID. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOVE_RIGHTS](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_REMOVE_RIGHTS:kotlin.Int) The rights need to be removed completely. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_INSTALLED](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_RIGHTS_INSTALLED:kotlin.Int) The rights have been successfully downloaded and installed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_REMOVED](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_RIGHTS_REMOVED:kotlin.Int) The rights have been removed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WAIT_FOR_RIGHTS](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent#TYPE_WAIT_FOR_RIGHTS:kotlin.Int) The rights object is being delivered to the device. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -152,6 +156,7 @@ Creates a`DrmInfoEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of the event. Must be any of the event types defined above, or the constants defined in [DrmEvent](https://developer.android.com/reference/kotlin/android/drm/DrmEvent). |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. It can be null. |
+| --- | --- |
 
 ### DrmInfoEvent
 
@@ -172,4 +177,5 @@ Creates a`DrmInfoEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of the event. Must be any of the event types defined above, or the constants defined in [DrmEvent](https://developer.android.com/reference/kotlin/android/drm/DrmEvent) |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. It can be null. |
+| --- | --- |
 | `attributes` | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Attributes for extensible information. Could be any information provided by the plug-in. |

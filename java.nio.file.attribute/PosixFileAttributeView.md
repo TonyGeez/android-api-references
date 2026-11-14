@@ -35,6 +35,7 @@ Path file = ...
 Where dynamic access to file attributes is required, the attributes supported by this attribute view are as defined by [BasicFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributeView) and [FileOwnerAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileOwnerAttributeView), and in addition, the following attributes are supported:
 
 | Name | Type |
+| --- | --- |
 | "permissions" | [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#)\< [PosixFilePermission](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFilePermission)\> |
 | "group" | [GroupPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/GroupPrincipal) |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,6 +65,7 @@ When the access permissions are set at file creation time then the actual value 
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView#name())`()` Returns the name of the attribute view. |
 | abstract [PosixFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes)! | [readAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView#readAttributes())`()` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroup](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView#setGroup(java.nio.file.attribute.GroupPrincipal))`(`group:` ` [GroupPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/GroupPrincipal)!`)` Updates the file group-owner. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPermissions](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView#setPermissions(kotlin.collections.MutableSet))`(`perms:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFilePermission)!>!`)` Updates the file permissions. |
 
 | Inherited functions ||
@@ -142,3 +144,4 @@ Updates the file permissions.
 | `java.lang.ClassCastException` | if the sets contains elements that are not of type`PosixFilePermission` |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#)`("accessUserInformation")`or its [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method denies write access to the file. |
+| --- | --- |

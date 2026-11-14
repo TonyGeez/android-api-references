@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # Slide
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/Slide "View this page in Java") 
+| --- | --- |
 
 ```
 open class Slide : Visibility
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) |||
 | | ↳ | [android.transition.Visibility](https://developer.android.com/reference/kotlin/android/transition/Visibility) ||
 | | | ↳ | [android.transition.Slide](https://developer.android.com/reference/kotlin/android/transition/Slide#) |
+| --- | --- | --- | --- |
 
 This transition tracks changes to the visibility of target views in the start and end scenes and moves views in or out from one of the edges of the scene. Visibility is determined by both the [View.setVisibility(int)](https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int))state of the view as well as whether it is parented in the current view hierarchy. Disappearing Views are limited as described in [Visibility.onDisappear(android.view.ViewGroup,](https://developer.android.com/reference/kotlin/android/transition/Visibility#onDisappear(android.view.ViewGroup,%20android.transition.TransitionValues,%20kotlin.Int,%20android.transition.TransitionValues,%20kotlin.Int)).
 
@@ -35,9 +38,11 @@ This transition tracks changes to the visibility of target views in the start an
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureEndValues](https://developer.android.com/reference/kotlin/android/transition/Slide#captureEndValues(android.transition.TransitionValues))`(`transitionValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureStartValues](https://developer.android.com/reference/kotlin/android/transition/Slide#captureStartValues(android.transition.TransitionValues))`(`transitionValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSlideEdge](https://developer.android.com/reference/kotlin/android/transition/Slide#getSlideEdge())`()` Returns the edge that Views appear and disappear from. |
+| --- | --- |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)! | [onAppear](https://developer.android.com/reference/kotlin/android/transition/Slide#onAppear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`, `view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `startValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`, `endValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)! | [onDisappear](https://developer.android.com/reference/kotlin/android/transition/Slide#onDisappear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`, `view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `startValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`, `endValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSlideEdge](https://developer.android.com/reference/kotlin/android/transition/Slide#setSlideEdge(kotlin.Int))`(`slideEdge:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the edge that Views appear and disappear from. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -138,6 +143,7 @@ open fun onAppear(
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The root of the transition hierarchy |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The View to make appear. This will be in the target scene's View hierarchy and will be VISIBLE. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The target values in the start scene |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The target values in the end scene |
 
 | Return ||
@@ -162,6 +168,7 @@ open fun onDisappear(
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The root of the transition hierarchy |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The View to make disappear. This will be in the target scene's View hierarchy or in an [android.view.ViewGroupOverlay](https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay.html#) and will be VISIBLE. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The target values in the start scene |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The target values in the end scene |
 
 | Return ||

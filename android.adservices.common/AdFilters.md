@@ -9,6 +9,7 @@ class AdFilters : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.common.AdFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#) |
 
 > [!CAUTION]
@@ -35,9 +36,11 @@ If any of the filters in an `https://developer.android.com/reference/kotlin/andr
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` objects represent the same set of filters. |
 | [AppInstallFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getAppInstallFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters` instance that represents all app install filters for the ad. |
+| --- | --- |
 | [FrequencyCapFilters](https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getFrequencyCapFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters` instance that represents all frequency cap filters for the ad. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` object's data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

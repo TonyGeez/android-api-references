@@ -7,9 +7,11 @@ abstract class Preferences
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.prefs.Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#) |
 
 | Known Direct Subclasses [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences) |---|---| | [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences) | This class provides a skeletal implementation of the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#` class, greatly easing the task of implementing it. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A node in a hierarchical collection of preference data. This class allows applications to store and retrieve user and system preference and configuration data. This data is stored persistently in an implementation-dependent backing store. Typical implementations include flat files, OS-specific registries, directory servers and SQL databases. The user of this class needn't be concerned with details of the backing store.
 
@@ -106,6 +108,7 @@ Implementation note: In Sun's JRE, the PreferencesFactory implementation is loca
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#MAX_KEY_LENGTH:kotlin.Int` Maximum length of string allowed as a key (80 characters). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#MAX_NAME_LENGTH:kotlin.Int` Maximum length of a node name (80 characters). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#MAX_VALUE_LENGTH:kotlin.Int` Maximum length of string allowed as a value (8192 characters). |
+| --- | --- |
 
 | Protected constructors ||
 |---|---|
@@ -116,42 +119,55 @@ Implementation note: In Sun's JRE, the PreferencesFactory implementation is loca
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#absolutePath()()` Returns this preference node's absolute path name. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#addNodeChangeListener(java.util.prefs.NodeChangeListener)(ncl: https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener!)` Registers the specified listener to receive *node change events* for this node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener)(pcl: https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener!)` Registers the specified listener to receive *preference change events* for this preference node. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#childrenNames()()` Returns the names of the children of this preference node, relative to this node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#clear()()` Removes all of the preferences (key-value associations) in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#exportNode(java.io.OutputStream)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Emits on the specified output stream an XML document representing all of the preferences contained in this node (but not its descendants). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#exportSubtree(java.io.OutputStream)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Emits an XML document representing all of the preferences contained in this node and all of its descendants. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#flush()()` Forces any changes in the contents of this preference node and its descendants to the persistent store. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#get(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the specified key in this preference node. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the boolean value represented by the string associated with the specified key in this preference node. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getByteArray(kotlin.String,%20kotlin.ByteArray)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Returns the byte array value represented by the string associated with the specified key in this preference node. |
 | abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getDouble(kotlin.String,%20kotlin.Double)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the double value represented by the string associated with the specified key in this preference node. |
+| --- | --- |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the float value represented by the string associated with the specified key in this preference node. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getInt(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the int value represented by the string associated with the specified key in this preference node. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getLong(kotlin.String,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the long value represented by the string associated with the specified key in this preference node. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#importPreferences(java.io.InputStream)(is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Imports all of the preferences represented by the XML document on the specified input stream. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#isUserNode()()` Returns true if this preference node is in the user preference tree, false if it's in the system preference tree. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#keys()()` Returns all of the keys that have an associated value in this preference node. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#name()()` Returns this preference node's name, relative to its parent. |
 | abstract [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#node(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the named preference node in the same tree as this node, creating it and any of its ancestors if they do not already exist. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#nodeExists(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the named preference node exists in the same tree as this node. |
+| --- | --- |
 | abstract [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#parent()()` Returns the parent of this preference node, or null if this is the root. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#put(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Associates the specified value with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Associates a string representing the specified boolean value with the specified key in this preference node. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putByteArray(kotlin.String,%20kotlin.ByteArray)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Associates a string representing the specified byte array with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putDouble(kotlin.String,%20kotlin.Double)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Associates a string representing the specified double value with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Associates a string representing the specified float value with the specified key in this preference node. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putInt(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Associates a string representing the specified int value with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putLong(kotlin.String,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Associates a string representing the specified long value with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#remove(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes the value associated with the specified key in this preference node, if any. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()()` Removes this preference node and all of its descendants, invalidating any preferences contained in the removed nodes. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNodeChangeListener(java.util.prefs.NodeChangeListener)(ncl: https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener!)` Removes the specified NodeChangeListener, so it no longer receives change events. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)(pcl: https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener!)` Removes the specified preference change listener, so it no longer receives preference change events. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#sync()()` Ensures that future reads from this preference node and its descendants reflect any changes that were committed to the persistent store (from any VM) prior to the sync invocation. |
 | open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
 | open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#toString()()` Returns a string representation of this preferences node, as if computed by the expression:(this.isUserNode() ? "User" : "System") + " Preference Node: " + this.absolutePath(). |
 | open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
 | open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| --- | --- |
 
 ## Constants
 
@@ -342,6 +358,7 @@ This method is an exception to the general rule that the results of concurrently
 | `java.io.IOException` | if writing to the specified output stream results in an IOException. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.util.prefs.BackingStoreException` | if preference data cannot be read from backing store. |
+| --- | --- |
 
 **See Also**
 
@@ -376,6 +393,7 @@ This method is an exception to the general rule that the results of concurrently
 | `java.io.IOException` | if writing to the specified output stream results in an IOException. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.util.prefs.BackingStoreException` | if preference data cannot be read from backing store. |
+| --- | --- |
 
 **See Also**
 
@@ -672,6 +690,7 @@ This method is an exception to the general rule that the results of concurrently
 | `java.io.IOException` | if reading from the specified input stream results in an IOException. |
 | `java.lang.SecurityException` | If a security manager is present and it denies RuntimePermission("preferences"). |
 | `java.util.prefs.InvalidPreferencesFormatException` | Data on input stream does not constitute a valid XML document with the mandated document type. |
+| --- | --- |
 
 **See Also**
 
@@ -751,6 +770,7 @@ If the returned node did not exist prior to this call, this node and any ancesto
 | `java.lang.IllegalArgumentException` | if the path name is invalid (i.e., it contains multiple consecutive slash characters, or ends with a slash character and is more than one character long). |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if path name is null. |
+| --- | --- |
 
 **See Also**
 
@@ -781,6 +801,7 @@ If this node (or an ancestor) has already been removed with the `https://develop
 | `java.lang.IllegalArgumentException` | if the path name is invalid (i.e., it contains multiple consecutive slash characters, or ends with a slash character and is more than one character long). |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method and pathName is not the empty string (""). |
 | `java.lang.NullPointerException` | if path name is null. |
+| --- | --- |
 | `java.util.prefs.BackingStoreException` | if this operation cannot be completed due to a failure in the backing store, or inability to communicate with it. |
 
 ### parent
@@ -824,6 +845,7 @@ Associates the specified value with the specified key in this preference node.
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH or if value.length exceeds MAX_VALUE_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key or value is null. |
+| --- | --- |
 
 ### putBoolean
 
@@ -848,6 +870,7 @@ Associates a string representing the specified boolean value with the specified 
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key is null. |
+| --- | --- |
 
 **See Also**
 
@@ -877,6 +900,7 @@ Associates a string representing the specified byte array with the specified key
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH or if value.length exceeds MAX_VALUE_LENGTH\*3/4. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key or value is null. |
+| --- | --- |
 
 **See Also**
 
@@ -906,6 +930,7 @@ Associates a string representing the specified double value with the specified k
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key is null. |
+| --- | --- |
 
 **See Also**
 
@@ -934,6 +959,7 @@ Associates a string representing the specified float value with the specified ke
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key is null. |
+| --- | --- |
 
 **See Also**
 
@@ -962,6 +988,7 @@ Associates a string representing the specified int value with the specified key 
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key is null. |
+| --- | --- |
 
 **See Also**
 
@@ -990,6 +1017,7 @@ Associates a string representing the specified long value with the specified key
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.NullPointerException` | if key is null. |
+| --- | --- |
 
 **See Also**
 
@@ -1035,6 +1063,7 @@ If this implementation supports *stored defaults*, removing a node exposes any s
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has already been removed with the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()` method. |
 | `java.lang.UnsupportedOperationException` | if this method is invoked on the root node. |
 | `java.util.prefs.BackingStoreException` | if this operation cannot be completed due to a failure in the backing store, or inability to communicate with it. |
+| --- | --- |
 
 **See Also**
 

@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # VibrationAttributes
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/VibrationAttributes "View this page in Java")
+| --- | --- |
 
 ```
 class VibrationAttributes : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.VibrationAttributes](https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#) |
 
 Encapsulates a collection of attributes describing information about a vibration.
@@ -24,18 +26,23 @@ Encapsulates a collection of attributes describing information about a vibration
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#FLAG_BYPASS_INTERRUPTION_POLICY:kotlin.Int` Flag requesting vibration effect to be played even under limited interruptions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ACCESSIBILITY:kotlin.Int` Usage value to use for accessibility vibrations, such as with a screen reader. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ALARM:kotlin.Int` Usage value to use for alarm vibrations. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_CLASS_ALARM:kotlin.Int` Vibration usage class value to use when the vibration is initiated to catch user's attention, such as alarm, ringtone, and notification vibrations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_CLASS_FEEDBACK:kotlin.Int` Vibration usage class value to use when the vibration is initiated as a response to user's actions, such as emulation of physical effects, and texting feedback vibration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_CLASS_MASK:kotlin.Int` Mask for vibration usage class value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_CLASS_MEDIA:kotlin.Int` Vibration usage class value to use when the vibration is part of media, such as music, movie, soundtrack, game or animations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_CLASS_UNKNOWN:kotlin.Int` Vibration usage class value to use when the vibration usage class is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_COMMUNICATION_REQUEST:kotlin.Int` Usage value to use for vibrations which mean a request to enter/end a communication with the user, such as a voice prompt. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_GESTURE_INPUT:kotlin.Int` Usage value to use for vibrations performed as feedback for a user's gesture input. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_HARDWARE_FEEDBACK:kotlin.Int` Usage value to use for vibrations which provide a feedback for hardware component interaction, such as a fingerprint sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_MEDIA:kotlin.Int` Usage value to use for media vibrations, such as music, movie, soundtrack, animations, games, or any interactive media that isn't for touch feedback specifically. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_NOTIFICATION:kotlin.Int` Usage value to use for notification vibrations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_PHYSICAL_EMULATION:kotlin.Int` Usage value to use for vibrations which emulate physical hardware reactions, such as edge squeeze. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_RINGTONE:kotlin.Int` Usage value to use for ringtone vibrations. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_TOUCH:kotlin.Int` Usage value to use for touch vibrations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_UNKNOWN:kotlin.Int` Usage value to use when usage is unknown. |
 
@@ -48,12 +55,15 @@ Encapsulates a collection of attributes describing information about a vibration
 | static [VibrationAttributes](https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#createForUsage(kotlin.Int)(usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#` instance with given usage. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#getFlags()()` Return the flags. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#getUsage()()` Return the vibration usage. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#getUsageClass()()` Return the vibration usage class. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#isFlagSet(kotlin.Int)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check whether a flag is set |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

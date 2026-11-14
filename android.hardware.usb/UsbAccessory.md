@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # UsbAccessory
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbAccessory "View this page in Java") 
+| --- | --- |
 
 ```
 open class UsbAccessory : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbAccessory](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#) |
 
 A class representing a USB accessory, which is an external hardware component that communicates with an android application over USB. The accessory is the USB host and android the device side of the USB connection.
@@ -34,12 +36,15 @@ An instance of this class is sent to the application via the [UsbManager.ACTION_
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getDescription())`()` Returns a user visible description of the accessory. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getManufacturer](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getManufacturer())`()` Returns the manufacturer name of the accessory. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getModel](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getModel())`()` Returns the model name of the accessory. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSerial](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getSerial())`()` Returns the unique serial number for the accessory. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUri](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getUri())`()` Returns the URI for the accessory. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getVersion](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#getVersion())`()` Returns the version of the accessory. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#hashCode())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbAccessory#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

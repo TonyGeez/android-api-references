@@ -9,6 +9,7 @@ open class LongAdder : Number, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.util.concurrent.atomic.LongAdder](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#) |
 
@@ -31,12 +32,15 @@ This class extends [Number](https://developer.android.com/reference/kotlin/java/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#add(kotlin.Long))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds the given value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [decrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#decrement())`()` Equivalent to`add(-1)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [increment](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#increment())`()` Equivalent to`add(1)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#reset())`()` Resets variables maintaining the sum to zero. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum())`()` Returns the current sum. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sumThenReset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sumThenReset())`()` Equivalent in effect to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum())followed by [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#reset()). |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#toDouble())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum())as a`double`after a widening primitive conversion. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#toFloat())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum())as a`float`after a widening primitive conversion. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#toInt())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum())as an`int`after a narrowing primitive conversion. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#toLong())`()` Equivalent to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum()). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#toString())`()` Returns the String representation of the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/LongAdder#sum()). |
 

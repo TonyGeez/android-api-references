@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # CamcorderProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/CamcorderProfile "View this page in Java") 
+| --- | --- |
 
 ```
 open class CamcorderProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.CamcorderProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#) |
 
 Retrieves the predefined camcorder profile settings for camcorder applications. These settings are read-only.
@@ -36,39 +38,51 @@ Each profile specifies the following set of parameters:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_1080P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_1080P:kotlin.Int) Quality level corresponding to the 1080p (1920 x 1080) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_2160P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_2160P:kotlin.Int) Quality level corresponding to the 2160p (3840x2160) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_2K](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_2K:kotlin.Int) Quality level corresponding to 2K (2048 x 1080) resolution |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_480P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_480P:kotlin.Int) Quality level corresponding to the 480p (720 x 480) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_4KDCI](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_4KDCI:kotlin.Int) Quality level corresponding to 4k-DCI (4096 x 2160) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_720P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_720P:kotlin.Int) Quality level corresponding to the 720p (1280 x 720) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_8KUHD](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_8KUHD:kotlin.Int) Quality level corresponding to 8K UHD (7680 x 4320) resolution |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_CIF](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_CIF:kotlin.Int) Quality level corresponding to the cif (352 x 288) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH:kotlin.Int) Quality level corresponding to the highest available resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_1080P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_1080P:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the 1080p (1920 x 1080 or 1920x1088) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_2160P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_2160P:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the 2160p (3840 x 2160) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_480P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_480P:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the 480p (720 x 480) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_4KDCI](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_4KDCI:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the 4K-DCI (4096 x 2160) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_720P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_720P:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the 720p (1280 x 720) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_CIF](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_CIF:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the CIF (352 x 288) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_HIGH](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_HIGH:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the highest available resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_LOW](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_LOW:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the lowest available resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH_SPEED_VGA](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_HIGH_SPEED_VGA:kotlin.Int) High speed ( \>= 100fps) quality level corresponding to the VGA (640 x 480) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_LOW](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_LOW:kotlin.Int) Quality level corresponding to the lowest available resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_QCIF](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_QCIF:kotlin.Int) Quality level corresponding to the qcif (176 x 144) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_QHD](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_QHD:kotlin.Int) Quality level corresponding to QHD (2560 x 1440) resolution |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_QVGA](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_QVGA:kotlin.Int) Quality level corresponding to the QVGA (320x240) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_1080P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_1080P:kotlin.Int) Time lapse quality level corresponding to the 1080p (1920 x 1088) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_2160P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_2160P:kotlin.Int) Time lapse quality level corresponding to the 2160p (3840 x 2160) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_2K](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_2K:kotlin.Int) Time lapse quality level corresponding to the 2K (2048 x 1080) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_480P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_480P:kotlin.Int) Time lapse quality level corresponding to the 480p (720 x 480) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_4KDCI](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_4KDCI:kotlin.Int) Time lapse quality level corresponding to the 4k-DCI (4096 x 2160) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_720P](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_720P:kotlin.Int) Time lapse quality level corresponding to the 720p (1280 x 720) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_8KUHD](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_8KUHD:kotlin.Int) Time lapse quality level corresponding to the 8K UHD (7680 x 4320) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_CIF](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_CIF:kotlin.Int) Time lapse quality level corresponding to the cif (352 x 288) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_HIGH](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_HIGH:kotlin.Int) Time lapse quality level corresponding to the highest available resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_LOW](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_LOW:kotlin.Int) Time lapse quality level corresponding to the lowest available resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_QCIF](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_QCIF:kotlin.Int) Time lapse quality level corresponding to the qcif (176 x 144) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_QHD](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_QHD:kotlin.Int) Time lapse quality level corresponding to the QHD (2560 x 1440) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_QVGA](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_QVGA:kotlin.Int) Time lapse quality level corresponding to the QVGA (320 x 240) resolution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_TIME_LAPSE_VGA](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_TIME_LAPSE_VGA:kotlin.Int) Time lapse quality level corresponding to the VGA (640 x 480) resolution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_VGA](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#QUALITY_VGA:kotlin.Int) Quality level corresponding to the VGA (640 x 480) resolution. |
 
 | Public methods ||
@@ -76,6 +90,7 @@ Each profile specifies the following set of parameters:
 | openstatic [CamcorderProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#)! | [get](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#get(kotlin.Int))`(`quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the default camcorder profile at the given quality level for the first back-facing camera on the device. |
 | openstatic [CamcorderProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#)! | [get](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#get(kotlin.Int,%20kotlin.Int))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the default camcorder profile for the given camera at the given quality level. |
 | openstatic [EncoderProfiles](https://developer.android.com/reference/kotlin/android/media/EncoderProfiles)? | [getAll](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#getAll(kotlin.String,%20kotlin.Int))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns all encoder profiles of a camcorder profile for the given camera at the given quality level. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#hasProfile(kotlin.Int))`(`quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if a camcorder profile exists for the first back-facing camera at the given quality level. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#hasProfile(kotlin.Int,%20kotlin.Int))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if a camcorder profile exists for the given camera at the given quality level. |
 
@@ -84,15 +99,19 @@ Each profile specifies the following set of parameters:
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [audioBitRate](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#audioBitRate:kotlin.Int) The target audio output bit rate in bits per second |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [audioChannels](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#audioChannels:kotlin.Int) The number of audio channels used for the audio track |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [audioCodec](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#audioCodec:kotlin.Int) The audio encoder being used for the audio track. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [audioSampleRate](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#audioSampleRate:kotlin.Int) The audio sampling rate used for the audio track |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [duration](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#duration:kotlin.Int) Default recording duration in seconds before the session is terminated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fileFormat](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#fileFormat:kotlin.Int) The file output format of the camcorder profile |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [quality](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#quality:kotlin.Int) The quality level of the camcorder profile |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [videoBitRate](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#videoBitRate:kotlin.Int) The target video output bit rate in bits per second |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [videoCodec](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#videoCodec:kotlin.Int) The video encoder being used for the video track |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [videoFrameHeight](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#videoFrameHeight:kotlin.Int) The target video frame height in pixels |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [videoFrameRate](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#videoFrameRate:kotlin.Int) The target video frame rate in frames per second. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [videoFrameWidth](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile#videoFrameWidth:kotlin.Int) The target video frame width in pixels |
+| --- | --- |
 
 ## Constants
 

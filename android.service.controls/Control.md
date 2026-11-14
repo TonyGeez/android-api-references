@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # Control
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/Control "View this page in Java") 
+| --- | --- |
 
 ```
 class Control : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.controls.Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#) |
 
 Represents a physical object that can be represented by a [ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) and whose properties may be modified through a [ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction). The information is provided by a [ControlsProviderService](https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService) and represents static information (not current status) about the device.
@@ -35,6 +37,7 @@ An [Intent](https://developer.android.com/reference/kotlin/android/content/Inten
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_DISABLED](https://developer.android.com/reference/kotlin/android/service/controls/Control#STATUS_DISABLED:kotlin.Int) The [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#) is currently disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_ERROR](https://developer.android.com/reference/kotlin/android/service/controls/Control#STATUS_ERROR:kotlin.Int) Used to indicate that there was a temporary error while loading the device state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NOT_FOUND](https://developer.android.com/reference/kotlin/android/service/controls/Control#STATUS_NOT_FOUND:kotlin.Int) The device corresponding to the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#) cannot be found or was removed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_OK](https://developer.android.com/reference/kotlin/android/service/controls/Control#STATUS_OK:kotlin.Int) Used to indicate that the state of the device was successfully retrieved. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN](https://developer.android.com/reference/kotlin/android/service/controls/Control#STATUS_UNKNOWN:kotlin.Int) Reserved for use with the [StatelessBuilder](https://developer.android.com/reference/kotlin/android/service/controls/Control.StatelessBuilder), and while loading. |
 
@@ -47,18 +50,23 @@ An [Intent](https://developer.android.com/reference/kotlin/android/content/Inten
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/controls/Control#describeContents())`()` <br /> |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | [getAppIntent](https://developer.android.com/reference/kotlin/android/service/controls/Control#getAppIntent())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getControlId](https://developer.android.com/reference/kotlin/android/service/controls/Control#getControlId())`()` <br /> |
+| --- | --- |
 | [ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) | [getControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/Control#getControlTemplate())`()` <br /> |
 | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | [getCustomColor](https://developer.android.com/reference/kotlin/android/service/controls/Control#getCustomColor())`()` Optional color to be shown with the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#). |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getCustomIcon](https://developer.android.com/reference/kotlin/android/service/controls/Control#getCustomIcon())`()` Optional icon to be shown with the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceType](https://developer.android.com/reference/kotlin/android/service/controls/Control#getDeviceType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/service/controls/Control#getStatus())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getStatusText](https://developer.android.com/reference/kotlin/android/service/controls/Control#getStatusText())`()` <br /> |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getStructure](https://developer.android.com/reference/kotlin/android/service/controls/Control#getStructure())`()` Optional top-level group to help define the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#)'s location, visible to the user. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getSubtitle](https://developer.android.com/reference/kotlin/android/service/controls/Control#getSubtitle())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getTitle](https://developer.android.com/reference/kotlin/android/service/controls/Control#getTitle())`()` <br /> |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getZone](https://developer.android.com/reference/kotlin/android/service/controls/Control#getZone())`()` Optional group name to help define the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control#)'s location within a structure, visible to the user. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthRequired](https://developer.android.com/reference/kotlin/android/service/controls/Control#isAuthRequired())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/controls/Control#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|

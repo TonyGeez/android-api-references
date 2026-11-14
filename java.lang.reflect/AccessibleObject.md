@@ -7,11 +7,14 @@ open class AccessibleObject : AnnotatedElement
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.reflect.AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#) |
 
 | Known Direct Subclasses [Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable), [Field](https://developer.android.com/reference/kotlin/java/lang/reflect/Field) |---|---| | [Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) | A shared superclass for the common functionality of `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` and `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor`. | | [Field](https://developer.android.com/reference/kotlin/java/lang/reflect/Field) | A `Field` provides information about, and dynamic access to, a single field of a class or an interface. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor), [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) |---|---| | [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor) | `Constructor` provides information about, and access to, a single constructor for a class. | | [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) | A `Method` provides information about, and access to, a single method on a class or interface. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The AccessibleObject class is the base class for Field, Method and Constructor objects. It provides the ability to flag a reflected object as suppressing default Java language access control checks when it is used. The access checks--for public, default (package) access, protected, and private members--are performed when Fields, Methods or Constructors are used to set or get fields, to invoke methods, or to create and initialize new instances of classes, respectively.
 
@@ -30,12 +33,15 @@ By default, a reflected object is *not* accessible.
 | open T? | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotations()()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
+| --- | --- |
 | open T? | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotations()()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#isAccessible()()` Get the value of the `accessible` flag for this object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#isAnnotationPresent(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html!>)` Returns true if an annotation for the specified type is *present* on this element, else false. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the `accessible` flag for this object to the indicated boolean value. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Array,%20kotlin.Boolean)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#!>!, flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Convenience method to set the `accessible` flag for an array of objects with a single security check (for efficiency). |
 
 ## Protected constructors

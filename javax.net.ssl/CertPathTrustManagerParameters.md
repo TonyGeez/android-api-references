@@ -9,6 +9,7 @@ open class CertPathTrustManagerParameters : ManagerFactoryParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.CertPathTrustManagerParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/CertPathTrustManagerParameters#) |
 
 A wrapper for CertPathParameters. This class is used to pass validation settings to CertPath based [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager) s using the [TrustManagerFactory.init()](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#init(javax.net.ssl.ManagerFactoryParameters))method.

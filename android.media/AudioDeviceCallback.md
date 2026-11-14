@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # AudioDeviceCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioDeviceCallback "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AudioDeviceCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioDeviceCallback](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback#) |
 
 AudioDeviceCallback defines the mechanism by which applications can receive notifications of audio device connection and disconnection events.

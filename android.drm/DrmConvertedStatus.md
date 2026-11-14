@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmConvertedStatus
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmConvertedStatus "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmConvertedStatus
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#) |
 
 | **This class was deprecated in API level 30.**
@@ -27,6 +29,7 @@ An entity class that wraps converted data, conversion status, and the offset for
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_ERROR](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#STATUS_ERROR:kotlin.Int) Indicate a general failed conversion status. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_INPUTDATA_ERROR](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#STATUS_INPUTDATA_ERROR:kotlin.Int) Indicate a failed conversion status due to input data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_OK](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#STATUS_OK:kotlin.Int) Indicate the conversion status is successful. |
+| --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -37,6 +40,7 @@ An entity class that wraps converted data, conversion status, and the offset for
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [convertedData](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#convertedData:kotlin.ByteArray) Converted data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offset](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#offset:kotlin.Int) Offset value for the body and header signature. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [statusCode](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus#statusCode:kotlin.Int) Status code for the conversion. |
+| --- | --- |
 
 ## Constants
 
@@ -102,6 +106,7 @@ Creates a`DrmConvertedStatus`object with the specified parameters.
 | `statusCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Conversion status. Must be one of the status code constants defined above. |
 | `convertedData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:Converted data. It can be null. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset value for appending the header and body signature. |
+| --- | --- |
 
 ## Properties
 

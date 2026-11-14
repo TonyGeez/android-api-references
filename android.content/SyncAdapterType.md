@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # SyncAdapterType
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/SyncAdapterType "View this page in Java") 
+| --- | --- |
 
 ```
 open class SyncAdapterType : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.SyncAdapterType](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#) |
 
 Value type that represents a SyncAdapterType. This object overrides [equals](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#equals(kotlin.Any))and [hashCode](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#hashCode()), making it suitable for use as the key of a [java.util.Map](https://developer.android.com/reference/kotlin/java/util/Map.html#)
@@ -31,12 +33,15 @@ Value type that represents a SyncAdapterType. This object overrides [equals](htt
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowParallelSyncs](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#allowParallelSyncs())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSettingsActivity](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#getSettingsActivity())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#hashCode())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlwaysSyncable](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#isAlwaysSyncable())`()` If true then the SyncManager will never issue an initialization sync to the SyncAdapter and will instead automatically call [ContentResolver.setIsSyncable(android.accounts.Account, String, int)](https://developer.android.com/reference/kotlin/android/content/ContentResolver#setIsSyncable(android.accounts.Account,%20kotlin.String,%20kotlin.Int))with a value of 1 for each account and provider that this sync adapter supports. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserVisible](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#isUserVisible())`()` <br /> |
 | openstatic [SyncAdapterType](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#)! | [newKey](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#newKey(kotlin.String,%20kotlin.String))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `accountType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsUploading](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#supportsUploading())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -45,6 +50,7 @@ Value type that represents a SyncAdapterType. This object overrides [equals](htt
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SyncAdapterType](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [accountType](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#accountType:kotlin.String) <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [authority](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#authority:kotlin.String) <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isKey](https://developer.android.com/reference/kotlin/android/content/SyncAdapterType#isKey:kotlin.Boolean) <br /> |
 
 ## Public constructors

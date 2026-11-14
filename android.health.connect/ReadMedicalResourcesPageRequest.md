@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # ReadMedicalResourcesPageRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadMedicalResourcesPageRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class ReadMedicalResourcesPageRequest : ReadMedicalResourcesRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest) ||
 | | ↳ | [android.health.connect.ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#) |
 
@@ -46,6 +48,7 @@ Example usage:
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPageToken](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#getPageToken())`()` Returns the page token to read the requested page. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#toString())`()` <br /> |
 
 | Inherited functions ||

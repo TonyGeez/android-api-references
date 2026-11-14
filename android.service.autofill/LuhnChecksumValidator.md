@@ -3,12 +3,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # LuhnChecksumValidator
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/LuhnChecksumValidator "View this page in Java")
+| --- | --- |
 
 ```
 class LuhnChecksumValidator : Parcelable, Validator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.LuhnChecksumValidator](https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#) |
 
 Validator that returns `true` if the number created by concatenating all given fields pass a Luhn algorithm checksum. All non-digits are ignored.
@@ -30,6 +32,7 @@ See `https://developer.android.com/reference/kotlin/android/service/autofill/Sav
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

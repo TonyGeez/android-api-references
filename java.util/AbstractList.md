@@ -9,12 +9,15 @@ abstract class AbstractList<E : Any!> : AbstractCollection<E>, MutableList<E
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> ||
 | | ↳ | [java.util.AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList#) |
 
 | Known Direct Subclasses [AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList), [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList), [Vector](https://developer.android.com/reference/kotlin/java/util/Vector) |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList) | This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). | | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList) | Resizable-array implementation of the`List`interface. | | [Vector](https://developer.android.com/reference/kotlin/java/util/Vector) | The`Vector`class implements a growable array of objects. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList), [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList) | Doubly-linked list implementation of the`List`and`Deque`interfaces. | | [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface to minimize the effort required to implement this interface backed by a "random access" data store (such as an array). For sequential access data (such as a linked list), [AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList) should be used in preference to this class.
 
@@ -41,18 +44,23 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/AbstractList#add(java.util.AbstractList.E))`(`element:` `E`)` Appends the specified element to the end of this list (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/AbstractList#add(kotlin.Int,%20java.util.AbstractList.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Inserts the specified element at the specified position in this list (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/AbstractList#addAll(kotlin.Int,%20kotlin.collections.Collection))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Inserts all of the elements in the specified collection into this list at the specified position (optional operation). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/AbstractList#clear())`()` Removes all of the elements from this list (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/AbstractList#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this list for equality. |
 | abstractE | [get](https://developer.android.com/reference/kotlin/java/util/AbstractList#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the element at the specified position in this list. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/AbstractList#hashCode())`()` Returns the hash code value for this list. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](https://developer.android.com/reference/kotlin/java/util/AbstractList#indexOf(java.util.AbstractList.E))`(`element:` `E?`)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/AbstractList#iterator())`()` Returns an iterator over the elements in this list in proper sequence. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOf](https://developer.android.com/reference/kotlin/java/util/AbstractList#lastIndexOf(java.util.AbstractList.E))`(`element:` `E?`)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](https://developer.android.com/reference/kotlin/java/util/AbstractList#listIterator())`()` Returns a list iterator over the elements in this list (in proper sequence). |
 | open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](https://developer.android.com/reference/kotlin/java/util/AbstractList#listIterator(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. |
+| --- | --- |
 | openE | [removeAt](https://developer.android.com/reference/kotlin/java/util/AbstractList#removeAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes the element at the specified position in this list (optional operation). |
 | openE | [set](https://developer.android.com/reference/kotlin/java/util/AbstractList#set(kotlin.Int,%20java.util.AbstractList.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Replaces the element at the specified position in this list with the specified element (optional operation). |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [subList](https://developer.android.com/reference/kotlin/java/util/AbstractList#subList(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a view of the portion of this list between the specified`fromIndex`, inclusive, and`toIndex`, exclusive. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -109,6 +117,7 @@ Lists that support this operation may place limitations on what elements may be 
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of this element prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
 
@@ -135,6 +144,7 @@ Inserts the specified element at the specified position in this list (optional o
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
 
@@ -165,6 +175,7 @@ Inserts all of the elements in the specified collection into this list at the sp
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements, or if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
 
@@ -387,6 +398,7 @@ Replaces the element at the specified position in this list with the specified e
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index >= size()`) |
 

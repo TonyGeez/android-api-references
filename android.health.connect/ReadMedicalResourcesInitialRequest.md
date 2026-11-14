@@ -8,6 +8,7 @@ class ReadMedicalResourcesInitialRequest : ReadMedicalResourcesRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest) ||
 | | ↳ | [android.health.connect.ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#) |
 
@@ -42,6 +43,7 @@ Example usage:
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#getDataSourceIds()()` Returns the set of IDs of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` filter to read from, or an empty set for no filter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#getMedicalResourceType()()` Returns the medical resource type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#toString()()` Returns a string representation of the object. |
 

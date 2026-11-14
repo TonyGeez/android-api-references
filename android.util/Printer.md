@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Printer
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Printer "View this page in Java") 
+| --- | --- |
 
 ```
 interface Printer
@@ -13,6 +14,7 @@ interface Printer
 | [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer#) |
 
 | Known Direct Subclasses [LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter), [PrintStreamPrinter](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter), [PrintWriterPrinter](https://developer.android.com/reference/kotlin/android/util/PrintWriterPrinter), [StringBuilderPrinter](https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter) |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter) | Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer#) that sends its output to the system log. | | [PrintStreamPrinter](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter) | Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer#) that sends its output to a [java.io.PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#). | | [PrintWriterPrinter](https://developer.android.com/reference/kotlin/android/util/PrintWriterPrinter) | Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer#) that sends its output to a [java.io.PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#). | | [StringBuilderPrinter](https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter) | Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer#) that sends its output to a [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Simple interface for printing text, allowing redirection to various targets. Standard implementations are [android.util.LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter), [android.util.StringBuilderPrinter](https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter), and [android.util.PrintWriterPrinter](https://developer.android.com/reference/kotlin/android/util/PrintWriterPrinter).
 

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # JobParameters
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/job/JobParameters "View this page in Java") 
+| --- | --- |
 
 ```
 open class JobParameters : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.job.JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#) |
 
 Contains the parameters used to configure/identify your job. You do not create this object yourself, instead it is handed in to your application by the System.
@@ -22,18 +24,23 @@ Contains the parameters used to configure/identify your job. You do not create t
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_APP_STANDBY](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_APP_STANDBY:kotlin.Int) The current standby bucket requires that the job stop now. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_BACKGROUND_RESTRICTION](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_BACKGROUND_RESTRICTION:kotlin.Int) The app is restricted from running in the background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CANCELLED_BY_APP](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CANCELLED_BY_APP:kotlin.Int) The job was cancelled directly by the app, either by calling [JobScheduler.cancel(int)](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancel(kotlin.Int)), [JobScheduler.cancelAll()](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelAll()), or by scheduling a new job with the same job ID. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CONSTRAINT_BATTERY_NOT_LOW](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CONSTRAINT_BATTERY_NOT_LOW:kotlin.Int) The requested battery-not-low constraint is no longer satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CONSTRAINT_CHARGING](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CONSTRAINT_CHARGING:kotlin.Int) The requested charging constraint is no longer satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CONSTRAINT_CONNECTIVITY](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CONSTRAINT_CONNECTIVITY:kotlin.Int) The requested connectivity constraint is no longer satisfied. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CONSTRAINT_DEVICE_IDLE](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CONSTRAINT_DEVICE_IDLE:kotlin.Int) The requested idle constraint is no longer satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_CONSTRAINT_STORAGE_NOT_LOW](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_CONSTRAINT_STORAGE_NOT_LOW:kotlin.Int) The requested storage-not-low constraint is no longer satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_DEVICE_STATE](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_DEVICE_STATE:kotlin.Int) The device state (eg. Doze, battery saver, memory usage, etc) requires JobScheduler stop this job. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_ESTIMATED_APP_LAUNCH_TIME_CHANGED](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_ESTIMATED_APP_LAUNCH_TIME_CHANGED:kotlin.Int) The system's estimate of when the app will be launched changed significantly enough to decide this job shouldn't be running right now. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_PREEMPT](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_PREEMPT:kotlin.Int) The job was stopped to run a higher priority job of the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_QUOTA](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_QUOTA:kotlin.Int) The app has consumed all of its current quota. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_SYSTEM_PROCESSING](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_SYSTEM_PROCESSING:kotlin.Int) The system is doing some processing that requires stopping this job. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_TIMEOUT](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_TIMEOUT:kotlin.Int) The job used up its maximum execution time and timed out. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_TIMEOUT_ABANDONED](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_TIMEOUT_ABANDONED:kotlin.Int) The job used up its maximum execution time and timed out. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_UNDEFINED](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_UNDEFINED:kotlin.Int) There is no reason the job is stopped. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_REASON_USER](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_USER:kotlin.Int) The user stopped the job. |
 
@@ -46,18 +53,23 @@ Contains the parameters used to configure/identify your job. You do not create t
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [completeWork](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#completeWork(android.app.job.JobWorkItem))`(`work:` ` [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem)`)` Report the completion of executing a [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem) previously returned by [dequeueWork()](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#dequeueWork()). |
 | open [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem)? | [dequeueWork](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#dequeueWork())`()` Dequeue the next pending [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem) from these JobParameters associated with their currently running job. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#describeContents())`()` <br /> |
+| --- | --- |
 | open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)? | [getClipData](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getClipData())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClipGrantFlags](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getClipGrantFlags())`()` <br /> |
 | open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getExtras())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJobId](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getJobId())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getJobNamespace](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getJobNamespace())`()` Get the namespace this job was placed in. |
 | open [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)? | [getNetwork](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getNetwork())`()` Return the network that should be used to perform any network requests for this job. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStopReason](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getStopReason())`()` Returns the reason [JobService.onStopJob(JobParameters)](https://developer.android.com/reference/kotlin/android/app/job/JobService#onStopJob(android.app.job.JobParameters))was called on this job. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getTransientExtras](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getTransientExtras())`()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getTriggeredContentAuthorities](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getTriggeredContentAuthorities())`()` For jobs with [android.app.job.JobInfo.Builder#addTriggerContentUri](https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#addTriggerContentUri(android.app.job.JobInfo.TriggerContentUri))set, this reports which content authorities have triggered the job. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>? | [getTriggeredContentUris](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#getTriggeredContentUris())`()` For jobs with [android.app.job.JobInfo.Builder#addTriggerContentUri](https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#addTriggerContentUri(android.app.job.JobInfo.TriggerContentUri))set, this reports which URIs have triggered the job. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExpeditedJob](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#isExpeditedJob())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOverrideDeadlineExpired](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#isOverrideDeadlineExpired())`()` For jobs with [android.app.job.JobInfo.Builder#setOverrideDeadline(long)](https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setOverrideDeadline(kotlin.Long))set, this provides an easy way to tell whether the job is being executed due to the deadline expiring. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserInitiatedJob](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#isUserInitiatedJob())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

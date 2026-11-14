@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PhysicalChannelConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/PhysicalChannelConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class PhysicalChannelConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.PhysicalChannelConfig](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#) |
 
 ## Summary
@@ -20,12 +22,15 @@ class PhysicalChannelConfig : Parcelable
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#BAND_UNKNOWN:kotlin.Int) The band is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CELL_BANDWIDTH_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#CELL_BANDWIDTH_UNKNOWN:kotlin.Int) Cell bandwidth is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_NUMBER_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#CHANNEL_NUMBER_UNKNOWN:kotlin.Int) Channel number is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_PRIMARY_SERVING](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#CONNECTION_PRIMARY_SERVING:kotlin.Int) UE has connection to cell for signalling and possibly data (3GPP 36.331, 25.331). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_SECONDARY_SERVING](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#CONNECTION_SECONDARY_SERVING:kotlin.Int) UE has connection to cell for data (3GPP 36.331, 25.331). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#CONNECTION_UNKNOWN:kotlin.Int) Connection status is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FREQUENCY_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#FREQUENCY_UNKNOWN:kotlin.Int) The frequency is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHYSICAL_CELL_ID_MAXIMUM_VALUE](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#PHYSICAL_CELL_ID_MAXIMUM_VALUE:kotlin.Int) Physical Cell Id's maximum value is 1007. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHYSICAL_CELL_ID_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#PHYSICAL_CELL_ID_UNKNOWN:kotlin.Int) Physical Cell Id is unknown. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,18 +41,23 @@ class PhysicalChannelConfig : Parcelable
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBand](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getBand())`()` The valid bands are [AccessNetworkConstants.GeranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.GeranBand), [AccessNetworkConstants.UtranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.UtranBand), [AccessNetworkConstants.EutranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.EutranBand) and [AccessNetworkConstants.NgranBands](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.NgranBands). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCellBandwidthDownlinkKhz](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getCellBandwidthDownlinkKhz())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCellBandwidthUplinkKhz](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getCellBandwidthUplinkKhz())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionStatus](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getConnectionStatus())`()` Gets the connection status of the cell. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDownlinkChannelNumber](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getDownlinkChannelNumber())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDownlinkFrequencyKhz](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getDownlinkFrequencyKhz())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getNetworkType())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhysicalCellId](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getPhysicalCellId())`()` The physical cell ID which differentiates cells using the same radio channel. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUplinkChannelNumber](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getUplinkChannelNumber())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUplinkFrequencyKhz](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#getUplinkFrequencyKhz())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

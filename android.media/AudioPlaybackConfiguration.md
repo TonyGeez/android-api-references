@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AudioPlaybackConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioPlaybackConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioPlaybackConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioPlaybackConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#) |
 
 The AudioPlaybackConfiguration class collects the information describing an audio playback session.
@@ -26,9 +28,11 @@ The AudioPlaybackConfiguration class collects the information describing an audi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes)! | [getAudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#getAudioAttributes())`()` Return the [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) of the corresponding player. |
+| --- | --- |
 | [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)? | [getAudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#getAudioDeviceInfo())`()` Returns information about the [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) used for this playback. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

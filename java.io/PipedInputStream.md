@@ -9,6 +9,7 @@ open class PipedInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.PipedInputStream](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#) |
 
@@ -32,6 +33,7 @@ A piped input stream should be connected to a piped output stream; the piped inp
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#available())`()` Returns the number of bytes that can be read from this input stream without blocking. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#close())`()` Closes this piped input stream and releases any system resources associated with the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#connect(java.io.PipedOutputStream))`(`src:` ` [PipedOutputStream](https://developer.android.com/reference/kotlin/java/io/PipedOutputStream)!`)` Causes this piped input stream to be connected to the piped output stream`src`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#read())`()` Reads the next byte of data from this piped input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from this piped input stream into an array of bytes. |
 
@@ -48,6 +50,7 @@ A piped input stream should be connected to a piped output stream; the piped inp
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buffer](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#buffer:kotlin.ByteArray) The circular buffer into which incoming data is placed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [in](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#in:kotlin.Int) The index of the position in the circular buffer at which the next byte of data will be stored when received from the connected piped output stream. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [out](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#out:kotlin.Int) The index of the position in the circular buffer at which the next byte of data will be read by this piped input stream. |
+| --- | --- |
 
 ## Constants
 
@@ -169,6 +172,7 @@ Closes this piped input stream and releases any system resources associated with
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### connect
 
@@ -240,6 +244,7 @@ Reads up to`len`bytes of data from this piped input stream into an array of byte
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -250,9 +255,11 @@ Reads up to`len`bytes of data from this piped input stream into an array of byte
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
 | `java.io.IOException` | if the pipe is [`broken`](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#BROKEN), [unconnected](https://developer.android.com/reference/kotlin/java/io/PipedInputStream#connect(java.io.PipedOutputStream)), closed, or if an I/O error occurs. |
+| --- | --- |
 
 ## Protected methods
 

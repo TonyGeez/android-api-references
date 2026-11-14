@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # ActiveProcessingPicture
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/ActiveProcessingPicture "View this page in Java") 
+| --- | --- |
 
 ```
 class ActiveProcessingPicture : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.ActiveProcessingPicture](https://developer.android.com/reference/kotlin/android/media/quality/ActiveProcessingPicture#) |
 
 Active picture represents an image or video undergoing picture processing which uses a picture profile. The picture profile is used to configure the picture processing parameters.
@@ -30,6 +32,7 @@ Active picture represents an image or video undergoing picture processing which 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/quality/ActiveProcessingPicture#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/quality/ActiveProcessingPicture#getId())`()` An ID that uniquely identifies the active content. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getProfileId](https://developer.android.com/reference/kotlin/android/media/quality/ActiveProcessingPicture#getProfileId())`()` The ID of the picture profile used to configure the content. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/quality/ActiveProcessingPicture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

@@ -9,9 +9,11 @@ abstract class Reference<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ref.Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#) |
 
 | Known Direct Subclasses [PhantomReference](https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference), [SoftReference](https://developer.android.com/reference/kotlin/java/lang/ref/SoftReference), [WeakReference](https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference) |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [PhantomReference](https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference) | Phantom reference objects, which are enqueued after the collector determines that their referents may otherwise be reclaimed. | | [SoftReference](https://developer.android.com/reference/kotlin/java/lang/ref/SoftReference) | Soft reference objects, which are cleared at the discretion of the garbage collector in response to memory demand. | | [WeakReference](https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference) | Weak reference objects, which do not prevent their referents from being made finalizable, finalized, and then reclaimed. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract base class for reference objects. This class defines the operations common to all reference objects. Because reference objects are implemented in close cooperation with the garbage collector, this class may not be subclassed directly.
 
@@ -22,9 +24,11 @@ Abstract base class for reference objects. This class defines the operations com
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#clear())`()` Clears this reference object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enqueue](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#enqueue())`()` Adds this reference object to the queue with which it is registered, if any. |
 | openT? | [get](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#get())`()` Returns this reference object's referent. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnqueued](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#isEnqueued())`()` Tests if this reference object is in its associated queue, if any. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reachabilityFence](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#reachabilityFence(kotlin.Any))`(`ref:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Ensures that the object referenced by the given reference remains [*strongly reachable*](https://developer.android.com/reference/kotlin/java/lang/ref/package-summary#reachability), regardless of any prior actions of the program that might otherwise cause the object to become unreachable; thus, the referenced object is not reclaimable by garbage collection at least until after the invocation of this method. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refersTo](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#refersTo(java.lang.ref.Reference.T))`(`obj:` `T`)` Tests if the referent of this reference object is`obj`. |
+| --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

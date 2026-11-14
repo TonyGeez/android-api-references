@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PixelFormat
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/PixelFormat "View this page in Java") 
+| --- | --- |
 
 ```
 open class PixelFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.PixelFormat](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#) |
 
 ## Summary
@@ -20,21 +22,27 @@ open class PixelFormat
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A_8](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#A_8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#JPEG:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LA_88](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#LA_88:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L_8](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#L_8:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPAQUE](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#OPAQUE:kotlin.Int) System chooses an opaque format (no alpha bits required) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBA_1010102](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_1010102:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBA_4444](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_4444:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBA_5551](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_5551:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_8888:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBA_F16](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_F16:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGBX_8888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBX_8888:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_332](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGB_332:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_565](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGB_565:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGB_888:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSLUCENT](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#TRANSLUCENT:kotlin.Int) System chooses a format that supports translucency (many alpha bits) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPARENT](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#TRANSPARENT:kotlin.Int) System chooses a format that supports transparency (at least 1 alpha bit) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#UNKNOWN:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCbCr_420_SP](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#YCbCr_420_SP:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCbCr_422_I](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#YCbCr_422_I:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCbCr_422_SP](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#YCbCr_422_SP:kotlin.Int) <br /> |
 

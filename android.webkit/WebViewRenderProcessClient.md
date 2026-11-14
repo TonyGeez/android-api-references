@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # WebViewRenderProcessClient
 
 Kotlin | [Java](https://developer.android.com/reference/android/webkit/WebViewRenderProcessClient "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebViewRenderProcessClient
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebViewRenderProcessClient](https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient#) |
 
 Used to receive callbacks on [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView) renderer events. WebViewRenderProcessClient instances may be set or retrieved via [android.webkit.WebView#setWebViewRenderProcessClient(android.webkit.WebViewRenderProcessClient)](https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebViewRenderProcessClient(android.webkit.WebViewRenderProcessClient)) and [android.webkit.WebView#getWebViewRenderProcessClient()](https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcessClient()). Instances may be attached to multiple WebViews, and thus a single renderer event may cause a callback to be called multiple times with different WebView parameters.

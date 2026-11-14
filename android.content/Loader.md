@@ -6,17 +6,21 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # Loader
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/Loader "View this page in Java") 
+| --- | --- |
 
 ```
 open class Loader<D : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.Loader](https://developer.android.com/reference/kotlin/android/content/Loader#) |
 
 | Known Direct Subclasses [AsyncTaskLoader](https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader) |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------| | [AsyncTaskLoader](https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader) | Abstract Loader that provides an [AsyncTask](https://developer.android.com/reference/kotlin/android/os/AsyncTask.html#) to do the work. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [CursorLoader](https://developer.android.com/reference/kotlin/android/content/CursorLoader) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CursorLoader](https://developer.android.com/reference/kotlin/android/content/CursorLoader) | A loader that queries the [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver) and returns a [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
 |
@@ -41,6 +45,7 @@ Most implementations should not derive directly from this class, but instead inh
 | | [ForceLoadContentObserver](https://developer.android.com/reference/kotlin/android/content/Loader.ForceLoadContentObserver) An implementation of a ContentObserver that takes care of connecting it to the Loader to have the loader re-load its data when the observer is told it has changed. |
 | abstract | [OnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCanceledListener) Interface that is implemented to discover when a Loader has been canceled before it finished loading its data. |
 | abstract | [OnLoadCompleteListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCompleteListener) Interface that is implemented to discover when a Loader has finished loading its data. |
+| --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -51,36 +56,46 @@ Most implementations should not derive directly from this class, but instead inh
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abandon](https://developer.android.com/reference/kotlin/android/content/Loader#abandon())`()` This function will normally be called for you automatically by [android.app.LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager.html#) when restarting a Loader. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancelLoad](https://developer.android.com/reference/kotlin/android/content/Loader#cancelLoad())`()` Attempt to cancel the current load task. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitContentChanged](https://developer.android.com/reference/kotlin/android/content/Loader#commitContentChanged())`()` Commit that you have actually fully processed a content change that was returned by [takeContentChanged](https://developer.android.com/reference/kotlin/android/content/Loader#takeContentChanged()). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dataToString](https://developer.android.com/reference/kotlin/android/content/Loader#dataToString(android.content.Loader.ForceLoadContentObserver.D))`(`data:` `D`)` For debugging, converts an instance of the Loader's data class to a string that can be printed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deliverCancellation](https://developer.android.com/reference/kotlin/android/content/Loader#deliverCancellation())`()` Informs the registered [OnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCanceledListener) that the load has been canceled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deliverResult](https://developer.android.com/reference/kotlin/android/content/Loader#deliverResult(android.content.Loader.ForceLoadContentObserver.D))`(`data:` `D`)` Sends the result of the load to the registered listener. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/content/Loader#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`, `writer:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Print the Loader's state into the given stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forceLoad](https://developer.android.com/reference/kotlin/android/content/Loader#forceLoad())`()` Force an asynchronous load. |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context)! | [getContext](https://developer.android.com/reference/kotlin/android/content/Loader#getContext())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/content/Loader#getId())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbandoned](https://developer.android.com/reference/kotlin/android/content/Loader#isAbandoned())`()` Return whether this loader has been abandoned. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReset](https://developer.android.com/reference/kotlin/android/content/Loader#isReset())`()` Return whether this load has been reset. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](https://developer.android.com/reference/kotlin/android/content/Loader#isStarted())`()` Return whether this load has been started. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onContentChanged](https://developer.android.com/reference/kotlin/android/content/Loader#onContentChanged())`()` Called when [ForceLoadContentObserver](https://developer.android.com/reference/kotlin/android/content/Loader.ForceLoadContentObserver) detects a change. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/content/Loader#registerListener(kotlin.Int,%20android.content.Loader.OnLoadCompleteListener))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `listener:` ` [Loader.OnLoadCompleteListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCompleteListener)<D>!`)` Registers a class that will receive callbacks when a load is complete. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerOnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader#registerOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener))`(`listener:` ` [Loader.OnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCanceledListener)<D>!`)` Registers a listener that will receive callbacks when a load is canceled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/content/Loader#reset())`()` This function will normally be called for you automatically by [android.app.LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager.html#) when destroying a Loader. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rollbackContentChanged](https://developer.android.com/reference/kotlin/android/content/Loader#rollbackContentChanged())`()` Report that you have abandoned the processing of a content change that was returned by [takeContentChanged()](https://developer.android.com/reference/kotlin/android/content/Loader#takeContentChanged())and would like to rollback to the state where there is again a pending content change. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startLoading](https://developer.android.com/reference/kotlin/android/content/Loader#startLoading())`()` This function will normally be called for you automatically by [android.app.LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager.html#) when the associated fragment/activity is being started. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopLoading](https://developer.android.com/reference/kotlin/android/content/Loader#stopLoading())`()` This function will normally be called for you automatically by [android.app.LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager.html#) when the associated fragment/activity is being stopped. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [takeContentChanged](https://developer.android.com/reference/kotlin/android/content/Loader#takeContentChanged())`()` Take the current flag indicating whether the loader's content had changed while it was stopped. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/Loader#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](https://developer.android.com/reference/kotlin/android/content/Loader#unregisterListener(android.content.Loader.OnLoadCompleteListener))`(`listener:` ` [Loader.OnLoadCompleteListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCompleteListener)<D>!`)` Remove a listener that was previously added with [registerListener](https://developer.android.com/reference/kotlin/android/content/Loader#registerListener(kotlin.Int,%20android.content.Loader.OnLoadCompleteListener)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterOnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader#unregisterOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener))`(`listener:` ` [Loader.OnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader.OnLoadCanceledListener)<D>!`)` Unregisters a listener that was previously added with [registerOnLoadCanceledListener](https://developer.android.com/reference/kotlin/android/content/Loader#registerOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener)). |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAbandon](https://developer.android.com/reference/kotlin/android/content/Loader#onAbandon())`()` Subclasses implement this to take care of being abandoned. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCancelLoad](https://developer.android.com/reference/kotlin/android/content/Loader#onCancelLoad())`()` Subclasses must implement this to take care of requests to [cancelLoad()](https://developer.android.com/reference/kotlin/android/content/Loader#cancelLoad()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onForceLoad](https://developer.android.com/reference/kotlin/android/content/Loader#onForceLoad())`()` Subclasses must implement this to take care of requests to [forceLoad()](https://developer.android.com/reference/kotlin/android/content/Loader#forceLoad()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReset](https://developer.android.com/reference/kotlin/android/content/Loader#onReset())`()` Subclasses must implement this to take care of resetting their loader, as per [reset()](https://developer.android.com/reference/kotlin/android/content/Loader#reset()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartLoading](https://developer.android.com/reference/kotlin/android/content/Loader#onStartLoading())`()` Subclasses must implement this to take care of loading their data, as per [startLoading()](https://developer.android.com/reference/kotlin/android/content/Loader#startLoading()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopLoading](https://developer.android.com/reference/kotlin/android/content/Loader#onStopLoading())`()` Subclasses must implement this to take care of stopping their loader, as per [stopLoading()](https://developer.android.com/reference/kotlin/android/content/Loader#stopLoading()). |
+| --- | --- |
 
 ## Public constructors
 
@@ -207,6 +222,7 @@ Print the Loader's state into the given stream.
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Text to print at the front of each line. |
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!:The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!:A PrintWriter to which the dump is to be set. |
+| --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Additional arguments to the dump request. |
 
 ### forceLoad

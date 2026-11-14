@@ -4,12 +4,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # BluetoothHealthAppConfiguration
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothHealthAppConfiguration "View this page in Java")
+| --- | --- |
 
 ```
 class BluetoothHealthAppConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#) |
 
 | **This class was deprecated in API level 29.**
@@ -29,6 +31,7 @@ The Bluetooth Health Application Configuration that is used in conjunction with 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#getDataType()()` Return the data type associated with this application configuration. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#getName()()` Return the name of the application configuration. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#getRole()()` Return the role associated with this application configuration. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

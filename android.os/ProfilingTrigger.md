@@ -7,6 +7,7 @@ class ProfilingTrigger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ProfilingTrigger](https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#) |
 
 Encapsulates a single profiling trigger.
@@ -22,15 +23,19 @@ Encapsulates a single profiling trigger.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_ANOMALY:kotlin.Int` Trigger occurs when the system detects an anomalous behavior by the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_ANR:kotlin.Int` Trigger occurs after an ANR has been identified, but before the system would attempt to kill the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_APP_COMPAT:kotlin.Int` Trigger occurs when the system detects an anomalous behavior by the app which will become unsupported in future Android versions. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_APP_FULLY_DRAWN:kotlin.Int` Trigger occurs after `https://developer.android.com/reference/kotlin/android/app/Activity.html#reportFullyDrawn()` is called for a cold start. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_APP_REQUEST_RUNNING_TRACE:kotlin.Int` Trigger occurs when an app requests the actively running trace by calling `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestRunningSystemTrace(kotlin.String)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_COLD_START:kotlin.Int` Trigger occurs as early as possible when an app cold starts. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_KILL_EXCESSIVE_CPU_USAGE:kotlin.Int` Trigger occurs when an app is killed due to excessive CPU usage with an `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo.html#getReason()` of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo.html#REASON_EXCESSIVE_RESOURCE_USAGE:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_KILL_FORCE_STOP:kotlin.Int` Trigger occurs when an app is killed due to the user clicking the "Force stop" button of the App info page in Settings. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_KILL_RECENTS:kotlin.Int` Trigger occurs when an app is killed due to the user removing it in the [Recents screen](https://developer.android.com/guide/components/activities/recents). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_KILL_TASK_MANAGER:kotlin.Int` Trigger occurs when an app is killed due to the user clicking the "Stop" button for the application in [Task Manager](https://developer.android.com/develop/background-work/services/fgs/handle-user-stopping). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_NONE:kotlin.Int` No trigger. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_OOM:kotlin.Int` Trigger occurs when an app has an Out Of Memory Exception. |
+| --- | --- |
 
 | Public methods ||
 |---|---|

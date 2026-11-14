@@ -5,15 +5,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # AppSearchException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/exceptions/AppSearchException "View this page in Java") 
+| --- | --- |
 
 ```
 open class AppSearchException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.app.appsearch.exceptions.AppSearchException](https://developer.android.com/reference/kotlin/android/app/appsearch/exceptions/AppSearchException#) |
+| --- | --- | --- | --- |
 
 An exception thrown by [android.app.appsearch.AppSearchSession](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#) or a subcomponent.
 
@@ -83,6 +86,7 @@ Initializes an [AppSearchException](https://developer.android.com/reference/kotl
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of the constants documented in [AppSearchResult.getResultCode](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#getResultCode()). Value is [android.app.appsearch.AppSearchResult#RESULT_OK](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_OK:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_UNKNOWN_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_UNKNOWN_ERROR:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_INTERNAL_ERROR:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_INVALID_ARGUMENT](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_INVALID_ARGUMENT:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_IO_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_IO_ERROR:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_OUT_OF_SPACE](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_OUT_OF_SPACE:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_NOT_FOUND](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_NOT_FOUND:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_INVALID_SCHEMA](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_INVALID_SCHEMA:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_SECURITY_ERROR](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_SECURITY_ERROR:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_DENIED](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_DENIED:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_RATE_LIMITED](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_RATE_LIMITED:kotlin.Int), [android.app.appsearch.AppSearchResult#RESULT_ALREADY_EXISTS](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult.html#RESULT_ALREADY_EXISTS:kotlin.Int), android.app.appsearch.AppSearchResult.RESULT_ABORTED, or android.app.appsearch.AppSearchResult.RESULT_UNAVAILABLE |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The detail message (which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method). This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:The cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| --- | --- |
 
 ## Public methods
 

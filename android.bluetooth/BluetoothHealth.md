@@ -4,12 +4,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # BluetoothHealth
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothHealth "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothHealth : BluetoothProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothHealth](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#) |
 
 | **This class was deprecated in API level 29.**
@@ -36,15 +38,19 @@ How to connect to a health device which is acting in the source role.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APP_CONFIG_REGISTRATION_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#APP_CONFIG_REGISTRATION_FAILURE:kotlin.Int) Health App Configuration registration failure |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APP_CONFIG_REGISTRATION_SUCCESS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#APP_CONFIG_REGISTRATION_SUCCESS:kotlin.Int) Health App Configuration registration success |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APP_CONFIG_UNREGISTRATION_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#APP_CONFIG_UNREGISTRATION_FAILURE:kotlin.Int) Health App Configuration un-registration failure |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APP_CONFIG_UNREGISTRATION_SUCCESS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#APP_CONFIG_UNREGISTRATION_SUCCESS:kotlin.Int) Health App Configuration un-registration success |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_TYPE_RELIABLE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#CHANNEL_TYPE_RELIABLE:kotlin.Int) Health Profile - Channel Type used - Reliable |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_TYPE_STREAMING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#CHANNEL_TYPE_STREAMING:kotlin.Int) Health Profile - Channel Type used - Streaming |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SINK_ROLE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#SINK_ROLE:kotlin.Int) Health Profile Sink Role the device talking to the health device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_ROLE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#SOURCE_ROLE:kotlin.Int) Health Profile Source Role - the health device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CHANNEL_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#STATE_CHANNEL_CONNECTED:kotlin.Int) Health Channel Connection State - Connected |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CHANNEL_CONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#STATE_CHANNEL_CONNECTING:kotlin.Int) Health Channel Connection State - Connecting |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CHANNEL_DISCONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#STATE_CHANNEL_DISCONNECTED:kotlin.Int) Health Channel Connection State - Disconnected |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CHANNEL_DISCONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#STATE_CHANNEL_DISCONNECTING:kotlin.Int) Health Channel Connection State - Disconnecting |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -55,9 +61,11 @@ How to connect to a health device which is acting in the source role.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [connectChannelToSource](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#connectChannelToSource(android.bluetooth.BluetoothDevice,%20android.bluetooth.BluetoothHealthAppConfiguration))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!`, `config:` ` [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!`)` Connect to a health device which has the [SOURCE_ROLE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#SOURCE_ROLE:kotlin.Int). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disconnectChannel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#disconnectChannel(android.bluetooth.BluetoothDevice,%20android.bluetooth.BluetoothHealthAppConfiguration,%20kotlin.Int))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!`, `config:` ` [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!`, `channelId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Disconnect a connected health channel. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | [getConnectedDevices](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#getConnectedDevices())`()` Get connected devices for the health profile. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionState](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#getConnectionState(android.bluetooth.BluetoothDevice))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!`)` Get the current connection state of the profile. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | [getDevicesMatchingConnectionStates](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#getDevicesMatchingConnectionStates(kotlin.IntArray))`(`states:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Get a list of devices that match any of the given connection states. |
 | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)! | [getMainChannelFd](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#getMainChannelFd(android.bluetooth.BluetoothDevice,%20android.bluetooth.BluetoothHealthAppConfiguration))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!`, `config:` ` [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!`)` Get the file descriptor of the main channel associated with the remote device and application configuration. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerSinkAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#registerSinkAppConfiguration(kotlin.String,%20kotlin.Int,%20android.bluetooth.BluetoothHealthCallback))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dataType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `callback:` ` [BluetoothHealthCallback](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthCallback)!`)` Register an application configuration that acts as a Health SINK. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#unregisterAppConfiguration(android.bluetooth.BluetoothHealthAppConfiguration))`(`config:` ` [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!`)` Unregister an application configuration that has been registered using [registerSinkAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#registerSinkAppConfiguration(kotlin.String,%20kotlin.Int,%20android.bluetooth.BluetoothHealthCallback)) For apps targeting [Build.VERSION_CODES.R](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int) or lower, this requires the [Manifest.permission.BLUETOOTH](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String) permission which can be gained with a simple `<uses-permission>` manifest tag. |
 
@@ -284,6 +292,7 @@ Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.andro
 | `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote Bluetooth device. |
 | `config` | [BluetoothHealthAppConfiguration](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration)!: The application configuration which has been registered using [registerSinkAppConfiguration(java.lang.String,int,android.bluetooth.BluetoothHealthCallback)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth#registerSinkAppConfiguration(kotlin.String,%20kotlin.Int,%20android.bluetooth.BluetoothHealthCallback)) |
 | `channelId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The channel id associated with the channel |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -417,6 +426,7 @@ Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.andro
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The friendly name associated with the application or configuration. |
 | `dataType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The dataType of the Source role of Health Profile to which the sink wants to connect to. |
 | `callback` | [BluetoothHealthCallback](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthCallback)!: A callback to indicate success or failure of the registration and all operations done on this application configuration. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------|

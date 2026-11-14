@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pUsdBasedServiceResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse "View this page in Java")
+| --- | --- |
 
 ```
 class WifiP2pUsdBasedServiceResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#) |
 
 A class for a response for USD based service discovery. For the details of the configuration, refer Wi-Fi Alliance Wi-Fi Direct R2 specification - Appendix H - Unsynchronized Service Discovery (as defined in Wi-Fi Aware) and section 4.2.13 USD frame format.
@@ -24,6 +26,7 @@ A class for a response for USD based service discovery. For the details of the c
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#describeContents()()` Implement the Parcelable interface |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#getServiceProtocolType()()` Get the service protocol type provided by the peer device in the USD service response. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#getServiceSpecificInfo()()` Get the service specific information provided by the peer device in the USD service response. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#toString()()` Generates a string of all the defined elements. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
 

@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ContentObservable
 
 Kotlin | [Java](https://developer.android.com/reference/android/database/ContentObservable "View this page in Java")
+| --- | --- |
 
 ```
 open class ContentObservable : Observable<ContentObserver!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.database.Observable](https://developer.android.com/reference/kotlin/android/database/Observable)\< [android.database.ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver)\> ||
 | | ↳ | [android.database.ContentObservable](https://developer.android.com/reference/kotlin/android/database/ContentObservable#) |
 
@@ -25,6 +27,7 @@ A specialization of `https://developer.android.com/reference/kotlin/android/data
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObservable#dispatchChange(kotlin.Boolean)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Invokes `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean)` on each observer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObservable#dispatchChange(kotlin.Boolean,%20android.net.Uri)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Invokes `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean,%20android.net.Uri)` on each observer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObservable#notifyChange(kotlin.Boolean)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Invokes android. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObservable#registerObserver(android.database.ContentObserver)(observer: https://developer.android.com/reference/kotlin/android/database/ContentObserver!)` Adds an observer to the list. |
 
 | Inherited functions ||

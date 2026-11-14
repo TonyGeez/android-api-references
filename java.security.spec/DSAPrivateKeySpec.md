@@ -9,6 +9,7 @@ open class DSAPrivateKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.DSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#) |
 
 This class specifies a DSA private key with its associated parameters.
@@ -24,6 +25,7 @@ This class specifies a DSA private key with its associated parameters.
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getG())`()` Returns the base`g`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getP())`()` Returns the prime`p`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getQ())`()` Returns the sub-prime`q`. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getX](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getX())`()` Returns the private key`x`. |
 
 ## Public constructors
@@ -47,6 +49,7 @@ Creates a new DSAPrivateKeySpec with the specified parameter values.
 | `x` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private key. |
 | `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
 | `q` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the sub-prime. |
+| --- | --- |
 | `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base. |
 
 ## Public methods

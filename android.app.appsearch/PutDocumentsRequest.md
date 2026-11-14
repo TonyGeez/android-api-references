@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PutDocumentsRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class PutDocumentsRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.PutDocumentsRequest](https://developer.android.com/reference/kotlin/android/app/appsearch/PutDocumentsRequest#) |
 
 Encapsulates a request to index documents into an [AppSearchSession](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession) database.

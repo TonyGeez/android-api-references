@@ -9,10 +9,12 @@ class MinguoEra : Era
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.chrono.MinguoEra](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#)\> ||
 | | ↳ | [java.time.chrono.MinguoEra](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#) |
 
 | Known Direct Subclasses [MinguoEra.BEFORE_ROC](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#ENUM_VALUE:BEFORE_ROC), [MinguoEra.ROC](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#ENUM_VALUE:ROC) |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [MinguoEra.BEFORE_ROC](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#ENUM_VALUE:BEFORE_ROC) | The singleton instance for the era before the current one, 'Before Republic of China Era', which has the numeric value 0. | | [MinguoEra.ROC](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#ENUM_VALUE:ROC) | The singleton instance for the current era, 'Republic of China Era', which has the numeric value 1. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An era in the Minguo calendar system.
 
@@ -23,6 +25,7 @@ The Minguo calendar system has two eras. The current era, for years from 1 onwar
 | 2 | ROC | 2 | 1913 |
 | 1 | ROC | 1 | 1912 |
 | 1 | BEFORE_ROC | 0 | 1911 |
+| --- | --- | --- | --- |
 | 2 | BEFORE_ROC | -1 | 1910 |
 
 **Do not use`ordinal()`to obtain the numeric representation of`MinguoEra`. Use`getValue()`instead.**
@@ -39,6 +42,7 @@ The Minguo calendar system has two eras. The current era, for years from 1 onwar
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#getDisplayName(java.time.format.TextStyle,%20java.util.Locale))`(`style:` ` [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle.html#)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the textual representation of this era. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#getValue())`()` Gets the numeric era`int`value. |
 | static [MinguoEra](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoEra#of(kotlin.Int))`(`minguoEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`MinguoEra`from an`int`value. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -7,6 +7,7 @@ open class JarFile : ZipFile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.zip.ZipFile](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#) ||
 | | ↳ | [java.util.jar.JarFile](https://developer.android.com/reference/kotlin/java/util/jar/JarFile#) |
 
@@ -37,9 +38,11 @@ Unless otherwise noted, passing a null argument to a constructor or method in th
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#entries()()` Returns an enumeration of the zip file entries. |
 | open [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `ZipEntry` for the given entry name or `null` if not found. |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getInputStream(java.util.zip.ZipEntry)(ze: https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#!)` Returns an input stream for reading the contents of the specified zip file entry. |
+| --- | --- |
 | open [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getJarEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `JarEntry` for the given entry name or `null` if not found. |
 | open [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getManifest()()` Returns the jar file manifest, or `null` if none. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#stream()()` Returns an ordered `Stream` over the ZIP file entries. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -114,18 +117,21 @@ JarFile(
 ```
 
 Creates a new `JarFile` to read from the specified `File` object in the specified mode. The mode argument must be either OPEN_READ or OPEN_READ | OPEN_DELETE.
+| --- | --- |
 
 | Parameters ||
 |---|---|
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the jar file to be opened for reading |
 | `verify` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether or not to verify the jar file if it is signed. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the mode in which the file is to be opened |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.IllegalArgumentException` | if the mode argument is invalid |
 | `java.lang.SecurityException` | if access to the file is denied by the SecurityManager |
+| --- | --- |
 
 ### JarFile
 
@@ -238,6 +244,7 @@ Returns an input stream for reading the contents of the specified zip file entry
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.IllegalStateException` | may be thrown if the jar file has been closed |
 | `java.util.zip.ZipException` | if a zip file format error has occurred |
+| --- | --- |
 | `java.lang.SecurityException` | if any of the jar file entries are incorrectly signed. |
 
 ### getJarEntry

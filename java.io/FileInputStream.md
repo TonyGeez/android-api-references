@@ -9,12 +9,15 @@ open class FileInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.FileInputStream](https://developer.android.com/reference/kotlin/java/io/FileInputStream#) |
 
 | Known Direct Subclasses [ParcelFileDescriptor.AutoCloseInputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseInputStream.html#) |--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [ParcelFileDescriptor.AutoCloseInputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseInputStream.html#) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AssetFileDescriptor.AutoCloseInputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.AutoCloseInputStream.html#) |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [AssetFileDescriptor.AutoCloseInputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.AutoCloseInputStream.html#) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A`FileInputStream`obtains input bytes from a file in a file system. What files are available depends on the host environment.
 
@@ -33,9 +36,11 @@ A`FileInputStream`obtains input bytes from a file in a file system. What files a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/FileInputStream#available())`()` Returns an estimate of the number of remaining bytes that can be read (or skipped over) from this input stream without blocking by the next invocation of a method for this input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/FileInputStream#close())`()` Closes this file input stream and releases any system resources associated with the stream. |
 | open [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#)! | [getChannel](https://developer.android.com/reference/kotlin/java/io/FileInputStream#getChannel())`()` Returns the unique [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#) object associated with this file input stream. |
+| --- | --- |
 | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor)! | [getFD](https://developer.android.com/reference/kotlin/java/io/FileInputStream#getFD())`()` Returns the`FileDescriptor`object that represents the connection to the actual file in the file system being used by this`FileInputStream`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FileInputStream#read())`()` Reads a byte of data from this input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FileInputStream#read(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads up to`b.length`bytes of data from this input stream into an array of bytes. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FileInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from this input stream into an array of bytes. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/FileInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards`n`bytes of data from the input stream. |
 
@@ -271,6 +276,7 @@ Reads up to`len`bytes of data from this input stream into an array of bytes. If`
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -281,6 +287,7 @@ Reads up to`len`bytes of data from this input stream into an array of bytes. If`
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 
 ### skip
 

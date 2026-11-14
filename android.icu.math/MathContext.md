@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # MathContext
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/math/MathContext "View this page in Java") 
+| --- | --- |
 
 ```
 class MathContext : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.math.MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#) |
 
 The`MathContext`immutable class encapsulates the settings understood by the operator methods of the [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal) class (and potentially other classes). Operator methods are those that effect an operation on a number or a pair of numbers.
@@ -39,12 +41,15 @@ The rounding mode constants have the same names and values as the constants of t
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENGINEERING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int) Standard floating point notation (with engineering exponential format, where the power of ten is a multiple of 3). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAIN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#PLAIN:kotlin.Int) Plain (fixed point) notation, without any exponent. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_CEILING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_CEILING:kotlin.Int) Rounding mode to round to a more positive number. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_DOWN:kotlin.Int) Rounding mode to round towards zero. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_FLOOR](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_FLOOR:kotlin.Int) Rounding mode to round to a more negative number. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_DOWN:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded down. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_EVEN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_EVEN:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded to the nearest even neighbor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded up. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UNNECESSARY](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UNNECESSARY:kotlin.Int) Rounding mode to assert that no rounding is necessary. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UP:kotlin.Int) Rounding mode to round away from zero. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int) Standard floating point notation (with scientific exponential format, where there is one digit before any decimal point). |
 
@@ -60,6 +65,7 @@ The rounding mode constants have the same names and values as the constants of t
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigits](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getDigits())`()` Returns the digits setting. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getForm](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getForm())`()` Returns the form setting. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLostDigits](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getLostDigits())`()` Returns the lostDigits setting. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoundingMode](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getRoundingMode())`()` Returns the roundingMode setting. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#toString())`()` Returns the`MathContext`as a readable string. |
 
@@ -293,6 +299,7 @@ Constructs a new`MathContext`with a specified precision, form, and lostDigits se
 | `setdigits` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The`int`digits setting for this`MathContext`. |
 | `setform` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The`int`form setting for this`MathContext`. |
 | `setlostdigits` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):The`boolean`lostDigits setting for this`MathContext`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -317,6 +324,7 @@ Constructs a new`MathContext`with a specified precision, form, lostDigits, and r
 | `setdigits` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The`int`digits setting for this`MathContext`. |
 | `setform` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The`int`form setting for this`MathContext`. |
 | `setlostdigits` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):The`boolean`lostDigits setting for this`MathContext`. |
+| --- | --- |
 | `setroundingmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The`int`roundingMode setting for this`MathContext`. |
 
 | Exceptions ||

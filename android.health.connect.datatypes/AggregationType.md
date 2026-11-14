@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AggregationType
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/AggregationType "View this page in Java") 
+| --- | --- |
 
 ```
 class AggregationType<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType#) |
 
 Class to represent aggregation types in [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) classes.

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # SensorEventCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorEventCallback "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SensorEventCallback : SensorEventListener2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.SensorEventCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#) |
 
 Used for receiving sensor additional information frames.
@@ -26,6 +28,7 @@ Used for receiving sensor additional information frames.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccuracyChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#onAccuracyChanged(android.hardware.Sensor,%20kotlin.Int))`(`sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the accuracy of the registered sensor has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFlushCompleted](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#onFlushCompleted(android.hardware.Sensor))`(`sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`)` Called after flush() is completed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorAdditionalInfo](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#onSensorAdditionalInfo(android.hardware.SensorAdditionalInfo))`(`info:` ` [SensorAdditionalInfo](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo)!`)` Called when a sensor additional information frame is available. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#onSensorChanged(android.hardware.SensorEvent))`(`event:` ` [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent)!`)` Called when sensor values have changed. |
 
 ## Public constructors

@@ -11,6 +11,7 @@ interface LoadStoreParameter
 | [java.security.KeyStore.LoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter#) |
 
 | Known Direct Subclasses [DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter) | Configuration data that specifies the keystores in a keystore domain. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A marker interface for`KeyStore` [load](https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter))and [store](https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter))parameters.
 

@@ -7,6 +7,7 @@ class TranslationCapability : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationCapability](https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#) |
 
 Capability class holding information for a pair of `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec`s.
@@ -20,6 +21,7 @@ Holds information and limitations on how to create a `https://developer.android.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#STATE_AVAILABLE_TO_DOWNLOAD:kotlin.Int` The translation service supports translation between the source and target specs, and it is ready to be downloaded onto the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#STATE_DOWNLOADING:kotlin.Int` The translation service supports translation between the source and target specs, and it is being downloaded onto the device currently. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#STATE_NOT_AVAILABLE:kotlin.Int` The translation service does not support translation between the source and target specs. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#STATE_ON_DEVICE:kotlin.Int` The translation service supports translation between the source and target specs, and it is downloaded and ready to use on device. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
@@ -43,9 +45,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [TranslationSpec](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#getSourceSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data specs for this capability. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#getState()()` The state of translation readiness between `mSourceSpec` and `mTargetSpec`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#getSupportedTranslationFlags()()` Translation flags for settings that are supported by the `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#` between the `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec`s provided in this capability. |
 | [TranslationSpec](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#getTargetSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target data specs for this capability. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#isUiTranslationEnabled()()` Whether ui translation for the source-target `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec`s is enabled. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

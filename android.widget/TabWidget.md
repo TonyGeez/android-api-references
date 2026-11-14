@@ -8,9 +8,11 @@ open class TabWidget : LinearLayout, View.OnFocusChangeListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.TabWidget](https://developer.android.com/reference/kotlin/android/widget/TabWidget#) |
 
 > [!CAUTION]
@@ -29,6 +31,7 @@ The container object for this widget is `https://developer.android.com/reference
 | [`android:divider`](https://developer.android.com/reference/kotlin/android/widget/TabWidget#attr_TabWidget) | Drawable used to draw the divider between tabs. |
 | [`android:tabStripEnabled`](https://developer.android.com/reference/kotlin/android/widget/TabWidget#attr_TabWidget) | Determines whether the strip under the tab indicators is drawn or not. |
 | [`android:tabStripLeft`](https://developer.android.com/reference/kotlin/android/widget/TabWidget#attr_TabWidget) | Drawable used to draw the left part of the strip underneath the tabs. |
+| --- | --- |
 | [`android:tabStripRight`](https://developer.android.com/reference/kotlin/android/widget/TabWidget#attr_TabWidget) | Drawable used to draw the right part of the strip underneath the tabs. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/LinearLayout` `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout` When set to false, prevents the layout from aligning its children's baselines. This attribute is particularly useful when the children use different values for gravity. The default value is true.
@@ -46,6 +49,7 @@ May be an integer value, such as "`100`".
 `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout` Specifies how an object should position its content, on both the X and Y axes, within its own bounds.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description bottom 50 Push object to the bottom of its container, not changing its size. center 11 Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. center_horizontal 1 Place object in the horizontal center of its container, not changing its size. center_vertical 10 Place object in the vertical center of its container, not changing its size. clip_horizontal 8 Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. clip_vertical 80 Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. end 800005 Push object to the end of its container, not changing its size. fill 77 Grow the horizontal and vertical size of the object if needed so it completely fills its container. fill_horizontal 7 Grow the horizontal size of the object if needed so it completely fills its container. fill_vertical 70 Grow the vertical size of the object if needed so it completely fills its container. left 3 Push object to the left of its container, not changing its size. right 5 Push object to the right of its container, not changing its size. start 800003 Push object to the beginning of its container, not changing its size. top 30 Push object to the top of its container, not changing its size.
 
 <br />
@@ -347,6 +351,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -463,6 +468,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -611,6 +617,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1809,24 +1816,31 @@ Don't show any dividers.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#addView(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Adds a child view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#childDrawableStateChanged(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#)` If `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addStatesFromChildren()` is true, refreshes this group's drawable state (to include the states from its children). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#focusCurrentTab(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the current tab and focuses the UI on it. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#getChildTabViewAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the tab indicator view at the given index. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#getLeftStripDrawable()()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#getRightStripDrawable()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#getTabCount()()` Returns the number of tab indicator views. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#isStripEnabled()()` Indicates whether the bottom strips on the tab indicators are drawn or not. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#onFocusChange(android.view.View,%20kotlin.Boolean)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!, hasFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the focus state of a view has changed. |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#removeAllViews()()` Call this method to remove all child views from the ViewGroup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setCurrentTab(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the current tab. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setDividerDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the drawable to use as a divider between the tab indicators. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setDividerDrawable(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawable to use as a divider between the tab indicators. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the enabled state of this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setLeftStripDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the drawable to use as the left part of the strip below the tab indicators. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setLeftStripDrawable(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawable to use as the left part of the strip below the tab indicators. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setRightStripDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the drawable to use as the right part of the strip below the tab indicators. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setRightStripDrawable(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawable to use as the right part of the strip below the tab indicators. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TabWidget#setStripEnabled(kotlin.Boolean)(stripEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether the bottom strips on the tab indicators are drawn or not. |
 
 | Protected methods ||
@@ -2750,6 +2764,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4602,6 +4617,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8730,6 +8746,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -8995,4 +9012,5 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |

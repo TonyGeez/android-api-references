@@ -8,9 +8,11 @@ class BodyTemperatureRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.BodyTemperatureRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord#) |
+| --- | --- | --- | --- |
 
 Captures the body temperature of a user. Each record represents a single instantaneous body temperature measurement.
 
@@ -29,6 +31,7 @@ Captures the body temperature of a user. Each record represents a single instant
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord#getMeasurementLocation()()` <br /> |
 | [Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord#getTemperature()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord#hashCode()()` Returns a hash code value for the object. |
 
 | Inherited functions ||
@@ -53,6 +56,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

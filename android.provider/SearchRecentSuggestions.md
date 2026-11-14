@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SearchRecentSuggestions
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/SearchRecentSuggestions "View this page in Java") 
+| --- | --- |
 
 ```
 open class SearchRecentSuggestions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.SearchRecentSuggestions](https://developer.android.com/reference/kotlin/android/provider/SearchRecentSuggestions#) |
 
 This is a utility class providing access to [android.content.SearchRecentSuggestionsProvider](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider.html#).
@@ -39,6 +41,7 @@ For a working example, see SearchSuggestionSampleProvider and SearchQueryResults
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DATE_INDEX](https://developer.android.com/reference/kotlin/android/provider/SearchRecentSuggestions#QUERIES_PROJECTION_DATE_INDEX:kotlin.Int) Index into the provided query projections. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY1_INDEX](https://developer.android.com/reference/kotlin/android/provider/SearchRecentSuggestions#QUERIES_PROJECTION_DISPLAY1_INDEX:kotlin.Int) Index into the provided query projections. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY2_INDEX](https://developer.android.com/reference/kotlin/android/provider/SearchRecentSuggestions#QUERIES_PROJECTION_DISPLAY2_INDEX:kotlin.Int) Index into the provided query projections. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_QUERY_INDEX](https://developer.android.com/reference/kotlin/android/provider/SearchRecentSuggestions#QUERIES_PROJECTION_QUERY_INDEX:kotlin.Int) Index into the provided query projections. |
 
 | Public constructors ||

@@ -11,6 +11,7 @@ interface TransferQueue<E : Any!> : BlockingQueue<E>
 | [java.util.concurrent.TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#) |
 
 | Known Direct Subclasses [LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue) |----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------| | [LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue) | An unbounded [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#) based on linked nodes. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A [BlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) in which producers may wait for consumers to receive elements. A`TransferQueue`may be useful for example in message passing applications in which producers sometimes (using method [transfer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#transfer(java.util.concurrent.TransferQueue.E))) await receipt of elements by consumers invoking`take`or`poll`, while at other times enqueue elements (via method`put`) without waiting for receipt. [Non-blocking](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#tryTransfer(java.util.concurrent.TransferQueue.E))and [time-out](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#tryTransfer(java.util.concurrent.TransferQueue.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))versions of`tryTransfer`are also available. A`TransferQueue`may also be queried, via [hasWaitingConsumer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#hasWaitingConsumer()), whether there are any threads waiting for items, which is a converse analogy to a`peek`operation.
 
@@ -25,6 +26,7 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWaitingConsumerCount](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#getWaitingConsumerCount())`()` Returns an estimate of the number of consumers waiting to receive elements via [take](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#take())or timed [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#poll(kotlin.Long,%20java.util.concurrent.TimeUnit)). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasWaitingConsumer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#hasWaitingConsumer())`()` Returns`true`if there is at least one consumer waiting to receive an element via [take](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#take())or timed [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue#poll(kotlin.Long,%20java.util.concurrent.TimeUnit)). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transfer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#transfer(java.util.concurrent.TransferQueue.E))`(`e:` `E`)` Transfers the element to a consumer, waiting if necessary to do so. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryTransfer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#tryTransfer(java.util.concurrent.TransferQueue.E))`(`e:` `E`)` Transfers the element to a waiting consumer immediately, if possible. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryTransfer](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue#tryTransfer(java.util.concurrent.TransferQueue.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Transfers the element to a consumer if it is possible to do so before the timeout elapses. |
 
@@ -84,6 +86,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case the element is not left enqueued |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
 
 ### tryTransfer
@@ -111,6 +114,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |
+| --- | --- |
 
 ### tryTransfer
 
@@ -133,6 +137,7 @@ More precisely, transfers the specified element immediately if there exists a co
 | `e` | E:the element to transfer |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -143,4 +148,5 @@ More precisely, transfers the specified element immediately if there exists a co
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case the element is not left enqueued |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this queue |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this queue |

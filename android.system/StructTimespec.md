@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # StructTimespec
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/StructTimespec "View this page in Java") 
+| --- | --- |
 
 ```
 class StructTimespec : Comparable<StructTimespec!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#) |
 
 Corresponds to C's`struct timespec`from`<time.h>`.
@@ -26,6 +28,7 @@ Corresponds to C's`struct timespec`from`<time.h>`.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/system/StructTimespec#compareTo(android.system.StructTimespec))`(`other:` ` [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#)!`)` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/system/StructTimespec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/system/StructTimespec#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructTimespec#toString())`()` <br /> |
 
 | Properties ||

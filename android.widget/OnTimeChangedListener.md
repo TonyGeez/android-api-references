@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnTimeChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/TimePicker.OnTimeChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTimeChangedListener
@@ -13,6 +14,7 @@ interface OnTimeChangedListener
 | [android.widget.TimePicker.OnTimeChangedListener](https://developer.android.com/reference/kotlin/android/widget/TimePicker.OnTimeChangedListener#) |
 
 | Known Direct Subclasses [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) | A dialog that prompts the user for the time of day using a [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The callback interface used to indicate the time has been adjusted.
 
@@ -41,3 +43,4 @@ abstract fun onTimeChanged(
 | `view` | [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker)!:The view associated with this listener. |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current hour. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current minute. |
+| --- | --- |

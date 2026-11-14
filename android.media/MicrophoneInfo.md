@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # MicrophoneInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MicrophoneInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class MicrophoneInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MicrophoneInfo](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#) |
 
 Class providing information on a microphone. It indicates the location and orientation of the microphone on the device as well as useful information like frequency response and sensitivity. It can be used by applications implementing special pre processing effects like noise suppression of beam forming that need to know about precise microphone characteristics in order to adapt their algorithms.
@@ -26,18 +28,23 @@ Class providing information on a microphone. It indicates the location and orien
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_MAPPING_DIRECT](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#CHANNEL_MAPPING_DIRECT:kotlin.Int) The channel contains raw audio from this microphone. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_MAPPING_PROCESSED](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#CHANNEL_MAPPING_PROCESSED:kotlin.Int) The channel contains processed audio from this microphone and possibly another microphone. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_BI_DIRECTIONAL](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_BI_DIRECTIONAL:kotlin.Int) Microphone directionality type: bi-directional. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_CARDIOID](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_CARDIOID:kotlin.Int) Microphone directionality type: cardioid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_HYPER_CARDIOID](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_HYPER_CARDIOID:kotlin.Int) Microphone directionality type: hyper cardioid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_OMNI](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_OMNI:kotlin.Int) Microphone directionality type: omni. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_SUPER_CARDIOID](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_SUPER_CARDIOID:kotlin.Int) Microphone directionality type: super cardioid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTIONALITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#DIRECTIONALITY_UNKNOWN:kotlin.Int) Unknown microphone directionality. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GROUP_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#GROUP_UNKNOWN:kotlin.Int) Value used for when the group of the microphone is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDEX_IN_THE_GROUP_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#INDEX_IN_THE_GROUP_UNKNOWN:kotlin.Int) Value used for when the index in the group of the microphone is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_MAINBODY](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#LOCATION_MAINBODY:kotlin.Int) A microphone that locate on main body of the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_MAINBODY_MOVABLE](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#LOCATION_MAINBODY_MOVABLE:kotlin.Int) A microphone that locate on a movable main body of the device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_PERIPHERAL](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#LOCATION_PERIPHERAL:kotlin.Int) A microphone that locate on a peripheral. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#LOCATION_UNKNOWN:kotlin.Int) A microphone that the location is unknown. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [SENSITIVITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#SENSITIVITY_UNKNOWN:kotlin.Float) Value used for when the sensitivity of the microphone is unknown. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [SPL_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#SPL_UNKNOWN:kotlin.Float) Value used for when the SPL of the microphone is unknown. |
 
 | Public methods ||
@@ -45,18 +52,23 @@ Class providing information on a microphone. It indicates the location and orien
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAddress](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getAddress())`()` Returns The "address" string of the microphone that corresponds to the address returned by [AudioDeviceInfo.getAddress()](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAddress()) |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>! | [getChannelMapping](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getChannelMapping())`()` Returns a [android.util.Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#) list for channel mapping, which indicating how this microphone is used by each channels or a capture stream. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getDescription())`()` Returns alphanumeric code that uniquely identifies the device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirectionality](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getDirectionality())`()` Returns the directionality of microphone. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>!\>! | [getFrequencyResponse](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getFrequencyResponse())`()` Returns a [android.util.Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#) list of frequency responses. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroup](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getGroup())`()` Returns A device group id that can be used to group together microphones on the same peripheral, attachments or logical groups. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getId())`()` Returns The system unique device ID that corresponds to the id returned by [AudioDeviceInfo.getId()](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getId()). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndexInTheGroup](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getIndexInTheGroup())`()` Returns unique index for device within its group. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocation](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getLocation())`()` Returns the location of the microphone. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaxSpl](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getMaxSpl())`()` Returns the level in dB of the maximum SPL supported by the device at 1000Hz. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinSpl](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getMinSpl())`()` Returns the level in dB of the minimum SPL that can be registered by the device at 1000Hz. |
 | [MicrophoneInfo.Coordinate3F](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo.Coordinate3F)! | [getOrientation](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getOrientation())`()` Returns A [Coordinate3F](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo.Coordinate3F) object that represents the orientation of microphone. |
+| --- | --- |
 | [MicrophoneInfo.Coordinate3F](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo.Coordinate3F)! | [getPosition](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getPosition())`()` Returns A [Coordinate3F](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo.Coordinate3F) object that represents the geometric location of microphone in meters. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSensitivity](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getSensitivity())`()` Returns the level in dBFS produced by a 1000Hz tone at 94 dB SPL. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo#getType())`()` Returns the device type identifier of the microphone (e.g AudioDeviceInfo.TYPE_BUILTIN_MIC). |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

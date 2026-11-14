@@ -7,6 +7,7 @@ class AudioFormat : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat#) |
 
 The `https://developer.android.com/reference/kotlin/android/media/AudioFormat#` class is used to access a number of audio format and channel configuration constants. They are for instance used in `https://developer.android.com/reference/kotlin/android/media/AudioTrack``https://developer.android.com/reference/kotlin/android/media/AudioRecord`, as valid values in individual parameters of constructors like `https://developer.android.com/reference/kotlin/android/media/AudioTrack#AudioTrack(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, where the fourth parameter is one of the `AudioFormat.ENCODING_*` constants. The `AudioFormat` constants are also used in `https://developer.android.com/reference/kotlin/android/media/MediaFormat` to specify audio related values commonly used in media, such as for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_MASK:kotlin.String`
@@ -54,12 +55,15 @@ For a channel position mask, each allowed channel position corresponds to a bit 
 The canonical channel position masks by channel count are as follows: 
 
 | channel count | channel position mask |
+| --- | --- |
 | 1 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_MONO:kotlin.Int` |
 | 2 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_STEREO:kotlin.Int` |
 | 3 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_STEREO:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_CENTER:kotlin.Int` |
+| --- | --- | --- |
 | 4 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_QUAD:kotlin.Int` |
 | 5 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_QUAD:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_CENTER:kotlin.Int` |
 | 6 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_5POINT1:kotlin.Int` |
+| --- | --- |
 | 7 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_5POINT1:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BACK_CENTER:kotlin.Int` |
 | 8 | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_7POINT1_SURROUND:kotlin.Int` |
 
@@ -122,144 +126,191 @@ For linear PCM, an audio frame consists of a set of samples captured at the same
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_HORIZONTAL:kotlin.Int` Ambisonics channel mask flag for the horizontal-only representation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_0:kotlin.Int` Ambisonics channel mask for order 0. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_0_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 0. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_1:kotlin.Int` Ambisonics channel mask for order 1. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_10:kotlin.Int` Ambisonics channel mask for order 10. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_10_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 10. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_11:kotlin.Int` Ambisonics channel mask for order 11. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_11_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 11. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_12:kotlin.Int` Ambisonics channel mask for order 12. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_12_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 12. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_13:kotlin.Int` Ambisonics channel mask for order 13. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_13_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 13. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_14:kotlin.Int` Ambisonics channel mask for order 14. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_14_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 14. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_1_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 1. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_2:kotlin.Int` Ambisonics channel mask for order 2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_2_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_3:kotlin.Int` Ambisonics channel mask for order 3. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_3_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 3. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_4:kotlin.Int` Ambisonics channel mask for order 4. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_4_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_5:kotlin.Int` Ambisonics channel mask for order 5. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_5_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 5. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_6:kotlin.Int` Ambisonics channel mask for order 6. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_6_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 6. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_7:kotlin.Int` Ambisonics channel mask for order 7. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_7_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 7. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_8:kotlin.Int` Ambisonics channel mask for order 8. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_8_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 8. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_9:kotlin.Int` Ambisonics channel mask for order 9. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_ACN_ORDER_9_HRZ:kotlin.Int` Ambisonics horizontal-only channel mask for order 9. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_CONFIGURATION_DEFAULT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_CONFIGURATION_INVALID:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_CONFIGURATION_MONO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_CONFIGURATION_STEREO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_INVALID:kotlin.Int` Invalid audio channel mask |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_BACK:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_BACK_PROCESSED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_DEFAULT:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_FRONT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_FRONT_PROCESSED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_LEFT:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_LEFT_PROCESSED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_MONO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_PRESSURE:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_RIGHT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_RIGHT_PROCESSED:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_STEREO:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_VOICE_DNLINK:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_VOICE_UPLINK:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_X_AXIS:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_Y_AXIS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_IN_Z_AXIS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_13POINT0:kotlin.Int` Output channel mask for 13. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_5POINT1:kotlin.Int` Output channel mask for 5. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_5POINT1POINT2:kotlin.Int` Output channel mask for 5. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_5POINT1POINT4:kotlin.Int` Output channel mask for 5. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_6POINT1:kotlin.Int` Output channel mask for 6. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_7POINT1:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_7POINT1POINT2:kotlin.Int` Output channel mask for 7. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_7POINT1POINT4:kotlin.Int` Output channel mask for 7. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_7POINT1_SURROUND:kotlin.Int` Output channel mask for 7. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_9POINT1POINT4:kotlin.Int` Output channel mask for 9. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_9POINT1POINT6:kotlin.Int` Output channel mask for 9. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BACK_CENTER:kotlin.Int` Back center output channel (see BC in channel diagram) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BACK_LEFT:kotlin.Int` Back left output channel (see BL in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BACK_RIGHT:kotlin.Int` Back right output channel (see BR in channel diagram) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BOTTOM_FRONT_CENTER:kotlin.Int` Bottom front center output channel (see BFC in channel diagram below FC) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BOTTOM_FRONT_LEFT:kotlin.Int` Bottom front left output channel (see BFL in channel diagram below FL) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_BOTTOM_FRONT_RIGHT:kotlin.Int` Bottom front right output channel (see BFR in channel diagram below FR) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_DEFAULT:kotlin.Int` Default audio channel mask |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_CENTER:kotlin.Int` Front center output channel (see FC in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_LEFT:kotlin.Int` Front left output channel (see FL in channel diagram) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_LEFT_OF_CENTER:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_RIGHT:kotlin.Int` Front right output channel (see FR in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_RIGHT_OF_CENTER:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_WIDE_LEFT:kotlin.Int` Front wide left output channel (see FWL in channel diagram) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_FRONT_WIDE_RIGHT:kotlin.Int` Front wide right output channel (see FWR in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_LOW_FREQUENCY:kotlin.Int` LFE "low frequency effect" channel When used in conjunction with `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_LOW_FREQUENCY_2:kotlin.Int`, it is intended to contain the left low-frequency effect signal, also referred to as "LFE1" in ITU-R BS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_LOW_FREQUENCY_2:kotlin.Int` The second LFE channel When used in conjunction with `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_LOW_FREQUENCY:kotlin.Int`, it is intended to contain the right low-frequency effect signal, also referred to as "LFE2" in ITU-R BS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_MONO:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_QUAD:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_SIDE_LEFT:kotlin.Int` Side left output channel (see SL in channel diagram) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_SIDE_RIGHT:kotlin.Int` Side right output channel (see SR in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_STEREO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_SURROUND:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_BACK_CENTER:kotlin.Int` Top back center output channel (see TBC in channel diagram above BC) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_BACK_LEFT:kotlin.Int` Top back left output channel (see TBL in channel diagram above BL) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_BACK_RIGHT:kotlin.Int` Top back right output channel (see TBR in channel diagram above BR) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_CENTER:kotlin.Int` Top center (above listener) output channel (see TC in channel diagram) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_FRONT_CENTER:kotlin.Int` Top front center output channel (see TFC in channel diagram above FC) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_FRONT_LEFT:kotlin.Int` Top front left output channel (see TFL in channel diagram above FL) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_FRONT_RIGHT:kotlin.Int` Top front right output channel (see TFR in channel diagram above FR) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_SIDE_LEFT:kotlin.Int` Top side left output channel (see TSL in channel diagram above SL) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CHANNEL_OUT_TOP_SIDE_RIGHT:kotlin.Int` Top side right output channel (see TSR in channel diagram above SR) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AAC_ELD:kotlin.Int` Audio data format: AAC ELD compressed |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AAC_HE_V1:kotlin.Int` Audio data format: AAC HE V1 compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AAC_HE_V2:kotlin.Int` Audio data format: AAC HE V2 compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AAC_LC:kotlin.Int` Audio data format: AAC LC compressed |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AAC_XHE:kotlin.Int` Audio data format: AAC xHE compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AC3:kotlin.Int` Audio data format: AC-3 compressed, also known as Dolby Digital |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AC4:kotlin.Int` Audio data format: AC-4 (levels 0-3) sync frame transport format |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_AC4_L4:kotlin.Int` Audio data format: AC-4 level 4 sync frame transport format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DEFAULT:kotlin.Int` Default audio data format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DOLBY_MAT:kotlin.Int` Audio data format: Dolby MAT (Metadata-enhanced Audio Transmission) Dolby MAT bitstreams are used to transmit Dolby TrueHD, channel-based PCM, or PCM with metadata (object audio) over HDMI (e.g. Dolby Atmos content). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DOLBY_TRUEHD:kotlin.Int` Audio data format: DOLBY TRUEHD compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DRA:kotlin.Int` Audio data format: DRA compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DSD:kotlin.Int` Audio data format: Direct Stream Digital |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS:kotlin.Int` Audio data format: DTS compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_HD:kotlin.Int` Audio data format: DTS HD compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_HD_MA:kotlin.Int` Audio data format: DTS HD Master Audio compressed DTS HD Master Audio stream is variable bit rate and contains lossless audio. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_UHD:kotlin.Int` Audio data format: DTS UHD Profile-1 compressed (aka DTS:X Profile 1) Has the same meaning and value as ENCODING_DTS_UHD_P1. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_UHD_P1:kotlin.Int` Audio data format: DTS UHD Profile-1 compressed (aka DTS:X Profile 1) Has the same meaning and value as the deprecated `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_UHD:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_DTS_UHD_P2:kotlin.Int` Audio data format: DTS UHD Profile-2 compressed DTS-UHD Profile-2 supports delivery of Channel-Based Audio, Object-Based Audio and High Order Ambisonic presentations up to the fourth order. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_E_AC3:kotlin.Int` Audio data format: E-AC-3 compressed, also known as Dolby Digital Plus or DD+ |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_E_AC3_JOC:kotlin.Int` Audio data format: E-AC-3-JOC compressed E-AC-3-JOC streams can be decoded by downstream devices supporting `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_E_AC3:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_ENHANCED_PROFILE_AAC:kotlin.Int` Audio data format: IAMF using the [base-enhanced profile](https://aomediacodec.github.io/iamf/#profiles-base-enhanced) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in AAC. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLAC:kotlin.Int` Audio data format: IAMF using the [base-enhanced profile](https://aomediacodec.github.io/iamf/#profiles-base-enhanced) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in FLAC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUS:kotlin.Int` Audio data format: IAMF using the [base-enhanced profile](https://aomediacodec.github.io/iamf/#profiles-base-enhanced) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in OPUS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCM:kotlin.Int` Audio data format: IAMF using the [base-enhanced profile](https://aomediacodec.github.io/iamf/#profiles-base-enhanced) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in PCM. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_PROFILE_AAC:kotlin.Int` Audio data format: IAMF using the [base profile](https://aomediacodec.github.io/iamf/#profiles-base) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in AAC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_PROFILE_FLAC:kotlin.Int` Audio data format: IAMF using the [base profile](https://aomediacodec.github.io/iamf/#profiles-base) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in FLAC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_PROFILE_OPUS:kotlin.Int` Audio data format: IAMF using the [base profile](https://aomediacodec.github.io/iamf/#profiles-base) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in OPUS. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_BASE_PROFILE_PCM:kotlin.Int` Audio data format: IAMF using the [base profile](https://aomediacodec.github.io/iamf/#profiles-base) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in PCM. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_SIMPLE_PROFILE_AAC:kotlin.Int` Audio data format: IAMF using the [simple profile](https://aomediacodec.github.io/iamf/#profiles-simple) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in AAC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_SIMPLE_PROFILE_FLAC:kotlin.Int` Audio data format: IAMF using the [simple profile](https://aomediacodec.github.io/iamf/#profiles-simple) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in FLAC. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_SIMPLE_PROFILE_OPUS:kotlin.Int` Audio data format: IAMF using the [simple profile](https://aomediacodec.github.io/iamf/#profiles-simple) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in OPUS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IAMF_SIMPLE_PROFILE_PCM:kotlin.Int` Audio data format: IAMF using the [simple profile](https://aomediacodec.github.io/iamf/#profiles-simple) with audio streams [encoded](https://aomediacodec.github.io/iamf/#codec_id) in PCM. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_IEC61937:kotlin.Int` Audio data format: compressed audio wrapped in PCM for HDMI or S/PDIF passthrough. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_INVALID:kotlin.Int` Invalid audio data format |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_MP3:kotlin.Int` Audio data format: MP3 compressed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_MPEGH_BL_L3:kotlin.Int` Audio data format: MPEG-H baseline profile, level 3 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_MPEGH_BL_L4:kotlin.Int` Audio data format: MPEG-H baseline profile, level 4 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_MPEGH_LC_L3:kotlin.Int` Audio data format: MPEG-H low complexity profile, level 3 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_MPEGH_LC_L4:kotlin.Int` Audio data format: MPEG-H low complexity profile, level 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_OPUS:kotlin.Int` Audio data format: OPUS compressed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_16BIT:kotlin.Int` Audio data format: PCM 16 bit per sample. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_24BIT_PACKED:kotlin.Int` Audio data format: PCM 24 bit per sample packed as 3 bytes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_32BIT:kotlin.Int` Audio data format: PCM 32 bit per sample. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_8BIT:kotlin.Int` Audio data format: PCM 8 bit per sample. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_FLOAT:kotlin.Int` Audio data format: single-precision floating-point per sample |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#SAMPLE_RATE_UNSPECIFIED:kotlin.Int` Sample rate will be a route-dependent value. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
@@ -279,15 +330,19 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelAcnMask()()` Return the Ambisonics channel mask. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelCount()()` Return the channel count. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelIndexMask()()` Return the channel index mask. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelMask()()` Return the channel mask. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getEncoding()()` Return the encoding. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getFrameSizeInBytes()()` Return the frame size in bytes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getSampleRate()()` Return the sample rate. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

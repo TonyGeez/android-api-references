@@ -9,6 +9,7 @@ open class AddAdSelectionOverrideRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.AddAdSelectionOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#) |
 
 > [!CAUTION]
@@ -32,6 +33,7 @@ It contains, a `https://developer.android.com/reference/kotlin/android/adservice
 | open [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getAdSelectionConfig()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getDecisionLogicJs()()` <br /> |
 | open [PerBuyerDecisionLogic](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getPerBuyerDecisionLogic()()` <br /> |
+| --- | --- |
 | open [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getTrustedScoringSignals()()` <br /> |
 
 ## Public constructors
@@ -55,6 +57,7 @@ Builds a `https://developer.android.com/reference/kotlin/android/adservices/adse
 | `adSelectionConfig` | [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig): configuration for ad selection. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` This value cannot be `null`. |
 | `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getDecisionLogicUri()` This value cannot be `null`. |
 | `trustedScoringSignals` | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#): override for trusted seller signals. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getTrustedScoringSignalsUri()` This value cannot be `null`. |
+| --- | --- |
 
 ### AddAdSelectionOverrideRequest
 
@@ -76,6 +79,7 @@ Builds a `https://developer.android.com/reference/kotlin/android/adservices/adse
 | `adSelectionConfig` | [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig): configuration for ad selection. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` This value cannot be `null`. |
 | `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getDecisionLogicUri()` This value cannot be `null`. |
 | `trustedScoringSignals` | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#): override for trusted seller signals. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getTrustedScoringSignalsUri()` This value cannot be `null`. |
+| --- | --- |
 | `perBuyerDecisionLogic` | [PerBuyerDecisionLogic](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic): override for buyer's reporting logic for contextual ads. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getDecisionLogicUri()` This value cannot be `null`. |
 
 ## Public methods

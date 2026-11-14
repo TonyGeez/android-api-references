@@ -9,9 +9,11 @@ open class BatchUpdateException : SQLException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.BatchUpdateException](https://developer.android.com/reference/kotlin/java/sql/BatchUpdateException#) |
 
 The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when an error occurs during a batch update operation. In addition to the information provided by [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException), a`BatchUpdateException`provides the update counts for all commands that were executed successfully during the batch update, that is, all commands that were executed before the error occurred. The order of elements in an array of update counts corresponds to the order in which commands were added to the batch.
@@ -127,6 +129,7 @@ Constructs a`BatchUpdateException`object initialized with a given`reason`,`cause
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `updateCounts` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an array of`int`, with each element indicating the update count,`Statement.SUCCESS_NO_INFO`or`Statement.EXECUTE_FAILED`for each SQL command in the batch for JDBC drivers that continue processing after a command failure; an update count or`Statement.SUCCESS_NO_INFO`for each SQL command in the batch prior to the failure for JDBC drivers that stop processing after a command failure |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
+| --- | --- |
 
 ### BatchUpdateException
 
@@ -149,6 +152,7 @@ Constructs a`BatchUpdateException`object initialized with a given`reason`,`SQLSt
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the error |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an exception code used by a particular database vendor |
+| --- | --- |
 | `updateCounts` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an array of`int`, with each element indicating the update count,`Statement.SUCCESS_NO_INFO`or`Statement.EXECUTE_FAILED`for each SQL command in the batch for JDBC drivers that continue processing after a command failure; an update count or`Statement.SUCCESS_NO_INFO`for each SQL command in the batch prior to the failure for JDBC drivers that stop processing after a command failure |
 
 ### BatchUpdateException
@@ -171,6 +175,7 @@ Constructs a`BatchUpdateException`object initialized with a given`reason`,`SQLSt
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the error |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an exception code used by a particular database vendor |
+| --- | --- |
 | `updateCounts` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an array of`int`, with each element indicating the update count,`Statement.SUCCESS_NO_INFO`or`Statement.EXECUTE_FAILED`for each SQL command in the batch for JDBC drivers that continue processing after a command failure; an update count or`Statement.SUCCESS_NO_INFO`for each SQL command in the batch prior to the failure for JDBC drivers that stop processing after a command failure |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
 
@@ -194,6 +199,7 @@ Constructs a`BatchUpdateException`object initialized with a given`reason`,`SQLSt
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `updateCounts` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an array of`int`, with each element indicating the update count,`Statement.SUCCESS_NO_INFO`or`Statement.EXECUTE_FAILED`for each SQL command in the batch for JDBC drivers that continue processing after a command failure; an update count or`Statement.SUCCESS_NO_INFO`for each SQL command in the batch prior to the failure for JDBC drivers that stop processing after a command failure |
+| --- | --- |
 
 ### BatchUpdateException
 
@@ -214,6 +220,7 @@ Constructs a`BatchUpdateException`object initialized with a given`reason`,`SQLSt
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `updateCounts` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an array of`int`, with each element indicating the update count,`Statement.SUCCESS_NO_INFO`or`Statement.EXECUTE_FAILED`for each SQL command in the batch for JDBC drivers that continue processing after a command failure; an update count or`Statement.SUCCESS_NO_INFO`for each SQL command in the batch prior to the failure for JDBC drivers that stop processing after a command failure |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
 
 ### BatchUpdateException

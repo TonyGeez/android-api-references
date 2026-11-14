@@ -9,9 +9,11 @@ open class InvalidPropertiesFormatException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.InvalidPropertiesFormatException](https://developer.android.com/reference/kotlin/java/util/InvalidPropertiesFormatException#) |
 
 Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) specification.

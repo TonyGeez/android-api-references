@@ -4,12 +4,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # GetAdSelectionDataRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/adselection/GetAdSelectionDataRequest "View this page in Java")
+| --- | --- |
 
 ```
 class GetAdSelectionDataRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.GetAdSelectionDataRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#) |
 
 Represents a request containing the information to get ad selection data.
@@ -27,6 +29,7 @@ Instances of this class are created by SDKs to be provided as arguments to the `
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getCoordinatorOriginUri()()` <br /> |
 | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSeller()()` <br /> |
 | [SellerConfiguration](https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSellerConfiguration()()` Returns the seller ad tech's requested payload configuration, set by the calling SDK, to optimize the payload. |
+| --- | --- |
 
 ## Public methods
 

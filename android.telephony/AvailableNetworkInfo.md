@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # AvailableNetworkInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/AvailableNetworkInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class AvailableNetworkInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.AvailableNetworkInfo](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#) |
 
 Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through [TelephonyManager.updateAvailableNetworks](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#updateAvailableNetworks(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20java.util.function.Consumer))
@@ -26,6 +28,7 @@ Defines available network information which includes corresponding subscription 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_HIGH](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#PRIORITY_HIGH:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_LOW](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#PRIORITY_LOW:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_MED](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#PRIORITY_MED:kotlin.Int) <br /> |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -40,12 +43,15 @@ Defines available network information which includes corresponding subscription 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getBands](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#getBands())`()` Returns the frequency bands that need to be scanned by opportunistic network service The returned value is defined in either of [AccessNetworkConstants.GeranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.GeranBand), [AccessNetworkConstants.UtranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.UtranBand) and [AccessNetworkConstants.EutranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.EutranBand) See [AccessNetworkConstants.AccessNetworkType](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.AccessNetworkType) for details regarding different network types. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMccMncs](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#getMccMncs())`()` Return List of PLMN ids (MCC-MNC) associated with the sub ID. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#getPriority())`()` Return priority for the subscription id. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RadioAccessSpecifier](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier)!\> | [getRadioAccessSpecifiers](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#getRadioAccessSpecifiers())`()` Returns a list of [RadioAccessSpecifier](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier) associated with the available network. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubId](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#getSubId())`()` Return subscription Id of the available network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

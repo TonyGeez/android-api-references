@@ -7,9 +7,11 @@ abstract class TextToSpeechService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.speech.tts.TextToSpeechService](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#) |
 
 Abstract base class for TTS engine implementations. The following methods need to be implemented:
@@ -1059,9 +1061,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetDefaultVoiceNameFor(kotlin.String,%20kotlin.String,%20kotlin.String)(lang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a name of the default voice for a given locale. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Voice](https://developer.android.com/reference/kotlin/android/speech/tts/Voice)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetVoices()()` Queries the service for a set of supported voices. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onIsValidVoiceName(kotlin.String)(voiceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks whether the engine supports a voice with a given name. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onLoadVoice(kotlin.String)(voiceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Notifies the engine that it should load a speech synthesis voice. |
 
 | Protected methods ||
@@ -1069,9 +1073,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetFeaturesForLanguage(kotlin.String,%20kotlin.String,%20kotlin.String)(lang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Queries the service for a set of features supported for a given language. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetLanguage()()` Returns the language, country and variant currently being used by the TTS engine. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onIsLanguageAvailable(kotlin.String,%20kotlin.String,%20kotlin.String)(lang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks whether the engine supports a given language. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onLoadLanguage(kotlin.String,%20kotlin.String,%20kotlin.String)(lang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Notifies the engine that it should load a speech synthesis language. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onStop()()` Notifies the service that it should stop any in-progress speech synthesis. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onSynthesizeText(android.speech.tts.SynthesisRequest,%20android.speech.tts.SynthesisCallback)(request: https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisRequest!, callback: https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback!)` Tells the service to synthesize speech from the given text. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2821,6 +2827,7 @@ Return a name of the default voice for a given locale. This method provides a ma
 | `lang` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 language code. |
 | `country` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 country code. May be empty or null. |
 | `variant` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Language variant. May be empty or null. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2897,6 +2904,7 @@ Queries the service for a set of features supported for a given language. Can be
 | `lang` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 language code. |
 | `country` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 country code. May be empty or null. |
 | `variant` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Language variant. May be empty or null. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2941,6 +2949,7 @@ Checks whether the engine supports a given language. Can be called on multiple t
 | `lang` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 language code. |
 | `country` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 country code. May be empty or null. |
 | `variant` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Language variant. May be empty or null. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2965,6 +2974,7 @@ Notifies the engine that it should load a speech synthesis language. There is no
 | `lang` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 language code. |
 | `country` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: ISO-3 country code. May be empty or null. |
 | `variant` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Language variant. May be empty or null. |
+| --- | --- |
 
 | Return ||
 |---|---|

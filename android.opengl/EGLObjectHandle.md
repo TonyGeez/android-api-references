@@ -5,15 +5,18 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # EGLObjectHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLObjectHandle "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class EGLObjectHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.EGLObjectHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle#) |
 
 | Known Direct Subclasses [EGLConfig](https://developer.android.com/reference/kotlin/android/opengl/EGLConfig), [EGLContext](https://developer.android.com/reference/kotlin/android/opengl/EGLContext), [EGLDisplay](https://developer.android.com/reference/kotlin/android/opengl/EGLDisplay), [EGLImage](https://developer.android.com/reference/kotlin/android/opengl/EGLImage), [EGLSurface](https://developer.android.com/reference/kotlin/android/opengl/EGLSurface), [EGLSync](https://developer.android.com/reference/kotlin/android/opengl/EGLSync) |----------------------------------------------------------------------------------------|----------------------------------------------| | [EGLConfig](https://developer.android.com/reference/kotlin/android/opengl/EGLConfig) | Wrapper class for native EGLConfig objects. | | [EGLContext](https://developer.android.com/reference/kotlin/android/opengl/EGLContext) | Wrapper class for native EGLContext objects. | | [EGLDisplay](https://developer.android.com/reference/kotlin/android/opengl/EGLDisplay) | Wrapper class for native EGLDisplay objects. | | [EGLImage](https://developer.android.com/reference/kotlin/android/opengl/EGLImage) | Wrapper class for native EGLImage objects. | | [EGLSurface](https://developer.android.com/reference/kotlin/android/opengl/EGLSurface) | Wrapper class for native EGLSurface objects. | | [EGLSync](https://developer.android.com/reference/kotlin/android/opengl/EGLSync) | Wrapper class for native EGLSync objects. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for wrapped EGL objects.
 
@@ -29,6 +32,7 @@ Base class for wrapped EGL objects.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle#getHandle())`()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle#getNativeHandle())`()` Returns the native handle of the wrapped EGL object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Protected constructors
 

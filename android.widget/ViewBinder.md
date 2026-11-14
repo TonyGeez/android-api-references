@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # ViewBinder
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/SimpleCursorTreeAdapter.ViewBinder "View this page in Java") 
+| --- | --- |
 
 ```
 interface ViewBinder
@@ -41,6 +42,7 @@ Binds the Cursor column defined by the specified index to the specified view. Wh
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the view to bind the data to |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:the cursor to get the data from |
 | `columnIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the column at which the data can be found in the cursor |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|

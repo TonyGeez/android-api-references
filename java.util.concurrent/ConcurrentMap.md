@@ -11,8 +11,10 @@ interface ConcurrentMap<K : Any!, V : Any!> : MutableMap<K, V>
 | [java.util.concurrent.ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#) |
 
 | Known Direct Subclasses [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap), [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) |----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) | A [ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#) supporting [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap.html#) operations, and recursively so for its navigable sub-maps. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) providing thread safety and atomicity guarantees.
 
@@ -29,12 +31,15 @@ This interface is a member of the [Java Collections Framework](https://developer
 | openV? | [compute](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#compute(java.util.concurrent.ConcurrentMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
 | openV | [computeIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#computeIfAbsent(java.util.concurrent.ConcurrentMap.K,%20java.util.function.Function))`(`key:` `K`, `mappingFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
 | openV? | [computeIfPresent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#computeIfPresent(java.util.concurrent.ConcurrentMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#forEach(java.util.function.BiConsumer))`(`action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<in` `K,` `in` `V>`)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | openV | [getOrDefault](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#getOrDefault(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `defaultValue:` `V`)` Returns the value to which the specified key is mapped, or`defaultValue`if this map contains no mapping for the key. |
 | openV? | [merge](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#merge(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V,%20java.util.function.BiFunction))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
+| --- | --- |
 | abstractV? | [putIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#putIfAbsent(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` If the specified key is not already associated with a value, associates it with the given value. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#remove(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` Removes the entry for a key only if currently mapped to a given value. |
 | abstractV? | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replace(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` Replaces the entry for a key only if currently mapped to some value. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replace(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for a key only if currently mapped to a given value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replaceAll(java.util.function.BiFunction))`(`function:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V>`)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 
@@ -78,6 +83,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 
 ### computeIfAbsent
@@ -123,6 +129,7 @@ The mapping function should not modify this map during computation.
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the mappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 
 ### computeIfPresent
@@ -156,6 +163,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys, or the remappingFunction is null |
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 
 ### forEach
@@ -234,6 +242,7 @@ The remapping function should not modify this map during computation.
 | `key` | K:key with which the resulting value is to be associated |
 | `value` | V:the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
 | `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
+| --- | --- |
 
 | Return ||
 |----|-------------------------------------------------------------------------------------------------|
@@ -244,6 +253,7 @@ The remapping function should not modify this map during computation.
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map (java.util.Collection#) |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not support null keys or the value or remappingFunction is null |
 
 ### putIfAbsent
@@ -283,6 +293,7 @@ except that the action is performed atomically.
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 ### remove
@@ -325,6 +336,7 @@ except that the action is performed atomically.
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
+| --- | --- |
 
 ### replace
 
@@ -363,6 +375,7 @@ except that the action is performed atomically.
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 ### replace
@@ -397,6 +410,7 @@ except that the action is performed atomically.
 | `key` | K:key with which the specified value is associated |
 | `oldValue` | V:value expected to be associated with the specified key |
 | `newValue` | V:value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------|
@@ -407,6 +421,7 @@ except that the action is performed atomically.
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if a specified key or value is null, and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 
 ### replaceAll
@@ -428,5 +443,6 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this map's entry set iterator. |
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |

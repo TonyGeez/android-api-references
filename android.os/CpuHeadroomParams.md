@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # CpuHeadroomParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/CpuHeadroomParams "View this page in Java") 
+| --- | --- |
 
 ```
 class CpuHeadroomParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.CpuHeadroomParams](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#) |
 
 Headroom request params used by [SystemHealthManager.getCpuHeadroom(CpuHeadroomParams)](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)).
@@ -33,9 +35,11 @@ This class is immutable and one should use the [Builder](https://developer.andro
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationType](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#getCalculationType())`()` Gets the headroom calculation type. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCalculationWindowMillis](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#getCalculationWindowMillis())`()` Gets the headroom calculation window size in milliseconds. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getTids](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#getTids())`()` Gets the TIDs to track. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#hashCode())`()` <br /> |
 | [CpuHeadroomParams.Builder](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams.Builder) | [toBuilder](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#toBuilder())`()` Returns a new builder with the same values as this object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams#toString())`()` <br /> |
 
 ## Constants

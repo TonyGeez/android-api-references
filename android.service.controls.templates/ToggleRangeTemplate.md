@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ToggleRangeTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class ToggleRangeTemplate : ControlTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.templates.ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) ||
 | | ↳ | [android.service.controls.templates.ToggleRangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate#) |
 
@@ -32,6 +34,7 @@ A template for a [Control](https://developer.android.com/reference/kotlin/androi
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getActionDescription](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate#getActionDescription())`()` <br /> |
 | [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate) | [getRange](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate#getRange())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTemplateType](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate#getTemplateType())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate#isChecked())`()` <br /> |
 
 | Inherited functions ||
@@ -58,6 +61,7 @@ Constructs a new [ToggleRangeTemplate](https://developer.android.com/reference/k
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier for this template. This value cannot be`null`. |
 | `button` | [ControlButton](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton):a [ControlButton](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton) to use for the toggle interface This value cannot be`null`. |
 | `range` | [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate):a [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate) to use for the range interface This value cannot be`null`. |
+| --- | --- |
 
 ### ToggleRangeTemplate
 
@@ -78,6 +82,7 @@ Constructs a new [ToggleRangeTemplate](https://developer.android.com/reference/k
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier for this template. This value cannot be`null`. |
 | `checked` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the toggle should be rendered as active. |
 | `actionDescription` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):action description for the button. This value cannot be`null`. |
+| --- | --- |
 | `range` | [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate): [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate) to use for the range interface This value cannot be`null`. |
 
 **See Also**

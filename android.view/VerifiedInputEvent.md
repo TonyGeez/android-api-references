@@ -3,15 +3,18 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # VerifiedInputEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/VerifiedInputEvent "View this page in Java")
+| --- | --- |
 
 ```
 abstract class VerifiedInputEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.VerifiedInputEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#) |
 
 | Known Direct Subclasses [VerifiedKeyEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent), [VerifiedMotionEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent) |---|---| | [VerifiedKeyEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent) | KeyEvent that has been verified by the system. | | [VerifiedMotionEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent) | MotionEvent that has been verified by the system. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for verified events. Verified events contain the subset of an InputEvent that the system can verify. Data contained inside VerifiedInputEvent's should be considered trusted and contain only the original event data that first came from the system.
 
@@ -26,9 +29,11 @@ Base class for verified events. Verified events contain the subset of an InputEv
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getDeviceId()()` Get the id of the device that generated this event. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getDisplayId()()` Get the display id that is associated with this event. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getEventTimeNanos()()` Get the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getSource()()` Get the source of the event. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#hashCode()()` Returns a hash code value for the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

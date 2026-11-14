@@ -9,6 +9,7 @@ open class GCMParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.GCMParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/GCMParameterSpec#) |
 
 Specifies the set of parameters required by a using the Galois/Counter Mode (GCM) mode.
@@ -78,6 +79,7 @@ Constructs a GCMParameterSpec object using the specified authentication tag bit-
 | `tLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the authentication tag length (in bits) |
 | `src` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the IV source buffer. The contents of the buffer are copied to protect against subsequent modification. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`src`where the IV starts |
+| --- | --- |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of IV bytes |
 
 | Exceptions ||

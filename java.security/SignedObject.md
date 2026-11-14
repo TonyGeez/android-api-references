@@ -9,6 +9,7 @@ class SignedObject : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.SignedObject](https://developer.android.com/reference/kotlin/java/security/SignedObject#) |
 
 SignedObject is a class for the purpose of creating authentic runtime objects whose integrity cannot be compromised without being detected.
@@ -64,6 +65,7 @@ Potential applications of SignedObject include:
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/SignedObject#getAlgorithm())`()` Retrieves the name of the signature algorithm. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/java/security/SignedObject#getObject())`()` Retrieves the encapsulated object. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSignature](https://developer.android.com/reference/kotlin/java/security/SignedObject#getSignature())`()` Retrieves the signature on the signed object, in the form of a byte array. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/SignedObject#verify(java.security.PublicKey,%20java.security.Signature))`(`verificationKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`, `verificationEngine:` ` [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!`)` Verifies that the signature in this SignedObject is the valid signature for the object stored inside, with the given verification key, using the designated verification engine. |
 
 ## Public constructors
@@ -86,12 +88,14 @@ Constructs a SignedObject from any Serializable object. The given object is sign
 | `object` | [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)!:the object to be signed. |
 | `signingKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!:the private key for signing. |
 | `signingEngine` | [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!:the signature signing engine. |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------|-----------------------------------------|
 | `java.io.IOException` | if an error occurs during serialization |
 | `java.security.InvalidKeyException` | if the key is invalid. |
 | `java.security.SignatureException` | if signing fails. |
+| --- | --- |
 
 ## Public methods
 

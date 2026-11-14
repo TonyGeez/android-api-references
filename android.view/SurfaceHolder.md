@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SurfaceHolder
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/SurfaceHolder "View this page in Java") 
+| --- | --- |
 
 ```
 interface SurfaceHolder
@@ -23,12 +24,14 @@ When using this interface from a thread other than the one running its [SurfaceV
 | open | [BadSurfaceTypeException](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.BadSurfaceTypeException) Exception that is thrown from #lockCanvas when called on a Surface whose type is SURFACE_TYPE_PUSH_BUFFERS. |
 | abstract | [Callback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback) A client may implement this interface to receive information about changes to the surface. |
 | abstract | [Callback2](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback2) Additional callbacks that can be received for [Callback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback). |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_GPU](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#SURFACE_TYPE_GPU:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_HARDWARE](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#SURFACE_TYPE_HARDWARE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_NORMAL](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#SURFACE_TYPE_NORMAL:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_PUSH_BUFFERS](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#SURFACE_TYPE_PUSH_BUFFERS:kotlin.Int) <br /> |
 
 | Public methods ||
@@ -36,15 +39,19 @@ When using this interface from a thread other than the one running its [SurfaceV
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#addCallback(android.view.SurfaceHolder.Callback))`(`callback:` ` [SurfaceHolder.Callback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback)!`)` Add a Callback interface for this holder. |
 | abstract [Surface](https://developer.android.com/reference/kotlin/android/view/Surface)! | [getSurface](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#getSurface())`()` Direct access to the surface object. |
 | abstract [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | [getSurfaceFrame](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#getSurfaceFrame())`()` Retrieve the current size of the surface. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCreating](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#isCreating())`()` Use this method to find out if the surface is in the process of being created from Callback methods. |
 | abstract [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)! | [lockCanvas](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#lockCanvas())`()` Start editing the pixels in the surface. |
 | abstract [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)! | [lockCanvas](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#lockCanvas(android.graphics.Rect))`(`dirty:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Just like [lockCanvas()](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#lockCanvas())but allows specification of a dirty rectangle. |
+| --- | --- |
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)! | [lockHardwareCanvas](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#lockHardwareCanvas())`()` Just like [lockCanvas()](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#lockCanvas())but the returned canvas is hardware-accelerated. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#removeCallback(android.view.SurfaceHolder.Callback))`(`callback:` ` [SurfaceHolder.Callback](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback)!`)` Removes a previously added Callback interface from this holder. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFixedSize](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#setFixedSize(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make the surface a fixed size. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormat](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#setFormat(kotlin.Int))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the desired PixelFormat of the surface. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepScreenOn](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#setKeepScreenOn(kotlin.Boolean))`(`screenOn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable option to keep the screen turned on while this surface is displayed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSizeFromLayout](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#setSizeFromLayout())`()` Allow the surface to resized based on layout of its container (this is the default). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#setType(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the surface's type. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder#unlockCanvasAndPost(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`)` Finish editing pixels in the surface. |
 

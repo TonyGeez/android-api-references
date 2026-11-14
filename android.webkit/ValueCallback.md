@@ -5,6 +5,7 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 # ValueCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/ValueCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ValueCallback<T : Any!>

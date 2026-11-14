@@ -5,6 +5,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # OnDismissListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/AutoCompleteTextView.OnDismissListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDismissListener

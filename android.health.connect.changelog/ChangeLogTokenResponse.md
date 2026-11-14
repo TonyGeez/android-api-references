@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ChangeLogTokenResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class ChangeLogTokenResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.changelog.ChangeLogTokenResponse](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#) |
 
 Response class for [HealthConnectManager.getChangeLogToken](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))}
@@ -26,6 +28,7 @@ Response class for [HealthConnectManager.getChangeLogToken](https://developer.an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getToken](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#getToken())`()` Returns the token for the change logs request |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

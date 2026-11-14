@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # ViewGroupOverlay
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewGroupOverlay "View this page in Java") 
+| --- | --- |
 
 ```
 open class ViewGroupOverlay : ViewOverlay
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.ViewOverlay](https://developer.android.com/reference/kotlin/android/view/ViewOverlay) ||
 | | ↳ | [android.view.ViewGroupOverlay](https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay#) |
 

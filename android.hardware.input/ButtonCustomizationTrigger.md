@@ -7,6 +7,7 @@ class ButtonCustomizationTrigger : CustomizationTrigger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.input.CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger) ||
 | | ↳ | [android.hardware.input.ButtonCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#) |
 
@@ -19,9 +20,11 @@ Represents a trigger based on a physical button press on a peripheral (e.g., a m
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_BACK:kotlin.Int` Customizable Button code: Back button. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_EXTRA:kotlin.Int` Customizable Button code: Extra button. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_FORWARD:kotlin.Int` Customizable Button code: Forward button. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_SIDE:kotlin.Int` Customizable Button code: Side button. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_TASK:kotlin.Int` Customizable Button code: Task button. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#CUSTOMIZABLE_BUTTON_TERTIARY:kotlin.Int` Customizable Button code: Tertiary/Middle button. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|

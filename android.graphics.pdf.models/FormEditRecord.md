@@ -4,12 +4,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # FormEditRecord
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/models/FormEditRecord "View this page in Java")
+| --- | --- |
 
 ```
 class FormEditRecord : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.models.FormEditRecord](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#) |
 
 Record of a form filling operation that has been executed on a single form field in a PDF. Contains the minimum amount of data required to replicate the action on the form.
@@ -25,6 +27,7 @@ Record of a form filling operation that has been executed on a single form field
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#EDIT_TYPE_CLICK:kotlin.Int` Indicates a click on a clickable form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#EDIT_TYPE_SET_INDICES:kotlin.Int` Represents setting indices on a combobox or listbox form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#EDIT_TYPE_SET_TEXT:kotlin.Int` Represents setting text on a text field or editable combobox form widget |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,12 +38,15 @@ Record of a form filling operation that has been executed on a single form field
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)? | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getClickPoint()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getPageNumber()()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getSelectedIndices()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getText()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getType()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getWidgetIndex()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -7,6 +7,7 @@ class ExecuteAppFunctionResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appfunctions.ExecuteAppFunctionResponse](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#) |
 
 The response to an app function execution, returned by android.app.appfunctions.AppFunctionManager#executeAppFunction.
@@ -42,6 +43,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#getExtras()()` Returns the additional metadata for this function execution response. |
 | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#getResultDocument()()` Returns a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#` containing the return value of the executed function. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionUriGrant](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#getUriGrants()()` The list of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant` to which the caller of this app function execution should have temporary access granted. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -116,6 +118,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/app/appfun
 | `resultDocument` | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#): The return value of the executed function, see `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#getResultDocument()`. This value cannot be `null`. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The additional metadata for this function execution response, see `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse#getExtras()`. This value cannot be `null`. |
 | `uriGrants` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionUriGrant](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant)!\>: The list of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant` to which the caller of this app function execution should have temporary access granted. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

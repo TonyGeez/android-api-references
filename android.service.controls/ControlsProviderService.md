@@ -7,9 +7,11 @@ abstract class ControlsProviderService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.controls.ControlsProviderService](https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#) |
 
 Service implementation allowing applications to contribute controls to the System UI.
@@ -21,9 +23,11 @@ Service implementation allowing applications to contribute controls to the Syste
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#CONTROLS_SURFACE_ACTIVITY_PANEL:kotlin.Int` Controls are being shown on the device controls activity panel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#CONTROLS_SURFACE_DREAM:kotlin.Int` Controls are being shown as a dream, while the device is idle. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#EXTRA_CONTROLS_SURFACE:kotlin.String` Integer extra whose value specifies the surface which controls are being displayed on. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLS:kotlin.String` Boolean extra containing the value of the setting allowing actions on a locked device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#META_DATA_PANEL_ACTIVITY:kotlin.String` Manifest metadata to show a custom embedded activity as part of device controls. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#SERVICE_CONTROLS:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#TAG:kotlin.String` <br /> |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1052,9 +1056,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | abstract [Flow.Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher.html#)\< [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherFor(kotlin.collections.MutableList)(controlIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Return a valid Publisher for the given controlIds. |
 | abstract [Flow.Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher.html#)\< [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForAllAvailable()()` Publisher for all available controls Retrieve all available controls. |
 | open [Flow.Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher.html#)\< [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control)!\>? | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForSuggested()()` (Optional) Publisher for suggested controls The service may be asked to provide a small number of recommended controls, in order to suggest some controls to the user for favoriting. |
+| --- | --- |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#onUnbind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when all clients have disconnected from a particular interface published by the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#performControlAction(kotlin.String,%20android.service.controls.actions.ControlAction,%20java.util.function.Consumer)(controlId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, action: https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction, consumer: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` The user has interacted with a Control. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#requestAddControl(android.content.Context,%20android.content.ComponentName,%20android.service.controls.Control)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, control: https://developer.android.com/reference/kotlin/android/service/controls/Control)` Request SystemUI to prompt the user to add a control to favorites. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2944,6 +2950,7 @@ The user has interacted with a Control. The action is dictated by the type of `h
 | `controlId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `action` | [ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction): This value cannot be `null`. |
 | `consumer` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: This value cannot be `null`. |
+| --- | --- |
 
 ### requestAddControl
 
@@ -2965,3 +2972,4 @@ SystemUI may not honor this request in some cases, for example if the requested 
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): A context. This value cannot be `null`. |
 | `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Component name of the `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#` This value cannot be `null`. |
 | `control` | [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control): A stateless control to show to the user. This value cannot be `null`. |
+| --- | --- |

@@ -7,6 +7,7 @@ class UwbRangingParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.uwb.UwbRangingParams](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#) |
 
 UwbRangingParams encapsulates the parameters required for a UWB ranging session.
@@ -22,12 +23,15 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_MULTICAST_DS_TWR:kotlin.Int` FiRa-defined multicast `STATIC STS DS-TWR` ranging, deferred mode, ranging interval Fast (120ms), Normal (200ms), Infrequent (600ms) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR:kotlin.Int` Same as `CONFIG_UNICAST_DS_TWR`, except P-STS individual controlee key mode is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_PROVISIONED_MULTICAST_DS_TWR:kotlin.Int` Same as `CONFIG_MULTICAST_DS_TWR`, except P-STS security mode is enabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_PROVISIONED_UNICAST_DS_TWR:kotlin.Int` Same as `CONFIG_UNICAST_DS_TWR`, except P-STS security mode is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST:kotlin.Int` Same as `CONFIG_ID_3`, except fast ranging interval is 96 milliseconds. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CONFIG_UNICAST_DS_TWR:kotlin.Int` FiRa-defined unicast `STATIC STS DS-TWR` ranging, deferred mode, ranging interval Fast (120ms), Normal (240ms), Infrequent (600ms) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#DURATION_1_MS:kotlin.Int` 1 millisecond slot duration |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#DURATION_2_MS:kotlin.Int` 2 millisecond slot duration |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#SUB_SESSION_UNDEFINED:kotlin.Int` Sub session id not applicable. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -38,18 +42,23 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [UwbComplexChannel](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getComplexChannel()()` Gets the complex channel information for this session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getConfigId()()` Gets the configuration ID associated with this session. |
 | [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getDeviceAddress()()` Gets the UWB address of the device. |
 | [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getPeerAddress()()` Returns the UwbAddress of the peer device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getRangingUpdateRate()()` Returns the update rate for ranging operations. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSessionId()()` Gets the session ID associated with this ranging session. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSessionKeyInfo()()` Gets session key information, if available. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSlotDuration()()` Returns slot duration of the session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSubSessionId()()` Gets the sub-session ID if applicable for the session. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSubSessionKeyInfo()()` Gets sub-session key information, if available. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

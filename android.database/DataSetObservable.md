@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DataSetObservable
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/DataSetObservable "View this page in Java") 
+| --- | --- |
 
 ```
 open class DataSetObservable : Observable<DataSetObserver!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.database.Observable](https://developer.android.com/reference/kotlin/android/database/Observable)\< [android.database.DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver)\> ||
 | | ↳ | [android.database.DataSetObservable](https://developer.android.com/reference/kotlin/android/database/DataSetObservable#) |
 

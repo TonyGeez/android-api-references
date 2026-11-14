@@ -10,6 +10,7 @@ abstract class Signer : Identity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Identity](https://developer.android.com/reference/kotlin/java/security/Identity) ||
 | | ↳ | [java.security.Signer](https://developer.android.com/reference/kotlin/java/security/Signer#) |
 
@@ -37,6 +38,7 @@ The management of a signer's private keys is an important and sensitive issue th
 | open [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)! | [getPrivateKey](https://developer.android.com/reference/kotlin/java/security/Signer#getPrivateKey())`()` Returns this signer's private key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeyPair](https://developer.android.com/reference/kotlin/java/security/Signer#setKeyPair(java.security.KeyPair))`(`pair:` ` [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair)!`)` Sets the key pair (public key and private key) for this signer. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/Signer#toString())`()` Returns a string of information about the signer. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -143,6 +145,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 | `java.security.InvalidParameterException` | if the key pair is not properly initialized. |
 | `java.security.KeyException` | if the key pair cannot be set for any other reason. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkSecurityAccess`method doesn't allow setting the key pair. |
+| --- | --- |
 
 **See Also**
 

@@ -5,15 +5,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # BroadcastInfoRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class BroadcastInfoRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#) |
 
 | Known Direct Subclasses [CommandRequest](https://developer.android.com/reference/kotlin/android/media/tv/CommandRequest), [DsmccRequest](https://developer.android.com/reference/kotlin/android/media/tv/DsmccRequest), [PesRequest](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest), [SectionRequest](https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest), [SignalingDataRequest](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest), [StreamEventRequest](https://developer.android.com/reference/kotlin/android/media/tv/StreamEventRequest), [TableRequest](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest), [TimelineRequest](https://developer.android.com/reference/kotlin/android/media/tv/TimelineRequest), [TsRequest](https://developer.android.com/reference/kotlin/android/media/tv/TsRequest) |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------| | [CommandRequest](https://developer.android.com/reference/kotlin/android/media/tv/CommandRequest) | A request for command from broadcast signal. | | [DsmccRequest](https://developer.android.com/reference/kotlin/android/media/tv/DsmccRequest) | A request for DSM-CC from broadcast signal. | | [PesRequest](https://developer.android.com/reference/kotlin/android/media/tv/PesRequest) | A request for PES from broadcast signal. | | [SectionRequest](https://developer.android.com/reference/kotlin/android/media/tv/SectionRequest) | A request for Section from broadcast signal. | | [SignalingDataRequest](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest) | Request to retrieve the Low-level Signalling Tables (LLS) and Service-layer Signalling (SLS) metadata. | | [StreamEventRequest](https://developer.android.com/reference/kotlin/android/media/tv/StreamEventRequest) | A request for Stream Event from broadcast signal. | | [TableRequest](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest) | A request for Table from broadcast signal. | | [TimelineRequest](https://developer.android.com/reference/kotlin/android/media/tv/TimelineRequest) | A request for Timeline from broadcast signal. | | [TsRequest](https://developer.android.com/reference/kotlin/android/media/tv/TsRequest) | A request for TS (transport stream) from broadcast signal. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A request for the information retrieved from broadcast signal.
 
@@ -24,6 +27,7 @@ A request for the information retrieved from broadcast signal.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REQUEST_OPTION_AUTO_UPDATE](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#REQUEST_OPTION_AUTO_UPDATE:kotlin.Int) Request option: auto update. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REQUEST_OPTION_ONESHOT](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#REQUEST_OPTION_ONESHOT:kotlin.Int) Request option: one-shot |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REQUEST_OPTION_ONEWAY](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#REQUEST_OPTION_ONEWAY:kotlin.Int) Request option: one-way |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REQUEST_OPTION_REPEAT](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#REQUEST_OPTION_REPEAT:kotlin.Int) Request option: repeat. |
 
 | Inherited constants ||
@@ -35,6 +39,7 @@ A request for the information retrieved from broadcast signal.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOption](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#getOption())`()` Gets the request option of the request. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestId](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#getRequestId())`()` Gets the ID of the request. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#getType())`()` Gets the broadcast info type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

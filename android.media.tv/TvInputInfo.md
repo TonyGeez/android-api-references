@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TvInputInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvInputInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class TvInputInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.TvInputInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#) |
 
 This class is used to specify meta information of a TV input.
@@ -26,12 +28,15 @@ This class is used to specify meta information of a TV input.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_INPUT_ID](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#EXTRA_INPUT_ID:kotlin.String) Used as a String extra field in setup intents created by [createSetupIntent()](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#createSetupIntent())to supply the ID of a specific TV input to set up. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COMPONENT](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_COMPONENT:kotlin.Int) TV input type: the TV input service represents a component port. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COMPOSITE](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_COMPOSITE:kotlin.Int) TV input type: the TV input service represents a composite port. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DISPLAY_PORT](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_DISPLAY_PORT:kotlin.Int) TV input type: the TV input service represents a display port. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DVI](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_DVI:kotlin.Int) TV input type: the TV input service represents a DVI port. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HDMI](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_HDMI:kotlin.Int) TV input type: the TV input service is HDMI. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_OTHER:kotlin.Int) TV input type: a generic hardware TV input type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCART](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_SCART:kotlin.Int) TV input type: the TV input service represents a SCART port. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SVIDEO](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_SVIDEO:kotlin.Int) TV input type: the TV input service represents a SVIDEO port. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TUNER](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_TUNER:kotlin.Int) TV input type: the TV input service is a tuner which provides channels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VGA](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#TYPE_VGA:kotlin.Int) TV input type: the TV input service represents a VGA port. |
 
@@ -44,21 +49,27 @@ This class is used to specify meta information of a TV input.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canPauseRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#canPauseRecording())`()` Returns`true`if this TV input can pause recording TV programs,`false`otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canRecord](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#canRecord())`()` Returns`true`if this TV input can record TV programs,`false`otherwise. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [createSettingsIntent](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#createSettingsIntent())`()` Returns an intent to start the settings activity for this TV input. |
+| --- | --- |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [createSetupIntent](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#createSetupIntent())`()` Returns an intent to start the setup activity for this TV input. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getExtras())`()` Returns domain-specific extras associated with this TV input. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getId](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getId())`()` Returns a unique ID for this TV input. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getParentId](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getParentId())`()` Returns the parent input ID. |
+| --- | --- |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)! | [getServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getServiceInfo())`()` Returns the information of the service that implements this TV input. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTunerCount](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getTunerCount())`()` Returns the number of tuners this TV input has. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#getType())`()` Returns the type of this TV input. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHidden](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#isHidden(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Checks if this TV input is marked hidden by the user in the settings. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPassthroughInput](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#isPassthroughInput())`()` Returns`true`if this TV input is pass-though which does not have any real channels in TvProvider. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadCustomLabel](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#loadCustomLabel(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Loads the custom label set by user in settings. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [loadIcon](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#loadIcon(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`)` Loads the user-displayed icon for this TV input. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#loadLabel(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`)` Loads the user-displayed label for this TV input. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 

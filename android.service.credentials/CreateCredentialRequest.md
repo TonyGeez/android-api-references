@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CreateCredentialRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class CreateCredentialRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.CreateCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#) |
 
 Request for creating a credential.
@@ -30,6 +32,7 @@ Request for creating a credential.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#describeContents())`()` <br /> |
 | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo) | [getCallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#getCallingAppInfo())`()` Returns info pertaining to the calling app. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getData](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#getData())`()` Returns the data to be used while creating the credential. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#getType())`()` Returns the type of the credential to be created. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/CreateCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -57,6 +60,7 @@ Constructs a new instance.
 | `callingAppInfo` | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo):This value cannot be`null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------|

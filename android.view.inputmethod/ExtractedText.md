@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # ExtractedText
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/ExtractedText "View this page in Java") 
+| --- | --- |
 
 ```
 open class ExtractedText : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#) |
 
 Information about text that has been extracted for use by an input method. This contains information about a portion of the currently edited text, that the IME should display into its own interface while in extracted mode.
@@ -40,12 +42,15 @@ Information about text that has been extracted for use by an input method. This 
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#CREATOR:android.os.Parcelable.Creator) Used to make this class parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int) Additional bit flags of information about the edited text. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [hint](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#hint:kotlin.CharSequence) The hint that has been extracted. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialEndOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialEndOffset:kotlin.Int) If the content is a report of a partial text change, this is the offset where the change ends. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialStartOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialStartOffset:kotlin.Int) If the content is a report of a partial text change, this is the offset where the change starts and it runs until [partialEndOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialEndOffset:kotlin.Int). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionEnd](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#selectionEnd:kotlin.Int) The offset where the selection currently ends within the extracted text. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionStart](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#selectionStart:kotlin.Int) The offset where the selection currently starts within the extracted text. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [startOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#startOffset:kotlin.Int) The offset in the overall text at which the extracted text starts. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [text](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#text:kotlin.CharSequence) The text that has been extracted. |
+| --- | --- |
 
 ## Constants
 

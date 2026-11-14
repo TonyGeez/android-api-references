@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # FormattedNumber
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/FormattedNumber "View this page in Java") 
+| --- | --- |
 
 ```
 open class FormattedNumber : FormattedValue
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#) |
 
 The result of a number formatting operation. This class allows the result to be exported in several data types, including a String, an AttributedCharacterIterator, and a BigDecimal. Instances of this class are immutable and thread-safe.
@@ -22,12 +24,15 @@ The result of a number formatting operation. This class allows the result to be 
 | openA | [appendTo](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#appendTo(android.icu.number.FormattedNumber.appendTo.A))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
 | open [DisplayOptions.NounClass](https://developer.android.com/reference/kotlin/android/icu/text/DisplayOptions.NounClass.html#)! | [getNounClass](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#getNounClass())`()` Gets the noun class of the formatted output. |
+| --- | --- |
 | open [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#)! | [getOutputUnit](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#getOutputUnit())`()` Gets the resolved output unit. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#nextPosition(android.icu.text.ConstrainedFieldPosition))`(`cfpos:` ` [ConstrainedFieldPosition](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition.html#)!`)` Iterates over field positions in the FormattedValue. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#subSequence(kotlin.Int,%20kotlin.Int))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | [toBigDecimal](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#toBigDecimal())`()` Export the formatted number as a BigDecimal. |
 | open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | [toCharacterIterator](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#toCharacterIterator())`()` Exports the formatted number as an AttributedCharacterIterator. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|

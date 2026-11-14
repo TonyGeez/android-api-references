@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # UpsertMedicalResourceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/UpsertMedicalResourceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class UpsertMedicalResourceRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.UpsertMedicalResourceRequest](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#) |
 
 An upsert request for [HealthConnectManager.upsertMedicalResources](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#upsertMedicalResources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).
@@ -33,9 +35,11 @@ Medical data is represented using the [Fast Healthcare Interoperability Resource
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getData](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getData())`()` Returns the FHIR resource data in JSON representation. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDataSourceId](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getDataSourceId())`()` Returns the unique ID of the existing [MedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource), to represent where the`data`is coming from. |
 | [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion) | [getFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getFhirVersion())`()` Returns the FHIR version being used for`data`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

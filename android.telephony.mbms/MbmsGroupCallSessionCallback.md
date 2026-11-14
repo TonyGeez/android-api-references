@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # MbmsGroupCallSessionCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/MbmsGroupCallSessionCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface MbmsGroupCallSessionCallback
@@ -21,6 +22,7 @@ A callback class that is used to receive information from the middleware on MBMS
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAvailableSaisUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback#onAvailableSaisUpdated(kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`currentSais:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `availableSais:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!>`)` Indicates that the list of currently available SAIs has been updated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback#onError(kotlin.Int,%20kotlin.String))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Called by the middleware when it has detected an error condition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMiddlewareReady](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback#onMiddlewareReady())`()` Called to indicate that the middleware has been initialized and is ready. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceInterfaceAvailable](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback#onServiceInterfaceAvailable(kotlin.String,%20kotlin.Int))`(`interfaceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called soon after the app calls android. |
 
 ## Public methods

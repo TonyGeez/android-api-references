@@ -7,6 +7,7 @@ open class ProgressBar : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.widget.ProgressBar](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#) |
 
@@ -76,18 +77,23 @@ See `https://developer.android.com/reference/kotlin/android/R.styleable.html#Pro
 | [`android:animationResolution`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Timeout between frames of animation in milliseconds. |
 | [`android:indeterminate`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Allows to enable the indeterminate mode. |
 | [`android:indeterminateBehavior`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines how the indeterminate mode should behave when the progress reaches max. |
+| --- | --- |
 | [`android:indeterminateDrawable`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Drawable used for the indeterminate mode. |
 | [`android:indeterminateDuration`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Duration of the indeterminate animation. |
 | [`android:indeterminateOnly`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Restricts to ONLY indeterminate mode (state-keeping progress mode will not work). |
+| --- | --- |
 | [`android:interpolator`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Sets the acceleration curve for the indeterminate animation. |
 | [`android:max`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the maximum value. |
 | [`android:maxHeight`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | An optional argument to supply a maximum height for this view. |
+| --- | --- |
 | [`android:maxWidth`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | An optional argument to supply a maximum width for this view. |
 | [`android:min`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the minimum value. |
 | [`android:minHeight`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | |
+| --- | --- |
 | [`android:minWidth`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | |
 | [`android:mirrorForRtl`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines if the associated drawables need to be mirrored when in RTL mode. |
 | [`android:progress`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the default progress value, between 0 and max. |
+| --- | --- |
 | [`android:progressDrawable`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Drawable used for the progress mode. |
 | [`android:secondaryProgress`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the secondary progress value, between 0 and max. |
 
@@ -369,6 +375,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -485,6 +492,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1670,66 +1678,87 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getCurrentDrawable()()` Returns the drawable currently used to draw the progress bar. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateDrawable()()` Get the drawable used to draw the progress bar in indeterminate mode. |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintBlendMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintList()()` <br /> |
+| --- | --- |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
 | open [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getInterpolator()()` Gets the acceleration curve type for the indeterminate animation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMax()()` Return the upper limit of this progress bar's range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMaxHeight()()` The units of this value are pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMaxWidth()()` The units of this value are pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMin()()` Return the lower limit of this progress bar's range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMinHeight()()` The units of this value are pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMinWidth()()` The units of this value are pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgress()()` Get the progress bar's current level of progress. |
+| --- | --- |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintBlendMode()()` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintList()()` Returns the tint applied to the progress background, if specified. |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintMode()()` <br /> |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressDrawable()()` Get the drawable used to draw the progress bar in progress mode. |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintList()()` Returns the tint applied to the progress drawable, if specified. |
+| --- | --- |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgress()()` Get the progress bar's current level of secondary progress. |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
+| --- | --- |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintList()()` Returns the tint applied to the secondary progress drawable, if specified. |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#incrementProgressBy(kotlin.Int)(diff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Increase the progress bar's progress by the specified amount. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#incrementSecondaryProgressBy(kotlin.Int)(diff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Increase the progress bar's secondary progress by the specified amount. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#invalidateDrawable(android.graphics.drawable.Drawable)(dr: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Invalidates the specified Drawable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#isAnimating()()` Returns whether the ProgressBar is animating or not. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#isIndeterminate()()` Indicate whether this progress bar is in indeterminate mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#postInvalidate()()` Cause an invalidate to happen on a subsequent cycle through the event loop. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminate(kotlin.Boolean)(indeterminate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Change the indeterminate mode for this progress bar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateDrawable(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Define the drawable used to draw the progress bar in indeterminate mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateDrawableTiled(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Define the tileable drawable used to draw the progress bar in indeterminate mode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateTintList(android.content.res.ColorStateList)` to the indeterminate drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the indeterminate drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setIndeterminateTintList(android.content.res.ColorStateList)` to the indeterminate drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setInterpolator(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the acceleration curve for the indeterminate animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setInterpolator(android.view.animation.Interpolator)(interpolator: https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#!)` Sets the acceleration curve for the indeterminate animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMax(kotlin.Int)(max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the upper range of the progress bar max. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMaxHeight(kotlin.Int)(maxHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the maximum height the progress bar can have. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMaxWidth(kotlin.Int)(maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the maximum width the progress bar can have. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMin(kotlin.Int)(min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the lower range of the progress bar to min. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMinHeight(kotlin.Int)(minHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the minimum height the progress bar can have. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMinWidth(kotlin.Int)(minWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the minimum width the progress bar can have. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgress(kotlin.Int)(progress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the current progress to the specified value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgress(kotlin.Int,%20kotlin.Boolean)(progress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the current progress to the specified value, optionally animating the visual position between the current and target values. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressBackgroundTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressBackgroundTintList(android.content.res.ColorStateList)`} to the progress background. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressBackgroundTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the progress background, if one exists. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressBackgroundTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressBackgroundTintList(android.content.res.ColorStateList)`} to the progress background. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressDrawable(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Define the drawable used to draw the progress bar in progress mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressDrawableTiled(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Define the tileable drawable used to draw the progress bar in progress mode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressTintList(android.content.res.ColorStateList)`} to the progress indicator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the progress indicator, if one exists, or to the entire progress drawable otherwise. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setProgressTintList(android.content.res.ColorStateList)`} to the progress indicator. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgress(kotlin.Int)(secondaryProgress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the current secondary progress to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgressTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgressTintList(android.content.res.ColorStateList)`} to the secondary progress indicator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgressTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the secondary progress indicator, if one exists. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgressTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setSecondaryProgressTintList(android.content.res.ColorStateList)`} to the secondary progress indicator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setStateDescription(kotlin.CharSequence)(stateDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` This function is called when an instance or subclass sets the state description. |
 
@@ -1738,9 +1767,11 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onDetachedFromWindow()()` This is called when the view is detached from a window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#verifyDrawable(android.graphics.drawable.Drawable)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -3514,6 +3545,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4880,6 +4912,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7892,6 +7925,7 @@ Invalidates the specified Drawable.
 | `who` | The drawable that is requesting the update. This value cannot be `null`. |
 | `drawable` | the drawable to invalidate. This value cannot be `null`. |
 | `dr` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): This value cannot be `null`. |
+| --- | --- |
 
 ### isAnimating
 
@@ -8655,6 +8689,7 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |
 
 ### verifyDrawable

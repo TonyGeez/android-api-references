@@ -5,16 +5,19 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # PreviewableHandwritingGesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/PreviewableHandwritingGesture "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PreviewableHandwritingGesture : HandwritingGesture
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
 | | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture#) |
 
 | Known Direct Subclasses [DeleteGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture), [DeleteRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture), [SelectGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture), [SelectRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture) |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DeleteGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture) | A sub-class of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for deleting an area of text using single rectangle. | | [DeleteRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture) | A subclass of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for deleting a range of text by defining start and end rectangles. | | [SelectGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture) | A sub-class of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for selecting an area of text using single rectangle. | | [SelectRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture) | A subclass of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for selecting a range of text by defining start and end rectangles. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) that can be [previewed](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#previewHandwritingGesture(android.view.inputmethod.PreviewableHandwritingGesture,%20android.os.CancellationSignal)). Note: An editor might only implement a subset of gesture previews and declares the supported ones via [EditorInfo.getSupportedHandwritingGesturePreviews](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()).
 

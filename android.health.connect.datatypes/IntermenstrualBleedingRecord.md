@@ -8,9 +8,11 @@ class IntermenstrualBleedingRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.IntermenstrualBleedingRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntermenstrualBleedingRecord#) |
+| --- | --- | --- | --- |
 
 Captures the user's inter-menstrual bleeding. Each record represents a single instance.
 
@@ -51,6 +53,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

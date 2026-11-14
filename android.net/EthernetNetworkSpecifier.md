@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # EthernetNetworkSpecifier
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/EthernetNetworkSpecifier "View this page in Java") 
+| --- | --- |
 
 ```
 class EthernetNetworkSpecifier : NetworkSpecifier, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier) ||
 | | ↳ | [android.net.EthernetNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#) |
 
@@ -31,9 +33,11 @@ A [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInterfaceName](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#getInterfaceName())`()` Get the name of the ethernet interface the specifier refers to, or null. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/EthernetNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

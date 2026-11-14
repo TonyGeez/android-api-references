@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Mesh
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/Mesh "View this page in Java") 
+| --- | --- |
 
 ```
 open class Mesh
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Mesh](https://developer.android.com/reference/kotlin/android/graphics/Mesh#) |
 
 Class representing a mesh object. This class represents a Mesh object that can optionally be indexed. A [MeshSpecification](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification) is required along with various attributes for detailing the mesh object, including a mode, vertex buffer, optional index buffer, and bounds for the mesh. Once generated, a mesh object can be drawn through [Canvas.drawMesh(Mesh, BlendMode, Paint)](https://developer.android.com/reference/kotlin/android/graphics/Canvas#drawMesh(android.graphics.Mesh,%20android.graphics.BlendMode,%20android.graphics.Paint))
@@ -32,15 +34,19 @@ Class representing a mesh object. This class represents a Mesh object that can o
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setColorUniform(kotlin.String,%20android.graphics.Color))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Color](https://developer.android.com/reference/kotlin/android/graphics/Color)`)` Sets the uniform color value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setColorUniform(kotlin.String,%20kotlin.Int))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform color value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setColorUniform(kotlin.String,%20kotlin.Long))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the uniform color value corresponding to the shader assigned to the mesh. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setFloatUniform(kotlin.String,%20kotlin.Float))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setFloatUniform(kotlin.String,%20kotlin.Float,%20kotlin.Float))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setFloatUniform(kotlin.String,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setFloatUniform(kotlin.String,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value4:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setFloatUniform(kotlin.String,%20kotlin.FloatArray))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setIntUniform(kotlin.String,%20kotlin.Int))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setIntUniform(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setIntUniform(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setIntUniform(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value4:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](https://developer.android.com/reference/kotlin/android/graphics/Mesh#setIntUniform(kotlin.String,%20kotlin.IntArray))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Sets the uniform value corresponding to the shader assigned to the mesh. |
 
 ## Constants
@@ -91,6 +97,7 @@ Constructor for a non-indexed Mesh.
 | `meshSpec` | [MeshSpecification](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification): [MeshSpecification](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification) used when generating the mesh. This value cannot be`null`. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Determines what mode to draw the mesh in. Must be one of [Mesh.TRIANGLES](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLES:kotlin.Int) or [Mesh.TRIANGLE_STRIP](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLE_STRIP:kotlin.Int) Value is [android.graphics.Mesh#TRIANGLES](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLES:kotlin.Int), or [android.graphics.Mesh#TRIANGLE_STRIP](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLE_STRIP:kotlin.Int) |
 | `vertexBuffer` | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#):vertex buffer representing through [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#). This provides the data for all attributes provided within the meshSpec for every vertex. That is, a vertex buffer should be (attributes size \* number of vertices) in length to be valid. Note that currently implementation will have a CPU backed buffer generated. This value cannot be`null`. |
+| --- | --- |
 | `vertexCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of vertices represented in the vertexBuffer and mesh. |
 | `bounds` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF):bounds of the mesh object. This value cannot be`null`. |
 
@@ -115,9 +122,11 @@ Constructor for an indexed Mesh.
 | `meshSpec` | [MeshSpecification](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification): [MeshSpecification](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification) used when generating the mesh. This value cannot be`null`. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Determines what mode to draw the mesh in. Must be one of [Mesh.TRIANGLES](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLES:kotlin.Int) or [Mesh.TRIANGLE_STRIP](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLE_STRIP:kotlin.Int) Value is [android.graphics.Mesh#TRIANGLES](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLES:kotlin.Int), or [android.graphics.Mesh#TRIANGLE_STRIP](https://developer.android.com/reference/kotlin/android/graphics/Mesh#TRIANGLE_STRIP:kotlin.Int) |
 | `vertexBuffer` | [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#):vertex buffer representing through [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#). This provides the data for all attributes provided within the meshSpec for every vertex. That is, a vertex buffer should be (attributes size \* number of vertices) in length to be valid. Note that currently implementation will have a CPU backed buffer generated. This value cannot be`null`. |
+| --- | --- |
 | `vertexCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of vertices represented in the vertexBuffer and mesh. |
 | `indexBuffer` | [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer.html#):index buffer representing through [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer.html#). Indices are required to be 16 bits, so ShortBuffer is necessary. Note that currently implementation will have a CPU backed buffer generated. This value cannot be`null`. |
 | `bounds` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF):bounds of the mesh object. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 
@@ -212,6 +221,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the float uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):first float value corresponding to the float uniform with the given name. |
 | `value2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):second float value corresponding to the float uniform with the given name. |
+| --- | --- |
 
 ### setFloatUniform
 
@@ -233,6 +243,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the float uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):first float value corresponding to the float uniform with the given name. |
 | `value2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):second float value corresponding to the float uniform with the given name. |
+| --- | --- |
 | `value3` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):third float value corresponding to the float unifiform with the given name. |
 
 ### setFloatUniform
@@ -256,6 +267,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the float uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):first float value corresponding to the float uniform with the given name. |
 | `value2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):second float value corresponding to the float uniform with the given name. |
+| --- | --- |
 | `value3` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):third float value corresponding to the float uniform with the given name. |
 | `value4` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):fourth float value corresponding to the float uniform with the given name. |
 
@@ -314,6 +326,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the int uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):first value corresponding to the int uniform with the given name. |
 | `value2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):second value corresponding to the int uniform with the given name. |
+| --- | --- |
 
 ### setIntUniform
 
@@ -335,6 +348,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the int uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):first value corresponding to the int uniform with the given name. |
 | `value2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):second value corresponding to the int uniform with the given name. |
+| --- | --- |
 | `value3` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):third value corresponding to the int uniform with the given name. |
 
 ### setIntUniform
@@ -358,6 +372,7 @@ Sets the uniform value corresponding to the shader assigned to the mesh. If the 
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the int uniform declared in the shader program. This value cannot be`null`. |
 | `value1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):first value corresponding to the int uniform with the given name. |
 | `value2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):second value corresponding to the int uniform with the given name. |
+| --- | --- |
 | `value3` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):third value corresponding to the int uniform with the given name. |
 | `value4` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):fourth value corresponding to the int uniform with the given name. |
 

@@ -11,6 +11,7 @@ interface BasicFileAttributeView : FileAttributeView
 | [java.nio.file.attribute.BasicFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributeView#) |
 
 | Known Direct Subclasses [DosFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView), [PosixFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView) |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DosFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView) | A file attribute view that provides a view of the legacy "DOS" file attributes. | | [PosixFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView) | A file attribute view that provides a view of the file attributes commonly associated with files on file systems used by operating systems that implement the Portable Operating System Interface (POSIX) family of standards. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A file attribute view that provides a view of a*basic set* of file attributes common to many file systems. The basic set of file attributes consist of*mandatory* and*optional* file attributes as defined by the [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes) interface.
 
@@ -19,12 +20,15 @@ The file attributes are retrieved from the file system as a*bulk operation* by i
 Where dynamic access to file attributes is required, the attributes supported by this attribute view have the following names and types:
 
 | Name | Type |
+| --- | --- |
 | "lastModifiedTime" | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime) |
 | "lastAccessTime" | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime) |
 | "creationTime" | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime) |
+| --- | --- |
 | "size" | [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#) |
 | "isRegularFile" | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 | "isDirectory" | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
+| --- | --- |
 | "isSymbolicLink" | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 | "isOther" | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 | "fileKey" | [Object](https://developer.android.com/reference/kotlin/java/lang/Object.html#) |
@@ -41,6 +45,7 @@ The [setAttribute](https://developer.android.com/reference/kotlin/java/nio/file/
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributeView#name())`()` Returns the name of the attribute view. |
 | abstract [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)! | [readAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributeView#readAttributes())`()` Reads the basic file attributes as a bulk operation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributeView#setTimes(java.nio.file.attribute.FileTime,%20java.nio.file.attribute.FileTime,%20java.nio.file.attribute.FileTime))`(`lastModifiedTime:` ` [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!`, `lastAccessTime:` ` [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!`, `createTime:` ` [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!`)` Updates any or all of the file's last modified time, last access time, and create time attributes. |
+| --- | --- |
 
 ## Public methods
 
@@ -111,6 +116,7 @@ Path path = ...
 | `lastModifiedTime` | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!:the new last modified time, or`null`to not change the value |
 | `lastAccessTime` | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!:the last access time, or`null`to not change the value |
 | `createTime` | [FileTime](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime)!:the file's create time, or`null`to not change the value |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

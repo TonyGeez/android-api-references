@@ -6,12 +6,14 @@ Also in [U Extensions 13](https://developer.android.com/sdkExtensions)
 # PlannedExerciseStep
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/PlannedExerciseStep "View this page in Java") 
+| --- | --- |
 
 ```
 class PlannedExerciseStep
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#) |
 
 A single step within an [PlannedExerciseBlock](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock) e.g. 8x 60kg barbell squats.
@@ -27,18 +29,22 @@ A single step within an [PlannedExerciseBlock](https://developer.android.com/ref
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_ACTIVE](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_ACTIVE:kotlin.Int) Active exercise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_COOLDOWN](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_COOLDOWN:kotlin.Int) Cooldown exercise, typically at the end of a workout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_RECOVERY](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_RECOVERY:kotlin.Int) Lower intensity, active exercise. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_REST](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_REST:kotlin.Int) A rest. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_UNKNOWN](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_UNKNOWN:kotlin.Int) An unknown category of exercise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_CATEGORY_WARMUP](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#EXERCISE_CATEGORY_WARMUP:kotlin.Int) A warmup. |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ExerciseCompletionGoal](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseCompletionGoal) | [getCompletionGoal](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#getCompletionGoal())`()` Returns the exercise completion goal for this step. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#getDescription())`()` Returns the description of this step. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExerciseCategory](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#getExerciseCategory())`()` Returns the exercise category of this step. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExerciseType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#getExerciseType())`()` Returns the exercise type of this step. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExercisePerformanceGoal](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExercisePerformanceGoal)!\> | [getPerformanceGoals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#getPerformanceGoals())`()` Returns the exercise performance goals for this step. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep#hashCode())`()` <br /> |
 
 ## Constants

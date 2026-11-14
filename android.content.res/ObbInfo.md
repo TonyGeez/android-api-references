@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # ObbInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/res/ObbInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class ObbInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#) |
 
 Basic information about a Opaque Binary Blob (OBB) that reflects the info from the footer on the OBB file. This information may be manipulated by a developer with the`obbtool`program in the Android SDK.
@@ -30,12 +32,14 @@ Basic information about a Opaque Binary Blob (OBB) that reflects the info from t
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [filename](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#filename:kotlin.String) The canonical filename of the OBB. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#flags:kotlin.Int) The flags relating to the OBB. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#packageName:kotlin.String) The name of the package to which the OBB file belongs. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo#version:kotlin.Int) The version of the package to which the OBB file belongs. |
 

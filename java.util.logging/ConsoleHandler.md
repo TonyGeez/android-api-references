@@ -7,9 +7,11 @@ open class ConsoleHandler : StreamHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler) |||
 | | ↳ | [java.util.logging.StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler) ||
 | | | ↳ | [java.util.logging.ConsoleHandler](https://developer.android.com/reference/kotlin/java/util/logging/ConsoleHandler#) |
+| --- | --- | --- | --- |
 
 This Handler publishes log records to System.err. By default the SimpleFormatter is used to generate brief summaries.
 

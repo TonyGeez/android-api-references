@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothCsipSetCoordinator
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothCsipSetCoordinator "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothCsipSetCoordinator : AutoCloseable, BluetoothProfile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothCsipSetCoordinator](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator#) |
 
 This class provides the public APIs to control the Bluetooth CSIP set coordinator.
@@ -32,6 +34,7 @@ BluetoothCsipSetCoordinator is a proxy object for controlling the Bluetooth CSIP
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | [getConnectedDevices](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator#getConnectedDevices())`()` Get connected devices for this specific profile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionState](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator#getConnectionState(android.bluetooth.BluetoothDevice))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)?`)` Get the current connection state of the profile For apps targeting [Build.VERSION_CODES.S](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int) or or higher, this requires the [Manifest.permission.BLUETOOTH_CONNECT](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String) permission which can be gained with[android.app.Activity#requestPermissions(String[], int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)). |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | [getDevicesMatchingConnectionStates](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator#getDevicesMatchingConnectionStates(kotlin.IntArray))`(`states:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Get a list of devices that match any of the given connection states. |
+| --- | --- |
 
 ## Constants
 

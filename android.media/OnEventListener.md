@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # OnEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaDrm.OnEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnEventListener
@@ -43,5 +44,6 @@ Called when an event occurs that requires the app to be notified
 | `md` | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm):the MediaDrm object on which the event occurred This value cannot be`null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:the DRM session ID on which the event occurred, or`null`if there is no session ID associated with the event. |
 | `event` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):indicates the event type Value is [android.media.MediaDrm#EVENT_PROVISION_REQUIRED](https://developer.android.com/reference/kotlin/android/media/MediaDrm#EVENT_PROVISION_REQUIRED:kotlin.Int), [android.media.MediaDrm#EVENT_KEY_REQUIRED](https://developer.android.com/reference/kotlin/android/media/MediaDrm#EVENT_KEY_REQUIRED:kotlin.Int), [android.media.MediaDrm#EVENT_KEY_EXPIRED](https://developer.android.com/reference/kotlin/android/media/MediaDrm#EVENT_KEY_EXPIRED:kotlin.Int), [android.media.MediaDrm#EVENT_VENDOR_DEFINED](https://developer.android.com/reference/kotlin/android/media/MediaDrm#EVENT_VENDOR_DEFINED:kotlin.Int), or [android.media.MediaDrm#EVENT_SESSION_RECLAIMED](https://developer.android.com/reference/kotlin/android/media/MediaDrm#EVENT_SESSION_RECLAIMED:kotlin.Int) |
+| --- | --- |
 | `extra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an secondary error code |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:optional byte array of data that may be associated with the event This value may be`null`. |

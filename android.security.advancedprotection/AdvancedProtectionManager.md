@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AdvancedProtectionManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/security/advancedprotection/AdvancedProtectionManager "View this page in Java")
+| --- | --- |
 
 ```
 class AdvancedProtectionManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.advancedprotection.AdvancedProtectionManager](https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#) |
 
 Advanced Protection is a mode that users can enroll their device into, that enhances security by enabling features and restrictions across both the platform and user apps.
@@ -26,6 +28,7 @@ This class provides methods to query and control the advanced protection mode fo
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#isAdvancedProtectionEnabled()()` Checks if advanced protection is enabled on the device. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#registerAdvancedProtectionCallback(java.util.concurrent.Executor,%20android.security.advancedprotection.AdvancedProtectionManager.Callback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback)` Registers a `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` to be notified of changes to the Advanced Protection state. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#unregisterAdvancedProtectionCallback(android.security.advancedprotection.AdvancedProtectionManager.Callback)(callback: https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback)` Unregister an existing `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback`. |
+| --- | --- |
 
 ## Public methods
 

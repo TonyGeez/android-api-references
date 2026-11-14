@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # UiTranslationManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/translation/UiTranslationManager "View this page in Java")
+| --- | --- |
 
 ```
 class UiTranslationManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.UiTranslationManager](https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationManager#) |
 
 The `https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationManager#` class provides ways for apps to use the ui translation function in framework.

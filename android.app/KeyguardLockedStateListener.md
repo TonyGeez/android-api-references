@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # KeyguardLockedStateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLockedStateListener "View this page in Java") 
+| --- | --- |
 
 ```
 @FunctionalInterface interface KeyguardLockedStateListener

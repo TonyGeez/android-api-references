@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # TelephonyNetworkSpecifier
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/TelephonyNetworkSpecifier "View this page in Java") 
+| --- | --- |
 
 ```
 class TelephonyNetworkSpecifier : NetworkSpecifier, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier) ||
 | | ↳ | [android.net.TelephonyNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#) |
 
@@ -31,9 +33,11 @@ NetworkSpecifier object for cellular network request. Apps should use the [Telep
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#getSubscriptionId())`()` Return the subscription Id of current TelephonyNetworkSpecifier object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/TelephonyNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

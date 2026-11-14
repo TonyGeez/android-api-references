@@ -7,6 +7,7 @@ class RangingData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingData](https://developer.android.com/reference/kotlin/android/ranging/RangingData#) |
 
 Represents ranging data, including distance, azimuth, elevation, and RSSI measurements, along with the ranging technology used and a timestamp.
@@ -30,18 +31,23 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [RangingMeasurement](https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getAzimuth()()` Returns the azimuth measurement, or `null` if not available. |
+| --- | --- |
 | [RangingMeasurement](https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistance()()` Returns the distance measurement. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistanceStandardDeviationMeters()()` Get the standard deviation of distance in meters . |
 | [RangingMeasurement](https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getElevation()()` Returns the elevation measurement, or `null` if not available. |
+| --- | --- |
 | [RangingDataExtras](https://developer.android.com/reference/kotlin/android/ranging/RangingDataExtras)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingDataExtras()()` Gets the extra ranging data associated with this ranging data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingTechnology()()` Returns the ranging technology used. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRssi()()` Returns the RSSI (Received Signal Strength Indicator) value. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getTimestampMillis()()` Returns the timestamp of when the ranging data was collected. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hasDistanceStandardDeviation()()` Check if the standard deviation of distance is set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hasRssi()()` Returns whether an RSSI measurement is included with the data. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

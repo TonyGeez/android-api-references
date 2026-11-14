@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # JobWorkItem
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/job/JobWorkItem "View this page in Java") 
+| --- | --- |
 
 ```
 class JobWorkItem : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.job.JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#) |
 
 A unit of work that can be enqueued for a job using [JobScheduler.enqueue](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)). See [JobParameters.dequeueWork](https://developer.android.com/reference/kotlin/android/app/job/JobParameters#dequeueWork())for more details.
@@ -38,12 +40,15 @@ A unit of work that can be enqueued for a job using [JobScheduler.enqueue](https
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeliveryCount](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getDeliveryCount())`()` Return the count of the number of times this work item has been delivered to the job. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEstimatedNetworkDownloadBytes](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getEstimatedNetworkDownloadBytes())`()` Return the estimated size of download traffic that will be performed by this job, in bytes. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEstimatedNetworkUploadBytes](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getEstimatedNetworkUploadBytes())`()` Return the estimated size of upload traffic that will be performed by this job work item, in bytes. |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getExtras())`()` Return the extras associated with this work. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [getIntent](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getIntent())`()` Return the Intent associated with this work. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMinimumNetworkChunkBytes](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#getMinimumNetworkChunkBytes())`()` Return the smallest piece of data that cannot be easily paused and resumed, in bytes. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,6 +94,7 @@ Intents cannot be used for persisted JobWorkItems. Use [Builder.setExtras(Persis
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The general Intent describing this work. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The estimated size of network traffic that will be downloaded by this job work item, in bytes. Value is a non-negative number of bytes. |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The estimated size of network traffic that will be uploaded by this job work item, in bytes. Value is a non-negative number of bytes. |
+| --- | --- |
 
 ### JobWorkItem
 
@@ -113,6 +119,7 @@ Intents cannot be used for persisted JobWorkItems. Use [Builder.setExtras(Persis
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?:The general Intent describing this work. This value may be`null`. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The estimated size of network traffic that will be downloaded by this job work item, in bytes. Value is a non-negative number of bytes. |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The estimated size of network traffic that will be uploaded by this job work item, in bytes. Value is a non-negative number of bytes. |
+| --- | --- |
 | `minimumChunkBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The smallest piece of data that cannot be easily paused and resumed, in bytes. Value is a non-negative number of bytes. |
 
 ## Public methods

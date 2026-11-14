@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # OnTagRemovedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.OnTagRemovedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTagRemovedListener

@@ -3,166 +3,219 @@
 # android.media
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/package-summary "View this page in Java")
+| --- | --- |
 
 ## Interfaces
 
 | [OnAudioFocusChangeListener](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener) | Interface definition for a callback to be invoked when the audio focus of the system is updated. |
+| --- | --- |
 | [OnCommunicationDeviceChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnCommunicationDeviceChangedListener) | Listener registered by client to be notified upon communication audio device change. |
 | [OnModeChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnModeChangedListener) | Interface definition of a callback that is notified when the audio mode changes |
 | [OnPreferredMixerAttributesChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnPreferredMixerAttributesChangedListener) | Interface to be notified of changes in the preferred mixer attributes. |
+| --- | --- |
 | [Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) | Key interface for the`AudioMetadata`map. |
 | [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) | AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) value pairs. |
 | [AudioMetadataReadMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap) | A read only`Map`-style interface of [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) value pairs used for [AudioMetadata](https://developer.android.com/reference/kotlin/android/media/AudioMetadata). |
+| --- | --- |
 | [OnRecordPositionUpdateListener](https://developer.android.com/reference/kotlin/android/media/AudioRecord.OnRecordPositionUpdateListener) | Interface definition for a callback to be invoked when an AudioRecord has reached a notification marker set by [AudioRecord.setNotificationMarkerPosition(int)](https://developer.android.com/reference/kotlin/android/media/AudioRecord#setNotificationMarkerPosition(kotlin.Int))or for periodic updates on the progress of the record head, as set by [AudioRecord.setPositionNotificationPeriod(int)](https://developer.android.com/reference/kotlin/android/media/AudioRecord#setPositionNotificationPeriod(kotlin.Int)). |
 | [OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRecord.OnRoutingChangedListener) | Defines the interface by which applications can receive notifications of routing changes for the associated [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord). |
 | [AudioRecordingMonitor](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor) | AudioRecordingMonitor defines an interface implemented by [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) and [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) allowing applications to install a callback and be notified of changes in the capture path while recoding is active. |
+| --- | --- |
 | [AudioRouting](https://developer.android.com/reference/kotlin/android/media/AudioRouting) | AudioRouting defines an interface for controlling routing and routing notifications in AudioTrack and AudioRecord objects. |
 | [OnCodecFormatChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnCodecFormatChangedListener) | Interface definition for a listener for codec format changes. |
 | [OnPlaybackPositionUpdateListener](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnPlaybackPositionUpdateListener) | Interface definition for a callback to be invoked when the playback head position of an AudioTrack has reached a notification marker or has increased by a certain period. |
+| --- | --- |
 | [OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener) | Defines the interface by which applications can receive notifications of routing changes for the associated [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack). |
 | [OnImageAvailableListener](https://developer.android.com/reference/kotlin/android/media/ImageReader.OnImageAvailableListener) | Callback interface for being notified that a new image is available. |
 | [OnImageReleasedListener](https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener) | ImageWriter callback interface, used to to asynchronously notify the application of various ImageWriter events. |
+| --- | --- |
 | [OnJetEventListener](https://developer.android.com/reference/kotlin/android/media/JetPlayer.OnJetEventListener) | Handles the notification when the JET engine generates an event. |
 | [OnLoudnessCodecUpdateListener](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener) | Listener used for receiving asynchronous loudness metadata updates. |
 | [EventListener](https://developer.android.com/reference/kotlin/android/media/MediaCas.EventListener) | An interface registered by the caller to [setEventListener](https://developer.android.com/reference/kotlin/android/media/MediaCas#setEventListener(android.media.MediaCas.EventListener,%20android.os.Handler))to receives scheme-specific notifications from a MediaCas instance. |
+| --- | --- |
 | [OnFirstTunnelFrameReadyListener](https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFirstTunnelFrameReadyListener) | Listener to be called when the first output frame has been decoded and is ready to be rendered for a codec configured for tunnel mode with`KEY_AUDIO_SESSION_ID`. |
 | [OnFrameRenderedListener](https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFrameRenderedListener) | Listener to be called when an output frame has rendered on the output surface |
 | [OnEventListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnEventListener) | Interface definition for a callback to be invoked when a drm event occurs |
+| --- | --- |
 | [OnExpirationUpdateListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnExpirationUpdateListener) | Interface definition for a callback to be invoked when a drm session expiration update occurs |
 | [OnKeyStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnKeyStatusChangeListener) | Interface definition for a callback to be invoked when the keys in a drm session change states. |
 | [OnSessionLostStateListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnSessionLostStateListener) | Interface definition for a callback to be invoked when the session state has been lost and is now invalid |
+| --- | --- |
 | [MediaDrmThrowable](https://developer.android.com/reference/kotlin/android/media/MediaDrmThrowable) | A @ [Throwable](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#) thrown from [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) or @ [MediaCrypto](https://developer.android.com/reference/kotlin/android/media/MediaCrypto) APIs |
 | [InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader) | Provides input data to [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser). |
 | [OutputConsumer](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer) | Receives extracted media sample data and metadata from [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser). |
+| --- | --- |
 | [SeekableInputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader) | [InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader) that allows setting the read position. |
 | [OnBufferingUpdateListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnBufferingUpdateListener) | Interface definition of a callback to be invoked indicating buffering status of a media resource being streamed over the network. |
 | [OnCompletionListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnCompletionListener) | Interface definition for a callback to be invoked when playback of a media source has completed. |
+| --- | --- |
 | [OnDrmConfigHelper](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmConfigHelper) | Interface definition of a callback to be invoked when the app can do DRM configuration (get/set properties) before the session is opened. |
 | [OnDrmInfoListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmInfoListener) | Interface definition of a callback to be invoked when the DRM info becomes available |
 | [OnDrmPreparedListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmPreparedListener) | Interface definition of a callback to notify the app when the DRM is ready for key request/response |
+| --- | --- |
 | [OnErrorListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnErrorListener) | Interface definition of a callback to be invoked when there has been an error during an asynchronous operation (other errors will throw exceptions at method call time). |
 | [OnInfoListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnInfoListener) | Interface definition of a callback to be invoked to communicate some info and/or warning about the media or its playback. |
 | [OnMediaTimeDiscontinuityListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnMediaTimeDiscontinuityListener) | Interface definition of a callback to be invoked when discontinuity in the normal progression of the media time is detected. |
+| --- | --- |
 | [OnPreparedListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnPreparedListener) | Interface definition for a callback to be invoked when the media source is ready for playback. |
 | [OnSeekCompleteListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSeekCompleteListener) | Interface definition of a callback to be invoked indicating the completion of a seek operation. |
 | [OnSubtitleDataListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSubtitleDataListener) | Interface definition of a callback to be invoked when a player subtitle track has new subtitle data available. |
+| --- | --- |
 | [OnTimedMetaDataAvailableListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedMetaDataAvailableListener) | Interface definition of a callback to be invoked when a track has timed metadata available. |
 | [OnTimedTextListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedTextListener) | Interface definition of a callback to be invoked when a timed text is available for display. |
 | [OnVideoSizeChangedListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnVideoSizeChangedListener) | Interface definition of a callback to be invoked when the video size is first known or updated |
+| --- | --- |
 | [OnErrorListener](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.OnErrorListener) | Interface definition for a callback to be invoked when an error occurs while recording. |
 | [OnInfoListener](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.OnInfoListener) | Interface definition of a callback to be invoked to communicate some info and/or warning about the recording. |
 | [DeviceSuggestionsUpdatesCallback](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.DeviceSuggestionsUpdatesCallback) | Callback for receiving events about device suggestions |
+| --- | --- |
 | [OnGetControllerHintsListener](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener) | A listener interface to send optional app-specific hints when creating a [RoutingController](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController). |
 | [MediaScannerConnectionClient](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient) | An interface for notifying clients of MediaScannerConnection when a connection to the MediaScanner service has been established and when the scanning of a file has completed. |
 | [OnScanCompletedListener](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener) | Interface for notifying clients of the result of scanning a requested media file. |
+| --- | --- |
 | [OnErrorListener](https://developer.android.com/reference/kotlin/android/media/MediaSync.OnErrorListener) | Interface definition of a callback to be invoked when there has been an error during an asynchronous operation (other errors will throw exceptions at method call time). |
 | [MicrophoneDirection](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection) | Interface defining mechanism for controlling the directionality and field width of audio capture. |
 | [OnGetPlaybackPositionListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnGetPlaybackPositionListener) | Interface definition for a callback to be invoked when the media playback position is queried. |
+| --- | --- |
 | [OnMetadataUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnMetadataUpdateListener) | Interface definition for a callback to be invoked when one of the metadata values has been updated. |
 | [OnPlaybackPositionUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener) | Interface definition for a callback to be invoked when the media playback position is requested to be updated. |
 | [OnClientUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteController.OnClientUpdateListener) | Interface definition for the callbacks to be invoked whenever media events, metadata and playback status are available. |
+| --- | --- |
 | [OnLoadCompleteListener](https://developer.android.com/reference/kotlin/android/media/SoundPool.OnLoadCompleteListener) | <br /> |
 | [OnHeadTrackerAvailableListener](https://developer.android.com/reference/kotlin/android/media/Spatializer.OnHeadTrackerAvailableListener) | Interface to be notified of changes to the availability of a head tracker on the audio device to be used by the spatializer effect. |
 | [OnSpatializerStateChangedListener](https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener) | An interface to be notified of changes to the state of the spatializer effect. |
+| --- | --- |
 | [VolumeAutomation](https://developer.android.com/reference/kotlin/android/media/VolumeAutomation) | `VolumeAutomation`defines an interface for automatic volume control of [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) and [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) objects. |
 
 ## Classes
 
 | [ApplicationMediaCapabilities](https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities) | ApplicationMediaCapabilities is an immutable class that encapsulates an application's capabilities for handling newer video codec format and media features. |
+| --- | --- |
 | [AsyncPlayer](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer) | Plays a series of audio URIs, but does all the hard work on another thread so that any slowness with preparing or loading doesn't block the calling thread. |
 | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) | A class to encapsulate a collection of attributes describing information about an audio stream. |
 | [AudioDescriptor](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor) | The AudioDescriptor contains the information to describe the audio playback/capture capabilities. |
+| --- | --- |
 | [AudioDeviceCallback](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback) | AudioDeviceCallback defines the mechanism by which applications can receive notifications of audio device connection and disconnection events. |
 | [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) | Provides information about an audio device. |
 | [AudioFocusRequest](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest) | A class to encapsulate information about an audio focus request. |
+| --- | --- |
 | [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat) | The [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat) class is used to access a number of audio format and channel configuration constants. |
 | [AudioManager](https://developer.android.com/reference/kotlin/android/media/AudioManager) | AudioManager provides access to volume and ringer mode control. |
 | [AudioMetadata](https://developer.android.com/reference/kotlin/android/media/AudioMetadata) | AudioMetadata class is used to manage typed key-value pairs for configuration and capability requests within the Audio Framework. |
+| --- | --- |
 | [AudioMixerAttributes](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes) | Class to represent the attributes of the audio mixer: its format, which represents by an [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat) object and mixer behavior. |
 | [AudioPlaybackCaptureConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration) | Configuration for capturing audio played by other apps. |
 | [AudioPlaybackConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration) | The AudioPlaybackConfiguration class collects the information describing an audio playback session. |
+| --- | --- |
 | [AudioPresentation](https://developer.android.com/reference/kotlin/android/media/AudioPresentation) | The AudioPresentation class encapsulates the information that describes an audio presentation which is available in next generation audio content. |
 | [AudioProfile](https://developer.android.com/reference/kotlin/android/media/AudioProfile) | An AudioProfile is specific to an audio format and lists supported sampling rates and channel masks for that format. |
 | [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. |
+| --- | --- |
 | [AudioRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration) | The AudioRecordingConfiguration class collects the information describing an audio recording session. |
 | [AudioTimestamp](https://developer.android.com/reference/kotlin/android/media/AudioTimestamp) | Structure that groups a position in frame units relative to an assumed audio stream, together with the estimated time when that frame enters or leaves the audio processing pipeline on that device. |
 | [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) | The AudioTrack class manages and plays a single audio resource for Java applications. |
+| --- | --- |
 | [CamcorderProfile](https://developer.android.com/reference/kotlin/android/media/CamcorderProfile) | Retrieves the predefined camcorder profile settings for camcorder applications. |
 | [CameraProfile](https://developer.android.com/reference/kotlin/android/media/CameraProfile) | The CameraProfile class is used to retrieve the pre-defined still image capture (jpeg) quality levels (0-100) used for low, medium, and high quality settings in the Camera application. |
 | [DrmInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData) | Encapsulates initialization data required by a [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) instance. |
+| --- | --- |
 | [EncoderProfiles](https://developer.android.com/reference/kotlin/android/media/EncoderProfiles) | Describes a set of encoding profiles for a given media (audio and/or video) profile. |
 | [ExifInterface](https://developer.android.com/reference/kotlin/android/media/ExifInterface) | This is a class for reading and writing Exif tags in various image file formats. |
 | [FaceDetector](https://developer.android.com/reference/kotlin/android/media/FaceDetector) | Identifies the faces of people in a [android.graphics.Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) graphic object. |
+| --- | --- |
 | [Image](https://developer.android.com/reference/kotlin/android/media/Image) | A single complete image buffer to use with a media source such as a [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) or a [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#). |
 | [ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader) | The ImageReader class allows direct application access to image data rendered into a [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#) |
 | [ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter) | The ImageWriter class allows an application to produce Image data into a [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#), and have it be consumed by another component like [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#). |
+| --- | --- |
 | [JetPlayer](https://developer.android.com/reference/kotlin/android/media/JetPlayer) | JetPlayer provides access to JET content playback and control. |
 | [LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController) | Class for getting recommended loudness parameter updates for audio decoders as they are used to play back media content according to the encoded format and current audio routing. |
 | [MediaActionSound](https://developer.android.com/reference/kotlin/android/media/MediaActionSound) | A class for producing sounds that match those produced by various actions taken by the media and camera APIs. |
+| --- | --- |
 | [MediaCas](https://developer.android.com/reference/kotlin/android/media/MediaCas) | MediaCas can be used to obtain keys for descrambling protected media streams, in conjunction with [android.media.MediaDescrambler](https://developer.android.com/reference/kotlin/android/media/MediaDescrambler). |
 | [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) | MediaCodec class can be used to access low-level media codecs, i. |
 | [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo) | Provides information about a given media codec available on the device. |
+| --- | --- |
 | [MediaCodecList](https://developer.android.com/reference/kotlin/android/media/MediaCodecList) | Allows you to enumerate available codecs, each specified as a [MediaCodecInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo) object, find a codec supporting a given format and query the capabilities of a given codec. |
 | [MediaCommunicationManager](https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager) | This API is not generally intended for third party application developers. |
 | [MediaController2](https://developer.android.com/reference/kotlin/android/media/MediaController2) | This API is not generally intended for third party application developers. |
+| --- | --- |
 | [MediaCrypto](https://developer.android.com/reference/kotlin/android/media/MediaCrypto) | MediaCrypto class can be used in conjunction with [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) to decode encrypted media data. |
 | [MediaDataSource](https://developer.android.com/reference/kotlin/android/media/MediaDataSource) | For supplying media data to the framework. |
 | [MediaDescrambler](https://developer.android.com/reference/kotlin/android/media/MediaDescrambler) | MediaDescrambler class can be used in conjunction with [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) and [android.media.MediaExtractor](https://developer.android.com/reference/kotlin/android/media/MediaExtractor) to decode media data scrambled by conditional access (CA) systems such as those in the ISO/IEC13818-1. |
+| --- | --- |
 | [MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription) | A simple set of metadata for a media item suitable for display. |
 | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) | MediaDrm can be used to obtain keys for decrypting protected media streams, in conjunction with [android.media.MediaCrypto](https://developer.android.com/reference/kotlin/android/media/MediaCrypto). |
 | [MediaExtractor](https://developer.android.com/reference/kotlin/android/media/MediaExtractor) | MediaExtractor facilitates extraction of demuxed, typically encoded, media data from a data source. |
+| --- | --- |
 | [MediaFeature](https://developer.android.com/reference/kotlin/android/media/MediaFeature) | MediaFeature defines various media features, e. |
 | [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat) | Encapsulates the information describing the format of media data, be it audio or video, as well as optional feature metadata. |
 | [MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata) | Contains metadata about an item, such as the title, artist, etc. |
+| --- | --- |
 | [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor) | An abstract class for editing and storing metadata that can be published by [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient). |
 | [MediaMetadataRetriever](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever) | MediaMetadataRetriever class provides a unified interface for retrieving frame and meta data from an input media file. |
 | [MediaMuxer](https://developer.android.com/reference/kotlin/android/media/MediaMuxer) | MediaMuxer facilitates muxing elementary streams. |
+| --- | --- |
 | [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser) | Parses media container formats and extracts contained media samples and metadata. |
 | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) | MediaPlayer class can be used to control playback of audio/video files and streams. |
 | [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) | Used to record audio and video. |
+| --- | --- |
 | [MediaRoute2Info](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info) | Describes the properties of a route. |
 | [MediaRoute2ProviderService](https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService) | Base class for media route provider services. |
 | [MediaRouter](https://developer.android.com/reference/kotlin/android/media/MediaRouter) | This API is not recommended for new applications. |
+| --- | --- |
 | [MediaRouter2](https://developer.android.com/reference/kotlin/android/media/MediaRouter2) | This API is not generally intended for third party application developers. |
 | [MediaScannerConnection](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection) | MediaScannerConnection provides a way for applications to pass a newly created or downloaded media file to the media scanner service. |
 | [MediaSession2](https://developer.android.com/reference/kotlin/android/media/MediaSession2) | This API is not generally intended for third party application developers. |
+| --- | --- |
 | [MediaSession2Service](https://developer.android.com/reference/kotlin/android/media/MediaSession2Service) | This API is not generally intended for third party application developers. |
 | [MediaSync](https://developer.android.com/reference/kotlin/android/media/MediaSync) | MediaSync class can be used to synchronously play audio and video streams. |
 | [MediaSyncEvent](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent) | The MediaSyncEvent class defines events that can be used to synchronize playback or capture actions between different players and recorders. |
+| --- | --- |
 | [MediaTimestamp](https://developer.android.com/reference/kotlin/android/media/MediaTimestamp) | An immutable object that represents the linear correlation between the media time and the system time. |
 | [MicrophoneInfo](https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo) | Class providing information on a microphone. |
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams) | Structure for common playback params. |
+| --- | --- |
 | [Rating](https://developer.android.com/reference/kotlin/android/media/Rating) | A class to encapsulate rating information used as content metadata. |
 | [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) | RemoteControlClient enables exposing information meant to be consumed by remote controls capable of displaying metadata, artwork and media transport control buttons. |
 | [RemoteController](https://developer.android.com/reference/kotlin/android/media/RemoteController) | The RemoteController class is used to control media playback, display and update media metadata and playback status, published by applications using the [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) class. |
+| --- | --- |
 | [Ringtone](https://developer.android.com/reference/kotlin/android/media/Ringtone) | Ringtone provides a quick method for playing a ringtone, notification, or other similar types of sounds. |
 | [RingtoneManager](https://developer.android.com/reference/kotlin/android/media/RingtoneManager) | RingtoneManager provides access to ringtones, notification, and other types of sounds. |
 | [RouteDiscoveryPreference](https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference) | A media route discovery preference describing the features of routes that media router would like to discover and whether to perform active scanning. |
+| --- | --- |
 | [RouteListingPreference](https://developer.android.com/reference/kotlin/android/media/RouteListingPreference) | Allows applications to customize the list of routes used for media routing (for example, in the System UI Output Switcher). |
 | [RoutingSessionInfo](https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo) | Describes a routing session which is created when a media route is selected. |
 | [Session2Command](https://developer.android.com/reference/kotlin/android/media/Session2Command) | This API is not generally intended for third party application developers. |
+| --- | --- |
 | [Session2CommandGroup](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup) | This API is not generally intended for third party application developers. |
 | [Session2Token](https://developer.android.com/reference/kotlin/android/media/Session2Token) | This API is not generally intended for third party application developers. |
 | [SoundPool](https://developer.android.com/reference/kotlin/android/media/SoundPool) | The SoundPool class manages and plays audio resources for applications. |
+| --- | --- |
 | [Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer) | Spatializer provides access to querying capabilities and behavior of sound spatialization on the device. |
 | [SubtitleData](https://developer.android.com/reference/kotlin/android/media/SubtitleData) | Class encapsulating subtitle data, as received through the [MediaPlayer.OnSubtitleDataListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSubtitleDataListener) interface. |
 | [SuggestedDeviceInfo](https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo) | Allows applications to suggest routes to the system UI (for example, in the System UI Output Switcher). |
+| --- | --- |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams) | Structure for common A/V sync params. |
 | [ThumbnailUtils](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils) | Utilities for generating visual thumbnails from files. |
 | [TimedMetaData](https://developer.android.com/reference/kotlin/android/media/TimedMetaData) | Class that embodies one timed metadata access unit, including - a time stamp, and - raw uninterpreted byte-array extracted directly from the container. <br /> |
+| --- | --- |
 | [TimedText](https://developer.android.com/reference/kotlin/android/media/TimedText) | Class to hold the timed text's metadata, including: - The characters for rendering - The rendering position for the timed text <br /> |
 | [ToneGenerator](https://developer.android.com/reference/kotlin/android/media/ToneGenerator) | This class provides methods to play DTMF tones (ITU-T Recommendation Q.23), call supervisory tones (3GPP TS 22.001, CEPT) and proprietary tones (3GPP TS 31.111). |
 | [VolumeProvider](https://developer.android.com/reference/kotlin/android/media/VolumeProvider) | Handles requests to adjust or set the volume on a session. |
+| --- | --- |
 | [VolumeShaper](https://developer.android.com/reference/kotlin/android/media/VolumeShaper) | The`VolumeShaper`class is used to automatically control audio volume during media playback, allowing simple implementation of transition effects and ducking. |
 
 ## Exceptions
 
 | [DeniedByServerException](https://developer.android.com/reference/kotlin/android/media/DeniedByServerException) | Exception thrown when the provisioning server or key server denies a certficate or license for a device. |
+| --- | --- |
 | [MediaCasException](https://developer.android.com/reference/kotlin/android/media/MediaCasException) | Base class for MediaCas exceptions |
 | [MediaCasStateException](https://developer.android.com/reference/kotlin/android/media/MediaCasStateException) | Base class for MediaCas runtime exceptions |
 | [MediaCryptoException](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException) | Exception thrown if MediaCrypto object could not be instantiated or if unable to perform an operation on the MediaCrypto object. |
+| --- | --- |
 | [MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) | Base class for MediaDrm exceptions |
 | [MediaDrmResetException](https://developer.android.com/reference/kotlin/android/media/MediaDrmResetException) | This exception is thrown when the MediaDrm instance has become unusable due to a restart of the mediaserver process. |
 | [NotProvisionedException](https://developer.android.com/reference/kotlin/android/media/NotProvisionedException) | Exception thrown when an operation on a MediaDrm object is attempted and the device does not have a certificate. |
+| --- | --- |
 | [ResourceBusyException](https://developer.android.com/reference/kotlin/android/media/ResourceBusyException) | Exception thrown when an operation on a MediaDrm object is attempted and hardware resources are not available, due to being in use. |
 | [UnsupportedSchemeException](https://developer.android.com/reference/kotlin/android/media/UnsupportedSchemeException) | Exception thrown when an attempt is made to construct a MediaDrm object using a crypto scheme UUID that is not supported by the device |

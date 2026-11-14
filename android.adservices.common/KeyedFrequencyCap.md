@@ -9,6 +9,7 @@ class KeyedFrequencyCap : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.common.KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#) |
 
 > [!CAUTION]
@@ -35,9 +36,11 @@ Frequency caps define the maximum rate an event can occur within a given time in
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` objects contain the same information. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getAdCounterKey()()` Returns the ad counter key that the frequency cap is applied to. |
+| --- | --- |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getInterval()()` Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getMaxCount()()` Returns the maximum count of event occurrences allowed within a given time interval. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` object's data. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

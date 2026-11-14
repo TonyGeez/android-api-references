@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AltitudeConverter
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/altitude/AltitudeConverter "View this page in Java") 
+| --- | --- |
 
 ```
 class AltitudeConverter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.altitude.AltitudeConverter](https://developer.android.com/reference/kotlin/android/location/altitude/AltitudeConverter#) |
 
 Converts altitudes reported above the World Geodetic System 1984 (WGS84) reference ellipsoid into ones above Mean Sea Level.

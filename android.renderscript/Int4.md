@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Int4
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Int4 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Int4
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Int4](https://developer.android.com/reference/kotlin/android/renderscript/Int4#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Vector version of the basic int type. Provides four int fields packed.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](https://developer.android.com/reference/kotlin/android/renderscript/Int4#w:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Int4#x:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Int4#y:kotlin.Int) <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Int4#z:kotlin.Int) <br /> |
 
 ## Public constructors

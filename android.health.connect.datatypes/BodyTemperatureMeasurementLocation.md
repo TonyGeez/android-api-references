@@ -4,12 +4,14 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 # BodyTemperatureMeasurementLocation
 
 Kotlin | [Java](https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureMeasurementLocation "View this page in Java")
+| --- | --- |
 
 ```
 class BodyTemperatureMeasurementLocation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.BodyTemperatureMeasurementLocation](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#) |
 
 Where on the user's body a temperature measurement was taken from.
@@ -21,12 +23,15 @@ Where on the user's body a temperature measurement was taken from.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_ARMPIT:kotlin.Int` Armpit (axillary) body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_EAR:kotlin.Int` Ear (tympanic) body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_FINGER:kotlin.Int` Finger body temperature measurement. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_FOREHEAD:kotlin.Int` Forehead body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_MOUTH:kotlin.Int` Mouth body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_RECTUM:kotlin.Int` Rectum body temperature measurement. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_TEMPORAL_ARTERY:kotlin.Int` Temporal artery temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_TOE:kotlin.Int` Toe body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_UNKNOWN:kotlin.Int` Body measurement location unknown |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_VAGINA:kotlin.Int` Vaginal body temperature measurement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#MEASUREMENT_LOCATION_WRIST:kotlin.Int` Wrist body temperature measurement. |
 

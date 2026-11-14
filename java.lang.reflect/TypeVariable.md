@@ -21,6 +21,7 @@ Multiple objects may be instantiated at run-time to represent a given type varia
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getBounds](https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable#getBounds())`()` Returns an array of`Type`objects representing the upper bound(s) of this type variable. |
 | abstractD | [getGenericDeclaration](https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable#getGenericDeclaration())`()` Returns the`GenericDeclaration`object representing the generic declaration declared this type variable. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable#getName())`()` Returns the name of this type variable, as it occurs in the source code. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

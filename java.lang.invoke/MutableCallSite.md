@@ -7,6 +7,7 @@ open class MutableCallSite : CallSite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) ||
 | | ↳ | [java.lang.invoke.MutableCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#) |
 
@@ -60,6 +61,7 @@ For target values which will be frequently updated, consider using a [volatile c
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#dynamicInvoker()()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#getTarget()()` Returns the target method of the call site, which behaves like a normal field of the `MutableCallSite`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#setTarget(java.lang.invoke.MethodHandle)(newTarget: https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle!)` Updates the target method of this call site, as a normal variable. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

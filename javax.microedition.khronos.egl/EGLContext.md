@@ -9,6 +9,7 @@ abstract class EGLContext
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.microedition.khronos.egl.EGLContext](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLContext#) |
 
 ## Summary

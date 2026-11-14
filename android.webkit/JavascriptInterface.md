@@ -5,6 +5,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # JavascriptInterface
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/JavascriptInterface "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class JavascriptInterface

@@ -9,6 +9,7 @@ class XMLReaderFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.xml.sax.helpers.XMLReaderFactory](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderFactory#) |
 
 Factory for creating an XML reader.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.

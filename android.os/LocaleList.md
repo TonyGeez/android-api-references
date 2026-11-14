@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # LocaleList
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/LocaleList "View this page in Java") 
+| --- | --- |
 
 ```
 class LocaleList : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) |
 
 LocaleList is an immutable list of Locales, typically used to keep an ordered list of user preferences for locales.
@@ -30,21 +32,27 @@ LocaleList is an immutable list of Locales, typically used to keep an ordered li
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/LocaleList#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/LocaleList#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) | [forLanguageTags](https://developer.android.com/reference/kotlin/android/os/LocaleList#forLanguageTags(kotlin.String))`(`list:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Generates a new LocaleList with the given language tags. |
+| --- | --- |
 | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | [get](https://developer.android.com/reference/kotlin/android/os/LocaleList#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) at the specified index. |
 | static [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) | [getAdjustedDefault](https://developer.android.com/reference/kotlin/android/os/LocaleList#getAdjustedDefault())`()` Returns the default locale list, adjusted by moving the default locale to its first position. |
 | static [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) | [getDefault](https://developer.android.com/reference/kotlin/android/os/LocaleList#getDefault())`()` The result is guaranteed to include the default Locale returned by Locale. |
+| --- | --- |
 | static [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) | [getEmptyLocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#getEmptyLocaleList())`()` Retrieve an empty instance of [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#). |
 | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | [getFirstMatch](https://developer.android.com/reference/kotlin/android/os/LocaleList#getFirstMatch(kotlin.Array))`(`supportedLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns the first match in the locale list given an unordered array of supported locales in BCP 47 format. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/LocaleList#hashCode())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](https://developer.android.com/reference/kotlin/android/os/LocaleList#indexOf(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Searches this [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) for the specified [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) and returns the index of the first occurrence. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/android/os/LocaleList#isEmpty())`()` Returns whether the [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#) contains no [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) items. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPseudoLocale](https://developer.android.com/reference/kotlin/android/os/LocaleList#isPseudoLocale(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)?`)` Returns true if locale is a pseudo-locale, false otherwise. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesLanguageAndScript](https://developer.android.com/reference/kotlin/android/os/LocaleList#matchesLanguageAndScript(java.util.Locale,%20java.util.Locale))`(`supported:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`, `desired:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Determine whether two locales are considered a match, even if they are not exactly equal. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/android/os/LocaleList#setDefault(android.os.LocaleList))`(`locales:` ` [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#)`)` Also sets the default locale by calling Locale. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/android/os/LocaleList#size())`()` Returns the number of [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) items in this [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList#). |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toLanguageTags](https://developer.android.com/reference/kotlin/android/os/LocaleList#toLanguageTags())`()` Retrieves a String representation of the language tags in this list. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/LocaleList#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/LocaleList#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|

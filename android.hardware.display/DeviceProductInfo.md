@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DeviceProductInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/DeviceProductInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class DeviceProductInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.display.DeviceProductInfo](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#) |
 
 Product-specific information about the display or the directly connected device on the display chain. For example, if the display is transitively connected, this field may contain product information about the intermediate device.
@@ -22,6 +24,7 @@ Product-specific information about the display or the directly connected device 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_TO_SINK_BUILT_IN](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_BUILT_IN:kotlin.Int) The display sink is built-in to the device |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_TO_SINK_DIRECT](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_DIRECT:kotlin.Int) The device is directly connected to the display sink. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_TO_SINK_TRANSITIVE](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_TRANSITIVE:kotlin.Int) The device is transitively connected to the display sink. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_TO_SINK_UNKNOWN](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_UNKNOWN:kotlin.Int) The device connection to the display sink is unknown. |
 
 | Inherited constants ||
@@ -37,15 +40,19 @@ Product-specific information about the display or the directly connected device 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionToSinkType](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getConnectionToSinkType())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getManufactureWeek](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getManufactureWeek())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getManufactureYear](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getManufactureYear())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getManufacturerPnpId](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getManufacturerPnpId())`()` Returns the Manufacturer Plug and Play ID. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModelYear](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getModelYear())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getName())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getProductId](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#getProductId())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,6 +128,7 @@ DeviceProductInfo(
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `manufacturerPnpId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `productId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
+| --- | --- |
 | `modelYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is 1990 or greater |
 | `connectionToSinkType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.display.DeviceProductInfo#CONNECTION_TO_SINK_UNKNOWN](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_UNKNOWN:kotlin.Int), [android.hardware.display.DeviceProductInfo#CONNECTION_TO_SINK_BUILT_IN](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_BUILT_IN:kotlin.Int), [android.hardware.display.DeviceProductInfo#CONNECTION_TO_SINK_DIRECT](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_DIRECT:kotlin.Int), or [android.hardware.display.DeviceProductInfo#CONNECTION_TO_SINK_TRANSITIVE](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo#CONNECTION_TO_SINK_TRANSITIVE:kotlin.Int) |
 

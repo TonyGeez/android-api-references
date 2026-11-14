@@ -9,9 +9,11 @@ open class ClassCircularityError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ClassCircularityError](https://developer.android.com/reference/kotlin/java/lang/ClassCircularityError#) |
 
 Thrown when the Java Virtual Machine detects a circularity in the superclass hierarchy of a class being loaded.

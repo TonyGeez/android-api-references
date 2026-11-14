@@ -5,15 +5,18 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # PeerHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/PeerHandle "View this page in Java") 
+| --- | --- |
 
 ```
 open class PeerHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle#) |
 
 | Known Direct Subclasses [ParcelablePeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ParcelablePeerHandle) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ParcelablePeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ParcelablePeerHandle) | A Parcelable [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle#). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Opaque object used to represent a Wi-Fi Aware peer. Obtained from discovery sessions in[DiscoverySessionCallback.onServiceDiscovered(PeerHandle, byte[], java.util.List)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback#onServiceDiscovered(android.net.wifi.aware.PeerHandle,%20kotlin.ByteArray,%20kotlin.collections.MutableList))or received messages in[DiscoverySessionCallback.onMessageReceived(PeerHandle, byte[])](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback#onMessageReceived(android.net.wifi.aware.PeerHandle,%20kotlin.ByteArray)), and used when sending messages e,g,[DiscoverySession.sendMessage(PeerHandle, int, byte[])](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession#sendMessage(android.net.wifi.aware.PeerHandle,%20kotlin.Int,%20kotlin.ByteArray)), or when configuring a network link to a peer, e.g. [DiscoverySession.createNetworkSpecifierOpen(PeerHandle)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession#createNetworkSpecifierOpen(android.net.wifi.aware.PeerHandle))or [DiscoverySession.createNetworkSpecifierPassphrase(PeerHandle, String)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession#createNetworkSpecifierPassphrase(android.net.wifi.aware.PeerHandle,%20kotlin.String)).
 

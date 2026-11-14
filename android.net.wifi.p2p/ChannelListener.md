@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # ChannelListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ChannelListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface ChannelListener

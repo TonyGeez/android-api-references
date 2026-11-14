@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # ThumbnailUtils
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/ThumbnailUtils "View this page in Java") 
+| --- | --- |
 
 ```
 open class ThumbnailUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.ThumbnailUtils](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#) |
 
 Utilities for generating visual thumbnails from files.
@@ -30,9 +32,11 @@ Utilities for generating visual thumbnails from files.
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) | [createAudioThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createAudioThumbnail(java.io.File,%20android.util.Size,%20android.os.CancellationSignal))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`, `size:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)`, `signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` Create a thumbnail for given audio file. |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [createAudioThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createAudioThumbnail(kotlin.String,%20kotlin.Int))`(`filePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a thumbnail for given audio file. |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) | [createImageThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createImageThumbnail(java.io.File,%20android.util.Size,%20android.os.CancellationSignal))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`, `size:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)`, `signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` Create a thumbnail for given image file. |
+| --- | --- |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [createImageThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createImageThumbnail(kotlin.String,%20kotlin.Int))`(`filePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a thumbnail for given image file. |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) | [createVideoThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createVideoThumbnail(java.io.File,%20android.util.Size,%20android.os.CancellationSignal))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`, `size:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)`, `signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` Create a thumbnail for given video file. |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [createVideoThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#createVideoThumbnail(kotlin.String,%20kotlin.Int))`(`filePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a thumbnail for given video file. |
+| --- | --- |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [extractThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#extractThumbnail(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int))`(`source:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a centered bitmap of the desired size. |
 | openstatic [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [extractThumbnail](https://developer.android.com/reference/kotlin/android/media/ThumbnailUtils#extractThumbnail(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`source:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a centered bitmap of the desired size. |
 
@@ -81,6 +85,7 @@ This method should only be used for files that you have direct access to; if you
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#):The audio file. This value cannot be`null`. |
 | `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):The desired thumbnail size. This value cannot be`null`. |
 | `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------|
@@ -136,6 +141,7 @@ This method should only be used for files that you have direct access to; if you
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#):The image file. This value cannot be`null`. |
 | `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):The desired thumbnail size. This value cannot be`null`. |
 | `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------|
@@ -191,6 +197,7 @@ This method should only be used for files that you have direct access to; if you
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#):The video file. This value cannot be`null`. |
 | `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):The desired thumbnail size. This value cannot be`null`. |
 | `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------|
@@ -244,6 +251,7 @@ Creates a centered bitmap of the desired size.
 | `source` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!:original bitmap source |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):targeted width |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):targeted height |
+| --- | --- |
 
 ### extractThumbnail
 
@@ -265,4 +273,5 @@ Creates a centered bitmap of the desired size.
 | `source` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!:original bitmap source |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):targeted width |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):targeted height |
+| --- | --- |
 | `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):options used during thumbnail extraction |

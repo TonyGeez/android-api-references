@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PowerMonitor
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/PowerMonitor "View this page in Java") 
+| --- | --- |
 
 ```
 class PowerMonitor : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.PowerMonitor](https://developer.android.com/reference/kotlin/android/os/PowerMonitor#) |
 
 A PowerMonitor represents either an ODPM rail (on-device power rail monitor) or a modeled energy consumer.
@@ -39,6 +41,7 @@ Energy consumer have more human-readable names, e.g. "GPU", "MODEM" etc. However
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/PowerMonitor#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/os/PowerMonitor#getName())`()` Returns the name of the power monitor, either a power rail or an energy consumer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/os/PowerMonitor#getType())`()` Returns the type of the power monitor. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/PowerMonitor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

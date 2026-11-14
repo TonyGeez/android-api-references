@@ -7,6 +7,7 @@ class JapaneseChronology : AbstractChronology, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.time.chrono.AbstractChronology](https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology) ||
 | | ↳ | [java.time.chrono.JapaneseChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#) |
 
@@ -35,24 +36,31 @@ The supported `ChronoField` instances are:
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Japanese calendar system from the proleptic-year, month-of-year and day-of-month fields. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#date(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Japanese calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#date(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date in this chronology from another temporal object. |
+| --- | --- |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateEpochDay(kotlin.Long)(epochDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains a local date in the Japanese calendar system from the epoch-day. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateNow()()` Obtains the current local date in this chronology from the system clock in the default time-zone. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateNow(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current local date in this chronology from the specified clock. |
+| --- | --- |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateNow(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current local date in this chronology from the system clock in the specified time-zone. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateYearDay(kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Japanese calendar system from the proleptic-year and day-of-year fields. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#dateYearDay(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Japanese calendar system from the era, year-of-era and day-of-year fields. |
+| --- | --- |
 | [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#eraOf(kotlin.Int)(eraValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the calendar system era object from the given numeric value. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#eras()()` Gets the list of eras for the chronology. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#getCalendarType()()` Gets the calendar type of the underlying calendar system - 'japanese'. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#getId()()` Gets the ID of the chronology - 'Japanese'. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#isIsoBased()()` `JapaneseChronology` is an ISO based chronology, which supports fields in `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#`, such as `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#DAY_OF_QUARTER:java.time.temporal.TemporalField` and `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR:java.time.temporal.TemporalField`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#isLeapYear(kotlin.Long)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the specified year is a leap year. |
+| --- | --- |
 | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#localDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date-time in this chronology from another temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#prolepticYear(java.time.chrono.Era,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calculates the proleptic-year given the era and year-of-era. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#range(java.time.temporal.ChronoField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#!)` Gets the range of valid values for the specified field. |
+| --- | --- |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#zonedDateTime(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from an `Instant`. |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology#zonedDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from another temporal object. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#compareTo(java.time.chrono.Chronology)(other: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology!)`
 
@@ -327,6 +335,7 @@ The Japanese proleptic year, month and day-of-month are the same as those in the
 | `prolepticYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the proleptic-year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -366,6 +375,7 @@ The Japanese month and day-of-month are the same as those in the ISO calendar sy
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Japanese era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
 
 | Return ||
@@ -556,6 +566,7 @@ The day-of-year in this factory is expressed relative to the start of the year-o
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Japanese era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `dayOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-year |
+| --- | --- |
 
 | Return ||
 |---|---|

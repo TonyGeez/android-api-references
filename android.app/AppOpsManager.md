@@ -7,6 +7,7 @@ open class AppOpsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.AppOpsManager](https://developer.android.com/reference/kotlin/android/app/AppOpsManager#) |
 
 App-ops are used for two purposes: Access control and tracking.
@@ -62,90 +63,117 @@ An app can register an `https://developer.android.com/reference/kotlin/android/a
 | abstract | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener` Callback for notification of changes to operation active state. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener` Callback for notification of changes to operation state. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback` Callback an app can #setOnOpNotedCallback to monitor the app-ops the system has tracked for it. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` Result from #checkOp, #noteOp, #startOp: the given caller is allowed to perform the given operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_DEFAULT:kotlin.Int` Result from #checkOp, #noteOp, #startOp: the given caller should use its default security check. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int` Result from #checkOpNoThrow, #noteOpNoThrow, #startOpNoThrow: the given caller is not allowed to perform the given operation, and this attempt should cause it to have a fatal error, typically a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_FOREGROUND:kotlin.Int` Special mode that means "allow only when app is in foreground. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int` Result from #checkOp, #noteOp, #startOp: the given caller is not allowed to perform the given operation, and this attempt should *silently fail* (it should not cause the app to crash). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_ADD_VOICEMAIL:kotlin.String` Required to access phone state related information. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_ANSWER_PHONE_CALLS:kotlin.String` Answer incoming phone calls |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_BODY_SENSORS:kotlin.String` Access to body sensors such as heart rate, etc. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_CALL_PHONE:kotlin.String` Allows an application to initiate a phone call. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_CAMERA:kotlin.String` Required to be able to access the camera device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_COARSE_LOCATION:kotlin.String` Access to coarse location information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_FINE_LOCATION:kotlin.String` Access to fine location information. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_GET_USAGE_STATS:kotlin.String` Access to `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MANAGE_CONTACTS:kotlin.String` Allows an application to manage the user's contacts data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MOCK_LOCATION:kotlin.String` Inject mock location into the system. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MONITOR_HIGH_POWER_LOCATION:kotlin.String` Continually monitoring location data with a relatively high power request. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MONITOR_LOCATION:kotlin.String` Continually monitoring location data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_PICTURE_IN_PICTURE:kotlin.String` Access to picture-in-picture. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_PROCESS_OUTGOING_CALLS:kotlin.String` Access APIs for diverting outgoing calls |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_CALENDAR:kotlin.String` Allows an application to read the user's calendar data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_CALL_LOG:kotlin.String` Allows an application to read the user's call log. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_CELL_BROADCASTS:kotlin.String` Read previously received cell broadcast messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_CONTACTS:kotlin.String` Allows an application to read the user's contacts data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_EXTERNAL_STORAGE:kotlin.String` Read external storage. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_PHONE_NUMBERS:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_PHONE_STATE:kotlin.String` Required to access phone state related information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_READ_SMS:kotlin.String` Allows an application to read SMS messages. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_RECEIVE_MMS:kotlin.String` Allows an application to receive MMS messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_RECEIVE_SMS:kotlin.String` Allows an application to receive SMS messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_RECEIVE_WAP_PUSH:kotlin.String` Allows an application to receive WAP push messages. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_RECORD_AUDIO:kotlin.String` Required to be able to access the microphone device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_SEND_SMS:kotlin.String` Allows an application to send SMS messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_SYSTEM_ALERT_WINDOW:kotlin.String` Required to draw on top of other apps. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_USE_FINGERPRINT:kotlin.String` Use the fingerprint API. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_USE_SIP:kotlin.String` Access APIs for SIP calling over VOIP or WiFi |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_CALENDAR:kotlin.String` Allows an application to write to the user's calendar data. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_CALL_LOG:kotlin.String` Allows an application to write to the user's call log. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_CONTACTS:kotlin.String` Allows an application to write to the user's contacts data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_EXTERNAL_STORAGE:kotlin.String` Write external storage. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_SETTINGS:kotlin.String` Required to write/modify/update system settings. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` Ignores async op noted events. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#WATCH_FOREGROUND_CHANGES:kotlin.Int` Flag for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.AppOpsManager.OnOpChangedListener)`: Also get reports if the foreground state of an op's uid changes. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether an application can perform an operation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Check whether an application can perform an operation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but returns the *raw* mode associated with the op. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkPackage(kotlin.Int,%20kotlin.String)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#isOpActive(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks whether the given op for a package is active, i. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Make note of an application performing an operation and check if the application is allowed to perform it. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Make note of an application performing an operation on behalf of another application when handling an IPC. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#permissionToOp(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the app-op name associated with a given permission. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#setOnOpNotedCallback(java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpNotedCallback)(asyncExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback?)` Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#setOnOpNotedCallback(java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpNotedCallback,%20kotlin.Int)(asyncExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application has started executing a long-running operation. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application has started executing a long-running operation on behalf of another application when handling an IPC. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingActive(kotlin.Array,%20java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpActiveChangedListener)(ops: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener)` Start watching for changes to the active state of app-ops. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20android.app.AppOpsManager.OnOpChangedListener)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Monitor for changes to the operating mode for the given op in the given app package. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.AppOpsManager.OnOpChangedListener)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Monitor for changes to the operating mode for the given op in the given app package. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#stopWatchingActive(android.app.AppOpsManager.OnOpActiveChangedListener)(callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener)` Stop watching for changes to the active state of an app-op. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#stopWatchingMode(android.app.AppOpsManager.OnOpChangedListener)(callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Stop monitoring that was previously started with #startWatchingMode. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether an application might be able to perform an operation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpRaw(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like #checkOp but returns the *raw* mode associated with the op. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like #checkOp but returns the *raw* mode associated with the op. |
 
 ## Constants
@@ -683,6 +711,7 @@ This API does not modify the time stamp or other data about the operation.
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to check. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the application attempting to perform the operation. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -712,6 +741,7 @@ Check whether an application can perform an operation. It does the same security
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to check. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the application attempting to perform the operation. This value cannot be `null`. |
+| --- | --- |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` of the calling context or `null` for default attribution |
 
 | Return ||
@@ -761,6 +791,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#c
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 
 ### checkOpRawNoThrow
 
@@ -782,6 +813,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#c
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 
 ### checkPackage
 
@@ -841,6 +873,7 @@ Report that an application is no longer performing an operation that had previou
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 
 ### finishProxyOp
 
@@ -862,6 +895,7 @@ Report that an application is no longer performing an operation that had previou
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation which was started. This value cannot be `null`. |
 | `proxiedUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The proxied appp's UID |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The proxied appp's package name. This value cannot be `null`. |
+| --- | --- |
 | `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied appp's attribution tag or `null` for default attribution |
 
 ### isOpActive
@@ -945,6 +979,7 @@ called in a two-way binder call from the client. In this case the message is a f
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to note. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application attempting to perform the operation. This value may be `null`. |
+| --- | --- |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` of the calling context or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing why the op was noted. This value may be `null`. |
 
@@ -997,6 +1032,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#n
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 **See Also**
@@ -1043,6 +1079,7 @@ Make note of an application performing an operation on behalf of another applica
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to note. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application calling into the proxy application. This value may be `null`. |
 | `proxiedUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the proxied application |
+| --- | --- |
 | `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing the reason the op was noted. This value may be `null`. |
 
@@ -1114,6 +1151,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#n
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 **See Also**
@@ -1194,6 +1232,7 @@ This API allows the caller to listen only to sync and self op noted events, and 
 | `asyncExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AppOpsManager.OnOpNotedCallback](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback)?: listener to set, `null` to unset |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): additional flags to modify the callback behavior, such as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` Value is either `0` or - `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -1242,6 +1281,7 @@ For more details how to determine the `callingPackageName`, `callingAttributionT
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to start. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The user id of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application attempting to perform the operation. This value may be `null`. |
+| --- | --- |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Description why op was started. This value may be `null`. |
 
@@ -1294,6 +1334,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#s
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 **See Also**
@@ -1321,6 +1362,7 @@ Report that an application has started executing a long-running operation on beh
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The op to note. This value cannot be `null`. |
 | `proxiedUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid to note the op for `null` |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name the uid belongs to. This value cannot be `null`. |
+| --- | --- |
 | `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing the reason the op was noted. This value may be `null`. |
 
@@ -1353,6 +1395,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#s
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
+| --- | --- |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 **See Also**
@@ -1380,6 +1423,7 @@ If you don't hold the `android.Manifest.permission#WATCH_APPOPS` permission you 
 | `ops` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The operations to watch. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | `callback` | [AppOpsManager.OnOpActiveChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener): Where to report changes. This value cannot be `null`. |
+| --- | --- |
 
 **See Also**
 
@@ -1404,6 +1448,7 @@ Monitor for changes to the operating mode for the given op in the given app pack
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to monitor, one of OPSTR_\*. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application to monitor. This value may be `null`. |
 | `callback` | [AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener): Where to report changes. This value cannot be `null`. |
+| --- | --- |
 
 ### startWatchingMode
 
@@ -1425,6 +1470,7 @@ Monitor for changes to the operating mode for the given op in the given app pack
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to monitor, one of OPSTR_\*. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application to monitor. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Option flags: any combination of `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#WATCH_FOREGROUND_CHANGES:kotlin.Int` or 0. |
+| --- | --- |
 | `callback` | [AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener): Where to report changes. This value cannot be `null`. |
 
 ### stopWatchingActive
@@ -1487,6 +1533,7 @@ This API does not modify the time stamp or other data about the operation.
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to check. One of the OPSTR_\* constants. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The user id of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the application attempting to perform the operation. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

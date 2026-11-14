@@ -6,12 +6,14 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 # FreeTextAnnotation
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/component/FreeTextAnnotation "View this page in Java") 
+| --- | --- |
 
 ```
 class FreeTextAnnotation : PdfAnnotation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.component.PdfAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfAnnotation) ||
 | | ↳ | [android.graphics.pdf.component.FreeTextAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#) |
 
@@ -32,9 +34,11 @@ If text color is not set using [setTextColor(int)](https://developer.android.com
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBackgroundColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#getBackgroundColor())`()` Returns the background color of the freetext annotation. |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | [getBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#getBounds())`()` Returns the bounding rectangle of the freetext annotation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#getTextColor())`()` Returns the text color of the freetext annotation. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#getTextContent())`()` Returns the text content of the freetext annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#setBackgroundColor(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the background color of the freetext annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#setBounds(android.graphics.RectF))`(`bounds:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)`)` Sets the bounding rectangle of the freetext annotation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#setTextColor(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the text color of the annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/FreeTextAnnotation#setTextContent(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the text content of the annotation. |
 

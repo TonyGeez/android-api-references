@@ -7,9 +7,11 @@ open class Spinner : AbsSpinner, DialogInterface.OnClickListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)\> |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner) ||
 | | | | | ↳ | [android.widget.Spinner](https://developer.android.com/reference/kotlin/android/widget/Spinner#) |
 
@@ -24,9 +26,11 @@ See the [Spinners](https://developer.android.com/guide/topics/ui/controls/spinne
 | [`android:dropDownHorizontalOffset`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Amount of pixels by which the drop down should be offset horizontally. |
 | [`android:dropDownSelector`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | List selector to use for spinnerMode="dropdown" display. |
 | [`android:dropDownVerticalOffset`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Amount of pixels by which the drop down should be offset vertically. |
+| --- | --- |
 | [`android:dropDownWidth`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Width of the dropdown in spinnerMode="dropdown". |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Gravity setting for positioning the currently selected item. |
 | [`android:popupBackground`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Background drawable to use for the dropdown in spinnerMode="dropdown". |
+| --- | --- |
 | [`android:prompt`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | The prompt to display when the spinner's dialog is shown. |
 | [`android:spinnerMode`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Display mode for spinner options. |
 
@@ -314,6 +318,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -430,6 +435,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -578,6 +584,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1776,27 +1783,35 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getDropDownHorizontalOffset()()` Get the configured horizontal offset in pixels for the spinner's popup window of choices. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getDropDownVerticalOffset()()` Get the configured vertical offset in pixels for the spinner's popup window of choices. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getDropDownWidth()()` Get the configured width of the spinner's popup window of choices in pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getGravity()()` Describes how the selected item view is positioned. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupBackground()()` Get the background drawable for the spinner's popup window of choices. |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupContext()()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPrompt()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onClick(android.content.DialogInterface,%20kotlin.Int)(dialog: https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#!, which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be invoked when a button in the dialog is clicked. |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#performClick()()` Call this view's OnClickListener, if it is defined. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setAdapter(android.widget.SpinnerAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter!)` Sets the `https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter` used to provide the data which backs this Spinner. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setDropDownHorizontalOffset(kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a horizontal offset in pixels for the spinner's popup window of choices. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setDropDownVerticalOffset(kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a vertical offset in pixels for the spinner's popup window of choices. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setDropDownWidth(kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the width of the spinner's popup window of choices in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the enabled state of this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setGravity(kotlin.Int)(gravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Describes how the selected item view is positioned. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)(l: https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener?)` A spinner does not support item click events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setPopupBackgroundDrawable(android.graphics.drawable.Drawable)(background: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the background drawable for the spinner's popup window of choices. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setPopupBackgroundResource(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the background drawable for the spinner's popup window of choices. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setPrompt(kotlin.CharSequence)(prompt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the prompt to display when the dialog is shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#setPromptId(kotlin.Int)(promptId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the prompt to display when the dialog is shown. |
 
@@ -1805,6 +1820,7 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2687,6 +2703,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4523,6 +4540,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8557,6 +8575,7 @@ Must be one of the following constant values.
 | fill_parent | ffffffff | The dropdown should fill the width of the screen. This constant is deprecated starting from API Level 8 and is replaced by `match_parent`. |
 | match_parent | ffffffff | The dropdown should fit the width of the screen. Introduced in API Level 8. |
 | wrap_content | fffffffe | The dropdown should fit the width of its anchor. |
+| --- | --- | --- |
 
 ### android:gravity
 
@@ -8566,21 +8585,26 @@ android:gravity
 Gravity setting for positioning the currently selected item.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -8695,6 +8719,7 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 
 ### Spinner
 
@@ -8715,6 +8740,7 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
 
 **See Also**
@@ -8742,6 +8768,7 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
 
@@ -8771,9 +8798,11 @@ Constructs a new spinner with the given context, the supplied attribute set, def
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context against which the view is inflated, which provides access to the current theme, resources, etc. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
 | `popupTheme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: The theme against which the dialog or dropdown popup should be inflated. May be `null` to use the view theme. If set, this will override any value specified by `https://developer.android.com/reference/kotlin/android/R.styleable.html#Spinner_popupTheme:kotlin.Int`. |
+| --- | --- |
 
 **See Also**
 
@@ -8961,6 +8990,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -9258,6 +9288,7 @@ protected open fun onLayout(
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 

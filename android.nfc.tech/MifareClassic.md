@@ -3,12 +3,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # MifareClassic
 
 Kotlin | [Java](https://developer.android.com/reference/android/nfc/tech/MifareClassic "View this page in Java")
+| --- | --- |
 
 ```
 class MifareClassic : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.MifareClassic](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#) |
 
 Provides access to MIFARE Classic properties and I/O operations on a `https://developer.android.com/reference/kotlin/android/nfc/Tag.html#`.
@@ -43,45 +45,57 @@ Three well-known authentication keys are defined in this class: `https://develop
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#BLOCK_SIZE:kotlin.Int` Size of a MIFARE Classic block (in bytes) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#SIZE_1K:kotlin.Int` Tag contains 16 sectors, each with 4 blocks. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#SIZE_2K:kotlin.Int` Tag contains 32 sectors, each with 4 blocks. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#SIZE_4K:kotlin.Int` Tag contains 40 sectors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#SIZE_MINI:kotlin.Int` Tag contains 5 sectors, each with 4 blocks. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#TYPE_CLASSIC:kotlin.Int` A MIFARE Classic tag |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#TYPE_PLUS:kotlin.Int` A MIFARE Plus tag |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#TYPE_PRO:kotlin.Int` A MIFARE Pro tag |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#TYPE_UNKNOWN:kotlin.Int` A MIFARE Classic compatible card of unknown type |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#authenticateSectorWithKeyA(kotlin.Int,%20kotlin.ByteArray)(sectorIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Authenticate a sector with key A. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#authenticateSectorWithKeyB(kotlin.Int,%20kotlin.ByteArray)(sectorIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Authenticate a sector with key B. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#blockToSector(kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the sector that contains a given block. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#close()()` Disable I/O operations to the tag from this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object, and release resources. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#connect()()` Enable I/O operations to the tag from this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#decrement(kotlin.Int,%20kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Decrement a value block, storing the result in the temporary block on the tag. |
+| --- | --- |
 | static [MifareClassic](https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#get(android.nfc.Tag)(tag: https://developer.android.com/reference/kotlin/android/nfc/Tag.html#!)` Get an instance of `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#` for the given tag. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getBlockCount()()` Return the total number of MIFARE Classic blocks. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getBlockCountInSector(kotlin.Int)(sectorIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the number of blocks in the given sector. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getMaxTransceiveLength()()` Return the maximum number of bytes that can be sent with `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transceive(kotlin.ByteArray)`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getSectorCount()()` Return the number of MIFARE Classic sectors. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getSize()()` Return the size of the tag in bytes |
+| --- | --- |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getTag()()` Get the `https://developer.android.com/reference/kotlin/android/nfc/Tag.html#` object backing this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getTimeout()()` Get the current `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transceive(kotlin.ByteArray)` timeout in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getType()()` Return the type of this MIFARE Classic compatible tag. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#increment(kotlin.Int,%20kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Increment a value block, storing the result in the temporary block on the tag. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#isConnected()()` Helper to indicate if I/O operations should be possible. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#readBlock(kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read 16-byte block. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#restore(kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy from a value block to the temporary block. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#sectorToBlock(kotlin.Int)(sectorIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the first block of a given sector. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#setTimeout(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transceive(kotlin.ByteArray)` timeout in milliseconds. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transceive(kotlin.ByteArray)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Send raw NfcA data to a tag and receive the response. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transfer(kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy from the temporary block to a value block. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#writeBlock(kotlin.Int,%20kotlin.ByteArray)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Write 16-byte block. |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#KEY_DEFAULT:kotlin.ByteArray` The default factory key. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#KEY_MIFARE_APPLICATION_DIRECTORY:kotlin.ByteArray` The well-known key for tags formatted according to the MIFARE Application Directory (MAD) specification. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#KEY_NFC_FORUM:kotlin.ByteArray` The well-known key for tags formatted according to the NDEF on MIFARE Classic specification. |
+| --- | --- |
 
 ## Constants
 
@@ -304,6 +318,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/Manifest.pe
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -328,6 +343,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/Manifest.pe
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### decrement
 

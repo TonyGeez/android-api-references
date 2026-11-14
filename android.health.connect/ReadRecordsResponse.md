@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ReadRecordsResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadRecordsResponse "View this page in Java") 
+| --- | --- |
 
 ```
 open class ReadRecordsResponse<T : Record!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.ReadRecordsResponse](https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsResponse#) |
 
 Response containing list of Records for [HealthConnectManager.readRecords](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).

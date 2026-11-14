@@ -5,17 +5,21 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Shape
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/Shape "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Shape : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#) |
 
 | Known Direct Subclasses [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape), [RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape) | Creates geometric paths, utilizing the [android.graphics.Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) class. | | [RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) | Defines a rectangle shape. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape), [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape), [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape) |------------------------------------------------------------------------------------------------------------------|-------------------------------------| | [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape) | Creates an arc shape. | | [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape) | Defines an oval shape. | | [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape) | Creates a rounded-corner rectangle. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines a generic graphical "shape."
 
@@ -34,12 +38,15 @@ Custom Shape classes must implement [clone()](https://developer.android.com/refe
 | open [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#) | [clone](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#clone())`()` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#draw(android.graphics.Canvas,%20android.graphics.Paint))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` Draws this shape into the provided Canvas, with the provided Paint. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getHeight())`()` Returns the height of the Shape. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` Computes the Outline of the shape and return it in the supplied Outline parameter. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getWidth())`()` Returns the width of the Shape. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#hasAlpha())`()` Checks whether the Shape is opaque. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Resizes the dimensions of this shape. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

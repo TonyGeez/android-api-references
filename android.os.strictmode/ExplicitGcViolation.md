@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ExplicitGcViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/ExplicitGcViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class ExplicitGcViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.ExplicitGcViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ExplicitGcViolation#) |
+| --- | --- | --- | --- |
 
 See # [android.os.StrictMode.ThreadPolicy.Builder#detectExplicitGc()](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder.html#detectExplicitGc()).
 

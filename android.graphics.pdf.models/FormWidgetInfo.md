@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # FormWidgetInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/models/FormWidgetInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class FormWidgetInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.models.FormWidgetInfo](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#) |
 
 Information about a form widget of a PDF document.
@@ -27,9 +29,11 @@ Information about a form widget of a PDF document.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_CHECKBOX](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_CHECKBOX:kotlin.Int) Represents a checkbox type form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_COMBOBOX](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_COMBOBOX:kotlin.Int) Represents a combobox type form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_LISTBOX](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_LISTBOX:kotlin.Int) Represents a listbox type form widget |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_PUSHBUTTON](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_PUSHBUTTON:kotlin.Int) Represents a push button type form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_RADIOBUTTON](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_RADIOBUTTON:kotlin.Int) Represents a radio button type form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_SIGNATURE](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_SIGNATURE:kotlin.Int) Represents a signature type form widget |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_TEXTFIELD](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_TEXTFIELD:kotlin.Int) Represents a text field type form widget |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#WIDGET_TYPE_UNKNOWN:kotlin.Int) Represents a form widget type that is unknown |
 
@@ -42,18 +46,23 @@ Information about a form widget of a PDF document.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAccessibilityLabel](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getAccessibilityLabel())`()` Returns the field's accessibility label, if present |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontSize](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getFontSize())`()` Returns the font size in pixels for text input, or 0 for text inputs without a specified font size and widgets that are not text inputs. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ListItem](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/ListItem)!\> | [getListItems](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getListItems())`()` Returns the list of choice options in the order that it was passed in, or an empty list for widgets without choice options. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLength](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getMaxLength())`()` Returns the maximum length of text supported by a text input widget, or -1 for text inputs without a maximum length and widgets that are not text inputs. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTextValue](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getTextValue())`()` Returns the field's text value, if present |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetIndex](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getWidgetIndex())`()` Returns the index of the widget within the page's "Annot" array in the PDF document |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getWidgetRect](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getWidgetRect())`()` Returns the [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) in page coordinates occupied by the widget |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetType](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#getWidgetType())`()` Returns the type of this widget |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEditableText](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#isEditableText())`()` Returns`true`if the widget is editable text |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiLineText](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#isMultiLineText())`()` Returns true if the widget supports multiple lines of text input |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiSelect](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#isMultiSelect())`()` Returns`true`if the widget supports selecting multiple values |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#isReadOnly())`()` Returns`true`if the widget is read-only |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormWidgetInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

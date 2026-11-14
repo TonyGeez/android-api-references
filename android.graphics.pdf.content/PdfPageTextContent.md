@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PdfPageTextContent
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/content/PdfPageTextContent "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageTextContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.content.PdfPageTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent#) |
 
 Represents a continuous stream of text in a page of a PDF document in the order of viewing.
@@ -32,6 +34,7 @@ Represents a continuous stream of text in a page of a PDF document in the order 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | [getBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent#getBounds())`()` Gets the bounds for the text content represented as a list of [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getText](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent#getText())`()` Gets the text content on the document. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

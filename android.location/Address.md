@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Address
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/Address "View this page in Java")
+| --- | --- |
 
 ```
 open class Address : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.Address](https://developer.android.com/reference/kotlin/android/location/Address#) |
 
 A class representing an Address, that is, a set of Strings describing a location. The address format is a simplified version of xAL (eXtensible Address Language) http://www.oasis-open.org/committees/ciq/ciq.html#6
@@ -28,45 +30,59 @@ A class representing an Address, that is, a set of Strings describing a location
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#clearLatitude()()` Removes any latitude associated with this address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#clearLongitude()()` Removes any longitude associated with this address. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getAddressLine(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a line of the address numbered by the given index (starting at 0), or null if no such line is present. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getAdminArea()()` Returns the administrative area name of the address, for example, "CA", or null if it is unknown |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getCountryCode()()` Returns the country code of the address, for example "US", or null if it is unknown. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getCountryName()()` Returns the localized country name of the address, for example "Iceland", or null if it is unknown. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/location/Address#getExtras()()` Returns additional provider-specific information about the address as a Bundle. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getFeatureName()()` Returns the feature name of the address, for example, "Golden Gate Bridge", or null if it is unknown |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#getLatitude()()` Returns the latitude of the address if known. |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/android/location/Address#getLocale()()` Returns the Locale associated with this address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getLocality()()` Returns the locality of the address, for example "Mountain View", or null if it is unknown. |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#getLongitude()()` Returns the longitude of the address if known. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#getMaxAddressLineIndex()()` Returns the largest index currently in use to specify an address line. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getPhone()()` Returns the phone number of the address if known, or null if it is unknown. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getPostalCode()()` Returns the postal code of the address, for example "94110", or null if it is unknown. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getPremises()()` Returns the premises of the address, or null if it is unknown. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getSubAdminArea()()` Returns the sub-administrative area name of the address, for example, "Santa Clara County", or null if it is unknown |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getSubLocality()()` Returns the sub-locality of the address, or null if it is unknown. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getSubThoroughfare()()` Returns the sub-thoroughfare name of the address, which may be null. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getThoroughfare()()` Returns the thoroughfare name of the address, for example, "1600 Ampitheater Parkway", which may be null |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getUrl()()` Returns the public URL for the address if known, or null if it is unknown. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#hasLatitude()()` Returns true if a latitude has been assigned to this Address, false otherwise. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#hasLongitude()()` Returns true if a longitude has been assigned to this Address, false otherwise. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setAddressLine(kotlin.Int,%20kotlin.String)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the line of the address numbered by index (starting at 0) to the given String, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setAdminArea(kotlin.String)(adminArea: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the administrative area name of the address to the given String, which may be null |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setCountryCode(kotlin.String)(countryCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the country code of the address to the given String, which may be null. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setCountryName(kotlin.String)(countryName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the country name of the address to the given String, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Sets the extra information associated with this fix to the given Bundle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setFeatureName(kotlin.String)(featureName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the feature name of the address to the given String, which may be null |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setLatitude(kotlin.Double)(latitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Sets the latitude associated with this address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setLocality(kotlin.String)(locality: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the locality of the address to the given String, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setLongitude(kotlin.Double)(longitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Sets the longitude associated with this address. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setPhone(kotlin.String)(phone: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the phone number associated with this address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setPostalCode(kotlin.String)(postalCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the postal code of the address to the given String, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setPremises(kotlin.String)(premises: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the premises of the address to the given String, which may be null. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setSubAdminArea(kotlin.String)(subAdminArea: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the sub-administrative area name of the address to the given String, which may be null |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setSubLocality(kotlin.String)(sublocality: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the sub-locality of the address to the given String, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setSubThoroughfare(kotlin.String)(subthoroughfare: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the sub-thoroughfare name of the address, which may be null. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setThoroughfare(kotlin.String)(thoroughfare: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the thoroughfare name of the address, which may be null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#setUrl(kotlin.String)(Url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the public URL associated with this address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

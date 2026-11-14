@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationSpec
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/TranslationSpec "View this page in Java") 
+| --- | --- |
 
 ```
 class TranslationSpec : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationSpec](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#) |
 
 Specs and additional info for the translation data.
@@ -36,9 +38,11 @@ This spec help specify information such as the language/locale for the translati
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataFormat](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#getDataFormat())`()` <br /> |
+| --- | --- |
 | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) | [getLocale](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#getLocale())`()` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#) representing locale information of this spec. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

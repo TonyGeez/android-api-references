@@ -7,6 +7,7 @@ class PreferentialNetworkServiceConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.PreferentialNetworkServiceConfig](https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#) |
 
 Network configuration to be set for the user profile.
@@ -22,6 +23,7 @@ Network configuration to be set for the user profile.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#PREFERENTIAL_NETWORK_ID_1:kotlin.Int` Preferential network identifier 1. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#PREFERENTIAL_NETWORK_ID_2:kotlin.Int` Preferential network identifier 2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#PREFERENTIAL_NETWORK_ID_3:kotlin.Int` Preferential network identifier 3. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#PREFERENTIAL_NETWORK_ID_4:kotlin.Int` Preferential network identifier 4. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#PREFERENTIAL_NETWORK_ID_5:kotlin.Int` Preferential network identifier 5. |
 
@@ -42,12 +44,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#getExcludedUids()()` Get the array of uids that are excluded for the profile preference. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#getIncludedUids()()` Get the array of uids that are applicable for the profile preference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#getNetworkId()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#isEnabled()()` Is the preferential network enabled. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#isFallbackToDefaultConnectionAllowed()()` Whether fallback to the device-wide default network is allowed. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#shouldBlockNonMatchingNetworks()()` Whether to block UIDs from using other networks than the preferential service. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/PreferentialNetworkServiceConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

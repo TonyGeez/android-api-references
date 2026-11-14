@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # BlockedNumberContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/BlockedNumberContract "View this page in Java") 
+| --- | --- |
 
 ```
 open class BlockedNumberContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.BlockedNumberContract](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#) |
 
 The contract between the blockednumber provider and applications. Contains definitions for the supported URIs and columns.
@@ -114,6 +116,7 @@ Other than regular phone numbers, the blocked number provider can also store add
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canCurrentUserBlockNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#canCurrentUserBlockNumbers(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Checks if blocking numbers is supported for the current user. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#isBlocked(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns whether a given number is in the blocked list. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [unblock](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#unblock(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Unblocks the`phoneNumber`if it is blocked. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

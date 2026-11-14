@@ -7,6 +7,7 @@ class WifiAwareNetworkInfo : Parcelable, TransportInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.WifiAwareNetworkInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#) |
 
 Wi-Fi Aware-specific network information. The information can be extracted from the `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` of the network using `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#getTransportInfo()`. The `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` is provided by the connectivity service to apps, e.g. received through the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback.html#onCapabilitiesChanged(android.net.Network,%20android.net.NetworkCapabilities)` callback.
@@ -26,12 +27,15 @@ Note: these are the peer's IPv6 and port information - not the local device's!
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAwareChannelInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getChannelInfoList()()` Get a list `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo` which is used by this Aware data-path |
+| --- | --- |
 | [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address.html#)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getPeerIpv6Addr()()` Get the scoped link-local IPv6 address of the Wi-Fi Aware peer (not of the local device!). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getPort()()` Get the port number to be used to create a network connection to the Wi-Fi Aware peer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getTransportProtocol()()` Get the transport protocol to be used to communicate over a network connection to the Wi-Fi Aware peer. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

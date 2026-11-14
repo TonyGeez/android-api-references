@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Element
 
 Kotlin| [Java](https://developer.android.com/reference/android/sax/Element "View this page in Java") 
+| --- | --- |
 
 ```
 open class Element
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.sax.Element](https://developer.android.com/reference/kotlin/android/sax/Element#) |
 
 | Known Direct Subclasses [RootElement](https://developer.android.com/reference/kotlin/android/sax/RootElement) |---------------------------------------------------------------------------------------|-----------------------| | [RootElement](https://developer.android.com/reference/kotlin/android/sax/RootElement) | The root XML element. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An XML element. Provides access to child elements and hooks to listen for events related to this element.
 
@@ -24,12 +27,15 @@ An XML element. Provides access to child elements and hooks to listen for events
 | open [Element](https://developer.android.com/reference/kotlin/android/sax/Element#)! | [getChild](https://developer.android.com/reference/kotlin/android/sax/Element#getChild(kotlin.String))`(`localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the child element with the given name. |
 | open [Element](https://developer.android.com/reference/kotlin/android/sax/Element#)! | [getChild](https://developer.android.com/reference/kotlin/android/sax/Element#getChild(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the child element with the given name. |
 | open [Element](https://developer.android.com/reference/kotlin/android/sax/Element#)! | [requireChild](https://developer.android.com/reference/kotlin/android/sax/Element#requireChild(kotlin.String))`(`localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the child element with the given name. |
+| --- | --- |
 | open [Element](https://developer.android.com/reference/kotlin/android/sax/Element#)! | [requireChild](https://developer.android.com/reference/kotlin/android/sax/Element#requireChild(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the child element with the given name. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElementListener](https://developer.android.com/reference/kotlin/android/sax/Element#setElementListener(android.sax.ElementListener))`(`elementListener:` ` [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener)!`)` Sets start and end element listeners at the same time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndElementListener](https://developer.android.com/reference/kotlin/android/sax/Element#setEndElementListener(android.sax.EndElementListener))`(`endElementListener:` ` [EndElementListener](https://developer.android.com/reference/kotlin/android/sax/EndElementListener)!`)` Sets a listener for the end of this element. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndTextElementListener](https://developer.android.com/reference/kotlin/android/sax/Element#setEndTextElementListener(android.sax.EndTextElementListener))`(`endTextElementListener:` ` [EndTextElementListener](https://developer.android.com/reference/kotlin/android/sax/EndTextElementListener)!`)` Sets a listener for the end of this text element. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartElementListener](https://developer.android.com/reference/kotlin/android/sax/Element#setStartElementListener(android.sax.StartElementListener))`(`startElementListener:` ` [StartElementListener](https://developer.android.com/reference/kotlin/android/sax/StartElementListener)!`)` Sets a listener for the start of this element. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextElementListener](https://developer.android.com/reference/kotlin/android/sax/Element#setTextElementListener(android.sax.TextElementListener))`(`elementListener:` ` [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener)!`)` Sets start and end text element listeners at the same time. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/sax/Element#toString())`()` <br /> |
 
 ## Public methods

@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # HealthConnectException
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/HealthConnectException "View this page in Java") 
+| --- | --- |
 
 ```
 open class HealthConnectException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.health.connect.HealthConnectException](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#) |
 
 Class representing health connect exceptions.
@@ -25,12 +28,15 @@ Class representing health connect exceptions.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DATA_SYNC_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_DATA_SYNC_IN_PROGRESS:kotlin.Int) Data sync is in progress. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERNAL](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INTERNAL:kotlin.Int) An internal error occurred which the caller cannot address. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_ARGUMENT](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INVALID_ARGUMENT:kotlin.Int) The caller supplied invalid arguments to the call. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_IO:kotlin.Int) An issue occurred reading or writing to storage. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RATE_LIMIT_EXCEEDED](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_RATE_LIMIT_EXCEEDED:kotlin.Int) The caller exhausted the allotted rate limit. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REMOTE](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_REMOTE:kotlin.Int) An IPC related error occurred. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SECURITY](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_SECURITY:kotlin.Int) The caller doesn't have the correct permissions for this call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_UNKNOWN:kotlin.Int) An unknown error occurred while processing the call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED_OPERATION](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_UNSUPPORTED_OPERATION:kotlin.Int) This operation is currently not supported by the platform. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RotateDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/RotateDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class RotateDrawable : DrawableWrapper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.DrawableWrapper](https://developer.android.com/reference/kotlin/android/graphics/drawable/DrawableWrapper) ||
 | | | ↳ | [android.graphics.drawable.RotateDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#) |
+| --- | --- | --- | --- |
 
 A Drawable that can rotate another Drawable based on the current level value. The start and end angles of rotation can be controlled to map any circular arc to the level values range.
 
@@ -26,9 +29,11 @@ It can be defined in an XML file with the`<rotate>`element. For more information
 | [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | Reference to a drawable resource to use for the frame. |
 | [`android:fromDegrees`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | |
 | [`android:pivotX`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | |
+| --- | --- |
 | [`android:pivotY`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | |
 | [`android:toDegrees`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | |
 | [`android:visible`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#attr_RotateDrawable) | Provides initial visibility state of the drawable; the default value is false. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -39,18 +44,23 @@ It can be defined in an XML file with the`<rotate>`element. For more information
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` Applies the specified theme to this Drawable and its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFromDegrees](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#getFromDegrees())`()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPivotX](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#getPivotX())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPivotY](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#getPivotY())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToDegrees](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#getToDegrees())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPivotXRelative](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#isPivotXRelative())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPivotYRelative](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#isPivotYRelative())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFromDegrees](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setFromDegrees(kotlin.Float))`(`fromDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the start angle for rotation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPivotX](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setPivotX(kotlin.Float))`(`pivotX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the X position around which the drawable is rotated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPivotXRelative](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setPivotXRelative(kotlin.Boolean))`(`relative:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the X pivot value represents a fraction of the drawable width or an absolute value in pixels. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPivotY](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setPivotY(kotlin.Float))`(`pivotY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the Y position around which the drawable is rotated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPivotYRelative](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setPivotYRelative(kotlin.Boolean))`(`relative:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the Y pivot value represents a fraction of the drawable height or an absolute value in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToDegrees](https://developer.android.com/reference/kotlin/android/graphics/drawable/RotateDrawable#setToDegrees(kotlin.Float))`(`toDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the end angle for rotation. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -229,6 +239,7 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):This value cannot be`null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#):This value cannot be`null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?:This value may be`null`. |
 
 | Exceptions ||

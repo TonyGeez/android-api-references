@@ -3,12 +3,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # RemoteConnection
 
 Kotlin | [Java](https://developer.android.com/reference/android/telecom/RemoteConnection "View this page in Java")
+| --- | --- |
 
 ```
 class RemoteConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#) |
 
 A connection provided to a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` by another `ConnectionService` running in a different process.
@@ -25,33 +27,43 @@ A connection provided to a `https://developer.android.com/reference/kotlin/andro
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#abort()()` Instructs this `RemoteConnection` to abort. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#addConferenceParticipants(kotlin.collections.MutableList)(participants: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Instructs this `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#` to initiate a conference with a list of participants. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#answer()()` Instructs this `https://developer.android.com/reference/kotlin/android/telecom/Connection#STATE_RINGING:kotlin.Int` `RemoteConnection` to answer. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#disconnect()()` Instructs this `RemoteConnection` to disconnect. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getAddress()()` Obtains the address of this `RemoteConnection`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getAddressPresentation()()` Obtains the presentation requirements for the address of this `RemoteConnection`. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getCallerDisplayName()()` Obtains the display name for this `RemoteConnection`'s caller. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getCallerDisplayNamePresentation()()` Obtains the presentation requirements for this `RemoteConnection`'s caller's display name. |
 | [RemoteConference](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getConference()()` Obtain the `RemoteConference` that this `RemoteConnection` may be a part of, or `null` if there is no such `RemoteConference`. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getConferenceableConnections()()` Obtain the `RemoteConnection`s with which this `RemoteConnection` may be successfully asked to create a conference with. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getConnectionCapabilities()()` Obtains the capabilities of this `RemoteConnection`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getConnectionProperties()()` Obtains the properties of this `RemoteConnection`. |
+| --- | --- |
 | [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getDisconnectCause()()` Obtains the reason why this `RemoteConnection` may have been disconnected. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getExtras()()` Obtain the extras associated with this `RemoteConnection`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getState()()` Obtains the state of this `RemoteConnection`. |
+| --- | --- |
 | [StatusHints](https://developer.android.com/reference/kotlin/android/telecom/StatusHints)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getStatusHints()()` Obtains status hints pertaining to this `RemoteConnection`. |
 | [RemoteConnection.VideoProvider](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection.VideoProvider)! | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getVideoProvider()()` Obtains the video provider of this `RemoteConnection`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#getVideoState()()` Obtains the video state of this `RemoteConnection`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#hold()()` Instructs this `RemoteConnection` to go on hold. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#isRingbackRequested()()` Determines whether this `RemoteConnection` is requesting ringback. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#isVoipAudioMode()()` Determines if the audio mode of this `RemoteConnection` is VOIP. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#playDtmfTone(kotlin.Char)(digit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Instructs this `RemoteConnection` to play a dual-tone multi-frequency signaling (DTMF) tone. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#postDialContinue(kotlin.Boolean)(proceed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Instructs this `RemoteConnection` to continue playing a post-dial DTMF string. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#pullExternalCall()()` Instructs this `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#` to pull itself to the local device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#registerCallback(android.telecom.RemoteConnection.Callback)(callback: https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection.Callback!)` Adds a callback to this `RemoteConnection`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#registerCallback(android.telecom.RemoteConnection.Callback,%20android.os.Handler)(callback: https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection.Callback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Adds a callback to this `RemoteConnection`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#reject()()` Instructs this `https://developer.android.com/reference/kotlin/android/telecom/Connection#STATE_RINGING:kotlin.Int` `RemoteConnection` to reject. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#setCallAudioState(android.telecom.CallAudioState)(state: https://developer.android.com/reference/kotlin/android/telecom/CallAudioState!)` Set the audio state of this `RemoteConnection`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#stopDtmfTone()()` Instructs this `RemoteConnection` to stop any dual-tone multi-frequency signaling (DTMF) tone currently playing. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#unhold()()` Instructs this `https://developer.android.com/reference/kotlin/android/telecom/Connection#STATE_HOLDING:kotlin.Int` call to release from hold. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection#unregisterCallback(android.telecom.RemoteConnection.Callback)(callback: https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection.Callback!)` Removes a callback from this `RemoteConnection`. |
 
 ## Public methods

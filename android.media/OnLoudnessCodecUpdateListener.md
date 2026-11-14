@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # OnLoudnessCodecUpdateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnLoudnessCodecUpdateListener

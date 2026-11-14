@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # ArraySet
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/ArraySet "View this page in Java") 
+| --- | --- |
 
 ```
 class ArraySet<E : Any!> : MutableCollection<E>, MutableSet<E>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.ArraySet](https://developer.android.com/reference/kotlin/android/util/ArraySet#) |
 
 ArraySet is a generic set data structure that is designed to be more memory efficient than a traditional [java.util.HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet.html#). The design is very similar to [ArrayMap](https://developer.android.com/reference/kotlin/android/util/ArrayMap), with all of the caveats described there. This implementation is separate from ArrayMap, however, so the Object array contains only one item for each entry in the set (instead of a pair for a mapping).
@@ -36,24 +38,31 @@ This structure is**NOT**thread-safe.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/android/util/ArraySet#add(android.util.ArraySet.E))`(`element:` `E`)` Adds the specified object to this set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#addAll(android.util.ArraySet))`(`array:` ` [ArraySet](https://developer.android.com/reference/kotlin/android/util/ArraySet#)<out` `E>!`)` Perform a [add(java.lang.Object)](https://developer.android.com/reference/kotlin/android/util/ArraySet#add(android.util.ArraySet.E))of all values in array |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Perform an [add(java.lang.Object)](https://developer.android.com/reference/kotlin/android/util/ArraySet#add(android.util.ArraySet.E))of all values in collection |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/util/ArraySet#clear())`()` Make the array map empty. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/util/ArraySet#contains(android.util.ArraySet.E))`(`element:` `E`)` Check whether a value exists in the set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Determine if the array set contains all of the values in the given collection. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ensureCapacity](https://developer.android.com/reference/kotlin/android/util/ArraySet#ensureCapacity(kotlin.Int))`(`minimumCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Ensure the array map can hold at least minimumCapacity items. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/util/ArraySet#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/util/ArraySet#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `E>`)` Performs the given action for all elements in the stored order. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/util/ArraySet#hashCode())`()` Returns a hash code value for the object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](https://developer.android.com/reference/kotlin/android/util/ArraySet#indexOf(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the index of a value in the set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/android/util/ArraySet#isEmpty())`()` Return true if the array map contains no items. |
+| --- | --- |
 | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/android/util/ArraySet#iterator())`()` Return an [java.util.Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator.html#) over all values in the set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/android/util/ArraySet#remove(android.util.ArraySet.E))`(`element:` `E`)` Removes the specified object from this set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#removeAll(android.util.ArraySet))`(`array:` ` [ArraySet](https://developer.android.com/reference/kotlin/android/util/ArraySet#)<out` `E>!`)` Perform a [remove(java.lang.Object)](https://developer.android.com/reference/kotlin/android/util/ArraySet#remove(android.util.ArraySet.E))of all values in array |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that exist in the given collection. |
 | E | [removeAt](https://developer.android.com/reference/kotlin/android/util/ArraySet#removeAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Remove the key/value mapping at the given index. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/android/util/ArraySet#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)<in` `E>`)` Removes all values that satisfy the predicate. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/android/util/ArraySet#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that do**not**exist in the given collection. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [toArray](https://developer.android.com/reference/kotlin/android/util/ArraySet#toArray())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [toArray](https://developer.android.com/reference/kotlin/android/util/ArraySet#toArray(kotlin.Array))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>!`)` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/util/ArraySet#toString())`()` Returns a string representation of the object. |
 | E | [valueAt](https://developer.android.com/reference/kotlin/android/util/ArraySet#valueAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value at the given index in the array. |
 
@@ -143,6 +152,7 @@ Adds the specified object to this set. The set is not modified if it already con
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this set |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this set |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
 
@@ -184,6 +194,7 @@ Perform an [add(java.lang.Object)](https://developer.android.com/reference/kotli
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this set |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this set does not permit null elements, or if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this set |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
 
@@ -286,6 +297,7 @@ This implementation returns false if the object is not a set, or if the sets hav
 | `obj` | the reference object with which to compare. |
 | `o` | object to be compared for equality with this set |
 | `object` | This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -401,6 +413,7 @@ Removes the specified object from this set.
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this set |
+| --- | --- |
 
 ### removeAll
 
@@ -440,6 +453,7 @@ Remove all values in the array set that exist in the given collection.
 | `java.lang.UnsupportedOperationException` | if the`removeAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)), or if the specified collection is null |
+| --- | --- |
 
 ### removeAt
 
@@ -508,6 +522,7 @@ Remove all values in the array set that do**not**exist in the given collection.
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/android/util/Collection#optional-restrictions)), or if the specified collection is null |
+| --- | --- |
 
 ### toArray
 

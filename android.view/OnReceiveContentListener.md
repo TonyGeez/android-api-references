@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # OnReceiveContentListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/OnReceiveContentListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnReceiveContentListener

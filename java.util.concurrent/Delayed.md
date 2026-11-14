@@ -11,8 +11,10 @@ interface Delayed : Comparable<Delayed!>
 | [java.util.concurrent.Delayed](https://developer.android.com/reference/kotlin/java/util/concurrent/Delayed#) |
 
 | Known Direct Subclasses [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture) | A delayed result-bearing action that can be cancelled. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [RunnableScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableScheduledFuture) |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RunnableScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableScheduledFuture) | A [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture) that is [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A mix-in style interface for marking objects that should be acted upon after a given delay.
 

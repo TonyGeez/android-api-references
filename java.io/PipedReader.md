@@ -9,6 +9,7 @@ open class PipedReader : Reader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader) ||
 | | ↳ | [java.io.PipedReader](https://developer.android.com/reference/kotlin/java/io/PipedReader#) |
 
@@ -28,6 +29,7 @@ Piped character-input streams.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/PipedReader#close())`()` Closes this piped stream and releases any system resources associated with the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/io/PipedReader#connect(java.io.PipedWriter))`(`src:` ` [PipedWriter](https://developer.android.com/reference/kotlin/java/io/PipedWriter)!`)` Causes this piped reader to be connected to the piped writer`src`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PipedReader#read())`()` Reads the next character of data from this piped stream. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/PipedReader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`characters of data from this piped stream into an array of characters. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ready](https://developer.android.com/reference/kotlin/java/io/PipedReader#ready())`()` Tell whether this stream is ready to be read. |
 
@@ -126,6 +128,7 @@ Closes this piped stream and releases any system resources associated with the s
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### connect
 
@@ -196,6 +199,7 @@ Reads up to`len`characters of data from this piped stream into an array of chara
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of characters read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

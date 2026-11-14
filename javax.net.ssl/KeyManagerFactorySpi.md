@@ -9,6 +9,7 @@ abstract class KeyManagerFactorySpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.KeyManagerFactorySpi](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyManagerFactory`class.
@@ -26,6 +27,7 @@ All the abstract methods in this class must be implemented by each cryptographic
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!\>! | [engineGetKeyManagers](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi#engineGetKeyManagers())`()` Returns one key manager for each type of key material. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi#engineInit(java.security.KeyStore,%20kotlin.CharArray))`(`ks:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Initializes this factory with a source of key material. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi#engineInit(javax.net.ssl.ManagerFactoryParameters))`(`spec:` ` [ManagerFactoryParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/ManagerFactoryParameters)!`)` Initializes this factory with a source of key material. |
+| --- | --- |
 
 ## Public constructors
 
@@ -80,6 +82,7 @@ Initializes this factory with a source of key material.
 | `java.security.KeyStoreException` | if this operation fails |
 | `java.security.NoSuchAlgorithmException` | if the specified algorithm is not available from the specified provider. |
 | `java.security.UnrecoverableKeyException` | if the key cannot be recovered |
+| --- | --- |
 
 **See Also**
 

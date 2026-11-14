@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # SaveCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/SaveCallback "View this page in Java") 
+| --- | --- |
 
 ```
 class SaveCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.SaveCallback](https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback#) |
 
 Handles save requests from the [AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) into the [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) being autofilled.
@@ -22,6 +24,7 @@ Handles save requests from the [AutofillService](https://developer.android.com/r
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFailure](https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback#onFailure(kotlin.CharSequence))`(`message:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Notifies the Android System that an [AutofillService.onSaveRequest(SaveRequest, SaveCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback))could not be handled by the service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback#onSuccess())`()` Notifies the Android System that an [AutofillService.onSaveRequest(SaveRequest, SaveCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback))was successfully handled by the service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback#onSuccess(android.content.IntentSender))`(`intentSender:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Notifies the Android System that an [AutofillService.onSaveRequest(SaveRequest, SaveCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback))was successfully handled by the service. |
+| --- | --- |
 
 ## Public methods
 

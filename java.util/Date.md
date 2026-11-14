@@ -9,9 +9,11 @@ open class Date : Cloneable, Comparable<Date!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Date](https://developer.android.com/reference/kotlin/java/util/Date#) |
 
 | Known Direct Subclasses [Date](https://developer.android.com/reference/kotlin/java/sql/Date.html#), [Time](https://developer.android.com/reference/kotlin/java/sql/Time.html#), [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp.html#) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| | [Date](https://developer.android.com/reference/kotlin/java/sql/Date.html#) | A thin wrapper around a millisecond value that allows JDBC to identify this as an SQL`DATE`value. | | [Time](https://developer.android.com/reference/kotlin/java/sql/Time.html#) | A thin wrapper around the`java.util.Date`class that allows the JDBC API to identify this as an SQL`TIME`value. | | [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp.html#) | A thin wrapper around`java.util.Date`that allows the JDBC API to identify this as an SQL`TIMESTAMP`value. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The class`Date`represents a specific instant in time, with millisecond precision.
 
@@ -60,30 +62,39 @@ In all cases, arguments given to methods for these purposes need not fall within
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [UTC](https://developer.android.com/reference/kotlin/java/util/Date#UTC(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines the date and time based on the arguments. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [after](https://developer.android.com/reference/kotlin/java/util/Date#after(java.util.Date))`(`when:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date#)!`)` Tests if this date is after the specified date. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [before](https://developer.android.com/reference/kotlin/java/util/Date#before(java.util.Date))`(`when:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date#)!`)` Tests if this date is before the specified date. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/Date#clone())`()` Return a copy of this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/util/Date#compareTo(java.util.Date))`(`other:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date#)!`)` Compares two Dates for ordering. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/Date#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares two dates for equality. |
+| --- | --- |
 | openstatic [Date](https://developer.android.com/reference/kotlin/java/util/Date#)! | [from](https://developer.android.com/reference/kotlin/java/util/Date#from(java.time.Instant))`(`instant:` ` [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)!`)` Obtains an instance of`Date`from an`Instant`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDate](https://developer.android.com/reference/kotlin/java/util/Date#getDate())`()` Returns the day of the month represented by this`Date`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDay](https://developer.android.com/reference/kotlin/java/util/Date#getDay())`()` Returns the day of the week represented by this date. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](https://developer.android.com/reference/kotlin/java/util/Date#getHours())`()` Returns the hour represented by this`Date`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](https://developer.android.com/reference/kotlin/java/util/Date#getMinutes())`()` Returns the number of minutes past the hour represented by this date, as interpreted in the local time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonth](https://developer.android.com/reference/kotlin/java/util/Date#getMonth())`()` Returns a number representing the month that contains or begins with the instant in time represented by this`Date`object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](https://developer.android.com/reference/kotlin/java/util/Date#getSeconds())`()` Returns the number of seconds past the minute represented by this date. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](https://developer.android.com/reference/kotlin/java/util/Date#getTime())`()` Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this`Date`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimezoneOffset](https://developer.android.com/reference/kotlin/java/util/Date#getTimezoneOffset())`()` Returns the offset, measured in minutes, for the local time zone relative to UTC that is appropriate for the time represented by this`Date`object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYear](https://developer.android.com/reference/kotlin/java/util/Date#getYear())`()` Returns a value that is the result of subtracting 1900 from the year that contains or begins with the instant in time represented by this`Date`object, as interpreted in the local time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/Date#hashCode())`()` Returns a hash code value for this object. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parse](https://developer.android.com/reference/kotlin/java/util/Date#parse(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to interpret the string`s`as a representation of a date and time. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDate](https://developer.android.com/reference/kotlin/java/util/Date#setDate(kotlin.Int))`(`date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the day of the month of this`Date`object to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHours](https://developer.android.com/reference/kotlin/java/util/Date#setHours(kotlin.Int))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the hour of this`Date`object to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinutes](https://developer.android.com/reference/kotlin/java/util/Date#setMinutes(kotlin.Int))`(`minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minutes of this`Date`object to the specified value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonth](https://developer.android.com/reference/kotlin/java/util/Date#setMonth(kotlin.Int))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the month of this date to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSeconds](https://developer.android.com/reference/kotlin/java/util/Date#setSeconds(kotlin.Int))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the seconds of this`Date`to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](https://developer.android.com/reference/kotlin/java/util/Date#setTime(kotlin.Long))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this`Date`object to represent a point in time that is`time`milliseconds after January 1, 1970 00:00:00 GMT. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYear](https://developer.android.com/reference/kotlin/java/util/Date#setYear(kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the year of this`Date`object to be the specified value plus 1900. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toGMTString](https://developer.android.com/reference/kotlin/java/util/Date#toGMTString())`()` Creates a string representation of this`Date`object of the form: ```kotlin d mon yyyy hh:mm:ss GMT ``` where: - *d* is the day of the month (`1`through`31`), as one or two decimal digits. - *mon* is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - *yyyy*is the year, as four decimal digits. - *hh* is the hour of the day (`00`through`23`), as two decimal digits. - *mm* is the minute within the hour (`00`through`59`), as two decimal digits. - *ss* is the second within the minute (`00`through`61`), as two decimal digits. - *GMT* is exactly the ASCII letters "`GMT`" to indicate Greenwich Mean Time. <br /> |
 | open [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)! | [toInstant](https://developer.android.com/reference/kotlin/java/util/Date#toInstant())`()` Converts this`Date`object to an`Instant`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocaleString](https://developer.android.com/reference/kotlin/java/util/Date#toLocaleString())`()` Creates a string representation of this`Date`object in an implementation-dependent form. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Date#toString())`()` Converts this`Date`object to a`String`of the form: ```kotlin dow mon dd hh:mm:ss zzz yyyy ``` where: - `dow`is the day of the week (`Sun, Mon, Tue, Wed, Thu, Fri, Sat`). - `mon`is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - `dd`is the day of the month (`01`through`31`), as two decimal digits. - `hh`is the hour of the day (`00`through`23`), as two decimal digits. - `mm`is the minute within the hour (`00`through`59`), as two decimal digits. - `ss`is the second within the minute (`00`through`61`, as two decimal digits. - `zzz`is the time zone (and may reflect daylight saving time). Standard time zone abbreviations include those recognized by the method`parse`. If time zone information is not available, then`zzz`is empty - that is, it consists of no characters at all. - `yyyy`is the year, as four decimal digits. <br /> |
 
@@ -122,6 +133,7 @@ Allocates a`Date`object and initializes it so that it represents midnight, local
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the month between 0-11. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of the month between 1-31. |
+| --- | --- |
 
 **See Also**
 
@@ -149,6 +161,7 @@ Allocates a`Date`object and initializes it so that it represents the instant at 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the month between 0-11. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of the month between 1-31. |
+| --- | --- |
 | `hrs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hours between 0-23. |
 | `min` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minutes between 0-59. |
 
@@ -179,9 +192,11 @@ Allocates a`Date`object and initializes it so that it represents the instant at 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the month between 0-11. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of the month between 1-31. |
+| --- | --- |
 | `hrs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hours between 0-23. |
 | `min` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minutes between 0-59. |
 | `sec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the seconds between 0-59. |
+| --- | --- |
 
 **See Also**
 
@@ -257,9 +272,11 @@ Determines the date and time based on the arguments. The arguments are interpret
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year minus 1900. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the month between 0-11. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of the month between 1-31. |
+| --- | --- |
 | `hrs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hours between 0-23. |
 | `min` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minutes between 0-59. |
 | `sec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the seconds between 0-59. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # ResultReceiver
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/ResultReceiver "View this page in Java") 
+| --- | --- |
 
 ```
 open class ResultReceiver : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ResultReceiver](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#) |
 
 Generic interface for receiving a callback result from someone. Use this by creating a subclass and implement [onReceiveResult](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#onReceiveResult(kotlin.Int,%20android.os.Bundle)), which you can then pass to others and send through IPC, and receive results they supply with [send](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#send(kotlin.Int,%20android.os.Bundle)).
@@ -32,6 +34,7 @@ Note: the implementation underneath is just a simple wrapper around a [Binder](h
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#describeContents())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [send](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#send(kotlin.Int,%20android.os.Bundle))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultData:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)!`)` Deliver a result to this receiver. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/ResultReceiver#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

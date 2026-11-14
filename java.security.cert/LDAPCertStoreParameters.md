@@ -9,6 +9,7 @@ open class LDAPCertStoreParameters : CertStoreParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.LDAPCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters#) |
 
 Parameters used as input for the LDAP`CertStore`algorithm.
@@ -32,6 +33,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters#clone())`()` Returns a copy of this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters#getPort())`()` Returns the port number of the LDAP server. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServerName](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters#getServerName())`()` Returns the DNS name of the LDAP server. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters#toString())`()` Returns a formatted string describing the parameters. |
 
 ## Public constructors

@@ -7,6 +7,7 @@ open class LineBreaker
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.text.LineBreaker](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#) |
 
 Provides automatic line breaking for a *single* paragraph.
@@ -68,18 +69,22 @@ Provides automatic line breaking for a *single* paragraph.
 | | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Builder` Helper class for creating a `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#`. |
 | open | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints` Line breaking constraints for single paragraph. |
 | open | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Result` Holds the result of the `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20kotlin.Int)`. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#BREAK_STRATEGY_BALANCED:kotlin.Int` Value for break strategy indicating balanced line breaking. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#BREAK_STRATEGY_HIGH_QUALITY:kotlin.Int` Value for break strategy indicating high quality line breaking. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#BREAK_STRATEGY_SIMPLE:kotlin.Int` Value for break strategy indicating simple line breaking. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#HYPHENATION_FREQUENCY_FULL:kotlin.Int` Value for hyphenation frequency indicating the full amount of automatic hyphenation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#HYPHENATION_FREQUENCY_NONE:kotlin.Int` Value for hyphenation frequency indicating no automatic hyphenation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#HYPHENATION_FREQUENCY_NORMAL:kotlin.Int` Value for hyphenation frequency indicating a light amount of automatic hyphenation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#JUSTIFICATION_MODE_INTER_CHARACTER:kotlin.Int` Value for justification mode indicating the text is justified by stretching letter spacing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#JUSTIFICATION_MODE_INTER_WORD:kotlin.Int` Value for justification mode indicating the text is justified by stretching word spacing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#JUSTIFICATION_MODE_NONE:kotlin.Int` Value for justification mode indicating no justification. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
@@ -216,6 +221,7 @@ Break paragraph into lines. The result is filled to out param.
 | `measuredPara` | [MeasuredText](https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText): a result of the text measurement. This value cannot be `null`. |
 | `constraints` | [LineBreaker.ParagraphConstraints](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints): for a single paragraph. This value cannot be `null`. |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a line number of this paragraph. Value is 0 or greater |
+| --- | --- |
 
 | Return ||
 |---|---|

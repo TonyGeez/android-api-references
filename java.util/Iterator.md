@@ -26,6 +26,7 @@ This interface is a member of the [Java Collections Framework](https://developer
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachRemaining](https://developer.android.com/reference/kotlin/java/util/Iterator#forEachRemaining(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `E>`)` Performs the given action for each remaining element until all elements have been processed or the action throws an exception. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/java/util/Iterator#hasNext())`()` Returns`true`if the iteration has more elements. |
 | abstractE | [next](https://developer.android.com/reference/kotlin/java/util/Iterator#next())`()` Returns the next element in the iteration. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Iterator#remove())`()` Removes from the underlying collection the last element returned by this iterator (optional operation). |
 
 ## Public methods

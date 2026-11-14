@@ -6,6 +6,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # OnLoadCompleteListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/Loader.OnLoadCompleteListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnLoadCompleteListener<D : Any!>

@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FillCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillCallback "View this page in Java") 
+| --- | --- |
 
 ```
 class FillCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FillCallback](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#) |
 
 `FillCallback`handles autofill requests from the [AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) into the [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) being autofilled.

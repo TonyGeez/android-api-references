@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CountDownTimer
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/CountDownTimer "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CountDownTimer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.CountDownTimer](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#) |
 
 Schedule a countdown until a time in the future, with regular notifications on intervals along the way. Example of showing a 30 second countdown in a text field:
@@ -68,6 +70,7 @@ The calls to [onTick(long)](https://developer.android.com/reference/kotlin/andro
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#cancel())`()` Cancel the countdown. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinish](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#onFinish())`()` Callback fired when the time is up. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTick](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#onTick(kotlin.Long))`(`millisUntilFinished:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Callback fired on regular interval. |
+| --- | --- |
 | [CountDownTimer](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#)! | [start](https://developer.android.com/reference/kotlin/android/os/CountDownTimer#start())`()` Start the countdown. |
 
 ## Public constructors

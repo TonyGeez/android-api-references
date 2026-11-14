@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Type
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Type "View this page in Java") 
+| --- | --- |
 
 ```
 open class Type : BaseObj
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
 | | ↳ | [android.renderscript.Type](https://developer.android.com/reference/kotlin/android/renderscript/Type#) |
 
@@ -43,12 +45,15 @@ A Type also supports YUV format information to support an [android.renderscript.
 | openstatic [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type#)! | [createX](https://developer.android.com/reference/kotlin/android/renderscript/Type#createX(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`, `dimX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Utility function for creating basic 1D types. |
 | openstatic [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type#)! | [createXY](https://developer.android.com/reference/kotlin/android/renderscript/Type#createXY(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`, `dimX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dimY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Utility function for creating basic 2D types. |
 | openstatic [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type#)! | [createXYZ](https://developer.android.com/reference/kotlin/android/renderscript/Type#createXYZ(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`, `dimX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dimY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dimZ:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Utility function for creating basic 3D types. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](https://developer.android.com/reference/kotlin/android/renderscript/Type#getCount())`()` Return the total number of accessable cells in the Type. |
 | open [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)! | [getElement](https://developer.android.com/reference/kotlin/android/renderscript/Type#getElement())`()` Return the element associated with this Type. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getX](https://developer.android.com/reference/kotlin/android/renderscript/Type#getX())`()` Return the value of the X dimension. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getY](https://developer.android.com/reference/kotlin/android/renderscript/Type#getY())`()` Return the value of the Y dimension or 0 for a 1D allocation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYuv](https://developer.android.com/reference/kotlin/android/renderscript/Type#getYuv())`()` Get the YUV format |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getZ](https://developer.android.com/reference/kotlin/android/renderscript/Type#getZ())`()` Return the value of the Z dimension or 0 for a 1D or 2D allocation. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFaces](https://developer.android.com/reference/kotlin/android/renderscript/Type#hasFaces())`()` Return if the Type is a cube map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMipmaps](https://developer.android.com/reference/kotlin/android/renderscript/Type#hasMipmaps())`()` Return if the Type has a mipmap chain. |
 
@@ -80,6 +85,7 @@ Utility function for creating basic 1D types. The type is created without mipmap
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:The RenderScript context |
 | `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!:The Element for the Type |
 | `dimX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The X dimension, must be \> 0 |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------|
@@ -108,6 +114,7 @@ Utility function for creating basic 2D types. The type is created without mipmap
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:The RenderScript context |
 | `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!:The Element for the Type |
 | `dimX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The X dimension, must be \> 0 |
+| --- | --- |
 | `dimY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The Y dimension, must be \> 0 |
 
 | Return ||
@@ -138,6 +145,7 @@ Utility function for creating basic 3D types. The type is created without mipmap
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:The RenderScript context |
 | `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!:The Element for the Type |
 | `dimX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The X dimension, must be \> 0 |
+| --- | --- |
 | `dimY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The Y dimension, must be \> 0 |
 | `dimZ` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The Z dimension, must be \> 0 |
 

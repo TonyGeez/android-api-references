@@ -19,9 +19,11 @@ This interface does not refine the general contracts of the `https://developer.a
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#charAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `char` value at the specified index. |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#codePoints()()` Returns a stream of code point values from this sequence. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#compare(kotlin.CharSequence,%20kotlin.CharSequence)(cs1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, cs2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Compares two `CharSequence` instances lexicographically. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies characters from this sequence into the given destination array. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#isEmpty()()` Returns `true` if this character sequence is empty. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#length()()` Returns the length of this character sequence. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#subSequence(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `CharSequence` that is a subsequence of this sequence. |
 
@@ -134,6 +136,7 @@ Copies characters from this sequence into the given destination array. The first
 | `srcBegin` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): start copying at this offset. |
 | `srcEnd` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): stop copying at this offset. |
 | `dst` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): the array to copy the data into. |
+| --- | --- |
 | `dstBegin` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): offset into `dst`. |
 
 | Exceptions ||

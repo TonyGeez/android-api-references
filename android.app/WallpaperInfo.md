@@ -5,12 +5,14 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 # WallpaperInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/WallpaperInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class WallpaperInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#) |
 
 This class is used to specify meta information of a wallpaper service.
@@ -30,21 +32,27 @@ This class is used to specify meta information of a wallpaper service.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#describeContents())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#dump(android.util.Printer,%20kotlin.String))`(`pw:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getComponent](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getComponent())`()` Return the component of the service that implements this wallpaper. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPackageName](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getPackageName())`()` Return the . |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)! | [getServiceInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getServiceInfo())`()` Return the raw information about the Service implementing this wallpaper. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceName](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getServiceName())`()` Return the class name of the service component that implements this wallpaper. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSettingsActivity](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getSettingsActivity())`()` Return the class name of an activity that provides a settings UI for the wallpaper. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getSettingsSliceUri](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getSettingsSliceUri())`()` Returns an URI that provides a settings [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) for this wallpaper. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShowMetadataInPreview](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getShowMetadataInPreview())`()` Queries whether any metadata should be shown when previewing the wallpaper. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadAuthor](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadAuthor(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Return a string indicating the author(s) of this wallpaper. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadContextDescription](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadContextDescription(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Retrieves a title of the URI that specifies a link for further context about this wallpaper. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [loadContextUri](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadContextUri(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Returns an URI that specifies a link for further context about this wallpaper. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadDescription](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadDescription(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Return a brief summary of this wallpaper's behavior. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [loadIcon](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadIcon(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the user-displayed icon for this wallpaper. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadLabel(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the user-displayed label for this wallpaper. |
+| --- | --- |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [loadThumbnail](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadThumbnail(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the thumbnail image for this wallpaper. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldUseDefaultUnfoldTransition](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#shouldUseDefaultUnfoldTransition())`()` Returns whether this wallpaper should receive default zooming updates when the device changes its state (e.g. when folding or unfolding a foldable device). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleDisplays](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#supportsMultipleDisplays())`()` Returns whether this wallpaper service can support multiple engines to render on each surface independently. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 

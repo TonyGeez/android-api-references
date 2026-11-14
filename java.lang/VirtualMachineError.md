@@ -9,13 +9,17 @@ abstract class VirtualMachineError : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||
 | | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError), [OutOfMemoryError](https://developer.android.com/reference/kotlin/java/lang/OutOfMemoryError), [StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError), [UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError) | Thrown to indicate some unexpected internal error has occurred in the Java Virtual Machine. | | [OutOfMemoryError](https://developer.android.com/reference/kotlin/java/lang/OutOfMemoryError) | Thrown when the Java Virtual Machine cannot allocate an object because it is out of memory, and no more memory could be made available by the garbage collector. | | [StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError) | Thrown when a stack overflow occurs because an application recurses too deeply. | | [UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError) | Thrown when an unknown but serious exception has occurred in the Java Virtual Machine. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) | Signals that an unrecoverable error has occurred. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that the Java Virtual Machine is broken or has run out of resources necessary for it to continue operating.
 

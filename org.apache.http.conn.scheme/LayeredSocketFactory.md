@@ -12,6 +12,7 @@ interface LayeredSocketFactory : SocketFactory
 | [org.apache.http.conn.scheme.LayeredSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/LayeredSocketFactory#) |
 
 | Known Direct Subclasses [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory.html#) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------| | [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory.html#) | Layered socket factory for TLS/SSL connections, based on JSSE. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 22.**
 |
@@ -53,6 +54,7 @@ Returns a socket connected to the given host that is layered over an existing so
 | `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the existing socket |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host name/IP |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port on the host |
+| --- | --- |
 | `autoClose` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):a flag for closing the underling socket when the created socket is closed |
 
 | Return ||

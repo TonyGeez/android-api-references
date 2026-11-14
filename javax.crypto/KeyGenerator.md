@@ -9,6 +9,7 @@ open class KeyGenerator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.KeyGenerator](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#) |
 
 This class provides the functionality of a secret (symmetric) key generator.
@@ -37,18 +38,23 @@ Android provides the following`KeyGenerator`algorithms:
 | AES | 1+ |
 | AESWRAP | 1-8 |
 | ARC4 | 14+ |
+| --- | --- |
 | BLOWFISH | 10+ |
 | ChaCha20 | 28+ |
 | DES | 1+ |
+| --- | --- |
 | DESede | 1+ |
 | DESedeWRAP | 1-8 |
 | HmacMD5 | 1+ |
+| --- | --- |
 | HmacSHA1 | 11+ |
 | HmacSHA224 | 1-8,22+ |
 | HmacSHA256 | 1+ |
+| --- | --- |
 | HmacSHA384 | 1+ |
 | HmacSHA512 | 1+ |
 | RC4 | 10-13 |
+| --- | --- |
 
 These algorithms are described in the [KeyGenerator section](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#KeyGenerator) of the Java Cryptography Architecture Standard Algorithm Name Documentation.
 
@@ -63,12 +69,15 @@ These algorithms are described in the [KeyGenerator section](https://docs.oracle
 | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [generateKey](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#generateKey())`()` Generates a secret key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#getAlgorithm())`()` Returns the algorithm name of this`KeyGenerator`object. |
 | static [KeyGenerator](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyGenerator`object that generates secret keys for the specified algorithm. |
+| --- | --- |
 | static [KeyGenerator](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyGenerator`object that generates secret keys for the specified algorithm. |
 | static [KeyGenerator](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`KeyGenerator`object that generates secret keys for the specified algorithm. |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#getProvider())`()` Returns the provider of this`KeyGenerator`object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#init(kotlin.Int))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes this key generator for a certain keysize. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#init(kotlin.Int,%20java.security.SecureRandom))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key generator for a certain keysize, using a user-provided source of randomness. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#init(java.security.SecureRandom))`(`random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key generator. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#init(java.security.spec.AlgorithmParameterSpec))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this key generator with the specified parameter set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator#init(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key generator with the specified parameter set and a user-provided source of randomness. |
 
@@ -92,6 +101,7 @@ Creates a KeyGenerator object.
 | `keyGenSpi` | [KeyGeneratorSpi](https://developer.android.com/reference/kotlin/javax/crypto/KeyGeneratorSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -187,6 +197,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
 | `java.security.NoSuchAlgorithmException` | if a KeyGeneratorSpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
 
 **See Also**
@@ -222,6 +233,7 @@ A new KeyGenerator object encapsulating the KeyGeneratorSpi implementation from 
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
 | `java.security.NoSuchAlgorithmException` | if a KeyGeneratorSpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null. |
+| --- | --- |
 
 **See Also**
 

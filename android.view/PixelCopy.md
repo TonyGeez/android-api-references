@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # PixelCopy
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/PixelCopy "View this page in Java") 
+| --- | --- |
 
 ```
 class PixelCopy
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.PixelCopy](https://developer.android.com/reference/kotlin/android/view/PixelCopy#) |
 
 Provides a mechanisms to issue pixel copy requests to allow for copy operations from [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) to [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)
@@ -22,24 +24,29 @@ Provides a mechanisms to issue pixel copy requests to allow for copy operations 
 | abstract | [OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener) Listener for observing the completion of a PixelCopy request. |
 | | [Request](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Request) Represents a PixelCopy request. |
 | | [Result](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Result) Contains the result of a PixelCopy request |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DESTINATION_INVALID](https://developer.android.com/reference/kotlin/android/view/PixelCopy#ERROR_DESTINATION_INVALID:kotlin.Int) The destination isn't a valid copy target. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SOURCE_INVALID](https://developer.android.com/reference/kotlin/android/view/PixelCopy#ERROR_SOURCE_INVALID:kotlin.Int) It is not possible to copy from the source. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SOURCE_NO_DATA](https://developer.android.com/reference/kotlin/android/view/PixelCopy#ERROR_SOURCE_NO_DATA:kotlin.Int) The source has nothing to copy from. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TIMEOUT](https://developer.android.com/reference/kotlin/android/view/PixelCopy#ERROR_TIMEOUT:kotlin.Int) A timeout occurred while trying to acquire a buffer from the source to copy from. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/view/PixelCopy#ERROR_UNKNOWN:kotlin.Int) The pixel copy request failed with an unknown error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/view/PixelCopy#SUCCESS:kotlin.Int) The pixel copy request succeeded |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.PixelCopy.Request,%20java.util.concurrent.Executor,%20java.util.function.Consumer))`(`request:` ` [PixelCopy.Request](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Request)`, `callbackExecutor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [PixelCopy.Result](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Result)!>`)` Executes the pixel copy request |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.Surface,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [Surface](https://developer.android.com/reference/kotlin/android/view/Surface)`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests a copy of the pixels from a [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.Surface,%20android.graphics.Rect,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [Surface](https://developer.android.com/reference/kotlin/android/view/Surface)`, `srcRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests a copy of the pixels at the provided [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) from a [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.SurfaceView,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView)`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests for the display content of a [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.SurfaceView,%20android.graphics.Rect,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView)`, `srcRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests for the display content of a [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.Window,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [Window](https://developer.android.com/reference/kotlin/android/view/Window)`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests a copy of the pixels from a [Window](https://developer.android.com/reference/kotlin/android/view/Window) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/android/view/PixelCopy#request(android.view.Window,%20android.graphics.Rect,%20android.graphics.Bitmap,%20android.view.PixelCopy.OnPixelCopyFinishedListener,%20android.os.Handler))`(`source:` ` [Window](https://developer.android.com/reference/kotlin/android/view/Window)`, `srcRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?`, `dest:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `listener:` ` [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener)`, `listenerThread:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Requests a copy of the pixels at the provided [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) from a [Window](https://developer.android.com/reference/kotlin/android/view/Window) to be copied into a provided [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#). |
 
 ## Constants
@@ -137,6 +144,7 @@ Executes the pixel copy request
 | `request` | [PixelCopy.Request](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Request):The request to execute This value cannot be`null`. |
 | `callbackExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor to run the callback on This value cannot be`null`. |
 | `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [PixelCopy.Result](https://developer.android.com/reference/kotlin/android/view/PixelCopy.Result)!\>:The callback for when the copy request is completed This value cannot be`null`. |
+| --- | --- |
 
 ### request
 
@@ -158,6 +166,7 @@ Requests a copy of the pixels from a [Surface](https://developer.android.com/ref
 | `source` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface):The source from which to copy This value cannot be`null`. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
+| --- | --- |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |
 
 ### request
@@ -181,6 +190,7 @@ Requests a copy of the pixels at the provided [Rect](https://developer.android.c
 | `source` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface):The source from which to copy This value cannot be`null`. |
 | `srcRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:The area of the source to copy from. If this is null the copy area will be the entire surface. The rect will be clamped to the bounds of the Surface. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
+| --- | --- |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |
 
@@ -204,6 +214,7 @@ Requests for the display content of a [SurfaceView](https://developer.android.co
 | `source` | [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView):The source from which to copy This value cannot be`null`. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
+| --- | --- |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |
 
 ### request
@@ -227,6 +238,7 @@ Requests for the display content of a [SurfaceView](https://developer.android.co
 | `source` | [SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView):The source from which to copy This value cannot be`null`. |
 | `srcRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:The area of the source to copy from. If this is null the copy area will be the entire surface. The rect will be clamped to the bounds of the Surface. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
+| --- | --- |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |
 
@@ -250,6 +262,7 @@ Requests a copy of the pixels from a [Window](https://developer.android.com/refe
 | `source` | [Window](https://developer.android.com/reference/kotlin/android/view/Window):The source from which to copy This value cannot be`null`. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
+| --- | --- |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |
 
 ### request
@@ -273,5 +286,6 @@ Requests a copy of the pixels at the provided [Rect](https://developer.android.c
 | `source` | [Window](https://developer.android.com/reference/kotlin/android/view/Window):The source from which to copy This value cannot be`null`. |
 | `srcRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?:The area of the source to copy from. If this is null the copy area will be the entire surface. The rect will be clamped to the bounds of the Surface. |
 | `dest` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The destination of the copy. The source will be scaled to match the width, height, and format of this bitmap. This value cannot be`null`. |
+| --- | --- |
 | `listener` | [PixelCopy.OnPixelCopyFinishedListener](https://developer.android.com/reference/kotlin/android/view/PixelCopy.OnPixelCopyFinishedListener):Callback for when the pixel copy request completes This value cannot be`null`. |
 | `listenerThread` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):The callback will be invoked on this Handler when the copy is finished. This value cannot be`null`. |

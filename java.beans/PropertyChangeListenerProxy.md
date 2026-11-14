@@ -9,6 +9,7 @@ open class PropertyChangeListenerProxy : EventListenerProxy<PropertyChangeList
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventListenerProxy](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy.html#)\< [java.beans.PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)\> ||
 | | ↳ | [java.beans.PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy#) |
 

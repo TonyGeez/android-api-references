@@ -9,6 +9,7 @@ open class PipedWriter : Writer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.Writer](https://developer.android.com/reference/kotlin/java/io/Writer) ||
 | | ↳ | [java.io.PipedWriter](https://developer.android.com/reference/kotlin/java/io/PipedWriter#) |
 
@@ -26,6 +27,7 @@ Piped character-output streams.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/PipedWriter#close())`()` Closes this piped output stream and releases any system resources associated with this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/io/PipedWriter#connect(java.io.PipedReader))`(`snk:` ` [PipedReader](https://developer.android.com/reference/kotlin/java/io/PipedReader)!`)` Connects this piped writer to a receiver. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/PipedWriter#flush())`()` Flushes this output stream and forces any buffered output characters to be written out. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/PipedWriter#write(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`characters from the specified character array starting at offset`off`to this piped output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/PipedWriter#write(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified`char`to the piped output stream. |
 
@@ -88,6 +90,7 @@ Closes this piped output stream and releases any system resources associated wit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### connect
 
@@ -153,6 +156,7 @@ Writes`len`characters from the specified character array starting at offset`off`
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of characters to write. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

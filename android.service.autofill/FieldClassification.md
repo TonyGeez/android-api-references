@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # FieldClassification
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FieldClassification "View this page in Java") 
+| --- | --- |
 
 ```
 class FieldClassification
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FieldClassification](https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification#) |
 
 Represents the [field classification](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#FieldClassification) results for a given field.

@@ -9,6 +9,7 @@ abstract class EGLConfig
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.microedition.khronos.egl.EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig#) |
 
 ## Summary

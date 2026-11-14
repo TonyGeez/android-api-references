@@ -19,6 +19,7 @@ Implementing this interface allows an object to be the target of the enhanced`fo
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/lang/Iterable#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `T>`)` Performs the given action for each element of the`Iterable`until all elements have been processed or the action throws an exception. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [iterator](https://developer.android.com/reference/kotlin/java/lang/Iterable#iterator())`()` Returns an iterator over elements of type`T`. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<T\> | [spliterator](https://developer.android.com/reference/kotlin/java/lang/Iterable#spliterator())`()` Creates a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#) over the elements described by this`Iterable`. |
+| --- | --- |
 
 ## Public methods
 

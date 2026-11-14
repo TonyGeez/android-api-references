@@ -7,10 +7,12 @@ abstract class HttpURLConnection : URLConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection) ||
 | | ↳ | [java.net.HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#) |
 
 | Known Direct Subclasses [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) |---|---| | [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) | `HttpsURLConnection` extends `HttpURLConnection` with support for https-specific features. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A URLConnection with support for HTTP-specific features. See [the spec](http://www.w3.org/pub/WWW/Protocols/) for details.
 
@@ -188,39 +190,51 @@ Each instance of `HttpURLConnection` may be used for one request/response pair. 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_ACCEPTED:kotlin.Int` HTTP Status-Code 202: Accepted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_BAD_GATEWAY:kotlin.Int` HTTP Status-Code 502: Bad Gateway. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_BAD_METHOD:kotlin.Int` HTTP Status-Code 405: Method Not Allowed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_BAD_REQUEST:kotlin.Int` HTTP Status-Code 400: Bad Request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_CLIENT_TIMEOUT:kotlin.Int` HTTP Status-Code 408: Request Time-Out. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_CONFLICT:kotlin.Int` HTTP Status-Code 409: Conflict. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_CREATED:kotlin.Int` HTTP Status-Code 201: Created. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_ENTITY_TOO_LARGE:kotlin.Int` HTTP Status-Code 413: Request Entity Too Large. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_FORBIDDEN:kotlin.Int` HTTP Status-Code 403: Forbidden. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_GATEWAY_TIMEOUT:kotlin.Int` HTTP Status-Code 504: Gateway Timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_GONE:kotlin.Int` HTTP Status-Code 410: Gone. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_INTERNAL_ERROR:kotlin.Int` HTTP Status-Code 500: Internal Server Error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_LENGTH_REQUIRED:kotlin.Int` HTTP Status-Code 411: Length Required. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_MOVED_PERM:kotlin.Int` HTTP Status-Code 301: Moved Permanently. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_MOVED_TEMP:kotlin.Int` HTTP Status-Code 302: Temporary Redirect. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_MULT_CHOICE:kotlin.Int` HTTP Status-Code 300: Multiple Choices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NOT_ACCEPTABLE:kotlin.Int` HTTP Status-Code 406: Not Acceptable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NOT_AUTHORITATIVE:kotlin.Int` HTTP Status-Code 203: Non-Authoritative Information. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NOT_FOUND:kotlin.Int` HTTP Status-Code 404: Not Found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NOT_IMPLEMENTED:kotlin.Int` HTTP Status-Code 501: Not Implemented. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NOT_MODIFIED:kotlin.Int` HTTP Status-Code 304: Not Modified. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_NO_CONTENT:kotlin.Int` HTTP Status-Code 204: No Content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_OK:kotlin.Int` HTTP Status-Code 200: OK. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_PARTIAL:kotlin.Int` HTTP Status-Code 206: Partial Content. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_PAYMENT_REQUIRED:kotlin.Int` HTTP Status-Code 402: Payment Required. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_PRECON_FAILED:kotlin.Int` HTTP Status-Code 412: Precondition Failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_PROXY_AUTH:kotlin.Int` HTTP Status-Code 407: Proxy Authentication Required. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_REQ_TOO_LONG:kotlin.Int` HTTP Status-Code 414: Request-URI Too Large. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_RESET:kotlin.Int` HTTP Status-Code 205: Reset Content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_SEE_OTHER:kotlin.Int` HTTP Status-Code 303: See Other. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_SERVER_ERROR:kotlin.Int` HTTP Status-Code 500: Internal Server Error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_UNAUTHORIZED:kotlin.Int` HTTP Status-Code 401: Unauthorized. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_UNAVAILABLE:kotlin.Int` HTTP Status-Code 503: Service Unavailable. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_UNSUPPORTED_TYPE:kotlin.Int` HTTP Status-Code 415: Unsupported Media Type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_USE_PROXY:kotlin.Int` HTTP Status-Code 305: Use Proxy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#HTTP_VERSION:kotlin.Int` HTTP Status-Code 505: HTTP Version Not Supported. |
+| --- | --- |
 
 | Protected constructors ||
 |---|---|
@@ -231,21 +245,27 @@ Each instance of `HttpURLConnection` may be used for one request/response pair. 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#disconnect()()` Indicates that other requests to the server are unlikely in the near future. |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getErrorStream()()` Returns the error stream if the connection failed but the server sent useful data nonetheless. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getFollowRedirects()()` Returns a `boolean` indicating whether or not HTTP redirects (3xx) should be automatically followed. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getHeaderField(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value for the `n`th header field. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getHeaderFieldDate(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, Default: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the value of the named field parsed as date. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getHeaderFieldKey(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the key for the `n`th header field. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getInstanceFollowRedirects()()` Returns the value of this `HttpURLConnection`'s `instanceFollowRedirects` field. |
 | open [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getPermission()()` Returns a `https://developer.android.com/reference/kotlin/java/net/SocketPermission` object representing the permission necessary to connect to the destination host and port. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getRequestMethod()()` Get the request method. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getResponseCode()()` Gets the status code from an HTTP response message. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getResponseMessage()()` Gets the HTTP response message, if any, returned along with the response code from a server. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setChunkedStreamingMode(kotlin.Int)(chunklen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is used to enable streaming of a HTTP request body without internal buffering, when the content length is **not** known in advance. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setFixedLengthStreamingMode(kotlin.Int)(contentLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is used to enable streaming of a HTTP request body without internal buffering, when the content length is known in advance. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setFixedLengthStreamingMode(kotlin.Long)(contentLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This method is used to enable streaming of a HTTP request body without internal buffering, when the content length is known in advance. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setFollowRedirects(kotlin.Boolean)(set: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether HTTP redirects (requests with response code 3xx) should be automatically followed by this class. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setInstanceFollowRedirects(kotlin.Boolean)(followRedirects: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether HTTP redirects (requests with response code 3xx) should be automatically followed by this `HttpURLConnection` instance. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#setRequestMethod(kotlin.String)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the method for the URL request, one of: - GET - POST - HEAD - OPTIONS - PUT - DELETE - TRACE are legal, subject to protocol restrictions. <br /> |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#usingProxy()()` Indicates if the connection is going through a proxy. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -256,9 +276,11 @@ Each instance of `HttpURLConnection` may be used for one request/response pair. 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#chunkLength:kotlin.Int` The chunk-length when using chunked encoding streaming mode for output. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#fixedContentLength:kotlin.Int` The fixed content-length when using fixed-length streaming mode. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#fixedContentLengthLong:kotlin.Long` The fixed content-length when using fixed-length streaming mode. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#instanceFollowRedirects:kotlin.Boolean` If `true`, the protocol will automatically follow redirects. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#method:kotlin.String` The HTTP method (GET,POST,PUT,etc.). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#responseCode:kotlin.Int` An `int` representing the three digit HTTP Status-Code. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#responseMessage:kotlin.String` The HTTP response message. |
 
 | Inherited properties ||

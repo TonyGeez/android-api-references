@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # ChangeScroll
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/ChangeScroll "View this page in Java") 
+| --- | --- |
 
 ```
 open class ChangeScroll : Transition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) ||
 | | ↳ | [android.transition.ChangeScroll](https://developer.android.com/reference/kotlin/android/transition/ChangeScroll#) |
 
@@ -32,6 +34,7 @@ This transition captures the scroll properties of targets before and after the s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureEndValues](https://developer.android.com/reference/kotlin/android/transition/ChangeScroll#captureEndValues(android.transition.TransitionValues))`(`transitionValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureStartValues](https://developer.android.com/reference/kotlin/android/transition/ChangeScroll#captureStartValues(android.transition.TransitionValues))`(`transitionValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)? | [createAnimator](https://developer.android.com/reference/kotlin/android/transition/ChangeScroll#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)`, `startValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?`, `endValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?`)` This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getTransitionProperties](https://developer.android.com/reference/kotlin/android/transition/ChangeScroll#getTransitionProperties())`()` <br /> |
 
 | Inherited functions ||
@@ -111,6 +114,7 @@ The method is called for every applicable target object, which is stored in the 
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#):This value cannot be`null`. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?:This value may be`null`. |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------|

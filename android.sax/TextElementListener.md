@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TextElementListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/sax/TextElementListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TextElementListener : EndTextElementListener, StartElementListener

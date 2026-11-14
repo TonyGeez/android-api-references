@@ -3,15 +3,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # Fade
 
 Kotlin | [Java](https://developer.android.com/reference/android/transition/Fade "View this page in Java")
+| --- | --- |
 
 ```
 open class Fade : Visibility
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) |||
 | | ↳ | [android.transition.Visibility](https://developer.android.com/reference/kotlin/android/transition/Visibility) ||
 | | | ↳ | [android.transition.Fade](https://developer.android.com/reference/kotlin/android/transition/Fade#) |
+| --- | --- | --- | --- |
 
 This transition tracks changes to the visibility of target views in the start and end scenes and fades views in or out when they become visible or non-visible. Visibility is determined by both the `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` state of the view as well as whether it is parented in the current view hierarchy.
 
@@ -42,6 +45,7 @@ A Fade transition can be described in a resource file by using the tag `fade`, a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Fade#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onAppear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onDisappear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -148,6 +152,7 @@ The default implementation of this method returns a null Animator. Subclasses sh
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the transition hierarchy |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View to make appear. This will be in the target scene's View hierarchy and will be VISIBLE. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The target values in the start scene |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The target values in the end scene |
 
 | Return ||
@@ -174,6 +179,7 @@ The default implementation of this method returns a null Animator. Subclasses sh
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the transition hierarchy |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View to make disappear. This will be in the target scene's View hierarchy or in an `https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay.html#` and will be VISIBLE. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The target values in the start scene |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The target values in the end scene |
 
 | Return ||

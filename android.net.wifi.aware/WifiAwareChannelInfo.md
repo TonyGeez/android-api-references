@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # WifiAwareChannelInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo "View this page in Java")
+| --- | --- |
 
 ```
 class WifiAwareChannelInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.WifiAwareChannelInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#) |
 
 Wi-Fi Aware data-path channel information. The information can be extracted from the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo` using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getChannelInfoList()` ()}. Wi-Fi Aware data-path channel information includes the channel frequency, bandwidth and num of the spatial streams.
@@ -24,9 +26,11 @@ Wi-Fi Aware data-path channel information. The information can be extracted from
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#getChannelBandwidth()()` Get the channel bandwidth used by the Aware data path |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#getChannelFrequencyMhz()()` Get the channel frequency in MHZ used by the Aware data path |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#getSpatialStreamCount()()` Get the number of the spatial streams used by the Aware data path |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

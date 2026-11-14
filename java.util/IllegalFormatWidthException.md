@@ -9,12 +9,15 @@ open class IllegalFormatWidthException : IllegalFormatException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
 | | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
 | | | | | | ↳ | [java.util.IllegalFormatWidthException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatWidthException#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when the format width is a negative value other than`-1`or is otherwise unsupported. If a given format width is not representable by an`int`type, then the value`Integer.MIN_VALUE`will be used in the exception.
 

@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # EastAsianWidth
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.EastAsianWidth "View this page in Java") 
+| --- | --- |
 
 ```
 interface EastAsianWidth
@@ -21,9 +22,11 @@ East Asian Width constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMBIGUOUS](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#AMBIGUOUS:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULLWIDTH](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#FULLWIDTH:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HALFWIDTH](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#HALFWIDTH:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#NARROW:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEUTRAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#NEUTRAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth#WIDE:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Constants
 

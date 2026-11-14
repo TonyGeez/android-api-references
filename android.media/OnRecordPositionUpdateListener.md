@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OnRecordPositionUpdateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioRecord.OnRecordPositionUpdateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnRecordPositionUpdateListener

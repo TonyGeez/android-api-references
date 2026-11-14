@@ -9,6 +9,7 @@ open class SSLEngineResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#) |
 
 An encapsulation of the result state produced by`SSLEngine`I/O calls.
@@ -31,6 +32,7 @@ A`SSLEngine`provides a means for establishing secure communication sessions betw
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesConsumed](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#bytesConsumed())`()` Returns the number of bytes consumed from the input buffer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesProduced](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#bytesProduced())`()` Returns the number of bytes written to the output buffer. |
 | [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)! | [getHandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#getHandshakeStatus())`()` Gets the handshake status of this`SSLEngine`operation. |
+| --- | --- |
 | [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)! | [getStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#getStatus())`()` Gets the return value of this`SSLEngine`operation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#toString())`()` Returns a String representation of this object. |
 
@@ -55,6 +57,7 @@ Initializes a new instance of this class.
 | `status` | [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)!:the return value of the operation. |
 | `handshakeStatus` | [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)!:the current handshaking status. |
 | `bytesConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes consumed from the source ByteBuffer |
+| --- | --- |
 | `bytesProduced` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes placed into the destination ByteBuffer |
 
 | Exceptions ||

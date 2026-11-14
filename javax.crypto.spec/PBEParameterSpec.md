@@ -9,6 +9,7 @@ open class PBEParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.PBEParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#) |
 
 This class specifies the set of parameters used with password-based encryption (PBE), as defined in the [PKCS #5](http://www.ietf.org/rfc/rfc2898.txt) standard.
@@ -25,6 +26,7 @@ This class specifies the set of parameters used with password-based encryption (
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getIterationCount())`()` Returns the iteration count. |
 | open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getParameterSpec())`()` Returns the cipher algorithm parameter specification. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getSalt())`()` Returns the salt. |
+| --- | --- |
 
 ## Public constructors
 
@@ -67,6 +69,7 @@ Constructs a parameter set for password-based encryption as defined in the PKCS 
 | `salt` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the salt. The contents of`salt`are copied to protect against subsequent modification. |
 | `iterationCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the iteration count. |
 | `paramSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the cipher algorithm parameter specification, which may be null. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|------------------|

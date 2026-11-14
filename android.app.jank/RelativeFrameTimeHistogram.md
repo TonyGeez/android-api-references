@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RelativeFrameTimeHistogram
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/jank/RelativeFrameTimeHistogram "View this page in Java") 
+| --- | --- |
 
 ```
 open class RelativeFrameTimeHistogram
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.jank.RelativeFrameTimeHistogram](https://developer.android.com/reference/kotlin/android/app/jank/RelativeFrameTimeHistogram#) |
 
 A histogram of frame times relative to their deadline. This class aids in reporting [AppJankStats](https://developer.android.com/reference/kotlin/android/app/jank/AppJankStats) to the system and is designed for use by library widgets. It facilitates the recording of frame times in relation to the frame deadline. The class records the distribution of time remaining until a frame is considered janky or how janky the frame was.
@@ -30,6 +32,7 @@ The relative frame times are recorded as a histogram: values are [added](https:/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addRelativeFrameTimeMillis](https://developer.android.com/reference/kotlin/android/app/jank/RelativeFrameTimeHistogram#addRelativeFrameTimeMillis(kotlin.Int))`(`frameTimeMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Increases the count by one for the bucket representing the relative frame time. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBucketCounters](https://developer.android.com/reference/kotlin/android/app/jank/RelativeFrameTimeHistogram#getBucketCounters())`()` Returns the counts for the all the relative frame time buckets. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBucketEndpointsMillis](https://developer.android.com/reference/kotlin/android/app/jank/RelativeFrameTimeHistogram#getBucketEndpointsMillis())`()` Returns the relative frame time endpoints for the histogram. |
+| --- | --- |
 
 ## Public constructors
 

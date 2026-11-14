@@ -11,6 +11,7 @@ interface UserPrincipal : Principal
 | [java.nio.file.attribute.UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal#) |
 
 | Known Direct Subclasses [GroupPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/GroupPrincipal) |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [GroupPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/GroupPrincipal) | A`UserPrincipal`representing a*group identity*, used to determine access rights to objects in a file system. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A`Principal`representing an identity used to determine access rights to objects in a file system.
 

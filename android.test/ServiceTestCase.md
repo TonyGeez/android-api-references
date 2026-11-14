@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # ServiceTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ServiceTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ServiceTestCase<T : Service!> : AndroidTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.AndroidTestCase](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase) ||
 | | ↳ | [android.test.ServiceTestCase](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#) |
 
@@ -49,6 +51,7 @@ By default, the test case is injected with a full system context and a generic [
 | open [Application](https://developer.android.com/reference/kotlin/android/app/Application.html#)! | [getApplication](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#getApplication())`()` Returns the Application object in use by the service under test. |
 | openT | [getService](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#getService())`()` <br /> |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | [getSystemContext](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#getSystemContext())`()` Returns the real system context that is saved by [setUp()](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#setUp()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplication](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#setApplication(android.app.Application))`(`application:` ` [Application](https://developer.android.com/reference/kotlin/android/app/Application.html#)!`)` Sets the application that is used during the test. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testServiceTestCaseSetUpProperly](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#testServiceTestCaseSetUpProperly())`()` Tests that [setupService()](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#setupService())runs correctly and issues an junit. |
 
@@ -57,9 +60,11 @@ By default, the test case is injected with a full system context and a generic [
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)! | [bindService](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#bindService(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Starts the service under test, in the same way as if it were started by android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUp](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#setUp())`()` Gets the current system context and stores it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupService](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#setupService())`()` Creates the service under test and attaches all injected dependencies (Context, Application) to it. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownService](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#shutdownService())`()` Makes the necessary calls to stop (or unbind) the service under test, and calls onDestroy(). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startService](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#startService(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Starts the service under test, in the same way as if it were started by [Context.startService(Intent)](https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent))with an [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) that identifies a service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](https://developer.android.com/reference/kotlin/android/test/ServiceTestCase#tearDown())`()` Shuts down the service under test. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

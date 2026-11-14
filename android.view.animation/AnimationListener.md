@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AnimationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/Animation.AnimationListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface AnimationListener
@@ -21,6 +22,7 @@ An animation listener receives notifications from an animation. Notifications in
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationEnd(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the end of the animation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationRepeat(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the repetition of the animation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationStart(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the start of the animation. |
+| --- | --- |
 
 ## Public methods
 

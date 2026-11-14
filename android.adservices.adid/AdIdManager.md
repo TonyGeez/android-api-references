@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AdIdManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adid/AdIdManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class AdIdManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adid.AdIdManager](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager#) |
 
 AdId Manager provides APIs for app and ad-SDKs to access advertising ID. The advertising ID is a unique, per-device, user-resettable ID for advertising. It gives users better controls and provides developers with a simple, standard system to continue to monetize their apps via personalized ads (formerly known as interest-based ads).
@@ -23,6 +25,7 @@ AdId Manager provides APIs for app and ad-SDKs to access advertising ID. The adv
 | openstatic [AdIdManager](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager#) | [get](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager#get(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`)` Factory method for creating an instance of AdIdManager. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager#getAdId(java.util.concurrent.Executor,%20android.adservices.common.AdServicesOutcomeReceiver))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)< [AdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdId)!,` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!>`)` Return the AdId. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager#getAdId(java.util.concurrent.Executor,%20android.os.OutcomeReceiver))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)< [AdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdId)!,` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!>`)` Return the AdId. |
+| --- | --- |
 
 ## Public methods
 

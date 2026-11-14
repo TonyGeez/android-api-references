@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableLong
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableLong "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableLong
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableLong](https://developer.android.com/reference/kotlin/android/util/MutableLong#) |
 
 | **This class was deprecated in API level 28.**

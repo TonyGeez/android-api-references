@@ -7,6 +7,7 @@ abstract class Record
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Record](https://developer.android.com/reference/kotlin/java/lang/Record#) |
 
 This is the common base class of all Java language record classes.
@@ -40,6 +41,7 @@ then it must be the case that `r.equals(copy)`.
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Record#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Record#hashCode()()` Returns a hash code value for the record. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Record#toString()()` Returns a string representation of the record. |
+| --- | --- |
 
 ## Protected constructors
 

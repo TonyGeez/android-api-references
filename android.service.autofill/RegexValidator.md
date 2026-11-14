@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # RegexValidator
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/RegexValidator "View this page in Java") 
+| --- | --- |
 
 ```
 class RegexValidator : Parcelable, Validator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.RegexValidator](https://developer.android.com/reference/kotlin/android/service/autofill/RegexValidator#) |
 
 Defines if a field is valid based on a regular expression (regex).
@@ -32,6 +34,7 @@ See [SaveInfo.Builder.setValidator(Validator)](https://developer.android.com/ref
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/RegexValidator#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/RegexValidator#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/RegexValidator#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

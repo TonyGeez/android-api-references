@@ -9,9 +9,11 @@ open class PatternSyntaxException : IllegalArgumentException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
 | | | | | ↳ | [java.util.regex.PatternSyntaxException](https://developer.android.com/reference/kotlin/java/util/regex/PatternSyntaxException#) |
 
@@ -28,6 +30,7 @@ Unchecked exception thrown to indicate a syntax error in a regular-expression pa
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/java/util/regex/PatternSyntaxException#getDescription())`()` Retrieves the description of the error. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/util/regex/PatternSyntaxException#getIndex())`()` Retrieves the error index. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPattern](https://developer.android.com/reference/kotlin/java/util/regex/PatternSyntaxException#getPattern())`()` Retrieves the erroneous regular-expression pattern. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,6 +56,7 @@ Constructs a new instance of this class.
 | `desc` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A description of the error |
 | `regex` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The erroneous pattern |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The approximate index in the pattern of the error, or`-1`if the index is not known |
+| --- | --- |
 
 ## Public methods
 

@@ -3,12 +3,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # KeyboardShortcutGroup
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/KeyboardShortcutGroup "View this page in Java")
+| --- | --- |
 
 ```
 class KeyboardShortcutGroup : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.KeyboardShortcutGroup](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#) |
 
 A group of `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo`.
@@ -29,6 +31,7 @@ A group of `https://developer.android.com/reference/kotlin/android/view/Keyboard
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#addItem(android.view.KeyboardShortcutInfo)(item: https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo!)` Adds an item to the existing list. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutInfo](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo)!\>! | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#getItems()()` Returns the list of items included in this group. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#getLabel()()` Returns the label to be used to describe this group. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

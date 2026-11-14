@@ -10,6 +10,7 @@ open class StringBufferInputStream : InputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.StringBufferInputStream](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#) |
 
@@ -32,6 +33,7 @@ Only the low eight bits of each character in the string are used by this class.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#available())`()` Returns the number of bytes that can be read from the input stream without blocking. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#read())`()` Reads the next byte of data from this input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from this input stream into an array of bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#reset())`()` Resets the input stream to begin reading from the first character of this input stream's underlying buffer. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips`n`bytes of input from this input stream. |
 
@@ -44,6 +46,7 @@ Only the low eight bits of each character in the string are used by this class.
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buffer](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#buffer:kotlin.String) The string from which bytes are read. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [count](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#count:kotlin.Int) The number of valid characters in the input stream buffer. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [pos](https://developer.android.com/reference/kotlin/java/io/StringBufferInputStream#pos:kotlin.Int) The index of the next character to read from the input stream buffer. |
+| --- | --- |
 
 ## Public constructors
 
@@ -128,6 +131,7 @@ The`read`method of`StringBufferInputStream`cannot block. It copies the low eight
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -138,6 +142,7 @@ The`read`method of`StringBufferInputStream`cannot block. It copies the low eight
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 
 ### reset
 

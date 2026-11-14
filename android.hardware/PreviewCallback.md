@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # PreviewCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.PreviewCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface PreviewCallback

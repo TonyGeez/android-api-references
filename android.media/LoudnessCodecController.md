@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # LoudnessCodecController
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/LoudnessCodecController "View this page in Java") 
+| --- | --- |
 
 ```
 open class LoudnessCodecController : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#) |
 
 Class for getting recommended loudness parameter updates for audio decoders as they are used to play back media content according to the encoded format and current audio routing. These audio decoder updates leverage loudness metadata present in compressed audio streams. They ensure the loudness and dynamic range of the content is optimized to the physical characteristics of the audio output device (e.g. phone microspeakers vs headphones vs TV speakers).Those updates can be automatically applied to the [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) instance(s), or be provided to the user. The codec loudness management parameter updates are computed in accordance to the CTA-2075 standard.
@@ -28,9 +30,11 @@ A new object should be instantiated for each audio session (see [AudioManager.ge
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addMediaCodec](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#addMediaCodec(android.media.MediaCodec))`(`mediaCodec:` ` [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec)`)` Adds a new [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) that will stream data to a player which uses #mSessionId. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#close())`()` Stops any loudness updates and frees up the resources. |
 | open static [LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#) | [create](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#create(kotlin.Int))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new instance of [LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#) |
+| --- | --- |
 | open static [LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#) | [create](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#create(kotlin.Int,%20java.util.concurrent.Executor,%20android.media.LoudnessCodecController.OnLoudnessCodecUpdateListener))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [LoudnessCodecController.OnLoudnessCodecUpdateListener](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener)`)` Creates a new instance of [LoudnessCodecController](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#) |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getLoudnessCodecParams](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#getLoudnessCodecParams(android.media.MediaCodec))`(`mediaCodec:` ` [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec)`)` Returns the loudness parameters of the registered audio decoders |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeMediaCodec](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController#removeMediaCodec(android.media.MediaCodec))`(`mediaCodec:` ` [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec)`)` Removes the [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) from receiving loudness updates. |
+| --- | --- |
 
 ## Public methods
 
@@ -113,6 +117,7 @@ This method should be used when the client wants to alter the codec loudness par
 | `sessionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the session ID of the track that will receive data from the added [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec)'s |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) to handle the callbacks Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
 | `listener` | [LoudnessCodecController.OnLoudnessCodecUpdateListener](https://developer.android.com/reference/kotlin/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener): used for receiving updates |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|

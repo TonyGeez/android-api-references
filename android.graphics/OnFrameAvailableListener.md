@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnFrameAvailableListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/SurfaceTexture.OnFrameAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFrameAvailableListener

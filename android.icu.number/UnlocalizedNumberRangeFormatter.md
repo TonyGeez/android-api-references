@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # UnlocalizedNumberRangeFormatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/UnlocalizedNumberRangeFormatter "View this page in Java") 
+| --- | --- |
 
 ```
 open class UnlocalizedNumberRangeFormatter : NumberRangeFormatterSettings<UnlocalizedNumberRangeFormatter!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.number.NumberRangeFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings)\< [android.icu.number.UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter#)\> ||
 | | ↳ | [android.icu.number.UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter#) |
 

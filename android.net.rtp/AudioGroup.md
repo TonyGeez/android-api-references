@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # AudioGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/rtp/AudioGroup "View this page in Java") 
+| --- | --- |
 
 ```
 open class AudioGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.rtp.AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#) |
 
 | **This class was deprecated in API level 31.**
@@ -33,6 +35,7 @@ Using this class requires [android.Manifest.permission#RECORD_AUDIO](https://dev
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_ECHO_SUPPRESSION](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_ECHO_SUPPRESSION:kotlin.Int) This mode is similar to [MODE_NORMAL](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_NORMAL:kotlin.Int) except the echo suppression is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_MUTED](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_MUTED:kotlin.Int) This mode is similar to [MODE_NORMAL](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_NORMAL:kotlin.Int) except the microphone is disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NORMAL](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_NORMAL:kotlin.Int) This mode indicates that the speaker, the microphone, and all [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) s in the group are enabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_ON_HOLD](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_ON_HOLD:kotlin.Int) This mode is similar to [MODE_NORMAL](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#MODE_NORMAL:kotlin.Int) except the speaker and the microphone are both disabled. |
 
 | Public constructors ||
@@ -45,6 +48,7 @@ Using this class requires [android.Manifest.permission#RECORD_AUDIO](https://dev
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#clear())`()` Removes every [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) in this group. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#getMode())`()` Returns the current mode. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream)!\>! | [getStreams](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#getStreams())`()` Returns the [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) s in this group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendDtmf](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#sendDtmf(kotlin.Int))`(`event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a DTMF digit to every [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) in this group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMode](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup#setMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the current mode. |
 

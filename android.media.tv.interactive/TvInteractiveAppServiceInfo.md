@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TvInteractiveAppServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class TvInteractiveAppServiceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.interactive.TvInteractiveAppServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#) |
 
 This class is used to specify meta information of a TV interactive app.
@@ -22,6 +24,7 @@ This class is used to specify meta information of a TV interactive app.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_TYPE_ATSC](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#INTERACTIVE_APP_TYPE_ATSC:kotlin.Int) ATSC interactive app type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_TYPE_GINGA](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#INTERACTIVE_APP_TYPE_GINGA:kotlin.Int) Ginga interactive app type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_TYPE_HBBTV](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#INTERACTIVE_APP_TYPE_HBBTV:kotlin.Int) HbbTV interactive app type |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#INTERACTIVE_APP_TYPE_OTHER:kotlin.Int) Other interactive app type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_TYPE_TARGETED_AD](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#INTERACTIVE_APP_TYPE_TARGETED_AD:kotlin.Int) Targeted Advertisement interactive app type |
 
@@ -38,9 +41,11 @@ This class is used to specify meta information of a TV interactive app.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCustomSupportedTypes](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getCustomSupportedTypes())`()` Gets custom supported interactive app types which are not listed. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getId())`()` Returns a unique ID for this TV interactive app service. |
+| --- | --- |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)? | [getServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getServiceInfo())`()` Returns the information of the service that implements this TV Interactive App service. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSupportedTypes](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getSupportedTypes())`()` Gets supported interactive app types. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|

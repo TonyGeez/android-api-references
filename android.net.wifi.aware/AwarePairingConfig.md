@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AwarePairingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class AwarePairingConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.AwarePairingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#) |
 
 The config for the Aware Pairing. Set to [PublishConfig.Builder.setPairingConfig(AwarePairingConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig.Builder#setPairingConfig(android.net.wifi.aware.AwarePairingConfig))and [SubscribeConfig.Builder.setPairingConfig(AwarePairingConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setPairingConfig(android.net.wifi.aware.AwarePairingConfig)). Only valid when [Characteristics.isAwarePairingSupported()](https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#isAwarePairingSupported())is true.
@@ -26,12 +28,15 @@ The config for the Aware Pairing. Set to [PublishConfig.Builder.setPairingConfig
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_NFC_READER](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_NFC_READER:kotlin.Int) Aware Pairing bootstrapping method NFC reader |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_NFC_TAG](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_NFC_TAG:kotlin.Int) Aware Pairing bootstrapping method NFC tag |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_OPPORTUNISTIC](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_OPPORTUNISTIC:kotlin.Int) Aware Pairing bootstrapping method opportunistic |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_PASSPHRASE_DISPLAY](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_PASSPHRASE_DISPLAY:kotlin.Int) Aware Pairing bootstrapping method passphrase display |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_PASSPHRASE_KEYPAD](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_PASSPHRASE_KEYPAD:kotlin.Int) Aware Pairing bootstrapping method passphrase keypad |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_PIN_CODE_DISPLAY](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_PIN_CODE_DISPLAY:kotlin.Int) Aware Pairing bootstrapping method pin-code display |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_PIN_CODE_KEYPAD](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_PIN_CODE_KEYPAD:kotlin.Int) Aware Pairing bootstrapping method pin-code keypad |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_QR_DISPLAY](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_QR_DISPLAY:kotlin.Int) Aware Pairing bootstrapping method QR-code display |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAIRING_BOOTSTRAPPING_QR_SCAN](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#PAIRING_BOOTSTRAPPING_QR_SCAN:kotlin.Int) Aware Pairing bootstrapping method QR-code scan |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -42,12 +47,15 @@ The config for the Aware Pairing. Set to [PublishConfig.Builder.setPairingConfig
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBootstrappingMethods](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#getBootstrappingMethods())`()` Get the supported bootstrapping methods in this config. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#getSupportedCipherSuites())`()` Get the supported cipher suites in this config. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPairingCacheEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#isPairingCacheEnabled())`()` Check if the NPK/NIK cache is support in the config |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPairingSetupEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#isPairingSetupEnabled())`()` Check if the Aware Pairing setup is support in the config. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPairingVerificationEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#isPairingVerificationEnabled())`()` Check if the Aware Pairing verification is support in the config. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

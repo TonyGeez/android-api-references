@@ -7,9 +7,11 @@ open class JapaneseCalendar : GregorianCalendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) |||
 | | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar) ||
 | | | ↳ | [android.icu.util.JapaneseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#) |
+| --- | --- | --- | --- |
 
 `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. The Japanese calendar is identical to the Gregorian calendar in all respects except for the year and era. The ascension of each emperor to the throne begins a new era, and the years of that era are numbered starting with the year of ascension as year 1.
 
@@ -57,6 +59,7 @@ JapaneseCalendar usually should be instantiated using `https://developer.android
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#handleComputeFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#handleGetExtendedYear()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override GregorianCalendar. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -68,6 +71,7 @@ JapaneseCalendar usually should be instantiated using `https://developer.android
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#HEISEI:kotlin.Int` Constant for the era starting on Jan. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#MEIJI:kotlin.Int` Constant for the era starting on Sept. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#REIWA:kotlin.Int` Constant for the era starting on May 1, 2019 AD. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#SHOWA:kotlin.Int` Constant for the era starting on Dec. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#TAISHO:kotlin.Int` Constant for the era starting on July 30, 1912 AD. |
 
@@ -168,6 +172,7 @@ Constructs a `JapaneseCalendar` with the given date set in the default time zone
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field, in the era Heisei, the most current at the time this class was last updated. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` field. |
+| --- | --- |
 
 ### JapaneseCalendar
 
@@ -188,6 +193,7 @@ Constructs a `JapaneseCalendar` with the given date set in the default time zone
 | `era` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The imperial era used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int` field. Eras are numbered starting with the Tenki era, which began in 1053 AD Gregorian, as era zero. Recent eras can be specified using the constants `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#MEIJI:kotlin.Int` (which started in 1868 AD), `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#TAISHO:kotlin.Int` (1912 AD), `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#SHOWA:kotlin.Int` (1926 AD), and `https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar#HEISEI:kotlin.Int` (1989 AD). |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field, in terms of the era. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` field. The value is 0-based. e.g., 0 for January. |
+| --- | --- |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's DATE field. |
 
 ### JapaneseCalendar
@@ -211,9 +217,11 @@ Constructs a `JapaneseCalendar` with the given date and time set for the default
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` time field, in the era Heisei, the most current at the time of this writing. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` time field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` time field. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int` time field. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int` time field. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int` time field. |
+| --- | --- |
 
 ### JapaneseCalendar
 

@@ -7,9 +7,11 @@ abstract class AbsListView : AdapterView<ListAdapter!>, Filter.FilterListener,
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter)\> ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView#) |
 
 Known Direct Subclasses [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView), [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView) [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView) A view that shows items in two-dimensional scrolling grid.
@@ -25,6 +27,7 @@ Base class that can be used to implement virtualized lists of items. A list does
 | open | `https://developer.android.com/reference/kotlin/android/widget/AbsListView.LayoutParams` AbsListView extends LayoutParams to provide a place to hold the view type. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AbsListView.MultiChoiceModeListener` A MultiChoiceModeListener receives events for `https://developer.android.com/reference/kotlin/android/widget/AbsListView#CHOICE_MODE_MULTIPLE_MODAL:kotlin.Int`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener` Interface definition for a callback to be invoked when the list or grid has been scrolled. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AbsListView.RecyclerListener` A RecyclerListener is used to receive a notification whenever a View is placed inside the RecycleBin's scrap heap. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AbsListView.SelectionBoundsAdjuster` The top-level view of a list item can implement this interface to allow itself to modify the bounds of the selection shown for that item. |
 
@@ -33,12 +36,15 @@ Base class that can be used to implement virtualized lists of items. A list does
 | [`android:cacheColorHint`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Indicates that this list will always be drawn on top of solid, single-color opaque background. |
 | [`android:choiceMode`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Defines the choice behavior for the view. |
 | [`android:drawSelectorOnTop`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | When set to true, the selector will be drawn over the selected item. |
+| --- | --- |
 | [`android:fastScrollEnabled`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Enables the fast scroll thumb that can be dragged to quickly scroll through the list. |
 | [`android:listSelector`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Drawable used to indicate the currently selected item in the list. |
 | [`android:scrollingCache`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | When set to true, the list uses a drawing cache during scrolling. |
+| --- | --- |
 | [`android:smoothScrollbar`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | When set to true, the list will use a more refined calculation method based on the pixels height of the items visible on screen. |
 | [`android:stackFromBottom`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Used by ListView and GridView to stack their content from the bottom. |
 | [`android:textFilterEnabled`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | When set to true, the list will filter results as the user types. |
+| --- | --- |
 | [`android:transcriptMode`](https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView) | Sets the transcript mode for the list. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -319,6 +325,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -435,6 +442,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -583,6 +591,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -598,9 +607,11 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#CHOICE_MODE_MULTIPLE:kotlin.Int` The list allows multiple choices |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#CHOICE_MODE_MULTIPLE_MODAL:kotlin.Int` The list allows multiple choices in a modal selection mode |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#CHOICE_MODE_NONE:kotlin.Int` Normal list that does not indicate choices |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#CHOICE_MODE_SINGLE:kotlin.Int` The list allows up to one choice |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#TRANSCRIPT_MODE_ALWAYS_SCROLL:kotlin.Int` The list will automatically scroll to the bottom, no matter what items are currently visible. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#TRANSCRIPT_MODE_DISABLED:kotlin.Int` Disables the transcript mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#TRANSCRIPT_MODE_NORMAL:kotlin.Int` The list will automatically scroll to the bottom when a data set change notification is received and only if the last item is already visible on screen. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
@@ -1783,117 +1794,155 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#addTouchables(java.util.ArrayList)(views: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)` Add any touchable views that are descendants of this view (possibly including this view if it is touchable itself) to views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#afterTextChanged(android.text.Editable)(s: https://developer.android.com/reference/kotlin/android/text/Editable.html#!)` For our text watcher that is associated with the text filter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#beforeTextChanged(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, after: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For our text watcher that is associated with the text filter. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#canScrollList(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check if the items in the list can be scrolled in a certain direction. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#checkInputConnectionProxy(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` For filtering we proxy an input connection to an internal text editor, and this allows the proxying to happen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#clearChoices()()` Clear any choices previously set |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#clearTextFilter()()` Clear the text filter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#deferNotifyDataSetChanged()()` This defers a notifyDataSetChanged on the pending RemoteViewsAdapter if it has not connected yet. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#dispatchDrawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Dispatches drawable hotspot changes to child views that meet at least one of the following criteria: - Returns `false` from both `https://developer.android.com/reference/kotlin/android/view/View.html#isClickable()` and `https://developer.android.com/reference/kotlin/android/view/View.html#isLongClickable()` - Requests duplication of parent state via `https://developer.android.com/reference/kotlin/android/view/View.html#setDuplicateParentStateEnabled(kotlin.Boolean)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#fling(kotlin.Int)(velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Initiate a fling with the given velocity. |
 | open [AbsListView.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/AbsListView.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getAccessibilityClassName()()` A TYPE_VIEW_SCROLLED event should be sent whenever a scroll happens, even if the mFirstPosition and the child count have not changed. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getBottomEdgeEffectColor()()` Returns the bottom edge effect color. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getCacheColorHint()()` When set to a non-zero value, the cache color hint indicates that this list is always drawn on top of a solid, single-color, opaque background |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getCheckedItemCount()()` Returns the number of items currently selected. |
 | open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getCheckedItemIds()()` Returns the set of checked items ids. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getCheckedItemPosition()()` Returns the currently checked item. |
+| --- | --- |
 | open [SparseBooleanArray](https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getCheckedItemPositions()()` Returns the set of checked items in the list. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getChoiceMode()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getFocusedRect(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` When a view has focus and the user navigates away from it, the next view is searched for starting from the rectangle filled in by this method. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getListPaddingBottom()()` List padding is the maximum of the normal view's padding and the padding of the selector. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getListPaddingLeft()()` List padding is the maximum of the normal view's padding and the padding of the selector. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getListPaddingRight()()` List padding is the maximum of the normal view's padding and the padding of the selector. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getListPaddingTop()()` List padding is the maximum of the normal view's padding and the padding of the selector. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getSelectedView()()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getSelector()()` Returns the selector `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that is used to draw the selection in the list. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getSolidColor()()` Override this if your view is known to always be drawn on top of a solid color background, and needs to draw fading edges. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getTextFilter()()` Returns the list's text filter, if available. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getTopEdgeEffectColor()()` Returns the top edge effect color. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getTranscriptMode()()` Returns the current transcript mode. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getVerticalScrollbarWidth()()` Returns the width of the vertical scrollbar. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#hasTextFilter()()` Returns if the ListView currently has a text filter. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#invalidateViews()()` Causes all the views to be rebuilt and redrawn. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isDrawSelectorOnTop()()` Returns whether the selection highlight drawable should be drawn on top of the item or behind it. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isFastScrollAlwaysVisible()()` Returns true if the fast scroller is set to always show on this view. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isFastScrollEnabled()()` Returns true if the fast scroller is enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isItemChecked(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the checked state of the specified position. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isScrollingCacheEnabled()()` Indicates whether the children's drawing cache is used during a scroll. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isSelectedChildViewEnabled()()` Returns whether the selected child view (from the adapter's getView) is enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isSmoothScrollbarEnabled()()` Returns the current state of the fast scroll feature. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isStackFromBottom()()` Indicates whether the content of this view is pinned to, or stacked from, the bottom edge. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isTextFilterEnabled()()` Indicates whether type filtering is enabled for this view |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onCancelPendingInputEvents()()` Called as the result of a call to `https://developer.android.com/reference/kotlin/android/view/View.html#cancelPendingInputEvents()` on this view or a parent view. |
+| --- | --- |
 | open [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#!)` Return an InputConnection for editing of the filter text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onFilterComplete(kotlin.Int)(count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies the end of a filtering operation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle generic motion events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onGlobalLayout()()` Callback method to be invoked when the global layout state or the visibility of views within the view tree changes |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onInitializeAccessibilityNodeInfoForItem(android.view.View,%20kotlin.Int,%20android.view.accessibility.AccessibilityNodeInfo)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#!)` Initializes an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#` with information about a particular item in the list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onInterceptHoverEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to intercept hover events before they are handled by child views. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onInterceptTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to intercept all touch screen motion events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyDown(kotlin.Int,%20android.view.KeyEvent)`: perform press of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` is released, if the view is enabled and clickable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyUp(kotlin.Int,%20android.view.KeyEvent)`: perform clicking of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_SPACE:kotlin.Int` is released. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onNestedFling(android.view.View,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean)(target: https://developer.android.com/reference/kotlin/android/view/View.html#, velocityX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, consumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Request a fling from a nested scroll. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onNestedScroll(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(target: https://developer.android.com/reference/kotlin/android/view/View.html#, dxConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyConsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dxUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dyUnconsumed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a nested scroll in progress. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onNestedScrollAccepted(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, target: https://developer.android.com/reference/kotlin/android/view/View.html#, axes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to the successful claiming of a nested scroll operation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onProvideContentCaptureStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Populates a for content capture. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onRemoteAdapterConnected()()` Called back when the adapter connects to the RemoteViewsService. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onRemoteAdapterDisconnected()()` Called back when the adapter disconnects from the RemoteViewsService. |
+| --- | --- |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onStartNestedScroll(android.view.View,%20android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#, target: https://developer.android.com/reference/kotlin/android/view/View.html#, nestedScrollAxes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onTextChanged(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, before: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For our text watcher that is associated with the text filter. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onTouchModeChanged(kotlin.Boolean)(isInTouchMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Callback method to be invoked when the touch mode changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses focus. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#performItemClick(android.view.View,%20kotlin.Int,%20kotlin.Long)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Call the OnItemClickListener, if it is defined. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#pointToPosition(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Maps a point to a position in the list. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#pointToRowId(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Maps a point to a the rowId of the item which intersects that point. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#reclaimViews(kotlin.collections.MutableList)(views: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)` Move all views (excluding headers and footers) held by this AbsListView into the supplied List. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#requestDisallowInterceptTouchEvent(kotlin.Boolean)(disallowIntercept: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when a child does not want this parent and its ancestors to intercept touch events with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#onInterceptTouchEvent(android.view.MotionEvent)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#requestLayout()()` Call this when something has changed which has invalidated the layout of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#scrollListBy(kotlin.Int)(y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Scrolls the list items within the view by a specified number of pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setAdapter(android.widget.ListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ListAdapter!)` Sets the adapter that provides the data and the views to represent the data in this widget. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setBottomEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bottom edge effect color. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setCacheColorHint(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` When set to a non-zero value, the cache color hint indicates that this list is always drawn on top of a solid, single-color, opaque background. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setChoiceMode(kotlin.Int)(choiceMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Defines the choice behavior for the List. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setDrawSelectorOnTop(kotlin.Boolean)(onTop: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether the selection highlight drawable should be drawn on top of the item or behind it. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the edge effect color for both top and bottom edge effects. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setFastScrollAlwaysVisible(kotlin.Boolean)(alwaysShow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether or not the fast scroller should always be shown in place of the standard scroll bars. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setFastScrollEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether fast scrolling is enabled or disabled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setFastScrollStyle(kotlin.Int)(styleResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the style of the fast scroller decorations. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setFilterText(kotlin.String)(filterText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the initial value for the text filter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setFriction(kotlin.Float)(friction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` The amount of friction applied to flings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setItemChecked(kotlin.Int,%20kotlin.Boolean)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the checked state of the specified position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setMultiChoiceModeListener(android.widget.AbsListView.MultiChoiceModeListener)(listener: https://developer.android.com/reference/kotlin/android/widget/AbsListView.MultiChoiceModeListener!)` Set a `https://developer.android.com/reference/kotlin/android/widget/AbsListView.MultiChoiceModeListener` that will manage the lifecycle of the selection `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setOnScrollListener(android.widget.AbsListView.OnScrollListener)(l: https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener!)` Set the listener that will receive notifications every time the list scrolls. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setRecyclerListener(android.widget.AbsListView.RecyclerListener)(listener: https://developer.android.com/reference/kotlin/android/widget/AbsListView.RecyclerListener!)` Sets the recycler listener to be notified whenever a View is set aside in the recycler for later reuse. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setRemoteViewsAdapter(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Sets up this AbsListView to use a remote views adapter which connects to a RemoteViewsService through the specified intent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setScrollBarStyle(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify the style of the scrollbars. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setScrollIndicators(android.view.View,%20android.view.View)(up: https://developer.android.com/reference/kotlin/android/view/View.html#!, down: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setScrollingCacheEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the children's drawing cache during a scroll. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setSelectedChildViewEnabled(kotlin.Boolean)(selectedChildViewEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether the selected child view (from the adapter's getView) is enabled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setSelectionFromTop(kotlin.Int,%20kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the selected item and positions the selection y pixels from the top edge of the ListView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setSelector(android.graphics.drawable.Drawable)(sel: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setSelector(kotlin.Int)(resID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a Drawable that should be used to highlight the currently selected item. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setSmoothScrollbarEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When smooth scrollbar is enabled, the position and size of the scrollbar thumb is computed based on the number of visible pixels in the visible items. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setStackFromBottom(kotlin.Boolean)(stackFromBottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When stack from bottom is set to true, the list fills its content starting from the bottom of the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setTextFilterEnabled(kotlin.Boolean)(textFilterEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the type filter window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setTopEdgeEffectColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the top edge effect color. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setTranscriptMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Puts the list or grid into transcript mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setVelocityScale(kotlin.Float)(scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets a scale factor for the fling velocity. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setVerticalScrollbarPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the position of the vertical scroll bar. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#showContextMenu()()` Shows the context menu for this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#showContextMenu(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for this view anchored to the specified view-relative coordinate. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#showContextMenuForChild(android.view.View)(originalView: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Shows the context menu for the specified view or its ancestors. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#showContextMenuForChild(android.view.View,%20kotlin.Float,%20kotlin.Float)(originalView: https://developer.android.com/reference/kotlin/android/view/View.html#!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#smoothScrollBy(kotlin.Int,%20kotlin.Int)(distance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Smoothly scroll by distance pixels over duration milliseconds. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#smoothScrollToPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Smoothly scroll to the specified adapter position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#smoothScrollToPosition(kotlin.Int,%20kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, boundPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Smoothly scroll to the specified adapter position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#smoothScrollToPositionFromTop(kotlin.Int,%20kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Smoothly scroll to the specified adapter position. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#smoothScrollToPositionFromTop(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Smoothly scroll to the specified adapter position. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#verifyDrawable(android.graphics.drawable.Drawable)(dr: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
 
@@ -1902,30 +1951,39 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#computeVerticalScrollExtent()()` Compute the vertical extent of the vertical scrollbar's thumb within the vertical range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#computeVerticalScrollOffset()()` Compute the vertical offset of the vertical scrollbar's thumb within the horizontal range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#computeVerticalScrollRange()()` Compute the vertical range that the vertical scrollbar represents. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#dispatchSetPressed(kotlin.Boolean)(pressed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setPressed to all of this View's children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getBottomFadingEdgeStrength()()` Returns the strength, or intensity, of the bottom faded edge. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getBottomPaddingOffset()()` Amount by which to extend the bottom fading region. |
 | open [ContextMenu.ContextMenuInfo](https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getContextMenuInfo()()` Views should implement this if they have extra information to associate with the context menu. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getLeftPaddingOffset()()` Amount by which to extend the left fading region. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getRightPaddingOffset()()` Amount by which to extend the right fading region. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getTopFadingEdgeStrength()()` Returns the strength, or intensity, of the top faded edge. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#getTopPaddingOffset()()` Amount by which to extend the top fading region. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#handleDataChanged()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isInFilterMode()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#isPaddingOffsetRequired()()` If the View draws content inside its padding and enables fading edges, it needs to support padding offsets. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#layoutChildren()()` Subclasses must override this method to layout their children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onAttachedToWindow()()` This is called when the view is attached to a window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onDisplayHint(kotlin.Int)(hint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gives this view a hint about whether is displayed or not. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onFocusChanged(kotlin.Boolean,%20kotlin.Int,%20android.graphics.Rect)(gainFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Called by the view system when the focus state of this view changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclasses should NOT override this method but `https://developer.android.com/reference/kotlin/android/widget/AbsListView#layoutChildren()` instead. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onOverScrolled(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean)(scrollX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scrollY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clampedX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, clampedY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#overScrollBy(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)` to respond to the results of an over-scroll operation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AbsListView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2809,6 +2867,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4645,6 +4704,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8554,6 +8614,7 @@ Must be one of the following constant values.
 | multipleChoice | 2 | The list allows multiple choices. |
 | multipleChoiceModal | 3 | The list allows multiple choices in a custom selection mode. |
 | none | 0 | Normal list that does not indicate choices. |
+| --- | --- | --- |
 | singleChoice | 1 | The list allows up to one choice. |
 
 ### android:drawSelectorOnTop
@@ -8635,6 +8696,7 @@ Must be one of the following constant values.
 | alwaysScroll | 2 | The list will automatically scroll to the bottom, no matter what items are currently visible. |
 | disabled | 0 | Disables transcript mode. This is the default value. |
 | normal | 1 | The list will automatically scroll to the bottom when a data set change notification is received and only if the last item is already visible on screen. |
+| --- | --- | --- |
 
 ## Constants
 
@@ -9584,6 +9646,7 @@ Initializes an `https://developer.android.com/reference/kotlin/android/view/acce
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: View representing the list item. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Position of the list item within the adapter. |
 | `info` | [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#)!: Node info to populate. |
+| --- | --- |
 
 ### onInterceptHoverEvent
 
@@ -9710,6 +9773,7 @@ If a nested scrolling child view would normally fling but it is at the edge of i
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Vertical velocity in pixels per second |
+| --- | --- |
 | `consumed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the child consumed the fling, false otherwise |
 
 | Return ||
@@ -9741,6 +9805,7 @@ Both the consumed and unconsumed portions of the scroll distance are reported to
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): The descendent view controlling the nested scroll. This value cannot be `null`. |
 | `dxConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels already consumed by target |
 | `dyConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels already consumed by target |
+| --- | --- |
 | `dxUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal scroll distance in pixels not consumed by target |
 | `dyUnconsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical scroll distance in pixels not consumed by target |
 
@@ -9765,6 +9830,7 @@ This method will be called after `https://developer.android.com/reference/kotlin
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 ### onProvideContentCaptureStructure
 
@@ -9858,6 +9924,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -9949,6 +10016,7 @@ This method may be overridden by ViewParent implementations to indicate when the
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): Direct child of this ViewParent containing target. This value cannot be `null`. |
 | `target` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): View that initiated the nested scroll. This value cannot be `null`. |
 | `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags consisting of `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_HORIZONTAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#SCROLL_AXIS_VERTICAL:kotlin.Int` or both |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10042,6 +10110,7 @@ Call the OnItemClickListener, if it is defined. Performs all normal actions asso
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view within the AdapterView that was clicked. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the adapter. |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10721,6 +10790,7 @@ If a subclass overrides this method it should also override `https://developer.a
 | `originalView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the source view where the context menu was first invoked |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the X coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the Y coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10813,6 +10883,7 @@ Smoothly scroll to the specified adapter position. The view will scroll such tha
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Position to scroll to |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired distance in pixels of `position` from the top of the view when scrolling is finished |
 | `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of milliseconds to use for the scroll |
+| --- | --- |
 
 ### verifyDrawable
 
@@ -11167,6 +11238,7 @@ If you override this method you *must* call through to the superclass implementa
 | `gainFocus` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
 | `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| --- | --- |
 
 ### onLayout
 
@@ -11189,6 +11261,7 @@ Subclasses should NOT override this method but `https://developer.android.com/re
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 
@@ -11236,6 +11309,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View.html
 | `scrollX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New X scroll value in pixels |
 | `scrollY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New Y scroll value in pixels |
 | `clampedX` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollX was clamped to an over-scroll boundary |
+| --- | --- |
 | `clampedY` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if scrollY was clamped to an over-scroll boundary |
 
 ### onSizeChanged
@@ -11258,4 +11332,5 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |

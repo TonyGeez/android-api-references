@@ -5,6 +5,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 # ColorsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.ColorsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface ColorsColumns : SyncStateContract.Columns
@@ -13,6 +14,7 @@ protected interface ColorsColumns : SyncStateContract.Columns
 | [android.provider.CalendarContract.ColorsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#) |
 
 | Known Direct Subclasses [CalendarContract.Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [CalendarContract.Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) | Fields for accessing colors available for a given account. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
@@ -21,6 +23,7 @@ protected interface ColorsColumns : SyncStateContract.Columns
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#COLOR:kotlin.String) The color as an 8-bit ARGB integer value. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLOR_KEY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#COLOR_KEY:kotlin.String) The key used to reference this color. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLOR_TYPE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#COLOR_TYPE:kotlin.String) The type of color, which describes how it should be used. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CALENDAR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#TYPE_CALENDAR:kotlin.Int) This indicateds a color that can be used for calendars. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_EVENT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns#TYPE_EVENT:kotlin.Int) This indicates a color that can be used for events. |
 

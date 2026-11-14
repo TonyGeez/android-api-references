@@ -31,6 +31,7 @@ The following table gives some examples of the relations between the attribute v
 | Character reference | ```kotlin "x&#178;=5" ``` | ```kotlin "x\u00b2=5" ``` | ```kotlin "x&#178;=5" ``` |
 | Built-in character entity | ```kotlin "y&lt;6" ``` | ```kotlin "y<6" ``` | ```kotlin "y&lt;6" ``` |
 | Literal newline between | ```kotlin "x=5&#10;y=6" ``` | ```kotlin "x=5 y=6" ``` | ```kotlin "x=5&#10;y=6" ``` |
+| --- | --- | --- | --- |
 | Normalized newline between | ```kotlin "x=5 y=6" ``` | ```kotlin "x=5 y=6" ``` | ```kotlin "x=5 y=6" ``` |
 | Entity `e` with literal newline | ```kotlin <!ENTITY e '...&#10;...'> [...]> "x=5&e;y=6" ``` | *Dependent on Implementation and Load Options* | *Dependent on Implementation and Load/Save Options* |
 
@@ -47,9 +48,11 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#getName())`()` Returns the name of this attribute. |
 | abstract [Element](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-element/index.html)! | [getOwnerElement](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#getOwnerElement())`()` The `Element` node this attribute is attached to or `null` if this attribute is not in use. |
 | abstract [TypeInfo](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-type-info/index.html)! | [getSchemaTypeInfo](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#getSchemaTypeInfo())`()` The type information associated with this attribute. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSpecified](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#getSpecified())`()` `True` if this attribute was explicitly given a value in the instance document, `false` otherwise. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#getValue())`()` On retrieval, the value of the attribute is returned as a string. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isId](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#isId())`()` Returns whether this attribute is known to be of type ID (i.e. to contain an identifier for its owner element) or not. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValue](https://developer.android.com/reference/kotlin/org/w3c/dom/Attr#setValue(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` On retrieval, the value of the attribute is returned as a string. |
 
 | Inherited functions ||

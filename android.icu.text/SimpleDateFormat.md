@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # SimpleDateFormat
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/SimpleDateFormat "View this page in Java") 
+| --- | --- |
 
 ```
 open class SimpleDateFormat : DateFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) ||||
 | | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) |||
 | | | ↳ | [android.icu.text.DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.icu.text.SimpleDateFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#) |
 
 **\[icu enhancement\]** ICU's replacement for [java.text.SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat.html#). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -33,24 +36,31 @@ Within date and time pattern strings, all unquoted ASCII letters \[A-Za-z\] are 
 | G | 1..3 | AD | Era - Replaced with the Era string for the current date. One to three letters for the abbreviated form, four letters for the long (wide) form, five for the narrow form. |
 | y | 1..n | 1996 | Year. Normally the length specifies the padding, but for two letters it also specifies the maximum length. Example: <br /> | Year | y | yy | yyy | yyyy | yyyyy | |----------|-------|----|-------|-------|-------| | AD 1 | 1 | 01 | 001 | 0001 | 00001 | | AD 12 | 12 | 12 | 012 | 0012 | 00012 | | AD 123 | 123 | 23 | 123 | 0123 | 00123 | | AD 1234 | 1234 | 34 | 1234 | 1234 | 01234 | | AD 12345 | 12345 | 45 | 12345 | 12345 | 12345 | <br /> |
 | Q | 1..2 | 02 | Quarter - Use one or two for the numerical quarter, three for the abbreviation, or four for the full (wide) name (five for the narrow name is not yet supported). |
+| --- | --- | --- | --- |
 | Q | 3 | Q2 | Quarter - Use one or two for the numerical quarter, three for the abbreviation, or four for the full (wide) name (five for the narrow name is not yet supported). |
 | Q | 4 | 2nd quarter | Quarter - Use one or two for the numerical quarter, three for the abbreviation, or four for the full (wide) name (five for the narrow name is not yet supported). |
 | M | 1..2 | 09 | Month - Use one or two for the numerical month, three for the abbreviation, four for the full (wide) name, or five for the narrow name. With two ("MM"), the month number is zero-padded if necessary (e.g. "08"). |
+| --- | --- | --- | --- |
 | M | 3 | Sep | Month - Use one or two for the numerical month, three for the abbreviation, four for the full (wide) name, or five for the narrow name. With two ("MM"), the month number is zero-padded if necessary (e.g. "08"). |
 | M | 4 | September | Month - Use one or two for the numerical month, three for the abbreviation, four for the full (wide) name, or five for the narrow name. With two ("MM"), the month number is zero-padded if necessary (e.g. "08"). |
 | M | 5 | S | Month - Use one or two for the numerical month, three for the abbreviation, four for the full (wide) name, or five for the narrow name. With two ("MM"), the month number is zero-padded if necessary (e.g. "08"). |
+| --- | --- | --- | --- |
 | d | 1..2 | 1 | Date - Day of the month. Use "d" to show the minimum number of digits, or "dd" to always show two digits (zero-padding if necessary, e.g. "08"). |
 | E | 1..3 | Tue | Day of week - Use one through three letters for the short day, four for the full (wide) name, five for the narrow name, or six for the short name. |
 | E | 4 | Tuesday | Day of week - Use one through three letters for the short day, four for the full (wide) name, five for the narrow name, or six for the short name. |
+| --- | --- | --- | --- |
 | E | 5 | T | Day of week - Use one through three letters for the short day, four for the full (wide) name, five for the narrow name, or six for the short name. |
 | E | 6 | Tu | Day of week - Use one through three letters for the short day, four for the full (wide) name, five for the narrow name, or six for the short name. |
 | a | 1 | AM | AM or PM |
+| --- | --- | --- | --- |
 | h | 1..2 | 11 | Hour \[1-12\]. When used in skeleton data or in a skeleton passed in an API for flexible data pattern generation, it should match the 12-hour-cycle format preferred by the locale (h or K); it should not match a 24-hour-cycle format (H or k). Use hh for zero padding. |
 | H | 1..2 | 13 | Hour \[0-23\]. When used in skeleton data or in a skeleton passed in an API for flexible data pattern generation, it should match the 24-hour-cycle format preferred by the locale (H or k); it should not match a 12-hour-cycle format (h or K). Use HH for zero padding. |
 | m | 1..2 | 59 | Minute. Use "m" to show the minimum number of digits, or "mm" to always show two digits (zero-padding if necessary, e.g. "08").. |
+| --- | --- | --- | --- |
 | s | 1..2 | 12 | Second. Use "s" to show the minimum number of digits, or "ss" to always show two digits (zero-padding if necessary, e.g. "08"). |
 | z | 1..3 | PDT | Time zone. The*short specific non-location format* . Where that is unavailable, falls back to the*short localized GMT format*("O"). |
 | z | 4 | Pacific Daylight Time | The*long specific non-location format* . Where that is unavailable, falls back to the*long localized GMT format*("OOOO"). |
+| --- | --- | --- | --- |
 | v | 1 | PT | Time zone. The*short generic non-location format* . Where that is unavailable, falls back to the*generic location format* ("VVVV"), then the*short localized GMT format*as the final fallback. |
 | v | 4 | Pacific Time | The*long generic non-location format* . Where that is unavailable, falls back to*generic location format*("VVVV"). |
 
@@ -123,21 +133,27 @@ Date formats are not synchronized. It is recommended to create separate format i
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyLocalizedPattern](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#applyLocalizedPattern(kotlin.String))`(`pat:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given localized pattern string to this date format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#applyPattern(kotlin.String))`(`pat:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given unlocalized pattern string to this date format. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#clone())`()` Overrides Cloneable |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Override equals. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#format(android.icu.util.Calendar,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!`)` Formats a date or time, which is the standard millis since January 1, 1970, 00:00:00 GMT. |
 | open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | [formatToCharacterIterator](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#formatToCharacterIterator(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Format the object to an attributed string, and return the corresponding iterator Overrides superclass method. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [get2DigitYearStart](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#get2DigitYearStart())`()` Returns the beginning date of the 100-year period 2-digit years are interpreted as being within. |
 | open [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols)! | [getDateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#getDateFormatSymbols())`()` Gets the date/time formatting data. |
 | open [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | [getNumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#getNumberFormat(kotlin.Char))`(`field:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` give the NumberFormat used for the field like 'y'(year) and 'M'(year) |
+| --- | --- |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat)! | [getTimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#getTimeZoneFormat())`()` **\[icu\]**Gets the time zone formatter which this date/time formatter uses to format and parse a time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#hashCode())`()` Override hashCode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#parse(kotlin.String,%20android.icu.util.Calendar,%20java.text.ParsePosition))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`, `parsePos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!`)` Overrides DateFormat |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set2DigitYearStart](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#set2DigitYearStart(java.util.Date))`(`startDate:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Sets the 100-year period 2-digit years will be interpreted as being in to begin on the date the user specifies. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setContext(android.icu.text.DisplayContext))`(`context:` ` [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!`)` **\[icu\]**Set a particular DisplayContext value in the formatter, such as CAPITALIZATION_FOR_STANDALONE. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setDateFormatSymbols(android.icu.text.DateFormatSymbols))`(`newFormatSymbols:` ` [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols)!`)` Allows you to set the date/time formatting data. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setNumberFormat(android.icu.text.NumberFormat))`(`newNumberFormat:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` Overrides superclass method and This method also clears per field NumberFormat instances previously set by [setNumberFormat(java.lang.String,android.icu.text.NumberFormat)](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setNumberFormat(kotlin.String,%20android.icu.text.NumberFormat)) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setNumberFormat(kotlin.String,%20android.icu.text.NumberFormat))`(`fields:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `overrideNF:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` allow the user to set the NumberFormat for several fields It can be a single field like: "y"(year) or "M"(month) It can be several field combined together: "yMd"(year, month and date) Note: 1 symbol field is enough for multiple symbol fields (so "y" will override "yy", "yyy") If the field is not numeric, then override has no effect (like "MMM" will use abbreviation, not numerical field) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#setTimeZoneFormat(android.icu.text.TimeZoneFormat))`(`tzfmt:` ` [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat)!`)` **\[icu\]**Allows you to set the time zone formatter. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocalizedPattern](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#toLocalizedPattern())`()` Return a localized pattern string describing this date format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#toPattern())`()` Return a pattern string describing this date format. |
 
@@ -146,9 +162,11 @@ Date formats are not synchronized. It is recommended to create separate format i
 | open [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols)! | [getSymbols](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#getSymbols())`()` Method for subclasses to access the DateFormatSymbols. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [matchQuarterString](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#matchQuarterString(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20android.icu.util.Calendar))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`)` Attempt to match the text at a given position against an array of quarter strings. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [matchString](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#matchString(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array,%20android.icu.util.Calendar))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`)` Attempt to match the text at a given position against an array of strings. |
+| --- | --- |
 | open [DateFormat.Field](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.Field)! | [patternCharToDateFormatField](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#patternCharToDateFormatField(kotlin.Char))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a DateFormat. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [subFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#subFormat(kotlin.Char,%20kotlin.Int,%20kotlin.Int,%20java.text.FieldPosition,%20android.icu.text.DateFormatSymbols,%20android.icu.util.Calendar))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `beginOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!`, `fmtData:` ` [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols)!`, `cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`)` Formats a single field, given its pattern character. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [subParse](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#subParse(kotlin.String,%20kotlin.Int,%20kotlin.Char,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean,%20kotlin.BooleanArray,%20android.icu.util.Calendar))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obeyCount:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `allowNegative:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `ambiguousYear:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`, `cal:` ` [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!`)` Protected method that converts one field of the input string into a numeric field value in`cal`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [zeroPaddingNumber](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat#zeroPaddingNumber(kotlin.Long,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a number with the specified minimum and maximum number of digits. |
 
 | Inherited functions ||
@@ -230,6 +248,7 @@ Constructs a SimpleDateFormat using the given pattern , override and locale.
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The pattern to be used |
 | `override` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The override string. A numbering system override string can take one of the following forms: 1). If just a numbering system name is specified, it applies to all numeric fields in the date format pattern. 2). To specify an alternate numbering system on a field by field basis, use the field letters from the pattern followed by an = sign, followed by the numbering system name. For example, to specify that just the year be formatted using Hebrew digits, use the override "y=hebr". Multiple overrides can be specified in a single string by separating them with a semi-colon. For example, the override string "m=thai;y=deva" would format using Thai digits for the month and Devanagari digits for the year. |
 | `loc` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:The locale to be used |
+| --- | --- |
 
 ### SimpleDateFormat
 
@@ -322,6 +341,7 @@ Example: using the US locale: "yyyy.MM.dd G 'at' HH:mm:ss zzz" -\>\> 1996.07.10 
 | `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!:the calendar whose date-time value is to be formatted into a date-time string |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!:where the new date-time text is to be appended |
 | `fieldPosition` | keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
+| --- | --- |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!:the formatting position. On input: an alignment field, if desired. On output: the offsets of the alignment field. |
 
 | Return ||
@@ -448,6 +468,7 @@ Overrides DateFormat
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The date/time string to be parsed |
 | `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!:The calendar set on input to the date and time to be used for missing values in the date/time string being parsed, and set on output to the parsed date/time. In general, this should be initialized before calling this method - either cleared or set to the current date, depending on desired behavior. If this parse fails, the calendar may still have been modified. When the calendar type is different from the internal calendar held by this DateFormat instance, calendar field values will be parsed based on the internal calendar initialized with the time and the time zone taken from this calendar, then the parse result (time in milliseconds and time zone) will be set back to this calendar. |
 | `pos` | On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
+| --- | --- |
 
 **See Also**
 
@@ -600,6 +621,7 @@ Attempt to match the text at a given position against an array of quarter string
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the time text being parsed. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):where to start parsing. |
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the date field being parsed. |
+| --- | --- |
 | `data` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the string array to parsed. |
 
 | Return ||
@@ -627,6 +649,7 @@ Attempt to match the text at a given position against an array of strings. Since
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the time text being parsed. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):where to start parsing. |
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the date field being parsed. |
+| --- | --- |
 | `data` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the string array to parsed. |
 | `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: |
 
@@ -674,6 +697,7 @@ Formats a single field, given its pattern character. Subclasses may override thi
 | `ch` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html):the pattern character |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of times ch is repeated in the pattern |
 | `beginOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset of the output string at the start of this field; used to set pos when appropriate |
+| --- | --- |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!:receives the position of a field, when appropriate |
 | `fmtData` | [DateFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DateFormatSymbols)!:the symbols for this formatter |
 
@@ -701,9 +725,11 @@ Protected method that converts one field of the input string into a numeric fiel
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the time text to be parsed. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):where to start parsing. |
 | `ch` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html):the pattern character for the date field text to be parsed. |
+| --- | --- |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the count of a pattern character. |
 | `obeyCount` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, then the next field directly abuts this one, and we should use the count to know when to stop parsing. |
 | `ambiguousYear` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:return parameter; upon return, if ambiguousYear\[0\] is true, then a two-digit year was parsed and may need to be readjusted. |
+| --- | --- |
 | `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: |
 
 | Return ||

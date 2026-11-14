@@ -8,6 +8,7 @@ class SearchSuggestionSpec : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.SearchSuggestionSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#) |
 
 This class represents the specification logic for AppSearch. It can be used to set the filter and settings of search a suggestions.
@@ -23,6 +24,7 @@ This class represents the specification logic for AppSearch. It can be used to s
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNT:kotlin.Int` Ranked by the document count that contains the term. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#SUGGESTION_RANKING_STRATEGY_NONE:kotlin.Int` No Ranking, results are returned in arbitrary order. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#SUGGESTION_RANKING_STRATEGY_TERM_FREQUENCY:kotlin.Int` Ranked by the term appear frequency. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -33,12 +35,15 @@ This class represents the specification logic for AppSearch. It can be used to s
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getFilterDocumentIds()()` Returns the map of namespace and target document ids to search over. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getFilterNamespaces()()` Returns the list of namespaces to search over. |
+| --- | --- |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getFilterProperties()()` Returns the map of schema and target properties to search over. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getFilterSchemas()()` Returns the list of schema to search the suggestion over. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getMaximumResultCount()()` Returns the maximum number of wanted suggestion that will be returned in the result object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getRankingStrategy()()` Returns the ranking strategy. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#getSearchStringParameters()()` Returns the list of String parameters that can be referenced in the query through the "getSearchStringParameter({index})" function. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSuggestionSpec#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

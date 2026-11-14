@@ -9,12 +9,15 @@ open class InternalError : VirtualMachineError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#) |
 
 | Known Direct Subclasses [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) | Signals that an unrecoverable error has occurred. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate some unexpected internal error has occurred in the Java Virtual Machine.
 

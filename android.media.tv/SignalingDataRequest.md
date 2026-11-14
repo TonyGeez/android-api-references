@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SignalingDataRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/SignalingDataRequest "View this page in Java")
+| --- | --- |
 
 ```
 class SignalingDataRequest : BroadcastInfoRequest, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) ||
 | | ↳ | [android.media.tv.SignalingDataRequest](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#) |
 
@@ -23,33 +25,43 @@ For more details on each type of metadata that can be requested, refer to the AT
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_DATA_NO_GROUP_ID:kotlin.Int` Denotes that theres no group associated with this request. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_AEAT:kotlin.String` Advance Emergency Information Table for the requested service(s), LLS_table_id = 4. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_AEI:kotlin.String` SLS Metadata: MMT Application Event Information for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_APD:kotlin.String` SLS Metadata: APD for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_ASD:kotlin.String` SLS Metadata: ATSC Staggercast Descriptor |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_ASPD:kotlin.String` SLS Metadata: Audio Stream Properties Descriptor |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_CAD:kotlin.String` SLS Metadata: Caption Asset Descriptor |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_CDT:kotlin.String` CertificateData Tablefor the requested service(s), LLS_table_id = 6. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_CRIT:kotlin.String` SLS Metadata: MMT Clock Relation Information for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_DCIT:kotlin.String` SLS Metadata: MMT Device Capabilities Information Table for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_DWD:kotlin.String` SLS Metadata: Distribution Window Desciription for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_EMSG:kotlin.String` SLS Metadata: ROUTE/DASH Application Dynamic Event for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_EVTI:kotlin.String` SLS Metadata: MMT Application Dynamic Event for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_HELD:kotlin.String` SLS Metadata: HTML Entry Pages Location Description for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_IED:kotlin.String` SLS Metadata: Inband Event Descriptor |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_MPD:kotlin.String` SLS Metadata: DASH MPD for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_MPIT:kotlin.String` SLS Metadata: MMT Media Presentation Information Table for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_MPT:kotlin.String` SLS Metadata: MMT Package Table for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_OSN:kotlin.String` Onscreen Message Notifications for the requested service(s), LLS_table_id = 5. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_PAT:kotlin.String` SLS Metadata: MMT Package Access Table for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_RDT:kotlin.String` SLS Metadata: Recovery Data Table for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_RRT:kotlin.String` Region Rating Table for the requested service(s), LLS_table_id = 2. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_RSAT:kotlin.String` SLS Metadata: Regional Service Availability Table for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_SLT:kotlin.String` Service List Table for the requested service(s), LLS_table_id = 1. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_SMT:kotlin.String` Signed Multitable for the requested service(s), LLS_table_id = 0xFE (254). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_SSD:kotlin.String` SLS Metadata: Security Properties Descriptor |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_STSID:kotlin.String` SLS Metadata: S-TSID for the requested service(s) |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_STT:kotlin.String` System Time Table for the requested service(s), LLS_table_id = 3. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_USBD:kotlin.String` SLS Metadata: USBD for the requested service(s) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_USD:kotlin.String` SLS Metadata: User Service Description for MMTP |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#SIGNALING_METADATA_VSPD:kotlin.String` SLS Metadata: Video Stream Properties Descriptor |
 
 | Inherited constants ||
@@ -66,6 +78,7 @@ For more details on each type of metadata that can be requested, refer to the AT
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#getGroup()()` Gets the group with which any signaling returned will be associated. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#getSignalingDataTypes()()` Gets the signaling data types for which data should be retrieved. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

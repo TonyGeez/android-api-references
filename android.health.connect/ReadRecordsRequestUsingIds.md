@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ReadRecordsRequestUsingIds
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds "View this page in Java") 
+| --- | --- |
 
 ```
 class ReadRecordsRequestUsingIds<T : Record!> : ReadRecordsRequest<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.health.connect.ReadRecordsRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequest)\<T\> ||
 | | ↳ | [android.health.connect.ReadRecordsRequestUsingIds](https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingIds#) |
 

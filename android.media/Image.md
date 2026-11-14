@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # Image
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Image "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Image : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image#) |
 
 A single complete image buffer to use with a media source such as a [MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec) or a [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#).
@@ -32,15 +34,19 @@ For example, when using the [ImageReader](https://developer.android.com/referenc
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/Image#close())`()` Free up this frame for reuse. |
 | open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | [getCropRect](https://developer.android.com/reference/kotlin/android/media/Image#getCropRect())`()` Get the crop rectangle associated with this frame. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataSpace](https://developer.android.com/reference/kotlin/android/media/Image#getDataSpace())`()` Get the dataspace associated with this frame. |
+| --- | --- |
 | open [SyncFence](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#) | [getFence](https://developer.android.com/reference/kotlin/android/media/Image#getFence())`()` Get the SyncFence object associated with this frame. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFormat](https://developer.android.com/reference/kotlin/android/media/Image#getFormat())`()` Get the format for this image. |
 | open [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#)? | [getHardwareBuffer](https://developer.android.com/reference/kotlin/android/media/Image#getHardwareBuffer())`()` Get the [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#) handle of the input image intended for GPU and/or hardware access. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/media/Image#getHeight())`()` The height of the image in pixels. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Image.Plane](https://developer.android.com/reference/kotlin/android/media/Image.Plane)!\>! | [getPlanes](https://developer.android.com/reference/kotlin/android/media/Image#getPlanes())`()` Get the array of pixel planes for this Image. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestamp](https://developer.android.com/reference/kotlin/android/media/Image#getTimestamp())`()` Get the timestamp associated with this frame. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/media/Image#getWidth())`()` The width of the image in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCropRect](https://developer.android.com/reference/kotlin/android/media/Image#setCropRect(android.graphics.Rect))`(`cropRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Set the crop rectangle associated with this frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSpace](https://developer.android.com/reference/kotlin/android/media/Image#setDataSpace(kotlin.Int))`(`dataSpace:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the dataspace associated with this frame. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFence](https://developer.android.com/reference/kotlin/android/media/Image#setFence(android.hardware.SyncFence))`(`fence:` ` [SyncFence](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#)`)` Set the fence file descriptor with this frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimestamp](https://developer.android.com/reference/kotlin/android/media/Image#setTimestamp(kotlin.Long))`(`timestamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Set the timestamp associated with this frame. |
 
@@ -129,12 +135,15 @@ The format is one of the values from [ImageFormat](https://developer.android.com
 | [JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int) | 1 | Compressed data, so row and pixel strides are 0. To uncompress, use android.graphics.BitmapFactory#decodeByteArray. |
 | [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int) | 3 | A luminance plane followed by the Cb and Cr chroma planes. The chroma planes have half the width and height of the luminance plane (4:2:0 subsampling). Each pixel sample in each plane has 8 bits. Each plane has its own row stride and pixel stride. |
 | [YUV_422_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_422_888:kotlin.Int) | 3 | A luminance plane followed by the Cb and Cr chroma planes. The chroma planes have half the width and the full height of the luminance plane (4:2:2 subsampling). Each pixel sample in each plane has 8 bits. Each plane has its own row stride and pixel stride. |
+| --- | --- | --- |
 | [YUV_444_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_444_888:kotlin.Int) | 3 | A luminance plane followed by the Cb and Cr chroma planes. The chroma planes have the same width and height as that of the luminance plane (4:4:4 subsampling). Each pixel sample in each plane has 8 bits. Each plane has its own row stride and pixel stride. |
 | [FLEX_RGB_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGB_888:kotlin.Int) | 3 | A R (red) plane followed by the G (green) and B (blue) planes. All planes have the same widths and heights. Each pixel sample in each plane has 8 bits. Each plane has its own row stride and pixel stride. |
 | [FLEX_RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGBA_8888:kotlin.Int) | 4 | A R (red) plane followed by the G (green), B (blue), and A (alpha) planes. All planes have the same widths and heights. Each pixel sample in each plane has 8 bits. Each plane has its own row stride and pixel stride. |
+| --- | --- | --- |
 | [RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int) | 1 | A single plane of raw sensor image data, with 16 bits per color sample. The details of the layout need to be queried from the source of the raw sensor data, such as [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#). |
 | [RAW_PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_PRIVATE:kotlin.Int) | 1 | A single plane of raw sensor image data of private layout. The details of the layout is implementation specific. Row stride and pixel stride are undefined for this format. Calling [Plane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane#getRowStride())or [Plane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane#getPixelStride())on RAW_PRIVATE image will cause UnSupportedOperationException being thrown. |
 | [HEIC](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int) | 1 | Compressed data, so row and pixel strides are 0. To uncompress, use android.graphics.BitmapFactory#decodeByteArray. |
+| --- | --- | --- |
 | [YCBCR_P010](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int) | 3 | P010 is a 4:2:0 YCbCr semiplanar format comprised of a WxH Y plane followed by a Wx(H/2) Cb and Cr planes. Each sample is represented by a 16-bit little-endian value, with the lower 6 bits set to zero. Since this is guaranteed to be a semi-planar format, the Cb plane can also be treated as an interleaved Cb/Cr plane. |
 | [YCBCR_P210](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P210:kotlin.Int) | 3 | P210 is a 4:2:2 YCbCr semiplanar format comprised of a WxH Y plane followed by a WxH Cb and Cr planes. Each sample is represented by a 16-bit little-endian value, with the lower 6 bits set to zero. Since this is guaranteed to be a semi-planar format, the Cb plane can also be treated as an interleaved Cb/Cr plane. |
 

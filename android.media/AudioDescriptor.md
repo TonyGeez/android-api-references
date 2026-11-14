@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # AudioDescriptor
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioDescriptor "View this page in Java") 
+| --- | --- |
 
 ```
 open class AudioDescriptor : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioDescriptor](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#) |
 
 The AudioDescriptor contains the information to describe the audio playback/capture capabilities. The capabilities are described by a byte array, which is defined by a particular standard. This is used when the format is unrecognized to the platform.
@@ -22,6 +24,7 @@ The AudioDescriptor contains the information to describe the audio playback/capt
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARD_EDID](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#STANDARD_EDID:kotlin.Int) The Extended Display Identification Data (EDID) standard for a short audio descriptor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARD_NONE](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#STANDARD_NONE:kotlin.Int) The audio standard is not specified. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARD_SADB](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#STANDARD_SADB:kotlin.Int) The standard for a Speaker Allocation Data Block (SADB). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARD_VSADB](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#STANDARD_VSADB:kotlin.Int) The standard for a Vendor-Specific Audio Data Block (VSADB). |
 
 | Inherited constants ||
@@ -33,9 +36,11 @@ The AudioDescriptor contains the information to describe the audio playback/capt
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getDescriptor](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#getDescriptor())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEncapsulationType](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#getEncapsulationType())`()` The encapsulation type indicates what encapsulation type is required when the framework is using this extra audio descriptor for playing to a device exposing this audio profile. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStandard](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#getStandard())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#hashCode())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ResourcesLoader
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/res/loader/ResourcesLoader "View this page in Java")
+| --- | --- |
 
 ```
 open class ResourcesLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.loader.ResourcesLoader](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#) |
 
 A container for supplying `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider` to `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` objects.
@@ -32,6 +34,7 @@ Modifying the list of providers a loader contains or the list of loaders a Resou
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#addProvider(android.content.res.loader.ResourcesProvider)(resourcesProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider)` Appends a provider to the end of the provider list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#clearProviders()()` Removes all `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider`. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider)!\> | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#getProviders()()` Retrieves the list of providers loaded into this instance. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#removeProvider(android.content.res.loader.ResourcesProvider)(resourcesProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider)` Removes a provider from the provider list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader#setProviders(kotlin.collections.MutableList)(resourcesProviders: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider!>)` Sets the list of providers. |
 

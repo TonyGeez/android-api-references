@@ -9,6 +9,7 @@ class WeekFields : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.temporal.WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#) |
 
 Localized definitions of the day-of-week, week-of-month and week-of-year fields.
@@ -31,9 +32,11 @@ Together these two values allow a year or month to be divided into weeks.
 One field is used: week-of-month. The calculation ensures that weeks never overlap a month boundary. The month is divided into periods where each period starts on the defined first day-of-week. The earliest period is referred to as week 0 if it has less than the minimal number of days and week 1 if it has at least the minimal number of days.
 
 | Date | Day-of-week | First day: Monday Minimal days: 4 | First day: Monday Minimal days: 5 |
+| --- | --- | --- | --- |
 | 2008-12-31 | Wednesday | Week 5 of December 2008 | Week 5 of December 2008 |
 | 2009-01-01 | Thursday | Week 1 of January 2009 | Week 0 of January 2009 |
 | 2009-01-04 | Sunday | Week 1 of January 2009 | Week 0 of January 2009 |
+| --- | --- | --- | --- |
 | 2009-01-05 | Monday | Week 2 of January 2009 | Week 1 of January 2009 |
 |------------|-------------|-----------------------------------|-----------------------------------|
 
@@ -46,9 +49,11 @@ One field is used: week-of-year. The calculation ensures that weeks never overla
 Two fields are used for week-based-year, one for the [week-of-week-based-year](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekOfWeekBasedYear())and one for [week-based-year](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekBasedYear()). In a week-based-year, each week belongs to only a single year. Week 1 of a year is the first week that starts on the first day-of-week and has at least the minimum number of days. The first and last weeks of a year may contain days from the previous calendar year or next calendar year respectively.
 
 | Date | Day-of-week | First day: Monday Minimal days: 4 | First day: Monday Minimal days: 5 |
+| --- | --- | --- | --- |
 | 2008-12-31 | Wednesday | Week 1 of 2009 | Week 53 of 2008 |
 | 2009-01-01 | Thursday | Week 1 of 2009 | Week 53 of 2008 |
 | 2009-01-04 | Sunday | Week 1 of 2009 | Week 53 of 2008 |
+| --- | --- | --- | --- |
 | 2009-01-05 | Monday | Week 2 of 2009 | Week 1 of 2009 |
 |------------|-------------|-----------------------------------|-----------------------------------|
 
@@ -59,21 +64,26 @@ Two fields are used for week-based-year, one for the [week-of-week-based-year](h
 | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [dayOfWeek](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#dayOfWeek())`()` Returns a field to access the day of week based on this`WeekFields`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this`WeekFields`is equal to the specified object. |
 | [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek.html#)! | [getFirstDayOfWeek](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#getFirstDayOfWeek())`()` Gets the first day-of-week. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimalDaysInFirstWeek](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#getMinimalDaysInFirstWeek())`()` Gets the minimal number of days in the first week. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#hashCode())`()` A hash code for this`WeekFields`. |
 | static [WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#)! | [of](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#of(java.time.DayOfWeek,%20kotlin.Int))`(`firstDayOfWeek:` ` [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek.html#)!`, `minimalDaysInFirstWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`WeekFields`from the first day-of-week and minimal days. |
+| --- | --- |
 | static [WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#)! | [of](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#of(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Obtains an instance of`WeekFields`appropriate for a locale. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#toString())`()` A string representation of this`WeekFields`instance. |
 | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [weekBasedYear](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekBasedYear())`()` Returns a field to access the year of a week-based-year based on this`WeekFields`. |
+| --- | --- |
 | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [weekOfMonth](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekOfMonth())`()` Returns a field to access the week of month based on this`WeekFields`. |
 | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [weekOfWeekBasedYear](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekOfWeekBasedYear())`()` Returns a field to access the week of a week-based-year based on this`WeekFields`. |
 | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)! | [weekOfYear](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#weekOfYear())`()` Returns a field to access the week of year based on this`WeekFields`. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#)! | [ISO](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#ISO:java.time.temporal.WeekFields) The ISO-8601 definition, where a week starts on Monday and the first week has a minimum of 4 days. |
 | static [WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#)! | [SUNDAY_START](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#SUNDAY_START:java.time.temporal.WeekFields) The common definition of a week that starts on Sunday and the first week has a minimum of 1 day. |
 | static [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | [WEEK_BASED_YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields#WEEK_BASED_YEARS:java.time.temporal.TemporalUnit) The unit that represents week-based-years for the purpose of addition and subtraction. |
+| --- | --- |
 
 ## Public methods
 

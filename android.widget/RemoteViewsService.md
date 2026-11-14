@@ -7,9 +7,11 @@ abstract class RemoteViewsService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.RemoteViewsService](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService#) |
 
 The service to be connected to for a remote adapter to request RemoteViews. Users should extend the RemoteViewsService to provide the appropriate RemoteViewsFactory's used to populate the remote collection view (ListView, GridView, etc).

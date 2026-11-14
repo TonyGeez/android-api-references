@@ -9,6 +9,7 @@ open class LongSummaryStatistics : IntConsumer, LongConsumer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#) |
 
 A state object for collecting statistics such as count, min, max, sum, and average.
@@ -43,12 +44,15 @@ This computes, in a single pass, the count of people, as well as the minimum, ma
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#accept(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Records a new`int`value into the summary information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#accept(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Records a new`long`value into the summary information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [combine](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#combine(java.util.LongSummaryStatistics))`(`other:` ` [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#)!`)` Combines the state of another`LongSummaryStatistics`into this one. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAverage](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#getAverage())`()` Returns the arithmetic mean of values recorded, or zero if no values have been recorded. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#getCount())`()` Returns the count of values recorded. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMax](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#getMax())`()` Returns the maximum value recorded, or`Long.MIN_VALUE`if no values have been recorded |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMin](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#getMin())`()` Returns the minimum value recorded, or`Long.MAX_VALUE`if no values have been recorded. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSum](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#getSum())`()` Returns the sum of values recorded, or zero if no values have been recorded. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics#toString())`()` Returns a non-empty string representation of this object suitable for debugging. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -93,6 +97,7 @@ If the arguments are inconsistent then an`IllegalArgumentException`is thrown. Th
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the count of values |
 | `min` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the minimum value |
 | `max` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum value |
+| --- | --- |
 | `sum` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the sum of all values |
 
 | Exceptions ||

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UnicodeSetIterator
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/UnicodeSetIterator "View this page in Java") 
+| --- | --- |
 
 ```
 open class UnicodeSetIterator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.UnicodeSetIterator](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#) |
 
 UnicodeSetIterator iterates over the contents of a UnicodeSet. It iterates over either code points or code point ranges. After all code points or ranges have been returned, it returns the multicharacter strings of the UnicodeSet, if any.
@@ -55,15 +57,18 @@ To iterate over only the strings, start with`new UnicodeSetIterator(set).skipToS
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#getString())`()` Gets the current string from the iterator. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#next())`()` Returns the next element in the set, either a single code point or a string. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextRange](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#nextRange())`()` Returns the next element in the set, either a code point range or a string. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#reset())`()` Resets this iterator to the start of the set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#reset(android.icu.text.UnicodeSet))`(`uset:` ` [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)!`)` Sets this iterator to visit the elements of the given set and resets it to the start of that set. |
 | open [UnicodeSetIterator](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#)! | [skipToStrings](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#skipToStrings())`()` Skips over the remaining code points/ranges, if any. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IS_STRING](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#IS_STRING:kotlin.Int) Value of codepoint if the iterator points to a string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepoint](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#codepoint:kotlin.Int) Current code point, or the special value IS_STRING, if the iterator points to a string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepointEnd](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#codepointEnd:kotlin.Int) When iterating over ranges using nextRange(), codepointEnd contains the inclusive end of the iteration range, if codepoint != IS_STRING. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [string](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetIterator#string:kotlin.String) If codepoint == IS_STRING, then string points to the current string. |
 
 ## Public constructors

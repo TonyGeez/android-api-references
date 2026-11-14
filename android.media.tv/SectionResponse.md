@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # SectionResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/SectionResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class SectionResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.SectionResponse](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#) |
 
@@ -32,6 +34,7 @@ A response for Section from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getSessionData](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#getSessionData())`()` Gets the raw data of session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#getSessionId())`()` Gets the Session Id of requested session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#getVersion())`()` Gets the Version number of requested session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

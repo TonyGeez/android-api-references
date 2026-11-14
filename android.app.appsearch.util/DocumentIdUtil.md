@@ -6,12 +6,14 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 # DocumentIdUtil
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/util/DocumentIdUtil "View this page in Java") 
+| --- | --- |
 
 ```
 open class DocumentIdUtil
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.util.DocumentIdUtil](https://developer.android.com/reference/kotlin/android/app/appsearch/util/DocumentIdUtil#) |
 
 A util class with methods for working with document ids.
@@ -45,6 +47,7 @@ Generates a qualified id based on package, database, and a [GenericDocument](htt
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package the document belongs to. This value cannot be`null`. |
 | `databaseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The database containing the document. This value cannot be`null`. |
 | `document` | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#):The document to generate a qualified id for. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -77,6 +80,7 @@ A qualified id is a String referring to the combined package name, database name
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package the document belongs to. This value cannot be`null`. |
 | `databaseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The database containing the document. This value cannot be`null`. |
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The namespace of the document. This value cannot be`null`. |
+| --- | --- |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The id of the document. This value cannot be`null`. |
 
 | Return ||

@@ -9,9 +9,11 @@ open class ThreadDeath : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||
 | | | ↳ | [java.lang.ThreadDeath](https://developer.android.com/reference/kotlin/java/lang/ThreadDeath#) |
+| --- | --- | --- | --- |
 
 An instance of `ThreadDeath` is thrown in the victim thread when the (deprecated) [Thread.stop()](https://developer.android.com/reference/kotlin/java/lang/Thread#stop()) method is invoked.
 

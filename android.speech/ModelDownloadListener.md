@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ModelDownloadListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/ModelDownloadListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface ModelDownloadListener
@@ -21,6 +22,7 @@ Listener for model download events. It makes [RecognitionService](https://develo
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onError(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A network or scheduling error occurred. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgress](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onProgress(kotlin.Int))`(`completedPercent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called by [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) only if the download has started after the request. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScheduled](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onScheduled())`()` Called when [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) scheduled the download, but won't satisfy it immediately. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onSuccess())`()` This method is called: - if the model is already available; - if the [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) has started and completed the download. Once this method is called, the model can be safely used to satisfy recognition requests. |
 
 ## Public methods

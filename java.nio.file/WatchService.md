@@ -35,6 +35,7 @@ If a watched file is not located on a local storage device then it is implementa
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/file/WatchService#close())`()` Closes this watch service. |
 | abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | [poll](https://developer.android.com/reference/kotlin/java/nio/file/WatchService#poll())`()` Retrieves and removes the next watch key, or`null`if none are present. |
 | abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | [poll](https://developer.android.com/reference/kotlin/java/nio/file/WatchService#poll(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Retrieves and removes the next watch key, waiting if necessary up to the specified wait time if none are yet present. |
+| --- | --- |
 | abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | [take](https://developer.android.com/reference/kotlin/java/nio/file/WatchService#take())`()` Retrieves and removes next watch key, waiting if none are yet present. |
 
 ## Public methods

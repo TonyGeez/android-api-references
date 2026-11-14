@@ -4,12 +4,14 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 # WindowAnimationFrameStats
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/WindowAnimationFrameStats "View this page in Java")
+| --- | --- |
 
 ```
 class WindowAnimationFrameStats : FrameStats, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.FrameStats](https://developer.android.com/reference/kotlin/android/view/FrameStats) ||
 | | ↳ | [android.view.WindowAnimationFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#) |
 
@@ -33,6 +35,7 @@ The key idea is that in order to provide a smooth user experience the system sho
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -9,6 +9,7 @@ open class Annotation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.Annotation](https://developer.android.com/reference/kotlin/java/text/Annotation#) |
 
 An Annotation object is used as a wrapper for a text attribute value if the attribute has annotation characteristics. These characteristics are:

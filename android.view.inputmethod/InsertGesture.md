@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # InsertGesture
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/InsertGesture "View this page in Java")
+| --- | --- |
 
 ```
 class InsertGesture : HandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
 | | ↳ | [android.view.inputmethod.InsertGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#) |
 
@@ -30,9 +32,11 @@ A sub-class of `https://developer.android.com/reference/kotlin/android/view/inpu
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getInsertionPoint()()` Returns the insertion point `https://developer.android.com/reference/kotlin/android/graphics/PointF.html#` (in screen coordinates) where `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getTextToInsert()` will be inserted. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getTextToInsert()()` Returns the text that will be inserted at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getInsertionPoint()`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -9,6 +9,7 @@ open class AlgorithmParameterGenerator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.AlgorithmParameterGenerator](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#) |
 
 The`AlgorithmParameterGenerator`class is used to generate a set of parameters to be used with a certain algorithm. Parameter generators are constructed using the`getInstance`factory methods (static methods that return instances of a given class).
@@ -27,6 +28,7 @@ Android provides the following`AlgorithmParameterGenerator`algorithms:
 | AES | 1-8 |
 | DES | 1-8 |
 | DESede | 1-8 |
+| --- | --- |
 | DH | 1+ |
 | DSA | 1+ |
 
@@ -41,12 +43,15 @@ Android provides the following`AlgorithmParameterGenerator`algorithms:
 | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [generateParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#generateParameters())`()` Generates the parameters. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#getAlgorithm())`()` Returns the standard name of the algorithm this parameter generator is associated with. |
 | openstatic [AlgorithmParameterGenerator](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
+| --- | --- |
 | openstatic [AlgorithmParameterGenerator](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
 | openstatic [AlgorithmParameterGenerator](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#getProvider())`()` Returns the provider of this algorithm parameter generator object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#init(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes this parameter generator for a certain size. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#init(kotlin.Int,%20java.security.SecureRandom))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator for a certain size and source of randomness. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#init(java.security.spec.AlgorithmParameterSpec))`(`genParamSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator#init(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`genParamSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
 
 ## Protected constructors
@@ -69,6 +74,7 @@ Creates an AlgorithmParameterGenerator object.
 | `paramGenSpi` | [AlgorithmParameterGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -162,6 +168,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.IllegalArgumentException` | if the provider name is`null`or empty |
 | `java.security.NoSuchAlgorithmException` | if an`AlgorithmParameterGeneratorSpi`implementation for the specified algorithm is not available from the specified provider |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list |
+| --- | --- |
 | `java.lang.NullPointerException` | if`algorithm`is`null`on Android 14 or above |
 
 **See Also**
@@ -197,6 +204,7 @@ A new AlgorithmParameterGenerator object encapsulating the AlgorithmParameterGen
 | `java.lang.IllegalArgumentException` | if the specified provider is`null` |
 | `java.security.NoSuchAlgorithmException` | if an`AlgorithmParameterGeneratorSpi`implementation for the specified algorithm is not available from the specified`Provider`object |
 | `java.lang.NullPointerException` | if`algorithm`is`null`on Android 14 or above |
+| --- | --- |
 
 **See Also**
 

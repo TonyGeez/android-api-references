@@ -3,15 +3,18 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # NotProvisionedException
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/NotProvisionedException "View this page in Java")
+| --- | --- |
 
 ```
 class NotProvisionedException : MediaDrmException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.media.MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.NotProvisionedException](https://developer.android.com/reference/kotlin/android/media/NotProvisionedException#) |
 
 Exception thrown when an operation on a MediaDrm object is attempted and the device does not have a certificate. The app should obtain and install a certificate using the MediaDrm provisioning methods then retry the operation.

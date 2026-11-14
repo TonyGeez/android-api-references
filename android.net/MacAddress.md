@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # MacAddress
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/MacAddress "View this page in Java") 
+| --- | --- |
 
 ```
 class MacAddress : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress#) |
 
 Representation of a MAC address. This class only supports 48 bits long addresses and does not support 64 bits long addresses. Instances of this class are immutable. This class provides implementations of hashCode() and equals() that make it suitable for use as keys in standard implementations of [java.util.Map](https://developer.android.com/reference/kotlin/java/util/Map.html#).
@@ -22,6 +24,7 @@ Representation of a MAC address. This class only supports 48 bits long addresses
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BROADCAST](https://developer.android.com/reference/kotlin/android/net/MacAddress#TYPE_BROADCAST:kotlin.Int) Indicates a MAC address is the broadcast address. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MULTICAST](https://developer.android.com/reference/kotlin/android/net/MacAddress#TYPE_MULTICAST:kotlin.Int) Indicates a MAC address is a multicast address. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNICAST](https://developer.android.com/reference/kotlin/android/net/MacAddress#TYPE_UNICAST:kotlin.Int) Indicates a MAC address is a unicast address. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,15 +35,19 @@ Representation of a MAC address. This class only supports 48 bits long addresses
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/MacAddress#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/MacAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress#) | [fromBytes](https://developer.android.com/reference/kotlin/android/net/MacAddress#fromBytes(kotlin.ByteArray))`(`addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Creates a MacAddress from the given byte array representation. |
+| --- | --- |
 | static [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress#) | [fromString](https://developer.android.com/reference/kotlin/android/net/MacAddress#fromString(kotlin.String))`(`addr:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a MacAddress from the given String representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAddressType](https://developer.android.com/reference/kotlin/android/net/MacAddress#getAddressType())`()` Returns the type of this address. |
 | [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address.html#)? | [getLinkLocalIpv6FromEui48Mac](https://developer.android.com/reference/kotlin/android/net/MacAddress#getLinkLocalIpv6FromEui48Mac())`()` Create a link-local Inet6Address from the MAC address. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/MacAddress#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLocallyAssigned](https://developer.android.com/reference/kotlin/android/net/MacAddress#isLocallyAssigned())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](https://developer.android.com/reference/kotlin/android/net/MacAddress#matches(android.net.MacAddress,%20android.net.MacAddress))`(`baseAddress:` ` [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress#)`, `mask:` ` [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress#)`)` Checks if this MAC Address matches the provided range. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [toByteArray](https://developer.android.com/reference/kotlin/android/net/MacAddress#toByteArray())`()` Convert this MacAddress to a byte array. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toOuiString](https://developer.android.com/reference/kotlin/android/net/MacAddress#toOuiString())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/MacAddress#toString())`()` Returns a human-readable representation of this MacAddress. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/MacAddress#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

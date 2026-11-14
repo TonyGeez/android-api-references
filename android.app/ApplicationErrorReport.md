@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # ApplicationErrorReport
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/ApplicationErrorReport "View this page in Java") 
+| --- | --- |
 
 ```
 open class ApplicationErrorReport : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.ApplicationErrorReport](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#) |
 
 Describes an application error. A report has a type, which is one of
@@ -30,6 +32,7 @@ Describes an application error. A report has a type, which is one of
 | open | [AnrInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.AnrInfo) Describes an application not responding error. |
 | open | [BatteryInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.BatteryInfo) Describes a battery usage report. |
 | open | [CrashInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.CrashInfo) Describes an application crash. |
+| --- | --- |
 | open | [RunningServiceInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.RunningServiceInfo) Describes a running service report. |
 
 | Constants ||
@@ -37,6 +40,7 @@ Describes an application error. A report has a type, which is one of
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ANR](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_ANR:kotlin.Int) An error report about an application that's not responding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BATTERY](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_BATTERY:kotlin.Int) An error report about an application that's consuming too much battery. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CRASH](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_CRASH:kotlin.Int) An error report about an application crash. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_NONE:kotlin.Int) Uninitialized error report. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RUNNING_SERVICE](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_RUNNING_SERVICE:kotlin.Int) A report from a user to a developer about a running service that the user doesn't think should be running. |
 
@@ -53,6 +57,7 @@ Describes an application error. A report has a type, which is one of
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#describeContents())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#dump(android.util.Printer,%20kotlin.String))`(`pw:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Dump the report to a Printer. |
 | openstatic [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getErrorReportReceiver](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#getErrorReportReceiver(android.content.Context,%20kotlin.String,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#readFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -61,12 +66,15 @@ Describes an application error. A report has a type, which is one of
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ApplicationErrorReport](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [ApplicationErrorReport.AnrInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.AnrInfo)! | [anrInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#anrInfo:android.app.ApplicationErrorReport.AnrInfo) If this report is of type [TYPE_ANR](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_ANR:kotlin.Int), contains an instance of AnrInfo describing the ANR; otherwise null. |
 | [ApplicationErrorReport.BatteryInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.BatteryInfo)! | [batteryInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#batteryInfo:android.app.ApplicationErrorReport.BatteryInfo) If this report is of type [TYPE_BATTERY](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_BATTERY:kotlin.Int), contains an instance of BatteryInfo; otherwise null. |
+| --- | --- |
 | [ApplicationErrorReport.CrashInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.CrashInfo)! | [crashInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#crashInfo:android.app.ApplicationErrorReport.CrashInfo) If this report is of type [TYPE_CRASH](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_CRASH:kotlin.Int), contains an instance of CrashInfo describing the crash; otherwise null. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [installerPackageName](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#installerPackageName:kotlin.String) Package name of the application which installed the application this report pertains to. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#packageName:kotlin.String) Package name of the application. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [processName](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#processName:kotlin.String) Process name of the application. |
 | [ApplicationErrorReport.RunningServiceInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport.RunningServiceInfo)! | [runningServiceInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#runningServiceInfo:android.app.ApplicationErrorReport.RunningServiceInfo) If this report is of type [TYPE_RUNNING_SERVICE](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#TYPE_RUNNING_SERVICE:kotlin.Int), contains an instance of RunningServiceInfo; otherwise null. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [systemApp](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#systemApp:kotlin.Boolean) Set if the app is on the system image. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [time](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#time:kotlin.Long) Time at which the error occurred. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](https://developer.android.com/reference/kotlin/android/app/ApplicationErrorReport#type:kotlin.Int) Type of this report. |
 

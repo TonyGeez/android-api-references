@@ -9,6 +9,7 @@ abstract class SNIMatcher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.SNIMatcher](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher#) |
 
 Instances of this class represent a matcher that performs match operations on an [SNIServerName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName) instance.

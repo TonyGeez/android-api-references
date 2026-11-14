@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ExerciseRoute
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute "View this page in Java") 
+| --- | --- |
 
 ```
 class ExerciseRoute : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.ExerciseRoute](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#) |
 
 Route of the exercise session. Contains sequence of location points with timestamps.
@@ -34,6 +36,7 @@ Route of the exercise session. Contains sequence of location points with timesta
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseRoute.Location](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute.Location)!\> | [getRouteLocations](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#getRouteLocations())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

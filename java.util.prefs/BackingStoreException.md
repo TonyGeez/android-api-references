@@ -9,9 +9,11 @@ open class BackingStoreException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.util.prefs.BackingStoreException](https://developer.android.com/reference/kotlin/java/util/prefs/BackingStoreException#) |
+| --- | --- | --- | --- |
 
 Thrown to indicate that a preferences operation could not complete because of a failure in the backing store, or a failure to contact the backing store.
 

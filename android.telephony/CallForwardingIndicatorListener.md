@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # CallForwardingIndicatorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface CallForwardingIndicatorListener

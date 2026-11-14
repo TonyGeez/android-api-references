@@ -5,6 +5,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # OnParameterChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnParameterChangeListener
@@ -43,5 +44,6 @@ Method called when a parameter value has changed. The method is called only if t
 | `effect` | [Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer)!:the Equalizer on which the interface is registered. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):status of the set parameter operation. |
 | `param1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):ID of the modified parameter. See [PARAM_BAND_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_BAND_LEVEL:kotlin.Int)... |
+| --- | --- |
 | `param2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):additional parameter qualifier (e.g the band for band level parameter). |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new parameter value. |

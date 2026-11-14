@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # GraphemeClusterBreak
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.GraphemeClusterBreak "View this page in Java") 
+| --- | --- |
 
 ```
 interface GraphemeClusterBreak
@@ -21,21 +22,27 @@ Grapheme Cluster Break constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTROL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#CONTROL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#CR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTEND](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#EXTEND:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#E_BASE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE_GAZ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#E_BASE_GAZ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_MODIFIER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#E_MODIFIER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GLUE_AFTER_ZWJ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#GLUE_AFTER_ZWJ:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#L:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LF](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#LF:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LV](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#LV:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LVT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#LVT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#OTHER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREPEND](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#PREPEND:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGIONAL_INDICATOR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#REGIONAL_INDICATOR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPACING_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#SPACING_MARK:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [T](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#T:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [V](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#V:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZWJ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak#ZWJ:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Constants
 

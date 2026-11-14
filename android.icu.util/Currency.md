@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Currency
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/Currency "View this page in Java") 
+| --- | --- |
 
 ```
 open class Currency : MeasureUnit
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit) ||
 | | ↳ | [android.icu.util.Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#) |
 
@@ -37,9 +39,11 @@ Note: This class deliberately resembles java.util.Currency but it has a complete
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAL_SYMBOL_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#FORMAL_SYMBOL_NAME:kotlin.Int) Selector for getName() indicating the formal currency symbol. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#LONG_NAME:kotlin.Int) Selector for getName() indicating the long name for a currency, such as "US Dollar" for USD. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW_SYMBOL_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#NARROW_SYMBOL_NAME:kotlin.Int) Selector for getName() indicating the narrow currency symbol. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLURAL_LONG_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#PLURAL_LONG_NAME:kotlin.Int) Selector for getName() indicating the plural long name for a currency, such as "US dollar" for USD in "1 US dollar", and "US dollars" for USD in "2 US dollars". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYMBOL_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#SYMBOL_NAME:kotlin.Int) Selector for getName() indicating a symbolic name for a currency, such as "$" for USD. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARIANT_SYMBOL_NAME](https://developer.android.com/reference/kotlin/android/icu/util/Currency#VARIANT_SYMBOL_NAME:kotlin.Int) Selector for getName() indicating the variant currency symbol. |
+| --- | --- |
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -50,30 +54,39 @@ Note: This class deliberately resembles java.util.Currency but it has a complete
 | openstatic [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#)! | [fromJavaCurrency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#fromJavaCurrency(java.util.Currency))`(`currency:` ` [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)!`)` Returns a Currency object based on the currency represented by the given java. |
 | openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#)!\>! | [getAvailableCurrencies](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getAvailableCurrencies())`()` Returns the set of available currencies. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableCurrencyCodes](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getAvailableCurrencyCodes(android.icu.util.ULocale,%20java.util.Date))`(`loc:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`, `d:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Returns an array of Strings which contain the currency identifiers that are valid for the given locale on the given date. |
+| --- | --- |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableCurrencyCodes](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getAvailableCurrencyCodes(java.util.Locale,%20java.util.Date))`(`loc:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `d:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Returns an array of Strings which contain the currency identifiers that are valid for the given [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) on the given date. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getAvailableLocales())`()` Return an array of the locales for which a currency is defined. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!\>! | [getAvailableULocales](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getAvailableULocales())`()` Return an array of the ulocales for which a currency is defined. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencyCode](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getCurrencyCode())`()` Returns the ISO 4217 3-letter code for this currency object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultFractionDigits](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getDefaultFractionDigits())`()` Returns the number of the number of fraction digits that should be displayed for this currency. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultFractionDigits](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getDefaultFractionDigits(android.icu.util.Currency.CurrencyUsage))`(`Usage:` ` [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage)!`)` Returns the number of the number of fraction digits that should be displayed for this currency with Usage. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getDisplayName())`()` Returns the display name for this currency in the default locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getDisplayName(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns the display name for this currency in the given locale. |
 | openstatic [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` Returns a currency object for the default currency in the given locale. |
+| --- | --- |
 | openstatic [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getInstance(kotlin.String))`(`theISOCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a currency object given an ISO 4217 3-letter code. |
 | openstatic [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a currency object for the default currency in the given locale. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywordValuesForLocale](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getKeywordValuesForLocale(kotlin.String,%20android.icu.util.ULocale,%20kotlin.Boolean))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`, `commonlyUsed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Given a key and a locale, returns an array of values for the key for which data exists. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getName(android.icu.util.ULocale,%20kotlin.Int,%20kotlin.BooleanArray))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`, `nameStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isChoiceFormat:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` Returns the display name for the given currency in the given locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getName(android.icu.util.ULocale,%20kotlin.Int,%20kotlin.String,%20kotlin.BooleanArray))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`, `nameStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pluralCount:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isChoiceFormat:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` Returns the display name for the given currency in the given locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getName(java.util.Locale,%20kotlin.Int,%20kotlin.BooleanArray))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `nameStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isChoiceFormat:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` Returns the display name for the given currency in the given locale. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getName(java.util.Locale,%20kotlin.Int,%20kotlin.String,%20kotlin.BooleanArray))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `nameStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pluralCount:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isChoiceFormat:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` Returns the display name for the given currency in the given locale. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericCode](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getNumericCode())`()` Returns the ISO 4217 numeric code for this currency object. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getRoundingIncrement](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getRoundingIncrement())`()` Returns the rounding increment for this currency, or 0. |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getRoundingIncrement](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getRoundingIncrement(android.icu.util.Currency.CurrencyUsage))`(`Usage:` ` [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage)!`)` Returns the rounding increment for this currency, or 0. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getSymbol())`()` Convenience and compatibility override of getName that requests the symbol name for the default`DISPLAY`locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getSymbol(android.icu.util.ULocale))`(`uloc:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` Convenience and compatibility override of getName that requests the symbol name. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](https://developer.android.com/reference/kotlin/android/icu/util/Currency#getSymbol(java.util.Locale))`(`loc:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Convenience and compatibility override of getName that requests the symbol name. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](https://developer.android.com/reference/kotlin/android/icu/util/Currency#isAvailable(kotlin.String,%20java.util.Date,%20java.util.Date))`(`code:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `from:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`, `to:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Queries if the given ISO 4217 3-letter code is available on the specified date range. |
 | open [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)! | [toJavaCurrency](https://developer.android.com/reference/kotlin/android/icu/util/Currency#toJavaCurrency())`()` Returns a java. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/util/Currency#toString())`()` Returns the ISO 4217 code for this currency. |
 
 | Inherited functions ||
@@ -450,6 +463,7 @@ If commonlyUsed is true, only the currencies known to be in use as of the curren
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:key whose values to look up. the only recognized key is "currency" |
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!:the locale |
 | `commonlyUsed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, return only values that are currently used in the locale. Otherwise returns all values. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -474,6 +488,7 @@ Returns the display name for the given currency in the given locale. For example
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!:locale in which to display currency |
 | `nameStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):selector for which kind of name to return. The nameStyle should be SYMBOL_NAME, NARROW_SYMBOL_NAME, or LONG_NAME. Otherwise, throw IllegalArgumentException. |
 | `isChoiceFormat` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:isChoiceFormat\[0\] is always set to false, or isChoiceFormat can be null; display names are static strings; since ICU 4.4, ChoiceFormat patterns are no longer supported |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -507,6 +522,7 @@ Returns the display name for the given currency in the given locale. For example
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!:locale in which to display currency |
 | `nameStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):selector for which kind of name to return |
 | `pluralCount` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:plural count string for this locale |
+| --- | --- |
 | `isChoiceFormat` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:isChoiceFormat\[0\] is always set to false, or isChoiceFormat can be null; display names are static strings; since ICU 4.4, ChoiceFormat patterns are no longer supported |
 
 | Return ||
@@ -536,6 +552,7 @@ Returns the display name for the given currency in the given locale. This is a c
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:locale in which to display currency |
 | `nameStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):selector for which kind of name to return. The nameStyle should be SYMBOL_NAME, NARROW_SYMBOL_NAME, or LONG_NAME. Otherwise, throw IllegalArgumentException. |
 | `isChoiceFormat` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:isChoiceFormat\[0\] is always set to false, or isChoiceFormat can be null; display names are static strings; since ICU 4.4, ChoiceFormat patterns are no longer supported |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -561,6 +578,7 @@ Returns the display name for the given currency in the given locale. This is a c
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:locale in which to display currency |
 | `nameStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):selector for which kind of name to return |
 | `pluralCount` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:plural count string for this locale |
+| --- | --- |
 | `isChoiceFormat` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:isChoiceFormat\[0\] is always set to false, or isChoiceFormat can be null; display names are static strings; since ICU 4.4, ChoiceFormat patterns are no longer supported |
 
 | Return ||
@@ -681,6 +699,7 @@ Note: For checking availability of a currency on a specific date, specify the da
 | `code` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The ISO 4217 3-letter code. |
 | `from` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!:The lower bound of the date range, inclusive. When`from`is null, check the availability of the currency any date before`to` |
 | `to` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!:The upper bound of the date range, inclusive. When`to`is null, check the availability of the currency any date after`from` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|

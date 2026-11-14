@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # WifiDeviceFilter
 
 Kotlin | [Java](https://developer.android.com/reference/android/companion/WifiDeviceFilter "View this page in Java")
+| --- | --- |
 
 ```
 class WifiDeviceFilter : DeviceFilter<ScanResult!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.WifiDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#) |
 
 A filter for Wifi devices
@@ -24,6 +26,7 @@ A filter for Wifi devices
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

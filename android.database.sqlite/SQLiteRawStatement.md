@@ -7,6 +7,7 @@ class SQLiteRawStatement : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.sqlite.SQLiteRawStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#) |
 
 A represents a SQLite prepared statement. The methods correspond very closely to SQLite APIs that operate on a sqlite_stmt object. In general, each API in this class corresponds to a single SQLite API.
@@ -44,6 +45,7 @@ Note that `https://developer.android.com/reference/kotlin/android/database/sqlit
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_BLOB:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_BLOB. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_FLOAT:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_FLOAT. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_INTEGER:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_INTEGER. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_NULL:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_NULL. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_TEXT:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_TEXT. |
 
@@ -52,27 +54,35 @@ Note that `https://developer.android.com/reference/kotlin/android/database/sqlit
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindBlob(kotlin.Int,%20kotlin.ByteArray)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Bind a blob to a parameter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindBlob(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind a blob to a parameter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindDouble(kotlin.Int,%20kotlin.Double)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Bind a double to a parameter. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindInt(kotlin.Int,%20kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind an int to a parameter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindLong(kotlin.Int,%20kotlin.Long)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Bind a long to the parameter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindNull(kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind a null to the parameter. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindText(kotlin.Int,%20kotlin.String)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Bind a string to the parameter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#clearBindings()()` Clear all parameter bindings. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#close()()` Close the object and release any native resources. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnBlob(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value of the result row as a blob. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnDouble(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a double. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnInt(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a int. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnLength(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the length of the column value in the result row. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnLong(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a long. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnName(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the name of the column in the result row. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnText(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a text. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the type of the column in the result row. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterCount()()` Return the number of parameters in the statement. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterIndex(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the index of the parameter with specified name. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterName(kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the name of the parameter at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getResultColumnCount()()` Return the number of columns in the result set for the statement. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#isOpen()()` Return true if the statement is still open and false otherwise. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#readColumnBlob(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, buffer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the column value of the result row, interpreted as a blob, into the buffer. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#reset()()` Reset the statement. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#step()()` Step to the next result row. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#toString()()` Returns a string representation of the object. |
 
@@ -163,6 +173,7 @@ Bind a blob to a parameter. Parameter indices start at 1. The function throws if
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -186,6 +197,7 @@ Bind a blob to a parameter. Parameter indices start at 1. The function throws if
 | `parameterIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the parameter in the query. It is one-based. |
 | `value` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The value to be bound to the parameter. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An offset into the value array |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to bind from the value array. |
 
 | Exceptions ||
@@ -193,6 +205,7 @@ Bind a blob to a parameter. Parameter indices start at 1. The function throws if
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalArgumentException` | if the sub-array exceeds the bounds of the value array. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -220,6 +233,7 @@ Bind a double to a parameter. Parameter indices start at 1. The function throws 
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -245,6 +259,7 @@ Bind an int to a parameter. Parameter indices start at 1. The function throws if
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -270,6 +285,7 @@ Bind a long to the parameter. Parameter indices start at 1. The function throws 
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -292,6 +308,7 @@ Bind a null to the parameter. Parameter indices start at 1. The function throws 
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -318,6 +335,7 @@ Bind a string to the parameter. Parameter indices start at 1. The function throw
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the parameter is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 
@@ -376,6 +394,7 @@ Return the column value of the result row as a blob. Column indices start at 0. 
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -403,6 +422,7 @@ Return the column value as a double. Column indices start at 0. This throws an e
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -430,6 +450,7 @@ Return the column value as a int. Column indices start at 0. This throws an exce
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -457,6 +478,7 @@ Return the length of the column value in the result row. Column indices start at
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -484,6 +506,7 @@ Return the column value as a long. Column indices start at 0. This throws an exc
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -511,6 +534,7 @@ Return the name of the column in the result row. Column indices start at 0. This
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
 | `android.database.sqlite.SQLiteOutOfMemoryException` | if the database cannot allocate memory for the name. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -538,6 +562,7 @@ Return the column value as a text. Column indices start at 0. This throws an exc
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -565,6 +590,7 @@ Return the type of the column in the result row. Column indices start at 0.
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
 **See Also**
@@ -692,6 +718,7 @@ Copy the column value of the result row, interpreted as a blob, into the buffer.
 | `columnIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a column in the result row. It is zero-based. |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): A pre-allocated array to be filled with the value of the column. This value cannot be `null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An offset into the buffer: copying starts here. |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to copy. |
 | `srcOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset into the blob from which to start copying. |
 
@@ -704,6 +731,7 @@ Copy the column value of the result row, interpreted as a blob, into the buffer.
 | `android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException` | if the column is out of range. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `android.database.sqlite.SQLiteMisuseException` | if the row has no data. See #getColumnType(). |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the buffer is too small for offset+length. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
 
@@ -745,6 +773,7 @@ Step to the next result row. This returns true if the statement stepped to a new
 | `android.database.sqlite.SQLiteDatabaseLockedException` | if the database is locked or busy. |
 | `android.database.sqlite.SQLiteException` | if a native error occurs. |
 | `java.lang.IllegalStateException` | if the statement is closed or this is a foreign thread. |
+| --- | --- |
 
 **See Also**
 

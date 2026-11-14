@@ -9,6 +9,7 @@ abstract class ListResourceBundle : ResourceBundle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle) ||
 | | ↳ | [java.util.ListResourceBundle](https://developer.android.com/reference/kotlin/java/util/ListResourceBundle#) |
 

@@ -9,11 +9,14 @@ abstract class Writer : Appendable, Closeable, Flushable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.Writer](https://developer.android.com/reference/kotlin/java/io/Writer#) |
 
 | Known Direct Subclasses [BufferedWriter](https://developer.android.com/reference/kotlin/java/io/BufferedWriter), [CharArrayWriter](https://developer.android.com/reference/kotlin/java/io/CharArrayWriter), [FilterWriter](https://developer.android.com/reference/kotlin/java/io/FilterWriter), [OutputStreamWriter](https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter), [PipedWriter](https://developer.android.com/reference/kotlin/java/io/PipedWriter), [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter), [StringWriter](https://developer.android.com/reference/kotlin/java/io/StringWriter) |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------| | [BufferedWriter](https://developer.android.com/reference/kotlin/java/io/BufferedWriter) | Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings. | | [CharArrayWriter](https://developer.android.com/reference/kotlin/java/io/CharArrayWriter) | This class implements a character buffer that can be used as an Writer. | | [FilterWriter](https://developer.android.com/reference/kotlin/java/io/FilterWriter) | Abstract class for writing filtered character streams. | | [OutputStreamWriter](https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter) | An OutputStreamWriter is a bridge from character streams to byte streams: Characters written to it are encoded into bytes using a specified . | | [PipedWriter](https://developer.android.com/reference/kotlin/java/io/PipedWriter) | Piped character-output streams. | | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter) | Prints formatted representations of objects to a text-output stream. | | [StringWriter](https://developer.android.com/reference/kotlin/java/io/StringWriter) | A character stream that collects its output in a string buffer, which can then be used to construct a string. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [FileWriter](https://developer.android.com/reference/kotlin/java/io/FileWriter) |---------------------------------------------------------------------------------|-------------------------------------------------------------| | [FileWriter](https://developer.android.com/reference/kotlin/java/io/FileWriter) | Writes text to character files using a default buffer size. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for writing to character streams. The only methods that a subclass must implement are write(char\[\], int, int), flush(), and close(). Most subclasses, however, will override some of the methods defined here in order to provide higher efficiency, additional functionality, or both.
 
@@ -29,12 +32,15 @@ Abstract class for writing to character streams. The only methods that a subclas
 | open [Writer](https://developer.android.com/reference/kotlin/java/io/Writer#) | [append](https://developer.android.com/reference/kotlin/java/io/Writer#append(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified character to this writer. |
 | open [Writer](https://developer.android.com/reference/kotlin/java/io/Writer#) | [append](https://developer.android.com/reference/kotlin/java/io/Writer#append(kotlin.CharSequence))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this writer. |
 | open [Writer](https://developer.android.com/reference/kotlin/java/io/Writer#) | [append](https://developer.android.com/reference/kotlin/java/io/Writer#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this writer. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/Writer#close())`()` Closes the stream, flushing it first. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/Writer#flush())`()` Flushes the stream. |
 | open static [Writer](https://developer.android.com/reference/kotlin/java/io/Writer#)! | [nullWriter](https://developer.android.com/reference/kotlin/java/io/Writer#nullWriter())`()` Returns a new `Writer` which discards all characters. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/Writer#write(kotlin.CharArray))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Writes an array of characters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/Writer#write(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of an array of characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/Writer#write(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a single character. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/Writer#write(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a string. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/Writer#write(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of a string. |
 
@@ -154,6 +160,7 @@ An invocation of this method of the form `out.append(csq, start, end)` when `csq
 | `csq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: The character sequence from which a subsequence will be appended. If `csq` is `null`, then characters will be appended as if `csq` contained the four characters `"null"`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the first character in the subsequence |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the character following the last character in the subsequence |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------|-------------|
@@ -250,6 +257,7 @@ Writes a portion of an array of characters.
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: Array of characters |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset from which to start writing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of characters to write |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -313,6 +321,7 @@ Writes a portion of a string.
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A String |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset from which to start writing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of characters to write |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

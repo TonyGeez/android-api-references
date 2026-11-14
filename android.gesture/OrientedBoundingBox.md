@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # OrientedBoundingBox
 
 Kotlin| [Java](https://developer.android.com/reference/android/gesture/OrientedBoundingBox "View this page in Java") 
+| --- | --- |
 
 ```
 open class OrientedBoundingBox
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.gesture.OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#) |
 
 An oriented bounding box
@@ -22,9 +24,11 @@ An oriented bounding box
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerX](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#centerX:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerY](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#centerY:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [height](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#height:kotlin.Float) <br /> |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [orientation](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#orientation:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [squareness](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#squareness:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [width](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox#width:kotlin.Float) <br /> |
+| --- | --- |
 
 ## Properties
 

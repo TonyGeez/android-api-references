@@ -7,9 +7,11 @@ open class ArithmeticException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ArithmeticException](https://developer.android.com/reference/kotlin/java/lang/ArithmeticException#) |
 
 Thrown when an exceptional arithmetic condition has occurred. For example, an integer "divide by zero" throws an instance of this class. `ArithmeticException` objects may be constructed by the virtual machine as if [suppression were disabled and/or the](https://developer.android.com/reference/kotlin/java/lang/Throwable#Throwable(kotlin.String,%20kotlin.Throwable,%20kotlin.Boolean,%20kotlin.Boolean)).

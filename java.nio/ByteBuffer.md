@@ -7,10 +7,12 @@ abstract class ByteBuffer : Buffer, Comparable<ByteBuffer!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
 | | ↳ | [java.nio.ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) |
 
 | Known Direct Subclasses [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer) |---|---| | [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer) | A direct byte buffer whose content is a memory-mapped region of a file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A byte buffer.
 
@@ -79,75 +81,99 @@ bb.putInt(0xCAFEBABE).putShort(3).putShort(45);
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#alignedSlice(kotlin.Int)(unitSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new byte buffer whose content is a shared and aligned subsequence of this buffer's content. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#alignmentOffset(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, unitSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the memory address, pointing to the byte at the given index, modulo the given unit size. |
 | open static [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#allocate(kotlin.Int)(capacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new byte buffer. |
+| --- | --- |
 | open static [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#allocateDirect(kotlin.Int)(capacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new direct byte buffer. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#array()()` Returns the byte array that backs this buffer *(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#arrayOffset()()` Returns the offset within this buffer's backing array of the first element of the buffer *(optional operation)*. |
+| --- | --- |
 | abstract [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asCharBuffer()()` Creates a view of this byte buffer as a char buffer. |
 | abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asDoubleBuffer()()` Creates a view of this byte buffer as a double buffer. |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asFloatBuffer()()` Creates a view of this byte buffer as a float buffer. |
+| --- | --- |
 | abstract [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asIntBuffer()()` Creates a view of this byte buffer as an int buffer. |
 | abstract [LongBuffer](https://developer.android.com/reference/kotlin/java/nio/LongBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asLongBuffer()()` Creates a view of this byte buffer as a long buffer. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asReadOnlyBuffer()()` Creates a new, read-only byte buffer that shares this buffer's content. |
+| --- | --- |
 | abstract [ShortBuffer](https://developer.android.com/reference/kotlin/java/nio/ShortBuffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#asShortBuffer()()` Creates a view of this byte buffer as a short buffer. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#clear()()` Clears this buffer. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#compact()()` Compacts this buffer *(optional operation)*. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#compareTo(java.nio.ByteBuffer)(other: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#)` Compares this buffer to another. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#duplicate()()` Creates a new byte buffer that shares this buffer's content. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tells whether or not this buffer is equal to another object. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#flip()()` Flips this buffer. |
 | abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get()()` Relative *get* method. |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get(kotlin.ByteArray)(dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Relative bulk *get* method. |
+| --- | --- |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Relative bulk *get* method. |
 | abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method. |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get(kotlin.Int,%20kotlin.ByteArray)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Absolute bulk *get* method. |
+| --- | --- |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#get(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute bulk *get* method. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getChar()()` Relative *get* method for reading a char value. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getChar(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading a char value. |
+| --- | --- |
 | abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getDouble()()` Relative *get* method for reading a double value. |
 | abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getDouble(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading a double value. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getFloat()()` Relative *get* method for reading a float value. |
+| --- | --- |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getFloat(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading a float value. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getInt()()` Relative *get* method for reading an int value. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getInt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading an int value. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getLong()()` Relative *get* method for reading a long value. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getLong(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading a long value. |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getShort()()` Relative *get* method for reading a short value. |
+| --- | --- |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#getShort(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *get* method for reading a short value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#hasArray()()` Tells whether or not this buffer is backed by an accessible byte array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#hashCode()()` Returns the current hash code of this buffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#isDirect()()` Tells whether or not this byte buffer is direct. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#limit(kotlin.Int)(newLimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#mark()()` Sets this buffer's mark at its position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#mismatch(java.nio.ByteBuffer)(that: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
 | [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#order()()` Retrieves this buffer's byte order. |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#order(java.nio.ByteOrder)(bo: https://developer.android.com/reference/kotlin/java/nio/ByteOrder)` Modifies this buffer's byte order. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#position(kotlin.Int)(newPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this buffer's position. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.Byte)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Relative *put* method *(optional operation)*. |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.ByteArray)(src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Relative bulk *put* method *(optional operation)*. |
+| --- | --- |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Relative bulk *put* method *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.Int,%20kotlin.Byte)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Absolute *put* method *(optional operation)*. |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.Int,%20kotlin.ByteArray)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Absolute bulk *put* method *(optional operation)*. |
+| --- | --- |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute bulk *put* method *(optional operation)*. |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(kotlin.Int,%20java.nio.ByteBuffer,%20kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute bulk *put* method *(optional operation)*. |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#put(java.nio.ByteBuffer)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#)` Relative bulk *put* method *(optional operation)*. |
+| --- | --- |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putChar(kotlin.Char)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Relative *put* method for writing a char value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putChar(kotlin.Int,%20kotlin.Char)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Absolute *put* method for writing a char value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putDouble(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Relative *put* method for writing a double value *(optional operation)*. |
+| --- | --- |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putDouble(kotlin.Int,%20kotlin.Double)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Absolute *put* method for writing a double value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putFloat(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Relative *put* method for writing a float value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putFloat(kotlin.Int,%20kotlin.Float)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Absolute *put* method for writing a float value *(optional operation)*. |
+| --- | --- |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putInt(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Relative *put* method for writing an int value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putInt(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Absolute *put* method for writing an int value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putLong(kotlin.Int,%20kotlin.Long)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Absolute *put* method for writing a long value *(optional operation)*. |
+| --- | --- |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putLong(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Relative *put* method for writing a long value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putShort(kotlin.Int,%20kotlin.Short)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Absolute *put* method for writing a short value *(optional operation)*. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#putShort(kotlin.Short)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Relative *put* method for writing a short value *(optional operation)*. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#reset()()` Resets this buffer's position to the previously-marked position. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#rewind()()` Rewinds this buffer. |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#slice()()` Creates a new byte buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 | abstract [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#slice(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new byte buffer whose content is a shared subsequence of this buffer's content. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#toString()()` Returns a string summarizing the state of this buffer. |
 | open static [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#wrap(kotlin.ByteArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Wraps a byte array into a buffer. |
+| --- | --- |
 | open static [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#) | `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#wrap(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Wraps a byte array into a buffer. |
 
 | Inherited functions ||
@@ -698,6 +724,7 @@ except that it first checks that there are sufficient bytes in this buffer and i
 | `dst` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The array into which bytes are to be written |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the array of the first byte to be written; must be non-negative and no larger than `dst.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of bytes to be written to the given array; must be non-negative and no larger than `dst.length - offset` |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -792,6 +819,7 @@ An invocation of this method of the form `src.get(index, dst, offset, length)` h
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index in this buffer from which the first byte will be read; must be non-negative and less than `limit()` |
 | `dst` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The destination array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the array of the first byte to be written; must be non-negative and less than `dst.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to be written to the given array; must be non-negative and no larger than the smaller of `limit() - index` and `dst.length - offset` |
 
 | Return ||
@@ -1312,6 +1340,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The array from which bytes are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the array of the first byte to be read; must be non-negative and no larger than `src.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to be read from the given array; must be non-negative and no larger than `src.length - offset` |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1322,6 +1351,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the `offset` and `length` parameters do not hold |
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -1415,6 +1445,7 @@ An invocation of this method of the form `dst.put(index, src, offset, length)` h
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index in this buffer at which the first byte will be written; must be non-negative and less than `limit()` |
 | `src` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The array from which bytes are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the array of the first byte to be read; must be non-negative and less than `src.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to be read from the given array; must be non-negative and no larger than the smaller of `limit() - index` and `src.length - offset` |
 
 | Return ||
@@ -1457,6 +1488,7 @@ except that it first checks the consistency of the supplied parameters and it is
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index in this buffer at which the first byte will be written; must be non-negative and less than `limit()` |
 | `src` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#): The buffer from which bytes are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index within the source buffer of the first byte to be read; must be non-negative and less than `src.limit()` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to be read from the given buffer; must be non-negative and no larger than the smaller of `limit() - index` and `src.limit() - offset` |
 
 | Return ||
@@ -1503,6 +1535,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.lang.IllegalArgumentException` | If the source buffer is this buffer |
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer for the remaining bytes in the source buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### putChar
 
@@ -1977,6 +2010,7 @@ The new buffer will be backed by the given byte array; that is, modifications to
 | `array` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The array that will back the new buffer |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the subarray to be used; must be non-negative and no larger than `array.length`. The new buffer's position will be set to this value. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The length of the subarray to be used; must be non-negative and no larger than `array.length - offset`. The new buffer's limit will be set to `offset + length`. |
+| --- | --- |
 
 | Return ||
 |---|---|

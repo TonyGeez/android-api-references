@@ -27,6 +27,7 @@ Path file = ...
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isArchive](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes#isArchive())`()` Returns the value of the archive attribute. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHidden](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes#isHidden())`()` Returns the value of the hidden attribute. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes#isReadOnly())`()` Returns the value of the read-only attribute. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystem](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes#isSystem())`()` Returns the value of the system attribute. |
 
 | Inherited functions ||

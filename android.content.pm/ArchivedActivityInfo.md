@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ArchivedActivityInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ArchivedActivityInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ArchivedActivityInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#) |
 
 Contains fields required to show archived package in Launcher.
@@ -26,9 +28,11 @@ Contains fields required to show archived package in Launcher.
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | [getComponentName](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#getComponentName())`()` The component name of this activity. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | [getIcon](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#getIcon())`()` Icon of the activity in the app's locale. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLabel](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#getLabel())`()` The label for the activity. |
+| --- | --- |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | [getMonochromeIcon](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#getMonochromeIcon())`()` Monochrome icon, if defined, of the activity. |
 | [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#) | [setComponentName](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#setComponentName(android.content.ComponentName))`(`value:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)`)` The component name of this activity. |
 | [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#) | [setIcon](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#setIcon(android.graphics.drawable.Drawable))`(`value:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)`)` Icon of the activity in the app's locale. |
+| --- | --- |
 | [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#) | [setLabel](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#setLabel(kotlin.CharSequence))`(`value:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` The label for the activity. |
 | [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#) | [setMonochromeIcon](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo#setMonochromeIcon(android.graphics.drawable.Drawable))`(`value:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)`)` Monochrome icon, if defined, of the activity. |
 

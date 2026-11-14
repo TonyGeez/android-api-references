@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # AudioPlaybackCaptureConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioPlaybackCaptureConfiguration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioPlaybackCaptureConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#) |
 
 Configuration for capturing audio played by other apps. When capturing audio signals played by other apps (and yours), you will only capture a mix of the audio signals played by players (such as AudioTrack or MediaPlayer) which present the following characteristics:
@@ -50,6 +52,7 @@ MediaProjection mediaProjection;
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExcludeUids](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#getExcludeUids())`()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExcludeUsages](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#getExcludeUsages())`()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getMatchingUids](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#getMatchingUids())`()` <br /> |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getMatchingUsages](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#getMatchingUsages())`()` <br /> |
 | [MediaProjection](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection) | [getMediaProjection](https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration#getMediaProjection())`()` <br /> |
 

@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothGattService
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothGattService "View this page in Java") 
+| --- | --- |
 
 ```
 open class BluetoothGattService : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#) |
 
 Represents a Bluetooth GATT Service
@@ -37,18 +39,22 @@ Gatt Service contains a collection of [BluetoothGattCharacteristic](https://deve
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#addCharacteristic(android.bluetooth.BluetoothGattCharacteristic))`(`characteristic:` ` [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!`)` Add a characteristic to this service. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#addService(android.bluetooth.BluetoothGattService))`(`service:` ` [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#)!`)` Add an included service to this service. |
 | open [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)! | [getCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getCharacteristic(java.util.UUID))`(`uuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!`)` Returns a characteristic with a given UUID out of the list of characteristics offered by this service. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!\>! | [getCharacteristics](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getCharacteristics())`()` Returns a list of characteristics included in this service. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#)!\>! | [getIncludedServices](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getIncludedServices())`()` Get the list of included GATT services for this service. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInstanceId](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getInstanceId())`()` Returns the instance ID for this service |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getType())`()` Get the type of this service (primary/secondary) |
 | open [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [getUuid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#getUuid())`()` Returns the UUID of this service |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!\>! | [mCharacteristics](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#mCharacteristics:kotlin.collections.MutableList) List of characteristics included in this service. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#)!\>! | [mIncludedServices](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService#mIncludedServices:kotlin.collections.MutableList) List of included services for this service. |
+| --- | --- |
 
 ## Constants
 

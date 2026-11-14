@@ -9,6 +9,7 @@ open class PSSParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.PSSParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#) |
 
 This class specifies a parameter spec for RSASSA-PSS signature scheme, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard.
@@ -68,9 +69,11 @@ Note: the PSSParameterSpec.DEFAULT uses the following: message digest -- "SHA-1"
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#getDigestAlgorithm())`()` Returns the message digest algorithm name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMGFAlgorithm](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#getMGFAlgorithm())`()` Returns the mask generation function algorithm name. |
 | open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | [getMGFParameters](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#getMGFParameters())`()` Returns the parameters for the mask generation function. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSaltLength](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#getSaltLength())`()` Returns the salt length in bytes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrailerField](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#getTrailerField())`()` Returns the value for the trailer field. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/spec/PSSParameterSpec#toString())`()` <br /> |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -130,6 +133,7 @@ Creates a new`PSSParameterSpec`as defined in the PKCS #1 standard using the spec
 | `mdName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name of the hash function |
 | `mgfName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name of the mask generation function |
 | `mgfSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters for the mask generation function. If null is specified, null will be returned by getMGFParameters(). |
+| --- | --- |
 | `saltLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of salt |
 | `trailerField` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value of the trailer field |
 

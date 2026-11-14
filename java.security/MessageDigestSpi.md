@@ -9,9 +9,11 @@ abstract class MessageDigestSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.MessageDigestSpi](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#) |
 
 | Known Direct Subclasses [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest) | This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`MessageDigest`class, which provides the functionality of a message digest algorithm, such as MD5 or SHA. Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value.
 
@@ -34,9 +36,11 @@ Implementations are free to implement the Cloneable interface.
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineDigest())`()` Completes the hash computation by performing final operations such as padding. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineDigest(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetDigestLength](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineGetDigestLength())`()` Returns the digest length in bytes. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineReset())`()` Resets the digest for further use. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineUpdate(kotlin.Byte))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineUpdate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/MessageDigestSpi#engineUpdate(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Update the digest using the specified ByteBuffer. |
 
 ## Public constructors
@@ -105,6 +109,7 @@ Completes the hash computation by performing final operations such as padding. O
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the output buffer in which to store the digest |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset to start from in the output buffer |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of bytes within buf allotted for the digest. Both this default implementation and the SUN provider do not return partial digests. The presence of this parameter is solely for consistency in our API's. If the value of this parameter is less than the actual digest length, the method will throw a DigestException. This parameter is ignored if its value is greater than or equal to the actual digest length. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------|
@@ -177,6 +182,7 @@ Updates the digest using the specified array of bytes, starting at the specified
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the array of bytes to use for the update. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset to start from in the array of bytes. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to use, starting at`offset`. |
+| --- | --- |
 
 ### engineUpdate
 

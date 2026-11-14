@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # GetWalletCardsRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class GetWalletCardsRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.GetWalletCardsRequest](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#) |
 
 Represents a request to a [QuickAccessWalletService](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService) for [walletCards](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard). Wallet cards may represent anything that a user might carry in their wallet -- a credit card, library card, a transit pass, etc. This request contains the desired size of the card images and icons as well as the maximum number of cards that may be returned in the [GetWalletCardsResponse](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse).
@@ -34,9 +36,11 @@ The maximum number of cards that may be displayed in the wallet is provided in [
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCardHeightPx](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#getCardHeightPx())`()` The desired height of the [WalletCard.getCardImage()](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardImage()), in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCardWidthPx](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#getCardWidthPx())`()` The desired width of the [WalletCard.getCardImage()](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardImage()), in pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconSizePx](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#getIconSizePx())`()` Wallet cards may be displayed next to an icon. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCards](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#getMaxCards())`()` The maximum size of the [GetWalletCardsResponse.getWalletCards()](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#getWalletCards()). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -63,6 +67,7 @@ Creates a new GetWalletCardsRequest.
 | `cardWidthPx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the card image in pixels. |
 | `cardHeightPx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height of the card image in pixels. |
 | `iconSizePx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width and height of the optional card icon in pixels. |
+| --- | --- |
 | `maxCards` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of cards that may be provided in the response. |
 
 ## Public methods

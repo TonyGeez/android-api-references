@@ -5,17 +5,21 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TransitionPropagation
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/TransitionPropagation "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class TransitionPropagation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.transition.TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#) |
 
 | Known Direct Subclasses [VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation) |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------| | [VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation) | Base class for`TransitionPropagation`s that care about View Visibility and the center position of the View. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation), [SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation) | A propagation that varies with the distance to the epicenter of the Transition or center of the scene if no epicenter exists. | | [SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation) | A`TransitionPropagation`that propagates based on the distance to the side and, orthogonally, the distance to epicenter. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Extend`TransitionPropagation`to customize start delays for Animators created in [android.transition.Transition#createAnimator(ViewGroup, * TransitionValues, TransitionValues)](https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)). A Transition such as [android.transition.Explode](https://developer.android.com/reference/kotlin/android/transition/Explode) defaults to using [android.transition.CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation) and Views closer to the epicenter will move out of the scene later and into the scene sooner than Views farther from the epicenter, giving the appearance of inertia. With no TransitionPropagation, all Views will react simultaneously to the start of the transition.
 
@@ -30,6 +34,7 @@ Extend`TransitionPropagation`to customize start delays for Animators created in 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureValues](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#captureValues(android.transition.TransitionValues))`(`transitionValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` Captures the values in the start or end scene for the properties that this transition propagation monitors. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPropagationProperties](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#getPropagationProperties())`()` Returns the set of property names stored in the [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues) object passed into [captureValues(android.transition.TransitionValues)](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#captureValues(android.transition.TransitionValues))that this transition propagation cares about for the purposes of preventing duplicate capturing of property values. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#getStartDelay(android.view.ViewGroup,%20android.transition.Transition,%20android.transition.TransitionValues,%20android.transition.TransitionValues))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`, `transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`, `startValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`, `endValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` Called by Transition to alter the Animator start delay. |
+| --- | --- |
 
 ## Public constructors
 
@@ -93,6 +98,7 @@ Called by Transition to alter the Animator start delay. All start delays will be
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The root of the View hierarchy running the transition. |
 | `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!:The transition that created the Animator |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The values for a specific target in the start scene. |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The values for the target in the end scene. |
 
 | Return ||

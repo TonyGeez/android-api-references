@@ -7,9 +7,11 @@ open class MutableContextWrapper : ContextWrapper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context) |||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper) ||
 | | | ↳ | [android.content.MutableContextWrapper](https://developer.android.com/reference/kotlin/android/content/MutableContextWrapper#) |
+| --- | --- | --- | --- |
 
 Special version of `https://developer.android.com/reference/kotlin/android/content/ContextWrapper` that allows the base context to be modified after it is initially set.
 

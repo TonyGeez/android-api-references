@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # EapAkaInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/eap/EapAkaInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class EapAkaInfo : EapInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.eap.EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo) ||
 | | ↳ | [android.net.eap.EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo#) |
 

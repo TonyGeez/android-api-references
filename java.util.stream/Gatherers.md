@@ -9,6 +9,7 @@ class Gatherers
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.stream.Gatherers](https://developer.android.com/reference/kotlin/java/util/stream/Gatherers#) |
 
 Implementations of [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer) that provide useful intermediate operations, such as windowing functions, folding functions, transforming elements concurrently, etc.
@@ -20,6 +21,7 @@ Implementations of [Gatherer](https://developer.android.com/reference/kotlin/jav
 | static [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer)\<T, \*, R\>! | [fold](https://developer.android.com/reference/kotlin/java/util/stream/Gatherers#fold(java.util.function.Supplier,%20java.util.function.BiFunction))`(`initial:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<R>!`, `folder:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs an ordered, *reduction-like*, transformation for scenarios where no combiner-function can be implemented, or for reductions which are intrinsically order-dependent. |
 | static [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer)\<T, \*, R\>! | [scan](https://developer.android.com/reference/kotlin/java/util/stream/Gatherers#scan(java.util.function.Supplier,%20java.util.function.BiFunction))`(`initial:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<R>!`, `scanner:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs a Prefix Scan -- an incremental accumulation -- using the provided functions. |
 | static [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowFixed](https://developer.android.com/reference/kotlin/java/util/stream/Gatherers#windowFixed(kotlin.Int))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a fixed size. |
+| --- | --- |
 | static [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowSliding](https://developer.android.com/reference/kotlin/java/util/stream/Gatherers#windowSliding(kotlin.Int))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a given size, where each subsequent window includes all elements of the previous window except for the least recent, and adds the next element in the stream. |
 
 ## Public methods
@@ -42,6 +44,7 @@ Returns a Gatherer that performs an ordered, *reduction-like*, transformation fo
 | `initial` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<R\>!: the identity value for the fold operation |
 | `folder` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in R, in T, out R\>!: the folding function |
 | `<T>` | the type of elements the returned gatherer consumes |
+| --- | --- |
 | `<R>` | the type of elements the returned gatherer produces |
 
 | Return ||
@@ -76,6 +79,7 @@ Example: {@snippet lang = java: \* // will contain: \["1", "12", "123", "1234", 
 | `initial` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<R\>!: the supplier of the initial value for the scanner |
 | `scanner` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in R, in T, out R\>!: the function to apply for each element |
 | `<T>` | the type of element which this gatherer consumes |
+| --- | --- |
 | `<R>` | the type of element which this gatherer produces |
 
 | Return ||

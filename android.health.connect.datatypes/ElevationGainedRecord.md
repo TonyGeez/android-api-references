@@ -8,9 +8,11 @@ class ElevationGainedRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.ElevationGainedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ElevationGainedRecord#) |
+| --- | --- | --- | --- |
 
 Captures the elevation gained by the user since the last reading.
 
@@ -29,6 +31,7 @@ Captures the elevation gained by the user since the last reading.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ElevationGainedRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ElevationGainedRecord#getElevation()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ElevationGainedRecord#hashCode()()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -56,6 +59,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

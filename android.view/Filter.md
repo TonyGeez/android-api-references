@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Filter
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/LayoutInflater.Filter "View this page in Java") 
+| --- | --- |
 
 ```
 interface Filter
@@ -13,6 +14,7 @@ interface Filter
 | [android.view.LayoutInflater.Filter](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Filter#) |
 
 | Known Direct Subclasses [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#) |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#) | A class that describes a view hierarchy that can be displayed in another process. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Hook to allow clients of the LayoutInflater to restrict the set of Views that are allowed to be inflated.
 

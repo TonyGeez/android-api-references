@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnDateChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/DatePicker.OnDateChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDateChangedListener
@@ -13,6 +14,7 @@ interface OnDateChangedListener
 | [android.widget.DatePicker.OnDateChangedListener](https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener#) |
 
 | Known Direct Subclasses [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#) |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------| | [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#) | A simple dialog containing an [android.widget.DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The callback used to indicate the user changed the date.
 
@@ -44,4 +46,5 @@ Called upon a date change.
 | `view` | [DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker)!:The view associated with this listener. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The year that was set. |
 | `monthOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The month that was set (0-11) for compatibility with [java.util.Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#). |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month that was set. |

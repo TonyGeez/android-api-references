@@ -11,6 +11,7 @@ interface ScheduledExecutorService : ExecutorService
 | [java.util.concurrent.ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService#) |
 
 | Known Direct Subclasses [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) |--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) | A [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) that can additionally schedule commands to run after a given delay, or to execute periodically. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) that can schedule commands to run after a given delay, or to execute periodically.
 
@@ -49,6 +50,7 @@ Here is a class with a method that sets up a ScheduledExecutorService to beep ev
 | abstract [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture)\<\*\>! | [schedule](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService#schedule(java.lang.Runnable,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`command:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Submits a one-shot task that becomes enabled after the given delay. |
 | abstract [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture)\<V\>! | [schedule](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService#schedule(java.util.concurrent.Callable,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`callable:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<V>!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Submits a value-returning one-shot task that becomes enabled after the given delay. |
 | abstract [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture)\<\*\>! | [scheduleAtFixedRate](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService#scheduleAtFixedRate(java.lang.Runnable,%20kotlin.Long,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`command:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `initialDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Submits a periodic action that becomes enabled first after the given initial delay, and subsequently with the given period; that is, executions will commence after`initialDelay`, then`initialDelay + period`, then`initialDelay + 2 * period`, and so on. |
+| --- | --- |
 | abstract [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture)\<\*\>! | [scheduleWithFixedDelay](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService#scheduleWithFixedDelay(java.lang.Runnable,%20kotlin.Long,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`command:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `initialDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Submits a periodic action that becomes enabled first after the given initial delay, and subsequently with the given delay between the termination of one execution and the commencement of the next. |
 
 | Inherited functions ||
@@ -77,6 +79,7 @@ Submits a one-shot task that becomes enabled after the given delay.
 | `command` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to execute |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time from now to delay execution |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the delay parameter |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -106,6 +109,7 @@ Submits a value-returning one-shot task that becomes enabled after the given del
 | `callable` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<V\>!:the function to execute |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time from now to delay execution |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the delay parameter |
+| --- | --- |
 | `<V>` | the type of the callable's result |
 
 | Return ||
@@ -147,6 +151,7 @@ If any execution of this task takes longer than its period, then subsequent exec
 | `command` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to execute |
 | `initialDelay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time to delay first execution |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the period between successive executions |
+| --- | --- |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the initialDelay and period parameters |
 
 | Return ||
@@ -158,6 +163,7 @@ If any execution of this task takes longer than its period, then subsequent exec
 | `java.util.concurrent.RejectedExecutionException` | if the task cannot be scheduled for execution |
 | `java.lang.NullPointerException` | if command or unit is null |
 | `java.lang.IllegalArgumentException` | if period less than or equal to zero |
+| --- | --- |
 
 ### scheduleWithFixedDelay
 
@@ -187,6 +193,7 @@ Subsequent executions are suppressed. Subsequent calls to [isDone()](https://dev
 | `command` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to execute |
 | `initialDelay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time to delay first execution |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the delay between the termination of one execution and the commencement of the next |
+| --- | --- |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the initialDelay and delay parameters |
 
 | Return ||
@@ -198,3 +205,4 @@ Subsequent executions are suppressed. Subsequent calls to [isDone()](https://dev
 | `java.util.concurrent.RejectedExecutionException` | if the task cannot be scheduled for execution |
 | `java.lang.NullPointerException` | if command or unit is null |
 | `java.lang.IllegalArgumentException` | if delay less than or equal to zero |
+| --- | --- |

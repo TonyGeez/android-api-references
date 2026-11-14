@@ -6,12 +6,14 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 # EmbeddedPhotoPickerProviderFactory
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/photopicker/EmbeddedPhotoPickerProviderFactory "View this page in Java") 
+| --- | --- |
 
 ```
 open class EmbeddedPhotoPickerProviderFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.photopicker.EmbeddedPhotoPickerProviderFactory](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerProviderFactory#) |
 
 Interface to get instance of [EmbeddedPhotoPickerProvider](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerProvider) class to request a new [EmbeddedPhotoPickerSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession).

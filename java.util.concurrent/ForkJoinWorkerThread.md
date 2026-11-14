@@ -9,6 +9,7 @@ open class ForkJoinWorkerThread : Thread
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#) ||
 | | ↳ | [java.util.concurrent.ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#) |
 
@@ -30,6 +31,7 @@ A thread managed by a [ForkJoinPool](https://developer.android.com/reference/kot
 | open [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool)! | [getPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#getPool())`()` Returns the pool hosting this thread. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPoolIndex](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#getPoolIndex())`()` Returns the unique index number of this thread in its pool. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueuedTaskCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#getQueuedTaskCount())`()` {@return a (non-negative) estimate of the number of tasks in the \* thread's queue} |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#run())`()` This method is required to be public, but should never be called explicitly. |
 
 | Protected methods ||
@@ -61,6 +63,7 @@ Creates a ForkJoinWorkerThread operating in the given thread group and pool, and
 | `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup.html#)!:if non-null, the thread group for this thread. Otherwise, the thread group is chosen by the security manager if present, else set to the current thread's thread group. |
 | `pool` | [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool)!:the pool this thread works in |
 | `preserveThreadLocals` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, always preserve the values of ThreadLocal variables across tasks; otherwise they may be cleared. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|-----------------|

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ScanFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/ScanFilter "View this page in Java") 
+| --- | --- |
 
 ```
 class ScanFilter : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.ScanFilter](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#) |
 
 Criteria for filtering result from Bluetooth LE scans. A [ScanFilter](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#) allows clients to restrict scan results to only those that are of interest to them.
@@ -38,24 +40,31 @@ Current filtering on the following fields are supported:
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAdvertisingData](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getAdvertisingData())`()` Returns the advertising data of this filter. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAdvertisingDataMask](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getAdvertisingDataMask())`()` Returns the advertising data mask of this filter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvertisingDataType](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getAdvertisingDataType())`()` Returns the advertising data type of this filter. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDeviceAddress](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getDeviceAddress())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDeviceName](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getDeviceName())`()` Returns the filter set the device name field of Bluetooth advertisement data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getManufacturerData](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getManufacturerData())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getManufacturerDataMask](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getManufacturerDataMask())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getManufacturerId](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getManufacturerId())`()` Returns the manufacturer id. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getServiceData](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceData())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getServiceDataMask](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceDataMask())`()` <br /> |
+| --- | --- |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getServiceDataUuid](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceDataUuid())`()` <br /> |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getServiceSolicitationUuid](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceSolicitationUuid())`()` Returns the filter set on the service Solicitation uuid. |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getServiceSolicitationUuidMask](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceSolicitationUuidMask())`()` Returns the filter set on the service Solicitation uuid mask. |
+| --- | --- |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getServiceUuid](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceUuid())`()` Returns the filter set on the service uuid. |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getServiceUuidMask](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#getServiceUuidMask())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#matches(android.bluetooth.le.ScanResult))`(`scanResult:` ` [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult)!`)` Check if the scan filter matches a`scanResult`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

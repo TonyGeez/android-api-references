@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # AdvertiseCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertiseCallback "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AdvertiseCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.AdvertiseCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#) |
 
 Bluetooth LE advertising callbacks, used to deliver advertising operation status.
@@ -22,6 +24,7 @@ Bluetooth LE advertising callbacks, used to deliver advertising operation status
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_ALREADY_STARTED](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_ALREADY_STARTED:kotlin.Int) Failed to start advertising as the advertising is already started. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_DATA_TOO_LARGE](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_DATA_TOO_LARGE:kotlin.Int) Failed to start advertising as the advertise data to be broadcasted is larger than 31 bytes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_FEATURE_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_FEATURE_UNSUPPORTED:kotlin.Int) This feature is not supported on this platform. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_INTERNAL_ERROR:kotlin.Int) Operation failed due to an internal error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_TOO_MANY_ADVERTISERS](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_TOO_MANY_ADVERTISERS:kotlin.Int) Failed to start advertising because no advertising instance is available. |
 

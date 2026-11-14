@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # InsertModeGesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture "View this page in Java") 
+| --- | --- |
 
 ```
 class InsertModeGesture : HandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
 | | ↳ | [android.view.inputmethod.InsertModeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#) |
 
@@ -32,9 +34,11 @@ A sub-class of [HandwritingGesture](https://developer.android.com/reference/kotl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#) | [getCancellationSignal](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#getCancellationSignal())`()` Returns the [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#) associated with finishing this gesture. |
+| --- | --- |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | [getInsertionPoint](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#getInsertionPoint())`()` Returns the insertion point [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)(in screen coordinates) where space will be created for additional text to be inserted. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertModeGesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

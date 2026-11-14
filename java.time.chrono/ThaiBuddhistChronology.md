@@ -7,6 +7,7 @@ class ThaiBuddhistChronology : AbstractChronology, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.time.chrono.AbstractChronology](https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology) ||
 | | ↳ | [java.time.chrono.ThaiBuddhistChronology](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#) |
 
@@ -31,24 +32,31 @@ The fields are defined as follows:
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Thai Buddhist calendar system from the proleptic-year, month-of-year and day-of-month fields. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#date(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Thai Buddhist calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#date(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date in this chronology from another temporal object. |
+| --- | --- |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateEpochDay(kotlin.Long)(epochDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains a local date in the Thai Buddhist calendar system from the epoch-day. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateNow()()` Obtains the current local date in this chronology from the system clock in the default time-zone. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateNow(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current local date in this chronology from the specified clock. |
+| --- | --- |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateNow(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current local date in this chronology from the system clock in the specified time-zone. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateYearDay(kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Thai Buddhist calendar system from the proleptic-year and day-of-year fields. |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#dateYearDay(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Thai Buddhist calendar system from the era, year-of-era and day-of-year fields. |
+| --- | --- |
 | [ThaiBuddhistEra](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistEra)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#eraOf(kotlin.Int)(eraValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates the chronology era object from the numeric value. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#eras()()` Gets the list of eras for the chronology. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#getCalendarType()()` Gets the calendar type of the underlying calendar system - 'buddhist'. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#getId()()` Gets the ID of the chronology - 'ThaiBuddhist'. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#isIsoBased()()` `ThaiBuddhistChronology` is an ISO based chronology, which supports fields in `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#`, such as `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#DAY_OF_QUARTER:java.time.temporal.TemporalField` and `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR:java.time.temporal.TemporalField`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#isLeapYear(kotlin.Long)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the specified year is a leap year. |
+| --- | --- |
 | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#localDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date-time in this chronology from another temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#prolepticYear(java.time.chrono.Era,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calculates the proleptic-year given the era and year-of-era. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#range(java.time.temporal.ChronoField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#!)` Gets the range of valid values for the specified field. |
+| --- | --- |
 | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#zonedDateTime(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from an `Instant`. |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology#zonedDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from another temporal object. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#compareTo(java.time.chrono.Chronology)(other: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology!)`
 
@@ -321,6 +329,7 @@ Obtains a local date in Thai Buddhist calendar system from the proleptic-year, m
 | `prolepticYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the proleptic-year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -350,6 +359,7 @@ Obtains a local date in Thai Buddhist calendar system from the era, year-of-era,
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Thai Buddhist era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
 
 | Return ||
@@ -528,6 +538,7 @@ Obtains a local date in Thai Buddhist calendar system from the era, year-of-era 
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Thai Buddhist era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `dayOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-year |
+| --- | --- |
 
 | Return ||
 |---|---|

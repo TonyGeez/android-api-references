@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # EGLConfigChooser
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.EGLConfigChooser "View this page in Java") 
+| --- | --- |
 
 ```
 interface EGLConfigChooser

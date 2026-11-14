@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # WifiNetworkSpecifier
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiNetworkSpecifier : NetworkSpecifier, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#) ||
 | | ↳ | [android.net.wifi.WifiNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#) |
 
@@ -35,9 +37,11 @@ This specifier can also be used to listen for connected Wi-Fi networks on a part
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBand](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#getBand())`()` The band for this Wi-Fi network specifier. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getPreferredChannelFrequenciesMhz](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#getPreferredChannelFrequenciesMhz())`()` The preferred channels fot this network specifier. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

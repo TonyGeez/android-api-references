@@ -6,15 +6,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # EditTextPreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/EditTextPreference "View this page in Java") 
+| --- | --- |
 
 ```
 open class EditTextPreference : DialogPreference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference) ||
 | | | ↳ | [android.preference.EditTextPreference](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -51,6 +54,7 @@ See [EditText Attributes](https://developer.android.com/reference/kotlin/android
 | open [EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html#)! | [getEditText](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#getEditText())`()` Returns the [EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html#) widget that will be shown in the dialog. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#getText())`()` Gets the text from the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#setText(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Saves the text to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldDisableDependents](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#shouldDisableDependents())`()` <br /> |
 
 | Protected methods ||
@@ -58,9 +62,11 @@ See [EditText Attributes](https://developer.android.com/reference/kotlin/android
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAddEditTextToDialogView](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onAddEditTextToDialogView(android.view.View,%20android.widget.EditText))`(`dialogView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `editText:` ` [EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html#)!`)` Adds the EditText widget of this preference to the dialog's view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBindDialogView](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onBindDialogView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDialogClosed](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onDialogClosed(kotlin.Boolean))`(`positiveResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [onGetDefaultValue](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int))`(`a:` ` [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onRestoreInstanceState(android.os.Parcelable))`(`state:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!`)` <br /> |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onSaveInstanceState())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInitialValue](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any))`(`restoreValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showDialog](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference#showDialog(android.os.Bundle))`(`state:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 

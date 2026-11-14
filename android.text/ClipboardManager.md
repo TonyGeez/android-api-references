@@ -6,15 +6,18 @@ Deprecated in [API level 11](https://developer.android.com/guide/topics/manifest
 # ClipboardManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/ClipboardManager "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ClipboardManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.ClipboardManager](https://developer.android.com/reference/kotlin/android/text/ClipboardManager#) |
 
 | Known Direct Subclasses [ClipboardManager](https://developer.android.com/reference/kotlin/android/content/ClipboardManager.html#) |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [ClipboardManager](https://developer.android.com/reference/kotlin/android/content/ClipboardManager.html#) | Interface to the clipboard service, for placing and retrieving text in the global clipboard. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 11.**
 |
@@ -31,6 +34,7 @@ abstract class ClipboardManager
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/text/ClipboardManager#getText())`()` Returns the text on the clipboard. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasText](https://developer.android.com/reference/kotlin/android/text/ClipboardManager#hasText())`()` Returns true if the clipboard contains text; false otherwise. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/text/ClipboardManager#setText(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the contents of the clipboard to the specified text. |
+| --- | --- |
 
 ## Public constructors
 

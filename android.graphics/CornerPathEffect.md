@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CornerPathEffect
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/CornerPathEffect "View this page in Java") 
+| --- | --- |
 
 ```
 open class CornerPathEffect : PathEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) ||
 | | ↳ | [android.graphics.CornerPathEffect](https://developer.android.com/reference/kotlin/android/graphics/CornerPathEffect#) |
 

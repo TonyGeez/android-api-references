@@ -21,6 +21,7 @@ The POSIX attributes of a file are retrieved using a [PosixFileAttributeView](ht
 | abstract [GroupPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/GroupPrincipal)! | [group](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes#group())`()` Returns the group owner of the file. |
 | abstract [UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal)! | [owner](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes#owner())`()` Returns the owner of the file. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFilePermission)!\>! | [permissions](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributes#permissions())`()` Returns the permissions of the file. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

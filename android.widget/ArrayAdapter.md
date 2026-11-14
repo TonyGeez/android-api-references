@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ArrayAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ArrayAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 open class ArrayAdapter<T : Any!> : BaseAdapter, Filterable, ThemedSpinnerAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.widget.BaseAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseAdapter) ||
 | | ↳ | [android.widget.ArrayAdapter](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#) |
 
@@ -40,24 +42,31 @@ For an example of using an array adapter with a Spinner, see the [Spinners](http
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#add(android.widget.ArrayAdapter.T))`(`object:` `T?`)` Adds the specified object at the end of the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAll](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#addAll(kotlin.collections.MutableCollection))`(`collection:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Adds the specified Collection at the end of the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAll](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#addAll(android.widget.ArrayAdapter.T))`(`vararg` `items:` `T`)` Adds the specified items at the end of the array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#clear())`()` Remove all elements from the list. |
 | openstatic [ArrayAdapter](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [createFromResource](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#createFromResource(android.content.Context,%20kotlin.Int,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `textArrayResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `textViewResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new ArrayAdapter from external resources. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | [getAutofillOptions](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getAutofillOptions())`()` Gets a string representation of the adapter data that can help [android.service.autofill.AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#) autofill the view backed by the adapter. |
+| --- | --- |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) | [getContext](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getContext())`()` Returns the context associated with this array adapter. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getCount())`()` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getDropDownView](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getDropDownView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)`)` Gets a [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) that displays in the drop down popup the data at the specified position in the data set. |
+| --- | --- |
 | open [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)? | [getDropDownViewTheme](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getDropDownViewTheme())`()` Returns the value previously set by a call to [setDropDownViewTheme(android.content.res.Resources.Theme)](https://developer.android.com/reference/kotlin/android/widget/ThemedSpinnerAdapter#setDropDownViewTheme(android.content.res.Resources.Theme)). |
 | open [Filter](https://developer.android.com/reference/kotlin/android/widget/Filter) | [getFilter](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getFilter())`()` Returns a filter that can be used to constrain data with a filtering pattern. |
 | openT? | [getItem](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getItem(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the data item associated with the specified position in the data set. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getItemId(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getPosition(android.widget.ArrayAdapter.T))`(`item:` `T?`)` Returns the position of the specified item in the array. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | [getView](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#getView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)`)` Get a View that displays the data at the specified position in the data set. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [insert](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#insert(android.widget.ArrayAdapter.T,%20kotlin.Int))`(`object:` `T?`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inserts the specified object at the specified index in the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDataSetChanged](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#notifyDataSetChanged())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#remove(android.widget.ArrayAdapter.T))`(`object:` `T?`)` Removes the specified object from the array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownViewResource](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#setDropDownViewResource(kotlin.Int))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource to create the drop down views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownViewTheme](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#setDropDownViewTheme(android.content.res.Resources.Theme))`(`theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Sets the [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#) against which drop-down views are inflated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotifyOnChange](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#setNotifyOnChange(kotlin.Boolean))`(`notifyOnChange:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Control whether methods that change the list ([add](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#add(android.widget.ArrayAdapter.T)), [addAll(java.util.Collection)](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#addAll(kotlin.collections.MutableCollection)),[addAll(java.lang.Object[])](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#addAll(android.widget.ArrayAdapter.T)), [insert](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#insert(android.widget.ArrayAdapter.T,%20kotlin.Int)), [remove](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#remove(android.widget.ArrayAdapter.T)), [clear](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#clear()), [sort(java.util.Comparator)](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#sort(java.util.Comparator))) automatically call [notifyDataSetChanged](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#notifyDataSetChanged()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter#sort(java.util.Comparator))`(`comparator:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)<in` `T>`)` Sorts the content of this adapter using the specified comparator. |
 
 | Inherited functions ||
@@ -101,6 +110,7 @@ Constructor
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The current context. This value cannot be`null`. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID for a layout file containing a layout to use when instantiating views. |
 | `textViewResourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id of the TextView within the layout resource to be populated |
+| --- | --- |
 
 ### ArrayAdapter
 
@@ -121,6 +131,7 @@ Constructor
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The current context. This value cannot be`null`. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID for a layout file containing a layout to use when instantiating views. |
 | `textViewResourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id of the TextView within the layout resource to be populated |
+| --- | --- |
 | `objects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>:The objects to represent in the ListView. This value cannot be`null`. |
 
 ### ArrayAdapter
@@ -142,6 +153,7 @@ Constructor. This constructor will result in the underlying data collection bein
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The current context. This value cannot be`null`. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID for a layout file containing a layout to use when instantiating views. |
 | `textViewResourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id of the TextView within the layout resource to be populated |
+| --- | --- |
 | `objects` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>:The objects to represent in the ListView. This value cannot be`null`. |
 
 ### ArrayAdapter
@@ -162,6 +174,7 @@ Constructor
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The current context. This value cannot be`null`. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID for a layout file containing a TextView to use when instantiating views. |
 | `objects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>:The objects to represent in the ListView. This value cannot be`null`. |
+| --- | --- |
 
 ### ArrayAdapter
 
@@ -181,6 +194,7 @@ Constructor. This constructor will result in the underlying data collection bein
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The current context. This value cannot be`null`. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID for a layout file containing a TextView to use when instantiating views. |
 | `objects` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>:The objects to represent in the ListView. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 
@@ -221,6 +235,7 @@ Adds the specified Collection at the end of the array.
 | `java.lang.UnsupportedOperationException` | if the addAll operation is not supported by this list |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements, or if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 
 ### addAll
@@ -274,6 +289,7 @@ Creates a new ArrayAdapter from external resources. The content of the array is 
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The application's environment. This value cannot be`null`. |
 | `textArrayResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The identifier of the array to use as the data source. |
 | `textViewResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The identifier of the layout used to create views. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
@@ -340,6 +356,7 @@ Gets a [android.view.View](https://developer.android.com/reference/kotlin/androi
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the item whose view we want. |
 | `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?:This value may be`null`. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#):This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -446,6 +463,7 @@ Get a View that displays the data at the specified position in the data set. You
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the item within the adapter's data set of the item whose view we want. |
 | `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?:This value may be`null`. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#):This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------|

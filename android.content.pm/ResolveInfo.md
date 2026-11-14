@@ -7,6 +7,7 @@ open class ResolveInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#) |
 
 Information that is returned from resolving an intent against an IntentFilter. This partially corresponds to information collected from the AndroidManifest.xml's \<intent\> tags.
@@ -39,9 +40,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#getIconResource()()` Return the icon resource identifier to use for this match. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#isCrossProfileIntentForwarderActivity()()` Returns whether this resolution represents the intent forwarder activity. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this resolution. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Retrieve the current textual label associated with this resolution. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -50,18 +53,23 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#activityInfo:android.content.pm.ActivityInfo` The activity or broadcast receiver that corresponds to this resolution match, if this resolution is for an activity or broadcast receiver. |
 | [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#filter:android.content.IntentFilter` The IntentFilter that was matched for this ResolveInfo. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#icon:kotlin.Int` A drawable resource identifier (in the package's resources) of this match's icon. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#isDefault:kotlin.Boolean` This filter has specified the Intent. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#isInstantAppAvailable:kotlin.Boolean` Whether or not an instant app is available for the resolved intent. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#labelRes:kotlin.Int` A string resource identifier (in the package's resources) of this match's label. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#match:kotlin.Int` The system's evaluation of how well the activity matches the IntentFilter. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#nonLocalizedLabel:kotlin.CharSequence` The actual string retrieve from labelRes or null if none was provided. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#preferredOrder:kotlin.Int` Order of result according to the user's preference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#priority:kotlin.Int` The declared priority of this match. |
 | [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#providerInfo:android.content.pm.ProviderInfo` The provider that corresponds to this resolution match, if this resolution is for a provider. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#resolvePackageName:kotlin.String` Optional -- if non-null, the `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#labelRes:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#icon:kotlin.Int` resources will be loaded from this package, rather than the one containing the resolved component. |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#serviceInfo:android.content.pm.ServiceInfo` The service that corresponds to this resolution match, if this resolution is for a service. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo#specificIndex:kotlin.Int` Only set when returned by android. |
+| --- | --- |
 
 ## Public constructors
 

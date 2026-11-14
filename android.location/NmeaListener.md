@@ -6,6 +6,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # NmeaListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/GpsStatus.NmeaListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface NmeaListener

@@ -11,6 +11,7 @@ interface CommonDataSource
 | [javax.sql.CommonDataSource](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#) |
 
 | Known Direct Subclasses [ConnectionPoolDataSource](https://developer.android.com/reference/kotlin/javax/sql/ConnectionPoolDataSource), [DataSource](https://developer.android.com/reference/kotlin/javax/sql/DataSource) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [ConnectionPoolDataSource](https://developer.android.com/reference/kotlin/javax/sql/ConnectionPoolDataSource) | A factory for`PooledConnection`objects. | | [DataSource](https://developer.android.com/reference/kotlin/javax/sql/DataSource) | A factory for connections to the physical data source that this`DataSource`object represents. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface that defines the methods which are common between`DataSource`,`XADataSource`and`ConnectionPoolDataSource`.
 
@@ -23,6 +24,7 @@ Interface that defines the methods which are common between`DataSource`,`XADataS
 | abstract [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)! | [getLogWriter](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#getLogWriter())`()` Retrieves the log writer for this`DataSource`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoginTimeout](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#getLoginTimeout())`()` Gets the maximum time in seconds that this data source can wait while attempting to connect to a database. |
 | abstract [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger.html#)! | [getParentLogger](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#getParentLogger())`()` Return the parent Logger of all the Loggers used by this data source. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogWriter](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#setLogWriter(java.io.PrintWriter))`(`out:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`)` Sets the log writer for this`DataSource`object to the given`java.io.PrintWriter`object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoginTimeout](https://developer.android.com/reference/kotlin/javax/sql/CommonDataSource#setLoginTimeout(kotlin.Int))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum time in seconds that this data source will wait while attempting to connect to a database. |
 

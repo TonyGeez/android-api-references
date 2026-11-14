@@ -5,15 +5,18 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ImsException
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/ImsException "View this page in Java") 
+| --- | --- |
 
 ```
 class ImsException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.telephony.ims.ImsException](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsException#) |
+| --- | --- | --- | --- |
 
 This class defines an IMS-related exception that has been thrown while interacting with a device or carrier provided ImsService implementation.
 
@@ -24,6 +27,7 @@ This class defines an IMS-related exception that has been thrown while interacti
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_ERROR_INVALID_SUBSCRIPTION](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsException#CODE_ERROR_INVALID_SUBSCRIPTION:kotlin.Int) The subscription ID associated with this operation is invalid or not active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_ERROR_SERVICE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsException#CODE_ERROR_SERVICE_UNAVAILABLE:kotlin.Int) The operation has failed because there is no remote process available to service it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsException#CODE_ERROR_UNSPECIFIED:kotlin.Int) The operation has failed due to an unknown or unspecified error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_ERROR_UNSUPPORTED_OPERATION](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsException#CODE_ERROR_UNSUPPORTED_OPERATION:kotlin.Int) This device or carrier configuration does not support this feature for this subscription. |
 
 | Public methods ||

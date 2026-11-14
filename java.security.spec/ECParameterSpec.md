@@ -9,6 +9,7 @@ open class ECParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec#) |
 
 This immutable class specifies the set of domain parameters used with elliptic curve cryptography (ECC).
@@ -24,6 +25,7 @@ This immutable class specifies the set of domain parameters used with elliptic c
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCofactor](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec#getCofactor())`()` Returns the cofactor. |
 | open [EllipticCurve](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve)! | [getCurve](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec#getCurve())`()` Returns the elliptic curve that this parameter defines. |
 | open [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)! | [getGenerator](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec#getGenerator())`()` Returns the generator which is also known as the base point. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getOrder](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec#getOrder())`()` Returns the order of the generator. |
 
 ## Public constructors
@@ -47,6 +49,7 @@ Creates elliptic curve domain parameters based on the specified values.
 | `curve` | [EllipticCurve](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve)!:the elliptic curve which this parameter defines. |
 | `g` | [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)!:the generator which is also known as the base point. |
 | `n` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the order of the generator`g`. |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the cofactor. |
 
 | Exceptions ||

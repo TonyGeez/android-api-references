@@ -9,6 +9,7 @@ class ApplicationRuntime
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [dalvik.system.ApplicationRuntime](https://developer.android.com/reference/kotlin/dalvik/system/ApplicationRuntime#) |
 
 Provides APIs to retrieve the information about the application loaded in the current runtime.

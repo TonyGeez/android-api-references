@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDeviceList
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDeviceList "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pDeviceList : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pDeviceList](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#) |
 
 A class representing a Wi-Fi P2p device list. Note that the operations are not thread safe. {@see WifiP2pManager}
@@ -31,6 +33,7 @@ A class representing a Wi-Fi P2p device list. Note that the operations are not t
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#describeContents())`()` Implement the Parcelable interface |
 | open [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)! | [get](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#get(kotlin.String))`(`deviceAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Fetch a device from the list |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!\>! | [getDeviceList](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#getDeviceList())`()` Get the list of devices |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDeviceList#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 

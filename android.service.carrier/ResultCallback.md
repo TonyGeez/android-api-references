@@ -5,6 +5,7 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 # ResultCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.ResultCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ResultCallback<T : Any!>

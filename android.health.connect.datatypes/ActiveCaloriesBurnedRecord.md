@@ -8,9 +8,11 @@ class ActiveCaloriesBurnedRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.ActiveCaloriesBurnedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#) |
+| --- | --- | --- | --- |
 
 Captures the estimated active energy burned by the user (in kilocalories), excluding basal metabolic rate (BMR).
 
@@ -29,6 +31,7 @@ Captures the estimated active energy burned by the user (in kilocalories), exclu
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Energy](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#getEnergy()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#hashCode()()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -56,6 +59,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

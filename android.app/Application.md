@@ -7,9 +7,11 @@ open class Application : ContextWrapper, ComponentCallbacks2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
 | | | ↳ | [android.app.Application](https://developer.android.com/reference/kotlin/android/app/Application#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication.html#) [MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication.html#) A mock `https://developer.android.com/reference/kotlin/android/app/Application#` class.
 
@@ -984,15 +986,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Application#getProcessName()()` Returns the name of the current process. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#onCreate()()` Called when the application is starting, before any activity, service, or receiver objects (excluding content providers) have been created. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#onLowMemory()()` This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#onTerminate()()` This method is for use in emulated process environments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#onTrimMemory(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#registerActivityLifecycleCallbacks(android.app.Application.ActivityLifecycleCallbacks)(callback: https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#registerComponentCallbacks(android.content.ComponentCallbacks)(callback: https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#!)` Add a new `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#registerOnProvideAssistDataListener(android.app.Application.OnProvideAssistDataListener)(callback: https://developer.android.com/reference/kotlin/android/app/Application.OnProvideAssistDataListener!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#unregisterActivityLifecycleCallbacks(android.app.Application.ActivityLifecycleCallbacks)(callback: https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#unregisterComponentCallbacks(android.content.ComponentCallbacks)(callback: https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#!)` Remove a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` object that was previously registered with `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#registerComponentCallbacks(android.content.ComponentCallbacks)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Application#unregisterOnProvideAssistDataListener(android.app.Application.OnProvideAssistDataListener)(callback: https://developer.android.com/reference/kotlin/android/app/Application.OnProvideAssistDataListener!)` <br /> |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#attachBaseContext(android.content.Context)(base: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 

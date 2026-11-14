@@ -9,6 +9,7 @@ class Pattern : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.regex.Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#) |
 
 A compiled representation of a regular expression.
@@ -37,124 +38,164 @@ Instances of this class are immutable and are safe for use by multiple concurren
 [d](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNIX_LINES) [m](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#MULTILINE) [s](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#DOTALL) [u](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CASE) [x](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#COMMENTS) [U](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CHARACTER_CLASS)
 
 | Construct | Matches |
+| --- | --- |
 | Characters ||
 | *x* | The character*x* |
 | `\\` | The backslash character |
+| --- | --- |
 | `\0`*n* | The character with octal value`0`*n* (0`<=`*n* `<=`7) |
 | `\0`*nn* | The character with octal value`0`*nn* (0`<=`*n* `<=`7) |
 | `\0`*mnn* | The character with octal value`0`*mnn* (0`<=`*m* `<=`3, 0`<=`*n* `<=`7) |
+| --- | --- |
 | `\x`*hh* | The character with hexadecimal value`0x`*hh* |
 | `\u`*hhhh* | The character with hexadecimal value`0x`*hhhh* |
 | `\x`*{h...h}* | The character with hexadecimal value`0x`*h...h* ([Character.MIN_CODE_POINT](https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_CODE_POINT:kotlin.Int)\<=`0x`*h...h* \<= [Character.MAX_CODE_POINT](https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_CODE_POINT:kotlin.Int)) |
+| --- | --- |
 | `\N{`*name* `}` | The character with Unicode character name*'name'* |
 | `\t` | The tab character (`'\u0009'`) |
 | `\n` | The newline (line feed) character (`'\u000A'`) |
+| --- | --- |
 | `\r` | The carriage-return character (`'\u000D'`) |
 | `\f` | The form-feed character (`'\u000C'`) |
 | `\a` | The alert (bell) character (`'\u0007'`) |
+| --- | --- |
 | `\e` | The escape character (`'\u001B'`) |
 | `\c`*x* | The control character corresponding to*x* |
 | Character classes ||
+| --- | --- |
 | `[abc]` | `a`,`b`, or`c`(simple class) |
 | `[^abc]` | Any character except`a`,`b`, or`c`(negation) |
 | `[a-zA-Z]` | `a`through`z`or`A`through`Z`, inclusive (range) |
+| --- | --- |
 | `[a-d[m-p]]` | `a`through`d`, or`m`through`p`:`[a-dm-p]`(union) |
 | `[a-z&&[def]]` | `d`,`e`, or`f`(intersection) |
 | `[a-z&&[^bc]]` | `a`through`z`, except for`b`and`c`:`[ad-z]`(subtraction) |
+| --- | --- |
 | `[a-z&&[^m-p]]` | `a`through`z`, and not`m`through`p`:`[a-lq-z]`(subtraction) |
 | Predefined character classes ||
 | `.` | Any character (may or may not match [line terminators](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#lt)) |
+| --- | --- |
 | `\d` | A digit:`\p{IsDigit}` |
 | `\D` | A non-digit:`[^\d]` |
 | `\h` | A horizontal whitespace character:`[ \t\xA0\u1680\u180e\u2000-\u200a\u202f\u205f\u3000]` |
+| --- | --- |
 | `\H` | A non-horizontal whitespace character:`[^\h]` |
 | `\s` | A whitespace character:`\p{IsWhite_Space}` |
 | `\S` | A non-whitespace character:`[^\s]` |
+| --- | --- |
 | `\v` | A vertical whitespace character:`[\n\x0B\f\r\x85\u2028\u2029]` |
 | `\V` | A non-vertical whitespace character:`[^\v]` |
 | `\w` | A word character:`[\p{alpha}\p{gc=Mark}\p{digit}\p{gc=Connector_Punctuation}\p{Join_Control}]` |
+| --- | --- |
 | `\W` | A non-word character:`[^\w]` |
 | **POSIX character classes (Unicode-aware)** ||
 | `\p{Lower}` | A lower-case alphabetic character:`\p{IsLowercase}` |
+| --- | --- |
 | `\p{Upper}` | An upper-case alphabetic character:`\p{IsUppercase}` |
 | `\p{ASCII}` | All ASCII:`[\x00-\x7F]` |
 | `\p{Alpha}` | An alphabetic character:`[\p{IsAlphabetic}]` |
+| --- | --- |
 | `\p{IsDigit}` | A decimal digit:`\p{gc=Decimal_Number}` |
 | `\p{Alnum}` | An alphanumeric character:`[\p{Alpha}\p{Digit}]` |
 | `\p{Punct}` | Punctuation:`\p{IsPunctuation}` |
+| --- | --- |
 | `\p{Graph}` | A visible character:`[^p{space}\p{gc=Control}\p{gc=Surrogate}\p{gc=Unassigned}]` |
 | `\p{Print}` | A printable character:`[\p{Graph}\p{Blank}&&[^\p{Cntrl}]]` |
 | `\p{Blank}` | A space or a tab:`[\p{gc=Space_Separator}\N{CHARACTER TABULATION}]` |
+| --- | --- |
 | `\p{Cntrl}` | A control character:`\p{gc=Control}` |
 | `\p{XDigit}` | A hexadecimal digit:`[\p{gc=Decimal_Number}\p{IsHex_Digit}]` |
 | `\p{Space}` | A whitespace character:`\p{IsWhite_Space}` |
+| --- | --- |
 | POSIX-Compatible expression | See [Unicode documentation](http://www.unicode.org/reports/tr18/#Compatibility_Properties) |
 | java.lang.Character classes (simple [java character type](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#jcc)) ||
 | `\p{javaLowerCase}` | Equivalent to java.lang.Character.isLowerCase() |
+| --- | --- |
 | `\p{javaUpperCase}` | Equivalent to java.lang.Character.isUpperCase() |
 | `\p{javaWhitespace}` | Equivalent to java.lang.Character.isWhitespace() |
 | `\p{javaMirrored}` | Equivalent to java.lang.Character.isMirrored() |
+| --- | --- |
 | Classes for Unicode scripts, blocks, categories and binary properties ||
 | `\p{IsLatin}` | A Latin script character ([script](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#usc)) |
 | `\p{InGreek}` | A character in the Greek block ([block](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#ubc)) |
+| --- | --- |
 | `\p{Lu}` | An uppercase letter ([category](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#ucc)) |
 | `\p{IsAlphabetic}` | An alphabetic character ([binary property](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#ubpc)) |
 | `\p{Sc}` | A currency symbol |
+| --- | --- |
 | `\P{InGreek}` | Any character except one in the Greek block (negation) |
 | `[\p{L}&&[^\p{Lu}]]` | Any letter except an uppercase letter (subtraction) |
 | Boundary matchers ||
+| --- | --- |
 | `^` | The beginning of a line |
 | `$` | The end of a line |
 | `\b` | A word boundary |
+| --- | --- |
 | `\B` | A non-word boundary |
 | `\A` | The beginning of the input |
 | `\G` | The end of the previous match |
+| --- | --- |
 | `\Z` | The end of the input but for the final [terminator](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#lt), if any |
 | `\z` | The end of the input |
 | Linebreak matcher ||
+| --- | --- |
 | `\R` | Any Unicode linebreak sequence, is equivalent to`\u000D\u000A|[\u000A\u000B\u000C\u000D\u0085\u2028\u2029] ` |
 | Unicode Extended Grapheme matcher ||
 | `\X` | Any Unicode extended grapheme cluster |
+| --- | --- |
 | Greedy quantifiers ||
 | *X* `?` | *X*, once or not at all |
 | *X* `*` | *X*, zero or more times |
+| --- | --- |
 | *X* `+` | *X*, one or more times |
 | *X* `{`*n* `}` | *X* , exactly*n*times |
 | *X* `{`*n* `,`} | *X* , at least*n*times |
+| --- | --- |
 | *X* `{`*n* `,`*m* `}` | *X* , at least*n* but not more than*m*times |
 | Reluctant quantifiers ||
 | *X* `??` | *X*, once or not at all |
+| --- | --- |
 | *X* `*?` | *X*, zero or more times |
 | *X* `+?` | *X*, one or more times |
 | *X* `{`*n* `}?` | *X* , exactly*n*times |
+| --- | --- |
 | *X* `{`*n* `,}?` | *X* , at least*n*times |
 | *X* `{`*n* `,`*m* `}?` | *X* , at least*n* but not more than*m*times |
 | Possessive quantifiers ||
+| --- | --- |
 | *X* `?+` | *X*, once or not at all |
 | *X* `*+` | *X*, zero or more times |
 | *X* `++` | *X*, one or more times |
+| --- | --- |
 | *X* `{`*n* `}+` | *X* , exactly*n*times |
 | *X* `{`*n* `,}+` | *X* , at least*n*times |
 | *X* `{`*n* `,`*m* `}+` | *X* , at least*n* but not more than*m*times |
+| --- | --- |
 | Logical operators ||
 | *XY* | *X* followed by*Y* |
 | *X* `|`*Y* | Either*X* or*Y* |
+| --- | --- | --- |
 | `(`*X* `)` | X, as a [capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) |
 | Back references ||
 | `\`*n* | Whatever the*n* th [capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) matched |
+| --- | --- |
 | `\`*k* \<*name*\> | Whatever the [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname)"name" matched. Only available for API 26 or above |
 | Quotation ||
 | `\` | Nothing, but quotes the following character |
+| --- | --- |
 | `\Q` | Nothing, but quotes all characters until`\E` |
 | `\E` | Nothing, but ends quoting started by`\Q` |
 | Special constructs (named-capturing and non-capturing) ||
+| --- | --- |
 | `(?<` [name](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname)`>`*X* `)` | *X*, as a named-capturing group. Only available for API 26 or above. |
 | `(?:`*X* `)` | *X*, as a non-capturing group |
 | `(?idmsux-idmsux) ` |
 | `(?idmsuxU-idmsuxU:`*X* `)` | *X* , as a [non-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) with the given flags [i](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#CASE_INSENSITIVE) [d](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNIX_LINES) [m](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#MULTILINE) [s](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#DOTALL) [u](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CASE) [x](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#COMMENTS) [U](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CHARACTER_CLASS) on - off |
+| --- | --- |
 | `(?=`*X* `)` | *X*, via zero-width positive lookahead |
 | `(?!`*X* `)` | *X*, via zero-width negative lookahead |
 | `(?<=`*X* `)` | *X*, via zero-width positive lookbehind |
+| --- | --- |
 | `(?<!`*X* `)` | *X*, via zero-width negative lookbehind |
 | `(?>`*X* `)` | *X*, as an independent, non-capturing group |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -174,9 +215,11 @@ Character classes may appear within other character classes, and may be composed
 The precedence of character-class operators is as follows, from highest to lowest:
 
 | Precedence | Name | Example |
+| --- | --- | --- |
 | 1 | Literal escape | `\x` |
 | 2 | Grouping | `[...]` |
 | 3 | Range | `a-z` |
+| --- | --- | --- |
 | 4 | Union | `[a-e][i-u]` |
 | 5 | Intersection | `[a-z&&[aeiou]]` |
 |------------|----------------|------------------|
@@ -288,6 +331,7 @@ Perl constructs not supported by this class:
 
 - The backreference constructs,`\g{`*n* `}`for the*n* th [capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) and`\g{`*name* `}`for [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname).
 - The conditional constructs`(?(`*condition* `)`*X* `)`and`(?(`*condition* `)`*X* `|`*Y* `)`,
+| --- | --- |
 - The embedded code constructs`(?{`*code* `})`and`(??{`*code* `})`,
 - The embedded comment syntax`(?#comment)`, and
 - The preprocessing operations`\l``\u`,`\L`, and`\U`.
@@ -311,27 +355,34 @@ For a more precise description of the behavior of regular expression constructs,
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANON_EQ](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#CANON_EQ:kotlin.Int) This flag is not supported on Android. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_INSENSITIVE](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#CASE_INSENSITIVE:kotlin.Int) Enables case-insensitive matching. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMENTS](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#COMMENTS:kotlin.Int) Permits whitespace and comments in pattern. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOTALL](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#DOTALL:kotlin.Int) Enables dotall mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LITERAL](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#LITERAL:kotlin.Int) Enables literal parsing of the pattern. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MULTILINE](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#MULTILINE:kotlin.Int) Enables multiline mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNICODE_CASE](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CASE:kotlin.Int) Enables Unicode-aware case folding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNICODE_CHARACTER_CLASS](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNICODE_CHARACTER_CLASS:kotlin.Int) This flag is not supported on Android, and Unicode character classes are always used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_LINES](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#UNIX_LINES:kotlin.Int) Enables Unix lines mode. |
+| --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [asMatchPredicate](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#asMatchPredicate())`()` Creates a predicate that tests if this pattern matches a given input string. |
 | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [asPredicate](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#asPredicate())`()` Creates a predicate that tests if this pattern is found in a given input string. |
 | static [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#) | [compile](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#compile(kotlin.String))`(`regex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Compiles the given regular expression into a pattern. |
+| --- | --- |
 | static [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#) | [compile](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#compile(kotlin.String,%20kotlin.Int))`(`regex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compiles the given regular expression into a pattern with the given flags. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#flags())`()` Returns this pattern's match flags. |
 | [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher) | [matcher](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#matcher(kotlin.CharSequence))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Creates a matcher that will match the given input against this pattern. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#matches(kotlin.String,%20kotlin.CharSequence))`(`regex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Compiles the given regular expression and attempts to match the given input against it. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#pattern())`()` Returns the regular expression from which this pattern was compiled. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [quote](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#quote(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a literal pattern`String`for the specified`String`. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [split](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#split(kotlin.CharSequence))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Splits the given input sequence around matches of this pattern. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [split](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#split(kotlin.CharSequence,%20kotlin.Int))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Splits the given input sequence around matches of this pattern. |
 | [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [splitAsStream](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#splitAsStream(kotlin.CharSequence))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Creates a stream from the given input sequence around matches of this pattern. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#toString())`()` Returns the string representation of this pattern. |
 
 ## Constants
@@ -686,6 +737,7 @@ This method works as if by invoking the two-argument [split](https://developer.a
 The input`"boo:and:foo"`, for example, yields the following results with these expressions:
 
 | Regex | Result |
+| --- | --- |
 | : | `{ "boo", "and", "foo" }` |
 | o | `{ "b", "", ":and:f" }` |
 |-------|---------------------------|
@@ -724,9 +776,11 @@ The`limit`parameter controls the number of times the pattern is applied and ther
 The input`"boo:and:foo"`, for example, yields the following results with these parameters:
 
 | Regex | Limit | Result |
+| --- | --- | --- |
 | : | 2 | `{ "boo", "and:foo" }` |
 | : | 5 | `{ "boo", "and", "foo" }` |
 | : | -2 | `{ "boo", "and", "foo" }` |
+| --- | --- | --- |
 | o | 5 | `{ "b", "", ":and:f", "", "" }` |
 | o | -2 | `{ "b", "", ":and:f", "", "" }` |
 | o | 0 | `{ "b", "", ":and:f" }` |

@@ -11,6 +11,7 @@ interface CRLSelector : Cloneable
 | [java.security.cert.CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/CRLSelector#) |
 
 | Known Direct Subclasses [X509CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector) |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [X509CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector) | A`CRLSelector`that selects`X509CRLs`that match all specified criteria. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A selector that defines a set of criteria for selecting`CRL`s. Classes that implement this interface are often used to specify which`CRL`s should be retrieved from a`CertStore`.
 

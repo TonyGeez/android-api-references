@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RotateAnimation
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/animation/RotateAnimation "View this page in Java")
+| --- | --- |
 
 ```
 open class RotateAnimation : Animation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation) ||
 | | ↳ | [android.view.animation.RotateAnimation](https://developer.android.com/reference/kotlin/android/view/animation/RotateAnimation#) |
 
@@ -94,6 +96,7 @@ Constructor to use when building a RotateAnimation from code
 | `fromDegrees` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Rotation offset to apply at the start of the animation. |
 | `toDegrees` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Rotation offset to apply at the end of the animation. |
 | `pivotX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The X coordinate of the point about which the object is being rotated, specified as an absolute number where 0 is the left edge. |
+| --- | --- |
 | `pivotY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The Y coordinate of the point about which the object is being rotated, specified as an absolute number where 0 is the top edge. |
 
 ### RotateAnimation
@@ -117,9 +120,11 @@ Constructor to use when building a RotateAnimation from code
 | `fromDegrees` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Rotation offset to apply at the start of the animation. |
 | `toDegrees` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Rotation offset to apply at the end of the animation. |
 | `pivotXType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies how pivotXValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
+| --- | --- |
 | `pivotXValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The X coordinate of the point about which the object is being rotated, specified as an absolute number where 0 is the left edge. This value can either be an absolute number if pivotXType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
 | `pivotYType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies how pivotYValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `pivotYValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The Y coordinate of the point about which the object is being rotated, specified as an absolute number where 0 is the top edge. This value can either be an absolute number if pivotYType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
+| --- | --- |
 
 ## Public methods
 
@@ -145,6 +150,7 @@ Objects that interpret Animations should call this method when the sizes of the 
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the object being animated |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the object being animated |
 | `parentWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the animated object's parent |
+| --- | --- |
 | `parentHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the animated object's parent |
 
 ## Protected methods

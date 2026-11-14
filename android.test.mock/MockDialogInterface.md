@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # MockDialogInterface
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockDialogInterface "View this page in Java") 
+| --- | --- |
 
 ```
 open class MockDialogInterface : DialogInterface
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.mock.MockDialogInterface](https://developer.android.com/reference/kotlin/android/test/mock/MockDialogInterface#) |
 
 | **This class was deprecated in API level 24.**

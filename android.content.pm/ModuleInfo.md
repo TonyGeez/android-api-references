@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ModuleInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ModuleInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ModuleInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ModuleInfo](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#) |
 
 Information you can retrieve about a particular system module.
@@ -26,9 +28,11 @@ Information you can retrieve about a particular system module.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#describeContents())`()` Describes the kinds of special objects contained in this object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#getName())`()` Gets the public name of this module. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPackageName](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#getPackageName())`()` Gets the package name of this module. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHidden](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#isHidden())`()` Gets whether or not this package is hidden. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#toString())`()` Returns a string representation of this object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flattens this object into the given [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 

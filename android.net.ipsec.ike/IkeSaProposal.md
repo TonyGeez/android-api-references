@@ -7,6 +7,7 @@ class IkeSaProposal : SaProposal
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.ipsec.ike.SaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal) ||
 | | ↳ | [android.net.ipsec.ike.IkeSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#) |
 
@@ -31,9 +32,11 @@ User must provide at least one valid IkeSaProposal when they are creating a new 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#getPseudorandomFunctions()()` Gets all proposed Pseudorandom Functions |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#getSupportedEncryptionAlgorithms()()` Returns supported encryption algorithms for IKE SA proposal negotiation. |
+| --- | --- |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#getSupportedIntegrityAlgorithms()()` Returns supported integrity algorithms for IKE SA proposal negotiation. |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#getSupportedPseudorandomFunctions()()` Returns supported pseudorandom functions for IKE SA proposal negotiation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

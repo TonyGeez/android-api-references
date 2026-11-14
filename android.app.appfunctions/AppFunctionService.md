@@ -7,9 +7,11 @@ abstract class AppFunctionService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.appfunctions.AppFunctionService](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#) |
 
 Extend this class to implement app functions, that can be executed by android.app.appfunctions.AppFunctionManager#executeAppFunction.
@@ -2839,5 +2841,6 @@ This method must be called from the main thread of your app.
 | `request` | [ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest): The function execution request. This value cannot be `null`. |
 | `callingPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an empty string. This value cannot be `null`. |
 | `callingPackageSigningInfo` | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#): The signing information of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an unknown signing info. This value cannot be `null`. |
+| --- | --- |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): A signal to cancel the execution. This value cannot be `null`. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [ExecuteAppFunctionResponse](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse)!, [AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException)!\>: A callback to report back the result or error. This value cannot be `null`. |

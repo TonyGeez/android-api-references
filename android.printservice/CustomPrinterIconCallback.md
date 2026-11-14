@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # CustomPrinterIconCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/printservice/CustomPrinterIconCallback "View this page in Java") 
+| --- | --- |
 
 ```
 class CustomPrinterIconCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.printservice.CustomPrinterIconCallback](https://developer.android.com/reference/kotlin/android/printservice/CustomPrinterIconCallback#) |
 
 Callback for [PrinterDiscoverySession.onRequestCustomPrinterIcon](https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#onRequestCustomPrinterIcon(android.print.PrinterId,%20android.os.CancellationSignal,%20android.printservice.CustomPrinterIconCallback)).

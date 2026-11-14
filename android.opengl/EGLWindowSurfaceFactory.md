@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # EGLWindowSurfaceFactory
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface EGLWindowSurfaceFactory

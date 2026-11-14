@@ -6,15 +6,18 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # ActivityUnitTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ActivityUnitTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ActivityUnitTestCase<T : Activity!> : ActivityTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) |||
 | | ↳ | [android.test.ActivityTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase) ||
 | | | ↳ | [android.test.ActivityUnitTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 24.**
 |
@@ -59,9 +62,11 @@ The following methods may be called but will not do anything. For test purposes,
 | openT | [getActivity](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#getActivity())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinishedActivityRequest](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#getFinishedActivityRequest())`()` This method will return the request code if the Activity under test called [android.app.Activity#finishActivity(int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#finishActivity(kotlin.Int)). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestedOrientation](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#getRequestedOrientation())`()` This method will return the value if your Activity under test calls [android.app.Activity#setRequestedOrientation](https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)). |
+| --- | --- |
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [getStartedActivityIntent](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#getStartedActivityIntent())`()` This method will return the launch intent if your Activity under test calls android. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartedActivityRequest](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#getStartedActivityRequest())`()` This method will return the launch request code if your Activity under test calls [android.app.Activity#startActivityForResult(Intent, int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinishCalled](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#isFinishCalled())`()` This method will notify you if the Activity under test called [android.app.Activity#finish()](https://developer.android.com/reference/kotlin/android/app/Activity.html#finish()), [android.app.Activity#finishFromChild(Activity)](https://developer.android.com/reference/kotlin/android/app/Activity.html#finishFromChild(android.app.Activity)), or [android.app.Activity#finishActivity(int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#finishActivity(kotlin.Int)). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActivityContext](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#setActivityContext(android.content.Context))`(`activityContext:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` If you wish to inject a Mock, Isolated, or otherwise altered context, you can do so here. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplication](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#setApplication(android.app.Application))`(`application:` ` [Application](https://developer.android.com/reference/kotlin/android/app/Application.html#)!`)` Set the application for use during the test. |
 
@@ -70,6 +75,7 @@ The following methods may be called but will not do anything. For test purposes,
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUp](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#setUp())`()` <br /> |
 | openT | [startActivity](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#startActivity(android.content.Intent,%20android.os.Bundle,%20kotlin.Any))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`, `lastNonConfigurationInstance:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Start the activity under test, in the same way as if it was started by android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](https://developer.android.com/reference/kotlin/android/test/ActivityUnitTestCase#tearDown())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -243,6 +249,7 @@ This method will call onCreate(), but if you wish to further exercise Activity l
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The Intent as if supplied to android.content.Context#startActivity. |
 | `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The instance state, if you are simulating this part of the life cycle. Typically null. |
 | `lastNonConfigurationInstance` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:This Object will be available to the Activity if it calls [android.app.Activity#getLastNonConfigurationInstance()](https://developer.android.com/reference/kotlin/android/app/Activity.html#getLastNonConfigurationInstance()). Typically null. |
+| --- | --- |
 
 | Return ||
 |---|---------------------------------------|

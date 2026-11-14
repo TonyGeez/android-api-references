@@ -11,8 +11,10 @@ interface DataInput
 | [java.io.DataInput](https://developer.android.com/reference/kotlin/java/io/DataInput#) |
 
 | Known Direct Subclasses [DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream), [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput), [RandomAccessFile](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput) | ObjectInput extends the DataInput interface to include the reading of objects. | | [RandomAccessFile](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile) | Instances of this class support both reading and writing to a random access file. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream) |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The `DataInput` interface provides for reading bytes from a binary stream and reconstructing from them data in any of the Java primitive types. There is also a facility for reconstructing a `String` from data in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format.
 
@@ -27,12 +29,15 @@ Implementations of the DataInput and DataOutput interfaces represent Unicode str
 - Characters in the range `'\u005Cu0800'` to `'\u005CuFFFF'` are represented by three bytes.
 
 | Value | Byte | Bit Values ||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Value | Byte | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 | `\u005Cu0001` to `\u005Cu007F` | 1 | 0 | bits 6-0 |||||||
 | `\u005Cu0000`, `\u005Cu0080` to `\u005Cu07FF` | 1 | 1 | 1 | 0 | bits 10-6 |||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `\u005Cu0000`, `\u005Cu0080` to `\u005Cu07FF` | 2 | 1 | 0 | bits 5-0 ||||||
 | `\u005Cu0800` to `\u005CuFFFF` | 1 | 1 | 1 | 1 | 0 | bits 15-12 ||||
 | `\u005Cu0800` to `\u005CuFFFF` | 2 | 1 | 0 | bits 11-6 ||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `\u005Cu0800` to `\u005CuFFFF` | 3 | 1 | 0 | bits 5-0 ||||||
 |-----------------------------------------------|------|---|---|---|---|---|---|---|---|
 
@@ -49,18 +54,23 @@ The differences between this format and the standard UTF-8 format are the follow
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](https://developer.android.com/reference/kotlin/java/io/DataInput#readBoolean())`()` Reads one input byte and returns `true` if that byte is nonzero, `false` if that byte is zero. |
 | abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](https://developer.android.com/reference/kotlin/java/io/DataInput#readByte())`()` Reads and returns one input byte. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](https://developer.android.com/reference/kotlin/java/io/DataInput#readChar())`()` Reads two input bytes and returns a `char` value. |
+| --- | --- |
 | abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](https://developer.android.com/reference/kotlin/java/io/DataInput#readDouble())`()` Reads eight input bytes and returns a `double` value. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](https://developer.android.com/reference/kotlin/java/io/DataInput#readFloat())`()` Reads four input bytes and returns a `float` value. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInput#readFully(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some bytes from an input stream and stores them into the buffer array `b`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInput#readFully(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads `len` bytes from an input stream. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](https://developer.android.com/reference/kotlin/java/io/DataInput#readInt())`()` Reads four input bytes and returns an `int` value. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](https://developer.android.com/reference/kotlin/java/io/DataInput#readLine())`()` Reads the next line of text from the input stream. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](https://developer.android.com/reference/kotlin/java/io/DataInput#readLong())`()` Reads eight input bytes and returns a `long` value. |
 | abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](https://developer.android.com/reference/kotlin/java/io/DataInput#readShort())`()` Reads two input bytes and returns a `short` value. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](https://developer.android.com/reference/kotlin/java/io/DataInput#readUTF())`()` Reads in a string that has been encoded using a [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](https://developer.android.com/reference/kotlin/java/io/DataInput#readUnsignedByte())`()` Reads one input byte, zero-extends it to type `int`, and returns the result, which is therefore in the range `0` through `255`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](https://developer.android.com/reference/kotlin/java/io/DataInput#readUnsignedShort())`()` Reads two input bytes and returns an `int` value in the range `0` through `65535`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](https://developer.android.com/reference/kotlin/java/io/DataInput#skipBytes(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an attempt to skip over `n` bytes of data from the input stream, discarding the skipped bytes. |
+| --- | --- |
 
 ## Public methods
 
@@ -194,6 +204,7 @@ If `b` is `null`, a `NullPointerException` is thrown. If `b.length` is zero, the
 | `java.lang.NullPointerException` | if `b` is `null`. |
 | `java.io.EOFException` | if this stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### readFully
 
@@ -222,12 +233,14 @@ If `b` is `null`, a `NullPointerException` is thrown. If `off` is negative, or `
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an int specifying the offset in the data array `b`. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an int specifying the number of bytes to read. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if `b` is `null`. |
 | `java.lang.IndexOutOfBoundsException` | if `off` is negative, `len` is negative, or `len` is greater than `b.length - off`. |
 | `java.io.EOFException` | if this stream reaches the end before reading all the bytes. |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs. |
 
 ### readInt
@@ -383,6 +396,7 @@ The `writeUTF` method of interface `DataOutput` may be used to write data that i
 | `java.io.EOFException` | if this stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.UTFDataFormatException` | if the bytes do not represent a valid modified UTF-8 encoding of a string. |
+| --- | --- |
 
 ### readUnsignedByte
 

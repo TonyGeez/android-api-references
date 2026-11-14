@@ -6,6 +6,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 # ContactMethodsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.ContactMethodsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface ContactMethodsColumns
@@ -14,6 +15,7 @@ interface ContactMethodsColumns
 | [android.provider.Contacts.ContactMethodsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#) |
 
 | Known Direct Subclasses [Contacts.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethods), [Contacts.People.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.ContactMethods) |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [Contacts.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethods) | This table stores all non-phone contact methods and a reference to the person that the contact method belongs to. | | [Contacts.People.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.ContactMethods) | A subdirectory of a single person that contains all of their ContactMethods. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
@@ -28,12 +30,15 @@ Columns from the ContactMethods table that other tables join into themseleves.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUX_DATA](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#AUX_DATA:kotlin.String) Auxiliary data for the contact method. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#DATA:kotlin.String) The data for the contact method. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#ISPRIMARY:kotlin.String) Whether this is the primary organization |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KIND](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#KIND:kotlin.String) The kind of the the contact method. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#LABEL:kotlin.String) The user defined label for the the contact method. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#TYPE:kotlin.String) The type of the contact method, must be one of the types below. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#TYPE_CUSTOM:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HOME](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#TYPE_HOME:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#TYPE_OTHER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethodsColumns#TYPE_WORK:kotlin.Int) <br /> |
 
 ## Constants

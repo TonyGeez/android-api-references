@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ChineseCalendar
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/ChineseCalendar "View this page in Java") 
+| --- | --- |
 
 ```
 open class ChineseCalendar : Calendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) ||
 | | ↳ | [android.icu.util.ChineseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#) |
 
@@ -58,18 +60,22 @@ ChineseCalendar usually should be instantiated using [android.icu.util.Calendar#
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#add(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar to handle leap months properly. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTemporalMonthCode](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#getTemporalMonthCode())`()` Gets The Temporal monthCode value corresponding to the month for the date. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#getType())`()` **\[icu\]**Returns the calendar type name string for this Calendar object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inTemporalLeapYear](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#inTemporalLeapYear())`()` **\[icu\]**Returns true if the date is in a leap year. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [roll](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#roll(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar to handle leap months properly. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTemporalMonthCode](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#setTemporalMonthCode(kotlin.String))`(`temporalMonth:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets The Temporal monthCode which is a string identifier that starts with the literal grapheme "M" followed by two graphemes representing the zero-padded month number of the current month in a normal (non-leap) year and suffixed by an optional literal grapheme "L" if this is a leap month in a lunisolar calendar. |
+| --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\>!\>! | [getFieldResolutionTable](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#getFieldResolutionTable())`()` Override Calendar to add IS_LEAP_MONTH to the field resolution table. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handleComputeFields](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleComputeFields(kotlin.Int))`(`julianDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar to compute several fields specific to the Chinese calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleComputeMonthStart](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`eyear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `useMonth:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return the Julian day number of day before the first day of the given month in the given extended year. |
+| --- | --- |
 | open [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.html#)! | [handleGetDateFormat](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleGetDateFormat(kotlin.String,%20kotlin.String,%20android.icu.util.ULocale))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `override:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetExtendedYear](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleGetExtendedYear())`()` Implement abstract Calendar method to return the extended year defined by the current fields. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetLimit](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limitType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar to return the limit value for the given field. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetMonthLength](https://developer.android.com/reference/kotlin/android/icu/util/ChineseCalendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int))`(`extendedYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar method to return the number of days in the given extended year and month. |
 
 | Inherited functions ||
@@ -177,6 +183,7 @@ Constructs a`ChineseCalendar`with the given date set in the default time zone wi
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field. The value is 0-based. e.g., 0 for January. |
 | `isLeapMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the Chinese calendar's [IS_LEAP_MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#IS_LEAP_MONTH:kotlin.Int) time field. |
+| --- | --- |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field. |
 
 **See Also**
@@ -203,6 +210,7 @@ Constructs a`ChineseCalendar`with the given date set in the default time zone wi
 | `era` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [ERA](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int) time field. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field. The value is 0-based. e.g., 0 for January. |
+| --- | --- |
 | `isLeapMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the Chinese calendar's [IS_LEAP_MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#IS_LEAP_MONTH:kotlin.Int) time field. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field. |
 
@@ -232,9 +240,11 @@ Constructs a`ChineseCalendar`with the given date and time set for the default ti
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field in the calendar. Note that the month value is 0-based. e.g., 0 for January. |
 | `isLeapMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [IS_LEAP_MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#IS_LEAP_MONTH:kotlin.Int) time field in the calendar. |
+| --- | --- |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field in the calendar. |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [HOUR_OF_DAY](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int) time field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [MINUTE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int) time field in the calendar. |
+| --- | --- |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [SECOND](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int) time field in the calendar. |
 
 **See Also**
@@ -264,9 +274,11 @@ Constructs a`ChineseCalendar`with the given date and time set for the default ti
 | `era` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the calendar's [ERA](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int) time field. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field in the calendar. Note that the month value is 0-based. e.g., 0 for January. |
+| --- | --- |
 | `isLeapMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [IS_LEAP_MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#IS_LEAP_MONTH:kotlin.Int) time field in the calendar. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field in the calendar. |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [HOUR_OF_DAY](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int) time field in the calendar. |
+| --- | --- |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [MINUTE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int) time field in the calendar. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the [SECOND](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int) time field in the calendar. |
 
@@ -454,6 +466,7 @@ Note: This method reads the IS_LEAP_MONTH field to determine whether the given m
 | `eyear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the extended year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based month. The month is also determined by reading the IS_LEAP_MONTH field. |
 | `useMonth` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if false, compute the day before the first day of the given year, otherwise, compute the day before the first day of the given month |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|

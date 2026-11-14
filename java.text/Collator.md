@@ -9,9 +9,11 @@ abstract class Collator : Cloneable, Comparator<Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.Collator](https://developer.android.com/reference/kotlin/java/text/Collator#) |
 
 | Known Direct Subclasses [RuleBasedCollator](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator) |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [RuleBasedCollator](https://developer.android.com/reference/kotlin/java/text/RuleBasedCollator) | The class is a concrete subclass of`Collator`that provides a simple, data-driven, table collator. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The`Collator`class performs locale-sensitive`String`comparison. You use this class to build searching and sorting routines for natural language text.
 
@@ -53,9 +55,11 @@ For comparing`String`s exactly once, the`compare`method provides the best perfor
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL_DECOMPOSITION](https://developer.android.com/reference/kotlin/java/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int) Decomposition mode value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_DECOMPOSITION](https://developer.android.com/reference/kotlin/java/text/Collator#FULL_DECOMPOSITION:kotlin.Int) Decomposition mode value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDENTICAL](https://developer.android.com/reference/kotlin/java/text/Collator#IDENTICAL:kotlin.Int) Collator strength value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_DECOMPOSITION](https://developer.android.com/reference/kotlin/java/text/Collator#NO_DECOMPOSITION:kotlin.Int) Decomposition mode value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIMARY](https://developer.android.com/reference/kotlin/java/text/Collator#PRIMARY:kotlin.Int) Collator strength value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECONDARY](https://developer.android.com/reference/kotlin/java/text/Collator#SECONDARY:kotlin.Int) Collator strength value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERTIARY](https://developer.android.com/reference/kotlin/java/text/Collator#TERTIARY:kotlin.Int) Collator strength value. |
 
 | Protected constructors ||
@@ -67,15 +71,19 @@ For comparing`String`s exactly once, the`compare`method provides the best perfor
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/Collator#clone())`()` Returns a new collator with the same decomposition mode and strength value as this collator. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/text/Collator#compare(kotlin.Any,%20kotlin.Any))`(`o1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `o2:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Compares its two arguments for order. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/text/Collator#compare(kotlin.String,%20kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the source string to the target string according to the collation rules for this Collator. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/Collator#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two Collators. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/Collator#equals(kotlin.String,%20kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for comparing the equality of two strings based on this Collator's collation rules. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/text/Collator#getAvailableLocales())`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| --- | --- |
 | abstract [CollationKey](https://developer.android.com/reference/kotlin/java/text/CollationKey)! | [getCollationKey](https://developer.android.com/reference/kotlin/java/text/Collator#getCollationKey(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Transforms the String into a series of bits that can be compared bitwise to other CollationKeys. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDecomposition](https://developer.android.com/reference/kotlin/java/text/Collator#getDecomposition())`()` Get the decomposition mode of this Collator. |
 | openstatic [Collator](https://developer.android.com/reference/kotlin/java/text/Collator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/text/Collator#getInstance())`()` Gets the Collator for the current default locale. |
+| --- | --- |
 | openstatic [Collator](https://developer.android.com/reference/kotlin/java/text/Collator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/text/Collator#getInstance(java.util.Locale))`(`desiredLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the Collator for the desired locale. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrength](https://developer.android.com/reference/kotlin/java/text/Collator#getStrength())`()` Returns this Collator's strength property. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/Collator#hashCode())`()` Generates the hash code for this Collator. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecomposition](https://developer.android.com/reference/kotlin/java/text/Collator#setDecomposition(kotlin.Int))`(`decompositionMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the decomposition mode of this Collator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrength](https://developer.android.com/reference/kotlin/java/text/Collator#setStrength(kotlin.Int))`(`newStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this Collator's strength property. |
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # RecognitionPart
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/RecognitionPart "View this page in Java") 
+| --- | --- |
 
 ```
 class RecognitionPart : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.speech.RecognitionPart](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#) |
 
 Info about a single recognition part.
@@ -34,9 +36,11 @@ If the confidence levels are requested with [RecognizerIntent.EXTRA_REQUEST_WORD
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_HIGH:kotlin.Int) Highest level of confidence out of five levels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_LOW:kotlin.Int) Lowest level of confidence out of five levels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM:kotlin.Int) Medium level of confidence out of five levels. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_HIGH:kotlin.Int) Second-highest level of confidence out of five levels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_LOW:kotlin.Int) Second-lowest level of confidence out of five levels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN:kotlin.Int) Confidence level not requested. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -47,12 +51,15 @@ If the confidence levels are requested with [RecognizerIntent.EXTRA_REQUEST_WORD
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfidenceLevel](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getConfidenceLevel())`()` The level of confidence for this part if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_CONFIDENCE:kotlin.String). |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFormattedText](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getFormattedText())`()` The formatted text version of the recognized part of the result. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRawText](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getRawText())`()` The`non-null`raw text version of the recognized part of the result. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getTimestampMillis())`()` Non-negative offset of the beginning of this part from the start of the recognition session in milliseconds if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_TIMING:kotlin.String). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

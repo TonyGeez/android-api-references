@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # EditorBoundsInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class EditorBoundsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.EditorBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#) |
 
 Container of rectangular position related info for the Editor.
@@ -30,9 +32,11 @@ Container of rectangular position related info for the Editor.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)? | [getEditorBounds](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#getEditorBounds())`()` Returns the bounds of the Editor in local coordinates. |
+| --- | --- |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)? | [getHandwritingBounds](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#getHandwritingBounds())`()` Returns the bounds of the area that should be considered for initiating stylus handwriting in local coordinates. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

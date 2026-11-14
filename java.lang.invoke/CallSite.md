@@ -9,9 +9,11 @@ abstract class CallSite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#) |
 
 | Known Direct Subclasses [ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite), [MutableCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite), [VolatileCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite) |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite) | A`ConstantCallSite`is a [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#) whose target is permanent, and can never be changed. | | [MutableCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite) | A`MutableCallSite`is a [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#) whose target variable behaves like an ordinary field. | | [VolatileCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite) | A`VolatileCallSite`is a [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#) whose target acts like a volatile variable. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A`CallSite`is a holder for a variable [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle), which is called its`target`. An`invokedynamic`instruction linked to a`CallSite`delegates all calls to the site's current target. A`CallSite`may be associated with several`invokedynamic`instructions, or it may be "free floating", associated with none. In any case, it may be invoked through an associated method handle called its [dynamic invoker](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#dynamicInvoker()).
 
@@ -54,6 +56,7 @@ Here is a sample use of call sites and bootstrap methods which links every dynam
 | abstract [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dynamicInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#dynamicInvoker())`()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
 | abstract [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [getTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#getTarget())`()` Returns the target method of the call site, according to the behavior defined by this call site's specific class. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#setTarget(java.lang.invoke.MethodHandle))`(`newTarget:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Updates the target method of this call site, according to the behavior defined by this call site's specific class. |
+| --- | --- |
 | open [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | [type](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#type())`()` Returns the type of this call site's target. |
 
 ## Public methods

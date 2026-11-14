@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AssetFileDescriptor
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/res/AssetFileDescriptor "View this page in Java") 
+| --- | --- |
 
 ```
 open class AssetFileDescriptor : Closeable, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#) |
 
 File descriptor of an entry in the AssetManager. This provides your own opened FileDescriptor that can be used to read the data, as well as the offset and length of that entry's data in the file.
@@ -40,15 +42,19 @@ File descriptor of an entry in the AssetManager. This provides your own opened F
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#close())`()` Convenience for calling`getParcelFileDescriptor().close()`. |
 | open [FileInputStream](https://developer.android.com/reference/kotlin/java/io/FileInputStream.html#)! | [createInputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#createInputStream())`()` Create and return a new auto-close input stream for this asset. |
 | open [FileOutputStream](https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#)! | [createOutputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#createOutputStream())`()` Create and return a new auto-close output stream for this asset. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#describeContents())`()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDeclaredLength](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getDeclaredLength())`()` Return the actual number of bytes that were declared when the AssetFileDescriptor was constructed. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getExtras())`()` Returns any additional details that can be used to interpret the underlying file descriptor. |
+| --- | --- |
 | open [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | [getFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getFileDescriptor())`()` Returns the FileDescriptor that can be used to read the data in the file. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getLength())`()` Returns the total number of bytes of this asset entry's data. |
 | open [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)! | [getParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getParcelFileDescriptor())`()` The AssetFileDescriptor contains its own ParcelFileDescriptor, which in addition to the normal FileDescriptor object also allows you to close the descriptor when you are done with it. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartOffset](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#getStartOffset())`()` Returns the byte offset where this asset entry's data starts. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,6 +94,7 @@ Create a new AssetFileDescriptor from the given values.
 | `fd` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:The underlying file descriptor. |
 | `startOffset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The location within the file that the asset starts. This must be 0 if length is UNKNOWN_LENGTH. |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The number of bytes of the asset, or [UNKNOWN_LENGTH](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#UNKNOWN_LENGTH:kotlin.Long) if it extends to the end of the file. |
+| --- | --- |
 
 ### AssetFileDescriptor
 
@@ -108,6 +115,7 @@ Create a new AssetFileDescriptor from the given values.
 | `fd` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:The underlying file descriptor. |
 | `startOffset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The location within the file that the asset starts. This must be 0 if length is UNKNOWN_LENGTH. |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The number of bytes of the asset, or [UNKNOWN_LENGTH](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor#UNKNOWN_LENGTH:kotlin.Long) if it extends to the end of the file. |
+| --- | --- |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:additional details that can be used to interpret the underlying file descriptor. May be null. |
 
 ## Public methods

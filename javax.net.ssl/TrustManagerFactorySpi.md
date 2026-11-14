@@ -9,6 +9,7 @@ abstract class TrustManagerFactorySpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.TrustManagerFactorySpi](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactorySpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`TrustManagerFactory`class.
@@ -26,6 +27,7 @@ All the abstract methods in this class must be implemented by each cryptographic
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!\>! | [engineGetTrustManagers](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactorySpi#engineGetTrustManagers())`()` Returns one trust manager for each type of trust material. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactorySpi#engineInit(java.security.KeyStore))`(`ks:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`)` Initializes this factory with a source of certificate authorities and related trust material. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactorySpi#engineInit(javax.net.ssl.ManagerFactoryParameters))`(`spec:` ` [ManagerFactoryParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/ManagerFactoryParameters)!`)` Initializes this factory with a source of provider-specific key material. |
+| --- | --- |
 
 ## Public constructors
 

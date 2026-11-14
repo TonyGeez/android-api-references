@@ -4,12 +4,14 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 # MealType
 
 Kotlin | [Java](https://developer.android.com/reference/android/health/connect/datatypes/MealType "View this page in Java")
+| --- | --- |
 
 ```
 class MealType
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.MealType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#) |
 
 Identifier for the meal type.
@@ -21,6 +23,7 @@ Identifier for the meal type.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#MEAL_TYPE_BREAKFAST:kotlin.Int` Use this for the first meal of the day, usually the morning meal. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#MEAL_TYPE_DINNER:kotlin.Int` Use this for last meal of the day, usually the evening meal. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#MEAL_TYPE_LUNCH:kotlin.Int` Use this for the noon meal. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#MEAL_TYPE_SNACK:kotlin.Int` Any meal outside of the usual three meals per day. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#MEAL_TYPE_UNKNOWN:kotlin.Int` <br /> |
 

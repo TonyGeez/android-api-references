@@ -5,18 +5,22 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # MissingForegroundServiceTypeException
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/MissingForegroundServiceTypeException "View this page in Java") 
+| --- | --- |
 
 ```
 class MissingForegroundServiceTypeException : ForegroundServiceTypeException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||||
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||||
 | | | | | ↳ | [android.app.ServiceStartNotAllowedException](https://developer.android.com/reference/kotlin/android/app/ServiceStartNotAllowedException) |||
 | | | | | | ↳ | [android.app.ForegroundServiceTypeException](https://developer.android.com/reference/kotlin/android/app/ForegroundServiceTypeException) ||
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | | | | | | | ↳ | [android.app.MissingForegroundServiceTypeException](https://developer.android.com/reference/kotlin/android/app/MissingForegroundServiceTypeException#) |
 
 Exception thrown when an app tries to start a foreground [Service](https://developer.android.com/reference/kotlin/android/app/Service) without a type.

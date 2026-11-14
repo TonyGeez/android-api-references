@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipSession "View this page in Java") 
+| --- | --- |
 
 ```
 class SipSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.sip.SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#) |
 
 | **This class was deprecated in API level 31.**
@@ -34,15 +36,19 @@ You can get a [SipSession](https://developer.android.com/reference/kotlin/androi
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [answerCall](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#answerCall(kotlin.String,%20kotlin.Int))`(`sessionDescription:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Answers an incoming call with the specified session description. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [changeCall](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#changeCall(kotlin.String,%20kotlin.Int))`(`sessionDescription:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the session description during a call. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endCall](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#endCall())`()` Ends an established call, terminates an outgoing call or rejects an incoming call. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCallId](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#getCallId())`()` Gets the call ID of the session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalIp](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#getLocalIp())`()` Gets the IP address of the local host on which this SIP session runs. |
 | [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)! | [getLocalProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#getLocalProfile())`()` Gets the SIP profile that this session is associated with. |
+| --- | --- |
 | [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)! | [getPeerProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#getPeerProfile())`()` Gets the SIP profile that this session is connected to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#getState())`()` Gets the session state. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInCall](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#isInCall())`()` Checks if the session is in a call. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [makeCall](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#makeCall(android.net.sip.SipProfile,%20kotlin.String,%20kotlin.Int))`(`callee:` ` [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)!`, `sessionDescription:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initiates a call to the specified profile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [register](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#register(kotlin.Int))`(`duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs registration to the server specified by the associated local profile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setListener](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#setListener(android.net.sip.SipSession.Listener))`(`listener:` ` [SipSession.Listener](https://developer.android.com/reference/kotlin/android/net/sip/SipSession.Listener)!`)` Sets the listener to listen to the session events. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregister](https://developer.android.com/reference/kotlin/android/net/sip/SipSession#unregister())`()` Performs unregistration to the server specified by the associated local profile. |
 
 ## Public methods
@@ -216,6 +222,7 @@ Initiates a call to the specified profile. The session listener is called back u
 | `callee` | [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)!:the SIP profile to make the call to |
 | `sessionDescription` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the session description of this call |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the session will be timed out if the call is not established within`timeout`seconds. Default value (defined by SIP protocol) is used if`timeout`is zero or negative. |
+| --- | --- |
 
 **See Also**
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # FabricatedOverlay
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/om/FabricatedOverlay "View this page in Java") 
+| --- | --- |
 
 ```
 open class FabricatedOverlay
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.om.FabricatedOverlay](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#) |
 
 FabricatedOverlay describes the content of Fabricated Runtime Resource Overlay (FRRO) that is used to overlay the app's resources. The app should register the [FabricatedOverlay](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#) instance in an [OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction) by calling [android.content.om.OverlayManagerTransaction#registerFabricatedOverlay(android.content.om.FabricatedOverlay)](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#registerFabricatedOverlay(android.content.om.FabricatedOverlay)). The FRRO is created once the transaction is committed successfully.
@@ -57,12 +59,15 @@ The app can create any [FabricatedOverlay](https://developer.android.com/referen
 | open [OverlayIdentifier](https://developer.android.com/reference/kotlin/android/content/om/OverlayIdentifier) | [getIdentifier](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#getIdentifier())`()` Retrieves the identifier for this fabricated overlay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNinePatchResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setNinePatchResourceValue(kotlin.String,%20android.os.ParcelFileDescriptor,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay from a nine patch. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20android.content.res.AssetFileDescriptor,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the file descriptor type with the configuration. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20android.os.ParcelFileDescriptor,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the file descriptor type with the configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20kotlin.Float,%20kotlin.Int,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `dimensionValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dimensionUnit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the dimension type with the given configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20kotlin.Float,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the float type with the given configuration. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `dataType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the integer-like types with the configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceValue](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setResourceValue(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String))`(`resourceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `dataType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `configuration:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the resource value in the fabricated overlay for the string-like type with the configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetOverlayable](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay#setTargetOverlayable(kotlin.String))`(`targetOverlayable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set the target overlayable name of the overlay The target package defines may define several overlayables. |
+| --- | --- |
 
 ## Public constructors
 
@@ -118,6 +123,7 @@ Sets the resource value in the fabricated overlay from a nine patch.
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `value` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#):the file descriptor whose contents are the value of the frro This value cannot be`null`. |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
@@ -142,6 +148,7 @@ Sets the resource value in the fabricated overlay for the file descriptor type w
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `value` | [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#):the file descriptor whose contents are the value of the frro This value cannot be`null`. |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
@@ -166,6 +173,7 @@ Sets the resource value in the fabricated overlay for the file descriptor type w
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `value` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#):the file descriptor whose contents are the value of the frro This value cannot be`null`. |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
@@ -204,6 +212,7 @@ For overlaying unitless dimension resources, use [setResourceValue(java.lang.Str
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `dimensionValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the float representing the dimension value |
 | `dimensionUnit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the integer representing the dimension unit Value is [android.util.TypedValue#COMPLEX_UNIT_PX](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PX:kotlin.Int), [android.util.TypedValue#COMPLEX_UNIT_DIP](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int), [android.util.TypedValue#COMPLEX_UNIT_SP](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_SP:kotlin.Int), [android.util.TypedValue#COMPLEX_UNIT_PT](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PT:kotlin.Int), [android.util.TypedValue#COMPLEX_UNIT_IN](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_IN:kotlin.Int), or [android.util.TypedValue#COMPLEX_UNIT_MM](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_MM:kotlin.Int) |
+| --- | --- |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
 
 ### setResourceValue
@@ -233,6 +242,7 @@ For overlaying dimension resources with units, use [setResourceValue(java.lang.S
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `value` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the float representing the new value |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------|
@@ -258,6 +268,7 @@ Sets the resource value in the fabricated overlay for the integer-like types wit
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `dataType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the data type of the new value Value is between [android.util.TypedValue#TYPE_FIRST_INT](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#TYPE_FIRST_INT:kotlin.Int) and [android.util.TypedValue#TYPE_LAST_INT](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#TYPE_LAST_INT:kotlin.Int) inclusive |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the integer representing the new value |
+| --- | --- |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
 
 | Return ||
@@ -288,6 +299,7 @@ Sets the resource value in the fabricated overlay for the string-like type with 
 | `resourceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name of the target resource to overlay (in the form \[package\]:type/entry) This value cannot be`null`. |
 | `dataType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the data type of the new value Value is [android.util.TypedValue#TYPE_STRING](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#TYPE_STRING:kotlin.Int) |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the string representing the new value This value cannot be`null`. |
+| --- | --- |
 | `configuration` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string representation of the config this overlay is enabled for This value may be`null`. |
 
 | Return ||

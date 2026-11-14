@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CycleInterpolator
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/CycleInterpolator "View this page in Java") 
+| --- | --- |
 
 ```
 open class CycleInterpolator : BaseInterpolator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.BaseInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BaseInterpolator) ||
 | | ↳ | [android.view.animation.CycleInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/CycleInterpolator#) |
 

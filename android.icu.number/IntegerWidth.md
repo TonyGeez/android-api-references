@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # IntegerWidth
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/number/IntegerWidth "View this page in Java") 
+| --- | --- |
 
 ```
 open class IntegerWidth
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#) |
 
 A class that defines the strategy for padding and truncating integers before the decimal separator.

@@ -7,6 +7,7 @@ class BluetoothLeScanner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.BluetoothLeScanner](https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#) |
 
 This class provides methods to perform scan related operations for Bluetooth LE devices. An application can scan for a particular type of Bluetooth LE devices using `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`. It can also request different types of callbacks for delivering the result.
@@ -20,15 +21,18 @@ Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_CALLBACK_TYPE:kotlin.String` Optional extra indicating the callback type, which will be one of CALLBACK_TYPE_\* constants in `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_ERROR_CODE:kotlin.String` Optional extra indicating the error code, if any. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_LIST_SCAN_RESULT:kotlin.String` Extra containing a list of ScanResults. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#flushPendingScanResults(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback!)` Flush pending batch scan results stored in Bluetooth controller. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback)` Start Bluetooth LE scan with default parameters and no filters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.app.PendingIntent)(filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter!>?, settings: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings?, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Start Bluetooth LE scan using a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.bluetooth.le.ScanCallback)(filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter!>?, settings: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings, callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback)` Start Bluetooth LE scan. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#stopScan(android.app.PendingIntent)(callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Stops an ongoing Bluetooth LE scan started using a PendingIntent. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#stopScan(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback!)` Stops an ongoing Bluetooth LE scan. |
+| --- | --- |
 
 ## Constants
 
@@ -151,6 +155,7 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 | `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter)!\>?: Optional list of ScanFilters for finding exact BLE devices. This value may be `null`. |
 | `settings` | [ScanSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings)?: Optional settings for the scan. This value may be `null`. |
 | `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#): The PendingIntent to deliver the result to. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -193,6 +198,7 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 | `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter)!\>?: `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`s for finding exact BLE devices. This value may be `null`. |
 | `settings` | [ScanSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings): Settings for the scan. This value cannot be `null`. |
 | `callback` | [ScanCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback): Callback used to deliver scan results. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

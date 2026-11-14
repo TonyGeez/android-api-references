@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # CommandAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/actions/CommandAction "View this page in Java") 
+| --- | --- |
 
 ```
 class CommandAction : ControlAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.actions.ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) ||
 | | ↳ | [android.service.controls.actions.CommandAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/CommandAction#) |
 

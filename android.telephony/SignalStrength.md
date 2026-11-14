@@ -5,12 +5,14 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 # SignalStrength
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/SignalStrength "View this page in Java") 
+| --- | --- |
 
 ```
 open class SignalStrength : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.SignalStrength](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#) |
 
 Contains phone signal strength related information.
@@ -34,18 +36,23 @@ Contains phone signal strength related information.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#describeContents())`()` [Parcelable.describeContents](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()) |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCdmaDbm](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getCdmaDbm())`()` Get the CDMA RSSI value in dBm |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCdmaEcio](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getCdmaEcio())`()` Get the CDMA Ec/Io value in dB\*10 |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength)!\> | [getCellSignalStrengths](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getCellSignalStrengths())`()` Returns a List of CellSignalStrength Components of this SignalStrength Report. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [getCellSignalStrengths](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getCellSignalStrengths(java.lang.Class))`(`clazz:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns a List of CellSignalStrength Components of this SignalStrength Report. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoDbm](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getEvdoDbm())`()` Get the EVDO RSSI value in dBm |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoEcio](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getEvdoEcio())`()` Get the EVDO Ec/Io value in dB\*10 |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoSnr](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getEvdoSnr())`()` Get the signal to noise ratio. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGsmBitErrorRate](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getGsmBitErrorRate())`()` Get the GSM bit error rate (0-7, 99) as defined in TS 27. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGsmSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getGsmSignalStrength())`()` Get the GSM RSSI in ASU. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getLevel())`()` Retrieve an abstract level value for the overall signal strength. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#getTimestampMillis())`()` <br /> Value is a non-negative timestamp in the [android.os.SystemClock#elapsedRealtime()](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime())time base. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#hashCode())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGsm](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#isGsm())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [Parcelable.writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)) |
 

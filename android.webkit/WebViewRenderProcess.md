@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # WebViewRenderProcess
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebViewRenderProcess "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebViewRenderProcess
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebViewRenderProcess](https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcess#) |
 
 WebViewRenderProcess provides an opaque handle to a [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView) renderer.

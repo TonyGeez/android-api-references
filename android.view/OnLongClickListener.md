@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnLongClickListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/View.OnLongClickListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnLongClickListener
@@ -13,6 +14,7 @@ interface OnLongClickListener
 | [android.view.View.OnLongClickListener](https://developer.android.com/reference/kotlin/android/view/View.OnLongClickListener#) |
 
 | Known Direct Subclasses [ZoomButton](https://developer.android.com/reference/kotlin/android/widget/ZoomButton.html#) |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [ZoomButton](https://developer.android.com/reference/kotlin/android/widget/ZoomButton.html#) | This widget provides a simple utility for turning a continued long-press event into a series of clicks at some set frequency. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when a view has been clicked and held.
 

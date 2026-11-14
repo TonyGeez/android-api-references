@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # WifiAvailableChannel
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiAvailableChannel : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.WifiAvailableChannel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#) |
 
 Contains information about a Wifi channel and bitmask of Wifi operational modes allowed on that channel. Use [WifiManager.getAllowedChannels(int, int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getAllowedChannels(kotlin.Int,%20kotlin.Int))to retrieve the list of channels filtered by regulatory constraints. Use [WifiManager.getUsableChannels(int, int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getUsableChannels(kotlin.Int,%20kotlin.Int))to retrieve the list of channels filtered by regulatory and dynamic constraints like concurrency and interference due to other radios.
@@ -22,9 +24,11 @@ Contains information about a Wifi channel and bitmask of Wifi operational modes 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_SAP](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_SAP:kotlin.Int) Wifi SoftAp (Mobile Hotspot) operational mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_STA](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_STA:kotlin.Int) Wifi Infrastructure client (STA) operational mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_TDLS](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_TDLS:kotlin.Int) Wifi Tunneled Direct Link Setup (TDLS) operational mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_WIFI_AWARE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_WIFI_AWARE:kotlin.Int) Wifi Aware (NAN) operational mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_WIFI_DIRECT_CLI](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_WIFI_DIRECT_CLI:kotlin.Int) Wifi Direct client (CLI) operational mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MODE_WIFI_DIRECT_GO](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#OP_MODE_WIFI_DIRECT_GO:kotlin.Int) Wifi Direct Group Owner (GO) operational mode. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -39,9 +43,11 @@ Contains information about a Wifi channel and bitmask of Wifi operational modes 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelWidth](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#getChannelWidth())`()` Get the channel bandwidth, which indicates the amount of frequency spectrum allocated for data transmission within a channel. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequencyMhz](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#getFrequencyMhz())`()` Get the channel frequency in MHz. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOperationalModes](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#getOperationalModes())`()` Get the operational modes allowed on a channel. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

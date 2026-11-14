@@ -5,16 +5,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # GridLayoutAnimationController
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController "View this page in Java") 
+| --- | --- |
 
 ```
 open class GridLayoutAnimationController : LayoutAnimationController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.LayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController) ||
 | | ↳ | [android.view.animation.GridLayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#) |
 
 A layout animation controller is used to animated a grid layout's children. While [LayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController) relies only on the index of the child in the view group to compute the animation delay, this class uses both the X and Y coordinates of the child within a grid. In addition, the animation direction can be controlled. The default direction is `DIRECTION_LEFT_TO_RIGHT | DIRECTION_TOP_TO_BOTTOM`. You can also set the animation priority to columns or rows. The default priority is none. Information used to compute the animation delay of each child are stored in an instance of [android.view.animation.GridLayoutAnimationController.AnimationParameters](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController.AnimationParameters), itself stored in the [android.view.ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#) of the view.
+| --- | --- |
 
 ## Summary
 
@@ -27,6 +30,7 @@ A layout animation controller is used to animated a grid layout's children. Whil
 | [`android:columnDelay`](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#attr_GridLayoutAnimationController) | Fraction of the animation duration used to delay the beginning of the animation of each column. |
 | [`android:direction`](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#attr_GridLayoutAnimationController) | Direction of the animation in the grid. |
 | [`android:directionPriority`](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#attr_GridLayoutAnimationController) | Priority of the rows and columns. |
+| --- | --- |
 | [`android:rowDelay`](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#attr_GridLayoutAnimationController) | Fraction of the animation duration used to delay the beginning of the animation of each row. |
 
 | Inherited XML attributes ||
@@ -38,12 +42,15 @@ A layout animation controller is used to animated a grid layout's children. Whil
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_BOTTOM_TO_TOP](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_BOTTOM_TO_TOP:kotlin.Int) Animates the children starting from the bottom of the grid to the top. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_HORIZONTAL_MASK](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_HORIZONTAL_MASK:kotlin.Int) Bitmask used to retrieve the horizontal component of the direction. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_LEFT_TO_RIGHT:kotlin.Int) Animates the children starting from the left of the grid to the right. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_RIGHT_TO_LEFT:kotlin.Int) Animates the children starting from the right of the grid to the left. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_TOP_TO_BOTTOM](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_TOP_TO_BOTTOM:kotlin.Int) Animates the children starting from the top of the grid to the bottom. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_VERTICAL_MASK](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#DIRECTION_VERTICAL_MASK:kotlin.Int) Bitmask used to retrieve the vertical component of the direction. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_COLUMN](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#PRIORITY_COLUMN:kotlin.Int) Columns are animated first. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_NONE](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#PRIORITY_NONE:kotlin.Int) Rows and columns are animated at the same time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_ROW](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#PRIORITY_ROW:kotlin.Int) Rows are animated first. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -60,12 +67,15 @@ A layout animation controller is used to animated a grid layout's children. Whil
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getColumnDelay](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#getColumnDelay())`()` Returns the delay by which the children's animation are offset from one column to the other. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#getDirection())`()` Returns the direction of the animation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirectionPriority](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#getDirectionPriority())`()` Returns the direction priority for the animation. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRowDelay](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#getRowDelay())`()` Returns the delay by which the children's animation are offset from one row to the other. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColumnDelay](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#setColumnDelay(kotlin.Float))`(`columnDelay:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the delay, as a fraction of the animation duration, by which the children's animations are offset from one column to the other. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDirection](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#setDirection(kotlin.Int))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the direction of the animation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDirectionPriority](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#setDirectionPriority(kotlin.Int))`(`directionPriority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies the direction priority of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRowDelay](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#setRowDelay(kotlin.Float))`(`rowDelay:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the delay, as a fraction of the animation duration, by which the children's animations are offset from one row to the other. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willOverlap](https://developer.android.com/reference/kotlin/android/view/animation/GridLayoutAnimationController#willOverlap())`()` Indicates whether two children's animations will overlap. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -100,12 +110,14 @@ android:direction
 Direction of the animation in the grid.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---------------|-------|--------------------------------------|
 | bottom_to_top | 2 | Animates rows from bottom to top. |
 | left_to_right | 0 | Animates columns from left to right. |
 | right_to_left | 1 | Animates columns from right to left. |
+| --- | --- | --- |
 | top_to_bottom | 0 | Animates rows from top to bottom. |
 
 ### android:directionPriority
@@ -122,6 +134,7 @@ Must be one of the following constant values.
 | column | 1 | Columns are animated first. |
 | none | 0 | Rows and columns are animated at the same time. |
 | row | 2 | Rows are animated first. |
+| --- | --- | --- |
 
 ### android:rowDelay
 
@@ -295,6 +308,7 @@ Creates a new layout animation controller with the specified delays and the spec
 | `animation` | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!: the animation to use on each child of the view group |
 | `columnDelay` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the delay by which each column animation must be offset |
 | `rowDelay` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the delay by which each row animation must be offset |
+| --- | --- |
 
 ## Public methods
 
@@ -412,6 +426,7 @@ open fun setDirection(direction: Int): Unit
 ```
 
 Sets the direction of the animation. The direction is expressed as an integer containing a horizontal and vertical component. For instance, `DIRECTION_BOTTOM_TO_TOP | DIRECTION_RIGHT_TO_LEFT`.
+| --- | --- |
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------|

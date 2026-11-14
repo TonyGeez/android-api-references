@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # TakeScreenshotCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.TakeScreenshotCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface TakeScreenshotCallback

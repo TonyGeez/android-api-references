@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintJob
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/PrintJob "View this page in Java") 
+| --- | --- |
 
 ```
 class PrintJob
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintJob](https://developer.android.com/reference/kotlin/android/print/PrintJob#) |
 
 This class represents a print job from the perspective of an application. It contains behavior methods for performing operations on it as well as methods for querying its state. A snapshot of the print job state is represented by the [PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo) class. The state of a print job may change over time. An application receives instances of this class when creating a print job or querying for its print jobs.
@@ -22,15 +24,19 @@ This class represents a print job from the perspective of an application. It con
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/print/PrintJob#cancel())`()` Cancels this print job. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/print/PrintJob#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [PrintJobId](https://developer.android.com/reference/kotlin/android/print/PrintJobId)? | [getId](https://developer.android.com/reference/kotlin/android/print/PrintJob#getId())`()` Gets the unique print job id. |
+| --- | --- |
 | [PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo) | [getInfo](https://developer.android.com/reference/kotlin/android/print/PrintJob#getInfo())`()` Gets the [PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo) that describes this job. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/print/PrintJob#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](https://developer.android.com/reference/kotlin/android/print/PrintJob#isBlocked())`()` Gets whether this print job is blocked. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](https://developer.android.com/reference/kotlin/android/print/PrintJob#isCancelled())`()` Gets whether this print job is cancelled. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompleted](https://developer.android.com/reference/kotlin/android/print/PrintJob#isCompleted())`()` Gets whether this print job is completed. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailed](https://developer.android.com/reference/kotlin/android/print/PrintJob#isFailed())`()` Gets whether this print job is failed. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQueued](https://developer.android.com/reference/kotlin/android/print/PrintJob#isQueued())`()` Gets whether this print job is queued. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](https://developer.android.com/reference/kotlin/android/print/PrintJob#isStarted())`()` Gets whether this print job is started. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restart](https://developer.android.com/reference/kotlin/android/print/PrintJob#restart())`()` Restarts this print job. |
+| --- | --- |
 
 ## Public methods
 

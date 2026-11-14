@@ -3,12 +3,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ZenDeviceEffects
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/notification/ZenDeviceEffects "View this page in Java")
+| --- | --- |
 
 ```
 class ZenDeviceEffects : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.notification.ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#) |
 
 Represents the set of device effects (affecting display and device behavior in general) that are applied whenever an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#` is active.
@@ -28,12 +30,15 @@ Represents the set of device effects (affecting display and device behavior in g
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#shouldDimWallpaper()()` Whether the wallpaper should be dimmed while the rule is active. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#shouldDisplayGrayscale()()` Whether the level of color saturation of the display should be set to minimum, effectively switching it to grayscale, while the rule is active. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#shouldSuppressAmbientDisplay()()` Whether the ambient (always-on) display feature should be disabled while the rule is active. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#shouldUseNightMode()()` Whether night mode (aka dark theme) should be applied while the rule is active. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

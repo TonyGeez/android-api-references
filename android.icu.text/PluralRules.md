@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # PluralRules
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/PluralRules "View this page in Java") 
+| --- | --- |
 
 ```
 open class PluralRules : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#) |
 
 Defines rules for mapping non-negative numeric values onto a small set of keywords.
@@ -83,6 +85,7 @@ Examples are in the following table:
 | 1.0 | 1 | 0 | 1 |
 | 1.00 | 1 | 0 | 2 |
 | 1.3 | 1 | 3 | 1 |
+| --- | --- | --- | --- |
 | 1.03 | 1 | 3 | 2 |
 | 1.23 | 1 | 23 | 2 |
 
@@ -101,9 +104,11 @@ The difference between 'in' and 'within' is that 'in' only includes integers in 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_FEW](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_FEW:kotlin.String) Common name for the 'paucal' or other special plural form. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_MANY](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_MANY:kotlin.String) Common name for the arabic (11 to 99) plural form. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ONE](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_ONE:kotlin.String) Common name for the 'singular' plural form. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_OTHER](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_OTHER:kotlin.String) Common name for the default plural form. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_TWO](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_TWO:kotlin.String) Common name for the 'dual' plural form. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ZERO](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#KEYWORD_ZERO:kotlin.String) Common name for the 'zero' plural form. |
+| --- | --- |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_UNIQUE_VALUE](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#NO_UNIQUE_VALUE:kotlin.Double) Value returned by [getUniqueKeywordValue](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#getUniqueKeywordValue(kotlin.String))when there is no unique value to return. |
 
 | Public methods ||
@@ -111,18 +116,23 @@ The difference between 'in' and 'within' is that 'in' only includes integers in 
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [createRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#createRules(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a PluralRules from a description if it is parsable, otherwise returns null. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#equals(android.icu.text.PluralRules))`(`rhs:` ` [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)!`)` Returns true if rhs is equal to this. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [forLocale](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#forLocale(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given locale. |
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [forLocale](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#forLocale(android.icu.util.ULocale,%20android.icu.text.PluralRules.PluralType))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `type:` ` [PluralRules.PluralType](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules.PluralType)!`)` Provides access to the predefined`PluralRules`for a given locale and the plural type. |
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [forLocale](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#forLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| --- | --- |
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [forLocale](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#forLocale(java.util.Locale,%20android.icu.text.PluralRules.PluralType))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `type:` ` [PluralRules.PluralType](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules.PluralType)!`)` Provides access to the predefined`PluralRules`for a given [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) and the plural type. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getAllKeywordValues](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#getAllKeywordValues(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns all the values that trigger this keyword, or null if the number of such values is unlimited. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#getKeywords())`()` Returns a set of all rule keywords used in this`PluralRules`object. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getSamples](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#getSamples(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a list of integer values for which select() would return that keyword, or null if the keyword is not defined. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getUniqueKeywordValue](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#getUniqueKeywordValue(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the unique value that this keyword matches, or [NO_UNIQUE_VALUE](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#NO_UNIQUE_VALUE:kotlin.Double) if the keyword matches multiple values or is not defined for this PluralRules. |
 | openstatic [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#)! | [parseDescription](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#parseDescription(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a plural rules description and returns a PluralRules. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#select(android.icu.number.FormattedNumber))`(`number:` ` [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber.html#)!`)` Given a formatted number, returns the keyword of the first rule that applies to the number. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#select(android.icu.number.FormattedNumberRange))`(`range:` ` [FormattedNumberRange](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumberRange.html#)!`)` Given a formatted number range, returns the overall plural form of the range. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#select(kotlin.Double))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Given a floating-point number, returns the keyword of the first rule that applies to the number. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules#toString())`()` Returns a string representation of the object. |
 
 | Properties ||

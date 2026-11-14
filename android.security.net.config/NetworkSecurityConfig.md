@@ -8,6 +8,7 @@ class NetworkSecurityConfig
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.net.config.NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#) |
 
 The security configuration to use when performing network communications.
@@ -25,6 +26,7 @@ A `https://developer.android.com/reference/kotlin/android/security/net/config/Ne
 | static [NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#)? | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createBaseConfig(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a base `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` using the provided app's defaults. |
 | static [NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createLocalhostConfig()()` Returns a `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` for localhost. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#getDomainEncryptionMode()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#isCertificateTransparencyVerificationRequired()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#isCleartextTrafficPermitted()()` <br /> |
 

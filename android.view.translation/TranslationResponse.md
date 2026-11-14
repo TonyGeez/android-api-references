@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/TranslationResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class TranslationResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#) |
 
 Response from the translation service, which contains the translated result.
@@ -26,6 +28,7 @@ Response from the translation service, which contains the translated result.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSLATION_STATUS_CONTEXT_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#TRANSLATION_STATUS_CONTEXT_UNSUPPORTED:kotlin.Int) The languages of the request is not available to be translated. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSLATION_STATUS_SUCCESS](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#TRANSLATION_STATUS_SUCCESS:kotlin.Int) The translation service was successful in translating. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSLATION_STATUS_UNKNOWN_ERROR](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#TRANSLATION_STATUS_UNKNOWN_ERROR:kotlin.Int) The translation service returned unknown translation result. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,9 +39,11 @@ Response from the translation service, which contains the translated result.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#describeContents())`()` <br /> |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue)!\> | [getTranslationResponseValues](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#getTranslationResponseValues())`()` List of translated [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) s. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTranslationStatus](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#getTranslationStatus())`()` The translation result status code. |
+| --- | --- |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse)!\> | [getViewTranslationResponses](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#getViewTranslationResponses())`()` List of translated [ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse) s. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinalResponse](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#isFinalResponse())`()` Whether this response contains complete translated values, or is the final response in a series of partial responses. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

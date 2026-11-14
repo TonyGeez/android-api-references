@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # Callback
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Handler.Callback "View this page in Java") 
+| --- | --- |
 
 ```
 interface Callback

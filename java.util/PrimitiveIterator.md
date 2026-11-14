@@ -11,6 +11,7 @@ interface PrimitiveIterator<T : Any!, T_CONS : Any!> : MutableIterator<T>
 | [java.util.PrimitiveIterator](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator#) |
 
 | Known Direct Subclasses [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble), [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt), [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------| | [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble) | An Iterator specialized for`double`values. | | [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt) | An Iterator specialized for`int`values. | | [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong) | An Iterator specialized for`long`values. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A base type for primitive specializations of`Iterator`. Specialized subtypes are provided for [int](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt), [long](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong), and [double](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble) values.
 
@@ -25,6 +26,7 @@ Iteration of primitive values using boxing-based methods [next()](https://develo
 | abstract | [OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble) An Iterator specialized for`double`values. |
 | abstract | [OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt) An Iterator specialized for`int`values. |
 | abstract | [OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong) An Iterator specialized for`long`values. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

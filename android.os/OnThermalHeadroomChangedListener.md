@@ -3,6 +3,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # OnThermalHeadroomChangedListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener "View this page in Java")
+| --- | --- |
 
 ```
 interface OnThermalHeadroomChangedListener
@@ -46,4 +47,5 @@ This serves as a more advanced option compared to thermal status listener, where
 | `headroom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): current headroom. Value is 0.0f or greater |
 | `forecastHeadroom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): forecasted headroom in future. Value is 0.0f or greater |
 | `forecastSeconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): how many seconds in the future used in forecast. Value is 0 or greater |
+| --- | --- |
 | `thresholds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>: new headroom thresholds, see `https://developer.android.com/reference/kotlin/android/os/PowerManager#getThermalHeadroomThresholds()` This value cannot be `null`. |

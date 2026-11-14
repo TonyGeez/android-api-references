@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmErrorEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmErrorEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmErrorEvent : DrmEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.drm.DrmEvent](https://developer.android.com/reference/kotlin/android/drm/DrmEvent) ||
 | | ↳ | [android.drm.DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#) |
 
@@ -28,9 +30,11 @@ An entity class that is passed to the [onError()](https://developer.android.com/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACQUIRE_DRM_INFO_FAILED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_ACQUIRE_DRM_INFO_FAILED:kotlin.Int) Failed to acquire [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_NOT_SUPPORTED:kotlin.Int) Response from the server cannot be handled by the DRM plug-in (agent). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NO_INTERNET_CONNECTION](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_NO_INTERNET_CONNECTION:kotlin.Int) An Internet connection is not available and no attempt can be made to renew rights. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OUT_OF_MEMORY](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_OUT_OF_MEMORY:kotlin.Int) Memory allocation failed during renewal. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PROCESS_DRM_INFO_FAILED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_PROCESS_DRM_INFO_FAILED:kotlin.Int) Failed to process [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOVE_ALL_RIGHTS_FAILED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_REMOVE_ALL_RIGHTS_FAILED:kotlin.Int) Failed to remove all the rights objects associated with all DRM schemes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_NOT_INSTALLED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_RIGHTS_NOT_INSTALLED:kotlin.Int) Something went wrong installing the rights. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_RENEWAL_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent#TYPE_RIGHTS_RENEWAL_NOT_ALLOWED:kotlin.Int) The server rejected the renewal of rights. |
 
@@ -182,6 +186,7 @@ Creates a`DrmErrorEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of the event. Must be any of the event types defined above. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. It can be null. |
+| --- | --- |
 
 ### DrmErrorEvent
 
@@ -202,4 +207,5 @@ Creates a`DrmErrorEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of the event. Must be any of the event types defined above. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. |
+| --- | --- |
 | `attributes` | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Attributes for extensible information. Could be any information provided by the plug-in. It can be null. |

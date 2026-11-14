@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PathDashPathEffect
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/PathDashPathEffect "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathDashPathEffect : PathEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) ||
 | | ↳ | [android.graphics.PathDashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathDashPathEffect#) |
 
@@ -49,4 +51,5 @@ Dash the drawn path by stamping it with the specified shape. This only applies t
 | `shape` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!: The path to stamp along |
 | `advance` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): spacing between each stamp of shape |
 | `phase` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): amount to offset before the first shape is stamped |
+| --- | --- |
 | `style` | [PathDashPathEffect.Style](https://developer.android.com/reference/kotlin/android/graphics/PathDashPathEffect.Style)!: how to transform the shape at each position as it is stamped |

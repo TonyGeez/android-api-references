@@ -5,15 +5,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # InvalidMajorVersionException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/exceptions/InvalidMajorVersionException "View this page in Java") 
+| --- | --- |
 
 ```
 class InvalidMajorVersionException : IkeProtocolException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeProtocolException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException) ||
 | | | | | ↳ | [android.net.ipsec.ike.exceptions.InvalidMajorVersionException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidMajorVersionException#) |
 

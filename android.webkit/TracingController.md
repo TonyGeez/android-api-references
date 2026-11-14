@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # TracingController
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/TracingController "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class TracingController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.TracingController](https://developer.android.com/reference/kotlin/android/webkit/TracingController#) |
 
 Manages tracing of WebViews. In particular provides functionality for the app to enable/disable tracing of parts of code and to collect tracing data. This is useful for profiling performance issues, debugging and memory usage analysis in production and real life scenarios.
@@ -42,6 +44,7 @@ TracingController tracingController = TracingController.getInstance();
 | openstatic [TracingController](https://developer.android.com/reference/kotlin/android/webkit/TracingController#) | [getInstance](https://developer.android.com/reference/kotlin/android/webkit/TracingController#getInstance())`()` Returns the default TracingController instance. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTracing](https://developer.android.com/reference/kotlin/android/webkit/TracingController#isTracing())`()` Returns whether the WebView framework is tracing. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/webkit/TracingController#start(android.webkit.TracingConfig))`(`tracingConfig:` ` [TracingConfig](https://developer.android.com/reference/kotlin/android/webkit/TracingConfig)`)` Starts tracing all webviews. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [stop](https://developer.android.com/reference/kotlin/android/webkit/TracingController#stop(java.io.OutputStream,%20java.util.concurrent.Executor))`(`outputStream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)?`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`)` Stops tracing and flushes tracing data to the specified outputStream. |
 
 ## Public constructors

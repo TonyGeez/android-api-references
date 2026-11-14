@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # MessagePattern
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/MessagePattern "View this page in Java") 
+| --- | --- |
 
 ```
 class MessagePattern : Cloneable, Freezable<MessagePattern!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#) |
 
 Parses and represents ICU MessageFormat patterns. Also handles patterns for ChoiceFormat, PluralFormat and SelectFormat. Used in the implementations of those classes as well as in tools for message validation, translation and format conversion.
@@ -57,12 +59,14 @@ This class is not intended for public subclassing.
 | | [ApostropheMode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.ApostropheMode) Mode for when an apostrophe starts quoted literal text for MessageFormat output. |
 | | [ArgType](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.ArgType) Argument type constants. |
 | | [Part](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part) A message pattern "part", representing a pattern parsing event. |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_NUMBER](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#ARG_NAME_NOT_NUMBER:kotlin.Int) Return value from [validateArgumentName(java.lang.String)](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#validateArgumentName(kotlin.String))for when the string is a valid "pattern identifier" but not a number. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_VALID](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#ARG_NAME_NOT_VALID:kotlin.Int) Return value from [validateArgumentName(java.lang.String)](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#validateArgumentName(kotlin.String))for when the string is invalid. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_NUMERIC_VALUE](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#NO_NUMERIC_VALUE:kotlin.Double) Special value that is returned by getNumericValue(Part) when no numeric value is defined for a part. |
+| --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -75,30 +79,39 @@ This class is not intended for public subclassing.
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [autoQuoteApostropheDeep](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#autoQuoteApostropheDeep())`()` Returns a version of the parsed pattern string where each ASCII apostrophe is doubled (escaped) if it is not already, and if it is not interpreted as quoting syntax. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#clear())`()` Clears this MessagePattern. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPatternAndSetApostropheMode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#clearPatternAndSetApostropheMode(android.icu.text.MessagePattern.ApostropheMode))`(`mode:` ` [MessagePattern.ApostropheMode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.ApostropheMode)!`)` Clears this MessagePattern and sets the ApostropheMode. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#clone())`()` Creates and returns a copy of this object. |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [cloneAsThawed](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#cloneAsThawed())`()` Creates and returns an unfrozen copy of this object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countParts](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#countParts())`()` Returns the number of "parts" created by parsing the pattern string. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [freeze](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#freeze())`()` Freezes this object, making it immutable and thread-safe. |
 | [MessagePattern.ApostropheMode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.ApostropheMode)! | [getApostropheMode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getApostropheMode())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimitPartIndex](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getLimitPartIndex(kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the ARG|MSG_LIMIT part corresponding to the ARG|MSG_START at start. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getNumericValue](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getNumericValue(android.icu.text.MessagePattern.Part))`(`part:` ` [MessagePattern.Part](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part)!`)` Returns the numeric value associated with an ARG_INT or ARG_DOUBLE. |
 | [MessagePattern.Part](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part)! | [getPart](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getPart(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the i-th pattern "part". |
+| --- | --- |
 | [MessagePattern.Part.Type](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part.Type)! | [getPartType](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getPartType(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Part. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternIndex](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getPatternIndex(kotlin.Int))`(`partIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern index of the specified pattern "part". |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternString](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getPatternString())`()` <br /> |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getPluralOffset](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getPluralOffset(kotlin.Int))`(`pluralStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the "offset:" value of a PluralFormat argument, or 0 if none is specified. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubstring](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#getSubstring(android.icu.text.MessagePattern.Part))`(`part:` ` [MessagePattern.Part](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part)!`)` Returns the substring of the pattern string indicated by the Part. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNamedArguments](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#hasNamedArguments())`()` Does the parsed pattern have named arguments like {first_name}? |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNumberedArguments](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#hasNumberedArguments())`()` Does the parsed pattern have numbered arguments like {2}? |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#hashCode())`()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#isFrozen())`()` Determines whether this object is frozen (immutable) or not. |
+| --- | --- |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [parse](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#parse(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a MessageFormat pattern string. |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [parseChoiceStyle](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#parseChoiceStyle(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a ChoiceFormat pattern string. |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [parsePluralStyle](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#parsePluralStyle(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a PluralFormat pattern string. |
+| --- | --- |
 | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#)! | [parseSelectStyle](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#parseSelectStyle(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a SelectFormat pattern string. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [partSubstringMatches](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#partSubstringMatches(android.icu.text.MessagePattern.Part,%20kotlin.String))`(`part:` ` [MessagePattern.Part](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.Part)!`, `s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the part's substring with the input string s. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [validateArgumentName](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern#validateArgumentName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Validates and parses an argument name or argument number string. |
 
 ## Constants
@@ -188,6 +201,7 @@ Constructs a MessagePattern with default ApostropheMode and parses the MessageFo
 | `java.lang.IllegalArgumentException` | for syntax errors in the pattern string |
 | `java.lang.IndexOutOfBoundsException` | if certain limits are exceeded (e.g., argument number too high, argument name too long, etc.) |
 | `java.lang.NumberFormatException` | if a number could not be parsed |
+| --- | --- |
 
 ## Public methods
 
@@ -333,6 +347,7 @@ fun getLimitPartIndex(start: Int): Int
 ```
 
 Returns the index of the ARG|MSG_LIMIT part corresponding to the ARG|MSG_START at start.
+| --- | --- | --- |
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -567,6 +582,7 @@ Parses a MessageFormat pattern string.
 | `java.lang.IllegalArgumentException` | for syntax errors in the pattern string |
 | `java.lang.IndexOutOfBoundsException` | if certain limits are exceeded (e.g., argument number too high, argument name too long, etc.) |
 | `java.lang.NumberFormatException` | if a number could not be parsed |
+| --- | --- |
 
 ### parseChoiceStyle
 
@@ -591,6 +607,7 @@ Parses a ChoiceFormat pattern string.
 | `java.lang.IllegalArgumentException` | for syntax errors in the pattern string |
 | `java.lang.IndexOutOfBoundsException` | if certain limits are exceeded (e.g., argument number too high, argument name too long, etc.) |
 | `java.lang.NumberFormatException` | if a number could not be parsed |
+| --- | --- |
 
 ### parsePluralStyle
 
@@ -615,6 +632,7 @@ Parses a PluralFormat pattern string.
 | `java.lang.IllegalArgumentException` | for syntax errors in the pattern string |
 | `java.lang.IndexOutOfBoundsException` | if certain limits are exceeded (e.g., argument number too high, argument name too long, etc.) |
 | `java.lang.NumberFormatException` | if a number could not be parsed |
+| --- | --- |
 
 ### parseSelectStyle
 
@@ -639,6 +657,7 @@ Parses a SelectFormat pattern string.
 | `java.lang.IllegalArgumentException` | for syntax errors in the pattern string |
 | `java.lang.IndexOutOfBoundsException` | if certain limits are exceeded (e.g., argument number too high, argument name too long, etc.) |
 | `java.lang.NumberFormatException` | if a number could not be parsed |
+| --- | --- |
 
 ### partSubstringMatches
 

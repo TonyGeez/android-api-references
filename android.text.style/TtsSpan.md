@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TtsSpan
 
 Kotlin | [Java](https://developer.android.com/reference/android/text/style/TtsSpan "View this page in Java")
+| --- | --- |
 
 ```
 open class TtsSpan : ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.style.TtsSpan](https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#) |
 
 A span that supplies additional meta-data for the associated text intended for text-to-speech engines. If the text is being processed by a text-to-speech engine, the engine may use the data in this span in addition to or instead of its associated text. Each instance of a TtsSpan has a type, for example `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MEASURE:kotlin.String`. And a list of arguments, provided as key-value pairs in a bundle. The inner classes are there for convenience and provide builders for each TtsSpan type.
@@ -20,18 +22,23 @@ A span that supplies additional meta-data for the associated text intended for t
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.Builder` A simple builder for TtsSpans. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.CardinalBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_CARDINAL:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.DateBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DATE:kotlin.String`. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.DecimalBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DECIMAL:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.DigitsBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DIGITS:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.DurationBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DURATION:kotlin.String`. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.ElectronicBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_ELECTRONIC:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.FractionBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_FRACTION:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.MeasureBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MEASURE:kotlin.String`. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.MoneyBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MONEY:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.OrdinalBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_ORDINAL:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.SemioticClassBuilder` A builder for TtsSpans, has setters for morphosyntactic features. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.TelephoneBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TELEPHONE:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.TextBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TEXT:kotlin.String`. |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.TimeBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TIME:kotlin.String`. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.VerbatimBuilder` A builder for TtsSpans of type `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_VERBATIM:kotlin.String`. |
 
 | Constants ||
@@ -39,84 +46,111 @@ A span that supplies additional meta-data for the associated text intended for t
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ANIMACY_ANIMATE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ANIMACY_INANIMATE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_ANIMACY:kotlin.String` String argument supplying animacy information. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_CASE:kotlin.String` String argument supplying case information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_COUNTRY_CODE:kotlin.String` Argument used to specify the country code of a telephone number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_CURRENCY:kotlin.String` Argument used to specify the currency. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_DAY:kotlin.String` Argument used to specify the day of the month of a date. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_DENOMINATOR:kotlin.String` Argument used to specify the denominator of a fraction. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_DIGITS:kotlin.String` Argument used to specify a string of digits. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_DOMAIN:kotlin.String` Argument used to specify the domain part of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_EXTENSION:kotlin.String` Argument used to specify the extension part of a telephone number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_FRACTIONAL_PART:kotlin.String` Argument used to specify the fractional part of a decimal. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_FRAGMENT_ID:kotlin.String` Argument used to specify the fragment id of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_GENDER:kotlin.String` String argument supplying gender information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_HOURS:kotlin.String` Argument used to specify the hours of a time or duration. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_INTEGER_PART:kotlin.String` Argument used to specify the integer part of a decimal or fraction. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_MINUTES:kotlin.String` Argument used to specify the minutes of a time or duration. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_MONTH:kotlin.String` Argument used to specify the month of a date. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_MULTIPLICITY:kotlin.String` String argument supplying multiplicity information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_NUMBER:kotlin.String` Argument used to specify a whole number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_NUMBER_PARTS:kotlin.String` Argument used to specify the main number part of a telephone number. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_NUMERATOR:kotlin.String` Argument used to specify the numerator of a fraction. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_PASSWORD:kotlin.String` Argument used to specify the password part of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_PATH:kotlin.String` Argument used to specify the path part of a URI. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_PORT:kotlin.String` Argument used to specify the port number of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_PROTOCOL:kotlin.String` Argument used to specify the protocol of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_QUANTITY:kotlin.String` Argument used to choose the suffix (thousand, million, etc) that is used to pronounce large amounts of money. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_QUERY_STRING:kotlin.String` Argument used to specify the query string of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_SECONDS:kotlin.String` Argument used to specify the seconds of a time or duration. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_TEXT:kotlin.String` String supplying the text to be synthesized. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_UNIT:kotlin.String` Argument used to specify the unit of a measure. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_USERNAME:kotlin.String` Argument used to specify the username part of a URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_VERBATIM:kotlin.String` Argument used to specify a string where the characters are read verbatim, except whitespace. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_WEEKDAY:kotlin.String` Argument used to specify the weekday of a date. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_YEAR:kotlin.String` Argument used to specify the year of a date. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_ABLATIVE:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_ACCUSATIVE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_DATIVE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_GENITIVE:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_INSTRUMENTAL:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_LOCATIVE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_NOMINATIVE:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#CASE_VOCATIVE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#GENDER_FEMALE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#GENDER_MALE:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#GENDER_NEUTRAL:kotlin.String` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_APRIL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_AUGUST:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_DECEMBER:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_FEBRUARY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_JANUARY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_JULY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_JUNE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_MARCH:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_MAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_NOVEMBER:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_OCTOBER:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MONTH_SEPTEMBER:kotlin.Int` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MULTIPLICITY_DUAL:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MULTIPLICITY_PLURAL:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#MULTIPLICITY_SINGLE:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_CARDINAL:kotlin.String` The text associated with this span is a cardinal. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DATE:kotlin.String` The text associated with this span is a date. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DECIMAL:kotlin.String` The text associated with this span is a decimal number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DIGITS:kotlin.String` The text associated with this span is a series of digits that have to be read sequentially. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DURATION:kotlin.String` The text associated with this span is a duration, consisting of a number of hours, minutes, and seconds specified with `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_HOURS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_MINUTES:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_SECONDS:kotlin.String`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_ELECTRONIC:kotlin.String` The text associated with this span is a URI (can be used for URLs and email addresses). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_FRACTION:kotlin.String` The text associated with this span is a fractional number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MEASURE:kotlin.String` The text associated with this span is a measure, consisting of a number and a unit. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MONEY:kotlin.String` The text associated with this span is an amount of money. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_ORDINAL:kotlin.String` The text associated with this span is an ordinal. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TELEPHONE:kotlin.String` The text associated with this span is a telephone number. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TEXT:kotlin.String` This span type can be used to add morphosyntactic features to the text it spans over, or synthesize a something else than the spanned text. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_TIME:kotlin.String` The text associated with this span is a time, consisting of a number of hours, minutes, and seconds specified with `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_HOURS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_MINUTES:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#ARG_SECONDS:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_VERBATIM:kotlin.String` The text associated with this span is a series of characters that have to be read verbatim. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_FRIDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_MONDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_SATURDAY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_SUNDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_THURSDAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_TUESDAY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#WEEKDAY_WEDNESDAY:kotlin.Int` <br /> |
 
 | Public constructors ||
@@ -129,6 +163,7 @@ A span that supplies additional meta-data for the associated text intended for t
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getArgs()()` Returns a bundle of the arguments set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getType()()` Returns the type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

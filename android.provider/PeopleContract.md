@@ -7,6 +7,7 @@ class PeopleContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.PeopleContract](https://developer.android.com/reference/kotlin/android/provider/PeopleContract#) |
 
 Defines the contract between client applications, People Directory applications (such as VoIP and messaging services), and the system's People Provider.
@@ -67,6 +68,7 @@ Reading data from the People Provider requires the `https://developer.android.co
 | | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Capability` Bitmask flags indicating the types of communication reached or supported by a user identity in a People Directory. |
 | | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Directory` Constants and utilities for registering and discovering People Directories. |
 | | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Groups` Constants, URI definitions, and query utilities for group records aggregated from People Directories. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Intents` Standard intent actions, extras, and interaction constants used to bridge client applications with communication flows in People Directory applications. |
 | | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons` Constants, URI definitions, and query utilities for person identity records aggregated from People Directories. |
 
@@ -75,9 +77,11 @@ Reading data from the People Provider requires the `https://developer.android.co
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#AUTHORITY:kotlin.String` The authority for the People Provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#EXTRA_NOTIFICATION_URI:kotlin.String` Key for an extra in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` containing a query-specific notification URI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#QUERY_ARG_PACKAGE:kotlin.String` Query argument key specifying the package name of the target People Directory for a sub-query. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#QUERY_ARG_QUERIES:kotlin.String` Query argument key used to pass a structured list of query requests to the People Provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#QUERY_ARG_SELECTION_TYPE:kotlin.String` Query argument key specifying the selection criterion type (for example, `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query#SELECTION_TYPE_PHONE:kotlin.String` for phone number, `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query#SELECTION_TYPE_EMAIL:kotlin.String` for email address, etc. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#QUERY_ARG_SELECTION_VALUE:kotlin.String` Query argument key specifying the array of values to match against for a given `https://developer.android.com/reference/kotlin/android/provider/PeopleContract#QUERY_ARG_SELECTION_TYPE:kotlin.String`. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
@@ -214,6 +218,7 @@ The returned `https://developer.android.com/reference/kotlin/android/app/Pending
 | `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to interact with the People Provider. This value cannot be `null`. |
 | `interactionType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The desired type of communication, which must be one of the `PEOPLE_INTERACTION_TYPE_*` constants defined in `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Intents`. This value cannot be `null`. |
 | `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): A query arguments `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` identifying the target person or group. This bundle must contain exactly one target sub-query generated using `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query.Builder` (e.g. via `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query.Builder#addLookupQuery(kotlin.String,%20kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query.Builder#addPhoneQuery(kotlin.String,%20kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query.Builder#addEmailQuery(kotlin.String,%20kotlin.collections.MutableList)`, or `https://developer.android.com/reference/kotlin/android/provider/PeopleContract.Persons.Query.Builder#addGroupQuery(kotlin.String,%20kotlin.collections.MutableList)`). This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

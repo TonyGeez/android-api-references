@@ -7,6 +7,7 @@ open class TextPaint : Paint
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#) ||
 | | ↳ | [android.text.TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint#) |
 
@@ -1179,9 +1180,11 @@ Pass null to clear any previous transfer mode. As a convenience, the parameter p
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#baselineShift:kotlin.Int` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#bgColor:kotlin.Int` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#density:kotlin.Float` <br /> |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/text/TextPaint#drawableState:kotlin.IntArray` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#linkColor:kotlin.Int` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#underlineColor:kotlin.Int` Special value 0 means no custom underline |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#underlineThickness:kotlin.Float` Thickness of the underline, in pixels. |
 
 ## Public constructors

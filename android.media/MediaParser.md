@@ -7,6 +7,7 @@ class MediaParser
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser#) |
 
 Parses media container formats and extracts contained media samples and metadata.
@@ -125,9 +126,11 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 | abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` Provides input data to `https://developer.android.com/reference/kotlin/android/media/MediaParser#`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer` Receives extracted media sample data and metadata from `https://developer.android.com/reference/kotlin/android/media/MediaParser#`. |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.ParsingException` Thrown when an error occurs while parsing a media stream. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap` Maps seek positions to `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint` in the stream. |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint` Defines a seek point in a media stream. |
 | abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader` `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` that allows setting the read position. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData` Holds information associated with a track. |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.UnrecognizedInputFormatException` Thrown if all parser implementations provided to `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)` failed to sniff the input content. |
 
@@ -136,39 +139,51 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_ADTS_ENABLE_CBR_SEEKING:kotlin.String` Sets whether constant bitrate seeking should be enabled for ADTS parsing. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_AMR_ENABLE_CBR_SEEKING:kotlin.String` Sets whether constant bitrate seeking should be enabled for AMR. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_FLAC_DISABLE_ID3:kotlin.String` Sets whether the ID3 track should be disabled for FLAC. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MATROSKA_DISABLE_CUES_SEEKING:kotlin.String` Sets whether Matroska parsing should avoid seeking to the cues element. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP3_DISABLE_ID3:kotlin.String` Sets whether the ID3 track should be disabled for MP3. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP3_ENABLE_CBR_SEEKING:kotlin.String` Sets whether constant bitrate seeking should be enabled for MP3. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP3_ENABLE_INDEX_SEEKING:kotlin.String` Sets whether MP3 parsing should generate a time-to-byte mapping. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP4_IGNORE_EDIT_LISTS:kotlin.String` Sets whether MP4 parsing should ignore edit lists. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP4_IGNORE_TFDT_BOX:kotlin.String` Sets whether MP4 parsing should ignore the tfdt box. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES:kotlin.String` Sets whether MP4 parsing should treat all video frames as key frames. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES:kotlin.String` Sets whether TS should treat samples consisting of non-IDR I slices as synchronization samples (key-frames). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_DETECT_ACCESS_UNITS:kotlin.String` Sets whether TS parsing should split AVC stream into access units based on slice headers. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS:kotlin.String` Sets whether TS parsing should handle HDMV DTS audio streams. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_IGNORE_AAC_STREAM:kotlin.String` Sets whether TS parsing should ignore AAC elementary streams. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_IGNORE_AVC_STREAM:kotlin.String` Sets whether TS parsing should ignore AVC elementary streams. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM:kotlin.String` Sets whether TS parsing should ignore splice information streams. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARAMETER_TS_MODE:kotlin.String` Sets the operation mode for TS parsing. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_AC3:kotlin.String` Parser for the AC-3 container format, as defined in Digital Audio Compression Standard (AC-3). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_AC4:kotlin.String` Parser for the AC-4 container format, as defined by Dolby AC-4: Audio delivery for Next-Generation Entertainment Services. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_ADTS:kotlin.String` Parser for the ADTS container format, as defined in ISO/IEC 13818-7. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_AMR:kotlin.String` Parser for the AMR container format, as defined in RFC 4867. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_FLAC:kotlin.String` Parser for the FLAC container format, as defined in the [spec](https://xiph.org/flac/). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_FLV:kotlin.String` Parser for the FLV container format, as defined in Adobe Flash Video File Format Specification. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_FMP4:kotlin.String` Parser for fragmented files using the MP4 container format, as defined in ISO/IEC 14496-12. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_MATROSKA:kotlin.String` Parser for the Matroska container format, as defined in the [spec](https://matroska.org/technical/specs/). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_MP3:kotlin.String` Parser for the MP3 container format, as defined in ISO/IEC 11172-3. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_MP4:kotlin.String` Parser for non-fragmented files using the MP4 container format, as defined in ISO/IEC 14496-12. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_OGG:kotlin.String` Parser for the OGG container format, as defined in RFC 3533. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_PS:kotlin.String` Parser for the PS container format, as defined in ISO/IEC 11172-1. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_TS:kotlin.String` Parser for the TS container format, as defined in ISO/IEC 13818-1. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_UNKNOWN:kotlin.String` Parser name returned by `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserName()` when no parser has been selected yet. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_WAV:kotlin.String` Parser for the WAV container format, as defined in Multimedia Programming Interface and Data Specifications. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_DECODE_ONLY:kotlin.Int` Indicates that the sample should be decoded but not rendered. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_ENCRYPTED:kotlin.Int` Indicates that the sample is (at least partially) encrypted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA:kotlin.Int` Indicates that the sample has supplemental data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_KEY_FRAME:kotlin.Int` Indicates that the sample holds a synchronization sample. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_LAST_SAMPLE:kotlin.Int` Indicates that the sample is known to contain the last media sample of the stream. |
 
 | Public methods ||
@@ -176,12 +191,15 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)(seekableInputReader: https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader)` Makes progress in the extraction of the input media stream, unless the end of the input has been reached. |
 | static [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser#) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)(outputConsumer: https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer, vararg parserNames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates an instance whose backing parser will be selected by sniffing the content during the first `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)` call. |
 | static [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser#) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#createByName(kotlin.String,%20android.media.MediaParser.OutputConsumer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, outputConsumer: https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer)` Creates an instance backed by the parser with the given `name`. |
+| --- | --- |
 | [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getLogSessionId()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserName()()` Returns the name of the backing parser implementation. |
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserNames(android.media.MediaFormat)(mediaFormat: https://developer.android.com/reference/kotlin/android/media/MediaFormat)` Returns an immutable list with the names of the parsers that are suitable for container formats with the given `https://developer.android.com/reference/kotlin/android/media/MediaFormat`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#release()()` Releases any acquired resources. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#seek(android.media.MediaParser.SeekPoint)(seekPoint: https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint)` Seeks within the media container being extracted. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#setLogSessionId(android.media.metrics.LogSessionId)(logSessionId: https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId)` <br /> |
+| --- | --- |
 | [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser#) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#setParameter(kotlin.String,%20kotlin.Any)(parameterName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` Sets parser-specific parameters which allow customizing behavior. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#supportsParameter(kotlin.String)(parameterName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns whether the given `parameterName` is supported by this parser. |
 

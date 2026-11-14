@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # CalendarContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract "View this page in Java") 
+| --- | --- |
 
 ```
 class CalendarContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.CalendarContract](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#) |
 
 The contract between the calendar provider and applications. Contains definitions for the supported URIs and data columns.
@@ -37,39 +39,50 @@ Other tables include:
 | | [Attendees](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Attendees) Fields and helpers for interacting with Attendees. |
 | abstract | [AttendeesColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns) Columns from the Attendees table that other tables join into themselves. |
 | | [CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts) Fields and helpers for accessing calendar alerts information. |
+| --- | --- |
 | abstract | [CalendarAlertsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns) <br /> |
 | | [CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache) CalendarCache stores some settings for calendar including the current time zone for the instances. |
 | abstract | [CalendarCacheColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCacheColumns) <br /> |
+| --- | --- |
 | abstract | [CalendarColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns) Columns specific to the Calendars Uri that other Uris can query. |
 | | [CalendarEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarEntity) Class that represents a Calendar Entity. |
 | abstract | [CalendarSyncColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarSyncColumns) Generic columns for use by sync adapters. |
+| --- | --- |
 | | [Calendars](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Calendars) Constants and helpers for the Calendars table, which contains details for individual calendars. |
 | | [Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) Fields for accessing colors available for a given account. |
 | abstract | [ColorsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns) <br /> |
+| --- | --- |
 | | [EventDays](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDays) Fields and helpers for querying for a list of days that contain events. |
 | abstract | [EventDaysColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDaysColumns) <br /> |
 | | [Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events) Constants and helpers for the Events table, which contains details for individual events. |
+| --- | --- |
 | abstract | [EventsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns) Columns from the Events table that other tables join into themselves. |
 | | [EventsEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsEntity) Class that represents an Event Entity. |
 | | [ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) Fields for accessing the Extended Properties. |
+| --- | --- |
 | abstract | [ExtendedPropertiesColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns) <br /> |
 | | [Instances](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Instances) Fields and helpers for interacting with Instances. |
 | | [Reminders](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Reminders) Fields and helpers for accessing reminders for an event. |
+| --- | --- |
 | abstract | [RemindersColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns) <br /> |
 | abstract | [SyncColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns) Columns for Sync information used by Calendars and Events tables. |
 | | [SyncState](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncState) A table provided for sync adapters to use for storing private sync state data. |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_TYPE_LOCAL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACCOUNT_TYPE_LOCAL:kotlin.String) A special account type for calendars not associated with any account. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_EVENT_REMINDER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACTION_EVENT_REMINDER:kotlin.String) Broadcast Action: This is the intent that gets fired when an alarm notification needs to be posted for a reminder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_HANDLE_CUSTOM_EVENT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACTION_HANDLE_CUSTOM_EVENT:kotlin.String) Activity Action: Display the event to the user in the custom app as specified in [EventsColumns.CUSTOM_APP_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CUSTOM_APP_PACKAGE:kotlin.String). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT:kotlin.String) Action used to help apps show calendar events in the managed profile. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#AUTHORITY:kotlin.String) This authority is used for writing to or querying from the calendar provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALLER_IS_SYNCADAPTER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#CALLER_IS_SYNCADAPTER:kotlin.String) An optional insert, update or delete URI parameter that allows the caller to specify that it is a sync adapter. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CUSTOM_APP_URI](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_CUSTOM_APP_URI:kotlin.String) Intent Extras key: [EventsColumns.CUSTOM_APP_URI](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CUSTOM_APP_URI:kotlin.String) for the event in the [ACTION_HANDLE_CUSTOM_EVENT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACTION_HANDLE_CUSTOM_EVENT:kotlin.String) intent |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ALL_DAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_ALL_DAY:kotlin.String) Intent Extras key: When creating an event, set this to true to create an all-day event by default |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_BEGIN_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_BEGIN_TIME:kotlin.String) Intent Extras key: The start time of an event or an instance of a recurring event. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_END_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_END_TIME:kotlin.String) Intent Extras key: The end time of an event or an instance of a recurring event. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_ID:kotlin.String) Intent Extras key: An extra of type`long`holding the id of an event. |
 
@@ -261,9 +274,11 @@ Starts an activity to view calendar events in the managed profile. When this API
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):the context. This value cannot be`null`. |
 | `eventId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the id of the event to be viewed. Will be put into [EXTRA_EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_ID:kotlin.String) field of the intent. |
 | `startMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_BEGIN_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_BEGIN_TIME:kotlin.String) field of the intent. |
+| --- | --- |
 | `endMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_END_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_END_TIME:kotlin.String) field of the intent. |
 | `allDay` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if the event is an all-day event. Will be put into [EXTRA_EVENT_ALL_DAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#EXTRA_EVENT_ALL_DAY:kotlin.String) field of the intent. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):flags to be set on the intent via [Intent.setFlags](https://developer.android.com/reference/kotlin/android/content/Intent.html#setFlags(kotlin.Int)) |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------|

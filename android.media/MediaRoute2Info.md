@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # MediaRoute2Info
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaRoute2Info "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaRoute2Info : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaRoute2Info](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#) |
 
 Describes the properties of a route.
@@ -26,45 +28,59 @@ Describes the properties of a route.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#CONNECTION_STATE_CONNECTED:kotlin.Int) A connection state indicating the route is connected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#CONNECTION_STATE_CONNECTING:kotlin.Int) A connection state indicating the route is in the process of connecting and is not yet ready for use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#CONNECTION_STATE_DISCONNECTED:kotlin.Int) The default connection state indicating the route is disconnected. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_LIVE_AUDIO](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#FEATURE_LIVE_AUDIO:kotlin.String) Route feature: Live audio. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_LIVE_VIDEO](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#FEATURE_LIVE_VIDEO:kotlin.String) Route feature: Live video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_REMOTE_AUDIO_PLAYBACK](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#FEATURE_REMOTE_AUDIO_PLAYBACK:kotlin.String) Route feature: Remote audio playback. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_REMOTE_PLAYBACK](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#FEATURE_REMOTE_PLAYBACK:kotlin.String) Route feature: Remote playback. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_REMOTE_VIDEO_PLAYBACK](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#FEATURE_REMOTE_VIDEO_PLAYBACK:kotlin.String) Route feature: Remote video playback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_VOLUME_FIXED](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#PLAYBACK_VOLUME_FIXED:kotlin.Int) Playback information indicating the playback volume is fixed, i. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_VOLUME_VARIABLE](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#PLAYBACK_VOLUME_VARIABLE:kotlin.Int) Playback information indicating the playback volume is variable and can be controlled from this object. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFER:kotlin.Int) Indicates that the route is never suitable for media playback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFER:kotlin.Int) Indicates the route is always suitable for media playback. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFER:kotlin.Int) Indicates that the route is suitable for media playback only after explicit user selection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_AUX_LINE](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_AUX_LINE:kotlin.Int) Indicates the route is using the auxiliary line-level connectors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BLE_HEADSET](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_BLE_HEADSET:kotlin.Int) Indicates the route is a Bluetooth Low Energy (BLE) HEADSET. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BLUETOOTH_A2DP](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_BLUETOOTH_A2DP:kotlin.Int) Indicates the route is a bluetooth device, such as a bluetooth speaker or headphones. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BUILTIN_SPEAKER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_BUILTIN_SPEAKER:kotlin.Int) Indicates the route is the speaker system (i.e. a mono speaker or stereo speakers) built into the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DOCK](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_DOCK:kotlin.Int) Indicates the route is the audio device associated with a dock. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GROUP](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_GROUP:kotlin.Int) Indicates the route is a group of devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HDMI](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_HDMI:kotlin.Int) Indicates the route is an HDMI connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HDMI_ARC](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_HDMI_ARC:kotlin.Int) Indicates the route is an Audio Return Channel of an HDMI connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HDMI_EARC](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_HDMI_EARC:kotlin.Int) Indicates the route is an Enhanced Audio Return Channel of an HDMI connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HEARING_AID](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_HEARING_AID:kotlin.Int) Indicates the route is a hearing aid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINE_ANALOG](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_LINE_ANALOG:kotlin.Int) Indicates the route is an analog line-level connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINE_DIGITAL](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_LINE_DIGITAL:kotlin.Int) Indicates the route is a digital line connection (for example S/PDIF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MULTICHANNEL_SPEAKER_GROUP](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_MULTICHANNEL_SPEAKER_GROUP:kotlin.Int) Indicates the route is a speaker group supporting multichannel contents. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_AUDIO_VIDEO_RECEIVER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_AUDIO_VIDEO_RECEIVER:kotlin.Int) Indicates the route is a remote Audio/Video Receiver (AVR). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_CAR](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_CAR:kotlin.Int) Indicates the route is a remote car. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_COMPUTER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_COMPUTER:kotlin.Int) Indicates the route is a remote computer. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_GAME_CONSOLE](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_GAME_CONSOLE:kotlin.Int) Indicates the route is a remote gaming console. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_SMARTPHONE](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_SMARTPHONE:kotlin.Int) Indicates the route is a remote smartphone. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_SMARTWATCH](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_SMARTWATCH:kotlin.Int) Indicates the route is a remote smartwatch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_SPEAKER](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_SPEAKER:kotlin.Int) Indicates the route is a remote speaker. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_TABLET](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_TABLET:kotlin.Int) Indicates the route is a remote tablet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_TABLET_DOCKED](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_TABLET_DOCKED:kotlin.Int) Indicates the route is a remote docked tablet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REMOTE_TV](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_REMOTE_TV:kotlin.Int) Indicates the route is a remote TV. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_UNKNOWN:kotlin.Int) Indicates the route's type is unknown or undefined. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_USB_ACCESSORY](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_USB_ACCESSORY:kotlin.Int) Indicates the route is a USB audio device in accessory mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_USB_DEVICE](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_USB_DEVICE:kotlin.Int) Indicates the route is a USB audio device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_USB_HEADSET](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_USB_HEADSET:kotlin.Int) Indicates the route is a USB audio headset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WIRED_HEADPHONES](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_WIRED_HEADPHONES:kotlin.Int) Indicates the route is a pair of wired headphones. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WIRED_HEADSET](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#TYPE_WIRED_HEADSET:kotlin.Int) Indicates the route is a headset, which is the combination of a headphones and a microphone. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -75,24 +91,31 @@ Describes the properties of a route.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getClientPackageName](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getClientPackageName())`()` Gets the package name of the app using the route. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionState](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getConnectionState())`()` Gets the connection state of the route. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDeduplicationIds](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getDeduplicationIds())`()` Gets the deduplication IDs associated to the route. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getDescription())`()` Gets the user-visible description of the route. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getExtras())`()` Gets an optional bundle with extra data. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getFeatures](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getFeatures())`()` Gets the supported features of the route. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getIconUri](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getIconUri())`()` Gets the URI of the icon representing this route. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getId())`()` Gets the id of the route. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getName](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getName())`()` Gets the user-visible name of the route. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getRequiredPermissions](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getRequiredPermissions())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSuitabilityStatus](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getSuitabilityStatus())`()` Returns the route suitability status. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getType())`()` Returns the type of this route. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolume](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getVolume())`()` Gets the current volume of the route. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeHandling](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getVolumeHandling())`()` Gets information about how volume is handled on the route. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeMax](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getVolumeMax())`()` Gets the maximum volume of the route. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemRoute](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#isSystemRoute())`()` Returns whether the route is a system route or not. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|

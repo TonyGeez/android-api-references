@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OvalShape
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/OvalShape "View this page in Java") 
+| --- | --- |
 
 ```
 open class OvalShape : RectShape
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) |||
 | | ↳ | [android.graphics.drawable.shapes.RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) ||
 | | | ↳ | [android.graphics.drawable.shapes.OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape#) |
+| --- | --- | --- | --- |
 
 Defines an oval shape.
 
@@ -30,6 +33,7 @@ The oval can be drawn to a Canvas with its own draw() method, but more graphical
 | open [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape#) | [clone](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape#clone())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape#draw(android.graphics.Canvas,%20android.graphics.Paint))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

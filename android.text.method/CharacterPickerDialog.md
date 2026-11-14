@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CharacterPickerDialog
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/method/CharacterPickerDialog "View this page in Java") 
+| --- | --- |
 
 ```
 open class CharacterPickerDialog : Dialog, AdapterView.OnItemClickListener, View.OnClickListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#) ||
 | | ↳ | [android.text.method.CharacterPickerDialog](https://developer.android.com/reference/kotlin/android/text/method/CharacterPickerDialog#) |
 
@@ -93,6 +95,7 @@ Handles clicks on the character buttons.
 | `parent` | [AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView.html#)\< [Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter.html#)!\>!:The AdapterView where the click happened. |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The view within the AdapterView that was clicked (this will be a view provided by the adapter) |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the view in the adapter. |
+| --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The row id of the item that was clicked. |
 
 ## Protected methods

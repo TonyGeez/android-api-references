@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # MediaDescrambler
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaDescrambler "View this page in Java")
+| --- | --- |
 
 ```
 class MediaDescrambler : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaDescrambler](https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#) |
 
 MediaDescrambler class can be used in conjunction with `https://developer.android.com/reference/kotlin/android/media/MediaCodec` and `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` to decode media data scrambled by conditional access (CA) systems such as those in the ISO/IEC13818-1. A MediaDescrambler object is initialized from a session opened by a MediaCas object, and can be used to descramble media streams scrambled with that session's keys. Scrambling schemes are identified by 16-bit unsigned integer as in CA_system_id.
@@ -20,6 +22,7 @@ MediaDescrambler class can be used in conjunction with `https://developer.androi
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_EVEN_KEY:kotlin.Byte` Scramble control value indicating that the even key is used. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_ODD_KEY:kotlin.Byte` Scramble control value indicating that the odd key is used. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_RESERVED:kotlin.Byte` Scramble control value reserved and shouldn't be used currently. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_UNSCRAMBLED:kotlin.Byte` Scramble control value indicating that the samples are not scrambled. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_FLAG_PES_HEADER:kotlin.Byte` Scramble flag for a hint indicating that the descrambling request is for retrieving the PES header info only. |
 
@@ -32,6 +35,7 @@ MediaDescrambler class can be used in conjunction with `https://developer.androi
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#descramble(java.nio.ByteBuffer,%20java.nio.ByteBuffer,%20android.media.MediaCodec.CryptoInfo)(srcBuf: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, dstBuf: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, cryptoInfo: https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo)` Descramble a ByteBuffer of data described by a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo` structure. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#requiresSecureDecoderComponent(kotlin.String)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Query if the scrambling scheme requires the use of a secure decoder to decode data of the given mime type. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#setMediaCasSession(android.media.MediaCas.Session)(session: https://developer.android.com/reference/kotlin/android/media/MediaCas.Session)` Associate a MediaCas session with this MediaDescrambler instance. |
 
 | Protected methods ||
@@ -175,6 +179,7 @@ Descramble a ByteBuffer of data described by a `https://developer.android.com/re
 | `srcBuf` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): ByteBuffer containing the scrambled data, which starts at srcBuf.position(). This value cannot be `null`. |
 | `dstBuf` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): ByteBuffer to hold the descrambled data, which starts at dstBuf.position(). This value cannot be `null`. |
 | `cryptoInfo` | [MediaCodec.CryptoInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo): a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo` structure describing the subsamples contained in srcBuf. The iv and mode fields in CryptoInfo are not used. key\[0\] contains the MPEG2TS scrambling control bits (as defined in ETSI TS 100 289 (2011): "Digital Video Broadcasting (DVB); Support for use of the DVB Scrambling Algorithm version 3 within digital broadcasting systems"), and the value must be one of `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_UNSCRAMBLED:kotlin.Byte`, `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_RESERVED:kotlin.Byte`, `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_EVEN_KEY:kotlin.Byte` or `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_CONTROL_ODD_KEY:kotlin.Byte`. key\[1\] is a set of bit flags, with the only possible bit being `https://developer.android.com/reference/kotlin/android/media/MediaDescrambler#SCRAMBLE_FLAG_PES_HEADER:kotlin.Byte` currently. key\[2\~15\] are not used. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

@@ -9,9 +9,11 @@ open class TransformerFactoryConfigurationError : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
 | | | ↳ | [javax.xml.transform.TransformerFactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactoryConfigurationError#) |
+| --- | --- | --- | --- |
 
 Thrown when a problem with configuration with the Transformer Factories exists. This error will typically be thrown when the class of a transformation factory specified in the system properties cannot be found or instantiated.
 

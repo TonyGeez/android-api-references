@@ -6,12 +6,14 @@ Also in [T Extensions 17](https://developer.android.com/sdkExtensions)
 # SetBlobVisibilityRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/SetBlobVisibilityRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class SetBlobVisibilityRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.SetBlobVisibilityRequest](https://developer.android.com/reference/kotlin/android/app/appsearch/SetBlobVisibilityRequest#) |
 
 Request to configure the visibility settings of blobs in AppSearch.

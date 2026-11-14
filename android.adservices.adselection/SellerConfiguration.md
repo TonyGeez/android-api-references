@@ -9,6 +9,7 @@ class SellerConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.SellerConfiguration](https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#) |
 
 > [!CAUTION]
@@ -33,9 +34,11 @@ This object will be part of the `https://developer.android.com/reference/kotlin/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()()` Returns the maximum size of the payload in bytes that the service will return. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PerBuyerConfiguration](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerConfiguration)!\> | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getPerBuyerConfigurations()()` Returns a set of per buyer configurations that the service will do a best effort to respect when constructing the response without exceeding `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

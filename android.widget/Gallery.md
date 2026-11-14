@@ -8,9 +8,11 @@ open class Gallery : AbsSpinner, GestureDetector.OnGestureListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)\> |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner) ||
 | | | | | ↳ | [android.widget.Gallery](https://developer.android.com/reference/kotlin/android/widget/Gallery#) |
 
@@ -36,6 +38,7 @@ Views given to the Gallery should use `https://developer.android.com/reference/k
 | [`android:animationDuration`](https://developer.android.com/reference/kotlin/android/widget/Gallery#attr_Gallery) | Sets how long a transition animation should run (in milliseconds) when layout has changed. |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/Gallery#attr_Gallery) | Specifies how an object should position its content, on both the X and Y axes, within its own bounds. |
 | [`android:spacing`](https://developer.android.com/reference/kotlin/android/widget/Gallery#attr_Gallery) | |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner` `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#attr_AbsSpinner` Reference to an array resource that will populate the Spinner. For static content, this is simpler than populating the Spinner programmatically.
 
@@ -321,6 +324,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -437,6 +441,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -585,6 +590,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1775,24 +1781,31 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#dispatchKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Dispatch a key event to the next view on the focus path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#dispatchSetSelected(kotlin.Boolean)(selected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setSelected to all of this View's children. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Gallery#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Gallery#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onDown(android.view.MotionEvent)(e: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)` Notified when a tap occurs with the down `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` that triggered it. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onFling(android.view.MotionEvent,%20android.view.MotionEvent,%20kotlin.Float,%20kotlin.Float)(e1: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#?, e2: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#, velocityX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, velocityY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Notified of a fling event when it occurs with the initial on down `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` and the matching up `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Handles left, right, and clicking |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyUp(kotlin.Int,%20android.view.KeyEvent)`: perform clicking of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_SPACE:kotlin.Int` is released. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onLongPress(android.view.MotionEvent)(e: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)` Notified when a long press occurs with the initial on down `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` that trigged it. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onScroll(android.view.MotionEvent,%20android.view.MotionEvent,%20kotlin.Float,%20kotlin.Float)(e1: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#?, e2: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#, distanceX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, distanceY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Notified when a scroll occurs with the initial on down `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` and the current move `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onShowPress(android.view.MotionEvent)(e: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)` The user has performed a down `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` and not performed a move or up yet. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onSingleTapUp(android.view.MotionEvent)(e: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)` Notified when a tap occurs with the up `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` that triggered it. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#setAnimationDuration(kotlin.Int)(animationDurationMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets how long the transition animation should run when a child view changes position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#setCallbackDuringFling(kotlin.Boolean)(shouldCallback: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether or not to callback on any `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getOnItemSelectedListener()` while the items are being flinged. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#setGravity(kotlin.Int)(gravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Describes how the child views are aligned. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#setSpacing(kotlin.Int)(spacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the spacing between items in a Gallery |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#setUnselectedAlpha(kotlin.Float)(unselectedAlpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the alpha of items that are not selected in the Gallery. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#showContextMenu()()` Shows the context menu for this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#showContextMenu(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for this view anchored to the specified view-relative coordinate. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#showContextMenuForChild(android.view.View)(originalView: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Shows the context menu for the specified view or its ancestors. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#showContextMenuForChild(android.view.View,%20kotlin.Float,%20kotlin.Float)(originalView: https://developer.android.com/reference/kotlin/android/view/View.html#!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate. |
 
 | Protected methods ||
@@ -1800,15 +1813,19 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#computeHorizontalScrollExtent()()` Compute the horizontal extent of the horizontal scrollbar's thumb within the horizontal range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#computeHorizontalScrollOffset()()` Compute the horizontal offset of the horizontal scrollbar's thumb within the horizontal range. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#computeHorizontalScrollRange()()` Compute the horizontal range that the horizontal scrollbar represents. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#dispatchSetPressed(kotlin.Boolean)(pressed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatch setPressed to all of this View's children. |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Gallery#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
+| --- | --- |
 | open [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Gallery#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#getChildDrawingOrder(kotlin.Int,%20kotlin.Int)(childCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts drawing order position to container position. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#getChildStaticTransformation(android.view.View,%20android.view.animation.Transformation)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, t: https://developer.android.com/reference/kotlin/android/view/animation/Transformation.html#!)` Sets `t` to be the static transformation of the child, if set, returning a boolean to indicate whether a static transform was set. |
+| --- | --- |
 | open [ContextMenu.ContextMenuInfo](https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Gallery#getContextMenuInfo()()` Views should implement this if they have extra information to associate with the context menu. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onFocusChanged(kotlin.Boolean,%20kotlin.Int,%20android.graphics.Rect)(gainFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Called by the view system when the focus state of this view changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Gallery#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2692,6 +2709,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4528,6 +4546,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8554,21 +8573,26 @@ android:gravity
 Specifies how an object should position its content, on both the X and Y axes, within its own bounds.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -8730,6 +8754,7 @@ Notified of a fling event when it occurs with the initial on down `https://devel
 | `e1` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)?: The first down motion event that started the fling. A `null` event indicates an incomplete event stream or error state. |
 | `e2` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#): The move motion event that triggered the current onFling. This value cannot be `null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The velocity of this fling measured in pixels per second along the x axis. |
+| --- | --- |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The velocity of this fling measured in pixels per second along the y axis. |
 
 | Return ||
@@ -8828,6 +8853,7 @@ Notified when a scroll occurs with the initial on down `https://developer.androi
 | `e1` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)?: The first down motion event that started the scrolling. A `null` event indicates an incomplete event stream or error state. |
 | `e2` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#): The move motion event that triggered the current onScroll. This value cannot be `null`. |
 | `distanceX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance along the X axis that has been scrolled since the last call to onScroll. This is NOT the distance between `e1` and `e2`. |
+| --- | --- |
 | `distanceY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance along the Y axis that has been scrolled since the last call to onScroll. This is NOT the distance between `e1` and `e2`. |
 
 | Return ||
@@ -9067,6 +9093,7 @@ If a subclass overrides this method it should also override `https://developer.a
 | `originalView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the source view where the context menu was first invoked |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the X coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the Y coordinate in pixels relative to the original view to which the menu should be anchored, or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NaN:kotlin.Float` to disable anchoring |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -9296,6 +9323,7 @@ If you override this method you *must* call through to the superclass implementa
 | `gainFocus` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
 | `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| --- | --- |
 
 ### onLayout
 
@@ -9320,5 +9348,6 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |

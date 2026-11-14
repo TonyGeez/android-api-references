@@ -9,6 +9,7 @@ class JapaneseDate : ChronoLocalDate, Serializable, Temporal, TemporalAdjuster
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.chrono.JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#) |
 
 A date in the Japanese Imperial calendar system.
@@ -31,27 +32,35 @@ Calling`japaneseDate.get(ERA)`will return 2, corresponding to`JapaneseChronology
 | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)!\>! | [atTime](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#atTime(java.time.LocalTime))`(`localTime:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)!`)` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this date to another date, including the chronology. |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [from](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!`)` Obtains a`JapaneseDate`from a temporal object. |
+| --- | --- |
 | [JapaneseChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology)! | [getChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getChronology())`()` Gets the chronology of this date, which is the Japanese calendar system. |
 | [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)! | [getEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getEra())`()` Gets the era applicable at this date. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getLong(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#hashCode())`()` A hash code for this date. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` Checks if the specified field is supported. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#lengthOfMonth())`()` Returns the length of the month represented by this date. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#lengthOfYear())`()` <br /> |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#minus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount subtracted. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
+| --- | --- |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now())`()` Obtains the current`JapaneseDate`from the system clock in the default time-zone. |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now(java.time.Clock))`(`clock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#)!`)` Obtains the current`JapaneseDate`from the specified clock. |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!`)` Obtains the current`JapaneseDate`from the system clock in the specified time-zone. |
+| --- | --- |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`prolepticYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the proleptic-year, month-of-year and day-of-month fields. |
 | static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#of(java.time.chrono.JapaneseEra,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`era:` ` [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)!`, `yearOfEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#plus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount added. |
+| --- | --- |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | [range](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#toEpochDay())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#toString())`()` <br /> |
 | [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod)! | [until](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#until(java.time.chrono.ChronoLocalDate))`(`endDate:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit))`(`endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
+| --- | --- |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#with(java.time.temporal.TemporalAdjuster))`(`adjuster:` ` [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
 | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#with(java.time.temporal.TemporalField,%20kotlin.Long))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
@@ -180,6 +189,7 @@ fun getLong(field: TemporalField!): Long
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### hashCode
 
@@ -320,6 +330,7 @@ fun minus(
 | `java.time.DateTimeException` | if the unit cannot be subtracted |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### now
 
@@ -408,6 +419,7 @@ The Japanese proleptic year, month and day-of-month are the same as those in the
 | `prolepticYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese proleptic-year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese month-of-year, from 1 to 12 |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese day-of-month, from 1 to 31 |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------|
@@ -449,6 +461,7 @@ The Japanese month and day-of-month are the same as those in the ISO calendar sy
 | `era` | [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)!:the Japanese era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese month-of-year, from 1 to 12 |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese day-of-month, from 1 to 31 |
 
 | Return ||
@@ -520,6 +533,7 @@ fun plus(
 | `java.time.DateTimeException` | if the unit cannot be added |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### range
 
@@ -612,6 +626,7 @@ fun until(
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to the same type as this temporal |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### with
 
@@ -672,3 +687,4 @@ fun with(
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |

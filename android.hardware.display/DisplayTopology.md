@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # DisplayTopology
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/DisplayTopology "View this page in Java") 
+| --- | --- |
 
 ```
 class DisplayTopology : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.display.DisplayTopology](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#) |
 
 Represents the relative placement of extended displays. Does not support concurrent calls, so a lock should be held when calling into this class.
@@ -26,9 +28,11 @@ Represents the relative placement of extended displays. Does not support concurr
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | [getAbsoluteBounds](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#getAbsoluteBounds())`()` Assign absolute bounds in dp to each display. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|

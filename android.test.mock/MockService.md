@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MockService
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockService "View this page in Java") 
+| --- | --- |
 
 ```
 open class MockService
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.mock.MockService](https://developer.android.com/reference/kotlin/android/test/mock/MockService#) |
 
 | **This class was deprecated in API level 28.**

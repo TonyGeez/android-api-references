@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SignalThresholdInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/SignalThresholdInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SignalThresholdInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.SignalThresholdInfo](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#) |
 
 Defines the threshold value of the signal strength.
@@ -26,12 +28,15 @@ Defines the threshold value of the signal strength.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_ECNO](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_ECNO:kotlin.Int) The ratio between the received energy from the pilot signal CPICH per chip (Ec) to the noise density (No). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSCP](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSCP:kotlin.Int) Received Signal Code Power. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRP](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRP:kotlin.Int) Reference Signal Received Power. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRQ](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRQ:kotlin.Int) Reference Signal Received Quality Range: -34 dB to 3 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.AccessNetworkType#EUTRAN:kotlin.Int) Reference: 3GPP TS 36. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSI](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSI:kotlin.Int) Received Signal Strength Indication. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSNR](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSNR:kotlin.Int) Reference Signal Signal to Noise Ratio Range: -20 dB to 30 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.AccessNetworkType#EUTRAN:kotlin.Int) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRP](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRP:kotlin.Int) 5G SS reference signal received power. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRQ](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRQ:kotlin.Int) 5G SS reference signal received quality. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSSINR](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSSINR:kotlin.Int) 5G SS signal-to-noise and interference ratio. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_UNKNOWN:kotlin.Int) Unknown signal measurement type. |
 
 | Inherited constants ||
@@ -43,12 +48,15 @@ Defines the threshold value of the signal strength.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHysteresisDb](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getHysteresisDb())`()` Get measurement hysteresis db. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumNumberOfThresholdsAllowed](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getMaximumNumberOfThresholdsAllowed())`()` Get the maximum number of threshold allowed in each SignalThresholdInfo. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumNumberOfThresholdsAllowed](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getMinimumNumberOfThresholdsAllowed())`()` Get the minimum number of thresholds allowed in each SignalThresholdInfo. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadioAccessNetworkType](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getRadioAccessNetworkType())`()` Get the radio access network type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSignalMeasurementType](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getSignalMeasurementType())`()` Get the signal measurement type. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getThresholds](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#getThresholds())`()` Get the signal strength thresholds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -346,6 +354,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

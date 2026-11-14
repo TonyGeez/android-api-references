@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # UserHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/UserHandle "View this page in Java") 
+| --- | --- |
 
 ```
 class UserHandle : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle#) |
 
 Representation of a user on the device.
@@ -30,9 +32,11 @@ Representation of a user on the device.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/UserHandle#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/UserHandle#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle#)! | [getUserHandleForUid](https://developer.android.com/reference/kotlin/android/os/UserHandle#getUserHandleForUid(kotlin.Int))`(`uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the user for a given uid. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/UserHandle#hashCode())`()` <br /> |
 | static [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle#)! | [readFromParcel](https://developer.android.com/reference/kotlin/android/os/UserHandle#readFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)!`)` Read a UserHandle from a Parcel that was previously written with [writeToParcel(android.os.UserHandle,android.os.Parcel)](https://developer.android.com/reference/kotlin/android/os/UserHandle#writeToParcel(android.os.UserHandle,%20android.os.Parcel)), returning either a null or new object as appropriate. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/UserHandle#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/UserHandle#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/UserHandle#writeToParcel(android.os.UserHandle,%20android.os.Parcel))`(`h:` ` [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle#)!`, `out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)!`)` Write a UserHandle to a Parcel, handling null pointers. |
 

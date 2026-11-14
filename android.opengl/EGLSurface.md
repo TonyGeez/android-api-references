@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # EGLSurface
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLSurface "View this page in Java") 
+| --- | --- |
 
 ```
 open class EGLSurface : EGLObjectHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.opengl.EGLObjectHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle) ||
 | | ↳ | [android.opengl.EGLSurface](https://developer.android.com/reference/kotlin/android/opengl/EGLSurface#) |
 

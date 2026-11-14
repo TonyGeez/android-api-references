@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # Callback
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/RangingSession.Callback "View this page in Java") 
+| --- | --- |
 
 ```
 interface Callback
@@ -21,18 +22,22 @@ Callback interface for receiving ranging session events.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_LOCAL_REQUEST](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_LOCAL_REQUEST:kotlin.Int) Indicates that the session was closed because [AutoCloseable.close()](https://developer.android.com/reference/kotlin/java/lang/AutoCloseable.html#close())or [RangingSession.stop()](https://developer.android.com/reference/kotlin/android/ranging/RangingSession#stop())was called. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NO_PEERS_FOUND](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_NO_PEERS_FOUND:kotlin.Int) Indicates that the session was closed because none of the specified peers were found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_REMOTE_REQUEST](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_REMOTE_REQUEST:kotlin.Int) Indicates that the session was closed at the request of a remote peer. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_SYSTEM_POLICY](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_SYSTEM_POLICY:kotlin.Int) Indicates that the local system policy forced the session to close, such as power management policy, airplane mode etc. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_UNKNOWN](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_UNKNOWN:kotlin.Int) Indicates that the session was closed due to an unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#REASON_UNSUPPORTED:kotlin.Int) Indicates that the session closed because the provided session parameters were not supported. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClosed](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onClosed(kotlin.Int))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the ranging session has closed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpenFailed](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onOpenFailed(kotlin.Int))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the ranging session failed to open. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpened](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onOpened())`()` Called when the ranging session opens successfully. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResults](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onResults(android.ranging.RangingDevice,%20android.ranging.RangingData))`(`peer:` ` [RangingDevice](https://developer.android.com/reference/kotlin/android/ranging/RangingDevice)`, `data:` ` [RangingData](https://developer.android.com/reference/kotlin/android/ranging/RangingData)`)` Called when ranging data has been received from a peer. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStarted](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onStarted(android.ranging.RangingDevice,%20kotlin.Int))`(`peer:` ` [RangingDevice](https://developer.android.com/reference/kotlin/android/ranging/RangingDevice)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has started with a particular peer using a particular technology during an ongoing session. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopped](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback#onStopped(android.ranging.RangingDevice,%20kotlin.Int))`(`peer:` ` [RangingDevice](https://developer.android.com/reference/kotlin/android/ranging/RangingDevice)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has stopped with a particular peer using a particular technology during an ongoing session. |
+| --- | --- |
 
 ## Constants
 

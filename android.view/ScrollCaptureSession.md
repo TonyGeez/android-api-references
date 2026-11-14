@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ScrollCaptureSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ScrollCaptureSession "View this page in Java") 
+| --- | --- |
 
 ```
 open class ScrollCaptureSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#) |
 
 A session represents the scope of interaction between a [ScrollCaptureCallback](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback) and the system during an active scroll capture operation.
@@ -26,6 +28,7 @@ A session represents the scope of interaction between a [ScrollCaptureCallback](
 | open [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) | [getPositionInWindow](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getPositionInWindow())`()` Returns the offset of`scroll bounds`within the window. |
 | open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getScrollBounds](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getScrollBounds())`()` Returns the`scroll bounds`, as provided by [ScrollCaptureCallback.onScrollCaptureSearch](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureSearch(android.os.CancellationSignal,%20java.util.function.Consumer)). |
 | open [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) | [getSurface](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getSurface())`()` Returns a [BufferQueue](https://source.android.com/devices/graphics/arch-bq-gralloc) in the form of a [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) for transfer of image buffers. |
+| --- | --- |
 
 ## Public constructors
 
@@ -47,6 +50,7 @@ Constructs a new session instance.
 | `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface):the surface to consume generated images This value cannot be`null`. |
 | `scrollBounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):the bounds of the capture area within the containing view This value cannot be`null`. |
 | `positionInWindow` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#):the offset of scrollBounds within the window This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

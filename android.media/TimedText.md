@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # TimedText
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/TimedText "View this page in Java") 
+| --- | --- |
 
 ```
 class TimedText
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.TimedText](https://developer.android.com/reference/kotlin/android/media/TimedText#) |
 
 Class to hold the timed text's metadata, including:

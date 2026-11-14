@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDevice
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pDevice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#) |
 
 A class representing a Wi-Fi p2p device Note that the operations are not thread safe {@see WifiP2pManager}
@@ -22,6 +24,7 @@ A class representing a Wi-Fi p2p device Note that the operations are not thread 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABLE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#AVAILABLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTED](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#CONNECTED:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FAILED](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#FAILED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVITED](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#INVITED:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNAVAILABLE](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#UNAVAILABLE:kotlin.Int) <br /> |
 
@@ -39,21 +42,27 @@ A class representing a Wi-Fi p2p device Note that the operations are not thread 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#describeContents())`()` Implement the Parcelable interface |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)? | [getIpAddress](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#getIpAddress())`()` Get the IP address of the connected client device. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult.InformationElement](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.InformationElement.html#)!\> | [getVendorElements](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#getVendorElements())`()` Get the vendor-specific information elements received as part of the discovery of the peer device. |
 | open [WifiP2pWfdInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pWfdInfo)? | [getWfdInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#getWfdInfo())`()` The Wifi Display information for this device, or null if unavailable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#hashCode())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupOwner](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isGroupOwner())`()` Returns true if the device is a group owner |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpportunisticBootstrappingMethodSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isOpportunisticBootstrappingMethodSupported())`()` Returns true if opportunistic bootstrapping method is supported. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPassphraseDisplayBootstrappingMethodSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isPassphraseDisplayBootstrappingMethodSupported())`()` Returns true if passphrase display bootstrapping method is supported. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPassphraseKeypadBootstrappingMethodSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isPassphraseKeypadBootstrappingMethodSupported())`()` Returns true if passphrase keypad bootstrapping method is supported. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinCodeDisplayBootstrappingMethodSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isPinCodeDisplayBootstrappingMethodSupported())`()` Returns true if pin-code display bootstrapping method is supported. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinCodeKeypadBootstrappingMethodSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isPinCodeKeypadBootstrappingMethodSupported())`()` Returns true if pin-code keypad bootstrapping method is supported. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isServiceDiscoveryCapable](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#isServiceDiscoveryCapable())`()` Returns true if the device is capable of service discovery |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#update(android.net.wifi.p2p.WifiP2pDevice))`(`device:` ` [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#)`)` Update this device's details using another [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#) instance. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wpsDisplaySupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#wpsDisplaySupported())`()` Returns true if WPS display configuration is supported |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wpsKeypadSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#wpsKeypadSupported())`()` Returns true if WPS keypad configuration is supported |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wpsPbcSupported](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#wpsPbcSupported())`()` Returns true if WPS push button configuration is supported |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Properties ||
@@ -61,9 +70,11 @@ A class representing a Wi-Fi p2p device Note that the operations are not thread 
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deviceAddress](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#deviceAddress:kotlin.String) The device MAC address uniquely identifies a Wi-Fi p2p device |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deviceName](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#deviceName:kotlin.String) The device name is a user friendly string to identify a Wi-Fi p2p device |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [primaryDeviceType](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#primaryDeviceType:kotlin.String) Primary device type identifies the type of device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [secondaryDeviceType](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#secondaryDeviceType:kotlin.String) Secondary device type is an optional attribute that can be provided by a device in addition to the primary device type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [status](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice#status:kotlin.Int) Device connection status |
+| --- | --- |
 
 ## Constants
 

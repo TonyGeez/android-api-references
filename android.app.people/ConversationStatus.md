@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ConversationStatus
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/people/ConversationStatus "View this page in Java") 
+| --- | --- |
 
 ```
 class ConversationStatus : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.people.ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#) |
 
 ## Summary
@@ -24,15 +26,19 @@ class ConversationStatus : Parcelable
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_ANNIVERSARY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_ANNIVERSARY:kotlin.Int) Constant representing that the conversation user and the device user are celebrating and anniversary today. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_AUDIO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_AUDIO:kotlin.Int) Constant representing that the conversation user is listening to music or other audio like a podcast. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_BIRTHDAY:kotlin.Int) Constant representing that today is the conversation user's birthday. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_GAME](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_GAME:kotlin.Int) Constant representing that the conversation user is playing a game. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_LOCATION](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_LOCATION:kotlin.Int) Constant representing that the conversation user is sharing status with the device user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_NEW_STORY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_NEW_STORY:kotlin.Int) Constant representing that the conversation user has posted a new story. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_OTHER](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_OTHER:kotlin.Int) Constant representing that the conversation user is engaged in an activity that cannot be more specifically represented by another type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_UPCOMING_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_UPCOMING_BIRTHDAY:kotlin.Int) Constant representing that the conversation user's birthday is approaching soon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_VIDEO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_VIDEO:kotlin.Int) Constant representing that the conversation user is watching video content. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_AVAILABLE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_AVAILABLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_BUSY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_OFFLINE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_OFFLINE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_UNKNOWN:kotlin.Int) <br /> |
 
 | Inherited constants ||
@@ -44,15 +50,19 @@ class ConversationStatus : Parcelable
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActivity](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getActivity())`()` Returns the type of activity represented by this status |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailability](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getAvailability())`()` Returns the availability of the people behind this conversation while this activity is happening. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getDescription())`()` Returns the description for this activity. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndTimeMillis](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getEndTimeMillis())`()` Returns the time at which this status should be expired. |
+| --- | --- |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getIcon](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getIcon())`()` Returns the image for this activity. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getId())`()` Returns the unique identifier for the status. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeMillis](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getStartTimeMillis())`()` Returns the time at which this status started |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

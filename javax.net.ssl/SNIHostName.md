@@ -9,6 +9,7 @@ class SNIHostName : SNIServerName
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.net.ssl.SNIServerName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName) ||
 | | ↳ | [javax.net.ssl.SNIHostName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#) |
 
@@ -30,6 +31,7 @@ Note that`SNIHostName`objects are immutable.
 | static [SNIMatcher](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher)! | [createSNIMatcher](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#createSNIMatcher(kotlin.String))`(`regex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an [SNIMatcher](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher) object for`SNIHostName`s. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this server name to the specified object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAsciiName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#getAsciiName())`()` Returns the [StandardCharsets.US_ASCII](https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets.html#US_ASCII:java.nio.charset.Charset)-compliant hostname of this`SNIHostName`object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#hashCode())`()` Returns a hash code value for this`SNIHostName`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIHostName#toString())`()` Returns a string representation of the object, including the DNS hostname in this`SNIHostName`object. |
 

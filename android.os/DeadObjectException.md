@@ -5,19 +5,23 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DeadObjectException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/DeadObjectException "View this page in Java") 
+| --- | --- |
 
 ```
 open class DeadObjectException : RemoteException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [android.util.AndroidException](https://developer.android.com/reference/kotlin/android/util/AndroidException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.os.RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException) ||
 | | | | | ↳ | [android.os.DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException#) |
 
 | Known Direct Subclasses [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) | The core Android system has died and is going through a runtime restart. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The object you are calling has died, because its hosting process no longer exists, or there has been a low-level binder error. If you get this exception from a system service, the error is usually nonrecoverable as the framework will restart. If you receive this error from an app, at a minimum, you should recover by resetting the connection. For instance, you should drop the binder, clean up associated state, and reset your connection to the service which threw this error. In order to simplify your error recovery paths, you may also want to "simply" restart your process. However, this may not be an option if the service you are talking to is unreliable or crashes frequently. If this isn't from a service death and is instead from a low-level binder error, it will be from:
 

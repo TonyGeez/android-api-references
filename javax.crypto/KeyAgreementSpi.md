@@ -9,6 +9,7 @@ abstract class KeyAgreementSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.KeyAgreementSpi](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyAgreement`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular key agreement algorithm.
@@ -28,9 +29,11 @@ For each of the correspondents in the key exchange,`engineDoPhase`needs to be ca
 | abstract [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)! | [engineDoPhase](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineDoPhase(java.security.Key,%20kotlin.Boolean))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `lastPhase:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Executes the next phase of this key agreement with the given key that was received from one of the other parties involved in this key agreement. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineGenerateSecret())`()` Generates the shared secret and returns it in a new buffer. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGenerateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineGenerateSecret(kotlin.ByteArray,%20kotlin.Int))`(`sharedSecret:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the shared secret, and places it into the buffer`sharedSecret`, beginning at`offset`inclusive. |
+| --- | --- |
 | abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineGenerateSecret](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineGenerateSecret(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates the shared secret and returns it as a secret key object of the requested algorithm type. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineInit(java.security.Key,%20java.security.SecureRandom))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key agreement with the given key and source of randomness. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreementSpi#engineInit(java.security.Key,%20java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this key agreement with the given key, set of algorithm parameters, and source of randomness. |
+| --- | --- |
 
 ## Public constructors
 
@@ -147,6 +150,7 @@ This method resets this`KeyAgreementSpi`object, so that it can be reused for fur
 | `java.lang.IllegalStateException` | if this key agreement has not been completed yet |
 | `java.security.NoSuchAlgorithmException` | if the requested secret key algorithm is not available |
 | `java.security.InvalidKeyException` | if the shared secret key material cannot be used to generate a secret key of the requested algorithm type (e.g., the key material is too short) |
+| --- | --- |
 
 ### engineInit
 
@@ -191,6 +195,7 @@ Initializes this key agreement with the given key, set of algorithm parameters, 
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
 | `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the key agreement parameters |
 | `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!:the source of randomness |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|

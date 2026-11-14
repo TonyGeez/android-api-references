@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # Migrator
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/Migrator "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Migrator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.Migrator](https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator#) |
 
 A migrator class to translate [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) from different version of [AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema)
@@ -32,6 +34,7 @@ If any error or Exception occurred in the [onDowngrade](https://developer.androi
 | abstract [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) | [onDowngrade](https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator#onDowngrade(kotlin.Int,%20kotlin.Int,%20android.app.appsearch.GenericDocument))`(`currentVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `document:` ` [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument)`)` Migrates [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) to an older version of [AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema). |
 | abstract [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) | [onUpgrade](https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator#onUpgrade(kotlin.Int,%20kotlin.Int,%20android.app.appsearch.GenericDocument))`(`currentVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `document:` ` [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument)`)` Migrates [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) to a newer version of [AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldMigrate](https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator#shouldMigrate(kotlin.Int,%20kotlin.Int))`(`currentVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if this migrator's source type needs to be migrated to update from currentVersion to finalVersion. |
+| --- | --- |
 
 ## Public constructors
 
@@ -71,6 +74,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `currentVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current version of the document's schema. |
 | `finalVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The final version that documents need to be migrated to. |
 | `document` | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument):The [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) need to be translated to new version. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -102,6 +106,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `currentVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current version of the document's schema. |
 | `finalVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The final version that documents need to be migrated to. |
 | `document` | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument):The [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) need to be translated to new version. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

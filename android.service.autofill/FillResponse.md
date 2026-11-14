@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FillResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class FillResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#) |
 
 Response for an [android.service.autofill.AutofillService#onFillRequest(android.service.autofill.FillRequest,android.os.CancellationSignal,android.service.autofill.FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)).
@@ -28,6 +30,7 @@ See the main [AutofillService](https://developer.android.com/reference/kotlin/an
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_DELAY_FILL](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#FLAG_DELAY_FILL:kotlin.Int) Flag used to request to wait for a delayed fill from the remote Autofill service if it's passed to [Builder.setFlags(int)](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFlags(kotlin.Int)). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_DISABLE_ACTIVITY_ONLY](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#FLAG_DISABLE_ACTIVITY_ONLY:kotlin.Int) Flag used to change the behavior of [FillResponse.Builder.disableAutofill(long)](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#disableAutofill(kotlin.Long))--- when this flag is passed to [Builder.setFlags(int)](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFlags(kotlin.Int)), autofill is disabled only for the activiy that generated the [FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest), not the whole app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_TRACK_CONTEXT_COMMITED](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#FLAG_TRACK_CONTEXT_COMMITED:kotlin.Int) Flag used to generate [events](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event) of type [FillEventHistory.Event.TYPE_CONTEXT_COMMITTED](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event#TYPE_CONTEXT_COMMITTED:kotlin.Int)---if this flag is not passed to [Builder.setFlags(int)](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFlags(kotlin.Int)), these events are not generated. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -38,6 +41,7 @@ See the main [AutofillService](https://developer.android.com/reference/kotlin/an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

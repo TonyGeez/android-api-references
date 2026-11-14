@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Output
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/util/Output "View this page in Java") 
+| --- | --- |
 
 ```
 open class Output<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.util.Output](https://developer.android.com/reference/kotlin/android/icu/util/Output#) |
 
 Simple struct-like class for output parameters.

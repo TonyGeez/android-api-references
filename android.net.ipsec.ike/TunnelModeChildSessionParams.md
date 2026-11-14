@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TunnelModeChildSessionParams
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams "View this page in Java")
+| --- | --- |
 
 ```
 class TunnelModeChildSessionParams : ChildSessionParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.ipsec.ike.ChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams) ||
 | | ↳ | [android.net.ipsec.ike.TunnelModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams#) |
 
@@ -21,9 +23,11 @@ TunnelModeChildSessionParams represents proposed configurations for negotiating 
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.Builder` This class can be used to incrementally construct a `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams#`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address` Represents an IPv4 Internal Address request |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DhcpServer` Represents an IPv4 DHCP server request |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer` Represents an IPv4 DNS Server request |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Netmask` Represents an IPv4 Netmask request |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address` Represents an IPv6 Internal Address request |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer` Represents an IPv6 DNS Server request |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.TunnelModeChildConfigRequest` Represents a tunnel mode child session configuration request type |
 
@@ -32,6 +36,7 @@ TunnelModeChildSessionParams represents proposed configurations for negotiating 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TunnelModeChildSessionParams.TunnelModeChildConfigRequest](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.TunnelModeChildConfigRequest)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams#getConfigurationRequests()()` Retrieves the list of Configuration Requests |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

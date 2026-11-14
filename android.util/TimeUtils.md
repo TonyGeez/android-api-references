@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TimeUtils
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/TimeUtils "View this page in Java")
+| --- | --- |
 
 ```
 open class TimeUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.TimeUtils](https://developer.android.com/reference/kotlin/android/util/TimeUtils#) |
 
 A class containing utility methods related to time zones.
@@ -20,6 +22,7 @@ A class containing utility methods related to time zones.
 | open static [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZone(kotlin.Int,%20kotlin.Boolean,%20kotlin.Long,%20kotlin.String)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Tries to return a time zone that would have had the specified offset and DST value at the specified moment in the specified country. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZoneDatabaseVersion()()` Returns a String indicating the version of the time zone database currently in use. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZoneIdsForCountryCode(kotlin.String)(countryCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns time zone IDs for time zones known to be associated with a country. |
+| --- | --- |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#isTimeBetween(java.time.LocalTime,%20java.time.LocalTime,%20java.time.LocalTime)(reference: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#, start: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#, end: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)` This method is used to find if a clock time is inclusively between two other clock times |
 
 ## Public methods
@@ -92,6 +95,7 @@ This method is used to find if a clock time is inclusively between two other clo
 | `reference` | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#): The time of the day we want check if it is between start and end. This value cannot be `null`. |
 | `start` | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#): The start time reference. This value cannot be `null`. |
 | `end` | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#): The end time. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

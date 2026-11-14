@@ -11,6 +11,7 @@ interface MulticastChannel : NetworkChannel
 | [java.nio.channels.MulticastChannel](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel#) |
 
 | Known Direct Subclasses [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------| | [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) | A selectable channel for datagram-oriented sockets. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A network channel that supports Internet Protocol (IP) multicasting.
 
@@ -55,6 +56,7 @@ The multicast implementation is intended to map directly to the native multicast
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel#close())`()` Closes this channel. |
 | abstract [MembershipKey](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey)! | [join](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel#join(java.net.InetAddress,%20java.net.NetworkInterface))`(`group:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `interf:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface.html#)!`)` Joins a multicast group to begin receiving all datagrams sent to the group, returning a membership key. |
 | abstract [MembershipKey](https://developer.android.com/reference/kotlin/java/nio/channels/MembershipKey)! | [join](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel#join(java.net.InetAddress,%20java.net.NetworkInterface,%20java.net.InetAddress))`(`group:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `interf:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface.html#)!`, `source:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` Joins a multicast group to begin receiving datagrams sent to the group from a given source address. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -113,9 +115,11 @@ A multicast channel may join several multicast groups, including the same group 
 | `java.lang.IllegalArgumentException` | If the group parameter is not a [multicast](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#isMulticastAddress())address, or the group parameter is an address type that is not supported by this channel |
 | `java.lang.IllegalStateException` | If the channel already has source-specific membership of the group on the interface |
 | `java.lang.UnsupportedOperationException` | If the channel's socket is not an Internet Protocol socket, or the platform does not support multicasting |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.SecurityException` | If a security manager is set, and its [checkMulticast](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress))method denies access to the multiast group |
+| --- | --- |
 
 ### join
 
@@ -140,6 +144,7 @@ Membership is*cumulative*and this method may be invoked again with the same grou
 | `group` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:The multicast address to join |
 | `interf` | [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface.html#)!:The network interface on which to join the group |
 | `source` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:The source address |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------|
@@ -150,6 +155,8 @@ Membership is*cumulative*and this method may be invoked again with the same grou
 | `java.lang.IllegalArgumentException` | If the group parameter is not a [multicast](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#isMulticastAddress())address, the source parameter is not a unicast address, the group parameter is an address type that is not supported by this channel, or the source parameter is not the same address type as the group |
 | `java.lang.IllegalStateException` | If the channel is currently a member of the group on the given interface to receive all datagrams |
 | `java.lang.UnsupportedOperationException` | If the channel's socket is not an Internet Protocol socket, or source filtering is not supported, or the platform does not support multicasting |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.SecurityException` | If a security manager is set, and its [checkMulticast](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress))method denies access to the multiast group |
+| --- | --- |

@@ -9,6 +9,7 @@ open class Modifier
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.reflect.Modifier](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#) |
 
 The Modifier class provides`static`methods and constants to decode class and member access modifiers. The sets of modifiers are represented as integers with distinct bit positions representing different modifiers. The values for the constants representing the modifiers are taken from the tables in sections 4.1, 4.4, 4.5, and 4.7 of The Java™ Virtual Machine Specification.
@@ -20,15 +21,19 @@ The Modifier class provides`static`methods and constants to decode class and mem
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABSTRACT](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#ABSTRACT:kotlin.Int) The`int`value representing the`abstract`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#FINAL:kotlin.Int) The`int`value representing the`final`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERFACE](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#INTERFACE:kotlin.Int) The`int`value representing the`interface`modifier. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NATIVE](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#NATIVE:kotlin.Int) The`int`value representing the`native`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#PRIVATE:kotlin.Int) The`int`value representing the`private`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTED](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#PROTECTED:kotlin.Int) The`int`value representing the`protected`modifier. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#PUBLIC:kotlin.Int) The`int`value representing the`public`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATIC](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#STATIC:kotlin.Int) The`int`value representing the`static`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRICT](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#STRICT:kotlin.Int) The`int`value representing the`strictfp`modifier. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNCHRONIZED](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#SYNCHRONIZED:kotlin.Int) The`int`value representing the`synchronized`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIENT](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#TRANSIENT:kotlin.Int) The`int`value representing the`transient`modifier. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLATILE](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#VOLATILE:kotlin.Int) The`int`value representing the`volatile`modifier. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------|---|
@@ -39,21 +44,27 @@ The Modifier class provides`static`methods and constants to decode class and mem
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#classModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a class. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [constructorModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#constructorModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a constructor. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fieldModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#fieldModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a field. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interfaceModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#interfaceModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to an interface. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbstract](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isAbstract(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`abstract`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinal](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isFinal(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`final`modifier,`false`otherwise. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInterface](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isInterface(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`interface`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNative](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isNative(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`native`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivate](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isPrivate(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`private`modifier,`false`otherwise. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProtected](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isProtected(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`protected`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPublic](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isPublic(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`public`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatic](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isStatic(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`static`modifier,`false`otherwise. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrict](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isStrict(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`strictfp`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynchronized](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isSynchronized(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`synchronized`modifier,`false`otherwise. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTransient](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isTransient(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`transient`modifier,`false`otherwise. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVolatile](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#isVolatile(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`volatile`modifier,`false`otherwise. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [methodModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#methodModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a method. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parameterModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#parameterModifiers())`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a parameter. |
+| --- | --- |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier#toString(kotlin.Int))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string describing the access modifier flags in the specified modifier. |
 
 ## Constants

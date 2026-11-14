@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # XmlResourceParser
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/res/XmlResourceParser "View this page in Java") 
+| --- | --- |
 
 ```
 interface XmlResourceParser : AttributeSet, AutoCloseable, XmlPullParser

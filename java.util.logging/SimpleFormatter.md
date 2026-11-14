@@ -9,6 +9,7 @@ open class SimpleFormatter : Formatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.logging.Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter) ||
 | | ↳ | [java.util.logging.SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#) |
 

@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # StructTimeval
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/StructTimeval "View this page in Java") 
+| --- | --- |
 
 ```
 class StructTimeval
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructTimeval](https://developer.android.com/reference/kotlin/android/system/StructTimeval#) |
 
 Corresponds to C's`struct timeval`from`sys/time.h`.
@@ -22,6 +24,7 @@ Corresponds to C's`struct timeval`from`sys/time.h`.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/system/StructTimeval#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | static [StructTimeval](https://developer.android.com/reference/kotlin/android/system/StructTimeval#) | [fromMillis](https://developer.android.com/reference/kotlin/android/system/StructTimeval#fromMillis(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/system/StructTimeval#hashCode())`()` <br /> |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](https://developer.android.com/reference/kotlin/android/system/StructTimeval#toMillis())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructTimeval#toString())`()` <br /> |
 

@@ -9,6 +9,7 @@ open class LockSupport
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.locks.LockSupport](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#) |
 
 Basic thread blocking primitives for creating locks and other synchronization classes.
@@ -77,12 +78,15 @@ where no actions by the thread publishing a request to unpark, prior to the call
 | openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread))`(`t:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Returns the blocker object supplied to the most recent invocation of a park method that has not yet unblocked, or null if not blocked. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#park())`()` Disables the current thread for thread scheduling purposes unless the permit is available. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#park(kotlin.Any))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Disables the current thread for thread scheduling purposes unless the permit is available. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkNanos(kotlin.Any,%20kotlin.Long))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkNanos(kotlin.Long))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkUntil(kotlin.Any,%20kotlin.Long))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkUntil(kotlin.Long))`(`deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#setCurrentBlocker(kotlin.Any))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the object to be returned by invocations of [getBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread))for the current thread. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))`(`thread:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Makes available the permit for the given thread, if it was not already available. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ConstrainedFieldPosition
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition "View this page in Java") 
+| --- | --- |
 
 ```
 open class ConstrainedFieldPosition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.ConstrainedFieldPosition](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#) |
 
 Represents a span of a string containing a given field. This class differs from FieldPosition in the following ways: 1. It has information on the field category. 2. It allows you to set constraints to use when iterating over field positions. 3. It is used for the newer FormattedValue APIs.
@@ -26,15 +28,19 @@ Represents a span of a string containing a given field. This class differs from 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainClass](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#constrainClass(java.lang.Class))`(`classConstraint:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Sets a constraint on the field class. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainField](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#constrainField(java.text.Format.Field))`(`field:` ` [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field.html#)!`)` Sets a constraint on the field. |
 | open [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field.html#)! | [getField](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#getField())`()` Gets the field for the current position. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getFieldValue](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#getFieldValue())`()` Gets the value associated with the current field position. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInt64IterationContext](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#getInt64IterationContext())`()` Gets an int64 that FormattedValue implementations may use for storage. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimit](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#getLimit())`()` Gets the EXCLUSIVE end index stored for the current position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStart](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#getStart())`()` Gets the INCLUSIVE start index for the current position. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesField](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#matchesField(java.text.Format.Field,%20kotlin.Any))`(`field:` ` [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field.html#)!`, `fieldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Determines whether a given field and value should be included given the constraints. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#reset())`()` Resets this ConstrainedFieldPosition to its initial state, as if it were newly created: - Removes any constraints that may have been set on the instance. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt64IterationContext](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#setInt64IterationContext(kotlin.Long))`(`context:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets an int64 that FormattedValue implementations may use for storage. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setState](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#setState(java.text.Format.Field,%20kotlin.Any,%20kotlin.Int,%20kotlin.Int))`(`field:` ` [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field.html#)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets new values for the primary public getters. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/text/ConstrainedFieldPosition#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 
@@ -237,6 +243,7 @@ Sets new values for the primary public getters. Intended to be used by Formatted
 | `field` | [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field.html#)!:The new field. |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The new field value. Should be null if there is no value. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new inclusive start index. |
+| --- | --- |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new exclusive end index. |
 
 ### toString

@@ -8,9 +8,11 @@ class WeightRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.WeightRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#) |
+| --- | --- | --- | --- |
 
 Captures the user's weight.
 
@@ -29,6 +31,7 @@ Captures the user's weight.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#getWeight()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -40,6 +43,7 @@ Captures the user's weight.
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| --- | --- |
 
 ## Public methods
 
@@ -58,6 +62,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

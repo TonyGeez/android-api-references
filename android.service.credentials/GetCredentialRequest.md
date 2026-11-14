@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # GetCredentialRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/GetCredentialRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class GetCredentialRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.GetCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest#) |
 
 Request for getting user's credential from a given credential provider.
@@ -32,6 +34,7 @@ A credential provider will receive this request once the user selects a given [C
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest#describeContents())`()` <br /> |
 | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo) | [getCallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest#getCallingAppInfo())`()` Returns info pertaining to the app requesting credentials. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption.html#)!\> | [getCredentialOptions](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest#getCredentialOptions())`()` Returns a list of options containing parameters needed to return a given type of credential. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

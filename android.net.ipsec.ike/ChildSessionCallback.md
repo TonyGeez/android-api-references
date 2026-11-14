@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ChildSessionCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ChildSessionCallback
@@ -25,6 +26,7 @@ Callback interface for receiving state changes of a Child Session.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClosed](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onClosed())`()` Called when the Child Session is closed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClosedWithException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onClosedWithException(android.net.ipsec.ike.exceptions.IkeException))`(`exception:` ` [IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException)`)` Called if the Child Session setup failed or Child Session is closed because of a fatal error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onIpSecTransformCreated](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onIpSecTransformCreated(android.net.IpSecTransform,%20kotlin.Int))`(`ipSecTransform:` ` [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#)`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#) is created by this Child Session. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onIpSecTransformDeleted](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onIpSecTransformDeleted(android.net.IpSecTransform,%20kotlin.Int))`(`ipSecTransform:` ` [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#)`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#) is deleted by this Child Session. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpened](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onOpened(android.net.ipsec.ike.ChildSessionConfiguration))`(`sessionConfiguration:` ` [ChildSessionConfiguration](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionConfiguration)`)` Called when the Child Session setup succeeds. |
 

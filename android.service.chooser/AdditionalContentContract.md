@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # AdditionalContentContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/AdditionalContentContract "View this page in Java") 
+| --- | --- |
 
 ```
 interface AdditionalContentContract
@@ -21,3 +22,4 @@ Specifies constants used by Chooser when interacting with the additional content
 | abstract | [Columns](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.Columns) <br /> |
 | abstract | [CursorExtraKeys](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.CursorExtraKeys) Constants for [android.database.Cursor#getExtras](https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras())keys. |
 | abstract | [MethodNames](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.MethodNames) Constants for method names used with android. |
+| --- | --- |

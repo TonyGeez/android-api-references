@@ -9,6 +9,7 @@ abstract class AtomicIntegerFieldUpdater<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.atomic.AtomicIntegerFieldUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#) |
 
 A reflection-based utility that enables atomic updates to designated`volatile int`fields of designated classes. This class is designed for use in atomic data structures in which several fields of the same node are independently subject to atomic updates.
@@ -28,18 +29,23 @@ Object arguments for parameters of type`T`that are not instances of the class pa
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [accumulateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#accumulateAndGet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`obj:` `T`, `x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `accumulatorFunction:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [addAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#addAndGet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int))`(`obj:` `T`, `delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#compareAndSet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int,%20kotlin.Int))`(`obj:` `T`, `expect:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `update:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [decrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#decrementAndGet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#get(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T))`(`obj:` `T`)` Returns the current value held in the field of the given object managed by this updater. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndAccumulate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndAccumulate(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`obj:` `T`, `x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `accumulatorFunction:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndAdd](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndAdd(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int))`(`obj:` `T`, `delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndDecrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndDecrement(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndIncrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndIncrement(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndSet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int))`(`obj:` `T`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the field of the given object managed by this updater to the given value and returns the old value. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAndUpdate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#getAndUpdate(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20java.util.function.IntUnaryOperator))`(`obj:` `T`, `updateFunction:` ` [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [incrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#incrementAndGet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#lazySet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int))`(`obj:` `T`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Eventually sets the field of the given object managed by this updater to the given updated value. |
 | openstatic [AtomicIntegerFieldUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#)\<U\>! | [newUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#newUpdater(java.lang.Class,%20kotlin.String))`(`tclass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<U>!`, `fieldName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates and returns an updater for objects with the given field. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#set(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int))`(`obj:` `T`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the field of the given object managed by this updater to the given updated value. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [updateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#updateAndGet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20java.util.function.IntUnaryOperator))`(`obj:` `T`, `updateFunction:` ` [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicIntegerFieldUpdater#weakCompareAndSet(java.util.concurrent.atomic.AtomicIntegerFieldUpdater.T,%20kotlin.Int,%20kotlin.Int))`(`obj:` `T`, `expect:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `update:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
 
@@ -76,6 +82,7 @@ Atomically updates (with memory effects as specified by [java.lang.invoke.VarHan
 | `obj` | T:An object whose field to get and set |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the update value |
 | `accumulatorFunction` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------|
@@ -122,6 +129,7 @@ Atomically sets the field of the given object managed by this updater to the giv
 | `obj` | T:An object whose field to conditionally set |
 | `expect` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the expected value |
 | `update` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new value |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
@@ -182,6 +190,7 @@ Atomically updates (with memory effects as specified by [java.lang.invoke.VarHan
 | `obj` | T:An object whose field to get and set |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the update value |
 | `accumulatorFunction` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------|
@@ -343,6 +352,7 @@ Creates and returns an updater for objects with the given field. The Class argum
 | `tclass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<U\>!:the class of the objects holding the field |
 | `fieldName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the field to be updated |
 | `<U>` | the type of instances of tclass |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -414,6 +424,7 @@ This operation may fail spuriously and does not provide ordering guarantees, so 
 | `obj` | T:An object whose field to conditionally set |
 | `expect` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the expected value |
 | `update` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new value |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|

@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # OverlayManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/om/OverlayManager "View this page in Java")
+| --- | --- |
 
 ```
 open class OverlayManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.om.OverlayManager](https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#) |
 
 OverlayManager gives apps the ability to create an `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction` to maintain the overlays and list the registered fabricated runtime resources overlays(FRROs).

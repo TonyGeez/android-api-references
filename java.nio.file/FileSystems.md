@@ -7,6 +7,7 @@ class FileSystems
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.FileSystems](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#) |
 
 Factory methods for file systems. This class defines the `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getDefault()` method to get the default file system and factory methods to construct other types of file systems.
@@ -26,9 +27,11 @@ If a thread initiates the loading of the installed file system providers and ano
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getDefault()()` Returns the default `FileSystem`. |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getFileSystem(java.net.URI)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!)` Returns a reference to an existing `FileSystem`. |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
+| --- | --- |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
+| --- | --- |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
 | static [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
 
@@ -83,6 +86,7 @@ If a security manager is installed then a provider implementation may require to
 | `java.lang.IllegalArgumentException` | if the pre-conditions for the `uri` parameter are not met |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission |
 | `java.nio.file.FileSystemNotFoundException` | if the file system, identified by the URI, does not exist |
+| --- | --- |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting the URI scheme is not installed |
 
 ### newFileSystem
@@ -124,6 +128,7 @@ FileSystem fs = FileSystems.newFileSystem(URI.create("memory:///?name=logfs"),
 | `java.io.IOException` | if an I/O error occurs creating the file system |
 | `java.lang.IllegalArgumentException` | if the pre-conditions for the `uri` parameter are not met, or the `env` parameter does not contain properties required by the provider, or a property value is invalid |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission required by the file system provider implementation |
+| --- | --- |
 | `java.nio.file.FileSystemAlreadyExistsException` | if the file system has already been created |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting the URI scheme is not installed |
 
@@ -148,6 +153,7 @@ This method first attempts to locate an installed provider in exactly the same m
 | `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!: the URI identifying the file system |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -158,9 +164,11 @@ This method first attempts to locate an installed provider in exactly the same m
 | `java.io.IOException` | an I/O error occurs creating the file system |
 | `java.lang.IllegalArgumentException` | if the pre-conditions for the `uri` parameter are not met, or the `env` parameter does not contain properties required by the provider, or a property value is invalid |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission required by the file system provider implementation |
+| --- | --- |
 | `java.nio.file.FileSystemAlreadyExistsException` | if the URI scheme identifies an installed provider and the file system has already been created |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting the URI scheme is not found |
 | `java.util.ServiceConfigurationError` | when an error occurs while loading a service provider |
+| --- | --- |
 
 ### newFileSystem
 
@@ -189,6 +197,7 @@ This method first attempts to locate an installed provider in exactly the same m
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting this file type cannot be located |
+| --- | --- |
 | `java.util.ServiceConfigurationError` | when an error occurs while loading a service provider |
 
 ### newFileSystem
@@ -222,6 +231,7 @@ This method first attempts to locate an installed provider in exactly the same m
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting this file type cannot be located |
+| --- | --- |
 | `java.util.ServiceConfigurationError` | when an error occurs while loading a service provider |
 
 ### newFileSystem
@@ -255,6 +265,7 @@ This method first attempts to locate an installed provider in exactly the same m
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting this file type cannot be located |
+| --- | --- |
 | `java.util.ServiceConfigurationError` | when an error occurs while loading a service provider |
 
 ### newFileSystem
@@ -280,6 +291,7 @@ This method iterates over the `https://developer.android.com/reference/kotlin/ja
 | `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)!: the path to the file |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -290,4 +302,5 @@ This method iterates over the `https://developer.android.com/reference/kotlin/ja
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if a security manager is installed and it denies an unspecified permission |
 | `java.nio.file.ProviderNotFoundException` | if a provider supporting this file type cannot be located |
+| --- | --- |
 | `java.util.ServiceConfigurationError` | when an error occurs while loading a service provider |

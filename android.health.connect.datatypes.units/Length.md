@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Length
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/units/Length "View this page in Java") 
+| --- | --- |
 
 ```
 class Length : Comparable<Length!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.units.Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#) |
 
 Represents a unit of length. Supported units: meters
@@ -22,9 +24,11 @@ Represents a unit of length. Supported units: meters
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#compareTo(android.health.connect.datatypes.units.Length))`(`other:` ` [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#)`)` Compares this object with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#) | [fromMeters](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#fromMeters(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Length object with the specified value in meters. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInMeters](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#getInMeters())`()` Returns length in meters |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

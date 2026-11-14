@@ -7,9 +7,11 @@ class TotalCaptureResult : CaptureResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.hardware.camera2.CameraMetadata](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata)\< [android.hardware.camera2.CaptureResult.Key](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key)\< [\*](https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#)\>\> |||
 | | ↳ | [android.hardware.camera2.CaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult) ||
 | | | ↳ | [android.hardware.camera2.TotalCaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#) |
+| --- | --- | --- | --- |
 
 The total assembled results of a single image capture from the image sensor.
 
@@ -3037,6 +3039,7 @@ Tonemapping curve is defined by sRGB
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPartialResults()()` Get the read-only list of partial results that compose this total result. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [CaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraResults()()` Get the map between physical camera ids and their capture result metadata |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [TotalCaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraTotalResults()()` Get the map between physical camera ids and their total capture result metadata |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` `T?` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#get(android.hardware.camera2.CaptureResult.Key)(key: https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<T>!)`
 
@@ -5031,6 +5034,7 @@ Here, `[x_c, y_c]` are the coordinates to sample in the input image that corresp
 The pixel coordinates are defined in a normalized coordinate system related to the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_INTRINSIC_CALIBRATION:android.hardware.camera2.CameraCharacteristics.Key` calibration fields. Both `[x_i, y_i]` and `[x_c, y_c]` have `(0,0)` at the lens optical center `[c_x, c_y]`. The maximum magnitudes of both x and y coordinates are normalized to be 1 at the edge further from the optical center, so the range for both dimensions is `-1 <= x <= 1`.
 
 Finally, `r` represents the radial distance from the optical center, `r^2 = x_i^2 + y_i^2`, and its magnitude is therefore no larger than `|r| <= sqrt(2)`.
+| --- | --- | --- |
 
 The distortion model used is the Brown-Conrady model.
 

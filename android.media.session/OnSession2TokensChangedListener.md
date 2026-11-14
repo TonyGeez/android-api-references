@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # OnSession2TokensChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/session/MediaSessionManager.OnSession2TokensChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnSession2TokensChangedListener

@@ -9,12 +9,15 @@ open class SQLWarning : SQLException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#) |
 
 | Known Direct Subclasses [DataTruncation](https://developer.android.com/reference/kotlin/java/sql/DataTruncation) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DataTruncation](https://developer.android.com/reference/kotlin/java/sql/DataTruncation) | An exception thrown as a`DataTruncation`exception (on writes) or reported as a`DataTruncation`warning (on reads) when a data values is unexpectedly truncated for reasons other than its having execeeded`MaxFieldSize`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An exception that provides information on database access warnings. Warnings are silently chained to the object whose method caused it to be reported.
 
@@ -111,6 +114,7 @@ Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`vendorCode`. T
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the warning |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the warning |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific warning code |
+| --- | --- |
 
 ### SQLWarning
 
@@ -133,6 +137,7 @@ Constructs a`SQLWarning`object with a given`reason`,`SQLState`,`vendorCode`and`c
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the warning |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the warning |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific warning code |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLWarning`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
 
 ### SQLWarning
@@ -155,6 +160,7 @@ Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`cause`. The ve
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the warning |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the warning |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLWarning`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
+| --- | --- |
 
 ### SQLWarning
 

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # LinkAddress
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/LinkAddress "View this page in Java") 
+| --- | --- |
 
 ```
 open class LinkAddress : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress#) |
 
 Identifies an IP address on a network link. A`LinkAddress`consists of:
@@ -32,12 +34,15 @@ Identifies an IP address on a network link. A`LinkAddress`consists of:
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/LinkAddress#describeContents())`()` Implement the Parcelable interface. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/LinkAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`LinkAddress`instance against`obj`. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [getAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress#getAddress())`()` Returns the [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) of this`LinkAddress`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/net/LinkAddress#getFlags())`()` Returns the flags of this`LinkAddress`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrefixLength](https://developer.android.com/reference/kotlin/android/net/LinkAddress#getPrefixLength())`()` Returns the prefix length of this`LinkAddress`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScope](https://developer.android.com/reference/kotlin/android/net/LinkAddress#getScope())`()` Returns the scope of this`LinkAddress`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/LinkAddress#hashCode())`()` Returns a hashcode for this address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/LinkAddress#toString())`()` Returns a string representation of this address, such as "192. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/LinkAddress#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|

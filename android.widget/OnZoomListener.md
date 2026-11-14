@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnZoomListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnZoomListener

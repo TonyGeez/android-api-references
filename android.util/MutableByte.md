@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableByte
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableByte "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableByte
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableByte](https://developer.android.com/reference/kotlin/android/util/MutableByte#) |
 
 | **This class was deprecated in API level 28.**

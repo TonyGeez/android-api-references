@@ -9,6 +9,7 @@ open class FieldPosition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition#) |
 
 `FieldPosition`is a simple class used by`Format`and its subclasses to identify fields in formatted output. Fields can be identified in two ways:
@@ -37,12 +38,15 @@ If you are interested in the positions of all attributes in the formatted string
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/FieldPosition#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getBeginIndex())`()` Retrieves the index of the first character in the requested field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getEndIndex())`()` Retrieves the index of the character following the last character in the requested field. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getField](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getField())`()` Retrieves the field identifier. |
 | open [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)! | [getFieldAttribute](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getFieldAttribute())`()` Returns the field identifier as an attribute constant from one of the`Field`subclasses. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/FieldPosition#hashCode())`()` Returns a hash code for this FieldPosition. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeginIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#setBeginIndex(kotlin.Int))`(`bi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the begin index. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#setEndIndex(kotlin.Int))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the end index. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/text/FieldPosition#toString())`()` Return a string representation of this FieldPosition. |
+| --- | --- |
 
 ## Public constructors
 

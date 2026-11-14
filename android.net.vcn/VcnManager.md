@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # VcnManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnManager "View this page in Java")
+| --- | --- |
 
 ```
 open class VcnManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.vcn.VcnManager](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#) |
 
 VcnManager publishes APIs for applications to configure and manage Virtual Carrier Networks.
@@ -37,9 +39,11 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_ERROR_CODE_CONFIG_ERROR:kotlin.Int` Value indicating that an error with this Gateway Connection's configuration occurred. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_ERROR_CODE_INTERNAL_ERROR:kotlin.Int` Value indicating that an internal failure occurred in this Gateway Connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_ERROR_CODE_NETWORK_ERROR:kotlin.Int` Value indicating that a Network error occurred with this Gateway Connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_ACTIVE:kotlin.Int` Value indicating that the VCN for the subscription group is active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_INACTIVE:kotlin.Int` Value indicating that the VCN for the subscription group is inactive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_NOT_CONFIGURED:kotlin.Int` Value indicating that the VCN for the subscription group is not configured, or that the callback is not privileged for the subscription group. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_SAFE_MODE:kotlin.Int` Value indicating that the VCN for the subscription group is in Safe Mode. |
 
 | Public methods ||
@@ -47,6 +51,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#clearVcnConfig(android.os.ParcelUuid)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Clears the VCN configuration for a given subscription group. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#getConfiguredSubscriptionGroups()()` Retrieves the list of Subscription Groups for which a VCN Configuration has been set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#registerVcnStatusCallback(android.os.ParcelUuid,%20java.util.concurrent.Executor,%20android.net.vcn.VcnManager.VcnStatusCallback)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback)` Registers the given callback to receive status updates for the specified subscription. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#setVcnConfig(android.os.ParcelUuid,%20android.net.vcn.VcnConfig)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, config: https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig)` Sets the VCN configuration for a given subscription group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#unregisterVcnStatusCallback(android.net.vcn.VcnManager.VcnStatusCallback)(callback: https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback)` Unregisters the given callback. |
 
@@ -222,6 +227,7 @@ A `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.Vcn
 | `subscriptionGroup` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): The subscription group to match for callbacks. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to be used for invoking callbacks. This value cannot be `null`. |
 | `callback` | [VcnManager.VcnStatusCallback](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback): The VcnStatusCallback to be registered. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # HebrewCalendar
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/HebrewCalendar "View this page in Java") 
+| --- | --- |
 
 ```
 open class HebrewCalendar : Calendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) ||
 | | ↳ | [android.icu.util.HebrewCalendar](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#) |
 
@@ -39,15 +41,19 @@ HebrewCalendar usually should be instantiated using [android.icu.util.Calendar#g
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADAR](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#ADAR:kotlin.Int) Constant for the Adar, the 7th month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADAR_1](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#ADAR_1:kotlin.Int) Constant for Adar I, the 6th month of the Hebrew year (present in leap years only). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AV](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#AV:kotlin.Int) Constant for Av, the 12th month of the Hebrew year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ELUL](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#ELUL:kotlin.Int) Constant for Elul, the 13th month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HESHVAN](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#HESHVAN:kotlin.Int) Constant for Heshvan, the 2nd month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IYAR](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#IYAR:kotlin.Int) Constant for Iyar, the 9th month of the Hebrew year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KISLEV](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#KISLEV:kotlin.Int) Constant for Kislev, the 3rd month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NISAN](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#NISAN:kotlin.Int) Constant for Nisan, the 8th month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHEVAT](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#SHEVAT:kotlin.Int) Constant for Shevat, the 5th month of the Hebrew year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIVAN](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#SIVAN:kotlin.Int) Constant for Sivan, the 10th month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TAMUZ](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#TAMUZ:kotlin.Int) Constant for Tammuz, the 11th month of the Hebrew year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEVET](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#TEVET:kotlin.Int) Constant for Tevet, the 4th month of the Hebrew year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TISHRI](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#TISHRI:kotlin.Int) Constant for Tishri, the 1st month of the Hebrew year. |
 
 | Inherited constants ||
@@ -71,18 +77,22 @@ HebrewCalendar usually should be instantiated using [android.icu.util.Calendar#g
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#add(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a signed amount to a specified field, using this calendar's rules. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTemporalMonthCode](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#getTemporalMonthCode())`()` Gets The Temporal monthCode value corresponding to the month for the date. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#getType())`()` **\[icu\]**Returns the calendar type name string for this Calendar object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inTemporalLeapYear](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#inTemporalLeapYear())`()` **\[icu\]**Returns true if the date is in a leap year. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [roll](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#roll(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Rolls (up/down) a specified amount time on the given field. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTemporalMonthCode](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#setTemporalMonthCode(kotlin.String))`(`temporalMonth:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets The Temporal monthCode which is a string identifier that starts with the literal grapheme "M" followed by two graphemes representing the zero-padded month number of the current month in a normal (non-leap) year and suffixed by an optional literal grapheme "L" if this is a leap month in a lunisolar calendar. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handleComputeFields](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleComputeFields(kotlin.Int))`(`julianDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Subclasses may override this method to compute several fields specific to each calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleComputeMonthStart](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`eyear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `useMonth:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return JD of start of given month/year. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetExtendedYear](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleGetExtendedYear())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetLimit](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limitType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetMonthLength](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int))`(`extendedYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length of the given month in the given year |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetYearLength](https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#handleGetYearLength(kotlin.Int))`(`eyear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of days in the given Hebrew year |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -349,6 +359,7 @@ Constructs a`HebrewCalendar`with the given date set in the default time zone wit
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field. The value is 0-based. e.g., 0 for Tishri. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field. |
+| --- | --- |
 
 **See Also**
 
@@ -375,9 +386,11 @@ Constructs a`HebrewCalendar`with the given date and time set for the default tim
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field. The value is 0-based. e.g., 0 for Tishri. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [HOUR_OF_DAY](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int) time field. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [MINUTE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int) time field. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The value used to set the calendar's [SECOND](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int) time field. |
+| --- | --- |
 
 **See Also**
 
@@ -579,6 +592,7 @@ Return JD of start of given month/year.
 | `eyear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the extended year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based month, or 0 if useMonth is false |
 | `useMonth` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if false, compute the day before the first day of the given year, otherwise, compute the day before the first day of the given month |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|

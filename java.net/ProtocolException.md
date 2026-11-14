@@ -9,9 +9,11 @@ open class ProtocolException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.net.ProtocolException](https://developer.android.com/reference/kotlin/java/net/ProtocolException#) |
 
 Thrown to indicate that there is an error in the underlying protocol, such as a TCP error.

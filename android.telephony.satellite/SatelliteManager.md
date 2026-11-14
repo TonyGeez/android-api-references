@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SatelliteManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/satellite/SatelliteManager "View this page in Java") 
+| --- | --- |
 
 ```
 class SatelliteManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.satellite.SatelliteManager](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager#) |
 
 Manages satellite states such as monitoring enabled state and operations such as provisioning, pointing, messaging, location sharing, etc.

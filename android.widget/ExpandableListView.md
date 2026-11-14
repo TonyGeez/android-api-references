@@ -7,12 +7,15 @@ open class ExpandableListView : ListView
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter)\> ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView) |||
 | | | | | ↳ | [android.widget.ListView](https://developer.android.com/reference/kotlin/android/widget/ListView) ||
 | | | | | | ↳ | [android.widget.ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A view that shows items in a vertically scrolling two-level list. This differs from the `https://developer.android.com/reference/kotlin/android/widget/ListView` by allowing two levels: groups which can individually be expanded to show its children. The items come from the `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter` associated with this view.
 
@@ -29,6 +32,7 @@ The context menu information set by an `https://developer.android.com/reference/
 | open | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.ExpandableListContextMenuInfo` Extra menu information specific to an `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#` provided to the `https://developer.android.com/reference/kotlin/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,%20android.view.View,%20android.view.ContextMenu.ContextMenuInfo)` callback when a context menu is brought up for this AdapterView. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnChildClickListener` Interface definition for a callback to be invoked when a child in this expandable list has been clicked. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupClickListener` Interface definition for a callback to be invoked when a group in this expandable list has been clicked. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupCollapseListener` Used for being notified when a group is collapsed |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupExpandListener` Used for being notified when a group is expanded |
 
@@ -37,12 +41,15 @@ The context menu information set by an `https://developer.android.com/reference/
 | [`android:childDivider`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | Drawable or color that is used as a divider for children. |
 | [`android:childIndicator`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | Indicator shown beside the child View. |
 | [`android:childIndicatorEnd`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The end bound for a child's indicator. |
+| --- | --- |
 | [`android:childIndicatorLeft`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The left bound for a child's indicator. |
 | [`android:childIndicatorRight`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The right bound for a child's indicator. |
 | [`android:childIndicatorStart`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The start bound for a child's indicator. |
+| --- | --- |
 | [`android:groupIndicator`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | Indicator shown beside the group View. |
 | [`android:indicatorEnd`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The end bound for an item's indicator. |
 | [`android:indicatorLeft`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The left bound for an item's indicator. |
+| --- | --- |
 | [`android:indicatorRight`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The right bound for an item's indicator. |
 | [`android:indicatorStart`](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#attr_ExpandableListView) | The start bound for an item's indicator. |
 
@@ -420,6 +427,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -536,6 +544,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -684,6 +693,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -699,6 +709,7 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#CHILD_INDICATOR_INHERIT:kotlin.Int` Denotes when a child indicator should inherit this bound from the generic indicator bounds |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#PACKED_POSITION_TYPE_CHILD:kotlin.Int` The packed position represents a child. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#PACKED_POSITION_TYPE_GROUP:kotlin.Int` The packed position represents a group. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#PACKED_POSITION_TYPE_NULL:kotlin.Int` The packed position represents a neither/null/no preference. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#PACKED_POSITION_VALUE_NULL:kotlin.Long` The value for a packed position that represents neither/null/no preference. |
 
@@ -1924,39 +1935,51 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#collapseGroup(kotlin.Int)(groupPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Collapse a group in the grouped list view |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#expandGroup(kotlin.Int)(groupPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Expand a group in the grouped list view |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#expandGroup(kotlin.Int,%20kotlin.Boolean)(groupPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Expand a group in the grouped list view |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getAccessibilityClassName()()` A TYPE_VIEW_SCROLLED event should be sent whenever a scroll happens, even if the mFirstPosition and the child count have not changed. |
 | open [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getAdapter()()` This method should not be used, use `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()`. |
 | open [ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()()` Gets the adapter that provides data to this view. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListPosition(kotlin.Int)(flatListPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts a flat list position (the raw position of an item (child or group) in the list) to a group and/or child position (represented in a packed position). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getFlatListPosition(kotlin.Long)(packedPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Converts a group and/or child position to a flat list position. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionChild(kotlin.Long)(packedPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets the child position from a packed position that is of `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#PACKED_POSITION_TYPE_CHILD:kotlin.Int` type (use `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionType(kotlin.Long)`). |
+| --- | --- |
 | open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionForChild(kotlin.Int,%20kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the packed position representation of a child's position. |
 | open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionForGroup(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the packed position representation of a group's position. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionGroup(kotlin.Long)(packedPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets the group position from a packed position. |
+| --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getPackedPositionType(kotlin.Long)(packedPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets the type of a packed position. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getSelectedId()()` Gets the ID of the currently selected group or child. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getSelectedPosition()()` Gets the position of the currently selected group or child (along with its type). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#isGroupExpanded(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Whether the given group is currently expanded. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onInitializeAccessibilityNodeInfoForItem(android.view.View,%20kotlin.Int,%20android.view.accessibility.AccessibilityNodeInfo)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#!)` Initializes an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#` with information about a particular item in the list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#performItemClick(android.view.View,%20kotlin.Int,%20kotlin.Long)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Call the OnItemClickListener, if it is defined. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setAdapter(android.widget.ExpandableListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter!)` Sets the adapter that provides data to this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setAdapter(android.widget.ListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ListAdapter!)` This overloaded method should not be used, instead use `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setAdapter(android.widget.ExpandableListAdapter)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setChildDivider(android.graphics.drawable.Drawable)(childDivider: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the drawable that will be drawn adjacent to every child in the list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setChildIndicator(android.graphics.drawable.Drawable)(childIndicator: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the indicator to be drawn next to a child. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setChildIndicatorBounds(kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawing bounds for the child indicator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setChildIndicatorBoundsRelative(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the relative drawing bounds for the child indicator. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setGroupIndicator(android.graphics.drawable.Drawable)(groupIndicator: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the indicator to be drawn next to a group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setIndicatorBounds(kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawing bounds for the indicators (at minimum, the group indicator is affected by this; the child indicator is affected by this if the child indicator bounds are set to inherit). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setIndicatorBoundsRelative(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the relative drawing bounds for the indicators (at minimum, the group indicator is affected by this; the child indicator is affected by this if the child indicator bounds are set to inherit). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setOnChildClickListener(android.widget.ExpandableListView.OnChildClickListener)(onChildClickListener: https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnChildClickListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setOnGroupClickListener(android.widget.ExpandableListView.OnGroupClickListener)(onGroupClickListener: https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupClickListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setOnGroupCollapseListener(android.widget.ExpandableListView.OnGroupCollapseListener)(onGroupCollapseListener: https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupCollapseListener!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setOnGroupExpandListener(android.widget.ExpandableListView.OnGroupExpandListener)(onGroupExpandListener: https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupExpandListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)(l: https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener?)` Register a callback to be invoked when an item has been clicked and the caller prefers to receive a ListView-style position instead of a group and/or child position. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setSelectedChild(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, shouldExpandGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the selection to the specified child. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setSelectedGroup(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the selection to the specified group. |
 
 | Protected methods ||
@@ -2844,6 +2867,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4680,6 +4704,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8935,6 +8960,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -10289,6 +10315,7 @@ Initializes an `https://developer.android.com/reference/kotlin/android/view/acce
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: View representing the list item. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Position of the list item within the adapter. |
 | `info` | [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#)!: Node info to populate. |
+| --- | --- |
 
 ### onRestoreInstanceState
 
@@ -10355,6 +10382,7 @@ Call the OnItemClickListener, if it is defined. Performs all normal actions asso
 | `view` | The view within the AdapterView that was clicked. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the adapter. |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -10589,6 +10617,7 @@ Sets the selection to the specified child. If the child is in a collapsed group,
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the group that contains the child. |
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the child within the group. |
 | `shouldExpandGroup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the child's group should be expanded if it is collapsed. |
+| --- | --- |
 
 | Return ||
 |---|---|

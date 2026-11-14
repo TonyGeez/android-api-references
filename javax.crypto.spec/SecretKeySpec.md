@@ -7,6 +7,7 @@ open class SecretKeySpec : KeySpec, SecretKey
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.SecretKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#) |
 
 This class specifies a secret key in a provider-independent fashion.
@@ -31,6 +32,7 @@ This class is only useful for raw secret keys that can be represented as a byte 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tests for equality between the specified object and this object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#getAlgorithm()()` Returns the name of the algorithm associated with this secret key. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#getEncoded()()` Returns the key material of this secret key. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#getFormat()()` Returns the name of the encoding format for this secret key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/crypto/spec/SecretKeySpec#hashCode()()` Calculates a hash code value for the object. |
 
@@ -64,6 +66,7 @@ This constructor does not check if the given bytes indeed specify a secret key o
 | `key` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the key material of the secret key. The first `len` bytes of the array beginning at `offset` inclusive are copied to protect against subsequent modification. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset in `key` where the key material starts. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the key material. |
+| --- | --- |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the secret-key algorithm to be associated with the given key material. See Appendix A in the [Java Cryptography Architecture Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA) for information about standard algorithm names. |
 
 | Exceptions ||

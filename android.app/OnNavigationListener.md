@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # OnNavigationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnNavigationListener

@@ -11,6 +11,7 @@ interface SourceLocator
 | [javax.xml.transform.SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#) |
 
 | Known Direct Subclasses [DOMLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMLocator) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------| | [DOMLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMLocator) | Indicates the position of a node in a source DOM, intended primarily for error reporting. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This interface is primarily for the purposes of reporting where an error occurred in the XML source or transformation instructions.
 
@@ -21,6 +22,7 @@ This interface is primarily for the purposes of reporting where an error occurre
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getColumnNumber())`()` Return the character position where the current document event ends. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getLineNumber())`()` Return the line number where the current document event ends. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getPublicId())`()` Return the public identifier for the current document event. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getSystemId())`()` Return the system identifier for the current document event. |
 
 ## Public methods

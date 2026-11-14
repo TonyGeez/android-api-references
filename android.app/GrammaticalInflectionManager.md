@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # GrammaticalInflectionManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/GrammaticalInflectionManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class GrammaticalInflectionManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.GrammaticalInflectionManager](https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager#) |
 
 This class allow applications to control granular grammatical inflection settings (such as per-app grammatical gender).
@@ -22,6 +24,7 @@ This class allow applications to control granular grammatical inflection setting
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApplicationGrammaticalGender](https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager#getApplicationGrammaticalGender())`()` Returns the current grammatical gender for the calling app. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemGrammaticalGender](https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager#getSystemGrammaticalGender())`()` Allows privileged preloaded applications to get the system grammatical gender when set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRequestedApplicationGrammaticalGender](https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager#setRequestedApplicationGrammaticalGender(kotlin.Int))`(`grammaticalGender:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current grammatical gender for the calling app (keyed by package name and user ID retrieved from the calling pid). |
+| --- | --- |
 
 ## Public methods
 

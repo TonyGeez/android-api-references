@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Rfc822Token
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/util/Rfc822Token "View this page in Java") 
+| --- | --- |
 
 ```
 open class Rfc822Token
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.util.Rfc822Token](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#) |
 
 This class stores an RFC 822-like name, address, and comment, and provides methods to convert them to quoted strings.
@@ -26,15 +28,19 @@ This class stores an RFC 822-like name, address, and comment, and provides metho
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAddress](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#getAddress())`()` Returns the address part. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getComment](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#getComment())`()` Returns the comment part. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#getName())`()` Returns the name part. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#hashCode())`()` <br /> |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [quoteComment](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#quoteComment(kotlin.String))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the comment, with internal backslashes and parentheses preceded by backslashes. |
+| --- | --- |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [quoteName](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#quoteName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the name, with internal backslashes and quotation marks preceded by backslashes. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [quoteNameIfNecessary](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#quoteNameIfNecessary(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the name, conservatively quoting it if there are any characters that are likely to cause trouble outside of a quoted string, or returning it literally if it seems safe. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAddress](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#setAddress(kotlin.String))`(`address:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Changes the address to the specified address. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#setComment(kotlin.String))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Changes the comment to the specified comment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Changes the name to the specified name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/util/Rfc822Token#toString())`()` Returns the name (with quoting added if necessary), the comment (in parentheses), and the address (in angle brackets). |
+| --- | --- |
 
 ## Public constructors
 
@@ -56,6 +62,7 @@ Creates a new Rfc822Token with the specified name, address, and comment.
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `address` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
+| --- | --- |
 
 ## Public methods
 

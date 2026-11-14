@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DecelerateInterpolator
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/DecelerateInterpolator "View this page in Java") 
+| --- | --- |
 
 ```
 open class DecelerateInterpolator : BaseInterpolator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.BaseInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BaseInterpolator) ||
 | | ↳ | [android.view.animation.DecelerateInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/DecelerateInterpolator#) |
 

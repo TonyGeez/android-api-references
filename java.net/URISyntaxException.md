@@ -9,9 +9,11 @@ open class URISyntaxException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.net.URISyntaxException](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#) |
+| --- | --- | --- | --- |
 
 Checked exception thrown to indicate that a string could not be parsed as a URI reference.
 
@@ -27,6 +29,7 @@ Checked exception thrown to indicate that a string could not be parsed as a URI 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getIndex())`()` Returns an index into the input string of the position at which the parse error occurred, or`-1`if this position is not known. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getInput())`()` Returns the input string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getReason())`()` Returns a string explaining why the input string could not be parsed. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,6 +76,7 @@ Constructs an instance from the given input string, reason, and error index.
 | `input` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The input string |
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A string explaining why the input could not be parsed |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index at which the parse error occurred, or`-1`if the index is not known |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|

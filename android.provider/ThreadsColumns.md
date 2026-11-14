@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # ThreadsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Telephony.ThreadsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface ThreadsColumns : BaseColumns
@@ -13,6 +14,7 @@ interface ThreadsColumns : BaseColumns
 | [android.provider.Telephony.ThreadsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#) |
 
 | Known Direct Subclasses [Telephony.Threads](https://developer.android.com/reference/kotlin/android/provider/Telephony.Threads) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [Telephony.Threads](https://developer.android.com/reference/kotlin/android/provider/Telephony.Threads) | Helper functions for the "threads" table used by MMS and SMS. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Columns for the "threads" table used by MMS and SMS.
 
@@ -23,12 +25,15 @@ Columns for the "threads" table used by MMS and SMS.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ARCHIVED](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#ARCHIVED:kotlin.String) If the thread is archived |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#DATE:kotlin.String) The date at which the thread was created. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ERROR](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#ERROR:kotlin.String) Indicates whether there is a transmission error in the thread. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_ATTACHMENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#HAS_ATTACHMENT:kotlin.String) Indicates whether this thread contains any attachments. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_COUNT](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#MESSAGE_COUNT:kotlin.String) The message count of the thread. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#READ:kotlin.String) Indicates whether all messages of the thread have been read. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RECIPIENT_IDS](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#RECIPIENT_IDS:kotlin.String) A string encoding of the recipient IDs of the recipients of the message, in numerical order and separated by spaces. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SNIPPET](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#SNIPPET:kotlin.String) The snippet of the latest message in the thread. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SNIPPET_CHARSET](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#SNIPPET_CHARSET:kotlin.String) The charset of the snippet. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns#TYPE:kotlin.String) Type of the thread, either [Threads.COMMON_THREAD](https://developer.android.com/reference/kotlin/android/provider/Telephony.Threads#COMMON_THREAD:kotlin.Int) or [Threads.BROADCAST_THREAD](https://developer.android.com/reference/kotlin/android/provider/Telephony.Threads#BROADCAST_THREAD:kotlin.Int). |
 
 | Inherited constants ||

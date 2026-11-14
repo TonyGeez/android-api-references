@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnInflateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewStub.OnInflateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnInflateListener

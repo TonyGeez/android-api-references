@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # DevicePresenceEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/companion/DevicePresenceEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class DevicePresenceEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.DevicePresenceEvent](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#) |
 
 Event for observing device presence.
@@ -22,9 +24,11 @@ Event for observing device presence.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_ASSOCIATION_REMOVED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_ASSOCIATION_REMOVED:kotlin.Int) A companion app will receives the callback [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))with this event when the [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo) is removed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_BLE_APPEARED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_BLE_APPEARED:kotlin.Int) Companion app receives [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))callback with this event if the device comes into BLE range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_BLE_DISAPPEARED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_BLE_DISAPPEARED:kotlin.Int) Companion app receives [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))callback with this event if the device is no longer in BLE range. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_BT_CONNECTED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_BT_CONNECTED:kotlin.Int) Companion app receives [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))callback with this event when the bluetooth device is connected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_BT_DISCONNECTED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_BT_DISCONNECTED:kotlin.Int) Companion app receives [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))callback with this event if the bluetooth device is disconnected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_SELF_MANAGED_APPEARED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_SELF_MANAGED_APPEARED:kotlin.Int) A companion app for a self-managed device will receive the callback [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))if it reports that a device has appeared on its own. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_SELF_MANAGED_DISAPPEARED](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#EVENT_SELF_MANAGED_DISAPPEARED:kotlin.Int) A companion app for a self-managed device will receive the callback [CompanionDeviceService.onDevicePresenceEvent(DevicePresenceEvent)](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent))if it reports that a device has disappeared on its own. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_ASSOCIATION](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#NO_ASSOCIATION:kotlin.Int) Indicate observing device presence base on the ParcelUuid but not association id. |
 
@@ -41,9 +45,11 @@ Event for observing device presence.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAssociationId](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#getAssociationId())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvent](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#getEvent())`()` <br /> |
 | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getUuid](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#getUuid())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

@@ -50,6 +50,7 @@ A prefix can only be bound to a**single**Namespace URI in the current scope.
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceURI](https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext#getNamespaceURI(kotlin.String))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get Namespace URI bound to a prefix in the current scope. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext#getPrefix(kotlin.String))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get prefix bound to Namespace URI in the current scope. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\>! | [getPrefixes](https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext#getPrefixes(kotlin.String))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get all prefixes bound to a Namespace URI in the current scope. |
+| --- | --- |
 
 ## Public methods
 
@@ -66,12 +67,15 @@ Get Namespace URI bound to a prefix in the current scope.
 When requesting a Namespace URI by prefix, the following table describes the returned Namespace URI value for all possible prefix values:
 
 | `getNamespaceURI(prefix)`return value for specified prefixes ||
+| --- | --- |
 | prefix parameter | Namespace URI return value |
 | `DEFAULT_NS_PREFIX`("") | default Namespace URI in the current scope or [XMLConstants.NULL_NS_URI("")](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants.html#NULL_NS_URI:kotlin.String) when there is no default Namespace URI in the current scope |
 | bound prefix | Namespace URI bound to prefix in current scope |
+| --- | --- |
 | unbound prefix | [XMLConstants.NULL_NS_URI("")](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants.html#NULL_NS_URI:kotlin.String) |
 | `XMLConstants.XML_NS_PREFIX`("xml") | `XMLConstants.XML_NS_URI`("http://www.w3.org/XML/1998/namespace") |
 | `XMLConstants.XMLNS_ATTRIBUTE`("xmlns") | `XMLConstants.XMLNS_ATTRIBUTE_NS_URI`("http://www.w3.org/2000/xmlns/") |
+| --- | --- |
 | `null` | `IllegalArgumentException`is thrown |
 
 | Parameters ||
@@ -97,12 +101,15 @@ To get all prefixes bound to a Namespace URI in the current scope, use [getPrefi
 When requesting a prefix by Namespace URI, the following table describes the returned prefix value for all Namespace URI values:
 
 | `getPrefix(namespaceURI)`return value for specified Namespace URIs ||
+| --- | --- |
 | Namespace URI parameter | prefix value returned |
 | \<default Namespace URI\> | `XMLConstants.DEFAULT_NS_PREFIX`("") |
 | bound Namespace URI | prefix bound to Namespace URI in the current scope, if multiple prefixes are bound to the Namespace URI in the current scope, a single arbitrary prefix, whose choice is implementation dependent, is returned |
+| --- | --- |
 | unbound Namespace URI | `null` |
 | `XMLConstants.XML_NS_URI`("http://www.w3.org/XML/1998/namespace") | `XMLConstants.XML_NS_PREFIX`("xml") |
 | `XMLConstants.XMLNS_ATTRIBUTE_NS_URI`("http://www.w3.org/2000/xmlns/") | `XMLConstants.XMLNS_ATTRIBUTE`("xmlns") |
+| --- | --- |
 | `null` | `IllegalArgumentException`is thrown |
 
 | Parameters ||
@@ -130,12 +137,15 @@ An Iterator over String elements is returned in an arbitrary,**implementation de
 When requesting prefixes by Namespace URI, the following table describes the returned prefixes value for all Namespace URI values:
 
 | ` getPrefixes(namespaceURI)`return value for specified Namespace URIs ||
+| --- | --- |
 | Namespace URI parameter | prefixes value returned |
 | bound Namespace URI, including the \<default Namespace URI\> | `Iterator`over prefixes bound to Namespace URI in the current scope in an arbitrary,**implementation dependent**, order |
 | unbound Namespace URI | empty`Iterator` |
+| --- | --- |
 | `XMLConstants.XML_NS_URI`("http://www.w3.org/XML/1998/namespace") | `Iterator`with one element set to`XMLConstants.XML_NS_PREFIX`("xml") |
 | `XMLConstants.XMLNS_ATTRIBUTE_NS_URI`("http://www.w3.org/2000/xmlns/") | `Iterator`with one element set to`XMLConstants.XMLNS_ATTRIBUTE`("xmlns") |
 | `null` | `IllegalArgumentException`is thrown |
+| --- | --- |
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------|

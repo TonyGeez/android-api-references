@@ -7,6 +7,7 @@ abstract class SSLSocket : Socket
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) ||
 | | ↳ | [javax.net.ssl.SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#) |
 
@@ -54,6 +55,7 @@ Client socket:
 | SSLv3 | 1--25 | 1--22 |
 | TLSv1 | 1+ | 1+ |
 | TLSv1.1 | 16+ | 20+ |
+| --- | --- | --- |
 | TLSv1.2 | 16+ | 20+ |
 | TLSv1.3 | 29+ | 29+ |
 
@@ -64,6 +66,7 @@ Server socket:
 | SSLv3 | 1--25 | 1--22 |
 | TLSv1 | 1+ | 1+ |
 | TLSv1.1 | 16+ | 16+ |
+| --- | --- | --- |
 | TLSv1.2 | 16+ | 16+ |
 | TLSv1.3 | 29+ | 29+ |
 
@@ -76,102 +79,135 @@ Methods that operate with cipher suite names (for example, `https://developer.an
 | SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_DSS_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_RSA_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA | 9-22 | |
 | SSL_DH_anon_EXPORT_WITH_RC4_40_MD5 | 9-22 | |
 | SSL_DH_anon_WITH_3DES_EDE_CBC_SHA | 9-22 | |
+| --- | --- | --- |
 | SSL_DH_anon_WITH_DES_CBC_SHA | 9-22 | |
 | SSL_DH_anon_WITH_RC4_128_MD5 | 9-22 | |
 | SSL_RSA_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_EXPORT_WITH_RC4_40_MD5 | 9-22 | 9-19 |
 | SSL_RSA_WITH_3DES_EDE_CBC_SHA | 9+ | 9-19 |
 | SSL_RSA_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_WITH_NULL_MD5 | 9-22 | |
 | SSL_RSA_WITH_NULL_SHA | 9-22 | |
 | SSL_RSA_WITH_RC4_128_MD5 | 9-25 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_WITH_RC4_128_SHA | 9-25 | 9-23 |
 | TLS_AES_128_GCM_SHA256 | 29+ | 29+ |
 | TLS_AES_256_GCM_SHA384 | 29+ | 29+ |
+| --- | --- | --- |
 | TLS_CHACHA20_POLY1305_SHA256 | 29+ | 29+ |
 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA | 9-22 | 9-22 |
 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DHE_DSS_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA | 9-22 | 11-22 |
 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DHE_DSS_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_DHE_RSA_WITH_AES_128_CBC_SHA | 9-25 | 9-25 |
 | TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 | 20-25 | |
+| --- | --- | --- |
 | TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 | 20-25 | 20-25 |
 | TLS_DHE_RSA_WITH_AES_256_CBC_SHA | 9-25 | 11-25 |
 | TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 | 20-25 | |
+| --- | --- | --- |
 | TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 | 20-25 | 20-25 |
 | TLS_DH_anon_WITH_AES_128_CBC_SHA | 9-22 | |
 | TLS_DH_anon_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DH_anon_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_DH_anon_WITH_AES_256_CBC_SHA | 9-22 | |
 | TLS_DH_anon_WITH_AES_256_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DH_anon_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA | 11+ | 11+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
 | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA | 11+ | 11+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 | 20-28 | |
 | TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
 | TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_NULL_SHA | 11-22 | |
 | TLS_ECDHE_ECDSA_WITH_RC4_128_SHA | 11-25 | 11-23 |
 | TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA | 21+ | 21+ |
+| --- | --- | --- |
 | TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA | 21+ | 21+ |
 | TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
 | TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA | 11-22 | 11-19 |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA | 11+ | 11+ |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA | 11+ | 11+ |
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 | 20-28 | |
 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
 | TLS_ECDHE_RSA_WITH_NULL_SHA | 11-22 | |
 | TLS_ECDHE_RSA_WITH_RC4_128_SHA | 11-25 | 11-23 |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_NULL_SHA | 11-22 | |
 | TLS_ECDH_ECDSA_WITH_RC4_128_SHA | 11-22 | 11-19 |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_RSA_WITH_AES_128_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_ECDH_RSA_WITH_AES_256_CBC_SHA | 11-22 | 11-19 |
 | TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_ECDH_RSA_WITH_NULL_SHA | 11-22 | |
 | TLS_ECDH_RSA_WITH_RC4_128_SHA | 11-22 | 11-19 |
+| --- | --- | --- |
 | TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA | 11-22 | |
 | TLS_ECDH_anon_WITH_AES_128_CBC_SHA | 11-22 | |
 | TLS_ECDH_anon_WITH_AES_256_CBC_SHA | 11-22 | |
+| --- | --- | --- |
 | TLS_ECDH_anon_WITH_NULL_SHA | 11-22 | |
 | TLS_ECDH_anon_WITH_RC4_128_SHA | 11-22 | |
 | TLS_EMPTY_RENEGOTIATION_INFO_SCSV | 11+ | 11+ |
+| --- | --- | --- |
 | TLS_FALLBACK_SCSV | 21+ | |
 | TLS_PSK_WITH_3DES_EDE_CBC_SHA | 21-22 | |
 | TLS_PSK_WITH_AES_128_CBC_SHA | 21+ | 21+ |
+| --- | --- | --- |
 | TLS_PSK_WITH_AES_256_CBC_SHA | 21+ | 21+ |
 | TLS_PSK_WITH_RC4_128_SHA | 21-25 | |
 | TLS_RSA_WITH_AES_128_CBC_SHA | 9+ | 9+ |
+| --- | --- | --- |
 | TLS_RSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_RSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
 | TLS_RSA_WITH_AES_256_CBC_SHA | 9+ | 11+ |
+| --- | --- | --- |
 | TLS_RSA_WITH_AES_256_CBC_SHA256 | 20-28 | |
 | TLS_RSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
 | TLS_RSA_WITH_NULL_SHA256 | 20-22 | |
+| --- | --- | --- |
 
 *NOTE* : PSK cipher suites are enabled by default only if the `SSLContext` through which the socket was created has been initialized with a `PSKKeyManager`.
 
@@ -182,24 +218,31 @@ API Levels 1 to 8 use OpenSSL names for cipher suites. The table below lists the
 | AES128-SHA | TLS_RSA_WITH_AES_128_CBC_SHA | 1+ | 1+ |
 | AES256-SHA | TLS_RSA_WITH_AES_256_CBC_SHA | 1+ | 1--8, 11+ |
 | DES-CBC-MD5 | SSL_CK_DES_64_CBC_WITH_MD5 | 1--8 | 1--8 |
+| --- | --- | --- | --- |
 | DES-CBC-SHA | SSL_RSA_WITH_DES_CBC_SHA | 1--22 | 1--19 |
 | DES-CBC3-MD5 | SSL_CK_DES_192_EDE3_CBC_WITH_MD5 | 1--8 | 1--8 |
 | DES-CBC3-SHA | SSL_RSA_WITH_3DES_EDE_CBC_SHA | 1+ | 1--19 |
+| --- | --- | --- | --- |
 | DHE-DSS-AES128-SHA | TLS_DHE_DSS_WITH_AES_128_CBC_SHA | 1--22 | 1--22 |
 | DHE-DSS-AES256-SHA | TLS_DHE_DSS_WITH_AES_256_CBC_SHA | 1--22 | 1--8, 11--22 |
 | DHE-RSA-AES128-SHA | TLS_DHE_RSA_WITH_AES_128_CBC_SHA | 1+ | 1+ |
+| --- | --- | --- | --- |
 | DHE-RSA-AES256-SHA | TLS_DHE_RSA_WITH_AES_256_CBC_SHA | 1+ | 1--8, 11+ |
 | EDH-DSS-DES-CBC-SHA | SSL_DHE_DSS_WITH_DES_CBC_SHA | 1--22 | 1--19 |
 | EDH-DSS-DES-CBC3-SHA | SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA | 1--22 | 1--19 |
+| --- | --- | --- | --- |
 | EDH-RSA-DES-CBC-SHA | SSL_DHE_RSA_WITH_DES_CBC_SHA | 1--22 | 1--19 |
 | EDH-RSA-DES-CBC3-SHA | SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA | 1--22 | 1--19 |
 | EXP-DES-CBC-SHA | SSL_RSA_EXPORT_WITH_DES40_CBC_SHA | 1--22 | 1--19 |
+| --- | --- | --- | --- |
 | EXP-EDH-DSS-DES-CBC-SHA | SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA | 1--22 | 1--19 |
 | EXP-EDH-RSA-DES-CBC-SHA | SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA | 1--22 | 1--19 |
 | EXP-RC2-CBC-MD5 | SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5 | 1--8 | 1--8 |
+| --- | --- | --- | --- |
 | EXP-RC4-MD5 | SSL_RSA_EXPORT_WITH_RC4_40_MD5 | 1--22 | 1--19 |
 | RC2-CBC-MD5 | SSL_CK_RC2_128_CBC_WITH_MD5 | 1--8 | 1--8 |
 | RC4-MD5 | SSL_RSA_WITH_RC4_128_MD5 | 1--25 | 1--19 |
+| --- | --- | --- | --- |
 | RC4-SHA | SSL_RSA_WITH_RC4_128_SHA | 1--25 | 1--23 |
 
 ## Summary
@@ -217,27 +260,35 @@ API Levels 1 to 8 use OpenSSL names for cipher suites. The table below lists the
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)(listener: https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedListener!)` Registers an event listener to receive notifications that an SSL handshake has completed on this connection. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getApplicationProtocol()()` Returns the most recent application protocol value negotiated for this connection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnableSessionCreation()()` Returns true if new SSL sessions may be established by this socket. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledCipherSuites()()` Returns the names of the SSL cipher suites which are currently enabled for use on this connection. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledProtocols()()` Returns the names of the protocol versions which are currently enabled for use on this connection. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocol()()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
+| --- | --- |
 | open [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\< [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocolSelector()()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
 | open [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeSession()()` Returns the `SSLSession` being constructed during a SSL/TLS handshake. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()()` Returns true if the socket will *require* client authentication. |
+| --- | --- |
 | open [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSSLParameters()()` Returns the SSLParameters in effect for this SSLSocket. |
 | abstract [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSession()()` Returns the SSL Session in use by this connection. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()()` Returns the names of the cipher suites which could be enabled for use on this connection. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedProtocols()()` Returns the names of the protocols which could be enabled for use on an SSL connection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getUseClientMode()()` Returns true if the socket is set to use client mode when handshaking. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getWantClientAuth()()` Returns true if the socket will *request* client authentication. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)(listener: https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedListener!)` Removes a previously registered handshake completion listener. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnableSessionCreation(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether new SSL sessions may be established by this socket. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledCipherSuites(kotlin.Array)(suites: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the cipher suites enabled for use on this connection. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledProtocols(kotlin.Array)(protocols: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the protocol versions enabled for use on this connection. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)(selector: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)(need: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to *require* client authentication. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setSSLParameters(javax.net.ssl.SSLParameters)(params: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters!)` Applies SSLParameters to this socket. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to use client (or server) mode when handshaking. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)(want: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to *request* client authentication. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#startHandshake()()` Starts an SSL handshake on this connection. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#toString()()` Converts this socket to a `String`. |
 
@@ -641,6 +692,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkConnect` method doesn't allow the operation. |
+| --- | --- |
 | `java.net.UnknownHostException` | if the host is not known |
 
 **See Also**
@@ -666,6 +718,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: name of the host with which to connect, or `null` for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the server's port |
 | `clientAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
+| --- | --- |
 | `clientPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the client's port the socket is bound to, or `zero` for a system selected free port. |
 
 | Exceptions ||
@@ -673,6 +726,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.IllegalArgumentException` | if the port parameter or clientPort parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
 | `java.lang.SecurityException` | if a security manager exists and its `checkConnect` method doesn't allow the operation. |
+| --- | --- |
 | `java.net.UnknownHostException` | if the host is not known |
 
 **See Also**
@@ -701,6 +755,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
 | `java.lang.NullPointerException` | if `address` is null. |
+| --- | --- |
 | `java.lang.SecurityException` | if a security manager exists and its `checkConnect` method doesn't allow the operation. |
 
 **See Also**
@@ -726,6 +781,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!: the server's host |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): its port |
 | `clientAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
+| --- | --- |
 | `clientPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the client's port the socket is bound to, or `zero` for a system selected free port. |
 
 | Exceptions ||
@@ -733,6 +789,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.IllegalArgumentException` | if the port parameter or clientPort parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
 | `java.lang.NullPointerException` | if `address` is null. |
+| --- | --- |
 | `java.lang.SecurityException` | if a security manager exists and its `checkConnect` method doesn't allow the operation. |
 
 **See Also**

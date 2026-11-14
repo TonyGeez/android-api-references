@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # BlurMaskFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/BlurMaskFilter "View this page in Java") 
+| --- | --- |
 
 ```
 open class BlurMaskFilter : MaskFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter) ||
 | | ↳ | [android.graphics.BlurMaskFilter](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter#) |
 

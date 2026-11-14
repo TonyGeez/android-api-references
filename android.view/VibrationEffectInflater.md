@@ -7,6 +7,7 @@ class VibrationEffectInflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.VibrationEffectInflater](https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#) |
 
 Instantiates `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` objects from Android XML resources.

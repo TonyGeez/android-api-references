@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SumPathEffect
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/SumPathEffect "View this page in Java") 
+| --- | --- |
 
 ```
 open class SumPathEffect : PathEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) ||
 | | ↳ | [android.graphics.SumPathEffect](https://developer.android.com/reference/kotlin/android/graphics/SumPathEffect#) |
 

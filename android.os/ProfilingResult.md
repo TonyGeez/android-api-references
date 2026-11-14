@@ -7,6 +7,7 @@ class ProfilingResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ProfilingResult](https://developer.android.com/reference/kotlin/android/os/ProfilingResult#) |
 
 Encapsulates results of a single profiling request operation.
@@ -18,12 +19,15 @@ Encapsulates results of a single profiling request operation.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_EXECUTING:kotlin.Int` The request was executed and failed for a reason not specified below. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_INVALID_REQUEST:kotlin.Int` The request failed due to invalid ProfilingRequest. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_NO_DISK_SPACE:kotlin.Int` The request was executed and failed due to a lack of disk space. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_POST_PROCESSING:kotlin.Int` The request was executed but post processing failed and the result was discarded. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_PROFILING_IN_PROGRESS:kotlin.Int` The request was denied due to profiling already in progress. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_RATE_LIMIT_PROCESS:kotlin.Int` The request was denied due to process level rate limiting. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_RATE_LIMIT_SYSTEM:kotlin.Int` The request was denied due to system level rate limiting. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_NONE:kotlin.Int` The request was executed and succeeded. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_UNKNOWN:kotlin.Int` The request was denied or failed for an unspecified reason. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,12 +38,15 @@ Encapsulates results of a single profiling request operation.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#getErrorCode()()` The result ErrorCode for the profiling request indicating the failure reason if applicable. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#getErrorMessage()()` Additional details about failures that occurred, if applicable. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#getResultFilePath()()` The file path of the profiling result data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#getTag()()` The tag defined by the caller at request time. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#getTriggerType()()` Trigger type that started this profiling, or `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_NONE:kotlin.Int` for profiling not started by a trigger. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

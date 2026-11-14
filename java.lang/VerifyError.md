@@ -9,9 +9,11 @@ open class VerifyError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.VerifyError](https://developer.android.com/reference/kotlin/java/lang/VerifyError#) |
 
 Thrown when the "verifier" detects that a class file, though well formed, contains some sort of internal inconsistency or security problem.

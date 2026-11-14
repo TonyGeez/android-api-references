@@ -7,9 +7,11 @@ open class StyleSpan : MetricAffectingSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
 | | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
 | | | ↳ | [android.text.style.StyleSpan](https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#) |
+| --- | --- | --- | --- |
 
 Span that allows setting the style of the text it's attached to. Possible styles are: `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#NORMAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#BOLD:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#ITALIC:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#BOLD_ITALIC:kotlin.Int`.
 
@@ -38,9 +40,11 @@ Text styled bold and italic with the `StyleSpan`.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#getFontWeightAdjustment()()` Returns the font weight adjustment specified by this span. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#getStyle()()` Returns the style constant defined in `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#updateDrawState(android.text.TextPaint)(ds: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#updateMeasureState(android.text.TextPaint)(paint: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

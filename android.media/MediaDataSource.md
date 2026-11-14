@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # MediaDataSource
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaDataSource "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class MediaDataSource : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaDataSource](https://developer.android.com/reference/kotlin/android/media/MediaDataSource#) |
 
 For supplying media data to the framework. Implement this if your app has special requirements for the way media data is obtained.
@@ -80,6 +82,7 @@ Called to request data from the given position. Implementations should fill`buff
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the position in the data source to read from. |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer to read the data into. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset within buffer to read the data into. |
+| --- | --- |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to read. |
 
 | Return ||

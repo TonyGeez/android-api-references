@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ContextMenu
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ContextMenu "View this page in Java") 
+| --- | --- |
 
 ```
 interface ContextMenu : Menu
@@ -37,9 +38,11 @@ To show a context menu on long click, most clients will want to call [Activity.r
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHeader](https://developer.android.com/reference/kotlin/android/view/ContextMenu#clearHeader())`()` Clears the header of the context menu. |
 | abstract [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu#)! | [setHeaderIcon](https://developer.android.com/reference/kotlin/android/view/ContextMenu#setHeaderIcon(android.graphics.drawable.Drawable))`(`icon:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Sets the context menu header's icon to the icon given in icon [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#). |
 | abstract [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu#)! | [setHeaderIcon](https://developer.android.com/reference/kotlin/android/view/ContextMenu#setHeaderIcon(kotlin.Int))`(`iconRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the context menu header's icon to the icon given in iconRes resource id. |
+| --- | --- |
 | abstract [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu#)! | [setHeaderTitle](https://developer.android.com/reference/kotlin/android/view/ContextMenu#setHeaderTitle(kotlin.Int))`(`titleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the context menu header's title to the title given in titleRes resource identifier. |
 | abstract [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu#)! | [setHeaderTitle](https://developer.android.com/reference/kotlin/android/view/ContextMenu#setHeaderTitle(kotlin.CharSequence))`(`title:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the context menu header's title to the title given in title. |
 | abstract [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu#)! | [setHeaderView](https://developer.android.com/reference/kotlin/android/view/ContextMenu#setHeaderView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` Sets the header of the context menu to the [View](https://developer.android.com/reference/kotlin/android/view/View) given in view. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

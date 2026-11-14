@@ -9,6 +9,7 @@ abstract class AbstractPreferences : Preferences
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.prefs.Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences) ||
 | | ↳ | [java.util.prefs.AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#) |
 
@@ -43,36 +44,47 @@ Implementation note: In Sun's default Preferences implementations, the user's id
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [absolutePath](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#absolutePath())`()` Implements the absolutePath method as per the specification in [Preferences.absolutePath()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#absolutePath()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addNodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#addNodeChangeListener(java.util.prefs.NodeChangeListener))`(`ncl:` ` [NodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener))`(`pcl:` ` [PreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener)!`)` <br /> |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [childrenNames](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#childrenNames())`()` Implements the children method as per the specification in [Preferences.childrenNames()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#childrenNames()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#clear())`()` Implements the clear method as per the specification in [Preferences.clear()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#clear()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exportNode](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#exportNode(java.io.OutputStream))`(`os:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Implements the exportNode method as per the specification in [Preferences.exportNode(OutputStream)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#exportNode(java.io.OutputStream)). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exportSubtree](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#exportSubtree(java.io.OutputStream))`(`os:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Implements the exportSubtree method as per the specification in [Preferences.exportSubtree(OutputStream)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#exportSubtree(java.io.OutputStream)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#flush())`()` Implements the flush method as per the specification in [Preferences.flush()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#flush()). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [get](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#get(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Implements the get method as per the specification in [Preferences.get(String,String)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#get(kotlin.String,%20kotlin.String)). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getBoolean(kotlin.String,%20kotlin.Boolean))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Implements the getBoolean method as per the specification in [Preferences.getBoolean(String,boolean)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getBoolean(kotlin.String,%20kotlin.Boolean)). |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getByteArray](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getByteArray(kotlin.String,%20kotlin.ByteArray))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Implements the getByteArray method as per the specification in[Preferences.getByteArray(String,byte[])](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getByteArray(kotlin.String,%20kotlin.ByteArray)). |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getDouble(kotlin.String,%20kotlin.Double))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Implements the getDouble method as per the specification in [Preferences.getDouble(String,double)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getDouble(kotlin.String,%20kotlin.Double)). |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getFloat(kotlin.String,%20kotlin.Float))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Implements the getFloat method as per the specification in [Preferences.getFloat(String,float)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getFloat(kotlin.String,%20kotlin.Float)). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getInt(kotlin.String,%20kotlin.Int))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implements the getInt method as per the specification in [Preferences.getInt(String,int)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getInt(kotlin.String,%20kotlin.Int)). |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getLong(kotlin.String,%20kotlin.Long))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `def:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Implements the getLong method as per the specification in [Preferences.getLong(String,long)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#getLong(kotlin.String,%20kotlin.Long)). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserNode](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#isUserNode())`()` Implements the isUserNode method as per the specification in [Preferences.isUserNode()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#isUserNode()). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [keys](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#keys())`()` Implements the keys method as per the specification in [Preferences.keys()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#keys()). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#name())`()` Implements the name method as per the specification in [Preferences.name()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#name()). |
+| --- | --- |
 | open [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | [node](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#node(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Implements the node method as per the specification in [Preferences.node(String)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#node(kotlin.String)). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nodeExists](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#nodeExists(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Implements the nodeExists method as per the specification in [Preferences.nodeExists(String)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#nodeExists(kotlin.String)). |
 | open [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | [parent](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#parent())`()` Implements the parent method as per the specification in [Preferences.parent()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#parent()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#put(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Implements the put method as per the specification in [Preferences.put(String,String)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#put(kotlin.String,%20kotlin.String)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putBoolean](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putBoolean(kotlin.String,%20kotlin.Boolean))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Implements the putBoolean method as per the specification in [Preferences.putBoolean(String,boolean)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putBoolean(kotlin.String,%20kotlin.Boolean)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putByteArray](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putByteArray(kotlin.String,%20kotlin.ByteArray))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Implements the putByteArray method as per the specification in[Preferences.putByteArray(String,byte[])](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putByteArray(kotlin.String,%20kotlin.ByteArray)). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putDouble](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putDouble(kotlin.String,%20kotlin.Double))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Implements the putDouble method as per the specification in [Preferences.putDouble(String,double)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putDouble(kotlin.String,%20kotlin.Double)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putFloat](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putFloat(kotlin.String,%20kotlin.Float))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Implements the putFloat method as per the specification in [Preferences.putFloat(String,float)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putFloat(kotlin.String,%20kotlin.Float)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putInt](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putInt(kotlin.String,%20kotlin.Int))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implements the putInt method as per the specification in [Preferences.putInt(String,int)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putInt(kotlin.String,%20kotlin.Int)). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putLong](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putLong(kotlin.String,%20kotlin.Long))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Implements the putLong method as per the specification in [Preferences.putLong(String,long)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putLong(kotlin.String,%20kotlin.Long)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#remove(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Implements the remove(String) method as per the specification in [Preferences.remove(String)](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#remove(kotlin.String)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeNode](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())`()` Implements the removeNode() method as per the specification in [Preferences.removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode()). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeNodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNodeChangeListener(java.util.prefs.NodeChangeListener))`(`ncl:` ` [NodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener))`(`pcl:` ` [PreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sync](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#sync())`()` Implements the sync method as per the specification in [Preferences.sync()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#sync()). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#toString())`()` Returns the absolute path name of this preferences node. |
 
 | Protected methods ||
@@ -80,15 +92,19 @@ Implementation note: In Sun's default Preferences implementations, the user's id
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#)!\>! | [cachedChildren](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#cachedChildren())`()` Returns all known unremoved children of this node. |
 | abstract [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#)! | [childSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#childSpi(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the named child of this preference node, creating it if it does not already exist. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [childrenNamesSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#childrenNamesSpi())`()` Returns the names of the children of this preference node. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flushSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#flushSpi())`()` This method is invoked with this node locked. |
 | open [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#)! | [getChild](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getChild(kotlin.String))`(`nodeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the named child if it exists, or null if it does not. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#getSpi(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value associated with the specified key at this preference node, or null if there is no association for this key, or the association cannot be determined at this time. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRemoved](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#isRemoved())`()` Returns true iff this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [keysSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#keysSpi())`()` Returns all of the keys that have an associated value in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#putSpi(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Put the given key-value association into this preference node. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeNodeSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNodeSpi())`()` Removes this preference node, invalidating it and any preferences that it contains. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeSpi(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Remove the association (if any) for the specified key at this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [syncSpi](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#syncSpi())`()` This method is invoked with this node locked. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -235,6 +251,7 @@ Implements the exportNode method as per the specification in [Preferences.export
 | `java.io.IOException` | if writing to the specified output stream results in an IOException. |
 | `java.util.prefs.BackingStoreException` | if preference data cannot be read from backing store. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode())method. |
+| --- | --- |
 
 ### exportSubtree
 
@@ -255,6 +272,7 @@ Implements the exportSubtree method as per the specification in [Preferences.exp
 | `java.io.IOException` | if writing to the specified output stream results in an IOException. |
 | `java.util.prefs.BackingStoreException` | if preference data cannot be read from backing store. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removeNode())method. |
+| --- | --- |
 
 ### flush
 
@@ -562,6 +580,7 @@ If the first character of path is '/' (indicating an absolute path name) this pr
 | `java.lang.IllegalArgumentException` | if the path name is invalid (i.e., it contains multiple consecutive slash characters, or ends with a slash character and is more than one character long). |
 | `java.lang.NullPointerException` | if path name is null. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### nodeExists
 
@@ -589,6 +608,7 @@ This implementation is very similar to [node(java.lang.String)](https://develope
 | `java.util.prefs.BackingStoreException` | if this operation cannot be completed due to a failure in the backing store, or inability to communicate with it. |
 | `java.lang.IllegalArgumentException` | if the path name is invalid (i.e., it contains multiple consecutive slash characters, or ends with a slash character and is more than one character long). |
 | `java.lang.NullPointerException` | if path name is null. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method and pathname is not the empty string (""). |
 
 ### parent
@@ -636,6 +656,7 @@ This implementation checks that the key and value are legal, obtains this prefer
 | `java.lang.NullPointerException` | if key or value is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH or if value.length exceeds MAX_VALUE_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putBoolean
 
@@ -662,6 +683,7 @@ This implementation translates value to a string with [String.valueOf(boolean)](
 | `java.lang.NullPointerException` | if key is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putByteArray
 
@@ -686,6 +708,7 @@ Implements the putByteArray method as per the specification in[Preferences.putBy
 | `java.lang.NullPointerException` | if key or value is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH or if value.length exceeds MAX_VALUE_LENGTH\*3/4. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putDouble
 
@@ -712,6 +735,7 @@ This implementation translates value to a string with [Double.toString(double)](
 | `java.lang.NullPointerException` | if key is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putFloat
 
@@ -738,6 +762,7 @@ This implementation translates value to a string with [Float.toString(float)](ht
 | `java.lang.NullPointerException` | if key is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putInt
 
@@ -764,6 +789,7 @@ This implementation translates value to a string with [Integer.toString(int)](ht
 | `java.lang.NullPointerException` | if key is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### putLong
 
@@ -790,6 +816,7 @@ This implementation translates value to a string with [Long.toString(long)](http
 | `java.lang.NullPointerException` | if key is null. |
 | `java.lang.IllegalArgumentException` | if key.length() exceeds MAX_KEY_LENGTH. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
+| --- | --- |
 
 ### remove
 
@@ -831,6 +858,7 @@ Note that the helper method is always invoked with all ancestors up to the "clos
 | `java.util.prefs.BackingStoreException` | if this operation cannot be completed due to a failure in the backing store, or inability to communicate with it. |
 | `java.lang.IllegalStateException` | if this node (or an ancestor) has already been removed with the [removeNode()](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences#removeNode())method. |
 | `java.lang.UnsupportedOperationException` | if this method is invoked on the root node. |
+| --- | --- |
 
 ### removeNodeChangeListener
 

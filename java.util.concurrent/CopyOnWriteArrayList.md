@@ -7,6 +7,7 @@ open class CopyOnWriteArrayList<E : Any!> : Cloneable, MutableList<E>, Rando
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.CopyOnWriteArrayList](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#) |
 
 A thread-safe variant of `https://developer.android.com/reference/kotlin/java/util/ArrayList.html#` in which all mutative operations (`add`, `set`, and so on) are implemented by making a fresh copy of the underlying array.
@@ -32,45 +33,59 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#add(java.util.concurrent.CopyOnWriteArrayList.E)(element: E)` Appends the specified element to the end of this list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#add(kotlin.Int,%20java.util.concurrent.CopyOnWriteArrayList.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Inserts the specified element at the specified position in this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addAll(kotlin.Int,%20kotlin.collections.Collection)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Inserts all of the elements in the specified collection into this list, starting at the specified position. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addAllAbsent(kotlin.collections.MutableCollection)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>)` Appends all of the elements in the specified collection that are not already contained in this list, to the end of this list, in the order that they are returned by the specified collection's iterator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addFirst(java.util.concurrent.CopyOnWriteArrayList.E)(e: E)` Adds an element as the first element of this collection (optional operation). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addIfAbsent(java.util.concurrent.CopyOnWriteArrayList.E)(e: E)` Appends the element, if not present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#addLast(java.util.concurrent.CopyOnWriteArrayList.E)(e: E)` Adds an element as the last element of this collection (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#clear()()` Removes all of the elements from this list. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#clone()()` Returns a shallow copy of this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#contains(java.util.concurrent.CopyOnWriteArrayList.E)(element: E?)` Returns `true` if this list contains the specified element. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this list contains all of the elements of the specified collection. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this list for equality. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#forEach(java.util.function.Consumer)(action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in E>)` <br /> |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the element at the specified position in this list. |
+| --- | --- |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#getFirst()()` Gets the first element of this collection. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#getLast()()` Gets the last element of this collection. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#hashCode()()` Returns the hash code value for this list. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#indexOf(java.util.concurrent.CopyOnWriteArrayList.E,%20kotlin.Int)(e: E?, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index of the first occurrence of the specified element in this list, searching forwards from `index`, or returns -1 if the element is not found. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#indexOf(java.util.concurrent.CopyOnWriteArrayList.E)(element: E?)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#isEmpty()()` Returns `true` if this list contains no elements. |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#iterator()()` Returns an iterator over the elements in this list in proper sequence. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#lastIndexOf(java.util.concurrent.CopyOnWriteArrayList.E,%20kotlin.Int)(e: E?, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index of the last occurrence of the specified element in this list, searching backwards from `index`, or returns -1 if the element is not found. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#lastIndexOf(java.util.concurrent.CopyOnWriteArrayList.E)(element: E?)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
+| --- | --- |
 | open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#listIterator()()` Returns a list iterator over the elements in this list (in proper sequence). |
 | open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#listIterator(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#remove(java.util.concurrent.CopyOnWriteArrayList.E)(element: E?)` Removes the first occurrence of the specified element from this list, if it is present. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#removeAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Removes from this list all of its elements that are contained in the specified collection. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the element at the specified position in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#removeFirst()()` Removes and returns the first element of this collection (optional operation). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#removeIf(java.util.function.Predicate)(filter: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in E>)` <br /> |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#removeLast()()` Removes and returns the last element of this collection (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#replaceAll(java.util.function.UnaryOperator)(operator: https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator.html#<E>)` Replaces each element of this list with the result of applying the operator to that element (optional operation). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Retains only the elements in this list that are contained in the specified collection. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#view) of this collection. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#set(kotlin.Int,%20java.util.concurrent.CopyOnWriteArrayList.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Replaces the element at the specified position in this list with the specified element. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#sort(java.util.Comparator)(c: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in E>?)` Sorts this list according to the order induced by the specified `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` (optional operation). |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this list. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#subList(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a view of the portion of this list between `fromIndex`, inclusive, and `toIndex`, exclusive. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#toArray()()` Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#toString()()` Returns a string representation of this list. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -149,6 +164,7 @@ Appends the specified element to the end of this list.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of this element prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -175,6 +191,7 @@ Inserts the specified element at the specified position in this list. Shifts the
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -205,6 +222,7 @@ Inserts all of the elements in the specified collection into this list, starting
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -235,6 +253,7 @@ Appends all of the elements in the specified collection to the end of this list,
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -702,6 +721,7 @@ Removes the first occurrence of the specified element from this list, if it is p
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this list |
+| --- | --- |
 
 ### removeAll
 
@@ -726,6 +746,7 @@ Removes from this list all of its elements that are contained in the specified c
 | `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `removeAll` operation is not supported by this list |
+| --- | --- |
 
 **See Also**
 
@@ -853,6 +874,7 @@ Retains only the elements in this list that are contained in the specified colle
 | `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `retainAll` operation is not supported by this list |
+| --- | --- |
 
 **See Also**
 
@@ -899,6 +921,7 @@ Replaces the element at the specified position in this list with the specified e
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index >= size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this list |
 
@@ -943,6 +966,7 @@ For apps running on and targeting Android versions greater than Nougat (API leve
 | `java.lang.ClassCastException` | if the list contains elements that are not *mutually comparable* using the specified comparator |
 | `java.lang.IllegalArgumentException` | ([optional](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#optional-restrictions)) if the comparator is found to violate the `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` contract |
 | `java.lang.UnsupportedOperationException` | if the `sort` operation is not supported by this list |
+| --- | --- |
 
 ### spliterator
 

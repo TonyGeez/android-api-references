@@ -9,12 +9,15 @@ open class BadPaddingException : GeneralSecurityException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.crypto.BadPaddingException](https://developer.android.com/reference/kotlin/javax/crypto/BadPaddingException#) |
 
 | Known Direct Subclasses [AEADBadTagException](https://developer.android.com/reference/kotlin/javax/crypto/AEADBadTagException) |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AEADBadTagException](https://developer.android.com/reference/kotlin/javax/crypto/AEADBadTagException) | This exception is thrown when a [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher) operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This exception is thrown when a particular padding mechanism is expected for the input data but the data is not padded properly.
 

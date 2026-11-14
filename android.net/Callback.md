@@ -3,6 +3,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # Callback
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/DnsResolver.Callback "View this page in Java")
+| --- | --- |
 
 ```
 interface Callback<T : Any!>

@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # TransitionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TransitionListener
@@ -43,6 +44,7 @@ This event is sent to listeners when any type of transition animation ends.
 | `transition` | [LayoutTransition](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition)!:The LayoutTransition sending out the event. |
 | `container` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The ViewGroup on which the transition is playing. |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The View object being affected by the transition animation. |
+| --- | --- |
 | `transitionType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of transition that is ending, [android.animation.LayoutTransition#APPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#APPEARING:kotlin.Int), [android.animation.LayoutTransition#DISAPPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#DISAPPEARING:kotlin.Int), [android.animation.LayoutTransition#CHANGE_APPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#CHANGE_APPEARING:kotlin.Int), or [android.animation.LayoutTransition#CHANGE_DISAPPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#CHANGE_DISAPPEARING:kotlin.Int). |
 
 ### startTransition
@@ -65,4 +67,5 @@ This event is sent to listeners when any type of transition animation begins.
 | `transition` | [LayoutTransition](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition)!:The LayoutTransition sending out the event. |
 | `container` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The ViewGroup on which the transition is playing. |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The View object being affected by the transition animation. |
+| --- | --- |
 | `transitionType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of transition that is beginning, [android.animation.LayoutTransition#APPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#APPEARING:kotlin.Int), [android.animation.LayoutTransition#DISAPPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#DISAPPEARING:kotlin.Int), [android.animation.LayoutTransition#CHANGE_APPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#CHANGE_APPEARING:kotlin.Int), or [android.animation.LayoutTransition#CHANGE_DISAPPEARING](https://developer.android.com/reference/kotlin/android/animation/LayoutTransition#CHANGE_DISAPPEARING:kotlin.Int). |

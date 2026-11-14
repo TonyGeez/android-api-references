@@ -7,9 +7,11 @@ abstract class QuickAccessWalletService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.quickaccesswallet.QuickAccessWalletService](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#) |
 
 A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet. The Quick Access Wallet allows the user to change their selected payment method and access other important passes, such as tickets and transit passes, without leaving the context of their current app.
@@ -88,6 +90,7 @@ The `shortcutShortLabel` and `shortcutLongLabel` are used by the QuickAccessWall
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#ACTION_VIEW_WALLET:kotlin.String` Intent action to launch an activity to display the wallet. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#ACTION_VIEW_WALLET_SETTINGS:kotlin.String` Intent action to launch an activity to display quick access wallet settings. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#SERVICE_INTERFACE:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that must be declared as handled by the service. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#SERVICE_META_DATA:kotlin.String` Name under which a QuickAccessWalletService component publishes information about itself. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1116,9 +1119,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getGestureTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched on user gesture. |
 | open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched as the "Quick Access" activity. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onWalletCardSelected(android.service.quickaccesswallet.SelectWalletCardRequest)(request: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest)` A wallet card was selected. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onWalletCardsRequested(android.service.quickaccesswallet.GetWalletCardsRequest,%20android.service.quickaccesswallet.GetWalletCardsCallback)(request: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest, callback: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsCallback)` Called when the user requests the service to provide wallet cards. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onWalletDismissed()()` Indicates that the wallet was dismissed. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#sendWalletServiceEvent(android.service.quickaccesswallet.WalletServiceEvent)(serviceEvent: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent)` Send a `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent` to the Quick Access Wallet. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`

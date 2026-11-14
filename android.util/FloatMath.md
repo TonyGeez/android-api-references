@@ -6,12 +6,14 @@ Deprecated in [API level 22](https://developer.android.com/guide/topics/manifest
 # FloatMath
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/FloatMath "View this page in Java") 
+| --- | --- |
 
 ```
 open class FloatMath
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.FloatMath](https://developer.android.com/reference/kotlin/android/util/FloatMath#) |
 
 | **This class was deprecated in API level 22.**

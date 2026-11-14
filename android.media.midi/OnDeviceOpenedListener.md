@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnDeviceOpenedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiManager.OnDeviceOpenedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDeviceOpenedListener

@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # DebugProcKHR
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLES31Ext.DebugProcKHR "View this page in Java") 
+| --- | --- |
 
 ```
 interface DebugProcKHR

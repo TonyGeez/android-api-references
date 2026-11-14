@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # LocationRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/LocationRequest "View this page in Java")
+| --- | --- |
 
 ```
 class LocationRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.LocationRequest](https://developer.android.com/reference/kotlin/android/location/LocationRequest#) |
 
 An encapsulation of various parameters for requesting location via `https://developer.android.com/reference/kotlin/android/location/LocationManager`.
@@ -24,6 +26,7 @@ An encapsulation of various parameters for requesting location via `https://deve
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#PASSIVE_INTERVAL:kotlin.Long` Represents a passive only request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#QUALITY_BALANCED_POWER_ACCURACY:kotlin.Int` A quality constant indicating a location provider may choose to satisfy this request by equally balancing power and accuracy constraints. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#QUALITY_HIGH_ACCURACY:kotlin.Int` A quality constant indicating a location provider may choose to satisfy this request by providing very accurate locations at the expense of potentially increased power usage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#QUALITY_LOW_POWER:kotlin.Int` A quality constant indicating a location provider may choose to satisfy this request by providing less accurate locations in order to save power. |
 
 | Inherited constants ||
@@ -35,15 +38,19 @@ An encapsulation of various parameters for requesting location via `https://deve
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getDurationMillis()()` Returns the duration for which location will be provided before the request is automatically removed. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getIntervalMillis()()` Returns the desired interval of location updates, or `https://developer.android.com/reference/kotlin/android/location/LocationRequest#PASSIVE_INTERVAL:kotlin.Long` if this is a passive, no power request. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getMaxUpdateDelayMillis()()` Returns the maximum time any location update may be delayed, and thus grouped with following updates to enable location batching. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getMaxUpdates()()` Returns the maximum number of location updates for this request before the request is automatically removed. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getMinUpdateDistanceMeters()()` Returns the minimum distance between location updates. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getMinUpdateIntervalMillis()()` Returns the minimum update interval. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#getQuality()()` Returns the quality hint for this location request. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -305,6 +312,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

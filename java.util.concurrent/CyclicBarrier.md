@@ -9,6 +9,7 @@ open class CyclicBarrier
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.CyclicBarrier](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#) |
 
 A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point. CyclicBarriers are useful in programs involving a fixed sized party of threads that must occasionally wait for each other. The barrier is called*cyclic*because it can be re-used after the waiting threads are released.
@@ -88,9 +89,11 @@ Memory consistency effects: Actions in a thread prior to calling`await()` [*happ
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#await())`()` Waits until all [parties](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#getParties())have invoked`await`on this barrier. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#await(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Waits until all [parties](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#getParties())have invoked`await`on this barrier, or the specified waiting time elapses. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberWaiting](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#getNumberWaiting())`()` Returns the number of parties currently waiting at the barrier. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParties](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#getParties())`()` Returns the number of parties required to trip this barrier. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBroken](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#isBroken())`()` Queries if this barrier is in a broken state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier#reset())`()` Resets the barrier to its initial state. |
+| --- | --- |
 
 ## Public constructors
 
@@ -226,6 +229,7 @@ If the current thread is the last thread to arrive, and a non-null barrier actio
 | `java.lang.InterruptedException` | if the current thread was interrupted while waiting |
 | `java.util.concurrent.TimeoutException` | if the specified timeout elapses. In this case the barrier will be broken. |
 | `java.util.concurrent.BrokenBarrierException` | if*another* thread was interrupted or timed out while the current thread was waiting, or the barrier was reset, or the barrier was broken when`await`was called, or the barrier action (if present) failed due to an exception |
+| --- | --- |
 
 ### getNumberWaiting
 

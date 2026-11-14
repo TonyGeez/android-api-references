@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # AnimatedImageDrawable
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class AnimatedImageDrawable : Drawable, Animatable2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.AnimatedImageDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#) |
 
@@ -29,6 +31,7 @@ It can also be defined in XML using the `<animated-image>` element.
 | [`android:autoMirrored`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#attr_AnimatedImageDrawable) | Indicates if the drawable needs to be mirrored when its layout direction is RTL (right-to-left). |
 | [`android:autoStart`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#attr_AnimatedImageDrawable) | When true, automatically start animating. |
 | [`android:repeatCount`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#attr_AnimatedImageDrawable) | Replace the loop count in the encoded data. |
+| --- | --- |
 | [`android:src`](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#attr_AnimatedImageDrawable) | Identifier of the image file. |
 
 | Constants ||
@@ -44,24 +47,31 @@ It can also be defined in XML using the `<animated-image>` element.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#clearAnimationCallbacks())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getAlpha())`()` <br /> |
+| --- | --- |
 | open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)? | [getColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getColorFilter())`()` Returns the current color filter, or `null` if none set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getIntrinsicHeight())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getIntrinsicWidth())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getOpacity())`()` Return the opacity/transparency of this Drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatCount](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#getRepeatCount())`()` Retrieve the number of times the animation will repeat. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutoMirrored](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#isAutoMirrored())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFilterBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#isFilterBitmap())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#isRunning())`()` Return whether the animation is currently running. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLayoutDirectionChanged](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#onLayoutDirectionChanged(kotlin.Int))`(`layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#registerAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Adds a callback to listen to the animation events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify an alpha value for the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoMirrored](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#setAutoMirrored(kotlin.Boolean))`(`mirrored:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` Specify an optional color filter for the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilterBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#setFilterBitmap(kotlin.Boolean))`(`filterBitmap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatCount](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#setRepeatCount(kotlin.Int))`(`repeatCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify the number of times to repeat the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#start())`()` Start the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#stop())`()` Stop the animation. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable#unregisterAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Removes the specified animation callback. |
 
 | Protected methods ||
@@ -272,6 +282,7 @@ open fun inflate(
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): Resources used to resolve attribute values This value cannot be `null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): XML parser from which to inflate this Drawable This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): Base set of attribute values This value cannot be `null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: Theme to apply, may be null |
 
 | Exceptions ||

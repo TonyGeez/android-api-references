@@ -9,9 +9,11 @@ open class URLClassLoader : SecureClassLoader, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) |||
 | | ↳ | [java.security.SecureClassLoader](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader.html#) ||
 | | | ↳ | [java.net.URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#) |
+| --- | --- | --- | --- |
 
 This class loader is used to load classes and resources from a search path of URLs referring to both JAR files and directories. Any URL that ends with a '/' is assumed to refer to a directory. Otherwise, the URL is assumed to refer to a JAR file which will be opened as needed.
 
@@ -32,9 +34,11 @@ The classes that are loaded are by default granted permission only to access the
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#close())`()` Closes this URLClassLoader, so that it can no longer be used to load new classes or resources that are defined by this loader. |
 | open [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [findResource](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#findResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the resource with the specified name on the URL search path. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL)!\>! | [findResources](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#findResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an Enumeration of URLs representing all of the resources on the URL search path having the specified name. |
+| --- | --- |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getResourceAsStream](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#getResourceAsStream(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an input stream for reading the specified resource. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL)!\>! | [getURLs](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#getURLs())`()` Returns the search path of URLs for loading classes and resources. |
 | openstatic [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#)! | [newInstance](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#newInstance(kotlin.Array))`(`urls:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [URL](https://developer.android.com/reference/kotlin/java/net/URL)!>!`)` Creates a new instance of URLClassLoader for the specified URLs and default parent class loader. |
+| --- | --- |
 | openstatic [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#)! | [newInstance](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#newInstance(kotlin.Array,%20java.lang.ClassLoader))`(`urls:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [URL](https://developer.android.com/reference/kotlin/java/net/URL)!>!`, `parent:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Creates a new instance of URLClassLoader for the specified URLs and parent class loader. |
 
 | Protected methods ||
@@ -42,6 +46,7 @@ The classes that are loaded are by default granted permission only to access the
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addURL](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#addURL(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Appends the specified URL to the list of URLs to search for classes and resources. |
 | open [Package](https://developer.android.com/reference/kotlin/java/lang/Package.html#)! | [definePackage](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#definePackage(kotlin.String,%20java.util.jar.Manifest,%20java.net.URL))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `man:` ` [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest.html#)!`, `url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Defines a new package by name in this ClassLoader. |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [findClass](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#findClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds and loads the class with the specified name from the URL search path. |
+| --- | --- |
 | open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection.html#)! | [getPermissions](https://developer.android.com/reference/kotlin/java/net/URLClassLoader#getPermissions(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource.html#)!`)` Returns the permissions for the given codesource object. |
 
 | Inherited functions ||
@@ -124,6 +129,7 @@ If there is a security manager, this method first calls the security manager's`c
 | `urls` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL)!\>!:the URLs from which to load classes and resources |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!:the parent class loader for delegation |
 | `factory` | [URLStreamHandlerFactory](https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory)!:the URLStreamHandlerFactory to use when creating URLs |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -157,6 +163,7 @@ The method makes a best effort attempt to close all opened files, by catching [I
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.io.IOException` | if closing any file opened by this class loader resulted in an IOException. Any such exceptions are caught internally. If only one is caught, then it is re-thrown. If more than one exception is caught, then the second and following exceptions are added as suppressed exceptions of the first one caught, which is then re-thrown. |
+| --- | --- |
 | `java.lang.SecurityException` | if a security manager is set, and it denies [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#)`("closeClassLoader")` |
 
 ### findResource
@@ -323,6 +330,7 @@ Defines a new package by name in this ClassLoader. The attributes contained in t
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the package name |
 | `man` | [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest.html#)!:the Manifest containing package version and sealing information |
 | `url` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the code source url for the package, or null if none |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------|
@@ -355,6 +363,7 @@ Finds and loads the class with the specified name from the URL search path. Any 
 | `java.lang.ClassNotFoundException` | If the class could not be found |
 | `java.lang.ClassNotFoundException` | if the class could not be found, or if the loader is closed. |
 | `java.lang.NullPointerException` | if`name`is`null`. |
+| --- | --- |
 
 ### getPermissions
 

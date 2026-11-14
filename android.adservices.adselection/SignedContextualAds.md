@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 12](https://developer.android.com/sdkExtensions)
 # SignedContextualAds
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/SignedContextualAds "View this page in Java") 
+| --- | --- |
 
 ```
 class SignedContextualAds : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.SignedContextualAds](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#) |
 
 Contains a list of buyer supplied [AdWithBid](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid) bundle and its signature.
@@ -25,6 +27,7 @@ Signature should include the buyer, decisionLogicUri and adsWithBid fields.
 While creating the signature a specific serialization rules must be followed as it's outlined here:
 
 - `Objects`concatenate the serialized values of their fields with the`|`(pipe) in between each field
+| --- | --- |
 - `All fields`are sorted by alphabetical order within the object
 - `Nullable fields`are skipped if they are null/unset
 - `Doubles`are converted to String preserving precision
@@ -48,12 +51,15 @@ While creating the signature a specific serialization rules must be followed as 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AdWithBid](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid)!\> | [getAdsWithBid](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getAdsWithBid())`()` <br /> |
+| --- | --- |
 | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | [getBuyer](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getBuyer())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getDecisionLogicUri](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getDecisionLogicUri())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getSignature](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getSignature())`()` Returns a copy of the signature for the contextual ads object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|

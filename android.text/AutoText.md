@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AutoText
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/AutoText "View this page in Java") 
+| --- | --- |
 
 ```
 open class AutoText
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.AutoText](https://developer.android.com/reference/kotlin/android/text/AutoText#) |
 
 This class accesses a dictionary of corrections to frequent misspellings.

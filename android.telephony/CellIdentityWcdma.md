@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # CellIdentityWcdma
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellIdentityWcdma "View this page in Java") 
+| --- | --- |
 
 ```
 class CellIdentityWcdma : CellIdentity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) ||
 | | ↳ | [android.telephony.CellIdentityWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#) |
 
@@ -27,18 +29,23 @@ CellIdentity to represent a unique UMTS cell
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getAdditionalPlmns())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCid](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getCid())`()` <br /> |
+| --- | --- |
 | [ClosedSubscriberGroupInfo](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo)? | [getClosedSubscriberGroupInfo](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getClosedSubscriberGroupInfo())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLac](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getLac())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMcc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getMcc())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getMccString())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMnc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getMnc())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getMncString())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMobileNetworkOperator](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getMobileNetworkOperator())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsc](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getPsc())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUarfcn](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#getUarfcn())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

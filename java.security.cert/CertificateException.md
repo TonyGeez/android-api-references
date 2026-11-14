@@ -9,12 +9,15 @@ open class CertificateException : GeneralSecurityException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.cert.CertificateException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateException#) |
 
 | Known Direct Subclasses [CertificateEncodingException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateEncodingException), [CertificateExpiredException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateExpiredException), [CertificateNotYetValidException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateNotYetValidException), [CertificateParsingException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateParsingException), [CertificateRevokedException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException) |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------| | [CertificateEncodingException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateEncodingException) | Certificate Encoding Exception. | | [CertificateExpiredException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateExpiredException) | Certificate Expired Exception. | | [CertificateNotYetValidException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateNotYetValidException) | Certificate is not yet valid exception. | | [CertificateParsingException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateParsingException) | Certificate Parsing Exception. | | [CertificateRevokedException](https://developer.android.com/reference/kotlin/java/security/cert/CertificateRevokedException) | An exception that indicates an X. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This exception indicates one of a variety of certificate problems.
 

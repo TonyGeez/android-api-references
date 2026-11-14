@@ -7,6 +7,7 @@ abstract class EgressResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.privatecompute.EgressResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#) |
 
 Known Direct Subclasses [AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse) [AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse) Specialized response for Assistant Query use-cases.

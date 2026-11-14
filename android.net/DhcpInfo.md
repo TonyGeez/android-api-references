@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DhcpInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/DhcpInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class DhcpInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.DhcpInfo](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#) |
 
 A simple object for retrieving the results of a DHCP request.
@@ -30,15 +32,18 @@ A simple object for retrieving the results of a DHCP request.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#describeContents())`()` Implement the Parcelable interface |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [DhcpInfo](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dns1](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#dns1:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dns2](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#dns2:kotlin.Int) <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [gateway](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#gateway:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ipAddress](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#ipAddress:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [leaseDuration](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#leaseDuration:kotlin.Int) <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [netmask](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#netmask:kotlin.Int) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [serverAddress](https://developer.android.com/reference/kotlin/android/net/DhcpInfo#serverAddress:kotlin.Int) <br /> |
 

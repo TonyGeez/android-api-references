@@ -6,6 +6,7 @@ Deprecated in [API level 12](https://developer.android.com/guide/topics/manifest
 # PictureListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebView.PictureListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface PictureListener

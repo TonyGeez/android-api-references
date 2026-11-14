@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pUsdBasedServiceDiscoveryConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiP2pUsdBasedServiceDiscoveryConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pUsdBasedServiceDiscoveryConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#) |
 
 A class representing a Wi-Fi P2P USD based service discovery configuration for discovering the services.
@@ -30,6 +32,7 @@ A class representing a Wi-Fi P2P USD based service discovery configuration for d
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#describeContents())`()` Implement the Parcelable interface |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBand](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#getBand())`()` Get the band to scan for services. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getFrequenciesMhz](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#getFrequenciesMhz())`()` Get the frequencies to scan for services. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#toString())`()` Generates a string of all the defined elements. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 

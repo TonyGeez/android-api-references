@@ -9,6 +9,7 @@ open class LogManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.LogManager](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#) |
 
 There is a single global LogManager object that is used to maintain a set of shared state about Loggers and log services.
@@ -67,15 +68,19 @@ All methods on the LogManager object are multi-thread safe.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLogger](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#addLogger(java.util.logging.Logger))`(`logger:` ` [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger)!`)` Add a named logger. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#addPropertyChangeListener(java.beans.PropertyChangeListener))`(`l:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!`)` Adds an event listener to be invoked when the logging properties are re-read. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#checkAccess())`()` Check that the current context is trusted to modify the logging configuration. |
+| --- | --- |
 | openstatic [LogManager](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#)! | [getLogManager](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getLogManager())`()` Returns the global LogManager object. |
 | open [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger)! | [getLogger](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getLogger(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Method to find a named logger. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getLoggerNames](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getLoggerNames())`()` Get an enumeration of known logger names. |
+| --- | --- |
 | openstatic [LoggingMXBean](https://developer.android.com/reference/kotlin/java/util/logging/LoggingMXBean)! | [getLoggingMXBean](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getLoggingMXBean())`()` Returns LoggingMXBean for managing loggers. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the value of a logging property. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readConfiguration](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#readConfiguration())`()` Reinitialize the logging properties and reread the logging configuration. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readConfiguration](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#readConfiguration(java.io.InputStream))`(`ins:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Reinitialize the logging properties and reread the logging configuration from the given stream, which should be in java. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#removePropertyChangeListener(java.beans.PropertyChangeListener))`(`l:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!`)` Removes an event listener for property change events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#reset())`()` Reset the logging configuration. |
+| --- | --- |
 
 ## Constants
 

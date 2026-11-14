@@ -7,6 +7,7 @@ class IpSecAlgorithm : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpSecAlgorithm](https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#) |
 
 This class represents a single algorithm that can be used by an `https://developer.android.com/reference/kotlin/android/net/IpSecTransform`.
@@ -18,12 +19,15 @@ This class represents a single algorithm that can be used by an `https://develop
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_AES_CMAC:kotlin.String` AES-CMAC Authentication/Integrity Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_AES_XCBC:kotlin.String` AES-XCBC Authentication/Integrity Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_CRYPT_AES_GCM:kotlin.String` AES-GCM Authentication/Integrity + Encryption/Ciphering Algorithm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_CRYPT_CHACHA20_POLY1305:kotlin.String` ChaCha20-Poly1305 Authentication/Integrity + Encryption/Ciphering Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_MD5:kotlin.String` MD5 HMAC Authentication/Integrity Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA1:kotlin.String` SHA1 HMAC Authentication/Integrity Algorithm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA256:kotlin.String` SHA256 HMAC Authentication/Integrity Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA384:kotlin.String` SHA384 HMAC Authentication/Integrity Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA512:kotlin.String` SHA512 HMAC Authentication/Integrity Algorithm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CRYPT_AES_CBC:kotlin.String` AES-CBC Encryption/Ciphering Algorithm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CRYPT_AES_CTR:kotlin.String` AES-CTR Encryption/Ciphering Algorithm. |
 
@@ -49,9 +53,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#describeContents()()` Parcelable Implementation |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getKey()()` Get the key for this algorithm |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getName()()` Get the algorithm name |
+| --- | --- |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()()` Returns supported IPsec algorithms for the current device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getTruncationLengthBits()()` Get the truncation length of this algorithm, in bits |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write to parcel |
 
 | Properties ||
@@ -307,6 +313,7 @@ This constructor only supports algorithms that use a truncation length. i.e. Aut
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the algorithm. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CRYPT_AES_CBC:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CRYPT_AES_CTR:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_MD5:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA1:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA256:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA384:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_HMAC_SHA512:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_AES_XCBC:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_AES_CMAC:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_CRYPT_AES_GCM:kotlin.String` - `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#AUTH_CRYPT_CHACHA20_POLY1305:kotlin.String` |
 | `key` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): key padded to a multiple of 8 bits. This value cannot be `null`. |
 | `truncLenBits` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of bits of output hash to use. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

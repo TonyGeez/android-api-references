@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaActionSound
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaActionSound "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaActionSound
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaActionSound](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#) |
 
 A class for producing sounds that match those produced by various actions taken by the media and camera APIs. It is recommended to call methods in this class in a background thread since it relies on binder calls.
@@ -28,6 +30,7 @@ There is no need to play sounds when using android.hardware.Camera#takePicture o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOCUS_COMPLETE](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#FOCUS_COMPLETE:kotlin.Int) A sound to indicate that focusing has completed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHUTTER_CLICK](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#SHUTTER_CLICK:kotlin.Int) The sound used by android. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START_VIDEO_RECORDING](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#START_VIDEO_RECORDING:kotlin.Int) The sound used by [MediaRecorder.start()](https://developer.android.com/reference/kotlin/android/media/MediaRecorder#start())to indicate the start of video recording. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOP_VIDEO_RECORDING](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#STOP_VIDEO_RECORDING:kotlin.Int) The sound used by [MediaRecorder.stop()](https://developer.android.com/reference/kotlin/android/media/MediaRecorder#stop())to indicate the end of video recording. |
 
 | Public constructors ||
@@ -39,6 +42,7 @@ There is no need to play sounds when using android.hardware.Camera#takePicture o
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#load(kotlin.Int))`(`soundName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Preload a predefined platform sound to minimize latency when the sound is played later by [play](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#play(kotlin.Int)). |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [mustPlayShutterSound](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#mustPlayShutterSound())`()` Returns true if the application must play the shutter sound in accordance to certain regional restrictions. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#play(kotlin.Int))`(`soundName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Play one of the predefined platform sounds for media actions. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/MediaActionSound#release())`()` Free up all audio resources used by this MediaActionSound instance. |
 
 ## Constants

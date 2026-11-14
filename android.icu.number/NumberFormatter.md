@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # NumberFormatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/NumberFormatter "View this page in Java") 
+| --- | --- |
 
 ```
 class NumberFormatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter#) |
 
 All-in-one formatter for localized numbers, currencies, and units. For a full list of options, see [NumberFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings). 
@@ -67,15 +69,18 @@ Note: To format monetary/currency values, specify the currency in the \`.unit()\
 | | [DecimalSeparatorDisplay](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.DecimalSeparatorDisplay) An enum declaring how to render the decimal separator. |
 | | [GroupingStrategy](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.GroupingStrategy) An enum declaring the strategy for when and how to display grouping separators (i.e., the separator, often a comma or period, after every 2-3 powers of ten). |
 | | [RoundingPriority](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.RoundingPriority) An enum declaring how to resolve conflicts between maximum fraction digits and maximum significant digits. |
+| --- | --- |
 | | [SignDisplay](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.SignDisplay) An enum declaring how to denote positive and negative numbers. |
 | | [TrailingZeroDisplay](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.TrailingZeroDisplay) An enum declaring how to render trailing zeros. |
 | | [UnitWidth](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.UnitWidth) An enum declaring how to render units, including currencies. |
+| --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter)! | [with](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter#with())`()` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is not currently known at the call site. |
 | static [LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter#withLocale(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
 | static [LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter#withLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
+| --- | --- |
 
 ## Public methods
 

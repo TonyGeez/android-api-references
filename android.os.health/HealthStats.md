@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # HealthStats
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/health/HealthStats "View this page in Java") 
+| --- | --- |
 
 ```
 open class HealthStats
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.health.HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#) |
 
 A HealthStats object contains system health data about an application.
@@ -37,24 +39,31 @@ The keys that are available are subject to change, depending on what a particula
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDataType](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getDataType())`()` Get a name representing the contents of this object. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMeasurement](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurement(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the measurement for the given key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementKeyAt](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurementKeyAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the key for the measurement at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementKeyCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurementKeyCount())`()` Get the number of measurement values in this object. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | [getMeasurements](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurements(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the measurements map for the given key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementsKeyAt](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurementsKeyAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the key for the measurement map at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementsKeyCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getMeasurementsKeyCount())`()` Get the number of measurement map values in this object. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#)!\>! | [getStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the HealthStats map for the given key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatsKeyAt](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStatsKeyAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the key for the timer at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatsKeyCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStatsKeyCount())`()` Get the number of HealthStat map values in this object. |
 | open [TimerStat](https://developer.android.com/reference/kotlin/android/os/health/TimerStat)! | [getTimer](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimer(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a TimerStat object for the given key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimerCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimerCount(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the count for the timer for the given key. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimerKeyAt](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimerKeyAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the key for the timer at the given index. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimerKeyCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimerKeyCount())`()` Get the number of timer values in this object. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimerTime](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimerTime(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the time for the timer for the given key, in milliseconds. |
+| --- | --- |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [TimerStat](https://developer.android.com/reference/kotlin/android/os/health/TimerStat)!\>! | [getTimers](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimers(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the TimerStat map for the given key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimersKeyAt](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimersKeyAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the key for the timer map at the given index. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimersKeyCount](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getTimersKeyCount())`()` Get the number of timer map values in this object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurement](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#hasMeasurement(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return whether this object contains a measurement for the supplied key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurements](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#hasMeasurements(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return whether this object contains a measurements map for the supplied key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#hasStats(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return whether this object contains a HealthStats map for the supplied key. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasTimer](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#hasTimer(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return whether this object contains a TimerStat for the supplied key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasTimers](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#hasTimers(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return whether this object contains a timers map for the supplied key. |
 

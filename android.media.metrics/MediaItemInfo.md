@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # MediaItemInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/metrics/MediaItemInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaItemInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.MediaItemInfo](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#) |
 
 Represents information about a piece of media (for example, an audio or video file).
@@ -26,21 +28,27 @@ Represents information about a piece of media (for example, an audio or video fi
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_AUDIO](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_AUDIO:kotlin.Long) The media item includes audio data. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_DEPTH](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_DEPTH:kotlin.Long) The media item includes depth (z-distance) information. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAIN_MAP](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_GAIN_MAP:kotlin.Long) The media item includes gain map information (for example, an Ultra HDR gain map). |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAPLESS](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_GAPLESS:kotlin.Long) The media item includes gapless audio metadata. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO:kotlin.Long) The media item includes high dynamic range (HDR) video. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_FRAME_RATE](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_HIGH_FRAME_RATE:kotlin.Long) The media item includes high frame rate video data. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_IMAGE](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_IMAGE:kotlin.Long) The media item includes image data. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_METADATA](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_METADATA:kotlin.Long) The media item includes static media container metadata (for example, capture frame rate or location information). |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPATIAL_AUDIO](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_SPATIAL_AUDIO:kotlin.Long) The media item includes spatial audio data. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPEED_SETTING_CUE_POINTS](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_SPEED_SETTING_CUE_POINTS:kotlin.Long) The media item includes time-dependent speed information (for example, slow motion cue points). |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_VIDEO](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#DATA_TYPE_VIDEO:kotlin.Long) The media item includes video data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_CAMERA](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_CAMERA:kotlin.Int) The media item came directly from camera capture. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_EDITING_SESSION](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_EDITING_SESSION:kotlin.Int) The media item was output by a previous editing session. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GALLERY](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_GALLERY:kotlin.Int) The media item came from the device gallery. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GENERATED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_GENERATED:kotlin.Int) The media item was generated by another system. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_LOCAL_FILE](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_LOCAL_FILE:kotlin.Int) The media item is stored on the local device's file system. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_FILE](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_REMOTE_FILE:kotlin.Int) The media item is a remote file (for example, it's loaded from an HTTP server). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_LIVE_STREAM](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_REMOTE_LIVE_STREAM:kotlin.Int) The media item is a remotely-served live stream. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_UNSPECIFIED:kotlin.Int) The media item's source is not known. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) Special value for numerical fields where the value was not specified. |
 
@@ -53,21 +61,27 @@ Represents information about a piece of media (for example, an audio or video fi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioChannelCount](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getAudioChannelCount())`()` Returns the number of audio channels, or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAudioSampleCount](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getAudioSampleCount())`()` Returns the number of audio frames in the item, after clipping (if applicable), or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRateHz](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getAudioSampleRateHz())`()` Returns the sample rate of audio, in Hertz, or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getClipDurationMillis](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getClipDurationMillis())`()` Returns the duration of the clip taken from the media item, in milliseconds, or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCodecNames](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getCodecNames())`()` Returns the [media codec names](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#getName()) for codecs that were used as part of encoding/decoding this media item, or an empty list if not known or not applicable. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getContainerMimeType())`()` Returns the MIME type of the media container, or `null` if unspecified. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataTypes](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getDataTypes())`()` Returns the data types that are present in the media item. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationMillis](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getDurationMillis())`()` Returns the duration of the media item, in milliseconds, or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSampleMimeTypes](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getSampleMimeTypes())`()` Returns the MIME types of samples stored in the media container, or an empty list if not known. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceType](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getSourceType())`()` Returns where the media item came from, or [SOURCE_TYPE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#SOURCE_TYPE_UNSPECIFIED:kotlin.Int) if not specified. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoDataSpace](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getVideoDataSpace())`()` Returns the [data space](https://developer.android.com/reference/kotlin/android/hardware/DataSpace.html#) for video, as a packed integer. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getVideoFrameRate())`()` Returns the average video frame rate, in frames per second, or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getVideoSampleCount](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getVideoSampleCount())`()` Returns the number of video frames, aftrer clipping (if applicable), or [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
+| --- | --- |
 | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | [getVideoSize](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#getVideoSize())`()` Returns the video size, in pixels, or a [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) with width and height set to [VALUE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#VALUE_UNSPECIFIED:kotlin.Int) if not specified. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

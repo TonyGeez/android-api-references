@@ -7,6 +7,7 @@ abstract class ResourceBundle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#) |
 
 Known Direct Subclasses [ListResourceBundle](https://developer.android.com/reference/kotlin/java/util/ListResourceBundle), [PropertyResourceBundle](https://developer.android.com/reference/kotlin/java/util/PropertyResourceBundle) [ListResourceBundle](https://developer.android.com/reference/kotlin/java/util/ListResourceBundle) `ListResourceBundle` is an abstract subclass of `ResourceBundle` that manages resources for a locale in a convenient and easy to use list.
@@ -136,18 +137,23 @@ You do not have to restrict yourself to using a single family of `ResourceBundle
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#clearCache()()` Removes all resource bundles from the cache that have been loaded using the caller's class loader. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#clearCache(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Removes all resource bundles from the cache that have been loaded by the given class loader. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#containsKey(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Determines whether the given `key` is contained in this `ResourceBundle` or its parent bundles. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBaseBundleName()()` Returns the base name of this bundle, if known, or `null` if unknown. |
 | static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets a resource bundle using the specified base name, the default locale, and the caller's class loader. |
 | static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String,%20java.util.Locale)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale!)` Gets a resource bundle using the specified base name and locale, and the caller's class loader. |
+| --- | --- |
 | open static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String,%20java.util.Locale,%20java.lang.ClassLoader)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Gets a resource bundle using the specified base name, locale, and class loader. |
 | open static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String,%20java.util.Locale,%20java.lang.ClassLoader,%20java.util.ResourceBundle.Control)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, targetLocale: https://developer.android.com/reference/kotlin/java/util/Locale!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!, control: https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control!)` Returns a resource bundle using the specified base name, target locale, class loader and control. |
 | static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String,%20java.util.Locale,%20java.util.ResourceBundle.Control)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, targetLocale: https://developer.android.com/reference/kotlin/java/util/Locale!, control: https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control!)` Returns a resource bundle using the specified base name, target locale and control, and the caller's class loader. |
+| --- | --- |
 | static [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle#)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getBundle(kotlin.String,%20java.util.ResourceBundle.Control)(baseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, control: https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control!)` Returns a resource bundle using the specified base name, the default locale and the specified control. |
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getKeys()()` Returns an enumeration of the keys. |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getLocale()()` Returns the locale of this resource bundle. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getObject(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets an object for the given key from this resource bundle or one of its parents. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getString(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets a string for the given key from this resource bundle or one of its parents. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#getStringArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets a string array for the given key from this resource bundle or one of its parents. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#keySet()()` Returns a `Set` of all keys contained in this `ResourceBundle` and its parent bundles. |
 
 | Protected methods ||
@@ -155,6 +161,7 @@ You do not have to restrict yourself to using a single family of `ResourceBundle
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#handleGetObject(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets an object for the given key from this resource bundle. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#handleKeySet()()` Returns a `Set` of the keys contained *only* in this `ResourceBundle`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/ResourceBundle#setParent(java.util.ResourceBundle)(parent: https://developer.android.com/reference/kotlin/java/util/ResourceBundle#!)` Sets the parent bundle of this bundle. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -399,9 +406,11 @@ The contents of all files are valid (that is, public non-abstract subclasses of 
 Calling `getBundle` with the locale arguments below will instantiate resource bundles as follows:
 
 | Locale | Resource bundle |
+| --- | --- |
 | Locale("fr", "CH") | MyResources_fr_CH.class, parent MyResources_fr.properties, parent MyResources.class |
 | Locale("fr", "FR") | MyResources_fr.properties, parent MyResources.class |
 | Locale("de", "DE") | MyResources_en.properties, parent MyResources.class |
+| --- | --- |
 | Locale("en", "US") | MyResources_en.properties, parent MyResources.class |
 | Locale("es", "ES") | MyResources_es_ES.class, parent MyResources.class |
 |---|---|
@@ -413,6 +422,7 @@ The file MyResources_fr_CH.properties is never used because it is hidden by the 
 | `baseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the base name of the resource bundle, a fully qualified class name |
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!: the locale for which a resource bundle is desired |
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!: the class loader from which to load the resource bundle |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -444,9 +454,11 @@ Returns a resource bundle using the specified base name, target locale, class lo
 4. The `https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control#newBundle(kotlin.String,%20java.util.Locale,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean)` method is called to instantiate a `ResourceBundle` for the base bundle name, a candidate locale, and a format. (Refer to the note on the cache lookup below.) This step is iterated over all combinations of the candidate locales and formats until the `newBundle` method returns a `ResourceBundle` instance or the iteration has used up all the combinations. For example, if the candidate locales are `Locale("de", "DE")`, `Locale("de")` and `Locale("")` and the formats are `"java.class"` and `"java.properties"`, then the following is the sequence of locale-format combinations to be used to call `control.newBundle`.
 
  | Index | `Locale` | `format` |
+| --- | --- | --- |
  | 1 | `Locale("de", "DE")` | `java.class` |
  | 2 | `Locale("de", "DE")` | `java.properties` |
  | 3 | `Locale("de")` | `java.class` |
+| --- | --- | --- |
  | 4 | `Locale("de")` | `java.properties` |
  | 5 | `Locale("")` | `java.class` |
  | 6 | `Locale("")` | `java.properties` |
@@ -494,6 +506,7 @@ At this point, `getBundle` finds `foo/bar/Messages.properties`, which is put on 
 | `baseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the base name of the resource bundle, a fully qualified class name |
 | `targetLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!: the locale for which a resource bundle is desired |
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!: the class loader from which to load the resource bundle |
+| --- | --- |
 | `control` | [ResourceBundle.Control](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control)!: the control which gives information for the resource bundle loading process |
 
 | Return ||
@@ -505,6 +518,7 @@ At this point, `getBundle` finds `foo/bar/Messages.properties`, which is put on 
 | `java.lang.IllegalArgumentException` | if the given `control` doesn't perform properly (e.g., `control.getCandidateLocales` returns null.) Note that validation of `control` is performed as needed. |
 | `java.lang.NullPointerException` | if `baseName`, `targetLocale`, `loader`, or `control` is `null` |
 | `java.util.MissingResourceException` | if no resource bundle for the specified base name can be found |
+| --- | --- |
 
 ### getBundle
 
@@ -534,6 +548,7 @@ except that `getClassLoader()` is run with the security privileges of `ResourceB
 | `baseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the base name of the resource bundle, a fully qualified class name |
 | `targetLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!: the locale for which a resource bundle is desired |
 | `control` | [ResourceBundle.Control](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.Control)!: the control which gives information for the resource bundle loading process |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -544,6 +559,7 @@ except that `getClassLoader()` is run with the security privileges of `ResourceB
 | `java.lang.IllegalArgumentException` | if the given `control` doesn't perform properly (e.g., `control.getCandidateLocales` returns null.) Note that validation of `control` is performed as needed. |
 | `java.lang.NullPointerException` | if `baseName`, `locales` or `control` is `null` |
 | `java.util.MissingResourceException` | if no resource bundle for the specified base name in any of the `locales` can be found. |
+| --- | --- |
 
 ### getBundle
 
@@ -581,6 +597,7 @@ except that `getClassLoader()` is run with the security privileges of `ResourceB
 | `java.lang.IllegalArgumentException` | if the given `control` doesn't perform properly (e.g., `control.getCandidateLocales` returns null.) Note that validation of `control` is performed as needed. |
 | `java.lang.NullPointerException` | if `baseName` or `control` is `null` |
 | `java.util.MissingResourceException` | if no resource bundle for the specified base name can be found |
+| --- | --- |
 
 ### getKeys
 
@@ -656,6 +673,7 @@ Gets a string for the given key from this resource bundle or one of its parents.
 | `java.lang.ClassCastException` | if the object found for the given key is not a string |
 | `java.lang.NullPointerException` | if `key` is `null` |
 | `java.util.MissingResourceException` | if no object for the given key can be found |
+| --- | --- |
 
 ### getStringArray
 
@@ -680,6 +698,7 @@ Gets a string array for the given key from this resource bundle or one of its pa
 | `java.lang.ClassCastException` | if the object found for the given key is not a string array |
 | `java.lang.NullPointerException` | if `key` is `null` |
 | `java.util.MissingResourceException` | if no object for the given key can be found |
+| --- | --- |
 
 ### keySet
 

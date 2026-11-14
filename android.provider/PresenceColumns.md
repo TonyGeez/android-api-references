@@ -6,6 +6,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 # PresenceColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.PresenceColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface PresenceColumns
@@ -14,6 +15,7 @@ interface PresenceColumns
 | [android.provider.Contacts.PresenceColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#) |
 
 | Known Direct Subclasses [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) |----------------------------------------------------------------------------------------------------|-----------------------------| | [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) | This table contains people. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
@@ -28,15 +30,19 @@ The IM presence columns with some contacts specific columns mixed in.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABLE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#AVAILABLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AWAY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#AWAY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DO_NOT_DISTURB](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#DO_NOT_DISTURB:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDLE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#IDLE:kotlin.Int) <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IM_ACCOUNT](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#IM_ACCOUNT:kotlin.String) The IM account for the local user that the presence data came from. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IM_HANDLE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#IM_HANDLE:kotlin.String) The IM handle the presence item is for. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IM_PROTOCOL](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#IM_PROTOCOL:kotlin.String) The IM service the presence is coming from. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVISIBLE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#INVISIBLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OFFLINE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#OFFLINE:kotlin.Int) Presence Status definition |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PRESENCE_CUSTOM_STATUS](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#PRESENCE_CUSTOM_STATUS:kotlin.String) The user defined status line. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PRESENCE_STATUS](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#PRESENCE_STATUS:kotlin.String) The server defined status. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PRIORITY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PresenceColumns#PRIORITY:kotlin.String) The priority, an integer, used by XMPP presence |
+| --- | --- |
 
 ## Constants
 

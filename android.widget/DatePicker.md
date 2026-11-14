@@ -7,9 +7,11 @@ open class DatePicker : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker#) |
 
 Provides a widget for selecting a date.
@@ -33,18 +35,23 @@ For a dialog using this view, see `https://developer.android.com/reference/kotli
 | [`android:calendarTextColor`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text color list of the calendar. |
 | [`android:calendarViewShown`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Whether the calendar view is shown. |
 | [`android:datePickerMode`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Defines the look of the widget. |
+| --- | --- |
 | [`android:dayOfWeekBackground`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The background color for the header's day of week. |
 | [`android:dayOfWeekTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text color for the header's day of week. |
 | [`android:endYear`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The last year (inclusive), for example "2010". |
+| --- | --- |
 | [`android:headerBackground`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The background for the selected date header. |
 | [`android:headerDayOfMonthTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the day of month (ex. 28) in the selected date header. |
 | [`android:headerMonthTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the month (ex. May) in the selected date header. |
+| --- | --- |
 | [`android:headerYearTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the year (ex. 2014) in the selected date header. |
 | [`android:maxDate`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The maximal date shown by this calendar view in mm/dd/yyyy format. |
 | [`android:minDate`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The minimal date shown by this calendar view in mm/dd/yyyy format. |
+| --- | --- |
 | [`android:spinnersShown`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Whether the spinners are shown. |
 | [`android:startYear`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The first year (inclusive), for example "1940". |
 | [`android:yearListItemTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The list year's text appearance in the list. |
+| --- | --- |
 | [`android:yearListSelectorColor`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The list year's selected circle color in the list. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
@@ -331,6 +338,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -447,6 +455,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -595,6 +604,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1761,33 +1771,42 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#autofill(android.view.autofill.AutofillValue)(value: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#!)` Automatically fills the content of this view with the `value`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#dispatchProvideAutofillStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatches creation of a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#`s for autofill purposes down the hierarchy, when an Assist structure is being created as part of an autofill request. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAutofillType()()` Describes the autofill type of this view, so an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` can create the proper `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#` when autofilling the view. |
 | open [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View.html#`'s current autofill value. |
 | open [CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView)! | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getCalendarView()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` used by this picker. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getCalendarViewShown()()` Returns whether the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` is shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getDayOfMonth()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getFirstDayOfWeek()()` Gets the first day of week. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getMaxDate()()` Gets the maximal date supported by this `https://developer.android.com/reference/kotlin/android/widget/DatePicker#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getMinDate()()` Gets the minimal date supported by this `https://developer.android.com/reference/kotlin/android/widget/DatePicker#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getMonth()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getSpinnersShown()()` Returns whether the spinners are shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getYear()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#init(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.widget.DatePicker.OnDateChangedListener)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, monthOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, onDateChangedListener: https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener!)` Initialize the state. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#isEnabled()()` Returns the enabled status for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setCalendarViewShown(kotlin.Boolean)(shown: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` is shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the enabled state of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setFirstDayOfWeek(kotlin.Int)(firstDayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the first day of week. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setMaxDate(kotlin.Long)(maxDate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the maximal date supported by this `https://developer.android.com/reference/kotlin/android/widget/DatePicker#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setMinDate(kotlin.Long)(minDate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the minimal date supported by this `https://developer.android.com/reference/kotlin/android/widget/NumberPicker` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setOnDateChangedListener(android.widget.DatePicker.OnDateChangedListener)(onDateChangedListener: https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener!)` Set the callback that indicates the date has been adjusted by the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#setSpinnersShown(kotlin.Boolean)(shown: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the spinners are shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#updateDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Update the current date. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#dispatchRestoreInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#restoreHierarchyState(android.util.SparseArray)` to retrieve the state for this view and its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Called when the current configuration of the resources being used by the application have changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2706,6 +2725,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4558,6 +4578,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8771,6 +8792,7 @@ Initialize the state. If the provided values designate an inconsistent date the 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The initial year. |
 | `monthOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The initial month **starting from zero**. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The initial day of the month. |
+| --- | --- |
 | `onDateChangedListener` | [DatePicker.OnDateChangedListener](https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener)!: How user is notified date is changed by user, can be null. |
 
 ### isEnabled
@@ -8924,6 +8946,7 @@ Update the current date.
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The year. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The month which is **starting from zero**. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The day of the month. |
+| --- | --- |
 
 ## Protected methods
 

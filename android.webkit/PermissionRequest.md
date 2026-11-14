@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PermissionRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/PermissionRequest "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PermissionRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.PermissionRequest](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#) |
 
 This class defines a permission request and is used when web content requests access to protected resources. The permission request related events are delivered via [WebChromeClient.onPermissionRequest](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onPermissionRequest(android.webkit.PermissionRequest))and [WebChromeClient.onPermissionRequestCanceled](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onPermissionRequestCanceled(android.webkit.PermissionRequest)). Either [grant()](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#grant(kotlin.Array))or [deny()](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#deny())must be called in UI thread to respond to the request. New protected resources whose names are not defined here may be requested in future versions of WebView, even when running on an older Android release. To avoid unintentionally granting requests for new permissions, you should pass the specific permissions you intend to grant to [grant()](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#grant(kotlin.Array)), and avoid writing code like this example: 
@@ -30,6 +32,7 @@ See the WebView's release notes for information about new protected resources.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_AUDIO_CAPTURE](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#RESOURCE_AUDIO_CAPTURE:kotlin.String) Resource belongs to audio capture device, like microphone. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_MIDI_SYSEX](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#RESOURCE_MIDI_SYSEX:kotlin.String) Resource will allow sysex messages to be sent to or received from MIDI devices. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_PROTECTED_MEDIA_ID](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#RESOURCE_PROTECTED_MEDIA_ID:kotlin.String) Resource belongs to protected media identifier. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_VIDEO_CAPTURE](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#RESOURCE_VIDEO_CAPTURE:kotlin.String) Resource belongs to video capture device, like camera. |
 
 | Public constructors ||
@@ -41,6 +44,7 @@ See the WebView's release notes for information about new protected resources.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deny](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#deny())`()` Call this method to deny the request. |
 | abstract [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getOrigin](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#getOrigin())`()` Call this method to get the origin of the web page which is trying to access the restricted resources. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getResources](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#getResources())`()` Call this method to get the resources the web page is trying to access. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [grant](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#grant(kotlin.Array))`(`resources:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Call this method to grant origin the permission to access the given resources. |
 
 ## Constants

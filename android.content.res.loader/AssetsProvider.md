@@ -3,6 +3,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AssetsProvider
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/res/loader/AssetsProvider "View this page in Java")
+| --- | --- |
 
 ```
 interface AssetsProvider

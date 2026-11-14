@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CallEndpointException
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/CallEndpointException "View this page in Java") 
+| --- | --- |
 
 ```
 class CallEndpointException : RuntimeException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.telecom.CallEndpointException](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#) |
 
 This class represents a set of exceptions that can occur when requesting a [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint) change.
@@ -25,6 +28,7 @@ This class represents a set of exceptions that can occur when requesting a [Call
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ANOTHER_REQUEST](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#ERROR_ANOTHER_REQUEST:kotlin.Int) The operation was canceled by another request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ENDPOINT_DOES_NOT_EXIST](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#ERROR_ENDPOINT_DOES_NOT_EXIST:kotlin.Int) The operation has failed because requested CallEndpoint does not exist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REQUEST_TIME_OUT](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#ERROR_REQUEST_TIME_OUT:kotlin.Int) The operation was not completed on time. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#ERROR_UNSPECIFIED:kotlin.Int) The operation has failed due to an unknown or unspecified error. |
 
 | Inherited constants ||
@@ -40,6 +44,7 @@ This class represents a set of exceptions that can occur when requesting a [Call
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#getCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/CallEndpointException#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

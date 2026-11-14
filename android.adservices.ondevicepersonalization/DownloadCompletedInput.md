@@ -8,6 +8,7 @@ class DownloadCompletedInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.DownloadCompletedInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#) |
 
 > [!CAUTION]
@@ -28,6 +29,7 @@ The input data for `https://developer.android.com/reference/kotlin/android/adser
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [KeyValueStore](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#getDownloadedContents()()` Map containing downloaded keys and values |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 ## Public constructors
 

@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # OnNetworkActiveListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/ConnectivityManager.OnNetworkActiveListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnNetworkActiveListener

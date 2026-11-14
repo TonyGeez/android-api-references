@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # CallDisconnectCauseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface CallDisconnectCauseListener

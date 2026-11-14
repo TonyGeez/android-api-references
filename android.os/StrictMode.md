@@ -3,12 +3,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # StrictMode
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/StrictMode "View this page in Java")
+| --- | --- |
 
 ```
 class StrictMode
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.StrictMode](https://developer.android.com/reference/kotlin/android/os/StrictMode#) |
 
 StrictMode is a developer tool which detects things you might be doing by accident and brings them to your attention so you can fix them.
@@ -49,6 +51,7 @@ StrictMode is not a security mechanism and is not guaranteed to find all disk or
 | abstract | `https://developer.android.com/reference/kotlin/android/os/StrictMode.OnThreadViolationListener` When #`https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder#penaltyListener(java.util.concurrent.Executor,%20android.os.StrictMode.OnThreadViolationListener)` is enabled, the listener is called on the provided executor when a Thread violation occurs. |
 | abstract | `https://developer.android.com/reference/kotlin/android/os/StrictMode.OnVmViolationListener` When #`https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder#penaltyListener(java.util.concurrent.Executor,%20android.os.StrictMode.OnVmViolationListener)` is enabled, the listener is called on the provided executor when a VM violation occurs. |
 | | `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` `https://developer.android.com/reference/kotlin/android/os/StrictMode#` policy applied to a certain thread. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy` `https://developer.android.com/reference/kotlin/android/os/StrictMode#` policy applied to all threads in the virtual machine's process. |
 
 | Public methods ||
@@ -56,9 +59,11 @@ StrictMode is not a security mechanism and is not guaranteed to find all disk or
 | static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskReads()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit disk reads, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
 | static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskWrites()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit both disk reads \& writes, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#enableDefaults()()` Enables the recommended StrictMode defaults, with violations just being logged. |
+| --- | --- |
 | static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()()` Returns the current thread's policy. |
 | static [StrictMode.VmPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getVmPolicy()()` Gets the current VM policy. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#noteSlowCall(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` For code to note that it's slow. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)(policy: https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy!)` Sets the policy for what actions on the current thread should be detected, as well as the penalty if such actions occur. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#setVmPolicy(android.os.StrictMode.VmPolicy)(policy: https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy!)` Sets the policy for what actions in the VM process (on any thread) should be detected, as well as the penalty if such actions occur. |
 

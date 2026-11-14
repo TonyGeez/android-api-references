@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # InsertRecordsResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/InsertRecordsResponse "View this page in Java") 
+| --- | --- |
 
 ```
 open class InsertRecordsResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.InsertRecordsResponse](https://developer.android.com/reference/kotlin/android/health/connect/InsertRecordsResponse#) |
 
 Response for [HealthConnectManager.insertRecords](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#insertRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)). The response contains records in same order as records in [HealthConnectManager.insertRecords](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#insertRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))

@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothCodecConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothCodecConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#) |
 
 Represents the codec configuration for a Bluetooth A2DP source device.
@@ -30,27 +32,35 @@ The source codec type values are the same as those supported by the device hardw
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITS_PER_SAMPLE_16](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#BITS_PER_SAMPLE_16:kotlin.Int) Codec bits per sample 16. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITS_PER_SAMPLE_24](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#BITS_PER_SAMPLE_24:kotlin.Int) Codec bits per sample 24. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITS_PER_SAMPLE_32](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#BITS_PER_SAMPLE_32:kotlin.Int) Codec bits per sample 32. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITS_PER_SAMPLE_NONE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#BITS_PER_SAMPLE_NONE:kotlin.Int) Codec bits per sample 0. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_MODE_MONO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CHANNEL_MODE_MONO:kotlin.Int) Codec channel mode MONO. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_MODE_NONE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CHANNEL_MODE_NONE:kotlin.Int) Codec channel mode NONE. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_MODE_STEREO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CHANNEL_MODE_STEREO:kotlin.Int) Codec channel mode STEREO. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODEC_PRIORITY_DEFAULT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CODEC_PRIORITY_DEFAULT:kotlin.Int) Codec priority default. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODEC_PRIORITY_DISABLED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CODEC_PRIORITY_DISABLED:kotlin.Int) Codec priority disabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODEC_PRIORITY_HIGHEST](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#CODEC_PRIORITY_HIGHEST:kotlin.Int) Codec priority highest. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_176400](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_176400:kotlin.Int) Codec sample rate 176400 Hz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_192000](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_192000:kotlin.Int) Codec sample rate 192000 Hz. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_44100](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_44100:kotlin.Int) Codec sample rate 44100 Hz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_48000](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_48000:kotlin.Int) Codec sample rate 48000 Hz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_88200](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_88200:kotlin.Int) Codec sample rate 88200 Hz. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_96000](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_96000:kotlin.Int) Codec sample rate 96000 Hz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLE_RATE_NONE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SAMPLE_RATE_NONE:kotlin.Int) Codec sample rate 0 Hz. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_AAC](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_AAC:kotlin.Int) Source codec type AAC. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_APTX](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_APTX:kotlin.Int) Source codec type APTX. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_APTX_HD](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_APTX_HD:kotlin.Int) Source codec type APTX HD. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_INVALID](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_INVALID:kotlin.Int) Source codec type invalid. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_LC3](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_LC3:kotlin.Int) Source codec type LC3. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_LDAC](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_LDAC:kotlin.Int) Source codec type LDAC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_OPUS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_OPUS:kotlin.Int) Source codec type Opus. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CODEC_TYPE_SBC](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#SOURCE_CODEC_TYPE_SBC:kotlin.Int) Source codec type SBC. |
 
 | Inherited constants ||
@@ -62,15 +72,19 @@ The source codec type values are the same as those supported by the device hardw
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitsPerSample](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getBitsPerSample())`()` Returns the codec bits per sample. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelMode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getChannelMode())`()` Returns the codec channel mode. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodecPriority](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecPriority())`()` Returns the codec selection priority. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCodecSpecific1](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecSpecific1())`()` Returns the codec specific value1. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCodecSpecific2](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecSpecific2())`()` Returns the codec specific value2. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCodecSpecific3](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecSpecific3())`()` Returns the codec specific value3. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCodecSpecific4](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecSpecific4())`()` Returns the codec specific value4. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodecType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getCodecType())`()` Returns the source codec type of this config. |
+| --- | --- |
 | [BluetoothCodecType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType)? | [getExtendedCodecType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getExtendedCodecType())`()` Returns the source codec type of this config. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSampleRate](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#getSampleRate())`()` Returns the codec sample rate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#hashCode())`()` Returns a hash representation of this BluetoothCodecConfig based on all the config values. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMandatoryCodec](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#isMandatoryCodec())`()` Checks whether the codec is mandatory. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig#toString())`()` Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothCodecConfig parameter current value. |
 

@@ -7,9 +7,11 @@ open class BuddhistCalendar : GregorianCalendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) |||
 | | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar) ||
 | | | ↳ | [android.icu.util.BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#) |
+| --- | --- | --- | --- |
 
 `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. This is the civil calendar in some predominantly Buddhist countries such as Thailand, and it is used for religious purposes elsewhere.
 
@@ -53,6 +55,7 @@ BuddhistCalendar usually should be instantiated using `https://developer.android
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#handleComputeFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#handleGetExtendedYear()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override GregorianCalendar. |
 
 | Inherited functions ||
@@ -175,6 +178,7 @@ Constructs a `BuddhistCalendar` with the given date set in the default time zone
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` time field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` time field. |
+| --- | --- |
 
 ### BuddhistCalendar
 
@@ -197,9 +201,11 @@ Constructs a BuddhistCalendar with the given date and time set for the default t
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` time field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` time field. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int` time field. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int` time field. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int` time field. |
+| --- | --- |
 
 ### BuddhistCalendar
 
@@ -274,6 +280,7 @@ protected open fun handleComputeMonthStart(
 | `eyear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the extended year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the zero-based month, or 0 if useMonth is false |
 | `useMonth` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, compute the day before the first day of the given year, otherwise, compute the day before the first day of the given month |
+| --- | --- |
 
 | Return ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # DateTransformation
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/DateTransformation "View this page in Java") 
+| --- | --- |
 
 ```
 class DateTransformation : Parcelable, Transformation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.DateTransformation](https://developer.android.com/reference/kotlin/android/service/autofill/DateTransformation#) |
 
 Replaces a [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#) child of a [CustomDescription](https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription) with the contents of a field that is expected to have a [date value](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#forDate(kotlin.Long)).
@@ -37,6 +39,7 @@ new DateTransformation(ccExpDate, new java.text.SimpleDateFormat("MM/yyyy")
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/DateTransformation#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/DateTransformation#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/DateTransformation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

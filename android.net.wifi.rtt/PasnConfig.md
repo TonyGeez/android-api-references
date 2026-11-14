@@ -7,6 +7,7 @@ class PasnConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.rtt.PasnConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#) |
 
 Pre-association security negotiation (PASN) configuration.
@@ -30,15 +31,19 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FILS_EAP_SHA256:kotlin.Int` Fast Initial Link Setup (FILS) with Extensible Authentication Protocol (EAP) and SHA-256. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FILS_EAP_SHA384:kotlin.Int` Fast Initial Link Setup (FILS) with Extensible Authentication Protocol (EAP) and SHA-384. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FT_EAP_SHA256:kotlin.Int` Fast BSS Transition (FT) with Extensible Authentication Protocol (EAP) and SHA-256. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FT_EAP_SHA384:kotlin.Int` Fast BSS Transition (FT) with Extensible Authentication Protocol (EAP) and SHA-384. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FT_PSK_SHA256:kotlin.Int` Fast BSS Transition (FT) with Pre-Shared Key (PSK) and SHA-256. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_FT_PSK_SHA384:kotlin.Int` Fast BSS Transition (FT) with Pre-Shared Key (PSK) and SHA-384. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_NONE:kotlin.Int` No authentication and key management. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_PASN:kotlin.Int` Pre-association security negotiation (PASN). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#AKM_SAE:kotlin.Int` Simultaneous authentication of equals (SAE). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CIPHER_CCMP_128:kotlin.Int` Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) with 128-bit key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CIPHER_CCMP_256:kotlin.Int` Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) with 256-bit key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CIPHER_GCMP_128:kotlin.Int` Galois/Counter Mode Protocol (GCMP) with 128-bit key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CIPHER_GCMP_256:kotlin.Int` Galois/Counter Mode Protocol (GCMP) with 256-bit key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CIPHER_NONE:kotlin.Int` No encryption. |
 
@@ -51,15 +56,19 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getBaseAkms()()` Return base AKMs (Authentication and Key Management). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getCiphers()()` Return pairwise ciphers. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPasnComebackCookie()()` Get PASN comeback cookie. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()()` Get password used by base AKM. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPmk()()` Get the PMK (pairwise master key). |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getProximityDetectionSeekerDeviceIdentityKey()()` Get the Seeker device identity key. |
 | [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getWifiSsid()()` Get Wifi SSID which is used to retrieve saved network profile if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()` is null. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # GnssMeasurementsEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/GnssMeasurementsEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class GnssMeasurementsEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssMeasurementsEvent](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#) |
 
 A class implementing a container for data associated with a measurement event. Events are delivered to registered instances of [Callback](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent.Callback).
@@ -31,9 +33,11 @@ A class implementing a container for data associated with a measurement event. E
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#describeContents())`()` <br /> |
 | [GnssClock](https://developer.android.com/reference/kotlin/android/location/GnssClock) | [getClock](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#getClock())`()` Gets the GNSS receiver clock information associated with the measurements for the current event. |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [GnssAutomaticGainControl](https://developer.android.com/reference/kotlin/android/location/GnssAutomaticGainControl)!\> | [getGnssAutomaticGainControls](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#getGnssAutomaticGainControls())`()` Gets the collection of [GnssAutomaticGainControl](https://developer.android.com/reference/kotlin/android/location/GnssAutomaticGainControl) associated with the current event. |
+| --- | --- |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [GnssMeasurement](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement)!\> | [getMeasurements](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#getMeasurements())`()` Gets the collection of measurements associated with the current event. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasIsFullTracking](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#hasIsFullTracking())`()` Return`true`if [isFullTracking()](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#isFullTracking())is available,`false`otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFullTracking](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#isFullTracking())`()` True indicates that this event was produced while the chipset was in full tracking mode, ie, the GNSS chipset switched off duty cycling. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

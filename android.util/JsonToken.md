@@ -5,16 +5,19 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # JsonToken
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/JsonToken "View this page in Java") 
+| --- | --- |
 
 ```
 class JsonToken
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.util.JsonToken](https://developer.android.com/reference/kotlin/android/util/JsonToken#)\> ||
 | | ↳ | [android.util.JsonToken](https://developer.android.com/reference/kotlin/android/util/JsonToken#) |
 
 | Known Direct Subclasses [JsonToken.BEGIN_ARRAY](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BEGIN_ARRAY), [JsonToken.BEGIN_OBJECT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BEGIN_OBJECT), [JsonToken.BOOLEAN](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BOOLEAN), [JsonToken.END_ARRAY](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_ARRAY), [JsonToken.END_DOCUMENT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_DOCUMENT), [JsonToken.END_OBJECT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_OBJECT), [JsonToken.NAME](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NAME), [JsonToken.NULL](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NULL), [JsonToken.NUMBER](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NUMBER), [JsonToken.STRING](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:STRING) |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [JsonToken.BEGIN_ARRAY](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BEGIN_ARRAY) | The opening of a JSON array. | | [JsonToken.BEGIN_OBJECT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BEGIN_OBJECT) | The opening of a JSON object. | | [JsonToken.BOOLEAN](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:BOOLEAN) | A JSON`true`or`false`. | | [JsonToken.END_ARRAY](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_ARRAY) | The closing of a JSON array. | | [JsonToken.END_DOCUMENT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_DOCUMENT) | The end of the JSON stream. | | [JsonToken.END_OBJECT](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:END_OBJECT) | The closing of a JSON object. | | [JsonToken.NAME](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NAME) | A JSON property name. | | [JsonToken.NULL](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NULL) | A JSON`null`. | | [JsonToken.NUMBER](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:NUMBER) | A JSON number represented in this API by a Java`double`,`long`, or`int`. | | [JsonToken.STRING](https://developer.android.com/reference/kotlin/android/util/JsonToken#ENUM_VALUE:STRING) | A JSON string. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A structure, name or value type in a JSON-encoded string.
 

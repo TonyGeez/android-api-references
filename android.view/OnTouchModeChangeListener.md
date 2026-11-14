@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnTouchModeChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnTouchModeChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTouchModeChangeListener
@@ -13,8 +14,10 @@ interface OnTouchModeChangeListener
 | [android.view.ViewTreeObserver.OnTouchModeChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener#) |
 
 | Known Direct Subclasses [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView.html#), [TabHost](https://developer.android.com/reference/kotlin/android/widget/TabHost.html#) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView.html#) | Base class that can be used to implement virtualized lists of items. | | [TabHost](https://developer.android.com/reference/kotlin/android/widget/TabHost.html#) | Container for a tabbed window view. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#), [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView.html#), [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#) |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#) | A view that shows items in a vertically scrolling two-level list. | | [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView.html#) | A view that shows items in two-dimensional scrolling grid. | | [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#) | Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the touch mode changes.
 

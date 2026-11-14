@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # LocaleManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/LocaleManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocaleManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.LocaleManager](https://developer.android.com/reference/kotlin/android/app/LocaleManager#) |
 
 This class gives access to system locale services. These services allow applications to control granular locale settings (such as per-app locales) or override their list of supported locales while running.
@@ -24,9 +26,11 @@ Third party applications should treat this as a write-side surface, and continue
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getApplicationLocales](https://developer.android.com/reference/kotlin/android/app/LocaleManager#getApplicationLocales())`()` Returns the UI locales for the calling app. |
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getApplicationLocales](https://developer.android.com/reference/kotlin/android/app/LocaleManager#getApplicationLocales(kotlin.String))`(`appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the current UI locales for a specified app (described by package name). |
 | open [LocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleConfig)? | [getOverrideLocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleManager#getOverrideLocaleConfig())`()` Returns the override LocaleConfig for the calling app. |
+| --- | --- |
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getSystemLocales](https://developer.android.com/reference/kotlin/android/app/LocaleManager#getSystemLocales())`()` Returns the current system locales, ignoring app-specific overrides. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplicationLocales](https://developer.android.com/reference/kotlin/android/app/LocaleManager#setApplicationLocales(android.os.LocaleList))`(`locales:` ` [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)`)` Sets the UI locales for the calling app. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOverrideLocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleManager#setOverrideLocaleConfig(android.app.LocaleConfig))`(`localeConfig:` ` [LocaleConfig](https://developer.android.com/reference/kotlin/android/app/LocaleConfig)?`)` Sets the override LocaleConfig for the calling app. |
+| --- | --- |
 
 ## Public methods
 

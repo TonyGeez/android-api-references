@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AmbientBacklightEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/AmbientBacklightEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class AmbientBacklightEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.AmbientBacklightEvent](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#) |
 
 Ambient backlight event
@@ -22,6 +24,7 @@ Ambient backlight event
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMBIENT_BACKLIGHT_EVENT_DISABLED](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#AMBIENT_BACKLIGHT_EVENT_DISABLED:kotlin.Int) Event type for ambient backlight events. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMBIENT_BACKLIGHT_EVENT_ENABLED](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#AMBIENT_BACKLIGHT_EVENT_ENABLED:kotlin.Int) Event type for ambient backlight events. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMBIENT_BACKLIGHT_EVENT_INTERRUPTED](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#AMBIENT_BACKLIGHT_EVENT_INTERRUPTED:kotlin.Int) Event type for ambient backlight events. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMBIENT_BACKLIGHT_EVENT_METADATA_AVAILABLE](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#AMBIENT_BACKLIGHT_EVENT_METADATA_AVAILABLE:kotlin.Int) Event type for ambient backlight events. |
 
 | Inherited constants ||
@@ -37,9 +40,11 @@ Ambient backlight event
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#getEventType())`()` Gets event type. |
+| --- | --- |
 | [AmbientBacklightMetadata](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata)? | [getMetadata](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#getMetadata())`()` Gets ambient backlight metadata. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

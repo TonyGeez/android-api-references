@@ -7,6 +7,7 @@ class RangingCapabilities : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#) |
 
 Represents the capabilities and availability of various ranging technologies.
@@ -20,6 +21,7 @@ The `RangingCapabilities` class encapsulates the status of different ranging tec
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#DISABLED_REGULATORY:kotlin.Int` Indicates that the ranging technology is disabled due to regulatory restrictions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#DISABLED_USER:kotlin.Int` Indicates that the ranging technology is disabled by the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#DISABLED_USER_RESTRICTIONS:kotlin.Int` Indicates that the ranging technology is disabled due to device usage restrictions. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#ENABLED:kotlin.Int` Indicates that the ranging technology is enabled and available for use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#NOT_SUPPORTED:kotlin.Int` Indicates that the ranging technology is not supported on the current device. |
 
@@ -40,12 +42,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [BleCsRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getCsCapabilities()()` Gets the BLE channel sounding ranging capabilities. |
+| --- | --- |
 | [RttRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getRttRangingCapabilities()()` Gets the WiFi NAN-RTT ranging capabilities. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getTechnologyAvailability()()` Gets a map containing the availability of various ranging technologies. |
 | [UwbRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getUwbCapabilities()()` Gets the UWB ranging capabilities. |
+| --- | --- |
 | [WifiPdRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/wifi/pd/WifiPdRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getWifiPdRangingCapabilities()()` Gets the WiFi PD ranging capabilities. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

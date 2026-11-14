@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # OnImageAvailableListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/ImageReader.OnImageAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnImageAvailableListener

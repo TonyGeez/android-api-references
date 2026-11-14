@@ -3,12 +3,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # AppWidgetEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/appwidget/AppWidgetEvent "View this page in Java")
+| --- | --- |
 
 ```
 class AppWidgetEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.appwidget.AppWidgetEvent](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#) |
 
 An immutable class that describes the event data for an app widget interaction event.
@@ -24,12 +26,15 @@ An immutable class that describes the event data for an app widget interaction e
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getAppWidgetId()()` The app widget ID of the widget that generated this event. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getClickedIds()()` This returns the set of View IDs of the views which have been clicked during the event time range. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getEnd()()` Describes the end of the time range that this event contains data for. |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getPosition()()` This rect with describes the global coordinates of the widget at the end of the event time range. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getScrolledIds()()` This returns the set of View IDs of the views which have been scrolled during the event time range. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getStart()()` Describes the start of the time range that this event contains data for. |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getVisibleDuration()()` Describes the total duration of time during which the widget was visible. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -181,6 +186,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

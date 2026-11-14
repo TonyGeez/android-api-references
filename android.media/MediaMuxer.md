@@ -3,12 +3,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # MediaMuxer
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMuxer "View this page in Java")
+| --- | --- |
 
 ```
 class MediaMuxer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaMuxer](https://developer.android.com/reference/kotlin/android/media/MediaMuxer#) |
 
 MediaMuxer facilitates muxing elementary streams. Currently MediaMuxer supports MP4, Webm and 3GP file as the output. It also supports muxing B-frames in MP4 since Android Nougat MR1.
@@ -91,17 +93,21 @@ The following table summarizes the feature support in different API version and 
 | ● | Supported |
 | ○ | Not supported |
 | ▧ | Supported in MP4/WebM/3GP |
+| --- | --- |
 | ⁕ | Only Supported in MP4 |
 
 | Feature | SDK Version ||||||||||||||||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Feature | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26+ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | MP4 container | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 | WebM container | ○ | ○ | ○ | ● | ● | ● | ● | ● | ● |
 | 3GP container | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ● |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Muxing B-Frames (bi-directional predicted frames) | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ⁕ | ⁕ |
 | Muxing Single Video/Audio Track | ▧ | ▧ | ▧ | ▧ | ▧ | ▧ | ▧ | ▧ | ▧ |
 | Muxing Multiple Video/Audio Tracks | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ⁕ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Muxing Metadata Tracks | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ⁕ |
 
 ## Summary
@@ -120,9 +126,11 @@ The following table summarizes the feature support in different API version and 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#addTrack(android.media.MediaFormat)(format: https://developer.android.com/reference/kotlin/android/media/MediaFormat)` Adds a track with the specified format. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#release()()` Make sure you call this when you're done to free up any resources instead of relying on the garbage collector to do this for you at some point in the future. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setLocation(kotlin.Float,%20kotlin.Float)(latitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, longitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set and store the geodata (latitude and longitude) in the output file. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)(degrees: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the orientation hint for output video playback. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()()` Starts the muxer. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#stop()()` Stops the muxer. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)(trackIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, byteBuf: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, bufferInfo: https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo)` Writes an encoded sample into the muxer. |
 
 | Protected methods ||
@@ -204,17 +212,21 @@ Adds a track with the specified format.
 The following table summarizes support for specific format keys across android releases. Keys marked with '+:' are required.
 
 | OS Version(s) | `MediaFormat` keys used for |||
+| --- | --- | --- | --- |
 | OS Version(s) | All Tracks | Audio Tracks | Video Tracks |
 |---|---|---|---|
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
+| --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | as above, plus `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String`AAC |
+| --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | as above, plus `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String`MPEG4, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HDR_STATIC_INFO:kotlin.String`, .webm, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_STANDARD:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_TRANSFER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_RANGE:kotlin.String`, +: **codec-specific dataHEVC** , codec-specific dataVP9 |
 | **Notes:** #: storing into container metadata. .mp4, .webm...: for listed containers MPEG4, AAC...: for listed codecs ||||
 | Note that the codec-specific data for the track must be specified using this method. Furthermore, codec-specific data must not be passed/specified via the `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)` call. ||||
+| --- | --- | --- | --- |
 
 The following table summarizes codec support for containers across android releases:
 
@@ -223,15 +235,19 @@ The following table summarizes codec support for containers across android relea
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC:kotlin.String` | ✓ | | | 16 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AMR_NB:kotlin.String` | ✓ | | | 16 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AMR_WB:kotlin.String` | ✓ | | | 16 |
+| --- | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_H263:kotlin.String` | ✓ | | | 16 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_MPEG4:kotlin.String` | ✓ | | | 16 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AVC:kotlin.String` (H.264) | ✓ | | | 16 |
+| --- | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_VORBIS:kotlin.String` | | ✓ | | 21 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_VP8:kotlin.String` | | ✓ | | 21 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_VP9:kotlin.String` | | ✓ | | 24 |
+| --- | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_HEVC:kotlin.String` (H.265) | ✓ | | | 24 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_OPUS:kotlin.String` | | ✓ | ✓ | 29 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_DOLBY_VISION:kotlin.String` | ✓ | | | 33 |
+| --- | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AV1:kotlin.String` | ✓ | | | 34 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_APV:kotlin.String` | ✓ | | | 36 |
 
@@ -357,6 +373,7 @@ For MPEG4 media format, the duration of the last sample in a track can be set by
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The track index for this sample. |
 | `byteBuf` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): The encoded sample. This value cannot be `null`. |
 | `bufferInfo` | [MediaCodec.BufferInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo): The buffer information related to this sample. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

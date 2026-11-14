@@ -9,6 +9,7 @@ open class GuardedObject : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.GuardedObject](https://developer.android.com/reference/kotlin/java/security/GuardedObject#) |
 
 A GuardedObject is an object that is used to protect access to another object.

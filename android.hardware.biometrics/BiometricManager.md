@@ -7,6 +7,7 @@ open class BiometricManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.BiometricManager](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#) |
 
 A class that contains biometric utilities. For authentication, see `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt`. 
@@ -24,21 +25,27 @@ Restricted for SDK Runtime environment in API level 34.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#AUTHENTICATION_PURPOSE_LOGIN:kotlin.Int` Authentication purpose representing a login use case. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#AUTHENTICATION_PURPOSE_PAYMENT:kotlin.Int` Authentication purpose representing a payment use case. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#AUTHENTICATION_PURPOSE_UNKNOWN:kotlin.Int` Unknown authentication purpose. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_HW_UNAVAILABLE:kotlin.Int` The hardware is unavailable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVE:kotlin.Int` Identity Check is currently not active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_NONE_ENROLLED:kotlin.Int` The user does not have any biometrics enrolled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPS:kotlin.Int` Biometrics is not allowed to verify the user in apps. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_NO_HARDWARE:kotlin.Int` There is no biometric hardware. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_SECURITY_UPDATE_REQUIRED:kotlin.Int` A security vulnerability has been discovered and the sensor is unavailable until a security update has addressed this issue. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Returned from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)` when no matching successful authentication has been performed since boot. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_SUCCESS:kotlin.Int` No error detected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_ACCOUNT:kotlin.Int` An icon representing a user account. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_GENERIC:kotlin.Int` A generic icon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_MESSAGE:kotlin.Int` An icon representing a message or chat option, such as to contact support or an administrator. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_PASSWORD:kotlin.Int` An icon representing a password. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_QR_CODE:kotlin.Int` An icon representing a QR code. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_RESET:kotlin.Int` An icon representing a password reset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_SETTING:kotlin.Int` An icon representing settings (a gear). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_SUPERVISED:kotlin.Int` An icon representing a supervised account. |
 
 | Public methods ||
@@ -46,6 +53,7 @@ Restricted for SDK Runtime environment in API level 34.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate()()` Determine if biometrics can be used. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine if any of the provided authenticators can be used. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getBiometricSensorStrengths()()` Returns a map of biometric modalities to their sensor security strengths. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the last time the user successfully authenticated using one of the given authenticators. |
 | open [BiometricManager.Strings](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getStrings(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces an instance of the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` class, which provides localized strings for an application, given a set of allowed authenticator types. |
 

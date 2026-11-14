@@ -5,3 +5,4 @@
 ## Annotations
 
 | [Generated](https://developer.android.com/reference/kotlin/javax/annotation/processing/Generated) | <br /> |
+| --- | --- |

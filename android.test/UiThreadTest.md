@@ -6,6 +6,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # UiThreadTest
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/UiThreadTest "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class UiThreadTest

@@ -9,6 +9,7 @@ open class XPathConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.xpath.XPathConstants](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#) |
 
 XPath constants.
@@ -24,6 +25,7 @@ XPath constants.
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [BOOLEAN](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#BOOLEAN:javax.xml.namespace.QName) The XPath 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [NODE](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NODE:javax.xml.namespace.QName) The XPath 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [NODESET](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NODESET:javax.xml.namespace.QName) The XPath 1. |
+| --- | --- |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [NUMBER](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NUMBER:javax.xml.namespace.QName) The XPath 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [STRING](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#STRING:javax.xml.namespace.QName) The XPath 1. |
 

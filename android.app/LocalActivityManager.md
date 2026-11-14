@@ -6,12 +6,14 @@ Deprecated in [API level 13](https://developer.android.com/guide/topics/manifest
 # LocalActivityManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/LocalActivityManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocalActivityManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.LocalActivityManager](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#) |
 
 | **This class was deprecated in API level 13.**
@@ -31,15 +33,19 @@ Helper class for managing multiple running embedded activities in the same proce
 | open [Window](https://developer.android.com/reference/kotlin/android/view/Window.html#)! | [destroyActivity](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#destroyActivity(kotlin.String,%20kotlin.Boolean))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `finish:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Destroy the activity associated with a particular id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchCreate](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#dispatchCreate(android.os.Bundle))`(`state:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Restore a state that was previously returned by [saveInstanceState](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#saveInstanceState()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroy](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#dispatchDestroy(kotlin.Boolean))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onDestroy](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy())so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPause](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#dispatchPause(kotlin.Boolean))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onPause](https://developer.android.com/reference/kotlin/android/app/Activity#onPause())so that LocalActivityManager can perform the corresponding action on the activities it holds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchResume](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#dispatchResume())`()` Called by the container activity in its [Activity.onResume](https://developer.android.com/reference/kotlin/android/app/Activity#onResume())so that LocalActivityManager can perform the corresponding action on the activities it holds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStop](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#dispatchStop())`()` Called by the container activity in its [Activity.onStop](https://developer.android.com/reference/kotlin/android/app/Activity#onStop())so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| --- | --- |
 | open [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)! | [getActivity](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#getActivity(kotlin.String))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the Activity object associated with a string ID. |
 | open [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)! | [getCurrentActivity](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#getCurrentActivity())`()` Retrieve the Activity that is currently running. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrentId](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#getCurrentId())`()` Retrieve the ID of the activity that is currently running. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllActivities](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#removeAllActivities())`()` Remove all activities from this LocalActivityManager, performing an [Activity.onDestroy](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy())on any that are currently instantiated. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [saveInstanceState](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#saveInstanceState())`()` Retrieve the state of all activities known by the group. |
 | open [Window](https://developer.android.com/reference/kotlin/android/view/Window.html#)! | [startActivity](https://developer.android.com/reference/kotlin/android/app/LocalActivityManager#startActivity(kotlin.String,%20android.content.Intent))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Start a new activity running in the group. |
+| --- | --- |
 
 ## Public constructors
 

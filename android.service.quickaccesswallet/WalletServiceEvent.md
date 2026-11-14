@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # WalletServiceEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent "View this page in Java")
+| --- | --- |
 
 ```
 class WalletServiceEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.WalletServiceEvent](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#) |
 
 Represents a request from the `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService` to the Quick Access Wallet in System UI. Background events may necessitate that the Quick Access Wallet update its view. For example, if the wallet application handles an NFC payment while the Quick Access Wallet is being shown, it needs to tell the Quick Access Wallet so that the wallet can be dismissed and Activity showing the payment can be displayed to the user.
@@ -32,6 +34,7 @@ Represents a request from the `https://developer.android.com/reference/kotlin/an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#getEventType()()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

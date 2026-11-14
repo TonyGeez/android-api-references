@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # RenderInput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/RenderInput "View this page in Java") 
+| --- | --- |
 
 ```
 class RenderInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.RenderInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#) |
 
 The input data for [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onRender(android.adservices.ondevicepersonalization.RenderInput,%20android.os.OutcomeReceiver)).
@@ -26,6 +28,7 @@ The input data for [IsolatedWorker.onRender(RenderInput, android.os.OutcomeRecei
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getHeight())`()` The height of the slot. |
 | [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)? | [getRenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getRenderingConfig())`()` A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) within an [ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getWidth())`()` The width of the slot. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#hashCode())`()` <br /> |
 
@@ -49,6 +52,7 @@ Creates a new RenderInput.
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the slot. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height of the slot. |
 | `renderingConfig` | [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)?:A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) within an [ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). This value may be`null`. |
+| --- | --- |
 
 ## Public methods
 

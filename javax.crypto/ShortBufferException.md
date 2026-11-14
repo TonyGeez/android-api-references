@@ -9,9 +9,11 @@ open class ShortBufferException : GeneralSecurityException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.crypto.ShortBufferException](https://developer.android.com/reference/kotlin/javax/crypto/ShortBufferException#) |
 
 This exception is thrown when an output buffer provided by the user is too short to hold the operation result.

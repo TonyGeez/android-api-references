@@ -7,6 +7,7 @@ class WifiSsidPolicy : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.WifiSsidPolicy](https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#) |
 
 Used to indicate the Wi-Fi SSID restriction policy the network must satisfy in order to be eligible for a connection.
@@ -41,9 +42,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Two instances of WifiSsidPolicy are considered equal if they have the same WifiSsidPolicyType and the same set of WifiSsids |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#getPolicyType()()` Returns the policy type. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#getSsids()()` Returns the set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#hashCode()()` Returns the hash code value of WifiSsidPolicyType and WifiSsid set |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

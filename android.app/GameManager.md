@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # GameManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/GameManager "View this page in Java") 
+| --- | --- |
 
 ```
 class GameManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.GameManager](https://developer.android.com/reference/kotlin/android/app/GameManager#) |
 
 The GameManager allows system apps to modify and query the game mode of apps.
@@ -28,6 +30,7 @@ Therefore, you should always do a`null`check on the return value of [Context.get
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GAME_MODE_BATTERY](https://developer.android.com/reference/kotlin/android/app/GameManager#GAME_MODE_BATTERY:kotlin.Int) Battery game mode will save battery and give longer game play time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GAME_MODE_CUSTOM](https://developer.android.com/reference/kotlin/android/app/GameManager#GAME_MODE_CUSTOM:kotlin.Int) Custom game mode that has user-provided configuration overrides. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GAME_MODE_PERFORMANCE](https://developer.android.com/reference/kotlin/android/app/GameManager#GAME_MODE_PERFORMANCE:kotlin.Int) Performance game mode maximizes the game's performance. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GAME_MODE_STANDARD](https://developer.android.com/reference/kotlin/android/app/GameManager#GAME_MODE_STANDARD:kotlin.Int) Standard game mode means the platform will use the game's default performance characteristics. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GAME_MODE_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/app/GameManager#GAME_MODE_UNSUPPORTED:kotlin.Int) Game mode is not supported for this application. |
 

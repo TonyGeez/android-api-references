@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnLayoutChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnLayoutChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnLayoutChangeListener
@@ -47,9 +48,12 @@ Called when the layout bounds of a view changes due to layout processing.
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view whose bounds have changed. |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's left property. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's top property. |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's right property. |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's bottom property. |
 | `oldLeft` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value of the view's left property. |
+| --- | --- |
 | `oldTop` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value of the view's top property. |
 | `oldRight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value of the view's right property. |
 | `oldBottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value of the view's bottom property. |
+| --- | --- |

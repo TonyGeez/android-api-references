@@ -10,6 +10,7 @@ abstract class IdentityScope : Identity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Identity](https://developer.android.com/reference/kotlin/java/security/Identity) ||
 | | ↳ | [java.security.IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#) |
 
@@ -39,12 +40,15 @@ There is a one-to-one mapping between keys and identities, and there can only be
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#addIdentity(java.security.Identity))`(`identity:` ` [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!`)` Adds an identity to this identity scope. |
 | abstract [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the identity in this scope with the specified name (if any). |
 | open [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(java.security.Principal))`(`principal:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal)!`)` Retrieves the identity whose name is the same as that of the specified principal. |
+| --- | --- |
 | abstract [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(java.security.PublicKey))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` Retrieves the identity with the specified public key. |
 | openstatic [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)! | [getSystemScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getSystemScope())`()` Returns the system's identity scope. |
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!\>! | [identities](https://developer.android.com/reference/kotlin/java/security/IdentityScope#identities())`()` Returns an enumeration of all identities in this identity scope. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#removeIdentity(java.security.Identity))`(`identity:` ` [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!`)` Removes an identity from this identity scope. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/security/IdentityScope#size())`()` Returns the number of identities within this identity scope. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/IdentityScope#toString())`()` Returns a string representation of this identity scope, including its name, its scope name, and the number of identities in this identity scope. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

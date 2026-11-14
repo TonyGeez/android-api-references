@@ -7,6 +7,7 @@ open class AudioProfile : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioProfile](https://developer.android.com/reference/kotlin/android/media/AudioProfile#) |
 
 An AudioProfile is specific to an audio format and lists supported sampling rates and channel masks for that format. An `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` has a list of supported AudioProfiles. There can be multiple profiles whose encoding format is the same. This usually happens when an encoding format is only supported when it is encapsulated by some particular encapsulation types. If there are multiple encapsulation types that can carry this encoding format, they will be reported in different audio profiles. The application can choose any of the encapsulation types.
@@ -18,6 +19,7 @@ An AudioProfile is specific to an audio format and lists supported sampling rate
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#AUDIO_ENCAPSULATION_TYPE_IEC61937:kotlin.Int` Encapsulation format is defined in standard IEC 61937. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#AUDIO_ENCAPSULATION_TYPE_NONE:kotlin.Int` No encapsulation type is specified. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#AUDIO_ENCAPSULATION_TYPE_PCM:kotlin.Int` Encapsulation format is PCM, which can be used by other formats that can be wrapped in a PCM frame, such as DSD(Direct Stream Digital). |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -28,12 +30,15 @@ An AudioProfile is specific to an audio format and lists supported sampling rate
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#getChannelIndexMasks()()` <br /> |
+| --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#getChannelMasks()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#getEncapsulationType()()` The encapsulation type indicates what encapsulation type is required when the framework is using this format when playing to a device exposing this audio profile. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#getFormat()()` <br /> |
+| --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#getSampleRates()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#hashCode()()` Returns a hash code value for the object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

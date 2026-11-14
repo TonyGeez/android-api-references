@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TableRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TableRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class TableRequest : BroadcastInfoRequest, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) ||
 | | ↳ | [android.media.tv.TableRequest](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#) |
 
@@ -23,12 +25,15 @@ A request for Table from broadcast signal.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_BAT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_BAT:kotlin.Int) Bouquet Association Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_CAT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_CAT:kotlin.Int) Conditional Access Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_EIT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_EIT:kotlin.Int) Event Information Table |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_NIT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_NIT:kotlin.Int) Network Information Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_PAT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_PAT:kotlin.Int) Program Association Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_PMT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_PMT:kotlin.Int) Program Mapping Table |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_SDT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_SDT:kotlin.Int) Service Description Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_SIT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_SIT:kotlin.Int) Selection Information Table |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_TDT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_TDT:kotlin.Int) Time and Date Table |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TABLE_NAME_TOT](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#TABLE_NAME_TOT:kotlin.Int) Time Offset Table |
 
 | Inherited constants ||
@@ -45,6 +50,7 @@ A request for Table from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTableId](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#getTableId())`()` Gets the ID of requested table. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTableName](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#getTableName())`()` Gets the name of requested table. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#getVersion())`()` Gets the version number of requested table. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/TableRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

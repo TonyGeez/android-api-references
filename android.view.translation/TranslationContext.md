@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationContext
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/translation/TranslationContext "View this page in Java")
+| --- | --- |
 
 ```
 class TranslationContext : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationContext](https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#) |
 
 Info class holding information for `https://developer.android.com/reference/kotlin/android/view/translation/Translator`s and used by `https://developer.android.com/reference/kotlin/android/view/translation/TranslationManager#createOnDeviceTranslator(android.view.translation.TranslationContext,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
@@ -24,6 +26,7 @@ Info class holding information for `https://developer.android.com/reference/kotl
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_DEFINITIONS:kotlin.Int` This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return dictionary definitions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_LOW_LATENCY:kotlin.Int` This context will perform translations in low latency mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_TRANSLITERATION:kotlin.Int` This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return transliteration results. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,9 +37,11 @@ Info class holding information for `https://developer.android.com/reference/kotl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [TranslationSpec](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getSourceSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data to be translated. |
 | [TranslationSpec](https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTargetSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target translated data. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTranslationFlags()()` Translation flags to be used by the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

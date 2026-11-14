@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # OnCapturedPointerListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnCapturedPointerListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCapturedPointerListener

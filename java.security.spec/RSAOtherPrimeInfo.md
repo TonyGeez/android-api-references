@@ -9,6 +9,7 @@ open class RSAOtherPrimeInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo#) |
 
 This class represents the triplet (prime, exponent, and coefficient) inside RSA's OtherPrimeInfo structure, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard. The ASN.1 syntax of RSA's OtherPrimeInfo is as follows: 
@@ -36,6 +37,7 @@ OtherPrimeInfo ::= SEQUENCE {
 | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo#getCrtCoefficient())`()` Returns the prime's crtCoefficient. |
 | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo#getExponent())`()` Returns the prime's exponent. |
 | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrime](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo#getPrime())`()` Returns the prime. |
+| --- | --- |
 
 ## Public constructors
 
@@ -57,6 +59,7 @@ Creates a new`RSAOtherPrimeInfo`given the prime, primeExponent, and crtCoefficie
 | `prime` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor of n. |
 | `primeExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the exponent. |
 | `crtCoefficient` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the Chinese Remainder Theorem coefficient. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------|

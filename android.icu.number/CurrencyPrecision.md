@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # CurrencyPrecision
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/CurrencyPrecision "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CurrencyPrecision : Precision
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.number.Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision) ||
 | | ↳ | [android.icu.number.CurrencyPrecision](https://developer.android.com/reference/kotlin/android/icu/number/CurrencyPrecision#) |
 

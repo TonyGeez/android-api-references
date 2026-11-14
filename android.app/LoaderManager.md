@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # LoaderManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/LoaderManager "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class LoaderManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager#) |
 
 | **This class was deprecated in API level 28.**
@@ -41,9 +43,11 @@ As an example, here is the full implementation of a [Fragment](https://developer
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroyLoader](https://developer.android.com/reference/kotlin/android/app/LoaderManager#destroyLoader(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Stops and removes the loader with the given ID. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/app/LoaderManager#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`, `writer:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Print the LoaderManager's state into the given stream. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableDebugLogging](https://developer.android.com/reference/kotlin/android/app/LoaderManager#enableDebugLogging(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Control whether the framework's internal loader manager debugging logs are turned on. |
+| --- | --- |
 | abstract [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)\<D\>! | [getLoader](https://developer.android.com/reference/kotlin/android/app/LoaderManager#getLoader(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the Loader with the given id or null if no matching Loader is found. |
 | abstract [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)\<D\>! | [initLoader](https://developer.android.com/reference/kotlin/android/app/LoaderManager#initLoader(kotlin.Int,%20android.os.Bundle,%20android.app.LoaderManager.LoaderCallbacks))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `args:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`, `callback:` ` [LoaderManager.LoaderCallbacks](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks)<D>!`)` Ensures a loader is initialized and active. |
 | abstract [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)\<D\>! | [restartLoader](https://developer.android.com/reference/kotlin/android/app/LoaderManager#restartLoader(kotlin.Int,%20android.os.Bundle,%20android.app.LoaderManager.LoaderCallbacks))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `args:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`, `callback:` ` [LoaderManager.LoaderCallbacks](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks)<D>!`)` Starts a new or restarts an existing [android.content.Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#) in this manager, registers the callbacks to it, and (if the activity/fragment is currently started) starts loading it. |
+| --- | --- |
 
 ## Public constructors
 
@@ -89,6 +93,7 @@ Print the LoaderManager's state into the given stream.
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Text to print at the front of each line. |
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!:The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!:A PrintWriter to which the dump is to be set. |
+| --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Additional arguments to the dump request. |
 
 ### enableDebugLogging
@@ -138,6 +143,7 @@ In either case, the given callback is associated with the loader, and will be ca
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A unique identifier for this loader. Can be whatever you want. Identifiers are scoped to a particular LoaderManager instance. |
 | `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:Optional arguments to supply to the loader at construction. If a loader already exists (a new one does not need to be created), this parameter will be ignored and the last arguments continue to be used. |
 | `callback` | [LoaderManager.LoaderCallbacks](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks)\<D\>!:Interface the LoaderManager will call to report about changes in the state of the loader. Required. |
+| --- | --- |
 
 ### restartLoader
 
@@ -160,3 +166,4 @@ Starts a new or restarts an existing [android.content.Loader](https://developer.
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A unique identifier for this loader. Can be whatever you want. Identifiers are scoped to a particular LoaderManager instance. |
 | `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:Optional arguments to supply to the loader at construction. |
 | `callback` | [LoaderManager.LoaderCallbacks](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks)\<D\>!:Interface the LoaderManager will call to report about changes in the state of the loader. Required. |
+| --- | --- |

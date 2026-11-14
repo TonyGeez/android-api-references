@@ -8,6 +8,7 @@ class DeviceDataSource : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.DeviceDataSource](https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#) |
 
 Represents a device that acts as a source of health and fitness data.
@@ -27,9 +28,11 @@ Represents a device that acts as a source of health and fitness data.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` metadata. |
+| --- | --- |
 | [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataOrigin()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` of the device, containing the synthetic package name. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataTypeSource)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataTypeSources()()` Returns the set of data types provided by this device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -56,6 +59,7 @@ DeviceDataSource(
 | `deviceDataOrigin` | [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin): The origin of the device data, i.e. the synthetic package name. This value cannot be `null`. |
 | `device` | [Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device): The device metadata. This value cannot be `null`. |
 | `dataTypes` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataTypeSource)!\>: The set of data types provided by this device. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AsyncNotedAppOp
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/AsyncNotedAppOp "View this page in Java") 
+| --- | --- |
 
 ```
 class AsyncNotedAppOp : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.AsyncNotedAppOp](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#) |
 
 When an [app-op is noted](https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String))and the app the app-op is noted for has a [AppOpsManager.OnOpNotedCallback](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback) registered the note-event needs to be delivered to the callback. Usually this is done via an [SyncNotedAppOp](https://developer.android.com/reference/kotlin/android/app/SyncNotedAppOp), but in some cases this is not possible. In this case an [AsyncNotedAppOp](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#) is send to the system server and then forwarded to the [AppOpsManager.OnOpNotedCallback](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback) in the app.
@@ -26,12 +28,15 @@ When an [app-op is noted](https://developer.android.com/reference/kotlin/android
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttributionTag](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#getAttributionTag())`()` [attribution tag](https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)) |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getMessage](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#getMessage())`()` Message associated with the noteOp. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNotingUid](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#getNotingUid())`()` Uid that noted the op |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getOp](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#getOp())`()` <br /> |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#getTime())`()` Milliseconds since epoch when the op was noted Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/AsyncNotedAppOp#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PersistentDataBlockManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/persistentdata/PersistentDataBlockManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class PersistentDataBlockManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.persistentdata.PersistentDataBlockManager](https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager#) |
 
 Interface to the persistent data partition. Provides access to information about the state of factory reset protection. 

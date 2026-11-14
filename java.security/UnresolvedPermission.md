@@ -9,6 +9,7 @@ class UnresolvedPermission : Permission, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission) ||
 | | ↳ | [java.security.UnresolvedPermission](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#) |
 
@@ -25,9 +26,11 @@ Legacy security code; do not use.
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getActions](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#getActions())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnresolvedActions](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#getUnresolvedActions())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [getUnresolvedCerts](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#getUnresolvedCerts())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnresolvedName](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#getUnresolvedName())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnresolvedType](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#getUnresolvedType())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/UnresolvedPermission#implies(java.security.Permission))`(`p:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

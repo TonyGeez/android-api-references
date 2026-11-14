@@ -9,9 +9,11 @@ abstract class SelectionKey
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#) |
 
 | Known Direct Subclasses [AbstractSelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectionKey) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [AbstractSelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectionKey) | Base implementation class for selection keys. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A token representing the registration of a [SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel) with a [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector).
 
@@ -37,6 +39,7 @@ Selection keys are safe for use by multiple concurrent threads. A selection oper
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ACCEPT](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#OP_ACCEPT:kotlin.Int) Operation-set bit for socket-accept operations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONNECT](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#OP_CONNECT:kotlin.Int) Operation-set bit for socket-connect operations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_READ](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#OP_READ:kotlin.Int) Operation-set bit for read operations. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_WRITE](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#OP_WRITE:kotlin.Int) Operation-set bit for write operations. |
 
 | Protected constructors ||
@@ -48,18 +51,23 @@ Selection keys are safe for use by multiple concurrent threads. A selection oper
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attach](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#attach(kotlin.Any))`(`ob:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Attaches the given object to this key. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attachment](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#attachment())`()` Retrieves the current attachment. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#cancel())`()` Requests that the registration of this key's channel with its selector be cancelled. |
+| --- | --- |
 | abstract [SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel)! | [channel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#channel())`()` Returns the channel for which this key was created. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOps](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#interestOps())`()` Retrieves this key's interest set. |
 | abstract [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#)! | [interestOps](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#interestOps(kotlin.Int))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this key's interest set to the given value. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsAnd](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#interestOpsAnd(kotlin.Int))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise intersection ("and") of the existing interest set and the given value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsOr](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#interestOpsOr(kotlin.Int))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise union ("or") of the existing interest set and the given value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAcceptable](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#isAcceptable())`()` Tests whether this key's channel is ready to accept a new socket connection. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#isConnectable())`()` Tests whether this key's channel has either finished, or failed to finish, its socket-connection operation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadable](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#isReadable())`()` Tests whether this key's channel is ready for reading. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#isValid())`()` Tells whether or not this key is valid. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#isWritable())`()` Tests whether this key's channel is ready for writing. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readyOps](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#readyOps())`()` Retrieves this key's ready-operation set. |
 | abstract [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector)! | [selector](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#selector())`()` Returns the selector for which this key was created. |
+| --- | --- |
 
 ## Constants
 

@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # SearchEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/SearchEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class SearchEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.SearchEvent](https://developer.android.com/reference/kotlin/android/view/SearchEvent#) |
 
 Class that contains information about an event that triggers a search.

@@ -9,9 +9,11 @@ open class ArrayStoreException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ArrayStoreException](https://developer.android.com/reference/kotlin/java/lang/ArrayStoreException#) |
 
 Thrown to indicate that an attempt has been made to store the wrong type of object into an array of objects. For example, the following code generates an`ArrayStoreException`: 

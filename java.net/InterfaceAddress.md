@@ -9,6 +9,7 @@ open class InterfaceAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.InterfaceAddress](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#) |
 
 This class represents a Network Interface address. In short it's an IP address, a subnet mask and a broadcast address when the address is an IPv4 one. An IP address and a network prefix length in the case of IPv6 address.
@@ -20,9 +21,11 @@ This class represents a Network Interface address. In short it's an IP address, 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getAddress())`()` Returns an`InetAddress`for this address. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getBroadcast](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getBroadcast())`()` Returns an`InetAddress`for the broadcast address for this InterfaceAddress. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getNetworkPrefixLength](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getNetworkPrefixLength())`()` Returns the network prefix length for this address. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#hashCode())`()` Returns a hashcode for this Interface address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#toString())`()` Converts this Interface address to a`String`. |
+| --- | --- |
 
 ## Public methods
 

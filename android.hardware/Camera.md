@@ -6,12 +6,14 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # Camera
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera "View this page in Java") 
+| --- | --- |
 
 ```
 open class Camera
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera#) |
 
 | **This class was deprecated in API level 21.**
@@ -65,15 +67,19 @@ This class is not thread-safe, and is meant for use from one event thread. Most 
 | open | [Area](https://developer.android.com/reference/kotlin/android/hardware/Camera.Area) The Area class is used for choosing specific metering and focus areas for the camera to use when calculating auto-exposure, auto-white balance, and auto-focus. |
 | abstract | [AutoFocusCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusCallback) Callback interface used to notify on completion of camera auto focus. |
 | abstract | [AutoFocusMoveCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusMoveCallback) Callback interface used to notify on auto focus start and stop. |
+| --- | --- |
 | open | [CameraInfo](https://developer.android.com/reference/kotlin/android/hardware/Camera.CameraInfo) Information about a camera |
 | abstract | [ErrorCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ErrorCallback) Callback interface for camera error notification. |
 | open | [Face](https://developer.android.com/reference/kotlin/android/hardware/Camera.Face) Information about a face identified through camera face detection. |
+| --- | --- |
 | abstract | [FaceDetectionListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.FaceDetectionListener) Callback interface for face detected in the preview frame. |
 | abstract | [OnZoomChangeListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.OnZoomChangeListener) Callback interface for zoom changes during a smooth zoom operation. |
 | open | [Parameters](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters) Camera service settings. |
+| --- | --- |
 | abstract | [PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback) Callback interface used to supply image data from a photo capture. |
 | abstract | [PreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback) Callback interface used to deliver copies of preview frames as they are displayed. |
 | abstract | [ShutterCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback) Callback interface used to signal the moment of actual image capture. |
+| --- | --- |
 | open | [Size](https://developer.android.com/reference/kotlin/android/hardware/Camera.Size) Image size (width and height dimensions). |
 
 | Constants ||
@@ -81,6 +87,7 @@ This class is not thread-safe, and is meant for use from one event thread. Most 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_NEW_PICTURE](https://developer.android.com/reference/kotlin/android/hardware/Camera#ACTION_NEW_PICTURE:kotlin.String) Broadcast Action: A new picture is taken by the camera, and the entry of the picture has been added to the media store. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_NEW_VIDEO](https://developer.android.com/reference/kotlin/android/hardware/Camera#ACTION_NEW_VIDEO:kotlin.String) Broadcast Action: A new video is recorded by the camera, and the entry of the video has been added to the media store. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR_EVICTED](https://developer.android.com/reference/kotlin/android/hardware/Camera#CAMERA_ERROR_EVICTED:kotlin.Int) Camera was disconnected due to use by higher priority user. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR_SERVER_DIED](https://developer.android.com/reference/kotlin/android/hardware/Camera#CAMERA_ERROR_SERVER_DIED:kotlin.Int) Media server died. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/hardware/Camera#CAMERA_ERROR_UNKNOWN:kotlin.Int) Unspecified camera error. |
 
@@ -89,33 +96,43 @@ This class is not thread-safe, and is meant for use from one event thread. Most 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallbackBuffer](https://developer.android.com/reference/kotlin/android/hardware/Camera#addCallbackBuffer(kotlin.ByteArray))`(`callbackBuffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Adds a pre-allocated buffer to the preview callback buffer queue. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [autoFocus](https://developer.android.com/reference/kotlin/android/hardware/Camera#autoFocus(android.hardware.Camera.AutoFocusCallback))`(`cb:` ` [Camera.AutoFocusCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusCallback)!`)` Starts camera auto-focus and registers a callback function to run when the camera is focused. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelAutoFocus](https://developer.android.com/reference/kotlin/android/hardware/Camera#cancelAutoFocus())`()` Cancels any auto-focus function in progress. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableShutterSound](https://developer.android.com/reference/kotlin/android/hardware/Camera#enableShutterSound(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the default shutter sound when taking a picture. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCameraInfo](https://developer.android.com/reference/kotlin/android/hardware/Camera#getCameraInfo(kotlin.Int,%20android.hardware.Camera.CameraInfo))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cameraInfo:` ` [Camera.CameraInfo](https://developer.android.com/reference/kotlin/android/hardware/Camera.CameraInfo)!`)` Returns the information about a particular camera. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberOfCameras](https://developer.android.com/reference/kotlin/android/hardware/Camera#getNumberOfCameras())`()` Returns the number of physical cameras available on this device. |
+| --- | --- |
 | open [Camera.Parameters](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters)! | [getParameters](https://developer.android.com/reference/kotlin/android/hardware/Camera#getParameters())`()` Returns the current settings for this Camera service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](https://developer.android.com/reference/kotlin/android/hardware/Camera#lock())`()` Re-locks the camera to prevent other processes from accessing it. |
 | openstatic [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera#)! | [open](https://developer.android.com/reference/kotlin/android/hardware/Camera#open())`()` Creates a new Camera object to access the first back-facing camera on the device. |
+| --- | --- |
 | openstatic [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera#)! | [open](https://developer.android.com/reference/kotlin/android/hardware/Camera#open(kotlin.Int))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new Camera object to access a particular hardware camera. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reconnect](https://developer.android.com/reference/kotlin/android/hardware/Camera#reconnect())`()` Reconnects to the camera service after another process used it. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/hardware/Camera#release())`()` Disconnects and releases the Camera object resources. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoFocusMoveCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera#setAutoFocusMoveCallback(android.hardware.Camera.AutoFocusMoveCallback))`(`cb:` ` [Camera.AutoFocusMoveCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusMoveCallback)!`)` Sets camera auto-focus move callback. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDisplayOrientation](https://developer.android.com/reference/kotlin/android/hardware/Camera#setDisplayOrientation(kotlin.Int))`(`degrees:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the clockwise rotation of preview display in degrees. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera#setErrorCallback(android.hardware.Camera.ErrorCallback))`(`cb:` ` [Camera.ErrorCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ErrorCallback)!`)` Registers a callback to be invoked when an error occurs. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFaceDetectionListener](https://developer.android.com/reference/kotlin/android/hardware/Camera#setFaceDetectionListener(android.hardware.Camera.FaceDetectionListener))`(`listener:` ` [Camera.FaceDetectionListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.FaceDetectionListener)!`)` Registers a listener to be notified about the faces detected in the preview frame. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOneShotPreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera#setOneShotPreviewCallback(android.hardware.Camera.PreviewCallback))`(`cb:` ` [Camera.PreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback)!`)` Installs a callback to be invoked for the next preview frame in addition to displaying it on the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameters](https://developer.android.com/reference/kotlin/android/hardware/Camera#setParameters(android.hardware.Camera.Parameters))`(`params:` ` [Camera.Parameters](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters)!`)` Changes the settings for this Camera service. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera#setPreviewCallback(android.hardware.Camera.PreviewCallback))`(`cb:` ` [Camera.PreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback)!`)` Installs a callback to be invoked for every preview frame in addition to displaying them on the screen. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewCallbackWithBuffer](https://developer.android.com/reference/kotlin/android/hardware/Camera#setPreviewCallbackWithBuffer(android.hardware.Camera.PreviewCallback))`(`cb:` ` [Camera.PreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback)!`)` Installs a callback to be invoked for every preview frame, using buffers supplied with[addCallbackBuffer(byte[])](https://developer.android.com/reference/kotlin/android/hardware/Camera#addCallbackBuffer(kotlin.ByteArray)), in addition to displaying them on the screen. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewDisplay](https://developer.android.com/reference/kotlin/android/hardware/Camera#setPreviewDisplay(android.view.SurfaceHolder))`(`holder:` ` [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#)!`)` Sets the [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#) to be used for live preview. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewTexture](https://developer.android.com/reference/kotlin/android/hardware/Camera#setPreviewTexture(android.graphics.SurfaceTexture))`(`surfaceTexture:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)!`)` Sets the [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#) to be used for live preview. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoomChangeListener](https://developer.android.com/reference/kotlin/android/hardware/Camera#setZoomChangeListener(android.hardware.Camera.OnZoomChangeListener))`(`listener:` ` [Camera.OnZoomChangeListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.OnZoomChangeListener)!`)` Registers a listener to be notified when the zoom value is updated by the camera driver during smooth zoom. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startFaceDetection](https://developer.android.com/reference/kotlin/android/hardware/Camera#startFaceDetection())`()` Starts the face detection. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPreview](https://developer.android.com/reference/kotlin/android/hardware/Camera#startPreview())`()` Starts capturing and drawing preview frames to the screen. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startSmoothZoom](https://developer.android.com/reference/kotlin/android/hardware/Camera#startSmoothZoom(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Zooms to the requested value smoothly. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopFaceDetection](https://developer.android.com/reference/kotlin/android/hardware/Camera#stopFaceDetection())`()` Stops the face detection. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopPreview](https://developer.android.com/reference/kotlin/android/hardware/Camera#stopPreview())`()` Stops capturing and drawing preview frames to the surface, and resets the camera for a future call to [startPreview()](https://developer.android.com/reference/kotlin/android/hardware/Camera#startPreview()). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopSmoothZoom](https://developer.android.com/reference/kotlin/android/hardware/Camera#stopSmoothZoom())`()` Stops the smooth zoom. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [takePicture](https://developer.android.com/reference/kotlin/android/hardware/Camera#takePicture(android.hardware.Camera.ShutterCallback,%20android.hardware.Camera.PictureCallback,%20android.hardware.Camera.PictureCallback))`(`shutter:` ` [Camera.ShutterCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback)!`, `raw:` ` [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!`, `jpeg:` ` [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!`)` Equivalent to ```kotlin takePicture(Shutter, raw, null, jpeg) ``` . <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [takePicture](https://developer.android.com/reference/kotlin/android/hardware/Camera#takePicture(android.hardware.Camera.ShutterCallback,%20android.hardware.Camera.PictureCallback,%20android.hardware.Camera.PictureCallback,%20android.hardware.Camera.PictureCallback))`(`shutter:` ` [Camera.ShutterCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback)!`, `raw:` ` [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!`, `postview:` ` [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!`, `jpeg:` ` [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!`)` Triggers an asynchronous image capture. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlock](https://developer.android.com/reference/kotlin/android/hardware/Camera#unlock())`()` Unlocks the camera to allow another process to access it. |
 
@@ -999,6 +1016,7 @@ After calling this method, you must not call [startPreview()](https://developer.
 | `shutter` | [Camera.ShutterCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback)!:the callback for image capture moment, or null |
 | `raw` | [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!:the callback for raw (uncompressed) image data, or null |
 | `postview` | [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!:callback with postview image data, may be null |
+| --- | --- |
 | `jpeg` | [Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback)!:the callback for JPEG image data, or null |
 
 | Exceptions ||

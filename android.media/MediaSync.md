@@ -7,6 +7,7 @@ class MediaSync
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaSync](https://developer.android.com/reference/kotlin/android/media/MediaSync#) |
 
 MediaSync class can be used to synchronously play audio and video streams. It can be used to play audio-only or video-only stream, too.
@@ -102,15 +103,19 @@ The client can optionally pre-fill audio/video buffers by setting playback rate 
 | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#createInputSurface()()` Requests a Surface to use as the input. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#flush()()` Flushes all buffers from the sync object. |
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getPlaybackParams()()` Gets the playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. |
+| --- | --- |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getSyncParams()()` Gets the A/V sync mode. |
 | [MediaTimestamp](https://developer.android.com/reference/kotlin/android/media/MediaTimestamp)? | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getTimestamp()()` Get current playback position. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#queueAudio(java.nio.ByteBuffer,%20kotlin.Int,%20kotlin.Long)(audioData: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, bufferId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, presentationTimeUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Queues the audio data asynchronously for playback (AudioTrack must be in streaming mode). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#release()()` Make sure you call this when you're done to free up any opened component instance instead of relying on the garbage collector to do this for you at some point in the future. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setAudioTrack(android.media.AudioTrack)(audioTrack: https://developer.android.com/reference/kotlin/android/media/AudioTrack?)` Sets the audio track for MediaSync. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setCallback(android.media.MediaSync.Callback,%20android.os.Handler)(cb: https://developer.android.com/reference/kotlin/android/media/MediaSync.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Sets an asynchronous callback for actionable MediaSync events. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setOnErrorListener(android.media.MediaSync.OnErrorListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/MediaSync.OnErrorListener?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Sets an asynchronous callback for error events. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setPlaybackParams(android.media.PlaybackParams)(params: https://developer.android.com/reference/kotlin/android/media/PlaybackParams)` Sets playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?)` Sets the output surface for MediaSync. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setSyncParams(android.media.SyncParams)(params: https://developer.android.com/reference/kotlin/android/media/SyncParams)` Sets A/V sync mode. |
 
 | Protected methods ||
@@ -280,6 +285,7 @@ Queues the audio data asynchronously for playback (AudioTrack must be in streami
 | `audioData` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): the buffer that holds the data to play. This buffer will be returned to the client via registered callback. This value cannot be `null`. |
 | `bufferId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an integer used to identify audioData. It will be returned to the client along with audioData. This helps applications to keep track of audioData, e.g., it can be used to store the output buffer index used by the audio codec. |
 | `presentationTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the presentation timestamp in microseconds for the first frame in the buffer. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

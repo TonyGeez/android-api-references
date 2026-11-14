@@ -5,6 +5,7 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 # VisibleActivityCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.VisibleActivityCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface VisibleActivityCallback

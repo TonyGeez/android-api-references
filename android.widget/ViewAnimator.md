@@ -7,9 +7,11 @@ open class ViewAnimator : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.ViewAnimator](https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#) |
 
 Known Direct Subclasses [ViewFlipper](https://developer.android.com/reference/kotlin/android/widget/ViewFlipper), [ViewSwitcher](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher) [ViewFlipper](https://developer.android.com/reference/kotlin/android/widget/ViewFlipper) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#` that will animate between two or more views that have been added to it.
@@ -26,6 +28,7 @@ Base class for a `https://developer.android.com/reference/kotlin/android/widget/
 | [`android:animateFirstView`](https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#attr_ViewAnimator) | Defines whether to animate the current View when the ViewAnimation is first displayed. |
 | [`android:inAnimation`](https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#attr_ViewAnimator) | Identifier for the animation to use when a view is shown. |
 | [`android:outAnimation`](https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#attr_ViewAnimator) | Identifier for the animation to use when a view is hidden. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
 
@@ -311,6 +314,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -427,6 +431,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -575,6 +580,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1739,24 +1745,31 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#addView(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Adds a child view with the specified layout parameters. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getAnimateFirstView()()` Returns whether the current View should be animated the first time the ViewAnimator is displayed. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getCurrentView()()` Returns the View corresponding to the currently displayed child. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getDisplayedChild()()` Returns the index of the currently displayed child view. |
+| --- | --- |
 | open [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getInAnimation()()` Returns the current animation used to animate a View that enters the screen. |
 | open [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#getOutAnimation()()` Returns the current animation used to animate a View that exits the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeAllViews()()` Call this method to remove all child views from the ViewGroup. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` **Note:** do not invoke this method from `https://developer.android.com/reference/kotlin/android/view/View.html#draw(android.graphics.Canvas)`, `https://developer.android.com/reference/kotlin/android/view/View.html#onDraw(android.graphics.Canvas)`, `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#dispatchDraw(android.graphics.Canvas)` or any related method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeViewAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the view at the specified position in the group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeViewInLayout(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Removes a view during layout. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeViews(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the specified range of views from the group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#removeViewsInLayout(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a range of views during layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setAnimateFirstView(kotlin.Boolean)(animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Indicates whether the current View should be animated the first time the ViewAnimator is displayed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setDisplayedChild(kotlin.Int)(whichChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets which child view will be displayed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setInAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resourceID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the animation used to animate a View that enters the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setInAnimation(android.view.animation.Animation)(inAnimation: https://developer.android.com/reference/kotlin/android/view/animation/Animation.html#!)` Specifies the animation used to animate a View that enters the screen. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setOutAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resourceID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the animation used to animate a View that exit the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#setOutAnimation(android.view.animation.Animation)(outAnimation: https://developer.android.com/reference/kotlin/android/view/animation/Animation.html#!)` Specifies the animation used to animate a View that exit the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#showNext()()` Manually shows the next child. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator#showPrevious()()` Manually shows the previous child. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2675,6 +2688,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4527,6 +4541,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8328,6 +8343,7 @@ Adds a child view with the specified layout parameters.
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: the layout parameters to set on the child |
+| --- | --- |
 
 ### getAccessibilityClassName
 

@@ -6,16 +6,19 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # PreferenceGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/PreferenceGroup "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PreferenceGroup : Preference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) ||
 | | ↳ | [android.preference.PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#) |
 
 | Known Direct Subclasses [PreferenceCategory](https://developer.android.com/reference/kotlin/android/preference/PreferenceCategory), [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen) |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PreferenceCategory](https://developer.android.com/reference/kotlin/android/preference/PreferenceCategory) | Used to group [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) objects and provide a disabled title above the group. | | [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen) | Represents a top-level [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that is the root of a Preference hierarchy. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -54,12 +57,15 @@ A container for multiple [Preference](https://developer.android.com/reference/ko
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addItemFromInflater](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#addItemFromInflater(android.preference.Preference))`(`preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`)` Called by the inflater to add an item to this group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addPreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#addPreference(android.preference.Preference))`(`preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`)` Adds a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) at the correct position based on the preference's order. |
 | open [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)! | [findPreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#findPreference(kotlin.CharSequence))`(`key:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Finds a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) based on its key. |
+| --- | --- |
 | open [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)! | [getPreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#getPreference(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) at a particular index. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPreferenceCount](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#getPreferenceCount())`()` Returns the number of children [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) s. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOrderingAsAdded](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#isOrderingAsAdded())`()` Whether this group is ordering preferences in the order they are added. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDependencyChange](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#notifyDependencyChange(kotlin.Boolean))`(`disableDependents:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAll](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#removeAll())`()` Removes all [Preferences](https://developer.android.com/reference/kotlin/android/preference/Preference) from this group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removePreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#removePreference(android.preference.Preference))`(`preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`)` Removes a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) from this group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrderingAsAdded](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#setOrderingAsAdded(kotlin.Boolean))`(`orderingAsAdded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Whether to order the [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) children of this group as they are added. |
 
 | Protected methods ||
@@ -67,9 +73,11 @@ A container for multiple [Preference](https://developer.android.com/reference/ko
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#dispatchRestoreInstanceState(android.os.Bundle))`(`container:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#dispatchSaveInstanceState(android.os.Bundle))`(`container:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOnSameScreenAsChildren](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#isOnSameScreenAsChildren())`()` Whether this preference group should be shown on the same screen as its contained preferences. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachedToActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#onAttachedToActivity())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPrepareAddPreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#onPrepareAddPreference(android.preference.Preference))`(`preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`)` Prepares a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) to be added to the group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareForRemoval](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#onPrepareForRemoval())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

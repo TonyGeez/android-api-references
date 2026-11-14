@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # EGLExt
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLExt "View this page in Java") 
+| --- | --- |
 
 ```
 open class EGLExt
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.EGLExt](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#) |
 
 EGL Extensions
@@ -22,12 +24,15 @@ EGL Extensions
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_FLAGS_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_FLAGS_KHR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MAJOR_VERSION_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_MAJOR_VERSION_KHR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MINOR_VERSION_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_MINOR_VERSION_KHR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NO_NATIVE_FENCE_FD_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_NO_NATIVE_FENCE_FD_ANDROID:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES3_BIT_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_OPENGL_ES3_BIT_KHR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RECORDABLE_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_RECORDABLE_ANDROID:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_ANDROID:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_FD_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_FD_ANDROID:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------|---|

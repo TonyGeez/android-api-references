@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ArchivedPackageInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/ArchivedPackageInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ArchivedPackageInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) |
 
 Contains fields required for archived package installation, i.e. installation without an APK.
@@ -26,21 +28,27 @@ Contains fields required for archived package installation, i.e. installation wi
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDefaultToDeviceProtectedStorage](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getDefaultToDeviceProtectedStorage())`()` Package data will default to device protected storage. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo)!\> | [getLauncherActivities](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getLauncherActivities())`()` List of the package's activities that specify [Intent.ACTION_MAIN](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String) and [Intent.CATEGORY_LAUNCHER](https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getPackageName())`()` Name of the package as used to identify it in the system |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getRequestLegacyExternalStorage](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getRequestLegacyExternalStorage())`()` If`true`this app would like to run under the legacy storage model. |
 | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo) | [getSigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getSigningInfo())`()` Signing certificates used to sign the package. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTargetSdkVersion](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getTargetSdkVersion())`()` This is the SDK version number that the application is targeting, as specified by the \<manifest\> tag's [android.R.styleable#AndroidManifestUsesSdk_targetSdkVersion](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestUsesSdk_targetSdkVersion:kotlin.Int) attribute. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUserDataFragile](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getUserDataFragile())`()` If`true`the user is prompted to keep the app's data on uninstall. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersionCode](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getVersionCode())`()` The version number of the package, as specified by the \<manifest\>tag's [versionCode](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int) attribute. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersionCodeMajor](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#getVersionCodeMajor())`()` The major version number of the package, as specified by the \<manifest\>tag's [versionCodeMajor](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int) attribute. |
+| --- | --- |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setDefaultToDeviceProtectedStorage](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setDefaultToDeviceProtectedStorage(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Package data will default to device protected storage. |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setLauncherActivities](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setLauncherActivities(kotlin.collections.MutableList))`(`value:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo)!>`)` List of the package's activities that specify [Intent.ACTION_MAIN](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String) and [Intent.CATEGORY_LAUNCHER](https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String). |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setPackageName](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setPackageName(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Name of the package as used to identify it in the system |
+| --- | --- |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setRequestLegacyExternalStorage](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setRequestLegacyExternalStorage(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` If`true`this app would like to run under the legacy storage model. |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setSigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setSigningInfo(android.content.pm.SigningInfo))`(`value:` ` [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo)`)` Signing certificates used to sign the package. |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setTargetSdkVersion](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setTargetSdkVersion(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This is the SDK version number that the application is targeting, as specified by the \<manifest\> tag's [android.R.styleable#AndroidManifestUsesSdk_targetSdkVersion](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestUsesSdk_targetSdkVersion:kotlin.Int) attribute. |
+| --- | --- |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setUserDataFragile](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setUserDataFragile(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` If`true`the user is prompted to keep the app's data on uninstall. |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setVersionCode](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setVersionCode(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The version number of the package, as specified by the \<manifest\>tag's [versionCode](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int) attribute. |
 | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#) | [setVersionCodeMajor](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo#setVersionCodeMajor(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The major version number of the package, as specified by the \<manifest\>tag's [versionCodeMajor](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int) attribute. |
+| --- | --- |
 
 ## Public constructors
 
@@ -60,6 +68,7 @@ ArchivedPackageInfo(
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `signingInfo` | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo):This value cannot be`null`. |
 | `launcherActivities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ArchivedActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedActivityInfo)!\>:This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

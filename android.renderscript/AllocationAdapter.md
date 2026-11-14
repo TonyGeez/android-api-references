@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # AllocationAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/AllocationAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 open class AllocationAdapter : Allocation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) |||
 | | ↳ | [android.renderscript.Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation) ||
 | | | ↳ | [android.renderscript.AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
 |
@@ -33,12 +36,15 @@ Only intended for use by generated reflected code.
 | openstatic [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#)! | [create1D](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#create1D(android.renderscript.RenderScript,%20android.renderscript.Allocation))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `a:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` <br /> |
 | openstatic [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#)! | [create2D](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#create2D(android.renderscript.RenderScript,%20android.renderscript.Allocation))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `a:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` <br /> |
 | openstatic [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#)! | [createTyped](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#createTyped(android.renderscript.RenderScript,%20android.renderscript.Allocation,%20android.renderscript.Type))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `a:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `t:` ` [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!`)` Create an arbitrary window into the base allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#resize(kotlin.Int))`(`dimX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override the Allocation resize. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFace](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#setFace(android.renderscript.Type.CubemapFace))`(`cf:` ` [Type.CubemapFace](https://developer.android.com/reference/kotlin/android/renderscript/Type.CubemapFace)!`)` Set the active Face. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLOD](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#setLOD(kotlin.Int))`(`lod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the active LOD. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setX](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#setX(kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the active X. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setY](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#setY(kotlin.Int))`(`y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the active Y. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZ](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter#setZ(kotlin.Int))`(`z:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the active Z. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

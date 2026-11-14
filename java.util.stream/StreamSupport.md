@@ -9,6 +9,7 @@ class StreamSupport
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.stream.StreamSupport](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#) |
 
 Low-level utility methods for creating and manipulating streams.
@@ -22,9 +23,11 @@ This class is mostly for library writers presenting stream views of data structu
 | static [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | [doubleStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#doubleStream(java.util.function.Supplier,%20kotlin.Int,%20kotlin.Boolean))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<out` ` [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble.html#)!>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`DoubleStream`from a`Supplier`of`Spliterator.OfDouble`. |
 | static [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | [doubleStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#doubleStream(java.util.Spliterator.OfDouble,%20kotlin.Boolean))`(`spliterator:` ` [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble.html#)!`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`DoubleStream`from a`Spliterator.OfDouble`. |
 | static [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [intStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#intStream(java.util.function.Supplier,%20kotlin.Int,%20kotlin.Boolean))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<out` ` [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt.html#)!>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`IntStream`from a`Supplier`of`Spliterator.OfInt`. |
+| --- | --- |
 | static [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [intStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#intStream(java.util.Spliterator.OfInt,%20kotlin.Boolean))`(`spliterator:` ` [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt.html#)!`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`IntStream`from a`Spliterator.OfInt`. |
 | static [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | [longStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#longStream(java.util.function.Supplier,%20kotlin.Int,%20kotlin.Boolean))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<out` ` [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong.html#)!>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`LongStream`from a`Supplier`of`Spliterator.OfLong`. |
 | static [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | [longStream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#longStream(java.util.Spliterator.OfLong,%20kotlin.Boolean))`(`spliterator:` ` [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong.html#)!`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`LongStream`from a`Spliterator.OfLong`. |
+| --- | --- |
 | static [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<T\>! | [stream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#stream(java.util.function.Supplier,%20kotlin.Int,%20kotlin.Boolean))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<out` ` [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)<T>!>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`Stream`from a`Supplier`of`Spliterator`. |
 | static [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<T\>! | [stream](https://developer.android.com/reference/kotlin/java/util/stream/StreamSupport#stream(java.util.Spliterator,%20kotlin.Boolean))`(`spliterator:` ` [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)<T>!`, `parallel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new sequential or parallel`Stream`from a`Spliterator`. |
 
@@ -55,6 +58,7 @@ The use of a`Supplier`in this form provides a level of indirection that reduces 
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<out [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble.html#)!\>!:A`Supplier`of a`Spliterator.OfDouble` |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Spliterator characteristics of the supplied`Spliterator.OfDouble`. The characteristics must be equal to`supplier.get().characteristics()`, otherwise undefined behavior may occur when terminal operation commences. |
 | `parallel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`then the returned stream is a parallel stream; if`false`the returned stream is a sequential stream. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------|
@@ -115,6 +119,7 @@ The use of a`Supplier`in this form provides a level of indirection that reduces 
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<out [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt.html#)!\>!:a`Supplier`of a`Spliterator.OfInt` |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Spliterator characteristics of the supplied`Spliterator.OfInt`. The characteristics must be equal to`supplier.get().characteristics()`, otherwise undefined behavior may occur when terminal operation commences. |
 | `parallel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`then the returned stream is a parallel stream; if`false`the returned stream is a sequential stream. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------|
@@ -175,6 +180,7 @@ The use of a`Supplier`in this form provides a level of indirection that reduces 
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<out [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong.html#)!\>!:a`Supplier`of a`Spliterator.OfLong` |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Spliterator characteristics of the supplied`Spliterator.OfLong`. The characteristics must be equal to`supplier.get().characteristics()`, otherwise undefined behavior may occur when terminal operation commences. |
 | `parallel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`then the returned stream is a parallel stream; if`false`the returned stream is a sequential stream. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------------------------|
@@ -235,6 +241,7 @@ The use of a`Supplier`in this form provides a level of indirection that reduces 
 | `<T>` | the type of stream elements |
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<out [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<T\>!\>!:a`Supplier`of a`Spliterator` |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Spliterator characteristics of the supplied`Spliterator`. The characteristics must be equal to`supplier.get().characteristics()`, otherwise undefined behavior may occur when terminal operation commences. |
+| --- | --- |
 | `parallel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`then the returned stream is a parallel stream; if`false`the returned stream is a sequential stream. |
 
 | Return ||
@@ -267,6 +274,7 @@ It is strongly recommended the spliterator report a characteristic of`IMMUTABLE`
 | `<T>` | the type of stream elements |
 | `spliterator` | [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<T\>!:a`Spliterator`describing the stream elements |
 | `parallel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`then the returned stream is a parallel stream; if`false`the returned stream is a sequential stream. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------|

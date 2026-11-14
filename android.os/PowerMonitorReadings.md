@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PowerMonitorReadings
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/PowerMonitorReadings "View this page in Java") 
+| --- | --- |
 
 ```
 class PowerMonitorReadings
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.PowerMonitorReadings](https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings#) |
 
 A collection of energy measurements from Power Monitors.
@@ -26,6 +28,7 @@ A collection of energy measurements from Power Monitors.
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getConsumedEnergy](https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings#getConsumedEnergy(android.os.PowerMonitor))`(`powerMonitor:` ` [PowerMonitor](https://developer.android.com/reference/kotlin/android/os/PowerMonitor)`)` Returns energy consumed by the specified power monitor since boot in microwatt-seconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings#getTimestampMillis(android.os.PowerMonitor))`(`powerMonitor:` ` [PowerMonitor](https://developer.android.com/reference/kotlin/android/os/PowerMonitor)`)` Elapsed realtime, in milliseconds, when the snapshot was taken. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings#toString())`()` <br /> |
+| --- | --- |
 
 ## Constants
 

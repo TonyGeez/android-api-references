@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # TextAppearanceInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo "View this page in Java")
+| --- | --- |
 
 ```
 class TextAppearanceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.TextAppearanceInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#) |
 
 Information about text appearance in an editor, passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo` for use by `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`.
@@ -28,30 +30,39 @@ Information about text appearance in an editor, passed through `https://develope
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getFontFeatureSettings()()` Returns the font feature settings. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getFontVariationSettings()()` Returns the font variation settings. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getHighlightTextColor()()` Returns the color of the text selection highlight. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getHintTextColor()()` Returns the current color of the hint text. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getLetterSpacing()()` Returns the text letter-spacing, which determines the spacing between characters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getLineBreakStyle()()` Returns the line-break strategies for text wrapping. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getLineBreakWordStyle()()` Returns the line-break word strategies for text wrapping. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getLinkTextColor()()` Returns the text color used to paint the links in the editor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getShadowColor()()` Returns the color of the text shadow. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getShadowDx()()` Returns the horizontal offset (in pixels) of the text shadow. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getShadowDy()()` Returns the vertical offset (in pixels) of the text shadow. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getShadowRadius()()` Returns the blur radius (in pixels) of the text shadow. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getSystemFontFamilyName()()` Returns the font family name if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` of the text is created from a system font family. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextColor()()` Returns the current text color of the editor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextFontWeight()()` Returns the weight of the text, or `FontStyle#FONT_WEIGHT_UNSPECIFIED` when no `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is specified. |
 | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextLocales()()` Returns the `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the text. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextScaleX()()` Returns the extent by which text should be stretched horizontally. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextSize()()` Returns the text size (in pixels) for current editor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#getTextStyle()()` Returns the style (normal, bold, italic, bold|italic) of the text. |
+| --- | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#isAllCaps()()` Returns whether the transformation method applied to the current editor is set to all caps. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#isElegantTextHeight()()` Returns `true` if the elegant height metrics flag is set. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#isFallbackLineSpacing()()` Returns whether to expand linespacing based on fallback fonts. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -370,6 +381,7 @@ fun getTextStyle(): Int
 ```
 
 Returns the style (normal, bold, italic, bold|italic) of the text. Returns `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#NORMAL:kotlin.Int` when no `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is specified.
+| --- | --- |
 
 | Return ||
 |---|---|

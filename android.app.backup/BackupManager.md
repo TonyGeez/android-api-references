@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # BackupManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/backup/BackupManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class BackupManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.BackupManager](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#) |
 
 The interface through which an application interacts with the Android backup service to request backup and restore operations. Applications instantiate it using the constructor and issue calls through that instance.
@@ -32,6 +34,7 @@ Several attributes affecting the operation of the backup and restore mechanism c
 | [`android:allowBackup`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Whether to allow the application to participate in the backup and restore infrastructure. |
 | [`android:backupAgent`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | The name of the class subclassing BackupAgent to manage backup and restore of the application's data on external storage. |
 | [`android:killAfterRestore`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Whether the application in question should be terminated after its settings have been restored during a full-system restore operation. |
+| --- | --- |
 | [`android:restoreAnyVersion`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Indicate that the application is prepared to attempt a restore of any backed-up dataset, even if the backup is apparently from a newer version of the application than is currently installed on the device. |
 
 | Public constructors ||
@@ -43,6 +46,7 @@ Several attributes affecting the operation of the backup and restore mechanism c
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged())`()` Notifies the Android backup system that your application wishes to back up new changes to its data. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged(kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for callers who need to indicate that some other package needs a backup pass. |
 | open [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)? | [getUserForAncestralSerialNumber](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#getUserForAncestralSerialNumber(kotlin.Long))`(`ancestralSerialNumber:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) for the user that has`ancestralSerialNumber`as the serial number of the its ancestral work profile or`null`if there is none. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [requestRestore](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#requestRestore(android.app.backup.RestoreObserver))`(`observer:` ` [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver)!`)` <br /> |
 
 ## XML attributes

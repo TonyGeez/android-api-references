@@ -7,6 +7,7 @@ class MonthDay : Comparable<MonthDay!>, Serializable, TemporalAccessor, Tempor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#) |
 
 A month-day in the ISO-8601 calendar system, such as `--12-03`.
@@ -28,30 +29,39 @@ The ISO-8601 calendar system is the modern civil calendar system used today in m
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this month-day. |
 | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#atYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Combines this month-day with a year to create a `LocalDate`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#compareTo(java.time.MonthDay)(other: https://developer.android.com/reference/kotlin/java/time/MonthDay#!)` Compares this month-day to another month-day. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this month-day is equal to another month-day. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#format(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Formats this month-day using the specified formatter. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `MonthDay` from a temporal object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this month-day as an `int`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#getDayOfMonth()()` Gets the day-of-month field. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this month-day as a `long`. |
+| --- | --- |
 | [Month](https://developer.android.com/reference/kotlin/java/time/Month)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#getMonth()()` Gets the month-of-year field using the `Month` enum. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#getMonthValue()()` Gets the month-of-year field from 1 to 12. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#hashCode()()` A hash code for this month-day. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#isAfter(java.time.MonthDay)(other: https://developer.android.com/reference/kotlin/java/time/MonthDay#!)` Checks if this month-day is after the specified month-day. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#isBefore(java.time.MonthDay)(other: https://developer.android.com/reference/kotlin/java/time/MonthDay#!)` Checks if this month-day is before the specified month-day. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#isValidYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the year is valid for this month-day. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#now()()` Obtains the current month-day from the system clock in the default time-zone. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current month-day from the specified clock. |
+| --- | --- |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current month-day from the system clock in the specified time-zone. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#of(kotlin.Int,%20kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `MonthDay`. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#of(java.time.Month,%20kotlin.Int)(month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `MonthDay`. |
+| --- | --- |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `MonthDay` from a text string such as `--12-03`. |
 | static [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `MonthDay` from a text string using a specific formatter. |
 | R | `https://developer.android.com/reference/kotlin/java/time/MonthDay#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this month-day using the specified query. |
+| --- | --- |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/MonthDay#toString()()` Outputs this month-day as a `String`, such as `--12-03`. |
 | [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#with(java.time.Month)(month: https://developer.android.com/reference/kotlin/java/time/Month!)` Returns a copy of this `MonthDay` with the month-of-year altered. |
+| --- | --- |
 | [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#withDayOfMonth(kotlin.Int)(dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `MonthDay` with the day-of-month altered. |
 | [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay#)! | `https://developer.android.com/reference/kotlin/java/time/MonthDay#withMonth(kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `MonthDay` with the month-of-year altered. |
 
@@ -250,6 +260,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an `int` |
+| --- | --- |
 
 ### getDayOfMonth
 
@@ -296,6 +307,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### getMonth
 

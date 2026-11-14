@@ -9,12 +9,15 @@ abstract class SelectableChannel : AbstractInterruptibleChannel, Channel
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.channels.spi.AbstractInterruptibleChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractInterruptibleChannel) ||
 | | ↳ | [java.nio.channels.SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#) |
 
 | Known Direct Subclasses [AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel) |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------| | [AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel) | Base implementation class for selectable channels. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel), [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel), [Pipe.SourceChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SourceChannel), [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel), [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------| | [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) | A selectable channel for datagram-oriented sockets. | | [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel) | A channel representing the writable end of a [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe). | | [Pipe.SourceChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SourceChannel) | A channel representing the readable end of a [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe). | | [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel) | A selectable channel for stream-oriented listening sockets. | | [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) | A selectable channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A channel that can be multiplexed via a [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector).
 
@@ -49,12 +52,15 @@ Newly-created selectable channels are always in blocking mode. Non-blocking mode
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [blockingLock](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#blockingLock())`()` Retrieves the object upon which the [configureBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#configureBlocking(kotlin.Boolean))and #register methods synchronize. |
 | abstract [SelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#)! | [configureBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#configureBlocking(kotlin.Boolean))`(`block:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adjusts this channel's blocking mode. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocking](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#isBlocking())`()` Tells whether or not every I/O operation on this channel will block until it completes. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRegistered](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#isRegistered())`()` Tells whether or not this channel is currently registered with any selectors. |
 | abstract [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)! | [keyFor](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#keyFor(java.nio.channels.Selector))`(`sel:` ` [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector)!`)` Retrieves the key representing the channel's registration with the given selector. |
 | abstract [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider)! | [provider](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#provider())`()` Returns the provider that created this channel. |
+| --- | --- |
 | [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)! | [register](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#register(java.nio.channels.Selector,%20kotlin.Int))`(`sel:` ` [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector)!`, `ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers this channel with the given selector, returning a selection key. |
 | abstract [SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey)! | [register](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#register(java.nio.channels.Selector,%20kotlin.Int,%20kotlin.Any))`(`sel:` ` [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector)!`, `ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `att:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Registers this channel with the given selector, returning a selection key. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [validOps](https://developer.android.com/reference/kotlin/java/nio/channels/SelectableChannel#validOps())`()` Returns an [operation set](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey#opsets) identifying this channel's supported operations. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -117,6 +123,7 @@ If this method is invoked while another invocation of this method or of the [reg
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.IllegalBlockingModeException` | If`block`is`true`and this channel is registered with one or more selectors |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 
 ### isBlocking
 
@@ -212,9 +219,11 @@ An invocation of this convenience method of the form
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.ClosedSelectorException` | If the selector is closed |
 | `java.nio.channels.IllegalBlockingModeException` | If this channel is in blocking mode |
+| --- | --- |
 | `java.nio.channels.IllegalSelectorException` | If this channel was not created by the same provider as the given selector |
 | `java.nio.channels.CancelledKeyException` | If this channel is currently registered with the given selector but the corresponding key has already been cancelled |
 | `java.lang.IllegalArgumentException` | If a bit in`ops`does not correspond to an operation that is supported by this channel, that is, if`set & ~validOps() != 0` |
+| --- | --- |
 
 ### register
 
@@ -243,6 +252,7 @@ If this channel is closed while this operation is in progress then the key retur
 | `sel` | [Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector)!:The selector with which this channel is to be registered |
 | `ops` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The interest set for the resulting key |
 | `att` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The attachment for the resulting key; may be`null` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -253,9 +263,11 @@ If this channel is closed while this operation is in progress then the key retur
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.ClosedSelectorException` | If the selector is closed |
 | `java.nio.channels.IllegalBlockingModeException` | If this channel is in blocking mode |
+| --- | --- |
 | `java.nio.channels.IllegalSelectorException` | If this channel was not created by the same provider as the given selector |
 | `java.nio.channels.CancelledKeyException` | If this channel is currently registered with the given selector but the corresponding key has already been cancelled |
 | `java.lang.IllegalArgumentException` | If a bit in the`ops`set does not correspond to an operation that is supported by this channel, that is, if`set & ~validOps() != 0` |
+| --- | --- |
 
 ### validOps
 

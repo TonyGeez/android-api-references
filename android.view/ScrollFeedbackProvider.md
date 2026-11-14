@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ScrollFeedbackProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ScrollFeedbackProvider "View this page in Java") 
+| --- | --- |
 
 ```
 interface ScrollFeedbackProvider
@@ -35,6 +36,7 @@ Methods in this interface rely on the provision of valid [InputDevice](https://d
 | openstatic [ScrollFeedbackProvider](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#) | [createProvider](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#createProvider(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)`)` Creates a [ScrollFeedbackProvider](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#) implementation for this device. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollLimit](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#onScrollLimit(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`inputDeviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isStart:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Call this when the view has reached the scroll limit. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollProgress](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#onScrollProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`inputDeviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaInPixels:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call this when the view has scrolled. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSnapToItem](https://developer.android.com/reference/kotlin/android/view/ScrollFeedbackProvider#onSnapToItem(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`inputDeviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call this when the view has snapped to an item. |
 
 ## Public methods
@@ -81,6 +83,7 @@ Note that a feedback may not be provided on every call to this method. This inte
 | `inputDeviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ID of the [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice) that caused scrolling to hit limit. |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input source of the motion that caused scrolling to hit the limit. |
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the axis of`event`that caused scrolling to hit the limit. |
+| --- | --- |
 | `isStart` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if scrolling hit limit at the start of the scrolling list, and`false`if the scrolling hit limit at the end of the scrolling list.*start* and*end*in this context are not geometrical references. Instead, they refer to the start and end of a scrolling experience. As such, "start" for some views may be at the bottom of a scrolling list, while it may be at the top of scrolling list for others.** |
 
 ### onScrollProgress
@@ -107,6 +110,7 @@ Note that a feedback may not be provided on every call to this method. This inte
 | `inputDeviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ID of the [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice) that caused scroll progress. |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input source of the motion that caused scroll progress. |
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the axis of`event`that caused scroll progress. |
+| --- | --- |
 | `deltaInPixels` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of scroll progress, in pixels. |
 
 ### onSnapToItem
@@ -128,3 +132,4 @@ Call this when the view has snapped to an item.
 | `inputDeviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ID of the [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice) that generated the motion triggering the snap. |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input source of the motion causing the snap. |
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the axis of`event`that caused the item to snap. |
+| --- | --- |

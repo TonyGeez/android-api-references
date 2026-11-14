@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # InputBinding
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InputBinding "View this page in Java") 
+| --- | --- |
 
 ```
 class InputBinding : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InputBinding](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#) |
 
 Information given to an [InputMethod](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod) about a client connecting to it.
@@ -31,9 +33,11 @@ Information given to an [InputMethod](https://developer.android.com/reference/ko
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#describeContents())`()` <br /> |
 | [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection)! | [getConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#getConnection())`()` Return the connection for interacting back with the application. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)! | [getConnectionToken](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#getConnectionToken())`()` Return the token for the connection back to the application. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPid](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#getPid())`()` Return the process id where this binding came from. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUid](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#getUid())`()` Return the user id of the client associated with this binding. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 
 | Properties ||
@@ -61,6 +65,7 @@ Constructor.
 | `conn` | [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection)!:The interface for communicating back with the application. |
 | `connToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)!:A remoteable token for communicating across processes. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The user id of the client of this binding. |
+| --- | --- |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The process id of where the binding came from. |
 
 ### InputBinding

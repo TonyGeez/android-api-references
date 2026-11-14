@@ -30,12 +30,15 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/ListIterator#add(java.util.ListIterator.E))`(`e:` `E`)` Inserts the specified element into the list (optional operation). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/java/util/ListIterator#hasNext())`()` Returns`true`if this list iterator has more elements when traversing the list in the forward direction. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPrevious](https://developer.android.com/reference/kotlin/java/util/ListIterator#hasPrevious())`()` Returns`true`if this list iterator has more elements when traversing the list in the reverse direction. |
+| --- | --- |
 | abstractE | [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next())`()` Returns the next element in the list and advances the cursor position. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextIndex](https://developer.android.com/reference/kotlin/java/util/ListIterator#nextIndex())`()` Returns the index of the element that would be returned by a subsequent call to [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next()). |
 | abstractE | [previous](https://developer.android.com/reference/kotlin/java/util/ListIterator#previous())`()` Returns the previous element in the list and moves the cursor position backwards. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousIndex](https://developer.android.com/reference/kotlin/java/util/ListIterator#previousIndex())`()` Returns the index of the element that would be returned by a subsequent call to [previous](https://developer.android.com/reference/kotlin/java/util/ListIterator#previous()). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/ListIterator#remove())`()` Removes from the list the last element that was returned by [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next())or [previous](https://developer.android.com/reference/kotlin/java/util/ListIterator#previous())(optional operation). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/ListIterator#set(java.util.ListIterator.E))`(`e:` `E`)` Replaces the last element returned by [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next())or [previous](https://developer.android.com/reference/kotlin/java/util/ListIterator#previous())with the specified element (optional operation). |
+| --- | --- |
 
 ## Public methods
 
@@ -58,6 +61,7 @@ Inserts the specified element into the list (optional operation). The element is
 | `java.lang.UnsupportedOperationException` | if the`add`method is not supported by this list iterator |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some aspect of this element prevents it from being added to this list |
+| --- | --- |
 
 ### hasNext
 
@@ -185,4 +189,5 @@ Replaces the last element returned by [next](https://developer.android.com/refer
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this list iterator |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some aspect of the specified element prevents it from being added to this list |
+| --- | --- |
 | `java.lang.IllegalStateException` | if neither`next`nor`previous`have been called, or`remove`or`add`have been called after the last call to`next`or`previous` |

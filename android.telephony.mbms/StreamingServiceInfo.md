@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # StreamingServiceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/StreamingServiceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class StreamingServiceInfo : ServiceInfo, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.mbms.ServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo) ||
 | | ↳ | [android.telephony.mbms.StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo#) |
 

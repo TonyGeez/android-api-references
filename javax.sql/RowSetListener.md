@@ -19,6 +19,7 @@ An interface that must be implemented by a component that wants to be notified w
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorMoved](https://developer.android.com/reference/kotlin/javax/sql/RowSetListener#cursorMoved(javax.sql.RowSetEvent))`(`event:` ` [RowSetEvent](https://developer.android.com/reference/kotlin/javax/sql/RowSetEvent)!`)` Notifies registered listeners that a`RowSet`object's cursor has moved. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rowChanged](https://developer.android.com/reference/kotlin/javax/sql/RowSetListener#rowChanged(javax.sql.RowSetEvent))`(`event:` ` [RowSetEvent](https://developer.android.com/reference/kotlin/javax/sql/RowSetEvent)!`)` Notifies registered listeners that a`RowSet`object has had a change in one of its rows. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rowSetChanged](https://developer.android.com/reference/kotlin/javax/sql/RowSetListener#rowSetChanged(javax.sql.RowSetEvent))`(`event:` ` [RowSetEvent](https://developer.android.com/reference/kotlin/javax/sql/RowSetEvent)!`)` Notifies registered listeners that a`RowSet`object in the given`RowSetEvent`object has changed its entire contents. |
+| --- | --- |
 
 ## Public methods
 

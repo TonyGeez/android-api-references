@@ -7,6 +7,7 @@ class SettingsPreferenceMetadata : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#) |
 
 Data object representation of a Settings Preference definition and state.
@@ -22,6 +23,7 @@ Data object representation of a Settings Preference definition and state.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#DEEPLINK_ONLY:kotlin.Int` Indicates preference is write-sensitive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#EXPECT_POST_CONFIRMATION:kotlin.Int` Indicates preference is mildly write-sensitive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#NO_DIRECT_ACCESS:kotlin.Int` Indicates preference is highly write-sensitivity and carries significant user-risk. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#NO_SENSITIVITY:kotlin.Int` Indicates preference is not write-sensitive. |
 
 | Inherited constants ||
@@ -33,18 +35,23 @@ Data object representation of a Settings Preference definition and state.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getExtras()()` Returns any additional fields specific to this preference. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getKey()()` Returns the key of Preference. |
+| --- | --- |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getLaunchIntent()()` Returns the intent to launch the host app page for this Preference. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getReadPermissions()()` Returns the permissions required to read this Preference's value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getScreenKey()()` Returns the screen key of Preference. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getSummary()()` Returns the summary of Preference. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getTitle()()` Returns the title of Preference. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getWritePermissions()()` Returns the permissions required to write this Preference's value. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getWriteSensitivity()()` Returns the write-level sensitivity of Preference. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isAvailable()()` Returns whether Preference is available. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isEnabled()()` Returns whether Preference is enabled. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isRestricted()()` Returns whether Preference is restricted. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isWritable()()` Returns whether Preference is writable. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

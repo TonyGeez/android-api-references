@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Int2
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Int2 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Int2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Int2](https://developer.android.com/reference/kotlin/android/renderscript/Int2#) |
 
 | **This class was deprecated in API level 31.**

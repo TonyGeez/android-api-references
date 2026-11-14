@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # BitmapDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class BitmapDrawable : Drawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.BitmapDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#) |
 
@@ -27,9 +29,11 @@ Also see the [android.graphics.Bitmap](https://developer.android.com/reference/k
 | [`android:antialias`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Enables or disables antialiasing. |
 | [`android:dither`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Enables or disables dithering of the bitmap if the bitmap does not have the same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with an RGB 565 screen). |
 | [`android:filter`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Enables or disables bitmap filtering. |
+| --- | --- |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Defines the gravity for the bitmap. |
 | [`android:mipMap`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Enables or disables the mipmap hint. |
 | [`android:src`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Identifier of the bitmap file. |
+| --- | --- |
 | [`android:tileMode`](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#attr_BitmapDrawable) | Defines the tile mode. |
 
 | Public constructors ||
@@ -48,45 +52,59 @@ Also see the [android.graphics.Bitmap](https://developer.android.com/reference/k
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canApplyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#canApplyTheme())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getAlpha())`()` <br /> |
 | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [getBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getBitmap())`()` Returns the bitmap used by this drawable to render. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getChangingConfigurations())`()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
+| --- | --- |
 | open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)? | [getColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getColorFilter())`()` <br /> |
 | [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState)? | [getConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getConstantState())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGravity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getGravity())`()` Get the gravity used to position/stretch the bitmap within its bounds. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getIntrinsicHeight())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getIntrinsicWidth())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getOpacity())`()` <br /> |
+| --- | --- |
 | open [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getOpticalInsets](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getOpticalInsets())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` Called to get the drawable to populate the Outline that defines its drawing area. |
 | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)! | [getPaint](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getPaint())`()` Returns the paint used to render this drawable. |
+| --- | --- |
 | open [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)! | [getTileModeX](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getTileModeX())`()` Indicates the repeat behavior of this drawable on the X axis. |
 | open [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)! | [getTileModeY](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#getTileModeY())`()` Indicates the repeat behavior of this drawable on the Y axis. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAntiAlias](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#hasAntiAlias())`()` Indicates whether anti-aliasing is enabled for this drawable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#hasFocusStateSpecified())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMipMap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#hasMipMap())`()` Indicates whether the mipmap hint is enabled on this drawable's bitmap. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutoMirrored](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#isAutoMirrored())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFilterBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#isFilterBitmap())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#isStateful())`()` <br /> |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#mutate())`()` A mutable BitmapDrawable still shares its Bitmap with any other Drawable that comes from the same resource. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAntiAlias](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setAntiAlias(kotlin.Boolean))`(`aa:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables anti-aliasing for this drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoMirrored](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setAutoMirrored(kotlin.Boolean))`(`mirrored:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setBitmap(android.graphics.Bitmap))`(`bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)?`)` Switch to a new Bitmap object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDither](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setDither(kotlin.Boolean))`(`dither:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilterBitmap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setFilterBitmap(kotlin.Boolean))`(`filter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGravity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setGravity(kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the gravity used to position/stretch the bitmap within its bounds. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMipMap](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setMipMap(kotlin.Boolean))`(`mipMap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables the mipmap hint for this drawable's bitmap. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetDensity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTargetDensity(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`)` Set the density scale at which this drawable will be rendered. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetDensity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTargetDensity(android.util.DisplayMetrics))`(`metrics:` ` [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)!`)` Set the density scale at which this drawable will be rendered. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetDensity](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTargetDensity(kotlin.Int))`(`density:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the density at which this drawable will be rendered. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTileModeX](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTileModeX(android.graphics.Shader.TileMode))`(`mode:` ` [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)!`)` Sets the repeat behavior of this drawable on the X axis. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTileModeXY](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTileModeXY(android.graphics.Shader.TileMode,%20android.graphics.Shader.TileMode))`(`xmode:` ` [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)!`, `ymode:` ` [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)!`)` Sets the repeat behavior of this drawable on both axis. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTileModeY](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTileModeY(android.graphics.Shader.TileMode))`(`mode:` ` [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode.html#)!`)` Sets the repeat behavior of this drawable on the Y axis. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTintBlendMode(android.graphics.BlendMode))`(`blendMode:` ` [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)!`)` Specifies a tint blending mode for this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable#setTintList(android.content.res.ColorStateList))`(`tint:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?`)` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -134,21 +152,26 @@ android:gravity
 Defines the gravity for the bitmap. The gravity indicates where to position the drawable in its container if the bitmap is smaller than the container.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |-------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -186,6 +209,7 @@ Must be one of the following constant values.
 | clamp | 0 | Replicates the edge color. |
 | disabled | ffffffff | Do not tile the bitmap. This is the default value. |
 | mirror | 2 | Repeats the shader's image horizontally and vertically, alternating mirror images so that adjacent images always seam. |
+| --- | --- | --- |
 | repeat | 1 | Repeats the bitmap in both direction. |
 
 ## Public constructors
@@ -564,6 +588,7 @@ open fun inflate(
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):Resources used to resolve attribute values This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):XML parser from which to inflate this Drawable This value cannot be`null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#):Base set of attribute values This value cannot be`null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?:Theme to apply, may be null |
 
 | Exceptions ||

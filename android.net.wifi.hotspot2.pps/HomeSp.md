@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # HomeSp
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp "View this page in Java") 
+| --- | --- |
 
 ```
 class HomeSp : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.hotspot2.pps.HomeSp](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#) |
 
 Class representing HomeSP subtree in PerProviderSubscription (PPS) Management Object (MO) tree. For more info, refer to Hotspot 2.0 PPS MO defined in section 9.1 of the Hotspot 2.0 Release 2 Technical Specification.
@@ -31,18 +33,23 @@ Class representing HomeSP subtree in PerProviderSubscription (PPS) Management Ob
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFqdn](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getFqdn())`()` Get the FQDN (Fully Qualified Domain Name) associated with this home service provider. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFriendlyName](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getFriendlyName())`()` Get the friendly name associated with this home service provider. |
 | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getMatchAllOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getMatchAllOis())`()` Get the list of HomeOIs such that all OIs in the list must match an OI in the Roaming Consortium advertised by a hotspot operator. |
 | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getMatchAnyOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getMatchAnyOis())`()` Get a list of HomeOIs such that any OI in the list matches an OI in the Roaming Consortium advertised by a hotspot operator. |
+| --- | --- |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getOtherHomePartnersList](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getOtherHomePartnersList())`()` Get the list of FQDN (Fully Qualified Domain Name) of other Home partner providers set in the profile. |
 | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [getRoamingConsortiumOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#getRoamingConsortiumOis())`()` Get the Organization Identifiers (OIs) identifying a roaming consortium of which this provider is a member. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFqdn](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setFqdn(kotlin.String))`(`fqdn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the FQDN (Fully Qualified Domain Name) associated with this home service provider. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFriendlyName](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setFriendlyName(kotlin.String))`(`friendlyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the friendly name associated with this home service provider. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMatchAllOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setMatchAllOis(kotlin.LongArray))`(`matchAllOis:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)?`)` Set a list of HomeOIs such that all OIs in the list must match an OI in the Roaming Consortium advertised by a hotspot operator. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMatchAnyOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setMatchAnyOis(kotlin.LongArray))`(`matchAnyOis:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)?`)` Set a list of HomeOIs such that any OI in the list matches an OI in the Roaming Consortium advertised by a hotspot operator. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOtherHomePartnersList](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setOtherHomePartnersList(kotlin.collections.MutableCollection))`(`otherHomePartners:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Set the list of FQDN (Fully Qualified Domain Name) of other Home partner providers. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoamingConsortiumOis](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#setRoamingConsortiumOis(kotlin.LongArray))`(`roamingConsortiumOis:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Set the Organization Identifiers (OIs) identifying a roaming consortium of which this provider is a member. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

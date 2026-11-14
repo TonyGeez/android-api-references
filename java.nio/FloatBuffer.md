@@ -9,6 +9,7 @@ abstract class FloatBuffer : Buffer, Comparable<FloatBuffer!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
 | | ↳ | [java.nio.FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#) |
 
@@ -34,42 +35,55 @@ Methods in this class that do not otherwise have a value to return are specified
 | openstatic [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [allocate](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#allocate(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new float buffer. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#array())`()` Returns the float array that backs this buffer*(optional operation)*. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| --- | --- |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [asReadOnlyBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#asReadOnlyBuffer())`()` Creates a new, read-only float buffer that shares this buffer's content. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [clear](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#clear())`()` Clears this buffer. |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [compact](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#compareTo(java.nio.FloatBuffer))`(`other:` ` [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)!`)` Compares this buffer to another. |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#duplicate())`()` Creates a new float buffer that shares this buffer's content. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [flip](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#flip())`()` Flips this buffer. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get())`()` Relative*get*method. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get(kotlin.FloatArray))`(`dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Relative bulk*get*method. |
+| --- | --- |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int))`(`dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get(kotlin.Int,%20kotlin.FloatArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Absolute bulk*get*method. |
+| --- | --- |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#get(kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible float array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#hashCode())`()` Returns the current hash code of this buffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#isDirect())`()` Tells whether or not this float buffer is direct. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [limit](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [mark](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#mark())`()` Sets this buffer's mark at its position. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#mismatch(java.nio.FloatBuffer))`(`that:` ` [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
 | abstract [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | [order](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#order())`()` Retrieves this buffer's byte order. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [position](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| --- | --- |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.Float))`(`f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Relative*put* method*(optional operation)*. |
 | [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.FloatArray))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| --- | --- |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.Int,%20kotlin.Float))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Absolute*put* method*(optional operation)*. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.Int,%20kotlin.FloatArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| --- | --- |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(kotlin.Int,%20java.nio.FloatBuffer,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | open [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#put(java.nio.FloatBuffer))`(`src:` ` [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)!`)` Relative bulk*put* method*(optional operation)*. |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [reset](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| --- | --- |
 | open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#rewind())`()` Rewinds this buffer. |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#slice())`()` Creates a new float buffer whose content is a shared subsequence of this buffer's content. |
 | abstract [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new float buffer whose content is a shared subsequence of this buffer's content. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#toString())`()` Returns a string summarizing the state of this buffer. |
 | openstatic [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#wrap(kotlin.FloatArray))`(`array:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Wraps a float array into a buffer. |
 | openstatic [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#wrap(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a float array into a buffer. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -272,6 +286,7 @@ Two float buffers are equal if, and only if,
 1. They have the same element type,
 2. They have the same number of remaining elements, and
 3. The two sequences of remaining elements, considered independently of their starting positions, are pointwise equal. This method considers two float elements`a`and`b`to be equal if`(a == b) || (Float.isNaN(a) && Float.isNaN(b))`. The values`-0.0`and`+0.0`are considered to be equal, unlike [Float.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Float.html#equals(kotlin.Any)).
+| --- | --- | --- |
 
 A float buffer is not equal to any other type of object.
 
@@ -387,6 +402,7 @@ except that it first checks that there are sufficient floats in this buffer and 
 | `dst` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The array into which floats are to be written |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first float to be written; must be non-negative and no larger than`dst.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of floats to be written to the given array; must be non-negative and no larger than`dst.length - offset` |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
@@ -481,6 +497,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer from which the first float will be read; must be non-negative and less than`limit()` |
 | `dst` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The destination array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first float to be written; must be non-negative and less than`dst.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of floats to be written to the given array; must be non-negative and no larger than the smaller of`limit() - index`and`dst.length - offset` |
 
 | Return ||
@@ -719,6 +736,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `src` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The array from which floats are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first float to be read; must be non-negative and no larger than`src.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of floats to be read from the given array; must be non-negative and no larger than`src.length - offset` |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
@@ -729,6 +747,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### put
 
@@ -822,6 +841,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first float will be written; must be non-negative and less than`limit()` |
 | `src` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The array from which floats are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the array of the first float to be read; must be non-negative and less than`src.length` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of floats to be read from the given array; must be non-negative and no larger than the smaller of`limit() - index`and`src.length - offset` |
 
 | Return ||
@@ -864,6 +884,7 @@ except that it first checks the consistency of the supplied parameters and it is
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first float will be written; must be non-negative and less than`limit()` |
 | `src` | [FloatBuffer](https://developer.android.com/reference/kotlin/java/nio/FloatBuffer#)!:The buffer from which floats are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first float to be read; must be non-negative and less than`src.limit()` |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of floats to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
@@ -910,6 +931,7 @@ except that it first checks that there is sufficient space in this buffer and it
 | `java.nio.BufferOverflowException` | If there is insufficient space in this buffer for the remaining floats in the source buffer |
 | `java.lang.IllegalArgumentException` | If the source buffer is this buffer |
 | `java.nio.ReadOnlyBufferException` | If this buffer is read-only |
+| --- | --- |
 
 ### reset
 
@@ -1056,6 +1078,7 @@ The new buffer will be backed by the given float array; that is, modifications t
 | `array` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The array that will back the new buffer |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset of the subarray to be used; must be non-negative and no larger than`array.length`. The new buffer's position will be set to this value. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the subarray to be used; must be non-negative and no larger than`array.length - offset`. The new buffer's limit will be set to`offset + length`. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|

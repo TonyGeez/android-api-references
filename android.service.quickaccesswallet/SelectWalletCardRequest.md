@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SelectWalletCardRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/SelectWalletCardRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class SelectWalletCardRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.SelectWalletCardRequest](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest#) |
 
 Represents a request to a [QuickAccessWalletService](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService) to select a particular [walletCard](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard). Card selection events are transmitted to the WalletService so that the selected card may be used by the NFC payment service.
@@ -30,6 +32,7 @@ Represents a request to a [QuickAccessWalletService](https://developer.android.c
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCardId](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest#getCardId())`()` The [cardId](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardId())of the wallet card that is currently selected. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|

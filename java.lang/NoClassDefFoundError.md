@@ -9,9 +9,11 @@ open class NoClassDefFoundError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.NoClassDefFoundError](https://developer.android.com/reference/kotlin/java/lang/NoClassDefFoundError#) |
 
 Thrown if the Java Virtual Machine or a`ClassLoader`instance tries to load in the definition of a class (as part of a normal method call or as part of creating a new instance using the`new`expression) and no definition of the class could be found.

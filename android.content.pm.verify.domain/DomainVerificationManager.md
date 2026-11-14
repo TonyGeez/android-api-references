@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DomainVerificationManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationManager "View this page in Java") 
+| --- | --- |
 
 ```
 class DomainVerificationManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.verify.domain.DomainVerificationManager](https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager#) |
 
 System service to access domain verification APIs. Applications should use [getDomainVerificationUserState(java.lang.String)](https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager#getDomainVerificationUserState(kotlin.String))if necessary to check if/how they are verified for a domain, which is required starting from platform [android.os.Build.VERSION_CODES#S](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int) in order to open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) s which declare [Intent.CATEGORY_BROWSABLE](https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_BROWSABLE:kotlin.String) or no category and also match against [Intent.CATEGORY_DEFAULT](https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String) [android.content.IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#) s, either through an explicit declaration of [Intent.CATEGORY_DEFAULT](https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String) or through the use of [android.content.pm.PackageManager#MATCH_DEFAULT_ONLY](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int), which is usually added for the caller when using [Context.startActivity(Intent)](https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent))and similar. 

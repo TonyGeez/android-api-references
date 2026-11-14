@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Metadata
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/Metadata "View this page in Java") 
+| --- | --- |
 
 ```
 class Metadata
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.Metadata](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#) |
 
 Set of shared metadata fields for [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)
@@ -26,6 +28,7 @@ Set of shared metadata fields for [Record](https://developer.android.com/referen
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_METHOD_ACTIVELY_RECORDED](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#RECORDING_METHOD_ACTIVELY_RECORDED:kotlin.Int) For actively recorded data by the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_METHOD_AUTOMATICALLY_RECORDED](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#RECORDING_METHOD_AUTOMATICALLY_RECORDED:kotlin.Int) For passively recorded data by the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_METHOD_MANUAL_ENTRY](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#RECORDING_METHOD_MANUAL_ENTRY:kotlin.Int) For manually entered data by the user. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_METHOD_UNKNOWN](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#RECORDING_METHOD_UNKNOWN:kotlin.Int) Unknown recording method. |
 
 | Public methods ||
@@ -33,12 +36,15 @@ Set of shared metadata fields for [Record](https://developer.android.com/referen
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getClientRecordId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getClientRecordId())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getClientRecordVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getClientRecordVersion())`()` <br /> |
+| --- | --- |
 | [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) | [getDataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getDataOrigin())`()` <br /> |
 | [Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device) | [getDevice](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getDevice())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getId())`()` <br /> |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getLastModifiedTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getLastModifiedTime())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRecordingMethod](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#getRecordingMethod())`()` Returns recording method which indicates how data was recorded for the [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 
 ## Constants
 

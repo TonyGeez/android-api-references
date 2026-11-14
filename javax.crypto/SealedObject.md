@@ -9,6 +9,7 @@ open class SealedObject : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#) |
 
 This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.
@@ -45,6 +46,7 @@ The original object that was sealed can be recovered in two different ways:
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getAlgorithm())`()` Returns the algorithm that was used to seal this object. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Retrieves the original (encapsulated) object. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(java.security.Key,%20kotlin.String))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the original (encapsulated) object. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(javax.crypto.Cipher))`(`c:` ` [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!`)` Retrieves the original (encapsulated) object. |
 
 | Properties ||
@@ -79,6 +81,7 @@ Any algorithm parameters that may be used in the encryption operation are stored
 | `java.lang.NullPointerException` | if the given cipher is null. |
 | `java.io.IOException` | if an error occurs during serialization |
 | `javax.crypto.IllegalBlockSizeException` | if the given cipher is a block cipher, no padding has been requested, and the total input length (i.e., the length of the serialized object contents) is not a multiple of the cipher's block size |
+| --- | --- |
 
 ## Protected constructors
 
@@ -143,6 +146,7 @@ The encapsulated object is unsealed and de-serialized, before it is returned.
 | `java.io.IOException` | if an error occurs during de-serialiazation. |
 | `java.lang.ClassNotFoundException` | if an error occurs during de-serialiazation. |
 | `java.security.NoSuchAlgorithmException` | if the algorithm to unseal the object is not available. |
+| --- | --- |
 | `java.security.InvalidKeyException` | if the given key cannot be used to unseal the object (e.g., it has the wrong algorithm). |
 | `java.lang.NullPointerException` | if`key`is null. |
 
@@ -177,9 +181,11 @@ The encapsulated object is unsealed and de-serialized, before it is returned.
 | `java.lang.IllegalArgumentException` | if the given provider is null or empty. |
 | `java.io.IOException` | if an error occurs during de-serialiazation. |
 | `java.lang.ClassNotFoundException` | if an error occurs during de-serialiazation. |
+| --- | --- |
 | `java.security.NoSuchAlgorithmException` | if the algorithm to unseal the object is not available. |
 | `java.security.NoSuchProviderException` | if the given provider is not configured. |
 | `java.security.InvalidKeyException` | if the given key cannot be used to unseal the object (e.g., it has the wrong algorithm). |
+| --- | --- |
 | `java.lang.NullPointerException` | if`key`is null. |
 
 ### getObject
@@ -207,6 +213,7 @@ The encapsulated object is unsealed (using the given Cipher, assuming that the C
 | `java.lang.NullPointerException` | if the given cipher is null. |
 | `java.io.IOException` | if an error occurs during de-serialiazation |
 | `java.lang.ClassNotFoundException` | if an error occurs during de-serialiazation |
+| --- | --- |
 | `javax.crypto.IllegalBlockSizeException` | if the given cipher is a block cipher, no padding has been requested, and the total input length is not a multiple of the cipher's block size |
 | `javax.crypto.BadPaddingException` | if the given cipher has been initialized for decryption, and padding has been specified, but the input data does not have proper expected padding bytes |
 

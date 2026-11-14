@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # ArgbEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/ArgbEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class ArgbEvaluator : TypeEvaluator<Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.ArgbEvaluator](https://developer.android.com/reference/kotlin/android/animation/ArgbEvaluator#) |
 
 This evaluator can be used to perform type interpolation between integer values that represent ARGB colors.
@@ -54,6 +56,7 @@ This function returns the calculated in-between value for a color given integers
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:A 32-bit int value representing colors in the separate bytes of the parameter |
 | `endValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:A 32-bit int value representing colors in the separate bytes of the parameter |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

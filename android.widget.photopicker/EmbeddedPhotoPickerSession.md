@@ -6,6 +6,7 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 # EmbeddedPhotoPickerSession
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/photopicker/EmbeddedPhotoPickerSession "View this page in Java") 
+| --- | --- |
 
 ```
 interface EmbeddedPhotoPickerSession
@@ -26,9 +27,11 @@ When a session is no longer being used, it should be closed by callers to help s
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#close())`()` Close the session, i. |
 | abstract [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#) | [getSurfacePackage](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#getSurfacePackage())`()` Returns the [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#) that contains view representing embedded picker. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyConfigurationChanged](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#notifyConfigurationChanged(android.content.res.Configuration))`(`configuration:` ` [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)`)` Notifies photopicker that host side configuration has changed. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyPhotoPickerExpanded](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#notifyPhotoPickerExpanded(kotlin.Boolean))`(`isExpanded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that user switched photopicker between expanded/collapsed state. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyResized](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#notifyResized(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify that caller's presentation area has changed and photopicker's dimensions should change accordingly. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyVisibilityChanged](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#notifyVisibilityChanged(kotlin.Boolean))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that embedded photopicker view is visible or not to the user. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestRevokeUriPermission](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession#requestRevokeUriPermission(kotlin.collections.MutableList))`(`uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!>`)` Notify that the user deselected some items. |
 
 ## Public methods

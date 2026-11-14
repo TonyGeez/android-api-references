@@ -3,12 +3,14 @@
 # DownloadableSubscription
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription "View this page in Java") 
+| --- | --- |
 
 ```
 class DownloadableSubscription : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.euicc.DownloadableSubscription](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#) |
 
 Information about a subscription which is downloadable to an eUICC using [EuiccManager.downloadSubscription(DownloadableSubscription, boolean, PendingIntent)](https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20kotlin.Boolean,%20android.app.PendingIntent))
@@ -28,6 +30,7 @@ Information about a subscription which is downloadable to an eUICC using [EuiccM
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#describeContents())`()` <br /> |
 | static [DownloadableSubscription](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#)! | [forActivationCode](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#forActivationCode(kotlin.String))`(`encodedActivationCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a DownloadableSubscription for the given activation code. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getConfirmationCode](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#getConfirmationCode())`()` Returns the confirmation code. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedActivationCode](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#getEncodedActivationCode())`()` Gets the activation code. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

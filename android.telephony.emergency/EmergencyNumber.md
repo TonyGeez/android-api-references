@@ -7,6 +7,7 @@ class EmergencyNumber : Comparable<EmergencyNumber!>, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.emergency.EmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#) |
 
 A parcelable class that wraps and retrieves the information of number, service category(s) and country code for a specific emergency number.
@@ -18,18 +19,23 @@ A parcelable class that wraps and retrieves the information of number, service c
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_CALL_ROUTING_EMERGENCY:kotlin.Int` Indicates the radio or IMS implementation must handle the call through emergency routing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_CALL_ROUTING_NORMAL:kotlin.Int` Indicates the radio or IMS implementation must handle the call through normal call routing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_CALL_ROUTING_UNKNOWN:kotlin.Int` Indicated the framework does not know whether an emergency call should be placed using emergency or normal call routing. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DATABASE:kotlin.Int` Bit-field which indicates the number is from the platform-maintained database. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DEFAULT:kotlin.Int` Bit-field which indicates the number is available as default. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_MODEM_CONFIG:kotlin.Int` Bit-field which indicates the number is from the modem config. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_NETWORK_SIGNALING:kotlin.Int` Bit-field which indicates the number is from the network signaling. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_SIM:kotlin.Int` Bit-field which indicates the number is from the sim. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_AIEC:kotlin.Int` Bit-field that indicates Emergency Service Category for Automatically Initiated eCall (AIeC) Reference: 3gpp 22. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_AMBULANCE:kotlin.Int` Bit-field that indicates Emergency Service Category for Ambulance. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_FIRE_BRIGADE:kotlin.Int` Bit-field that indicates Emergency Service Category for Fire Brigade. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_MARINE_GUARD:kotlin.Int` Bit-field that indicates Emergency Service Category for Marine Guard. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_MIEC:kotlin.Int` Bit-field that indicates Emergency Service Category for Manually Initiated eCall (MIeC) Reference: 3gpp 22. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_MOUNTAIN_RESCUE:kotlin.Int` Bit-field that indicates Emergency Service Category for Mountain Rescue. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_POLICE:kotlin.Int` Bit-field that indicates Emergency Service Category for Police. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_SERVICE_CATEGORY_UNSPECIFIED:kotlin.Int` Emergency Service Category UNSPECIFIED (General emergency call, all categories) bit-field indicates that no specific services are associated with this emergency number; if the emergency number is specified, it has one or more defined emergency service categories. |
 
 | Inherited constants ||
@@ -41,18 +47,23 @@ A parcelable class that wraps and retrieves the information of number, service c
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#compareTo(android.telephony.emergency.EmergencyNumber)(other: https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#)` Compare the display priority for this emergency number and the supplied emergency number. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getCountryIso()()` Get the country code string (lowercase character) in ISO 3166 format of the emergency number. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getEmergencyCallRouting()()` Returns the emergency call routing information. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getEmergencyNumberSources()()` Returns a list of sources of the emergency number. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getEmergencyServiceCategories()()` Returns the emergency service categories of the emergency number. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getEmergencyUrns()()` Returns the list of emergency Uniform Resources Names (URN) of the emergency number. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getMnc()()` Get the Mobile Network Code of the emergency number. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#getNumber()()` Get the dialing number of the emergency number. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#isFromSources(kotlin.Int)(sources: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the emergency number is from the specified emergency number source(s). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#isInEmergencyServiceCategories(kotlin.Int)(categories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the emergency number is in the supplied emergency service category(s). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

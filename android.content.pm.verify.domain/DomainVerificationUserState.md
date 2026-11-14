@@ -7,6 +7,7 @@ class DomainVerificationUserState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.verify.domain.DomainVerificationUserState](https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#) |
 
 Contains the user selection state for a package. This means all web HTTP(S) domains declared by a package in its manifest, whether or not they were marked for auto verification.
@@ -24,6 +25,7 @@ Assuming the toggle is enabled, the user can also select additional unverified d
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#DOMAIN_STATE_NONE:kotlin.Int` The domain is unverified and unselected, and the application is unable to open web links that resolve to the domain. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#DOMAIN_STATE_SELECTED:kotlin.Int` The domain has been selected by the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#DOMAIN_STATE_VERIFIED:kotlin.Int` The domain has been previously verified by the domain verification agent. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
@@ -46,12 +48,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getHostToStateMap()()` Mapping of domain host to state, as defined by android. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getPackageName()()` The package name that this data corresponds to. |
 | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getUser()()` The user that this data corresponds to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#isLinkHandlingAllowed()()` Whether or not this package is allowed to open links. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

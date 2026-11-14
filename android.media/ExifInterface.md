@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # ExifInterface
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/ExifInterface "View this page in Java") 
+| --- | --- |
 
 ```
 open class ExifInterface
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.ExifInterface](https://developer.android.com/reference/kotlin/android/media/ExifInterface#) |
 
 This is a class for reading and writing Exif tags in various image file formats.
@@ -32,159 +34,211 @@ Note: JPEG and HEIF files may contain XMP data either inside the Exif data chunk
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_HORIZONTAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_FLIP_HORIZONTAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_VERTICAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_FLIP_VERTICAL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_NORMAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_NORMAL:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_180](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_ROTATE_180:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_270](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_ROTATE_270:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_90](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_ROTATE_90:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSPOSE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_TRANSPOSE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSVERSE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_TRANSVERSE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_UNDEFINED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#ORIENTATION_UNDEFINED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_EXIF_DATA_ONLY](https://developer.android.com/reference/kotlin/android/media/ExifInterface#STREAM_TYPE_EXIF_DATA_ONLY:kotlin.Int) Constant used to indicate that the input stream contains only Exif data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_FULL_IMAGE_DATA](https://developer.android.com/reference/kotlin/android/media/ExifInterface#STREAM_TYPE_FULL_IMAGE_DATA:kotlin.Int) Constant used to indicate that the input stream contains the full image data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_APERTURE:kotlin.String) Type is double. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE_VALUE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_APERTURE_VALUE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ARTIST](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ARTIST:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BITS_PER_SAMPLE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_BITS_PER_SAMPLE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BRIGHTNESS_VALUE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_BRIGHTNESS_VALUE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CFA_PATTERN](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_CFA_PATTERN:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COLOR_SPACE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_COLOR_SPACE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPONENTS_CONFIGURATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_COMPONENTS_CONFIGURATION:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSED_BITS_PER_PIXEL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_COMPRESSED_BITS_PER_PIXEL:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_COMPRESSION:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CONTRAST](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_CONTRAST:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COPYRIGHT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_COPYRIGHT:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CUSTOM_RENDERED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_CUSTOM_RENDERED:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_DIGITIZED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME_DIGITIZED:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_ORIGINAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME_ORIGINAL:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEFAULT_CROP_SIZE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DEFAULT_CROP_SIZE:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEVICE_SETTING_DESCRIPTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DEVICE_SETTING_DESCRIPTION:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DIGITAL_ZOOM_RATIO](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DIGITAL_ZOOM_RATIO:kotlin.String) Type is double. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DNG_VERSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DNG_VERSION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXIF_VERSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXIF_VERSION:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_BIAS_VALUE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXPOSURE_BIAS_VALUE:kotlin.String) Type is double. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_INDEX](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXPOSURE_INDEX:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_MODE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXPOSURE_MODE:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_PROGRAM](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXPOSURE_PROGRAM:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_TIME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_EXPOSURE_TIME:kotlin.String) Type is double. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FILE_SOURCE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FILE_SOURCE:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FLASH:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASHPIX_VERSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FLASHPIX_VERSION:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH_ENERGY](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FLASH_ENERGY:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FOCAL_LENGTH:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH_IN_35MM_FILM](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FOCAL_LENGTH_IN_35MM_FILM:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_RESOLUTION_UNIT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FOCAL_PLANE_RESOLUTION_UNIT:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_X_RESOLUTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FOCAL_PLANE_X_RESOLUTION:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_Y_RESOLUTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_FOCAL_PLANE_Y_RESOLUTION:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_F_NUMBER](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_F_NUMBER:kotlin.String) Type is double. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GAIN_CONTROL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GAIN_CONTROL:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_ALTITUDE:kotlin.String) The altitude (in meters) based on the reference in TAG_GPS_ALTITUDE_REF. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_ALTITUDE_REF:kotlin.String) 0 if the altitude is above sea level. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_AREA_INFORMATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_AREA_INFORMATION:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DATESTAMP](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DATESTAMP:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_BEARING:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_BEARING_REF:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_DISTANCE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_DISTANCE_REF:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_LATITUDE:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_LATITUDE_REF:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_LONGITUDE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DEST_LONGITUDE_REF:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DIFFERENTIAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DIFFERENTIAL:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DOP](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_DOP:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_IMG_DIRECTION:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_IMG_DIRECTION_REF:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_LATITUDE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_LATITUDE_REF:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_LONGITUDE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_LONGITUDE_REF:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MAP_DATUM](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_MAP_DATUM:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MEASURE_MODE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_MEASURE_MODE:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_PROCESSING_METHOD](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_PROCESSING_METHOD:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SATELLITES](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_SATELLITES:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_SPEED:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_SPEED_REF:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_STATUS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_STATUS:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TIMESTAMP](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_TIMESTAMP:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_TRACK:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK_REF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_TRACK_REF:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_VERSION_ID](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_GPS_VERSION_ID:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_DESCRIPTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_IMAGE_DESCRIPTION:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_LENGTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_IMAGE_LENGTH:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_UNIQUE_ID](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_IMAGE_UNIQUE_ID:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_WIDTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_IMAGE_WIDTH:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_INTEROPERABILITY_INDEX](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_INTEROPERABILITY_INDEX:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ISO:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO_SPEED_RATINGS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ISO_SPEED_RATINGS:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_JPEG_INTERCHANGE_FORMAT:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT_LENGTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_JPEG_INTERCHANGE_FORMAT_LENGTH:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_LIGHT_SOURCE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_LIGHT_SOURCE:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_MAKE:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKER_NOTE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_MAKER_NOTE:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAX_APERTURE_VALUE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_MAX_APERTURE_VALUE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_METERING_MODE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_METERING_MODE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MODEL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_MODEL:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_NEW_SUBFILE_TYPE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_NEW_SUBFILE_TYPE:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OECF](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_OECF:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_OFFSET_TIME:kotlin.String) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTime tag. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_DIGITIZED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_OFFSET_TIME_DIGITIZED:kotlin.String) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeDigitized tag. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_ORIGINAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_OFFSET_TIME_ORIGINAL:kotlin.String) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeOriginal tag. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_ASPECT_FRAME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ORF_ASPECT_FRAME:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_LENGTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ORF_PREVIEW_IMAGE_LENGTH:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_START](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ORF_PREVIEW_IMAGE_START:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_THUMBNAIL_IMAGE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ORF_THUMBNAIL_IMAGE:kotlin.String) Type is undefined. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORIENTATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ORIENTATION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PHOTOMETRIC_INTERPRETATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_PHOTOMETRIC_INTERPRETATION:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_X_DIMENSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_PIXEL_X_DIMENSION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_Y_DIMENSION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_PIXEL_Y_DIMENSION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PLANAR_CONFIGURATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_PLANAR_CONFIGURATION:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PRIMARY_CHROMATICITIES](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_PRIMARY_CHROMATICITIES:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_REFERENCE_BLACK_WHITE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_REFERENCE_BLACK_WHITE:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RELATED_SOUND_FILE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RELATED_SOUND_FILE:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RESOLUTION_UNIT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RESOLUTION_UNIT:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ROWS_PER_STRIP](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_ROWS_PER_STRIP:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_ISO](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_ISO:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_JPG_FROM_RAW](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_JPG_FROM_RAW:kotlin.String) Type is undefined. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_BOTTOM_BORDER](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_SENSOR_BOTTOM_BORDER:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_LEFT_BORDER](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_SENSOR_LEFT_BORDER:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_RIGHT_BORDER](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_SENSOR_RIGHT_BORDER:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_TOP_BORDER](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_RW2_SENSOR_TOP_BORDER:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SAMPLES_PER_PIXEL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SAMPLES_PER_PIXEL:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SATURATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SATURATION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_CAPTURE_TYPE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SCENE_CAPTURE_TYPE:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_TYPE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SCENE_TYPE:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SENSING_METHOD](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SENSING_METHOD:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHARPNESS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SHARPNESS:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHUTTER_SPEED_VALUE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SHUTTER_SPEED_VALUE:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SOFTWARE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SOFTWARE:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPATIAL_FREQUENCY_RESPONSE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SPATIAL_FREQUENCY_RESPONSE:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPECTRAL_SENSITIVITY](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SPECTRAL_SENSITIVITY:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_BYTE_COUNTS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_STRIP_BYTE_COUNTS:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_OFFSETS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_STRIP_OFFSETS:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBFILE_TYPE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBFILE_TYPE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_AREA](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBJECT_AREA:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBJECT_DISTANCE:kotlin.String) Type is double. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE_RANGE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBJECT_DISTANCE_RANGE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_LOCATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBJECT_LOCATION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBSEC_TIME:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIG](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBSEC_TIME_DIG:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIGITIZED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBSEC_TIME_DIGITIZED:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIG](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBSEC_TIME_ORIG:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIGINAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_SUBSEC_TIME_ORIGINAL:kotlin.String) Type is String. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_LENGTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_THUMBNAIL_IMAGE_LENGTH:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_WIDTH](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_THUMBNAIL_IMAGE_WIDTH:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_ORIENTATION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_THUMBNAIL_ORIENTATION:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_TRANSFER_FUNCTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_TRANSFER_FUNCTION:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_USER_COMMENT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_USER_COMMENT:kotlin.String) Type is String. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_BALANCE](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_WHITE_BALANCE:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_POINT](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_WHITE_POINT:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_XMP](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_XMP:kotlin.String) Type is byte\[\]. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_X_RESOLUTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_X_RESOLUTION:kotlin.String) Type is rational. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_COEFFICIENTS](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_Y_CB_CR_COEFFICIENTS:kotlin.String) Type is rational. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_POSITIONING](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_Y_CB_CR_POSITIONING:kotlin.String) Type is int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_SUB_SAMPLING](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_Y_CB_CR_SUB_SAMPLING:kotlin.String) Type is int. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_RESOLUTION](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_Y_RESOLUTION:kotlin.String) Type is rational. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_AUTO](https://developer.android.com/reference/kotlin/android/media/ExifInterface#WHITEBALANCE_AUTO:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_MANUAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#WHITEBALANCE_MANUAL:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -199,24 +253,31 @@ Note: JPEG and HEIF files may contain XMP data either inside the Exif data chunk
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAltitude(kotlin.Double))`(`defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Return the altitude in meters. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttribute](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAttribute(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the value of the specified tag or`null`if there is no such tag in the image file. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAttributeBytes](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAttributeBytes(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the raw bytes for the value of the requested tag inside the image file, or`null`if the tag is not contained. |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAttributeDouble](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAttributeDouble(kotlin.String,%20kotlin.Double))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the double value of the tag that is specified as rational or contains a double-formatted value. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeInt](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAttributeInt(kotlin.String,%20kotlin.Int))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the integer value of the specified tag. |
 | open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getAttributeRange](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getAttributeRange(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the offset and length of the requested tag inside the image file, or`null`if the tag is not contained. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTime](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getDateTime())`()` Returns parsed [TAG_DATETIME](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME:kotlin.String) value, or -1 if unavailable or invalid. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeDigitized](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getDateTimeDigitized())`()` Returns parsed [TAG_DATETIME_DIGITIZED](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME_DIGITIZED:kotlin.String) value, or -1 if unavailable or invalid. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeOriginal](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getDateTimeOriginal())`()` Returns parsed [TAG_DATETIME_ORIGINAL](https://developer.android.com/reference/kotlin/android/media/ExifInterface#TAG_DATETIME_ORIGINAL:kotlin.String) value, or -1 if unavailable or invalid. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getGpsDateTime](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getGpsDateTime())`()` Returns number of milliseconds since Jan. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLatLong](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getLatLong(kotlin.FloatArray))`(`output:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Stores the latitude and longitude value in a float array. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnail](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getThumbnail())`()` Returns the JPEG compressed thumbnail inside the image file, or`null`if there is no JPEG compressed thumbnail. |
+| --- | --- |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [getThumbnailBitmap](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getThumbnailBitmap())`()` Creates and returns a Bitmap object of the thumbnail image based on the byte array and the thumbnail compression value, or`null`if the compression type is unsupported. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnailBytes](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getThumbnailBytes())`()` Returns the thumbnail bytes inside the image file, regardless of the compression type of the thumbnail image. |
 | open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getThumbnailRange](https://developer.android.com/reference/kotlin/android/media/ExifInterface#getThumbnailRange())`()` Returns the offset and length of thumbnail inside the image file, or`null`if either there is no thumbnail or the thumbnail bytes are stored non-consecutively. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAttribute](https://developer.android.com/reference/kotlin/android/media/ExifInterface#hasAttribute(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns true if the image file has the given attribute defined. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasThumbnail](https://developer.android.com/reference/kotlin/android/media/ExifInterface#hasThumbnail())`()` Returns true if the image file has a thumbnail. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedMimeType](https://developer.android.com/reference/kotlin/android/media/ExifInterface#isSupportedMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns whether ExifInterface currently supports reading data from the specified mime type or not. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isThumbnailCompressed](https://developer.android.com/reference/kotlin/android/media/ExifInterface#isThumbnailCompressed())`()` Returns true if thumbnail image is JPEG Compressed, or false if either thumbnail image does not exist or thumbnail image is uncompressed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveAttributes](https://developer.android.com/reference/kotlin/android/media/ExifInterface#saveAttributes())`()` Save the tag data into the original image file. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](https://developer.android.com/reference/kotlin/android/media/ExifInterface#setAttribute(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set the value of the specified tag. |
+| --- | --- |
 
 ## Constants
 

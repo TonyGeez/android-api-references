@@ -3,15 +3,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PdfDocument
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/PdfDocument "View this page in Java")
+| --- | --- |
 
 ```
 open class PdfDocument
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.PdfDocument](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#) |
 
 | Known Direct Subclasses [PrintedPdfDocument](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument.html#) |---|---| | [PrintedPdfDocument](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument.html#) | This class is a helper for creating a PDF file for given print attributes. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class enables generating a PDF document from native Android content. You create a new document and then for every page you want to add you start a page, write content to the page, and finish the page. After you are done with all pages, you write the document to an output stream and close the document. After a document is closed you should not use it anymore. Note that pages are created one by one, i.e. you can have only a single page to which you are writing at any given time. This class is not thread safe.
 
@@ -60,6 +63,7 @@ A typical use of the APIs looks like this:
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#close()()` Closes this document. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)(page: https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.Page!)` Finishes a started page. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfDocument.PageInfo](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo)!\>! | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#getPages()()` Gets the pages of the document. |
+| --- | --- |
 | open [PdfDocument.Page](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.Page)! | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#startPage(android.graphics.pdf.PdfDocument.PageInfo)(pageInfo: https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo!)` Starts a page using the provided `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#writeTo(java.io.OutputStream)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Writes the document to an output stream. |
 

@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # UsbConstants
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbConstants "View this page in Java") 
+| --- | --- |
 
 ```
 class UsbConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbConstants](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#) |
 
 Contains constants for the USB protocol. These constants correspond to definitions in linux/usb/ch9.h in the linux kernel.
@@ -22,36 +24,47 @@ Contains constants for the USB protocol. These constants correspond to definitio
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_APP_SPEC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_APP_SPEC:kotlin.Int) Application specific USB class. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_AUDIO](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_AUDIO:kotlin.Int) USB class for audio devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_CDC_DATA](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_CDC_DATA:kotlin.Int) USB class for CDC devices (communications device class). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_COMM](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_COMM:kotlin.Int) USB class for communication devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_CONTENT_SEC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_CONTENT_SEC:kotlin.Int) USB class for content security devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_CSCID](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_CSCID:kotlin.Int) USB class for content smart card devices. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_HID](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_HID:kotlin.Int) USB class for human interface devices (for example, mice and keyboards). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_HUB](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_HUB:kotlin.Int) USB class for USB hubs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_MASS_STORAGE](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_MASS_STORAGE:kotlin.Int) USB class for mass storage devices. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_MISC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_MISC:kotlin.Int) USB class for wireless miscellaneous devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_PER_INTERFACE](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_PER_INTERFACE:kotlin.Int) USB class indicating that the class is determined on a per-interface basis. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_PHYSICA](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_PHYSICA:kotlin.Int) USB class for physical devices. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_PRINTER](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_PRINTER:kotlin.Int) USB class for printers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_STILL_IMAGE](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_STILL_IMAGE:kotlin.Int) USB class for still image devices (digital cameras). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_VENDOR_SPEC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_VENDOR_SPEC:kotlin.Int) Vendor specific USB class. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_VIDEO](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_VIDEO:kotlin.Int) USB class for video devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_CLASS_WIRELESS_CONTROLLER](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_CLASS_WIRELESS_CONTROLLER:kotlin.Int) USB class for wireless controller devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_DIR_IN](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_DIR_IN:kotlin.Int) Used to signify direction of data for a [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) is IN (device to host) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_DIR_OUT](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_DIR_OUT:kotlin.Int) Used to signify direction of data for a [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) is OUT (host to device) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_DIR_MASK](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_DIR_MASK:kotlin.Int) Bitmask used for extracting the [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) direction from its address field. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_NUMBER_MASK](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_NUMBER_MASK:kotlin.Int) Bitmask used for extracting the [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) number its address field. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_XFERTYPE_MASK](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_XFERTYPE_MASK:kotlin.Int) Bitmask used for extracting the [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) type from its address field. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_XFER_BULK](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_XFER_BULK:kotlin.Int) Bulk endpoint type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_XFER_CONTROL](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_XFER_CONTROL:kotlin.Int) Control endpoint type (endpoint zero) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_XFER_INT](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_XFER_INT:kotlin.Int) Interrupt endpoint type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_ENDPOINT_XFER_ISOC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_ENDPOINT_XFER_ISOC:kotlin.Int) Isochronous endpoint type (currently not supported) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_INTERFACE_SUBCLASS_BOOT](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_INTERFACE_SUBCLASS_BOOT:kotlin.Int) Boot subclass for HID devices. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_SUBCLASS_VENDOR_SPEC](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_SUBCLASS_VENDOR_SPEC:kotlin.Int) Vendor specific USB subclass. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_TYPE_CLASS](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_TYPE_CLASS:kotlin.Int) Used to specify that an endpoint zero control request is a class specific request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_TYPE_MASK](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_TYPE_MASK:kotlin.Int) Bitmask used for encoding the request type for a control request on endpoint zero. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_TYPE_RESERVED](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_TYPE_RESERVED:kotlin.Int) Reserved endpoint zero control request type (currently unused). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_TYPE_STANDARD](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_TYPE_STANDARD:kotlin.Int) Used to specify that an endpoint zero control request is a standard request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USB_TYPE_VENDOR](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConstants#USB_TYPE_VENDOR:kotlin.Int) Used to specify that an endpoint zero control request is a vendor specific request. |
+| --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------|---|

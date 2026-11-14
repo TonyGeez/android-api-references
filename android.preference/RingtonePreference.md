@@ -4,12 +4,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # RingtonePreference
 
 Kotlin | [Java](https://developer.android.com/reference/android/preference/RingtonePreference "View this page in Java")
+| --- | --- |
 
 ```
 open class RingtonePreference : Preference, PreferenceManager.OnActivityResultListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) ||
 | | ↳ | [android.preference.RingtonePreference](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#) |
 
@@ -29,6 +31,7 @@ If the user chooses the "Default" item, the saved string will be one of `https:/
 | [`android:ringtoneType`](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#attr_RingtonePreference) | Which ringtone type(s) to show in the picker. |
 | [`android:showDefault`](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#attr_RingtonePreference) | Whether to show an item for a default sound. |
 | [`android:showSilent`](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#attr_RingtonePreference) | Whether to show an item for 'Silent'. |
+| --- | --- |
 
 | Inherited XML attributes ||
 |---|---|
@@ -50,9 +53,11 @@ If the user chooses the "Default" item, the saved string will be one of `https:/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#getRingtoneType()()` Returns the sound type(s) that are shown in the picker. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#getShowDefault()()` Returns whether to a show an item for the default sound/ringtone. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#getShowSilent()()` Returns whether to a show an item for 'Silent'. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onActivityResult(kotlin.Int,%20kotlin.Int,%20android.content.Intent)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resultCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` See Activity's onActivityResult. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#setRingtoneType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the sound type(s) that are shown in the picker. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#setShowDefault(kotlin.Boolean)(showDefault: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether to show an item for the default sound/ringtone. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#setShowSilent(kotlin.Boolean)(showSilent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether to show an item for 'Silent'. |
 
 | Protected methods ||
@@ -60,9 +65,11 @@ If the user chooses the "Default" item, the saved string will be one of `https:/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onAttachedToHierarchy(android.preference.PreferenceManager)(preferenceManager: https://developer.android.com/reference/kotlin/android/preference/PreferenceManager!)` Called when this Preference has been attached to a Preference hierarchy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onClick()()` Processes a click on the preference. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int)(a: https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a Preference is being inflated and the default value attribute needs to be read. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onPrepareRingtonePickerIntent(android.content.Intent)(ringtonePickerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Prepares the intent to launch the ringtone picker. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onRestoreRingtone()()` Called when the chooser is about to be shown and the current ringtone should be marked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onSaveRingtone(android.net.Uri)(ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Called when a ringtone is chosen. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any)(restorePersistedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, defaultValueObj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Implement this to set the initial value of the Preference. |
 
 | Inherited functions ||
@@ -79,12 +86,14 @@ android:ringtoneType
 Which ringtone type(s) to show in the picker.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | alarm | 4 | Alarm sounds. |
 | all | 7 | All available ringtone sounds. |
 | notification | 2 | Notification sounds. |
+| --- | --- | --- |
 | ringtone | 1 | Ringtones. |
 
 ### android:showDefault

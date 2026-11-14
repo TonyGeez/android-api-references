@@ -5,17 +5,21 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AbsSavedState
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/AbsSavedState "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AbsSavedState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.AbsSavedState](https://developer.android.com/reference/kotlin/android/view/AbsSavedState#) |
 
 | Known Direct Subclasses [Preference.BaseSavedState](https://developer.android.com/reference/kotlin/android/preference/Preference.BaseSavedState.html#), [View.BaseSavedState](https://developer.android.com/reference/kotlin/android/view/View.BaseSavedState) |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Preference.BaseSavedState](https://developer.android.com/reference/kotlin/android/preference/Preference.BaseSavedState.html#) | A base class for managing the instance state of a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference.html#). | | [View.BaseSavedState](https://developer.android.com/reference/kotlin/android/view/View.BaseSavedState) | Base class for derived classes that want to save and restore their own state in [android.view.View#onSaveInstanceState()](https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [TextView.SavedState](https://developer.android.com/reference/kotlin/android/widget/TextView.SavedState.html#) |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [TextView.SavedState](https://developer.android.com/reference/kotlin/android/widget/TextView.SavedState.html#) | User interface state that is stored by TextView for implementing [View.onSaveInstanceState](https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) implementation that should be used by inheritance hierarchies to ensure the state of all classes along the chain is saved.
 
@@ -36,6 +40,7 @@ A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcela
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/AbsSavedState#describeContents())`()` <br /> |
 | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [getSuperState](https://developer.android.com/reference/kotlin/android/view/AbsSavedState#getSuperState())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/AbsSavedState#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

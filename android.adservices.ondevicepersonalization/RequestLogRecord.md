@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # RequestLogRecord
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/RequestLogRecord "View this page in Java") 
+| --- | --- |
 
 ```
 class RequestLogRecord : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#) |
 
 Contains data that will be written to the REQUESTS table at the end of a call to [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). A single [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#) is appended to the REQUESTS table if it is present in the output of one of the methods in [IsolatedWorker](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker). The contents of the REQUESTS table can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
@@ -30,9 +32,11 @@ Contains data that will be written to the REQUESTS table at the end of a call to
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)!\> | [getRows](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#getRows())`()` A List of rows, each containing a [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#). |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getTime](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#getTime())`()` Returns the timestamp of this record. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|

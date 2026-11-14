@@ -11,6 +11,7 @@ interface DSAParams
 | [java.security.interfaces.DSAParams](https://developer.android.com/reference/kotlin/java/security/interfaces/DSAParams#) |
 
 | Known Direct Subclasses [DSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec.html#) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [DSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec.html#) | This class specifies the set of parameters used with the DSA algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface to a DSA-specific set of key parameters, which defines a DSA*key family*. DSA (Digital Signature Algorithm) is defined in NIST's FIPS-186.
 
@@ -21,6 +22,7 @@ Interface to a DSA-specific set of key parameters, which defines a DSA*key famil
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/interfaces/DSAParams#getG())`()` Returns the base,`g`. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/interfaces/DSAParams#getP())`()` Returns the prime,`p`. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/interfaces/DSAParams#getQ())`()` Returns the subprime,`q`. |
+| --- | --- |
 
 ## Public methods
 

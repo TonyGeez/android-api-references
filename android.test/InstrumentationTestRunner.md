@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # InstrumentationTestRunner
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/InstrumentationTestRunner "View this page in Java") 
+| --- | --- |
 
 ```
 open class InstrumentationTestRunner : Instrumentation, TestSuiteProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Instrumentation](https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#) ||
 | | ↳ | [android.test.InstrumentationTestRunner](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#) |
 
@@ -116,12 +118,15 @@ in addition to the other arguments.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_KEY_NAME_CLASS](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_KEY_NAME_CLASS:kotlin.String) If included in the status or final bundle sent to an IInstrumentationWatcher, this key identifies the name of the current test class. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_KEY_NAME_TEST](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_KEY_NAME_TEST:kotlin.String) If included in the status or final bundle sent to an IInstrumentationWatcher, this key identifies the name of the current test. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_KEY_NUM_CURRENT](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_KEY_NUM_CURRENT:kotlin.String) If included in the status or final bundle sent to an IInstrumentationWatcher, this key identifies the sequence number of the current test. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_KEY_NUM_TOTAL](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_KEY_NUM_TOTAL:kotlin.String) If included in the status or final bundle sent to an IInstrumentationWatcher, this key identifies the total number of tests that are being run. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_KEY_STACK](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_KEY_STACK:kotlin.String) If included in the status bundle sent to an IInstrumentationWatcher, this key identifies a stack trace describing an error or failure. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_VALUE_ID](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_VALUE_ID:kotlin.String) This value, if stored with key [android.app.Instrumentation#REPORT_KEY_IDENTIFIER](https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#REPORT_KEY_IDENTIFIER:kotlin.String), identifies InstrumentationTestRunner as the source of the report. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPORT_VALUE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_VALUE_RESULT_ERROR:kotlin.Int) The test completed with an error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPORT_VALUE_RESULT_FAILURE](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_VALUE_RESULT_FAILURE:kotlin.Int) The test completed with a failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPORT_VALUE_RESULT_OK](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_VALUE_RESULT_OK:kotlin.Int) The test completed successfully. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPORT_VALUE_RESULT_START](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#REPORT_VALUE_RESULT_START:kotlin.Int) The test is starting. |
 
 | Inherited constants ||
@@ -137,9 +142,11 @@ in addition to the other arguments.
 | openTestSuite! | [getAllTests](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#getAllTests())`()` Override this to define all of the tests to run in your package. |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getArguments](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#getArguments())`()` Get the arguments passed to this instrumentation. |
 | open [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)! | [getLoader](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#getLoader())`()` Override this to provide access to the class loader of your package. |
+| --- | --- |
 | openTestSuite! | [getTestSuite](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#getTestSuite())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreate](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#onCreate(android.os.Bundle))`(`arguments:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner#onStart())`()` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

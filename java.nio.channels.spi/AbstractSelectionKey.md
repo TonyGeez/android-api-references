@@ -7,6 +7,7 @@ abstract class AbstractSelectionKey : SelectionKey
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.channels.SelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/SelectionKey.html#) ||
 | | ↳ | [java.nio.channels.spi.AbstractSelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectionKey#) |
 

@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # IllformedLocaleException
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/IllformedLocaleException "View this page in Java") 
+| --- | --- |
 
 ```
 open class IllformedLocaleException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.icu.util.IllformedLocaleException](https://developer.android.com/reference/kotlin/android/icu/util/IllformedLocaleException#) |
 
 Thrown by methods in [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale) and [ULocale.Builder](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder) to indicate that an argument is not a well-formed BCP 47 tag.

@@ -9,9 +9,11 @@ open class SimpleDateFormat : DateFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format) |||
 | | ↳ | [java.text.DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat) ||
 | | | ↳ | [java.text.SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#) |
+| --- | --- | --- | --- |
 
 is a concrete class for formatting and parsing dates in a locale-sensitive manner. It allows for formatting (date → text), parsing (text → date), and normalization.
 
@@ -24,27 +26,35 @@ Date and time formats are specified by*date and time pattern* strings. Within da
 The following pattern letters are defined (all other characters from`'A'`to`'Z'`and from`'a'`to`'z'`are reserved):
 
 | Letter | Date or Time Component | Presentation | Examples | Supported (API Levels) |
+| --- | --- | --- | --- | --- |
 | `G` | Era designator | [Text](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#text) | `AD` | 1+ |
 | `y` | Year | [Year](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#year) | `1996`;`96` | 1+ |
 | `Y` | Week year | [Year](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#year) | `2009`;`09` | 24+ |
+| --- | --- | --- | --- | --- |
 | `M` | Month in year (context sensitive) | [Month](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#month) | `July`;`Jul`;`07` | 1+ |
 | `L` | Month in year (standalone form) | [Month](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#month) | `July`;`Jul`;`07` | TBD |
 | `w` | Week in year | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `27` | 1+ |
+| --- | --- | --- | --- | --- |
 | `W` | Week in month | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `2` | 1+ |
 | `D` | Day in year | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `189` | 1+ |
 | `d` | Day in month | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `10` | 1+ |
+| --- | --- | --- | --- | --- |
 | `F` | Day of week in month | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `2` | 1+ |
 | `E` | Day name in week | [Text](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#text) | `Tuesday`;`Tue` | 1+ |
 | `u` | Day number of week (1 = Monday, ..., 7 = Sunday) | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `1` | 24+ |
+| --- | --- | --- | --- | --- |
 | `a` | Am/pm marker | [Text](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#text) | `PM` | 1+ |
 | `H` | Hour in day (0-23) | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `0` | 1+ |
 | `k` | Hour in day (1-24) | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `24` | 1+ |
+| --- | --- | --- | --- | --- |
 | `K` | Hour in am/pm (0-11) | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `0` | 1+ |
 | `h` | Hour in am/pm (1-12) | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `12` | 1+ |
 | `m` | Minute in hour | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `30` | 1+ |
+| --- | --- | --- | --- | --- |
 | `s` | Second in minute | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `55` | 1+ |
 | `S` | Millisecond | [Number](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#number) | `978` | 1+ |
 | `z` | Time zone | [General time zone](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#timezone) | `Pacific Standard Time`;`PST`;`GMT-08:00` | 1+ |
+| --- | --- | --- | --- | --- |
 | `Z` | Time zone | [RFC 822 time zone](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#rfc822timezone) | `-0800` | 1+ |
 | `X` | Time zone | [ISO 8601 time zone](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#iso8601timezone) | `-08`;`-0800`;`-08:00` | 24+ |
 |--------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------|------------------------|
@@ -104,15 +114,19 @@ Pattern letters are usually repeated, as their number determines the exact prese
 The following examples show how date and time patterns are interpreted in the U.S. locale. The given date and time are 2001-07-04 12:08:56 local time in the U.S. Pacific Time time zone.
 
 | Date and Time Pattern | Result |
+| --- | --- |
 | `"yyyy.MM.dd G 'at' HH:mm:ss z"` | `2001.07.04 AD at 12:08:56 PDT` |
 | `"EEE, MMM d, ''yy"` | `Wed, Jul 4, '01` |
 | `"h:mm a"` | `12:08 PM` |
+| --- | --- |
 | `"hh 'o''clock' a, zzzz"` | `12 o'clock PM, Pacific Daylight Time` |
 | `"K:mm a, z"` | `0:08 PM, PDT` |
 | `"yyyyy.MMMMM.dd GGG hh:mm aaa"` | `02001.July.04 AD 12:08 PM` |
+| --- | --- |
 | `"EEE, d MMM yyyy HH:mm:ss Z"` | `Wed, 4 Jul 2001 12:08:56 -0700` |
 | `"yyMMddHHmmssZ"` | `010704120856-0700` |
 | `"yyyy-MM-dd'T'HH:mm:ss.SSSZ"` | `2001-07-04T12:08:56.235-0700` |
+| --- | --- |
 | `"yyyy-MM-dd'T'HH:mm:ss.SSSXXX"` | `2001-07-04T12:08:56.235-07:00` |
 | `"YYYY-'W'ww-u"` | `2001-W27-3` |
 |----------------------------------|----------------------------------------|
@@ -139,15 +153,19 @@ Date formats are not synchronized. It is recommended to create separate format i
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyLocalizedPattern](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#applyLocalizedPattern(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Applies the given localized pattern string to this date format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#applyPattern(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Applies the given pattern string to this date format. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#clone())`()` Creates a copy of this`SimpleDateFormat`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the given object with this`SimpleDateFormat`for equality. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#format(java.util.Date,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `pos:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Formats the given`Date`into a date/time string and appends the result to the given`StringBuffer`. |
 | open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | [formatToCharacterIterator](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#formatToCharacterIterator(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an`AttributedCharacterIterator`. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [get2DigitYearStart](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#get2DigitYearStart())`()` Returns the beginning date of the 100-year period 2-digit years are interpreted as being within. |
 | open [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols)! | [getDateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#getDateFormatSymbols())`()` Gets a copy of the date and time format symbols of this date format. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#hashCode())`()` Returns the hash code value for this`SimpleDateFormat`object. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [parse](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#parse(kotlin.String,%20java.text.ParsePosition))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Parses text from a string to produce a`Date`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set2DigitYearStart](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#set2DigitYearStart(java.util.Date))`(`startDate:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Sets the 100-year period 2-digit years will be interpreted as being in to begin on the date the user specifies. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#setDateFormatSymbols(java.text.DateFormatSymbols))`(`newFormatSymbols:` ` [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols)!`)` Sets the date and time format symbols of this date format. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocalizedPattern](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#toLocalizedPattern())`()` Returns a localized pattern string describing this date format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat#toPattern())`()` Returns a pattern string describing this date format. |
 
@@ -337,6 +355,7 @@ Formats the given`Date`into a date/time string and appends the result to the giv
 | `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#):the date-time value to be formatted into a date-time string. |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):where the new date-time text is to be appended. |
 | `fieldPosition` | keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#TIMEZONE_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
+| --- | --- |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#TIMEZONE_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
 
 | Return ||
@@ -446,6 +465,7 @@ This parsing operation uses the [calendar](https://developer.android.com/referen
 | `source` | The date/time string to be parsed |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition):A`ParsePosition`object with index and error index information as described above. |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):A`String`, part of which should be parsed. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------|

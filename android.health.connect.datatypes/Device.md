@@ -8,6 +8,7 @@ class Device
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#) |
 
 A physical device (such as phone, watch, scale, or chest strap) which captured associated health data point.
@@ -25,18 +26,23 @@ Device needs to be populated by users of the API. Metadata fields not provided b
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_CHEST_STRAP:kotlin.Int` Wearable straps worn around the chest, primarily used for highly accurate heart rate monitoring during exercise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_CONSUMER_MEDICAL_DEVICE:kotlin.Int` Over-the-counter Medical devices. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_FITNESS_BAND:kotlin.Int` Wearable devices, typically worn on the wrist or arm, primarily focused on tracking physical activity and basic health metrics. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_FITNESS_EQUIPMENT:kotlin.Int` Tools and accessories designed for use during physical exercise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_FITNESS_MACHINE:kotlin.Int` Stationary or mobile equipment designed for physical exercise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_GLASSES:kotlin.Int` Wearable glasses with integrated technology and computing capabilities. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_HEAD_MOUNTED:kotlin.Int` Devices worn on the head, beyond glasses, designed for specific health or fitness applications, often involving sensing or stimulation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_HEARABLE:kotlin.Int` Electronic devices worn in or around the ears, often with audio capabilities. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_METER:kotlin.Int` Equipment attachments that measure a specific metric. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_PHONE:kotlin.Int` A handheld mobile computing and communication device, equipped with various sensors (e.g., accelerometer, GPS) that can collect health and fitness data, or serve as a primary interface for manual data entry or managing data from connected peripherals. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_PORTABLE_COMPUTER:kotlin.Int` A portable computer usually with GPS and performance tracking capabilities that is either handheld or attached to a device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_RING:kotlin.Int` Wearable devices worn on a finger, typically designed for discreet tracking of sleep, activity, and potentially other physiological data. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_SCALE:kotlin.Int` Devices designed to measure body weight and often other body composition metrics. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_SMART_DISPLAY:kotlin.Int` Stationary devices with a screen and connectivity, often used in homes or gyms to provide guided workouts, track progress, and offer health-related information. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_UNKNOWN:kotlin.Int` A device whose specific type is not identified, not yet supported in the Health Connect list, or where the originating device type could not be determined by the data writer. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#DEVICE_TYPE_WATCH:kotlin.Int` A wearable computing device designed to be worn on the wrist, typically featuring an interactive display and offering a broad range of functionalities including, but not limited to, health and fitness tracking, app integration, and communication. |
 
 | Public methods ||
@@ -44,9 +50,11 @@ Device needs to be populated by users of the API. Metadata fields not provided b
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getDisplayName()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getManufacturer()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getModel()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getType()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getUdi()()` Returns the UDI (Unique Device Identifier), a unique numeric or alphanumeric code assigned to a medical device, of this `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#` instance. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#hashCode()()` Returns a hash code value for the object. |
 
 ## Constants

@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # ServiceResponseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface ServiceResponseListener
@@ -42,6 +43,7 @@ The requested service response is available.
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):protocol type. currently only [WifiP2pServiceInfo.SERVICE_TYPE_VENDOR_SPECIFIC](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int). |
 | `responseData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:service discovery response data based on the requested service protocol type. The format depends on the service type. |
 | `srcDevice` | [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!:source device. |
+| --- | --- |
 
 ### onUsdBasedServiceAvailable
 

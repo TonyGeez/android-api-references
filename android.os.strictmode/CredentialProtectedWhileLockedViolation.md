@@ -5,15 +5,18 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # CredentialProtectedWhileLockedViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/CredentialProtectedWhileLockedViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class CredentialProtectedWhileLockedViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.CredentialProtectedWhileLockedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/CredentialProtectedWhileLockedViolation#) |
+| --- | --- | --- | --- |
 
 Subclass of`Violation`that is used when a process accesses filesystem paths stored in credential protected storage areas while the user is locked.
 

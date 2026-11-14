@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipAudioCall
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipAudioCall "View this page in Java") 
+| --- | --- |
 
 ```
 open class SipAudioCall
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.sip.SipAudioCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#) |
 
 | **This class was deprecated in API level 31.**
@@ -41,21 +43,27 @@ Handles an Internet audio call over SIP. You can instantiate this class with [Si
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [answerCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#answerCall(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Answers a call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#attachCall(android.net.sip.SipSession,%20kotlin.String))`(`session:` ` [SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession)!`, `sessionDescription:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attaches an incoming call to this call object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#close())`()` Closes this object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [continueCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#continueCall(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a call that's on hold. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#endCall())`()` Ends a call. |
 | open [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)! | [getLocalProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#getLocalProfile())`()` Gets the local SIP profile. |
+| --- | --- |
 | open [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)! | [getPeerProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#getPeerProfile())`()` Gets the peer's SIP profile. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#getState())`()` Gets the state of the [SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession) that carries this call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [holdCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#holdCall(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a call on hold. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#isInCall())`()` Checks if the call is established. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMuted](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#isMuted())`()` Checks if the call is muted. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOnHold](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#isOnHold())`()` Checks if the call is on hold. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [makeCall](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#makeCall(android.net.sip.SipProfile,%20android.net.sip.SipSession,%20kotlin.Int))`(`peerProfile:` ` [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)!`, `sipSession:` ` [SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initiates an audio call to the specified profile. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendDtmf](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#sendDtmf(kotlin.Int))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a DTMF code. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendDtmf](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#sendDtmf(kotlin.Int,%20android.os.Message))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `result:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!`)` Sends a DTMF code. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setListener](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#setListener(android.net.sip.SipAudioCall.Listener))`(`listener:` ` [SipAudioCall.Listener](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall.Listener)!`)` Sets the listener to listen to the audio call events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setListener](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#setListener(android.net.sip.SipAudioCall.Listener,%20kotlin.Boolean))`(`listener:` ` [SipAudioCall.Listener](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall.Listener)!`, `callbackImmediately:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the listener to listen to the audio call events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeakerMode](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#setSpeakerMode(kotlin.Boolean))`(`speakerMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Puts the device to speaker mode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startAudio](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#startAudio())`()` Starts the audio for the established call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [toggleMute](https://developer.android.com/reference/kotlin/android/net/sip/SipAudioCall#toggleMute())`()` Toggles mute. |
 
@@ -324,6 +332,7 @@ Initiates an audio call to the specified profile. The attempt will be timed out 
 | `peerProfile` | [SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile)!:the SIP profile to make the call to |
 | `sipSession` | [SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession)!:the [SipSession](https://developer.android.com/reference/kotlin/android/net/sip/SipSession) for carrying out the call |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the timeout value in seconds. Default value (defined by SIP protocol) is used if`timeout`is zero or negative. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------|------------------------------------------------------------------------------------------------------|

@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TransportBlock
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/TransportBlock "View this page in Java")
+| --- | --- |
 
 ```
 class TransportBlock : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.TransportBlock](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#) |
 
 Wrapper for Transport Discovery Data Transport Blocks. This class represents a Transport Block from a Transport Discovery Data.
@@ -28,12 +30,15 @@ Wrapper for Transport Discovery Data Transport Blocks. This class represents a T
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#getOrgId()()` Gets the Organization ID of the Transport Block which corresponds to one of the Bluetooth SIG Assigned Numbers. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#getTdsFlags()()` Gets the TDS flags of the Transport Block which represents the role of the device and information about its state and supported features. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#getTransportData()()` Gets the Transport Data of the Transport Block which contains organization-specific data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#getTransportDataLength()()` Gets the total number of octets in the Transport Data field in this Transport Block. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#hashCode()()` Returns a hash code value for the object. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#toByteArray()()` Converts this TransportBlock to byte array |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#totalBytes()()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -61,6 +66,7 @@ Creates an instance of TransportBlock from raw data.
 | `orgId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the Organization ID |
 | `tdsFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the TDS flags |
 | `transportDataLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the total length of the Transport Data |
+| --- | --- |
 | `transportData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: the Transport Data. This value may be `null`. |
 
 ## Public methods

@@ -7,6 +7,7 @@ class MemoryBudgetManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.MemoryBudgetManager](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#) |
 
 This class is the client interface to memory budgets for applications and processes. A memory budget is a promise by the application or one of its processes that its memory requirements will not exceed some limit. The budget is not a hard limit: it can be exceeded but that will likely cause processes to slow down as they try to release memory and drop below the budget limit.
@@ -61,15 +62,19 @@ The primary interfaces provided by this class are:
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearPackageBudget()()` Removes the package budget, if any, for the caller's application. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearProcessBudget()()` Removes the process budget, if any, for the caller's process. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageBudgetBytes()()` Returns the budget for the caller's application. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageCurrentUsageBytes()()` Returns the aggregate memory usage across all processes running under the caller's application UID. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessBudgetBytes()()` Returns the budget for the caller's process. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessCurrentUsageBytes()()` Returns the current memory usage for the caller's process. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerPackageOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)(looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#?, listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Registers to be notified if the caller's application exceeds its package budget. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerProcessOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)(looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#?, listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Registers to be notified if the caller's process exceeds its process budget. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setPackageBudgetBytes(kotlin.Long)(budgetBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the memory budget for the caller's application. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setProcessBudgetBytes(kotlin.Long)(budgetBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the memory budget for the caller's process. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterPackageOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)(listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Unregisters a package budget listener. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterProcessOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)(listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Unregisters a process budget listener. |
+| --- | --- |
 
 ## Constants
 
@@ -148,6 +153,7 @@ Returns the aggregate memory usage across all processes running under the caller
 | `java.lang.NumberFormatException` | if there is an error parsing the current usage value from the underlying memory tracking system. |
 | `java.lang.SecurityException` | if the caller is an isolated process or access to the underlying memory tracking system is unavailable. |
 | `java.lang.UnsupportedOperationException` | if memory budgets are not supported. |
+| --- | --- |
 
 ### getProcessBudgetBytes
 
@@ -182,6 +188,7 @@ Returns the current memory usage for the caller's process.
 | `java.lang.NumberFormatException` | if there is an error parsing the current usage value from the underlying memory tracking system. |
 | `java.lang.SecurityException` | if access to the underlying memory tracking system is unavailable. |
 | `java.lang.UnsupportedOperationException` | if memory budgets are not supported. |
+| --- | --- |
 
 ### registerPackageOverBudgetListener
 
@@ -208,6 +215,7 @@ An OnOverBudgetListener callback can only be registered once.
 | `java.lang.IllegalArgumentException` | if a looper is not provided and one can't be found on the current thread. |
 | `java.lang.IllegalStateException` | if registration fails |
 | `java.lang.SecurityException` | if the caller is an isolated process. |
+| --- | --- |
 
 ### registerProcessOverBudgetListener
 

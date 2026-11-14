@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CreateCredentialException
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/CreateCredentialException "View this page in Java") 
+| --- | --- |
 
 ```
 open class CreateCredentialException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.credentials.CreateCredentialException](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException#) |
+| --- | --- | --- | --- |
 
 Represents an error encountered during the [CredentialManager.createCredential(Context, CreateCredentialRequest,](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#createCredential(android.content.Context,%20android.credentials.CreateCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))operation.
 
@@ -24,6 +27,7 @@ Represents an error encountered during the [CredentialManager.createCredential(C
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_INTERRUPTED](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException#TYPE_INTERRUPTED:kotlin.String) The error type value for when the given operation failed due to internal interruption. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_NO_CREATE_OPTIONS](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException#TYPE_NO_CREATE_OPTIONS:kotlin.String) The error type value for when no create options are available from any provider(s), for the given [CredentialManager.createCredential(Context, CreateCredentialRequest,](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#createCredential(android.content.Context,%20android.credentials.CreateCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))request. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException#TYPE_UNKNOWN:kotlin.String) The error type value for when the given operation failed due to an unknown reason. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_USER_CANCELED](https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException#TYPE_USER_CANCELED:kotlin.String) The error type value for when the user intentionally cancelled the request. |
 
 | Public constructors ||
@@ -148,6 +152,7 @@ Constructs a [CreateCredentialException](https://developer.android.com/reference
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:This value may be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------|

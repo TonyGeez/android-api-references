@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # Keyframe
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/Keyframe "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Keyframe : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#) |
 
 This class holds a time/value pair for an animation. The Keyframe class is used by [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) to define the values that the animation target will have over the course of the animation. As the time proceeds from one keyframe to the other, the value of the target object will animate between the value at the previous keyframe and the value at the next keyframe. Each keyframe also holds an optional [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator) object, which defines the time interpolation over the intervalue preceding the keyframe.
@@ -28,18 +30,23 @@ The Keyframe class itself is abstract. The type-specific factory methods will re
 | abstract [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#) | [clone](https://developer.android.com/reference/kotlin/android/animation/Keyframe#clone())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFraction](https://developer.android.com/reference/kotlin/android/animation/Keyframe#getFraction())`()` Gets the time for this keyframe, as a fraction of the overall animation duration. |
 | open [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)! | [getInterpolator](https://developer.android.com/reference/kotlin/android/animation/Keyframe#getInterpolator())`()` Gets the optional interpolator for this Keyframe. |
+| --- | --- |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getType](https://developer.android.com/reference/kotlin/android/animation/Keyframe#getType())`()` Gets the type of keyframe. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getValue](https://developer.android.com/reference/kotlin/android/animation/Keyframe#getValue())`()` Gets the value for this Keyframe. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasValue](https://developer.android.com/reference/kotlin/android/animation/Keyframe#hasValue())`()` Indicates whether this keyframe has a valid value. |
+| --- | --- |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofFloat(kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a Keyframe object with the given time. |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofFloat](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofFloat(kotlin.Float,%20kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a Keyframe object with the given time and value. |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofInt(kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a Keyframe object with the given time. |
+| --- | --- |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofInt](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofInt(kotlin.Float,%20kotlin.Int))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a Keyframe object with the given time and value. |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofObject](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofObject(kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a Keyframe object with the given time. |
 | openstatic [Keyframe](https://developer.android.com/reference/kotlin/android/animation/Keyframe#)! | [ofObject](https://developer.android.com/reference/kotlin/android/animation/Keyframe#ofObject(kotlin.Float,%20kotlin.Any))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs a Keyframe object with the given time and value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFraction](https://developer.android.com/reference/kotlin/android/animation/Keyframe#setFraction(kotlin.Float))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the time for this keyframe, as a fraction of the overall animation duration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](https://developer.android.com/reference/kotlin/android/animation/Keyframe#setInterpolator(android.animation.TimeInterpolator))`(`interpolator:` ` [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)!`)` Sets the optional interpolator for this Keyframe. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/animation/Keyframe#setValue(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value for this Keyframe. |
+| --- | --- |
 
 ## Public constructors
 

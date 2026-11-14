@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # NdefRecord
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NdefRecord "View this page in Java") 
+| --- | --- |
 
 ```
 class NdefRecord : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#) |
 
 Represents an immutable NDEF Record.
@@ -44,9 +46,11 @@ The binary representation of an NDEF Record includes additional flags to indicat
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_ABSOLUTE_URI](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_ABSOLUTE_URI:kotlin.Short) Indicates the type field contains an absolute-URI BNF construct defined by RFC 3986. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EMPTY](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_EMPTY:kotlin.Short) Indicates the record is empty. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EXTERNAL_TYPE](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_EXTERNAL_TYPE:kotlin.Short) Indicates the type field contains an external type name. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_MIME_MEDIA](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_MIME_MEDIA:kotlin.Short) Indicates the type field contains a media-type BNF construct, defined by RFC 2046. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNCHANGED](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_UNCHANGED:kotlin.Short) Indicates the payload is an intermediate or final chunk of a chunked NDEF Record. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNKNOWN](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_UNKNOWN:kotlin.Short) Indicates the payload type is unknown. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_WELL_KNOWN](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#TNF_WELL_KNOWN:kotlin.Short) Indicates the type field contains a well-known RTD type name. |
 
 | Inherited constants ||
@@ -63,30 +67,38 @@ The binary representation of an NDEF Record includes additional flags to indicat
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createApplicationRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createApplicationRecord(kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new Android Application Record (AAR). |
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createExternal](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createExternal(kotlin.String,%20kotlin.String,%20kotlin.ByteArray))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing external (application-specific) data. |
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createMime](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createMime(kotlin.String,%20kotlin.ByteArray))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing MIME data. |
+| --- | --- |
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createTextRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createTextRecord(kotlin.String,%20kotlin.String))`(`languageCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF record containing UTF-8 text data. |
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createUri](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Create a new NDEF Record containing a URI. |
 | static [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)! | [createUri](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#createUri(kotlin.String))`(`uriString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF Record containing a URI. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Record contains identical tnf, type, id and payload fields. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#getId())`()` Returns the variable length ID. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPayload](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#getPayload())`()` Returns the variable length payload. |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getTnf](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#getTnf())`()` Returns the 3-bit TNF. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#getType())`()` Returns the variable length Type field. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#hashCode())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#toByteArray())`()` Return this NDEF Record as a byte array. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toMimeType](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#toMimeType())`()` Map this record to a MIME type, or return null if it cannot be mapped. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#toString())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [toUri](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#toUri())`()` Map this record to a URI, or return null if it cannot be mapped. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#CREATOR:android.os.Parcelable.Creator) <br /> |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_ALTERNATIVE_CARRIER](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_ALTERNATIVE_CARRIER:kotlin.ByteArray) RTD Alternative Carrier type. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_CARRIER](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_HANDOVER_CARRIER:kotlin.ByteArray) RTD Handover Carrier type. |
+| --- | --- |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_REQUEST](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_HANDOVER_REQUEST:kotlin.ByteArray) RTD Handover Request type. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_SELECT](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_HANDOVER_SELECT:kotlin.ByteArray) RTD Handover Select type. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_SMART_POSTER](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_SMART_POSTER:kotlin.ByteArray) RTD Smart Poster type. |
+| --- | --- |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_TEXT](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_TEXT:kotlin.ByteArray) RTD Text type. |
 | static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_URI](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#RTD_URI:kotlin.ByteArray) RTD URI type. |
 
@@ -282,6 +294,7 @@ To omit a type, id or payload field, set the parameter to an empty byte array or
 | `tnf` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html):a 3-bit TNF constant |
 | `type` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:byte array, containing zero to 255 bytes, or null |
 | `id` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:byte array, containing zero to 255 bytes, or null |
+| --- | --- |
 | `payload` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:byte array, containing zero to (2 \*\* 32 - 1) bytes, or null |
 
 | Exceptions ||
@@ -345,6 +358,7 @@ For efficiency, This method might not make an internal copy of the data byte arr
 | `domain` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:domain-name of issuing organization |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:domain-specific type of data |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:payload as bytes |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------|

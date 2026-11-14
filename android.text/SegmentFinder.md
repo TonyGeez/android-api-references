@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # SegmentFinder
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/SegmentFinder "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SegmentFinder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#) |
 
 | Known Direct Subclasses [GraphemeClusterSegmentFinder](https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder), [SegmentFinder.PrescribedSegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.PrescribedSegmentFinder), [WordSegmentFinder](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------| | [GraphemeClusterSegmentFinder](https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder) | Implementation of`SegmentFinder`using grapheme clusters as the text segment. | | [SegmentFinder.PrescribedSegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder.PrescribedSegmentFinder) | The default [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#) implementation based on given segment ranges. | | [WordSegmentFinder](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder) | Implementation of [SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#) using words as the text segment. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Finds text segment boundaries within text. Subclasses can implement different types of text segments. Grapheme clusters and words are examples of possible text segments. These are implemented by [GraphemeClusterSegmentFinder](https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder) and [WordSegmentFinder](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder).
 
@@ -40,6 +43,7 @@ For example, WordSegmentFinder subdivides the text "Hello, World!" into four tex
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextEndBoundary](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#nextEndBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment end boundary after the specified character offset, or`DONE`if there are none. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextStartBoundary](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#nextStartBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment start boundary after the specified character offset, or`DONE`if there are none. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousEndBoundary](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#previousEndBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment end boundary before the specified character offset, or`DONE`if there are none. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousStartBoundary](https://developer.android.com/reference/kotlin/android/text/SegmentFinder#previousStartBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment start boundary before the specified character offset, or`DONE`if there are none. |
 
 ## Constants

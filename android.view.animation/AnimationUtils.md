@@ -7,6 +7,7 @@ open class AnimationUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.animation.AnimationUtils](https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#) |
 
 Defines common utilities for working with animations.
@@ -22,9 +23,11 @@ Defines common utilities for working with animations.
 | open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#currentAnimationTimeMillis()()` Returns the current animation time in milliseconds. |
 | open static [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Animation` object from a resource |
 | open static [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadInterpolator(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator` object from a resource |
+| --- | --- |
 | open static [LayoutAnimationController](https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadLayoutAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a `https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController` object from a resource |
 | open static [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeInAnimation(android.content.Context,%20kotlin.Boolean)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, fromLeft: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Make an animation for objects becoming visible. |
 | open static [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeInChildBottomAnimation(android.content.Context)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Make an animation for objects becoming visible. |
+| --- | --- |
 | open static [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeOutAnimation(android.content.Context,%20kotlin.Boolean)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, toRight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Make an animation for objects becoming invisible. |
 
 ## Public constructors

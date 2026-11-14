@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ImsManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/ImsManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class ImsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ims.ImsManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#) |
 
 Provides access to information about Telephony IMS services on the device. 
@@ -23,12 +25,14 @@ Requires the [PackageManager#FEATURE_TELEPHONY_IMS](https://developer.android.co
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_WFC_IMS_REGISTRATION_ERROR](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#ACTION_WFC_IMS_REGISTRATION_ERROR:kotlin.String) An intent action indicating that IMS registration for WiFi calling has resulted in an error. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WFC_REGISTRATION_FAILURE_MESSAGE](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#EXTRA_WFC_REGISTRATION_FAILURE_MESSAGE:kotlin.String) An extra key corresponding to a [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) value which contains the carrier specific message to be displayed as part of the message shown to the user when there is an error registering for WiFi calling. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WFC_REGISTRATION_FAILURE_TITLE](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#EXTRA_WFC_REGISTRATION_FAILURE_TITLE:kotlin.String) An extra key corresponding to a [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) value which contains the carrier specific title to be displayed as part of the message shown to the user when there is an error registering for WiFi calling. |
+| --- | --- |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [ImsMmTelManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsMmTelManager) | [getImsMmTelManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#getImsMmTelManager(kotlin.Int))`(`subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create an instance of ImsMmTelManager for the subscription id specified. |
 | open [ImsRcsManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsRcsManager) | [getImsRcsManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#getImsRcsManager(kotlin.Int))`(`subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create an instance of ImsRcsManager for the subscription id specified. |
 | open [ProvisioningManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ProvisioningManager) | [getProvisioningManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager#getProvisioningManager(kotlin.Int))`(`subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create an instance of [ProvisioningManager](https://developer.android.com/reference/kotlin/android/telephony/ims/ProvisioningManager) for the subscription id specified. |
+| --- | --- |
 
 ## Constants
 

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InstallSourceInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/pm/InstallSourceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class InstallSourceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.InstallSourceInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#) |
 
 Information about how an app was installed.
@@ -26,9 +28,11 @@ Information about how an app was installed.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInitiatingPackageName](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getInitiatingPackageName())`()` The name of the package that requested the installation, or null if not available. |
 | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo)? | [getInitiatingPackageSigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getInitiatingPackageSigningInfo())`()` Information about the signing certificates used to sign the initiating package, if available. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInstallingPackageName](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getInstallingPackageName())`()` The name of the package responsible for the installation (the installer of record), or null if not available. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getOriginatingPackageName](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getOriginatingPackageName())`()` The name of the package on behalf of which the initiating package requested the installation, or null if not available. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPackageSource](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getPackageSource())`()` Information about the package source when installer installed this app. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUpdateOwnerPackageName](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getUpdateOwnerPackageName())`()` The name of the package that is the update owner, or null if not available. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

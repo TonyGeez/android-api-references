@@ -9,11 +9,14 @@ open class HashSet<E : Any!> : AbstractSet<E>, Cloneable, Serializable, Muta
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> |||
 | | ↳ | [java.util.AbstractSet](https://developer.android.com/reference/kotlin/java/util/AbstractSet)\<E\> ||
 | | | ↳ | [java.util.HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [LinkedHashSet](https://developer.android.com/reference/kotlin/java/util/LinkedHashSet) |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [LinkedHashSet](https://developer.android.com/reference/kotlin/java/util/LinkedHashSet) | Hash table and linked list implementation of the`Set`interface, with well-defined encounter order. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements the`Set`interface, backed by a hash table (actually a`HashMap`instance). It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time. This class permits the`null`element.
 
@@ -45,15 +48,19 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/HashSet#add(java.util.HashSet.E))`(`element:` `E`)` Adds the specified element to this set if it is not already present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/HashSet#clear())`()` Removes all of the elements from this set. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/HashSet#clone())`()` Returns a shallow copy of this`HashSet`instance: the elements themselves are not cloned. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/HashSet#contains(java.util.HashSet.E))`(`element:` `E`)` Returns`true`if this set contains the specified element. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/HashSet#contains(java.util.HashSet.E))`(`element:` `E`)` Returns`true`if this set contains the specified element. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/HashSet#isEmpty())`()` Returns`true`if this set contains no elements. |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/HashSet#iterator())`()` Returns an iterator over the elements in this set. |
 | openstatic [HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet#)\<T\> | [newHashSet](https://developer.android.com/reference/kotlin/java/util/HashSet#newHashSet(kotlin.Int))`(`numElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new, empty HashSet suitable for the expected number of elements. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/HashSet#remove(java.util.HashSet.E))`(`element:` `E`)` Removes the specified element from this set if it is present. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/HashSet#remove(java.util.HashSet.E))`(`element:` `E`)` Removes the specified element from this set if it is present. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/HashSet#spliterator())`()` Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this set. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/HashSet#toArray())`()` <br /> |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/HashSet#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` <br /> |
 
 | Inherited functions ||
@@ -163,6 +170,7 @@ Adds the specified element to this set if it is not already present. More formal
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this set |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this set |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
 
@@ -322,6 +330,7 @@ Removes the specified element from this set if it is present. More formally, rem
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this set |
+| --- | --- |
 
 ### remove
 
@@ -346,6 +355,7 @@ Removes the specified element from this set if it is present. More formally, rem
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this set |
+| --- | --- |
 
 ### spliterator
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ChooserAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/ChooserAction "View this page in Java") 
+| --- | --- |
 
 ```
 class ChooserAction : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserAction](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#) |
 
 A ChooserAction is an app-defined action that can be provided to the Android Sharesheet to be shown to the user when [android.content.Intent#ACTION_CHOOSER](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String) is invoked.
@@ -30,9 +32,11 @@ A ChooserAction is an app-defined action that can be provided to the Android Sha
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#describeContents())`()` <br /> |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | [getAction](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#getAction())`()` Return the action intent. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) | [getIcon](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#getIcon())`()` Return an [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) representing this action. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLabel](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#getLabel())`()` Return a user-readable label for this action. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserAction#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RadialGradient
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/RadialGradient "View this page in Java") 
+| --- | --- |
 
 ```
 open class RadialGradient : Shader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
 | | ↳ | [android.graphics.RadialGradient](https://developer.android.com/reference/kotlin/android/graphics/RadialGradient#) |
 
@@ -54,12 +56,15 @@ Create a shader that draws a radial gradient given the start and end points as w
 | `startX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the starting circle of the radial gradient, often referred to as the focal point. |
 | `startY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the starting circle of the radial gradient, often referred to as the focal point. |
 | `startRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The radius of the starting circle of the radial gradient, often referred to as the focal radius. Must be greater than or equal to zero. Value is 0.0f or greater |
+| --- | --- |
 | `endX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the radius for the end circle of the radial gradient |
 | `endY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the radius for the end circle of the radial gradient |
 | `endRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The radius of the ending circle for this gradient. This must be strictly greater than zero. A radius value equal to zero is not allowed. Value is 0.0f or greater |
+| --- | --- |
 | `colors` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html):The colors to be distributed between the center and edge of the circle This value cannot be`null`. |
 | `stops` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be`null`. Valid values are between`0.0f`and`1.0f`. The relative position of each corresponding color in the colors array. If`null`, colors are distributed evenly between the center and edge of the circle. |
 | `tileMode` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,9 +91,11 @@ Create a shader that draws a radial gradient given the center and radius.
 | `centerX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the radius |
 | `centerY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the radius |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Must be positive. The radius of the circle for this gradient |
+| --- | --- |
 | `centerColor` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color at the center of the circle. |
 | `edgeColor` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color at the edge of the circle. |
 | `tileMode` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
+| --- | --- |
 
 ### RadialGradient
 
@@ -111,9 +118,11 @@ Create a shader that draws a radial gradient given the center and radius.
 | `centerX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the radius |
 | `centerY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the radius |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Must be positive. The radius of the circle for this gradient. |
+| --- | --- |
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html):The sRGB colors to be distributed between the center and edge of the circle This value cannot be`null`. |
 | `stops` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be`null`. Valid values are between`0.0f`and`1.0f`. The relative position of each corresponding color in the colors array. If`null`, colors are distributed evenly between the center and edge of the circle. |
 | `tileMode` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
+| --- | --- |
 
 ### RadialGradient
 
@@ -136,9 +145,11 @@ Create a shader that draws a radial gradient given the center and radius.
 | `centerX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the radius |
 | `centerY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the radius |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Must be positive. The radius of the circle for this gradient |
+| --- | --- |
 | `centerColor` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color at the center of the circle. |
 | `edgeColor` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color at the edge of the circle. |
 | `tileMode` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,9 +176,11 @@ Create a shader that draws a radial gradient given the center and radius.
 | `centerX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center of the radius |
 | `centerY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center of the radius |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Must be positive. The radius of the circle for this gradient. |
+| --- | --- |
 | `colors` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html):The colors to be distributed between the center and edge of the circle This value cannot be`null`. |
 | `stops` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be`null`. Valid values are between`0.0f`and`1.0f`. The relative position of each corresponding color in the colors array. If`null`, colors are distributed evenly between the center and edge of the circle. |
 | `tileMode` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

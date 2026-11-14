@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # GnssNavigationMessage
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/GnssNavigationMessage "View this page in Java") 
+| --- | --- |
 
 ```
 class GnssNavigationMessage : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssNavigationMessage](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#) |
 
 A class containing a GNSS satellite Navigation Message.
@@ -26,21 +28,27 @@ A class containing a GNSS satellite Navigation Message.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_PASSED](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#STATUS_PARITY_PASSED:kotlin.Int) The Navigation Message was received without any parity error in its navigation words. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_REBUILT](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#STATUS_PARITY_REBUILT:kotlin.Int) The Navigation Message was received with words that failed parity check, but the receiver was able to correct those words. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#STATUS_UNKNOWN:kotlin.Int) The Navigation Message Status is 'unknown'. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV1](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_BDS_CNAV1:kotlin.Int) Beidou CNAV1 message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV2](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_BDS_CNAV2:kotlin.Int) Beidou CNAV2 message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D1](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_BDS_D1:kotlin.Int) Beidou D1 message contained in the structure. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D2](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_BDS_D2:kotlin.Int) Beidou D2 message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_F](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GAL_F:kotlin.Int) Galileo F/NAV message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_I](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GAL_I:kotlin.Int) Galileo I/NAV message contained in the structure. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GLO_L1CA](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GLO_L1CA:kotlin.Int) Glonass L1 CA message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_CNAV2](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GPS_CNAV2:kotlin.Int) GPS CNAV-2 message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L1CA](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GPS_L1CA:kotlin.Int) GPS L1 C/A message contained in the structure. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L2CNAV](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GPS_L2CNAV:kotlin.Int) GPS L2-CNAV message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L5CNAV](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_GPS_L5CNAV:kotlin.Int) GPS L5-CNAV message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L1](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_IRN_L1:kotlin.Int) NavIC L1 message contained in the structure. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_IRN_L5:kotlin.Int) NavIC L5 message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5CA](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_IRN_L5CA:kotlin.Int) NavIC L5 C/A message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_QZS_L1CA](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_QZS_L1CA:kotlin.Int) QZSS L1 C/A message contained in the structure. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SBS](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_SBS:kotlin.Int) SBAS message contained in the structure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#TYPE_UNKNOWN:kotlin.Int) Message type unknown |
 
@@ -53,12 +61,15 @@ A class containing a GNSS satellite Navigation Message.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#describeContents())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getData())`()` Gets the data of the reported GNSS message. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMessageId](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getMessageId())`()` Gets the Message identifier. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getStatus())`()` Gets the Status of the navigation message contained in the object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubmessageId](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getSubmessageId())`()` Gets the sub-message identifier, relevant to the [getType()](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getType())of the message. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSvid](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getSvid())`()` Gets the satellite ID. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#getType())`()` Gets the type of the navigation message contained in the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

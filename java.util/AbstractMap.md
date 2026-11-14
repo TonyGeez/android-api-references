@@ -9,11 +9,14 @@ abstract class AbstractMap<K : Any!, V : Any!> : MutableMap<K, V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap#) |
 
 | Known Direct Subclasses [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap), [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap), [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap), [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap), [IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap), [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap), [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. | | [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap) | A specialized [Map](https://developer.android.com/reference/kotlin/java/util/Map) implementation for use with enum type keys. | | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap) | Hash table based implementation of the`Map`interface. | | [IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap) | This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). | | [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) | A Red-Black tree based [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) implementation. | | [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap) | Hash table based implementation of the`Map`interface, with*weak keys*. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap) |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap) | Hash table and linked list implementation of the`Map`interface, with well-defined encounter order. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the`Map`interface, to minimize the effort required to implement this interface.
 
@@ -43,12 +46,15 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/AbstractMap#clear())`()` Removes all of the mappings from this map (optional operation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/AbstractMap#containsKey(java.util.AbstractMap.K))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/AbstractMap#containsValue(java.util.AbstractMap.V))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/AbstractMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
 | openV? | [get](https://developer.android.com/reference/kotlin/java/util/AbstractMap#get(java.util.AbstractMap.K))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/AbstractMap#hashCode())`()` Returns the hash code value for this map. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/AbstractMap#isEmpty())`()` Returns`true`if this map contains no key-value mappings. |
 | openV? | [put](https://developer.android.com/reference/kotlin/java/util/AbstractMap#put(java.util.AbstractMap.K,%20java.util.AbstractMap.V))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/AbstractMap#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map (optional operation). |
+| --- | --- |
 | openV? | [remove](https://developer.android.com/reference/kotlin/java/util/AbstractMap#remove(java.util.AbstractMap.K))`(`key:` `K?`)` Removes the mapping for a key from this map if it is present (optional operation). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/AbstractMap#toString())`()` Returns a string representation of this map. |
 
@@ -61,6 +67,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/AbstractMap#entries:kotlin.collections.MutableSet) <br /> |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/AbstractMap#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/AbstractMap#size:kotlin.Int) Returns the number of key-value mappings in this map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/AbstractMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
 
 ## Protected constructors
@@ -243,6 +250,7 @@ Associates the specified value with the specified key in this map (optional oper
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 ### putAll
@@ -264,6 +272,7 @@ Copies all of the mappings from the specified map to this map (optional operatio
 | `java.lang.UnsupportedOperationException` | if the`putAll`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null, or if this map does not permit null keys or values, and the specified map contains null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 
 ### remove
@@ -295,6 +304,7 @@ The map will not contain a mapping for the specified key once the call returns.
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
+| --- | --- |
 
 ### toString
 

@@ -9,9 +9,11 @@ open class WriteAbortedException : ObjectStreamException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
 | | | | | ↳ | [java.io.WriteAbortedException](https://developer.android.com/reference/kotlin/java/io/WriteAbortedException#) |
 
@@ -28,6 +30,7 @@ Signals that one of the ObjectStreamExceptions was thrown during a write operati
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? | [cause](https://developer.android.com/reference/kotlin/java/io/WriteAbortedException#cause:kotlin.Throwable) Returns the exception that terminated the operation (the*cause*). |
 | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)! | [detail](https://developer.android.com/reference/kotlin/java/io/WriteAbortedException#detail:java.lang.Exception) Exception that was caught while writing the ObjectStream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/io/WriteAbortedException#message:kotlin.String) Produce the message and include the message from the nested exception, if there is one. |
+| --- | --- |
 
 ## Public constructors
 

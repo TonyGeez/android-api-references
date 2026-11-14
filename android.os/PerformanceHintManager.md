@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PerformanceHintManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/PerformanceHintManager "View this page in Java") 
+| --- | --- |
 
 ```
 class PerformanceHintManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.PerformanceHintManager](https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager#) |
 
 The PerformanceHintManager allows apps to send performance hint to system.

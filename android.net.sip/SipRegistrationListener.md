@@ -6,6 +6,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipRegistrationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipRegistrationListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SipRegistrationListener
@@ -26,6 +27,7 @@ Listener for SIP registration events.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistering](https://developer.android.com/reference/kotlin/android/net/sip/SipRegistrationListener#onRegistering(kotlin.String))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when a registration request is sent. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationDone](https://developer.android.com/reference/kotlin/android/net/sip/SipRegistrationListener#onRegistrationDone(kotlin.String,%20kotlin.Long))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expiryTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Called when the registration succeeded. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](https://developer.android.com/reference/kotlin/android/net/sip/SipRegistrationListener#onRegistrationFailed(kotlin.String,%20kotlin.Int,%20kotlin.String))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the registration failed. |
+| --- | --- |
 
 ## Public methods
 
@@ -86,6 +88,7 @@ Called when the registration failed.
 | `localProfileUri` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the URI string of the SIP profile to register with |
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):error code of this error |
 | `errorMessage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:error message |
+| --- | --- |
 
 **See Also**
 

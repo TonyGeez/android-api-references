@@ -9,6 +9,7 @@ abstract class Enum<E : Enum<E>!> : Comparable<E>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Enum](https://developer.android.com/reference/kotlin/java/lang/Enum#) |
 
 This is the common base class of all Java language enumeration classes. More information about enums, including descriptions of the implicitly declared methods synthesized by the compiler, can be found in section {@jls 8.9} of The Java Language Specification. Enumeration classes are all serializable and receive special handling by the serialization mechanism. The serialized representation used for enum constants cannot be customized. Declarations of methods and fields that would otherwise interact with serialization are ignored, including`serialVersionUID`; see the Java Object Serialization Specification for details.
@@ -26,9 +27,11 @@ Note that when using an enumeration type as the type of a set or as the type of 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Enum#compareTo(java.lang.Enum.E))`(`other:` `E`)` Compares this enum with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Enum#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified object is equal to this enum constant. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<E\> | [getDeclaringClass](https://developer.android.com/reference/kotlin/java/lang/Enum#getDeclaringClass())`()` Returns the Class object corresponding to this enum constant's enum type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Enum#hashCode())`()` Returns a hash code for this enum constant. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [name](https://developer.android.com/reference/kotlin/java/lang/Enum#name())`()` Returns the name of this enum constant, exactly as declared in its enum declaration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ordinal](https://developer.android.com/reference/kotlin/java/lang/Enum#ordinal())`()` Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Enum#toString())`()` Returns the name of this enum constant, as contained in the declaration. |
 | openstaticT | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Enum#valueOf(java.lang.Class,%20kotlin.String))`(`enumClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<T>`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the enum constant of the specified enum class with the specified name. |
 
@@ -190,6 +193,7 @@ Note that for a particular enum class`T`, the implicitly declared`public static 
 | `<T>` | The enum class whose constant is to be returned |
 | `enumClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<T\>:the`Class`object of the enum class from which to return a constant |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the constant to return |
+| --- | --- |
 
 | Return ||
 |---|-----------------------------------------------------------------------|

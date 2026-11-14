@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 8](https://developer.android.com/sdkExtensions)
 # AppOwnedSdkSandboxInterface
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface "View this page in Java") 
+| --- | --- |
 
 ```
 class AppOwnedSdkSandboxInterface : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.sdksandbox.AppOwnedSdkSandboxInterface](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#) |
 
 Represents a channel for an SDK in the sandbox process to interact with the app.
@@ -39,6 +41,7 @@ Once SDK has the AppOwnedSdkSandboxInterface it wants to communicate with, it wi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#) | [getInterface](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#getInterface())`()` Returns binder object associated with AppOwnedSdkSandboxInterface. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#getName())`()` Returns the name used to register the AppOwnedSdkSandboxInterface. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#getVersion())`()` Returns the version used to register the AppOwnedSdkSandboxInterface. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

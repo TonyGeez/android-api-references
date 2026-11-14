@@ -9,6 +9,7 @@ open class PKIXCertPathBuilderResult : PKIXCertPathValidatorResult, CertPathBu
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.cert.PKIXCertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult) ||
 | | ↳ | [java.security.cert.PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult#) |
 
@@ -58,6 +59,7 @@ Creates an instance of`PKIXCertPathBuilderResult`containing the specified parame
 | `certPath` | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)!:the validated`CertPath` |
 | `trustAnchor` | [TrustAnchor](https://developer.android.com/reference/kotlin/java/security/cert/TrustAnchor)!:a`TrustAnchor`describing the CA that served as a trust anchor for the certification path |
 | `policyTree` | [PolicyNode](https://developer.android.com/reference/kotlin/java/security/cert/PolicyNode)!:the immutable valid policy tree, or`null`if there are no valid policies |
+| --- | --- |
 | `subjectPublicKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!:the public key of the subject |
 
 | Exceptions ||

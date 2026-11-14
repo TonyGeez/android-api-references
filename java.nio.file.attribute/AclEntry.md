@@ -9,6 +9,7 @@ class AclEntry
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.attribute.AclEntry](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#) |
 
 An entry in an access control list (ACL).
@@ -35,12 +36,15 @@ ACL entries are immutable and are safe for use by multiple concurrent threads.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this ACL entry for equality. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AclEntryFlag](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryFlag)!\>! | [flags](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#flags())`()` Returns a copy of the flags component. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#hashCode())`()` Returns the hash-code value for this ACL entry. |
+| --- | --- |
 | static [AclEntry.Builder](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry.Builder)! | [newBuilder](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#newBuilder())`()` Constructs a new builder. |
 | static [AclEntry.Builder](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry.Builder)! | [newBuilder](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#newBuilder(java.nio.file.attribute.AclEntry))`(`entry:` ` [AclEntry](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#)!`)` Constructs a new builder with the components of an existing ACL entry. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AclEntryPermission](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryPermission)!\>! | [permissions](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#permissions())`()` Returns a copy of the permissions component. |
+| --- | --- |
 | [UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal)! | [principal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#principal())`()` Returns the principal component. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#toString())`()` Returns the string representation of this ACL entry. |
 | [AclEntryType](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType)! | [type](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntry#type())`()` Returns the ACL entry type. |
+| --- | --- |
 
 ## Public methods
 

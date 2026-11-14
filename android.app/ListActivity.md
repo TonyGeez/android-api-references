@@ -8,9 +8,11 @@ open class ListActivity : Activity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) ||
 | | | | | ↳ | [android.app.ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity#) |
 
@@ -1170,9 +1172,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter.html#)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListAdapter()()` Get the ListAdapter associated with this activity's ListView. |
 | open [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListView()()` Get the activity's list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getSelectedItemId()()` Get the cursor row ID of the currently selected list item. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getSelectedItemPosition()()` Get the position of the currently selected list item. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#onContentChanged()()` Updates the screen state (current list and other views) when the content changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#setListAdapter(android.widget.ListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ListAdapter.html#!)` Provide the cursor for the list view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#setSelection(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the currently selected list item to the specified position with the adapter's data |
 
 | Protected methods ||
@@ -1180,6 +1184,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#onDestroy()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#onListItemClick(android.widget.ListView,%20android.view.View,%20kotlin.Int,%20kotlin.Long)(l: https://developer.android.com/reference/kotlin/android/widget/ListView.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This method will be called when an item in the list is selected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#onRestoreInstanceState(android.os.Bundle)(state: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Ensures the list view has been created before Activity restores all of the view states. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Activity` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Activity#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)`
 
@@ -5104,6 +5109,7 @@ This method will be called when an item in the list is selected. Subclasses shou
 | `l` | [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#)!: The ListView where the click happened |
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view that was clicked within the ListView |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the list |
+| --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked |
 
 ### onRestoreInstanceState

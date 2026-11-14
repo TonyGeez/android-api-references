@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptIntrinsicBlend
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend "View this page in Java") 
+| --- | --- |
 
 ```
 open class ScriptIntrinsicBlend : ScriptIntrinsic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
 | | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.renderscript.ScriptIntrinsicBlend](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#) |
 
 | **This class was deprecated in API level 31.**
@@ -30,48 +33,63 @@ Intrinsic kernels for blending two [android.renderscript.Allocation](https://dev
 | openstatic [ScriptIntrinsicBlend](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#create(android.renderscript.RenderScript,%20android.renderscript.Element))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`)` Supported elements types are [Element.U8_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_4(android.renderscript.RenderScript)) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachAdd(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = min(src + dst, 1.0) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachAdd(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = min(src + dst, 1.0) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachClear(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = {0, 0, 0, 0} |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachClear(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = {0, 0, 0, 0} |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDst(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = dst This is a NOP. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDst(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = dst This is a NOP. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstAtop(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` dst = dst. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstAtop(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` dst = dst. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstIn(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = dst \* src. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstIn(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = dst \* src. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstOut(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = dst \* (1.0 - src.a) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstOut(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = dst \* (1.0 - src.a) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstOver(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachDstOver(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachMultiply(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = src \* dst |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachMultiply(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = src \* dst |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrc(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = src |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrc(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = src |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcAtop(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` dst. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcAtop(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` dst. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcIn(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = src \* dst. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcIn(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = src \* dst. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcOut(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = src \* (1.0 - dst.a) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcOut(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = src \* (1.0 - dst.a) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcOver(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = src + dst \* (1.0 - src.a) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSrcOver(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = src + dst \* (1.0 - src.a) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSubtract(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = max(dst - src, 0.0) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachSubtract(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = max(dst - src, 0.0) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachXor(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets dst = {src. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#forEachXor(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Sets dst = {src. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDAdd](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDAdd())`()` Get a KernelID for the Add kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDClear](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDClear())`()` Get a KernelID for the Clear kernel. |
+| --- | --- |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDDst](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDDst())`()` Get a KernelID for the Dst kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDDstAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDDstAtop())`()` Get a KernelID for the DstAtop kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDDstIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDDstIn())`()` Get a KernelID for the DstIn kernel. |
+| --- | --- |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDDstOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDDstOut())`()` Get a KernelID for the DstOut kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDDstOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDDstOver())`()` Get a KernelID for the DstOver kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDMultiply](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDMultiply())`()` Get a KernelID for the Multiply kernel. |
+| --- | --- |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSrc](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSrc())`()` Get a KernelID for the Src kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSrcAtop](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSrcAtop())`()` Get a KernelID for the SrcAtop kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSrcIn](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSrcIn())`()` Get a KernelID for the SrcIn kernel. |
+| --- | --- |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSrcOut](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSrcOut())`()` Get a KernelID for the SrcOut kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSrcOver](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSrcOver())`()` Get a KernelID for the SrcOver kernel. |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDSubtract](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDSubtract())`()` Get a KernelID for the Subtract kernel. |
+| --- | --- |
 | open [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelIDXor](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBlend#getKernelIDXor())`()` Get a KernelID for the Xor kernel. |
 
 ## Public methods
@@ -142,6 +160,7 @@ Sets dst = min(src + dst, 1.0)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachClear
 
@@ -185,6 +204,7 @@ Sets dst = {0, 0, 0, 0}
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachDst
 
@@ -228,6 +248,7 @@ Sets dst = dst This is a NOP.
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachDstAtop
 
@@ -271,6 +292,7 @@ dst = dst.rgb \* src.a + (1.0 - dst.a) \* src.rgb dst.a = src.a Note: Before API
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachDstIn
 
@@ -314,6 +336,7 @@ Sets dst = dst \* src.a
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachDstOut
 
@@ -357,6 +380,7 @@ Sets dst = dst \* (1.0 - src.a)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachDstOver
 
@@ -400,6 +424,7 @@ Sets dst = dst + src \* (1.0 - dst.a)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachMultiply
 
@@ -443,6 +468,7 @@ Sets dst = src \* dst
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSrc
 
@@ -486,6 +512,7 @@ Sets dst = src
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSrcAtop
 
@@ -529,6 +556,7 @@ dst.rgb = src.rgb \* dst.a + (1.0 - src.a) \* dst.rgb dst.a = dst.a
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSrcIn
 
@@ -572,6 +600,7 @@ Sets dst = src \* dst.a
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSrcOut
 
@@ -615,6 +644,7 @@ Sets dst = src \* (1.0 - dst.a)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSrcOver
 
@@ -658,6 +688,7 @@ Sets dst = src + dst \* (1.0 - src.a)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachSubtract
 
@@ -701,6 +732,7 @@ Sets dst = max(dst - src, 0.0)
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### forEachXor
 
@@ -744,6 +776,7 @@ Sets dst = {src.r \^ dst.r, src.g \^ dst.g, src.b \^ dst.b, src.a \^ dst.a}**Not
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The source buffer |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### getKernelIDAdd
 

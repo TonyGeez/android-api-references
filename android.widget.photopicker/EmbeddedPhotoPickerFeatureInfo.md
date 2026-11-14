@@ -8,6 +8,7 @@ class EmbeddedPhotoPickerFeatureInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.photopicker.EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#) |
 
 An immutable parcel to carry information regarding desired features of caller for a given session.
@@ -38,6 +39,7 @@ Callers should use `https://developer.android.com/reference/kotlin/android/widge
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#TAB_ALBUMS:kotlin.Int` Constant to indicate the Albums tab as the launch tab. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#TAB_IMAGES:kotlin.Int` Constant to indicate the Photos tab as the launch tab. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#TAB_UNSET:kotlin.Int` Constant to indicate default tab when no tab has been set as the launch tab. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -48,21 +50,27 @@ Callers should use `https://developer.android.com/reference/kotlin/android/widge
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getAccentColor()()` <br /> |
 | [EmbeddedPhotoPickerUiCustomizationParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getEmbeddedUiCustomizationParams()()` Returns the embedded-specific UI customization options set by the app. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getHighlightAlbumId()()` Returns the highlight album set by the app |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getHighlightSearchMediaTextQuery()()` Returns the highlight media text query set by the app |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getHighlightType()()` Returns the highlight type set by the app |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getLaunchTab()()` Returns the launch tab set by the app. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getMaxSelectionLimit()()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getMimeTypes()()` <br /> |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getPreSelectedUris()()` <br /> |
 | [PhotoPickerSelectionParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerSelectionParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getSelectionParams()()` Returns the selection options, which specify filters for media item properties. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getThemeNightMode()()` <br /> |
+| --- | --- |
 | [PhotoPickerUiCustomizationParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerUiCustomizationParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getUiCustomizationParams()()` Returns the ui customization options set by the app. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isCollapsedModeScrollingEnabled()()` Returns whether the app enabled scrolling in collapsed mode. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isLocationMetadataRequested()()` Returns whether the app is requesting location metadata for selected media items. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isOrderedSelection()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isPickerLaunchedInExpandedState()()` Returns whether or not the picker was launched in expanded state |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Validator
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/AutoCompleteTextView.Validator "View this page in Java") 
+| --- | --- |
 
 ```
 interface Validator

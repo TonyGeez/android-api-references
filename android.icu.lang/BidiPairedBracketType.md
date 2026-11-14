@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # BidiPairedBracketType
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.BidiPairedBracketType "View this page in Java") 
+| --- | --- |
 
 ```
 interface BidiPairedBracketType
@@ -21,6 +22,7 @@ Bidi Paired Bracket Type constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#CLOSE:kotlin.Int) Close paired bracket. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#NONE:kotlin.Int) Not a paired bracket. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#OPEN:kotlin.Int) Open paired bracket. |
+| --- | --- |
 
 ## Constants
 

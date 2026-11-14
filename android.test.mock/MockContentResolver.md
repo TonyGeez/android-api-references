@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MockContentResolver
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockContentResolver "View this page in Java") 
+| --- | --- |
 
 ```
 open class MockContentResolver : ContentResolver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#) ||
 | | ↳ | [android.test.mock.MockContentResolver](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#) |
 
@@ -40,6 +42,7 @@ Users can also set an authority's entry in the map to null, so that a provider i
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addProvider](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#addProvider(kotlin.String,%20android.content.ContentProvider))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#)!`)` Adds access to a provider based on its authority |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#notifyChange(android.net.Uri,%20android.database.ContentObserver))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `observer:` ` [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?`)` Overrides the behavior from the parent class to completely ignore any content notifications sent to this object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#notifyChange(android.net.Uri,%20android.database.ContentObserver,%20kotlin.Boolean))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `observer:` ` [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?`, `syncToNetwork:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Overrides the behavior from the parent class to completely ignore any content notifications sent to this object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#notifyChange(android.net.Uri,%20android.database.ContentObserver,%20kotlin.Int))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `observer:` ` [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the behavior from the parent class to completely ignore any content notifications sent to this object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver#notifyChange(kotlin.collections.MutableCollection,%20android.database.ContentObserver,%20kotlin.Int))`(`uris:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!>`, `observer:` ` [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the behavior from the parent class to completely ignore any content notifications sent to this object. |
 
@@ -128,6 +131,7 @@ Overrides the behavior from the parent class to completely ignore any content no
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):This value cannot be`null`. |
 | `observer` | [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?:This value may be`null`. |
 | `syncToNetwork` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, same as [NOTIFY_SYNC_TO_NETWORK](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int). |
+| --- | --- |
 
 ### notifyChange
 
@@ -148,6 +152,7 @@ Overrides the behavior from the parent class to completely ignore any content no
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):This value cannot be`null`. |
 | `observer` | [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?:This value may be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int), [android.content.ContentResolver#NOTIFY_INSERT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int), [android.content.ContentResolver#NOTIFY_UPDATE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int), and [android.content.ContentResolver#NOTIFY_DELETE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int) |
+| --- | --- |
 
 ### notifyChange
 
@@ -168,3 +173,4 @@ Overrides the behavior from the parent class to completely ignore any content no
 | `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>:This value cannot be`null`. |
 | `observer` | [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#)?:This value may be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int), [android.content.ContentResolver#NOTIFY_INSERT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int), [android.content.ContentResolver#NOTIFY_UPDATE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int), and [android.content.ContentResolver#NOTIFY_DELETE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int) |
+| --- | --- |

@@ -7,6 +7,7 @@ abstract class JobScheduler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.job.JobScheduler](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#) |
 
 This is an API for scheduling various types of jobs against the framework that will be executed in your application's own process.
@@ -34,24 +35,31 @@ In Android version `https://developer.android.com/reference/kotlin/android/os/Bu
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_APP:kotlin.Int` The app is in a state that prevents the job from running (eg. the |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_APP_STANDBY:kotlin.Int` The current standby bucket prevents the job from running. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_BACKGROUND_RESTRICTION:kotlin.Int` The app is restricted from running in the background. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_BATTERY_NOT_LOW:kotlin.Int` The requested battery-not-low constraint is not satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_CHARGING:kotlin.Int` The requested charging constraint is not satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_CONNECTIVITY:kotlin.Int` The requested connectivity constraint is not satisfied. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_CONTENT_TRIGGER:kotlin.Int` The requested content trigger constraint is not satisfied. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_DEADLINE:kotlin.Int` The override deadline has not transpired. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLE:kotlin.Int` The requested idle constraint is not satisfied. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_MINIMUM_LATENCY:kotlin.Int` The minimum latency has not transpired. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_PREFETCH:kotlin.Int` The system's estimate of when the app will be launched is far away enough to warrant delaying this job. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_CONSTRAINT_STORAGE_NOT_LOW:kotlin.Int` The requested storage-not-low constraint is not satisfied. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_DEVICE_STATE:kotlin.Int` The job is being deferred due to the device state (e.g., Doze, battery saver, memory usage, thermal status, etc.). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_EXECUTING:kotlin.Int` The job is currently running and is therefore not pending. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_INVALID_JOB_ID:kotlin.Int` The job doesn't exist. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_JOB_SCHEDULER_OPTIMIZATION:kotlin.Int` JobScheduler thinks it can defer this job to a more optimal running time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_QUOTA:kotlin.Int` The app has consumed all of its current quota. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_UNDEFINED:kotlin.Int` There is no known reason why the job is pending. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_USER:kotlin.Int` JobScheduler is respecting one of the user's actions (eg. force stop or adb shell commands) to defer this job. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_FAILURE:kotlin.Int` Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if a job wasn't scheduled successfully. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_SUCCESS:kotlin.Int` Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if this job has been successfully scheduled. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -62,18 +70,23 @@ In Android version `https://developer.android.com/reference/kotlin/android/os/Bu
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#canRunUserInitiatedJobs()()` Returns `true` if the calling app currently holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#RUN_USER_INITIATED_JOBS:kotlin.String` permission, allowing it to run user-initiated jobs. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancel(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Cancel the specified job. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelAll()()` Cancel all jobs that have been scheduled in the current namespace by the calling application. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelInAllNamespaces()()` Cancel *all* jobs that have been scheduled by the calling application, regardless of namespace. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)(job: https://developer.android.com/reference/kotlin/android/app/job/JobInfo, work: https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem)` Similar to `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)`, but allows you to enqueue work for a new *or existing* job. |
 | open [JobScheduler](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#forNamespace(kotlin.String)(namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get a JobScheduler instance that is dedicated to a specific namespace. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getAllPendingJobs()()` Retrieve all jobs that have been scheduled by the calling application. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getNamespace()()` Get the namespace this JobScheduler instance is operating in. |
 | abstract [JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo)? | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJob(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Look up the description of a scheduled job. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReason(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a reason why the job is pending and not currently executing. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonStats(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For the given `jobId`, returns an aggregated view of why the job has been pending execution over its lifetime. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasons(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns potential reasons why the job with the given `jobId` may be pending and not currently executing. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PendingJobReasonsInfo](https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonsHistory(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For the given `jobId`, returns a limited historical view of why the job may have been pending execution. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobsInAllNamespaces()()` Retrieve all jobs that have been scheduled by the calling application within the current namespace. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)(job: https://developer.android.com/reference/kotlin/android/app/job/JobInfo)` Schedule a job to be executed. |
+| --- | --- |
 
 ## Constants
 

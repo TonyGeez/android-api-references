@@ -5,6 +5,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # EntityIterator
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/EntityIterator "View this page in Java") 
+| --- | --- |
 
 ```
 interface EntityIterator : MutableIterator<Entity!>

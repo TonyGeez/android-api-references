@@ -10,9 +10,11 @@ open class ConnectTimeoutException : InterruptedIOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.io.InterruptedIOException](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#) ||
 | | | | | ↳ | [org.apache.http.conn.ConnectTimeoutException](https://developer.android.com/reference/kotlin/org/apache/http/conn/ConnectTimeoutException#) |
 

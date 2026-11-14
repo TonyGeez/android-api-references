@@ -7,6 +7,7 @@ open class SecurityLog
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.SecurityLog](https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#) |
 
 Definitions for working with security logs.
@@ -24,51 +25,67 @@ Device owner apps can control the logging with `https://developer.android.com/re
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#LEVEL_ERROR:kotlin.Int` Event severity level indicating that the event requires urgent admin action. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#LEVEL_INFO:kotlin.Int` Event severity level indicating that the event corresponds to normal workflow. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#LEVEL_WARNING:kotlin.Int` Event severity level indicating that the event may require admin attention. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_ADB_SHELL_CMD:kotlin.Int` Indicates that a shell command was issued over ADB via `adb shell <command>` The log entry contains a `String` payload containing the shell command, accessible via `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog.SecurityEvent#getData()`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_ADB_SHELL_INTERACTIVE:kotlin.Int` Indicates that an ADB interactive shell was opened via "adb shell". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_APP_PROCESS_START:kotlin.Int` Indicates that an app process was started. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_BACKUP_SERVICE_TOGGLED:kotlin.Int` Indicates that an admin has enabled or disabled backup service. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_BLUETOOTH_CONNECTION:kotlin.Int` Indicates that the device attempts to connect to a Bluetooth device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_BLUETOOTH_DISCONNECTION:kotlin.Int` Indicates that the device disconnects from a connected Bluetooth device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_CAMERA_POLICY_SET:kotlin.Int` Indicates that the admin has set policy to disable camera. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_CERT_AUTHORITY_INSTALLED:kotlin.Int` Indicates that a new root certificate has been installed into system's trusted credential storage. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_CERT_AUTHORITY_REMOVED:kotlin.Int` Indicates that a new root certificate has been removed from system's trusted credential storage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_CERT_VALIDATION_FAILURE:kotlin.Int` Indicates a failure to validate X. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_CRYPTO_SELF_TEST_COMPLETED:kotlin.Int` Indicates that cryptographic functionality self test has completed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEYGUARD_DISABLED_FEATURES_SET:kotlin.Int` Indicates that an admin has set disabled keyguard features. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEYGUARD_DISMISSED:kotlin.Int` Indicates that keyguard has been dismissed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT:kotlin.Int` Indicates that there has been an authentication attempt to dismiss the keyguard. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEYGUARD_SECURED:kotlin.Int` Indicates that the device has been locked, either by the user or by a timeout. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEY_DESTRUCTION:kotlin.Int` Indicates that a cryptographic key was destroyed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEY_GENERATED:kotlin.Int` Indicates that a cryptographic key was generated. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEY_IMPORT:kotlin.Int` Indicates that a cryptographic key was imported. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_KEY_INTEGRITY_VIOLATION:kotlin.Int` Indicates a failed cryptographic key integrity check. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_LOGGING_STARTED:kotlin.Int` Indicates start-up of audit logging. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_LOGGING_STOPPED:kotlin.Int` Indicates shutdown of audit logging. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_LOG_BUFFER_SIZE_CRITICAL:kotlin.Int` Indicates that the audit log buffer has reached 90% of its capacity. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_MAX_PASSWORD_ATTEMPTS_SET:kotlin.Int` Indicates that an admin has set a maximum number of failed password attempts before wiping data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_MAX_SCREEN_LOCK_TIMEOUT_SET:kotlin.Int` Indicates that an admin has set a maximum screen lock timeout. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_MEDIA_MOUNT:kotlin.Int` Indicates that removable media has been mounted on the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_MEDIA_UNMOUNT:kotlin.Int` Indicates that removable media was unmounted from the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_NFC_DISABLED:kotlin.Int` Indicates that NFC service is disabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_NFC_ENABLED:kotlin.Int` Indicates that NFC service is enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_OS_SHUTDOWN:kotlin.Int` Indicates that the Android OS has shutdown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_OS_STARTUP:kotlin.Int` Indicates that the Android OS has started. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PACKAGE_INSTALLED:kotlin.Int` Indicates that a package is installed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PACKAGE_UNINSTALLED:kotlin.Int` Indicates that a package is uninstalled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PACKAGE_UPDATED:kotlin.Int` Indicates that a package is updated. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PASSWORD_CHANGED:kotlin.Int` Indicates that a user has just changed their lockscreen password. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PASSWORD_COMPLEXITY_REQUIRED:kotlin.Int` Indicates that an admin has set a password complexity requirement, using the platform's pre-defined complexity levels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PASSWORD_COMPLEXITY_SET:kotlin.Int` Indicates that an admin has set a requirement for password complexity. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PASSWORD_EXPIRATION_SET:kotlin.Int` Indicates that an admin has set a password expiration timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_PASSWORD_HISTORY_LENGTH_SET:kotlin.Int` Indicates that an admin has set a password history length. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_REMOTE_LOCK:kotlin.Int` Indicates that an admin remotely locked the device or profile. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_SYNC_RECV_FILE:kotlin.Int` Indicates that a file was pulled from the device via the adb daemon, for example via `adb pull`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_SYNC_SEND_FILE:kotlin.Int` Indicates that a file was pushed to the device via the adb daemon, for example via `adb push`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_USER_RESTRICTION_ADDED:kotlin.Int` Indicates that an admin has set a user restriction. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_USER_RESTRICTION_REMOVED:kotlin.Int` Indicates that an admin has removed a user restriction. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_WIFI_CONNECTION:kotlin.Int` Indicates that an event occurred as the device attempted to connect to a managed WiFi network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_WIFI_DISCONNECTION:kotlin.Int` Indicates that the device disconnects from a managed WiFi network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#TAG_WIPE_FAILURE:kotlin.Int` Indicates a failure to wipe device or user data. |
 
 | Public constructors ||

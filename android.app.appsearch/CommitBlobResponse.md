@@ -8,6 +8,7 @@ class CommitBlobResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.CommitBlobResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/CommitBlobResponse#) |
 
 The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#commitBlob(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
@@ -29,6 +30,7 @@ This class is used to retrieve the result of a batch commit operation on a colle
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/CommitBlobResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult)\< [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle)!, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/CommitBlobResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the commit operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/CommitBlobResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

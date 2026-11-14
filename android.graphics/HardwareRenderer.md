@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # HardwareRenderer
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/HardwareRenderer "View this page in Java") 
+| --- | --- |
 
 ```
 open class HardwareRenderer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.HardwareRenderer](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#) |
 
 Creates an instance of a hardware-accelerated renderer. This is used to render a scene built from [RenderNode](https://developer.android.com/reference/kotlin/android/graphics/RenderNode)'s to an output [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#). There can be as many HardwareRenderer instances as desired.
@@ -32,6 +34,7 @@ NOTE: Due to the shared, cooperative nature of the render thread it is critical 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_CONTEXT_IS_STOPPED](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#SYNC_CONTEXT_IS_STOPPED:kotlin.Int) The hardware renderer has been set to a "stopped" state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FRAME_DROPPED](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#SYNC_FRAME_DROPPED:kotlin.Int) The content was synced but the renderer has declined to produce a frame in this vsync interval. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_LOST_SURFACE_REWARD_IF_FOUND](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#SYNC_LOST_SURFACE_REWARD_IF_FOUND:kotlin.Int) The hardware renderer no longer has a valid [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#) to render to. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OK](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#SYNC_OK:kotlin.Int) Nothing interesting to report. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_REDRAW_REQUESTED](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#SYNC_REDRAW_REQUESTED:kotlin.Int) The renderer is requesting a redraw. |
 
@@ -44,18 +47,23 @@ NOTE: Due to the shared, cooperative nature of the render thread it is critical 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearContent](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#clearContent())`()` Destroys all the display lists associated with the current rendering content. |
 | open [HardwareRenderer.FrameRenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer.FrameRenderRequest) | [createRenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#createRenderRequest())`()` Returns a [FrameRenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer.FrameRenderRequest) that can be used to render a new frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#destroy())`()` Destroys the rendering context of this HardwareRenderer. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDrawingEnabled](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#isDrawingEnabled())`()` Returns true if HardwareRender will produce output. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#isOpaque())`()` Whether or not the renderer is set to be opaque. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyFramePending](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#notifyFramePending())`()` Notifies the hardware renderer that a call to [FrameRenderRequest.syncAndDraw()](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer.FrameRenderRequest#syncAndDraw())will be coming soon. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentRoot](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setContentRoot(android.graphics.RenderNode))`(`content:` ` [RenderNode](https://developer.android.com/reference/kotlin/android/graphics/RenderNode)?`)` Sets the content root to render. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDrawingEnabled](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setDrawingEnabled(kotlin.Boolean))`(`drawingEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Toggles whether or not HardwareRenderer will produce drawing output globally in the current process. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceAlpha](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setLightSourceAlpha(kotlin.Float,%20kotlin.Float))`(`ambientShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spotShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configures the ambient \& spot shadow alphas. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceGeometry](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setLightSourceGeometry(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`lightX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the center of the light source. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets a name for this renderer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setOpaque(kotlin.Boolean))`(`opaque:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Change the HardwareRenderer's opacity. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSurface](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#setSurface(android.view.Surface))`(`surface:` ` [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)?`)` The surface to render into. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#start())`()` Resumes rendering into the surface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/graphics/HardwareRenderer#stop())`()` Hard stops rendering into the surface. |
+| --- | --- |
 
 ## Constants
 
@@ -285,6 +293,7 @@ This must be set at least once along with [setLightSourceAlpha(float,float)](htt
 | `lightX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X position of the light source |
 | `lightY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y position of the light source |
 | `lightZ` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Z position of the light source. Must be \>= 0. |
+| --- | --- |
 | `lightRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The radius of the light source. Smaller radius will have sharper edges, larger radius will have softer shadows. |
 
 ### setName

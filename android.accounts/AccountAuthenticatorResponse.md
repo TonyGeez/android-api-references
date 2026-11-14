@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AccountAuthenticatorResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/AccountAuthenticatorResponse "View this page in Java") 
+| --- | --- |
 
 ```
 open class AccountAuthenticatorResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accounts.AccountAuthenticatorResponse](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#) |
 
 Object used to communicate responses back to the AccountManager
@@ -30,6 +32,7 @@ Object used to communicate responses back to the AccountManager
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#describeContents())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#onError(kotlin.Int,%20kotlin.String))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRequestContinued](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#onRequestContinued())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResult](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#onResult(android.os.Bundle))`(`result:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

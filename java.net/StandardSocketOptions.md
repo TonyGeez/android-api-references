@@ -9,6 +9,7 @@ class StandardSocketOptions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.StandardSocketOptions](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#) |
 
 Defines the*standard*socket options.
@@ -24,15 +25,19 @@ In this release, the socket options defined here are used by channels in the pac
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!\>! | [IP_MULTICAST_IF](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#IP_MULTICAST_IF:java.net.SocketOption) The network interface for Internet Protocol (IP) multicast datagrams. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [IP_MULTICAST_LOOP](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#IP_MULTICAST_LOOP:java.net.SocketOption) Loopback for Internet Protocol (IP) multicast datagrams. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_MULTICAST_TTL](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#IP_MULTICAST_TTL:java.net.SocketOption) The*time-to-live*for Internet Protocol (IP) multicast datagrams. |
+| --- | --- |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_TOS](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#IP_TOS:java.net.SocketOption) The Type of Service (ToS) octet in the Internet Protocol (IP) header. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_BROADCAST](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_BROADCAST:java.net.SocketOption) Allow transmission of broadcast datagrams. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_KEEPALIVE](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_KEEPALIVE:java.net.SocketOption) Keep connection alive. |
+| --- | --- |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_LINGER](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_LINGER:java.net.SocketOption) Linger on close if data is present. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_RCVBUF](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_RCVBUF:java.net.SocketOption) The size of the socket receive buffer. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEADDR](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_REUSEADDR:java.net.SocketOption) Re-use address. |
+| --- | --- |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEPORT](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_REUSEPORT:java.net.SocketOption) Re-use port. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_SNDBUF](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#SO_SNDBUF:java.net.SocketOption) The size of the socket send buffer. |
 | static [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [TCP_NODELAY](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions#TCP_NODELAY:java.net.SocketOption) Disable the Nagle algorithm. |
+| --- | --- |
 
 ## Properties
 

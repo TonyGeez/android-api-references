@@ -5,15 +5,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # AutoTransition
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/AutoTransition "View this page in Java") 
+| --- | --- |
 
 ```
 open class AutoTransition : TransitionSet
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) |||
 | | ↳ | [android.transition.TransitionSet](https://developer.android.com/reference/kotlin/android/transition/TransitionSet) ||
 | | | ↳ | [android.transition.AutoTransition](https://developer.android.com/reference/kotlin/android/transition/AutoTransition#) |
+| --- | --- | --- | --- |
 
 Utility class for creating a default transition that automatically fades, moves, and resizes views during a scene change.
 

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ProxyInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ProxyInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class ProxyInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) |
 
 Describes a proxy configuration. Proxy configurations are already integrated within the`java.net`and Apache HTTP stack. So [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#) and Apache's`HttpClient`will use them automatically. Other HTTP stacks will need to obtain the proxy info by watching for the [Proxy.PROXY_CHANGE_ACTION](https://developer.android.com/reference/kotlin/android/net/Proxy#PROXY_CHANGE_ACTION:kotlin.String) broadcast and calling methods such as [android.net.ConnectivityManager#getDefaultProxy](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getDefaultProxy()).
@@ -30,15 +32,19 @@ Describes a proxy configuration. Proxy configurations are already integrated wit
 | openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildDirectProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildDirectProxy(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. |
 | openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildDirectProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildDirectProxy(kotlin.String,%20kotlin.Int,%20kotlin.collections.MutableList))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exclList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. |
 | openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildPacProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildPacProxy(android.net.Uri))`(`pacUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)!`)` Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) that will download and run the PAC script at the specified URL. |
+| --- | --- |
 | openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) | [buildPacProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildPacProxy(android.net.Uri,%20kotlin.Int))`(`pacUrl:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that will download and run the PAC script at the specified URL and port. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getExclusionList](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getExclusionList())`()` When configured to use a Direct Proxy this returns the list of hosts for which the proxy is ignored. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getHost())`()` When configured to use a Direct Proxy this returns the host of the proxy. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)! | [getPacFileUrl](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getPacFileUrl())`()` Returns the URL of the current PAC script or null if there is no PAC script. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getPort())`()` When configured to use a Direct Proxy this returns the port of the proxy |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#hashCode())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#isValid())`()` Return true if the pattern of proxy is valid, otherwise return false. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#toString())`()` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|

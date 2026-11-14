@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OrientationEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/OrientationEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class OrientationEventListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.OrientationEventListener](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#) |
 
 Helper class for receiving notifications from the SensorManager when the orientation of the device has changed.
@@ -31,6 +33,7 @@ Helper class for receiving notifications from the SensorManager when the orienta
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canDetectOrientation](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#canDetectOrientation())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disable](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#disable())`()` Disables the OrientationEventListener. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enable](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#enable())`()` Enables the OrientationEventListener so it will monitor the sensor and call [onOrientationChanged](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#onOrientationChanged(kotlin.Int))when the device orientation changes. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOrientationChanged](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#onOrientationChanged(kotlin.Int))`(`orientation:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the orientation of the device has changed. |
 
 ## Constants

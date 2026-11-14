@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # LeScanCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.LeScanCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface LeScanCallback
@@ -41,3 +42,4 @@ Callback reporting an LE device found during a device scan initiated by the andr
 | `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!:Identifies the remote device |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The RSSI value for the remote device as reported by the Bluetooth hardware. 0 if no RSSI value is available. |
 | `scanRecord` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The content of the advertisement record offered by the remote device. |
+| --- | --- |

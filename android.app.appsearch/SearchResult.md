@@ -7,6 +7,7 @@ class SearchResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#) |
 
 This class represents one of the results obtained from an AppSearch query.
@@ -25,6 +26,7 @@ This allows clients to obtain:
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#` objects. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.EmbeddingMatchInfo` This class represents match objects for any snippets that might be present in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults` from an embedding query. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchInfo` This class represents match objects for any snippets that might be present in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults` from a query. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchRange` Class providing the position range of a text match information. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.TextMatchInfo` This class represents match objects for any text match snippets that might be present in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults` from a string query. |
 
@@ -37,12 +39,15 @@ This allows clients to obtain:
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getDatabaseName()()` Contains the database name that stored the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
 | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getGenericDocument()()` Contains the matching `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getInformationalRankingSignals()()` Returns the informational ranking signals of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`, according to the expressions added in android. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getJoinedResults()()` Gets a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#` joined from the join operation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult.MatchInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchInfo)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getMatchInfos()()` Returns a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchInfo`s providing information about how the document in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getGenericDocument()` matched the query. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getPackageName()()` Contains the package name of the app that stored the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getParentTypeMap()()` Returns the map from schema type names to the list of their parent types. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getRankingSignal()()` Returns the ranking signal of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`, according to the ranking strategy set in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec.Builder#setRankingStrategy(kotlin.Int)`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

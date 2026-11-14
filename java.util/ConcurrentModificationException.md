@@ -9,12 +9,15 @@ open class ConcurrentModificationException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException#) |
 
 | Known Direct Subclasses [DirectoryIteratorException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException.html#) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [DirectoryIteratorException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException.html#) | Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This exception may be thrown by methods that have detected concurrent modification of an object when such modification is not permissible.
 

@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # FullBackupDataOutput
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/backup/FullBackupDataOutput "View this page in Java") 
+| --- | --- |
 
 ```
 open class FullBackupDataOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.FullBackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/FullBackupDataOutput#) |
 
 Provides the interface through which a [BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) writes entire files to a full backup data set, via its [BackupAgent.onFullBackup(FullBackupDataOutput)](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onFullBackup(android.app.backup.FullBackupDataOutput))method.

@@ -9,6 +9,7 @@ abstract class X509CRLEntry : X509Extension
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.X509CRLEntry](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#) |
 
 Abstract class for a revoked certificate in a CRL (Certificate Revocation List). The ASN.1 definition for*revokedCertificates*is: 
@@ -47,12 +48,15 @@ revokedCertificates    SEQUENCE OF SEQUENCE  {
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this CRL entry for equality with the given object. |
 | open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | [getCertificateIssuer](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#getCertificateIssuer())`()` Get the issuer of the X509Certificate described by this entry. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#getEncoded())`()` Returns the ASN. |
+| --- | --- |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getRevocationDate](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#getRevocationDate())`()` Gets the revocation date from this X509CRLEntry, the*revocationDate*. |
 | open [CRLReason](https://developer.android.com/reference/kotlin/java/security/cert/CRLReason)! | [getRevocationReason](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#getRevocationReason())`()` Returns the reason the certificate has been revoked, as specified in the Reason Code extension of this CRL entry. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getSerialNumber](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#getSerialNumber())`()` Gets the serial number from this X509CRLEntry, the*userCertificate*. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtensions](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#hasExtensions())`()` Returns true if this CRL entry has extensions. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#hashCode())`()` Returns a hashcode value for this CRL entry from its encoded form. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry#toString())`()` Returns a string representation of this CRL entry. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

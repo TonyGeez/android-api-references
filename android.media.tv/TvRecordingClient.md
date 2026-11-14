@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # TvRecordingClient
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvRecordingClient "View this page in Java") 
+| --- | --- |
 
 ```
 open class TvRecordingClient
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.TvRecordingClient](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#) |
 
 The public interface object used to interact with a specific TV input service for TV program recording.
@@ -30,15 +32,19 @@ The public interface object used to interact with a specific TV input service fo
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pauseRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#pauseRecording())`()` Pause TV program recording in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pauseRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#pauseRecording(android.os.Bundle))`(`params:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Pause TV program recording in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#release())`()` Releases the resources in the current recording session immediately. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resumeRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#resumeRecording())`()` Resume TV program recording only in recording pause status in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resumeRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#resumeRecording(android.os.Bundle))`(`params:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Resume TV program recording only in recording pause status in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendAppPrivateCommand](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#sendAppPrivateCommand(kotlin.String,%20android.os.Bundle))`(`action:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `data:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Sends a private command to the underlying TV input. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTvInteractiveAppView](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#setTvInteractiveAppView(android.media.tv.interactive.TvInteractiveAppView,%20kotlin.String))`(`view:` ` [TvInteractiveAppView](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView)?`, `recordingId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the related [TvInteractiveAppView](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView) instance so the interactive app service can be notified for recording events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#startRecording(android.net.Uri))`(`programUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`)` Starts TV program recording in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#startRecording(android.net.Uri,%20android.os.Bundle))`(`programUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`, `params:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Starts TV program recording in the current recording session. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRecording](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#stopRecording())`()` Stops TV program recording in the current recording session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tune](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#tune(kotlin.String,%20android.net.Uri))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Tunes to a given channel for TV program recording. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tune](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient#tune(kotlin.String,%20android.net.Uri,%20android.os.Bundle))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `params:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Tunes to a given channel for TV program recording. |
+| --- | --- |
 
 ## Public constructors
 
@@ -61,6 +67,7 @@ Creates a new TvRecordingClient object.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The application context to create a TvRecordingClient with. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A short name for debugging purposes. |
 | `callback` | [TvRecordingClient.RecordingCallback](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingClient.RecordingCallback):The callback to receive recording status changes. This value cannot be`null`. |
+| --- | --- |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The handler to invoke the callback on. |
 
 ## Public methods
@@ -293,6 +300,7 @@ The recording session will respond by calling [RecordingCallback.onTuned(Uri)](h
 | `inputId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The ID of the TV input for the given channel. |
 | `channelUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The URI of a channel. |
 | `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:Domain-specific data for this tune request. Keys*must*be a scoped name, i.e. prefixed with a package name you own, so that different developers will not create conflicting keys. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|----------------------------------|

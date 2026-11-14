@@ -7,9 +7,11 @@ abstract class SpellCheckerService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.textservice.SpellCheckerService](https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService#) |
 
 SpellCheckerService provides an abstract base class for a spell checker. This class combines a service to the system with the spell checker service interface that spell checker must implement.

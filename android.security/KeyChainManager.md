@@ -7,6 +7,7 @@ class KeyChainManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.KeyChainManager](https://developer.android.com/reference/kotlin/android/security/KeyChainManager#) |
 
 Manages KeyChain certificates and grants.
@@ -23,6 +24,7 @@ Manages KeyChain certificates and grants.
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\> | `https://developer.android.com/reference/kotlin/android/security/KeyChainManager#getCertificateChain(kotlin.String,%20kotlin.Int)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the certificate chain of the given scoped certificate. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GrantedKeyInfo](https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo)!\> | `https://developer.android.com/reference/kotlin/android/security/KeyChainManager#getGrantedKeyPairs(kotlin.Int)(scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of granted keys that the calling app has access to for the specified scope. |
 | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)? | `https://developer.android.com/reference/kotlin/android/security/KeyChainManager#getPrivateKey(kotlin.String,%20kotlin.Int)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the private key for the given alias and scope. |
+| --- | --- |
 
 ## Constants
 

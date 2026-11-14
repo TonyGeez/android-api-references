@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # BlackLevelPattern
 
 Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/BlackLevelPattern "View this page in Java")
+| --- | --- |
 
 ```
 class BlackLevelPattern
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.BlackLevelPattern](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#) |
 
 Immutable class to store a 4-element vector of integers corresponding to a 2x2 pattern of color channel offsets used for the black level offsets of each color channel. For a camera device with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MONOCHROME:kotlin.Int` capability, all 4 elements of the pattern will have the same value.
@@ -28,6 +30,7 @@ Immutable class to store a 4-element vector of integers corresponding to a 2x2 p
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#copyTo(kotlin.IntArray,%20kotlin.Int)(destination: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the ColorChannel offsets into the destination vector. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#getOffsetForIndex(kotlin.Int,%20kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, row: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the color channel offset for a given index into the array of raw pixel values. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#toString()()` Return this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#` as a string representation. |
 
@@ -97,6 +100,7 @@ Offsets are given in row-column scan order for a given 2x2 color pattern.
 | `java.lang.ArrayIndexOutOfBoundsException` | if the destination vector is too small. |
 | `java.lang.IllegalArgumentException` | if the offset is invalid. |
 | `java.lang.NullPointerException` | if the destination is null. |
+| --- | --- |
 
 ### equals
 

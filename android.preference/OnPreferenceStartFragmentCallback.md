@@ -6,6 +6,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # OnPreferenceStartFragmentCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnPreferenceStartFragmentCallback
@@ -14,6 +15,7 @@ interface OnPreferenceStartFragmentCallback
 | [android.preference.PreferenceFragment.OnPreferenceStartFragmentCallback](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback#) |
 
 | Known Direct Subclasses [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity) | This is the base class for an activity to show a hierarchy of preferences to the user. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 28.**
 |

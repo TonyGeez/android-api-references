@@ -7,6 +7,7 @@ class AppCustomizationAction : CustomizationAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.input.CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction) ||
 | | ↳ | [android.hardware.input.AppCustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#) |
 
@@ -23,6 +24,7 @@ Represents an action that launches or sends an intent to a specific application 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#getComponent()()` Gets the target application component to be launched. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#getData()()` Gets the explicit data URI to be supplied to the target intent. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#getIntentAction()()` Gets the explicit intent action to be used during launch. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction#hashCode()()` Returns a hash code value for the object. |
 

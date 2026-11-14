@@ -7,6 +7,7 @@ open class ObjectInputStream : InputStream, ObjectInput, ObjectStreamConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
 | | ↳ | [java.io.ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#) |
 
@@ -95,36 +96,46 @@ Enum constants are deserialized differently than ordinary serializable or extern
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#available()()` Returns the number of bytes that can be read without blocking. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#close()()` Closes the input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#defaultReadObject()()` Read the non-static and non-transient fields of the current class from this stream. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#read()()` Reads a byte of data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads into an array of bytes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readBoolean()()` Reads in a boolean. |
+| --- | --- |
 | open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readByte()()` Reads an 8 bit byte. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readChar()()` Reads a 16 bit char. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readDouble()()` Reads a 64 bit double. |
+| --- | --- |
 | open [ObjectInputStream.GetField](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream.GetField)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFields()()` Reads the persistent fields from the stream and makes them available by name. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFloat()()` Reads a 32 bit float. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFully(kotlin.ByteArray)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reads bytes, blocking until all bytes are read. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFully(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads bytes, blocking until all bytes are read. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readInt()()` Reads a 32 bit int. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readLine()()` Reads in a line that has been terminated by a \\n, \\r, \\r\\n or EOF. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readLong()()` Reads a 64 bit long. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readObject()()` Read an object from the ObjectInputStream. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readShort()()` Reads a 16 bit short. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUTF()()` Reads a String in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUnshared()()` Reads an "unshared" object from the ObjectInputStream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUnsignedByte()()` Reads an unsigned 8 bit byte. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUnsignedShort()()` Reads an unsigned 16 bit short. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#registerValidation(java.io.ObjectInputValidation,%20kotlin.Int)(obj: https://developer.android.com/reference/kotlin/java/io/ObjectInputValidation!, prio: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register an object to be validated before the graph is returned. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#skipBytes(kotlin.Int)(len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Skips bytes. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#enableResolveObject(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable the stream to allow objects read from the stream to be replaced. |
 | open [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readClassDescriptor()()` Read a class descriptor from the serialization stream. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readObjectOverride()()` This method is called by trusted subclasses of ObjectOutputStream that constructed ObjectOutputStream using the protected no-arg constructor. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readStreamHeader()()` The readStreamHeader method is provided to allow subclasses to read and verify their own stream headers. |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveClass(java.io.ObjectStreamClass)(desc: https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass!)` Load the local class equivalent of the specified stream class description. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveObject(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` This method will allow trusted subclasses of ObjectInputStream to substitute one object for another during deserialization. |
+| --- | --- |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveProxyClass(kotlin.Array)(interfaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Returns a proxy class that implements the interfaces named in a proxy class descriptor; subclasses may implement this method to read custom data from the stream along with the descriptors for dynamic proxy classes, allowing them to use an alternate loading mechanism for the interfaces and the proxy class. |
 
 | Inherited functions ||
@@ -158,6 +169,7 @@ If a security manager is installed, this constructor will check for the "enableS
 | `java.io.IOException` | if an I/O error occurs while reading stream header |
 | `java.io.StreamCorruptedException` | if the stream header is incorrect |
 | `java.lang.NullPointerException` | if `in` is `null` |
+| --- | --- |
 | `java.lang.SecurityException` | if untrusted subclass illegally overrides security-sensitive methods |
 
 **See Also**
@@ -239,6 +251,7 @@ Read the non-static and non-transient fields of the current class from this stre
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.NotActiveException` | if the stream is not currently reading objects. |
 | `java.lang.ClassNotFoundException` | if the class of a serialized object could not be found. |
+| --- | --- |
 
 ### read
 
@@ -277,6 +290,7 @@ Reads into an array of bytes. This method will block until some input is availab
 | `b` | the buffer into which the data is read |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of bytes read |
+| --- | --- |
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer into which the data is read |
 
 | Return ||
@@ -288,6 +302,7 @@ Reads into an array of bytes. This method will block until some input is availab
 | `java.io.IOException` | If an I/O error has occurred. |
 | `java.lang.IndexOutOfBoundsException` | If `off` is negative, `len` is negative, or `len` is greater than `b.length - off` |
 | `java.lang.NullPointerException` | If `b` is `null`. |
+| --- | --- |
 
 **See Also**
 
@@ -388,6 +403,7 @@ Reads the persistent fields from the stream and makes them available by name.
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.NotActiveException` | if the stream is not currently reading objects. |
 | `java.lang.ClassNotFoundException` | if the class of a serialized object could not be found. |
+| --- | --- |
 
 ### readFloat
 
@@ -428,6 +444,7 @@ Reads bytes, blocking until all bytes are read.
 | `java.io.EOFException` | If end of file is reached. |
 | `java.io.IOException` | If other I/O error has occurred. |
 | `java.lang.NullPointerException` | if `b` is `null`. |
+| --- | --- |
 
 ### readFully
 
@@ -448,6 +465,7 @@ Reads bytes, blocking until all bytes are read.
 | `b` | the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of bytes to read |
+| --- | --- |
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer into which the data is read |
 
 | Exceptions ||
@@ -455,6 +473,7 @@ Reads bytes, blocking until all bytes are read.
 | `java.io.EOFException` | If end of file is reached. |
 | `java.io.IOException` | If other I/O error has occurred. |
 | `java.lang.IndexOutOfBoundsException` | if `off` is negative, `len` is negative, or `len` is greater than `b.length - off`. |
+| --- | --- |
 | `java.lang.NullPointerException` | if `b` is `null`. |
 
 ### readInt
@@ -538,6 +557,7 @@ Exceptions are thrown for problems with the InputStream and for classes that sho
 | `java.io.IOException` | Any of the usual Input/Output related exceptions. |
 | `java.lang.ClassNotFoundException` | Class of a serialized object cannot be found. |
 | `java.io.InvalidClassException` | Something is wrong with a class used by serialization. |
+| --- | --- |
 | `java.io.OptionalDataException` | Primitive data was found in the stream instead of objects. |
 | `java.io.StreamCorruptedException` | Control information in the stream is inconsistent. |
 
@@ -579,6 +599,7 @@ Reads a String in [modified UTF-8](https://developer.android.com/reference/kotli
 | `java.io.EOFException` | if this stream reaches the end before reading all the bytes. |
 | `java.io.IOException` | if there are I/O errors while reading from the underlying `InputStream` |
 | `java.io.UTFDataFormatException` | if read bytes do not represent a valid modified UTF-8 encoding of a string |
+| --- | --- |
 
 ### readUnshared
 
@@ -608,6 +629,7 @@ ObjectInputStream subclasses which override this method can only be constructed 
 | `java.io.IOException` | if an I/O error occurs during deserialization |
 | `java.io.ObjectStreamException` | if object to deserialize has already appeared in stream |
 | `java.io.OptionalDataException` | if primitive data is next in stream |
+| --- | --- |
 | `java.io.StreamCorruptedException` | if control information in the stream is inconsistent |
 | `java.lang.ClassNotFoundException` | if class of an object to deserialize cannot be found |
 
@@ -767,6 +789,7 @@ This method is called by trusted subclasses of ObjectOutputStream that construct
 | `java.io.IOException` | if I/O errors occurred while reading from the underlying stream |
 | `java.io.OptionalDataException` | Primitive data was found in the stream instead of objects. |
 | `java.lang.ClassNotFoundException` | Class definition of a serialized object cannot be found. |
+| --- | --- |
 
 **See Also**
 

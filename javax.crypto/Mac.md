@@ -9,6 +9,7 @@ open class Mac : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.Mac](https://developer.android.com/reference/kotlin/javax/crypto/Mac#) |
 
 This class provides the functionality of a "Message Authentication Code" (MAC) algorithm.
@@ -24,21 +25,27 @@ Android provides the following`Mac`algorithms:
 | AESCMAC | 31+ |
 | DESMAC | 1-8 |
 | DESMAC/CFB8 | 1-8 |
+| --- | --- |
 | DESedeMAC | 1-8 |
 | DESedeMAC/CFB8 | 1-8 |
 | DESedeMAC64 | 1-8 |
+| --- | --- |
 | DESwithISO9797 | 1-8 |
 | HmacMD5 | 1+ |
 | HmacSHA1 | 1+ |
+| --- | --- |
 | HmacSHA224 | 1-8,22+ |
 | HmacSHA256 | 1+ |
 | HmacSHA384 | 1+ |
+| --- | --- |
 | HmacSHA512 | 1+ |
 | ISO9797ALG3MAC | 1-8 |
 | PBEwithHmacSHA | 1+ |
+| --- | --- |
 | PBEwithHmacSHA1 | 1+ |
 | PBEwithHmacSHA224 | 26-31 |
 | PBEwithHmacSHA256 | 26-31 |
+| --- | --- |
 | PBEwithHmacSHA384 | 26-31 |
 | PBEwithHmacSHA512 | 26-31 |
 
@@ -55,18 +62,23 @@ These algorithms are described in the [Mac section](https://docs.oracle.com/java
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/javax/crypto/Mac#clone())`()` Returns a clone if the provider implementation is cloneable. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Mac#doFinal())`()` Finishes the MAC operation. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Mac#doFinal(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes and finishes the MAC operation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doFinal](https://developer.android.com/reference/kotlin/javax/crypto/Mac#doFinal(kotlin.ByteArray,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes the MAC operation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getAlgorithm())`()` Returns the algorithm name of this`Mac`object. |
 | static [Mac](https://developer.android.com/reference/kotlin/javax/crypto/Mac#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
+| --- | --- |
 | static [Mac](https://developer.android.com/reference/kotlin/javax/crypto/Mac#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
 | static [Mac](https://developer.android.com/reference/kotlin/javax/crypto/Mac#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacLength](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getMacLength())`()` Returns the length of the MAC in bytes. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/Mac#getProvider())`()` Returns the provider of this`Mac`object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Mac#init(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Initializes this`Mac`object with the given key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/crypto/Mac#init(java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this`Mac`object with the given key and algorithm parameters. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/crypto/Mac#reset())`()` Resets this`Mac`object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Mac#update(kotlin.Byte))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Mac#update(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Mac#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/javax/crypto/Mac#update(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
 
@@ -90,6 +102,7 @@ Creates a MAC object.
 | `macSpi` | [MacSpi](https://developer.android.com/reference/kotlin/javax/crypto/MacSpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -260,6 +273,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.security.NoSuchAlgorithmException` | if a MacSpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
+| --- | --- |
 
 **See Also**
 
@@ -434,6 +448,7 @@ Processes the first`len`bytes in`input`, starting at`offset`inclusive.
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input buffer. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset in`input`where the input starts. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to process. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------|

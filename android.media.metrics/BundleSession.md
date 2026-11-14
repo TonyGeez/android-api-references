@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # BundleSession
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/metrics/BundleSession "View this page in Java")
+| --- | --- |
 
 ```
 class BundleSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.BundleSession](https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#) |
 
 An instance of this class represents a session with data stored in a bundle.
@@ -24,6 +26,7 @@ An instance of this class represents a session with data stored in a bundle.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#getSessionId()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` Reports metrics via bundle. |
 

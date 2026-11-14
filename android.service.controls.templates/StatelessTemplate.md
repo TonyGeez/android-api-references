@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # StatelessTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/StatelessTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class StatelessTemplate : ControlTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.templates.ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) ||
 | | ↳ | [android.service.controls.templates.StatelessTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/StatelessTemplate#) |
 

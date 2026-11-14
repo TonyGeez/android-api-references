@@ -9,6 +9,7 @@ open class Attributes2Impl : AttributesImpl, Attributes2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [org.xml.sax.helpers.AttributesImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributesImpl.html#) ||
 | | ↳ | [org.xml.sax.ext.Attributes2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#) |
 
@@ -30,12 +31,15 @@ The*specified* flag for each attribute will always be true, unless it has been s
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#addAttribute(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add an attribute to the end of the list, setting its "specified" flag to true. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclared](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isDeclared(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclared](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isDeclared(kotlin.String))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclared](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isDeclared(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpecified](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isSpecified(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the current value of an attribute's "specified" flag. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpecified](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isSpecified(kotlin.String))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the current value of an attribute's "specified" flag. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpecified](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#isSpecified(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the current value of an attribute's "specified" flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAttribute](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#removeAttribute(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttributes](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#setAttributes(org.xml.sax.Attributes))`(`atts:` ` [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!`)` Copy an entire Attributes object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDeclared](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#setDeclared(kotlin.Int,%20kotlin.Boolean))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Assign a value to the "declared" flag of a specific attribute. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpecified](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl#setSpecified(kotlin.Int,%20kotlin.Boolean))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Assign a value to the "specified" flag of a specific attribute. |
 
@@ -96,6 +100,7 @@ Unless the attribute*type* is CDATA, this attribute is marked as being declared 
 | `uri` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The Namespace URI, or the empty string if none is available or Namespace processing is not being performed. |
 | `localName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The local name, or the empty string if Namespace processing is not being performed. |
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified (prefixed) name, or the empty string if qualified names are not available. |
+| --- | --- |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute type as a string. |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The attribute value. |
 

@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # ReaderCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.ReaderCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ReaderCallback

@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # Trace
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Trace "View this page in Java") 
+| --- | --- |
 
 ```
 class Trace
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Trace](https://developer.android.com/reference/kotlin/android/os/Trace#) |
 
 Writes trace events to the system trace buffer. These trace events can be collected and visualized using the Systrace tool.
@@ -26,9 +28,11 @@ For information about using the Systrace tool, read [Analyzing Display and Perfo
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginAsyncSection](https://developer.android.com/reference/kotlin/android/os/Trace#beginAsyncSection(kotlin.String,%20kotlin.Int))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginSection](https://developer.android.com/reference/kotlin/android/os/Trace#beginSection(kotlin.String))`(`sectionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endAsyncSection](https://developer.android.com/reference/kotlin/android/os/Trace#endAsyncSection(kotlin.String,%20kotlin.Int))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that the current method has ended. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSection](https://developer.android.com/reference/kotlin/android/os/Trace#endSection())`()` Writes a trace message to indicate that a given section of code has ended. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/os/Trace#isEnabled())`()` Checks whether or not tracing is currently enabled. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCounter](https://developer.android.com/reference/kotlin/android/os/Trace#setCounter(kotlin.String,%20kotlin.Long))`(`counterName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `counterValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes trace message to indicate the value of a given counter. |
+| --- | --- |
 
 ## Public methods
 
@@ -61,6 +65,7 @@ static fun beginSection(sectionName: String): Unit
 Writes a trace message to indicate that a given section of code has begun. This call must be followed by a corresponding call to [endSection()](https://developer.android.com/reference/kotlin/android/os/Trace#endSection())on the same thread.
 
 At this time the vertical bar character '|', newline character '\\n', and null character '\\0' are used internally by the tracing mechanism. If sectionName contains these characters they will be replaced with a space character in the trace.
+| --- | --- |
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

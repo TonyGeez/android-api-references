@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SimpleNotation
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/SimpleNotation "View this page in Java") 
+| --- | --- |
 
 ```
 open class SimpleNotation : Notation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.number.Notation](https://developer.android.com/reference/kotlin/android/icu/number/Notation) ||
 | | ↳ | [android.icu.number.SimpleNotation](https://developer.android.com/reference/kotlin/android/icu/number/SimpleNotation#) |
 

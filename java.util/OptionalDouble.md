@@ -9,6 +9,7 @@ class OptionalDouble
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#) |
 
 A container object which may or may not contain a`double`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
@@ -24,18 +25,23 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | static [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#)! | [empty](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#empty())`()` Returns an empty`OptionalDouble`instance. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalDouble`. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAsDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#getAsDouble())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#hashCode())`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#ifPresent(java.util.function.DoubleConsumer))`(`action:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#ifPresentOrElse(java.util.function.DoubleConsumer,%20java.lang.Runnable))`(`action:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer)!`, `emptyAction:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#isEmpty())`()` If a value is not present, returns`true`, otherwise`false`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#isPresent())`()` If a value is present, returns`true`, otherwise`false`. |
 | static [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#)! | [of](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#of(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns an`OptionalDouble`describing the given value. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [orElse](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#orElse(kotlin.Double))`(`other:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [orElseGet](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#orElseGet(java.util.function.DoubleSupplier))`(`supplier:` ` [DoubleSupplier](https://developer.android.com/reference/kotlin/java/util/function/DoubleSupplier)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#orElseThrow())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#orElseThrow(java.util.function.Supplier))`(`exceptionSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
 | [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | [stream](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#stream())`()` If a value is present, returns a sequential [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream) containing only that value, otherwise returns an empty`DoubleStream`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/OptionalDouble#toString())`()` Returns a non-empty string representation of this`OptionalDouble`suitable for debugging. |
+| --- | --- |
 
 ## Public methods
 

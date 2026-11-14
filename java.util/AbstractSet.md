@@ -7,12 +7,15 @@ abstract class AbstractSet<E : Any!> : AbstractCollection<E>, MutableSet<E>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> ||
 | | ↳ | [java.util.AbstractSet](https://developer.android.com/reference/kotlin/java/util/AbstractSet#) |
 
 | Known Direct Subclasses [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet), [CopyOnWriteArraySet](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet), [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet), [HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet), [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) |---|---| | [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet) | A scalable concurrent `https://developer.android.com/reference/kotlin/java/util/NavigableSet` implementation based on a `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap`. | | [CopyOnWriteArraySet](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet) | A `https://developer.android.com/reference/kotlin/java/util/Set` that uses an internal `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList` for all of its operations. | | [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet) | A specialized `https://developer.android.com/reference/kotlin/java/util/Set` implementation for use with enum types. | | [HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet) | This class implements the `Set` interface, backed by a hash table (actually a `HashMap` instance). | | [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) | A `https://developer.android.com/reference/kotlin/java/util/NavigableSet` implementation based on a `https://developer.android.com/reference/kotlin/java/util/TreeMap`. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [LinkedHashSet](https://developer.android.com/reference/kotlin/java/util/LinkedHashSet) |---|---| | [LinkedHashSet](https://developer.android.com/reference/kotlin/java/util/LinkedHashSet) | Hash table and linked list implementation of the `Set` interface, with well-defined encounter order. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the `Set` interface to minimize the effort required to implement this interface.
 
@@ -33,6 +36,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/AbstractSet#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this set for equality. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/AbstractSet#hashCode()()` Returns the hash code value for this set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/AbstractSet#removeAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Removes from this set all of its elements that are contained in the specified collection (optional operation). |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -124,5 +128,6 @@ Note that this implementation will throw an `UnsupportedOperationException` if t
 | `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `removeAll` operation is not supported by this set |
+| --- | --- |
 
 **See Also**

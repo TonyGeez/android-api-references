@@ -9,6 +9,7 @@ class TopicsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.topics.TopicsManager](https://developer.android.com/reference/kotlin/android/adservices/topics/TopicsManager#) |
 
 > [!CAUTION]
@@ -75,6 +76,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | `getTopicsRequest` | [GetTopicsRequest](https://developer.android.com/reference/kotlin/android/adservices/topics/GetTopicsRequest): The request for obtaining Topics. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [GetTopicsResponse](https://developer.android.com/reference/kotlin/android/adservices/topics/GetTopicsResponse)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: The callback that's called after topics are available or an error occurs. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

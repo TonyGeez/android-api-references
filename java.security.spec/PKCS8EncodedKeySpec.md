@@ -9,6 +9,7 @@ open class PKCS8EncodedKeySpec : EncodedKeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec) ||
 | | ↳ | [java.security.spec.PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#) |
 

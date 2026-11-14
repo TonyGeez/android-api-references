@@ -11,8 +11,10 @@ interface ErrorHandler
 | [org.xml.sax.ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler#) |
 
 | Known Direct Subclasses [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler), [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase), [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) |-----------------------------------------------------------------------------------------------------|---------------------------------------------| | [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler) | Default base class for SAX2 event handlers. | | [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase) | Default base class for handlers. | | [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) | Base class for deriving an XML filter. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler), [DeclHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DeclHandler), and [EntityResolver2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/EntityResolver2) extensions. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Basic interface for SAX error handlers.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -29,6 +31,7 @@ For XML processing errors, a SAX driver must use this interface in preference to
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler#error(org.xml.sax.SAXParseException))`(`exception:` ` [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException)!`)` Receive notification of a recoverable error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fatalError](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler#fatalError(org.xml.sax.SAXParseException))`(`exception:` ` [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException)!`)` Receive notification of a non-recoverable error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler#warning(org.xml.sax.SAXParseException))`(`exception:` ` [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException)!`)` Receive notification of a warning. |
+| --- | --- |
 
 ## Public methods
 

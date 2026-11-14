@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Environment
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Environment "View this page in Java") 
+| --- | --- |
 
 ```
 open class Environment
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Environment](https://developer.android.com/reference/kotlin/android/os/Environment#) |
 
 Provides access to environment variables.
@@ -22,12 +24,15 @@ Provides access to environment variables.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_BAD_REMOVAL](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_BAD_REMOVAL:kotlin.String) Storage state if the media was removed before it was unmounted. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_CHECKING](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_CHECKING:kotlin.String) Storage state if the media is present and being disk-checked. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_EJECTING](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_EJECTING:kotlin.String) Storage state if the media is in the process of being ejected. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_MOUNTED](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_MOUNTED:kotlin.String) Storage state if the media is present and mounted at its mount point with read/write access. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_MOUNTED_READ_ONLY](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_MOUNTED_READ_ONLY:kotlin.String) Storage state if the media is present and mounted at its mount point with read-only access. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_NOFS](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_NOFS:kotlin.String) Storage state if the media is present but is blank or is using an unsupported filesystem. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_REMOVED](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_REMOVED:kotlin.String) Storage state if the media is not present. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_SHARED](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_SHARED:kotlin.String) Storage state if the media is present not mounted, and shared via USB mass storage. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_UNKNOWN](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_UNKNOWN:kotlin.String) Unknown storage state, such as when a path isn't backed by known storage media. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_UNMOUNTABLE](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_UNMOUNTABLE:kotlin.String) Storage state if the media is present but cannot be mounted. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_UNMOUNTED](https://developer.android.com/reference/kotlin/android/os/Environment#MEDIA_UNMOUNTED:kotlin.String) Storage state if the media is present but not mounted. |
 
@@ -40,18 +45,23 @@ Provides access to environment variables.
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [getDataDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getDataDirectory())`()` Return the user data directory. |
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [getDownloadCacheDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getDownloadCacheDirectory())`()` Return the download/cache content directory. |
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [getExternalStorageDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getExternalStorageDirectory())`()` Return the primary shared/external storage directory. |
+| --- | --- |
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | [getExternalStoragePublicDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getExternalStoragePublicDirectory(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a top-level shared/external storage directory for placing files of a particular type. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExternalStorageState](https://developer.android.com/reference/kotlin/android/os/Environment#getExternalStorageState())`()` Returns the current state of the primary shared/external storage media. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExternalStorageState](https://developer.android.com/reference/kotlin/android/os/Environment#getExternalStorageState(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Returns the current state of the shared/external storage media at the given path. |
+| --- | --- |
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#) | [getRootDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getRootDirectory())`()` Return root of the "system" partition holding the core Android OS. |
 | openstatic [File](https://developer.android.com/reference/kotlin/java/io/File.html#) | [getStorageDirectory](https://developer.android.com/reference/kotlin/android/os/Environment#getStorageDirectory())`()` Return root directory where all external storage devices will be mounted. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStorageState](https://developer.android.com/reference/kotlin/android/os/Environment#getStorageState(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` <br /> |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageEmulated](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageEmulated())`()` Returns whether the primary shared/external storage media is emulated. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageEmulated](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageEmulated(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`)` Returns whether the shared/external storage media at the given path is emulated. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageLegacy](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageLegacy())`()` Returns whether the shared/external storage media is a legacy view that includes files not owned by the app. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageLegacy](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageLegacy(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`)` Returns whether the shared/external storage media is a legacy view that includes files not owned by the app. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageManager](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageManager())`()` Returns whether the calling app has All Files Access on the primary shared/external storage media. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageManager](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageManager(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`)` Returns whether the calling app has All Files Access at the given`path` |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageRemovable](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageRemovable())`()` Returns whether the primary shared/external storage media is physically removable. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternalStorageRemovable](https://developer.android.com/reference/kotlin/android/os/Environment#isExternalStorageRemovable(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)`)` Returns whether the shared/external storage media at the given path is physically removable. |
 
@@ -60,15 +70,19 @@ Provides access to environment variables.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_ALARMS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_ALARMS:kotlin.String) Standard directory in which to place any audio files that should be in the list of alarms that the user can select (not as regular music). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_AUDIOBOOKS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_AUDIOBOOKS:kotlin.String) Standard directory in which to place any audio files that should be in the list of audiobooks that the user can select (not as regular music). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_DCIM](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_DCIM:kotlin.String) The traditional location for pictures and videos when mounting the device as a camera. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_DOCUMENTS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_DOCUMENTS:kotlin.String) Standard directory in which to place documents that have been created by the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_DOWNLOADS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_DOWNLOADS:kotlin.String) Standard directory in which to place files that have been downloaded by the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_MOVIES](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_MOVIES:kotlin.String) Standard directory in which to place movies that are available to the user. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_MUSIC](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_MUSIC:kotlin.String) Standard directory in which to place any audio files that should be in the regular list of music for the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_NOTIFICATIONS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_NOTIFICATIONS:kotlin.String) Standard directory in which to place any audio files that should be in the list of notifications that the user can select (not as regular music). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_PICTURES](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_PICTURES:kotlin.String) Standard directory in which to place pictures that are available to the user. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_PODCASTS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_PODCASTS:kotlin.String) Standard directory in which to place any audio files that should be in the list of podcasts that the user can select (not as regular music). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIRECTORY_RECORDINGS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_RECORDINGS:kotlin.String) Standard directory in which to place any audio files that should be in the list of voice recordings recorded by voice recorder apps that the user can select (not as regular music). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_RINGTONES](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_RINGTONES:kotlin.String) Standard directory in which to place any audio files that should be in the list of ringtones that the user can select (not as regular music). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [DIRECTORY_SCREENSHOTS](https://developer.android.com/reference/kotlin/android/os/Environment#DIRECTORY_SCREENSHOTS:kotlin.String) Standard directory in which to place screenshots that have been taken by the user. |
 
 ## Constants

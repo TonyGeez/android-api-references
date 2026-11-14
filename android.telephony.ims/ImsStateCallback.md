@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # ImsStateCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/ImsStateCallback "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ImsStateCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ims.ImsStateCallback](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#) |
 
 A callback class used for monitoring changes in IMS service connection states for a specific subscription.
@@ -24,9 +26,11 @@ A callback class used for monitoring changes in IMS service connection states fo
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_IMS_SERVICE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_IMS_SERVICE_DISCONNECTED:kotlin.Int) The underlying IMS service has died, is reconfiguring, or has never come up yet and as a result is currently unavailable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_IMS_SERVICE_NOT_READY](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_IMS_SERVICE_NOT_READY:kotlin.Int) The IMS service is connected, but in a NOT_READY state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NO_IMS_SERVICE_CONFIGURED](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_NO_IMS_SERVICE_CONFIGURED:kotlin.Int) There is no IMS service configured for the subscription ID specified. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_SUBSCRIPTION_INACTIVE](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_SUBSCRIPTION_INACTIVE:kotlin.Int) The subscription associated with this Manager has moved to an inactive state (e.g. SIM removed) and the IMS service has torn down the resources related to this subscription. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_UNKNOWN_PERMANENT_ERROR](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_UNKNOWN_PERMANENT_ERROR:kotlin.Int) The underlying IMS service is permanently unavailable for the associated subscription and there will be no Manager available for this subscription. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_UNKNOWN_TEMPORARY_ERROR](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#REASON_UNKNOWN_TEMPORARY_ERROR:kotlin.Int) The underlying IMS service is temporarily unavailable for the associated subscription. |
+| --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -37,6 +41,7 @@ A callback class used for monitoring changes in IMS service connection states fo
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAvailable](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#onAvailable())`()` The IMS service is connected and is ready for communication over the provided Manager. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#onError())`()` An unexpected error has occurred and the Telephony process has crashed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUnavailable](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsStateCallback#onUnavailable(kotlin.Int))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The IMS service has disconnected or is reporting NOT_READY and is no longer available to users. |
+| --- | --- |
 
 ## Constants
 

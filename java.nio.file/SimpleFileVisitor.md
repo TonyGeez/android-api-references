@@ -9,6 +9,7 @@ open class SimpleFileVisitor<T : Any!> : FileVisitor<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.SimpleFileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor#) |
 
 A simple visitor of files with default behavior to visit all files and to re-throw I/O errors.
@@ -26,6 +27,7 @@ Methods in this class may be overridden subject to their general contract.
 | open [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [postVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor#postVisitDirectory(java.nio.file.SimpleFileVisitor.T,%20java.io.IOException))`(`dir:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a directory after entries in the directory, and all of their descendants, have been visited. |
 | open [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [preVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor#preVisitDirectory(java.nio.file.SimpleFileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`dir:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a directory before entries in the directory are visited. |
 | open [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFile](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor#visitFile(java.nio.file.SimpleFileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`file:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a file in a directory. |
+| --- | --- |
 | open [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFileFailed](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor#visitFileFailed(java.nio.file.SimpleFileVisitor.T,%20java.io.IOException))`(`file:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a file that could not be visited. |
 
 ## Protected constructors

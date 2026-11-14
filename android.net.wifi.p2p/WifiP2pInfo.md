@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#) |
 
 A class representing connection information about a Wi-Fi p2p group {@see WifiP2pManager}
@@ -31,12 +33,14 @@ A class representing connection information about a Wi-Fi p2p group {@see WifiP2
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#describeContents())`()` Implement the Parcelable interface |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiP2pInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [groupFormed](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#groupFormed:kotlin.Boolean) Indicates if a p2p group has been successfully formed |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [groupOwnerAddress](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#groupOwnerAddress:java.net.InetAddress) Group owner address |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupOwner](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo#isGroupOwner:kotlin.Boolean) Indicates if the current device is the group owner |
 
 ## Public constructors

@@ -5,20 +5,25 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RemoteException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/RemoteException "View this page in Java") 
+| --- | --- |
 
 ```
 open class RemoteException : AndroidException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.util.AndroidException](https://developer.android.com/reference/kotlin/android/util/AndroidException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.os.RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException#) |
 
 | Known Direct Subclasses [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException), [TransactionTooLargeException](https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException) |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException) | The object you are calling has died, because its hosting process no longer exists, or there has been a low-level binder error. | | [TransactionTooLargeException](https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException) | The Binder transaction failed because it was too large. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) | The core Android system has died and is going through a runtime restart. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Parent exception for all Binder remote-invocation errors Note: not all exceptions from binder services will be subclasses of this. For instance, RuntimeException and several subclasses of it may be thrown as well as OutOfMemoryException. One common subclass is [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException).
 

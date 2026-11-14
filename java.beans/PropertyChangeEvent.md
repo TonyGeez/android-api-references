@@ -9,10 +9,12 @@ open class PropertyChangeEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [java.beans.PropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#) |
 
 | Known Direct Subclasses [IndexedPropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/IndexedPropertyChangeEvent) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [IndexedPropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/IndexedPropertyChangeEvent) | An "IndexedPropertyChange" event gets delivered whenever a component that conforms to the JavaBeans™ specification (a "bean") changes a bound indexed property. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A "PropertyChange" event gets delivered whenever a bean changes a "bound" or "constrained" property. A PropertyChangeEvent object is sent as an argument to the PropertyChangeListener and VetoableChangeListener methods.
 
@@ -33,9 +35,11 @@ An event source may send a null object as the name to indicate that an arbitrary
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getNewValue](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#getNewValue())`()` Gets the new value for the property, expressed as an Object. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getOldValue](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#getOldValue())`()` Gets the old value for the property, expressed as an Object. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getPropagationId](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#getPropagationId())`()` The "propagationId" field is reserved for future use. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyName](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#getPropertyName())`()` Gets the programmatic name of the property that was changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPropagationId](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#setPropagationId(kotlin.Any))`(`propagationId:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the propagationId object for the event. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -66,6 +70,7 @@ Constructs a new `PropertyChangeEvent`.
 | `source` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the bean that fired the event |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the programmatic name of the property that was changed |
 | `oldValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the old value of the property |
+| --- | --- |
 | `newValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the new value of the property |
 
 | Exceptions ||

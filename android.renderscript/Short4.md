@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Short4
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Short4 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Short4
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Vector version of the basic short type. Provides four short fields packed.
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [w](https://developer.android.com/reference/kotlin/android/renderscript/Short4#w:kotlin.Short) <br /> |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Short4#x:kotlin.Short) <br /> |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Short4#y:kotlin.Short) <br /> |
+| --- | --- |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Short4#z:kotlin.Short) <br /> |
 
 ## Public constructors

@@ -9,6 +9,7 @@ open class EllipticCurve
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.EllipticCurve](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#) |
 
 This immutable class holds the necessary values needed to represent an elliptic curve.
@@ -25,9 +26,11 @@ This immutable class holds the necessary values needed to represent an elliptic 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve for equality with the specified object. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getA](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#getA())`()` Returns the first coefficient`a`of the elliptic curve. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getB](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#getB())`()` Returns the second coefficient`b`of the elliptic curve. |
+| --- | --- |
 | open [ECField](https://developer.android.com/reference/kotlin/java/security/spec/ECField)! | [getField](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#getField())`()` Returns the finite field`field`that this elliptic curve is over. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSeed](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#getSeed())`()` Returns the seeding bytes`seed`used during curve generation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/EllipticCurve#hashCode())`()` Returns a hash code value for this elliptic curve. |
+| --- | --- |
 
 ## Public constructors
 
@@ -49,6 +52,7 @@ Creates an elliptic curve with the specified elliptic field`field`and the coeffi
 | `field` | [ECField](https://developer.android.com/reference/kotlin/java/security/spec/ECField)!:the finite field that this elliptic curve is over. |
 | `a` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the first coefficient of this elliptic curve. |
 | `b` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the second coefficient of this elliptic curve. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------|
@@ -74,6 +78,7 @@ Creates an elliptic curve with the specified elliptic field`field`, the coeffici
 | `field` | [ECField](https://developer.android.com/reference/kotlin/java/security/spec/ECField)!:the finite field that this elliptic curve is over. |
 | `a` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the first coefficient of this elliptic curve. |
 | `b` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the second coefficient of this elliptic curve. |
+| --- | --- |
 | `seed` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the bytes used during curve generation for later validation. Contents of this array are copied to protect against subsequent modification. |
 
 | Exceptions ||

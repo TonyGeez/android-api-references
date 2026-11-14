@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FillEventHistory
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillEventHistory "View this page in Java") 
+| --- | --- |
 
 ```
 class FillEventHistory : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#) |
 
 Describes what happened after the last [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback))call.
@@ -34,9 +36,11 @@ The history is not persisted over reboots, and it's cleared every time the servi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getClientState](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getClientState())`()` Returns the client state set in the previous [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse). |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FillEventHistory.Event](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event)!\>? | [getEvents](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getEvents())`()` Returns the events occurred after the latest call to [FillCallback.onSuccess(FillResponse)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onSuccess(android.service.autofill.FillResponse)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getSessionId())`()` Returns the unique identifier of this FillEventHistory. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,6 +9,7 @@ open class KeyRep : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.KeyRep](https://developer.android.com/reference/kotlin/java/security/KeyRep#) |
 
 Standardized representation for serialized Key objects.
@@ -50,6 +51,7 @@ Construct the alternate Key class.
 | `type` | [KeyRep.Type](https://developer.android.com/reference/kotlin/java/security/KeyRep.Type)!:either one of Type.SECRET, Type.PUBLIC, or Type.PRIVATE |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm returned from`Key.getAlgorithm()` |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the encoding format returned from`Key.getFormat()` |
+| --- | --- |
 | `encoded` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the encoded bytes returned from`Key.getEncoded()` |
 
 | Exceptions ||

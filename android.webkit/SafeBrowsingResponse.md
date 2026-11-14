@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # SafeBrowsingResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/webkit/SafeBrowsingResponse "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SafeBrowsingResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.SafeBrowsingResponse](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#) |
 
 Used to indicate an action to take when hitting a malicious URL. Instances of this class are created by the WebView and passed to [android.webkit.WebViewClient#onSafeBrowsingHit](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onSafeBrowsingHit(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20kotlin.Int,%20android.webkit.SafeBrowsingResponse)). The host application must call [showInterstitial(boolean)](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#showInterstitial(kotlin.Boolean)), [proceed(boolean)](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#proceed(kotlin.Boolean)), or [backToSafety(boolean)](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#backToSafety(kotlin.Boolean)) to set the WebView's response to the Safe Browsing hit.
@@ -28,6 +30,7 @@ If reporting is enabled, all reports will be sent according to the privacy polic
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [backToSafety](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#backToSafety(kotlin.Boolean))`(`report:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Act as if the user clicked the "back to safety" button. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [proceed](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#proceed(kotlin.Boolean))`(`report:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Act as if the user clicked the "visit this unsafe site" button. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showInterstitial](https://developer.android.com/reference/kotlin/android/webkit/SafeBrowsingResponse#showInterstitial(kotlin.Boolean))`(`allowReporting:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Display the default interstitial. |
+| --- | --- |
 
 ## Public constructors
 

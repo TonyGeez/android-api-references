@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # FieldClassification
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/assist/classification/FieldClassification "View this page in Java") 
+| --- | --- |
 
 ```
 class FieldClassification : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.assist.classification.FieldClassification](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#) |
 
 Represents a classified field from the detection service.
@@ -30,6 +32,7 @@ Represents a classified field from the detection service.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#describeContents())`()` <br /> |
 | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | [getAutofillId](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#getAutofillId())`()` Autofill id of the detected field. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getHints](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#getHints())`()` Detected fields types represented as autofill hints. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

@@ -3,12 +3,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # StatusHints
 
 Kotlin | [Java](https://developer.android.com/reference/android/telecom/StatusHints "View this page in Java")
+| --- | --- |
 
 ```
 class StatusHints : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.StatusHints](https://developer.android.com/reference/kotlin/android/telecom/StatusHints#) |
 
 Contains status label and icon displayed in the in-call UI.
@@ -28,9 +30,11 @@ Contains status label and icon displayed in the in-call UI.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getExtras()()` <br /> |
+| --- | --- |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getIcon()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getLabel()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

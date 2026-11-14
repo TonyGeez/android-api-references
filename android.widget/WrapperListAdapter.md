@@ -3,6 +3,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # WrapperListAdapter
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/WrapperListAdapter "View this page in Java")
+| --- | --- |
 
 ```
 interface WrapperListAdapter : ListAdapter
@@ -11,6 +12,7 @@ interface WrapperListAdapter : ListAdapter
 | [android.widget.WrapperListAdapter](https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#) |
 
 | Known Direct Subclasses [HeaderViewListAdapter](https://developer.android.com/reference/kotlin/android/widget/HeaderViewListAdapter) |---|---| | [HeaderViewListAdapter](https://developer.android.com/reference/kotlin/android/widget/HeaderViewListAdapter) | ListAdapter used when a ListView has header views. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 List adapter that wraps another list adapter. The wrapped adapter can be retrieved by calling `https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#getWrappedAdapter()`.
 

@@ -9,6 +9,7 @@ class PrivateCredentialPermission : Permission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) ||
 | | ↳ | [javax.security.auth.PrivateCredentialPermission](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission#) |
 
@@ -25,6 +26,7 @@ Legacy security code; do not use.
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getActions](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission#getActions())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCredentialClass](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission#getCredentialClass())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getPrincipals](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission#getPrincipals())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission#implies(java.security.Permission))`(`p:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)!`)` <br /> |
 
 | Inherited functions ||

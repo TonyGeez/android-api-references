@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MessageQueue
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/MessageQueue "View this page in Java") 
+| --- | --- |
 
 ```
 class MessageQueue
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue#) |
 
 Low-level class holding the list of messages to be dispatched by a [Looper](https://developer.android.com/reference/kotlin/android/os/Looper). Messages are not added directly to a MessageQueue, but rather through [Handler](https://developer.android.com/reference/kotlin/android/os/Handler) objects associated with the Looper.
@@ -29,6 +31,7 @@ You can retrieve the MessageQueue for the current thread with [Looper.myQueue()]
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue#addIdleHandler(android.os.MessageQueue.IdleHandler))`(`handler:` ` [MessageQueue.IdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler)`)` Add a new [IdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler) to this message queue. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOnFileDescriptorEventListener](https://developer.android.com/reference/kotlin/android/os/MessageQueue#addOnFileDescriptorEventListener(java.io.FileDescriptor,%20kotlin.Int,%20android.os.MessageQueue.OnFileDescriptorEventListener))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)`, `events:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `listener:` ` [MessageQueue.OnFileDescriptorEventListener](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener)`)` Adds a file descriptor listener to receive notification when file descriptor related events occur. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdle](https://developer.android.com/reference/kotlin/android/os/MessageQueue#isIdle())`()` Returns true if the looper has no pending messages which are due to be processed and is not blocked on a sync barrier. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeIdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue#removeIdleHandler(android.os.MessageQueue.IdleHandler))`(`handler:` ` [MessageQueue.IdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler)`)` Remove an [IdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler) from the queue that was previously added with [addIdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue#addIdleHandler(android.os.MessageQueue.IdleHandler)). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeOnFileDescriptorEventListener](https://developer.android.com/reference/kotlin/android/os/MessageQueue#removeOnFileDescriptorEventListener(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)`)` Removes a file descriptor listener. |
 
@@ -77,6 +80,7 @@ It is important to always unregister the listener when the file descriptor is no
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#):The file descriptor for which a listener will be registered. This value cannot be`null`. |
 | `events` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The set of events to receive: a combination of the [OnFileDescriptorEventListener.EVENT_INPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_INPUT:kotlin.Int), [OnFileDescriptorEventListener.EVENT_OUTPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_OUTPUT:kotlin.Int), and [OnFileDescriptorEventListener.EVENT_ERROR](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_ERROR:kotlin.Int) event masks. If the requested set of events is zero, then the listener is unregistered. Value is either`0`or a combination of [android.os.MessageQueue.OnFileDescriptorEventListener#EVENT_INPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_INPUT:kotlin.Int), [android.os.MessageQueue.OnFileDescriptorEventListener#EVENT_OUTPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_OUTPUT:kotlin.Int), and [android.os.MessageQueue.OnFileDescriptorEventListener#EVENT_ERROR](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_ERROR:kotlin.Int) |
 | `listener` | [MessageQueue.OnFileDescriptorEventListener](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener):The listener to invoke when file descriptor events occur. This value cannot be`null`. |
+| --- | --- |
 
 **See Also**
 

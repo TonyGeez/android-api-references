@@ -9,6 +9,7 @@ abstract class Pack200
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.jar.Pack200](https://developer.android.com/reference/kotlin/java/util/jar/Pack200#) |
 
 Transforms a JAR file to or from a packed stream in Pack200 format. Please refer to Network Transfer Format JSR 200 Specification at<http://jcp.org/aboutJava/communityprocess/review/jsr200/index.html>

@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AudioFocusRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioFocusRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioFocusRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioFocusRequest](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest#) |
 
 A class to encapsulate information about an audio focus request. An`AudioFocusRequest`instance is built by [Builder](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest.Builder), and is used to request and abandon audio focus, respectively with [AudioManager.requestAudioFocus(AudioFocusRequest)](https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest))and [AudioManager.abandonAudioFocusRequest(AudioFocusRequest)](https://developer.android.com/reference/kotlin/android/media/AudioManager#abandonAudioFocusRequest(android.media.AudioFocusRequest)).
@@ -154,6 +156,7 @@ The example below covers the following steps to be found in any application that
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsDelayedFocusGain](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest#acceptsDelayedFocusGain())`()` Returns whether the application that would use this`AudioFocusRequest`supports a focus gain granted after a temporary request failure. |
 | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) | [getAudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest#getAudioAttributes())`()` Returns the [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) set for this`AudioFocusRequest`, or the default attributes if none were set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFocusGain](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest#getFocusGain())`()` Returns the type of audio focus request configured for this`AudioFocusRequest`. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willPauseWhenDucked](https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest#willPauseWhenDucked())`()` Returns whether the application that would use this`AudioFocusRequest`would pause when it is requested to duck. |
 
 ## Public methods

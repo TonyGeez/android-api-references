@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # PeriodicSync
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/PeriodicSync "View this page in Java") 
+| --- | --- |
 
 ```
 open class PeriodicSync : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.PeriodicSync](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#) |
 
 Value type that contains information about a periodic sync.
@@ -30,6 +32,7 @@ Value type that contains information about a periodic sync.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -37,6 +40,7 @@ Value type that contains information about a periodic sync.
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PeriodicSync](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Account](https://developer.android.com/reference/kotlin/android/accounts/Account.html#)! | [account](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#account:android.accounts.Account) The account to be synced. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [authority](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#authority:kotlin.String) The authority of the sync. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [extras](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#extras:android.os.Bundle) Any extras that parameters that are to be passed to the sync adapter. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [period](https://developer.android.com/reference/kotlin/android/content/PeriodicSync#period:kotlin.Long) How frequently the sync should be scheduled, in seconds. |
 

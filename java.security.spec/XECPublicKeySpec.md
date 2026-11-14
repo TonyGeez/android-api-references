@@ -9,6 +9,7 @@ open class XECPublicKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.XECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/XECPublicKeySpec#) |
 
 A class representing elliptic curve public keys as defined in RFC 7748, including the curve and other algorithm parameters. The public key is a particular point on the curve, which is represented using only its u-coordinate. A u-coordinate is an element of the field of integers modulo some value that is determined by the algorithm parameters. This field element is represented by a BigInteger which may hold any value. That is, the BigInteger is not restricted to the range of canonical field elements.

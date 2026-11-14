@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # DnsEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/admin/DnsEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class DnsEvent : NetworkEvent, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.admin.NetworkEvent](https://developer.android.com/reference/kotlin/android/app/admin/NetworkEvent) ||
 | | ↳ | [android.app.admin.DnsEvent](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#) |
 
@@ -29,9 +31,11 @@ It contains information about the originating app as well as the DNS hostname an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostname](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#getHostname())`()` Returns the hostname that was looked up. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\>! | [getInetAddresses](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#getInetAddresses())`()` Returns (possibly a subset of) the IP addresses returned. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalResolvedAddressCount](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#getTotalResolvedAddressCount())`()` Returns the number of IP addresses returned from the DNS lookup event. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/admin/DnsEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

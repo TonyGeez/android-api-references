@@ -9,6 +9,7 @@ open class Deflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.zip.Deflater](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#) |
 
 This class provides support for general purpose compression using the popular ZLIB compression library. The ZLIB compression library was initially developed as part of the PNG graphics standard and is not protected by patents. It is fully described in the specifications at the [java.util.zip package description](https://developer.android.com/reference/kotlin/java/util/zip/package-summary#package-description).
@@ -55,12 +56,15 @@ try {
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_COMPRESSION](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#BEST_COMPRESSION:kotlin.Int) Compression level for best compression. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_SPEED](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#BEST_SPEED:kotlin.Int) Compression level for fastest compression. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_COMPRESSION](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#DEFAULT_COMPRESSION:kotlin.Int) Default compression level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_STRATEGY](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#DEFAULT_STRATEGY:kotlin.Int) Default compression strategy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#DEFLATED:kotlin.Int) Compression method for the deflate algorithm (the only one currently supported). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTERED](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#FILTERED:kotlin.Int) Compression strategy best used for data consisting mostly of small values with a somewhat random distribution. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#FULL_FLUSH:kotlin.Int) Compression flush mode used to flush out all pending output and reset the deflater. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HUFFMAN_ONLY](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#HUFFMAN_ONLY:kotlin.Int) Compression strategy for Huffman coding only. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_COMPRESSION](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#NO_COMPRESSION:kotlin.Int) Compression level for no compression. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#NO_FLUSH:kotlin.Int) Compression flush mode used to achieve best compression result. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#SYNC_FLUSH:kotlin.Int) Compression flush mode used to flush out all pending output; may degrade compression for some compression algorithms. |
 
@@ -75,24 +79,31 @@ try {
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#deflate(kotlin.ByteArray))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Compresses the input data and fills specified buffer with compressed data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#deflate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills specified buffer with compressed data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#deflate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#deflate(java.nio.ByteBuffer))`(`output:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Compresses the input data and fills specified buffer with compressed data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#deflate(java.nio.ByteBuffer,%20kotlin.Int))`(`output:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#end())`()` Closes the compressor and discards any unprocessed input. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#finish())`()` When called, indicates that compression should end with the current contents of the input buffer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [finished](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#finished())`()` Returns true if the end of the compressed data output stream has been reached. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdler](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#getAdler())`()` Returns the ADLER-32 value of the uncompressed data. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesRead](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#getBytesRead())`()` Returns the total number of uncompressed bytes input so far. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesWritten](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#getBytesWritten())`()` Returns the total number of compressed bytes output so far. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalIn](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#getTotalIn())`()` Returns the total number of uncompressed bytes input so far. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalOut](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#getTotalOut())`()` Returns the total number of compressed bytes output so far. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [needsInput](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#needsInput())`()` Returns true if no data remains in the input buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#reset())`()` Resets deflater so that a new set of input data can be processed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setDictionary(kotlin.ByteArray))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets preset dictionary for compression. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setDictionary(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets preset dictionary for compression. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setDictionary(java.nio.ByteBuffer))`(`dictionary:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Sets preset dictionary for compression. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setInput(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets input data for compression. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setInput(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets input data for compression. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setInput(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Sets input data for compression. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setLevel(kotlin.Int))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrategy](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#setStrategy(kotlin.Int))`(`strategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression strategy to the specified value. |
 
@@ -328,6 +339,7 @@ This method uses [NO_FLUSH](https://developer.android.com/reference/kotlin/java/
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer for the compressed data |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of bytes of compressed data |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -363,6 +375,7 @@ If the [setInput(java.nio.ByteBuffer)](https://developer.android.com/reference/k
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the buffer for the compressed data |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of bytes of compressed data |
+| --- | --- |
 | `flush` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the compression flush mode |
 
 | Return ||
@@ -600,6 +613,7 @@ Sets preset dictionary for compression. A preset dictionary is used when the his
 | `dictionary` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the dictionary data bytes |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the data |
+| --- | --- |
 
 **See Also**
 
@@ -666,6 +680,7 @@ One of the `setInput()` methods should be called whenever `needsInput()` returns
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the input data bytes |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the data |
+| --- | --- |
 
 **See Also**
 

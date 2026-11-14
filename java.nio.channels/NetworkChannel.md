@@ -9,8 +9,10 @@ interface NetworkChannel : Channel
 | [java.nio.channels.NetworkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#) |
 
 | Known Direct Subclasses [AsynchronousServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousServerSocketChannel), [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel), [MulticastChannel](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel), [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel), [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) |---|---| | [AsynchronousServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousServerSocketChannel) | An asynchronous channel for stream-oriented listening sockets. | | [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel) | An asynchronous channel for stream-oriented connecting sockets. | | [MulticastChannel](https://developer.android.com/reference/kotlin/java/nio/channels/MulticastChannel) | A network channel that supports Internet Protocol (IP) multicasting. | | [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel) | A selectable channel for stream-oriented listening sockets. | | [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) | A selectable channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) |---|---| | [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) | A selectable channel for datagram-oriented sockets. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A channel to a network socket.
 
@@ -25,6 +27,7 @@ The `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkCha
 | abstract [NetworkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#bind(java.net.SocketAddress)(local: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` Binds the channel's socket to a local address. |
 | abstract [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#getLocalAddress()()` Returns the socket address that this channel's socket is bound to. |
 | abstract T | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!)` Returns the value of a socket option. |
+| --- | --- |
 | abstract [NetworkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#setOption(java.net.SocketOption,%20java.nio.channels.NetworkChannel.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!, value: T)` Sets the value of a socket option. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption.html#)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#supportedOptions()()` Returns a set of the socket options supported by this channel. |
 
@@ -59,6 +62,7 @@ This method is used to establish an association between the socket and a local a
 | `java.io.IOException` | If some other I/O error occurs |
 | `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission. An implementation of this interface should specify any required permissions. |
 | `java.nio.channels.AlreadyBoundException` | If the socket is already bound |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If the channel is closed |
 | `java.nio.channels.UnsupportedAddressTypeException` | If the type of the given address is not supported |
 
@@ -111,6 +115,7 @@ Returns the value of a socket option.
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.UnsupportedOperationException` | If the socket option is not supported by this channel |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 
 **See Also**
 
@@ -134,6 +139,7 @@ Sets the value of a socket option.
 | `<T>` | The type of the socket option value |
 | `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption.html#)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be a valid value for some socket options. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -144,6 +150,7 @@ Sets the value of a socket option.
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.IllegalArgumentException` | If the value is not a valid value for this socket option |
 | `java.lang.UnsupportedOperationException` | If the socket option is not supported by this channel |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 
 **See Also**

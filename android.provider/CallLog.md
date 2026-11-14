@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CallLog
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CallLog "View this page in Java") 
+| --- | --- |
 
 ```
 open class CallLog
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.CallLog](https://developer.android.com/reference/kotlin/android/provider/CallLog#) |
 
 The CallLog provider contains information about placed and received calls.

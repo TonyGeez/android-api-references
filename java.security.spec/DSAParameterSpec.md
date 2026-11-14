@@ -9,6 +9,7 @@ open class DSAParameterSpec : AlgorithmParameterSpec, DSAParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.DSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#) |
 
 This class specifies the set of parameters used with the DSA algorithm.
@@ -24,6 +25,7 @@ This class specifies the set of parameters used with the DSA algorithm.
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getG())`()` Returns the base`g`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getP())`()` Returns the prime`p`. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getQ())`()` Returns the sub-prime`q`. |
+| --- | --- |
 
 ## Public constructors
 
@@ -45,6 +47,7 @@ Creates a new DSAParameterSpec with the specified parameter values.
 | `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
 | `q` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the sub-prime. |
 | `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base. |
+| --- | --- |
 
 ## Public methods
 

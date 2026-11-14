@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BeginGetCredentialOption
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/BeginGetCredentialOption "View this page in Java") 
+| --- | --- |
 
 ```
 class BeginGetCredentialOption : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#) |
 
 A specific type of credential request to be sent to the provider during the query phase of a get flow. This request contains limited parameters needed to populate a list of [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry) on the [BeginGetCredentialResponse](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse).
@@ -30,9 +32,11 @@ A specific type of credential request to be sent to the provider during the quer
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCandidateQueryData](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#getCandidateQueryData())`()` Returns the request candidate query data, denoting a set of parameters that can be used to populate a candidate list of credentials, as [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry) on [BeginGetCredentialResponse](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#getId())`()` Returns the unique id associated with this request. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#getType())`()` Returns the requested credential type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,6 +62,7 @@ Constructs a [BeginGetCredentialOption](https://developer.android.com/reference/
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the unique id associated with this option This value cannot be`null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the requested credential type This value cannot be`null`. |
 | `candidateQueryData` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):the request candidateQueryData This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|

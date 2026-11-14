@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UCharacterEnums
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacterEnums "View this page in Java") 
+| --- | --- |
 
 ```
 open class UCharacterEnums
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.lang.UCharacterEnums](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums#) |
 
 A container for the different 'enumerated types' used by UCharacter.

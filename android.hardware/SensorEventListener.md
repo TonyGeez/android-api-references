@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # SensorEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SensorEventListener
@@ -13,8 +14,10 @@ interface SensorEventListener
 | [android.hardware.SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener#) |
 
 | Known Direct Subclasses [SensorEventListener2](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener2) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [SensorEventListener2](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener2) | Used for receiving a notification when a flush() has been successfully completed. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [SensorEventCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [SensorEventCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback) | Used for receiving sensor additional information frames. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Used for receiving notifications from the SensorManager when there is new sensor data.
 

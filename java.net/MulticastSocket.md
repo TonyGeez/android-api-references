@@ -9,6 +9,7 @@ open class MulticastSocket : DatagramSocket
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket) ||
 | | ↳ | [java.net.MulticastSocket](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#) |
 
@@ -57,18 +58,23 @@ Currently applets are not allowed to use multicast sockets.
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getInterface](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getInterface())`()` Retrieve the address of the network interface used for multicast packets. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLoopbackMode](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getLoopbackMode())`()` Get the setting for local loopback of multicast datagrams. |
 | open [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)! | [getNetworkInterface](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getNetworkInterface())`()` Get the multicast network interface set. |
+| --- | --- |
 | open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getTTL](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getTTL())`()` Get the default time-to-live for multicast packets sent out on the socket. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeToLive](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getTimeToLive())`()` Get the default time-to-live for multicast packets sent out on the socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [joinGroup](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#joinGroup(java.net.InetAddress))`(`mcastaddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`)` Joins a multicast group. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [joinGroup](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#joinGroup(java.net.SocketAddress,%20java.net.NetworkInterface))`(`mcastaddr:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`, `netIf:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!`)` Joins the specified multicast group at the specified interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [leaveGroup](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#leaveGroup(java.net.InetAddress))`(`mcastaddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`)` Leave a multicast group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [leaveGroup](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#leaveGroup(java.net.SocketAddress,%20java.net.NetworkInterface))`(`mcastaddr:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`, `netIf:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!`)` Leave a multicast group on a specified local interface. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [send](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#send(java.net.DatagramPacket,%20kotlin.Byte))`(`p:` ` [DatagramPacket](https://developer.android.com/reference/kotlin/java/net/DatagramPacket)!`, `ttl:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Sends a datagram packet to the destination, with a TTL (time- to-live) other than the default for the socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterface](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setInterface(java.net.InetAddress))`(`inf:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`)` Set the multicast network interface used by methods whose behavior would be affected by the value of the network interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoopbackMode](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setLoopbackMode(kotlin.Boolean))`(`disable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Disable/Enable local loopback of multicast datagrams The option is used by the platform's networking code as a hint for setting whether multicast data will be looped back to the local socket. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNetworkInterface](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setNetworkInterface(java.net.NetworkInterface))`(`netIf:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!`)` Specify the network interface for outgoing multicast datagrams sent on this socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTTL](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setTTL(kotlin.Byte))`(`ttl:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Set the default time-to-live for multicast packets sent out on this`MulticastSocket`in order to control the scope of the multicasts. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeToLive](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setTimeToLive(kotlin.Int))`(`ttl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the default time-to-live for multicast packets sent out on this`MulticastSocket`in order to control the scope of the multicasts. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<\*\>!\>! | [supportedOptions](https://developer.android.com/reference/kotlin/java/net/MulticastSocket#supportedOptions())`()` <br /> |
 
 | Inherited functions ||
@@ -325,6 +331,7 @@ If there is a security manager, this method first calls its`checkMulticast`metho
 | `java.lang.IllegalArgumentException` | if mcastaddr is null or is a SocketAddress subclass not supported by this socket |
 | `java.io.IOException` | if there is an error joining, or when the address is not a multicast address, or the platform does not support multicasting |
 | `java.lang.SecurityException` | if a security manager exists and its`checkMulticast`method doesn't allow the join. |
+| --- | --- |
 
 **See Also**
 
@@ -380,6 +387,7 @@ If there is a security manager, this method first calls its`checkMulticast`metho
 | `java.lang.IllegalArgumentException` | if mcastaddr is null or is a SocketAddress subclass not supported by this socket |
 | `java.io.IOException` | if there is an error leaving or when the address is not a multicast address. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkMulticast`method doesn't allow the operation. |
+| --- | --- |
 
 **See Also**
 

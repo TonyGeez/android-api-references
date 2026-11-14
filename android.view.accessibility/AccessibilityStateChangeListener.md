@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # AccessibilityStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface AccessibilityStateChangeListener

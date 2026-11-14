@@ -5,15 +5,18 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # InputEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/InputEvent "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class InputEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent#) |
 
 | Known Direct Subclasses [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent), [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent) |----------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent) | Object used to report key and button events. | | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent) | Object used to report movement (mouse, pen, finger, trackball) events. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Common base class for input events.
 
@@ -28,9 +31,11 @@ Common base class for input events.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/InputEvent#describeContents())`()` <br /> |
 | [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice)! | [getDevice](https://developer.android.com/reference/kotlin/android/view/InputEvent#getDevice())`()` Gets the device that this event came from. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](https://developer.android.com/reference/kotlin/android/view/InputEvent#getDeviceId())`()` Gets the id for the device that this event came from. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTime](https://developer.android.com/reference/kotlin/android/view/InputEvent#getEventTime())`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis())time base. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](https://developer.android.com/reference/kotlin/android/view/InputEvent#getSource())`()` Gets the source of the event. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromSource](https://developer.android.com/reference/kotlin/android/view/InputEvent#isFromSource(kotlin.Int))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the event is from the given source. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

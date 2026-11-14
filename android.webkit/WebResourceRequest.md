@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # WebResourceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebResourceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 interface WebResourceRequest
@@ -21,9 +22,11 @@ Encompasses parameters to the android.webkit.WebViewClient#shouldInterceptReques
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMethod](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#getMethod())`()` Gets the method associated with the request, for example "GET". |
 | abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getRequestHeaders](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#getRequestHeaders())`()` Gets the headers associated with the request. |
 | abstract [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getUrl](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#getUrl())`()` Gets the URL for which the resource request was made. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGesture](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#hasGesture())`()` Gets whether a gesture (such as a click) was associated with the request. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForMainFrame](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#isForMainFrame())`()` Gets whether the request was made in order to fetch the main frame's document. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRedirect](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest#isRedirect())`()` Gets whether the request was a result of a server-side redirect. |
+| --- | --- |
 
 ## Public methods
 

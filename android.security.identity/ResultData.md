@@ -8,6 +8,7 @@ abstract class ResultData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.ResultData](https://developer.android.com/reference/kotlin/android/security/identity/ResultData#) |
 
 > [!CAUTION]
@@ -24,9 +25,11 @@ An object that contains the result of retrieving data from a credential. This is
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_NOT_IN_REQUEST_MESSAGE:kotlin.Int` The entry wasn't in the request message. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_NOT_REQUESTED:kotlin.Int` The entry was not requested. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_NO_ACCESS_CONTROL_PROFILES:kotlin.Int` The entry was not retrieved because it was configured without any access control profile. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_NO_SUCH_ENTRY:kotlin.Int` The entry does not exist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_OK:kotlin.Int` Value was successfully retrieved. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_READER_AUTHENTICATION_FAILED:kotlin.Int` The entry was not retrieved because reader authentication failed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#STATUS_USER_AUTHENTICATION_FAILED:kotlin.Int` The entry was not retrieved because user authentication failed. |
 
 | Public methods ||
@@ -34,9 +37,11 @@ An object that contains the result of retrieving data from a credential. This is
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getAuthenticatedData()()` Returns a CBOR structure containing the retrieved data. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getEntry(kotlin.String,%20kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the raw CBOR data for the value of an entry. |
 | abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getEntryNames(kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the names of all entries. |
+| --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getMessageAuthenticationCode()()` Returns a message authentication code over the `DeviceAuthenticationBytes` CBOR specified in `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getAuthenticatedData()`, to prove to the reader that the data is from a trusted credential. |
 | abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getNamespaces()()` Gets the names of namespaces with retrieved entries. |
 | abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getRetrievedEntryNames(kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the names of all entries that was successfully retrieved. |
+| --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getStaticAuthenticationData()()` Returns the static authentication data associated with the dynamic authentication key used to sign or MAC the data returned by `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getAuthenticatedData()`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getStatus(kotlin.String,%20kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the status of an entry. |
 

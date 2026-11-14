@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # PointerIcon
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/PointerIcon "View this page in Java") 
+| --- | --- |
 
 ```
 class PointerIcon : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) |
 
 Represents an icon that can be used as a mouse pointer.
@@ -24,27 +26,35 @@ Pointer icons can be provided either by the system using system types, or by app
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALIAS](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ALIAS:kotlin.Int) Type constant: alias (indicating an alias of/shortcut to something is to be created. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_SCROLL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ALL_SCROLL:kotlin.Int) Type constant: all-scroll. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ARROW:kotlin.Int) Type constant: Arrow icon. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CELL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CELL:kotlin.Int) Type constant: cell. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CONTEXT_MENU](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CONTEXT_MENU:kotlin.Int) Type constant: context-menu. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COPY](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_COPY:kotlin.Int) Type constant: copy. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CROSSHAIR](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CROSSHAIR:kotlin.Int) Type constant: crosshair. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DEFAULT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_DEFAULT:kotlin.Int) The default pointer icon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRAB](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_GRAB:kotlin.Int) Type constant: grab. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRABBING](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_GRABBING:kotlin.Int) Type constant: grabbing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HAND](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HAND:kotlin.Int) Type constant: hand. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HANDWRITING](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HANDWRITING:kotlin.Int) Type constant: handwriting. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HELP](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HELP:kotlin.Int) Type constant: help. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HORIZONTAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HORIZONTAL_DOUBLE_ARROW:kotlin.Int) Type constant: horizontal double arrow mainly for resizing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NO_DROP](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_NO_DROP:kotlin.Int) Type constant: no-drop. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_NULL:kotlin.Int) Type constant: Null icon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TEXT:kotlin.Int) Type constant: text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_LEFT_DIAGONAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TOP_LEFT_DIAGONAL_DOUBLE_ARROW:kotlin.Int) Type constant: diagonal double arrow -- top-left to bottom-right. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_RIGHT_DIAGONAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TOP_RIGHT_DIAGONAL_DOUBLE_ARROW:kotlin.Int) Type constant: diagonal double arrow -- top-right to bottom-left. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_VERTICAL_DOUBLE_ARROW:kotlin.Int) Type constant: vertical double arrow mainly for resizing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_TEXT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_VERTICAL_TEXT:kotlin.Int) Type constant: vertical-text. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WAIT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_WAIT:kotlin.Int) Type constant: wait. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_IN](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ZOOM_IN:kotlin.Int) Type constant: zoom-in. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_OUT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ZOOM_OUT:kotlin.Int) Type constant: zoom-out. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -55,9 +65,11 @@ Pointer icons can be provided either by the system using system types, or by app
 | static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [create](https://developer.android.com/reference/kotlin/android/view/PointerIcon#create(android.graphics.Bitmap,%20kotlin.Float,%20kotlin.Float))`(`bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `hotSpotX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `hotSpotY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a custom pointer icon from the given bitmap and hotspot information. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/PointerIcon#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/PointerIcon#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [getSystemIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#getSystemIcon(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets a system pointer icon for the given type. |
 | static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [load](https://developer.android.com/reference/kotlin/android/view/PointerIcon#load(android.content.res.Resources,%20kotlin.Int))`(`resources:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `resourceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads a custom pointer icon from an XML resource. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/PointerIcon#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/PointerIcon#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -378,6 +390,7 @@ Creates a custom pointer icon from the given bitmap and hotspot information.
 | `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The bitmap for the icon. This value cannot be`null`. |
 | `hotSpotX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X offset of the pointer icon hotspot in the bitmap. Must be within the \[0, bitmap.getWidth()) range. |
 | `hotSpotY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y offset of the pointer icon hotspot in the bitmap. Must be within the \[0, bitmap.getHeight()) range. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|

@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 8](https://developer.android.com/sdkExtensions)
 # ReportEventRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class ReportEventRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.ReportEventRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#) |
 
 Request object wrapping the required arguments needed to report an ad event.
@@ -27,12 +29,14 @@ Request object wrapping the required arguments needed to report an ad event.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_REPORTING_DESTINATION_BUYER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_BUYER:kotlin.Int) This is used to represent buyer as the destination for report event API. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_REPORTING_DESTINATION_COMPONENT_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_COMPONENT_SELLER:kotlin.Int) This is used to component seller as the destination for report event API |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_REPORTING_DESTINATION_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_SELLER:kotlin.Int) This is used to represent seller as the destination for report event API |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getAdSelectionId())`()` Returns the adSelectionId, the primary identifier of an ad selection process. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getData](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getData())`()` Returns the ad event data. |
 | open [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)? | [getInputEvent](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getInputEvent())`()` Returns the input event associated with the user interaction. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getKey](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getKey())`()` Returns the event key, the type of ad event to be reported. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReportingDestinations](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getReportingDestinations())`()` Returns the bitfield of reporting destinations to report to (buyer, seller, component seller or any of the combination of them). |
 
@@ -155,6 +159,7 @@ open fun getReportingDestinations(): Int
 Returns the bitfield of reporting destinations to report to (buyer, seller, component seller or any of the combination of them).
 
 To create this bitfield, place an `|` bitwise operator between each `reportingDestination` to be reported to. For example to only report to buyer, set the reportingDestinations field to [FLAG_REPORTING_DESTINATION_BUYER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_BUYER:kotlin.Int) To only report to seller, set the reportingDestinations field to [FLAG_REPORTING_DESTINATION_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_SELLER:kotlin.Int) To report to buyers and sellers, set the reportingDestinations field to [FLAG_REPORTING_DESTINATION_BUYER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_BUYER:kotlin.Int) | [FLAG_REPORTING_DESTINATION_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_SELLER:kotlin.Int). To report to buyer, seller and component seller, set the reportingDestinations field to [FLAG_REPORTING_DESTINATION_BUYER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_BUYER:kotlin.Int) | [FLAG_REPORTING_DESTINATION_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_SELLER:kotlin.Int) | [FLAG_REPORTING_DESTINATION_COMPONENT_SELLER](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#FLAG_REPORTING_DESTINATION_COMPONENT_SELLER:kotlin.Int).
+| --- | --- | --- | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -28,18 +28,23 @@ There are many examples of gathering operations, including but not limited to: g
 | open [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T,\*,RR\>! | [andThen](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#andThen(java.util.stream.Gatherer))`(`that:` ` [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)<in` `R,` `*,` `out` `RR>!`)` Returns a composed Gatherer which connects the output of this Gatherer to the input of that Gatherer. |
 | open [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<A\>! | [combiner](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#combiner())`()` A function which accepts two intermediate states and combines them into one. |
 | openstatic [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<A\>! | [defaultCombiner](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#defaultCombiner())`()` Returns a combiner which is the default combiner of a Gatherer. |
+| --- | --- |
 | openstatic [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>! | [defaultFinisher](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#defaultFinisher())`()` Returns a`finisher`which is the default finisher of a`Gatherer`. |
 | openstatic [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>! | [defaultInitializer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#defaultInitializer())`()` Returns an initializer which is the default initializer of a Gatherer. |
 | open [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>! | [finisher](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#finisher())`()` A function which accepts the final intermediate state and a [Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream) object, allowing to perform a final action at the end of input elements. |
+| --- | --- |
 | open [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>! | [initializer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#initializer())`()` A function that produces an instance of the intermediate state used for this gathering operation. |
 | abstract [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\<A,T,R\>! | [integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#integrator())`()` A function which integrates provided elements, potentially using the provided intermediate state, optionally producing output to the provided [Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream). |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T,A,R\>! | [of](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#of(java.util.function.Supplier,%20java.util.stream.Gatherer.Integrator,%20java.util.function.BinaryOperator,%20java.util.function.BiConsumer))`(`initializer:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<A>!`, `integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)<A,` `T,` `R>!`, `combiner:` ` [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)<A>!`, `finisher:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<A,` ` [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)<in` `R>!>!`)` Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`integrator`,`combiner`and`finisher`. |
+| --- | --- |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,R\>! | [of](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#of(java.util.stream.Gatherer.Integrator))`(`integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` `T,` `R>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`. |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,R\>! | [of](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#of(java.util.stream.Gatherer.Integrator,%20java.util.function.BiConsumer))`(`integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` ` [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)<in` `R>!>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T,A,R\>! | [ofSequential](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#ofSequential(java.util.function.Supplier,%20java.util.stream.Gatherer.Integrator))`(`initializer:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<A>!`, `integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)<A,` `T,` `R>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`and`integrator`. |
+| --- | --- |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T,A,R\>! | [ofSequential](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#ofSequential(java.util.function.Supplier,%20java.util.stream.Gatherer.Integrator,%20java.util.function.BiConsumer))`(`initializer:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<A>!`, `integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)<A,` `T,` `R>!`, `finisher:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<A,` ` [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)<in` `R>!>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`,`integrator`, and`finisher`. |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,R\>! | [ofSequential](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#ofSequential(java.util.stream.Gatherer.Integrator))`(`integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` `T,` `R>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`. |
 | openstatic [Gatherer](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#)\<T, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,R\>! | [ofSequential](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer#ofSequential(java.util.stream.Gatherer.Integrator,%20java.util.function.BiConsumer))`(`integrator:` ` [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,` ` [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)<in` `R>!>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
+| --- | --- |
 
 ## Public methods
 
@@ -209,9 +214,11 @@ Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`int
 | `initializer` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\<A,T,R\>!:the integrator function for the new gatherer |
 | `combiner` | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<A\>!:the combiner function for the new gatherer |
+| --- | --- |
 | `finisher` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<A>` | the type of state for the new gatherer |
+| --- | --- |
 | `<R>` | the type of results for the new gatherer |
 
 | Return ||
@@ -237,6 +244,7 @@ Returns a new, parallelizable, and stateless`Gatherer`described by the given`int
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
@@ -264,6 +272,7 @@ Returns a new, parallelizable, and stateless`Gatherer`described by the given`int
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,T,R\>!:the integrator function for the new gatherer |
 | `finisher` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
+| --- | --- |
 | `<R>` | the type of results for the new gatherer |
 
 | Return ||
@@ -292,6 +301,7 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`and`integ
 | `initializer` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\<A,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
+| --- | --- |
 | `<A>` | the type of state for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
 
@@ -322,9 +332,11 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`,`integra
 | `initializer` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\<A,T,R\>!:the integrator function for the new gatherer |
 | `finisher` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>!:the finisher function for the new gatherer |
+| --- | --- |
 | `<T>` | the type of input elements for the new gatherer |
 | `<A>` | the type of state for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-------------------|
@@ -349,6 +361,7 @@ Returns a new, sequential, and stateless`Gatherer`described by the given`integra
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
@@ -376,6 +389,7 @@ Returns a new, sequential, and stateless`Gatherer`described by the given`integra
 | `integrator` | [Gatherer.Integrator](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Integrator)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!,T,R\>!:the integrator function for the new gatherer |
 | `finisher` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [Gatherer.Downstream](https://developer.android.com/reference/kotlin/java/util/stream/Gatherer.Downstream)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
+| --- | --- |
 | `<R>` | the type of results for the new gatherer |
 
 | Return ||

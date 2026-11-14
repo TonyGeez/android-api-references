@@ -9,6 +9,7 @@ class MethodType : Serializable, TypeDescriptor.OfMethod<Class<*>!, MethodTyp
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.invoke.MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#) |
 
 A method type represents the arguments and return type accepted and returned by a method handle, or the arguments and return type passed and expected by a method handle caller. Method types must be properly matched between a method handle and all its callers, and the JVM's operations enforce this matching at, specifically during calls to [MethodHandle.invokeExact](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invokeExact(kotlin.Any))and [MethodHandle.invoke](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invoke(kotlin.Any)), and during execution of`invokedynamic`instructions.
@@ -34,36 +35,47 @@ When the JVM materializes a`MethodType`from a descriptor string, all classes nam
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [appendParameterTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#appendParameterTypes(java.lang.Class))`(`vararg` `ptypesToInsert:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with additional parameter types. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [appendParameterTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#appendParameterTypes(kotlin.collections.MutableList))`(`ptypesToInsert:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Finds or creates a method type with additional parameter types. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [changeParameterType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#changeParameterType(kotlin.Int,%20java.lang.Class))`(`num:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nptype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with a single different parameter type. |
+| --- | --- |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [changeReturnType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#changeReturnType(java.lang.Class))`(`nrtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with a different return type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [descriptorString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#descriptorString())`()` Returns a descriptor string for this method type. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [dropParameterTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#dropParameterTypes(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finds or creates a method type with some parameter types omitted. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this type for equality. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [erase](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#erase())`()` Erases all reference types to`Object`. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [fromMethodDescriptorString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#fromMethodDescriptorString(kotlin.String,%20java.lang.ClassLoader))`(`descriptor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `loader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Finds or creates an instance of a method type, given the spelling of its bytecode descriptor. |
+| --- | --- |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [generic](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#generic())`()` Converts all types, both reference and primitive, to`Object`. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [genericMethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#genericMethodType(kotlin.Int))`(`objectArgCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finds or creates a method type whose components are all`Object`. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [genericMethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#genericMethodType(kotlin.Int,%20kotlin.Boolean))`(`objectArgCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalArray:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Finds or creates a method type whose components are`Object`with an optional trailing`Object[]`array. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPrimitives](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#hasPrimitives())`()` Reports if this type contains a primitive argument or return value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasWrappers](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#hasWrappers())`()` Reports if this type contains a wrapper argument or return value. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#hashCode())`()` Returns the hash code value for this method type. |
+| --- | --- |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [insertParameterTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#insertParameterTypes(kotlin.Int,%20java.lang.Class))`(`num:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `ptypesToInsert:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with additional parameter types. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [insertParameterTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#insertParameterTypes(kotlin.Int,%20kotlin.collections.MutableList))`(`num:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ptypesToInsert:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Finds or creates a method type with additional parameter types. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [lastParameterType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#lastParameterType())`()` Returns the last parameter type of this method type. |
+| --- | --- |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with the given components. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class,%20java.lang.Class))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `ptype0:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with the given components. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class,%20java.lang.Class,%20java.lang.Class))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `ptype0:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `vararg` `ptypes:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Finds or creates a method type with the given components. |
+| --- | --- |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class,%20kotlin.Array))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `ptypes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Finds or creates an instance of the given method type. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class,%20java.lang.invoke.MethodType))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `ptypes:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)!`)` Finds or creates a method type with the given components. |
 | static [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [methodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#methodType(java.lang.Class,%20kotlin.collections.MutableList))`(`rtype:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `ptypes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Finds or creates a method type with the given components. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>! | [parameterArray](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#parameterArray())`()` Presents the parameter types as an array (a convenience method). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parameterCount](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#parameterCount())`()` Returns the number of parameter types in this method type. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>! | [parameterList](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#parameterList())`()` Presents the parameter types as a list (a convenience method). |
+| --- | --- |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [parameterType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#parameterType(kotlin.Int))`(`num:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the parameter type at the specified index, within this method type. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [returnType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#returnType())`()` Returns the return type of this method type. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toMethodDescriptorString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#toMethodDescriptorString())`()` Produces a bytecode descriptor representation of the method type. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#toString())`()` Returns a string representation of the method type, of the form`"(PT0,PT1...)RT"`. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [unwrap](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#unwrap())`()` Converts all wrapper types to their corresponding primitive types. |
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#)! | [wrap](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType#wrap())`()` Converts all primitive types to their corresponding wrapper types. |
+| --- | --- |
 
 ## Public methods
 
@@ -131,6 +143,7 @@ Finds or creates a method type with a single different parameter type. Convenien
 | `index` | the index of the parameter to change |
 | `paramType` | a field descriptor describing the new parameter type |
 | `num` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index (zero-based) of the parameter type to change |
+| --- | --- |
 | `nptype` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:a new parameter type to replace the old one with |
 
 | Return ||
@@ -142,6 +155,7 @@ Finds or creates a method type with a single different parameter type. Convenien
 | `java.lang.NullPointerException` | if`nptype`is null |
 | `java.lang.IndexOutOfBoundsException` | if`num`is not a valid index into`parameterArray()` |
 | `java.lang.IllegalArgumentException` | if`nptype`is`void.class` |
+| --- | --- |
 
 ### changeReturnType
 
@@ -281,6 +295,7 @@ This method is included for the benefit of applications that must generate bytec
 | `java.lang.NullPointerException` | if the string is null |
 | `java.lang.IllegalArgumentException` | if the string is not well-formed |
 | `java.lang.TypeNotPresentException` | if a named type cannot be found |
+| --- | --- |
 
 ### generic
 
@@ -417,6 +432,7 @@ Finds or creates a method type with additional parameter types. Convenience meth
 | `pos` | the index at which to insert the first inserted parameter |
 | `paramTypes` | field descriptors describing the new parameter types to insert |
 | `num` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position (zero-based) of the inserted parameter type(s) |
+| --- | --- |
 | `ptypesToInsert` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:zero or more new parameter types to insert into the parameter list |
 
 | Return ||
@@ -428,6 +444,7 @@ Finds or creates a method type with additional parameter types. Convenience meth
 | `java.lang.NullPointerException` | if`ptypesToInsert`or any of its elements is null |
 | `java.lang.IndexOutOfBoundsException` | if`num`is negative or greater than`parameterCount()` |
 | `java.lang.IllegalArgumentException` | if any element of`ptypesToInsert`is`void.class`or if the resulting method type would have more than 255 parameter slots |
+| --- | --- |
 
 ### insertParameterTypes
 
@@ -456,6 +473,7 @@ Finds or creates a method type with additional parameter types. Convenience meth
 | `java.lang.IndexOutOfBoundsException` | if`num`is negative or greater than`parameterCount()` |
 | `java.lang.IllegalArgumentException` | if any element of`ptypesToInsert`is`void.class`or if the resulting method type would have more than 255 parameter slots |
 | `java.lang.NullPointerException` | if`ptypesToInsert`or any of its elements is null |
+| --- | --- |
 
 ### lastParameterType
 
@@ -539,6 +557,7 @@ Finds or creates a method type with the given components. Convenience method for
 | `rtype` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:the return type |
 | `ptype0` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:the first parameter type |
 | `ptypes` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:the remaining parameter types |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------|

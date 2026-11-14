@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # HideReturnsTransformationMethod
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/method/HideReturnsTransformationMethod "View this page in Java") 
+| --- | --- |
 
 ```
 open class HideReturnsTransformationMethod : ReplacementTransformationMethod
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.method.ReplacementTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod) ||
 | | ↳ | [android.text.method.HideReturnsTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/HideReturnsTransformationMethod#) |
 

@@ -9,6 +9,7 @@ open class EncryptedPrivateKeyInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.EncryptedPrivateKeyInfo](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#) |
 
 This class implements the`EncryptedPrivateKeyInfo`type as defined in PKCS #8.
@@ -39,9 +40,11 @@ EncryptedPrivateKeyInfo ::=  SEQUENCE {
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgName](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getAlgName())`()` Returns the encryption algorithm. |
 | open [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)! | [getAlgParameters](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getAlgParameters())`()` Returns the algorithm parameters used by the encryption algorithm. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getEncoded())`()` Returns the ASN. |
+| --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncryptedData](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getEncryptedData())`()` Returns the encrypted data. |
 | open [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec.html#)! | [getKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getKeySpec(java.security.Key))`(`decryptKey:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
 | open [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec.html#)! | [getKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getKeySpec(java.security.Key,%20kotlin.String))`(`decryptKey:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `providerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
+| --- | --- |
 | open [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec.html#)! | [getKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getKeySpec(java.security.Key,%20java.security.Provider))`(`decryptKey:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
 | open [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec.html#)! | [getKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/EncryptedPrivateKeyInfo#getKeySpec(javax.crypto.Cipher))`(`cipher:` ` [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
 
@@ -90,6 +93,7 @@ Note: This constructor will use null as the value of the algorithm parameters. I
 | `java.lang.NullPointerException` | if`algName`or`encryptedData`is null. |
 | `java.lang.IllegalArgumentException` | if`encryptedData`is empty, i.e. 0-length. |
 | `java.security.NoSuchAlgorithmException` | if the specified algName is not supported. |
+| --- | --- |
 
 ### EncryptedPrivateKeyInfo
 
@@ -113,6 +117,7 @@ Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm parameters a
 | `java.lang.NullPointerException` | if`algParams`or`encryptedData`is null. |
 | `java.lang.IllegalArgumentException` | if`encryptedData`is empty, i.e. 0-length. |
 | `java.security.NoSuchAlgorithmException` | if the specified algName of the specified`algParams`parameter is not supported. |
+| --- | --- |
 
 ## Public methods
 
@@ -201,6 +206,7 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 | `java.lang.NullPointerException` | if`decryptKey`is null. |
 | `java.security.NoSuchAlgorithmException` | if cannot find appropriate cipher to decrypt the encrypted data. |
 | `java.security.InvalidKeyException` | if`decryptKey`cannot be used to decrypt the encrypted data or the decryption result is not a valid PKCS8KeySpec. |
+| --- | --- |
 
 ### getKeySpec
 
@@ -229,6 +235,7 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 | `java.lang.NullPointerException` | if`decryptKey`or`providerName`is null. |
 | `java.security.NoSuchProviderException` | if no provider`providerName`is registered. |
 | `java.security.NoSuchAlgorithmException` | if cannot find appropriate cipher to decrypt the encrypted data. |
+| --- | --- |
 | `java.security.InvalidKeyException` | if`decryptKey`cannot be used to decrypt the encrypted data or the decryption result is not a valid PKCS8KeySpec. |
 
 ### getKeySpec
@@ -258,6 +265,7 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 | `java.lang.NullPointerException` | if`decryptKey`or`provider`is null. |
 | `java.security.NoSuchAlgorithmException` | if cannot find appropriate cipher to decrypt the encrypted data in`provider`. |
 | `java.security.InvalidKeyException` | if`decryptKey`cannot be used to decrypt the encrypted data or the decryption result is not a valid PKCS8KeySpec. |
+| --- | --- |
 
 ### getKeySpec
 

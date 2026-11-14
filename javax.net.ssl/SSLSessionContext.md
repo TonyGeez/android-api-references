@@ -28,9 +28,11 @@ A session can be retrieved based on its session id, and all session id's in a`SS
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getIds](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#getIds())`()` Returns an Enumeration of all session id's grouped under this`SSLSessionContext`. |
 | abstract [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | [getSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#getSession(kotlin.ByteArray))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns the`SSLSession`bound to the specified session id. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionCacheSize](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#getSessionCacheSize())`()` Returns the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionTimeout](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#getSessionTimeout())`()` Returns the timeout limit of`SSLSession`objects grouped under this`SSLSessionContext`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionCacheSize](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#setSessionCacheSize(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTimeout](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext#setSessionTimeout(kotlin.Int))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the timeout limit for`SSLSession`objects grouped under this`SSLSessionContext`. |
+| --- | --- |
 
 ## Public methods
 

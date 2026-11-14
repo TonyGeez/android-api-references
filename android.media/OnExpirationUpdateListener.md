@@ -3,6 +3,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnExpirationUpdateListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener "View this page in Java")
+| --- | --- |
 
 ```
 interface OnExpirationUpdateListener
@@ -39,3 +40,4 @@ Called when a session expiration update occurs, to inform the app about the chan
 | `md` | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm): the MediaDrm object on which the event occurred. This value cannot be `null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the DRM session ID on which the event occurred. This value cannot be `null`. |
 | `expirationTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new expiration time for the keys in the session. The time is in milliseconds, relative to the Unix epoch. A time of 0 indicates that the keys never expire. |
+| --- | --- |

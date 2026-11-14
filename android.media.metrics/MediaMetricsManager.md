@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # MediaMetricsManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/MediaMetricsManager "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaMetricsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.MediaMetricsManager](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#) |
 
 This class gives information about, and interacts with media metrics.
@@ -26,9 +28,11 @@ This class gives information about, and interacts with media metrics.
 | [BundleSession](https://developer.android.com/reference/kotlin/android/media/metrics/BundleSession) | [createBundleSession](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createBundleSession())`()` Creates a generic bundle session. |
 | [EditingSession](https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession) | [createEditingSession](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createEditingSession())`()` Creates a editing session. |
 | [PlaybackSession](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession) | [createPlaybackSession](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createPlaybackSession())`()` Creates a playback session. |
+| --- | --- |
 | [RecordingSession](https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession) | [createRecordingSession](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createRecordingSession())`()` Creates a recording session. |
 | [TranscodingSession](https://developer.android.com/reference/kotlin/android/media/metrics/TranscodingSession) | [createTranscodingSession](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createTranscodingSession())`()` Creates a transcoding session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#releaseSessionId(kotlin.String))`(`sessionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a generic bundle session. |
+| --- | --- |
 
 ## Constants
 

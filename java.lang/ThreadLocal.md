@@ -9,9 +9,11 @@ open class ThreadLocal<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ThreadLocal](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#) |
 
 | Known Direct Subclasses [InheritableThreadLocal](https://developer.android.com/reference/kotlin/java/lang/InheritableThreadLocal) |-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InheritableThreadLocal](https://developer.android.com/reference/kotlin/java/lang/InheritableThreadLocal) | This class extends`ThreadLocal`to provide inheritance of values from parent thread to child thread: when a child thread is created, the child receives initial values for all inheritable thread-local variables for which the parent has values. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class provides thread-local variables. These variables differ from their normal counterparts in that each thread that accesses one (via its`get`or`set`method) has its own, independently initialized copy of the variable.`ThreadLocal`instances are typically private static fields in classes that wish to associate state with a thread (e.g., a user ID or Transaction ID).
 
@@ -53,6 +55,7 @@ Each thread holds an implicit reference to its copy of a thread-local variable a
 | openT? | [get](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#get())`()` Returns the value in the current thread's copy of this thread-local variable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#remove())`()` Removes the current thread's value for this thread-local variable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#set(java.lang.ThreadLocal.T))`(`value:` `T`)` Sets the current thread's copy of this thread-local variable to the specified value. |
+| --- | --- |
 | openstatic [ThreadLocal](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#)\<S\> | [withInitial](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal#withInitial(java.util.function.Supplier))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<out` `S>`)` Creates a thread local variable. |
 
 | Protected methods ||

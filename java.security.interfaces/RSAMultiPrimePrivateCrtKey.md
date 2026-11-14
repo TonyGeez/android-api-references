@@ -23,9 +23,11 @@ The interface to an RSA multi-prime private key, as defined in the [PKCS#1 v2.2]
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getCrtCoefficient())`()` Returns the crtCoefficient. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo.html#)!\>! | [getOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getOtherPrimeInfo())`()` Returns the otherPrimeInfo or null if there are only two prime factors (p and q). |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeExponentP())`()` Returns the primeExponentP. |
+| --- | --- |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeExponentQ())`()` Returns the primeExponentQ. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeP())`()` Returns the primeP. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeQ())`()` Returns the primeQ. |
+| --- | --- |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPublicExponent())`()` Returns the public exponent. |
 
 | Inherited functions ||

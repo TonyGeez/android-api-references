@@ -9,12 +9,15 @@ open class SQLTransientException : SQLException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.SQLTransientException](https://developer.android.com/reference/kotlin/java/sql/SQLTransientException#) |
 
 | Known Direct Subclasses [SQLTimeoutException](https://developer.android.com/reference/kotlin/java/sql/SQLTimeoutException), [SQLTransactionRollbackException](https://developer.android.com/reference/kotlin/java/sql/SQLTransactionRollbackException), [SQLTransientConnectionException](https://developer.android.com/reference/kotlin/java/sql/SQLTransientConnectionException) |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLTimeoutException](https://developer.android.com/reference/kotlin/java/sql/SQLTimeoutException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the timeout specified by`Statement`has expired. | | [SQLTransactionRollbackException](https://developer.android.com/reference/kotlin/java/sql/SQLTransactionRollbackException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*40*', or under vendor-specified conditions. | | [SQLTransientConnectionException](https://developer.android.com/reference/kotlin/java/sql/SQLTransientConnectionException) | The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) for the SQLState class value '*08*', or under vendor-specified conditions. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) is thrown in situations where a previoulsy failed operation might be able to succeed when the operation is retried without any intervention by application-level functionality.
 
@@ -106,6 +109,7 @@ Constructs a`SQLTransientException`object with a given`reason`,`SQLState`and`ven
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor specific exception code |
+| --- | --- |
 
 ### SQLTransientException
 
@@ -128,6 +132,7 @@ Constructs a`SQLTransientException`object with a given`reason`,`SQLState`,`vendo
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific exception code |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
 
 ### SQLTransientException
@@ -150,6 +155,7 @@ Constructs a`SQLTransientException`object with a given`reason`,`SQLState`and`cau
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception. |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
+| --- | --- |
 
 ### SQLTransientException
 

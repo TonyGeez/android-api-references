@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LinkMovementMethod
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/method/LinkMovementMethod "View this page in Java") 
+| --- | --- |
 
 ```
 open class LinkMovementMethod : ScrollingMovementMethod
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.method.BaseMovementMethod](https://developer.android.com/reference/kotlin/android/text/method/BaseMovementMethod) |||
 | | ↳ | [android.text.method.ScrollingMovementMethod](https://developer.android.com/reference/kotlin/android/text/method/ScrollingMovementMethod) ||
 | | | ↳ | [android.text.method.LinkMovementMethod](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#) |
+| --- | --- | --- | --- |
 
 A movement method that traverses links in the text buffer and scrolls if necessary. Supports clicking on links with DPad Center or Enter.
 
@@ -28,6 +31,7 @@ A movement method that traverses links in the text buffer and scrolls if necessa
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canSelectArbitrarily](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#canSelectArbitrarily())`()` <br /> |
 | openstatic [MovementMethod](https://developer.android.com/reference/kotlin/android/text/method/MovementMethod)! | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#getInstance())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#initialize(android.widget.TextView,%20android.text.Spannable))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `text:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTakeFocus](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#onTakeFocus(android.widget.TextView,%20android.text.Spannable,%20kotlin.Int))`(`view:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `text:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`, `dir:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#onTouchEvent(android.widget.TextView,%20android.text.Spannable,%20android.view.MotionEvent))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`, `event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!`)` <br /> |
 
@@ -36,6 +40,7 @@ A movement method that traverses links in the text buffer and scrolls if necessa
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [down](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#down(android.widget.TextView,%20android.text.Spannable))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleMovementKey](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#handleMovementKey(android.widget.TextView,%20android.text.Spannable,%20kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `movementMetaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [left](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#left(android.widget.TextView,%20android.text.Spannable))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [right](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#right(android.widget.TextView,%20android.text.Spannable))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [up](https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod#up(android.widget.TextView,%20android.text.Spannable))`(`widget:` ` [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!`, `buffer:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> |
 
@@ -146,6 +151,7 @@ protected open fun handleMovementKey(
 | `widget` | [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#)!:The text view. |
 | `buffer` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!:The text buffer. |
 | `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!:The key event. |
+| --- | --- |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The key code. |
 | `movementMetaState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The keyboard meta states used for movement. |
 

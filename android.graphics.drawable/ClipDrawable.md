@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ClipDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/ClipDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class ClipDrawable : DrawableWrapper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.DrawableWrapper](https://developer.android.com/reference/kotlin/android/graphics/drawable/DrawableWrapper) ||
 | | | ↳ | [android.graphics.drawable.ClipDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#) |
+| --- | --- | --- | --- |
 
 A Drawable that clips another Drawable based on this Drawable's current level value. You can control how much the child Drawable gets clipped in width and height based on the level, as well as a gravity to control where it is placed in its overall container. Most often used to implement things like progress bars, by increasing the drawable's level with [setLevel()](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLevel(kotlin.Int)).
 
@@ -28,6 +31,7 @@ It can be defined in an XML file with the`<clip>`element. For more information, 
 | [`android:clipOrientation`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#attr_ClipDrawable) | The orientation for the clip. |
 | [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#attr_ClipDrawable) | Reference to a drawable resource to draw with the specified scale. |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#attr_ClipDrawable) | Specifies where to clip within the drawable. |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -43,6 +47,7 @@ It can be defined in an XML file with the`<clip>`element. For more information, 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` Applies the specified theme to this Drawable and its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#getOpacity())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 
 | Protected methods ||
@@ -64,6 +69,7 @@ android:clipOrientation
 The orientation for the clip.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |------------|-------|---------------------------------|
@@ -87,21 +93,26 @@ android:gravity
 Specifies where to clip within the drawable. The default value is left.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |-------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -147,6 +158,7 @@ Creates a new clip drawable with the specified gravity and orientation.
 | `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)!:the drawable to clip |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):gravity constant (see [Gravity](https://developer.android.com/reference/kotlin/android/view/Gravity.html#) used to position the clipped drawable within the parent container |
 | `orientation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):bitwise-or of [HORIZONTAL](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#HORIZONTAL:kotlin.Int) and/or [VERTICAL](https://developer.android.com/reference/kotlin/android/graphics/drawable/ClipDrawable#VERTICAL:kotlin.Int) |
+| --- | --- |
 
 ## Public methods
 
@@ -208,6 +220,7 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):This value cannot be`null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#):This value cannot be`null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?:This value may be`null`. |
 
 | Exceptions ||

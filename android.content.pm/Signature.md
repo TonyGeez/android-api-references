@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Signature
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/pm/Signature "View this page in Java")
+| --- | --- |
 
 ```
 open class Signature : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.Signature](https://developer.android.com/reference/kotlin/android/content/pm/Signature#) |
 
 Opaque, immutable representation of a signing certificate associated with an application package.
@@ -31,9 +33,11 @@ This class name is slightly misleading, since it's not actually a signature.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#toByteArray()()` <br /> |
 | open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#toChars()()` Encode the Signature as ASCII text. |
 | open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#toChars(kotlin.CharArray,%20kotlin.IntArray)(existingArray: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, outLen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Encode the Signature as ASCII text in to an existing array. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#toCharsString()()` Return the result of `https://developer.android.com/reference/kotlin/android/content/pm/Signature#toChars()` as a String. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

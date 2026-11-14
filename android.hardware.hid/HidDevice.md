@@ -7,6 +7,7 @@ class HidDevice : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.hid.HidDevice](https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#) |
 
 Represents a Human Interface Device (HID) connected to the system.
@@ -20,30 +21,38 @@ HIDs are devices like keyboards, mice, game controllers, and other peripherals t
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_BLUETOOTH:kotlin.Int` Transport type is Bluetooth. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_I2C:kotlin.Int` Transport type is I2C. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_SPI:kotlin.Int` Transport type is SPI. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_UNKNOWN:kotlin.Int` Transport type is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_USB:kotlin.Int` Transport type is USB. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#TRANSPORT_VIRTUAL:kotlin.Int` Transport type is Virtual. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#close()()` Releases all system resources and closes the connection to the HID device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getFeatureReport(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(reportId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/hardware/hid/Report!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Get a feature report from the HID device. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getName()()` The human-readable name of the HID device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getPhysicalAddress()()` The physical address of the device, representing its connection path through the system's device tree (e.g., the USB hub and port path). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getProductId()()` The product ID for this device. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getReportDescriptor()()` The raw HID report descriptor for the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getTransport()()` The transport type used by this device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getUniqueId()()` A unique identifier for this device instance. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getVendorId()()` The vendor ID for this device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#isOpen()()` Returns whether the HID device is currently open and ready for communication. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#open(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Opens the HID device so that it can be used to send and receive HID reports. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#registerEventListener(java.util.concurrent.Executor,%20android.hardware.hid.HidEventListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidEventListener)` Registers a listener to receive real-time input reports and hotplug events for this HID device. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#sendFeatureReport(android.hardware.hid.Report,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(report: https://developer.android.com/reference/kotlin/android/hardware/hid/Report, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Send a feature report to the HID device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#sendOutputReport(android.hardware.hid.Report,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(report: https://developer.android.com/reference/kotlin/android/hardware/hid/Report, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Send an output report to the HID device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#unregisterEventListener(android.hardware.hid.HidEventListener)(listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidEventListener)` Unregisters an active listener from receiving input reports. |
+| --- | --- |
 
 ## Constants
 
@@ -196,6 +205,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `reportId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the feature report to get. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Report](https://developer.android.com/reference/kotlin/android/hardware/hid/Report)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: the callback object to be used to notify of the report or an error. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -422,6 +432,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `report` | [Report](https://developer.android.com/reference/kotlin/android/hardware/hid/Report): the feature report to send. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -456,6 +467,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `report` | [Report](https://developer.android.com/reference/kotlin/android/hardware/hid/Report): the output report to send. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

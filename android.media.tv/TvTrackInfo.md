@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TvTrackInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/TvTrackInfo "View this page in Java")
+| --- | --- |
 
 ```
 class TvTrackInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.TvTrackInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#) |
 
 Encapsulates the format of tracks played in `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService`.
@@ -24,6 +26,7 @@ Encapsulates the format of tracks played in `https://developer.android.com/refer
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#TYPE_AUDIO:kotlin.Int` The type value for audio tracks. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#TYPE_SUBTITLE:kotlin.Int` The type value for subtitle tracks. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#TYPE_VIDEO:kotlin.Int` The type value for video tracks. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,24 +37,31 @@ Encapsulates the format of tracks played in `https://developer.android.com/refer
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getAudioChannelCount()()` Returns the audio channel count. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getAudioSampleRate()()` Returns the audio sample rate, in the unit of Hz. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getDescription()()` Returns a user readable description for the current track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getEncoding()()` Returns the codec in the form of mime type. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getExtra()()` Returns the extra information about the current track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getId()()` Returns the ID of the track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getLanguage()()` Returns the language information encoded by either ISO 639-1 or ISO 639-2/T. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getType()()` Returns the type of the track. |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getVideoActiveFormatDescription()()` Returns the Active Format Description (AFD) code of the video. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getVideoFrameRate()()` Returns the frame rate of the video, in the unit of fps (frames per second). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getVideoHeight()()` Returns the height of the video, in the unit of pixels. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getVideoPixelAspectRatio()()` Returns the pixel aspect ratio (the ratio of a pixel's width to its height) of the video. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getVideoWidth()()` Returns the width of the video, in the unit of pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#isAudioDescription()()` Returns `true` if the track is an audio description intended for people with visual impairment, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#isEncrypted()()` Returns `true` if the track is encrypted, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#isHardOfHearing()()` Returns `true` if the track is intended for people with hearing impairment, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#isSpokenSubtitle()()` Returns `true` if the track is a spoken subtitle for people with visual impairment, `false` otherwise. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| --- | --- |
 
 | Properties ||
 |---|---|

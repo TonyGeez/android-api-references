@@ -9,6 +9,7 @@ open class PasswordCallback : Callback, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.security.auth.callback.PasswordCallback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#) |
 
 Underlying security services instantiate and pass a`PasswordCallback`to the`handle`method of a`CallbackHandler`to retrieve password information.
@@ -24,6 +25,7 @@ Underlying security services instantiate and pass a`PasswordCallback`to the`hand
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#clearPassword())`()` Clear the retrieved password. |
 | open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#getPassword())`()` Get the retrieved password. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrompt](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#getPrompt())`()` Get the prompt. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEchoOn](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#isEchoOn())`()` Return whether the password should be displayed as it is being typed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback#setPassword(kotlin.CharArray))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Set the retrieved password. |
 

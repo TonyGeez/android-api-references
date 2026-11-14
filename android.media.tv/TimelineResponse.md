@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TimelineResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TimelineResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class TimelineResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.TimelineResponse](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#) |
 
@@ -32,9 +34,11 @@ A response for Timeline from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#describeContents())`()` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getSelector](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#getSelector())`()` Gets the Timeline Selector of the response. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTicks](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#getTicks())`()` Gets the Ticks of the response. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnitsPerSecond](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#getUnitsPerSecond())`()` Gets the UnitsPerSecond of the response. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnitsPerTick](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#getUnitsPerTick())`()` Gets the UnitsPerTick of the response. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWallClock](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#getWallClock())`()` Gets the System time (UTC) of the response. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

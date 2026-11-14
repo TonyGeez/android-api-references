@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # VirtualDisplayConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class VirtualDisplayConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.display.VirtualDisplayConfig](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#) |
 
 Holds configuration used to create [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay) instances.
@@ -31,18 +33,23 @@ Holds configuration used to create [VirtualDisplay](https://developer.android.co
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDefaultBrightness](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getDefaultBrightness())`()` Returns the default brightness of the display. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDensityDpi](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getDensityDpi())`()` Returns the density of the virtual display in dpi. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDimBrightness](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getDimBrightness())`()` Returns the dim brightness of the display. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDisplayCategories](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getDisplayCategories())`()` Returns the display categories. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getFlags())`()` Returns the virtual display flags. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getHeight())`()` Returns the height of the virtual display in pixels. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getName())`()` Returns the name of the virtual display. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRequestedRefreshRate](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getRequestedRefreshRate())`()` Returns the refresh rate of a virtual display in frames per second, or zero if it is using a default refresh rate chosen by the system. |
 | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)? | [getSurface](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getSurface())`()` Returns the surface to which the content of the virtual display should be rendered, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#getWidth())`()` Returns the width of the virtual display in pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|

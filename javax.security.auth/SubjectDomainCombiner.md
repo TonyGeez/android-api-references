@@ -9,6 +9,7 @@ open class SubjectDomainCombiner : DomainCombiner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.security.auth.SubjectDomainCombiner](https://developer.android.com/reference/kotlin/javax/security/auth/SubjectDomainCombiner#) |
 
 Legacy security code; do not use.

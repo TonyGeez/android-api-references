@@ -7,6 +7,7 @@ class MetadataResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.MetadataResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest`.
@@ -27,6 +28,7 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#RESULT_INTERNAL_ERROR:kotlin.Int` API call failed due to an issue with the service binding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#RESULT_OK:kotlin.Int` Request is successful. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#RESULT_UNSUPPORTED:kotlin.Int` No preferences in this application support this API. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -37,6 +39,7 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#getMetadataList()()` Returns the list of available Preference Metadata. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#getResultCode()()` Returns the result code indicating status of the request. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # PolicyUpdateResult
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/admin/PolicyUpdateResult "View this page in Java") 
+| --- | --- |
 
 ```
 class PolicyUpdateResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.PolicyUpdateResult](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#) |
 
 Class containing the reason for the policy (set from [DevicePolicyManager](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager)) update (e.g. success, failure reasons, etc.). This is passed in to [PolicyUpdateReceiver.onPolicySetResult](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicySetResult(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult))) and [PolicyUpdateReceiver.onPolicyChanged](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicyChanged(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult))).
@@ -22,9 +24,11 @@ Class containing the reason for the policy (set from [DevicePolicyManager](https
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_FAILURE_CONFLICTING_ADMIN_POLICY:kotlin.Int) Result code to indicate that the policy has not been enforced or has changed because another admin has set a conflicting policy on the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_HARDWARE_LIMITATION](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_FAILURE_HARDWARE_LIMITATION:kotlin.Int) Result code to indicate that the policy set by the admin has not been enforced because of a permanent hardware limitation/issue. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_STORAGE_LIMIT_REACHED](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_FAILURE_STORAGE_LIMIT_REACHED:kotlin.Int) Result code to indicate that the policy set by the admin has not been enforced because the local storage has reached its max limit. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_FAILURE_UNKNOWN:kotlin.Int) Result code to indicate that the policy has not been enforced or has changed for an unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_CLEARED](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_POLICY_CLEARED:kotlin.Int) Result code to indicate that the policy set by the admin has been successfully cleared, admins will no longer receive policy updates for this policy after this point. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_SET](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateResult#RESULT_POLICY_SET:kotlin.Int) Result code to indicate that the policy has been changed to the desired value set by the admin. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|

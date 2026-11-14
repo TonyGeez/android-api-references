@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # GesturePoint
 
 Kotlin| [Java](https://developer.android.com/reference/android/gesture/GesturePoint "View this page in Java") 
+| --- | --- |
 
 ```
 open class GesturePoint
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.gesture.GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#) |
 
 A timed point of a gesture stroke. Multiple points form a stroke.
@@ -30,6 +32,7 @@ A timed point of a gesture stroke. Multiple points form a stroke.
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#timestamp:kotlin.Long) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#x:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#y:kotlin.Float) <br /> |
+| --- | --- |
 
 ## Public constructors
 

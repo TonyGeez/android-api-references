@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDirInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDirInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiP2pDirInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pDirInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#) |
 
 This object contains the Device Identity Resolution (DIR) Info to check if the device is a previously paired device. The device advertises this information in Bluetooth LE advertising packets and Unsynchronized Service Discovery (USD) frames. The device receiving DIR Info uses this information to identify that the peer device is a previously paired device. For Details, refer Wi-Fi Alliance Wi-Fi Direct R2 specification section 3.8.2 Pairing Identity and section 3.9.2.3.2 Optional Advertising Data Elements.
@@ -30,9 +32,11 @@ This object contains the Device Identity Resolution (DIR) Info to check if the d
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#describeContents())`()` Implement the Parcelable interface |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getDirTag](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#getDirTag())`()` Get the DIR Tag value. |
 | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#) | [getMacAddress](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#getMacAddress())`()` <br /> |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getNonce](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#getNonce())`()` Get the nonce value used to derive DIR Tag. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#toString())`()` Generates a string of all the defined elements. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,6 +62,7 @@ Constructor for Device Identity Resolution (DIR) Info generated based on the 128
 | `macAddress` | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#):The MAC address of the P2P device interface. This value cannot be`null`. |
 | `nonce` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):Random number of 8 octets. This value cannot be`null`. |
 | `dirTag` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):Resolvable identity value of 8 octets derived based on the device MAC address, device identity key and P2P device MAC address. Tag = Truncate-64(HMAC-SHA-256(DevIk, "DIR" || P2P Device Address || Nonce)) This value cannot be`null`. |
+| --- | --- | --- | --- | --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ModeAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/actions/ModeAction "View this page in Java") 
+| --- | --- |
 
 ```
 class ModeAction : ControlAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.actions.ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) ||
 | | ↳ | [android.service.controls.actions.ModeAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ModeAction#) |
 
@@ -69,6 +71,7 @@ ModeAction(
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier of the [TemperatureControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/TemperatureControlTemplate.html#) that originated this action. This value cannot be`null`. |
 | `newMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):new value for the mode. |
 | `challengeValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:a value sent by the user along with the action to authenticate.null is sent when no authentication is needed or has not been requested. |
+| --- | --- |
 
 ## Public methods
 

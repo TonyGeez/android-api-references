@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # RangeTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/RangeTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class RangeTemplate : ControlTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.templates.ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) ||
 | | ↳ | [android.service.controls.templates.RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#) |
 
@@ -31,9 +33,11 @@ A template for a [Control](https://developer.android.com/reference/kotlin/androi
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCurrentValue](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getCurrentValue())`()` The current value for this range. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getFormatString](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getFormatString())`()` Formatter for generating a user visible [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) representing the value returned by [RangeTemplate.getCurrentValue](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getCurrentValue()). |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaxValue](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getMaxValue())`()` The maximum value for this range. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinValue](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getMinValue())`()` The minimum value for this range. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getStepValue](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getStepValue())`()` The value of the smallest increment or decrement that can be performed on this range. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTemplateType](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate#getTemplateType())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -71,9 +75,11 @@ The current value of the Control will be formatted accordingly.
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier for this template object This value cannot be`null`. |
 | `minValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):minimum value for the input |
 | `maxValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):maximum value for the input |
+| --- | --- |
 | `currentValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the current value of the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) containing this object. |
 | `stepValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):minimum value of increments/decrements when interacting with this control. |
 | `formatString` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?:a formatting string as per java.lang.String#format used to display the`currentValue`. If`null`is passed, the "%.1f" is used. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------|

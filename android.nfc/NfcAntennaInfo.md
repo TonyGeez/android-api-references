@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # NfcAntennaInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAntennaInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcAntennaInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.NfcAntennaInfo](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#) |
 
 Contains information on all available Nfc antennas on an Android device as well as information on the device itself in relation positioning of the antennas.
@@ -30,9 +32,11 @@ Contains information on all available Nfc antennas on an Android device as well 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AvailableNfcAntenna](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna)!\> | [getAvailableNfcAntennas](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#getAvailableNfcAntennas())`()` Get all NFC antennas that exist on the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceHeight](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#getDeviceHeight())`()` Height of the device in millimeters. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceWidth](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#getDeviceWidth())`()` Width of the device in millimeters. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeviceFoldable](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#isDeviceFoldable())`()` Whether the device is foldable. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|

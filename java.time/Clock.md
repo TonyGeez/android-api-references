@@ -9,6 +9,7 @@ abstract class Clock : InstantSource
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.Clock](https://developer.android.com/reference/kotlin/java/time/Clock#) |
 
 A clock providing access to the current instant, date and time using a time-zone.
@@ -48,18 +49,23 @@ The`system`factory methods provide clocks based on the best available system clo
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/Clock#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this clock is equal to another clock. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [fixed](https://developer.android.com/reference/kotlin/java/time/Clock#fixed(java.time.Instant,%20java.time.ZoneId))`(`fixedInstant:` ` [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)!`, `zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains a clock that always returns the same instant. |
 | abstract [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)! | [getZone](https://developer.android.com/reference/kotlin/java/time/Clock#getZone())`()` Gets the time-zone being used to create dates and times. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/Clock#hashCode())`()` A hash code for this clock. |
 | abstract [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)! | [instant](https://developer.android.com/reference/kotlin/java/time/Clock#instant())`()` Gets the current instant of the clock. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](https://developer.android.com/reference/kotlin/java/time/Clock#millis())`()` Gets the current millisecond instant of the clock. |
+| --- | --- |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [offset](https://developer.android.com/reference/kotlin/java/time/Clock#offset(java.time.Clock,%20java.time.Duration))`(`baseClock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)!`, `offsetDuration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration)!`)` Obtains a clock that returns instants from the specified clock with the specified duration added. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [system](https://developer.android.com/reference/kotlin/java/time/Clock#system(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains a clock that returns the current instant using the best available system clock. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [systemDefaultZone](https://developer.android.com/reference/kotlin/java/time/Clock#systemDefaultZone())`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the default time-zone. |
+| --- | --- |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [systemUTC](https://developer.android.com/reference/kotlin/java/time/Clock#systemUTC())`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the UTC time-zone. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [tick](https://developer.android.com/reference/kotlin/java/time/Clock#tick(java.time.Clock,%20java.time.Duration))`(`baseClock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)!`, `tickDuration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration)!`)` Obtains a clock that returns instants from the specified clock truncated to the nearest occurrence of the specified duration. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [tickMillis](https://developer.android.com/reference/kotlin/java/time/Clock#tickMillis(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains a clock that returns the current instant ticking in whole milliseconds using the best available system clock. |
+| --- | --- |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [tickMinutes](https://developer.android.com/reference/kotlin/java/time/Clock#tickMinutes(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains a clock that returns the current instant ticking in whole minutes using the best available system clock. |
 | openstatic [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [tickSeconds](https://developer.android.com/reference/kotlin/java/time/Clock#tickSeconds(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains a clock that returns the current instant ticking in whole seconds using the best available system clock. |
 | abstract [Clock](https://developer.android.com/reference/kotlin/java/time/Clock#)! | [withZone](https://developer.android.com/reference/kotlin/java/time/Clock#withZone(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Returns a copy of this clock with a different time-zone. |
+| --- | --- |
 
 ## Protected constructors
 

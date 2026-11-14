@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # OnMenuItemClickListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ActionMenuView.OnMenuItemClickListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnMenuItemClickListener

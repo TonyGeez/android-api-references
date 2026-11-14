@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PaintDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/PaintDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class PaintDrawable : ShapeDrawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.ShapeDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable) ||
 | | | ↳ | [android.graphics.drawable.PaintDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/PaintDrawable#) |
+| --- | --- | --- | --- |
 
 Drawable that draws its bounds in the given paint, with optional rounded corners.
 

@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # JetPlayer
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/JetPlayer "View this page in Java") 
+| --- | --- |
 
 ```
 open class JetPlayer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.JetPlayer](https://developer.android.com/reference/kotlin/android/media/JetPlayer#) |
 
 JetPlayer provides access to JET content playback and control.
@@ -41,21 +43,27 @@ Use [getJetPlayer()](https://developer.android.com/reference/kotlin/android/medi
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [clearQueue](https://developer.android.com/reference/kotlin/android/media/JetPlayer#clearQueue())`()` Empties the segment queue, and clears all clips that are scheduled for playback. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/android/media/JetPlayer#clone())`()` Cloning a JetPlayer instance is not supported. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [closeJetFile](https://developer.android.com/reference/kotlin/android/media/JetPlayer#closeJetFile())`()` Closes the resource containing the JET content. |
+| --- | --- |
 | openstatic [JetPlayer](https://developer.android.com/reference/kotlin/android/media/JetPlayer#)! | [getJetPlayer](https://developer.android.com/reference/kotlin/android/media/JetPlayer#getJetPlayer())`()` Factory method for the JetPlayer class. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTracks](https://developer.android.com/reference/kotlin/android/media/JetPlayer#getMaxTracks())`()` Gets the maximum number of simultaneous MIDI tracks supported by JetPlayer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [loadJetFile](https://developer.android.com/reference/kotlin/android/media/JetPlayer#loadJetFile(android.content.res.AssetFileDescriptor))`(`afd:` ` [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)!`)` Loads a . |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [loadJetFile](https://developer.android.com/reference/kotlin/android/media/JetPlayer#loadJetFile(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Loads a . |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pause](https://developer.android.com/reference/kotlin/android/media/JetPlayer#pause())`()` Pauses the playback of the JET segment queue. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [play](https://developer.android.com/reference/kotlin/android/media/JetPlayer#play())`()` Starts playing the JET segment queue. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queueJetSegment](https://developer.android.com/reference/kotlin/android/media/JetPlayer#queueJetSegment(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Byte))`(`segmentNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `libNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `repeatCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `transpose:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `muteFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `userID:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Queues the specified segment in the JET queue. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queueJetSegmentMuteArray](https://developer.android.com/reference/kotlin/android/media/JetPlayer#queueJetSegmentMuteArray(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.BooleanArray,%20kotlin.Byte))`(`segmentNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `libNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `repeatCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `transpose:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `muteArray:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`, `userID:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Queues the specified segment in the JET queue. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/JetPlayer#release())`()` Stops the current JET playback, and releases all associated native resources. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEventListener](https://developer.android.com/reference/kotlin/android/media/JetPlayer#setEventListener(android.media.JetPlayer.OnJetEventListener))`(`listener:` ` [JetPlayer.OnJetEventListener](https://developer.android.com/reference/kotlin/android/media/JetPlayer.OnJetEventListener)!`)` Sets the listener JetPlayer notifies when a JET event is generated by the rendering and playback engine. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEventListener](https://developer.android.com/reference/kotlin/android/media/JetPlayer#setEventListener(android.media.JetPlayer.OnJetEventListener,%20android.os.Handler))`(`listener:` ` [JetPlayer.OnJetEventListener](https://developer.android.com/reference/kotlin/android/media/JetPlayer.OnJetEventListener)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Sets the listener JetPlayer notifies when a JET event is generated by the rendering and playback engine. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setMuteArray](https://developer.android.com/reference/kotlin/android/media/JetPlayer#setMuteArray(kotlin.BooleanArray,%20kotlin.Boolean))`(`muteArray:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`, `sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Modifies the mute flags for the current active segment. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setMuteFlag](https://developer.android.com/reference/kotlin/android/media/JetPlayer#setMuteFlag(kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean))`(`trackId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `muteFlag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Mutes or unmutes a single track. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setMuteFlags](https://developer.android.com/reference/kotlin/android/media/JetPlayer#setMuteFlags(kotlin.Int,%20kotlin.Boolean))`(`muteFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Modifies the mute flags. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [triggerClip](https://developer.android.com/reference/kotlin/android/media/JetPlayer#triggerClip(kotlin.Int))`(`clipId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Schedules the playback of a clip. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -223,9 +231,11 @@ Queues the specified segment in the JET queue.
 | `segmentNum` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identifier of the segment. |
 | `libNum` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the sound bank associated with the segment. Use -1 to indicate that no sound bank (DLS file) is associated with this segment, in which case JET will use the General MIDI library. |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of times the segment will be repeated. 0 means the segment will only play once. -1 means the segment will repeat indefinitely. |
+| --- | --- |
 | `transpose` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of pitch transposition. Set to 0 for normal playback. Range is -12 to +12. |
 | `muteFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bitmask to specify which MIDI tracks will be muted during playback. Bit 0 affects track 0, bit 1 affects track 1 etc. |
 | `userID` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html):a value specified by the application that uniquely identifies the segment. this value is received in the [OnJetEventListener.onJetUserIdUpdate(JetPlayer, int, int)](https://developer.android.com/reference/kotlin/android/media/JetPlayer.OnJetEventListener#onJetUserIdUpdate(android.media.JetPlayer,%20kotlin.Int,%20kotlin.Int))event listener method. Normally, the application will keep a byte value that is incremented each time a new segment is queued up. This can be used to look up any special characteristics of that track including trigger clips and mute flags. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -253,9 +263,11 @@ Queues the specified segment in the JET queue.
 | `segmentNum` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identifier of the segment. |
 | `libNum` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the soundbank associated with the segment. Use -1 to indicate that no sound bank (DLS file) is associated with this segment, in which case JET will use the General MIDI library. |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of times the segment will be repeated. 0 means the segment will only play once. -1 means the segment will repeat indefinitely. |
+| --- | --- |
 | `transpose` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of pitch transposition. Set to 0 for normal playback. Range is -12 to +12. |
 | `muteArray` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:an array of booleans to specify which MIDI tracks will be muted during playback. The value at index 0 affects track 0, value at index 1 affects track 1 etc. The length of the array must be [getMaxTracks()](https://developer.android.com/reference/kotlin/android/media/JetPlayer#getMaxTracks())for the call to succeed. |
 | `userID` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html):a value specified by the application that uniquely identifies the segment. this value is received in the [OnJetEventListener.onJetUserIdUpdate(JetPlayer, int, int)](https://developer.android.com/reference/kotlin/android/media/JetPlayer.OnJetEventListener#onJetUserIdUpdate(android.media.JetPlayer,%20kotlin.Int,%20kotlin.Int))event listener method. Normally, the application will keep a byte value that is incremented each time a new segment is queued up. This can be used to look up any special characteristics of that track including trigger clips and mute flags. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -344,6 +356,7 @@ Mutes or unmutes a single track.
 | `trackId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the track to mute. |
 | `muteFlag` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):set to true to mute, false to unmute. |
 | `sync` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if false, the new mute flags will be applied as soon as possible by the JET render and playback engine. If true, the mute flag will be updated at the start of the next segment. If the segment is repeated, the flag will take effect the next time segment is repeated. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------|

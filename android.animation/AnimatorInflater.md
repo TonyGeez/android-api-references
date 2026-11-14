@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # AnimatorInflater
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/AnimatorInflater "View this page in Java") 
+| --- | --- |
 
 ```
 open class AnimatorInflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.AnimatorInflater](https://developer.android.com/reference/kotlin/android/animation/AnimatorInflater#) |
 
 This class is used to instantiate animator XML files into Animator objects.

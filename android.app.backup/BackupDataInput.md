@@ -7,6 +7,7 @@ open class BackupDataInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.BackupDataInput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#) |
 
 Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` reads information from the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor)` method. The data is presented as a set of "entities," each representing one named record as previously stored by the agent's android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor,android.app.backup.BackupDataOutput,ParcelFileDescriptor) implementation. An entity is composed of a descriptive header plus a byte array that holds the raw data saved in the remote backup.
@@ -47,6 +48,7 @@ public void onRestore(BackupDataInput data, int appVersionCode,
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getDataSize()()` Report the size in bytes of the data associated with the current entity in the restore stream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getKey()()` Report the key associated with the current entity in the restore stream |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#readEntityData(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read a record's raw data from the restore stream. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#readNextHeader()()` Extract the next entity header from the restore stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#skipEntityData()()` Consume the current entity's data without extracting it into a buffer for further processing. |
 
@@ -111,6 +113,7 @@ Read a record's raw data from the restore stream. The record's header must first
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: An allocated byte array of at least 'size' bytes |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset within the 'data' array at which the data will be placed when read from the stream |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to read in this pass |
+| --- | --- |
 
 | Return ||
 |---|---|

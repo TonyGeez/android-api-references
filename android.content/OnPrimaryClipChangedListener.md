@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnPrimaryClipChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ClipboardManager.OnPrimaryClipChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnPrimaryClipChangedListener

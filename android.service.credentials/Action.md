@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Action
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/credentials/Action "View this page in Java")
+| --- | --- |
 
 ```
 class Action : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.Action](https://developer.android.com/reference/kotlin/android/service/credentials/Action#) |
 
 An action defined by the provider that intents into the provider's app for specific user actions.
@@ -30,6 +32,7 @@ If user selects this action entry, the corresponding `https://developer.android.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#getSlice()()` Returns a `Slice` object containing the display content to be displayed on the UI. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

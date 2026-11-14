@@ -41,12 +41,15 @@ The [Lookup Factory Methods](https://developer.android.com/reference/kotlin/java
 | `1` | `REF_getField` | `class` | `FT f;` | `(T) this.f;` |
 | `2` | `REF_getStatic` | `class`or`interface` | `static` `FT f;` | `(T) C.f;` |
 | `3` | `REF_putField` | `class` | `FT f;` | `this.f = x;` |
+| --- | --- | --- | --- | --- |
 | `4` | `REF_putStatic` | `class` | `static` `FT f;` | `C.f = arg;` |
 | `5` | `REF_invokeVirtual` | `class` | `T m(A*);` | `(T) this.m(arg*);` |
 | `6` | `REF_invokeStatic` | `class`or`interface` | `static` `T m(A*);` | `(T) C.m(arg*);` |
+| --- | --- | --- | --- | --- |
 | `7` | `REF_invokeSpecial` | `class`or`interface` | `T m(A*);` | `(T) super.m(arg*);` |
 | `8` | `REF_newInvokeSpecial` | `class` | `C(A*);` | `new C(arg*);` |
 | `9` | `REF_invokeInterface` | `interface` | `T m(A*);` | `(T) this.m(arg*);` |
+| --- | --- | --- | --- | --- |
 
 ## Summary
 
@@ -55,27 +58,34 @@ The [Lookup Factory Methods](https://developer.android.com/reference/kotlin/java
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_getField](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_getField:kotlin.Int) A direct method handle reference kind, as defined in the [table above](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#refkinds). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_getStatic](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_getStatic:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_invokeInterface](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_invokeInterface:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_invokeSpecial](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_invokeSpecial:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_invokeStatic](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_invokeStatic:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_invokeVirtual](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_invokeVirtual:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_newInvokeSpecial](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_newInvokeSpecial:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_putField](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_putField:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF_putStatic](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#REF_putStatic:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [getDeclaringClass](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getDeclaringClass())`()` Returns the class in which the cracked method handle's underlying member was defined. |
 | abstract [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | [getMethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getMethodType())`()` Returns the nominal type of the cracked symbolic reference, expressed as a method type. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getModifiers())`()` Returns the access modifiers of the underlying member. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getName())`()` Returns the name of the cracked method handle's underlying member. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReferenceKind](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getReferenceKind())`()` Returns the reference kind of the cracked method handle, which in turn determines whether the method handle's underlying member was a constructor, method, or field. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#isVarArgs())`()` Determines if the underlying member was a variable arity method or constructor. |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refKindIsField](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#refKindIsField(kotlin.Int))`(`refKind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refKindIsValid](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#refKindIsValid(kotlin.Int))`(`refKind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [refKindName](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#refKindName(kotlin.Int))`(`refKind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [referenceKindToString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#referenceKindToString(kotlin.Int))`(`referenceKind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the descriptive name of the given reference kind, as defined in the [table above](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#refkinds). |
 | abstractT | [reflectAs](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#reflectAs(java.lang.Class,%20java.lang.invoke.MethodHandles.Lookup))`(`expected:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`, `lookup:` ` [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)!`)` Reflects the underlying member as a method, constructor, or field object. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#toString(kotlin.Int,%20java.lang.Class,%20kotlin.String,%20java.lang.invoke.MethodType))`(`kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defc:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Returns a string representation for a`MethodHandleInfo`, given the four parts of its symbolic reference. |
+| --- | --- |
 
 ## Constants
 
@@ -337,6 +347,7 @@ Reflects the underlying member as a method, constructor, or field object. If the
 | `<T>` | the desired type of the result, either [Member](https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html#) or a subtype |
 | `expected` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!:a class object representing the desired result type`T` |
 | `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)!:the lookup object that created this MethodHandleInfo, or one with equivalent access privileges |
+| --- | --- |
 
 | Return ||
 |---|---------------------------------------------------------|
@@ -347,6 +358,7 @@ Reflects the underlying member as a method, constructor, or field object. If the
 | `java.lang.ClassCastException` | if the member is not of the expected type |
 | `java.lang.NullPointerException` | if either argument is`null` |
 | `java.lang.IllegalArgumentException` | if the underlying member is not accessible to the given lookup object |
+| --- | --- |
 
 ### toString
 
@@ -368,6 +380,7 @@ Returns a string representation for a`MethodHandleInfo`, given the four parts of
 | `kind` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the [reference kind](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getReferenceKind())part of the symbolic reference |
 | `defc` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:the [declaring class](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getDeclaringClass())part of the symbolic reference |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the [member name](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getName())part of the symbolic reference |
+| --- | --- |
 | `type` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!:the [method type](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#getMethodType())part of the symbolic reference |
 
 | Return ||

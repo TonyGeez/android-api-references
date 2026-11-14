@@ -4,12 +4,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # DeleteMedicalResourcesRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/health/connect/DeleteMedicalResourcesRequest "View this page in Java")
+| --- | --- |
 
 ```
 class DeleteMedicalResourcesRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.DeleteMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#) |
 
 A delete request for android.health.connect.HealthConnectManager#deleteMedicalResources.
@@ -33,9 +35,11 @@ At least one filter must be specified - you cannot construct a request to say de
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#getDataSourceIds()()` Returns the IDs for the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` that are being requested to delete. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#getMedicalResourceTypes()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource` types that should be deleted. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

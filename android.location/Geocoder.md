@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Geocoder
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/Geocoder "View this page in Java") 
+| --- | --- |
 
 ```
 class Geocoder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.Geocoder](https://developer.android.com/reference/kotlin/android/location/Geocoder#) |
 
 A class for handling geocoding and reverse geocoding. Geocoding is the process of transforming a street address or other description of a location into a (latitude, longitude) coordinate. Reverse geocoding is the process of transforming a (latitude, longitude) coordinate into a (partial) address. The amount of detail in a reverse geocoded location description may vary, for example one might contain the full street address of the closest building, while another might contain only a city name and postal code.
@@ -37,9 +39,11 @@ Geocoder implementations are only required to make a best effort to return resul
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Address](https://developer.android.com/reference/kotlin/android/location/Address)!\>? | [getFromLocation](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocation(kotlin.Double,%20kotlin.Double,%20kotlin.Int))`(`latitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `longitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an array of Addresses that attempt to describe the area immediately surrounding the given latitude and longitude. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFromLocation](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocation(kotlin.Double,%20kotlin.Double,%20kotlin.Int,%20android.location.Geocoder.GeocodeListener))`(`latitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `longitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `listener:` ` [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener)`)` Provides an array of Addresses that attempt to describe the area immediately surrounding the given latitude and longitude. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Address](https://developer.android.com/reference/kotlin/android/location/Address)!\>? | [getFromLocationName](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocationName(kotlin.String,%20kotlin.Int))`(`locationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an array of Addresses that attempt to describe the named location, which may be a place name such as "Dalvik, Iceland", an address such as "1600 Amphitheatre Parkway, Mountain View, CA", an airport code such as "SFO", and so forth. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFromLocationName](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocationName(kotlin.String,%20kotlin.Int,%20android.location.Geocoder.GeocodeListener))`(`locationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `listener:` ` [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener)`)` Provides an array of Addresses that attempt to describe the named location, which may be a place name such as "Dalvik, Iceland", an address such as "1600 Amphitheatre Parkway, Mountain View, CA", an airport code such as "SFO", and so forth. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Address](https://developer.android.com/reference/kotlin/android/location/Address)!\>? | [getFromLocationName](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocationName(kotlin.String,%20kotlin.Int,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double))`(`locationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lowerLeftLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `lowerLeftLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `upperRightLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `upperRightLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns an array of Addresses that attempt to describe the named location, which may be a place name such as "Dalvik, Iceland", an address such as "1600 Amphitheatre Parkway, Mountain View, CA", an airport code such as "SFO", and so forth. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFromLocationName](https://developer.android.com/reference/kotlin/android/location/Geocoder#getFromLocationName(kotlin.String,%20kotlin.Int,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double,%20android.location.Geocoder.GeocodeListener))`(`locationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `maxResults:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lowerLeftLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `lowerLeftLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `upperRightLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `upperRightLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `listener:` ` [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener)`)` Returns an array of Addresses that attempt to describe the named location, which may be a place name such as "Dalvik, Iceland", an address such as "1600 Amphitheatre Parkway, Mountain View, CA", an airport code such as "SFO", and so forth. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/android/location/Geocoder#isPresent())`()` Returns true if there is a geocoder implementation present on the device that may return results. |
 
 ## Public constructors
@@ -103,6 +107,7 @@ Returns an array of Addresses that attempt to describe the area immediately surr
 | `latitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude a point for the search Value is between -90.0f and 90.0f inclusive |
 | `longitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude a point for the search Value is between -180.0f and 180.0f inclusive |
 | `maxResults` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):max number of addresses to return. Smaller numbers (1 to 5) are recommended Value is 1 or greater |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -135,6 +140,7 @@ Provides an array of Addresses that attempt to describe the area immediately sur
 | `latitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude a point for the search Value is between -90.0f and 90.0f inclusive |
 | `longitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude a point for the search Value is between -180.0f and 180.0f inclusive |
 | `maxResults` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):max number of addresses to return. Smaller numbers (1 to 5) are recommended Value is 1 or greater |
+| --- | --- |
 | `listener` | [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener):a listener for receiving results This value cannot be`null`. |
 
 | Exceptions ||
@@ -196,6 +202,7 @@ Provides an array of Addresses that attempt to describe the named location, whic
 | `locationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):a user-supplied description of a location This value cannot be`null`. |
 | `maxResults` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):max number of results to return. Smaller numbers (1 to 5) are recommended Value is 1 or greater |
 | `listener` | [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener):a listener for receiving results This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -232,9 +239,11 @@ You may specify a bounding box for the search results by including the latitude 
 | `locationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):a user-supplied description of a location This value cannot be`null`. |
 | `maxResults` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):max number of addresses to return. Smaller numbers (1 to 5) are recommended Value is 1 or greater |
 | `lowerLeftLatitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude of the lower left corner of the bounding box Value is between -90.0f and 90.0f inclusive |
+| --- | --- |
 | `lowerLeftLongitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude of the lower left corner of the bounding box Value is between -180.0f and 180.0f inclusive |
 | `upperRightLatitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude of the upper right corner of the bounding box Value is between -90.0f and 90.0f inclusive |
 | `upperRightLongitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude of the upper right corner of the bounding box Value is between -180.0f and 180.0f inclusive |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -272,9 +281,11 @@ You may specify a bounding box for the search results by including the latitude 
 | `locationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):a user-supplied description of a location This value cannot be`null`. |
 | `maxResults` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):max number of addresses to return. Smaller numbers (1 to 5) are recommended Value is 1 or greater |
 | `lowerLeftLatitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude of the lower left corner of the bounding box Value is between -90.0f and 90.0f inclusive |
+| --- | --- |
 | `lowerLeftLongitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude of the lower left corner of the bounding box Value is between -180.0f and 180.0f inclusive |
 | `upperRightLatitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the latitude of the upper right corner of the bounding box Value is between -90.0f and 90.0f inclusive |
 | `upperRightLongitude` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the longitude of the upper right corner of the bounding box Value is between -180.0f and 180.0f inclusive |
+| --- | --- |
 | `listener` | [Geocoder.GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener):a listener for receiving results This value cannot be`null`. |
 
 | Exceptions ||

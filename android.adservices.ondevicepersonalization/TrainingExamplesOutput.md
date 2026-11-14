@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # TrainingExamplesOutput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExamplesOutput "View this page in Java") 
+| --- | --- |
 
 ```
 class TrainingExamplesOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.TrainingExamplesOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput#) |
 
 The output data of [IsolatedWorker.onTrainingExamples](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onTrainingExamples(android.adservices.ondevicepersonalization.TrainingExamplesInput,%20android.os.OutcomeReceiver))
@@ -26,6 +28,7 @@ The output data of [IsolatedWorker.onTrainingExamples](https://developer.android
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TrainingExampleRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord)!\> | [getTrainingExampleRecords](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput#getTrainingExampleRecords())`()` The list of training example byte arrays. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

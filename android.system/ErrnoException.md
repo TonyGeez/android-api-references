@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ErrnoException
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/ErrnoException "View this page in Java") 
+| --- | --- |
 
 ```
 class ErrnoException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.system.ErrnoException](https://developer.android.com/reference/kotlin/android/system/ErrnoException#) |
+| --- | --- | --- | --- |
 
 A checked exception thrown when [Os](https://developer.android.com/reference/kotlin/android/system/Os) methods fail. This exception contains the native errno value, for comparison against the constants in [OsConstants](https://developer.android.com/reference/kotlin/android/system/OsConstants), should sophisticated callers need to adjust their behavior based on the exact failure.
 

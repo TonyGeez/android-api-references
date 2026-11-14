@@ -7,9 +7,11 @@ open class GridLayout : ViewGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
 | | | ↳ | [android.widget.GridLayout](https://developer.android.com/reference/kotlin/android/widget/GridLayout#) |
+| --- | --- | --- | --- |
 
 A layout that places its children in a rectangular *grid*.
 
@@ -54,15 +56,18 @@ See `https://developer.android.com/reference/kotlin/android/widget/GridLayout.La
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment` Alignments specify where a view should be placed within a cell group and what size it should be. |
 | open | `https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams` Layout information associated with each of the children of a GridLayout. |
 | open | `https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec` A Spec defines the horizontal or vertical characteristics of a group of cells. |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:columnCount`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The maximum number of columns to create when automatically positioning children. |
 | [`android:columnOrderPreserved`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, forces column boundaries to appear in the same order as column indices. |
 | [`android:orientation`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The orientation property is not used during layout. |
+| --- | --- |
 | [`android:rowCount`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The maximum number of rows to create when automatically positioning children. |
 | [`android:rowOrderPreserved`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, forces row boundaries to appear in the same order as row indices. |
 | [`android:useDefaultMargins`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, tells GridLayout to use default margins when none are specified in a view's layout parameters. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -342,6 +347,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -458,6 +464,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -606,6 +613,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -621,6 +629,7 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#ALIGN_BOUNDS:kotlin.Int` This constant is an `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setAlignmentMode(kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#ALIGN_MARGINS:kotlin.Int` This constant is an `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setAlignmentMode(kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#HORIZONTAL:kotlin.Int` The horizontal orientation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#UNDEFINED:kotlin.Int` The constant used to indicate that a value is undefined. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#VERTICAL:kotlin.Int` The vertical orientation. |
 
@@ -1780,36 +1789,46 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getAlignmentMode()()` Returns the alignment mode. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getColumnCount()()` Returns the current number of columns. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getOrientation()()` Returns the current orientation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getRowCount()()` Returns the current number of rows. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getUseDefaultMargins()()` Returns whether or not this GridLayout will allocate default margins when no corresponding layout parameters are defined. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#isColumnOrderPreserved()()` Returns whether or not column boundaries are ordered by their grid indices. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#isRowOrderPreserved()()` Returns whether or not row boundaries are ordered by their grid indices. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onViewAdded(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Called when a new child is added to this ViewGroup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onViewRemoved(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Called when a child view is removed from this ViewGroup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#requestLayout()()` Call this when something has changed which has invalidated the layout of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setAlignmentMode(kotlin.Int)(alignmentMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the alignment mode to be used for all of the alignments between the children of this container. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setColumnCount(kotlin.Int)(columnCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` ColumnCount is used only to generate default column/column indices when they are not specified by a component's layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setColumnOrderPreserved(kotlin.Boolean)(columnOrderPreserved: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When this property is `true`, GridLayout is forced to place the column boundaries so that their associated grid indices are in ascending order in the view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setOrientation(kotlin.Int)(orientation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` GridLayout uses the orientation property for two purposes: - To control the 'direction' in which default row/column indices are generated when they are not specified in a component's layout parameters. - To control which axis should be processed first during the layout operation: when orientation is `https://developer.android.com/reference/kotlin/android/widget/GridLayout#HORIZONTAL:kotlin.Int` the horizontal axis is laid out first. The order in which axes are laid out is important if, for example, the height of one of GridLayout's children is dependent on its width - and its width is, in turn, dependent on the widths of other components. <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setRowCount(kotlin.Int)(rowCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` RowCount is used only to generate default row/column indices when they are not specified by a component's layout parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setRowOrderPreserved(kotlin.Boolean)(rowOrderPreserved: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When this property is `true`, GridLayout is forced to place the row boundaries so that their associated grid indices are in ascending order in the view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setUseDefaultMargins(kotlin.Boolean)(useDefaultMargins: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When `true`, GridLayout allocates default margins around children based on the child's visual characteristics. |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` <br /> |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` - `spec.alignment = alignment` <br /> |
+| --- | --- |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, alignment, weight)`. |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, weight)`. |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` <br /> |
+| --- | --- |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Equivalent to: `spec(start, size, alignment, 0f)`. |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` - `spec.alignment = alignment` - `spec.weight = weight` <br /> |
 | open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, default_alignment, weight)` - where `default_alignment` is specified in `https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams`. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
 | open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
 | open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.view.ViewGroup.LayoutParams)(lp: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onMeasure(kotlin.Int,%20kotlin.Int)(widthSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 
@@ -2729,6 +2748,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4575,6 +4595,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -7975,12 +7996,15 @@ Returns whether or not this View draws on its own.
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BASELINE:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *baselines* of the other views in its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BOTTOM:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *bottom* edges of the other views in its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#CENTER:android.widget.GridLayout.Alignment` Indicates that a view should be *centered* with the other views in its cell group. |
+| --- | --- |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#END:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *end* edges of the other views in its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#FILL:android.widget.GridLayout.Alignment` Indicates that a view should expanded to fit the boundaries of its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#LEFT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *left* edges of the other views in its cell group. |
+| --- | --- |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#RIGHT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *right* edges of the other views in its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#START:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *start* edges of the other views in its cell group. |
 | static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#TOP:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *top* edges of the other views in its cell group. |
+| --- | --- |
 
 Inherited properties From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/util/Property.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html!>!` `https://developer.android.com/reference/kotlin/android/view/View.html#ALPHA:android.util.Property`
 
@@ -8862,6 +8886,7 @@ Equivalent to: `spec(start, 1, alignment, weight)`.
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the weight |
+| --- | --- |
 
 ### spec
 
@@ -8928,6 +8953,7 @@ Equivalent to: `spec(start, size, alignment, 0f)`.
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size |
 | `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| --- | --- |
 
 ### spec
 
@@ -8957,6 +8983,7 @@ To leave the start index undefined, use the value `https://developer.android.com
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size |
 | `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| --- | --- |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the weight |
 
 ### spec
@@ -8978,6 +9005,7 @@ Equivalent to: `spec(start, 1, default_alignment, weight)` - where `default_alig
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the weight |
+| --- | --- |
 
 ## Protected methods
 
@@ -9042,6 +9070,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |
 

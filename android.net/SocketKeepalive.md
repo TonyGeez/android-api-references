@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # SocketKeepalive
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/SocketKeepalive "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SocketKeepalive : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.SocketKeepalive](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#) |
 
 Allows applications to request that the system periodically send specific packets on their behalf, using hardware offload to save battery power. To request that the system send keepalives, call one of the methods that return a [SocketKeepalive](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#) object, such as [ConnectivityManager.createSocketKeepalive](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#createSocketKeepalive(android.net.Network,%20android.net.IpSecManager.UdpEncapsulationSocket,%20java.net.InetAddress,%20java.net.InetAddress,%20java.util.concurrent.Executor,%20android.net.SocketKeepalive.Callback)), passing in a non-null callback. If the [SocketKeepalive](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#) is successfully started, the callback's`onStarted`method will be called. If an error occurs,`onError`will be called, specifying one of the`ERROR_*`constants in this class. To stop an existing keepalive, call [SocketKeepalive.stop](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#stop()). The system will call [SocketKeepalive.Callback.onStopped](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback#onStopped())if the operation was successful or [SocketKeepalive.Callback.onError](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback#onError(kotlin.Int))if an error occurred. For cellular, the device MUST support at least 1 keepalive slot. For WiFi, the device SHOULD support keepalive offload. If it does not, it MUST reply with [SocketKeepalive.Callback.onError](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback#onError(kotlin.Int))with`ERROR_UNSUPPORTED`to any keepalive offload request. If it does, it MUST support at least 3 concurrent keepalive slots.
@@ -26,12 +28,15 @@ Allows applications to request that the system periodically send specific packet
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_HARDWARE_ERROR](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_HARDWARE_ERROR:kotlin.Int) There was a hardware error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INSUFFICIENT_RESOURCES](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INSUFFICIENT_RESOURCES:kotlin.Int) Resources are insufficient (e.g. all hardware slots are in use). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_INTERVAL](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_INTERVAL:kotlin.Int) The interval is invalid (e.g. too short). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_IP_ADDRESS](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_IP_ADDRESS:kotlin.Int) The invalid IP addresses. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_LENGTH](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_LENGTH:kotlin.Int) The length is invalid (e.g. too long). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_NETWORK](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_NETWORK:kotlin.Int) The invalid network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_PORT](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_PORT:kotlin.Int) The port is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_SOCKET](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_INVALID_SOCKET:kotlin.Int) The socket is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SOCKET_NOT_IDLE](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_SOCKET_NOT_IDLE:kotlin.Int) The socket is not idle. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#ERROR_UNSUPPORTED:kotlin.Int) The request is unsupported. |
 
 | Public methods ||
@@ -39,6 +44,7 @@ Allows applications to request that the system periodically send specific packet
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#close())`()` Deactivate this [SocketKeepalive](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#) and free allocated resources. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#start(kotlin.Int))`(`intervalSec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Request that keepalive be started with the given`intervalSec`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/net/SocketKeepalive#stop())`()` Requests that keepalive be stopped. |
+| --- | --- |
 
 ## Constants
 

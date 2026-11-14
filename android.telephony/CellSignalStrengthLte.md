@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # CellSignalStrengthLte
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellSignalStrengthLte "View this page in Java") 
+| --- | --- |
 
 ```
 class CellSignalStrengthLte : CellSignalStrength, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) ||
 | | ↳ | [android.telephony.CellSignalStrengthLte](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#) |
 
@@ -28,18 +30,23 @@ LTE signal strength related information.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsuLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getAsuLevel())`()` Get the RSRP in ASU. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCqi](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getCqi())`()` Get channel quality indicator Reference: 3GPP TS 136. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCqiTableIndex](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getCqiTableIndex())`()` Get table index for channel quality indicator Reference: 3GPP TS 136. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDbm](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getDbm())`()` Get signal strength in dBm |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getLevel())`()` Retrieve an abstract level value for the overall signal quality. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRsrp](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRsrp())`()` Get reference signal received power in dBm Range: -140 dBm to -43 dBm. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRsrq](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRsrq())`()` Get reference signal received quality |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRssi())`()` Get Received Signal Strength Indication (RSSI) in dBm The value range is \[-113, -51\] inclusively or [CellInfo.UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/CellInfo#UNAVAILABLE:kotlin.Int) if unavailable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssnr](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRssnr())`()` Get reference signal signal-to-noise ratio in dB Range: -20 dB to +30 dB. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimingAdvance](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getTimingAdvance())`()` Get the timing advance value for LTE, as a value in range of 0. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

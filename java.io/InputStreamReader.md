@@ -7,10 +7,12 @@ open class InputStreamReader : Reader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader) ||
 | | ↳ | [java.io.InputStreamReader](https://developer.android.com/reference/kotlin/java/io/InputStreamReader#) |
 
 | Known Direct Subclasses [FileReader](https://developer.android.com/reference/kotlin/java/io/FileReader) |---|---| | [FileReader](https://developer.android.com/reference/kotlin/java/io/FileReader) | Reads text from character files using a default buffer size. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`. The charset that it uses may be specified by name or may be given explicitly, or the platform's `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()` may be accepted.
 
@@ -38,9 +40,11 @@ BufferedReader in
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#close()()` Closes the stream and releases any system resources associated with it. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#getEncoding()()` Returns the name of the character encoding being used by this stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#read()()` Reads a single character. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads characters into a portion of an array. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#read(java.nio.CharBuffer)(target: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Attempts to read characters into the specified character buffer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/InputStreamReader#ready()()` Tells whether this stream is ready to be read. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -201,6 +205,7 @@ Reads characters into a portion of an array. This method will block until some i
 | `cbuf` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: Destination buffer |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset at which to start storing characters |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Maximum number of characters to read |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -235,6 +240,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.NullPointerException` | if target is null |
 | `java.nio.ReadOnlyBufferException` | if target is a read only buffer |
+| --- | --- |
 
 ### ready
 

@@ -9,6 +9,7 @@ abstract class Duration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.datatype.Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#) |
 
 Immutable representation of a time span as defined in the W3C XML Schema 1.0 specification.
@@ -55,27 +56,35 @@ Because some operations of`Duration`rely on [Calendar](https://developer.android
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [add](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#add(javax.xml.datatype.Duration))`(`rhs:` ` [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)!`)` Computes a new duration whose value is`this+rhs`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#addTo(java.util.Calendar))`(`calendar:` ` [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#)!`)` Adds this duration to a [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#addTo(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Adds this duration to a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) object. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#compare(javax.xml.datatype.Duration))`(`duration:` ` [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)!`)` Partial order relation comparison with this`Duration`instance. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this duration object has the same duration as another`Duration`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDays](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getDays())`()` Obtains the value of the DAYS field as an integer value, or 0 if not present. |
+| --- | --- |
 | abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getField](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getField(javax.xml.datatype.DatatypeConstants.Field))`(`field:` ` [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)!`)` Gets the value of a field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getHours())`()` Obtains the value of the HOURS field as an integer value, or 0 if not present. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getMinutes())`()` Obtains the value of the MINUTES field as an integer value, or 0 if not present. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonths](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getMonths())`()` Obtains the value of the MONTHS field as an integer value, or 0 if not present. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getSeconds())`()` Obtains the value of the SECONDS field as an integer value, or 0 if not present. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSign](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getSign())`()` Returns the sign of this duration in -1,0, or 1. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getTimeInMillis(java.util.Calendar))`(`startInstant:` ` [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#)!`)` Returns the length of the duration in milliseconds. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getTimeInMillis(java.util.Date))`(`startInstant:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Returns the length of the duration in milliseconds. |
 | open [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [getXMLSchemaType](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getXMLSchemaType())`()` Return the name of the XML Schema date/time type that this instance maps to. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYears](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#getYears())`()` Get the years value of this`Duration`as an`int`or`0`if not present. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#hashCode())`()` Returns a hash code consistent with the definition of the equals method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLongerThan](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#isLongerThan(javax.xml.datatype.Duration))`(`duration:` ` [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)!`)` Checks if this duration object is strictly longer than another`Duration`object. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSet](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#isSet(javax.xml.datatype.DatatypeConstants.Field))`(`field:` ` [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)!`)` Checks if a field is set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShorterThan](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#isShorterThan(javax.xml.datatype.Duration))`(`duration:` ` [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)!`)` Checks if this duration object is strictly shorter than another`Duration`object. |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [multiply](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#multiply(kotlin.Int))`(`factor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
+| --- | --- |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [multiply](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#multiply(java.math.BigDecimal))`(`factor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [negate](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#negate())`()` Returns a new`Duration`object whose value is`-this`. |
 | abstract [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [normalizeWith](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#normalizeWith(java.util.Calendar))`(`startTimeInstant:` ` [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#)!`)` Converts the years and months fields into the days field by using a specific time instant as the reference point. |
+| --- | --- |
 | open [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)! | [subtract](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#subtract(javax.xml.datatype.Duration))`(`rhs:` ` [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#)!`)` Computes a new duration whose value is`this-rhs`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration#toString())`()` Returns a`String`representation of this`Duration``Object`. |
 
@@ -457,6 +466,7 @@ Return the name of the XML Schema date/time type that this instance maps to. Typ
 | Datatype | year | month | day | hour | minute | second |
 | [DatatypeConstants.DURATION](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION:javax.xml.namespace.QName) | X | X | X | X | X | X |
 | [DatatypeConstants.DURATION_DAYTIME](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION_DAYTIME:javax.xml.namespace.QName) | | | X | X | X | X |
+| --- | --- | --- | --- | --- | --- | --- |
 | [DatatypeConstants.DURATION_YEARMONTH](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION_YEARMONTH:javax.xml.namespace.QName) | X | X | | | | |
 
 | Return ||

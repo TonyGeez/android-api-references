@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # EuiccManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/euicc/EuiccManager "View this page in Java")
+| --- | --- |
 
 ```
 open class EuiccManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.euicc.EuiccManager](https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#) |
 
 EuiccManager is the application interface to eUICCs, or eSIMs/embedded SIMs.
@@ -27,45 +29,59 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS:kotlin.String` Intent action to launch the embedded SIM (eUICC) management settings screen. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE:kotlin.String` Broadcast Action: The action sent to carrier app so it knows the carrier setup is not completed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ACTION_START_EUICC_ACTIVATION:kotlin.String` Intent action sent by a carrier app to launch the eSIM activation flow provided by the LPA UI (LUI). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_ERROR:kotlin.Int` Result code for an operation indicating that an unresolvable error occurred. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_OK:kotlin.Int` Result code for an operation indicating that the operation succeeded. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int` Result code for an operation indicating that the user must take some action before the operation can continue. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_ADDRESS_MISSING:kotlin.Int` Address is missing e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_CARRIER_LOCKED:kotlin.Int` Operation such as downloading/switching to another profile failed due to device being carrier locked. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_CERTIFICATE_ERROR:kotlin.Int` Certificate needed for authentication is not valid or missing. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_CONNECTION_ERROR:kotlin.Int` Failure to create a connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_DISALLOWED_BY_PPR:kotlin.Int` Failed to load profile onto eUICC due to Profile Policy Rules. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_EUICC_INSUFFICIENT_MEMORY:kotlin.Int` There is no more space available on the eUICC for new profiles. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_EUICC_MISSING:kotlin.Int` eUICC is missing or defective on the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INCOMPATIBLE_CARRIER:kotlin.Int` The profile's carrier is incompatible with the LPA. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INSTALL_PROFILE:kotlin.Int` Failure to load the profile onto the eUICC card. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INVALID_ACTIVATION_CODE:kotlin.Int` The activation code(SGP.22 v2.2 section\[4.1\]) is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INVALID_CONFIRMATION_CODE:kotlin.Int` The confirmation code(SGP.22 v2.2 section\[4.7\]) is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INVALID_PORT:kotlin.Int` Failure due to target port is not supported. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INVALID_RESPONSE:kotlin.Int` Response format is invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_NO_PROFILES_AVAILABLE:kotlin.Int` No profiles available. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_OPERATION_BUSY:kotlin.Int` The operation is currently busy, try again later. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_SIM_MISSING:kotlin.Int` No SIM card is available in the device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_TIME_OUT:kotlin.Int` Timed out while waiting for an operation to complete. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_UNSUPPORTED_VERSION:kotlin.Int` The eUICC card(hardware) version is incompatible with the software |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EUICC_MEMORY_FIELD_UNAVAILABLE:kotlin.Long` Temporary failure to retrieve available memory because eUICC is not ready. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE:kotlin.String` Key for an extra set on `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` result callbacks providing a detailed result code. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION:kotlin.String` Key for an extra set on `getDownloadableSubscriptionMetadata` PendingIntent result callbacks providing the downloadable subscription metadata. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE:kotlin.String` Key for an extra set on `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` result callbacks providing a ErrorCode of `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE:kotlin.String`, value will be an int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE:kotlin.String` Key for an extra set on `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` result callbacks providing a OperationCode of `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE:kotlin.String`, value will be an int. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE:kotlin.String` Key for an extra set on `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` result callbacks providing a ReasonCode\[5. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE:kotlin.String` Key for an extra set on `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` result callbacks providing a SubjectCode\[5. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EXTRA_USE_QR_SCANNER:kotlin.String` Key for an extra set on actions `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ACTION_START_EUICC_ACTIVATION:kotlin.String` providing a boolean value of whether to start eSIM activation with QR scanner. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#META_DATA_CARRIER_ICON:kotlin.String` Optional meta-data attribute for a carrier app providing an icon to use to represent the carrier. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_APDU:kotlin.Int` The exception of failing to execute an APDU command. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_DOWNLOAD:kotlin.Int` Download profile error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_EUICC_CARD:kotlin.Int` eUICC card error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_EUICC_GSMA:kotlin.Int` eUICC returned an error defined in GSMA (SGP.22 v2.2) while running one of the ES10x functions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_HTTP:kotlin.Int` HTTP error |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_METADATA:kotlin.Int` Subscription's metadata error |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_SIM_SLOT:kotlin.Int` SIM slot error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_SMDX:kotlin.Int` SMDX(SMDP/SMDS) error |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_SMDX_SUBJECT_REASON_CODE:kotlin.Int` SubjectCode\[5. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_SWITCH:kotlin.Int` Generic switching profile error |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#OPERATION_SYSTEM:kotlin.Int` Internal system error. |
 
@@ -74,15 +90,19 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [EuiccManager](https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#createForCardId(kotlin.Int)(cardId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new EuiccManager object pinned to the given card ID. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#deleteSubscription(kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Deletes the given subscription. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20kotlin.Boolean,%20android.app.PendingIntent)(subscription: https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription!, switchAfterDownload: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Attempt to download the given `https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription`. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getAvailableMemoryInBytes()()` Returns the available memory in bytes of the eUICC. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEid()()` Returns the EID identifying the eUICC hardware. |
 | open [EuiccInfo](https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccInfo)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEuiccInfo()()` Returns information about the eUICC chip/device. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()()` Whether embedded subscriptions are currently enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)(portIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the passing portIndex is available. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#startResolutionActivity(android.app.Activity,%20kotlin.Int,%20android.content.Intent,%20android.app.PendingIntent)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resultIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Start an activity to resolve a user-resolvable error. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Switch to (enable) the given subscription. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, portIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Switch to (enable) the given subscription. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#updateSubscriptionNickname(kotlin.Int,%20kotlin.String,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nickname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Update the nickname for the given subscription. |
+| --- | --- |
 
 ## Constants
 
@@ -840,6 +860,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS or `https://de
 | `subscription` | [DownloadableSubscription](https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription)!: the subscription to download. |
 | `switchAfterDownload` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true, the profile will be activated upon successful download. |
 | `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)!: a PendingIntent to launch when the operation completes. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -970,6 +991,7 @@ This method may only be called once for a particular error.
 | `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#)!: the calling activity (which should be in the foreground). |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an application-specific request code which will be provided to android.app.Activity#onActivityResult upon completion. Note that the operation may still be in progress when the resolution activity completes; it is not fully finished until the callback intent is triggered. |
 | `resultIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: the Intent provided to the initial callback intent which failed with `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int`. |
+| --- | --- |
 | `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)!: a PendingIntent to launch when the operation completes. This is trigered upon completion of the original operation that required user resolution. |
 
 | Exceptions ||
@@ -1042,6 +1064,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. From Android T, multiple enabled profiles is supported. Calling apps targeting on android T must use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` API for disable profile, port index can be found from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getPortIndex()`. |
 | `portIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the port to target for the enabled subscription |
 | `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -1069,6 +1092,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to update. |
 | `nickname` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the new nickname to apply. This value may be `null`. |
 | `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

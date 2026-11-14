@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SecureRangingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/SecureRangingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class SecureRangingConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.rtt.SecureRangingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#) |
 
 Secure ranging configuration. Refer IEEE Std 802.11az-2022, section 12. Security.
@@ -30,9 +32,11 @@ Secure ranging configuration. Refer IEEE Std 802.11az-2022, section 12. Security
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [PasnConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig) | [getPasnConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#getPasnConfig())`()` Returns Pre-association security negotiation (PASN) configuration used for secure ranging. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRangingFrameProtectionEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#isRangingFrameProtectionEnabled())`()` Returns whether ranging frame protection is enabled or not. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecureHeLtfEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#isSecureHeLtfEnabled())`()` Returns whether secure HE-LTF is enabled or not. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

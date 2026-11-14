@@ -7,9 +7,11 @@ open class LinearLayout : ViewGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
 | | | ↳ | [android.widget.LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [ActionMenuView](https://developer.android.com/reference/kotlin/android/widget/ActionMenuView), [NumberPicker](https://developer.android.com/reference/kotlin/android/widget/NumberPicker), [RadioGroup](https://developer.android.com/reference/kotlin/android/widget/RadioGroup), [SearchView](https://developer.android.com/reference/kotlin/android/widget/SearchView), [TabWidget](https://developer.android.com/reference/kotlin/android/widget/TabWidget), [TableLayout](https://developer.android.com/reference/kotlin/android/widget/TableLayout), [TableRow](https://developer.android.com/reference/kotlin/android/widget/TableRow), [ZoomControls](https://developer.android.com/reference/kotlin/android/widget/ZoomControls) [ActionMenuView](https://developer.android.com/reference/kotlin/android/widget/ActionMenuView) ActionMenuView is a presentation of a series of menu options as a View.
 [NumberPicker](https://developer.android.com/reference/kotlin/android/widget/NumberPicker) A widget that enables the user to select a number from a predefined range.
@@ -58,9 +60,11 @@ See `https://developer.android.com/reference/kotlin/android/widget/LinearLayout.
 | [`android:baselineAligned`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | When set to false, prevents the layout from aligning its children's baselines. |
 | [`android:baselineAlignedChildIndex`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | When a linear layout is part of another layout that is baseline aligned, it can specify which of its children to baseline align to (that is, which child TextView). |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | Specifies how an object should position its content, on both the X and Y axes, within its own bounds. |
+| --- | --- |
 | [`android:measureWithLargestChild`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | When set to true, all children with a weight will be considered having the minimum size of the largest child. |
 | [`android:orientation`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | Should the layout be a column or a row? Use "horizontal" for a row, "vertical" for a column. |
 | [`android:weightSum`](https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout) | Defines the maximum weight sum. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -340,6 +344,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -456,6 +461,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -604,6 +610,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -619,9 +626,11 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#HORIZONTAL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#SHOW_DIVIDER_BEGINNING:kotlin.Int` Show a divider at the beginning of the group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#SHOW_DIVIDER_END:kotlin.Int` Show a divider at the end of the group. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#SHOW_DIVIDER_MIDDLE:kotlin.Int` Show dividers between each item in the group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#SHOW_DIVIDER_NONE:kotlin.Int` Don't show any dividers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#VERTICAL:kotlin.Int` <br /> |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
 
@@ -1779,27 +1788,35 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [LinearLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/LinearLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getBaselineAlignedChildIndex()()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getDividerDrawable()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getDividerPadding()()` Get the padding size used to inset dividers in pixels |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getGravity()()` Returns the current gravity. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getOrientation()()` Returns the current orientation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getShowDividers()()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#getWeightSum()()` Returns the desired weights sum. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#isBaselineAligned()()` Indicates whether widgets contained within this layout are aligned on their baseline or not. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#isMeasureWithLargestChildEnabled()()` When true, all children with a weight will be considered having the minimum size of the largest child. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setBaselineAligned(kotlin.Boolean)(baselineAligned: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Defines whether widgets contained in this layout are baseline-aligned or not. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setBaselineAlignedChildIndex(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setDividerDrawable(android.graphics.drawable.Drawable)(divider: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set a drawable to be used as a divider between items. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setDividerPadding(kotlin.Int)(padding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set padding displayed on both ends of dividers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setGravity(kotlin.Int)(gravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Describes how the child views are positioned. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setHorizontalGravity(kotlin.Int)(horizontalGravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setMeasureWithLargestChildEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When set to true, all children with a weight will be considered having the minimum size of the largest child. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setOrientation(kotlin.Int)(orientation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Should the layout be a column or a row. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setShowDividers(kotlin.Int)(showDividers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set how dividers should be shown between items in this layout |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setVerticalGravity(kotlin.Int)(verticalGravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#setWeightSum(kotlin.Float)(weightSum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Defines the desired weights sum. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#shouldDelayChildPressedState()()` Return true if the pressed state should be delayed for children or descendants of this ViewGroup. |
 
 | Protected methods ||
@@ -1807,9 +1824,11 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
 | open [LinearLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/LinearLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#generateDefaultLayoutParams()()` Returns a set of layout parameters with a width of `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#MATCH_PARENT:kotlin.Int` and a height of `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#WRAP_CONTENT:kotlin.Int` when the layout's orientation is `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#VERTICAL:kotlin.Int`. |
 | open [LinearLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/LinearLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#generateLayoutParams(android.view.ViewGroup.LayoutParams)(lp: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2727,6 +2746,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4579,6 +4599,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8266,21 +8287,26 @@ android:gravity
 Specifies how an object should position its content, on both the X and Y axes, within its own bounds.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -8865,6 +8891,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 

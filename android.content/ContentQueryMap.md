@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ContentQueryMap
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ContentQueryMap "View this page in Java") 
+| --- | --- |
 
 ```
 open class ContentQueryMap : Observable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.Observable](https://developer.android.com/reference/kotlin/java/util/Observable.html#) ||
 | | ↳ | [android.content.ContentQueryMap](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#) |
 
@@ -29,6 +31,7 @@ The cursor data is accessed by row key and column name via getValue().
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#close())`()` <br /> |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)!\>! | [getRows](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#getRows())`()` <br /> |
 | open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)! | [getValues](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#getValues(kotlin.String))`(`rowName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Access the ContentValues for the row specified by rowName |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requery](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#requery())`()` Requeries the cursor and reads the contents into the cache |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepUpdated](https://developer.android.com/reference/kotlin/android/content/ContentQueryMap#setKeepUpdated(kotlin.Boolean))`(`keepUpdated:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Change whether or not the ContentQueryMap will register with the cursor's ContentProvider for change notifications. |
 
@@ -61,6 +64,7 @@ Creates a ContentQueryMap that caches the content backing the cursor
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!:the cursor whose contents should be cached |
 | `columnNameOfKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the column that is to be used as the key of the values map |
 | `keepUpdated` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the cursor's ContentProvider should be monitored for changes and the map updated when changes do occur |
+| --- | --- |
 | `handlerForUpdateNotifications` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:the Handler that should be used to receive notifications of changes (if requested). Normally you pass null here, but if you know that the thread that is creating this isn't a thread that can receive messages then you can create your own handler and use that here. |
 
 ## Public methods

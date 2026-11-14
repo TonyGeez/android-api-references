@@ -9,6 +9,7 @@ abstract class AsynchronousFileChannel : AsynchronousChannel
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#) |
 
 An asynchronous channel for reading, writing, and manipulating a file.
@@ -37,18 +38,23 @@ As with [FileChannel](https://developer.android.com/reference/kotlin/java/nio/ch
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [force](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#force(kotlin.Boolean))`(`metaData:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Forces any updates to this channel's file to be written to the storage device that contains it. |
 | [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!\>! | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#lock())`()` Acquires an exclusive lock on this channel's file. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#lock(java.nio.channels.AsynchronousFileChannel.lock.A,%20java.nio.channels.CompletionHandler))`(`attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!,` `in` `A>!`)` Acquires an exclusive lock on this channel's file. |
+| --- | --- |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!\>! | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#lock(kotlin.Long,%20kotlin.Long,%20kotlin.Boolean))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Acquires a lock on the given region of this channel's file. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#lock(kotlin.Long,%20kotlin.Long,%20kotlin.Boolean,%20java.nio.channels.AsynchronousFileChannel.lock.A,%20java.nio.channels.CompletionHandler))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!,` `in` `A>!`)` Acquires a lock on the given region of this channel's file. |
 | openstatic [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#open(java.nio.file.Path,%20java.nio.file.OpenOption))`(`file:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!`)` Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. |
+| --- | --- |
 | openstatic [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#open(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.util.concurrent.ExecutorService,%20java.nio.file.attribute.FileAttribute))`(`file:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!>!`, `executor:` ` [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#)!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [read](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#read(java.nio.ByteBuffer,%20kotlin.Long))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Reads a sequence of bytes from this channel into the given buffer, starting at the given file position. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#read(java.nio.ByteBuffer,%20kotlin.Long,%20java.nio.channels.AsynchronousFileChannel.read.A,%20java.nio.channels.CompletionHandler))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` `in` `A>!`)` Reads a sequence of bytes from this channel into the given buffer, starting at the given file position. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#size())`()` Returns the current size of this channel's file. |
 | abstract [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#)! | [truncate](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#truncate(kotlin.Long))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates this channel's file to the given size. |
 | [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [tryLock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#tryLock())`()` Attempts to acquire an exclusive lock on this channel's file. |
+| --- | --- |
 | abstract [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [tryLock](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#tryLock(kotlin.Long,%20kotlin.Long,%20kotlin.Boolean))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to acquire a lock on the given region of this channel's file. |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [write](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#write(java.nio.ByteBuffer,%20kotlin.Long))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a sequence of bytes to this channel from the given buffer, starting at the given file position. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel#write(java.nio.ByteBuffer,%20kotlin.Long,%20java.nio.channels.AsynchronousFileChannel.write.A,%20java.nio.channels.CompletionHandler))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` `in` `A>!`)` Writes a sequence of bytes to this channel from the given buffer, starting at the given file position. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -153,6 +159,7 @@ ch.<code><a docref="java.nio.channels.AsynchronousFileChannel$lock(kotlin.Long, 
 | `<A>` | The type of the attachment |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!,inA\>!:The handler for consuming the result |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -180,6 +187,7 @@ This method initiates an operation to acquire a lock on the given region of this
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position at which the locked region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to request a shared lock, in which case this channel must be open for reading (and possibly writing);`false`to request an exclusive lock, in which case this channel must be open for writing (and possibly reading) |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -190,6 +198,7 @@ This method initiates an operation to acquire a lock on the given region of this
 | `java.nio.channels.OverlappingFileLockException` | If a lock is already held by this Java virtual machine, or there is already a pending attempt to lock a region |
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.NonReadableChannelException` | If`shared`is true but this channel was not opened for reading |
+| --- | --- |
 | `java.nio.channels.NonWritableChannelException` | If`shared`is false but this channel was not opened for writing |
 
 ### lock
@@ -223,15 +232,18 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 | `<A>` | The type of the attachment |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position at which the locked region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
+| --- | --- |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to request a shared lock, in which case this channel must be open for reading (and possibly writing);`false`to request an exclusive lock, in which case this channel must be open for writing (and possibly reading) |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)!,inA\>!:The handler for consuming the result |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or there is already a pending attempt to lock an overlapping region |
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.NonReadableChannelException` | If`shared`is true but this channel was not opened for reading |
+| --- | --- |
 | `java.nio.channels.NonWritableChannelException` | If`shared`is false but this channel was not opened for writing |
 
 ### open
@@ -271,6 +283,7 @@ The resulting channel is associated with default thread pool to which tasks are 
 | `java.lang.IllegalArgumentException` | If the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | If the`file`is associated with a provider that does not support creating file channels, or an unsupported open option is specified |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
 
 ### open
@@ -293,12 +306,15 @@ The`options`parameter determines how the file is opened. The [READ](https://deve
 In addition to`READ`and`WRITE`, the following options may be present:
 
 | Option | Description |
+| --- | --- |
 | [TRUNCATE_EXISTING](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | When opening an existing file, the file is first truncated to a size of 0 bytes. This option is ignored when the file is opened only for reading. |
 | [CREATE_NEW](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then a new file is created, failing if the file already exists. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored when the file is opened only for reading. |
 | [CREATE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then an existing file is opened if it exists, otherwise a new file is created. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored if the`CREATE_NEW`option is also present or the file is opened only for reading. |
+| --- | --- |
 | [DELETE_ON_CLOSE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | When this option is present then the implementation makes a*best effort* attempt to delete the file when closed by the #close method. If the`close`method is not invoked then a*best effort*attempt is made to delete the file when the Java virtual machine terminates. |
 | [SPARSE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | When creating a new file this option is a*hint*that the new file will be sparse. This option is ignored when not creating a new file. |
 | [SYNC](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](https://developer.android.com/reference/kotlin/java/nio/file/package-summary.html#integrity)). |
+| --- | --- |
 | [DSYNC](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | Requires that every update to the file's content be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](https://developer.android.com/reference/kotlin/java/nio/file/package-summary.html#integrity)). |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -315,6 +331,7 @@ The new channel is created by invoking the [newFileChannel](https://developer.an
 | `file` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:The path of the file to open or create |
 | `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!\>!:Options specifying how the file is opened |
 | `executor` | [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#)!:The thread pool or`null`to associate the channel with the default thread pool |
+| --- | --- |
 | `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:An optional list of file attributes to set atomically when creating the file |
 
 | Return ||
@@ -326,6 +343,7 @@ The new channel is created by invoking the [newFileChannel](https://developer.an
 | `java.lang.IllegalArgumentException` | If the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | If the`file`is associated with a provider that does not support creating asynchronous file channels, or an unsupported open option is specified, or the array contains an attribute that cannot be set atomically when creating the file |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
 
 ### read
@@ -383,6 +401,7 @@ This method works in the same manner as the [java.nio.channels.AsynchronousByteC
 | `<A>` | The type of the attachment |
 | `dst` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The buffer into which bytes are to be transferred |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The file position at which the transfer is to begin; must be non-negative |
+| --- | --- |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,inA\>!:The handler for consuming the result |
 
@@ -435,6 +454,7 @@ If the given size is less than the file's current size then the file is truncate
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.lang.IllegalArgumentException` | If the new size is negative |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 ### tryLock
@@ -462,6 +482,7 @@ ch.<code><a docref="java.nio.channels.AsynchronousFileChannel$tryLock(kotlin.Lon
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region |
 | `java.nio.channels.NonWritableChannelException` | If`shared`is false but this channel was not opened for writing |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 **See Also**
@@ -491,6 +512,7 @@ This method does not block. An invocation always returns immediately, either hav
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position at which the locked region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to request a shared lock,`false`to request an exclusive lock |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -501,9 +523,11 @@ This method does not block. An invocation always returns immediately, either hav
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region of the same file |
+| --- | --- |
 | `java.nio.channels.NonReadableChannelException` | If`shared`is true but this channel was not opened for reading |
 | `java.nio.channels.NonWritableChannelException` | If`shared`is false but this channel was not opened for writing |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 **See Also**
 
@@ -564,6 +588,7 @@ This method works in the same manner as the [java.nio.channels.AsynchronousByteC
 | `<A>` | The type of the attachment |
 | `src` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The buffer from which bytes are to be transferred |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The file position at which the transfer is to begin; must be non-negative |
+| --- | --- |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,inA\>!:The handler for consuming the result |
 

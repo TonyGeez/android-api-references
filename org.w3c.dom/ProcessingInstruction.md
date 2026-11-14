@@ -27,6 +27,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getData](https://developer.android.com/reference/kotlin/org/w3c/dom/ProcessingInstruction#getData())`()` The content of this processing instruction. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTarget](https://developer.android.com/reference/kotlin/org/w3c/dom/ProcessingInstruction#getTarget())`()` The target of this processing instruction. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](https://developer.android.com/reference/kotlin/org/w3c/dom/ProcessingInstruction#setData(kotlin.String))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The content of this processing instruction. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

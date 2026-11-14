@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # OverlayProperties
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/OverlayProperties "View this page in Java") 
+| --- | --- |
 
 ```
 class OverlayProperties : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.OverlayProperties](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#) |
 
 Provides supported overlay properties of the device.
@@ -28,6 +30,7 @@ Hardware overlay is a technique to composite different buffers directly to the s
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#describeContents())`()` <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [LutProperties](https://developer.android.com/reference/kotlin/android/hardware/LutProperties)!\> | [getLutProperties](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#getLutProperties())`()` Returns the lut properties of the device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCombinationSupported](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#isCombinationSupported(kotlin.Int,%20kotlin.Int))`(`dataspace:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates that hardware composition of a buffer encoded with the provided [DataSpace](https://developer.android.com/reference/kotlin/android/hardware/DataSpace) and android. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMixedColorSpacesSupported](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#isMixedColorSpacesSupported())`()` Indicates that hardware composition of two or more overlays with different colorspaces is supported on the device. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/OverlayProperties#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

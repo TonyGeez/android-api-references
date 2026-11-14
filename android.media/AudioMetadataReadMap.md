@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AudioMetadataReadMap
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadataReadMap "View this page in Java") 
+| --- | --- |
 
 ```
 interface AudioMetadataReadMap
@@ -13,6 +14,7 @@ interface AudioMetadataReadMap
 | [android.media.AudioMetadataReadMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#) |
 
 | Known Direct Subclasses [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) | AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) value pairs. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A read only`Map`-style interface of [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) value pairs used for [AudioMetadata](https://developer.android.com/reference/kotlin/android/media/AudioMetadata).
 
@@ -26,6 +28,7 @@ Using a [AudioMetadata.Key](https://developer.android.com/reference/kotlin/andro
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#containsKey(android.media.AudioMetadata.Key))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`)` Returns true if the key exists in the map. |
 | abstract [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) | [dup](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#dup())`()` Returns a copy of the map. |
 | abstractT? | [get](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#get(android.media.AudioMetadata.Key))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`)` Returns the value associated with the key. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#size())`()` Returns the number of elements in the map. |
 
 ## Public methods

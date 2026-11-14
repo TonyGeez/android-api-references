@@ -10,9 +10,11 @@ open class LastOwnerException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.security.acl.LastOwnerException](https://developer.android.com/reference/kotlin/java/security/acl/LastOwnerException#) |
+| --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 33.**
 |

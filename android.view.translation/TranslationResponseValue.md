@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationResponseValue
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/translation/TranslationResponseValue "View this page in Java") 
+| --- | --- |
 
 ```
 class TranslationResponseValue : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#) |
 
 A translated response value from translation service.
@@ -26,6 +28,7 @@ A translated response value from translation service.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEFINITIONS](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#EXTRA_DEFINITIONS:kotlin.String) Name in the result of [getExtras()](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#getExtras()) to pass dictionary definitions of the text categorized by parts of speech. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_ERROR](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#STATUS_ERROR:kotlin.Int) This value was not successfully translated. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESS](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#STATUS_SUCCESS:kotlin.Int) This value was successfully translated. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,12 +39,15 @@ A translated response value from translation service.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#) | [forError](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#forError())`()` Creates a [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#) with the [STATUS_ERROR](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#STATUS_ERROR:kotlin.Int) result; |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#getExtras())`()` Extra results associated with the translated text. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatusCode](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#getStatusCode())`()` The status code of this [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#). |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getText](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#getText())`()` The translated text result. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getTransliteration](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#getTransliteration())`()` The transliteration result of the translated text. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

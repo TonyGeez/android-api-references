@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # WpsInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WpsInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class WpsInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.WpsInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#) |
 
 A class representing Wi-Fi Protected Setup {@see android.net.wifi.p2p.WifiP2pConfig}
@@ -22,6 +24,7 @@ A class representing Wi-Fi Protected Setup {@see android.net.wifi.p2p.WifiP2pCon
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#DISPLAY:kotlin.Int) Display pin method configuration - pin is generated and displayed on device |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#INVALID:kotlin.Int) Invalid configuration |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYPAD](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#KEYPAD:kotlin.Int) Keypad pin method configuration - pin is entered on device |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#LABEL:kotlin.Int) Label pin method configuration - pin is labelled on device |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PBC](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#PBC:kotlin.Int) Push button configuration |
 
@@ -39,12 +42,14 @@ A class representing Wi-Fi Protected Setup {@see android.net.wifi.p2p.WifiP2pCon
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#describeContents())`()` Implement the Parcelable interface |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [BSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#BSSID:kotlin.String) Passed with pin method KEYPAD |
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WpsInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [pin](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#pin:kotlin.String) Passed with pin method configuration |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setup](https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#setup:kotlin.Int) Wi-Fi Protected Setup. |
 
 ## Constants

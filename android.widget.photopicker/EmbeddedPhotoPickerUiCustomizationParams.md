@@ -8,6 +8,7 @@ class EmbeddedPhotoPickerUiCustomizationParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.photopicker.EmbeddedPhotoPickerUiCustomizationParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#) |
 
 Defines UI customization options specific to the embedded Photo Picker interface.
@@ -25,6 +26,7 @@ This immutable class allows an application to specify visual preferences to opti
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_PORTRAIT_9_16:kotlin.Int` Aspect ratio option requesting portrait 9:16 sizing for the thumbnails within the media grid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_SQUARE_1_1:kotlin.Int` Aspect ratio option requesting square 1:1 thumbnail sizing within the media grid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_UNDEFINED:kotlin.Int` Aspect ratio option sent to photo picker when no aspect ratio is set by the calling app. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,6 +37,7 @@ This immutable class allows an application to specify visual preferences to opti
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#getAspectRatio()()` Returns the constant representing the aspect ratio currently configured for thumbnail sizing within the Photo Picker's media grid. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#isSelectionBarVisibleInExpandedMode()()` Returns whether the Selection Bar should be visible in expanded mode in Embedded picker as set by the calling application. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

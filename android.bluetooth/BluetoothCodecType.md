@@ -7,6 +7,7 @@ class BluetoothCodecType : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothCodecType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#) |
 
 Represents a supported source codec type for a Bluetooth A2DP device. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA2dp#getSupportedCodecTypes()`. The codec type is uniquely identified by its name and codec identifier.
@@ -18,9 +19,11 @@ Represents a supported source codec type for a Bluetooth A2DP device. See `https
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_AAC:kotlin.Long` AAC codec identifier. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_APTX:kotlin.Long` AptX codec identifier. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_APTX_HD:kotlin.Long` Aptx HD codec identifier. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_LDAC:kotlin.Long` LDAC codec identifier. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_LHDCV5:kotlin.Long` LHDC codec identifier. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_OPUS:kotlin.Long` Opus codec identifier. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_SBC:kotlin.Long` SBC codec identifier. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_SONY_LDAC:kotlin.Long` LDAC codec identifier. |
 
@@ -33,9 +36,11 @@ Represents a supported source codec type for a Bluetooth A2DP device. See `https
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()()` Returns the codec unique identifier. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecName()()` Returns the codec name. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#isMandatoryCodec()()` Returns if the codec type is mandatory in the Bluetooth specification. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

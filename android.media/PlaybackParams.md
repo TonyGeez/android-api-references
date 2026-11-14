@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # PlaybackParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/PlaybackParams "View this page in Java") 
+| --- | --- |
 
 ```
 class PlaybackParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#) |
 
 Structure for common playback params. Used by [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) [AudioTrack.getPlaybackParams()](https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackParams())and [AudioTrack.setPlaybackParams(PlaybackParams)](https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPlaybackParams(android.media.PlaybackParams))to control playback behavior.
@@ -37,6 +39,7 @@ Different combinations of speed and pitch may be used for audio playback; some c
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_FAIL](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_FAIL:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_MUTE](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_MUTE:kotlin.Int) <br /> |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -51,12 +54,15 @@ Different combinations of speed and pitch may be used for audio playback; some c
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [allowDefaults](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#allowDefaults())`()` Allows defaults to be returned for properties not set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioFallbackMode](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getAudioFallbackMode())`()` Retrieves the audio fallback mode. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPitch](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getPitch())`()` Retrieves the pitch factor. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeed](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getSpeed())`()` Retrieves the speed factor. |
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setAudioFallbackMode](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setAudioFallbackMode(kotlin.Int))`(`audioFallbackMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio fallback mode. |
+| --- | --- |
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setPitch](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setPitch(kotlin.Float))`(`pitch:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the pitch factor. |
 | [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setSpeed](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setSpeed(kotlin.Float))`(`speed:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the speed factor. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

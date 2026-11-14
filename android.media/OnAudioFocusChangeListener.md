@@ -5,6 +5,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # OnAudioFocusChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnAudioFocusChangeListener

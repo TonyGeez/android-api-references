@@ -7,6 +7,7 @@ class UScript
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.lang.UScript](https://developer.android.com/reference/kotlin/android/icu/lang/UScript#) |
 
 Constants for ISO 15924 script codes, and related functions.
@@ -30,237 +31,314 @@ Starting with ICU 55, script codes are only added when their scripts have been o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ADLAM:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#AFAKA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#AHOM:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ANATOLIAN_HIEROGLYPHS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ARABIC:kotlin.Int` Arabic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ARABIC_NASTALIQ:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ARMENIAN:kotlin.Int` Armenian |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#AVESTAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BALINESE:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BAMUM:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BASSA_VAH:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BATAK:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BENGALI:kotlin.Int` Bengali |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BERIA_ERFE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BHAIKSUKI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BLISSYMBOLS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BOOK_PAHLAVI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BOPOMOFO:kotlin.Int` Bopomofo |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BRAHMI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BRAILLE:kotlin.Int` Braille Script in Unicode 4 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BUGINESE:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#BUHID:kotlin.Int` Buhid |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CANADIAN_ABORIGINAL:kotlin.Int` Unified Canadian Aboriginal Symbols |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CARIAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CAUCASIAN_ALBANIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CHAKMA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CHAM:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CHEROKEE:kotlin.Int` Cherokee |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CHORASMIAN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CIRTH:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#COMMON:kotlin.Int` Common |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#COPTIC:kotlin.Int` Coptic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CUNEIFORM:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CYPRIOT:kotlin.Int` Cypriot Script in Unicode 4 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CYPRO_MINOAN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#CYRILLIC:kotlin.Int` Cyrillic |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DEMOTIC_EGYPTIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DESERET:kotlin.Int` Deseret |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DEVANAGARI:kotlin.Int` Devanagari |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DIVES_AKURU:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DOGRA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#DUPLOYAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#EASTERN_SYRIAC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#EGYPTIAN_HIEROGLYPHS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ELBASAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ELYMAIC:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ESTRANGELO_SYRIAC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ETHIOPIC:kotlin.Int` Ethiopic |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GARAY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GEORGIAN:kotlin.Int` Georgian |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GLAGOLITIC:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GOTHIC:kotlin.Int` Gothic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GRANTHA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GREEK:kotlin.Int` Greek |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GUJARATI:kotlin.Int` Gujarati |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GUNJALA_GONDI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GURMUKHI:kotlin.Int` Gurmukhi |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#GURUNG_KHEMA:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HAN:kotlin.Int` Han |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HANGUL:kotlin.Int` Hangul |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HANIFI_ROHINGYA:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HANUNOO:kotlin.Int` Hanunooo |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HAN_WITH_BOPOMOFO:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HARAPPAN_INDUS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HATRAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HEBREW:kotlin.Int` Hebrew |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HIERATIC_EGYPTIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#HIRAGANA:kotlin.Int` Hiragana |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#IMPERIAL_ARAMAIC:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#INHERITED:kotlin.Int` Inherited |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#INSCRIPTIONAL_PAHLAVI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#INSCRIPTIONAL_PARTHIAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#INVALID_CODE:kotlin.Int` Invalid code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#JAMO:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#JAPANESE:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#JAVANESE:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#JURCHEN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KAITHI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KANNADA:kotlin.Int` Kannada |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KATAKANA:kotlin.Int` Katakana |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KATAKANA_OR_HIRAGANA:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KAWI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KAYAH_LI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHAROSHTHI:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHITAN_SMALL_SCRIPT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHMER:kotlin.Int` Khmer |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHOJKI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHUDAWADI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KHUTSURI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KIRAT_RAI:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KOREAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#KPELLE:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LANNA:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LAO:kotlin.Int` Lao |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LATIN:kotlin.Int` Latin |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LATIN_FRAKTUR:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LATIN_GAELIC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LEPCHA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LIMBU:kotlin.Int` Limbu Script in Unicode 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LINEAR_A:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LINEAR_B:kotlin.Int` Linear B Script in Unicode 4 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LISU:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LOMA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LYCIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#LYDIAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MAHAJANI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MAKASAR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MALAYALAM:kotlin.Int` Malayalam |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MANDAEAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MANDAIC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MANICHAEAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MARCHEN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MASARAM_GONDI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MATHEMATICAL_NOTATION:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MAYAN_HIEROGLYPHS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MEDEFAIDRIN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MEITEI_MAYEK:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MENDE:kotlin.Int` Mende Kikakui ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MEROITIC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MEROITIC_CURSIVE:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MEROITIC_HIEROGLYPHS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MIAO:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MODI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MONGOLIAN:kotlin.Int` Mangolian |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MOON:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MRO:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MULTANI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#MYANMAR:kotlin.Int` Myammar |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NABATAEAN:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NAG_MUNDARI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NAKHI_GEBA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NANDINAGARI:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NEWA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NEW_TAI_LUE:kotlin.Int` Script in Unicode 4. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NKO:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NUSHU:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#NYIAKENG_PUACHUE_HMONG:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OGHAM:kotlin.Int` Ogham |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_CHURCH_SLAVONIC_CYRILLIC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_HUNGARIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_ITALIC:kotlin.Int` Old Itallic |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_NORTH_ARABIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_PERMIC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_PERSIAN:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_SOGDIAN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_SOUTH_ARABIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OLD_UYGHUR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OL_CHIKI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OL_ONAL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ORIYA:kotlin.Int` Oriya |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ORKHON:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OSAGE:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#OSMANYA:kotlin.Int` Osmanya Script in Unicode 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PAHAWH_HMONG:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PALMYRENE:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PAU_CIN_HAU:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PHAGS_PA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PHOENICIAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PHONETIC_POLLARD:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#PSALTER_PAHLAVI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#REJANG:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#RONGORONGO:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#RUNIC:kotlin.Int` Runic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SAMARITAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SARATI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SAURASHTRA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SHARADA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SHAVIAN:kotlin.Int` Shavian Script in Unicode 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SIDDHAM:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SIDETIC:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SIGN_WRITING:kotlin.Int` ISO 15924 script code for Sutton SignWriting |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SIMPLIFIED_HAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SINDHI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SINHALA:kotlin.Int` Sinhala |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SOGDIAN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SORA_SOMPENG:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SOYOMBO:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SUNDANESE:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SUNUWAR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SYLOTI_NAGRI:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SYMBOLS:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SYMBOLS_EMOJI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#SYRIAC:kotlin.Int` Syriac |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAGALOG:kotlin.Int` Tagalog |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAGBANWA:kotlin.Int` Tagbanwa |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAI_LE:kotlin.Int` Tai Le Script in Unicode 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAI_VIET:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAI_YO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAKRI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TAMIL:kotlin.Int` Tamil |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TANGSA:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TANGUT:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TELUGU:kotlin.Int` Telugu |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TENGWAR:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#THAANA:kotlin.Int` Thana |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#THAI:kotlin.Int` Thai |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TIBETAN:kotlin.Int` Tibetan |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TIFINAGH:kotlin.Int` Script in Unicode 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TIRHUTA:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TODHRI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TOLONG_SIKI:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TOTO:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TRADITIONAL_HAN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TRADITIONAL_HAN_WITH_LATIN:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#TULU_TIGALARI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#UCAS:kotlin.Int` Unified Canadian Aboriginal Symbols (alias) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#UGARITIC:kotlin.Int` Ugaritic Script in Unicode 4 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#UNKNOWN:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#UNWRITTEN_LANGUAGES:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#VAI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#VISIBLE_SPEECH:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#VITHKUQI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#WANCHO:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#WARANG_CITI:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#WESTERN_SYRIAC:kotlin.Int` ISO 15924 script code |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#WOLEAI:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#YEZIDI:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#YI:kotlin.Int` Yi syllables |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#ZANABAZAR_SQUARE:kotlin.Int` ISO 15924 script code |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#breaksBetweenLetters(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the script allows line breaks between letters (excluding hyphenation). |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(kotlin.String)(nameOrAbbrOrLocale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the script codes associated with the given locale or ISO 15924 abbreviation or name. |
+| --- | --- |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCodeFromName(kotlin.String)(nameOrAbbr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the script code associated with the given Unicode script property alias (name or abbreviation). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getName(kotlin.Int)(scriptCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the long Unicode script name, if there is one. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getSampleString(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script sample character string. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getScript(kotlin.Int)(codepoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the script code associated with the given codepoint. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getScriptExtensions(kotlin.Int,%20java.util.BitSet)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, set: https://developer.android.com/reference/kotlin/java/util/BitSet.html#!)` Sets code point c's Script_Extensions as script code integers into the output BitSet. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getShortName(kotlin.Int)(scriptCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the 4-letter ISO 15924 script code, which is the same as the short Unicode script name if Unicode has names for the script. |
 | static [UScript.ScriptUsage](https://developer.android.com/reference/kotlin/android/icu/lang/UScript.ScriptUsage)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getUsage(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script usage according to UAX #31 Unicode Identifier and Pattern Syntax. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#hasScript(kotlin.Int,%20kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Do the Script_Extensions of code point c contain script sc? If c does not have explicit Script_Extensions, then this tests whether c has the Script property value sc. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#isCased(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if in modern (or most recent) usage of the script case distinctions are customary. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#isRightToLeft(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the script is written right-to-left. |
 

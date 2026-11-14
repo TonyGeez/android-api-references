@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnGetPlaybackPositionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnGetPlaybackPositionListener

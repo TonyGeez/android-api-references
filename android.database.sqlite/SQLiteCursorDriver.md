@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SQLiteCursorDriver
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver "View this page in Java") 
+| --- | --- |
 
 ```
 interface SQLiteCursorDriver
@@ -21,6 +22,7 @@ A driver for SQLiteCursors that is used to create them and gets notified by the 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorClosed](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorClosed())`()` Called by a SQLiteCursor when it it closed to destroy this object as well. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorDeactivated](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorDeactivated())`()` Called by a SQLiteCursor when it is released. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorRequeried](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorRequeried(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Called by a SQLiteCursor when it is requeried. |
+| --- | --- |
 | abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [query](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#query(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Array))`(`factory:` ` [SQLiteDatabase.CursorFactory](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory)!`, `bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the query returning a Cursor over the result set. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBindArguments](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#setBindArguments(kotlin.Array))`(`bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set new bind arguments. |
 

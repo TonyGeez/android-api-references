@@ -9,6 +9,7 @@ class StandardWatchEventKinds
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.StandardWatchEventKinds](https://developer.android.com/reference/kotlin/java/nio/file/StandardWatchEventKinds#) |
 
 Defines the*standard*event kinds.
@@ -20,6 +21,7 @@ Defines the*standard*event kinds.
 | static [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)!\>! | [ENTRY_CREATE](https://developer.android.com/reference/kotlin/java/nio/file/StandardWatchEventKinds#ENTRY_CREATE:java.nio.file.WatchEvent.Kind) Directory entry created. |
 | static [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)!\>! | [ENTRY_DELETE](https://developer.android.com/reference/kotlin/java/nio/file/StandardWatchEventKinds#ENTRY_DELETE:java.nio.file.WatchEvent.Kind) Directory entry deleted. |
 | static [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)!\>! | [ENTRY_MODIFY](https://developer.android.com/reference/kotlin/java/nio/file/StandardWatchEventKinds#ENTRY_MODIFY:java.nio.file.WatchEvent.Kind) Directory entry modified. |
+| --- | --- |
 | static [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [OVERFLOW](https://developer.android.com/reference/kotlin/java/nio/file/StandardWatchEventKinds#OVERFLOW:java.nio.file.WatchEvent.Kind) A special event to indicate that events may have been lost or discarded. |
 
 ## Properties

@@ -7,6 +7,7 @@ class OverlayManagerTransaction : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.om.OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#) |
 
 A container for a batch of requests to the OverlayManager.
@@ -43,9 +44,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | static [OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#newInstance()()` Get an overlay manager transaction. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#registerFabricatedOverlay(android.content.om.FabricatedOverlay)(overlay: https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay)` Registers the fabricated overlays with the overlay manager so it can be used to overlay the app resources in runtime. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#unregisterFabricatedOverlay(android.content.om.OverlayIdentifier)(overlay: https://developer.android.com/reference/kotlin/android/content/om/OverlayIdentifier)` Unregisters the registered overlays from the overlay manager. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

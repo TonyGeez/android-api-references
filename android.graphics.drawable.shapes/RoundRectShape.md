@@ -3,15 +3,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RoundRectShape
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/RoundRectShape "View this page in Java")
+| --- | --- |
 
 ```
 open class RoundRectShape : RectShape
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) |||
 | | ↳ | [android.graphics.drawable.shapes.RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) ||
 | | | ↳ | [android.graphics.drawable.shapes.RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#) |
+| --- | --- | --- | --- |
 
 Creates a rounded-corner rectangle. Optionally, an inset (rounded) rectangle can be included (to make a sort of "O" shape).
 
@@ -28,6 +31,7 @@ The rounded rectangle can be drawn to a Canvas with its own draw() method, but m
 | open [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#clone()()` Creates and returns a copy of this object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#draw(android.graphics.Canvas,%20android.graphics.Paint)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#!, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!)` Draws this shape into the provided Canvas, with the provided Paint. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Computes the Outline of the shape and return it in the supplied Outline parameter. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#hashCode()()` Returns a hash code value for the object. |
 
@@ -62,6 +66,7 @@ Specifies an outer (round)rect and an optional inner (round)rect.
 | `outerRadii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?: An array of 8 radius values, for the outer roundrect. The first two floats are for the top-left corner (remaining pairs correspond clockwise). For no rounded corners on the outer rectangle, pass `null`. |
 | `inset` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)?: A RectF that specifies the distance from the inner rect to each side of the outer rect. For no inner, pass `null`. |
 | `innerRadii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?: An array of 8 radius values, for the inner roundrect. The first two floats are for the top-left corner (remaining pairs correspond clockwise). For no rounded corners on the inner rectangle, pass `null`. If inset parameter is `null`, this parameter is ignored. |
+| --- | --- |
 
 ## Public methods
 

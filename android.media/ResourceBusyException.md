@@ -5,15 +5,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # ResourceBusyException
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/ResourceBusyException "View this page in Java") 
+| --- | --- |
 
 ```
 class ResourceBusyException : MediaDrmException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.media.MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.media.ResourceBusyException](https://developer.android.com/reference/kotlin/android/media/ResourceBusyException#) |
 
 Exception thrown when an operation on a MediaDrm object is attempted and hardware resources are not available, due to being in use.

@@ -7,6 +7,7 @@ open class LabeledIntent : Intent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) ||
 | | ↳ | [android.content.pm.LabeledIntent](https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#) |
 
@@ -3081,9 +3082,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getIconResource()()` Return any resource identifier that has been given for the label icon. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getLabelResource()()` Return any resource identifier that has been given for the label text. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getNonLocalizedLabel()()` Return any concrete text that has been given for the label text. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getSourcePackage()()` Return the name of the package holding label and icon resources. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the icon associated with this object. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the label associated with this object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -4039,6 +4042,7 @@ Create a labeled intent from the given intent, supplying the label and icon reso
 | `origIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The original Intent to copy. |
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `labelRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the label, or 0 if none. |
+| --- | --- |
 | `icon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the icon, or 0 if none. |
 
 ### LabeledIntent
@@ -4060,6 +4064,7 @@ Create a labeled intent from the given intent, supplying a textual label and ico
 | `origIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The original Intent to copy. |
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `nonLocalizedLabel` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Concrete text to use for the label. |
+| --- | --- |
 | `icon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the icon, or 0 if none. |
 
 ### LabeledIntent
@@ -4080,6 +4085,7 @@ Create a labeled intent with no intent data but supplying the label and icon res
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `labelRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the label, or 0 if none. |
 | `icon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the icon, or 0 if none. |
+| --- | --- |
 
 ### LabeledIntent
 
@@ -4099,6 +4105,7 @@ Create a labeled intent with no intent data but supplying a textual label and ic
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `nonLocalizedLabel` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Concrete text to use for the label. |
 | `icon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the icon, or 0 if none. |
+| --- | --- |
 
 ## Public methods
 

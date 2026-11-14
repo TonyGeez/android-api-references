@@ -9,6 +9,7 @@ class DomainLoadStoreParameter : KeyStore.LoadStoreParameter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#) |
 
 Configuration data that specifies the keystores in a keystore domain. A keystore domain is a collection of keystores that are presented as a single logical keystore. The configuration data is used during`KeyStore` [load](https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter)) [store](https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter))operations.
@@ -73,6 +74,7 @@ domain app1 {
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | [getConfiguration](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getConfiguration())`()` Gets the identifier for the domain configuration data. |
 | [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)! | [getProtectionParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getProtectionParameter())`()` Gets the keystore protection parameters for this domain. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!\>! | [getProtectionParams](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getProtectionParams())`()` Gets the keystore protection parameters for keystores in this domain. |
+| --- | --- |
 
 ## Public constructors
 

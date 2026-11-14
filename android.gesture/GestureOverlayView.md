@@ -7,9 +7,11 @@ open class GestureOverlayView : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.gesture.GestureOverlayView](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#) |
 
 A transparent overlay for gesture input that can be placed on top of other widgets or contain other widgets.
@@ -21,21 +23,26 @@ A transparent overlay for gesture input that can be placed on top of other widge
 | abstract | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGestureListener` <br /> |
 | abstract | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturePerformedListener` <br /> |
 | abstract | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener` <br /> |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:eventsInterceptionEnabled`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Defines whether the overlay should intercept the motion events when a gesture is recognized. |
 | [`android:fadeDuration`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Duration, in milliseconds, of the fade out effect after the user is done drawing a gesture. |
 | [`android:fadeEnabled`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Defines whether the gesture will automatically fade out after being recognized. |
+| --- | --- |
 | [`android:fadeOffset`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Time, in milliseconds, to wait before the gesture fades out after the user is done drawing it. |
 | [`android:gestureColor`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Color used to draw a gesture. |
 | [`android:gestureStrokeAngleThreshold`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Minimum curve angle a stroke must contain before it is recognized as a gesture. |
+| --- | --- |
 | [`android:gestureStrokeLengthThreshold`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Minimum length of a stroke before it is recognized as a gesture. |
 | [`android:gestureStrokeSquarenessThreshold`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Squareness threshold of a stroke before it is recognized as a gesture. |
 | [`android:gestureStrokeType`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Defines the type of strokes that define a gesture. |
+| --- | --- |
 | [`android:gestureStrokeWidth`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Width of the stroke used to draw the gesture. |
 | [`android:orientation`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Indicates whether horizontal (when the orientation is vertical) or vertical (when orientation is horizontal) strokes automatically define a gesture. |
 | [`android:uncertainGestureColor`](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#attr_GestureOverlayView) | Color used to draw the user's strokes until we are sure it's a gesture. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
 
@@ -321,6 +328,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -437,6 +445,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -585,6 +594,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -600,6 +610,7 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#GESTURE_STROKE_TYPE_MULTIPLE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#GESTURE_STROKE_TYPE_SINGLE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#ORIENTATION_HORIZONTAL:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#ORIENTATION_VERTICAL:kotlin.Int` <br /> |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
@@ -1758,45 +1769,59 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#addOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGestureListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#addOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturePerformedListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#addOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#cancelClearAnimation()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#cancelGesture()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#clear(kotlin.Boolean)(animated: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#dispatchTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Pass the touch screen motion event down to the target view, or this view if it is the target. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
 | open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint)!\>! | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getCurrentStroke()()` <br /> |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getFadeOffset()()` <br /> |
 | open [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)! | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGesture()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureColor()()` <br /> |
+| --- | --- |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGesturePath()()` <br /> |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGesturePath(android.graphics.Path)(path: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!)` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureStrokeAngleThreshold()()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureStrokeLengthThreshold()()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureStrokeSquarenessTreshold()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureStrokeType()()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getGestureStrokeWidth()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getOrientation()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#getUncertainGestureColor()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#isEventsInterceptionEnabled()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#isFadeEnabled()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#isGestureVisible()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#isGesturing()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeAllOnGestureListeners()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeAllOnGesturePerformedListeners()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeAllOnGesturingListeners()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGestureListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturePerformedListener!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#removeOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener)(listener: https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setEventsInterceptionEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setFadeEnabled(kotlin.Boolean)(fadeEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setFadeOffset(kotlin.Long)(fadeOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGesture(android.gesture.Gesture)(gesture: https://developer.android.com/reference/kotlin/android/gesture/Gesture!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureStrokeAngleThreshold(kotlin.Float)(gestureStrokeAngleThreshold: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureStrokeLengthThreshold(kotlin.Float)(gestureStrokeLengthThreshold: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureStrokeSquarenessTreshold(kotlin.Float)(gestureStrokeSquarenessTreshold: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureStrokeType(kotlin.Int)(gestureStrokeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureStrokeWidth(kotlin.Float)(gestureStrokeWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setGestureVisible(kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setOrientation(kotlin.Int)(orientation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView#setUncertainGestureColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 
@@ -2720,6 +2745,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4572,6 +4598,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 

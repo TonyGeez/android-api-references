@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # GnssSignalType
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/GnssSignalType "View this page in Java")
+| --- | --- |
 
 ```
 class GnssSignalType : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType#) |
 
 This class represents a GNSS signal type.
@@ -24,12 +26,15 @@ This class represents a GNSS signal type.
 | static [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType#) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#create(kotlin.Int,%20kotlin.Double,%20kotlin.String)(constellationType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, carrierFrequencyHz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, codeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#` with a full list of parameters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#getCarrierFrequencyHz()()` Returns the carrier frequency in Hz. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#getCodeType()()` Return the code type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#getConstellationType()()` Returns the constellation type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -56,6 +61,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/location/GnssS
 | `constellationType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the constellation type. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GPS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_SBAS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GLONASS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_QZSS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_BEIDOU:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GALILEO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_IRNSS:kotlin.Int` |
 | `carrierFrequencyHz` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): the carrier frequency in Hz. Value is 0.0f or greater |
 | `codeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the code type as defined in `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()` This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -201,6 +207,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

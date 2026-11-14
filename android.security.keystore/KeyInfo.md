@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # KeyInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class KeyInfo : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.keystore.KeyInfo](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#) |
 
 Information about a key from the [Android Keystore system](https://developer.android.com/training/articles/keystore.html). This class describes whether the key material is available in plaintext outside of secure hardware, whether user authentication is required for using the key and whether this requirement is enforced by secure hardware, the key's origin, what uses the key is authorized for (e.g., only in`GCM`mode, or signing only), whether the key should be encrypted at rest, the key's and validity start and end dates.
@@ -60,24 +62,31 @@ The following example illustrates how to obtain a`KeyInfo`describing the provide
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getBlockModes](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getBlockModes())`()` Gets the set of block modes (e.g., |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDigests](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getDigests())`()` Gets the set of digest algorithms (e.g., |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEncryptionPaddings](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getEncryptionPaddings())`()` Gets the set of padding schemes (e.g., |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeySize](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getKeySize())`()` Gets the size of the key in bits. |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityForConsumptionEnd](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getKeyValidityForConsumptionEnd())`()` Gets the time instant after which the key is no long valid for decryption and verification. |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityForOriginationEnd](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getKeyValidityForOriginationEnd())`()` Gets the time instant after which the key is no long valid for encryption and signing. |
+| --- | --- |
 | open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityStart](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getKeyValidityStart())`()` Gets the time instant before which the key is not yet valid. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKeystoreAlias](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getKeystoreAlias())`()` Gets the entry alias under which the key is stored in the`AndroidKeyStore`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrigin](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getOrigin())`()` Gets the origin of the key. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPurposes](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getPurposes())`()` Gets the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemainingUsageCount](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getRemainingUsageCount())`()` Returns the remaining number of times the key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int) if there's no restriction on the number of times the key can be used. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityLevel](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getSecurityLevel())`()` Returns the security level that the key is protected by. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSignaturePaddings](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getSignaturePaddings())`()` Gets the set of padding schemes (e.g., |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationType](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getUserAuthenticationType())`()` Gets the acceptable user authentication types for which this key can be authorized to be used. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationValidityDurationSeconds](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#getUserAuthenticationValidityDurationSeconds())`()` Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInsideSecureHardware](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isInsideSecureHardware())`()` Returns`true`if the key resides inside secure hardware (e.g., Trusted Execution Environment (TEE) or Secure Element (SE)). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInvalidatedByBiometricEnrollment](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isInvalidatedByBiometricEnrollment())`()` Returns`true`if the key will be invalidated by enrollment of a new fingerprint or removal of all fingerprints. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTrustedUserPresenceRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isTrustedUserPresenceRequired())`()` Returns`true`if the key can only be only be used if a test for user presence has succeeded since Signature. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnlockedDeviceRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isUnlockedDeviceRequired())`()` Returns`true`if the key is authorized to be used only while the device is unlocked. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isUserAuthenticationRequired())`()` Returns`true`if the key is authorized to be used only if the user has been authenticated. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationRequirementEnforcedBySecureHardware](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isUserAuthenticationRequirementEnforcedBySecureHardware())`()` Returns`true`if the requirement that this key can only be used if the user has been authenticated is enforced by secure hardware (e.g., Trusted Execution Environment (TEE) or Secure Element (SE)). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationValidWhileOnBody](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isUserAuthenticationValidWhileOnBody())`()` Returns`true`if this key will become unusable when the device is removed from the user's body. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserConfirmationRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyInfo#isUserConfirmationRequired())`()` Returns`true`if the key is authorized to be used only for messages confirmed by the user. |
 

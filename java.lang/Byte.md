@@ -9,6 +9,7 @@ class Byte : Number, Comparable<Byte!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.lang.Byte](https://developer.android.com/reference/kotlin/java/lang/Byte#) |
 
@@ -23,6 +24,7 @@ In addition, this class provides several methods for converting a`byte`to a`Stri
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](https://developer.android.com/reference/kotlin/java/lang/Byte#BYTES:kotlin.Int) The number of bytes used to represent a`byte`value in two's complement binary form. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Byte#MAX_VALUE:kotlin.Byte) A constant holding the maximum value a`byte`can have, 27-1. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Byte#MIN_VALUE:kotlin.Byte) A constant holding the minimum value a`byte`can have, -27. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](https://developer.android.com/reference/kotlin/java/lang/Byte#SIZE:kotlin.Int) The number of bits used to represent a`byte`value in two's complement binary form. |
 
 | Public constructors ||
@@ -35,24 +37,31 @@ In addition, this class provides several methods for converting a`byte`to a`Stri
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/lang/Byte#compare(kotlin.Byte,%20kotlin.Byte))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Byte#compareTo(kotlin.Byte))`(`other:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`Byte`objects numerically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](https://developer.android.com/reference/kotlin/java/lang/Byte#compareUnsigned(kotlin.Byte,%20kotlin.Byte))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically treating the values as unsigned. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [decode](https://developer.android.com/reference/kotlin/java/lang/Byte#decode(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into a`Byte`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Byte#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Byte#hashCode())`()` Returns a hash code for this`Byte`; equal to the result of invoking`intValue()`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Byte#hashCode(kotlin.Byte))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a hash code for a`byte`value; compatible with`Byte.hashCode()`. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](https://developer.android.com/reference/kotlin/java/lang/Byte#parseByte(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal`byte`. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](https://developer.android.com/reference/kotlin/java/lang/Byte#parseByte(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`byte`in the radix specified by the second argument. |
+| --- | --- |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](https://developer.android.com/reference/kotlin/java/lang/Byte#toByte())`()` Returns the value of this`Byte`as a`byte`. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/lang/Byte#toDouble())`()` Returns the value of this`Byte`as a`double`after a widening primitive conversion. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/lang/Byte#toFloat())`()` Returns the value of this`Byte`as a`float`after a widening primitive conversion. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/lang/Byte#toInt())`()` Returns the value of this`Byte`as an`int`after a widening primitive conversion. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/lang/Byte#toLong())`()` Returns the value of this`Byte`as a`long`after a widening primitive conversion. |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](https://developer.android.com/reference/kotlin/java/lang/Byte#toShort())`()` Returns the value of this`Byte`as a`short`after a widening primitive conversion. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Byte#toString())`()` Returns a`String`object representing this`Byte`'s value. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Byte#toString(kotlin.Byte))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a new`String`object representing the specified`byte`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](https://developer.android.com/reference/kotlin/java/lang/Byte#toUnsignedInt(kotlin.Byte))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Byte#toUnsignedLong(kotlin.Byte))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Byte#valueOf(kotlin.Byte))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a`Byte`instance representing the specified`byte`value. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Byte#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a`Byte`object holding the value given by the specified`String`. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Byte#valueOf(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Byte`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
 
 | Properties ||

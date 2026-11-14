@@ -5,18 +5,22 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # IkeProtocolException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/exceptions/IkeProtocolException "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class IkeProtocolException : IkeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeProtocolException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#) |
 
 | Known Direct Subclasses [InvalidKeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidKeException), [InvalidMajorVersionException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidMajorVersionException), [InvalidSelectorsException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidSelectorsException) |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [InvalidKeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidKeException) | This exception is thrown when the remote server expected a different Diffie-Hellman group. | | [InvalidMajorVersionException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidMajorVersionException) | This exception is thrown when major version of an inbound message is higher than 2. | | [InvalidSelectorsException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/InvalidSelectorsException) | This exception is thrown if the remote server received an IPsec packet with mismatched selectors. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 IkeProtocolException is an abstract class that represents the common information for all IKE protocol errors.
 
@@ -29,18 +33,23 @@ Error types are as defined by RFC 7296.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_AUTHENTICATION_FAILED](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_AUTHENTICATION_FAILED:kotlin.Int) IKE authentication failed |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_CHILD_SA_NOT_FOUND](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_CHILD_SA_NOT_FOUND:kotlin.Int) Child SA in the received packet does not exist |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_FAILED_CP_REQUIRED](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_FAILED_CP_REQUIRED:kotlin.Int) Configuration Payload required but not found in IKE setup |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INTERNAL_ADDRESS_FAILURE](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INTERNAL_ADDRESS_FAILURE:kotlin.Int) No internal addresses can be assigned |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_IKE_SPI](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_IKE_SPI:kotlin.Int) Unrecognized destination IKE SPI |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_KE_PAYLOAD](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_KE_PAYLOAD:kotlin.Int) Invalid Key Exchange Payload |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_MAJOR_VERSION](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_MAJOR_VERSION:kotlin.Int) Invalid major version |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_MESSAGE_ID](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_MESSAGE_ID:kotlin.Int) Invalid message ID |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_SELECTORS](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_SELECTORS:kotlin.Int) An IPsec Packet was found to have mismatched Traffic Selectors of the IPsec SA on which it was delivered |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_INVALID_SYNTAX](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_INVALID_SYNTAX:kotlin.Int) Invalid syntax |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_NO_ADDITIONAL_SAS](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_NO_ADDITIONAL_SAS:kotlin.Int) No additional SAa are acceptable |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_NO_PROPOSAL_CHOSEN](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_NO_PROPOSAL_CHOSEN:kotlin.Int) No SA Proposal Chosen is acceptable |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_SINGLE_PAIR_REQUIRED](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_SINGLE_PAIR_REQUIRED:kotlin.Int) Only Traffic Selectors specifying a single pair of addresses are acceptable |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_TEMPORARY_FAILURE](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_TEMPORARY_FAILURE:kotlin.Int) Temporary failure |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_TS_UNACCEPTABLE](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_TS_UNACCEPTABLE:kotlin.Int) No Traffic Selectors are acceptable |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TYPE_UNSUPPORTED_CRITICAL_PAYLOAD](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeProtocolException#ERROR_TYPE_UNSUPPORTED_CRITICAL_PAYLOAD:kotlin.Int) Unsupported critical payload |
 
 | Public methods ||

@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # AppLinkInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class AppLinkInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.interactive.AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#) |
 
 App link information used by TV interactive app to launch Android apps.
@@ -30,6 +32,7 @@ App link information used by TV interactive app to launch Android apps.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#describeContents())`()` <br /> |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | [getComponentName](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#getComponentName())`()` Gets component name of the App link, which contains package name and class name. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getUri](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#getUri())`()` Gets URI of the App link. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -57,6 +60,7 @@ Creates a new AppLinkInfo.
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Package Name of AppLinkInfo. This value cannot be`null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Class Name of AppLinkInfo. This value cannot be`null`. |
 | `uriString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Uri of AppLinkInfo. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

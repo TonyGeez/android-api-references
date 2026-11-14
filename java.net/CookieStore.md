@@ -21,9 +21,11 @@ A CookieStore object represents a storage for cookie. Can store and retrieve coo
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/net/CookieStore#add(java.net.URI,%20java.net.HttpCookie))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `cookie:` ` [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!`)` Adds one HTTP cookie to the store. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!\>! | [get](https://developer.android.com/reference/kotlin/java/net/CookieStore#get(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`)` Retrieve cookies associated with given URI, or whose domain matches the given URI. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!\>! | [getCookies](https://developer.android.com/reference/kotlin/java/net/CookieStore#getCookies())`()` Get all not-expired cookies in cookie store. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [URI](https://developer.android.com/reference/kotlin/java/net/URI)!\>! | [getURIs](https://developer.android.com/reference/kotlin/java/net/CookieStore#getURIs())`()` Get all URIs which identify the cookies in this cookie store. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/net/CookieStore#remove(java.net.URI,%20java.net.HttpCookie))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `cookie:` ` [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!`)` Remove a cookie from store. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/net/CookieStore#removeAll())`()` Remove all cookies in this cookie store. |
+| --- | --- |
 
 ## Public methods
 

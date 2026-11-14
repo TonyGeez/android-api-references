@@ -7,6 +7,7 @@ open class JarEntry : ZipEntry
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.zip.ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#) ||
 | | ↳ | [java.util.jar.JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#) |
 
@@ -29,6 +30,7 @@ This class is used to represent a JAR file entry.
 | open [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#getAttributes()()` Returns the `Manifest` `Attributes` for this entry, or `null` if none. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#getCertificates()()` Returns the `Certificate` objects for this entry, or `null` if none. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](https://developer.android.com/reference/kotlin/java/security/CodeSigner.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#getCodeSigners()()` Returns the `CodeSigner` objects for this entry, or `null` if none. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#getRealName()()` This method returns the same name that `https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#getName()` returns. |
 
 | Inherited functions ||

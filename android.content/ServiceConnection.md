@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ServiceConnection
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ServiceConnection "View this page in Java") 
+| --- | --- |
 
 ```
 interface ServiceConnection
@@ -13,6 +14,7 @@ interface ServiceConnection
 | [android.content.ServiceConnection](https://developer.android.com/reference/kotlin/android/content/ServiceConnection#) |
 
 | Known Direct Subclasses [MediaScannerConnection](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.html#) |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------| | [MediaScannerConnection](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.html#) | MediaScannerConnection provides a way for applications to pass a newly created or downloaded media file to the media scanner service. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface for monitoring the state of an application service. See [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) and android.content.Context#bindService for more information.
 
@@ -25,6 +27,7 @@ Like many callbacks from the system, the methods on this class are called from t
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBindingDied](https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onBindingDied(android.content.ComponentName))`(`name:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!`)` Called when the binding to this connection is dead. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNullBinding](https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onNullBinding(android.content.ComponentName))`(`name:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!`)` Called when the service being bound has returned`null`from its [onBind()](https://developer.android.com/reference/kotlin/android/app/Service.html#onBind(android.content.Intent))method. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceConnected](https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onServiceConnected(android.content.ComponentName,%20android.os.IBinder))`(`name:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!`, `service:` ` [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)!`)` Called when a connection to the Service has been established, with the [android.os.IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#) of the communication channel to the Service. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceDisconnected](https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onServiceDisconnected(android.content.ComponentName))`(`name:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!`)` Called when a connection to the Service has been lost. |
 
 ## Public methods

@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SearchResults
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/SearchResults "View this page in Java") 
+| --- | --- |
 
 ```
 open class SearchResults : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.SearchResults](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#) |
 
 Encapsulates results of a search operation.

@@ -9,10 +9,12 @@ class LinkOption : CopyOption, OpenOption
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#)\> ||
 | | ↳ | [java.nio.file.LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#) |
 
 | Known Direct Subclasses [LinkOption.NOFOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#ENUM_VALUE:NOFOLLOW_LINKS) |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------| | [LinkOption.NOFOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#ENUM_VALUE:NOFOLLOW_LINKS) | Do not follow symbolic links. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Defines the options as to how symbolic links are handled.
 

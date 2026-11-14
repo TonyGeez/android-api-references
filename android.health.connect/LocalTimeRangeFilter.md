@@ -4,12 +4,14 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 # LocalTimeRangeFilter
 
 Kotlin | [Java](https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter "View this page in Java")
+| --- | --- |
 
 ```
 class LocalTimeRangeFilter : TimeRangeFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.LocalTimeRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#) |
 
 Specification of local time range for health connect requests.
@@ -25,6 +27,7 @@ Specification of local time range for health connect requests.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#)? | `https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#getEndTime()()` <br /> |
 | [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#)? | `https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#getStartTime()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/LocalTimeRangeFilter#isBounded()()` <br /> |
 

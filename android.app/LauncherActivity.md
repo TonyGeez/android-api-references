@@ -8,12 +8,15 @@ abstract class LauncherActivity : ListActivity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) |||
 | | | | | ↳ | [android.app.ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity) ||
 | | | | | | ↳ | [android.app.LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -1067,15 +1070,18 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LauncherActivity.ListItem](https://developer.android.com/reference/kotlin/android/app/LauncherActivity.ListItem)!\>! | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#makeListItems()()` Perform the query to determine which results to show and return a list of them. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#setTitle(kotlin.Int)(titleId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the title associated with this activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Change the title associated with this activity. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#getTargetIntent()()` Get the base intent to use when running `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,%20kotlin.Int)`. |
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#intentForPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the actual Intent for a specific position in our `https://developer.android.com/reference/kotlin/android/widget/ListView.html#`. |
 | open [LauncherActivity.ListItem](https://developer.android.com/reference/kotlin/android/app/LauncherActivity.ListItem)! | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#itemForPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the `https://developer.android.com/reference/kotlin/android/app/LauncherActivity.ListItem` for a specific position in our `https://developer.android.com/reference/kotlin/android/widget/ListView.html#`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#onCreate(android.os.Bundle)(icicle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called when the activity is starting. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#onListItemClick(android.widget.ListView,%20android.view.View,%20kotlin.Int,%20kotlin.Long)(l: https://developer.android.com/reference/kotlin/android/widget/ListView.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This method will be called when an item in the list is selected. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\>! | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#onQueryPackageManager(android.content.Intent)(queryIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Perform query on package manager for list items. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/LauncherActivity#onSetContentView()()` Override to call setContentView() with your own content view to customize the list layout. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Activity` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Activity#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)`
@@ -5055,6 +5061,7 @@ This method will be called when an item in the list is selected. Subclasses shou
 | `l` | [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#)!: The ListView where the click happened |
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view that was clicked within the ListView |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the list |
+| --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked |
 
 ### onQueryPackageManager

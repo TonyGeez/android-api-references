@@ -9,6 +9,7 @@ open class ByteArrayOutputStream : OutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream) ||
 | | ↳ | [java.io.ByteArrayOutputStream](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#) |
 
@@ -28,15 +29,19 @@ Closing a`ByteArrayOutputStream`has no effect. The methods in this class can be 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#close())`()` Closing a`ByteArrayOutputStream`has no effect. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#reset())`()` Resets the`count`field of this`ByteArrayOutputStream`to zero, so that all currently accumulated output in the output stream is discarded. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#size())`()` Returns the current size of the buffer. |
+| --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [toByteArray](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#toByteArray())`()` Creates a newly allocated byte array. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#toString())`()` Converts the buffer's contents into a string decoding bytes using the platform's default character set. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#toString(kotlin.Int))`(`hibyte:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a newly allocated string. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#toString(kotlin.String))`(`charsetName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Converts the buffer's contents into a string by decoding the bytes using the named [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#toString(java.nio.charset.Charset))`(`charset:` ` [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)`)` Converts the buffer's contents into a string by decoding the bytes using the specified [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this`ByteArrayOutputStream`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this`ByteArrayOutputStream`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#writeBytes(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes the complete contents of the specified byte array to this`ByteArrayOutputStream`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTo](https://developer.android.com/reference/kotlin/java/io/ByteArrayOutputStream#writeTo(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream)`)` Writes the complete contents of this`ByteArrayOutputStream`to the specified output stream argument, as if by calling the output stream's write method using`out.write(buf, 0, count)`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -271,12 +276,14 @@ Writes`len`bytes from the specified byte array starting at offset`off`to this`By
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to write. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs. In particular, an`IOException`is thrown if the output stream is closed. |
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | if`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 
 ### write
 

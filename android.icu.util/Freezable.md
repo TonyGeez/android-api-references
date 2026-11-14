@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Freezable
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/Freezable "View this page in Java") 
+| --- | --- |
 
 ```
 interface Freezable<T : Any!> : Cloneable
@@ -13,8 +14,10 @@ interface Freezable<T : Any!> : Cloneable
 | [android.icu.util.Freezable](https://developer.android.com/reference/kotlin/android/icu/util/Freezable#) |
 
 | Known Direct Subclasses [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator.html#), [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo.html#), [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.html#), [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.html#), [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone), [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.html#), [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.html#) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------| | [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator.html#) | **\[icu enhancement\]** ICU's replacement for [java.text.Collator](https://developer.android.com/reference/kotlin/java/text/Collator.html#). | | [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo.html#) | DateIntervalInfo is a public class for encapsulating localizable date time interval patterns. | | [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.html#) | This class provides flexible generation of date format patterns, like "yy-MM-dd". | | [MessagePattern](https://developer.android.com/reference/kotlin/android/icu/text/MessagePattern.html#) | Parses and represents ICU MessageFormat patterns. | | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone) | **\[icu enhancement\]** ICU's replacement for [java.util.TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#). | | [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.html#) | `TimeZoneFormat`supports time zone display name formatting and parsing. | | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.html#) | A mutable set of Unicode characters and multicharacter strings. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator.html#) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------| | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator.html#) | RuleBasedCollator is a concrete subclass of Collator. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Provides a flexible mechanism for controlling access, without requiring that a class be immutable. Once frozen, an object can never be unfrozen, so it is thread-safe from that point onward. Once the object has been frozen, it must guarantee that no changes can be made to it. Any attempt to alter it must raise an UnsupportedOperationException exception. This means that when the object returns internal objects, or if anyone has references to those internal objects, that those internal objects must either be immutable, or must also raise exceptions if any attempt to modify them is made. Of course, the object can return clones of internal objects, since those are safe.
 
@@ -212,6 +215,7 @@ zone_to_country = Collections.unmodifiableMap(new HashMap(zone_to_country));
 | abstractT | [cloneAsThawed](https://developer.android.com/reference/kotlin/android/icu/util/Freezable#cloneAsThawed())`()` Provides for the clone operation. |
 | abstractT | [freeze](https://developer.android.com/reference/kotlin/android/icu/util/Freezable#freeze())`()` Freezes the object. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](https://developer.android.com/reference/kotlin/android/icu/util/Freezable#isFrozen())`()` Determines whether the object has been frozen or not. |
+| --- | --- |
 
 ## Public methods
 

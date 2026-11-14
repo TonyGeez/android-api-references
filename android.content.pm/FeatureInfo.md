@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # FeatureInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/FeatureInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class FeatureInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#) |
 
 Definition of a single optional hardware or software feature of an Android device.
@@ -40,6 +42,7 @@ Starting in [android.os.Build.VERSION_CODES#N](https://developer.android.com/ref
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#getGlEsVersion())`()` This method extracts the major and minor version of reqGLEsVersion attribute and returns it as a string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -47,6 +50,7 @@ Starting in [android.os.Build.VERSION_CODES#N](https://developer.android.com/ref
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#flags:kotlin.Int) Additional flags. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#name:kotlin.String) The name of this feature, for example "android. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reqGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#reqGlEsVersion:kotlin.Int) The GLES version used by an application. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#version:kotlin.Int) If this object represents a feature supported by a device, this is the maximum version of this feature supported by the device. |
 

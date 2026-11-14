@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # DeviceFilter
 
 Kotlin | [Java](https://developer.android.com/reference/android/companion/DeviceFilter "View this page in Java") 
+| --- | --- |
 
 ```
 interface DeviceFilter<D : Parcelable!> : Parcelable
@@ -13,6 +14,7 @@ interface DeviceFilter<D : Parcelable!> : Parcelable
 | [android.companion.DeviceFilter](https://developer.android.com/reference/kotlin/android/companion/DeviceFilter#) |
 
 | Known Direct Subclasses [BluetoothDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/BluetoothDeviceFilter), [BluetoothLeDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter), [WifiDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [BluetoothDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/BluetoothDeviceFilter) | A filter for Bluetooth(non-LE) devices | | [BluetoothLeDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/BluetoothLeDeviceFilter) | A filter for Bluetooth LE devices | | [WifiDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter) | A filter for Wifi devices | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A filter for companion devices of type `D`
 

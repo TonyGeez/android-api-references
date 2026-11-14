@@ -7,6 +7,7 @@ class DisplayLuts
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.DisplayLuts](https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#) |
 
 DisplayLuts provides the developers to apply Lookup Tables (Luts) to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.html#`. Luts provides ways to control tonemapping for specific content. The general flow for how DisplayLuts fits into a display pipeline is as follows:
@@ -40,6 +41,7 @@ Importantly: the LUT is applied on colors in linear space, in the source content
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry)(entry: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry)` Set a Lut to be applied. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry,%20android.hardware.DisplayLuts.Entry)(first: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry, second: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry)` Set Luts in order to be applied. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public constructors
 

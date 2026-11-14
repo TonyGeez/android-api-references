@@ -3,12 +3,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # ActionBar
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/ActionBar "View this page in Java")
+| --- | --- |
 
 ```
 abstract class ActionBar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.ActionBar](https://developer.android.com/reference/kotlin/android/app/ActionBar#) |
 
 A primary toolbar within the activity that may display the activity title, application-level navigation affordances, and other interactive items.
@@ -40,6 +42,7 @@ In some cases, the action bar may be overlayed by another bar that enables conte
 | open | `https://developer.android.com/reference/kotlin/android/app/ActionBar.LayoutParams` Per-child layout information associated with action bar custom views. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener` Listener for receiving events when action bar menus are shown or hidden. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/ActionBar.OnNavigationListener` Listener interface for ActionBar navigation events. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab` A tab in the action bar. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener` Callback interface invoked when a tab is focused, unfocused, added, or removed. |
 
@@ -48,9 +51,11 @@ In some cases, the action bar may be overlayed by another bar that enables conte
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_HOME_AS_UP:kotlin.Int` Display the 'home' element such that it appears as an 'up' affordance. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_SHOW_CUSTOM:kotlin.Int` Show the custom view if one has been set. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_SHOW_HOME:kotlin.Int` Show 'home' elements in this action bar, leaving more space for other navigation elements. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_SHOW_TITLE:kotlin.Int` Show the activity title and subtitle, if present. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_USE_LOGO:kotlin.Int` Use logo instead of icon if available. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#NAVIGATION_MODE_LIST:kotlin.Int` List navigation mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#NAVIGATION_MODE_STANDARD:kotlin.Int` Standard navigation mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#NAVIGATION_MODE_TABS:kotlin.Int` Tab navigation mode. |
 
@@ -63,63 +68,83 @@ In some cases, the action bar may be overlayed by another bar that enables conte
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addOnMenuVisibilityListener(android.app.ActionBar.OnMenuVisibilityListener)(listener: https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener!)` Add a listener that will respond to menu visibility change events. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!)` Add a tab for use in tabbed navigation mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab,%20kotlin.Boolean)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!, setSelected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Add a tab for use in tabbed navigation mode. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab,%20kotlin.Int)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a tab for use in tabbed navigation mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab,%20kotlin.Int,%20kotlin.Boolean)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, setSelected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Add a tab for use in tabbed navigation mode. |
 | abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getCustomView()()` <br /> |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getDisplayOptions()()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getElevation()()` Get the Z-axis elevation of the action bar in pixels. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getHeight()()` Retrieve the current height of the ActionBar. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getHideOffset()()` Return the current vertical offset of the action bar. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getNavigationItemCount()()` Get the number of navigation items present in the current navigation mode. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getNavigationMode()()` Returns the current navigation mode. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSelectedNavigationIndex()()` Get the position of the selected navigation item in list or tabbed navigation modes. |
 | abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSelectedTab()()` Returns the currently selected tab if in tabbed navigation mode and there is at least one tab present. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSubtitle()()` Returns the current ActionBar subtitle in standard mode. |
+| --- | --- |
 | abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTabAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the tab at the specified index. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTabCount()()` Returns the number of tabs currently registered with the action bar. |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getThemedContext()()` Returns a `https://developer.android.com/reference/kotlin/android/content/Context.html#` with an appropriate theme for creating views that will appear in the action bar. |
+| --- | --- |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTitle()()` Returns the current ActionBar title in standard mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#hide()()` Hide the ActionBar if it is currently showing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#isHideOnContentScrollEnabled()()` Return whether the action bar is configured to scroll out of sight along with a `https://developer.android.com/reference/kotlin/android/view/View.html#setNestedScrollingEnabled(kotlin.Boolean)`. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#isShowing()()` <br /> |
 | abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()()` Create and return a new `https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeAllTabs()()` Remove all tabs from the action bar and deselect the current tab. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeOnMenuVisibilityListener(android.app.ActionBar.OnMenuVisibilityListener)(listener: https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener!)` Remove a menu visibility listener. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeTab(android.app.ActionBar.Tab)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!)` Remove a tab from the action bar. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeTabAt(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove a tab from the action bar. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#selectTab(android.app.ActionBar.Tab)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!)` Select the specified tab. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setBackgroundDrawable(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Set the ActionBar's background. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setCustomView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Set the action bar into custom navigation mode, supplying a view for custom navigation. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setCustomView(android.view.View,%20android.app.ActionBar.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, layoutParams: https://developer.android.com/reference/kotlin/android/app/ActionBar.LayoutParams!)` Set the action bar into custom navigation mode, supplying a view for custom navigation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setCustomView(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the action bar into custom navigation mode, supplying a view for custom navigation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayHomeAsUpEnabled(kotlin.Boolean)(showHomeAsUp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether home should be displayed as an "up" affordance. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayOptions(kotlin.Int)(options: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set display options. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayOptions(kotlin.Int,%20kotlin.Int)(options: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set selected display options. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayShowCustomEnabled(kotlin.Boolean)(showCustom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether a custom view should be displayed, if set. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayShowHomeEnabled(kotlin.Boolean)(showHome: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether to include the application home affordance in the action bar. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayShowTitleEnabled(kotlin.Boolean)(showTitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether an activity title/subtitle should be displayed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayUseLogoEnabled(kotlin.Boolean)(useLogo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether to display the activity logo rather than the activity icon. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setElevation(kotlin.Float)(elevation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the Z-axis elevation of the action bar in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHideOffset(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the current hide offset of the action bar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHideOnContentScrollEnabled(kotlin.Boolean)(hideOnContentScroll: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable hiding the action bar on content scroll. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHomeActionContentDescription(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set an alternate description for the Home/Up action, when enabled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHomeActionContentDescription(kotlin.CharSequence)(description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set an alternate description for the Home/Up action, when enabled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHomeAsUpIndicator(android.graphics.drawable.Drawable)(indicator: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set an alternate drawable to display next to the icon/logo/title when `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_HOME_AS_UP:kotlin.Int` is enabled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHomeAsUpIndicator(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set an alternate drawable to display next to the icon/logo/title when `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_HOME_AS_UP:kotlin.Int` is enabled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setHomeButtonEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable the "home" button in the corner of the action bar. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setIcon(android.graphics.drawable.Drawable)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the icon to display in the 'home' section of the action bar. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setIcon(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the icon to display in the 'home' section of the action bar. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setListNavigationCallbacks(android.widget.SpinnerAdapter,%20android.app.ActionBar.OnNavigationListener)(adapter: https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter.html#!, callback: https://developer.android.com/reference/kotlin/android/app/ActionBar.OnNavigationListener!)` Set the adapter and navigation callback for list navigation mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setLogo(android.graphics.drawable.Drawable)(logo: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the logo to display in the 'home' section of the action bar. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setLogo(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the logo to display in the 'home' section of the action bar. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setNavigationMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the current navigation mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setSelectedNavigationItem(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the selected navigation item in list or tabbed navigation modes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setSplitBackgroundDrawable(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the ActionBar's split background. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setStackedBackgroundDrawable(android.graphics.drawable.Drawable)(d: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the ActionBar's stacked background. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setSubtitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the action bar's subtitle. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setSubtitle(kotlin.CharSequence)(subtitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the action bar's subtitle. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setTitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the action bar's title. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the action bar's title. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#show()()` Show the ActionBar if it is not currently showing. |
 
 ## Constants
@@ -366,6 +391,7 @@ Add a tab for use in tabbed navigation mode. The tab will be insterted at `posit
 | `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: The tab to add |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new position of the tab |
 | `setSelected` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the added tab should become the selected tab. |
+| --- | --- |
 
 ### getCustomView
 
@@ -866,6 +892,7 @@ abstract fun setDisplayOptions(
 Set selected display options. Only the options specified by mask will be changed. To change all display option bits at once, see `https://developer.android.com/reference/kotlin/android/app/ActionBar#setDisplayOptions(kotlin.Int)`.
 
 Example: setDisplayOptions(0, DISPLAY_SHOW_HOME) will disable the `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_SHOW_HOME:kotlin.Int` option. setDisplayOptions(DISPLAY_SHOW_HOME, DISPLAY_SHOW_HOME | DISPLAY_USE_LOGO) will enable `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_SHOW_HOME:kotlin.Int` and disable `https://developer.android.com/reference/kotlin/android/app/ActionBar#DISPLAY_USE_LOGO:kotlin.Int`.
+| --- | --- |
 
 | Parameters ||
 |---|---|

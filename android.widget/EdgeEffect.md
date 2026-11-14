@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # EdgeEffect
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/EdgeEffect "View this page in Java") 
+| --- | --- |
 
 ```
 open class EdgeEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.EdgeEffect](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#) |
 
 This class performs the graphical effect used at the edges of scrollable widgets when the user scrolls beyond the content bounds in 2D space.
@@ -31,18 +33,23 @@ When drawing, widgets should draw their main content and child views first, usua
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [draw](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`)` Draw into the provided canvas. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#finish())`()` Immediately finish the current animation. |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | [getBlendMode](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#getBlendMode())`()` Returns the blend mode. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColor](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#getColor())`()` Return the color of this edge effect in argb. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDistance](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#getDistance())`()` Returns the pull distance needed to be released to remove the showing effect. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxHeight](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#getMaxHeight())`()` Return the maximum height that the edge effect will be drawn at given the original [input size](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#setSize(kotlin.Int,%20kotlin.Int)). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinished](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#isFinished())`()` Reports if this EdgeEffect's animation is finished. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAbsorb](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#onAbsorb(kotlin.Int))`(`velocity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call when the effect absorbs an impact at the given velocity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPull](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#onPull(kotlin.Float))`(`deltaDistance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` A view should call this when content is pulled away from an edge by the user. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPull](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#onPull(kotlin.Float,%20kotlin.Float))`(`deltaDistance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `displacement:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` A view should call this when content is pulled away from an edge by the user. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [onPullDistance](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#onPullDistance(kotlin.Float,%20kotlin.Float))`(`deltaDistance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `displacement:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` A view should call this when content is pulled away from an edge by the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRelease](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#onRelease())`()` Call when the object is released after being pulled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBlendMode](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#setBlendMode(android.graphics.BlendMode))`(`blendmode:` ` [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?`)` Set or clear the blend mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#setColor(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the color of this edge effect in argb. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](https://developer.android.com/reference/kotlin/android/widget/EdgeEffect#setSize(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the size of this edge effect in pixels. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

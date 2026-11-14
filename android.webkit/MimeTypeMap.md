@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MimeTypeMap
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/MimeTypeMap "View this page in Java") 
+| --- | --- |
 
 ```
 open class MimeTypeMap
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.MimeTypeMap](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#) |
 
 Two-way map that maps MIME-types to file extensions and vice versa.
@@ -24,9 +26,11 @@ See also [java.net.URLConnection#guessContentTypeFromName](https://developer.and
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getExtensionFromMimeType](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getExtensionFromMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the registered extension for the given MIME type. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileExtensionFromUrl](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getFileExtensionFromUrl(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the file extension or an empty string if there is no extension. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMimeTypeFromExtension](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getMimeTypeFromExtension(kotlin.String))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the MIME type for the given extension. |
+| --- | --- |
 | openstatic [MimeTypeMap](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#)! | [getSingleton](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getSingleton())`()` Get the singleton instance of MimeTypeMap. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtension](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#hasExtension(kotlin.String))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given extension has a registered MIME type. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMimeType](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#hasMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given MIME type has an entry in the map. |
+| --- | --- |
 
 ## Public methods
 

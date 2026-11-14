@@ -9,6 +9,7 @@ class Inet6Address : InetAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress) ||
 | | ↳ | [java.net.Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address#) |
 
@@ -21,31 +22,38 @@ Textual representation of IPv6 address used as input to methods takes one of the
 1. The preferred formis x:x:x:x:x:x:x:x, where the 'x's are the hexadecimal values of the eight 16-bit pieces of the address. This is the full form. For example,
 
  | `1080:0:0:0:8:800:200C:417A` | |
+| --- | --- |
 
  Note that it is not necessary to write the leading zeros in an individual field. However, there must be at least one numeral in every field, except as described below.
 2. Due to some methods of allocating certain styles of IPv6 addresses, it will be common for addresses to contain long strings of zero bits. In order to make writing addresses containing zero bits easier, a special syntax is available to compress the zeros. The use of "::" indicates multiple groups of 16-bits of zeros. The "::" can only appear once in an address. The "::" can also be used to compress the leading and/or trailing zeros in an address. For example,
 
  | `1080::8:800:200C:417A` | |
+| --- | --- |
 
 3. An alternative form that is sometimes more convenient when dealing with a mixed environment of IPv4 and IPv6 nodes is x:x:x:x:x:x:d.d.d.d, where the 'x's are the hexadecimal values of the six high-order 16-bit pieces of the address, and the 'd's are the decimal values of the four low-order 8-bit pieces of the standard IPv4 representation address, for example,
 
  | `::FFFF:129.144.52.38` | |
+| --- | --- |
  | `::129.144.52.38` | |
 
  where "::FFFF:d.d.d.d" and "::d.d.d.d" are, respectively, the general forms of an IPv4-mapped IPv6 address and an IPv4-compatible IPv6 address. Note that the IPv4 portion must be in the "d.d.d.d" form. The following forms are invalid:
 
  | `::FFFF:d.d.d` | |
+| --- | --- |
  | `::FFFF:d.d` | |
  | `::d.d.d` | |
  | `::d.d` | |
+| --- | --- |
 
  The following form:
 
  | `::FFFF:d` | |
+| --- | --- |
 
  is valid, however it is an unconventional representation of the IPv4-compatible IPv6 address,
 
  | `::255.255.0.d` | |
+| --- | --- |
 
  while "::d" corresponds to the general IPv6 address "0:0:0:0:0:0:0:d".
 
@@ -81,21 +89,27 @@ Note also, that the numeric*scope_id*can be retrieved from Inet6Address instance
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/Inet6Address#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getAddress())`()` Returns the raw IP address of this`InetAddress`object. |
 | static [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address#)! | [getByAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getByAddress(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `scope_id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create an Inet6Address in the exact manner of[java.net.InetAddress#getByAddress(java.lang.String,byte[])](https://developer.android.com/reference/kotlin/java/net/InetAddress#getByAddress(kotlin.String,%20kotlin.ByteArray))except that the IPv6 scope_id is set to the given numeric value. |
+| --- | --- |
 | static [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address#)! | [getByAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getByAddress(kotlin.String,%20kotlin.ByteArray,%20java.net.NetworkInterface))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `nif:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!`)` Create an Inet6Address in the exact manner of[java.net.InetAddress#getByAddress(java.lang.String,byte[])](https://developer.android.com/reference/kotlin/java/net/InetAddress#getByAddress(kotlin.String,%20kotlin.ByteArray))except that the IPv6 scope_id is set to the value corresponding to the given interface for the address type specified in`addr`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getHostAddress())`()` Returns the IP address string in textual presentation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScopeId](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getScopeId())`()` Returns the numeric scopeId, if this instance is associated with an interface. |
+| --- | --- |
 | [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)! | [getScopedInterface](https://developer.android.com/reference/kotlin/java/net/Inet6Address#getScopedInterface())`()` Returns the scoped interface, if this instance was created with with a scoped interface. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/Inet6Address#hashCode())`()` Returns a hashcode for this IP address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnyLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isAnyLocalAddress())`()` Utility routine to check if the InetAddress in a wildcard address. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIPv4CompatibleAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isIPv4CompatibleAddress())`()` Utility routine to check if the InetAddress is an IPv4 compatible IPv6 address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLinkLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isLinkLocalAddress())`()` Utility routine to check if the InetAddress is an link local address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopbackAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isLoopbackAddress())`()` Utility routine to check if the InetAddress is a loopback address. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCGlobal](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMCGlobal())`()` Utility routine to check if the multicast address has global scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCLinkLocal](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMCLinkLocal())`()` Utility routine to check if the multicast address has link scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCNodeLocal](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMCNodeLocal())`()` Utility routine to check if the multicast address has node scope. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCOrgLocal](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMCOrgLocal())`()` Utility routine to check if the multicast address has organization scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCSiteLocal](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMCSiteLocal())`()` Utility routine to check if the multicast address has site scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMulticastAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isMulticastAddress())`()` Utility routine to check if the InetAddress is an IP multicast address. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSiteLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet6Address#isSiteLocalAddress())`()` Utility routine to check if the InetAddress is a site local address. |
 
 | Inherited functions ||
@@ -161,6 +175,7 @@ Create an Inet6Address in the exact manner of[java.net.InetAddress#getByAddress(
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the specified host |
 | `addr` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the raw IP address in network byte order |
 | `scope_id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the numeric scope_id for the address. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -189,6 +204,7 @@ Create an Inet6Address in the exact manner of[java.net.InetAddress#getByAddress(
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the specified host |
 | `addr` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the raw IP address in network byte order |
 | `nif` | [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)!:an interface this address must be associated with. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------|

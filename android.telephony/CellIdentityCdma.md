@@ -6,12 +6,14 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 # CellIdentityCdma
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellIdentityCdma "View this page in Java") 
+| --- | --- |
 
 ```
 class CellIdentityCdma : CellIdentity
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) ||
 | | ↳ | [android.telephony.CellIdentityCdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#) |
 
@@ -32,12 +34,15 @@ CellIdentity is to represent a unique CDMA cell
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBasestationId](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#getBasestationId())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLatitude](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#getLatitude())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLongitude](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#getLongitude())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkId](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#getNetworkId())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemId](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#getSystemId())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

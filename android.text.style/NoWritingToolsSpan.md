@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # NoWritingToolsSpan
 
 Kotlin | [Java](https://developer.android.com/reference/android/text/style/NoWritingToolsSpan "View this page in Java")
+| --- | --- |
 
 ```
 class NoWritingToolsSpan : ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.style.NoWritingToolsSpan](https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#) |
 
 A span that signals to IMEs that writing tools should not modify the text.
@@ -26,6 +28,7 @@ For example, a text field may contain a mix of user input text and quoted text. 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

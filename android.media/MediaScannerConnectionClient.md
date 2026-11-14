@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MediaScannerConnectionClient
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient "View this page in Java") 
+| --- | --- |
 
 ```
 interface MediaScannerConnectionClient : MediaScannerConnection.OnScanCompletedListener

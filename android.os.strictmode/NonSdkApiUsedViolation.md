@@ -5,15 +5,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # NonSdkApiUsedViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/NonSdkApiUsedViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class NonSdkApiUsedViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.NonSdkApiUsedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/NonSdkApiUsedViolation#) |
+| --- | --- | --- | --- |
 
 Subclass of`Violation`that is used when a process accesses a non SDK API.
 

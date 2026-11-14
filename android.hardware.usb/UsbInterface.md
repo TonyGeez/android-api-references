@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # UsbInterface
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbInterface "View this page in Java") 
+| --- | --- |
 
 ```
 open class UsbInterface : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#) |
 
 A class representing an interface on a [UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice). USB devices can have one or more interfaces, each one providing a different piece of functionality, separate from the other interfaces. An interface will have one or more [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) s, which are the channels by which the host transfers data with the device.
@@ -32,12 +34,15 @@ A class representing an interface on a [UsbDevice](https://developer.android.com
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlternateSetting](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getAlternateSetting())`()` Returns the interface's bAlternateSetting field. |
 | open [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)! | [getEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getEndpoint(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [android.hardware.usb.UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndpointCount](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getEndpointCount())`()` Returns the number of [android.hardware.usb.UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint) s this interface contains. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getId())`()` Returns the interface's bInterfaceNumber field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceClass](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getInterfaceClass())`()` Returns the interface's class field. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceProtocol](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getInterfaceProtocol())`()` Returns the interface's protocol field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceSubclass](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getInterfaceSubclass())`()` Returns the interface's subclass field. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#getName())`()` Returns the interface's name. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

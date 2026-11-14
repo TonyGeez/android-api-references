@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#) |
 
 | Known Direct Subclasses [Stream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/Stream.Builder.html#) |--------------------------------------------------------------------------------------------------------|-----------------------------------| | [Stream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/Stream.Builder.html#) | A mutable builder for a `Stream`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represents an operation that accepts a single input argument and returns no result. Unlike most other functional interfaces, `Consumer` is expected to operate via side-effects.
 

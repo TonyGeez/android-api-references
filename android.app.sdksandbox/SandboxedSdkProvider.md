@@ -9,6 +9,7 @@ abstract class SandboxedSdkProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.sdksandbox.SandboxedSdkProvider](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#) |
 
 > [!CAUTION]
@@ -31,6 +32,7 @@ SDK has to implement this abstract class to generate an entry point for SDK sand
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#attachContext(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Sets the SDK `https://developer.android.com/reference/kotlin/android/content/Context.html#` which can then be received using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#beforeUnloadSdk()()` Does the work needed for the SDK to free its resources before being unloaded. |
 | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)? | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()()` Return the `https://developer.android.com/reference/kotlin/android/content/Context.html#` previously set through `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#attachContext(android.content.Context)`. |
+| --- | --- |
 | abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getView(android.content.Context,%20android.os.Bundle,%20kotlin.Int,%20kotlin.Int)(windowContext: https://developer.android.com/reference/kotlin/android/content/Context.html#, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Requests a view to be remotely rendered to the client app process. |
 | abstract [SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#onLoadSdk(android.os.Bundle)(params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Does the work needed for the SDK to start handling requests. |
 
@@ -127,6 +129,7 @@ The SDK should not do any long-running tasks here, like I/O and network calls. D
 | `windowContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the `https://developer.android.com/reference/kotlin/android/content/Context.html#` of the display which meant to show the view. This value cannot be `null`. |
 | `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): list of params passed from the client application requesting the view. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The view returned will be laid as if in a window of this width, in pixels. |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The view returned will be laid as if in a window of this height, in pixels. |
 
 | Return ||

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # RouteInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/RouteInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class RouteInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.RouteInfo](https://developer.android.com/reference/kotlin/android/net/RouteInfo#) |
 
 Represents a network route.
@@ -30,6 +32,7 @@ Either the destination or the gateway may be`null`, but not both. If the destina
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RTN_THROW](https://developer.android.com/reference/kotlin/android/net/RouteInfo#RTN_THROW:kotlin.Int) Throw route. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RTN_UNICAST](https://developer.android.com/reference/kotlin/android/net/RouteInfo#RTN_UNICAST:kotlin.Int) Unicast route. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RTN_UNREACHABLE](https://developer.android.com/reference/kotlin/android/net/RouteInfo#RTN_UNREACHABLE:kotlin.Int) Unreachable route. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -40,15 +43,19 @@ Either the destination or the gateway may be`null`, but not both. If the destina
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/RouteInfo#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/RouteInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this RouteInfo object against the specified object and indicates if they are equal. |
 | [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix) | [getDestination](https://developer.android.com/reference/kotlin/android/net/RouteInfo#getDestination())`()` Retrieves the destination address and prefix length in the form of an [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix). |
+| --- | --- |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)? | [getGateway](https://developer.android.com/reference/kotlin/android/net/RouteInfo#getGateway())`()` Retrieves the gateway or next hop [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) for this route. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInterface](https://developer.android.com/reference/kotlin/android/net/RouteInfo#getInterface())`()` Retrieves the interface used for this route if specified, else`null`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/net/RouteInfo#getType())`()` Retrieves the type of this route. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGateway](https://developer.android.com/reference/kotlin/android/net/RouteInfo#hasGateway())`()` Indicates if this route has a next hop (`true`) or is directly-connected (`false`). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/RouteInfo#hashCode())`()` Returns a hashcode for this`RouteInfo`object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDefaultRoute](https://developer.android.com/reference/kotlin/android/net/RouteInfo#isDefaultRoute())`()` Indicates if this route is a default route (ie, has no destination specified). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](https://developer.android.com/reference/kotlin/android/net/RouteInfo#matches(java.net.InetAddress))`(`destination:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` Determines whether the destination and prefix of this route includes the specified address. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/RouteInfo#toString())`()` Returns a human-readable description of this object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/RouteInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|

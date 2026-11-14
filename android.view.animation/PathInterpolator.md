@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PathInterpolator
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/PathInterpolator "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathInterpolator : BaseInterpolator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.BaseInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BaseInterpolator) ||
 | | ↳ | [android.view.animation.PathInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/PathInterpolator#) |
 
@@ -105,6 +107,7 @@ Create an interpolator for a cubic Bezier curve. The end points`(0, 0)`and`(1, 1
 | `controlX1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the first control point of the cubic Bezier. |
 | `controlY1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the first control point of the cubic Bezier. |
 | `controlX2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the second control point of the cubic Bezier. |
+| --- | --- |
 | `controlY2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the second control point of the cubic Bezier. |
 
 ## Public methods

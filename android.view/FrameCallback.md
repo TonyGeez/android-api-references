@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # FrameCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/Choreographer.FrameCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface FrameCallback

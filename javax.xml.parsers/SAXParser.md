@@ -9,6 +9,7 @@ abstract class SAXParser
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.parsers.SAXParser](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#) |
 
 Defines the API that wraps an [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) implementation class. In JAXP 1.0, this class wrapped the [org.xml.sax.Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#) interface, however this interface was replaced by the [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#). For ease of transition, this class continues to support the same name and interface as well as supporting new methods. An instance of this class can be obtained from the [javax.xml.parsers.SAXParserFactory#newSAXParser()](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newSAXParser())method. Once an instance of this class is obtained, XML can be parsed from a variety of input sources. These input sources are InputStreams, Files, URLs, and SAX InputSources.
@@ -31,21 +32,27 @@ Implementations of this class which wrap an underlying implementation can consid
 | abstract [Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#)! | [getParser](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#getParser())`()` Returns the SAX parser that is encapsulated by the implementation of this class. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the particular property requested for in the underlying implementation of [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#). |
 | open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)! | [getSchema](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#getSchema())`()` Get a reference to the the [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#) being used by the XML processor. |
+| --- | --- |
 | abstract [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#)! | [getXMLReader](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#getXMLReader())`()` Returns the [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) that is encapsulated by the implementation of this class. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#isNamespaceAware())`()` Indicates whether or not this parser is configured to understand namespaces. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#isValidating())`()` Indicates whether or not this parser is configured to validate XML documents. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isXIncludeAware](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#isXIncludeAware())`()` Get the XInclude processing mode for this parser. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.File,%20org.xml.sax.HandlerBase))`(`f:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `hb:` ` [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!`)` Parse the content of the file specified as XML using the specified [org.xml.sax.HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.File,%20org.xml.sax.helpers.DefaultHandler))`(`f:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `dh:` ` [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!`)` Parse the content of the file specified as XML using the specified [org.xml.sax.helpers.DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.InputStream,%20org.xml.sax.HandlerBase))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `hb:` ` [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!`)` Parse the content of the given [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) instance as XML using the specified [org.xml.sax.HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.InputStream,%20org.xml.sax.HandlerBase,%20kotlin.String))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `hb:` ` [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) instance as XML using the specified [org.xml.sax.HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.InputStream,%20org.xml.sax.helpers.DefaultHandler))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `dh:` ` [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!`)` Parse the content of the given [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) instance as XML using the specified [org.xml.sax.helpers.DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(java.io.InputStream,%20org.xml.sax.helpers.DefaultHandler,%20kotlin.String))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `dh:` ` [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) instance as XML using the specified [org.xml.sax.helpers.DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(kotlin.String,%20org.xml.sax.HandlerBase))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `hb:` ` [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!`)` Parse the content described by the giving Uniform Resource Identifier (URI) as XML using the specified [org.xml.sax.HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(kotlin.String,%20org.xml.sax.helpers.DefaultHandler))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dh:` ` [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!`)` Parse the content described by the giving Uniform Resource Identifier (URI) as XML using the specified [org.xml.sax.helpers.DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(org.xml.sax.InputSource,%20org.xml.sax.HandlerBase))`(`is:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!`, `hb:` ` [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!`)` Parse the content given [org.xml.sax.InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#) as XML using the specified [org.xml.sax.HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#parse(org.xml.sax.InputSource,%20org.xml.sax.helpers.DefaultHandler))`(`is:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!`, `dh:` ` [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!`)` Parse the content given [org.xml.sax.InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#) as XML using the specified [org.xml.sax.helpers.DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#reset())`()` Reset this`SAXParser`to its original configuration. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser#setProperty(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the particular property in the underlying implementation of [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#). |
 
 ## Protected constructors
@@ -218,6 +225,7 @@ Parse the content of the file specified as XML using the specified [org.xml.sax.
 | `java.lang.IllegalArgumentException` | If the File object is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -246,6 +254,7 @@ Parse the content of the file specified as XML using the specified [org.xml.sax.
 | `java.lang.IllegalArgumentException` | If the File object is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -274,6 +283,7 @@ Parse the content of the given [java.io.InputStream](https://developer.android.c
 | `java.lang.IllegalArgumentException` | If the given InputStream is null. |
 | `org.xml.sax.SAXException` | If parse produces a SAX error. |
 | `java.io.IOException` | If an IO error occurs interacting with the`InputStream`. |
+| --- | --- |
 
 **See Also**
 
@@ -298,12 +308,14 @@ Parse the content of the given [java.io.InputStream](https://developer.android.c
 | `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:InputStream containing the content to be parsed. |
 | `hb` | [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase.html#)!:The SAX HandlerBase to use. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The systemId which is needed for resolving relative URIs. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | If the given`InputStream`is`null`. |
 | `java.io.IOException` | If any IO error occurs interacting with the`InputStream`. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -332,6 +344,7 @@ Parse the content of the given [java.io.InputStream](https://developer.android.c
 | `java.lang.IllegalArgumentException` | If the given InputStream is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -356,12 +369,14 @@ Parse the content of the given [java.io.InputStream](https://developer.android.c
 | `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:InputStream containing the content to be parsed. |
 | `dh` | [DefaultHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/DefaultHandler.html#)!:The SAX DefaultHandler to use. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The systemId which is needed for resolving relative URIs. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------|
 | `java.lang.IllegalArgumentException` | If the given InputStream is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -390,6 +405,7 @@ Parse the content described by the giving Uniform Resource Identifier (URI) as X
 | `java.lang.IllegalArgumentException` | If the uri is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -418,6 +434,7 @@ Parse the content described by the giving Uniform Resource Identifier (URI) as X
 | `java.lang.IllegalArgumentException` | If the uri is null. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -446,6 +463,7 @@ Parse the content given [org.xml.sax.InputSource](https://developer.android.com/
 | `java.lang.IllegalArgumentException` | If the`InputSource`object is`null`. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 
@@ -474,6 +492,7 @@ Parse the content given [org.xml.sax.InputSource](https://developer.android.com/
 | `java.lang.IllegalArgumentException` | If the`InputSource`object is`null`. |
 | `java.io.IOException` | If any IO errors occur. |
 | `org.xml.sax.SAXException` | If any SAX errors occur during processing. |
+| --- | --- |
 
 **See Also**
 

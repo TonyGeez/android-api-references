@@ -7,6 +7,7 @@ class MediaFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) |
 
 Encapsulates the information describing the format of media data, be it audio or video, as well as optional feature metadata.
@@ -22,9 +23,11 @@ Keys common to all audio/video formats, **all keys not marked optional are manda
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | String | The type of the format. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CODECS_STRING:kotlin.String` | String | optional, the RFC 6381 codecs string of the MediaFormat |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_INPUT_SIZE:kotlin.String` | Integer | optional, maximum size of a buffer of input data |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PIXEL_ASPECT_RATIO_WIDTH:kotlin.String` | Integer | optional, the pixel aspect ratio width |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PIXEL_ASPECT_RATIO_HEIGHT:kotlin.String` | Integer | optional, the pixel aspect ratio height |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String` | Integer | **encoder-only**, desired bitrate in bits/second |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_DURATION:kotlin.String` | long | the duration of the content (in microseconds) |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_I_FRAME_INTERVAL:kotlin.String` | Integer (or Float) | **encoder-only** , optional for audio encoders, time-interval between key frames. Float support added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int` |
 
@@ -35,18 +38,23 @@ Video formats have the following keys:
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_FORMAT:kotlin.String` | Integer | set by the user for encoders, readable in the output format of decoders |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_FRAME_RATE:kotlin.String` | Integer or Float | required for **encoders** , optional for **decoders** |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CAPTURE_RATE:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_INTRA_REFRESH_PERIOD:kotlin.String` | Integer | **encoder-only**, optional |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LATENCY:kotlin.String` | Integer | **encoder-only**, optional |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_WIDTH:kotlin.String` | Integer | **decoder-only**, optional, max-resolution width |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_HEIGHT:kotlin.String` | Integer | **decoder-only**, optional, max-resolution height |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_REPEAT_PREVIOUS_FRAME_AFTER:kotlin.String` | Long | **encoder in surface-mode only**, optional |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PUSH_BLANK_BUFFERS_ON_STOP:kotlin.String` | Integer(1) | **decoder rendering to a surface only**, optional |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TEMPORAL_LAYERING:kotlin.String` | String | **encoder only**, optional, temporal-layering schema |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_BITRATE_LAYERING:kotlin.String` | String | **encoder only**, optional, layering bitrate ratios |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TEMPORAL_LAYER_ID:kotlin.String` | String | **encoder only**, optional, temporal layer id |
 | KEY_HORIZONTAL_FLIP | Integer | , optional, Set to true to horizontally flip the content |
+| --- | --- | --- |
 
 Specify both `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_HEIGHT:kotlin.String` to enable adaptive playback (seamless resolution change) for a video decoder that supports it (`https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#FEATURE_AdaptivePlayback:kotlin.String`). The values are used as hints for the codec: they are the maximum expected resolution to prepare for. Depending on codec support, preparing for larger maximum resolution may require more memory even if that resolution is never reached. These fields have no effect for codecs that do not support adaptive playback. 
 
@@ -57,44 +65,56 @@ Audio formats have the following keys:
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PCM_ENCODING:kotlin.String` | Integer | optional |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IS_ADTS:kotlin.String` | Integer | optional, if *decoding* AAC audio content, setting this key to 1 indicates that each audio frame is prefixed by the ADTS header. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_PROFILE:kotlin.String` | Integer | **encoder-only**, optional, if content is AAC audio, specifies the desired profile. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_SBR_MODE:kotlin.String` | Integer | **encoder-only**, optional, if content is AAC audio, specifies the desired SBR mode. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_TARGET_REFERENCE_LEVEL:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the target reference level. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_ENCODED_TARGET_LEVEL:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the target reference level used at encoder. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_BOOST_FACTOR:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the DRC boost factor. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_ATTENUATION_FACTOR:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the DRC attenuation factor. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_HEAVY_COMPRESSION:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies whether to use heavy compression. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the maximum number of channels the decoder outputs. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_EFFECT_TYPE:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the MPEG-D DRC effect type to use. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_OUTPUT_LOUDNESS:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, returns the DRC output loudness. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_ALBUM_MODE:kotlin.String` | Integer | **decoder-only**, optional, if content is AAC audio, specifies the whether MPEG-D DRC Album Mode is active or not. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_MASK:kotlin.String` | Integer | optional, a mask of audio channel assignments |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ENCODER_DELAY:kotlin.String` | Integer | optional, the number of frames to trim from the start of the decoded audio stream. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ENCODER_PADDING:kotlin.String` | Integer | optional, the number of frames to trim from the end of the decoded audio stream. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_FLAC_COMPRESSION_LEVEL:kotlin.String` | Integer | **encoder-only**, optional, if content is FLAC audio, specifies the desired compression level. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_PROFILE_LEVEL_INDICATION:kotlin.String` | Integer | **decoder-only**, optional, if content is MPEG-H audio, specifies the profile and level of the stream. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_COMPATIBLE_SETS:kotlin.String` | ByteBuffer | **decoder-only**, optional, if content is MPEG-H audio, specifies the compatible sets (profile and level) of the stream. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_REFERENCE_CHANNEL_LAYOUT:kotlin.String` | Integer | **decoder-only**, optional, if content is MPEG-H audio, specifies the preferred reference channel layout of the stream. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE:kotlin.String` | Integer | optional, used with large audio frame support, specifies max size of output buffer in bytes. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE:kotlin.String` | Integer | optional, used with large audio frame support, specifies threshold output size in bytes. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_PRESENTATION_ID:kotlin.String` | long | optional, The ID of an AudioPresentation, MixPresentation, or similar audio decoder concept. |
 
 Subtitle formats have the following keys:
 
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | String | The type of the format. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LANGUAGE:kotlin.String` | String | The language of the content. |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CAPTION_SERVICE_NUMBER:kotlin.String` | int | optional, the closed-caption service or channel number. |
 
 Image formats have the following keys:
 
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | String | The type of the format. |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` | Integer | |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_FORMAT:kotlin.String` | Integer | set by the user for encoders, readable in the output format of decoders |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` | Integer | required if the image has grid |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String` | Integer | required if the image has grid |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` | Integer | required if the image has grid |
+| --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` | Integer | required if the image has grid |
 
 ## Summary
@@ -108,189 +128,251 @@ Image formats have the following keys:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_RANGE_FULL:kotlin.Int` Full range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_RANGE_LIMITED:kotlin.Int` Limited range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_STANDARD_BT2020:kotlin.Int` BT. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_STANDARD_BT601_NTSC:kotlin.Int` BT. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_STANDARD_BT601_PAL:kotlin.Int` BT. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_STANDARD_BT709:kotlin.Int` BT. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_TRANSFER_HLG:kotlin.Int` ARIB STD-B67 hybrid-log-gamma transfer function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_TRANSFER_LINEAR:kotlin.Int` Linear transfer characteristic curve. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_TRANSFER_SDR_VIDEO:kotlin.Int` SMPTE 170M transfer characteristic curve used by BT. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#COLOR_TRANSFER_ST2084:kotlin.Int` SMPTE ST 2084 transfer function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#FLAG_SECURITY_MODEL_MEMORY_SAFE:kotlin.Int` Flag for `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#SECURITY_MODEL_MEMORY_SAFE:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#FLAG_SECURITY_MODEL_SANDBOXED:kotlin.Int` Flag for `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#SECURITY_MODEL_SANDBOXED:kotlin.Int`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_ALBUM_MODE:kotlin.String` A key describing the album mode for MPEG-D DRC as defined in ISO/IEC 23003-4. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_ATTENUATION_FACTOR:kotlin.String` A key describing the attenuation factor allowing to adapt the dynamics of the output to the actual listening requirements. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_BOOST_FACTOR:kotlin.String` A key describing the boost factor allowing to adapt the dynamics of the output to the actual listening requirements. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_EFFECT_TYPE:kotlin.String` A key describing for selecting the DRC effect type for MPEG-D DRC. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_HEAVY_COMPRESSION:kotlin.String` A key describing the selection of the heavy compression profile for MPEG-4 DRC. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_OUTPUT_LOUDNESS:kotlin.String` A key to retrieve the output loudness of a decoded bitstream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_DRC_TARGET_REFERENCE_LEVEL:kotlin.String` A key describing the Target Reference Level (Target Loudness). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_ENCODED_TARGET_LEVEL:kotlin.String` A key describing the target reference level that was assumed at the encoder for calculation of attenuation gains for clipping prevention. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT:kotlin.String` A key describing the maximum number of channels that can be output by the AAC decoder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_PROFILE:kotlin.String` A key describing the AAC profile to be used (AAC audio formats only). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AAC_SBR_MODE:kotlin.String` A key describing the AAC SBR mode to be used (AAC audio formats only). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ALLOW_FRAME_DROP:kotlin.String` A key for applications to opt out of allowing a Surface to discard undisplayed/unconsumed frames as means to catch up after falling behind. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_PRESENTATION_ID:kotlin.String` A key identifying an audio or mix presentation or similar concept. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_SESSION_ID:kotlin.String` A key describing the audio session ID of the AudioTrack associated to a tunneled video codec. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BITRATE_MODE:kotlin.String` A key describing the desired bitrate mode to be used by an encoder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String` A key describing the average bitrate in bits/sec. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE:kotlin.String` A key describing the maximum output buffer size in bytes when using large buffer mode containing multiple access units. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE:kotlin.String` A key describing the threshold output size in bytes when using large buffer mode containing multiple access units. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CAPTION_SERVICE_NUMBER:kotlin.String` A key describing the closed caption service number. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CAPTURE_RATE:kotlin.String` A key describing the capture rate of a video format in frames/sec. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String` A key describing the number of channels in an audio format. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_MASK:kotlin.String` A key describing the channel composition of audio content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CODECS_STRING:kotlin.String` A key describing the codecs string of the MediaFormat. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_FORMAT:kotlin.String` A key describing the color format of the content in a video format. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_RANGE:kotlin.String` An optional key describing the range of the component values of the video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_STANDARD:kotlin.String` An optional key describing the color primaries, white point and luminance factors for video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_TRANSFER:kotlin.String` An optional key describing the opto-electronic transfer function used for the video content. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_TRANSFER_REQUEST:kotlin.String` An optional key describing the opto-electronic transfer function requested for the output video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COMPLEXITY:kotlin.String` A key describing the encoding complexity. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CREATE_INPUT_SURFACE_SUSPENDED:kotlin.String` If specified when configuring a video encoder that's in "surface-input" mode, it will instruct the encoder to put the surface source in suspended state when it's connected. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CROP_BOTTOM:kotlin.String` A key describing the bottom-coordinate (y) of the crop rectangle. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CROP_LEFT:kotlin.String` A key describing the left-coordinate (x) of the crop rectangle. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CROP_RIGHT:kotlin.String` A key describing the right-coordinate (x) of the crop rectangle. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CROP_TOP:kotlin.String` A key describing the top-coordinate (y) of the crop rectangle. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_DURATION:kotlin.String` A key describing the duration (in microseconds) of the content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ENCODER_DELAY:kotlin.String` A key describing the number of frames to trim from the start of the decoded audio stream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ENCODER_PADDING:kotlin.String` A key describing the number of frames to trim from the end of the decoded audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_FLAC_COMPRESSION_LEVEL:kotlin.String` A key describing the FLAC compression level to be used (FLAC audio format only). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_FRAME_RATE:kotlin.String` A key describing the frame rate of a video format in frames/sec. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` A key describing the number of grid columns in the content in a `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_ANDROID_HEIC:kotlin.String` / `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_AVIF:kotlin.String` track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` A key describing the number of grid rows in the content in a `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_ANDROID_HEIC:kotlin.String` / `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_AVIF:kotlin.String` track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HAPTIC_CHANNEL_COUNT:kotlin.String` A key describing the number of haptic channels in an audio format. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HARDWARE_AV_SYNC_ID:kotlin.String` A key describing the hardware AV sync id. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HDR10_PLUS_INFO:kotlin.String` An optional key describing the HDR10+ metadata of the video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HDR_ST2094_50_INFO:kotlin.String` An optional key describing the SMPTE ST 2094-50 metadata of the video content. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HDR_STATIC_INFO:kotlin.String` An optional key describing the static metadata of HDR (high-dynamic-range) video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` A key describing the height of the content in a video format. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IMPORTANCE:kotlin.String` A key describing the desired codec importance for the application. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_INTRA_REFRESH_PERIOD:kotlin.String` An optional key describing the period of intra refresh in frames. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IS_ADTS:kotlin.String` A key mapping to a value of 1 if the content is AAC audio and audio frames are prefixed with an ADTS header. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IS_AUTOSELECT:kotlin.String` A key for boolean AUTOSELECT behavior for the track. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IS_DEFAULT:kotlin.String` A key for boolean DEFAULT behavior for the track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_IS_FORCED_SUBTITLE:kotlin.String` A key for the FORCED field for subtitle tracks. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_I_FRAME_INTERVAL:kotlin.String` A key describing the frequency of key frames expressed in seconds between key frames. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LANGUAGE:kotlin.String` A key describing the language of the content, using either ISO 639-1 or 639-2/T codes. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LATENCY:kotlin.String` An optional key describing the desired encoder latency in frames. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LEVEL:kotlin.String` A key describing the desired profile to be used by an encoder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LOW_LATENCY:kotlin.String` An optional key describing the low latency decoding mode. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_B_FRAMES:kotlin.String` A key describing the maximum number of B frames between I or P frames, to be used by a video encoder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_FPS_TO_ENCODER:kotlin.String` Instruct the video encoder in "surface-input" mode to drop excessive frames from the source, so that the input frame rate to the encoder does not exceed the specified fps. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_HEIGHT:kotlin.String` A key describing the maximum expected height of the content in a video decoder format, in case there are resolution changes in the video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_INPUT_SIZE:kotlin.String` A key describing the maximum size in bytes of a buffer of data described by this MediaFormat. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_OUTPUT_CHANNEL_COUNT:kotlin.String` A key describing the maximum number of channels that can be output by an audio decoder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_PTS_GAP_TO_ENCODER:kotlin.String` Instruct the video encoder in "surface-input" mode to limit the gap of timestamp between any two adjacent frames fed to the encoder to the specified amount (in micro-second). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MAX_WIDTH:kotlin.String` A key describing the maximum expected width of the content in a video decoder format, in case there are resolution changes in the video content. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` A key describing the mime type of the MediaFormat. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_COMPATIBLE_SETS:kotlin.String` A key describing the MPEG-H stream compatible sets. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_PROFILE_LEVEL_INDICATION:kotlin.String` A key describing the MPEG-H stream profile-level indication. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MPEGH_REFERENCE_CHANNEL_LAYOUT:kotlin.String` A key describing the MPEG-H stream reference channel layout. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_NUM_SLOTS:kotlin.String` A key describing the number of slots used in the codec. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_OPERATING_RATE:kotlin.String` A key describing the desired operating frame rate for video or sample rate for audio that the codec will need to operate at. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_OUTPUT_REORDER_DEPTH:kotlin.String` An optional key describing the maximum number of non-display-order coded frames. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PCM_ENCODING:kotlin.String` A key describing the raw audio sample encoding/format. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_ID:kotlin.String` A key describing the picture profile ID to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_INSTANCE:kotlin.String` A key describing the picture profile instance to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_TYPE:kotlin.String` A key describing the picture type of the encoded frame. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PIXEL_ASPECT_RATIO_HEIGHT:kotlin.String` A key describing the pixel aspect ratio height. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PIXEL_ASPECT_RATIO_WIDTH:kotlin.String` A key describing the pixel aspect ratio width. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PREPEND_HEADER_TO_SYNC_FRAMES:kotlin.String` An optional key describing whether encoders prepend headers to sync frames (e.g. SPS and PPS to IDR frames for H.264). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PRIORITY:kotlin.String` A key describing the desired codec priority. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PROFILE:kotlin.String` A key describing the desired profile to be used by an encoder. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PUSH_BLANK_BUFFERS_ON_STOP:kotlin.String` If specified when configuring a video decoder rendering to a surface, causes the decoder to output "blank", i. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_QUALITY:kotlin.String` A key describing the desired encoding quality. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_REPEAT_PREVIOUS_FRAME_AFTER:kotlin.String` Applies only when configuring a video encoder in "surface-input" mode. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ROTATION:kotlin.String` A key describing the desired clockwise rotation on an output surface. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String` A key describing the sample rate of an audio format. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SECURITY_MODEL:kotlin.String` A key describing the requested security model as flags. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SLICE_HEIGHT:kotlin.String` A key describing the plane height of a multi-planar (YUV) video bytebuffer layout. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SLOW_MOTION_MARKERS:kotlin.String` A key for retrieving the slow-motion marker information associated with a video track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_STRIDE:kotlin.String` A key describing the stride of the video bytebuffer layout. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TEMPORAL_LAYERING:kotlin.String` A key describing the temporal layering schema. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TEMPORAL_LAYER_ID:kotlin.String` A key describing the index of the temporal layer of the output buffer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String` A key describing the height (in pixels) of each tile of the content in a `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_ANDROID_HEIC:kotlin.String` / `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_AVIF:kotlin.String` track. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` A key describing the width (in pixels) of each tile of the content in a `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_ANDROID_HEIC:kotlin.String` / `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_AVIF:kotlin.String` track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TRACK_ID:kotlin.String` A key describing a unique ID for the content of a media track. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_BITRATE_LAYERING:kotlin.String` Set the bitrate distributions for temporal layering. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_ENCODING_STATISTICS_LEVEL:kotlin.String` A key describing the level of encoding statistics information emitted from video encoder. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_AVERAGE:kotlin.String` A key describing the per-frame average block QP (Quantization Parameter). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_B_MAX:kotlin.String` A key describing the maximum Quantization Parameter allowed for encoding video. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_B_MIN:kotlin.String` A key describing the minimum Quantization Parameter allowed for encoding video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_I_MAX:kotlin.String` A key describing the maximum Quantization Parameter allowed for encoding video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_I_MIN:kotlin.String` A key describing the minimum Quantization Parameter allowed for encoding video. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_MAX:kotlin.String` A key describing the maximum Quantization Parameter allowed for encoding video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_MIN:kotlin.String` A key describing the minimum Quantization Parameter allowed for encoding video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_P_MAX:kotlin.String` A key describing the maximum Quantization Parameter allowed for encoding video. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_VIDEO_QP_P_MIN:kotlin.String` A key describing the minimum Quantization Parameter allowed for encoding video. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` A key describing the width of the content in a video format. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#LOG_SESSION_ID:kotlin.String` A key describing the log session ID for MediaCodec. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC_ELD:kotlin.String` MIME type for AAC Enhanced Low Delay (ELD) audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC_HE_V1:kotlin.String` MIME type for HE-AAC v1 (LC + SBR) audio stream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC_HE_V2:kotlin.String` MIME type for HE-AAC v2 (LC + SBR + PS) audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC_LC:kotlin.String` MIME type for AAC Low Complexity (LC) audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC_XHE:kotlin.String` MIME type for AAC XHE audio stream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AC3:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AC4:kotlin.String` MIME type for AC-4 sync frame transport format audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AMR_NB:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AMR_WB:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DOLBY_MAT:kotlin.String` MIME type for Dolby Metadata-enhanced Audio Transmission (MAT) audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DOLBY_TRUEHD:kotlin.String` MIME type for Dolby TrueHD audio format, based on Meridian Lossless Packing (MLP). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DRA:kotlin.String` MIME type for Dynamic Resolution Adaptation (DRA) audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DTS:kotlin.String` MIME type for DTS Digital Surround (up to 5.1 channels) audio stream, aka DTS-CA. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DTS_HD:kotlin.String` MIME type for DTS HD (up to 7.1 channels) audio stream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_DTS_UHD:kotlin.String` MIME type for DTS UHD (object-based) audio stream, aka DTS:X. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_EAC3:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_EAC3_JOC:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_FLAC:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_G711_ALAW:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_G711_MLAW:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_IAMF:kotlin.String` MIME type for IAMF audio stream |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_IEC61937:kotlin.String` MIME type for the IEC61937 audio stream encapsulation. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEG:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_BL_L3:kotlin.String` MIME type for MPEG-H Baseline (BL) Profile L3 audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_BL_L4:kotlin.String` MIME type for MPEG-H Baseline (BL) Profile L4 audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_LC_L3:kotlin.String` MIME type for MPEG-H Low Complexity (LC) L3 audio stream. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_LC_L4:kotlin.String` MIME type for MPEG-H Low Complexity (LC) L4 audio stream. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_MHA1:kotlin.String` MIME type for MPEG-H Audio single stream |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MPEGH_MHM1:kotlin.String` MIME type for MPEG-H Audio single stream, encapsulated in MHAS |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_MSGSM:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_OPUS:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_QCELP:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_RAW:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_SCRAMBLED:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_VORBIS:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_ANDROID_HEIC:kotlin.String` MIME type for HEIF still image data encoded in HEVC. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_IMAGE_AVIF:kotlin.String` MIME type for AVIF still image data encoded in AV1. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_TEXT_CEA_608:kotlin.String` MIME type for CEA-608 closed caption data. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_TEXT_CEA_708:kotlin.String` MIME type for CEA-708 closed caption data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_TEXT_SUBRIP:kotlin.String` MIME type for SubRip (SRT) container. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_TEXT_VTT:kotlin.String` MIME type for WebVTT subtitle data. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_APV:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AV1:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AVC:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_DOLBY_VISION:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_H263:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_HEVC:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_MPEG2:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_MPEG4:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_RAW:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_SCRAMBLED:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_VP8:kotlin.String` <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_VP9:kotlin.String` <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_VVC:kotlin.String` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#PICTURE_TYPE_B:kotlin.Int` Picture Type is B Frame. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#PICTURE_TYPE_I:kotlin.Int` Picture Type is I Frame. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#PICTURE_TYPE_P:kotlin.Int` Picture Type is P Frame. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#PICTURE_TYPE_UNKNOWN:kotlin.Int` Picture Type is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_BYTE_BUFFER:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_FLOAT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_INTEGER:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_LONG:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_NULL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#TYPE_STRING:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#VIDEO_ENCODING_STATISTICS_LEVEL_1:kotlin.Int` Encoding Statistics Level 1. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#VIDEO_ENCODING_STATISTICS_LEVEL_NONE:kotlin.Int` Encoding Statistics Level None. |
 
 | Public constructors ||
@@ -303,33 +385,43 @@ Image formats have the following keys:
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a feature of the given name exists in the format. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a key of the given name exists in the format. |
 | static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createAudioFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sampleRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, channelCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal audio format. |
+| --- | --- |
 | static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createSubtitleFormat(kotlin.String,%20kotlin.String)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a minimal subtitle format. |
 | static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createVideoFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal video format. |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a ByteBuffer key. |
+| --- | --- |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Returns the value of a ByteBuffer key, or the default value if the key is missing. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatureEnabled(kotlin.String)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns whether a feature is to be enabled (`true`) or disabled (`false`). |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the features contained in this MediaFormat. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFloat(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a float key. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFloat(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the value of a float key, or the default value if the key is missing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getInteger(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of an integer key. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getInteger(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of an integer key, or the default value if the key is missing. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getKeys()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the keys contained in this MediaFormat. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getLong(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a long key. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getLong(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the value of a long key, or the default value if the key is missing. |
 | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getNumber(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a numeric key. |
 | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getNumber(kotlin.String,%20kotlin.Number)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)` Returns the value of a numeric key, or the default value if the key is missing. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getString(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a string key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getString(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a string key, or the default value if the key is missing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getValueTypeForKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value type for a key. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#removeFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a given feature setting if present. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#removeKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a value of a given key if present. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, bytes: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#?)` Sets the value of a ByteBuffer key. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setFeatureEnabled(kotlin.String,%20kotlin.Boolean)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether a feature is to be enabled (`true`) or disabled (`false`). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setFloat(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the value of a float key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setInteger(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the value of an integer key. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setLong(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the value of a long key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setString(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the value of a string key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Constants
 
@@ -490,6 +582,7 @@ A key describing the album mode for MPEG-D DRC as defined in ISO/IEC 23003-4.
 The associated value is an integer and can be set to following values:
 
 | Value | Album Mode |
+| --- | --- |
 | 0 | disabled |
 | 1 | enabled |
 |---|---|
@@ -553,12 +646,15 @@ static val KEY_AAC_DRC_EFFECT_TYPE: String
 A key describing for selecting the DRC effect type for MPEG-D DRC. The supported values are defined in ISO/IEC 23003-4:2015 and are described as follows:
 
 | Value | Effect |
+| --- | --- |
 | -1 | Off |
 | 0 | None |
 | 1 | Late night |
+| --- | --- |
 | 2 | Noisy environment |
 | 3 | Limited playback range |
 | 4 | Low playback level |
+| --- | --- |
 | 5 | Dialog enhancement |
 | 6 | General compression |
 |---|---|
@@ -1862,9 +1958,11 @@ float(32) playbackRate;
 The meaning of each field is as follows:
 
 | playbackRate | The frame rate at which the playback should happen (or the flattened clip should be). |
+| --- | --- |
 | numMarkers | The number of slow-motion markers that follows. |
 | timestampUs | The starting point of a new segment. |
 | speedRatio | The playback speed for that segment. The playback speed is a floating point number, indicating how fast the time progresses relative to that written in the container. (Eg. 4.0 means time goes 4x as fast, which makes 30fps become 120fps.) |
+| --- | --- |
 
 The following constraints apply to the timestampUs of the markers:
 - The timestampUs shall be monotonically increasing.
@@ -2943,6 +3041,7 @@ Creates a minimal audio format.
 | `mime` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The mime type of the content. This value cannot be `null`. |
 | `sampleRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The sampling rate of the content. |
 | `channelCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of audio channels in the content. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2989,6 +3088,7 @@ Creates a minimal video format.
 | `mime` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The mime type of the content. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the content (in pixels) |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the content (in pixels) |
+| --- | --- |
 
 | Return ||
 |---|---|

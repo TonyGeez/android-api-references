@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Path
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/Path "View this page in Java")
+| --- | --- |
 
 ```
 open class Path
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Path](https://developer.android.com/reference/kotlin/android/graphics/Path#) |
 
 The Path class encapsulates compound (multiple contour) geometric paths consisting of straight line segments, quadratic curves, and cubic curves. It can be drawn with canvas.drawPath(path, paint), either filled or stroked (based on the paint's Style), or it can be used for clipping or to draw text on a path.
@@ -20,6 +22,7 @@ The Path class encapsulates compound (multiple contour) geometric paths consisti
 | | `https://developer.android.com/reference/kotlin/android/graphics/Path.Direction` Specifies how closed shapes (e.g. rects, ovals) are oriented when they are added to a path. |
 | | `https://developer.android.com/reference/kotlin/android/graphics/Path.FillType` Enum for the ways a path may be filled. |
 | | `https://developer.android.com/reference/kotlin/android/graphics/Path.Op` The logical operations that can be performed when combining two paths. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -31,54 +34,71 @@ The Path class encapsulates compound (multiple contour) geometric paths consisti
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addArc(android.graphics.RectF,%20kotlin.Float,%20kotlin.Float)(oval: https://developer.android.com/reference/kotlin/android/graphics/RectF, startAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sweepAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add the specified arc to the path as a new contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addArc(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, startAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sweepAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add the specified arc to the path as a new contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addCircle(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path.Direction)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed circle contour to the path |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addOval(android.graphics.RectF,%20android.graphics.Path.Direction)(oval: https://developer.android.com/reference/kotlin/android/graphics/RectF, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed oval contour to the path |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addOval(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path.Direction)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed oval contour to the path |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addPath(android.graphics.Path)(src: https://developer.android.com/reference/kotlin/android/graphics/Path#)` Add a copy of src to the path |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addPath(android.graphics.Path,%20android.graphics.Matrix)(src: https://developer.android.com/reference/kotlin/android/graphics/Path#, matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix)` Add a copy of src to the path, transformed by matrix |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addPath(android.graphics.Path,%20kotlin.Float,%20kotlin.Float)(src: https://developer.android.com/reference/kotlin/android/graphics/Path#, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a copy of src to the path, offset by (dx,dy) |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRect(android.graphics.RectF,%20android.graphics.Path.Direction)(rect: https://developer.android.com/reference/kotlin/android/graphics/RectF, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed rectangle contour to the path |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRect(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path.Direction)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed rectangle contour to the path |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRoundRect(android.graphics.RectF,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path.Direction)(rect: https://developer.android.com/reference/kotlin/android/graphics/RectF, rx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, ry: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed round-rectangle contour to the path |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRoundRect(android.graphics.RectF,%20kotlin.FloatArray,%20android.graphics.Path.Direction)(rect: https://developer.android.com/reference/kotlin/android/graphics/RectF, radii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed round-rectangle contour to the path. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRoundRect(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path.Direction)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, rx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, ry: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed round-rectangle contour to the path |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#addRoundRect(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.FloatArray,%20android.graphics.Path.Direction)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, dir: https://developer.android.com/reference/kotlin/android/graphics/Path.Direction)` Add a closed round-rectangle contour to the path. |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#approximate(kotlin.Float)(acceptableError: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Approximate the `Path` with a series of line segments. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#arcTo(android.graphics.RectF,%20kotlin.Float,%20kotlin.Float)(oval: https://developer.android.com/reference/kotlin/android/graphics/RectF, startAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sweepAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Append the specified arc to the path as a new contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#arcTo(android.graphics.RectF,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean)(oval: https://developer.android.com/reference/kotlin/android/graphics/RectF, startAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sweepAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, forceMoveTo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Append the specified arc to the path as a new contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#arcTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, startAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sweepAngle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, forceMoveTo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Append the specified arc to the path as a new contour. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#close()()` Close the current contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#computeBounds(android.graphics.RectF)(bounds: https://developer.android.com/reference/kotlin/android/graphics/RectF)` Compute the bounds of the control points of the path, and write the answer into bounds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#computeBounds(android.graphics.RectF,%20kotlin.Boolean)(bounds: https://developer.android.com/reference/kotlin/android/graphics/RectF, exact: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Compute the bounds of the control points of the path, and write the answer into bounds. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#conicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a quadratic bezier from the last point, approaching control point (x1,y1), and ending at (x2,y2), weighted by `weight`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#cubicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a cubic bezier from the last point, approaching control points (x1,y1) and (x2,y2), and ending at (x3,y3). |
 | open [Path.FillType](https://developer.android.com/reference/kotlin/android/graphics/Path.FillType) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getFillType()()` Return the path's fill type. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getGenerationId()()` Returns the generation ID of this path. |
 | open [PathIterator](https://developer.android.com/reference/kotlin/android/graphics/PathIterator) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getPathIterator()()` Returns an iterator over the segments of this path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#incReserve(kotlin.Int)(extraPtCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Hint to the path to prepare for adding more points. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#interpolate(android.graphics.Path,%20kotlin.Float,%20android.graphics.Path)(otherPath: https://developer.android.com/reference/kotlin/android/graphics/Path#, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, interpolatedPath: https://developer.android.com/reference/kotlin/android/graphics/Path#)` This method will linearly interpolate from this path to `otherPath` given the interpolation parameter `t`, returning the result in `interpolatedPath`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#isConvex()()` Returns the path's convexity, as defined by the content of the path. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#isEmpty()()` Returns true if the path is empty (contains no lines or curves) |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#isInterpolatable(android.graphics.Path)(otherPath: https://developer.android.com/reference/kotlin/android/graphics/Path#)` Two paths can be interpolated, by calling `https://developer.android.com/reference/kotlin/android/graphics/Path#interpolate(android.graphics.Path,%20kotlin.Float,%20android.graphics.Path)`, if they have exactly the same structure. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#isInverseFillType()()` Returns true if the filltype is one of the INVERSE variants |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#isRect(android.graphics.RectF)(rect: https://developer.android.com/reference/kotlin/android/graphics/RectF?)` Returns true if the path specifies a rectangle. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#lineTo(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a line from the last point to the specified point (x,y). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#moveTo(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the beginning of the next contour to the point (x,y). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#offset(kotlin.Float,%20kotlin.Float)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Offset the path by (dx,dy) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#offset(kotlin.Float,%20kotlin.Float,%20android.graphics.Path)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dst: https://developer.android.com/reference/kotlin/android/graphics/Path#?)` Offset the path by (dx,dy) |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#op(android.graphics.Path,%20android.graphics.Path,%20android.graphics.Path.Op)(path1: https://developer.android.com/reference/kotlin/android/graphics/Path#, path2: https://developer.android.com/reference/kotlin/android/graphics/Path#, op: https://developer.android.com/reference/kotlin/android/graphics/Path.Op)` Set this path to the result of applying the Op to the two specified paths. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#op(android.graphics.Path,%20android.graphics.Path.Op)(path: https://developer.android.com/reference/kotlin/android/graphics/Path#, op: https://developer.android.com/reference/kotlin/android/graphics/Path.Op)` Set this path to the result of applying the Op to this path and the specified path. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#quadTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a quadratic bezier from the last point, approaching control point (x1,y1), and ending at (x2,y2). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rConicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(dx1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Same as conicTo, but the coordinates are considered relative to the last point on this contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rCubicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Same as cubicTo, but the coordinates are considered relative to the current point on this contour. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rLineTo(kotlin.Float,%20kotlin.Float)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Same as lineTo, but the coordinates are considered relative to the last point on this contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rMoveTo(kotlin.Float,%20kotlin.Float)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the beginning of the next contour relative to the last point on the previous contour. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rQuadTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(dx1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Same as quadTo, but the coordinates are considered relative to the last point on this contour. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#reset()()` Clear any lines and curves from the path, making it empty. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#rewind()()` Rewinds the path: clears any lines and curves from the path but keeps the internal data structure for faster reuse. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#set(android.graphics.Path)(src: https://developer.android.com/reference/kotlin/android/graphics/Path#)` Replace the contents of this with the contents of src. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#setFillType(android.graphics.Path.FillType)(ft: https://developer.android.com/reference/kotlin/android/graphics/Path.FillType)` Set the path's fill type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#setLastPoint(kotlin.Float,%20kotlin.Float)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the last point of the path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#toggleInverseFillType()()` Toggles the INVERSE state of the filltype |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#transform(android.graphics.Matrix)(matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix)` Transform the points in this path by matrix. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#transform(android.graphics.Matrix,%20android.graphics.Path)(matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix, dst: https://developer.android.com/reference/kotlin/android/graphics/Path#?)` Transform the points in this path by matrix, and write the answer into dst. |
 
@@ -129,6 +149,7 @@ Add the specified arc to the path as a new contour.
 | `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining the shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
+| --- | --- |
 
 ### addArc
 
@@ -172,6 +193,7 @@ Add a closed circle contour to the path
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the center of a circle to add to the path |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the center of a circle to add to the path |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The radius of a circle to add to the path |
+| --- | --- |
 | `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the circle's contour. This value cannot be `null`. |
 
 ### addOval
@@ -302,6 +324,7 @@ Add a closed rectangle contour to the path
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The left side of a rectangle to add to the path |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The top of a rectangle to add to the path |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The right side of a rectangle to add to the path |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The bottom of a rectangle to add to the path |
 | `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the rectangle's contour. This value cannot be `null`. |
 
@@ -325,6 +348,7 @@ Add a closed round-rectangle contour to the path
 | `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the rounded corners on the round-rectangle |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the rounded corners on the round-rectangle |
+| --- | --- |
 | `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
 
 ### addRoundRect
@@ -346,6 +370,7 @@ Add a closed round-rectangle contour to the path. Each corner receives two radiu
 | `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
 | `radii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): Array of 8 values, 4 pairs of \[X,Y\] radii. This value cannot be `null`. |
 | `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| --- | --- |
 
 ### addRoundRect
 
@@ -370,6 +395,7 @@ Add a closed round-rectangle contour to the path
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the rounded corners on the round-rectangle |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the rounded corners on the round-rectangle |
 | `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| --- | --- |
 
 ### addRoundRect
 
@@ -438,6 +464,7 @@ Append the specified arc to the path as a new contour. If the start of the path 
 | `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
+| --- | --- |
 
 ### arcTo
 
@@ -459,6 +486,7 @@ Append the specified arc to the path as a new contour. If the start of the path 
 | `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise, treated mod 360. |
+| --- | --- |
 | `forceMoveTo` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, always begin a new contour with the arc |
 
 ### arcTo
@@ -484,6 +512,7 @@ Append the specified arc to the path as a new contour. If the start of the path 
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise, treated mod 360. |
 | `forceMoveTo` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, always begin a new contour with the arc |
+| --- | --- |
 
 ### close
 
@@ -548,6 +577,7 @@ Add a quadratic bezier from the last point, approaching control point (x1,y1), a
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the control point on a conic curve |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the control point on a conic curve |
 | `x2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the end point on a conic curve |
+| --- | --- |
 | `y2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the end point on a conic curve |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The weight of the conic applied to the curve. A value of 1 is equivalent to a quadratic with the given control and anchor points and a value of 0 is equivalent to a line to the first and another line to the second point. |
 
@@ -573,9 +603,11 @@ Add a cubic bezier from the last point, approaching control points (x1,y1) and (
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the 1st control point on a cubic curve |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the 1st control point on a cubic curve |
 | `x2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the 2nd control point on a cubic curve |
+| --- | --- |
 | `y2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the 2nd control point on a cubic curve |
 | `x3` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the end point on a cubic curve |
 | `y3` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the end point on a cubic curve |
+| --- | --- |
 
 ### getFillType
 
@@ -652,6 +684,7 @@ This method will linearly interpolate from this path to `otherPath` given the in
 | `otherPath` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The other `Path` being interpolated to. This value cannot be `null`. |
 | `t` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The interpolation parameter. A value of 1 results in a `Path` equivalent to this path, a value of 0 results in one equivalent to `otherPath`. |
 | `interpolatedPath` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The interpolated results. This value cannot be `null`. |
+| --- | --- |
 
 ### isConvex
 
@@ -811,6 +844,7 @@ Offset the path by (dx,dy)
 | `dx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount in the X direction to offset the entire path |
 | `dy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount in the Y direction to offset the entire path |
 | `dst` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#)?: The translated path is written here. If this is null, then the original path is modified. |
+| --- | --- |
 
 ### op
 
@@ -831,6 +865,7 @@ Set this path to the result of applying the Op to the two specified paths. The r
 | `path1` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The first operand (for difference, the minuend). This value cannot be `null`. |
 | `path2` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The second operand (for difference, the subtrahend). This value cannot be `null`. |
 | `op` | [Path.Op](https://developer.android.com/reference/kotlin/android/graphics/Path.Op): This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -888,6 +923,7 @@ Add a quadratic bezier from the last point, approaching control point (x1,y1), a
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the control point on a quadratic curve |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the control point on a quadratic curve |
 | `x2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the end point on a quadratic curve |
+| --- | --- |
 | `y2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the end point on a quadratic curve |
 
 ### rConicTo
@@ -911,6 +947,7 @@ Same as conicTo, but the coordinates are considered relative to the last point o
 | `dx1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the x-coordinate of the last point on this contour, for the control point of a conic curve |
 | `dy1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the y-coordinate of the last point on this contour, for the control point of a conic curve |
 | `dx2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the x-coordinate of the last point on this contour, for the end point of a conic curve |
+| --- | --- |
 | `dy2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the y-coordinate of the last point on this contour, for the end point of a conic curve |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The weight of the conic applied to the curve. A value of 1 is equivalent to a quadratic with the given control and anchor points and a value of 0 is equivalent to a line to the first and another line to the second point. |
 
@@ -987,6 +1024,7 @@ Same as quadTo, but the coordinates are considered relative to the last point on
 | `dx1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the x-coordinate of the last point on this contour, for the control point of a quadratic curve |
 | `dy1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the y-coordinate of the last point on this contour, for the control point of a quadratic curve |
 | `dx2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the x-coordinate of the last point on this contour, for the end point of a quadratic curve |
+| --- | --- |
 | `dy2` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to add to the y-coordinate of the last point on this contour, for the end point of a quadratic curve |
 
 ### reset

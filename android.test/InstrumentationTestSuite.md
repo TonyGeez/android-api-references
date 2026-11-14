@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # InstrumentationTestSuite
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/InstrumentationTestSuite "View this page in Java") 
+| --- | --- |
 
 ```
 open class InstrumentationTestSuite
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.InstrumentationTestSuite](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestSuite#) |
 
 | **This class was deprecated in API level 24.**

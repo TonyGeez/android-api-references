@@ -9,6 +9,7 @@ class Year : Comparable<Year!>, Serializable, Temporal, TemporalAdjuster
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.Year](https://developer.android.com/reference/kotlin/java/time/Year#) |
 
 A year in the ISO-8601 calendar system, such as `2007`.
@@ -35,42 +36,55 @@ The ISO-8601 calendar system is the modern civil calendar system used today in m
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [adjustInto](https://developer.android.com/reference/kotlin/java/time/Year#adjustInto(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adjusts the specified temporal object to have this year. |
 | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)! | [atDay](https://developer.android.com/reference/kotlin/java/time/Year#atDay(kotlin.Int))`(`dayOfYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a day-of-year to create a `LocalDate`. |
 | [YearMonth](https://developer.android.com/reference/kotlin/java/time/YearMonth)! | [atMonth](https://developer.android.com/reference/kotlin/java/time/Year#atMonth(kotlin.Int))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a month to create a `YearMonth`. |
+| --- | --- |
 | [YearMonth](https://developer.android.com/reference/kotlin/java/time/YearMonth)! | [atMonth](https://developer.android.com/reference/kotlin/java/time/Year#atMonth(java.time.Month))`(`month:` ` [Month](https://developer.android.com/reference/kotlin/java/time/Month)!`)` Combines this year with a month to create a `YearMonth`. |
 | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)! | [atMonthDay](https://developer.android.com/reference/kotlin/java/time/Year#atMonthDay(java.time.MonthDay))`(`monthDay:` ` [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay)!`)` Combines this year with a month-day to create a `LocalDate`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/time/Year#compareTo(java.time.Year))`(`other:` ` [Year](https://developer.android.com/reference/kotlin/java/time/Year#)!`)` Compares this year to another year. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/Year#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this year is equal to another year. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/time/Year#format(java.time.format.DateTimeFormatter))`(`formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!`)` Formats this year using the specified formatter. |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [from](https://developer.android.com/reference/kotlin/java/time/Year#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Obtains an instance of `Year` from a temporal object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/Year#get(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this year as an `int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/time/Year#getLong(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this year as a `long`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/Year#getValue())`()` Gets the year value. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/Year#hashCode())`()` A hash code for this year. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](https://developer.android.com/reference/kotlin/java/time/Year#isAfter(java.time.Year))`(`other:` ` [Year](https://developer.android.com/reference/kotlin/java/time/Year#)!`)` Checks if this year is after the specified year. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](https://developer.android.com/reference/kotlin/java/time/Year#isBefore(java.time.Year))`(`other:` ` [Year](https://developer.android.com/reference/kotlin/java/time/Year#)!`)` Checks if this year is before the specified year. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](https://developer.android.com/reference/kotlin/java/time/Year#isLeap())`()` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](https://developer.android.com/reference/kotlin/java/time/Year#isLeap(kotlin.Long))`(`year:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/Year#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Checks if the specified field is supported. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/Year#isSupported(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Checks if the specified unit is supported. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidMonthDay](https://developer.android.com/reference/kotlin/java/time/Year#isValidMonthDay(java.time.MonthDay))`(`monthDay:` ` [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay)!`)` Checks if the month-day is valid for this year. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/java/time/Year#length())`()` Gets the length of this year in days. |
+| --- | --- |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Year#minus(java.time.temporal.TemporalAmount))`(`amountToSubtract:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this year with the specified amount subtracted. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Year#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this year with the specified amount subtracted. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [minusYears](https://developer.android.com/reference/kotlin/java/time/Year#minusYears(kotlin.Long))`(`yearsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years subtracted. |
+| --- | --- |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [now](https://developer.android.com/reference/kotlin/java/time/Year#now())`()` Obtains the current year from the system clock in the default time-zone. |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [now](https://developer.android.com/reference/kotlin/java/time/Year#now(java.time.Clock))`(`clock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock)!`)` Obtains the current year from the specified clock. |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [now](https://developer.android.com/reference/kotlin/java/time/Year#now(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Obtains the current year from the system clock in the specified time-zone. |
+| --- | --- |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [of](https://developer.android.com/reference/kotlin/java/time/Year#of(kotlin.Int))`(`isoYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of `Year`. |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [parse](https://developer.android.com/reference/kotlin/java/time/Year#parse(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains an instance of `Year` from a text string such as `2007`. |
 | static [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [parse](https://developer.android.com/reference/kotlin/java/time/Year#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!`)` Obtains an instance of `Year` from a text string using a specific formatter. |
+| --- | --- |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Year#plus(java.time.temporal.TemporalAmount))`(`amountToAdd:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this year with the specified amount added. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Year#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this year with the specified amount added. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [plusYears](https://developer.android.com/reference/kotlin/java/time/Year#plusYears(kotlin.Long))`(`yearsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years added. |
+| --- | --- |
 | R | [query](https://developer.android.com/reference/kotlin/java/time/Year#query(java.time.temporal.TemporalQuery))`(`query:` ` [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)<R>!`)` Queries this year using the specified query. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | [range](https://developer.android.com/reference/kotlin/java/time/Year#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the range of valid values for the specified field. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/Year#toString())`()` Outputs this year as a `String`. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](https://developer.android.com/reference/kotlin/java/time/Year#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit))`(`endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Calculates the amount of time until another year in terms of the specified unit. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [with](https://developer.android.com/reference/kotlin/java/time/Year#with(java.time.temporal.TemporalAdjuster))`(`adjuster:` ` [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster)!`)` Returns an adjusted copy of this year. |
 | [Year](https://developer.android.com/reference/kotlin/java/time/Year#)! | [with](https://developer.android.com/reference/kotlin/java/time/Year#with(java.time.temporal.TemporalField,%20kotlin.Long))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this year with the specified field set to a new value. |
+| --- | --- |
 
 ## Constants
 
@@ -371,6 +385,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an `int` |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### getLong
 
@@ -401,6 +416,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### getValue
 
@@ -671,6 +687,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the subtraction cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### minusYears
 
@@ -910,6 +927,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the addition cannot be made |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### plusYears
 
@@ -1053,6 +1071,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to a `Year` |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### with
 
@@ -1126,3 +1145,4 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |

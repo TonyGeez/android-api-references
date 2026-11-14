@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # KeyguardManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/KeyguardManager "View this page in Java")
+| --- | --- |
 
 ```
 open class KeyguardManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.KeyguardManager](https://developer.android.com/reference/kotlin/android/app/KeyguardManager#) |
 
 Class to manage and query the state of the lock screen (also known as Keyguard).
@@ -20,6 +22,7 @@ Class to manage and query the state of the lock screen (also known as Keyguard).
 | abstract | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.DeviceLockedStateListener` Listener for device locked state changes. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardDismissCallback` Callback passed to `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#requestDismissKeyguard(android.app.Activity,%20android.app.KeyguardManager.KeyguardDismissCallback)` to notify caller of result. |
 | open | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLock` Handle returned by `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#newKeyguardLock(kotlin.String)` that allows you to temporarily disable / reenable the keyguard (lock screen). |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLockedStateListener` Listener for keyguard locked state changes. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.OnKeyguardExitResult` Callback passed to `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult)` to notify caller of result. |
 
@@ -28,15 +31,19 @@ Class to manage and query the state of the lock screen (also known as Keyguard).
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#addDeviceLockedStateListener(java.util.concurrent.Executor,%20android.app.KeyguardManager.DeviceLockedStateListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.DeviceLockedStateListener)` Registers a listener to execute when the device locked state changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#addKeyguardLockedStateListener(java.util.concurrent.Executor,%20android.app.KeyguardManager.KeyguardLockedStateListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLockedStateListener)` Registers a listener to execute when the keyguard locked state changes. |
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#createConfirmDeviceCredentialIntent(kotlin.CharSequence,%20kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Get an intent to prompt the user to confirm credentials (pin, pattern, password or biometrics if enrolled) for the current user of the device. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult)(callback: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.OnKeyguardExitResult!)` Exit the keyguard securely. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#inKeyguardRestrictedInputMode()()` Returns whether the lock screen is showing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#isDeviceLocked()()` Returns whether the device is currently locked for the user. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#isDeviceSecure()()` Returns whether the user has a secure lock screen. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#isKeyguardLocked()()` Returns whether the lock screen (also known as Keyguard) is showing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#isKeyguardSecure()()` Returns whether the user has a secure lock screen or there is a locked SIM card. |
+| --- | --- |
 | open [KeyguardManager.KeyguardLock](https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLock)! | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#newKeyguardLock(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Enables you to temporarily disable / reenable the keyguard (lock screen). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#removeDeviceLockedStateListener(android.app.KeyguardManager.DeviceLockedStateListener)(listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.DeviceLockedStateListener)` Unregisters a listener that executes when the device locked state changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#removeKeyguardLockedStateListener(android.app.KeyguardManager.KeyguardLockedStateListener)(listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLockedStateListener)` Unregisters a listener that executes when the keyguard locked state changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#requestDismissKeyguard(android.app.Activity,%20android.app.KeyguardManager.KeyguardDismissCallback)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, callback: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardDismissCallback?)` Requests that the Keyguard (lock screen) be dismissed if it is currently showing. |
 
 ## Public methods

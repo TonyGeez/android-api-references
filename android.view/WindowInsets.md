@@ -5,12 +5,14 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 # WindowInsets
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowInsets "View this page in Java") 
+| --- | --- |
 
 ```
 class WindowInsets
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) |
 
 Describes a set of insets for window content.
@@ -26,6 +28,7 @@ Note: Before [P](https://developer.android.com/reference/kotlin/android/os/Build
 | | [Builder](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Builder) Builder for WindowInsets. |
 | | [Side](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Side) Class that defines different sides for insets. |
 | | [Type](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type) Class that defines different types of sources causing window insets. |
+| --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -36,39 +39,51 @@ Note: Before [P](https://developer.android.com/reference/kotlin/android/os/Build
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [consumeDisplayCutout](https://developer.android.com/reference/kotlin/android/view/WindowInsets#consumeDisplayCutout())`()` Returns a copy of this WindowInsets with the cutout fully consumed. |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [consumeStableInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#consumeStableInsets())`()` Returns a copy of this WindowInsets with the stable insets fully consumed. |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [consumeSystemWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#consumeSystemWindowInsets())`()` Returns a copy of this WindowInsets with the system window insets fully consumed. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/WindowInsets#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\> | [getBoundingRects](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getBoundingRects(kotlin.Int))`(`typeMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list of [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) s, each of which is the bounding rectangle for an area that is being partially or fully obscured inside the window. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\> | [getBoundingRectsIgnoringVisibility](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getBoundingRectsIgnoringVisibility(kotlin.Int))`(`typeMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list of [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) s, each of which is the bounding rectangle for an area that can be partially or fully obscured inside the window, regardless of whether that type is currently visible or not. |
+| --- | --- |
 | [DisplayCutout](https://developer.android.com/reference/kotlin/android/view/DisplayCutout)? | [getDisplayCutout](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getDisplayCutout())`()` Returns the display cutout if there is one. |
 | [DisplayShape](https://developer.android.com/reference/kotlin/android/view/DisplayShape)? | [getDisplayShape](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getDisplayShape())`()` Returns the display shape in the coordinate space of the window. |
 | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | [getFrame](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getFrame())`()` Returns the assumed size of the window, relative to which the [getInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getInsets(kotlin.Int))and [getBoundingRects](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getBoundingRects(kotlin.Int))have been calculated. |
+| --- | --- |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getInsets(kotlin.Int))`(`typeMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the insets of a specific set of windows causing insets, denoted by the`typeMask`bit mask of [Type](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type) s. |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getInsetsIgnoringVisibility](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getInsetsIgnoringVisibility(kotlin.Int))`(`typeMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the insets a specific set of windows can cause, denoted by the`typeMask`bit mask of [Type](https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type) s, regardless of whether that type is currently visible or not. |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getMandatorySystemGestureInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getMandatorySystemGestureInsets())`()` Returns the mandatory system gesture insets. |
+| --- | --- |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | [getPrivacyIndicatorBounds](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getPrivacyIndicatorBounds())`()` Returns the [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) of the maximum bounds of the system privacy indicator, for the current orientation, in relative coordinates, or null if the bounds have not been loaded yet. |
 | [RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner)? | [getRoundedCorner](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getRoundedCorner(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner) of the given position if there is one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStableInsetBottom](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getStableInsetBottom())`()` Returns the bottom stable inset in pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStableInsetLeft](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getStableInsetLeft())`()` Returns the left stable inset in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStableInsetRight](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getStableInsetRight())`()` Returns the right stable inset in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStableInsetTop](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getStableInsetTop())`()` Returns the top stable inset in pixels. |
+| --- | --- |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getStableInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getStableInsets())`()` Returns the stable insets in pixels. |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getSystemGestureInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemGestureInsets())`()` Returns the system gesture insets. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemWindowInsetBottom](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemWindowInsetBottom())`()` Returns the bottom system window inset in pixels. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemWindowInsetLeft](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemWindowInsetLeft())`()` Returns the left system window inset in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemWindowInsetRight](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemWindowInsetRight())`()` Returns the right system window inset in pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemWindowInsetTop](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemWindowInsetTop())`()` Returns the top system window inset in pixels. |
+| --- | --- |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getSystemWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getSystemWindowInsets())`()` Returns the system window insets in pixels. |
 | [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getTappableElementInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#getTappableElementInsets())`()` Returns the tappable element insets. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#hasInsets())`()` Returns true if this WindowInsets has any nonzero insets. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#hasStableInsets())`()` Returns true if this WindowInsets has nonzero stable insets. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSystemWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#hasSystemWindowInsets())`()` Returns true if this WindowInsets has nonzero system window insets. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/WindowInsets#hashCode())`()` <br /> |
+| --- | --- |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [inset](https://developer.android.com/reference/kotlin/android/view/WindowInsets#inset(android.graphics.Insets))`(`insets:` ` [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#)`)` Returns a copy of this instance inset in the given directions. |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [inset](https://developer.android.com/reference/kotlin/android/view/WindowInsets#inset(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this instance inset in the given directions. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConsumed](https://developer.android.com/reference/kotlin/android/view/WindowInsets#isConsumed())`()` Check if these insets have been fully consumed. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRound](https://developer.android.com/reference/kotlin/android/view/WindowInsets#isRound())`()` Returns true if the associated window has a round shape. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](https://developer.android.com/reference/kotlin/android/view/WindowInsets#isVisible(kotlin.Int))`(`typeMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns whether a set of windows that may cause insets is currently visible on screen, regardless of whether it actually overlaps with this window. |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [replaceSystemWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#replaceSystemWindowInsets(android.graphics.Rect))`(`systemWindowInsets:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Returns a copy of this WindowInsets with selected system window insets replaced with new values. |
+| --- | --- |
 | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#) | [replaceSystemWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets#replaceSystemWindowInsets(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this WindowInsets with selected system window insets replaced with new values. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/WindowInsets#toString())`()` <br /> |
 
@@ -768,6 +783,7 @@ childView.dispatchApplyWindowInsets(insets.inset(
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of insets to remove from the left. Must be non-negative. Value is 0 or greater |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of insets to remove from the top. Must be non-negative. Value is 0 or greater |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of insets to remove from the right. Must be non-negative. Value is 0 or greater |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the amount of insets to remove from the bottom. Must be non-negative. Value is 0 or greater |
 
 | Return ||
@@ -878,6 +894,7 @@ Note: If the system window insets are already consumed, this method will return 
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):New left inset in pixels |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):New top inset in pixels |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):New right inset in pixels |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):New bottom inset in pixels |
 
 | Return ||

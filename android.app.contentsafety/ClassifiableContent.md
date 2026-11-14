@@ -7,6 +7,7 @@ class ClassifiableContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.contentsafety.ClassifiableContent](https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#) |
 
 A class representing content to be classified.
@@ -34,9 +35,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#getData()()` Returns a `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` containing the raw data of this content. |
 | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#getId()()` Returns the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` associated with this content. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#getMimeType()()` Returns the MIME type of the content. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#getOriginatingPackageName()()` Returns the package name of the app that requested the classification. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#getUri()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` associated with this content. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -147,6 +150,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

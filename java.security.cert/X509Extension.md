@@ -11,6 +11,7 @@ interface X509Extension
 | [java.security.cert.X509Extension](https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#) |
 
 | Known Direct Subclasses [X509CRL](https://developer.android.com/reference/kotlin/java/security/cert/X509CRL), [X509CRLEntry](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry), [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [X509CRL](https://developer.android.com/reference/kotlin/java/security/cert/X509CRL) | Abstract class for an X. | | [X509CRLEntry](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry) | Abstract class for a revoked certificate in a CRL (Certificate Revocation List). | | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate) | Abstract class for X. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for an X.509 extension.
 
@@ -42,6 +43,7 @@ Since not all extensions are known, the`getExtensionValue`method returns the DER
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getCriticalExtensionOIDs](https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getCriticalExtensionOIDs())`()` Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtensionValue](https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getExtensionValue(kotlin.String))`(`oid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in`oid`String. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNonCriticalExtensionOIDs](https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getNonCriticalExtensionOIDs())`()` Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUnsupportedCriticalExtension](https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#hasUnsupportedCriticalExtension())`()` Check if there is a critical extension that is not supported. |
 
 ## Public methods
@@ -92,15 +94,19 @@ Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identif
 For example: 
 
 | OID*(Object Identifier)* | Extension Name |
+| --- | --- |
 | 2.5.29.14 | SubjectKeyIdentifier |
 | 2.5.29.15 | KeyUsage |
 | 2.5.29.16 | PrivateKeyUsage |
+| --- | --- |
 | 2.5.29.17 | SubjectAlternativeName |
 | 2.5.29.18 | IssuerAlternativeName |
 | 2.5.29.19 | BasicConstraints |
+| --- | --- |
 | 2.5.29.30 | NameConstraints |
 | 2.5.29.33 | PolicyMappings |
 | 2.5.29.35 | AuthorityKeyIdentifier |
+| --- | --- |
 | 2.5.29.36 | PolicyConstraints |
 |--------------------------|------------------------|
 

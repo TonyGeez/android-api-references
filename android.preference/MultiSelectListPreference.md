@@ -6,15 +6,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # MultiSelectListPreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/MultiSelectListPreference "View this page in Java") 
+| --- | --- |
 
 ```
 open class MultiSelectListPreference : DialogPreference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference) ||
 | | | ↳ | [android.preference.MultiSelectListPreference](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -52,18 +55,22 @@ This preference will store a set of strings into the SharedPreferences. This set
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [findIndexOfValue](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#findIndexOfValue(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the index of the given value (in the entry values array). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getEntries](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#getEntries())`()` The list of entries to be shown in the list in subsequent dialogs. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getEntryValues](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#getEntryValues())`()` Returns the array of values to be saved for the preference. |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getValues](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#getValues())`()` Retrieves the current value of the key. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntries](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#setEntries(kotlin.Int))`(`entriesResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntries](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#setEntries(kotlin.Array))`(`entries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!>!`)` Sets the human-readable entries to be shown in the list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntryValues](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#setEntryValues(kotlin.Int))`(`entryValuesResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntryValues](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#setEntryValues(kotlin.Array))`(`entryValues:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!>!`)` The array to find the value to save for a preference when an entry from entries is selected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#setValues(kotlin.collections.MutableSet))`(`values:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the value of the key. |
+| --- | --- |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDialogClosed](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#onDialogClosed(kotlin.Boolean))`(`positiveResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [onGetDefaultValue](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int))`(`a:` ` [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareDialogBuilder](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#onPrepareDialogBuilder(android.app.AlertDialog.Builder))`(`builder:` ` [AlertDialog.Builder](https://developer.android.com/reference/kotlin/android/app/AlertDialog.Builder.html#)!`)` <br /> |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#onSaveInstanceState())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInitialValue](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any))`(`restoreValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 

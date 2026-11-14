@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LinearGradient
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/LinearGradient "View this page in Java") 
+| --- | --- |
 
 ```
 open class LinearGradient : Shader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
 | | ↳ | [android.graphics.LinearGradient](https://developer.android.com/reference/kotlin/android/graphics/LinearGradient#) |
 
@@ -51,9 +53,11 @@ Create a shader that draws a linear gradient along a line.
 | `x0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the start of the gradient line |
 | `y0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the start of the gradient line |
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the end of the gradient line |
+| --- | --- |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the end of the gradient line |
 | `color0` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color at the start of the gradient line. |
 | `color1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color at the end of the gradient line. |
+| --- | --- |
 | `tile` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
 
 ### LinearGradient
@@ -78,9 +82,11 @@ Create a shader that draws a linear gradient along a line.
 | `x0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the start of the gradient line |
 | `y0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the start of the gradient line |
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the end of the gradient line |
+| --- | --- |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the end of the gradient line |
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html):The sRGB colors to be distributed along the gradient line This value cannot be`null`. |
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be null. The relative positions \[0..1\] of each corresponding color in the colors array. If this is null, the colors are distributed evenly along the gradient line. |
+| --- | --- |
 | `tile` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
 
 ### LinearGradient
@@ -105,9 +111,11 @@ Create a shader that draws a linear gradient along a line.
 | `x0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the start of the gradient line |
 | `y0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the start of the gradient line |
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the end of the gradient line |
+| --- | --- |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the end of the gradient line |
 | `color0` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color at the start of the gradient line. |
 | `color1` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color at the end of the gradient line. |
+| --- | --- |
 | `tile` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
 
 | Exceptions ||
@@ -136,9 +144,11 @@ Create a shader that draws a linear gradient along a line.
 | `x0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the start of the gradient line |
 | `y0` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the start of the gradient line |
 | `x1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate for the end of the gradient line |
+| --- | --- |
 | `y1` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate for the end of the gradient line |
 | `colors` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html):The colors to be distributed along the gradient line This value cannot be`null`. |
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be null. The relative positions \[0..1\] of each corresponding color in the colors array. If this is null, the colors are distributed evenly along the gradient line. |
+| --- | --- |
 | `tile` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode):The Shader tiling mode This value cannot be`null`. |
 
 | Exceptions ||

@@ -7,6 +7,7 @@ open class NetworkSecurityPolicy
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.NetworkSecurityPolicy](https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#) |
 
 Network security policy.
@@ -24,6 +25,7 @@ Network stacks/components should honor this policy to make it possible to centra
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_DISABLED:kotlin.Int` Domain encryption is disabled for the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_ENABLED:kotlin.Int` Domain encryption is in fully enabled mode for the app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_OPPORTUNISTIC:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_REQUIRED:kotlin.Int` Domain encryption is required for the app and should fail closed (i.e. if ECH cannot be enabled for any reason, the connection will fail). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_UNKNOWN:kotlin.Int` Unknown setting for domain encryption in the app. |
 
@@ -32,6 +34,7 @@ Network stacks/components should honor this policy to make it possible to centra
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getDomainEncryptionMode(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the domain encryption mode the app has chosen for the given `hostname`, including the setting for Encrypted Client Hello. |
 | open static [NetworkSecurityPolicy](https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getInstance()()` Gets the policy for this process. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCertificateTransparencyVerificationRequired(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if Certificate Transparency information is required to be verified by the client in TLS connections to `hostname`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted()()` Returns whether cleartext network traffic (e.g. HTTP, FTP, WebSockets, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for all network communication from this process. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns whether cleartext network traffic (e.g. HTTP, FTP, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for communicating with |
 

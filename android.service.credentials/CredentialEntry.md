@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CredentialEntry
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/CredentialEntry "View this page in Java") 
+| --- | --- |
 
 ```
 class CredentialEntry : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#) |
 
 A credential entry that is to be displayed on the account selector that is presented to the user.
@@ -34,6 +36,7 @@ If user selects this entry, the corresponding [PendingIntent](https://developer.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBeginGetCredentialOptionId](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getBeginGetCredentialOptionId())`()` Returns the id of the [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) for which this credential entry has been constructed. |
 | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | [getSlice](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getSlice())`()` Returns the [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) object containing UI display content to be shown for this entry. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getType())`()` Returns the specific credential type of the entry. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -95,6 +98,7 @@ Creates an entry that is associated with a [BeginGetCredentialOption](https://de
 | `beginGetCredentialOptionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the beginGetCredentialOptionId to be retrieved from [BeginGetCredentialOption.getId()](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#getId())- the request option for which this CredentialEntry is being constructed This helps maintain an association such that when the user selects this entry, providers can receive the complete corresponding [GetCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest). This value cannot be`null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the type of the credential for which this credential entry is being created This value cannot be`null`. |
 | `slice` | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#):the slice containing the metadata to be shown on the UI, must be constructed through the androidx.credentials.provider Jetpack library; If constructed manually, the`slice`object must contain the non-null properties of the androidx.credentials.provider.CredentialEntry class populated as slice items against specific hints as used in the class's`toSlice`method, since the Android System uses this library to parse the`slice`and extract the required attributes |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------|

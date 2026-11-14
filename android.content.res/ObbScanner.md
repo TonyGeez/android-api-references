@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # ObbScanner
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/res/ObbScanner "View this page in Java") 
+| --- | --- |
 
 ```
 open class ObbScanner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.ObbScanner](https://developer.android.com/reference/kotlin/android/content/res/ObbScanner#) |
 
 Class to scan Opaque Binary Blob (OBB) files. Use this to get information about an OBB file for use in a program via [ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo).

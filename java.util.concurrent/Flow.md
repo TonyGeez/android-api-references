@@ -9,6 +9,7 @@ class Flow
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.Flow](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow#) |
 
 Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) produce items consumed by one or more [Subscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber), each managed by a [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription).
@@ -109,6 +110,7 @@ The default value of [defaultBufferSize](https://developer.android.com/reference
 | abstract | [Processor](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Processor) A component that acts as both a Subscriber and Publisher. |
 | abstract | [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) A producer of items (and related control messages) received by Subscribers. |
 | abstract | [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber) A receiver of messages. |
+| --- | --- |
 | abstract | [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription) Message control linking a [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) and [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber). |
 
 | Public methods ||

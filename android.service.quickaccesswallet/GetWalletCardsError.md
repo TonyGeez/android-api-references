@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # GetWalletCardsError
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError "View this page in Java") 
+| --- | --- |
 
 ```
 class GetWalletCardsError : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.GetWalletCardsError](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsError#) |
 
 Error response for an [GetWalletCardsRequest](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest).
@@ -30,6 +32,7 @@ Error response for an [GetWalletCardsRequest](https://developer.android.com/refe
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsError#describeContents())`()` <br /> |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getIcon](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsError#getIcon())`()` An icon that may be displayed with the message to provide a visual indication of why cards could not be provided in the Quick Access Wallet. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getMessage](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsError#getMessage())`()` A localized message that may be shown to the user in the event that the wallet cards cannot be retrieved. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsError#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

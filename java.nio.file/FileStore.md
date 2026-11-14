@@ -9,6 +9,7 @@ abstract class FileStore
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#) |
 
 Storage for files. A`FileStore`represents a storage pool, device, partition, volume, concrete file system or other implementation specific means of file storage. The`FileStore`for where a file is stored is obtained by invoking the [getFileStore](https://developer.android.com/reference/kotlin/java/nio/file/Files#getFileStore(java.nio.file.Path))method, or all file stores can be enumerated by invoking the [getFileStores](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getFileStores())method.
@@ -26,12 +27,15 @@ In addition to the methods defined by this class, a file store may support one o
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getAttribute(kotlin.String))`(`attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Reads the value of a file store attribute. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBlockSize](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getBlockSize())`()` Returns the number of bytes per block in this file store. |
 | abstractV | [getFileStoreAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getFileStoreAttributeView(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>!`)` Returns a`FileStoreAttributeView`of the given type. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalSpace](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getTotalSpace())`()` Returns the size, in bytes, of the file store. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getUnallocatedSpace](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getUnallocatedSpace())`()` Returns the number of unallocated bytes in the file store. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getUsableSpace](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#getUsableSpace())`()` Returns the number of bytes available to this Java virtual machine on the file store. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#isReadOnly())`()` Tells whether this file store is read-only. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#name())`()` Returns the name of this file store. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#supportsFileAttributeView(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [FileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttributeView)!>!`)` Tells whether or not this file store supports the file attributes identified by the given file attribute view. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#supportsFileAttributeView(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tells whether or not this file store supports the file attributes identified by the given file attribute view. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [type](https://developer.android.com/reference/kotlin/java/nio/file/FileStore#type())`()` Returns the*type*of this file store. |
 

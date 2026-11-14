@@ -7,6 +7,7 @@ class AssistantQueryRequest : EgressRequest<AssistantQueryResponse!>, Parcelab
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.privatecompute.EgressRequest](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest)\< [android.app.privatecompute.AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse)\> ||
 | | ↳ | [android.app.privatecompute.AssistantQueryRequest](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#) |
 
@@ -41,6 +42,7 @@ A request will cause `https://developer.android.com/reference/kotlin/android/app
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [AssistantQueryRequest.Query](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Query) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#getQuery()()` Returns the query payload associated with this request. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

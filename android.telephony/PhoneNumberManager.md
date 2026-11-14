@@ -3,12 +3,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # PhoneNumberManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/PhoneNumberManager "View this page in Java")
+| --- | --- |
 
 ```
 open class PhoneNumberManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.PhoneNumberManager](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager#) |
 
 PhoneNumberManager provides APIs for parsing phone numbers from various sources, such as URIs.

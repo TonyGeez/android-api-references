@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # DeviceHandle
 
 Kotlin | [Java](https://developer.android.com/reference/android/ranging/oob/DeviceHandle "View this page in Java")
+| --- | --- |
 
 ```
 class DeviceHandle : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.oob.DeviceHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#) |
 
 Represents a handle to a ranging device, containing information about the device and a transport handle for out-of-band communication.
@@ -28,9 +30,11 @@ Represents a handle to a ranging device, containing information about the device
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)? | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#getBluetoothDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#` object of the device associated with this `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#`. |
 | [RangingDevice](https://developer.android.com/reference/kotlin/android/ranging/RangingDevice.html#) | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#getRangingDevice()()` Returns the ranging device associated with this handle. |
+| --- | --- |
 | [TransportHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/TransportHandle) | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#getTransportHandle()()` Returns the transport handle, if set, for communication. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # Network
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/Network "View this page in Java") 
+| --- | --- |
 
 ```
 open class Network : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.Network](https://developer.android.com/reference/kotlin/android/net/Network#) |
 
 Identifies a`Network`. This is supplied to applications via [ConnectivityManager.NetworkCallback](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback) in response to the active android.net.ConnectivityManager#requestNetwork or passive android.net.ConnectivityManager#registerNetworkCallback calls. It is used to direct traffic to the given`Network`, either on a [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) basis through a targeted [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) or process-wide via [ConnectivityManager.bindProcessToNetwork](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)).
@@ -26,18 +28,23 @@ Identifies a`Network`. This is supplied to applications via [ConnectivityManager
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` Binds the specified [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#) to this`Network`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.net.DatagramSocket))`(`socket:` ` [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#)!`)` Binds the specified [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#) to this`Network`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.net.Socket))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Binds the specified [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) to this`Network`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/Network#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/Network#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | openstatic [Network](https://developer.android.com/reference/kotlin/android/net/Network#)! | [fromNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#fromNetworkHandle(kotlin.Long))`(`networkHandle:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [Network](https://developer.android.com/reference/kotlin/android/net/Network#) object given a handle returned from [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle()). |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\>! | [getAllByName](https://developer.android.com/reference/kotlin/android/net/Network#getAllByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getAllByName`except that host resolution is done on this network. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [getByName](https://developer.android.com/reference/kotlin/android/net/Network#getByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getByName`except that host resolution is done on this network. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle())`()` Returns a handle representing this`Network`, for use with the NDK API. |
+| --- | --- |
 | open [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | [getSocketFactory](https://developer.android.com/reference/kotlin/android/net/Network#getSocketFactory())`()` Returns a [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) bound to this network. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/Network#hashCode())`()` <br /> |
 | open [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | [openConnection](https://developer.android.com/reference/kotlin/android/net/Network#openConnection(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. |
+| --- | --- |
 | open [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | [openConnection](https://developer.android.com/reference/kotlin/android/net/Network#openConnection(java.net.URL,%20java.net.Proxy))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`, `proxy:` ` [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy.html#)!`)` Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/Network#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/Network#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -262,6 +269,7 @@ Opens the specified [URL](https://developer.android.com/reference/kotlin/java/ne
 | `java.net.MalformedURLException` | if the URL protocol is not HTTP or HTTPS. |
 | `java.lang.IllegalArgumentException` | if the argument proxy is null. |
 | `java.io.IOException` | if an error occurs while opening the connection. |
+| --- | --- |
 
 **See Also**
 

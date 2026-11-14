@@ -9,9 +9,11 @@ open class DigestInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||
 | | | ↳ | [java.security.DigestInputStream](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#) |
+| --- | --- | --- | --- |
 
 A transparent stream that updates the associated message digest using the bits going through the stream.
 
@@ -32,9 +34,11 @@ Note that digest objects can compute only one digest (see [MessageDigest](https:
 | open [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest)! | [getMessageDigest](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#getMessageDigest())`()` Returns the message digest associated with this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [on](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#on(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Turns the digest function on or off. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#read())`()` Reads a byte, and updates the message digest (if the digest function is on). |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads into a byte array, and updates the message digest (if the digest function is on). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMessageDigest](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#setMessageDigest(java.security.MessageDigest))`(`digest:` ` [MessageDigest](https://developer.android.com/reference/kotlin/java/security/MessageDigest)!`)` Associates the specified message digest with this stream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/DigestInputStream#toString())`()` Prints a string representation of this digest input stream and its associated message digest object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -144,6 +148,7 @@ Reads into a byte array, and updates the message digest (if the digest function 
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the array into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the starting offset into`b`of where the data should be placed. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes to be read from the input stream into b, starting at offset`off`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -154,6 +159,7 @@ Reads into a byte array, and updates the message digest (if the digest function 
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs. |
 
 **See Also**

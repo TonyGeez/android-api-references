@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TextSnapshot
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/TextSnapshot "View this page in Java")
+| --- | --- |
 
 ```
 class TextSnapshot
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.TextSnapshot](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#) |
 
 An immutable data snapshot of text editing state.
@@ -24,9 +26,11 @@ An immutable data snapshot of text editing state.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCompositionEnd()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCompositionStart()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCursorCapsMode()()` The capitalization mode of the first character being edited in the text. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSelectionEnd()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSelectionStart()()` <br /> |
 | [SurroundingText](https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSurroundingText()()` <br /> |
+| --- | --- |
 
 ## Public constructors
 
@@ -49,6 +53,7 @@ Creates a new instance of `https://developer.android.com/reference/kotlin/androi
 | `surroundingText` | [SurroundingText](https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText): `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` of the current edit field. This value cannot be `null`. |
 | `compositionStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The start index of the composing text. `-1` if there is no composing text. Value is -1 or greater |
 | `compositionEnd` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The end index of the composing text. `-1` if there is no composing text. Value is -1 or greater |
+| --- | --- |
 | `cursorCapsMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The capitalization mode of the first character being edited in the text. See `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#initialCapsMode:kotlin.Int`. |
 
 | Exceptions ||

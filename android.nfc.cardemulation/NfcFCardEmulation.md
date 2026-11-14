@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # NfcFCardEmulation
 
 Kotlin | [Java](https://developer.android.com/reference/android/nfc/cardemulation/NfcFCardEmulation "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcFCardEmulation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.cardemulation.NfcFCardEmulation](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#) |
 
 This class can be used to query the state of NFC-F card emulation services. For a general introduction into NFC card emulation, please read the [NFC card emulation developer guide](https://developer.android.com/guide/topics/connectivity/nfc/hce.html).
@@ -26,9 +28,11 @@ Use of this class requires the [PackageManager.FEATURE_NFC_HOST_CARD_EMULATION_N
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disableService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#disableService(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#)!`)` Disables the service for the specified Activity. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#enableService(android.app.Activity,%20android.content.ComponentName))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#)!`, `service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Allows a foreground application to specify which card emulation service should be enabled while a specific Activity is in the foreground. |
 | static [NfcFCardEmulation](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#)! | [getInstance](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#getInstance(android.nfc.NfcAdapter))`(`adapter:` ` [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.html#)!`)` Helper to get an instance of this class. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNfcid2ForService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#getNfcid2ForService(android.content.ComponentName))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Retrieves the current NFCID2 for the specified service. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemCodeForService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#getSystemCodeForService(android.content.ComponentName))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Retrieves the current System Code for the specified service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerSystemCodeForService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#registerSystemCodeForService(android.content.ComponentName,%20kotlin.String))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`, `systemCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Registers a System Code for the specified service. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setNfcid2ForService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#setNfcid2ForService(android.content.ComponentName,%20kotlin.String))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`, `nfcid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set a NFCID2 for the specified service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterSystemCodeForService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/NfcFCardEmulation#unregisterSystemCodeForService(android.content.ComponentName))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Removes a registered System Code for the specified service. |
 

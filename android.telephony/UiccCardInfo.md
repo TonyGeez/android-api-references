@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # UiccCardInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/UiccCardInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class UiccCardInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.UiccCardInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#) |
 
 The UiccCardInfo represents information about a currently inserted UICC or embedded eUICC.
@@ -26,15 +28,19 @@ The UiccCardInfo represents information about a currently inserted UICC or embed
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCardId](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getCardId())`()` Get the card ID of the UICC. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEid](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getEid())`()` Get the embedded ID (EID) of the eUICC. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getIccId](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getIccId())`()` Get the ICCID of the UICC. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhysicalSlotIndex](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getPhysicalSlotIndex())`()` Gets the physical slot index for the slot that the UICC is currently inserted in. |
+| --- | --- |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [UiccPortInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo)!\> | [getPorts](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getPorts())`()` Get information regarding port, ICCID and its active status. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSlotIndex](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getSlotIndex())`()` Gets the slot index for the slot that the UICC is currently inserted in. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEuicc](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#isEuicc())`()` Return whether the UICC is an eUICC. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultipleEnabledProfilesSupported](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#isMultipleEnabledProfilesSupported())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRemovable](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#isRemovable())`()` Return whether the UICC or eUICC is removable. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

@@ -9,6 +9,7 @@ open class ECFieldFp : ECField
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.ECFieldFp](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#) |
 
 This immutable class defines an elliptic curve (EC) prime finite field.
@@ -24,6 +25,7 @@ This immutable class defines an elliptic curve (EC) prime finite field.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this prime finite field for equality with the specified object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#getFieldSize())`()` Returns the field size in bits which is size of prime p for this prime finite field. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#getP())`()` Returns the prime`p`of this prime finite field. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#hashCode())`()` Returns a hash code value for this prime finite field. |
 
 ## Public constructors

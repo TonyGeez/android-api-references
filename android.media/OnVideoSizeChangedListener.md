@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OnVideoSizeChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnVideoSizeChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnVideoSizeChangedListener
@@ -41,3 +42,4 @@ Called to indicate the video size The video size (width and height) could be 0 i
 | `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer associated with this callback |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the width of the video |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the height of the video |
+| --- | --- |

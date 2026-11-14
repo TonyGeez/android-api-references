@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TypefaceSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/TypefaceSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class TypefaceSpan : MetricAffectingSpan, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
 | | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
 | | | ↳ | [android.text.style.TypefaceSpan](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#) |
+| --- | --- | --- | --- |
 
 Span that updates the typeface of the text it's attached to. The`TypefaceSpan`can be constructed either based on a font family or based on a`Typeface`. When [TypefaceSpan(java.lang.String)](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#TypefaceSpan(kotlin.String))is used, the previous style of the`TextView`is kept. When [TypefaceSpan(android.graphics.Typeface)](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#TypefaceSpan(android.graphics.Typeface))is used, the`Typeface`style replaces the`TextView`'s style.
 
@@ -42,9 +45,11 @@ Text with`TypefaceSpan`s constructed based on a font from resource and from a fo
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFamily](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#getFamily())`()` Returns the font family name set in the span. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#getSpanTypeId())`()` <br /> |
+| --- | --- |
 | open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#)? | [getTypeface](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#getTypeface())`()` Returns the typeface set in the span. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#updateMeasureState(android.text.TextPaint))`(`paint:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/TypefaceSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

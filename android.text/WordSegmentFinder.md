@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # WordSegmentFinder
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/WordSegmentFinder "View this page in Java") 
+| --- | --- |
 
 ```
 open class WordSegmentFinder : SegmentFinder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder) ||
 | | ↳ | [android.text.WordSegmentFinder](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder#) |
 
@@ -33,6 +35,7 @@ For example, the text "Hello, World!" would be subdivided into four text segment
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextEndBoundary](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder#nextEndBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment end boundary after the specified character offset, or`DONE`if there are none. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextStartBoundary](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder#nextStartBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment start boundary after the specified character offset, or`DONE`if there are none. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousEndBoundary](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder#previousEndBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment end boundary before the specified character offset, or`DONE`if there are none. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousStartBoundary](https://developer.android.com/reference/kotlin/android/text/WordSegmentFinder#previousStartBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment start boundary before the specified character offset, or`DONE`if there are none. |
 
 ## Public constructors

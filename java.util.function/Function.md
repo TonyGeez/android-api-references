@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.Function](https://developer.android.com/reference/kotlin/java/util/function/Function#) |
 
 | Known Direct Subclasses [UnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator) |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [UnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator) | Represents an operation on a single operand that produces a result of the same type as its operand. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represents a function that accepts one argument and produces a result.
 
@@ -23,6 +24,7 @@ This is a [functional interface](https://developer.android.com/reference/kotlin/
 | open [Function](https://developer.android.com/reference/kotlin/java/util/function/Function#)\<T,V\>! | [andThen](https://developer.android.com/reference/kotlin/java/util/function/Function#andThen(java.util.function.Function))`(`after:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function#)<in` `R,` `out` `V>!`)` Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. |
 | abstractR | [apply](https://developer.android.com/reference/kotlin/java/util/function/Function#apply(java.util.function.Function.T))`(`t:` `T`)` Applies this function to the given argument. |
 | open [Function](https://developer.android.com/reference/kotlin/java/util/function/Function#)\<V,R\>! | [compose](https://developer.android.com/reference/kotlin/java/util/function/Function#compose(java.util.function.Function))`(`before:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function#)<in` `V,` `out` `T>!`)` Returns a composed function that first applies the`before`function to its input, and then applies this function to the result. |
+| --- | --- |
 | openstatic [Function](https://developer.android.com/reference/kotlin/java/util/function/Function#)\<T,T\>! | [identity](https://developer.android.com/reference/kotlin/java/util/function/Function#identity())`()` Returns a function that always returns its input argument. |
 
 ## Public methods

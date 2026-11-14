@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # StopTetheringCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/TetheringManager.StopTetheringCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface StopTetheringCallback

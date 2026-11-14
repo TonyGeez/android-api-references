@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # OnDrmInfoListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnDrmInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDrmInfoListener

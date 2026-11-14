@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PointFEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/PointFEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class PointFEvaluator : TypeEvaluator<PointF!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.PointFEvaluator](https://developer.android.com/reference/kotlin/android/animation/PointFEvaluator#) |
 
 This evaluator can be used to perform type interpolation between`PointF`values.
@@ -75,6 +77,7 @@ If [PointFEvaluator(android.graphics.PointF)](https://developer.android.com/refe
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!:The start PointF |
 | `endValue` | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)!:The end PointF |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

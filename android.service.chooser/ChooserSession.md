@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # ChooserSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/ChooserSession "View this page in Java") 
+| --- | --- |
 
 ```
 class ChooserSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserSession](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#) |
 
 A class that represents an interactive Chooser session.
@@ -28,15 +30,18 @@ A [StateListener](https://developer.android.com/reference/kotlin/android/service
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CLOSED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_CLOSED:kotlin.Int) The session is closed by either side. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INITIALIZED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_INITIALIZED:kotlin.Int) The initial state: the session is initialized but the Chooser has not yet connected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_STARTED:kotlin.Int) The chooser is connected and can be updated. |
+| --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStateListener](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#addStateListener(java.util.concurrent.Executor,%20android.service.chooser.ChooserSession.StateListener))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [ChooserSession.StateListener](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession.StateListener)`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSession](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#endSession())`()` Terminates the session and closes Chooser. |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | [getBounds](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#getBounds())`()` Gets the last bounds reported by the Chooser. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#getState())`()` <br /> |
 | [ChooserSessionToken](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSessionToken) | [getToken](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#getToken())`()` Returns this session's token. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStateListener](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#removeStateListener(android.service.chooser.ChooserSession.StateListener))`(`listener:` ` [ChooserSession.StateListener](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession.StateListener)`)` Removes a previously added UpdateListener callback. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetsEnabled](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#setTargetsEnabled(kotlin.Boolean))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the targets in the chooser UI are enabled. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateIntent](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#updateIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)`)` Updates the chooser intent in an active Chooser session, causing Chooser to refresh its state and targets. |
 

@@ -7,6 +7,7 @@ class SavedDatasetsInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.SavedDatasetsInfo](https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#) |
 
 A result returned from `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)`.
@@ -27,6 +28,7 @@ A result returned from `https://developer.android.com/reference/kotlin/android/s
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getCount()()` The number of datasets of `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()` that the user has saved to the service. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()()` The type of the datasets that this info is about. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#toString()()` Returns a string representation of the object. |
 

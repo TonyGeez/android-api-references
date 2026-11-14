@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SignalStrengthUpdateRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/SignalStrengthUpdateRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class SignalStrengthUpdateRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.SignalStrengthUpdateRequest](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#) |
 
 Request used to register [SignalThresholdInfo](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo) to be notified when the signal strength breach the specified thresholds.
@@ -30,9 +32,11 @@ Request used to register [SignalThresholdInfo](https://developer.android.com/ref
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [SignalThresholdInfo](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo)!\> | [getSignalThresholdInfos](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#getSignalThresholdInfos())`()` Get the collection of SignalThresholdInfo in the request. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReportingRequestedWhileIdle](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#isReportingRequestedWhileIdle())`()` Get whether reporting is requested for the threshold in the request while device is idle. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

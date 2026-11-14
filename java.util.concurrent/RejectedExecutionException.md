@@ -9,12 +9,15 @@ open class RejectedExecutionException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.concurrent.RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#) |
 
 | Known Direct Subclasses [InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException.html#) |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException.html#) | Thrown when an executor runs a submitted runnable inline in [java.util.concurrent.Executor#execute(Runnable)](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor#execute(java.lang.Runnable)) and [android.net.http.UrlRequest.Builder#setDirectExecutorAllowed](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder.html#setDirectExecutorAllowed(kotlin.Boolean)) was not called. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Exception thrown by an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) when a task cannot be accepted for execution.
 

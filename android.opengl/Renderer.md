@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # Renderer
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.Renderer "View this page in Java") 
+| --- | --- |
 
 ```
 interface Renderer
@@ -41,6 +42,7 @@ There are situations where the EGL rendering context will be lost. This typicall
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawFrame](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onDrawFrame(javax.microedition.khronos.opengles.GL10))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`)` Called to draw the current frame. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceChanged](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onSurfaceChanged(javax.microedition.khronos.opengles.GL10,%20kotlin.Int,%20kotlin.Int))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the surface changed size. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceCreated](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onSurfaceCreated(javax.microedition.khronos.opengles.GL10,%20javax.microedition.khronos.egl.EGLConfig))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`, `config:` ` [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html#)!`)` Called when the surface is created or recreated. |
+| --- | --- |
 
 ## Public methods
 
@@ -105,6 +107,7 @@ void onSurfaceChanged(GL10 gl, int width, int height) {
 | `gl` | [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
+| --- | --- |
 
 ### onSurfaceCreated
 

@@ -8,9 +8,11 @@ open class SlidingDrawer : ViewGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
 | | | ↳ | [android.widget.SlidingDrawer](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#) |
+| --- | --- | --- | --- |
 
 > [!CAUTION]
 > **This class was deprecated in API level 17.**
@@ -51,15 +53,18 @@ SlidingDrawer hides content out of the screen and allows the user to drag a hand
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerCloseListener` Callback invoked when the drawer is closed. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerOpenListener` Callback invoked when the drawer is opened. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerScrollListener` Callback invoked when the drawer is scrolled. |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:allowSingleTap`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Indicates whether the drawer can be opened/closed by a single tap on the handle. |
 | [`android:animateOnClick`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Indicates whether the drawer should be opened/closed with an animation when the user clicks the handle. |
 | [`android:bottomOffset`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Extra offset for the handle at the bottom of the SlidingDrawer. |
+| --- | --- |
 | [`android:content`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Identifier for the child that represents the drawer's content. |
 | [`android:handle`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Identifier for the child that represents the drawer's handle. |
 | [`android:orientation`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Orientation of the SlidingDrawer. |
+| --- | --- |
 | [`android:topOffset`](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#attr_SlidingDrawer) | Extra offset for the handle at the top of the SlidingDrawer. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -340,6 +345,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -456,6 +462,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -604,6 +611,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1774,27 +1782,34 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#animateClose()()` Closes the drawer with an animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#animateOpen()()` Opens the drawer with an animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#animateToggle()()` Toggles the drawer open and close with an animation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#close()()` Closes the drawer immediately. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#getContent()()` Returns the content of the drawer. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#getHandle()()` Returns the handle of the drawer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#isMoving()()` Indicates whether the drawer is scrolling or flinging. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#isOpened()()` Indicates whether the drawer is currently fully opened. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#lock()()` Locks the SlidingDrawer so that touch events are ignores. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#onInterceptTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to intercept all touch screen motion events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#open()()` Opens the drawer immediately. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#setOnDrawerCloseListener(android.widget.SlidingDrawer.OnDrawerCloseListener)(onDrawerCloseListener: https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerCloseListener!)` Sets the listener that receives a notification when the drawer becomes close. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#setOnDrawerOpenListener(android.widget.SlidingDrawer.OnDrawerOpenListener)(onDrawerOpenListener: https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerOpenListener!)` Sets the listener that receives a notification when the drawer becomes open. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#setOnDrawerScrollListener(android.widget.SlidingDrawer.OnDrawerScrollListener)(onDrawerScrollListener: https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerScrollListener!)` Sets the listener that receives a notification when the drawer starts or ends a scroll. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#toggle()()` Toggles the drawer open and close. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#unlock()()` Unlocks the SlidingDrawer so that touch events are processed. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#onFinishInflate()()` Finalize inflating a view from XML. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2716,6 +2731,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4574,6 +4590,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8366,6 +8383,7 @@ Creates a new SlidingDrawer from a specified set of attributes defined in XML.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The application's environment. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes defined in XML. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 
 ### SlidingDrawer
 
@@ -8386,6 +8404,7 @@ Creates a new SlidingDrawer from a specified set of attributes defined in XML.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The application's environment. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes defined in XML. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 
 ## Public methods
@@ -8766,6 +8785,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 

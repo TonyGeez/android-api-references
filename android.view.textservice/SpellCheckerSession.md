@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SpellCheckerSession
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/SpellCheckerSession "View this page in Java") 
+| --- | --- |
 
 ```
 open class SpellCheckerSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.SpellCheckerSession](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#) |
 
 The SpellCheckerSession interface provides the per client functionality of SpellCheckerService.
@@ -50,9 +52,11 @@ Here are some key points about the security architecture behind the spell checke
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#cancel())`()` Cancel pending and running spell check tasks |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#close())`()` Finish this session and allow TextServicesManagerService to disconnect the bound spell checker. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSentenceSuggestions](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSentenceSuggestions(kotlin.Array,%20kotlin.Int))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get suggestions from the specified sentences |
+| --- | --- |
 | open [SpellCheckerInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo)! | [getSpellChecker](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSpellChecker())`()` Get the spell checker service info this spell checker session has. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSuggestions(android.view.textservice.TextInfo,%20kotlin.Int))`(`textInfo:` ` [TextInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo)!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get candidate strings for a substring of the specified text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSuggestions(kotlin.Array,%20kotlin.Int,%20kotlin.Boolean))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sequentialWords:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` A batch process of getSuggestions |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSessionDisconnected](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#isSessionDisconnected())`()` <br /> |
 
 | Protected methods ||
@@ -170,6 +174,7 @@ A batch process of getSuggestions
 | `textInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TextInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextInfo)!\>!:an array of text metadata for a spell checker |
 | `suggestionsLimit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of suggestions that will be returned |
 | `sequentialWords` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if textInfos can be treated as sequential words. |
+| --- | --- |
 
 ### isSessionDisconnected
 

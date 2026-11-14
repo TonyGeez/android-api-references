@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BeginGetCredentialRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/BeginGetCredentialRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class BeginGetCredentialRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.BeginGetCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest#) |
 
 Query stage request for getting user's credentials from a given credential provider.
@@ -32,6 +34,7 @@ This request contains a list of [BeginGetCredentialOption](https://developer.and
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption)!\> | [getBeginGetCredentialOptions](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest#getBeginGetCredentialOptions())`()` Returns the list of type specific credential options to list credentials for in [BeginGetCredentialResponse](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse). |
 | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo)? | [getCallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest#getCallingAppInfo())`()` Returns info pertaining to the app requesting credentials. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

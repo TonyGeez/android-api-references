@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # InputDeviceListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface InputDeviceListener
@@ -21,6 +22,7 @@ Listens for changes in input devices.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInputDeviceAdded](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener#onInputDeviceAdded(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever an input device has been added to the system. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInputDeviceChanged](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener#onInputDeviceChanged(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever the properties of an input device have changed since they were last queried. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInputDeviceRemoved](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener#onInputDeviceRemoved(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever an input device has been removed from the system. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # InferenceOutput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceOutput "View this page in Java") 
+| --- | --- |
 
 ```
 class InferenceOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.InferenceOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#) |
 
 The result returned by [ModelManager.run](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ModelManager#run(android.adservices.ondevicepersonalization.InferenceInput,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).
@@ -26,6 +28,7 @@ The result returned by [ModelManager.run](https://developer.android.com/referenc
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#getData())`()` A byte array that holds input data. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getDataOutputs](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#getDataOutputs())`()` Note: use [InferenceOutput.getData()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#getData())instead. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput#hashCode())`()` <br /> |
 
 ## Public methods

@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # GetWalletCardsCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface GetWalletCardsCallback

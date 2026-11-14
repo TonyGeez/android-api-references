@@ -23,9 +23,11 @@ In the case of the default [provider](https://developer.android.com/reference/ko
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteDirectory](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#deleteDirectory(java.nio.file.SecureDirectoryStream.T))`(`path:` `T`)` Deletes a directory. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteFile](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#deleteFile(java.nio.file.SecureDirectoryStream.T))`(`path:` `T`)` Deletes a file. |
 | abstractV | [getFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#getFileAttributeView(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>!`)` Returns a new file attribute view to access the file attributes of this directory. |
+| --- | --- |
 | abstractV | [getFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#getFileAttributeView(java.nio.file.SecureDirectoryStream.T,%20java.lang.Class,%20java.nio.file.LinkOption))`(`path:` `T`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>!`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption)!`)` Returns a new file attribute view to access the file attributes of a file in this directory. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [move](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#move(java.nio.file.SecureDirectoryStream.T,%20java.nio.file.SecureDirectoryStream,%20java.nio.file.SecureDirectoryStream.T))`(`srcpath:` `T`, `targetdir:` ` [SecureDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#)<T>!`, `targetpath:` `T`)` Move a file from this directory to another directory. |
 | abstract [SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel.html#)! | [newByteChannel](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#newByteChannel(java.nio.file.SecureDirectoryStream.T,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))`(`path:` `T`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption)!>!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute)<*>!`)` Opens or creates a file in this directory, returning a seekable byte channel to access the file. |
+| --- | --- |
 | abstract [SecureDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#)\<T\>! | [newDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#newDirectoryStream(java.nio.file.SecureDirectoryStream.T,%20java.nio.file.LinkOption))`(`path:` `T`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption)!`)` Opens the directory identified by the given path, returning a`SecureDirectoryStream`to iterate over the entries in the directory. |
 
 | Inherited functions ||
@@ -56,6 +58,7 @@ Unlike the [delete()](https://developer.android.com/reference/kotlin/java/nio/fi
 | `java.nio.file.ClosedDirectoryStreamException` | if the directory stream is closed |
 | `java.nio.file.NoSuchFileException` | if the directory does not exist*(optional specific exception)* |
 | `java.nio.file.DirectoryNotEmptyException` | if the directory could not otherwise be deleted because it is not empty*(optional specific exception)* |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkDelete](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access to the directory |
 
@@ -80,6 +83,7 @@ Unlike the [delete()](https://developer.android.com/reference/kotlin/java/nio/fi
 | `java.nio.file.ClosedDirectoryStreamException` | if the directory stream is closed |
 | `java.nio.file.NoSuchFileException` | if the file does not exist*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkDelete](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access to the file |
 
 ### getFileAttributeView
@@ -128,6 +132,7 @@ The state of resulting file attribute view is intimately connected to this direc
 | `<V>` | The`FileAttributeView`type |
 | `path` | T:the path of the file |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<V\>!:the`Class`object corresponding to the file attribute view |
+| --- | --- |
 | `options` | [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption)!:options indicating how symbolic links are handled |
 
 | Return ||
@@ -155,12 +160,14 @@ This method works in a similar manner to [move](https://developer.android.com/re
 | `srcpath` | T:the name of the file to move |
 | `targetdir` | [SecureDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#)\<T\>!:the destination directory |
 | `targetpath` | T:the name to give the file in the destination directory |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.nio.file.ClosedDirectoryStreamException` | if this or the target directory stream is closed |
 | `java.nio.file.FileAlreadyExistsException` | if the file already exists in the target directory and cannot be replaced*(optional specific exception)* |
 | `java.nio.file.AtomicMoveNotSupportedException` | if the file cannot be moved as an atomic file system operation |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to both the source and target file. |
 
@@ -187,6 +194,7 @@ The channel, once created, is not dependent upon the directory stream used to cr
 | `path` | T:the path of the file to open or create |
 | `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption)!\>!:options specifying how the file is opened |
 | `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute)\<\*\>!:an optional list of attributes to set atomically when creating the file |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------|
@@ -197,9 +205,11 @@ The channel, once created, is not dependent upon the directory stream used to cr
 | `java.nio.file.ClosedDirectoryStreamException` | if the directory stream is closed |
 | `java.lang.IllegalArgumentException` | if the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | if an unsupported open option is specified or the array contains attributes that cannot be set atomically when creating the file |
+| --- | --- |
 | `java.nio.file.FileAlreadyExistsException` | if a file of that name already exists and the [CREATE_NEW](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption) option is specified*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the path if the file is opened for reading. The [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to the path if the file is opened for writing. |
+| --- | --- |
 
 ### newDirectoryStream
 
@@ -232,4 +242,5 @@ The new directory stream, once created, is not dependent upon the directory stre
 | `java.nio.file.ClosedDirectoryStreamException` | if the directory stream is closed |
 | `java.nio.file.NotDirectoryException` | if the file could not otherwise be opened because it is not a directory*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the directory. |

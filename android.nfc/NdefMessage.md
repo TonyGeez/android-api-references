@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # NdefMessage
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NdefMessage "View this page in Java") 
+| --- | --- |
 
 ```
 class NdefMessage : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#) |
 
 Represents an immutable NDEF Message.
@@ -44,9 +46,11 @@ Use[NdefMessage(byte[])](https://developer.android.com/reference/kotlin/android/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Message contains identical NDEF Records. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getByteArrayLength](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#getByteArrayLength())`()` Return the length of this NDEF Message if it is written to a byte array with [toByteArray](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#toByteArray()). |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord)!\>! | [getRecords](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#getRecords())`()` Get the NDEF Records inside this NDEF Message. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#hashCode())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#toByteArray())`()` Return this NDEF Message as raw bytes. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

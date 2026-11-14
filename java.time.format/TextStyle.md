@@ -7,10 +7,12 @@ class TextStyle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#)\> ||
 | | ↳ | [java.time.format.TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#) |
 
 | Known Direct Subclasses [TextStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:FULL), [TextStyle.FULL_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:FULL_STANDALONE), [TextStyle.NARROW](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:NARROW), [TextStyle.NARROW_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:NARROW_STANDALONE), [TextStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:SHORT), [TextStyle.SHORT_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:SHORT_STANDALONE) |---|---| | [TextStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:FULL) | Full text, typically the full description. | | [TextStyle.FULL_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:FULL_STANDALONE) | Full text for stand-alone use, typically the full description. | | [TextStyle.NARROW](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:NARROW) | Narrow text, typically a single letter. | | [TextStyle.NARROW_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:NARROW_STANDALONE) | Narrow text for stand-alone use, typically a single letter. | | [TextStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:SHORT) | Short text, typically an abbreviation. | | [TextStyle.SHORT_STANDALONE](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#ENUM_VALUE:SHORT_STANDALONE) | Short text for stand-alone use, typically an abbreviation. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of the style of text formatting and parsing.
 
@@ -36,6 +38,7 @@ The difference between the 'standard' and 'stand-alone' forms is trickier to des
 | [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asNormal()()` Returns the normal style with the same size. |
 | [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle#)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asStandalone()()` {@return the stand-alone style with the same size} |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#isStandalone()()` Returns true if the Style is a stand-alone style. |
+| --- | --- |
 
 ## Enum values
 

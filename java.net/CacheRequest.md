@@ -9,6 +9,7 @@ abstract class CacheRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest#) |
 
 Represents channels for storing resources in the ResponseCache. Instances of such a class provide an OutputStream object which is called by protocol handlers to store the resource data into the cache, and also an abort() method which allows a cache store operation to be interrupted and abandoned. If an IOException is encountered while reading the response or writing to the cache, the current cache store operation will be aborted.

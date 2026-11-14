@@ -1,12 +1,14 @@
 # ActionResult
 
 Kotlin | [Java](https://developer.android.com/reference/android/companion/ActionResult "View this page in Java")
+| --- | --- |
 
 ```
 class ActionResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.ActionResult](https://developer.android.com/reference/kotlin/android/companion/ActionResult#) |
 
 A result reported by a companion app in response to an `https://developer.android.com/reference/kotlin/android/companion/ActionRequest`.
@@ -22,6 +24,7 @@ A result reported by a companion app in response to an `https://developer.androi
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_ACTIVATED:kotlin.Int` A result code indicating that the requested activation was completed successfully. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_DEACTIVATED:kotlin.Int` A result code indicating that a previously active action is now inactive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_FAILED_TO_ACTIVATE:kotlin.Int` A result code indicating that the requested activation failed. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,9 +35,11 @@ A result reported by a companion app in response to an `https://developer.androi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#describeContents()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#getAction()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#getResultCode()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#hashCode()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#toString()()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/ActionResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

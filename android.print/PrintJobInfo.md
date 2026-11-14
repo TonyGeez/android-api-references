@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintJobInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/PrintJobInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class PrintJobInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#) |
 
 This class represents the description of a print job. The print job state includes properties such as its id, print attributes used for generating the content, and so on. Note that the print jobs state may change over time and this class represents a snapshot of this state.
@@ -26,9 +28,11 @@ This class represents the description of a print job. The print job state includ
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BLOCKED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_BLOCKED:kotlin.Int) Print job state: The print job is blocked. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int) Print job state: The print job is canceled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_COMPLETED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_COMPLETED:kotlin.Int) Print job state: The print job is successfully printed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CREATED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CREATED:kotlin.Int) Print job state: The print job is being created but not yet ready to be printed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int) Print job state: The print job was printing but printing failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_QUEUED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_QUEUED:kotlin.Int) Print job state: The print jobs is created, it is ready to be printed and should be processed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int) Print job state: The print job is being printed. |
 
 | Inherited constants ||
@@ -40,15 +44,19 @@ This class represents the description of a print job. The print job state includ
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvancedIntOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAdvancedIntOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAdvancedStringOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAdvancedStringOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
+| --- | --- |
 | [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes) | [getAttributes](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAttributes())`()` Gets the print job attributes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCopies](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getCopies())`()` Gets the number of copies. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getCreationTime())`()` Gets the wall time in millisecond when this print job was created. |
+| --- | --- |
 | [PrintJobId](https://developer.android.com/reference/kotlin/android/print/PrintJobId)? | [getId](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getId())`()` Gets the unique print job id. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLabel](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getLabel())`()` Gets the human readable job label. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](https://developer.android.com/reference/kotlin/android/print/PageRange)!\>? | [getPages](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getPages())`()` Gets the included pages. |
+| --- | --- |
 | [PrinterId](https://developer.android.com/reference/kotlin/android/print/PrinterId)? | [getPrinterId](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getPrinterId())`()` Gets the unique target printer id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getState())`()` Gets the current job state. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAdvancedOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#hasAdvancedOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets whether this job has a given advanced (printer specific) print option. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

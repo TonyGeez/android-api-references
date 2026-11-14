@@ -9,6 +9,7 @@ open class QName : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.namespace.QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#) |
 
 `QName`represents a**qualified name** as defined in the XML specifications: [XML Schema Part2: Datatypes specification](http://www.w3.org/TR/xmlschema-2/#QName), [Namespaces in XML](http://www.w3.org/TR/REC-xml-names/#ns-qualnames), [Namespaces in XML Errata](http://www.w3.org/XML/xml-names-19990114-errata).
@@ -34,9 +35,11 @@ If not specified, the Namespace URI is set to [XMLConstants.NULL_NS_URI](https:/
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Test this`QName`for equality with another`Object`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPart](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#getLocalPart())`()` Get the local part of this`QName`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceURI](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#getNamespaceURI())`()` Get the Namespace URI of this`QName`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#getPrefix())`()` Get the prefix of this`QName`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#hashCode())`()` Generate the hash code for this`QName`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#toString())`()` `String`representation of this`QName`. |
+| --- | --- |
 | openstatic [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#)! | [valueOf](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName#valueOf(kotlin.String))`(`qNameAsString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` `QName`derived from parsing the formatted`String`. |
 
 ## Public constructors
@@ -125,6 +128,7 @@ The Namespace URI is not validated as a [URI reference](http://www.ietf.org/rfc/
 | `namespaceURI` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Namespace URI of the`QName` |
 | `localPart` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:local part of the`QName` |
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:prefix of the`QName` |
+| --- | --- |
 
 ## Public methods
 

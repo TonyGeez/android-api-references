@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InputReader
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaParser.InputReader "View this page in Java") 
+| --- | --- |
 
 ```
 interface InputReader
@@ -13,6 +14,7 @@ interface InputReader
 | [android.media.MediaParser.InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#) |
 
 | Known Direct Subclasses [MediaParser.SeekableInputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader) |---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------| | [MediaParser.SeekableInputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader) | [InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#) that allows setting the read position. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Provides input data to [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser).
 
@@ -23,6 +25,7 @@ Provides input data to [MediaParser](https://developer.android.com/reference/kot
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#getLength())`()` Returns the length of the input in bytes, or -1 if the length is unknown. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPosition](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#getPosition())`()` Returns the current read position (byte offset) in the stream. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `readLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`readLength`bytes of data and stores them into`buffer`, starting at index`offset`. |
+| --- | --- |
 
 ## Public methods
 
@@ -67,6 +70,7 @@ This method blocks until at least one byte is read, the end of input is detected
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):The buffer into which the read data should be stored. This value cannot be`null`. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start offset into`buffer`at which data should be written. |
 | `readLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of bytes to read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|

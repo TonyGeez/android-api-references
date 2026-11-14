@@ -7,6 +7,7 @@ open class DOMSource : Source
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#) |
 
 Acts as a holder for a transformation Source tree in the form of a Document Object Model (DOM) tree.
@@ -30,6 +31,7 @@ Note that XSLT requires namespace support. Attempting to transform a DOM that wa
 | open [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#getNode()()` Get the node that represents a Source DOM tree. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#getSystemId()()` Get the base ID (URL or system ID) from where URLs will be resolved. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#setNode(org.w3c.dom.Node)(node: https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html!)` Set the node that will represents a Source DOM tree. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#setSystemId(kotlin.String)(systemID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the base ID (URL or system ID) from where URLs will be resolved. |
 
 ## Constants

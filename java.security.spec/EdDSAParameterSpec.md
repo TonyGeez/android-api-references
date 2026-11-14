@@ -9,6 +9,7 @@ open class EdDSAParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.EdDSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/EdDSAParameterSpec#) |
 
 A class used to specify EdDSA signature and verification parameters. All algorithm modes in [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032) can be specified using combinations of the settings in this class.

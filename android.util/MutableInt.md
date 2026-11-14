@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableInt
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableInt "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableInt
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableInt](https://developer.android.com/reference/kotlin/android/util/MutableInt#) |
 
 | **This class was deprecated in API level 28.**

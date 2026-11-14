@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # UiModeManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/UiModeManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class UiModeManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.UiModeManager](https://developer.android.com/reference/kotlin/android/app/UiModeManager#) |
 
 This class provides access to the system uimode services. These services allow applications to control UI modes of the device. It provides functionality to disable the car mode and it gives access to the night mode settings.
@@ -30,9 +32,11 @@ In addition, the user may manually switch the system to car mode without physica
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLE_CAR_MODE_GO_HOME](https://developer.android.com/reference/kotlin/android/app/UiModeManager#DISABLE_CAR_MODE_GO_HOME:kotlin.Int) Flag for use with [disableCarMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#disableCarMode(kotlin.Int)): go to the normal home activity as part of the disable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENABLE_CAR_MODE_ALLOW_SLEEP](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ENABLE_CAR_MODE_ALLOW_SLEEP:kotlin.Int) Flag for use with [enableCarMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#enableCarMode(kotlin.Int)): allow sleep mode while in car mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENABLE_CAR_MODE_GO_CAR_HOME](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ENABLE_CAR_MODE_GO_CAR_HOME:kotlin.Int) Flag for use with [enableCarMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#enableCarMode(kotlin.Int)): go to the car home activity as part of the enable. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NIGHT_AUTO](https://developer.android.com/reference/kotlin/android/app/UiModeManager#MODE_NIGHT_AUTO:kotlin.Int) Constant for [setNightMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setNightMode(kotlin.Int))and [getNightMode()](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getNightMode()): automatically switch night mode on and off based on the time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NIGHT_CUSTOM](https://developer.android.com/reference/kotlin/android/app/UiModeManager#MODE_NIGHT_CUSTOM:kotlin.Int) Constant for [setNightMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setNightMode(kotlin.Int))and [getNightMode()](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getNightMode()): automatically switch night mode on and off based on the time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NIGHT_NO](https://developer.android.com/reference/kotlin/android/app/UiModeManager#MODE_NIGHT_NO:kotlin.Int) Constant for [setNightMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setNightMode(kotlin.Int))and [getNightMode()](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getNightMode()): never run in night mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NIGHT_YES](https://developer.android.com/reference/kotlin/android/app/UiModeManager#MODE_NIGHT_YES:kotlin.Int) Constant for [setNightMode(int)](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setNightMode(kotlin.Int))and [getNightMode()](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getNightMode()): always run in night mode. |
 
 | Public methods ||
@@ -40,15 +44,19 @@ In addition, the user may manually switch the system to car mode without physica
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager#addContrastChangeListener(java.util.concurrent.Executor,%20android.app.UiModeManager.ContrastChangeListener))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [UiModeManager.ContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager.ContrastChangeListener)`)` Registers a [ContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager.ContrastChangeListener) for the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disableCarMode](https://developer.android.com/reference/kotlin/android/app/UiModeManager#disableCarMode(kotlin.Int))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Turn off special mode if currently in car mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableCarMode](https://developer.android.com/reference/kotlin/android/app/UiModeManager#enableCarMode(kotlin.Int))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Force device into car mode, like it had been placed in the car dock. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getContrast](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getContrast())`()` Returns the color contrast for the user. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentModeType](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getCurrentModeType())`()` Return the current running mode type. |
 | open [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#) | [getCustomNightModeEnd](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getCustomNightModeEnd())`()` Returns the time of the day Dark theme deactivates |
+| --- | --- |
 | open [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#) | [getCustomNightModeStart](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getCustomNightModeStart())`()` Returns the time of the day Dark theme activates |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNightMode](https://developer.android.com/reference/kotlin/android/app/UiModeManager#getNightMode())`()` Returns the currently configured night mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager#removeContrastChangeListener(android.app.UiModeManager.ContrastChangeListener))`(`listener:` ` [UiModeManager.ContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager.ContrastChangeListener)`)` Unregisters a [ContrastChangeListener](https://developer.android.com/reference/kotlin/android/app/UiModeManager.ContrastChangeListener) for the user. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplicationNightMode](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setApplicationNightMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets and persist the night mode for this application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCustomNightModeEnd](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setCustomNightModeEnd(java.time.LocalTime))`(`time:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)`)` Sets the time of the day Dark theme deactivates |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCustomNightModeStart](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setCustomNightModeStart(java.time.LocalTime))`(`time:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)`)` Sets the time of the day Dark theme activates |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNightMode](https://developer.android.com/reference/kotlin/android/app/UiModeManager#setNightMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the system-wide night mode. |
 
 | Properties ||
@@ -56,6 +64,7 @@ In addition, the user may manually switch the system to car mode without physica
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [ACTION_ENTER_CAR_MODE](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ACTION_ENTER_CAR_MODE:kotlin.String) Broadcast sent when the device's UI has switched to car mode, either by being placed in a car dock or explicit action of the user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [ACTION_ENTER_DESK_MODE](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ACTION_ENTER_DESK_MODE:kotlin.String) Broadcast sent when the device's UI has switched to desk mode, by being placed in a desk dock. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [ACTION_EXIT_CAR_MODE](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ACTION_EXIT_CAR_MODE:kotlin.String) Broadcast sent when the device's UI has switch away from car mode back to normal mode. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [ACTION_EXIT_DESK_MODE](https://developer.android.com/reference/kotlin/android/app/UiModeManager#ACTION_EXIT_DESK_MODE:kotlin.String) Broadcast sent when the device's UI has switched away from desk mode back to normal mode. |
 
 ## Constants

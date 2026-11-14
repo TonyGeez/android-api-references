@@ -3,12 +3,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # Account
 
 Kotlin | [Java](https://developer.android.com/reference/android/accounts/Account "View this page in Java")
+| --- | --- |
 
 ```
 open class Account : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accounts.Account](https://developer.android.com/reference/kotlin/android/accounts/Account#) |
 
 Value type that represents an Account in the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager`. This object is `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` and also overrides `https://developer.android.com/reference/kotlin/android/accounts/Account#equals(kotlin.Any)` and `https://developer.android.com/reference/kotlin/android/accounts/Account#hashCode()`, making it suitable for use as the key of a `https://developer.android.com/reference/kotlin/java/util/Map.html#`
@@ -29,6 +31,7 @@ Value type that represents an Account in the `https://developer.android.com/refe
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -37,6 +40,7 @@ Value type that represents an Account in the `https://developer.android.com/refe
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Account](https://developer.android.com/reference/kotlin/android/accounts/Account#)!\> | `https://developer.android.com/reference/kotlin/android/accounts/Account#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#name:kotlin.String` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#type:kotlin.String` <br /> |
+| --- | --- |
 
 ## Public constructors
 

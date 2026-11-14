@@ -9,6 +9,7 @@ class StandardConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.StandardConstants](https://developer.android.com/reference/kotlin/javax/net/ssl/StandardConstants#) |
 
 Standard constants definitions

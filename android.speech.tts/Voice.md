@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # Voice
 
 Kotlin | [Java](https://developer.android.com/reference/android/speech/tts/Voice "View this page in Java")
+| --- | --- |
 
 ```
 open class Voice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.speech.tts.Voice](https://developer.android.com/reference/kotlin/android/speech/tts/Voice#) |
 
 Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expose multiple voices for each locale, with different set of features.
@@ -20,12 +22,15 @@ Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expo
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#LATENCY_HIGH:kotlin.Int` Network based expected synthesizer latency (\~200ms) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#LATENCY_LOW:kotlin.Int` Low expected synthesizer latency (\~20ms) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#LATENCY_NORMAL:kotlin.Int` Normal expected synthesizer latency (\~50ms) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#LATENCY_VERY_HIGH:kotlin.Int` Very slow network based expected synthesizer latency (\> 200ms) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#LATENCY_VERY_LOW:kotlin.Int` Very low expected synthesizer latency (\< 20ms) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#QUALITY_HIGH:kotlin.Int` High, human-like quality of speech synthesis |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#QUALITY_LOW:kotlin.Int` Low, not human-like quality of speech synthesis |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#QUALITY_NORMAL:kotlin.Int` Normal quality of speech synthesis |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#QUALITY_VERY_HIGH:kotlin.Int` Very high, almost human-indistinguishable quality of speech synthesis |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#QUALITY_VERY_LOW:kotlin.Int` Very low, but still intelligible quality of speech synthesis |
 
 | Inherited constants ||
@@ -41,12 +46,15 @@ Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expo
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getFeatures()()` Returns the set of features it supports for a given voice. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getLatency()()` <br /> |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getLocale()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getName()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getQuality()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#hashCode()()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#isNetworkConnectionRequired()()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

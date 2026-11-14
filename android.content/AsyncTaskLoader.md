@@ -4,16 +4,19 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # AsyncTaskLoader
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/AsyncTaskLoader "View this page in Java")
+| --- | --- |
 
 ```
 abstract class AsyncTaskLoader<D : Any!> : Loader<D>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.Loader](https://developer.android.com/reference/kotlin/android/content/Loader)\<D\> ||
 | | ↳ | [android.content.AsyncTaskLoader](https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#) |
 
 | Known Direct Subclasses [CursorLoader](https://developer.android.com/reference/kotlin/android/content/CursorLoader) |---|---| | [CursorLoader](https://developer.android.com/reference/kotlin/android/content/CursorLoader) | A loader that queries the `https://developer.android.com/reference/kotlin/android/content/ContentResolver` and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
 |
@@ -36,15 +39,18 @@ An example implementation of a fragment that uses the above loader to show the c
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#cancelLoadInBackground()()` Called on the main thread to abort a load in progress. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, writer: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Print the Loader's state into the given stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#isLoadInBackgroundCanceled()()` Returns true if the current invocation of `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#loadInBackground()` is being canceled. |
+| --- | --- |
 | abstract D | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#loadInBackground()()` Called on a worker thread to perform the actual load and to return the result of the load operation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#onCanceled(android.content.AsyncTaskLoader.D)(data: D)` Called if the task was canceled before it was completed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#setUpdateThrottle(kotlin.Long)(delayMS: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set amount to throttle updates by. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#onCancelLoad()()` Subclasses must implement this to take care of requests to `https://developer.android.com/reference/kotlin/android/content/Loader#cancelLoad()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#onForceLoad()()` Subclasses must implement this to take care of requests to `https://developer.android.com/reference/kotlin/android/content/Loader#forceLoad()`. |
 | open D | `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#onLoadInBackground()()` Calls `https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader#loadInBackground()`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -100,6 +106,7 @@ Print the Loader's state into the given stream.
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Text to print at the front of each line. |
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: A PrintWriter to which the dump is to be set. |
+| --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Additional arguments to the dump request. |
 
 ### isLoadInBackgroundCanceled

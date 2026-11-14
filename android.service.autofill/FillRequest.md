@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FillRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class FillRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#) |
 
 This class represents a request to an autofill service to interpret the screen and provide information to the system which views are interesting for saving and what are the possible ways to fill the inputs on the screen if applicable.
@@ -22,6 +24,7 @@ This class represents a request to an autofill service to interpret the screen a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_COMPATIBILITY_MODE_REQUEST](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#FLAG_COMPATIBILITY_MODE_REQUEST:kotlin.Int) Indicates this request was made using [compatibility mode](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#CompatibilityMode). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_MANUAL_REQUEST](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#FLAG_MANUAL_REQUEST:kotlin.Int) Indicates autofill was explicitly requested by the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SUPPORTS_FILL_DIALOG](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#FLAG_SUPPORTS_FILL_DIALOG:kotlin.Int) Indicates the request supports fill dialog presentation for the fields, the system will send the request when the activity just started. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,12 +35,15 @@ This class represents a request to an autofill service to interpret the screen a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getClientState](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getClientState())`()` Gets the latest client state bundle set by the service in a [fill response](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setClientState(android.os.Bundle)). |
 | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)? | [getDelayedFillIntentSender](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getDelayedFillIntentSender())`()` Gets the [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#) to send a delayed fill response. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FillContext](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext)!\> | [getFillContexts](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getFillContexts())`()` Gets the contexts associated with each previous fill request. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getFlags())`()` Gets the flags associated with this request. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getHints](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getHints())`()` Sends a list of datatypes for the Autofill Provider. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getId())`()` Gets the unique id of this request. |
 | [InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.html#)? | [getInlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#getInlineSuggestionsRequest())`()` Gets the [InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.html#) associated with this request. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

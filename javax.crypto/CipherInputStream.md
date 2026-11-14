@@ -9,9 +9,11 @@ open class CipherInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||
 | | | ↳ | [javax.crypto.CipherInputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#) |
+| --- | --- | --- | --- |
 
 A CipherInputStream is composed of an InputStream and a Cipher so that read() methods return data that are read in from the underlying InputStream but have been additionally processed by the Cipher. The Cipher must be fully initialized before being used by a CipherInputStream.
 
@@ -36,9 +38,11 @@ It is crucial for a programmer using this class not to use methods that are not 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#available())`()` Returns the number of bytes that can be read from this input stream without blocking. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#close())`()` Closes this input stream and releases any system resources associated with the stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#markSupported())`()` Tests if this input stream supports the`mark`and`reset`methods, which it does not. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#read())`()` Reads the next byte of data from this input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#read(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads up to`b.length`bytes of data from this input stream into an array of bytes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from this input stream into an array of bytes. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/javax/crypto/CipherInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips`n`bytes of input from the bytes that can be read from this input stream without blocking. |
 
 | Inherited functions ||
@@ -125,6 +129,7 @@ The`close`method of`CipherInputStream`calls the`close`method of its underlying i
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### markSupported
 
@@ -191,6 +196,7 @@ The`read`method of`InputStream`calls the`read`method of three arguments with the
 | `java.io.IOException` | If the first byte cannot be read for any reason other than the end of the file, if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | if`b`is`null`. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 **See Also**
 
@@ -215,6 +221,7 @@ Reads up to`len`bytes of data from this input stream into an array of bytes. Thi
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`buf` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -225,6 +232,7 @@ Reads up to`len`bytes of data from this input stream into an array of bytes. Thi
 | `java.io.IOException` | If the first byte cannot be read for any reason other than end of file, or if the input stream has been closed, or if some other I/O error occurs. |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.io.IOException` | if an I/O error occurs. |
 
 **See Also**

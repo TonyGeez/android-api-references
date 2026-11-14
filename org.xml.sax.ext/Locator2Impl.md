@@ -9,6 +9,7 @@ open class Locator2Impl : LocatorImpl, Locator2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [org.xml.sax.helpers.LocatorImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl.html#) ||
 | | ↳ | [org.xml.sax.ext.Locator2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl#) |
 
@@ -28,6 +29,7 @@ This is not part of core-only SAX2 distributions.
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl#getEncoding())`()` Returns the current value of the encoding property. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getXMLVersion](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl#getXMLVersion())`()` Returns the current value of the version property. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl#setEncoding(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the encoding property. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXMLVersion](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl#setXMLVersion(kotlin.String))`(`version:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the version property. |
 
 | Inherited functions ||

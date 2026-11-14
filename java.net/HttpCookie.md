@@ -9,6 +9,7 @@ class HttpCookie : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie#) |
 
 An HttpCookie object represents an HTTP cookie, which carries state information between server and user agent. Cookie is widely adopted to create stateful sessions.
@@ -31,33 +32,43 @@ HttpCookie class can accept all these 3 forms of syntax.
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/net/HttpCookie#clone())`()` Create and return a copy of this object. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [domainMatches](https://developer.android.com/reference/kotlin/java/net/HttpCookie#domainMatches(kotlin.String,%20kotlin.String))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The utility method to check whether a host name is in a domain or not. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/HttpCookie#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Test the equality of two HTTP cookies. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getComment())`()` Returns the comment describing the purpose of this cookie, or`null`if the cookie has no comment. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCommentURL](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getCommentURL())`()` Returns the comment URL describing the purpose of this cookie, or`null`if the cookie has no comment URL. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDiscard](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getDiscard())`()` Returns the discard attribute of the cookie |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDomain](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getDomain())`()` Returns the domain name set for this cookie. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaxAge](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getMaxAge())`()` Returns the maximum age of the cookie, specified in seconds. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getName())`()` Returns the name of the cookie. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPath](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getPath())`()` Returns the path on the server to which the browser returns this cookie. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPortlist](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getPortlist())`()` Returns the port list attribute of the cookie |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSecure](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getSecure())`()` Returns`true`if sending this cookie should be restricted to a secure protocol, or`false`if the it can be sent using any protocol. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getValue())`()` Returns the value of the cookie. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/java/net/HttpCookie#getVersion())`()` Returns the version of the protocol this cookie complies with. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExpired](https://developer.android.com/reference/kotlin/java/net/HttpCookie#hasExpired())`()` Reports whether this HTTP cookie has expired or not. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/HttpCookie#hashCode())`()` Returns the hash code of this HTTP cookie. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHttpOnly](https://developer.android.com/reference/kotlin/java/net/HttpCookie#isHttpOnly())`()` Returns`true`if this cookie contains the*HttpOnly*attribute. |
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie#)!\>! | [parse](https://developer.android.com/reference/kotlin/java/net/HttpCookie#parse(kotlin.String))`(`header:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs cookies from set-cookie or set-cookie2 header string. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setComment(kotlin.String))`(`purpose:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a comment that describes a cookie's purpose. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCommentURL](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setCommentURL(kotlin.String))`(`purpose:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a comment URL that describes a cookie's purpose. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDiscard](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setDiscard(kotlin.Boolean))`(`discard:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether user agent should discard the cookie unconditionally. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDomain](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setDomain(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies the domain within which this cookie should be presented. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpOnly](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setHttpOnly(kotlin.Boolean))`(`httpOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the cookie should be considered HTTP Only. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxAge](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setMaxAge(kotlin.Long))`(`expiry:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the maximum age of the cookie in seconds. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPath](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setPath(kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a path for the cookie to which the client should return the cookie. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPortlist](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setPortlist(kotlin.String))`(`ports:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specify the portlist of the cookie, which restricts the port(s) to which a cookie may be sent back in a Cookie header. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSecure](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setSecure(kotlin.Boolean))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the cookie should only be sent using a secure protocol, such as HTTPS or SSL. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValue](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setValue(kotlin.String))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns a new value to a cookie after the cookie is created. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVersion](https://developer.android.com/reference/kotlin/java/net/HttpCookie#setVersion(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the version of the cookie protocol this cookie complies with. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/HttpCookie#toString())`()` Constructs a cookie header string representation of this cookie, which is in the format defined by corresponding cookie specification, but without the leading "Cookie:" token. |
+| --- | --- |
 
 ## Public constructors
 

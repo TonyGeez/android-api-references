@@ -9,6 +9,7 @@ open class Logger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.logging.Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) |
 
 A Logger object is used to log messages for a specific system or application component. Loggers are normally named, using a hierarchical dot-separated namespace. Logger names can be arbitrary strings, but they should normally be based on the package name or class name of the logged component, such as java.net or javax.swing. In addition it is possible to create "anonymous" Loggers that are not stored in the Logger namespace.
@@ -92,63 +93,83 @@ All methods on Logger are multi-thread safe.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addHandler](https://developer.android.com/reference/kotlin/java/util/logging/Logger#addHandler(java.util.logging.Handler))`(`handler:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)`)` Add a log Handler to receive logging messages. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [config](https://developer.android.com/reference/kotlin/java/util/logging/Logger#config(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a CONFIG message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [config](https://developer.android.com/reference/kotlin/java/util/logging/Logger#config(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a CONFIG message, which is only to be constructed if the logging level is such that the message will actually be logged. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [entering](https://developer.android.com/reference/kotlin/java/util/logging/Logger#entering(kotlin.String,%20kotlin.String))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a method entry. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [entering](https://developer.android.com/reference/kotlin/java/util/logging/Logger#entering(kotlin.String,%20kotlin.String,%20kotlin.Any))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `param1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Log a method entry, with one parameter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [entering](https://developer.android.com/reference/kotlin/java/util/logging/Logger#entering(kotlin.String,%20kotlin.String,%20kotlin.Array))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `params:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>?`)` Log a method entry, with an array of parameters. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exiting](https://developer.android.com/reference/kotlin/java/util/logging/Logger#exiting(kotlin.String,%20kotlin.String))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a method return. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exiting](https://developer.android.com/reference/kotlin/java/util/logging/Logger#exiting(kotlin.String,%20kotlin.String,%20kotlin.Any))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `result:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Log a method return, with result object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fine](https://developer.android.com/reference/kotlin/java/util/logging/Logger#fine(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a FINE message. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fine](https://developer.android.com/reference/kotlin/java/util/logging/Logger#fine(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a FINE message, which is only to be constructed if the logging level is such that the message will actually be logged. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finer](https://developer.android.com/reference/kotlin/java/util/logging/Logger#finer(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a FINER message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finer](https://developer.android.com/reference/kotlin/java/util/logging/Logger#finer(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a FINER message, which is only to be constructed if the logging level is such that the message will actually be logged. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finest](https://developer.android.com/reference/kotlin/java/util/logging/Logger#finest(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a FINEST message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finest](https://developer.android.com/reference/kotlin/java/util/logging/Logger#finest(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a FINEST message, which is only to be constructed if the logging level is such that the message will actually be logged. |
 | openstatic [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) | [getAnonymousLogger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getAnonymousLogger())`()` Create an anonymous Logger. |
+| --- | --- |
 | openstatic [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) | [getAnonymousLogger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getAnonymousLogger(kotlin.String))`(`resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create an anonymous Logger. |
 | open [Filter](https://developer.android.com/reference/kotlin/java/util/logging/Filter)? | [getFilter](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getFilter())`()` Get the current filter for this Logger. |
 | static [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) | [getGlobal](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getGlobal())`()` Return global logger object with the name Logger. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!\> | [getHandlers](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getHandlers())`()` Get the Handlers associated with this logger. |
 | open [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)? | [getLevel](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getLevel())`()` Get the log Level that has been specified for this Logger. |
 | openstatic [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) | [getLogger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getLogger(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Find or create a logger for a named subsystem. |
+| --- | --- |
 | openstatic [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#) | [getLogger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getLogger(kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Find or create a logger for a named subsystem. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getName())`()` Get the name for this logger. |
 | open [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#)? | [getParent](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getParent())`()` Return the parent for this Logger. |
+| --- | --- |
 | open [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)? | [getResourceBundle](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getResourceBundle())`()` Retrieve the localization resource bundle for this logger. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResourceBundleName](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getResourceBundleName())`()` Retrieve the localization resource bundle name for this logger. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseParentHandlers](https://developer.android.com/reference/kotlin/java/util/logging/Logger#getUseParentHandlers())`()` Discover whether or not this logger is sending its output to its parent logger. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [info](https://developer.android.com/reference/kotlin/java/util/logging/Logger#info(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log an INFO message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [info](https://developer.android.com/reference/kotlin/java/util/logging/Logger#info(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a INFO message, which is only to be constructed if the logging level is such that the message will actually be logged. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/java/util/logging/Logger#isLoggable(java.util.logging.Level))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`)` Check if a message of the given level would actually be logged by this logger. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20kotlin.String))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a message, with no arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20kotlin.String,%20kotlin.Any))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `param1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Log a message, with one object parameter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20kotlin.String,%20kotlin.Array))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `params:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>?`)` Log a message, with an array of object arguments. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20kotlin.String,%20kotlin.Throwable))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Log a message, with associated Throwable information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20kotlin.Throwable,%20java.util.function.Supplier))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`, `msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a lazily constructed message, with associated Throwable information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.Level,%20java.util.function.Supplier))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a message, which is only to be constructed if the logging level is such that the message will actually be logged. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [log](https://developer.android.com/reference/kotlin/java/util/logging/Logger#log(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)`)` Log a LogRecord. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a message, specifying source class and method, with no arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Any))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `param1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Log a message, specifying source class and method, with a single object parameter to the log message. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Array))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `params:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>?`)` Log a message, specifying source class and method, with an array of object arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Log a message, specifying source class and method, with associated Throwable information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.Throwable,%20java.util.function.Supplier))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`, `msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a lazily constructed message, specifying source class and method, with associated Throwable information. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logp](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logp(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a lazily constructed message, specifying source class and method, with no arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a message, specifying source class, method, and resource bundle name with no arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Any))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `param1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Log a message, specifying source class, method, and resource bundle name, with a single object parameter to the log message. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Array))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `params:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>?`)` Log a message, specifying source class, method, and resource bundle name, with an array of object arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Log a message, specifying source class, method, and resource bundle name, with associated Throwable information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20java.util.ResourceBundle,%20kotlin.String,%20kotlin.Any))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundle:` ` [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `vararg` `params:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Log a message, specifying source class, method, and resource bundle, with an optional list of message parameters. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logrb](https://developer.android.com/reference/kotlin/java/util/logging/Logger#logrb(java.util.logging.Level,%20kotlin.String,%20kotlin.String,%20java.util.ResourceBundle,%20kotlin.String,%20kotlin.Throwable))`(`level:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)`, `sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `bundle:` ` [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Log a message, specifying source class, method, and resource bundle, with associated Throwable information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeHandler](https://developer.android.com/reference/kotlin/java/util/logging/Logger#removeHandler(java.util.logging.Handler))`(`handler:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)?`)` Remove a log Handler. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](https://developer.android.com/reference/kotlin/java/util/logging/Logger#setFilter(java.util.logging.Filter))`(`newFilter:` ` [Filter](https://developer.android.com/reference/kotlin/java/util/logging/Filter)?`)` Set a filter to control output on this Logger. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](https://developer.android.com/reference/kotlin/java/util/logging/Logger#setLevel(java.util.logging.Level))`(`newLevel:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)?`)` Set the log level specifying which message levels will be logged by this logger. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParent](https://developer.android.com/reference/kotlin/java/util/logging/Logger#setParent(java.util.logging.Logger))`(`parent:` ` [Logger](https://developer.android.com/reference/kotlin/java/util/logging/Logger#)`)` Set the parent for this Logger. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceBundle](https://developer.android.com/reference/kotlin/java/util/logging/Logger#setResourceBundle(java.util.ResourceBundle))`(`bundle:` ` [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)`)` Sets a resource bundle on this logger. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseParentHandlers](https://developer.android.com/reference/kotlin/java/util/logging/Logger#setUseParentHandlers(kotlin.Boolean))`(`useParentHandlers:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether or not this logger should send its output to its parent Logger. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [severe](https://developer.android.com/reference/kotlin/java/util/logging/Logger#severe(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a SEVERE message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [severe](https://developer.android.com/reference/kotlin/java/util/logging/Logger#severe(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a SEVERE message, which is only to be constructed if the logging level is such that the message will actually be logged. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [throwing](https://developer.android.com/reference/kotlin/java/util/logging/Logger#throwing(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`sourceClass:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `sourceMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `thrown:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Log throwing an exception. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](https://developer.android.com/reference/kotlin/java/util/logging/Logger#warning(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Log a WARNING message. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](https://developer.android.com/reference/kotlin/java/util/logging/Logger#warning(java.util.function.Supplier))`(`msgSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Log a WARNING message, which is only to be constructed if the logging level is such that the message will actually be logged. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -296,6 +317,7 @@ This is a convenience method that can be used to log entry to a method. A LogRec
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that is being entered |
 | `param1` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?:parameter to the method being entered |
+| --- | --- |
 
 ### entering
 
@@ -320,6 +342,7 @@ This is a convenience method that can be used to log entry to a method. A LogRec
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that is being entered |
 | `params` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>?:array of parameters to the method being entered |
+| --- | --- |
 
 ### exiting
 
@@ -366,6 +389,7 @@ This is a convenience method that can be used to log returning from a method. A 
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of the method |
 | `result` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?:Object that is being returned |
+| --- | --- |
 
 ### fine
 
@@ -642,6 +666,7 @@ If the named Logger already exists and does not yet have a localization resource
 | `java.util.MissingResourceException` | if the resourceBundleName is non-null and no corresponding resource can be found. |
 | `java.lang.IllegalArgumentException` | if the Logger already exists and uses a different resource bundle name; or if`resourceBundleName`is`null`but the named logger has a resource bundle set. |
 | `java.lang.NullPointerException` | if the name is null. |
+| --- | --- |
 
 ### getName
 
@@ -818,6 +843,7 @@ If the logger is currently enabled for the given message level then a correspond
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `param1` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?:parameter to the message |
+| --- | --- |
 
 ### log
 
@@ -842,6 +868,7 @@ If the logger is currently enabled for the given message level then a correspond
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `params` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>?:array of parameters to the message |
+| --- | --- |
 
 ### log
 
@@ -868,6 +895,7 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with log message. |
+| --- | --- |
 
 ### log
 
@@ -894,6 +922,7 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with log message. |
 | `msgSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:A function, which when called, produces the desired log message |
+| --- | --- |
 
 ### log
 
@@ -957,6 +986,7 @@ If the logger is currently enabled for the given message level then the given me
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 
 ### logp
@@ -984,6 +1014,7 @@ If the logger is currently enabled for the given message level then a correspond
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `param1` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?:Parameter to the log message. |
 
@@ -1012,6 +1043,7 @@ If the logger is currently enabled for the given message level then a correspond
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `params` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>?:Array of parameters to the message |
 
@@ -1042,6 +1074,7 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with log message. |
 
@@ -1072,6 +1105,7 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with log message. |
 | `msgSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:A function, which when called, produces the desired log message |
 
@@ -1099,6 +1133,7 @@ If the logger is currently enabled for the given message level then the message 
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `msgSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:A function, which when called, produces the desired log message |
 
 ### logrb
@@ -1131,6 +1166,7 @@ The msg string is localized using the named resource bundle. If the resource bun
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `bundleName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of resource bundle to localize msg, can be null |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 
@@ -1165,9 +1201,11 @@ The msg string is localized using the named resource bundle. If the resource bun
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `bundleName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of resource bundle to localize msg, can be null |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `param1` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?:Parameter to the log message. |
+| --- | --- |
 
 ### logrb
 
@@ -1200,9 +1238,11 @@ The msg string is localized using the named resource bundle. If the resource bun
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `bundleName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of resource bundle to localize msg, can be null. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `params` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>?:Array of parameters to the message |
+| --- | --- |
 
 ### logrb
 
@@ -1237,9 +1277,11 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of method that issued the logging request |
+| --- | --- |
 | `bundleName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of resource bundle to localize msg, can be null |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with log message. |
+| --- | --- |
 
 ### logrb
 
@@ -1269,9 +1311,11 @@ The`msg`string is localized using the given resource bundle. If the resource bun
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of the class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of the method that issued the logging request |
+| --- | --- |
 | `bundle` | [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)?:Resource bundle to localize`msg`, can be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `params` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:Parameters to the message (optional, may be none). |
+| --- | --- |
 
 ### logrb
 
@@ -1303,9 +1347,11 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `level` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level):One of the message level identifiers, e.g., SEVERE |
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of the class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of the method that issued the logging request |
+| --- | --- |
 | `bundle` | [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#)?:Resource bundle to localize`msg`, can be`null` |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The string message (or a key in the message catalog) |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:Throwable associated with the log message. |
+| --- | --- |
 
 ### removeHandler
 
@@ -1408,6 +1454,7 @@ Sets a resource bundle on this logger. All messages will be logged using the giv
 | `java.lang.NullPointerException` | if the given bundle is`null`. |
 | `java.lang.IllegalArgumentException` | if the given bundle doesn't have a [base name](https://developer.android.com/reference/kotlin/java/util/ResourceBundle.html#getBaseBundleName()), or if this logger already has a resource bundle set but the given bundle has a different base name. |
 | `java.lang.SecurityException` | if a security manager exists, this logger is not anonymous, and the caller does not have LoggingPermission("control"). |
+| --- | --- |
 
 ### setUseParentHandlers
 
@@ -1490,6 +1537,7 @@ Note that the thrown argument is stored in the LogRecord thrown property, rather
 | `sourceClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of class that issued the logging request |
 | `sourceMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:name of the method. |
 | `thrown` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:The Throwable that is being thrown. |
+| --- | --- |
 
 ### warning
 

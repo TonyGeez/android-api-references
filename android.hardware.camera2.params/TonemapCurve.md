@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TonemapCurve
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/TonemapCurve "View this page in Java") 
+| --- | --- |
 
 ```
 class TonemapCurve
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.TonemapCurve](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#) |
 
 Immutable class for describing a`2 x M x 3`tonemap curve of floats.
@@ -30,9 +32,11 @@ The coordinate system for each point is within the inclusive range \[{@value #LE
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_BLUE](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#CHANNEL_BLUE:kotlin.Int) Index of the blue color channel curve. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_GREEN](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#CHANNEL_GREEN:kotlin.Int) Index of the green color channel curve. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_RED](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#CHANNEL_RED:kotlin.Int) Index of the red color channel curve. |
+| --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LEVEL_BLACK](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#LEVEL_BLACK:kotlin.Float) Lower bound tonemap value corresponding to pure black for a single color channel. |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LEVEL_WHITE](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#LEVEL_WHITE:kotlin.Float) Upper bound tonemap value corresponding to a pure white for a single color channel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POINT_SIZE](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#POINT_SIZE:kotlin.Int) Number of elements in a`(Pin, Pout)`point; |
+| --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -43,9 +47,11 @@ The coordinate system for each point is within the inclusive range \[{@value #LE
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyColorCurve](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#copyColorCurve(kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destination:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy the color curve for a single color channel from this tonemap curve into the destination. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this TonemapCurve is equal to another TonemapCurve. |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#)! | [getPoint](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#getPoint(kotlin.Int,%20kotlin.Int))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the point for a color channel at a specified index. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPointCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#getPointCount(kotlin.Int))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the number of points stored in this tonemap curve for the specified color channel. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/TonemapCurve#toString())`()` Return the TonemapCurve as a string representation. |
+| --- | --- |
 
 ## Constants
 
@@ -149,6 +155,7 @@ This constructor copies the array contents and does not retain ownership of the 
 | `red` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:An array of elements whose length is divisible by {@value #POINT_SIZE} |
 | `green` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:An array of elements whose length is divisible by {@value #POINT_SIZE} |
 | `blue` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:An array of elements whose length is divisible by {@value #POINT_SIZE} |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -185,6 +192,7 @@ All returned coordinates are between the range of \[{@value #LEVEL_BLACK}, {@val
 | `java.lang.NullPointerException` | If`destination`was`null` |
 | `java.lang.IllegalArgumentException` | If offset was negative |
 | `java.lang.ArrayIndexOutOfBoundsException` | If there's not enough room to write the elements at the specified destination and offset. |
+| --- | --- |
 
 **See Also**
 

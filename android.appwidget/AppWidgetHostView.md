@@ -7,9 +7,11 @@ open class AppWidgetHostView : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.appwidget.AppWidgetHostView](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#) |
 
 Provides the glue to show AppWidget views. This class offers automatic animation between updates, and will try recycling old views for each incoming `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#`.
@@ -300,6 +302,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -416,6 +419,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -564,6 +568,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1728,18 +1733,23 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#getAppWidgetId()()` <br /> |
 | open [AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#getAppWidgetInfo()()` <br /> |
 | open static [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#getDefaultPaddingForWidget(android.content.Context,%20android.content.ComponentName,%20android.graphics.Rect)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, padding: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` As of ICE_CREAM_SANDWICH we are automatically adding padding to widgets targeting ICE_CREAM_SANDWICH and higher. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#resetColorResources()()` Reset the dynamically overloaded resources, reverting to the default values for all the colors. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#setAppWidget(kotlin.Int,%20android.appwidget.AppWidgetProviderInfo)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, info: https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo!)` Set the AppWidget that will be displayed by this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#setColorResources(android.util.SparseIntArray)(colorMapping: https://developer.android.com/reference/kotlin/android/util/SparseIntArray.html#)` Set the dynamically overloaded color resources. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#setExecutor(java.util.concurrent.Executor)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#!)` Sets an executor which can be used for asynchronously inflating. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#setOnLightBackground(kotlin.Boolean)(onLightBackground: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the widget is being displayed on a light/white background and use an alternate UI if available. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#startVisibilityTracking()()` Start visibility tracking for this widget. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#stopVisibilityTracking()()` Stop visibility tracking for this widget. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#updateAppWidget(android.widget.RemoteViews)(remoteViews: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Process a set of `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#` coming in as an update from the AppWidget provider. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#updateAppWidgetOptions(android.os.Bundle)(options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Specify some extra information for the widget provider. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#updateAppWidgetSize(android.os.Bundle,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(newOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, minWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provide guidance about the size of this widget to the AppWidgetManager. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#updateAppWidgetSize(android.os.Bundle,%20kotlin.collections.MutableList)(newOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, sizes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/util/SizeF.html#!>)` Provide guidance about the size of this widget to the AppWidgetManager. |
 
 | Protected methods ||
@@ -1747,9 +1757,11 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#dispatchRestoreInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#restoreHierarchyState(android.util.SparseArray)` to retrieve the state for this view and its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#dispatchSaveInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Called by `https://developer.android.com/reference/kotlin/android/view/View.html#saveHierarchyState(android.util.SparseArray)` to store the state for this view and its children. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#getDefaultView()()` Inflate and return the default layout requested by AppWidget provider. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#getErrorView()()` Inflate and return a view that represents an error state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHostView#prepareView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Prepare the given view to be shown. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -2668,6 +2680,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4520,6 +4533,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8316,6 +8330,7 @@ As of ICE_CREAM_SANDWICH we are automatically adding padding to widgets targetin
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the current context |
 | `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!: the component name of the widget |
 | `padding` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: Rect in which to place the output, if null, a new Rect will be allocated and returned |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8488,6 +8503,7 @@ Provide guidance about the size of this widget to the AppWidgetManager. The widt
 | `newOptions` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The bundle of options, in addition to the size information, can be null. |
 | `minWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The minimum width in dips that the widget will be displayed at. |
 | `minHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum height in dips that the widget will be displayed at. |
+| --- | --- |
 | `maxWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum width in dips that the widget will be displayed at. |
 | `maxHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum height in dips that the widget will be displayed at. |
 
@@ -8602,6 +8618,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |
 

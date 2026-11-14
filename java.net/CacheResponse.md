@@ -9,9 +9,11 @@ abstract class CacheResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse#) |
 
 | Known Direct Subclasses [SecureCacheResponse](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse) |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [SecureCacheResponse](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse) | Represents a cache response originally retrieved through secure means, such as TLS. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represent channels for retrieving resources from the ResponseCache. Instances of such a class provide an InputStream that returns the entity body, and also a getHeaders() method which returns the associated response headers.
 

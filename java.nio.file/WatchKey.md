@@ -48,6 +48,7 @@ Watch keys are safe for use by multiple concurrent threads. Where there are seve
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#cancel())`()` Cancels the registration with the watch service. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#isValid())`()` Tells whether or not this watch key is valid. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WatchEvent](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent)\<\*\>!\>! | [pollEvents](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#pollEvents())`()` Retrieves and removes all pending events for this watch key, returning a`List`of the events that were retrieved. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [reset](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#reset())`()` Resets this watch key. |
 | abstract [Watchable](https://developer.android.com/reference/kotlin/java/nio/file/Watchable)! | [watchable](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#watchable())`()` Returns the object for which this watch key was created. |
 

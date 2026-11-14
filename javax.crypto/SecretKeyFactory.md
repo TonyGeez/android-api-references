@@ -9,6 +9,7 @@ open class SecretKeyFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.SecretKeyFactory](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#) |
 
 This class represents a factory for secret keys.
@@ -26,48 +27,63 @@ Android provides the following`SecretKeyFactory`algorithms:
 | AES | 23+ |
 | DES | 1+ |
 | DESede | 1+ |
+| --- | --- |
 | HmacSHA1 | 23+ |
 | HmacSHA224 | 23+ |
 | HmacSHA256 | 23+ |
+| --- | --- |
 | HmacSHA384 | 23+ |
 | HmacSHA512 | 23+ |
 | PBEwithHmacSHA1 | 1+ |
+| --- | --- |
 | PBEwithHmacSHA1AndAES_128 | 26+ |
 | PBEwithHmacSHA1AndAES_256 | 26+ |
 | PBEwithHmacSHA224AndAES_128 | 26+ |
+| --- | --- |
 | PBEwithHmacSHA224AndAES_256 | 26+ |
 | PBEwithHmacSHA256AndAES_128 | 26+ |
 | PBEwithHmacSHA256AndAES_256 | 26+ |
+| --- | --- |
 | PBEwithHmacSHA384AndAES_128 | 26+ |
 | PBEwithHmacSHA384AndAES_256 | 26+ |
 | PBEwithHmacSHA512AndAES_128 | 26+ |
+| --- | --- |
 | PBEwithHmacSHA512AndAES_256 | 26+ |
 | PBEwithMD5AND128BITAES-CBC-OPENSSL | 1+ |
 | PBEwithMD5AND192BITAES-CBC-OPENSSL | 1+ |
+| --- | --- |
 | PBEwithMD5AND256BITAES-CBC-OPENSSL | 1+ |
 | PBEwithMD5ANDDES | 1+ |
 | PBEwithMD5ANDRC2 | 1+ |
+| --- | --- |
 | PBEwithSHA1ANDDES | 1+ |
 | PBEwithSHA1ANDRC2 | 1+ |
 | PBEwithSHA256AND128BITAES-CBC-BC | 1+ |
+| --- | --- |
 | PBEwithSHA256AND192BITAES-CBC-BC | 1+ |
 | PBEwithSHA256AND256BITAES-CBC-BC | 1+ |
 | PBEwithSHAAND128BITAES-CBC-BC | 1+ |
+| --- | --- |
 | PBEwithSHAAND128BITRC2-CBC | 10+ |
 | PBEwithSHAAND128BITRC4 | 10+ |
 | PBEwithSHAAND192BITAES-CBC-BC | 1+ |
+| --- | --- |
 | PBEwithSHAAND2-KEYTRIPLEDES-CBC | 1+ |
 | PBEwithSHAAND256BITAES-CBC-BC | 1+ |
 | PBEwithSHAAND3-KEYTRIPLEDES-CBC | 1+ |
+| --- | --- |
 | PBEwithSHAAND40BITRC2-CBC | 1+ |
 | PBEwithSHAAND40BITRC4 | 10+ |
 | PBEwithSHAANDTWOFISH-CBC | 10+ |
+| --- | --- |
 | PBKDF2withHmacSHA1 | 10+ |
 | PBKDF2withHmacSHA1And8BIT | 19+ |
 | PBKDF2withHmacSHA224 | 26+ |
+| --- | --- |
 | PBKDF2withHmacSHA256 | 26+ |
 | PBKDF2withHmacSHA384 | 26+ |
 | PBKDF2withHmacSHA512 | 26+ |
+| --- | --- |
 
 These algorithms are described in the [SecretKeyFactory section](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#SecretKeyFactory) of the Java Cryptography Architecture Standard Algorithm Name Documentation.
 
@@ -82,9 +98,11 @@ These algorithms are described in the [SecretKeyFactory section](https://docs.or
 | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [generateSecret](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#generateSecret(java.security.spec.KeySpec))`(`keySpec:` ` [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)!`)` Generates a`SecretKey`object from the provided key specification (key material). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getAlgorithm())`()` Returns the algorithm name of this`SecretKeyFactory`object. |
 | static [SecretKeyFactory](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
+| --- | --- |
 | static [SecretKeyFactory](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
 | static [SecretKeyFactory](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
 | [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)! | [getKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getKeySpec(javax.crypto.SecretKey,%20java.lang.Class))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`, `keySpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#getProvider())`()` Returns the provider of this`SecretKeyFactory`object. |
 | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [translateKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactory#translateKey(javax.crypto.SecretKey))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
 
@@ -108,6 +126,7 @@ Creates a SecretKeyFactory object.
 | `keyFacSpi` | [SecretKeyFactorySpi](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi)!:the delegate |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the secret-key algorithm |
+| --- | --- |
 
 ## Public methods
 
@@ -211,6 +230,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list. |
 | `java.security.NoSuchAlgorithmException` | if a SecretKeyFactorySpi implementation for the specified algorithm is not available from the specified provider. |
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`provider`is null or empty. |
 
 **See Also**
@@ -246,6 +266,7 @@ A new SecretKeyFactory object encapsulating the SecretKeyFactorySpi implementati
 | `java.lang.NullPointerException` | if the specified algorithm is null. |
 | `java.security.NoSuchAlgorithmException` | if a SecretKeyFactorySpi implementation for the specified algorithm is not available from the specified Provider object. |
 | `java.lang.IllegalArgumentException` | if the`provider`is null. |
+| --- | --- |
 
 **See Also**
 

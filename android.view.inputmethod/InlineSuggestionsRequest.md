@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InlineSuggestionsRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class InlineSuggestionsRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#) |
 
 This class represents an inline suggestion request made by one app to get suggestions from the other source. See [InlineSuggestion](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion) for more information.
@@ -34,12 +36,15 @@ This class represents an inline suggestion request made by one app to get sugges
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getExtras())`()` The extras state propagated from the IME to pass extra data. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostPackageName](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getHostPackageName())`()` The package name of the app that requests for the inline suggestions and will host the embedded suggestion views. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)!\> | [getInlinePresentationSpecs](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getInlinePresentationSpecs())`()` The [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) for each suggestion in the response. |
 | [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)? | [getInlineTooltipPresentationSpec](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getInlineTooltipPresentationSpec())`()` Specifies the UI specification for the inline suggestion tooltip in the response. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSuggestionCount](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getMaxSuggestionCount())`()` Max number of suggestions expected from the response. |
 | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getSupportedLocales](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getSupportedLocales())`()` The IME provided locales for the request. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

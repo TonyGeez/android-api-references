@@ -9,11 +9,14 @@ open class PathClassLoader : BaseDexClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) |||
 | | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader) ||
 | | | ↳ | [dalvik.system.PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader) |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------| | [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader) | A`ClassLoader`implementation that implements a**delegate last**lookup policy. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Provides a simple [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) implementation that operates on a list of files and directories in the local file system, but does not attempt to load classes from the network. Android uses this class for its system class loader and for its application class loader(s).
 
@@ -73,3 +76,4 @@ The entries of the second list should be directories containing native library f
 | `dexPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of jar/apk files containing classes and resources, delimited by`File.pathSeparator`, which defaults to`":"`on Android |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null` |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!:the parent class loader |
+| --- | --- |

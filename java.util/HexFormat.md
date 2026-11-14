@@ -9,6 +9,7 @@ class HexFormat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#) |
 
 `HexFormat`converts between bytes and chars and hex-encoded strings which may include additional formatting markup such as prefixes, suffixes, and delimiters.
@@ -30,39 +31,51 @@ For formatted hexadecimal string to byte array conversions the`parseHex`methods 
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [delimiter](https://developer.android.com/reference/kotlin/java/util/HexFormat#delimiter())`()` Returns the delimiter between hexadecimal values in formatted hexadecimal strings. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/HexFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns`true`if the other object is a`HexFormat`with the same parameters. |
 | A | [formatHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#formatHex(java.util.HexFormat.formatHex.A,%20kotlin.ByteArray))`(`out:` `A`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Appends formatted hexadecimal strings from a byte array to the [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#). |
+| --- | --- |
 | A | [formatHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#formatHex(java.util.HexFormat.formatHex.A,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`out:` `A`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends formatted hexadecimal strings from a byte array range to the [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#formatHex(kotlin.ByteArray))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns a hexadecimal string formatted from a byte array. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#formatHex(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a hexadecimal string formatted from a byte array range. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fromHexDigit](https://developer.android.com/reference/kotlin/java/util/HexFormat#fromHexDigit(kotlin.Int))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for the hexadecimal character or codepoint. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fromHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#fromHexDigits(kotlin.CharSequence))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the`int`value parsed from a string of up to eight hexadecimal characters. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fromHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#fromHexDigits(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`int`value parsed from a string range of up to eight hexadecimal characters. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [fromHexDigitsToLong](https://developer.android.com/reference/kotlin/java/util/HexFormat#fromHexDigitsToLong(kotlin.CharSequence))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the long value parsed from a string of up to sixteen hexadecimal characters. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [fromHexDigitsToLong](https://developer.android.com/reference/kotlin/java/util/HexFormat#fromHexDigitsToLong(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the long value parsed from a string range of up to sixteen hexadecimal characters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/HexFormat#hashCode())`()` Returns a hashcode for this`HexFormat`. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHexDigit](https://developer.android.com/reference/kotlin/java/util/HexFormat#isHexDigit(kotlin.Int))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if the character is a valid hexadecimal character or codepoint. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUpperCase](https://developer.android.com/reference/kotlin/java/util/HexFormat#isUpperCase())`()` Returns`true`if the hexadecimal digits are uppercase, otherwise`false`. |
 | static [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [of](https://developer.android.com/reference/kotlin/java/util/HexFormat#of())`()` Returns a hexadecimal formatter with no delimiter and lowercase characters. |
+| --- | --- |
 | static [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [ofDelimiter](https://developer.android.com/reference/kotlin/java/util/HexFormat#ofDelimiter(kotlin.String))`(`delimiter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a hexadecimal formatter with the delimiter and lowercase characters. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [parseHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#parseHex(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a byte array containing hexadecimal values parsed from a range of the character array. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [parseHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#parseHex(kotlin.CharSequence))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns a byte array containing hexadecimal values parsed from the string. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [parseHex](https://developer.android.com/reference/kotlin/java/util/HexFormat#parseHex(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`string:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a byte array containing hexadecimal values parsed from a range of the string. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [prefix](https://developer.android.com/reference/kotlin/java/util/HexFormat#prefix())`()` Returns the prefix used for each hexadecimal value in formatted hexadecimal strings. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [suffix](https://developer.android.com/reference/kotlin/java/util/HexFormat#suffix())`()` Returns the suffix used for each hexadecimal value in formatted hexadecimal strings. |
+| --- | --- |
 | A | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(java.util.HexFormat.toHexDigits.A,%20kotlin.Byte))`(`out:` `A`, `value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Appends two hexadecimal characters for the byte value to the [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Byte))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns the two hexadecimal characters for the`byte`value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Char))`(`value:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the four hexadecimal characters for the`char`value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the eight hexadecimal characters for the`int`value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the sixteen hexadecimal characters for the`long`value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Long,%20kotlin.Int))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `digits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns up to sixteen hexadecimal characters for the`long`value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHexDigits](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHexDigits(kotlin.Short))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns the four hexadecimal characters for the`short`value. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [toHighHexDigit](https://developer.android.com/reference/kotlin/java/util/HexFormat#toHighHexDigit(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the hexadecimal character for the high 4 bits of the value considering it to be a byte. |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [toLowHexDigit](https://developer.android.com/reference/kotlin/java/util/HexFormat#toLowHexDigit(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the hexadecimal character for the low 4 bits of the value considering it to be a byte. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/HexFormat#toString())`()` Returns a description of the formatter parameters for uppercase, delimiter, prefix, and suffix. |
 | [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [withDelimiter](https://developer.android.com/reference/kotlin/java/util/HexFormat#withDelimiter(kotlin.String))`(`delimiter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a copy of this`HexFormat`with the delimiter. |
 | [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [withLowerCase](https://developer.android.com/reference/kotlin/java/util/HexFormat#withLowerCase())`()` Returns a copy of this`HexFormat`to use lowercase hexadecimal characters. |
+| --- | --- |
 | [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [withPrefix](https://developer.android.com/reference/kotlin/java/util/HexFormat#withPrefix(kotlin.String))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a copy of this`HexFormat`with the prefix. |
 | [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [withSuffix](https://developer.android.com/reference/kotlin/java/util/HexFormat#withSuffix(kotlin.String))`(`suffix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a copy of this`HexFormat`with the suffix. |
 | [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat#)! | [withUpperCase](https://developer.android.com/reference/kotlin/java/util/HexFormat#withUpperCase())`()` Returns a copy of this`HexFormat`to use uppercase hexadecimal characters. |
+| --- | --- |
 
 ## Public methods
 
@@ -117,6 +130,7 @@ Appends formatted hexadecimal strings from a byte array to the [Appendable](http
 | `<A>` | The type of`Appendable` |
 | `out` | A:an`Appendable`, non-null |
 | `bytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array |
+| --- | --- |
 
 | Return ||
 |---|-----------------|
@@ -146,6 +160,7 @@ Appends formatted hexadecimal strings from a byte array range to the [Appendable
 | `<A>` | The type of`Appendable` |
 | `out` | A:an`Appendable`, non-null |
 | `bytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array, non-null |
+| --- | --- |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive. |
 
@@ -195,6 +210,7 @@ Returns a hexadecimal string formatted from a byte array range. Each byte value 
 | `bytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a non-null array of bytes |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -273,6 +289,7 @@ Returns the`int`value parsed from a string range of up to eight hexadecimal char
 | `string` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:a CharSequence containing the characters |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------|
@@ -324,6 +341,7 @@ Returns the long value parsed from a string range of up to sixteen hexadecimal c
 | `string` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:a CharSequence containing the characters |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------|
@@ -437,6 +455,7 @@ Returns a byte array containing hexadecimal values parsed from a range of the ch
 | `chars` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:a character array range containing an even number of hexadecimal digits, delimiters, prefix, and suffix. |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -488,6 +507,7 @@ Returns a byte array containing hexadecimal values parsed from a range of the st
 | `string` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:a string range containing hexadecimal digits, delimiters, prefix, and suffix. |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the initial index of the range, inclusive |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the final index of the range, exclusive. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -544,6 +564,7 @@ Appends two hexadecimal characters for the byte value to the [Appendable](https:
 | `<A>` | The type of`Appendable` |
 | `out` | A:an`Appendable`, non-null |
 | `value` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html):a byte value |
+| --- | --- |
 
 | Return ||
 |---|-----------------|

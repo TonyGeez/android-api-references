@@ -9,8 +9,10 @@ interface NavigableMap<K : Any!, V : Any!> : SortedMap<K, V>
 | [java.util.NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#) |
 
 | Known Direct Subclasses [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap), [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) |---|---| | [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) | A `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap` supporting `https://developer.android.com/reference/kotlin/java/util/NavigableMap#` operations, and recursively so for its navigable sub-maps. | | [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) | A Red-Black tree based `https://developer.android.com/reference/kotlin/java/util/NavigableMap#` implementation. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) |---|---| | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap` implementation. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A `https://developer.android.com/reference/kotlin/java/util/SortedMap` extended with navigation methods returning the closest matches for given search targets. Methods `https://developer.android.com/reference/kotlin/java/util/NavigableMap#lowerEntry(java.util.NavigableMap.K)`, `https://developer.android.com/reference/kotlin/java/util/NavigableMap#floorEntry(java.util.NavigableMap.K)`, `https://developer.android.com/reference/kotlin/java/util/NavigableMap#ceilingEntry(java.util.NavigableMap.K)`, and `https://developer.android.com/reference/kotlin/java/util/NavigableMap#higherEntry(java.util.NavigableMap.K)` return `Map.Entry` objects associated with keys respectively less than, less than or equal, greater than or equal, and greater than a given key, returning `null` if there is no such key. Similarly, methods `https://developer.android.com/reference/kotlin/java/util/NavigableMap#lowerKey(java.util.NavigableMap.K)`, `https://developer.android.com/reference/kotlin/java/util/NavigableMap#floorKey(java.util.NavigableMap.K)`, `https://developer.android.com/reference/kotlin/java/util/NavigableMap#ceilingKey(java.util.NavigableMap.K)`, and `https://developer.android.com/reference/kotlin/java/util/NavigableMap#higherKey(java.util.NavigableMap.K)` return only the associated keys. All of these methods are designed for locating, not traversing entries.
 
@@ -29,24 +31,31 @@ Methods `https://developer.android.com/reference/kotlin/java/util/NavigableMap#s
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#ceilingEntry(java.util.NavigableMap.K)(key: K)` Returns a key-value mapping associated with the least key greater than or equal to the given key, or `null` if there is no such key. |
 | abstract K? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#ceilingKey(java.util.NavigableMap.K)(key: K)` Returns the least key greater than or equal to the given key, or `null` if there is no such key. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<K\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#descendingKeySet()()` Returns a reverse order `https://developer.android.com/reference/kotlin/java/util/NavigableSet` view of the keys contained in this map. |
+| --- | --- |
 | abstract [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#descendingMap()()` Returns a reverse order view of the mappings contained in this map. |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#firstEntry()()` Returns a key-value mapping associated with the least key in this map, or `null` if the map is empty. |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#floorEntry(java.util.NavigableMap.K)(key: K)` Returns a key-value mapping associated with the greatest key less than or equal to the given key, or `null` if there is no such key. |
+| --- | --- |
 | abstract K? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#floorKey(java.util.NavigableMap.K)(key: K)` Returns the greatest key less than or equal to the given key, or `null` if there is no such key. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#headMap(java.util.NavigableMap.K)(toKey: K)` Returns a view of the portion of this map whose keys are strictly less than `toKey`. |
 | abstract [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#headMap(java.util.NavigableMap.K,%20kotlin.Boolean)(toKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a view of the portion of this map whose keys are less than (or equal to, if `inclusive` is true) `toKey`. |
+| --- | --- |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#higherEntry(java.util.NavigableMap.K)(key: K)` Returns a key-value mapping associated with the least key strictly greater than the given key, or `null` if there is no such key. |
 | abstract K? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#higherKey(java.util.NavigableMap.K)(key: K)` Returns the least key strictly greater than the given key, or `null` if there is no such key. |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#lastEntry()()` Returns a key-value mapping associated with the greatest key in this map, or `null` if the map is empty. |
+| --- | --- |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#lowerEntry(java.util.NavigableMap.K)(key: K)` Returns a key-value mapping associated with the greatest key strictly less than the given key, or `null` if there is no such key. |
 | abstract K? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#lowerKey(java.util.NavigableMap.K)(key: K)` Returns the greatest key strictly less than the given key, or `null` if there is no such key. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet)\<K\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#navigableKeySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet` view of the keys contained in this map. |
+| --- | --- |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#pollFirstEntry()()` Removes and returns a key-value mapping associated with the least key in this map, or `null` if the map is empty (optional operation). |
 | abstract [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#pollLastEntry()()` Removes and returns a key-value mapping associated with the greatest key in this map, or `null` if the map is empty (optional operation). |
 | open [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this map. |
+| --- | --- |
 | abstract [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#subMap(java.util.NavigableMap.K,%20kotlin.Boolean,%20java.util.NavigableMap.K,%20kotlin.Boolean)(fromKey: K, fromInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toKey: K, toInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a view of the portion of this map whose keys range from `fromKey` to `toKey`. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#subMap(java.util.NavigableMap.K,%20java.util.NavigableMap.K)(fromKey: K, toKey: K)` Returns a view of the portion of this map whose keys range from `fromKey`, inclusive, to `toKey`, exclusive. |
 | abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#tailMap(java.util.NavigableMap.K)(fromKey: K)` Returns a view of the portion of this map whose keys are greater than or equal to `fromKey`. |
+| --- | --- |
 | abstract [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/NavigableMap#tailMap(java.util.NavigableMap.K,%20kotlin.Boolean)(fromKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a view of the portion of this map whose keys are greater than (or equal to, if `inclusive` is true) `fromKey`. |
 
 | Inherited functions ||
@@ -223,6 +232,7 @@ Equivalent to `headMap(toKey, false)`.
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null and this map does not permit null keys |
+| --- | --- |
 
 ### headMap
 
@@ -253,6 +263,7 @@ The returned map will throw an `IllegalArgumentException` on an attempt to inser
 | `java.lang.ClassCastException` | if `toKey` is not compatible with this map's comparator (or, if the map has no comparator, if `toKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `toKey` is null and this map does not permit null keys |
+| --- | --- |
 
 ### higherEntry
 
@@ -448,6 +459,7 @@ The returned map will throw an `IllegalArgumentException` on an attempt to inser
 | `fromKey` | K: low endpoint of the keys in the returned map |
 | `fromInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the low endpoint is to be included in the returned view |
 | `toKey` | K: high endpoint of the keys in the returned map |
+| --- | --- |
 | `toInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the high endpoint is to be included in the returned view |
 
 | Return ||
@@ -459,6 +471,7 @@ The returned map will throw an `IllegalArgumentException` on an attempt to inser
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null and this map does not permit null keys |
+| --- | --- |
 
 ### subMap
 
@@ -491,6 +504,7 @@ Equivalent to `subMap(fromKey, true, toKey, false)`.
 | `java.lang.ClassCastException` | if `fromKey` and `toKey` cannot be compared to one another using this map's comparator (or, if the map has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if `fromKey` or `toKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if `fromKey` is greater than `toKey`; or if this map itself has a restricted range, and `fromKey` or `toKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` or `toKey` is null and this map does not permit null keys |
+| --- | --- |
 
 ### tailMap
 
@@ -519,6 +533,7 @@ Equivalent to `tailMap(fromKey, true)`.
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null and this map does not permit null keys |
+| --- | --- |
 
 ### tailMap
 
@@ -549,3 +564,4 @@ The returned map will throw an `IllegalArgumentException` on an attempt to inser
 | `java.lang.ClassCastException` | if `fromKey` is not compatible with this map's comparator (or, if the map has no comparator, if `fromKey` does not implement `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`). Implementations may, but are not required to, throw this exception if `fromKey` cannot be compared to keys currently in the map. |
 | `java.lang.IllegalArgumentException` | if this map itself has a restricted range, and `fromKey` lies outside the bounds of the range |
 | `java.lang.NullPointerException` | if `fromKey` is null and this map does not permit null keys |
+| --- | --- |

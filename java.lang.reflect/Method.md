@@ -9,9 +9,11 @@ class Method : Executable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.reflect.AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject) |||
 | | ↳ | [java.lang.reflect.Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) ||
 | | | ↳ | [java.lang.reflect.Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#) |
+| --- | --- | --- | --- |
 
 A `Method` provides information about, and access to, a single method on a class or interface. The reflected method may be a class method or an instance method (including an abstract method).
 
@@ -28,27 +30,35 @@ A `Method` permits widening conversions to occur when matching the actual parame
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this `Method` against the specified object. |
 | T? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns this element's annotation for the specified type if such an annotation is *present*, else null. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getDeclaredAnnotations())`()` Returns annotations that are *directly present* on this element. |
+| --- | --- |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getDeclaringClass](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getDeclaringClass())`()` Returns the `Class` object representing the class or interface that declares the executable represented by this object. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [getDefaultValue](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getDefaultValue())`()` Returns the default value for the annotation member represented by this `Method` instance. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\> | [getExceptionTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getExceptionTypes())`()` Returns an array of `Class` objects that represent the types of exceptions declared to be thrown by the underlying executable represented by this object. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getGenericExceptionTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getGenericExceptionTypes())`()` Returns an array of `Type` objects that represent the exceptions declared to be thrown by this executable object. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getGenericParameterTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getGenericParameterTypes())`()` Returns an array of `Type` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
 | [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | [getGenericReturnType](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getGenericReturnType())`()` Returns a `Type` object that represents the formal return type of the method represented by this `Method` object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getModifiers())`()` Returns the Java language [modifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier) for the executable represented by this object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getName())`()` Returns the name of the method represented by this `Method` object, as a `String`. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\>!\> | [getParameterAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getParameterAnnotations())`()` Returns an array of arrays of `Annotation`s that represent the annotations on the formal parameters, in declaration order, of the `Executable` represented by this object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameterCount](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getParameterCount())`()` Returns the number of formal parameters (whether explicitly declared or implicitly declared or neither) for the executable represented by this object. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\> | [getParameterTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getParameterTypes())`()` Returns an array of `Class` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getReturnType](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getReturnType())`()` Returns a `Class` object that represents the formal return type of the method represented by this `Method` object. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable)\< [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#)!\>!\> | [getTypeParameters](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#getTypeParameters())`()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#hashCode())`()` Returns a hashcode for this `Method`. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [invoke](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#invoke(kotlin.Any,%20kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the underlying method represented by this `Method` object, on the specified object with the specified parameters. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBridge](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#isBridge())`()` Returns `true` if this method is a bridge method; returns `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDefault](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#isDefault())`()` Returns `true` if this method is a default method; returns `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#isSynthetic())`()` Returns `true` if this executable is a synthetic construct; returns `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#isVarArgs())`()` Returns `true` if this executable was declared to take a variable number of arguments; returns `false` otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toGenericString](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#toGenericString())`()` Returns a string describing this `Method`, including type parameters. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/Method#toString())`()` Returns a string describing this `Method`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -179,6 +189,7 @@ If an exception type is a type variable or a parameterized type, it is created. 
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic method signature does not conform to the format specified in The Java™ Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if the underlying executable's `throws` clause refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if the underlying executable's `throws` clause refers to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getGenericParameterTypes
 
@@ -203,6 +214,7 @@ If a formal parameter type is a type variable or a parameterized type, it is cre
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic method signature does not conform to the format specified in The Java™ Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if any of the parameter types of the underlying executable refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if any of the underlying executable's parameter types refer to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getGenericReturnType
 
@@ -227,6 +239,7 @@ If the return type is a type variable or a parameterized type, it is created. Ot
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic method signature does not conform to the format specified in The Java™ Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if the underlying method's return type refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if the underlying method's return typed refers to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getModifiers
 
@@ -381,6 +394,7 @@ If the method completes normally, the value it returns is returned to the caller
 | `java.lang.IllegalAccessException` | if this `Method` object is enforcing Java language access control and the underlying method is inaccessible. |
 | `java.lang.IllegalArgumentException` | if the method is an instance method and the specified object argument is not an instance of the class or interface declaring the underlying method (or of a subclass or implementor thereof); if the number of actual and formal parameters differ; if an unwrapping conversion for primitive arguments fails; or if, after possible unwrapping, a parameter value cannot be converted to the corresponding formal parameter type by a method invocation conversion. |
 | `java.lang.reflect.InvocationTargetException` | if the underlying method throws an exception. |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified object is null and the method is an instance method. |
 | `java.lang.ExceptionInInitializerError` | if the initialization provoked by this method fails. |
 

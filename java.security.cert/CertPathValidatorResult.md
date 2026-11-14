@@ -11,8 +11,10 @@ interface CertPathValidatorResult : Cloneable
 | [java.security.cert.CertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorResult#) |
 
 | Known Direct Subclasses [PKIXCertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult) |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [PKIXCertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult) | This class represents the successful result of the PKIX certification path validation algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) | This class represents the successful result of the PKIX certification path builder algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A specification of the result of a certification path validator algorithm.
 

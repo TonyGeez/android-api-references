@@ -9,6 +9,7 @@ open class FutureTask<V : Any!> : RunnableFuture<V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.FutureTask](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#) |
 
 A cancellable asynchronous computation. This class provides a base implementation of [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future), with methods to start and cancel a computation, query to see if the computation is complete, and retrieve the result of the computation. The result can only be retrieved when the computation has completed; the`get`methods will block if the computation has not yet completed. Once the computation has completed, the computation cannot be restarted or cancelled (unless the computation is invoked using [runAndReset](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#runAndReset())).
@@ -29,12 +30,15 @@ In addition to serving as a standalone class, this class provides`protected`func
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#cancel(kotlin.Boolean))`(`mayInterruptIfRunning:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [exceptionNow](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#exceptionNow())`()` <br /> |
 | openV | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#get())`()` <br /> |
+| --- | --- |
 | openV | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#get(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#isCancelled())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDone](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#isDone())`()` <br /> |
+| --- | --- |
 | openV | [resultNow](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#resultNow())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#run())`()` <br /> |
 | open [Future.State](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.State)! | [state](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#state())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#toString())`()` Returns a string representation of this FutureTask. |
 
 | Protected methods ||
@@ -42,6 +46,7 @@ In addition to serving as a standalone class, this class provides`protected`func
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [done](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#done())`()` Protected method invoked when this task transitions to state`isDone`(whether normally or via cancellation). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [runAndReset](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#runAndReset())`()` Executes the computation without setting its result, and then resets this future to initial state, failing to do so if the computation encounters an exception or is cancelled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#set(java.util.concurrent.FutureTask.V))`(`v:` `V`)` Sets the result of this future to the given value unless this future has already been set or has been cancelled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setException](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask#setException(kotlin.Throwable))`(`t:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Causes this future to report an [ExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutionException) with the given throwable as its cause, unless this future has already been set or has been cancelled. |
 
 ## Public constructors
@@ -136,6 +141,7 @@ open fun get(): V
 | `java.util.concurrent.CancellationException` | if the computation was cancelled |
 | `java.util.concurrent.ExecutionException` | if the computation threw an exception |
 | `java.lang.InterruptedException` | if the current thread was interrupted while waiting |
+| --- | --- |
 
 ### get
 
@@ -162,6 +168,7 @@ open fun get(
 | `java.util.concurrent.CancellationException` | if the computation was cancelled |
 | `java.util.concurrent.ExecutionException` | if the computation threw an exception |
 | `java.lang.InterruptedException` | if the current thread was interrupted while waiting |
+| --- | --- |
 | `java.util.concurrent.TimeoutException` | if the wait timed out |
 
 ### isCancelled

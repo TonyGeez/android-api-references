@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # MultiResolutionStreamInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class MultiResolutionStreamInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.MultiResolutionStreamInfo](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#) |
 
 A utility class describing the properties of one stream of fixed-size image buffers backing a multi-resolution image stream.
@@ -28,6 +30,7 @@ A group of [MultiResolutionStreamInfo](https://developer.android.com/reference/k
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [MultiResolutionStreamInfo](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#) is equal to another [MultiResolutionStreamInfo](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#getHeight())`()` The height of this particular image buffer stream in pixels. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPhysicalCameraId](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#getPhysicalCameraId())`()` The physical camera Id of this particular image buffer stream. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#getWidth())`()` The width of this particular image buffer stream in pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo#hashCode())`()` Returns a hash code value for the object. |
 
@@ -55,6 +58,7 @@ Normally applications do not need to create these directly. Use [android.hardwar
 | `streamWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width in pixels of the camera stream Value is 1 or greater |
 | `streamHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height in pixels of the camera stream Value is 1 or greater |
 | `physicalCameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The physical camera Id the camera stream is associated with This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------|

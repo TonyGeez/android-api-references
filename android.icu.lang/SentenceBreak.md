@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # SentenceBreak
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.SentenceBreak "View this page in Java") 
+| --- | --- |
 
 ```
 interface SentenceBreak
@@ -21,18 +22,23 @@ Sentence Break constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATERM](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#ATERM:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#CLOSE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#CR:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTEND](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#EXTEND:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#FORMAT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LF](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#LF:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#LOWER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#NUMERIC:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OLETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#OLETTER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#OTHER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCONTINUE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#SCONTINUE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEP](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#SEP:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SP](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#SP:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STERM](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#STERM:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak#UPPER:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Constants
 

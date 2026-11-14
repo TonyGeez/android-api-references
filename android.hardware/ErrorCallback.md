@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # ErrorCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.ErrorCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ErrorCallback

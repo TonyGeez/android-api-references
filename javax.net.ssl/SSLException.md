@@ -9,12 +9,15 @@ open class SSLException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.net.ssl.SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException#) |
 
 | Known Direct Subclasses [SSLHandshakeException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLHandshakeException), [SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException), [SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException), [SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException) |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [SSLHandshakeException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLHandshakeException) | Indicates that the client and server could not negotiate the desired level of security. | | [SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException) | Reports a bad SSL key. | | [SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException) | Indicates that the peer's identity has not been verified. | | [SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException) | Reports an error in the operation of the SSL protocol. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates some kind of error detected by an SSL subsystem. This class is the general class of exceptions produced by failed SSL-related operations.
 

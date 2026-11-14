@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # FhirResource
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/FhirResource "View this page in Java") 
+| --- | --- |
 
 ```
 class FhirResource : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.FhirResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#) |
 
 A class to capture the FHIR resource data. This is the class used for all supported FHIR resource types, which is a subset of the resource list on [the official FHIR website](https://build.fhir.org/resourcelist.html). The list of supported types will likely expand in future releases.
@@ -29,15 +31,19 @@ FHIR stands for the [Fast Healthcare Interoperability Resources](https://hl7.org
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_ALLERGY_INTOLERANCE](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_ALLERGY_INTOLERANCE:kotlin.Int) FHIR resource type for [AllergyIntolerance](https://www.hl7.org/fhir/allergyintolerance.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_CONDITION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_CONDITION:kotlin.Int) FHIR resource type for a [FHIR Condition](https://www.hl7.org/fhir/condition.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_ENCOUNTER](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_ENCOUNTER:kotlin.Int) FHIR resource type for a [FHIR Encounter](https://www.hl7.org/fhir/encounter.html). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_IMMUNIZATION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_IMMUNIZATION:kotlin.Int) FHIR resource type for [Immunization](https://www.hl7.org/fhir/immunization.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_LOCATION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_LOCATION:kotlin.Int) FHIR resource type for a [FHIR Location](https://www.hl7.org/fhir/location.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_MEDICATION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_MEDICATION:kotlin.Int) FHIR resource type for a [FHIR Medication](https://www.hl7.org/fhir/medication.html). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_MEDICATION_REQUEST](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_MEDICATION_REQUEST:kotlin.Int) FHIR resource type for a [FHIR MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_MEDICATION_STATEMENT](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_MEDICATION_STATEMENT:kotlin.Int) FHIR resource type for a [FHIR MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_OBSERVATION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_OBSERVATION:kotlin.Int) FHIR resource type for a [FHIR Observation](https://www.hl7.org/fhir/observation.html). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_ORGANIZATION](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_ORGANIZATION:kotlin.Int) FHIR resource type for a [FHIR Organization](https://www.hl7.org/fhir/organization.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_PATIENT](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_PATIENT:kotlin.Int) FHIR resource type for a [FHIR Patient](https://www.hl7.org/fhir/patient.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_PRACTITIONER](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_PRACTITIONER:kotlin.Int) FHIR resource type for a [FHIR Practitioner](https://www.hl7.org/fhir/practitioner.html). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_PRACTITIONER_ROLE](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_PRACTITIONER_ROLE:kotlin.Int) FHIR resource type for a [FHIR PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FHIR_RESOURCE_TYPE_PROCEDURE](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#FHIR_RESOURCE_TYPE_PROCEDURE:kotlin.Int) FHIR resource type for a [FHIR Procedure](https://www.hl7.org/fhir/procedure.html). |
 
@@ -50,9 +56,11 @@ FHIR stands for the [Fast Healthcare Interoperability Resources](https://hl7.org
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getData](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#getData())`()` Returns the FHIR resource data in JSON representation. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#getId())`()` Returns the FHIR resource ID. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#getType())`()` Returns the FHIR resource type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

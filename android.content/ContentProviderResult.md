@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # ContentProviderResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ContentProviderResult "View this page in Java") 
+| --- | --- |
 
 ```
 open class ContentProviderResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#) |
 
 Contains the result of the application of a [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation).
@@ -36,12 +38,14 @@ It is guaranteed to have exactly one of [uri](https://developer.android.com/refe
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [count](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#count:kotlin.Int) <br /> |
 | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? | [exception](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#exception:kotlin.Throwable) <br /> |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [extras](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#extras:android.os.Bundle) <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [uri](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#uri:android.net.Uri) <br /> |
 

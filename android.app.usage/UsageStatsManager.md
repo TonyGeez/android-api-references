@@ -7,6 +7,7 @@ class UsageStatsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.UsageStatsManager](https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#) |
 
 Provides access to device usage history and statistics. Usage data is aggregated into time intervals: days, weeks, months, and years.
@@ -41,27 +42,34 @@ A request for data in the middle of a time interval will include that interval.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#EXTRA_EVENT_ACTION:kotlin.String` A String extra, when used with `https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event#getExtras()`, that indicates the action of the user interaction associated with the event. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#EXTRA_EVENT_CATEGORY:kotlin.String` A String extra, when used with `https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event#getExtras()`, that indicates the category of the user interaction associated with the event. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#INTERVAL_BEST:kotlin.Int` An interval type that will use the best fit interval for the given time range. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#INTERVAL_DAILY:kotlin.Int` An interval type that spans a day. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#INTERVAL_MONTHLY:kotlin.Int` An interval type that spans a month. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#INTERVAL_WEEKLY:kotlin.Int` An interval type that spans a week. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#INTERVAL_YEARLY:kotlin.Int` An interval type that spans a year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#STANDBY_BUCKET_ACTIVE:kotlin.Int` The app was used very recently, currently in use or likely to be used very soon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#STANDBY_BUCKET_FREQUENT:kotlin.Int` The app was used in the last few days and/or likely to be used in the next few days. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#STANDBY_BUCKET_RARE:kotlin.Int` The app has not be used for several days and/or is unlikely to be used for several days. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#STANDBY_BUCKET_RESTRICTED:kotlin.Int` The app has not be used for several days, is unlikely to be used for several days, and has been misbehaving in some manner. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#STANDBY_BUCKET_WORKING_SET:kotlin.Int` The app was used recently and/or likely to be used in the next few hours. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#getAppStandbyBucket()()` Returns the current standby bucket of the calling app. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#isAppInactive(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns whether the specified app is currently considered inactive. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats)!\>! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryAndAggregateUsageStats(kotlin.Long,%20kotlin.Long)(beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` A convenience method that queries for all stats in the given range (using the best interval for that range), merges the resulting data, and keys it by package name. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppUsageDuration](https://developer.android.com/reference/kotlin/android/app/usage/AppUsageDuration)!\> | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryAppUsageDuration(android.app.usage.AppUsageDurationQuery)(query: https://developer.android.com/reference/kotlin/android/app/usage/AppUsageDurationQuery)` Gets application usage stats for the given time range, aggregated by the specified interval. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ConfigurationStats](https://developer.android.com/reference/kotlin/android/app/usage/ConfigurationStats)!\>! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryConfigurations(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(intervalType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets the hardware configurations the device was in for the given time range, aggregated by the specified interval. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats)!\>! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEventStats(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(intervalType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets aggregated event stats for the given time range, aggregated by the specified interval. |
+| --- | --- |
 | [UsageEvents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents)? | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEvents(android.app.usage.UsageEventsQuery)(query: https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery)` Query for events with specific UsageEventsQuery object. |
 | [UsageEvents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents)! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEvents(kotlin.Long,%20kotlin.Long)(beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Query for events in the given time range. |
 | [UsageEvents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents)! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEventsForSelf(kotlin.Long,%20kotlin.Long)(beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEvents(kotlin.Long,%20kotlin.Long)`, but only returns events for the calling package. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats)!\>! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryUsageStats(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(intervalType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets application usage stats for the given time range, aggregated by the specified interval. |
 
 ## Constants
@@ -355,6 +363,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `intervalType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time interval by which the stats are aggregated. |
 | `beginTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The inclusive beginning of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
 | `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exclusive end of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -391,6 +400,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `intervalType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time interval by which the stats are aggregated. |
 | `beginTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The inclusive beginning of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
 | `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exclusive end of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -495,6 +505,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `intervalType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time interval by which the stats are aggregated. |
 | `beginTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The inclusive beginning of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
 | `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exclusive end of the range of stats to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
+| --- | --- |
 
 | Return ||
 |---|---|

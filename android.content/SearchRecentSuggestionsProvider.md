@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SearchRecentSuggestionsProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/SearchRecentSuggestionsProvider "View this page in Java") 
+| --- | --- |
 
 ```
 open class SearchRecentSuggestionsProvider : ContentProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider) ||
 | | ↳ | [android.content.SearchRecentSuggestionsProvider](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#) |
 
@@ -60,9 +62,11 @@ In order to use this class, you must do the following.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` This method is provided for use by the ContentResolver. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#getType(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` This method is provided for use by the ContentResolver. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [insert](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#insert(android.net.Uri,%20android.content.ContentValues))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `values:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)?`)` This method is provided for use by the ContentResolver. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCreate](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#onCreate())`()` This method is provided for use by the ContentResolver. |
 | open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | [query](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` This method is provided for use by the ContentResolver. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider#update(android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `values:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` This method is provided for use by the ContentResolver. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -136,6 +140,7 @@ This method is provided for use by the ContentResolver. Do not override, or dire
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The full URI to query, including a row ID (if a specific record is requested). This value cannot be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional restriction to apply to rows when deleting. This value may be`null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -220,6 +225,7 @@ This method is provided for use by the ContentResolver. Do not override, or dire
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:The list of columns to put into the cursor. If`null`all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A selection criteria to apply when filtering rows. If`null`then all rows are included. |
+| --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:How the rows in the cursor should be sorted. If`null`then the provider is free to define the sort order. |
 
@@ -247,6 +253,7 @@ This method is provided for use by the ContentResolver. Do not override, or dire
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be`null`. |
 | `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)?:A set of column_name/value pairs to update in the database. This value may be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional filter to match rows to update. This value may be`null`. |
+| --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 
 | Return ||

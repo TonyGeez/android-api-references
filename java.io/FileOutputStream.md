@@ -9,12 +9,15 @@ open class FileOutputStream : OutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream) ||
 | | ↳ | [java.io.FileOutputStream](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#) |
 
 | Known Direct Subclasses [ParcelFileDescriptor.AutoCloseOutputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseOutputStream.html#) |----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [ParcelFileDescriptor.AutoCloseOutputStream](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.AutoCloseOutputStream.html#) | An OutputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AssetFileDescriptor.AutoCloseOutputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.AutoCloseOutputStream.html#) |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [AssetFileDescriptor.AutoCloseOutputStream](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.AutoCloseOutputStream.html#) | An OutputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A file output stream is an output stream for writing data to a`File`or to a`FileDescriptor`. Whether or not a file is available or may be created depends upon the underlying platform. Some platforms, in particular, allow a file to be opened for writing by only one`FileOutputStream`(or other file-writing object) at a time. In such situations the constructors in this class will fail if the file involved is already open.
 
@@ -35,9 +38,11 @@ A file output stream is an output stream for writing data to a`File`or to a`File
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#close())`()` Closes this file output stream and releases any system resources associated with this stream. |
 | open [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#)! | [getChannel](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#getChannel())`()` Returns the unique [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#) object associated with this file output stream. |
 | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor)! | [getFD](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#getFD())`()` Returns the file descriptor associated with this stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes`b.length`bytes from the specified byte array to this file output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this file output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/FileOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this file output stream. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -291,6 +296,7 @@ Writes`len`bytes from the specified byte array starting at offset`off`to this fi
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to write. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-------------------------|

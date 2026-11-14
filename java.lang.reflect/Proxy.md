@@ -9,6 +9,7 @@ open class Proxy : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.reflect.Proxy](https://developer.android.com/reference/kotlin/java/lang/reflect/Proxy#) |
 
 `Proxy`provides static methods for creating dynamic proxy classes and instances, and it is also the superclass of all dynamic proxy classes created by those methods.
@@ -81,6 +82,7 @@ Note also that when a duplicate method is dispatched to an invocation handler, t
 | openstatic [InvocationHandler](https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationHandler) | [getInvocationHandler](https://developer.android.com/reference/kotlin/java/lang/reflect/Proxy#getInvocationHandler(kotlin.Any))`(`proxy:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Returns the invocation handler for the specified proxy instance. |
 | openstatic [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getProxyClass](https://developer.android.com/reference/kotlin/java/lang/reflect/Proxy#getProxyClass(java.lang.ClassLoader,%20java.lang.Class))`(`loader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?`, `vararg` `interfaces:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Returns the`java.lang.Class`object for a proxy class given a class loader and an array of interfaces. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProxyClass](https://developer.android.com/reference/kotlin/java/lang/reflect/Proxy#isProxyClass(java.lang.Class))`(`cl:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>`)` Returns true if and only if the specified class was dynamically generated to be a proxy class using the`getProxyClass`method or the`newProxyInstance`method. |
+| --- | --- |
 | openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [newProxyInstance](https://developer.android.com/reference/kotlin/java/lang/reflect/Proxy#newProxyInstance(java.lang.ClassLoader,%20kotlin.Array,%20java.lang.reflect.InvocationHandler))`(`loader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?`, `interfaces:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>`, `h:` ` [InvocationHandler](https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationHandler)`)` Returns an instance of a proxy class for the specified interfaces that dispatches method invocations to the specified invocation handler. |
 
 | Properties ||
@@ -179,6 +181,7 @@ Note that the order of the specified proxy interfaces is significant: two reques
 | `java.lang.IllegalArgumentException` | if any of the restrictions on the parameters that may be passed to`getProxyClass`are violated |
 | `java.lang.SecurityException` | if a security manager,*s* , is present and any of the following conditions is met: - the given`loader`is`null`and the caller's class loader is not`null`and the invocation of java.lang.SecurityManager#checkPermission with`RuntimePermission("getClassLoader")`permission denies access. - for each proxy interface,`intf`, the caller's class loader is not the same as or an ancestor of the class loader for`intf`and invocation of [s.checkPackageAccess()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkPackageAccess(kotlin.String))denies access to`intf`. |
 | `java.lang.NullPointerException` | if the`interfaces`array argument or any of its elements are`null` |
+| --- | --- |
 
 ### isProxyClass
 
@@ -225,6 +228,7 @@ Returns an instance of a proxy class for the specified interfaces that dispatche
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?:the class loader to define the proxy class |
 | `interfaces` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>:the list of interfaces for the proxy class to implement |
 | `h` | [InvocationHandler](https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationHandler):the invocation handler to dispatch method invocations to |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -235,6 +239,7 @@ Returns an instance of a proxy class for the specified interfaces that dispatche
 | `java.lang.IllegalArgumentException` | if any of the restrictions on the parameters that may be passed to`getProxyClass`are violated |
 | `java.lang.SecurityException` | if a security manager,*s* , is present and any of the following conditions is met: - the given`loader`is`null`and the caller's class loader is not`null`and the invocation of java.lang.SecurityManager#checkPermission with`RuntimePermission("getClassLoader")`permission denies access; - for each proxy interface,`intf`, the caller's class loader is not the same as or an ancestor of the class loader for`intf`and invocation of [s.checkPackageAccess()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkPackageAccess(kotlin.String))denies access to`intf`; - any of the given proxy interfaces is non-public and the caller class is not in the same [runtime package](https://developer.android.com/reference/kotlin/java/lang/Package.html#) as the non-public interface and the invocation of java.lang.SecurityManager#checkPermission with`ReflectPermission("newProxyInPackage.{package name}")`permission denies access. |
 | `java.lang.NullPointerException` | if the`interfaces`array argument or any of its elements are`null`, or if the invocation handler,`h`, is`null` |
+| --- | --- |
 
 ## Properties
 

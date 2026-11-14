@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SurfaceTextureListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SurfaceTextureListener
@@ -21,6 +22,7 @@ This listener can be used to be notified when the surface texture associated wit
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceTextureAvailable](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener#onSurfaceTextureAvailable(android.graphics.SurfaceTexture,%20kotlin.Int,%20kotlin.Int))`(`surface:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Invoked when a [TextureView](https://developer.android.com/reference/kotlin/android/view/TextureView)'s SurfaceTexture is ready for use. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSurfaceTextureDestroyed](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener#onSurfaceTextureDestroyed(android.graphics.SurfaceTexture))`(`surface:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)`)` Invoked when the specified [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#) is about to be destroyed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceTextureSizeChanged](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener#onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture,%20kotlin.Int,%20kotlin.Int))`(`surface:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Invoked when the [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)'s buffers size changed. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceTextureUpdated](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener#onSurfaceTextureUpdated(android.graphics.SurfaceTexture))`(`surface:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)`)` Invoked when the specified [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#) is updated through [SurfaceTexture.updateTexImage()](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#updateTexImage()). |
 
 ## Public methods
@@ -44,6 +46,7 @@ Invoked when a [TextureView](https://developer.android.com/reference/kotlin/andr
 | `surface` | [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#): The surface returned by [android.view.TextureView#getSurfaceTexture()](https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTexture()) This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the surface |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the surface |
+| --- | --- |
 
 ### onSurfaceTextureDestroyed
 
@@ -78,6 +81,7 @@ Invoked when the [SurfaceTexture](https://developer.android.com/reference/kotlin
 | `surface` | [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#): The surface returned by [android.view.TextureView#getSurfaceTexture()](https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTexture()) This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new width of the surface |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new height of the surface |
+| --- | --- |
 
 ### onSurfaceTextureUpdated
 

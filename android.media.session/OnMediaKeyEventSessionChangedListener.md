@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # OnMediaKeyEventSessionChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnMediaKeyEventSessionChangedListener

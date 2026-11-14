@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # Formatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/format/Formatter "View this page in Java") 
+| --- | --- |
 
 ```
 class Formatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.format.Formatter](https://developer.android.com/reference/kotlin/android/text/format/Formatter#) |
 
 Utility class to aid in formatting common values that are not covered by the [java.util.Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter.html#) class in [java.util](https://developer.android.com/reference/kotlin/java/util/package-summary.html)
@@ -26,6 +28,7 @@ Utility class to aid in formatting common values that are not covered by the [ja
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatFileSize](https://developer.android.com/reference/kotlin/android/text/format/Formatter#formatFileSize(android.content.Context,%20kotlin.Long))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats a content size to be in the form of bytes, kilobytes, megabytes, etc. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatIpAddress](https://developer.android.com/reference/kotlin/android/text/format/Formatter#formatIpAddress(kotlin.Int))`(`ipv4Address:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string in the canonical IPv4 format ###. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatShortFileSize](https://developer.android.com/reference/kotlin/android/text/format/Formatter#formatShortFileSize(android.content.Context,%20kotlin.Long))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Like [formatFileSize](https://developer.android.com/reference/kotlin/android/text/format/Formatter#formatFileSize(android.content.Context,%20kotlin.Long)), but trying to generate shorter numbers (showing fewer digits of precision). |
+| --- | --- |
 
 ## Public constructors
 

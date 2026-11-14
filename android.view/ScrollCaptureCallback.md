@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ScrollCaptureCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ScrollCaptureCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ScrollCaptureCallback
@@ -37,6 +38,7 @@ Capture Area
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollCaptureEnd](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureEnd(java.lang.Runnable))`(`onReady:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` Signals that capture has ended. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollCaptureImageRequest](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureImageRequest(android.view.ScrollCaptureSession,%20android.os.CancellationSignal,%20android.graphics.Rect,%20java.util.function.Consumer))`(`session:` ` [ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession)`, `signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)`, `captureArea:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `onComplete:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!>`)` An image capture has been requested from the scrolling content. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollCaptureSearch](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureSearch(android.os.CancellationSignal,%20java.util.function.Consumer))`(`signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)`, `onReady:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!>`)` The system is searching for the appropriate scrolling container to capture and would like to know the size and position of scrolling content handled by this callback. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollCaptureStart](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureStart(android.view.ScrollCaptureSession,%20android.os.CancellationSignal,%20java.lang.Runnable))`(`session:` ` [ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession)`, `signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)`, `onReady:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` Scroll Capture has selected this callback to provide the scrolling image content. |
 
 ## Public methods
@@ -87,6 +89,7 @@ This request may be cancelled via the provided [CancellationSignal](https://deve
 | `session` | [ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession):the current session, resources provided by it are valid for use until the [session ends](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureEnd(java.lang.Runnable))This value cannot be`null`. |
 | `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#):signal to cancel the operation in progress This value cannot be`null`. |
 | `captureArea` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):the area to capture, a rectangle within`scrollBounds`This value cannot be`null`. |
+| --- | --- |
 | `onComplete` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\>:a consumer for the captured area This value cannot be`null`. |
 
 ### onScrollCaptureSearch
@@ -136,3 +139,4 @@ This request may be cancelled via the provided [CancellationSignal](https://deve
 | `session` | [ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession):the current session, resources provided by it are valid for use until the [session ends](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureEnd(java.lang.Runnable))This value cannot be`null`. |
 | `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#):signal to cancel the operation in progress This value cannot be`null`. |
 | `onReady` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#):signal used to report completion of the request This value cannot be`null`. |
+| --- | --- |

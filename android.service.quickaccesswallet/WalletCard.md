@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # WalletCard
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard "View this page in Java") 
+| --- | --- |
 
 ```
 class WalletCard : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.WalletCard](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#) |
 
 A [WalletCard](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#) can represent anything that a user might carry in their wallet -- a credit card, library card, transit pass, etc. Cards are identified by a String identifier and contain a card type, card image, card image content description, and a [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) to be used if the user clicks on the card. Cards may be displayed with an icon and label, though these are optional. Non-payment cards will also have a second image that will be displayed when the card is tapped.
@@ -26,6 +28,7 @@ A [WalletCard](https://developer.android.com/reference/kotlin/android/service/qu
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CARD_TYPE_NON_PAYMENT](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#CARD_TYPE_NON_PAYMENT:kotlin.Int) Non-payment cards refer to any cards that are not used for cash-equivalent payment, including event tickets, flights, offers, loyalty cards, gift cards and transit tickets. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CARD_TYPE_PAYMENT](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#CARD_TYPE_PAYMENT:kotlin.Int) Payment cards refer to credit cards, debit cards or any other cards in the wallet used to make cash-equivalent payments. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CARD_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#CARD_TYPE_UNKNOWN:kotlin.Int) Unknown cards refer to cards whose types are unspecified. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,12 +39,15 @@ A [WalletCard](https://developer.android.com/reference/kotlin/android/service/qu
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#describeContents())`()` <br /> |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getCardIcon](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardIcon())`()` An icon may be shown alongside the card image to convey information about how the card can be used, or if some other action must be taken before using the card. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCardId](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardId())`()` The card id must be unique within the list of cards returned. |
+| --- | --- |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) | [getCardImage](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardImage())`()` The visual representation of the card. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getCardLabel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardLabel())`()` A card label may be shown alongside the card image to convey information about how the card can be used, or if some other action must be taken before using the card. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#)!\> | [getCardLocations](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardLocations())`()` List of locations that this card might be useful at. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCardType](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getCardType())`()` Returns the card type. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getContentDescription](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getContentDescription())`()` The content description of the card image. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getNonPaymentCardSecondaryImage](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getNonPaymentCardSecondaryImage())`()` Visual representation of the card when it is tapped. |
+| --- | --- |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | [getPendingIntent](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#getPendingIntent())`()` If the user performs a click on the card, this PendingIntent will be sent. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

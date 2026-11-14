@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # RemoveSpaceGesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture "View this page in Java") 
+| --- | --- |
 
 ```
 class RemoveSpaceGesture : HandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
 | | ↳ | [android.view.inputmethod.RemoveSpaceGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#) |
 
@@ -32,9 +34,11 @@ A subclass of [HandwritingGesture](https://developer.android.com/reference/kotli
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | [getEndPoint](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#getEndPoint())`()` Returns the end point in screen coordinates set with [Builder.setPoints](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture.Builder#setPoints(android.graphics.PointF,%20android.graphics.PointF)). |
+| --- | --- |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | [getStartPoint](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#getStartPoint())`()` Returns the start point in screen coordinates set with [Builder.setPoints](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture.Builder#setPoints(android.graphics.PointF,%20android.graphics.PointF)). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/RemoveSpaceGesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

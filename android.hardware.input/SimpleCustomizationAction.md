@@ -7,6 +7,7 @@ class SimpleCustomizationAction : CustomizationAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.input.CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction) ||
 | | ↳ | [android.hardware.input.SimpleCustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#) |
 
@@ -19,30 +20,39 @@ Represents predefined simple actions, such as Volume up/down, Screenshot, etc.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_ASSIST:kotlin.Int` Action type: Assist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_BACK:kotlin.Int` Action type: Back. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_BRIGHTNESS_DOWN:kotlin.Int` Action type: Brightness down. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_BRIGHTNESS_UP:kotlin.Int` Action type: Brightness up. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CALCULATOR:kotlin.Int` Action type: Calculator. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CLOSE_WINDOW:kotlin.Int` Action type: Close window. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CONTEXTUAL_INSERT:kotlin.Int` Action type: Contextual Insert. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CONTEXTUAL_QUERY:kotlin.Int` Action type: Contextual Query. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CONTEXTUAL_SEARCH:kotlin.Int` Action type: Contextual Search. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_COPY:kotlin.Int` Action type: Copy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_CUT:kotlin.Int` Action type: Cut. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_DICTATION:kotlin.Int` Action type: Dictation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_DO_NOTHING:kotlin.Int` Action type: Do nothing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_EMOJI_MENU:kotlin.Int` Action type: Emoji menu. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_FORWARD:kotlin.Int` Action type: Forward. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_LOCK:kotlin.Int` Action type: Lock screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_MEDIA_NEXT:kotlin.Int` Action type: Media next. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_MEDIA_PLAY_PAUSE:kotlin.Int` Action type: Media play/pause. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_MEDIA_PREVIOUS:kotlin.Int` Action type: Media previous. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_PARTIAL_SCREENSHOT:kotlin.Int` Action type: Partial Screenshot. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_PASTE:kotlin.Int` Action type: Paste. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_PRINT_SCREEN:kotlin.Int` Action type: Print screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_SCREEN_CAPTURE:kotlin.Int` Action type: Screen capture. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_SHOW_DESKTOP:kotlin.Int` Action type: Show desktop. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_SWITCH_INPUT_LANGUAGE:kotlin.Int` Action type: Language Switch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_VOICE_ASSIST:kotlin.Int` Action type: Voice Assist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_VOLUME_DOWN:kotlin.Int` Action type: Volume down. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_VOLUME_MUTE:kotlin.Int` Action type: Volume mute. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#TYPE_VOLUME_UP:kotlin.Int` Action type: Volume up. |
 
@@ -55,6 +65,7 @@ Represents predefined simple actions, such as Volume up/down, Screenshot, etc.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#getType()()` Returns the specific type of action to be performed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 ## Constants
 

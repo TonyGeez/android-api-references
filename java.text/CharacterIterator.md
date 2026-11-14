@@ -11,6 +11,7 @@ interface CharacterIterator : Cloneable
 | [java.text.CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#) |
 
 | Known Direct Subclasses [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator), [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator) |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator) | An`AttributedCharacterIterator`allows iteration through both text and related attribute information. | | [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator) | `StringCharacterIterator`implements the`CharacterIterator`protocol for a`String`. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This interface defines a protocol for bidirectional iteration over text. The iterator iterates over a bounded sequence of characters. Characters are indexed with values beginning with the value returned by getBeginIndex() and continuing through the value returned by getEndIndex()-1.
 
@@ -70,12 +71,15 @@ Traverse both forward and backward from a given position in the text. Calls to n
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#clone())`()` Create a copy of this iterator |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [current](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#current())`()` Gets the character at the current position (as returned by getIndex()). |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [first](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#first())`()` Sets the position to getBeginIndex() and returns the character at that position. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getBeginIndex())`()` Returns the start index of the text. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getEndIndex())`()` Returns the end index of the text. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getIndex())`()` Returns the current index. |
+| --- | --- |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [last](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#last())`()` Sets the position to getEndIndex()-1 (getEndIndex() if the text is empty) and returns the character at that position. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#next())`()` Increments the iterator's index by one and returns the character at the new index. |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [previous](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#previous())`()` Decrements the iterator's index by one and returns the character at the new index. |
+| --- | --- |
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [setIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#setIndex(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the position to the specified position in the text and returns that character. |
 
 ## Constants

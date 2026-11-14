@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnPreferenceChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnPreferenceChangeListener

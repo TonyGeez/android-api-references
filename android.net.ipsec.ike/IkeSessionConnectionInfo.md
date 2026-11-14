@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # IkeSessionConnectionInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class IkeSessionConnectionInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#) |
 
 IkeSessionConnectionInfo represents the connection information of an [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession).
@@ -28,6 +30,7 @@ Connection information includes IP addresses of both the IKE client and server a
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getLocalAddress](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getLocalAddress())`()` Returns the local IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
 | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) | [getNetwork](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getNetwork())`()` Returns the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getRemoteAddress](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getRemoteAddress())`()` Returns the remote IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
+| --- | --- |
 
 ## Public constructors
 
@@ -51,6 +54,7 @@ Except for testing, IKE library users normally do not instantiate [IkeSessionCon
 | `localAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#): This value cannot be `null`. |
 | `remoteAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#): This value cannot be `null`. |
 | `network` | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

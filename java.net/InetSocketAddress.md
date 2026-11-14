@@ -9,6 +9,7 @@ open class InetSocketAddress : SocketAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress) ||
 | | ↳ | [java.net.InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#) |
 
@@ -31,12 +32,15 @@ The*wildcard* is a special local IP address. It usually means "any" and can only
 | openstatic [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#)! | [createUnresolved](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#createUnresolved(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an unresolved socket address from a hostname and a port number. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getAddress())`()` Gets the`InetAddress`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostName](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getHostName())`()` Gets the`hostname`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostString](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getHostString())`()` Returns the hostname, or the String form of the address if it doesn't have a hostname (it was created using a literal). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getPort())`()` Gets the port number. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#hashCode())`()` Returns a hashcode for this socket address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnresolved](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#isUnresolved())`()` Checks whether the address has been resolved or not. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#toString())`()` Constructs a string representation of this InetSocketAddress. |
+| --- | --- |
 
 ## Public constructors
 

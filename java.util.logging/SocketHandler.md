@@ -9,9 +9,11 @@ open class SocketHandler : StreamHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler) |||
 | | ↳ | [java.util.logging.StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler) ||
 | | | ↳ | [java.util.logging.SocketHandler](https://developer.android.com/reference/kotlin/java/util/logging/SocketHandler#) |
+| --- | --- | --- | --- |
 
 Simple network logging Handler.
 

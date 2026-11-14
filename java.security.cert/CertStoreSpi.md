@@ -9,6 +9,7 @@ abstract class CertStoreSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertStoreSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi#) |
 
 The*Service Provider Interface* (**SPI** ) for the [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore) class. All`CertStore`implementations must include a class (the SPI class) that extends this class (`CertStoreSpi`), provides a constructor with a single argument of type`CertStoreParameters`, and implements all of its methods. In general, instances of this class should only be accessed through the`CertStore`class. For details, see the Java Cryptography Architecture.

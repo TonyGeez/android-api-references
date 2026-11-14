@@ -9,13 +9,17 @@ open class DeflaterOutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [java.util.zip.DeflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [GZIPOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPOutputStream), [ZipOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream) |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [GZIPOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPOutputStream) | This class implements a stream filter for writing compressed data in the GZIP file format. | | [ZipOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream) | This class implements an output stream filter for writing files in the ZIP file format. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream.html#) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream.html#) | The`JarOutputStream`class is used to write the contents of a JAR file to any output stream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements an output stream filter for compressing data in the "deflate" compression format. It is also used as the basis for other types of compression filters, such as GZIPOutputStream.
 
@@ -35,6 +39,7 @@ This class implements an output stream filter for compressing data in the "defla
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#close())`()` Writes remaining compressed data to the output stream and closes the underlying stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#finish())`()` Finishes writing compressed data to the output stream without closing the underlying stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#flush())`()` Flushes the compressed output stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the compressed output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte to the compressed output stream. |
 
@@ -128,6 +133,7 @@ Creates a new output stream with the specified compressor, flush mode and a defa
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:the output stream |
 | `def` | [Deflater](https://developer.android.com/reference/kotlin/java/util/zip/Deflater)!:the compressor ("deflater") |
 | `syncFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`the #flush() method of this instance flushes the compressor with flush mode [Deflater.SYNC_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#SYNC_FLUSH:kotlin.Int) before flushing the output stream, otherwise only flushes the output stream |
+| --- | --- |
 
 ### DeflaterOutputStream
 
@@ -149,6 +155,7 @@ The new output stream instance is created as if by invoking the 4-argument const
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:the output stream |
 | `def` | [Deflater](https://developer.android.com/reference/kotlin/java/util/zip/Deflater)!:the compressor ("deflater") |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the output buffer size |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------|
@@ -173,6 +180,7 @@ Creates a new output stream with the specified compressor, buffer size and flush
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:the output stream |
 | `def` | [Deflater](https://developer.android.com/reference/kotlin/java/util/zip/Deflater)!:the compressor ("deflater") |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the output buffer size |
+| --- | --- |
 | `syncFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`the #flush() method of this instance flushes the compressor with flush mode [Deflater.SYNC_FLUSH](https://developer.android.com/reference/kotlin/java/util/zip/Deflater#SYNC_FLUSH:kotlin.Int) before flushing the output stream, otherwise only flushes the output stream |
 
 | Exceptions ||
@@ -243,6 +251,7 @@ Writes an array of bytes to the compressed output stream. This method will block
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to be written |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|------------------------------|

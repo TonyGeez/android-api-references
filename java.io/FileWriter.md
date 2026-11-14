@@ -9,9 +9,11 @@ open class FileWriter : OutputStreamWriter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.Writer](https://developer.android.com/reference/kotlin/java/io/Writer) |||
 | | ↳ | [java.io.OutputStreamWriter](https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter) ||
 | | | ↳ | [java.io.FileWriter](https://developer.android.com/reference/kotlin/java/io/FileWriter#) |
+| --- | --- | --- | --- |
 
 Writes text to character files using a default buffer size. Encoding from characters to bytes uses either a specified [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) or the platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
 
@@ -122,6 +124,7 @@ Constructs a`FileWriter`given the`File`to write, [charset](https://developer.and
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File)!:the`File`to write |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:the [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `append` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):a boolean. If`true`, the writer will write the data to the end of the file rather than the beginning. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -219,6 +222,7 @@ Constructs a`FileWriter`given a file name, [charset](https://developer.android.c
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the file to write |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:the [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
 | `append` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):a boolean. If`true`, the writer will write the data to the end of the file rather than the beginning. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|

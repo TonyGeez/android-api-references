@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TextRunShaper
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/text/TextRunShaper "View this page in Java") 
+| --- | --- |
 
 ```
 open class TextRunShaper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.text.TextRunShaper](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#) |
 
 Provides conversion from a text into glyph array. Text shaping is a preprocess for drawing text into canvas with glyphs. The glyph is a most primitive unit of the text drawing, consist of glyph identifier in the font file and its position and style. You can draw the shape result to Canvas by calling Canvas#drawGlyphs. For most of the use cases, [android.text.TextShaper](https://developer.android.com/reference/kotlin/android/text/TextShaper.html#) will provide text shaping functionalities needed. [TextRunShaper](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#) is a lower level API that is used by [android.text.TextShaper](https://developer.android.com/reference/kotlin/android/text/TextShaper.html#).
@@ -49,12 +51,15 @@ Shape non-styled text. This function shapes the text of the given range under th
 | `text` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html):a text buffer to be shaped This value cannot be`null`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a start index of shaping target in the buffer. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a length of shaping target in the buffer. |
+| --- | --- |
 | `contextStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a start index of context used for shaping in the buffer. |
 | `contextCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a length of context used for shaping in the buffer. |
 | `xOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of x offset of the result glyphs. |
+| --- | --- |
 | `yOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of y offset of the result glyphs. |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if this text is shaped for RTL direction, false otherwise. |
 | `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#):a paint used for shaping text. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|---------------------------------------------|
@@ -85,12 +90,15 @@ Shape non-styled text. This function shapes the text of the given range under th
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):a text buffer to be shaped. Any styled spans stored in this text are ignored. This value cannot be`null`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a start index of shaping target in the buffer. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a length of shaping target in the buffer. |
+| --- | --- |
 | `contextStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a start index of context used for shaping in the buffer. |
 | `contextCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a length of context used for shaping in the buffer. |
 | `xOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of x offset of the result glyphs. |
+| --- | --- |
 | `yOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of y offset of the result glyphs. |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if this text is shaped for RTL direction, false otherwise. |
 | `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#):a paint used for shaping text. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------|

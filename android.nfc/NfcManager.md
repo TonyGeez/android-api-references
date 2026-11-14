@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # NfcManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcManager "View this page in Java") 
+| --- | --- |
 
 ```
 class NfcManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.NfcManager](https://developer.android.com/reference/kotlin/android/nfc/NfcManager#) |
 
 High level manager used to obtain an instance of an [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter).

@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ScreenCaptureCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/Activity.ScreenCaptureCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ScreenCaptureCallback

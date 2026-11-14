@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # AudioPresentation
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/AudioPresentation "View this page in Java")
+| --- | --- |
 
 ```
 class AudioPresentation : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioPresentation](https://developer.android.com/reference/kotlin/android/media/AudioPresentation#) |
 
 The AudioPresentation class encapsulates the information that describes an audio presentation which is available in next generation audio content. Used by `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/media/AudioTrack` `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to query available presentations and to select one, respectively. A list of available audio presentations in a media source can be queried using `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)`. This list can be presented to a user for selection. An AudioPresentation can be passed to an offloaded audio decoder via `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to request decoding of the selected presentation. An audio stream may contain multiple presentations that differ by language, accessibility, end point mastering and dialogue enhancement. An audio presentation may also have a set of description labels in different languages to help the user to make an informed selection. Applications that parse media streams and extract presentation information on their own can create instances of AudioPresentation by using `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` class.
@@ -24,18 +26,23 @@ The AudioPresentation class encapsulates the information that describes an audio
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_COMMENTARY:kotlin.Int` Audio presentation content classifier: Commentary. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_DIALOG:kotlin.Int` Audio presentation content classifier: Dialog. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_EMERGENCY:kotlin.Int` Audio presentation content classifier: Emergency. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_HEARING_IMPAIRED:kotlin.Int` Audio presentation content classifier: Hearing impaired. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_MAIN:kotlin.Int` Audio presentation classifier: Complete main. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_MUSIC_AND_EFFECTS:kotlin.Int` Audio presentation content classifier: Music and effects. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_UNKNOWN:kotlin.Int` Audio presentation classifier: Unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_VISUALLY_IMPAIRED:kotlin.Int` Audio presentation content classifier: Visually impaired. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CONTENT_VOICEOVER:kotlin.Int` Audio presentation content classifier: Voice over. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#MASTERED_FOR_3D:kotlin.Int` Three-dimensional (e.g. 5.1.2) speaker layout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#MASTERED_FOR_HEADPHONE:kotlin.Int` Prerendered for headphone playback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#MASTERED_FOR_STEREO:kotlin.Int` Stereo speaker layout. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#MASTERED_FOR_SURROUND:kotlin.Int` Two-dimensional (e.g. 5.1) speaker layout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#MASTERING_NOT_INDICATED:kotlin.Int` No preferred reproduction channel layout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#PRESENTATION_ID_UNKNOWN:kotlin.Int` Unknown audio presentation ID, this indicates audio presentation ID is not selected. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#PROGRAM_ID_UNKNOWN:kotlin.Int` Unknown audio program ID, this indicates audio program ID is not selected. |
 
 | Inherited constants ||
@@ -47,15 +54,19 @@ The AudioPresentation class encapsulates the information that describes an audio
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLabels()()` <br /> |
+| --- | --- |
 | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLocale()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getMasteringIndication()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getPresentationId()()` Returns presentation ID used by the framework to select an audio presentation rendered by a decoder. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getProgramId()()` Returns program ID used by the framework to select an audio presentation rendered by a decoder. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasAudioDescription()()` Indicates whether an audio description for the visually impaired is available. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasDialogueEnhancement()()` Indicates whether dialogue enhancement is available. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasSpokenSubtitles()()` Indicates whether spoken subtitles for the visually impaired are available. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

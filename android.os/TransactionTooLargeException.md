@@ -5,15 +5,18 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 # TransactionTooLargeException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/TransactionTooLargeException "View this page in Java") 
+| --- | --- |
 
 ```
 open class TransactionTooLargeException : RemoteException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [android.util.AndroidException](https://developer.android.com/reference/kotlin/android/util/AndroidException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.os.RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException) ||
 | | | | | ↳ | [android.os.TransactionTooLargeException](https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException#) |
 

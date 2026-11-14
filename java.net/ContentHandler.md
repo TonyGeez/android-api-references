@@ -9,6 +9,7 @@ abstract class ContentHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler#) |
 
 The abstract class`ContentHandler`is the superclass of all classes that read an`Object`from a`URLConnection`.

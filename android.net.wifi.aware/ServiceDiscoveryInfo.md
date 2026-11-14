@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # ServiceDiscoveryInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class ServiceDiscoveryInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.ServiceDiscoveryInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#) |
 
 An object providing information about a Wi-Fi Aware discovery session with a specific peer.
@@ -22,9 +24,11 @@ An object providing information about a Wi-Fi Aware discovery session with a spe
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\> | [getMatchFilters](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getMatchFilters())`()` Get the filter which resulted in this service discovery. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPairedAlias](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getPairedAlias())`()` Get the paired device alias if the discovered device has already paired. |
 | [AwarePairingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig)? | [getPairingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getPairingConfig())`()` Get the discovered device's pairing config. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerCipherSuite](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getPeerCipherSuite())`()` Get the cipher suite type specified by the publish session to be used for data-path setup. |
 | [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle) | [getPeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getPeerHandle())`()` Get the peer handle for the peer matching our discovery operation |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getScid](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getScid())`()` Get the Security context identifier is associate with PMK for data path security config. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getServiceSpecificInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ServiceDiscoveryInfo#getServiceSpecificInfo())`()` The service specific information (arbitrary byte array) provided by the peer as part of its discovery configuration. |
 
 ## Public methods

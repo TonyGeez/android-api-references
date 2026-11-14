@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AccessibilityGestureEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class AccessibilityGestureEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.AccessibilityGestureEvent](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#) |
 
 This class describes the gesture event including gesture id and which display it happens on.
@@ -32,9 +34,11 @@ This class describes the gesture event including gesture id and which display it
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [gestureIdToString](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#gestureIdToString(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the specified gesture id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#getDisplayId())`()` Returns the display id of the received-gesture display, for use with [android.hardware.display.DisplayManager#getDisplay(int)](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGestureId](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#getGestureId())`()` Returns performed gesture id. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!\> | [getMotionEvents](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#getMotionEvents())`()` Returns the motion events that lead to this gesture. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#toString())`()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -61,6 +65,7 @@ Constructs an AccessibilityGestureEvent to be dispatched to an accessibility ser
 | `gestureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the id number of the gesture. |
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the display on which this gesture was performed. |
 | `motionEvents` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!\>:the motion events that lead to this gesture. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 
@@ -166,6 +171,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

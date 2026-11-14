@@ -9,9 +9,11 @@ open class UnsupportedCallbackException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [javax.security.auth.callback.UnsupportedCallbackException](https://developer.android.com/reference/kotlin/javax/security/auth/callback/UnsupportedCallbackException#) |
+| --- | --- | --- | --- |
 
 Signals that a`CallbackHandler`does not recognize a particular`Callback`.
 

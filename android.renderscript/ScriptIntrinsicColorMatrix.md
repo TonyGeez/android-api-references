@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptIntrinsicColorMatrix
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix "View this page in Java") 
+| --- | --- |
 
 ```
 class ScriptIntrinsicColorMatrix : ScriptIntrinsic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
 | | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.renderscript.ScriptIntrinsicColorMatrix](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#) |
 
 | **This class was deprecated in API level 31.**
@@ -30,15 +33,19 @@ Intrinsic for applying a color matrix to allocations. If the element type is [El
 | static [ScriptIntrinsicColorMatrix](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#create(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Create an intrinsic for applying a color matrix to an allocation. |
 | static [ScriptIntrinsicColorMatrix](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#create(android.renderscript.RenderScript,%20android.renderscript.Element))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`)` Create an intrinsic for applying a color matrix to an allocation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#forEach(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation) and copy to the output [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#forEach(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation) and copy to the output [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation). |
 | [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelID](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#getKernelID())`()` Get a KernelID for this intrinsic kernel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setAdd(android.renderscript.Float4))`(`f:` ` [Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4)!`)` Set the value to be added after the color matrix has been applied. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setAdd(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the value to be added after the color matrix has been applied. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setColorMatrix(android.renderscript.Matrix3f))`(`m:` ` [Matrix3f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix3f)!`)` Set the color matrix which will be applied to each cell of the image. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setColorMatrix(android.renderscript.Matrix4f))`(`m:` ` [Matrix4f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix4f)!`)` Set the color matrix which will be applied to each cell of the image. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGreyscale](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setGreyscale())`()` Set a color matrix to convert from RGB to luminance. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRGBtoYUV](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setRGBtoYUV())`()` Set the matrix to convert from RGB to YUV with a direct copy of the 4th channel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYUVtoRGB](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicColorMatrix#setYUVtoRGB())`()` Set the matrix to convert from YUV to RGB with a direct copy of the 4th channel. |
+| --- | --- |
 
 ## Public methods
 
@@ -130,6 +137,7 @@ Invoke the kernel and apply the matrix to each cell of input [Allocation](https:
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:Input allocation |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:Output allocation |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:LaunchOptions for clipping |
+| --- | --- |
 
 ### getKernelID
 
@@ -187,6 +195,7 @@ Set the value to be added after the color matrix has been applied. The default v
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red add value. |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green add value. |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue add value. |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha add value. |
 
 ### setColorMatrix

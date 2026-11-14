@@ -11,8 +11,10 @@ interface ExecutorService : AutoCloseable, Executor
 | [java.util.concurrent.ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#) |
 
 | Known Direct Subclasses [AbstractExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService), [ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService) |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService) | Provides default implementations of [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#) execution methods. | | [ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#) that can schedule commands to run after a given delay, or to execute periodically. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool), [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor), [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor), [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#) for running [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) s. | | [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) | A [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) | A [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](https://developer.android.com/reference/kotlin/java/util/concurrent/Executors) factory methods. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) that provides methods to manage termination and methods that can produce a [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future) for tracking progress of one or more asynchronous tasks.
 
@@ -94,15 +96,19 @@ Memory consistency effects: Actions in a thread prior to the submission of a`Run
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitTermination](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#awaitTermination(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#close())`()` Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#invokeAll(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` Executes the given tasks, returning a list of Futures holding their status and results when all complete. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#invokeAll(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Executes the given tasks, returning a list of Futures holding their status and results when all complete or the timeout expires, whichever happens first. |
 | abstractT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#invokeAny(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` Executes the given tasks, returning the result of one that has completed successfully (i.e., without throwing an exception), if any do. |
 | abstractT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#invokeAny(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Executes the given tasks, returning the result of one that has completed successfully (i.e., without throwing an exception), if any do before the given timeout elapses. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShutdown](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#isShutdown())`()` Returns`true`if this executor has been shut down. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminated](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#isTerminated())`()` Returns`true`if all tasks have completed following shut down. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#shutdown())`()` Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!\>! | [shutdownNow](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#shutdownNow())`()` Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution. |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<\*\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#submit(java.lang.Runnable))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Submits a Runnable task for execution and returns a Future representing that task. |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#submit(java.lang.Runnable,%20java.util.concurrent.ExecutorService.submit.T))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `result:` `T`)` Submits a Runnable task for execution and returns a Future representing that task. |
+| --- | --- |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService#submit(java.util.concurrent.Callable))`(`task:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!`)` Submits a value-returning task for execution and returns a Future representing the pending results of the task. |
 
 | Inherited functions ||
@@ -180,6 +186,7 @@ Executes the given tasks, returning a list of Futures holding their status and r
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case unfinished tasks are cancelled |
 | `java.lang.NullPointerException` | if tasks or any of its elements are`null` |
 | `java.util.concurrent.RejectedExecutionException` | if any task cannot be scheduled for execution |
+| --- | --- |
 
 ### invokeAll
 
@@ -200,6 +207,7 @@ Executes the given tasks, returning a list of Futures holding their status and r
 | `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
@@ -211,6 +219,7 @@ Executes the given tasks, returning a list of Futures holding their status and r
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case unfinished tasks are cancelled |
 | `java.lang.NullPointerException` | if tasks, any of its elements, or unit are`null` |
 | `java.util.concurrent.RejectedExecutionException` | if any task cannot be scheduled for execution |
+| --- | --- |
 
 ### invokeAny
 
@@ -236,6 +245,7 @@ Executes the given tasks, returning the result of one that has completed success
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.NullPointerException` | if tasks or any element task subject to execution is`null` |
 | `java.lang.IllegalArgumentException` | if tasks is empty |
+| --- | --- |
 | `java.util.concurrent.ExecutionException` | if no task successfully completes |
 | `java.util.concurrent.RejectedExecutionException` | if tasks cannot be scheduled for execution |
 
@@ -258,6 +268,7 @@ Executes the given tasks, returning the result of one that has completed success
 | `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
@@ -269,6 +280,7 @@ Executes the given tasks, returning the result of one that has completed success
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.NullPointerException` | if tasks, or unit, or any element task subject to execution is`null` |
 | `java.util.concurrent.TimeoutException` | if the given timeout elapses before any task successfully completes |
+| --- | --- |
 | `java.util.concurrent.ExecutionException` | if no task successfully completes |
 | `java.util.concurrent.RejectedExecutionException` | if tasks cannot be scheduled for execution |
 
@@ -371,6 +383,7 @@ Submits a Runnable task for execution and returns a Future representing that tas
 | `task` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to submit |
 | `result` | T:the result to return |
 | `<T>` | the type of the result |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------|

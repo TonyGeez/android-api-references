@@ -5,15 +5,18 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # Notation
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/Notation "View this page in Java") 
+| --- | --- |
 
 ```
 open class Notation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.Notation](https://developer.android.com/reference/kotlin/android/icu/number/Notation#) |
 
 | Known Direct Subclasses [CompactNotation](https://developer.android.com/reference/kotlin/android/icu/number/CompactNotation), [ScientificNotation](https://developer.android.com/reference/kotlin/android/icu/number/ScientificNotation), [SimpleNotation](https://developer.android.com/reference/kotlin/android/icu/number/SimpleNotation) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------| | [CompactNotation](https://developer.android.com/reference/kotlin/android/icu/number/CompactNotation) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [ScientificNotation](https://developer.android.com/reference/kotlin/android/icu/number/ScientificNotation) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [SimpleNotation](https://developer.android.com/reference/kotlin/android/icu/number/SimpleNotation) | A class that defines the simple notation style to be used when formatting numbers in NumberFormatter. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A class that defines the notation style to be used when formatting numbers in NumberFormatter.
 
@@ -24,6 +27,7 @@ A class that defines the notation style to be used when formatting numbers in Nu
 | openstatic [CompactNotation](https://developer.android.com/reference/kotlin/android/icu/number/CompactNotation)! | [compactLong](https://developer.android.com/reference/kotlin/android/icu/number/Notation#compactLong())`()` Print the number using long-form compact notation. |
 | openstatic [CompactNotation](https://developer.android.com/reference/kotlin/android/icu/number/CompactNotation)! | [compactShort](https://developer.android.com/reference/kotlin/android/icu/number/Notation#compactShort())`()` Print the number using short-form compact notation. |
 | openstatic [ScientificNotation](https://developer.android.com/reference/kotlin/android/icu/number/ScientificNotation)! | [engineering](https://developer.android.com/reference/kotlin/android/icu/number/Notation#engineering())`()` Print the number using engineering notation, a variant of scientific notation in which the exponent must be divisible by 3. |
+| --- | --- |
 | openstatic [ScientificNotation](https://developer.android.com/reference/kotlin/android/icu/number/ScientificNotation)! | [scientific](https://developer.android.com/reference/kotlin/android/icu/number/Notation#scientific())`()` Print the number using scientific notation (also known as scientific form, standard index form, or standard form in the UK). |
 | openstatic [SimpleNotation](https://developer.android.com/reference/kotlin/android/icu/number/SimpleNotation)! | [simple](https://developer.android.com/reference/kotlin/android/icu/number/Notation#simple())`()` Print the number using simple notation without any scaling by powers of ten. |
 

@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # VolumeAutomation
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/VolumeAutomation "View this page in Java") 
+| --- | --- |
 
 ```
 interface VolumeAutomation
@@ -13,6 +14,7 @@ interface VolumeAutomation
 | [android.media.VolumeAutomation](https://developer.android.com/reference/kotlin/android/media/VolumeAutomation#) |
 
 | Known Direct Subclasses [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack), [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------| | [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) | The AudioTrack class manages and plays a single audio resource for Java applications. | | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) | MediaPlayer class can be used to control playback of audio/video files and streams. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 `VolumeAutomation`defines an interface for automatic volume control of [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) and [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer) objects.
 

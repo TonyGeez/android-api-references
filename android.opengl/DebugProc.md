@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # DebugProc
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLES32.DebugProc "View this page in Java") 
+| --- | --- |
 
 ```
 interface DebugProc

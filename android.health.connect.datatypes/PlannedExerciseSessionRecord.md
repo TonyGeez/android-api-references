@@ -8,9 +8,11 @@ class PlannedExerciseSessionRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.PlannedExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#) |
+| --- | --- | --- | --- |
 
 Captures a planned exercise session, also commonly referred to as a training plan.
 
@@ -31,12 +33,15 @@ Each record contains a start time, end time, an exercise type and a list of `htt
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseBlock](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getBlocks()()` Returns the exercise blocks for this step. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getCompletedExerciseSessionId()()` Returns the id of exercise session that completed this planned session. |
+| --- | --- |
 | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getDuration()()` Returns the expected duration of the planned session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getExerciseType()()` Returns the exercise type of this planned session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getNotes()()` Returns notes for this planned session. |
+| --- | --- |
 | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getStartDate()()` Returns the start date of the planned session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getTitle()()` Returns title of this planned session. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#hasExplicitTime()()` Returns whether this planned session has an explicit time. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#hashCode()()` Returns a hash code value for the object. |
 
 | Inherited functions ||
@@ -61,6 +66,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

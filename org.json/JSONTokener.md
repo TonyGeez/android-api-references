@@ -9,6 +9,7 @@ open class JSONTokener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.json.JSONTokener](https://developer.android.com/reference/kotlin/org/json/JSONTokener#) |
 
 Parses a JSON ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) encoded string into the corresponding object. Most clients of this class will use only need the [constructor](https://developer.android.com/reference/kotlin/org/json/JSONTokener#JSONTokener(kotlin.String))and [nextValue](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextValue())method. Example usage: 
@@ -51,18 +52,23 @@ Each tokener may be used to parse a single JSON string. Instances of this class 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [back](https://developer.android.com/reference/kotlin/org/json/JSONTokener#back())`()` Unreads the most recent character of input. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dehexchar](https://developer.android.com/reference/kotlin/org/json/JSONTokener#dehexchar(kotlin.Char))`(`hex:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the integer \[0. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [more](https://developer.android.com/reference/kotlin/org/json/JSONTokener#more())`()` Returns true until the input has been exhausted. |
+| --- | --- |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](https://developer.android.com/reference/kotlin/org/json/JSONTokener#next())`()` Returns the next available character, or the null character '\\0' if all input has been exhausted. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](https://developer.android.com/reference/kotlin/org/json/JSONTokener#next(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the next available character if it equals`c`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [next](https://developer.android.com/reference/kotlin/org/json/JSONTokener#next(kotlin.Int))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the next`length`characters of the input. |
+| --- | --- |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [nextClean](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextClean())`()` Returns the next character that is not whitespace and does not belong to a comment. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextString](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextString(kotlin.Char))`(`quote:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the string up to but not including`quote`, unescaping any character escape sequences encountered along the way. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextTo](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextTo(kotlin.Char))`(`excluded:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Equivalent to`nextTo(String.valueOf(excluded))`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextTo](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextTo(kotlin.String))`(`excluded:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the [trimmed](https://developer.android.com/reference/kotlin/java/lang/String.html#trim())string holding the characters up to but not including the first of: - any character in`excluded` - a newline character '\\n' - a carriage return '\\r' <br /> |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [nextValue](https://developer.android.com/reference/kotlin/org/json/JSONTokener#nextValue())`()` Returns the next value from the input. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipPast](https://developer.android.com/reference/kotlin/org/json/JSONTokener#skipPast(kotlin.String))`(`thru:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Advances past all input up to and including the next occurrence of`thru`. |
+| --- | --- |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [skipTo](https://developer.android.com/reference/kotlin/org/json/JSONTokener#skipTo(kotlin.Char))`(`to:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Advances past all input up to but not including the next occurrence of`to`. |
 | open [JSONException](https://developer.android.com/reference/kotlin/org/json/JSONException)! | [syntaxError](https://developer.android.com/reference/kotlin/org/json/JSONTokener#syntaxError(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an exception containing the given message plus the current position and the entire input string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/org/json/JSONTokener#toString())`()` Returns the current position and the entire input string. |
+| --- | --- |
 
 ## Public constructors
 

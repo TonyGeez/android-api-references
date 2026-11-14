@@ -3,15 +3,18 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # TimeAnimator
 
 Kotlin | [Java](https://developer.android.com/reference/android/animation/TimeAnimator "View this page in Java")
+| --- | --- |
 
 ```
 open class TimeAnimator : ValueAnimator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.animation.Animator](https://developer.android.com/reference/kotlin/android/animation/Animator) |||
 | | ↳ | [android.animation.ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) ||
 | | | ↳ | [android.animation.TimeAnimator](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator#) |
+| --- | --- | --- | --- |
 
 This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. There is no duration, interpolation, or object value-setting with this Animator. Instead, it is simply started, after which it proceeds to send out events on every animation frame to its TimeListener (if set), with information about this animator, the total elapsed time, and the elapsed time since the previous animation frame.
 
@@ -35,6 +38,7 @@ This class provides a simple callback mechanism to listeners that is synchronize
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/TimeAnimator#setCurrentPlayTime(kotlin.Long)(playTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the position of the animation to the specified point in time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/TimeAnimator#setTimeListener(android.animation.TimeAnimator.TimeListener)(listener: https://developer.android.com/reference/kotlin/android/animation/TimeAnimator.TimeListener!)` Sets a listener that is sent update events throughout the life of an animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/TimeAnimator#start()()` Starts this animation. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # EllipsizeCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/TextUtils.EllipsizeCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface EllipsizeCallback
@@ -13,6 +14,7 @@ interface EllipsizeCallback
 | [android.text.TextUtils.EllipsizeCallback](https://developer.android.com/reference/kotlin/android/text/TextUtils.EllipsizeCallback#) |
 
 | Known Direct Subclasses [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout) | A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 

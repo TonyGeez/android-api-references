@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableShort
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableShort "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableShort
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableShort](https://developer.android.com/reference/kotlin/android/util/MutableShort#) |
 
 | **This class was deprecated in API level 28.**

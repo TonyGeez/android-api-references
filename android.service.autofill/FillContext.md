@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FillContext
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillContext "View this page in Java") 
+| --- | --- |
 
 ```
 class FillContext : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.FillContext](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#) |
 
 This class represents a context for each fill request made via [android.service.autofill.AutofillService#onFillRequest(android.service.autofill.FillRequest,android.os.CancellationSignal,android.service.autofill.FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)). It contains a snapshot of the UI state, the view ids that were returned by the [autofill service](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) as both required to trigger a save and optional that can be saved, and the id of the corresponding [FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest).
@@ -28,9 +30,11 @@ This context allows you to inspect the values for the interesting views in the c
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#describeContents())`()` <br /> |
 | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | [getFocusedId](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getFocusedId())`()` The AutofillId of the view that triggered autofill. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestId](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getRequestId())`()` The id of the [fill request](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest) this context corresponds to. |
+| --- | --- |
 | [AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#) | [getStructure](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getStructure())`()` The screen content. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

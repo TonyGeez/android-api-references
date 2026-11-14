@@ -7,6 +7,7 @@ class PictureInPictureParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.PictureInPictureParams](https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#) |
 
 Represents a set of parameters used to initialize and update an Activity in picture-in-picture mode.
@@ -34,18 +35,23 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getActions()()` Returns the list of user actions that are associated with the activity when in picture-in-picture mode. |
+| --- | --- |
 | [Rational](https://developer.android.com/reference/kotlin/android/util/Rational.html#)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getAspectRatio()()` Returns the expected aspect ratio of the picture-in-picture window. |
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getCloseAction()()` Returns the action that is to replace the system close action. |
 | [Rational](https://developer.android.com/reference/kotlin/android/util/Rational.html#)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getExpandedAspectRatio()()` Returns the desired aspect ratio of the expanded picture-in-picture window. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getOverlayActions()()` Returns the set of overlay actions that are associated with the activity when in picture-in-picture mode. |
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryAction()()` Returns the action that is to be used as the primary action in the PiP menu. |
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryOverlayAction()()` Returns the primary overlay action that is associated with the activity when in picture-in-picture mode. |
+| --- | --- |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getSourceRectHint()()` Returns the source rect hint. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getSubtitle()()` Returns the subtitle of the picture-in-picture window that may be displayed to the user. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getTitle()()` Returns the title of the picture-in-picture window that may be displayed to the user. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#isAutoEnterEnabled()()` Returns whether auto enter picture-in-picture is enabled. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#isSeamlessResizeEnabled()()` Returns whether seamless resize is enabled. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

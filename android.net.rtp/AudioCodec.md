@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # AudioCodec
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/rtp/AudioCodec "View this page in Java") 
+| --- | --- |
 
 ```
 open class AudioCodec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.rtp.AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#) |
 
 | **This class was deprecated in API level 31.**
@@ -39,9 +41,11 @@ AudioCodec codec = AudioCodec.getCodec(100, "AMR/8000", "mode-set=1");
 | static [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#)! | [AMR](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#AMR:android.net.rtp.AudioCodec) Adaptive Multi-Rate narrowband audio codec, also known as AMR or AMR-NB. |
 | static [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#)! | [GSM](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#GSM:android.net.rtp.AudioCodec) GSM Full-Rate audio codec, also known as GSM-FR, GSM 06. |
 | static [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#)! | [GSM_EFR](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#GSM_EFR:android.net.rtp.AudioCodec) GSM Enhanced Full-Rate audio codec, also known as GSM-EFR, GSM 06. |
+| --- | --- |
 | static [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#)! | [PCMA](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#PCMA:android.net.rtp.AudioCodec) G. |
 | static [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#)! | [PCMU](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#PCMU:android.net.rtp.AudioCodec) G. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [fmtp](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#fmtp:kotlin.String) The format parameters to be used in the corresponding SDP attribute. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [rtpmap](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#rtpmap:kotlin.String) The encoding parameters to be used in the corresponding SDP attribute. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec#type:kotlin.Int) The RTP payload type of the encoding. |
 
@@ -68,6 +72,7 @@ Creates an AudioCodec according to the given configuration.
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The payload type of the encoding defined in RTP/AVP. |
 | `rtpmap` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The encoding parameters specified in the corresponding SDP attribute, or null if it is not available. |
 | `fmtp` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The format parameters specified in the corresponding SDP attribute, or null if it is not available. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------|

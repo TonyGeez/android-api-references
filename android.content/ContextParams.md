@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ContextParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ContextParams "View this page in Java") 
+| --- | --- |
 
 ```
 class ContextParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.ContextParams](https://developer.android.com/reference/kotlin/android/content/ContextParams#) |
 
 This class represents rules around how a context being created via [Context.createContext](https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams))should behave.
@@ -30,6 +32,7 @@ The two main types of attribution are: against an attribution tag which is an ar
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttributionTag](https://developer.android.com/reference/kotlin/android/content/ContextParams#getAttributionTag())`()` <br /> |
 | [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource)? | [getNextAttributionSource](https://developer.android.com/reference/kotlin/android/content/ContextParams#getNextAttributionSource())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldRegisterAttributionSource](https://developer.android.com/reference/kotlin/android/content/ContextParams#shouldRegisterAttributionSource())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

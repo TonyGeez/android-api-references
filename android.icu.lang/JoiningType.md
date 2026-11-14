@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # JoiningType
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.JoiningType "View this page in Java") 
+| --- | --- |
 
 ```
 interface JoiningType
@@ -21,9 +22,11 @@ Joining Type constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUAL_JOINING](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#DUAL_JOINING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOIN_CAUSING](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#JOIN_CAUSING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_JOINING](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#LEFT_JOINING:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NON_JOINING](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#NON_JOINING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_JOINING](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#RIGHT_JOINING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPARENT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType#TRANSPARENT:kotlin.Int) <br /> |
+| --- | --- |
 
 ## Constants
 

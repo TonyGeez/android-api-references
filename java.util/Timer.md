@@ -9,6 +9,7 @@ open class Timer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Timer](https://developer.android.com/reference/kotlin/java/util/Timer#) |
 
 A facility for threads to schedule tasks for future execution in a background thread. Tasks may be scheduled for one-time execution, or for repeated execution at regular intervals.
@@ -43,9 +44,11 @@ Implementation note: All constructors start a timer thread.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/util/Timer#cancel())`()` Terminates this timer, discarding any currently scheduled tasks. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [purge](https://developer.android.com/reference/kotlin/java/util/Timer#purge())`()` Removes all cancelled tasks from this timer's task queue. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](https://developer.android.com/reference/kotlin/java/util/Timer#schedule(java.util.TimerTask,%20java.util.Date))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `time:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`)` Schedules the specified task for execution at the specified time. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](https://developer.android.com/reference/kotlin/java/util/Timer#schedule(java.util.TimerTask,%20java.util.Date,%20kotlin.Long))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `firstTime:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning at the specified time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](https://developer.android.com/reference/kotlin/java/util/Timer#schedule(java.util.TimerTask,%20kotlin.Long))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for execution after the specified delay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](https://developer.android.com/reference/kotlin/java/util/Timer#schedule(java.util.TimerTask,%20kotlin.Long,%20kotlin.Long))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning after the specified delay. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](https://developer.android.com/reference/kotlin/java/util/Timer#scheduleAtFixedRate(java.util.TimerTask,%20java.util.Date,%20kotlin.Long))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `firstTime:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning at the specified time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](https://developer.android.com/reference/kotlin/java/util/Timer#scheduleAtFixedRate(java.util.TimerTask,%20kotlin.Long,%20kotlin.Long))`(`task:` ` [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning after the specified delay. |
 
@@ -171,6 +174,7 @@ Schedules the specified task for execution at the specified time. If the time is
 | `java.lang.IllegalArgumentException` | if`time.getTime()`is negative. |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`or`time`is null |
+| --- | --- |
 
 ### schedule
 
@@ -195,12 +199,14 @@ Fixed-delay execution is appropriate for recurring activities that require "smoo
 | `task` | [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!:task to be scheduled. |
 | `firstTime` | [Date](https://developer.android.com/reference/kotlin/java/util/Date)!:First time at which task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if`firstTime.getTime() < 0`, or`period <= 0` |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`or`firstTime`is null |
+| --- | --- |
 
 ### schedule
 
@@ -225,6 +231,7 @@ Schedules the specified task for execution after the specified delay.
 | `java.lang.IllegalArgumentException` | if`delay`is negative, or`delay + System.currentTimeMillis()`is negative. |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`is null |
+| --- | --- |
 
 ### schedule
 
@@ -249,12 +256,14 @@ Fixed-delay execution is appropriate for recurring activities that require "smoo
 | `task` | [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!:task to be scheduled. |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):delay in milliseconds before task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if`delay < 0`, or`delay + System.currentTimeMillis() < 0`, or`period <= 0` |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`is null |
+| --- | --- |
 
 ### scheduleAtFixedRate
 
@@ -279,12 +288,14 @@ Fixed-rate execution is appropriate for recurring activities that are sensitive 
 | `task` | [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!:task to be scheduled. |
 | `firstTime` | [Date](https://developer.android.com/reference/kotlin/java/util/Date)!:First time at which task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if`firstTime.getTime() < 0`or`period <= 0` |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`or`firstTime`is null Since API level 31: If the app is frozen by the Android cached apps freezer before the fixed rate task is done or canceled, the task may run many times immediately when the app unfreezes, just as if a single execution of the command had taken the duration of the frozen period to execute. Since API level 36: If any execution of this task takes longer than its period, then the subsequent execution will be scheduled for the most recent missed period. Additionally, since there may be at most one "catch up" task and never two or more "catch up" tasks happening in rapid succession, if the scheduled first time is multiple periods in the past, then only one "catch up" task will be scheduled for immediate execution. |
+| --- | --- |
 
 ### scheduleAtFixedRate
 
@@ -309,9 +320,11 @@ Fixed-rate execution is appropriate for recurring activities that are sensitive 
 | `task` | [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask)!:task to be scheduled. |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):delay in milliseconds before task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if`delay < 0`, or`delay + System.currentTimeMillis() < 0`, or`period <= 0` |
 | `java.lang.IllegalStateException` | if task was already scheduled or cancelled, timer was cancelled, or timer thread terminated. |
 | `java.lang.NullPointerException` | if`task`is null Since API level 31: If the app is frozen by the Android cached apps freezer before the fixed rate task is done or canceled, the task may run many times immediately when the app unfreezes, just as if a single execution of the command had taken the duration of the frozen period to execute. Since API level 36: If any execution of this task takes longer than its period, then the subsequent execution will be scheduled for the most recent missed period. |
+| --- | --- |

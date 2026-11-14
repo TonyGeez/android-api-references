@@ -7,6 +7,7 @@ open class NamespaceSupport
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.xml.sax.helpers.NamespaceSupport](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#) |
 
 Encapsulate Namespace logic for use by applications using SAX, or internally by SAX drivers. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.* See <http://www.saxproject.org> for further information.
@@ -59,15 +60,19 @@ Although SAX drivers (parsers) may choose to use this class to implement namespa
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Declare a Namespace prefix. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()()` Return an enumeration of all prefixes declared in this context. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return one of the prefixes mapped to a Namespace URI. |
+| --- | --- |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes()()` Return an enumeration of all prefixes whose declarations are active in the current context. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up a prefix and get the currently-mapped Namespace URI. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#isNamespaceDeclUris()()` Returns true if namespace declaration attributes are placed into a namespace. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#popContext()()` Revert to the previous Namespace context. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)(qName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, isAttribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Process a raw XML qualified name, after all declarations in the current context have been handled by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#pushContext()()` Start a new Namespace context. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#reset()()` Reset this Namespace support object for reuse. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#setNamespaceDeclUris(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether namespace declaration attributes are placed into the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NSDECL:kotlin.String` namespace by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)`. |
+| --- | --- |
 
 ## Constants
 
@@ -342,6 +347,7 @@ Note that attribute names are processed differently than element names: an unpre
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The XML qualified name to be processed. |
 | `parts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: An array supplied by the caller, capable of holding at least three members. |
 | `isAttribute` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): A flag indicating whether this is an attribute name (true) or an element name (false). |
+| --- | --- |
 
 | Return ||
 |---|---|

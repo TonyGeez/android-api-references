@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AudioMetadataMap
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadataMap "View this page in Java") 
+| --- | --- |
 
 ```
 interface AudioMetadataMap : AudioMetadataReadMap
@@ -64,6 +65,7 @@ Sets a value for the key.
 | `key` | [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)\<T\>:interface for storing the value. This value cannot be`null`. |
 | `<T>` | type of value. |
 | `value` | T:a non-null value of type T. |
+| --- | --- |
 
 | Return ||
 |----|---------------------------------------------------------------------|

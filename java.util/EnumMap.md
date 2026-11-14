@@ -9,6 +9,7 @@ open class EnumMap<K : Enum<K>!, V : Any!> : AbstractMap<K, V>, Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap)\<K, V\> ||
 | | ↳ | [java.util.EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap#) |
 
@@ -45,12 +46,15 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/EnumMap#clear())`()` Removes all mappings from this map. |
 | open [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap#)\<K,V\> | [clone](https://developer.android.com/reference/kotlin/java/util/EnumMap#clone())`()` Returns a shallow copy of this enum map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/EnumMap#containsKey(java.util.EnumMap.K))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/EnumMap#containsValue(java.util.EnumMap.V))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/EnumMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
 | openV? | [get](https://developer.android.com/reference/kotlin/java/util/EnumMap#get(java.util.EnumMap.K))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/EnumMap#hashCode())`()` Returns the hash code value for this map. |
 | openV? | [put](https://developer.android.com/reference/kotlin/java/util/EnumMap#put(java.util.EnumMap.K,%20java.util.EnumMap.V))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/EnumMap#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
+| --- | --- |
 | openV? | [remove](https://developer.android.com/reference/kotlin/java/util/EnumMap#remove(java.util.EnumMap.K))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
 
 | Inherited functions ||
@@ -62,6 +66,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/EnumMap#entries:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/EnumMap#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/EnumMap#size:kotlin.Int) Returns the number of key-value mappings in this map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/EnumMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
 
 ## Public constructors
@@ -288,6 +293,7 @@ Associates the specified value with the specified key in this map. If the map pr
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 ### putAll
@@ -309,6 +315,7 @@ Copies all of the mappings from the specified map to this map. These mappings wi
 | `java.lang.UnsupportedOperationException` | if the`putAll`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | the specified map is null, or if one or more keys in the specified map are null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 
 ### remove
@@ -334,6 +341,7 @@ Removes the mapping for this key from this map if present.
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
+| --- | --- |
 
 ## Properties
 

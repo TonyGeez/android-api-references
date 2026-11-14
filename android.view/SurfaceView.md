@@ -7,6 +7,7 @@ open class SurfaceView : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
 | | ↳ | [android.view.SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView#) |
 
@@ -312,6 +313,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -428,6 +430,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -522,6 +525,7 @@ Constant Value Description gone 2 Completely hidden, as if the view had not been
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#SURFACE_LIFECYCLE_DEFAULT:kotlin.Int` Default lifecycle of the Surface owned by this SurfaceView. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#SURFACE_LIFECYCLE_FOLLOWS_ATTACHMENT:kotlin.Int` The Surface lifecycle is tied to SurfaceView attachment. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#SURFACE_LIFECYCLE_FOLLOWS_VISIBILITY:kotlin.Int` The Surface lifecycle is tied to SurfaceView visibility. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
 
@@ -1619,27 +1623,35 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#applyTransactionToFrame(android.view.SurfaceControl.Transaction)(transaction: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction)` Adds a transaction that would be applied synchronously with displaying the SurfaceView's next frame. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#clearChildSurfacePackage()()` Clears the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` that was set on this SurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#gatherTransparentRegion(android.graphics.Region)(region: https://developer.android.com/reference/kotlin/android/graphics/Region.html#?)` This is used by the ViewRoot to perform an optimization when the view hierarchy contains one or several SurfaceView. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BlurRegion](https://developer.android.com/reference/kotlin/android/view/BlurRegion)!\> | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getBlurRegions()()` Returns the list of blur regions currently set on the SurfaceView. |
+| --- | --- |
 | open [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getChildSurfacePackage()()` Returns the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` that was set on this SurfaceView. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getCompositionOrder()()` Returns the composition order of the SurfaceView. |
 | open [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHolder()()` Return the SurfaceHolder providing access and control over this SurfaceView's underlying surface. |
+| --- | --- |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHostToken()()` A token used for constructing `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getImportantForAccessibility()()` Gets the mode for determining whether this View is important for accessibility. |
 | open [SurfaceControl](https://developer.android.com/reference/kotlin/android/view/SurfaceControl)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getSurfaceControl()()` Return a SurfaceControl which can be used for parenting Surfaces to this SurfaceView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#hasOverlappingRendering()()` Returns whether this View has content which overlaps. |
 | open [SurfaceControl.OnJankDataListenerRegistration](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setAlpha(kotlin.Float)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` If the SurfaceView has a composition order greater than or equal to 0, (see `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setCompositionOrder(kotlin.Int)`), the alpha value set is applied directly to the Surface's content. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setBlurRegions(kotlin.collections.MutableCollection)(blurRegions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/view/BlurRegion!>?)` Specifies a list of regions to be blurred on the SurfaceView's content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)(p: https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage)` Displays the view-hierarchy embedded within a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` within this SurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setClipBounds(android.graphics.Rect)(clipBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Sets a rectangular area on this view to which the view will be clipped when it is drawn. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setCompositionOrder(kotlin.Int)(compositionOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Controls the composition order of the SurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setDesiredHdrHeadroom(kotlin.Float)(desiredHeadroom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the desired amount of HDR headroom to be used when HDR content is presented on this SurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setSecure(kotlin.Boolean)(isSecure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the surface view's content should be treated as secure, preventing it from appearing in screenshots or from being viewed on non-secure displays. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setSurfaceLifecycle(kotlin.Int)(lifecycleStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Controls the lifecycle of the Surface owned by this SurfaceView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setVisibility(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the visibility state of this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setZOrderMediaOverlay(kotlin.Boolean)(isMediaOverlay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the surface view's surface is placed on top of another regular surface view in the window (but still behind the window itself). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setZOrderOnTop(kotlin.Boolean)(onTop: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the surface view's surface is placed on top of its window. |
 
 | Protected methods ||
@@ -1647,9 +1659,11 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#dispatchDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Called by draw to draw the child views. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onFocusChanged(kotlin.Boolean,%20kotlin.Int,%20android.graphics.Rect)(gainFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Called by the view system when the focus state of this view changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onSetAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Invoked if there is a Transform that involves alpha. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#onWindowVisibilityChanged(kotlin.Int)(visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the window containing has change its visibility (between `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`). |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!)`
@@ -3420,6 +3434,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4790,6 +4805,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7669,6 +7685,7 @@ If you override this method you *must* call through to the superclass implementa
 | `gainFocus` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 | `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: This value may be `null`. |
+| --- | --- |
 
 ### onMeasure
 

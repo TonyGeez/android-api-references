@@ -9,6 +9,7 @@ class UpdateSignalsRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.signals.UpdateSignalsRequest](https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#) |
 
 > [!CAUTION]
@@ -31,6 +32,7 @@ The request object for updateSignals.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#getUpdateUri()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#hashCode()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#toString()()` <br /> |
 
 ## Public methods

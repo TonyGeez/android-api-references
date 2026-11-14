@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ServiceState
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/ServiceState "View this page in Java")
+| --- | --- |
 
 ```
 open class ServiceState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#) |
 
 Contains phone state and service related information. The following phone information is included in returned ServiceState:
@@ -30,9 +32,11 @@ For historical reasons this class is not declared as final; however, it should b
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#DUPLEX_MODE_FDD:kotlin.Int` Duplex mode for the phone is frequency-division duplexing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#DUPLEX_MODE_TDD:kotlin.Int` Duplex mode for the phone is time-division duplexing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#DUPLEX_MODE_UNKNOWN:kotlin.Int` Duplex mode for the phone is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_EMERGENCY_ONLY:kotlin.Int` The phone is registered and locked. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_IN_SERVICE:kotlin.Int` Normal operation condition, the phone is registered with an operator either in home network or in roaming. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_OUT_OF_SERVICE:kotlin.Int` Phone is not registered with any operator, the phone can be currently searching a new operator to register to, or not searching to registration at all, or registration is denied, or radio signal is not available. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_POWER_OFF:kotlin.Int` Radio of telephony is explicitly powered off. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#UNKNOWN_ID:kotlin.Int` Unknown ID. |
 
@@ -51,27 +55,35 @@ For historical reasons this class is not declared as final; however, it should b
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getCdmaNetworkId()()` Get the CDMA NID (Network Identification Number), a number uniquely identifying a network within a wireless system. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getCdmaSystemId()()` Get the CDMA SID (System Identification Number), a number uniquely identifying a wireless system. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getCellBandwidths()()` Get an array of cell bandwidths (kHz) for the current serving cells |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getChannelNumber()()` Get the channel number of the current primary serving cell, or -1 if unknown |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getDuplexMode()()` Get the current duplex mode |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getIsManualSelection()()` Get current network selection mode. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkRegistrationInfo](https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getNetworkRegistrationInfoList()()` Get all of the available network registration info. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getOperatorAlphaLong()()` Get current registered operator name in long alphanumeric format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getOperatorAlphaShort()()` Get current registered operator name in short alphanumeric format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getOperatorNumeric()()` Get current registered operator numeric id. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getRoaming()()` Get current roaming indicator of phone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getState()()` Get current voice service state |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#isSearching()()` This indicates whether the device is searching for service. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#isUsingNonTerrestrialNetwork()()` Get whether device is connected to a non-terrestrial network. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setIsManualSelection(kotlin.Boolean)(isManual: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setOperatorName(kotlin.String,%20kotlin.String,%20kotlin.String)(longName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, shortName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, numeric: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setRoaming(kotlin.Boolean)(roaming: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setState(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setStateOff()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#setStateOutOfService()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Protected methods ||

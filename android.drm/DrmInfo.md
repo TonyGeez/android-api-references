@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#) |
 
 | **This class was deprecated in API level 30.**
@@ -34,9 +36,11 @@ The caller can retrieve the [DrmInfo](https://developer.android.com/reference/ko
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#get(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the value of a given key. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#getData())`()` Retrieves the trigger data associated with this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInfoType](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#getInfoType())`()` Retrieves the information type associated with this object. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#getMimeType())`()` Retrieves the MIME type associated with this object. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [iterator](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#iterator())`()` Retrieves an iterator object that you can use to iterate over the values associated with this`DrmInfo`object. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [keyIterator](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#keyIterator())`()` Retrieves an iterator object that you can use to iterate over the keys associated with this`DrmInfo`object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/android/drm/DrmInfo#put(kotlin.String,%20kotlin.Any))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds optional information as key-value pairs to this object. |
 
 ## Public constructors
@@ -59,6 +63,7 @@ Creates a`DrmInfo`object with the given parameters.
 | `infoType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of information. |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The trigger data. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The MIME type. |
+| --- | --- |
 
 ### DrmInfo
 
@@ -78,6 +83,7 @@ Creates a`DrmInfo`object with the given parameters.
 | `infoType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of information. |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The trigger data. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The MIME type. |
+| --- | --- |
 
 ## Public methods
 

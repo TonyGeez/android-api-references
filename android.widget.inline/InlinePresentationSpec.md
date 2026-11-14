@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InlinePresentationSpec
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec "View this page in Java") 
+| --- | --- |
 
 ```
 class InlinePresentationSpec : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.inline.InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#) |
 
 This class represents the presentation specification by which an inline suggestion should abide when constructing its UI. Since suggestions are inlined in a host application while provided by another source, they need to be consistent with the host's look at feel to allow building smooth and integrated UIs.
@@ -30,9 +32,11 @@ This class represents the presentation specification by which an inline suggesti
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | [getMaxSize](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#getMaxSize())`()` The maximal size of the suggestion. |
+| --- | --- |
 | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | [getMinSize](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#getMinSize())`()` The minimal size of the suggestion. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getStyle](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#getStyle())`()` The extras encoding the UI style information. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

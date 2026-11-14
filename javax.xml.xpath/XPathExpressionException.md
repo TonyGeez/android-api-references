@@ -9,12 +9,15 @@ open class XPathExpressionException : XPathException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.xml.xpath.XPathException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.xml.xpath.XPathExpressionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpressionException#) |
 
 | Known Direct Subclasses [XPathFunctionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionException) |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [XPathFunctionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionException) | `XPathFunctionException` represents an error with an XPath function. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 `XPathExpressionException` represents an error in an XPath expression.
 

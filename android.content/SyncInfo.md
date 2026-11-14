@@ -7,6 +7,7 @@ open class SyncInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.SyncInfo](https://developer.android.com/reference/kotlin/android/content/SyncInfo#) |
 
 Information about the sync operation that is currently underway.
@@ -27,6 +28,7 @@ Information about the sync operation that is currently underway.
 | [Account](https://developer.android.com/reference/kotlin/android/accounts/Account.html#)! | `https://developer.android.com/reference/kotlin/android/content/SyncInfo#account:android.accounts.Account` The `https://developer.android.com/reference/kotlin/android/accounts/Account.html#` that is currently being synced. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/SyncInfo#authority:kotlin.String` The authority of the provider that is currently being synced. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/SyncInfo#startTime:kotlin.Long` The start time of the current sync operation in milliseconds since boot. |
+| --- | --- |
 
 ## Public methods
 

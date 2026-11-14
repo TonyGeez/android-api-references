@@ -3,15 +3,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SQLiteCursor
 
 Kotlin | [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteCursor "View this page in Java")
+| --- | --- |
 
 ```
 open class SQLiteCursor : AbstractWindowedCursor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.database.AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor.html#) |||
 | | ↳ | [android.database.AbstractWindowedCursor](https://developer.android.com/reference/kotlin/android/database/AbstractWindowedCursor.html#) ||
 | | | ↳ | [android.database.sqlite.SQLiteCursor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#) |
+| --- | --- | --- | --- |
 
 A Cursor implementation that exposes results from a query on a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. SQLiteCursor is not internally synchronized so code using a SQLiteCursor from multiple threads should perform its own synchronization when using the SQLiteCursor.
 
@@ -27,12 +30,15 @@ A Cursor implementation that exposes results from a query on a `https://develope
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#close()()` Closes the Cursor, releasing all of its resources and making it completely invalid. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#deactivate()()` Deactivates the Cursor, making all calls on it fail until `https://developer.android.com/reference/kotlin/android/database/Cursor.html#requery()` is called. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#getColumnIndex(kotlin.String)(columnName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the zero-based index for the given column name, or -1 if the column doesn't exist. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#getColumnNames()()` Returns a string array holding the names of all of the columns in the result set in the order in which they were listed in the result. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#getCount()()` Returns the numbers of rows in the cursor. |
 | open [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#getDatabase()()` Get the database that this cursor is associated with. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#onMove(kotlin.Int,%20kotlin.Int)(oldPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This function is called every time the cursor is successfully scrolled to a new position, giving the subclass a chance to update any state it may have. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#requery()()` Performs the query that created the cursor again, refreshing its contents. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#setFillWindowForwardOnly(kotlin.Boolean)(fillWindowForwardOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls fetching of rows relative to requested position. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#setSelectionArguments(kotlin.Array)(selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Changes the selection arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#setWindow(android.database.CursorWindow)(window: https://developer.android.com/reference/kotlin/android/database/CursorWindow.html#!)` Sets a new cursor window for the cursor to use. |
 
@@ -91,6 +97,7 @@ Execute a query and provide access to its result set through a Cursor interface.
 | `db` | [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase)!: a reference to a Database object that is already constructed and opened. This param is not used any longer |
 | `editTable` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the table used for this query |
 | `query` | [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery)!: the rest of the query terms cursor is finalized |
+| --- | --- |
 
 ## Public methods
 

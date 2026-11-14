@@ -9,6 +9,7 @@ open class GregorianCalendar : Calendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar) ||
 | | ↳ | [java.util.GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#) |
 
@@ -43,12 +44,15 @@ For example, if`getFirstDayOfWeek()`is`SUNDAY`and`getMinimalDaysInFirstWeek()`is
 The`clear`method sets calendar field(s) undefined.`GregorianCalendar`uses the following default value for each calendar field if its value is undefined.
 
 | Field | Default Value |
+| --- | --- |
 | `ERA` | `AD` |
 | `YEAR` | `1970` |
 | `MONTH` | `JANUARY` |
+| --- | --- |
 | `DAY_OF_MONTH` | `1` |
 | `DAY_OF_WEEK` | `the first day of week` |
 | `WEEK_OF_MONTH` | `0` |
+| --- | --- |
 | `DAY_OF_WEEK_IN_MONTH` | `1` |
 | `AM_PM` | `AM` |
 | `HOUR, HOUR_OF_DAY, MINUTE, SECOND, MILLISECOND` | `0` |
@@ -158,27 +162,35 @@ Default values are not applicable for the fields not listed above.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#add(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds the specified (signed) amount of time to the given calendar field, based on the calendar's rules. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#clone())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`GregorianCalendar`to the specified`Object`. |
+| --- | --- |
 | openstatic [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#)! | [from](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#from(java.time.ZonedDateTime))`(`zdt:` ` [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)!`)` Obtains an instance of`GregorianCalendar`with the default locale from a`ZonedDateTime`object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActualMaximum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getActualMaximum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the maximum value that this calendar field could have, taking into consideration the given time value and the current values of the [getFirstDayOfWeek](https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()), [getMinimalDaysInFirstWeek](https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()), [getGregorianChange](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getGregorianChange())and [getTimeZone](https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeZone())methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActualMinimum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getActualMinimum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the minimum value that this calendar field could have, taking into consideration the given time value and the current values of the [getFirstDayOfWeek](https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()), [getMinimalDaysInFirstWeek](https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()), [getGregorianChange](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getGregorianChange())and [getTimeZone](https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeZone())methods. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCalendarType](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getCalendarType())`()` Returns`"gregory"`as the calendar type. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGreatestMinimum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getGreatestMinimum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the highest minimum value for the given calendar field of this`GregorianCalendar`instance. |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date)! | [getGregorianChange](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getGregorianChange())`()` Gets the Gregorian Calendar change date. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLeastMaximum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getLeastMaximum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the lowest maximum value for the given calendar field of this`GregorianCalendar`instance. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getMaximum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the maximum value for the given calendar field of this`GregorianCalendar`instance. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimum](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getMinimum(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the minimum value for the given calendar field of this`GregorianCalendar`instance. |
+| --- | --- |
 | open [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone) | [getTimeZone](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getTimeZone())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeekYear](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getWeekYear())`()` Returns the [week year](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#week_year) represented by this`GregorianCalendar`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeeksInWeekYear](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#getWeeksInWeekYear())`()` Returns the number of weeks in the [week year](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#week_year) represented by this`GregorianCalendar`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#hashCode())`()` Generates the hash code for this`GregorianCalendar`object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#isLeapYear(kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the given year is a leap year. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWeekDateSupported](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#isWeekDateSupported())`()` Returns`true`indicating this`GregorianCalendar`supports week dates. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [roll](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#roll(kotlin.Int,%20kotlin.Boolean))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `up:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adds or subtracts (up/down) a single unit of time on the given time field without changing larger fields. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [roll](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#roll(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `amount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a signed amount to the specified calendar field without changing larger fields. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGregorianChange](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#setGregorianChange(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`)` Sets the`GregorianCalendar`change date. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeZone](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#setTimeZone(java.util.TimeZone))`(`zone:` ` [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekDate](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#setWeekDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`weekYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `weekOfYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this`GregorianCalendar`to the date given by the date specifiers - [`weekYear`](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#week_year),`weekOfYear`, and`dayOfWeek`. |
 | open [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)! | [toZonedDateTime](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#toZonedDateTime())`()` Converts this object to a`ZonedDateTime`that represents the same point on the time-line as this`GregorianCalendar`. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -257,6 +269,7 @@ Constructs a`GregorianCalendar`with the given date set in the default time zone 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`YEAR`calendar field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`MONTH`calendar field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`DAY_OF_MONTH`calendar field in the calendar. |
+| --- | --- |
 
 ### GregorianCalendar
 
@@ -278,6 +291,7 @@ Constructs a`GregorianCalendar`with the given date and time set for the default 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`YEAR`calendar field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`MONTH`calendar field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`DAY_OF_MONTH`calendar field in the calendar. |
+| --- | --- |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`HOUR_OF_DAY`calendar field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`MINUTE`calendar field in the calendar. |
 
@@ -302,9 +316,11 @@ Constructs a GregorianCalendar with the given date and time set for the default 
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`YEAR`calendar field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`MONTH`calendar field in the calendar. Month value is 0-based. e.g., 0 for January. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`DAY_OF_MONTH`calendar field in the calendar. |
+| --- | --- |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`HOUR_OF_DAY`calendar field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`MINUTE`calendar field in the calendar. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value used to set the`SECOND`calendar field in the calendar. |
+| --- | --- |
 
 ### GregorianCalendar
 
@@ -866,6 +882,7 @@ If`weekOfYear`is out of the valid week-of-year range in`weekYear`, the`weekYear`
 | `weekYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the week year |
 | `weekOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the week number based on`weekYear` |
 | `dayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of week value: one of the constants for the [DAY_OF_WEEK](https://developer.android.com/reference/kotlin/java/util/Calendar#DAY_OF_WEEK:kotlin.Int) field: [SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar#SUNDAY:kotlin.Int), ..., [SATURDAY](https://developer.android.com/reference/kotlin/java/util/Calendar#SATURDAY:kotlin.Int). |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|

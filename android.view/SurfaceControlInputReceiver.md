@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # SurfaceControlInputReceiver
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/SurfaceControlInputReceiver "View this page in Java") 
+| --- | --- |
 
 ```
 interface SurfaceControlInputReceiver

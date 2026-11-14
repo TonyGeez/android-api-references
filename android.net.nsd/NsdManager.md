@@ -7,6 +7,7 @@ class NsdManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.nsd.NsdManager](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#) |
 
 Provides APIs for discovering and advertising network services on the local network.
@@ -305,6 +306,7 @@ Applications targeting API 37 or higher generally require the `https://developer
 | abstract | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener` Interface for callback invocation for service discovery |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener` Interface for callback invocation for service registration |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener` Callback for use with android. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback` Callback to listen to service info updates. |
 
 | Constants ||
@@ -312,15 +314,19 @@ Applications targeting API 37 or higher generally require the `https://developer
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#ACTION_NSD_STATE_CHANGED:kotlin.String` Broadcast intent action to indicate whether network service discovery is enabled or disabled. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#EXTRA_NSD_STATE:kotlin.String` The lookup key for an int that indicates whether network service discovery is enabled or disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_ALREADY_ACTIVE:kotlin.Int` Indicates that the operation failed because it is already active. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_BAD_PARAMETERS:kotlin.Int` Indicates that the service has failed to resolve because of bad parameters. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_INTERNAL_ERROR:kotlin.Int` Failures are passed with `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onRegistrationFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onUnregistrationFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onStartDiscoveryFailed(kotlin.String,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onStopDiscoveryFailed(kotlin.String,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onResolveFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_MAX_LIMIT:kotlin.Int` Indicates that the operation failed because the maximum outstanding requests from the applications have reached. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_OPERATION_NOT_RUNNING:kotlin.Int` Indicates that the stop operation failed because it is not running. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_PERMISSION_DENIED:kotlin.Int` Indicates that the operation failed because the caller did not have the required permissions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#NSD_STATE_DISABLED:kotlin.Int` Network service discovery is disabled |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#NSD_STATE_ENABLED:kotlin.Int` Network service discovery is enabled |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#PROTOCOL_DNS_SD:kotlin.Int` Dns based service discovery protocol |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#SERVICE_PERMISSION_DENIED:kotlin.Int` Indicates the caller is not allowed to register service info callbacks or resolve a service. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#SERVICE_PERMISSION_GRANTED:kotlin.Int` Indicates the caller can register service info callbacks or resolve a service. |
 
 | Public methods ||
@@ -328,18 +334,23 @@ Applications targeting API 37 or higher generally require the `https://developer
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#checkPermissionForService(kotlin.String,%20kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)(serviceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultReceiver: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Check whether the caller can register service info callbacks or resolve a service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#discoverServices(android.net.nsd.DiscoveryRequest,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.DiscoveryListener)(discoveryRequest: https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener)` Initiates service discovery to browse for instances of a service type. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#discoverServices(kotlin.String,%20kotlin.Int,%20android.net.Network,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.DiscoveryListener)(serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, network: https://developer.android.com/reference/kotlin/android/net/Network.html#?, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener)` Initiate service discovery to browse for instances of a service type. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#discoverServices(kotlin.String,%20kotlin.Int,%20android.net.NetworkRequest,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.DiscoveryListener)(serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, networkRequest: https://developer.android.com/reference/kotlin/android/net/NetworkRequest.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener)` Initiate service discovery to browse for instances of a service type. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#discoverServices(kotlin.String,%20kotlin.Int,%20android.net.nsd.NsdManager.DiscoveryListener)(serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener!)` Initiate service discovery to browse for instances of a service type. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#registerService(android.net.nsd.AdvertisingRequest,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.RegistrationListener)(advertisingRequest: https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener)` Register a service to be discovered by other services. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#registerService(android.net.nsd.NsdServiceInfo,%20kotlin.Int,%20android.net.nsd.NsdManager.RegistrationListener)(serviceInfo: https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo!, protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener!)` Register a service to be discovered by other services. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#registerService(android.net.nsd.NsdServiceInfo,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.RegistrationListener)(serviceInfo: https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo, protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener)` Register a service to be discovered by other services. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#registerServiceInfoCallback(android.net.nsd.DiscoveryRequest,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.ServiceInfoCallback)(discoveryRequest: https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback)` Register a callback to discover and track updates of services. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#registerServiceInfoCallback(android.net.nsd.NsdServiceInfo,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.ServiceInfoCallback)(serviceInfo: https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback)` Register a callback to listen for updates to a service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#resolveService(android.net.nsd.NsdServiceInfo,%20android.net.nsd.NsdManager.ResolveListener)(serviceInfo: https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo!, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener!)` Resolve a discovered service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#resolveService(android.net.nsd.NsdServiceInfo,%20java.util.concurrent.Executor,%20android.net.nsd.NsdManager.ResolveListener)(serviceInfo: https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener)` Resolve a discovered service. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)(listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener!)` Stop service discovery initiated with #discoverServices. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceResolution(android.net.nsd.NsdManager.ResolveListener)(listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener)` Stop service resolution initiated with #resolveService. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#unregisterService(android.net.nsd.NsdManager.RegistrationListener)(listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener!)` Unregister a service registered through #registerService. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#unregisterServiceInfoCallback(android.net.nsd.NsdManager.ServiceInfoCallback)(listener: https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback)` Unregister a callback registered with #registerServiceInfoCallback. |
 
 ## Constants
@@ -555,6 +566,7 @@ The `resultReceiver` will be called using the provided `https://developer.androi
 | `serviceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Instance name of the service. This value cannot be `null`. |
 | `serviceType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Type of the service, e.g. _ipp._tcp. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the receiver. This value cannot be `null`. |
+| --- | --- |
 | `resultReceiver` | [IntConsumer](https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#): The `https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#` to receive the permission check result code; will be either `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#SERVICE_PERMISSION_GRANTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#SERVICE_PERMISSION_DENIED:kotlin.Int`. This value cannot be `null`. |
 
 ### discoverServices
@@ -585,6 +597,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `discoveryRequest` | [DiscoveryRequest](https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest): the `https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest` object which specifies the discovery parameters such as service type, subtype and network. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener): The listener notifies of a successful discovery and is used to stop discovery on this serviceType through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)`. This value cannot be `null`. |
+| --- | --- |
 
 ### discoverServices
 
@@ -616,6 +629,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `serviceType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The service type being discovered. Examples include "_http._tcp" for http services or "_ipp._tcp" for printers. This value cannot be `null`. |
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The service discovery protocol |
 | `network` | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)?: Network to discover services on, or null to discover on all available networks |
+| --- | --- |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener): The listener notifies of a successful discovery and is used to stop discovery on this serviceType through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)`. This value cannot be `null`. |
 
@@ -652,6 +666,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `serviceType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The service type being discovered. Examples include "_http._tcp" for http services or "_ipp._tcp" for printers. This value cannot be `null`. |
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The service discovery protocol |
 | `networkRequest` | [NetworkRequest](https://developer.android.com/reference/kotlin/android/net/NetworkRequest.html#): Request specifying networks that should be considered when discovering. This value cannot be `null`. |
+| --- | --- |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener): The listener notifies of a successful discovery and is used to stop discovery on this serviceType through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)`. This value cannot be `null`. |
 
@@ -683,6 +698,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `serviceType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The service type being discovered. Examples include "_http._tcp" for http services or "_ipp._tcp" for printers |
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The service discovery protocol |
 | `listener` | [NsdManager.DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener)!: The listener notifies of a successful discovery and is used to stop discovery on this serviceType through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)`. Cannot be null. Cannot be in use for an active service discovery. |
+| --- | --- |
 
 ### registerService
 
@@ -708,6 +724,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `advertisingRequest` | [AdvertisingRequest](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest): service being registered. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.RegistrationListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener): The listener notifies of a successful registration and is used to unregister this service through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#unregisterService(android.net.nsd.NsdManager.RegistrationListener)`. Cannot be null. |
+| --- | --- |
 
 ### registerService
 
@@ -733,6 +750,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!: The service being registered |
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The service discovery protocol |
 | `listener` | [NsdManager.RegistrationListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener)!: The listener notifies of a successful registration and is used to unregister this service through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#unregisterService(android.net.nsd.NsdManager.RegistrationListener)`. Cannot be null. Cannot be in use for an active service registration. |
+| --- | --- |
 
 ### registerService
 
@@ -759,6 +777,7 @@ The application should call `https://developer.android.com/reference/kotlin/andr
 | `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo): The service being registered. This value cannot be `null`. |
 | `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The service discovery protocol |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
+| --- | --- |
 | `listener` | [NsdManager.RegistrationListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener): The listener notifies of a successful registration and is used to unregister this service through a call on `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#unregisterService(android.net.nsd.NsdManager.RegistrationListener)`. Cannot be null. |
 
 ### registerServiceInfoCallback
@@ -787,6 +806,7 @@ Applications need to cancel the registration before registering the same callbac
 | `discoveryRequest` | [DiscoveryRequest](https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest): the `https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest` object which specifies the discovery parameters such as service type, subtype and network. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.ServiceInfoCallback](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback): The listener to be notified of found, updated or lost services. This value cannot be `null`. |
+| --- | --- |
 
 ### registerServiceInfoCallback
 
@@ -810,6 +830,7 @@ This API listens to updates for one service at a time. Applications need to canc
 | `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo): the service to receive updates for. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.ServiceInfoCallback](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback): to receive callback upon service update. This value cannot be `null`. |
+| --- | --- |
 
 ### resolveService
 
@@ -856,6 +877,7 @@ Resolve a discovered service. An application can resolve a service right before 
 | `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo): service to be resolved. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor to run listener callbacks with. This value cannot be `null`. |
 | `listener` | [NsdManager.ResolveListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener): to receive callback upon success or failure. This value cannot be `null`. |
+| --- | --- |
 
 ### stopServiceDiscovery
 

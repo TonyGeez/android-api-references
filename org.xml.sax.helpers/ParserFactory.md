@@ -8,6 +8,7 @@ open class ParserFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.xml.sax.helpers.ParserFactory](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#) |
 
 | **This class was deprecated in API level 9.**
@@ -54,6 +55,7 @@ The named class must exist and must implement the `https://developer.android.com
 | `java.lang.ClassCastException` | The SAX parser class was found and instantiated, but does not implement org.xml.sax.Parser. |
 | `java.lang.ClassNotFoundException` | The SAX parser class was not found (check your CLASSPATH). |
 | `java.lang.IllegalAccessException` | The SAX parser class was found, but you do not have permission to load it. |
+| --- | --- |
 | `java.lang.InstantiationException` | The SAX parser class was found but could not be instantiated. |
 | `java.lang.NullPointerException` | There is no value for the \`org.xml.sax.parser' system property. |
 
@@ -89,6 +91,7 @@ The named class must exist and must implement the `https://developer.android.com
 | `java.lang.ClassCastException` | The SAX parser class was found and instantiated, but does not implement org.xml.sax.Parser. |
 | `java.lang.ClassNotFoundException` | The SAX parser class was not found (check your CLASSPATH). |
 | `java.lang.IllegalAccessException` | The SAX parser class was found, but you do not have permission to load it. |
+| --- | --- |
 | `java.lang.InstantiationException` | The SAX parser class was found but could not be instantiated. |
 
 **See Also**

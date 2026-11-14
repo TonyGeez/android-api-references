@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ValueIterator
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/ValueIterator "View this page in Java") 
+| --- | --- |
 
 ```
 interface ValueIterator
@@ -41,6 +42,7 @@ ValueIterator iterator = UCharacter.getNameIterator();
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#next(android.icu.util.ValueIterator.Element))`(`element:` ` [ValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator.Element)!`)` Returns the next result for this iteration and returns true if we are not at the end of the iteration, false otherwise. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#reset())`()` Resets the iterator to start iterating from the integer index Integer. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRange](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#setRange(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Restricts the range of integers to iterate and resets the iteration to begin at the index argument start. |
+| --- | --- |
 
 ## Public methods
 

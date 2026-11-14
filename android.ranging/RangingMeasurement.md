@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RangingMeasurement
 
 Kotlin | [Java](https://developer.android.com/reference/android/ranging/RangingMeasurement "View this page in Java")
+| --- | --- |
 
 ```
 class RangingMeasurement : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingMeasurement](https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#) |
 
 Represents a ranging measurement.
@@ -22,6 +24,7 @@ This class provides a measurement result, such as a distance or angle.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#CONFIDENCE_HIGH:kotlin.Int` Ranging measurement with high confidence. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#CONFIDENCE_LOW:kotlin.Int` Ranging measurement with low confidence. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#CONFIDENCE_MEDIUM:kotlin.Int` Ranging measurement with medium confidence. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,6 +35,7 @@ This class provides a measurement result, such as a distance or angle.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#getConfidence()()` Returns the confidence score for this measurement. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#getMeasurement()()` Returns the measurement value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

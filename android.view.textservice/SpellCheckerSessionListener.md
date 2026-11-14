@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SpellCheckerSessionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SpellCheckerSessionListener

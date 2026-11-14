@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # Capability
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/Capability "View this page in Java") 
+| --- | --- |
 
 ```
 class Capability
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.Capability](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#) |
 
 Immutable class to store the camera capability, its corresponding maximum streaming dimension and zoom range.
@@ -26,9 +28,11 @@ Immutable class to store the camera capability, its corresponding maximum stream
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compare two Capability objects to see if they are equal. |
 | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | [getMaxStreamingSize](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#getMaxStreamingSize())`()` Return the maximum streaming dimension of this capability. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#getMode())`()` Return the supported mode for this capability. |
+| --- | --- |
 | [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\> | [getZoomRatioRange](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#getZoomRatioRange())`()` Return the zoom ratio range of this capability. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Capability#toString())`()` Return the Capability as a string representation`"(mode:%d, maxStreamingSize:%d x %d, zoomRatio: %f-%f)"`. |
+| --- | --- |
 
 ## Public constructors
 
@@ -54,6 +58,7 @@ This constructor is public to allow for easier application testing by creating c
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):supported mode for a camera capability. |
 | `maxStreamingSize` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):The maximum streaming size for this mode This value cannot be`null`. |
 | `zoomRatioRange` | [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>:the minimum/maximum zoom ratio this mode supports This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|

@@ -5,15 +5,18 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # MidiReceiver
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiReceiver "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class MidiReceiver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.midi.MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#) |
 
 | Known Direct Subclasses [MidiInputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort) |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------| | [MidiInputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort) | This class is used for sending data to a port on a MIDI device | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface for sending and receiving data to and from a MIDI device.
 
@@ -29,9 +32,11 @@ Interface for sending and receiving data to and from a MIDI device.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#flush())`()` Instructs the receiver to discard all pending MIDI data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMessageSize](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#getMaxMessageSize())`()` Returns the maximum size of a message this receiver can receive. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFlush](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#onFlush())`()` Called when the receiver is instructed to discard all pending MIDI data. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSend](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#onSend(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long))`(`msg:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timestamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Called whenever the receiver is passed new MIDI data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [send](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#send(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`msg:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to send MIDI data to the receiver without a timestamp. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [send](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#send(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long))`(`msg:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timestamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Called to send MIDI data to the receiver with a specified timestamp. |
+| --- | --- |
 
 ## Public constructors
 
@@ -123,6 +128,7 @@ Called whenever the receiver is passed new MIDI data. Subclasses override this m
 | `msg` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the MIDI data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset of the first byte of the data in the array to be processed |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of MIDI data in the array to be processed |
+| --- | --- |
 | `timestamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the timestamp of the message (based on [java.lang.System#nanoTime](https://developer.android.com/reference/kotlin/java/lang/System.html#nanoTime()) |
 
 | Exceptions ||
@@ -148,6 +154,7 @@ Called to send MIDI data to the receiver without a timestamp. Data will be proce
 | `msg` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the MIDI data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset of the first byte of the data in the array to be sent |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of MIDI data in the array to be sent |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------|
@@ -173,6 +180,7 @@ Called to send MIDI data to the receiver with a specified timestamp. Data will b
 | `msg` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the MIDI data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset of the first byte of the data in the array to be sent |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of MIDI data in the array to be sent |
+| --- | --- |
 | `timestamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the timestamp of the message, based on [java.lang.System#nanoTime](https://developer.android.com/reference/kotlin/java/lang/System.html#nanoTime()) |
 
 | Exceptions ||

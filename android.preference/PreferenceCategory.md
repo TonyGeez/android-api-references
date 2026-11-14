@@ -6,15 +6,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # PreferenceCategory
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/PreferenceCategory "View this page in Java") 
+| --- | --- |
 
 ```
 open class PreferenceCategory : PreferenceGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup) ||
 | | | ↳ | [android.preference.PreferenceCategory](https://developer.android.com/reference/kotlin/android/preference/PreferenceCategory#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |

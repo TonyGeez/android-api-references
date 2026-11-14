@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Int64Ref
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/Int64Ref "View this page in Java") 
+| --- | --- |
 
 ```
 open class Int64Ref
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.Int64Ref](https://developer.android.com/reference/kotlin/android/system/Int64Ref#) |
 
 A signed 64bit integer reference suitable for passing to lower-level system calls.

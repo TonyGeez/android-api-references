@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AccessibilityButtonController
 
 Kotlin | [Java](https://developer.android.com/reference/android/accessibilityservice/AccessibilityButtonController "View this page in Java")
+| --- | --- |
 
 ```
 class AccessibilityButtonController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.AccessibilityButtonController](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#) |
 
 Controller for the accessibility button within the system's navigation area
@@ -30,6 +32,7 @@ This class may be used to query the accessibility button's state and register ca
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#isAccessibilityButtonAvailable()()` Retrieves whether the accessibility button in the system's navigation area is available to the calling service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#registerAccessibilityButtonCallback(android.accessibilityservice.AccessibilityButtonController.AccessibilityButtonCallback)(callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback)` Registers the provided `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback` for interaction and state changes callbacks related to the accessibility button. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#registerAccessibilityButtonCallback(android.accessibilityservice.AccessibilityButtonController.AccessibilityButtonCallback,%20android.os.Handler)(callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#)` Registers the provided `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback` for interaction and state change callbacks related to the accessibility button. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#unregisterAccessibilityButtonCallback(android.accessibilityservice.AccessibilityButtonController.AccessibilityButtonCallback)(callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback)` Unregisters the provided `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback` for interaction and state change callbacks related to the accessibility button. |
 
 ## Public methods

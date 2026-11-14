@@ -7,9 +7,11 @@ abstract class HostApduService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.nfc.cardemulation.HostApduService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#) |
 
 HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC card inside an Android service component.
@@ -102,6 +104,7 @@ Use of this class requires the `https://developer.android.com/reference/kotlin/a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#DEACTIVATION_DESELECTED:kotlin.Int` Reason for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDeactivated(kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#DEACTIVATION_LINK_LOSS:kotlin.Int` Reason for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDeactivated(kotlin.Int)`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#SERVICE_INTERFACE:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that must be declared as handled by the service. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#SERVICE_META_DATA:kotlin.String` The name of the meta-data element that contains more information about this service. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1130,9 +1133,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#notifyUnhandled()()` Calling this method allows the service to tell the OS that it won't be able to complete this transaction - for example, because it requires data connectivity that is not present at that moment. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDeactivated(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be called in two possible scenarios: - The NFC link has been deactivated or lost - A different AID has been selected and was resolved to a different service component |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processCommandApdu(kotlin.ByteArray,%20android.os.Bundle)(commandApdu: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` This method will be called when a command APDU has been received from a remote device. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)(frames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/nfc/cardemulation/PollingFrame!>)` This method is called when polling frames have been received from a remote device. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#sendResponseApdu(kotlin.ByteArray)(responseApdu: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Sends a response APDU back to the remote device. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`

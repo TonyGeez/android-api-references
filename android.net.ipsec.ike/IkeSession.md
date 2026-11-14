@@ -7,6 +7,7 @@ class IkeSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#) |
 
 This class represents an IKE Session management object that allows for keying and management of `https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#`s.
@@ -28,9 +29,11 @@ This class provides methods for initiating IKE procedures, such as the Creation 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#close()()` Close the IKE session gracefully. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#closeChildSession(android.net.ipsec.ike.ChildSessionCallback)(childSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback)` Delete a Child Session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#dump(java.io.PrintWriter)(pw: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)` Dumps the state of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` information for the clients |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#kill()()` Terminate (forcibly close) the IKE session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#openChildSession(android.net.ipsec.ike.ChildSessionParams,%20android.net.ipsec.ike.ChildSessionCallback)(childSessionParams: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams, childSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback)` Request a new Child Session. |
+| --- | --- |
 
 ## Public constructors
 
@@ -59,9 +62,11 @@ FEATURE_IPSEC_TUNNELS is required for setting up a tunnel mode Child SA.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): a valid `https://developer.android.com/reference/kotlin/android/content/Context.html#` instance. This value cannot be `null`. |
 | `ikeSessionParams` | [IkeSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams` that contains a set of valid `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` configurations. This value cannot be `null`. |
 | `firstChildSessionParams` | [ChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams` that contains a set of valid configurations for the first Child Session. This value cannot be `null`. |
+| --- | --- |
 | `userCbExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` upon which all callbacks will be posted. For security and consistency, the callbacks posted to this executor MUST be executed serially and in the order they were posted, as guaranteed by executors such as `https://developer.android.com/reference/kotlin/java/util/concurrent/Executors.html#newSingleThreadExecutor()` This value cannot be `null`. |
 | `ikeSessionCallback` | [IkeSessionCallback](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback` interface to notify callers of state changes within the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#`. This value cannot be `null`. |
 | `firstChildSessionCallback` | [ChildSessionCallback](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback` interface to notify callers of state changes within the first Child Session. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

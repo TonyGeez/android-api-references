@@ -9,6 +9,7 @@ class NetworkInterface
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#) |
 
 This class represents a Network Interface made up of a name, and a list of IP addresses assigned to this interface. It is used to identify the local interface on which a multicast group is joined. Interfaces are normally known by names such as "le0".
@@ -22,24 +23,31 @@ Note that information about [NetworkInterface](https://developer.android.com/ref
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | static [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)! | [getByIndex](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getByIndex(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a network interface given its index. |
 | static [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)! | [getByInetAddress](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getByInetAddress(java.net.InetAddress))`(`addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`)` Convenience method to search for a network interface that has the specified Internet Protocol (IP) address bound to it. |
+| --- | --- |
 | static [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)! | [getByName](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getByName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches for the network interface with the specified name. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getDisplayName())`()` Get the display name of this network interface. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getHardwareAddress](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getHardwareAddress())`()` Returns the hardware address (usually MAC) of the interface if it has one and if it can be accessed given the current privileges. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getIndex())`()` Returns the index of this network interface. |
 | [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!\>! | [getInetAddresses](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getInetAddresses())`()` Convenience method to return an Enumeration with all or a subset of the InetAddresses bound to this network interface. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InterfaceAddress](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress)!\>! | [getInterfaceAddresses](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getInterfaceAddresses())`()` Get a List of all or a subset of the`InterfaceAddresses`of this network interface. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMTU](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getMTU())`()` Returns the Maximum Transmission Unit (MTU) of this interface. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getName())`()` Get the name of this network interface. |
 | static [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)!\>! | [getNetworkInterfaces](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getNetworkInterfaces())`()` Returns all the interfaces on this machine. |
+| --- | --- |
 | [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)! | [getParent](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getParent())`()` Returns the parent NetworkInterface of this interface if this is a subinterface, or`null`if it is a physical (non virtual) interface or has no parent. |
 | [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#)!\>! | [getSubInterfaces](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#getSubInterfaces())`()` Get an Enumeration with all the subinterfaces (also known as virtual interfaces) attached to this network interface. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopback](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#isLoopback())`()` Returns whether a network interface is a loopback interface. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPointToPoint](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#isPointToPoint())`()` Returns whether a network interface is a point to point interface. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUp](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#isUp())`()` Returns whether a network interface is up and running. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#isVirtual())`()` Returns whether this interface is a virtual interface (also called subinterface). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMulticast](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#supportsMulticast())`()` Returns whether a network interface supports multicasting or not. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/NetworkInterface#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

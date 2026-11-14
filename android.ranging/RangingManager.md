@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RangingManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/RangingManager "View this page in Java") 
+| --- | --- |
 
 ```
 class RangingManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingManager](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#) |
 
 This class provides a way to perform ranging operations such as querying the device's capabilities and determining the distance and angle between the local device and a remote device.
@@ -29,6 +31,7 @@ Restricted for SDK Runtime environment in API level 36.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_CS](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#BLE_CS:kotlin.Int) Bluetooth Channel Sounding (BT-CS) technology. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_RSSI](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#BLE_RSSI:kotlin.Int) Bluetooth Low Energy (BLE) RSSI-based ranging technology. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UWB](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#UWB:kotlin.Int) Ultra-Wideband (UWB) technology. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_NAN_RTT](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#WIFI_NAN_RTT:kotlin.Int) WiFi Round Trip Time (WiFi-RTT) technology. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STA_RTT](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#WIFI_STA_RTT:kotlin.Int) WiFi Round Trip Time (WiFi-RTT 8011MC) technology. |
 
@@ -37,6 +40,7 @@ Restricted for SDK Runtime environment in API level 36.
 | [RangingSession](https://developer.android.com/reference/kotlin/android/ranging/RangingSession)? | [createRangingSession](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#createRangingSession(java.util.concurrent.Executor,%20android.ranging.RangingSession.Callback))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [RangingSession.Callback](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback)`)` Creates a new ranging session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCapabilitiesCallback](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#registerCapabilitiesCallback(java.util.concurrent.Executor,%20android.ranging.RangingManager.RangingCapabilitiesCallback))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [RangingManager.RangingCapabilitiesCallback](https://developer.android.com/reference/kotlin/android/ranging/RangingManager.RangingCapabilitiesCallback)`)` Registers a callback to receive ranging capabilities updates. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCapabilitiesCallback](https://developer.android.com/reference/kotlin/android/ranging/RangingManager#unregisterCapabilitiesCallback(android.ranging.RangingManager.RangingCapabilitiesCallback))`(`callback:` ` [RangingManager.RangingCapabilitiesCallback](https://developer.android.com/reference/kotlin/android/ranging/RangingManager.RangingCapabilitiesCallback)`)` Unregisters a previously registered ranging capabilities callback. |
+| --- | --- |
 
 ## Constants
 

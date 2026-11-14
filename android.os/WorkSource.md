@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # WorkSource
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/WorkSource "View this page in Java") 
+| --- | --- |
 
 ```
 open class WorkSource : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.WorkSource](https://developer.android.com/reference/kotlin/android/os/WorkSource#) |
 
 Describes the source of some work that may be done by someone else. Currently the public representation of what a work source is not defined; this is an opaque container.
@@ -31,12 +33,15 @@ Describes the source of some work that may be done by someone else. Currently th
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/android/os/WorkSource#add(android.os.WorkSource))`(`other:` ` [WorkSource](https://developer.android.com/reference/kotlin/android/os/WorkSource#)!`)` Merge the contents of other WorkSource in to this one. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/os/WorkSource#clear())`()` Clear this WorkSource to be empty. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/WorkSource#describeContents())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [diff](https://developer.android.com/reference/kotlin/android/os/WorkSource#diff(android.os.WorkSource))`(`other:` ` [WorkSource](https://developer.android.com/reference/kotlin/android/os/WorkSource#)!`)` Compare this WorkSource with another. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/WorkSource#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/WorkSource#hashCode())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/android/os/WorkSource#remove(android.os.WorkSource))`(`other:` ` [WorkSource](https://developer.android.com/reference/kotlin/android/os/WorkSource#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/os/WorkSource#set(android.os.WorkSource))`(`other:` ` [WorkSource](https://developer.android.com/reference/kotlin/android/os/WorkSource#)!`)` Replace the current contents of this work source with the given work source. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/WorkSource#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/WorkSource#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

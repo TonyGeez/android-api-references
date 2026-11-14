@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ComponentCaller
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/ComponentCaller "View this page in Java") 
+| --- | --- |
 
 ```
 class ComponentCaller
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#) |
 
 Represents the app that launched the component. See below for the APIs available on the component caller.
@@ -24,6 +26,7 @@ Represents the app that launched the component. See below for the APIs available
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkContentUriPermission](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#checkContentUriPermission(android.net.Uri,%20kotlin.Int))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `modeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether this component caller had access to a specific content URI at launch time. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPackage](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#getPackage())`()` Returns the package name of this component caller. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUid](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#getUid())`()` Returns the uid of this component caller. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/ComponentCaller#hashCode())`()` <br /> |
 

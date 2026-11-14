@@ -11,6 +11,7 @@ interface InstantSource
 | [java.time.InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#) |
 
 | Known Direct Subclasses [Clock](https://developer.android.com/reference/kotlin/java/time/Clock) |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [Clock](https://developer.android.com/reference/kotlin/java/time/Clock) | A clock providing access to the current instant, date and time using a time-zone. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Provides access to the current instant.
 
@@ -45,9 +46,11 @@ The`system`factory method provides a source based on the best available system c
 | openstatic [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)! | [fixed](https://developer.android.com/reference/kotlin/java/time/InstantSource#fixed(java.time.Instant))`(`fixedInstant:` ` [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)!`)` Obtains a source that always returns the same instant. |
 | abstract [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)! | [instant](https://developer.android.com/reference/kotlin/java/time/InstantSource#instant())`()` Gets the current instant of the source. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](https://developer.android.com/reference/kotlin/java/time/InstantSource#millis())`()` Gets the current millisecond instant of the source. |
+| --- | --- |
 | openstatic [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)! | [offset](https://developer.android.com/reference/kotlin/java/time/InstantSource#offset(java.time.InstantSource,%20java.time.Duration))`(`baseSource:` ` [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)!`, `offsetDuration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration)!`)` Obtains a source that returns instants from the specified source with the specified duration added. |
 | openstatic [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)! | [system](https://developer.android.com/reference/kotlin/java/time/InstantSource#system())`()` Obtains a source that returns the current instant using the best available system clock. |
 | openstatic [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)! | [tick](https://developer.android.com/reference/kotlin/java/time/InstantSource#tick(java.time.InstantSource,%20java.time.Duration))`(`baseSource:` ` [InstantSource](https://developer.android.com/reference/kotlin/java/time/InstantSource#)!`, `tickDuration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration)!`)` Obtains a source that returns instants from the specified source truncated to the nearest occurrence of the specified duration. |
+| --- | --- |
 | open [Clock](https://developer.android.com/reference/kotlin/java/time/Clock)! | [withZone](https://developer.android.com/reference/kotlin/java/time/InstantSource#withZone(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!`)` Returns a clock with the specified time-zone. |
 
 ## Public methods

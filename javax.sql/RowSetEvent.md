@@ -9,6 +9,7 @@ open class RowSetEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [javax.sql.RowSetEvent](https://developer.android.com/reference/kotlin/javax/sql/RowSetEvent#) |
 

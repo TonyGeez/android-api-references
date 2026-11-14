@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ComponentName
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ComponentName "View this page in Java") 
+| --- | --- |
 
 ```
 class ComponentName : Cloneable, Comparable<ComponentName!>, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#) |
 
 Identifier for a specific application component ([android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#), [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#), [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver), or [android.content.ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider)) that is available. Two pieces of information, encapsulated here, are required to identify a component: the package (a String) it exists in, and the class (a String) name inside of that package.
@@ -33,21 +35,27 @@ Identifier for a specific application component ([android.app.Activity](https://
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#) | [clone](https://developer.android.com/reference/kotlin/android/content/ComponentName#clone())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/content/ComponentName#compareTo(android.content.ComponentName))`(`other:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#)!`)` <br /> |
 | static [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#) | [createRelative](https://developer.android.com/reference/kotlin/android/content/ComponentName#createRelative(android.content.Context,%20kotlin.String))`(`pkg:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context)`, `cls:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a new component identifier where the class name may be specified as either absolute or relative to the containing package. |
+| --- | --- |
 | static [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#) | [createRelative](https://developer.android.com/reference/kotlin/android/content/ComponentName#createRelative(kotlin.String,%20kotlin.String))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cls:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a new component identifier where the class name may be specified as either absolute or relative to the containing package. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/ComponentName#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/ComponentName#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [flattenToShortString](https://developer.android.com/reference/kotlin/android/content/ComponentName#flattenToShortString())`()` The same as [flattenToString()](https://developer.android.com/reference/kotlin/android/content/ComponentName#flattenToString()), but abbreviates the class name if it is a suffix of the package. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [flattenToString](https://developer.android.com/reference/kotlin/android/content/ComponentName#flattenToString())`()` Return a String that unambiguously describes both the package and class names contained in the ComponentName. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getClassName](https://developer.android.com/reference/kotlin/android/content/ComponentName#getClassName())`()` Return the class name of this component. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/content/ComponentName#getPackageName())`()` Return the package name of this component. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getShortClassName](https://developer.android.com/reference/kotlin/android/content/ComponentName#getShortClassName())`()` Return the class name, either fully qualified or in a shortened form (with a leading '.') if it is a suffix of the package. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/ComponentName#hashCode())`()` <br /> |
+| --- | --- |
 | static [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#)! | [readFromParcel](https://developer.android.com/reference/kotlin/android/content/ComponentName#readFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` Read a ComponentName from a Parcel that was previously written with [writeToParcel(android.content.ComponentName,android.os.Parcel)](https://developer.android.com/reference/kotlin/android/content/ComponentName#writeToParcel(android.content.ComponentName,%20android.os.Parcel)), returning either a null or new object as appropriate. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toShortString](https://developer.android.com/reference/kotlin/android/content/ComponentName#toShortString())`()` Return string representation of this class without the class's name as a prefix. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/ComponentName#toString())`()` <br /> |
+| --- | --- |
 | static [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#)? | [unflattenFromString](https://developer.android.com/reference/kotlin/android/content/ComponentName#unflattenFromString(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Recover a ComponentName from a String that was previously created with [flattenToString()](https://developer.android.com/reference/kotlin/android/content/ComponentName#flattenToString()). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/ComponentName#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/ComponentName#writeToParcel(android.content.ComponentName,%20android.os.Parcel))`(`c:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName#)!`, `out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` Write a ComponentName to a Parcel, handling null pointers. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|

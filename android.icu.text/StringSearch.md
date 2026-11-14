@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # StringSearch
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/StringSearch "View this page in Java") 
+| --- | --- |
 
 ```
 class StringSearch : SearchIterator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.text.SearchIterator](https://developer.android.com/reference/kotlin/android/icu/text/SearchIterator) ||
 | | ↳ | [android.icu.text.StringSearch](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#) |
 
@@ -72,12 +74,15 @@ Note, StringSearch is not to be subclassed.
 | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator)! | [getCollator](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#getCollator())`()` Gets the [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) used for the language rules. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#getIndex())`()` Return the current index in the text being searched. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPattern](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#getPattern())`()` Returns the pattern for which StringSearch is searching for. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCanonical](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#isCanonical())`()` Determines whether canonical matches (option 1, as described in the class documentation) is set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#reset())`()` Resets the iteration. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCanonical](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#setCanonical(kotlin.Boolean))`(`allowCanonical:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the canonical match mode. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCollator](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#setCollator(android.icu.text.RuleBasedCollator))`(`collator:` ` [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator)!`)` Sets the [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) to be used for language-specific searching. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndex](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#setIndex(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the position in the target text at which the next search will start. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPattern](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#setPattern(kotlin.String))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the pattern to search for. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/android/icu/text/StringSearch#setTarget(java.text.CharacterIterator))`(`text:` ` [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!`)` Set the target text to be searched. |
 
 | Protected methods ||
@@ -134,6 +139,7 @@ Initializes the iterator to use the language-specific rules defined in the argum
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:text to look for. |
 | `target` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!:target text to search for pattern. |
 | `collator` | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator)!: [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) that defines the language rules |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------|
@@ -162,6 +168,7 @@ Initializes the iterator to use the language-specific rules defined in the argum
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:text to look for. |
 | `target` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!:target text to search for pattern. |
 | `collator` | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator)!: [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) that defines the language rules |
+| --- | --- |
 | `breakiter` | [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator)!:A [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator) that is used to determine the boundaries of a logical match. This argument can be null. |
 
 | Exceptions ||
@@ -191,6 +198,7 @@ Initializes the iterator to use the language-specific rules and break iterator r
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:text to look for. |
 | `target` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!:target text to search for pattern. |
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:locale to use for language and break iterator rules |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -220,6 +228,7 @@ Initializes the iterator to use the language-specific rules and break iterator r
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:text to look for. |
 | `target` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!:target text to search for pattern. |
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:locale to use for language and break iterator rules |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

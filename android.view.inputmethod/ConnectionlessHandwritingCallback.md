@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ConnectionlessHandwritingCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/ConnectionlessHandwritingCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ConnectionlessHandwritingCallback
@@ -21,6 +22,7 @@ Interface to receive the result of starting a connectionless stylus handwriting 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTIONLESS_HANDWRITING_ERROR_NO_TEXT_RECOGNIZED](https://developer.android.com/reference/kotlin/android/view/inputmethod/ConnectionlessHandwritingCallback#CONNECTIONLESS_HANDWRITING_ERROR_NO_TEXT_RECOGNIZED:kotlin.Int) Error code indicating that the connectionless handwriting session started and completed but no text was recognized. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTIONLESS_HANDWRITING_ERROR_OTHER](https://developer.android.com/reference/kotlin/android/view/inputmethod/ConnectionlessHandwritingCallback#CONNECTIONLESS_HANDWRITING_ERROR_OTHER:kotlin.Int) Error code for any other reason that the connectionless handwriting session did not complete successfully. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/view/inputmethod/ConnectionlessHandwritingCallback#CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTED:kotlin.Int) Error code indicating that the connectionless handwriting session was not started as the current IME does not support it. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

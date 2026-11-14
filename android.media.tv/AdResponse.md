@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # AdResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/AdResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class AdResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.AdResponse](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#) |
 
 An advertisement response which can be sent to TV interactive App service to inform AD status.
@@ -22,6 +24,7 @@ An advertisement response which can be sent to TV interactive App service to inf
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_TYPE_BUFFERING](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#RESPONSE_TYPE_BUFFERING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_TYPE_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#RESPONSE_TYPE_ERROR:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_TYPE_FINISHED](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#RESPONSE_TYPE_FINISHED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_TYPE_PLAYING](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#RESPONSE_TYPE_PLAYING:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_TYPE_STOPPED](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#RESPONSE_TYPE_STOPPED:kotlin.Int) <br /> |
 
@@ -38,6 +41,7 @@ An advertisement response which can be sent to TV interactive App service to inf
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedTimeMillis](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#getElapsedTimeMillis())`()` Gets the playback elapsed time in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#getId())`()` Gets the ID of AD response. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResponseType](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#getResponseType())`()` Gets the response type. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/AdResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

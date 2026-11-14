@@ -7,13 +7,17 @@ open class XPathException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [javax.xml.xpath.XPathException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [XPathExpressionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpressionException), [XPathFactoryConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFactoryConfigurationException) |---|---| | [XPathExpressionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpressionException) | `XPathExpressionException` represents an error in an XPath expression. | | [XPathFactoryConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFactoryConfigurationException) | `XPathFactoryConfigurationException` represents a configuration error in a `XPathFactory` environment. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [XPathFunctionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionException) |---|---| | [XPathFunctionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionException) | `XPathFunctionException` represents an error with an XPath function. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 `XPathException` represents a generic XPath exception.
 
@@ -31,6 +35,7 @@ open class XPathException : Exception
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace()()` Prints this throwable and its backtrace to the standard error stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace(java.io.PrintStream)(s: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)` Prints this throwable and its backtrace to the specified print stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace(java.io.PrintWriter)(s: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)` Prints this throwable and its backtrace to the specified print writer. |
+| --- | --- |
 
 | Properties ||
 |---|---|

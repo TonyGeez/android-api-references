@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # PrintStreamPrinter
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/PrintStreamPrinter "View this page in Java") 
+| --- | --- |
 
 ```
 open class PrintStreamPrinter : Printer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.PrintStreamPrinter](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter#) |
 
 Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer) that sends its output to a [java.io.PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#).

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # AudioRecordingConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioRecordingConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioRecordingConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#) |
 
 The AudioRecordingConfiguration class collects the information describing an audio recording session.
@@ -32,15 +34,19 @@ The configuration also contains the use case for which audio is recorded ([getCl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)! | [getAudioDevice](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getAudioDevice())`()` Returns information about the audio input device used for this recording. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSource](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getAudioSource())`()` Returns the audio source currently used to configure the capture path. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSessionId](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSessionId())`()` Returns the session number of the recording, see [AudioRecord.getAudioSessionId()](https://developer.android.com/reference/kotlin/android/media/AudioRecord#getAudioSessionId()). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSource](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSource())`()` Returns the audio source selected by the client. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!\> | [getClientEffects](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientEffects())`()` Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the audio capture client (e.g. |
 | [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | [getClientFormat](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientFormat())`()` Returns the audio format at which the client application is recording audio. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!\> | [getEffects](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getEffects())`()` Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the capture stream. |
+| --- | --- |
 | [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | [getFormat](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getFormat())`()` Returns the audio format at which audio is recorded on this Android device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClientSilenced](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#isClientSilenced())`()` Returns true if the audio returned to the client is currently being silenced by the audio framework due to concurrent capture policy (e.g the capturing application does not have an active foreground process or service anymore). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

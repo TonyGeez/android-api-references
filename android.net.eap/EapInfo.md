@@ -5,15 +5,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # EapInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/eap/EapInfo "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class EapInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.eap.EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo#) |
 
 | Known Direct Subclasses [EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo) | EapAkaInfo represents data provided by the server during EAP AKA authentication | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 EapInfo represents data provided by the server during EAP authentication
 

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # FileObserver
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/FileObserver "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class FileObserver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.FileObserver](https://developer.android.com/reference/kotlin/android/os/FileObserver#) |
 
 Monitors files (using [inotify](http://en.wikipedia.org/wiki/Inotify)) to fire an event after files are accessed or changed by any process on the device (including this one). FileObserver is an abstract class; subclasses must implement the event handler [onEvent(int,java.lang.String)](https://developer.android.com/reference/kotlin/android/os/FileObserver#onEvent(kotlin.Int,%20kotlin.String)).
@@ -28,15 +30,19 @@ An event mask is used to specify which changes or actions to report. Event type 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS](https://developer.android.com/reference/kotlin/android/os/FileObserver#ACCESS:kotlin.Int) Event type: Data was read from a file |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_EVENTS](https://developer.android.com/reference/kotlin/android/os/FileObserver#ALL_EVENTS:kotlin.Int) Event mask: All valid event types, combined Value is either`0`or a combination of [android.os.FileObserver#ACCESS](https://developer.android.com/reference/kotlin/android/os/FileObserver#ACCESS:kotlin.Int), [android.os.FileObserver#MODIFY](https://developer.android.com/reference/kotlin/android/os/FileObserver#MODIFY:kotlin.Int), [android.os.FileObserver#ATTRIB](https://developer.android.com/reference/kotlin/android/os/FileObserver#ATTRIB:kotlin.Int), [android.os.FileObserver#CLOSE_WRITE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CLOSE_WRITE:kotlin.Int), [android.os.FileObserver#CLOSE_NOWRITE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CLOSE_NOWRITE:kotlin.Int), [android.os.FileObserver#OPEN](https://developer.android.com/reference/kotlin/android/os/FileObserver#OPEN:kotlin.Int), [android.os.FileObserver#MOVED_FROM](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVED_FROM:kotlin.Int), [android.os.FileObserver#MOVED_TO](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVED_TO:kotlin.Int), [android.os.FileObserver#CREATE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CREATE:kotlin.Int), [android.os.FileObserver#DELETE](https://developer.android.com/reference/kotlin/android/os/FileObserver#DELETE:kotlin.Int), [android.os.FileObserver#DELETE_SELF](https://developer.android.com/reference/kotlin/android/os/FileObserver#DELETE_SELF:kotlin.Int), and [android.os.FileObserver#MOVE_SELF](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVE_SELF:kotlin.Int) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTRIB](https://developer.android.com/reference/kotlin/android/os/FileObserver#ATTRIB:kotlin.Int) Event type: Metadata (permissions, owner, timestamp) was changed explicitly |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_NOWRITE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CLOSE_NOWRITE:kotlin.Int) Event type: Someone had a file or directory open read-only, and closed it |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_WRITE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CLOSE_WRITE:kotlin.Int) Event type: Someone had a file or directory open for writing, and closed it |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE](https://developer.android.com/reference/kotlin/android/os/FileObserver#CREATE:kotlin.Int) Event type: A new file or subdirectory was created under the monitored directory |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE](https://developer.android.com/reference/kotlin/android/os/FileObserver#DELETE:kotlin.Int) Event type: A file was deleted from the monitored directory |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE_SELF](https://developer.android.com/reference/kotlin/android/os/FileObserver#DELETE_SELF:kotlin.Int) Event type: The monitored file or directory was deleted; monitoring effectively stops |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFY](https://developer.android.com/reference/kotlin/android/os/FileObserver#MODIFY:kotlin.Int) Event type: Data was written to a file |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_FROM](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVED_FROM:kotlin.Int) Event type: A file or subdirectory was moved from the monitored directory |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_TO](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVED_TO:kotlin.Int) Event type: A file or subdirectory was moved to the monitored directory |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVE_SELF](https://developer.android.com/reference/kotlin/android/os/FileObserver#MOVE_SELF:kotlin.Int) Event type: The monitored file or directory was moved; monitoring continues |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](https://developer.android.com/reference/kotlin/android/os/FileObserver#OPEN:kotlin.Int) Event type: A file or directory was opened |
 
 | Public constructors ||
@@ -53,6 +59,7 @@ An event mask is used to specify which changes or actions to report. Event type 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](https://developer.android.com/reference/kotlin/android/os/FileObserver#onEvent(kotlin.Int,%20kotlin.String))`(`event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` The event handler, which must be implemented by subclasses. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startWatching](https://developer.android.com/reference/kotlin/android/os/FileObserver#startWatching())`()` Start watching for events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopWatching](https://developer.android.com/reference/kotlin/android/os/FileObserver#stopWatching())`()` Stop watching for events. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|

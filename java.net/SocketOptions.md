@@ -9,6 +9,7 @@ interface SocketOptions
 | [java.net.SocketOptions](https://developer.android.com/reference/kotlin/java/net/SocketOptions#) |
 
 | Known Direct Subclasses [DatagramSocketImpl](https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl), [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl) |---|---| | [DatagramSocketImpl](https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl) | Abstract datagram and multicast socket implementation base class. | | [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl) | The abstract class `SocketImpl` is a common superclass of all classes that actually implement sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface of methods to get/set socket options. This interface is implemented by: **SocketImpl** and **DatagramSocketImpl**. Subclasses of these should override the methods of this interface in order to support their own options.
 
@@ -21,18 +22,23 @@ The methods and constants which specify options in this interface are for implem
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#IP_MULTICAST_IF:kotlin.Int` Set which outgoing interface on which to send multicast packets. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#IP_MULTICAST_IF2:kotlin.Int` Same as above. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#IP_MULTICAST_LOOP:kotlin.Int` This option enables or disables local loopback of multicast datagrams. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#IP_TOS:kotlin.Int` This option sets the type-of-service or traffic class field in the IP header for a TCP or UDP socket. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_BINDADDR:kotlin.Int` Fetch the local address binding of a socket (this option cannot be "set" only "gotten", since sockets are bound at creation time, and so the locally bound address cannot be changed). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_BROADCAST:kotlin.Int` Sets SO_BROADCAST for a socket. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_KEEPALIVE:kotlin.Int` When the keepalive option is set for a TCP socket and no data has been exchanged across the socket in either direction for 2 hours (NOTE: the actual value is implementation dependent), TCP automatically sends a keepalive probe to the peer. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_LINGER:kotlin.Int` Specify a linger-on-close timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_OOBINLINE:kotlin.Int` When the OOBINLINE option is set, any TCP urgent data received on the socket will be received through the socket input stream. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_RCVBUF:kotlin.Int` Set a hint the size of the underlying buffers used by the platform for incoming network I/O. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEADDR:kotlin.Int` Sets SO_REUSEADDR for a socket. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEPORT:kotlin.Int` Sets SO_REUSEPORT for a socket. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_SNDBUF:kotlin.Int` Set a hint the size of the underlying buffers used by the platform for outgoing network I/O. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_TIMEOUT:kotlin.Int` Set a timeout on blocking Socket operations: ```kotlin ServerSocket.accept(); SocketInputStream.read(); DatagramSocket.receive(); ``` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#TCP_NODELAY:kotlin.Int` Disable Nagle's algorithm for this connection. |
+| --- | --- |
 
 | Public methods ||
 |---|---|

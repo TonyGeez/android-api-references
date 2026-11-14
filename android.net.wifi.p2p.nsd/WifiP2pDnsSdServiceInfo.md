@@ -3,12 +3,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDnsSdServiceInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo "View this page in Java")
+| --- | --- |
 
 ```
 open class WifiP2pDnsSdServiceInfo : WifiP2pServiceInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo) ||
 | | ↳ | [android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo#) |
 
@@ -50,6 +52,7 @@ Create a Bonjour service information object.
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: instance name. e.g) "MyPrinter" |
 | `serviceType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: service type. e.g) "_ipp._tcp" |
 | `txtMap` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: TXT record with key/value pair in a map confirming to format defined at http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt |
+| --- | --- |
 
 | Return ||
 |---|---|

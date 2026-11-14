@@ -3,12 +3,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SdkExtensions
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/ext/SdkExtensions "View this page in Java")
+| --- | --- |
 
 ```
 open class SdkExtensions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ext.SdkExtensions](https://developer.android.com/reference/kotlin/android/os/ext/SdkExtensions#) |
 
 Methods for interacting with the extension SDK.

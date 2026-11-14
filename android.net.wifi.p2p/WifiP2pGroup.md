@@ -7,6 +7,7 @@ open class WifiP2pGroup : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.p2p.WifiP2pGroup](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#) |
 
 A class representing a Wi-Fi P2p group. A p2p group consists of a single group owner and one or more clients. In the case of a group with only two devices, one will be the group owner and the other will be a group client.
@@ -18,9 +19,11 @@ A class representing a Wi-Fi P2p group. A p2p group consists of a single group o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#NETWORK_ID_PERSISTENT:kotlin.Int` The persistent network id. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#NETWORK_ID_TEMPORARY:kotlin.Int` The temporary network id. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#SECURITY_TYPE_UNKNOWN:kotlin.Int` The definition of security type unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#SECURITY_TYPE_WPA2_PSK:kotlin.Int` The definition of security type WPA2-PSK. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#SECURITY_TYPE_WPA3_COMPATIBILITY:kotlin.Int` The definition of security type WPA3-Compatibility Mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#SECURITY_TYPE_WPA3_SAE:kotlin.Int` The definition of security type WPA3-SAE. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -36,15 +39,19 @@ A class representing a Wi-Fi P2p group. A p2p group consists of a single group o
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#describeContents()()` Implement the Parcelable interface |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getClientList()()` Get the list of clients currently part of the p2p group |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getFrequency()()` Get the operating frequency (in MHz) of the p2p group |
+| --- | --- |
 | open [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getGroupOwnerBssid()()` Returns the BSSID, if this device is the group owner of the P2P group supporting Wi-Fi Direct R2 protocol. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getInterface()()` Get the interface name on which the group is created |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkId()()` The network ID of the P2P group in wpa_supplicant. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkName()()` Get the network name (SSID) of the group. |
 | open [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getOwner()()` Get the details of the group owner as a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` object |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getPassphrase()()` Get the passphrase of the group. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getSecurityType()()` Get the security type of the group. |
 | open [WifiP2pConnectionInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConnectionInfo)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getWifiP2pGroupClientConnectionInfo()()` Gets the P2P connection information for this device if it is a client in the group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#isGroupOwner()()` Check whether this device is the group owner of the created p2p group |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
 

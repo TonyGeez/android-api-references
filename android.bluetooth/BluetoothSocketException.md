@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothSocketException
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothSocketException "View this page in Java") 
+| --- | --- |
 
 ```
 open class BluetoothSocketException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.bluetooth.BluetoothSocketException](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#) |
 
 Thrown when an error occurs during a Bluetooth Socket related exception.
@@ -27,24 +30,31 @@ This is currently intended to be thrown for a failure during [BluetoothSocket](h
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUETOOTH_OFF_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#BLUETOOTH_OFF_FAILURE:kotlin.Int) Error code returned by [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket) during a socket operation that failed because Bluetooth is turned off. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_ACL_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_ACL_FAILURE:kotlin.Int) Error code during connect when there is an ACL connection failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_CLIENT_SECURITY_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_CLIENT_SECURITY_FAILURE:kotlin.Int) Error code during connect when security clearance fails on the client during L2CAP connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INSUFFICIENT_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INSUFFICIENT_AUTHENTICATION:kotlin.Int) Error code during connect when authentication fails on the peer device during L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INSUFFICIENT_AUTHORIZATION](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INSUFFICIENT_AUTHORIZATION:kotlin.Int) Error code during connect when authorization fails on the peer device during L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INSUFFICIENT_ENCRYPTION](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INSUFFICIENT_ENCRYPTION:kotlin.Int) Error code during connect for insufficient encryption from the peer device during L2CAP connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INSUFFICIENT_ENCRYPT_KEY_SIZE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INSUFFICIENT_ENCRYPT_KEY_SIZE:kotlin.Int) Error code during connect indicating insufficient encryption key size on the peer device during L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INVALID_PARAMETERS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INVALID_PARAMETERS:kotlin.Int) Error code during connect for invalid parameters from the peer device during L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_INVALID_SOURCE_CID](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_INVALID_SOURCE_CID:kotlin.Int) Error code during connect for invalid Channel ID from the peer device during L2CAP connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_NO_PSM_AVAILABLE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_NO_PSM_AVAILABLE:kotlin.Int) Error code during connect when no PSM is available for L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_NO_RESOURCES](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_NO_RESOURCES:kotlin.Int) Error code during connect when no resources are available for L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_SOURCE_CID_ALREADY_ALLOCATED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_SOURCE_CID_ALREADY_ALLOCATED:kotlin.Int) Error code during connect for already allocated Channel ID from the peer device during L2CAP connection. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_TIMEOUT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_TIMEOUT:kotlin.Int) Error code during connect when L2CAP connection timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_UNACCEPTABLE_PARAMETERS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_UNACCEPTABLE_PARAMETERS:kotlin.Int) Error code during connect for unacceptable Parameters from the peer device during L2CAP connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [L2CAP_UNKNOWN](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#L2CAP_UNKNOWN:kotlin.Int) Error code returned by [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket) during a L2CAP-related socket operation that failed for an unknown reason. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NULL_DEVICE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#NULL_DEVICE:kotlin.Int) Error code during connect when null device attempts to do socket connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RPC_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#RPC_FAILURE:kotlin.Int) Error code during connect when a Runtime RPC exception occurs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_CLOSED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#SOCKET_CLOSED:kotlin.Int) Error code returned by [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket) during a socket operation that failed because the socket has been closed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_CONNECTION_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#SOCKET_CONNECTION_FAILURE:kotlin.Int) Error code during connect for generic socket connection failures. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_MANAGER_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#SOCKET_MANAGER_FAILURE:kotlin.Int) Error code returned by [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket) during a socket operation that failed because socket manager is not available. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_FILE_SOCKET_CREATION_FAILURE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#UNIX_FILE_SOCKET_CREATION_FAILURE:kotlin.Int) Error code during connect when the UNIX socket connection creation fails. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSPECIFIED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketException#UNSPECIFIED:kotlin.Int) Error code representing a failure during [BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket). |
 
 | Public constructors ||

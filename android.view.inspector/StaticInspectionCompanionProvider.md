@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # StaticInspectionCompanionProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/StaticInspectionCompanionProvider "View this page in Java") 
+| --- | --- |
 
 ```
 open class StaticInspectionCompanionProvider : InspectionCompanionProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inspector.StaticInspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/StaticInspectionCompanionProvider#) |
 
 An inspection companion provider that finds companions as inner classes or generated code.

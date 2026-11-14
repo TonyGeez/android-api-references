@@ -8,9 +8,11 @@ abstract class ChooserTargetService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.chooser.ChooserTargetService](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#) |
 
 > [!CAUTION]
@@ -58,6 +60,7 @@ The meta-data element should have the name `android.service.chooser.chooser_targ
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#BIND_PERMISSION:kotlin.String` The permission that a ChooserTargetService must require in order to bind to it. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#META_DATA_NAME:kotlin.String` The name of the `meta-data` element that must be present on an `activity` element in a manifest to link it to a ChooserTargetService |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#SERVICE_INTERFACE:kotlin.String` The Intent action that a ChooserTargetService must respond to |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
 

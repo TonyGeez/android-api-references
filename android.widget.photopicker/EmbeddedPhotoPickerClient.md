@@ -6,6 +6,7 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 # EmbeddedPhotoPickerClient
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/photopicker/EmbeddedPhotoPickerClient "View this page in Java") 
+| --- | --- |
 
 ```
 interface EmbeddedPhotoPickerClient
@@ -26,6 +27,7 @@ Any methods on a single instance of this object will always be invoked in a non-
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSelectionComplete](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onSelectionComplete())`()` Reports that the user is done with their selection and should collapse the picker. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionError](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onSessionError(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` Reports that terminal error has occurred in the session. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionOpened](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onSessionOpened(android.widget.photopicker.EmbeddedPhotoPickerSession))`(`session:` ` [EmbeddedPhotoPickerSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession)`)` Reports that session of app with photopicker was established successfully. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUriPermissionGranted](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onUriPermissionGranted(kotlin.collections.MutableList))`(`uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!>`)` Reports that URI permission has been granted to the item selected by the user. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUriPermissionRevoked](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onUriPermissionRevoked(kotlin.collections.MutableList))`(`uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!>`)` Reports that URI permission has been revoked of the item deselected by the user. |
 

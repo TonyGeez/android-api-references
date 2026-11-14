@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # EmojiConsistency
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/EmojiConsistency "View this page in Java") 
+| --- | --- |
 
 ```
 class EmojiConsistency
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.EmojiConsistency](https://developer.android.com/reference/kotlin/android/text/EmojiConsistency#) |
 
 The set of emoji that should be drawn by the system with the default font for device consistency. This is intended to be used only by applications that do custom emoji rendering using tools like [android.text.style.ReplacementSpan](https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan) or custom emoji fonts. An example of how this should be used:

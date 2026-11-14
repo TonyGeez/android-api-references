@@ -7,6 +7,7 @@ class HijrahChronology : AbstractChronology, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.time.chrono.AbstractChronology](https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology) ||
 | | ↳ | [java.time.chrono.HijrahChronology](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#) |
 
@@ -19,6 +20,7 @@ The length of each month is 29 or 30 days. Ordinary years have 354 days; leap ye
 CLDR and LDML identify variants:
 
 | Chronology ID | Calendar Type | Locale extension, see `https://developer.android.com/reference/kotlin/java/util/Locale.html#` | Description |
+| --- | --- | --- | --- |
 | Hijrah-umalqura | islamic-umalqura | ca-islamic-umalqura | Islamic - Umm Al-Qura calendar of Saudi Arabia |
 |---|---|---|---|
 
@@ -41,21 +43,27 @@ Locale locale = Locale.forLanguageTag("en-US-u-ca-islamic-umalqura");
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Hijrah calendar system from the proleptic-year, month-of-year and day-of-month fields. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#date(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Hijrah calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#date(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date in this chronology from another temporal object. |
+| --- | --- |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateEpochDay(kotlin.Long)(epochDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains a local date in the Hijrah calendar system from the epoch-day. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateNow()()` Obtains the current local date in this chronology from the system clock in the default time-zone. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateNow(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current local date in this chronology from the specified clock. |
+| --- | --- |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateNow(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current local date in this chronology from the system clock in the specified time-zone. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateYearDay(kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Hijrah calendar system from the proleptic-year and day-of-year fields. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#dateYearDay(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a local date in Hijrah calendar system from the era, year-of-era and day-of-year fields. |
+| --- | --- |
 | [HijrahEra](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#eraOf(kotlin.Int)(eraValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates the HijrahEra object from the numeric value. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#eras()()` Gets the list of eras for the chronology. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#getCalendarType()()` Gets the calendar type of the Islamic calendar. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#getId()()` Gets the ID of the chronology. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#isLeapYear(kotlin.Long)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the specified year is a leap year. |
 | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#localDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a local date-time in this chronology from another temporal object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#prolepticYear(java.time.chrono.Era,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calculates the proleptic-year given the era and year-of-era. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#range(java.time.temporal.ChronoField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#!)` Gets the range of valid values for the specified field. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
+| --- | --- |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#zonedDateTime(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from an `Instant`. |
 | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime)\< [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology#zonedDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `ChronoZonedDateTime` in this chronology from another temporal object. |
 
@@ -330,6 +338,7 @@ Obtains a local date in Hijrah calendar system from the proleptic-year, month-of
 | `prolepticYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the proleptic-year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -359,6 +368,7 @@ Obtains a local date in Hijrah calendar system from the era, year-of-era, month-
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Hijrah era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the month-of-year |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month |
 
 | Return ||
@@ -537,6 +547,7 @@ Obtains a local date in Hijrah calendar system from the era, year-of-era and day
 | `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the Hijrah era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year-of-era |
 | `dayOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-year |
+| --- | --- |
 
 | Return ||
 |---|---|

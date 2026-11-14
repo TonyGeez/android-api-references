@@ -5,15 +5,18 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # NumberRangeFormatterSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/NumberRangeFormatterSettings "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class NumberRangeFormatterSettings<T : NumberRangeFormatterSettings<*>!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.NumberRangeFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#) |
 
 | Known Direct Subclasses [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter), [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter) |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------| | [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter) | A NumberRangeFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter) | A NumberRangeFormatter that does not yet have a locale. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract base class for specifying settings related to number formatting. This class is implemented by [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter) and [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter). This class is not intended for public subclassing.
 
@@ -24,9 +27,11 @@ An abstract base class for specifying settings related to number formatting. Thi
 | openT | [collapse](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#collapse(android.icu.number.NumberRangeFormatter.RangeCollapse))`(`collapse:` ` [NumberRangeFormatter.RangeCollapse](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeCollapse)!`)` Sets the aggressiveness of "collapsing" fields across the range separator. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 | openT | [identityFallback](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#identityFallback(android.icu.number.NumberRangeFormatter.RangeIdentityFallback))`(`identityFallback:` ` [NumberRangeFormatter.RangeIdentityFallback](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityFallback)!`)` Sets the behavior when the two sides of the range are the same. |
 | openT | [numberFormatterBoth](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#numberFormatterBoth(android.icu.number.UnlocalizedNumberFormatter))`(`formatter:` ` [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter)!`)` Sets the NumberFormatter instance to use for the numbers in the range. |
 | openT | [numberFormatterFirst](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#numberFormatterFirst(android.icu.number.UnlocalizedNumberFormatter))`(`formatterFirst:` ` [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter)!`)` Sets the NumberFormatter instance to use for the first number in the range. |
+| --- | --- |
 | openT | [numberFormatterSecond](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatterSettings#numberFormatterSecond(android.icu.number.UnlocalizedNumberFormatter))`(`formatterSecond:` ` [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter)!`)` Sets the NumberFormatter instances to use for the second number in the range. |
 
 ## Public methods

@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AttachCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/AttachCallback "View this page in Java") 
+| --- | --- |
 
 ```
 open class AttachCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.AttachCallback](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AttachCallback#) |
 
 Base class for Aware attach callbacks. Should be extended by applications and set when calling [WifiAwareManager.attach(AttachCallback, android.os.Handler)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#attach(android.net.wifi.aware.AttachCallback,%20android.os.Handler)). These are callbacks applying to the Aware connection as a whole - not to specific publish or subscribe sessions - for that see [DiscoverySessionCallback](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback).
@@ -26,6 +28,7 @@ Base class for Aware attach callbacks. Should be extended by applications and se
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachFailed](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AttachCallback#onAttachFailed())`()` Called when Aware attach operation [WifiAwareManager.attach(AttachCallback, android.os.Handler)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#attach(android.net.wifi.aware.AttachCallback,%20android.os.Handler))failed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttached](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AttachCallback#onAttached(android.net.wifi.aware.WifiAwareSession))`(`session:` ` [WifiAwareSession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession)!`)` Called when Aware attach operation [WifiAwareManager.attach(AttachCallback, android.os.Handler)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager#attach(android.net.wifi.aware.AttachCallback,%20android.os.Handler))is completed and that we can now start discovery sessions or connections. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAwareSessionTerminated](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AttachCallback#onAwareSessionTerminated())`()` Called when Aware attach session get from [onAttached(android.net.wifi.aware.WifiAwareSession)](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AttachCallback#onAttached(android.net.wifi.aware.WifiAwareSession))is terminated. |
+| --- | --- |
 
 ## Public constructors
 

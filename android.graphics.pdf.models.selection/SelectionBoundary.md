@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # SelectionBoundary
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/models/selection/SelectionBoundary "View this page in Java") 
+| --- | --- |
 
 ```
 class SelectionBoundary : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.models.selection.SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#) |
 
 Represents one edge of the selected content.
@@ -32,6 +34,7 @@ Represents one edge of the selected content.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#getIndex())`()` Gets the index of the text as determined by the text stream processed. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getIsRtl](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#getIsRtl())`()` Gets whether the direction of selection is right-to-left (rtl) or reverse. |
+| --- | --- |
 | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)? | [getPoint](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#getPoint())`()` Gets the x, y coordinates of the selection boundary in points (1/72"). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

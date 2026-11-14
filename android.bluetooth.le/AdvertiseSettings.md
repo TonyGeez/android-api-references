@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # AdvertiseSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings "View this page in Java") 
+| --- | --- |
 
 ```
 class AdvertiseSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#) |
 
 The [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#) provide a way to adjust advertising preferences for each Bluetooth LE advertisement instance. Use [AdvertiseSettings.Builder](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings.Builder) to create an instance of this class.
@@ -26,9 +28,11 @@ The [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/b
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_MODE_BALANCED](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_MODE_BALANCED:kotlin.Int) Perform Bluetooth LE advertising in balanced power mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_MODE_LOW_LATENCY](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_MODE_LOW_LATENCY:kotlin.Int) Perform Bluetooth LE advertising in low latency, high power mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_MODE_LOW_POWER](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_MODE_LOW_POWER:kotlin.Int) Perform Bluetooth LE advertising in low power mode. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_TX_POWER_HIGH](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_TX_POWER_HIGH:kotlin.Int) Advertise using high TX power level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_TX_POWER_LOW](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_TX_POWER_LOW:kotlin.Int) Advertise using low TX power level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_TX_POWER_MEDIUM](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_TX_POWER_MEDIUM:kotlin.Int) Advertise using medium TX power level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_TX_POWER_ULTRA_LOW](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#ADVERTISE_TX_POWER_ULTRA_LOW:kotlin.Int) Advertise using the lowest transmission (TX) power level. |
 
 | Inherited constants ||
@@ -40,9 +44,11 @@ The [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/b
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#getMode())`()` Returns the advertise mode. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeout](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#getTimeout())`()` Returns the advertising time limit in milliseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxPowerLevel](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#getTxPowerLevel())`()` Returns the TX power level for advertising. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#isConnectable())`()` Returns whether the advertisement will indicate connectable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDiscoverable](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#isDiscoverable())`()` Returns whether the advertisement will be discoverable. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

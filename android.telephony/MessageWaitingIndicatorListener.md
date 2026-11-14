@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # MessageWaitingIndicatorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface MessageWaitingIndicatorListener

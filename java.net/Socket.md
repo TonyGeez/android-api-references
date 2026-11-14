@@ -9,9 +9,11 @@ open class Socket : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.Socket](https://developer.android.com/reference/kotlin/java/net/Socket#) |
 
 | Known Direct Subclasses [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#) | This class extends`Socket`s and provides secure socket using protocols such as the "Secure Sockets Layer" (SSL) or IETF "Transport Layer Security" (TLS) protocols. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements client sockets (also called just "sockets"). A socket is an endpoint for communication between two machines.
 
@@ -39,48 +41,63 @@ The actual work of the socket is performed by an instance of the`SocketImpl`clas
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](https://developer.android.com/reference/kotlin/java/net/Socket#bind(java.net.SocketAddress))`(`bindpoint:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`)` Binds the socket to a local address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/net/Socket#close())`()` Closes this socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/net/Socket#connect(java.net.SocketAddress))`(`endpoint:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`)` Connects this socket to the server. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/net/Socket#connect(java.net.SocketAddress,%20kotlin.Int))`(`endpoint:` ` [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Connects this socket to the server with a specified timeout value. |
 | open [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#)! | [getChannel](https://developer.android.com/reference/kotlin/java/net/Socket#getChannel())`()` Returns the unique [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#) object associated with this socket, if any. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getInetAddress](https://developer.android.com/reference/kotlin/java/net/Socket#getInetAddress())`()` Returns the address to which the socket is connected. |
+| --- | --- |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getInputStream](https://developer.android.com/reference/kotlin/java/net/Socket#getInputStream())`()` Returns an input stream for this socket. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getKeepAlive](https://developer.android.com/reference/kotlin/java/net/Socket#getKeepAlive())`()` Tests if [SO_KEEPALIVE](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_KEEPALIVE:kotlin.Int) is enabled. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getLocalAddress](https://developer.android.com/reference/kotlin/java/net/Socket#getLocalAddress())`()` Gets the local address to which the socket is bound. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](https://developer.android.com/reference/kotlin/java/net/Socket#getLocalPort())`()` Returns the local port number to which this socket is bound. |
 | open [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)! | [getLocalSocketAddress](https://developer.android.com/reference/kotlin/java/net/Socket#getLocalSocketAddress())`()` Returns the address of the endpoint this socket is bound to. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getOOBInline](https://developer.android.com/reference/kotlin/java/net/Socket#getOOBInline())`()` Tests if [SO_OOBINLINE](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_OOBINLINE:kotlin.Int) is enabled. |
+| --- | --- |
 | openT | [getOption](https://developer.android.com/reference/kotlin/java/net/Socket#getOption(java.net.SocketOption))`(`name:` ` [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)<T>!`)` Returns the value of a socket option. |
 | open [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [getOutputStream](https://developer.android.com/reference/kotlin/java/net/Socket#getOutputStream())`()` Returns an output stream for this socket. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/java/net/Socket#getPort())`()` Returns the remote port number to which this socket is connected. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](https://developer.android.com/reference/kotlin/java/net/Socket#getReceiveBufferSize())`()` Gets the value of the [SO_RCVBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_RCVBUF:kotlin.Int) option for this`Socket`, that is the buffer size used by the platform for input on this`Socket`. |
 | open [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)! | [getRemoteSocketAddress](https://developer.android.com/reference/kotlin/java/net/Socket#getRemoteSocketAddress())`()` Returns the address of the endpoint this socket is connected to, or`null`if it is unconnected. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getReuseAddress](https://developer.android.com/reference/kotlin/java/net/Socket#getReuseAddress())`()` Tests if [SO_REUSEADDR](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEADDR:kotlin.Int) is enabled. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSendBufferSize](https://developer.android.com/reference/kotlin/java/net/Socket#getSendBufferSize())`()` Get value of the [SO_SNDBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_SNDBUF:kotlin.Int) option for this`Socket`, that is the buffer size used by the platform for output on this`Socket`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoLinger](https://developer.android.com/reference/kotlin/java/net/Socket#getSoLinger())`()` Returns setting for [SO_LINGER](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_LINGER:kotlin.Int). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](https://developer.android.com/reference/kotlin/java/net/Socket#getSoTimeout())`()` Returns setting for [SO_TIMEOUT](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_TIMEOUT:kotlin.Int). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getTcpNoDelay](https://developer.android.com/reference/kotlin/java/net/Socket#getTcpNoDelay())`()` Tests if [TCP_NODELAY](https://developer.android.com/reference/kotlin/java/net/SocketOptions#TCP_NODELAY:kotlin.Int) is enabled. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrafficClass](https://developer.android.com/reference/kotlin/java/net/Socket#getTrafficClass())`()` Gets traffic class or type-of-service in the IP header for packets sent from this Socket |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](https://developer.android.com/reference/kotlin/java/net/Socket#isBound())`()` Returns the binding state of the socket. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/java/net/Socket#isClosed())`()` Returns the closed state of the socket. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/java/net/Socket#isConnected())`()` Returns the connection state of the socket. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputShutdown](https://developer.android.com/reference/kotlin/java/net/Socket#isInputShutdown())`()` Returns whether the read-half of the socket connection is closed. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputShutdown](https://developer.android.com/reference/kotlin/java/net/Socket#isOutputShutdown())`()` Returns whether the write-half of the socket connection is closed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendUrgentData](https://developer.android.com/reference/kotlin/java/net/Socket#sendUrgentData(kotlin.Int))`(`data:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Send one byte of urgent data on the socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepAlive](https://developer.android.com/reference/kotlin/java/net/Socket#setKeepAlive(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_KEEPALIVE](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_KEEPALIVE:kotlin.Int). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOOBInline](https://developer.android.com/reference/kotlin/java/net/Socket#setOOBInline(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_OOBINLINE](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_OOBINLINE:kotlin.Int)(receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. |
 | open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket#)! | [setOption](https://developer.android.com/reference/kotlin/java/net/Socket#setOption(java.net.SocketOption,%20java.net.Socket.setOption.T))`(`name:` ` [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)<T>!`, `value:` `T`)` Sets the value of a socket option. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerformancePreferences](https://developer.android.com/reference/kotlin/java/net/Socket#setPerformancePreferences(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`connectionTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `latency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bandwidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets performance preferences for this socket. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](https://developer.android.com/reference/kotlin/java/net/Socket#setReceiveBufferSize(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_RCVBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_RCVBUF:kotlin.Int) option to the specified value for this`Socket`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReuseAddress](https://developer.android.com/reference/kotlin/java/net/Socket#setReuseAddress(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable the [SO_REUSEADDR](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_REUSEADDR:kotlin.Int) socket option. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSendBufferSize](https://developer.android.com/reference/kotlin/java/net/Socket#setSendBufferSize(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_SNDBUF](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_SNDBUF:kotlin.Int) option to the specified value for this`Socket`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoLinger](https://developer.android.com/reference/kotlin/java/net/Socket#setSoLinger(kotlin.Boolean,%20kotlin.Int))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `linger:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_LINGER](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_LINGER:kotlin.Int) with the specified linger time in seconds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](https://developer.android.com/reference/kotlin/java/net/Socket#setSoTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_TIMEOUT](https://developer.android.com/reference/kotlin/java/net/SocketOptions#SO_TIMEOUT:kotlin.Int) with the specified timeout, in milliseconds. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketImplFactory](https://developer.android.com/reference/kotlin/java/net/Socket#setSocketImplFactory(java.net.SocketImplFactory))`(`fac:` ` [SocketImplFactory](https://developer.android.com/reference/kotlin/java/net/SocketImplFactory)!`)` Sets the client socket implementation factory for the application. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTcpNoDelay](https://developer.android.com/reference/kotlin/java/net/Socket#setTcpNoDelay(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [TCP_NODELAY](https://developer.android.com/reference/kotlin/java/net/SocketOptions#TCP_NODELAY:kotlin.Int)(disable/enable Nagle's algorithm). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTrafficClass](https://developer.android.com/reference/kotlin/java/net/Socket#setTrafficClass(kotlin.Int))`(`tc:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets traffic class or type-of-service octet in the IP header for packets sent from this Socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownInput](https://developer.android.com/reference/kotlin/java/net/Socket#shutdownInput())`()` Places the input stream for this socket at "end of stream". |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownOutput](https://developer.android.com/reference/kotlin/java/net/Socket#shutdownOutput())`()` Disables the output stream for this socket. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<\*\>!\>! | [supportedOptions](https://developer.android.com/reference/kotlin/java/net/Socket#supportedOptions())`()` Returns a set of the socket options supported by this socket. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/Socket#toString())`()` Converts this socket to a`String`. |
+| --- | --- |
 
 ## Public constructors
 
@@ -122,6 +139,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `java.net.UnknownHostException` | if the IP address of the host could not be determined. |
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the operation. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
 
 **See Also**
@@ -160,12 +178,14 @@ If a UDP socket is used, TCP/IP related socket options will not apply.
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host name, or`null`for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port number. |
 | `stream` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):a`boolean`indicating whether this is a stream socket or a datagram socket. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -198,6 +218,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the remote host, or`null`for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the remote port |
 | `localAddr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
+| --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the local port the socket is bound to, or`zero`for a system selected free port. |
 
 | Exceptions ||
@@ -205,6 +226,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the connection to the destination, or if its`checkListen`method doesn't allow the bind to the local port. |
 | `java.lang.IllegalArgumentException` | if the port parameter or localPort parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -234,6 +256,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 | `java.lang.NullPointerException` | if`address`is null. |
 
 **See Also**
@@ -270,12 +293,14 @@ If UDP socket is used, TCP/IP related socket options will not apply.
 | `host` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:the IP address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port number. |
 | `stream` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`, create a stream socket; otherwise, create a datagram socket. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 | `java.lang.NullPointerException` | if`host`is null. |
 
 **See Also**
@@ -309,6 +334,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:the remote address |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the remote port |
 | `localAddr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
+| --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the local port the socket is bound to or`zero`for a system selected free port. |
 
 | Exceptions ||
@@ -316,6 +342,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 | `java.io.IOException` | if an I/O error occurs when creating the socket. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkConnect`method doesn't allow the connection to the destination, or if its`checkListen`method doesn't allow the bind to the local port. |
 | `java.lang.IllegalArgumentException` | if the port parameter or localPort parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 | `java.lang.NullPointerException` | if`address`is null. |
 
 **See Also**
@@ -395,6 +422,7 @@ If the address is`null`, then the system will pick up an ephemeral port and a va
 | `java.io.IOException` | if the bind operation fails, or if the socket is already bound. |
 | `java.lang.IllegalArgumentException` | if bindpoint is a SocketAddress subclass not supported by this socket |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the bind to the local port. |
+| --- | --- |
 
 **See Also**
 
@@ -423,6 +451,7 @@ If this socket has an associated channel then the channel is closed as well.
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.io.IOException` | if an I/O error occurs when closing this socket. |
+| --- | --- |
 
 **See Also**
 
@@ -447,6 +476,7 @@ Connects this socket to the server.
 | `java.io.IOException` | if an error occurs during the connection |
 | `java.nio.channels.IllegalBlockingModeException` | if this socket has an associated channel, and the channel is in non-blocking mode |
 | `java.lang.IllegalArgumentException` | if endpoint is null or is a SocketAddress subclass not supported by this socket |
+| --- | --- |
 
 ### connect
 
@@ -471,6 +501,7 @@ Connects this socket to the server with a specified timeout value. A timeout of 
 | `java.io.IOException` | if an error occurs during the connection |
 | `java.net.SocketTimeoutException` | if timeout expires before connecting |
 | `java.nio.channels.IllegalBlockingModeException` | if this socket has an associated channel, and the channel is in non-blocking mode |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if endpoint is null or is a SocketAddress subclass not supported by this socket |
 
 ### getChannel
@@ -659,6 +690,7 @@ Returns the value of a socket option.
 | `java.lang.UnsupportedOperationException` | if the socket does not support the option. |
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
 | `java.lang.NullPointerException` | if name is`null` |
+| --- | --- |
 | `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions) do not require any security permission. |
 
 ### getOutputStream
@@ -1049,6 +1081,7 @@ Sets the value of a socket option.
 | `<T>` | The type of the socket option value |
 | `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<T\>!:The socket option |
 | `value` | T:The value of the socket option. A value of`null`may be valid for some options. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
@@ -1059,6 +1092,7 @@ Sets the value of a socket option.
 | `java.lang.UnsupportedOperationException` | if the socket does not support the option. |
 | `java.lang.IllegalArgumentException` | if the value is not valid for the option. |
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
+| --- | --- |
 | `java.lang.NullPointerException` | if name is`null` |
 | `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](https://developer.android.com/reference/kotlin/java/net/StandardSocketOptions) do not require any security permission. |
 
@@ -1087,6 +1121,7 @@ Invoking this method after this socket has been connected will have no effect.
 | `connectionTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of a short connection time |
 | `latency` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of low latency |
 | `bandwidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An`int`expressing the relative importance of high bandwidth |
+| --- | --- |
 
 ### setReceiveBufferSize
 
@@ -1253,6 +1288,7 @@ If there is a security manager, this method first calls the security manager's`c
 | `java.io.IOException` | if an I/O error occurs when setting the socket factory. |
 | `java.net.SocketException` | if the factory is already defined. |
 | `java.lang.SecurityException` | if a security manager exists and its`checkSetFactory`method doesn't allow the operation. |
+| --- | --- |
 
 **See Also**
 

@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipException "View this page in Java") 
+| --- | --- |
 
 ```
 open class SipException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.net.sip.SipException](https://developer.android.com/reference/kotlin/android/net/sip/SipException#) |
+| --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 31.**
 |

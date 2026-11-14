@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # ConnectEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/admin/ConnectEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class ConnectEvent : NetworkEvent, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.admin.NetworkEvent](https://developer.android.com/reference/kotlin/android/app/admin/NetworkEvent) ||
 | | ↳ | [android.app.admin.ConnectEvent](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#) |
 
@@ -31,6 +33,7 @@ Support both IPv4 and IPv6 connections.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#describeContents())`()` <br /> |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [getInetAddress](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#getInetAddress())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#getPort())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/admin/ConnectEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

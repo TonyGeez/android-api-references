@@ -6,15 +6,18 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # ActivityInstrumentationTestCase2
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase2 "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ActivityInstrumentationTestCase2<T : Activity!> : ActivityTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) |||
 | | ↳ | [android.test.ActivityTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase) ||
 | | | ↳ | [android.test.ActivityInstrumentationTestCase2](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 24.**
 |
@@ -43,12 +46,14 @@ If you prefer an isolated unit test, see [android.test.ActivityUnitTestCase](htt
 | openT | [getActivity](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#getActivity())`()` Get the Activity under test, starting it if necessary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActivityInitialTouchMode](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#setActivityInitialTouchMode(kotlin.Boolean))`(`initialTouchMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Call this method before the first call to [getActivity](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#getActivity())to set the initial touch mode for the Activity under test. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActivityIntent](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#setActivityIntent(android.content.Intent))`(`i:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Call this method before the first call to [getActivity](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#getActivity())to inject a customized Intent into the Activity under test. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#runTest())`()` Runs the current unit test. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUp](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#setUp())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase2#tearDown())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

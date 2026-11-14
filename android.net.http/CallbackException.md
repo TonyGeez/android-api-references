@@ -6,15 +6,18 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # CallbackException
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/CallbackException "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class CallbackException : HttpException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.net.http.HttpException](https://developer.android.com/reference/kotlin/android/net/http/HttpException) ||
 | | | | | ↳ | [android.net.http.CallbackException](https://developer.android.com/reference/kotlin/android/net/http/CallbackException#) |
 

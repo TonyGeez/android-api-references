@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # EventOutput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventOutput "View this page in Java") 
+| --- | --- |
 
 ```
 class EventOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.EventOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#) |
 
 The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,%20android.os.OutcomeReceiver)).
@@ -26,6 +28,7 @@ The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeRec
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord)? | [getEventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#getEventLogRecord())`()` An [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord) to be written to the EVENTS table, if not null. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

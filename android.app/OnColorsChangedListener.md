@@ -5,6 +5,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # OnColorsChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnColorsChangedListener

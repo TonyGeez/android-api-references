@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # Font
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/fonts/Font "View this page in Java") 
+| --- | --- |
 
 ```
 class Font
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.fonts.Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#) |
 
 A font class can be used for creating FontFamily.
@@ -26,15 +28,19 @@ A font class can be used for creating FontFamily.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontVariationAxis)!\>? | [getAxes](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getAxes())`()` Get a font variation settings associated with this font |
 | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | [getBuffer](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getBuffer())`()` Returns a font file buffer. |
+| --- | --- |
 | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)? | [getFile](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getFile())`()` Returns a file path of this font. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphBounds](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getGlyphBounds(kotlin.Int,%20android.graphics.Paint,%20android.graphics.RectF))`(`glyphId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)`, `outBoundingBox:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)?`)` Retrieve the glyph horizontal advance and bounding box. |
 | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getLocaleList](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getLocaleList())`()` Get a locale list of this font. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMetrics](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getMetrics(android.graphics.Paint,%20android.graphics.Paint.FontMetrics))`(`paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)`, `outMetrics:` ` [Paint.FontMetrics](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#)?`)` Retrieve the font metrics information. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceIdentifier](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getSourceIdentifier())`()` Returns the unique ID of the source font data. |
 | [FontStyle](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle) | [getStyle](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getStyle())`()` Get a style associated with this font. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTtcIndex](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#getTtcIndex())`()` Get a TTC index value associated with this font. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 
@@ -133,6 +139,7 @@ Retrieve the glyph horizontal advance and bounding box. Note that [android.graph
 | `glyphId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a glyph ID Value is 0 or greater |
 | `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#):a paint object used for resolving glyph style This value cannot be`null`. |
 | `outBoundingBox` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)?:a nullable destination object. If null is passed, this function just return the horizontal advance. If non-null is passed, this function fills bounding box information to this object. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------|

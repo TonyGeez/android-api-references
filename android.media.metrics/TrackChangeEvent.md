@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TrackChangeEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/TrackChangeEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class TrackChangeEvent : Event, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event) ||
 | | ↳ | [android.media.metrics.TrackChangeEvent](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#) |
 
@@ -27,12 +29,15 @@ Playback track change event.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_ADAPTIVE](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_CHANGE_REASON_ADAPTIVE:kotlin.Int) Track change reason for adaptive changes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_INITIAL](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_CHANGE_REASON_INITIAL:kotlin.Int) Track change reason for initial state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_MANUAL](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_CHANGE_REASON_MANUAL:kotlin.Int) Track change reason for manual changes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_CHANGE_REASON_OTHER:kotlin.Int) Other track change reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_CHANGE_REASON_UNKNOWN:kotlin.Int) Unknown track change reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_OFF](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_STATE_OFF:kotlin.Int) The track is off. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_ON](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_STATE_ON:kotlin.Int) The track is on. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_AUDIO](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_TYPE_AUDIO:kotlin.Int) Audio track. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_TEXT](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_TYPE_TEXT:kotlin.Int) Text track. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_VIDEO](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#TRACK_TYPE_VIDEO:kotlin.Int) Video track. |
 
 | Inherited constants ||
@@ -44,24 +49,31 @@ Playback track change event.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRate](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getAudioSampleRate())`()` Gets audio sample rate. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitrate](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getBitrate())`()` Gets bitrate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelCount](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getChannelCount())`()` Gets channel count. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getCodecName](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getCodecName())`()` Gets codec name. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getContainerMimeType())`()` Gets container MIME type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getHeight())`()` Gets video height. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguage](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getLanguage())`()` Gets language code. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguageRegion](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getLanguageRegion())`()` Gets language region code. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSampleMimeType](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getSampleMimeType())`()` Gets the MIME type of the video/audio/text samples. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getTimeSinceCreatedMillis())`()` Gets timestamp since the creation of the log session in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackChangeReason](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getTrackChangeReason())`()` Gets track change reason. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackState](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getTrackState())`()` Gets track state. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackType](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getTrackType())`()` Gets the track type. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getVideoFrameRate())`()` Gets video frame rate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#getWidth())`()` Gets video width. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

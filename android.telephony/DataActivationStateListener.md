@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DataActivationStateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DataActivationStateListener

@@ -9,6 +9,7 @@ class ServiceLoader<S : Any!> : MutableIterable<S>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.ServiceLoader](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#) |
 
 A facility to load implementations of a service.
@@ -30,9 +31,11 @@ An application obtains a service loader for a given service by invoking one of t
 | [Optional](https://developer.android.com/reference/kotlin/java/util/Optional)\<S\>! | [findFirst](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#findFirst())`()` Load the first available service provider of this loader's service. |
 | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<S\> | [iterator](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#iterator())`()` Returns an iterator to lazily load and instantiate the available providers of this loader's service. |
 | static [ServiceLoader](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#)\<S\>! | [load](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#load(java.lang.Class))`(`service:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<S>!`)` Creates a new service loader for the given service type, using the current thread's [context class loader](https://developer.android.com/reference/kotlin/java/lang/Thread.html#getContextClassLoader()). |
+| --- | --- |
 | static [ServiceLoader](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#)\<S\>! | [load](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#load(java.lang.Class,%20java.lang.ClassLoader))`(`service:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<S>!`, `loader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Creates a new service loader for the given service. |
 | static [ServiceLoader](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#)\<S\>! | [loadInstalled](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#loadInstalled(java.lang.Class))`(`service:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<S>!`)` Creates a new service loader for the given service type, using the extension class loader. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reload](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#reload())`()` Clear this loader's provider cache so that all providers will be reloaded. |
+| --- | --- |
 | [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [ServiceLoader.Provider](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider)\<S\>!\>! | [stream](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#stream())`()` Returns a stream to lazily load available providers of this loader's service. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#toString())`()` Returns a string describing this service. |
 
@@ -139,6 +142,7 @@ Creates a new service loader for the given service. The service loader uses the 
 | `<S>` | the class of the service type |
 | `service` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<S\>!:The interface or abstract class representing the service |
 | `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!:The class loader to be used to load provider-configuration files and provider classes, or`null`if the system class loader (or, failing that, the bootstrap class loader) is to be used |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------|

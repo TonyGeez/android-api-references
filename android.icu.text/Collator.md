@@ -3,15 +3,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Collator
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/text/Collator "View this page in Java")
+| --- | --- |
 
 ```
 abstract class Collator : Cloneable, Comparator<Any!>, Freezable<Collator!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#) |
 
 | Known Direct Subclasses [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) |---|---| | [RuleBasedCollator](https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator) | RuleBasedCollator is a concrete subclass of Collator. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/text/Collator.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
@@ -74,9 +77,11 @@ Examples of use
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int` Decomposition mode value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#FULL_DECOMPOSITION:kotlin.Int` **\[icu\] Note:** This is for backwards compatibility with Java APIs only. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#IDENTICAL:kotlin.Int` Smallest Collator strength value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#NO_DECOMPOSITION:kotlin.Int` Decomposition mode value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int` Strongest collator strength value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#QUATERNARY:kotlin.Int` **\[icu\]** Fourth level collator strength value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int` Second level collator strength value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#TERTIARY:kotlin.Int` Third level collator strength value. |
 
@@ -89,39 +94,51 @@ Examples of use
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#clone()()` Clones the collator. |
 | open [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#cloneAsThawed()()` Provides for the clone operation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#compare(kotlin.Any,%20kotlin.Any)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compares the source Object to the target Object. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#compare(kotlin.String,%20kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compares the source text String to the target text String according to this Collator's rules, strength and decomposition mode. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the equality of two Collator objects. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#equals(kotlin.String,%20kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compares the equality of two text Strings using this Collator's rules, strength and decomposition mode. |
+| --- | --- |
 | open [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#freeze()()` Freezes the collator. |
 | open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getAvailableLocales()()` Returns the set of locales, as Locale objects, for which collators are installed. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getAvailableULocales()()` **\[icu\]** Returns the set of locales, as ULocale objects, for which collators are installed. |
+| --- | --- |
 | abstract [CollationKey](https://developer.android.com/reference/kotlin/android/icu/text/CollationKey)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getCollationKey(kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Transforms the String into a CollationKey suitable for efficient repeated comparison. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDecomposition()()` Returns the decomposition mode of this Collator. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(android.icu.util.ULocale)(objectLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. |
+| --- | --- |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(android.icu.util.ULocale,%20android.icu.util.ULocale)(objectLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, displayLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(java.util.Locale)(objectLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(java.util.Locale,%20java.util.Locale)(objectLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, displayLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. |
+| --- | --- |
 | open static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getEquivalentReorderCodes(kotlin.Int)(reorderCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves all the reorder codes that are grouped with the given reorder code. |
 | static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getFunctionalEquivalent(kotlin.String,%20android.icu.util.ULocale)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locID: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. |
 | static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getFunctionalEquivalent(kotlin.String,%20android.icu.util.ULocale,%20kotlin.BooleanArray)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locID: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, isAvailable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html!)` **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. |
+| --- | --- |
 | static [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance()()` Returns the Collator for the current default locale. |
 | static [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the Collator for the desired locale. |
 | static [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the Collator for the desired locale. |
+| --- | --- |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywordValues(kotlin.String)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Given a keyword, returns an array of all values for that keyword that are currently in use. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywordValuesForLocale(kotlin.String,%20android.icu.util.ULocale,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, commonlyUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywords()()` **\[icu\]** Returns an array of all possible keywords that are relevant to collation. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getMaxVariable()()` **\[icu\]** Returns the maximum reordering group whose characters are affected by the alternate handling behavior. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getReorderCodes()()` Retrieves the reordering codes for this collator. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getStrength()()` Returns this Collator's strength attribute. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getTailoredSet()()` **\[icu\]** Returns a UnicodeSet that contains all the characters and sequences tailored in this collator. |
 | abstract [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getUCAVersion()()` **\[icu\]** Returns the UCA version of this collator object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getVariableTop()()` **\[icu\]** Gets the variable top value of a Collator. |
+| --- | --- |
 | abstract [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getVersion()()` **\[icu\]** Returns the version of this collator object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#hashCode()()` Generates a hash code for this Collator object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#isFrozen()()` Determines whether the object has been frozen or not. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#setDecomposition(kotlin.Int)(decomposition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the decomposition mode of this Collator. |
 | open [Collator](https://developer.android.com/reference/kotlin/android/icu/text/Collator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#setMaxVariable(kotlin.Int)(group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **\[icu\]** Sets the variable top to the top of the specified reordering group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#setReorderCodes(kotlin.Int)(vararg order: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the reordering codes for this collator. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#setStrength(kotlin.Int)(newStrength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this Collator's strength attribute. |
 
 | Inherited functions ||
@@ -324,6 +341,7 @@ Compares the source Object to the target Object.
 | `o1` | the first object to be compared. |
 | `o2` | the second object to be compared. |
 | `source` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the source Object. |
+| --- | --- |
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the target Object. |
 
 | Return ||
@@ -665,6 +683,7 @@ static fun getFunctionalEquivalent(
 | `keyword` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a particular keyword as enumerated by getKeywords. |
 | `locID` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The requested locale |
 | `isAvailable` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!: If non-null, isAvailable\[0\] will receive and output boolean that indicates whether the requested locale was 'available' to the collation service. If non-null, isAvailable must have length \>= 1. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -780,6 +799,7 @@ static fun getKeywordValuesForLocale(
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: one of the keys supported by this service. For now, only "collation" is supported. |
 | `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the locale |
 | `commonlyUsed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if set to true it will return only commonly used values with the given locale in preferred order. Otherwise, it will return all the available values for the locale. |
+| --- | --- |
 
 | Return ||
 |---|---|

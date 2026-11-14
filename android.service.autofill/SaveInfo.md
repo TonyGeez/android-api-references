@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # SaveInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/SaveInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class SaveInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.SaveInfo](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#) |
 
 Information used to indicate that an [AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) is interested on saving the user-inputed data for future use, through a [AutofillService.onSaveRequest(SaveRequest, SaveCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback))call.
@@ -102,18 +104,23 @@ The service can also customize some aspects of the autofill save UI:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_DELAY_SAVE](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#FLAG_DELAY_SAVE:kotlin.Int) Postpone the autofill save UI. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_DONT_SAVE_ON_FINISH](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#FLAG_DONT_SAVE_ON_FINISH:kotlin.Int) By default, a save request is automatically [triggered](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#TriggeringSaveRequest) once the [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) finishes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SAVE_ON_ALL_VIEWS_INVISIBLE](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#FLAG_SAVE_ON_ALL_VIEWS_INVISIBLE:kotlin.Int) Usually, a save request is only automatically [triggered](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#TriggeringSaveRequest) once the [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) finishes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEGATIVE_BUTTON_STYLE_CANCEL](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#NEGATIVE_BUTTON_STYLE_CANCEL:kotlin.Int) Style for the negative button of the save UI to cancel the save operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEGATIVE_BUTTON_STYLE_NEVER](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#NEGATIVE_BUTTON_STYLE_NEVER:kotlin.Int) Style for the negative button of the save UI to never do the save operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEGATIVE_BUTTON_STYLE_REJECT](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#NEGATIVE_BUTTON_STYLE_REJECT:kotlin.Int) Style for the negative button of the save UI to reject the save operation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITIVE_BUTTON_STYLE_CONTINUE](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#POSITIVE_BUTTON_STYLE_CONTINUE:kotlin.Int) Style for the positive button of save UI to have next action before the save operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITIVE_BUTTON_STYLE_SAVE](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#POSITIVE_BUTTON_STYLE_SAVE:kotlin.Int) Style for the positive button of save UI to request the save operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_ADDRESS](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_ADDRESS:kotlin.Int) Type used on when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents a physical address (such as street, city, state, etc). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_CREDIT_CARD](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_CREDIT_CARD:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents a credit card. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_DEBIT_CARD](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_DEBIT_CARD:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents a debit card. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_EMAIL_ADDRESS](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_EMAIL_ADDRESS:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents just an email address, without a password. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_GENERIC](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_GENERIC:kotlin.Int) Type used when the service can save the contents of a screen, but cannot describe what the content is for. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_GENERIC_CARD](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_GENERIC_CARD:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents a card that does not a specified card or cannot identify what the card is for. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_PASSWORD](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_PASSWORD:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents user credentials that have a password. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_PAYMENT_CARD](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_PAYMENT_CARD:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents a payment card except for credit and debit cards. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAVE_DATA_TYPE_USERNAME](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#SAVE_DATA_TYPE_USERNAME:kotlin.Int) Type used when the [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse) represents just an username, without a password. |
 
@@ -126,6 +133,7 @@ The service can also customize some aspects of the autofill save UI:
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|

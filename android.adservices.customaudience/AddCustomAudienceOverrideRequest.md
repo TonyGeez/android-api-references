@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AddCustomAudienceOverrideRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class AddCustomAudienceOverrideRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.customaudience.AddCustomAudienceOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#) |
 
 This POJO represents the [android.adservices.customaudience.TestCustomAudienceManager#overrideCustomAudienceRemoteInfo(android.adservices.customaudience.AddCustomAudienceOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/customaudience/TestCustomAudienceManager#overrideCustomAudienceRemoteInfo(android.adservices.customaudience.AddCustomAudienceOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))request.
@@ -33,6 +35,7 @@ It contains fields`buyer`and`name`which will serve as the identifier for the ove
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBiddingLogicJs](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#getBiddingLogicJs())`()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBiddingLogicJsVersion](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#getBiddingLogicJsVersion())`()` Returns the value to return as version for JavaScript bidding logic. |
 | open [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | [getBuyer](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#getBuyer())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#getName())`()` <br /> |
 | open [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#) | [getTrustedBiddingSignals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/AddCustomAudienceOverrideRequest#getTrustedBiddingSignals())`()` <br /> |
 
@@ -56,6 +59,7 @@ AddCustomAudienceOverrideRequest(
 | `buyer` | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#):This value cannot be`null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `biddingLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
+| --- | --- |
 | `trustedBiddingSignals` | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#):This value cannot be`null`. |
 
 ## Public methods

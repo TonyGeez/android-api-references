@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # TargetApi
 
 Kotlin| [Java](https://developer.android.com/reference/android/annotation/TargetApi "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.CLASS, AnnotationTarget.FILE, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD]) class TargetApi

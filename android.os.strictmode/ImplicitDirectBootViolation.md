@@ -5,15 +5,18 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ImplicitDirectBootViolation
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/ImplicitDirectBootViolation "View this page in Java") 
+| --- | --- |
 
 ```
 class ImplicitDirectBootViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.ImplicitDirectBootViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ImplicitDirectBootViolation#) |
+| --- | --- | --- | --- |
 
 Subclass of`Violation`that is used when a process implicitly relies on automatic Direct Boot filtering.
 

@@ -9,10 +9,12 @@ abstract class SSLSocketFactory : SocketFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.net.SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) ||
 | | ↳ | [javax.net.ssl.SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory#) |
 
 | Known Direct Subclasses [SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#) |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#) | SSLSocketFactory implementation with several extra features: - Timeout specification for SSL handshake operations - Hostname verification in most cases (see WARNINGs below) - Optional SSL session caching with [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache.html#) - Optionally bypass all SSL certificate checks The handshake timeout does not apply to actual TCP socket connection. <br /> | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 `SSLSocketFactory`s create`SSLSocket`s.
 
@@ -27,6 +29,7 @@ abstract class SSLSocketFactory : SocketFactory
 | abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory#createSocket(java.net.Socket,%20kotlin.String,%20kotlin.Int,%20kotlin.Boolean))`(`s:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `autoClose:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a socket layered over an existing socket connected to the named host, at the given port. |
 | openstatic [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | [getDefault](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory#getDefault())`()` Returns the default SSL socket factory. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDefaultCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory#getDefaultCipherSuites())`()` Returns the list of cipher suites which are enabled by default. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory#getSupportedCipherSuites())`()` Returns the names of the cipher suites which could be enabled for use on an SSL connection. |
 
 | Inherited functions ||
@@ -67,6 +70,7 @@ Returns a socket layered over an existing socket connected to the named host, at
 | `s` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the existing socket |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the server host |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the server port |
+| --- | --- |
 | `autoClose` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):close the underlying socket when this socket is closed |
 
 | Return ||

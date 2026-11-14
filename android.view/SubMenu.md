@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SubMenu
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/SubMenu "View this page in Java") 
+| --- | --- |
 
 ```
 interface SubMenu : Menu
@@ -31,12 +32,15 @@ Sub menus do not support item icons, or nested sub menus.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHeader](https://developer.android.com/reference/kotlin/android/view/SubMenu#clearHeader())`()` Clears the header of the submenu. |
 | abstract [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem)! | [getItem](https://developer.android.com/reference/kotlin/android/view/SubMenu#getItem())`()` Gets the [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem) that represents this submenu in the parent menu. |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setHeaderIcon](https://developer.android.com/reference/kotlin/android/view/SubMenu#setHeaderIcon(android.graphics.drawable.Drawable))`(`icon:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Sets the submenu header's icon to the icon given in icon [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#). |
+| --- | --- |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setHeaderIcon](https://developer.android.com/reference/kotlin/android/view/SubMenu#setHeaderIcon(kotlin.Int))`(`iconRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the submenu header's icon to the icon given in iconRes resource id. |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setHeaderTitle](https://developer.android.com/reference/kotlin/android/view/SubMenu#setHeaderTitle(kotlin.Int))`(`titleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the submenu header's title to the title given in titleRes resource identifier. |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setHeaderTitle](https://developer.android.com/reference/kotlin/android/view/SubMenu#setHeaderTitle(kotlin.CharSequence))`(`title:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the submenu header's title to the title given in title. |
+| --- | --- |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setHeaderView](https://developer.android.com/reference/kotlin/android/view/SubMenu#setHeaderView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` Sets the header of the submenu to the [View](https://developer.android.com/reference/kotlin/android/view/View) given in view. |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setIcon](https://developer.android.com/reference/kotlin/android/view/SubMenu#setIcon(android.graphics.drawable.Drawable))`(`icon:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Change the icon associated with this submenu's item in its parent menu. |
 | abstract [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu#)! | [setIcon](https://developer.android.com/reference/kotlin/android/view/SubMenu#setIcon(kotlin.Int))`(`iconRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the icon associated with this submenu's item in its parent menu. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

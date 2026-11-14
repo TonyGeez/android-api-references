@@ -9,6 +9,7 @@ abstract class KeyPairGenerator : KeyPairGeneratorSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.KeyPairGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/KeyPairGeneratorSpi) ||
 | | ↳ | [java.security.KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#) |
 
@@ -40,6 +41,7 @@ Android provides the following`KeyPairGenerator`algorithms:
 | DH | 1+ |
 | DSA | 1+ |
 | EC | 11+ |
+| --- | --- |
 | RSA | 1+ |
 | XDH | 33+ |
 
@@ -56,12 +58,15 @@ These algorithms are described in the [KeyPairGenerator section](https://docs.or
 | [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair)! | [genKeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#genKeyPair())`()` Generates a key pair. |
 | open [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair)! | [generateKeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#generateKeyPair())`()` Generates a key pair. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#getAlgorithm())`()` Returns the standard name of the algorithm for this key pair generator. |
+| --- | --- |
 | openstatic [KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
 | openstatic [KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
 | openstatic [KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
+| --- | --- |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#getProvider())`()` Returns the provider of this key pair generator object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#initialize(kotlin.Int))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes the key pair generator for a certain keysize using a default parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#initialize(kotlin.Int,%20java.security.SecureRandom))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes the key pair generator for a certain keysize with the given source of randomness (and a default parameter set). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#initialize(java.security.spec.AlgorithmParameterSpec))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Initializes the key pair generator using the specified parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator#initialize(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes the key pair generator with the given parameter set and source of randomness. |
 
@@ -199,6 +204,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.IllegalArgumentException` | if the provider name is`null`or empty |
 | `java.security.NoSuchAlgorithmException` | if a`KeyPairGeneratorSpi`implementation for the specified algorithm is not available from the specified provider |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list |
+| --- | --- |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
 
 **See Also**
@@ -234,6 +240,7 @@ A new KeyPairGenerator object encapsulating the KeyPairGeneratorSpi implementati
 | `java.lang.IllegalArgumentException` | if the specified provider is`null` |
 | `java.security.NoSuchAlgorithmException` | if a`KeyPairGeneratorSpi`implementation for the specified algorithm is not available from the specified`Provider`object |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
+| --- | --- |
 
 **See Also**
 

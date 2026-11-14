@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ExecuteOutput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteOutput "View this page in Java") 
+| --- | --- |
 
 ```
 class ExecuteOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#) |
 
 The result returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver))in response to a call to`OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)`from a client app.
@@ -26,9 +28,11 @@ The result returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.Outcom
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBestValue](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#getBestValue())`()` An integer value that an [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService) may optionally return to a calling app, by setting this field to the value between 0 and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()). |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord)!\> | [getEventLogRecords](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#getEventLogRecords())`()` A list of [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord) objects to be written to the EVENTS table. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getOutputData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#getOutputData())`()` A byte array that an [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService) may optionally return to a calling app, by setting this field to a non-null value. |
 | [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)? | [getRenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#getRenderingConfig())`()` A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) object that contains information about the content to be rendered in the client app view. |
 | [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord)? | [getRequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#getRequestLogRecord())`()` Persistent data to be written to the REQUESTS table after [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver))completes. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput#hashCode())`()` <br /> |
 
 ## Public methods

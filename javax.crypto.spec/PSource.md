@@ -9,9 +9,11 @@ open class PSource
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource#) |
 
 | Known Direct Subclasses [PSource.PSpecified](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource.PSpecified) |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------| | [PSource.PSpecified](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource.PSpecified) | This class is used to explicitly specify the value for encoding input P in OAEP Padding. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class specifies the source for encoding input P in OAEP Padding, as defined in the [PKCS #1](http://www.ietf.org/rfc/rfc3447.txt) standard. 
 

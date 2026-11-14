@@ -9,6 +9,7 @@ open class IdentityHashMap<K : Any!, V : Any!> : AbstractMap<K, V>, Clone
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap)\<K, V\> ||
 | | ↳ | [java.util.IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#) |
 
@@ -53,18 +54,23 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#clear())`()` Removes all of the mappings from this map. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#clone())`()` Returns a shallow copy of this identity hash map: the keys and values themselves are not cloned. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#containsKey(java.util.IdentityHashMap.K))`(`key:` `K?`)` Tests whether the specified object reference is a key in this identity hash map. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#containsValue(java.util.IdentityHashMap.V))`(`value:` `V?`)` Tests whether the specified object reference is a value in this identity hash map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#forEach(java.util.function.BiConsumer))`(`action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer)<in` `K,` `in` `V>`)` <br /> |
+| --- | --- |
 | openV? | [get](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#get(java.util.IdentityHashMap.K))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#hashCode())`()` Returns the hash code value for this map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#isEmpty())`()` Returns`true`if this identity hash map contains no key-value mappings. |
+| --- | --- |
 | openV? | [put](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#put(java.util.IdentityHashMap.K,%20java.util.IdentityHashMap.V))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this identity hash map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
 | openV? | [remove](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#remove(java.util.IdentityHashMap.K))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#remove(java.util.IdentityHashMap.K,%20java.util.IdentityHashMap.V))`(`key:` `K`, `value:` `V`)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#replace(java.util.IdentityHashMap.K,%20java.util.IdentityHashMap.V,%20java.util.IdentityHashMap.V))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for the specified key only if currently mapped to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#replaceAll(java.util.function.BiFunction))`(`function:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -75,6 +81,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#entries:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#keys:kotlin.collections.MutableSet) Returns an identity-based set view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#size:kotlin.Int) Returns the number of key-value mappings in this identity hash map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
 
 ## Public constructors
@@ -350,6 +357,7 @@ Associates the specified value with the specified key in this identity hash map.
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 
 **See Also**
@@ -377,6 +385,7 @@ Copies all of the mappings from the specified map to this map. For each mapping 
 | `java.lang.UnsupportedOperationException` | if the`putAll`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 
 ### remove
@@ -402,6 +411,7 @@ Removes the mapping for this key from this map if present. The mapping is remove
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map |
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
+| --- | --- |
 
 ### remove
 
@@ -432,6 +442,7 @@ More formally, if this map contains a mapping from a key`k`to a value`v`such tha
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the key or value is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
+| --- | --- |
 
 ### replace
 
@@ -454,6 +465,7 @@ More formally, if this map contains a mapping from a key`k`to a value`v`such tha
 | `key` | K:key with which the specified value is associated |
 | `oldValue` | V:value expected to be associated with the specified key |
 | `newValue` | V:value to be associated with the specified key |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------|
@@ -464,6 +476,7 @@ More formally, if this map contains a mapping from a key`k`to a value`v`such tha
 | `java.lang.UnsupportedOperationException` | if the`put`operation is not supported by this map (java.util.Collection#) |
 | `java.lang.ClassCastException` | if the class of a specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a specified key or value prevents it from being stored in this map |
 
 ### replaceAll
@@ -483,6 +496,7 @@ open fun replaceAll(function: BiFunction<in K, in V, out V>): Unit
 | `java.lang.UnsupportedOperationException` | if the`set`operation is not supported by this map's entry set iterator. |
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 

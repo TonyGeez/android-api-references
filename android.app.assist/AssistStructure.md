@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # AssistStructure
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/assist/AssistStructure "View this page in Java") 
+| --- | --- |
 
 ```
 open class AssistStructure : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.assist.AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#) |
 
 This API automatically creates assist data from the platform's implementation of assist and autofill.
@@ -43,9 +45,11 @@ To learn about using Autofill in your app, read the [Autofill Framework](https:/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#describeContents())`()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAcquisitionEndTime](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#getAcquisitionEndTime())`()` Returns the time when the activity finished generating assist data to build the AssistStructure. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAcquisitionStartTime](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#getAcquisitionStartTime())`()` Returns the time when the activity started generating assist data to build the AssistStructure. |
+| --- | --- |
 | open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getActivityComponent](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#getActivityComponent())`()` Return the activity this AssistStructure came from. |
 | open [AssistStructure.WindowNode](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.WindowNode)! | [getWindowNodeAt](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#getWindowNodeAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return one of the windows in the assist data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWindowNodeCount](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#getWindowNodeCount())`()` Return the number of window contents that have been collected in this assist data. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHomeActivity](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#isHomeActivity())`()` Returns whether the activity associated with this AssistStructure was the home activity (Launcher) at the time the assist data was acquired. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

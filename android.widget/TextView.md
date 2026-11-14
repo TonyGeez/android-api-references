@@ -7,6 +7,7 @@ open class TextView : View, ViewTreeObserver.OnPreDrawListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.widget.TextView](https://developer.android.com/reference/kotlin/android/widget/TextView#) |
 
@@ -71,96 +72,126 @@ See `https://developer.android.com/reference/kotlin/android/R.styleable.html#Tex
 | | `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType` Type of the text buffer that defines the characteristics of the text such as static, styleable, or editable. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/TextView.OnEditorActionListener` Interface definition for a callback to be invoked when an action is performed on the editor. |
 | open | `https://developer.android.com/reference/kotlin/android/widget/TextView.SavedState` User interface state that is stored by TextView for implementing `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:allowUndo`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Whether undo should be allowed for editable text. |
 | [`android:autoLink`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Controls whether links such as urls and email addresses are automatically found and converted to clickable links. |
 | [`android:autoSizeMaxTextSize`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The maximum text size constraint to be used when auto-sizing text. |
+| --- | --- |
 | [`android:autoSizeMinTextSize`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The minimum text size constraint to be used when auto-sizing text. |
 | [`android:autoSizePresetSizes`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Resource array of dimensions to be used in conjunction with autoSizeTextType set to uniform . |
 | [`android:autoSizeStepGranularity`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specify the auto-size step size if autoSizeTextType is set to uniform . |
+| --- | --- |
 | [`android:autoSizeTextType`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specify the type of auto-size. |
 | [`android:autoText`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has a textual input method and automatically corrects some common spelling errors. |
 | [`android:breakStrategy`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Break strategy (control over paragraph layout). |
+| --- | --- |
 | [`android:bufferType`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Determines the minimum type that getText() will return. |
 | [`android:capitalize`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has a textual input method and should automatically capitalize what the user types. |
 | [`android:cursorVisible`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the cursor visible (the default) or invisible. |
+| --- | --- |
 | [`android:digits`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has a numeric input method and that these specific characters are the ones that it will accept. |
 | [`android:drawableBottom`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn below the text. |
 | [`android:drawableEnd`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn to the end of the text. |
+| --- | --- |
 | [`android:drawableLeft`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn to the left of the text. |
 | [`android:drawablePadding`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The padding between the drawables and the text. |
 | [`android:drawableRight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn to the right of the text. |
+| --- | --- |
 | [`android:drawableStart`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn to the start of the text. |
 | [`android:drawableTint`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Tint to apply to the compound (left, top, etc.) drawables. |
 | [`android:drawableTintMode`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Blending mode used to apply the compound (left, top, etc.) drawables tint. |
+| --- | --- |
 | [`android:drawableTop`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The drawable to be drawn above the text. |
 | [`android:editable`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has an input method. |
 | [`android:editorExtras`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Reference to an \<input-extras\> XML resource containing additional data to supply to an input method, which is private to the implementation of the input method. |
+| --- | --- |
 | [`android:elegantTextHeight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Elegant text height, especially for less compacted complex script text. |
 | [`android:ellipsize`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, causes words that are longer than the view is wide to be ellipsized instead of broken in the middle. |
 | [`android:ems`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be exactly this many ems wide. |
+| --- | --- |
 | [`android:enabled`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specifies whether the widget is enabled. |
 | [`android:fallbackLineSpacing`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Whether to respect the ascent and descent of the fallback fonts that are used in displaying the text. |
 | [`android:fontFamily`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Font family (named by string or as a font resource reference) for the text. |
+| --- | --- |
 | [`android:fontFeatureSettings`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Font feature settings. |
 | [`android:fontVariationSettings`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Font variation settings. |
 | [`android:freezesText`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, the text view will include its current complete text inside of its frozen icicle in addition to meta-data such as the current cursor position. |
+| --- | --- |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specifies how to align the text by the view's x- and/or y-axis when the text is smaller than the view. |
 | [`android:height`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be exactly this tall. |
 | [`android:hint`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Hint text to display when the text is empty. |
+| --- | --- |
 | [`android:hyphenationFrequency`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Frequency of automatic hyphenation. |
 | [`android:imeActionId`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Supply a value for EditorInfo. |
 | [`android:imeActionLabel`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Supply a value for EditorInfo. |
+| --- | --- |
 | [`android:imeOptions`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Additional features you can enable in an IME associated with an editor to improve the integration with your application. |
 | [`android:includeFontPadding`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Leave enough room for ascenders and descenders instead of using the font ascent and descent strictly. |
 | [`android:inputMethod`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView should use the specified input method (specified by fully-qualified class name). |
+| --- | --- |
 | [`android:inputType`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The type of data being placed in a text field, used to help an input method decide how to let the user enter text. |
 | [`android:justificationMode`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Mode for justification. |
 | [`android:letterSpacing`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Text letter-spacing. |
+| --- | --- |
 | [`android:lineBreakStyle`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specifies the line-break strategies for text wrapping. |
 | [`android:lineBreakWordStyle`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Specifies the line-break word strategies for text wrapping. |
 | [`android:lineSpacingExtra`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Extra spacing between lines of text. |
+| --- | --- |
 | [`android:lineSpacingMultiplier`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Extra spacing between lines of text, as a multiplier. |
 | [`android:lines`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be exactly this many lines tall. |
 | [`android:linksClickable`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set to false, keeps the movement method from being set to the link movement method even if autoLink causes links to be found. |
+| --- | --- |
 | [`android:marqueeRepeatLimit`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | The number of times to repeat the marquee animation. |
 | [`android:maxEms`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at most this many ems wide. |
 | [`android:maxHeight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at most this many pixels tall. |
+| --- | --- |
 | [`android:maxLength`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Set an input filter to constrain the text length to the specified number. |
 | [`android:maxLines`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at most this many lines tall. |
 | [`android:maxWidth`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at most this many pixels wide. |
+| --- | --- |
 | [`android:minEms`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at least this many ems wide. |
 | [`android:minHeight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at least this many pixels tall. |
 | [`android:minLines`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at least this many lines tall. |
+| --- | --- |
 | [`android:minWidth`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be at least this many pixels wide. |
 | [`android:numeric`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has a numeric input method. |
 | [`android:password`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Whether the characters of the field are displayed as password dots instead of themselves. |
+| --- | --- |
 | [`android:phoneNumber`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If set, specifies that this TextView has a phone number input method. |
 | [`android:privateImeOptions`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | An addition content type description to supply to the input method attached to the text view, which is private to the implementation of the input method. |
 | [`android:scrollHorizontally`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Whether the text is allowed to be wider than the view (and therefore can be scrolled horizontally). |
+| --- | --- |
 | [`android:selectAllOnFocus`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | If the text is selectable, select it all when the view takes focus. |
 | [`android:shadowColor`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Place a blurred shadow of text underneath the text, drawn with the specified color. |
 | [`android:shadowDx`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Horizontal offset of the text shadow. |
+| --- | --- |
 | [`android:shadowDy`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Vertical offset of the text shadow. |
 | [`android:shadowRadius`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Blur radius of the text shadow. |
 | [`android:singleLine`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Constrains the text to a single horizontally scrolling line instead of letting it wrap onto multiple lines, and advances focus instead of inserting a newline when you press the enter key. |
+| --- | --- |
 | [`android:text`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Text to display. |
 | [`android:textAppearance`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Base text color, typeface, size, and style. |
 | [`android:textColor`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Text color. |
+| --- | --- |
 | [`android:textColorHighlight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Color of the text selection highlight. |
 | [`android:textColorHint`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Color of the hint text. |
 | [`android:textColorLink`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Text color for links. |
+| --- | --- |
 | [`android:textCursorDrawable`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Reference to a drawable that will be drawn under the insertion cursor. |
 | [`android:textFontWeight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Weight for the font used in the TextView. |
 | [`android:textScaleX`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Sets the horizontal scaling factor for the text. |
+| --- | --- |
 | [`android:textSelectHandle`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Reference to a drawable that will be used to display a text selection anchor for positioning the cursor within text. |
 | [`android:textSelectHandleLeft`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Reference to a drawable that will be used to display a text selection anchor on the left side of a selection region. |
 | [`android:textSelectHandleRight`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Reference to a drawable that will be used to display a text selection anchor on the right side of a selection region. |
+| --- | --- |
 | [`android:textSize`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Size of the text. |
 | [`android:textStyle`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Style (normal, bold, italic, bold|italic) for the text. |
 | [`android:typeface`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Typeface (normal, sans, serif, monospace) for the text. |
+| --- | --- |
 | [`android:width`](https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView) | Makes the TextView be exactly this wide. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -441,6 +472,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -557,6 +589,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -651,6 +684,7 @@ Constant Value Description gone 2 Completely hidden, as if the view had not been
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#AUTO_SIZE_TEXT_TYPE_NONE:kotlin.Int` The TextView does not auto-size text (default). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#AUTO_SIZE_TEXT_TYPE_UNIFORM:kotlin.Int` The TextView scales text size both horizontally and vertically to fit within the container. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#FOCUSED_SEARCH_RESULT_INDEX_NONE:kotlin.Int` A special index used for `https://developer.android.com/reference/kotlin/android/widget/TextView#setFocusedSearchResultIndex(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/widget/TextView#getFocusedSearchResultIndex()` inidicating there is no focused search result. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
 
@@ -1748,312 +1782,415 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#addExtraDataToAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo,%20kotlin.String,%20android.os.Bundle)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#, extraDataKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Adds extra data to an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#` based on an explicit request for the additional data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#addTextChangedListener(android.text.TextWatcher)(watcher: https://developer.android.com/reference/kotlin/android/text/TextWatcher.html#!)` Adds a TextWatcher to the list of those whose methods are called whenever this TextView's text changes. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#append(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Convenience method to append the specified text to the TextView's display buffer, upgrading it to `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType` if it was not already editable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method to append the specified text slice to the TextView's display buffer, upgrading it to `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType` if it was not already editable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#autofill(android.view.autofill.AutofillValue)(value: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#!)` Automatically fills the content of this view with the `value`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#beginBatchEdit()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#bringPointIntoView(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Move the point, specified by the offset, into the view if it is needed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#bringPointIntoView(kotlin.Int,%20kotlin.Boolean)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, requestRectWithoutFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Move the insertion position of the given offset into visible area of the View. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#cancelLongPress()()` Cancels a pending long press. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#clearComposingText()()` Use `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection.html#removeComposingSpans(android.text.Spannable)` to remove any IME composing state from this text view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#computeScroll()()` Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#debug(kotlin.Int)(depth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#didTouchFocusSelect()()` Returns true, only while processing a touch gesture, if the initial touch down event caused focus to move to the text view and as a result its selection changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#endBatchEdit()()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#extractText(android.view.inputmethod.ExtractedTextRequest,%20android.view.inputmethod.ExtractedText)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest.html#!, outText: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText.html#!)` If this TextView contains editable content, extract a portion of it based on the information in request in to outText. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#findViewsWithText(java.util.ArrayList,%20kotlin.CharSequence,%20kotlin.Int)(outViews: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!, searched: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds the Views that contain given text. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoLinkMask()()` Gets the autolink mask of the text. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoSizeMaxTextSize()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoSizeMinTextSize()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoSizeStepGranularity()()` <br /> |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoSizeTextAvailableSizes()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutoSizeTextType()()` Returns the type of auto-size set for this widget. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutofillHints()()` Gets the hints that help an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` determine how to autofill the view with the user's data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutofillType()()` Describes the autofill type of this view, so an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` can create the proper `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#` when autofilling the view. |
 | open [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/widget/TextView#`'s current text for AutoFill. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getBreakStrategy()()` Gets the current strategy for breaking paragraphs into lines. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawablePadding()()` Returns the padding between the compound drawables and the text. |
+| --- | --- |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawableTintBlendMode()()` Returns the blending mode used to apply the tint to the compound drawables, if specified. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawableTintList()()` <br /> |
 | open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawableTintMode()()` Returns the blending mode used to apply the tint to the compound drawables, if specified. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!\> | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawables()()` Returns drawables for the left, top, right, and bottom borders. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!\> | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundDrawablesRelative()()` Returns drawables for the start, top, end, and bottom borders. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingBottom()()` Returns the bottom padding of the view, plus space for the bottom Drawable if any. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingEnd()()` Returns the end padding of the view, plus space for the end Drawable if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingLeft()()` Returns the left padding of the view, plus space for the left Drawable if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingRight()()` Returns the right padding of the view, plus space for the right Drawable if any. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingStart()()` Returns the start padding of the view, plus space for the start Drawable if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCompoundPaddingTop()()` Returns the top padding of the view, plus space for the top Drawable if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCurrentHintTextColor()()` Return the current color selected to paint the hint text. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCurrentTextColor()()` Return the current color selected for normal text. |
 | open [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCustomInsertionActionModeCallback()()` Retrieves the value set in `https://developer.android.com/reference/kotlin/android/widget/TextView#setCustomInsertionActionModeCallback(android.view.ActionMode.Callback)`. |
 | open [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getCustomSelectionActionModeCallback()()` Retrieves the value set in `https://developer.android.com/reference/kotlin/android/widget/TextView#setCustomSelectionActionModeCallback(android.view.ActionMode.Callback)`. |
+| --- | --- |
 | open [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getEditableText()()` Return the text that TextView is displaying as an Editable object. |
 | open [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getEllipsize()()` Returns where, if anywhere, words that are longer than the view is wide should be ellipsized. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getError()()` Returns the error message that was set to be displayed with #setError, or `null` if no error was set or if it the error was cleared by the widget after user input. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getExtendedPaddingBottom()()` Returns the extended bottom padding of the view, including both the bottom Drawable if any and any extra space to keep more than maxLines of text from showing. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getExtendedPaddingTop()()` Returns the extended top padding of the view, including both the top Drawable if any and any extra space to keep more than maxLines of text from showing. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InputFilter](https://developer.android.com/reference/kotlin/android/text/InputFilter.html#)!\>! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFilters()()` Returns the current list of input filters. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFirstBaselineToTopHeight()()` Returns the distance between the first text baseline and the top of this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFocusedRect(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` When a view has focus and the user navigates away from it, the next view is searched for starting from the rectangle filled in by this method. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFocusedSearchResultHighlightColor()()` Gets focused search result highlight color. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFocusedSearchResultIndex()()` Gets the focused search result index. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFontFeatureSettings()()` Returns the font feature settings. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFontVariationSettings()()` Returns the font variation settings. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getFreezesText()()` Return whether this text view is including its entire text contents in frozen icicles. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getGravity()()` Returns the horizontal and vertical alignment of this TextView. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getHighlightColor()()` <br /> |
+| --- | --- |
 | open [Highlights](https://developer.android.com/reference/kotlin/android/text/Highlights.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getHighlights()()` Returns highlights |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getHint()()` Returns the hint that is displayed when the text of the TextView is empty. |
 | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getHintTextColors()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getHyphenationFrequency()()` Gets the current frequency of automatic hyphenation to be used when determining word breaks. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getImeActionId()()` Get the IME action ID previous set with `https://developer.android.com/reference/kotlin/android/widget/TextView#setImeActionLabel(kotlin.CharSequence,%20kotlin.Int)`. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getImeActionLabel()()` Get the IME action label previous set with `https://developer.android.com/reference/kotlin/android/widget/TextView#setImeActionLabel(kotlin.CharSequence,%20kotlin.Int)`. |
+| --- | --- |
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getImeHintLocales()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getImeOptions()()` Get the type of the Input Method Editor (IME). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getIncludeFontPadding()()` Gets whether the TextView includes extra top and bottom padding to make room for accents that go above the normal ascent and descent. |
+| --- | --- |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getInputExtras(kotlin.Boolean)(create: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieve the input extras currently associated with the text view, which can be viewed as well as modified. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getInputType()()` Get the type of the editable content. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getJustificationMode()()` <br /> |
+| --- | --- |
 | [KeyListener](https://developer.android.com/reference/kotlin/android/text/method/KeyListener.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getKeyListener()()` Gets the current `https://developer.android.com/reference/kotlin/android/text/method/KeyListener.html#` for the TextView. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLastBaselineToBottomHeight()()` Returns the distance between the last text baseline and the bottom of this TextView. |
 | [Layout](https://developer.android.com/reference/kotlin/android/text/Layout.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLayout()()` Gets the `https://developer.android.com/reference/kotlin/android/text/Layout.html#` that is currently being used to display the text. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLetterSpacing()()` Gets the text letter-space value, which determines the spacing between characters. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineBounds(kotlin.Int,%20android.graphics.Rect)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Return the baseline for the specified line (0...getLineCount() - 1) If bounds is not null, return the top, left, right, bottom extents of the specified line in it. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineBreakStyle()()` Gets the current line-break style for text wrapping. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineBreakWordStyle()()` Gets the current line-break word style for text wrapping. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineCount()()` Return the number of lines of text, or 0 if the internal Layout has not been built. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineHeight()()` Gets the vertical distance between lines of text, in pixels. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineSpacingExtra()()` Gets the line spacing extra space |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLineSpacingMultiplier()()` Gets the line spacing multiplier |
 | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLinkTextColors()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLinksClickable()()` Returns whether the movement method will automatically be set to `https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod.html#` if `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoLinkMask(kotlin.Int)` has been set to nonzero and links are detected in #setText. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMarqueeRepeatLimit()()` Gets the number of times the marquee animation is repeated. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMaxEms()()` Returns the maximum width of TextView in terms of ems or -1 if the maximum width was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxWidth(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setWidth(kotlin.Int)`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMaxHeight()()` Returns the maximum height of TextView in terms of pixels or -1 if the maximum height was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxLines(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setLines(kotlin.Int)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMaxLines()()` Returns the maximum height of TextView in terms of number of lines or -1 if the maximum height was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxHeight(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setHeight(kotlin.Int)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMaxWidth()()` Returns the maximum width of TextView in terms of pixels or -1 if the maximum width was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxEms(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setEms(kotlin.Int)`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMinEms()()` Returns the minimum width of TextView in terms of ems or -1 if the minimum width was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinWidth(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setWidth(kotlin.Int)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMinHeight()()` Returns the minimum height of TextView in terms of pixels or -1 if the minimum height was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinLines(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setLines(kotlin.Int)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMinLines()()` Returns the minimum height of TextView in terms of number of lines or -1 if the minimum height was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinHeight(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setHeight(kotlin.Int)`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMinWidth()()` Returns the minimum width of TextView in terms of pixels or -1 if the minimum width was set using `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinEms(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/widget/TextView#setEms(kotlin.Int)`. |
 | open [Paint.FontMetrics](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMinimumFontMetrics()()` Get the minimum font metrics used for line spacing. |
 | [MovementMethod](https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getMovementMethod()()` Gets the `https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html#` being used for this TextView, which provides positioning, scrolling, and text selection functionality. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getOffsetForPosition(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Get the character offset closest to the specified absolute position. |
 | open [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getPaint()()` Gets the `https://developer.android.com/reference/kotlin/android/text/TextPaint.html#` used for the text. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getPaintFlags()()` Gets the flags on the Paint being used to display the text. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getPrivateImeOptions()()` Get the private type of the content. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getSearchResultHighlightColor()()` Gets the search result highlight color. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getSearchResultHighlights()()` Gets the current search result ranges. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getSelectionEnd()()` Convenience for `https://developer.android.com/reference/kotlin/android/text/Selection.html#getSelectionEnd(kotlin.CharSequence)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getSelectionStart()()` Convenience for `https://developer.android.com/reference/kotlin/android/text/Selection.html#getSelectionStart(kotlin.CharSequence)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShadowColor()()` Gets the color of the shadow layer. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShadowDx()()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShadowDy()()` Gets the vertical offset of the shadow layer. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShadowRadius()()` Gets the radius of the shadow layer. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShiftDrawingOffsetForStartOverhang()()` Returns true if shifting the drawing x offset for start overhang. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getShowSoftInputOnFocus()()` Returns whether the soft input method will be made visible when this TextView gets focused. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getText()()` Return the text that TextView is displaying. |
+| --- | --- |
 | open [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextClassifier()()` Returns the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` used by this TextView. |
 | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextColors()()` Gets the text colors for the different states (normal, selected, focused) of the TextView. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextCursorDrawable()()` Returns the Drawable corresponding to the text cursor. |
+| --- | --- |
 | open [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic.html#) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextDirectionHeuristic()()` Returns resolved `https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic.html#` that will be used for text layout. |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextLocale()()` Get the default primary `https://developer.android.com/reference/kotlin/java/util/Locale.html#` of the text in this TextView. |
 | open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextLocales()()` Get the default `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the text in this TextView. |
+| --- | --- |
 | open [PrecomputedText.Params](https://developer.android.com/reference/kotlin/android/text/PrecomputedText.Params.html#) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextMetricsParams()()` Gets the parameters for text layout precomputation, for use with `https://developer.android.com/reference/kotlin/android/text/PrecomputedText.html#`. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextScaleX()()` Gets the extent by which text should be stretched horizontally. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextSelectHandle()()` Returns the Drawable corresponding to the selection handle used for positioning the cursor within text. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextSelectHandleLeft()()` Returns the Drawable corresponding to the left handle used for selecting text. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextSelectHandleRight()()` Returns the Drawable corresponding to the right handle used for selecting text. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextSize()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTextSizeUnit()()` Gets the text size unit defined by the developer. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingBottom()()` Returns the total bottom padding of the view, including the bottom Drawable if any, the extra space to keep more than maxLines from showing, and the vertical offset for gravity, if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingEnd()()` Returns the total end padding of the view, including the end Drawable if any. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingLeft()()` Returns the total left padding of the view, including the left Drawable if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingRight()()` Returns the total right padding of the view, including the right Drawable if any. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingStart()()` Returns the total start padding of the view, including the start Drawable if any. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTotalPaddingTop()()` Returns the total top padding of the view, including the top Drawable if any, the extra space to keep more than maxLines from showing, and the vertical offset for gravity, if any. |
 | [TransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/TransformationMethod.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTransformationMethod()()` Gets the current `https://developer.android.com/reference/kotlin/android/text/method/TransformationMethod.html#` for the TextView. |
 | open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTypeface()()` Gets the current `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` that is used to style the text. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [URLSpan](https://developer.android.com/reference/kotlin/android/text/style/URLSpan.html#)!\>! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getUrls()()` Returns the list of `https://developer.android.com/reference/kotlin/android/text/style/URLSpan.html#` attached to the text (by `https://developer.android.com/reference/kotlin/android/text/util/Linkify.html#` or otherwise) if any. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getUseBoundsForWidth()()` Returns true if using bounding box as a width, false for using advance as a width. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#hasOverlappingRendering()()` Returns whether this View has content which overlaps. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#hasSelection()()` Return true iff there is a selection of nonzero length inside this text view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#invalidateDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Invalidates the specified Drawable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isAllCaps()()` Checks whether the transformation method applied to this TextView is set to ALL CAPS. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isAutoHandwritingEnabled()()` Return whether the View allows automatic handwriting initiation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isCursorVisible()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isElegantTextHeight()()` Get the value of the TextView's elegant height metrics flag. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isFallbackLineSpacing()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isHorizontallyScrollable()()` Returns whether the text is allowed to be wider than the View. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isInputMethodTarget()()` Returns whether this text view is a current input method target. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isLocalePreferredLineHeightForMinimumUsed()()` Returns true if the locale preferred line height is used for the minimum line height. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isSingleLine()()` Returns if the text is constrained to a single horizontally scrolling line ignoring new line characters instead of letting it wrap onto multiple lines. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isSuggestionsEnabled()()` Return whether or not suggestions are enabled on this TextView. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isTextSelectable()()` Returns the state of the `textIsSelectable` flag (See `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextIsSelectable(kotlin.Boolean)`). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#length()()` Returns the length, in characters, of the text managed by this TextView |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#moveCursorToVisibleOffset()()` Move the cursor, if needed, so that it is at an offset that is visible to the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onBeginBatchEdit()()` Called by the framework in response to a request to begin a batch of edit operations through a call to link `https://developer.android.com/reference/kotlin/android/widget/TextView#beginBatchEdit()`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCheckIsTextEditor()()` Check whether the called view is a text editor, in which case it would make sense to automatically display a soft input window for it. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCommitCompletion(android.view.inputmethod.CompletionInfo)(text: https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo.html#!)` Called by the framework in response to a text completion from the current input method, provided by it calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#commitCompletion(android.view.inputmethod.CompletionInfo)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCommitCorrection(android.view.inputmethod.CorrectionInfo)(info: https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo.html#!)` Called by the framework in response to a text auto-correction (such as fixing a typo using a dictionary) from the current input method, provided by it calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#commitCorrection(android.view.inputmethod.CorrectionInfo)`. |
 | open [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#!)` Create a new InputConnection for an InputMethod to interact with the view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCreateViewTranslationRequest(kotlin.IntArray,%20java.util.function.Consumer)(supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, requestsCollector: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#!>)` Collects a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#` which represents the content to be translated in the view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onDragEvent(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent.html#!)` Handles drag events sent by the system following a call to `https://developer.android.com/reference/kotlin/android/view/View.html#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onEditorAction(kotlin.Int)(actionCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when an attached input method calls `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performEditorAction(kotlin.Int)` for this text view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onEndBatchEdit()()` Called by the framework in response to a request to end a batch of edit operations through a call to link `https://developer.android.com/reference/kotlin/android/widget/TextView#endBatchEdit()`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle generic motion events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyDown(kotlin.Int,%20android.view.KeyEvent)`: perform press of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` is released, if the view is enabled and clickable. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onKeyMultiple(kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeatCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyMultiple(kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent)`: always returns false (doesn't handle the event). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onKeyPreIme(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Handle a key event before it is processed by any input method associated with the view hierarchy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onKeyShortcut(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Called on the focused view when a key shortcut event is not handled. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyUp(kotlin.Int,%20android.view.KeyEvent)`: perform clicking of the view when `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_SPACE:kotlin.Int` is released. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onPreDraw()()` Callback method to be invoked when the view tree is about to be drawn. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onPrivateIMECommand(kotlin.String,%20android.os.Bundle)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, data: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called by the framework in response to a private command from the current method, provided by it calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performPrivateCommand(kotlin.String,%20android.os.Bundle)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onProvideContentCaptureNodeProperties(android.view.contentcapture.ContentCaptureNodeProperties)(properties: https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties.html#)` Populates the properties of this `https://developer.android.com/reference/kotlin/android/view/View.html#` for Content Capture version 2. |
 | open [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#onReceiveContent(android.view.ContentInfo)(payload: https://developer.android.com/reference/kotlin/android/view/ContentInfo.html#)` Default `https://developer.android.com/reference/kotlin/android/widget/TextView#` implementation for receiving content. |
 | open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/TextView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onScreenStateChanged(kotlin.Int)(screenState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called whenever the state of the screen this view is attached to changes. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onTextContextMenuItem(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a context menu option for the text view is selected. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onTrackballEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle trackball motion events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses focus. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#performLongClick()()` Calls this view's OnLongClickListener, if it is defined. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#removeTextChangedListener(android.text.TextWatcher)(watcher: https://developer.android.com/reference/kotlin/android/text/TextWatcher.html#!)` Removes the specified TextWatcher from the list of those whose methods are called whenever this TextView's text changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent)(event: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#!)` This method behaves exactly as `https://developer.android.com/reference/kotlin/android/view/View.html#sendAccessibilityEvent(kotlin.Int)` but takes as an argument an empty `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#` and does not perform a check whether accessibility is enabled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setAllCaps(kotlin.Boolean)(allCaps: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the properties of this field to transform input to ALL CAPS display. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoLinkMask(kotlin.Int)(mask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the autolink mask of the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoSizeTextTypeUniformWithConfiguration(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(autoSizeMinTextSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, autoSizeMaxTextSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, autoSizeStepGranularity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify whether this widget should automatically scale the text to try to perfectly fit within the layout bounds. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoSizeTextTypeUniformWithPresetSizes(kotlin.IntArray,%20kotlin.Int)(presetSizes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify whether this widget should automatically scale the text to try to perfectly fit within the layout bounds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoSizeTextTypeWithDefaults(kotlin.Int)(autoSizeTextType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify whether this widget should automatically scale the text to try to perfectly fit within the layout bounds by using the default auto-size configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setBreakStrategy(kotlin.Int)(breakStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the break strategy for breaking paragraphs into lines. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablePadding(kotlin.Int)(pad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the size of the padding between the compound drawables and the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawableTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawableTintList(android.content.res.ColorStateList)` to the compound drawables. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawableTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the compound drawables. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawableTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawableTintList(android.content.res.ColorStateList)` to the compound drawables. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawables(android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable)(left: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, top: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, right: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, bottom: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the Drawables (if any) to appear to the left of, above, to the right of, and below the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesRelative(android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable)(start: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, top: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, end: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, bottom: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the Drawables (if any) to appear to the start of, above, to the end of, and below the text. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesRelativeWithIntrinsicBounds(android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable)(start: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, top: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, end: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, bottom: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the Drawables (if any) to appear to the start of, above, to the end of, and below the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesRelativeWithIntrinsicBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawables (if any) to appear to the start of, above, to the end of, and below the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesWithIntrinsicBounds(android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable,%20android.graphics.drawable.Drawable)(left: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, top: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, right: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?, bottom: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the Drawables (if any) to appear to the left of, above, to the right of, and below the text. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesWithIntrinsicBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawables (if any) to appear to the left of, above, to the right of, and below the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCursorVisible(kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether the cursor is visible. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCustomInsertionActionModeCallback(android.view.ActionMode.Callback)(actionModeCallback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` If provided, this ActionMode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setCustomSelectionActionModeCallback(android.view.ActionMode.Callback)(actionModeCallback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` If provided, this ActionMode. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setEditableFactory(android.text.Editable.Factory)(factory: https://developer.android.com/reference/kotlin/android/text/Editable.Factory.html#!)` Sets the Factory used to create new `https://developer.android.com/reference/kotlin/android/text/Editable.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setElegantTextHeight(kotlin.Boolean)(elegant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the TextView's elegant height metrics flag. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setEllipsize(android.text.TextUtils.TruncateAt)(where: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt.html#!)` Causes words in the text that are longer than the view's width to be ellipsized instead of broken in the middle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setEms(kotlin.Int)(ems: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be exactly `ems` wide. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the enabled state of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setError(kotlin.CharSequence)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the right-hand compound drawable of the TextView to the "error" icon and sets an error message that will be displayed in a popup when the TextView has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setError(kotlin.CharSequence,%20android.graphics.drawable.Drawable)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the right-hand compound drawable of the TextView to the specified icon and sets an error message that will be displayed in a popup when the TextView has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setExtractedText(android.view.inputmethod.ExtractedText)(text: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText.html#!)` Apply to this text view the given extracted text, as previously returned by `https://developer.android.com/reference/kotlin/android/widget/TextView#extractText(android.view.inputmethod.ExtractedTextRequest,%20android.view.inputmethod.ExtractedText)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFallbackLineSpacing(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether to respect the ascent and descent of the fallback fonts that are used in displaying the text (which is needed to avoid text from consecutive lines running into each other). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFilters(kotlin.Array)(filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/text/InputFilter.html#!>!)` Sets the list of input filters that will be used if the buffer is Editable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFirstBaselineToTopHeight(kotlin.Int)(firstBaselineToTopHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Updates the top padding of the TextView so that is the distance between the top of the TextView and first line's baseline. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFocusedSearchResultHighlightColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets focused search result highlight color. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFocusedSearchResultIndex(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the focused search result index. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFontFeatureSettings(kotlin.String)(fontFeatureSettings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets font feature settings. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFontVariationSettings(kotlin.String)(fontVariationSettings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets TrueType or OpenType font variation settings. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFreezesText(kotlin.Boolean)(freezesText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether this text view saves its entire text contents when freezing to an icicle, in addition to dynamic state such as cursor position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setGravity(kotlin.Int)(gravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the horizontal alignment of the text and the vertical gravity that will be used when there is extra space in the TextView beyond what is required for the text itself. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHeight(kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be exactly `pixels` tall. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHighlightColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color used to display the selection highlight. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHighlights(android.text.Highlights)(highlights: https://developer.android.com/reference/kotlin/android/text/Highlights.html#?)` Set Highlights |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHint(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text to be displayed when the text of the TextView is empty, from a resource. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHint(kotlin.CharSequence)(hint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the text to be displayed when the text of the TextView is empty. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHintTextColor(android.content.res.ColorStateList)(colors: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#!)` Sets the color of the hint text. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHintTextColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of the hint text for all the states (disabled, focussed, selected...) of this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHorizontallyScrolling(kotlin.Boolean)(whether: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the text should be allowed to be wider than the View is. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setHyphenationFrequency(kotlin.Int)(hyphenationFrequency: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the frequency of automatic hyphenation to use when determining word breaks. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setImeActionLabel(kotlin.CharSequence,%20kotlin.Int)(label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, actionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the custom IME action associated with the text view, which will be reported to an IME with `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#actionLabel:kotlin.CharSequence` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#actionId:kotlin.Int` when it has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setImeHintLocales(android.os.LocaleList)(hintLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Change "hint" locales associated with the text view, which will be reported to an IME with `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#hintLocales:android.os.LocaleList` when it has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setImeOptions(kotlin.Int)(imeOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the editor type integer associated with the text view, which is reported to an Input Method Editor (IME) with `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#imeOptions:kotlin.Int` when it has focus. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setIncludeFontPadding(kotlin.Boolean)(includepad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether the TextView includes extra top and bottom padding to make room for accents that go above the normal ascent and descent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setInputExtras(kotlin.Int)(xmlResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the extra input data of the text, which is the `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#extras:android.os.Bundle` Bundle that will be filled in when creating an input connection. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setInputType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the type of the content with a constant as defined for `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#inputType:kotlin.Int`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setJustificationMode(kotlin.Int)(justificationMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set justification mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setKeyListener(android.text.method.KeyListener)(input: https://developer.android.com/reference/kotlin/android/text/method/KeyListener.html#!)` Sets the key listener to be used with this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLastBaselineToBottomHeight(kotlin.Int)(lastBaselineToBottomHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Updates the bottom padding of the TextView so that is the distance between the bottom of the TextView and the last line's baseline. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLetterSpacing(kotlin.Float)(letterSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets text letter-spacing in em units. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLineBreakStyle(kotlin.Int)(lineBreakStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the line-break style for text wrapping. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLineBreakWordStyle(kotlin.Int)(lineBreakWordStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the line-break word style for text wrapping. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLineHeight(kotlin.Int)(lineHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets an explicit line height for this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLineHeight(kotlin.Int,%20kotlin.Float)(unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lineHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets an explicit line height to a given unit and value for this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLineSpacing(kotlin.Float,%20kotlin.Float)(add: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, mult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets line spacing for this TextView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLines(kotlin.Int)(lines: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be exactly `lines` tall. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLinkTextColor(android.content.res.ColorStateList)(colors: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#!)` Sets the color of links in the text. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLinkTextColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of links in the text. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLinksClickable(kotlin.Boolean)(whether: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the movement method will automatically be set to `https://developer.android.com/reference/kotlin/android/text/method/LinkMovementMethod.html#` if `https://developer.android.com/reference/kotlin/android/widget/TextView#setAutoLinkMask(kotlin.Int)` has been set to nonzero and links are detected in #setText. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setLocalePreferredLineHeightForMinimumUsed(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set true if the locale preferred line height is used for the minimum line height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMarqueeRepeatLimit(kotlin.Int)(marqueeLimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets how many times to repeat the marquee animation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxEms(kotlin.Int)(maxEms: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be at most `maxEms` wide. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxHeight(kotlin.Int)(maxPixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be at most `maxPixels` tall. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxLines(kotlin.Int)(maxLines: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be at most `maxLines` tall. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMaxWidth(kotlin.Int)(maxPixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be at most `maxPixels` wide. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinEms(kotlin.Int)(minEms: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be at least `minEms` wide. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinHeight(kotlin.Int)(minPixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be at least `minPixels` tall. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinLines(kotlin.Int)(minLines: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the height of the TextView to be at least `minLines` tall. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinWidth(kotlin.Int)(minPixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be at least `minPixels` wide. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMinimumFontMetrics(android.graphics.Paint.FontMetrics)(minimumFontMetrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#?)` Set the minimum font metrics used for line spacing. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setMovementMethod(android.text.method.MovementMethod)(movement: https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html#!)` Sets the `https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html#` for handling arrow key movement for this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setOnEditorActionListener(android.widget.TextView.OnEditorActionListener)(l: https://developer.android.com/reference/kotlin/android/widget/TextView.OnEditorActionListener!)` Set a special listener to be called when an action is performed on the text view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the padding. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setPaddingRelative(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the relative padding. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setPaintFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets flags on the Paint being used to display the text and reflows the text if they are different from the old flags. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setPrivateImeOptions(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the private content type of the text, which is the `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#privateImeOptions:kotlin.String` field that will be filled in when creating an input connection. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setRawInputType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Directly change the content type integer of the text view, without modifying any other state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setScroller(android.widget.Scroller)(s: https://developer.android.com/reference/kotlin/android/widget/Scroller!)` Sets the Scroller used for producing a scrolling animation |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSearchResultHighlightColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the search result highlight color. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSearchResultHighlights(kotlin.Int)(vararg ranges: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the search result ranges with flatten range representation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSelectAllOnFocus(kotlin.Boolean)(selectAllOnFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the TextView so that when it takes focus, all the text is selected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSelected(kotlin.Boolean)(selected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Changes the selection state of this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setShadowLayer(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gives the text a shadow of the specified blur radius and color, the specified distance from its drawn position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setShiftDrawingOffsetForStartOverhang(kotlin.Boolean)(shiftDrawingOffsetForStartOverhang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set true for shifting the drawing x offset for showing overhang at the start position. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setShowSoftInputOnFocus(kotlin.Boolean)(show: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the soft input method will be made visible when this TextView gets focused. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSingleLine()()` Sets the properties of this field (lines, horizontally scrolling, transformation method) to be for a single-line input. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSingleLine(kotlin.Boolean)(singleLine: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If true, sets the properties of this field (number of lines, horizontally scrolling, transformation method) to be for a single-line input; if false, restores these to the default conditions. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setSpannableFactory(android.text.Spannable.Factory)(factory: https://developer.android.com/reference/kotlin/android/text/Spannable.Factory.html#!)` Sets the Factory used to create new `https://developer.android.com/reference/kotlin/android/text/Spannable.html#`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the TextView to display the specified slice of the specified char array. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text to be displayed using a string resource identifier. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.Int,%20android.widget.TextView.BufferType)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, type: https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType!)` Sets the text to be displayed using a string resource identifier and the `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the text to be displayed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.CharSequence,%20android.widget.TextView.BufferType)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, type: https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType!)` Sets the text to be displayed and the `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextAppearance(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color, size, style, hint color, and highlight color from the specified TextAppearance resource. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextAppearance(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text appearance from the specified style resource. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextClassifier(android.view.textclassifier.TextClassifier)(textClassifier: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#?)` Sets the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` for this TextView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextColor(android.content.res.ColorStateList)(colors: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#!)` Sets the text color. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color for all the states (normal, selected, focused) to be this color. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextCursorDrawable(android.graphics.drawable.Drawable)(textCursorDrawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Sets the Drawable corresponding to the text cursor. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextCursorDrawable(kotlin.Int)(textCursorDrawable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawable corresponding to the text cursor. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextIsSelectable(kotlin.Boolean)(selectable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the content of this view is selectable by the user. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextKeepState(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the text to be displayed but retains the cursor position. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextKeepState(kotlin.CharSequence,%20android.widget.TextView.BufferType)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, type: https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType!)` Sets the text to be displayed and the `https://developer.android.com/reference/kotlin/android/widget/TextView.BufferType` but retains the cursor position. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#)` Set the default `https://developer.android.com/reference/kotlin/java/util/Locale.html#` of the text in this TextView to a one-member `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` containing just the given Locale. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextLocales(android.os.LocaleList)(locales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)` Set the default `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the text in this TextView to the given value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextMetricsParams(android.text.PrecomputedText.Params)(params: https://developer.android.com/reference/kotlin/android/text/PrecomputedText.Params.html#)` Apply the text layout parameter. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextScaleX(kotlin.Float)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the horizontal scale factor for text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandle(android.graphics.drawable.Drawable)(textSelectHandle: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Sets the Drawable corresponding to the selection handle used for positioning the cursor within text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandle(kotlin.Int)(textSelectHandle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawable corresponding to the selection handle used for positioning the cursor within text. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandleLeft(android.graphics.drawable.Drawable)(textSelectHandleLeft: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Sets the Drawable corresponding to the left handle used for selecting text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandleLeft(kotlin.Int)(textSelectHandleLeft: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawable corresponding to the left handle used for selecting text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandleRight(android.graphics.drawable.Drawable)(textSelectHandleRight: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Sets the Drawable corresponding to the right handle used for selecting text. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSelectHandleRight(kotlin.Int)(textSelectHandleRight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Drawable corresponding to the right handle used for selecting text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSize(kotlin.Float)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the default text size to the given value, interpreted as "scaled pixel" units. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSize(kotlin.Int,%20kotlin.Float)(unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the default text size to a given unit and value. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTransformationMethod(android.text.method.TransformationMethod)(method: https://developer.android.com/reference/kotlin/android/text/method/TransformationMethod.html#!)` Sets the transformation that is applied to the text that this TextView is displaying. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTypeface(android.graphics.Typeface)(tf: https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#?)` Sets the typeface and style in which the text should be displayed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setTypeface(android.graphics.Typeface,%20kotlin.Int)(tf: https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#?, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the typeface and style in which the text should be displayed, and turns on the fake bold and italic bits in the Paint if the Typeface that you provided does not have all the bits in the style that you specified. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setUseBoundsForWidth(kotlin.Boolean)(useBoundsForWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set true for using width of bounding box as a source of automatic line breaking and drawing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setWidth(kotlin.Int)(pixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the width of the TextView to be exactly `pixels` wide. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#showContextMenu()()` Shows the context menu for this view. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#showContextMenu(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for this view anchored to the specified view-relative coordinate. |
 
 | Protected methods ||
@@ -2061,30 +2198,39 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#computeHorizontalScrollRange()()` Compute the horizontal range that the horizontal scrollbar represents. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#computeVerticalScrollExtent()()` Compute the vertical extent of the vertical scrollbar's thumb within the vertical range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#computeVerticalScrollRange()()` Compute the vertical range that the vertical scrollbar represents. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#drawableStateChanged()()` This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getBottomPaddingOffset()()` Amount by which to extend the bottom fading region. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getDefaultEditable()()` Subclasses override this to specify that they have a KeyListener by default even if not specifically called for in the XML options. |
+| --- | --- |
 | open [MovementMethod](https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html#)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#getDefaultMovementMethod()()` Subclasses override this to specify a default movement method. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLeftFadingEdgeStrength()()` Returns the strength, or intensity, of the left faded edge. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getLeftPaddingOffset()()` Amount by which to extend the left fading region. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getRightFadingEdgeStrength()()` Returns the strength, or intensity, of the right faded edge. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getRightPaddingOffset()()` Amount by which to extend the right fading region. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#getTopPaddingOffset()()` Amount by which to extend the top fading region. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#isPaddingOffsetRequired()()` If the View draws content inside its padding and enables fading edges, it needs to support padding offsets. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Called when the current configuration of the resources being used by the application have changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCreateContextMenu(android.view.ContextMenu)(menu: https://developer.android.com/reference/kotlin/android/view/ContextMenu.html#!)` Views should implement this if the view itself is going to add items to the context menu. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/TextView#onCreateDrawableState(kotlin.Int)(extraSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generate the new `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` state for this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onFocusChanged(kotlin.Boolean,%20kotlin.Int,%20android.graphics.Rect)(focused: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Called by the view system when the focus state of this view changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onScrollChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(horiz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vert: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldHoriz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldVert: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called in response to an internal scroll in this view (i.e., the view scrolled its own contents). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onSelectionChanged(kotlin.Int,%20kotlin.Int)(selStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, selEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called when the selection has changed, in case any subclasses would like to know. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onTextChanged(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lengthBefore: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lengthAfter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called when the text is changed, in case any subclasses would like to know. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#onVisibilityChanged(android.view.View,%20kotlin.Int)(changedView: https://developer.android.com/reference/kotlin/android/view/View.html#, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the visibility of the view or an ancestor of the view has changed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#setFrame(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/TextView#verifyDrawable(android.graphics.drawable.Drawable)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` If your view subclass is displaying its own Drawable objects, it should override this function and return true for any Drawable it is displaying. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -3695,6 +3841,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -7090,15 +7237,18 @@ android:autoLink
 Controls whether links such as urls and email addresses are automatically found and converted to clickable links. The default value is "none", disabling this feature.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | all | f | Match all patterns (equivalent to web|email|phone|map). |
 | email | 2 | Match email addresses. |
 | map | 8 | Match map addresses. Deprecated: see `https://developer.android.com/reference/kotlin/android/text/util/Linkify.html#MAP_ADDRESSES:kotlin.Int`. |
+| --- | --- | --- |
 | none | 0 | Match no patterns (default). |
 | phone | 4 | Match phone numbers. |
 | web | 1 | Match Web URLs. |
+| --- | --- | --- |
 
 ### android:autoSizeMaxTextSize
 
@@ -7185,6 +7335,7 @@ Must be one of the following constant values.
 | balanced | 2 | Line breaking strategy balances line lengths. |
 | high_quality | 1 | Line breaking uses high-quality strategy, including hyphenation. |
 | simple | 0 | Line breaking uses simple strategy. |
+| --- | --- | --- |
 
 ### android:bufferType
 
@@ -7200,6 +7351,7 @@ Must be one of the following constant values.
 | editable | 2 | Can only return Spannable and Editable. |
 | normal | 0 | Can return any CharSequence, possibly a Spanned one if the source text was Spanned. |
 | spannable | 1 | Can only return Spannable. |
+| --- | --- | --- |
 
 ### android:capitalize
 
@@ -7313,9 +7465,11 @@ Must be one of the following constant values.
 | add | 10 | Combines the tint and drawable color and alpha channels, clamping the result to valid color values. Saturate(S + D) |
 | multiply | e | Multiplies the color and alpha channels of the drawable with those of the tint. \[Sa \* Da, Sc \* Dc\] |
 | screen | f | \[Sa + Da - Sa \* Da, Sc + Dc - Sc \* Dc\] |
+| --- | --- | --- |
 | src_atop | 9 | The tint is drawn above the drawable, but with the drawable's alpha channel masking the result. \[Da, Sc \* Da + (1 - Sa) \* Dc\] |
 | src_in | 5 | The tint is masked by the alpha channel of the drawable. The drawable's color channels are thrown out. \[Sa \* Da, Sc \* Da\] |
 | src_over | 3 | The tint is drawn on top of the drawable. \[Sa + (1 - Sa)\*Da, Rc = Sc + (1 - Sa)\*Dc\] |
+| --- | --- | --- |
 
 ### android:drawableTop
 
@@ -7367,6 +7521,7 @@ Must be one of the following constant values.
 | end | 3 | |
 | marquee | 4 | |
 | middle | 2 | |
+| --- | --- | --- |
 | none | 0 | |
 | start | 1 | |
 
@@ -7441,21 +7596,26 @@ android:gravity
 Specifies how to align the text by the view's x- and/or y-axis when the text is smaller than the view.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -7491,6 +7651,7 @@ Must be one of the following constant values.
 | full | 2 | Standard amount of hyphenation, useful for running text and for screens with limited space for text. |
 | fullFast | 4 | Same to hyphenationFrequency="full" but using faster algorithm for measuring hyphenation break points. To make text rendering faster with hyphenation, this algorithm ignores some hyphen character related typographic features, e.g. kerning. |
 | none | 0 | No hyphenation. |
+| --- | --- | --- |
 | normal | 1 | Less frequent hyphenation, useful for informal use cases, such as chat messages. |
 | normalFast | 3 | Same to hyphenationFrequency="normal" but using faster algorithm for measuring hyphenation break points. To make text rendering faster with hyphenation, this algorithm ignores some hyphen character related typographic features, e.g. kerning. |
 
@@ -7520,24 +7681,30 @@ android:imeOptions
 Additional features you can enable in an IME associated with an editor to improve the integration with your application. The constants here correspond to those defined by `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#imeOptions:kotlin.Int`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | actionDone | 6 | The action key performs a "done" operation, closing the soft input method. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_DONE:kotlin.Int`. |
 | actionGo | 2 | The action key performs a "go" operation to take the user to the target of the text they typed. Typically used, for example, when entering a URL. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_GO:kotlin.Int`. |
 | actionNext | 5 | The action key performs a "next" operation, taking the user to the next field that will accept text. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_NEXT:kotlin.Int`. |
+| --- | --- | --- |
 | actionNone | 1 | This editor has no action associated with it. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_NONE:kotlin.Int`. |
 | actionPrevious | 7 | The action key performs a "previous" operation, taking the user to the previous field that will accept text. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_PREVIOUS:kotlin.Int`. |
 | actionSearch | 3 | The action key performs a "search" operation, taking the user to the results of searching for the text the have typed (in whatever context is appropriate). Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEARCH:kotlin.Int`. |
+| --- | --- | --- |
 | actionSend | 4 | The action key performs a "send" operation, delivering the text to its target. This is typically used when composing a message. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEND:kotlin.Int`. |
 | actionUnspecified | 0 | There is no specific action associated with this editor, let the editor come up with its own if it can. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_NULL:kotlin.Int`. |
 | flagForceAscii | 80000000 | Used to request that the IME should be capable of inputting ASCII characters. The intention of this flag is to ensure that the user can type Roman alphabet characters in a `https://developer.android.com/reference/kotlin/android/widget/TextView#` used for, typically, account ID or password input. It is expected that IMEs normally are able to input ASCII even without being told so (such IMEs already respect this flag in a sense), but there could be some cases they aren't when, for instance, only non-ASCII input languages like Arabic, Greek, Hebrew, Russian are enabled in the IME. Applications need to be aware that the flag is not a guarantee, and not all IMEs will respect it. However, it is strongly recommended for IME authors to respect this flag especially when their IME could end up with a state that has only non-ASCII input languages enabled. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_FORCE_ASCII:kotlin.Int`. |
+| --- | --- | --- |
 | flagNavigateNext | 8000000 | Used to specify that there is something interesting that a forward navigation can focus on. This is like using actionNext, except allows the IME to be multiline (with an enter key) as well as provide forward navigation. Note that some IMEs may not be able to do this, especially when running on a small screen where there is little space. In that case it does not need to present a UI for this option. Like actionNext, if the user selects the IME's facility to forward navigate, this will show up in the application at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performEditorAction(kotlin.Int)`. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_NEXT:kotlin.Int`. |
 | flagNavigatePrevious | 4000000 | Like flagNavigateNext, but specifies there is something interesting that a backward navigation can focus on. If the user selects the IME's facility to backward navigate, this will show up in the application as an actionPrevious at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performEditorAction(kotlin.Int)`. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_PREVIOUS:kotlin.Int`. |
 | flagNoAccessoryAction | 20000000 | Used in conjunction with a custom action, this indicates that the action should not be available as an accessory button when the input method is full-screen. Note that by setting this flag, there can be cases where the action is simply never available to the user. Setting this generally means that you think showing text being edited is more important than the action you have supplied. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ACCESSORY_ACTION:kotlin.Int`. |
+| --- | --- | --- |
 | flagNoEnterAction | 40000000 | Used in conjunction with a custom action, this indicates that the action should not be available in-line as a replacement for the "enter" key. Typically this is because the action has such a significant impact or is not recoverable enough that accidentally hitting it should be avoided, such as sending a message. Note that `https://developer.android.com/reference/kotlin/android/widget/TextView#` will automatically set this flag for you on multi-line text views. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ENTER_ACTION:kotlin.Int`. |
 | flagNoExtractUi | 10000000 | Used to specify that the IME does not need to show its extracted text UI. For input methods that may be fullscreen, often when in landscape mode, this allows them to be smaller and let part of the application be shown behind. Though there will likely be limited access to the application available from the user, it can make the experience of a (mostly) fullscreen IME less jarring. Note that when this flag is specified the IME may *not* be set up to be able to display text, so it should only be used in situations where this is not needed. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_EXTRACT_UI:kotlin.Int`. |
 | flagNoFullscreen | 2000000 | Used to request that the IME never go into fullscreen mode. Applications need to be aware that the flag is not a guarantee, and not all IMEs will respect it. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_FULLSCREEN:kotlin.Int`. |
+| --- | --- | --- |
 | flagNoPersonalizedLearning | 1000000 | Used to request that the IME should not update any personalized data such as typing history and personalized language model based on what the user typed on this text editing object. Typical use cases are: - When the application is in a special mode, where user's activities are expected to be not recorded in the application's history. Some web browsers and chat applications may have this kind of modes. - When storing typing history does not make much sense. Specifying this flag in typing games may help to avoid typing history from being filled up with words that the user is less likely to type in their daily life. Another example is that when the application already knows that the expected input is not a valid word (e.g. a promotion code that is not a valid word in any natural language). Applications need to be aware that the flag is not a guarantee, and some IMEs may not respect it. |
 | normal | 0 | There are no special semantics associated with this editor. |
 
@@ -7565,42 +7732,54 @@ android:inputType
 The type of data being placed in a text field, used to help an input method decide how to let the user enter text. The constants here correspond to those defined by `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. Generally you can select a single value, though some can be combined together as indicated. Setting this attribute to anything besides none also implies that the text is editable.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | date | 14 | For entering a date. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_DATE:kotlin.Int`. |
 | datetime | 4 | For entering a date and time. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_NORMAL:kotlin.Int`. |
 | none | 0 | There is no content type. The text is not editable. |
+| --- | --- | --- |
 | number | 2 | A numeric only field. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_NORMAL:kotlin.Int`. |
 | numberDecimal | 2002 | Can be combined with number and its other options to allow a decimal (fractional) number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_FLAG_DECIMAL:kotlin.Int`. |
 | numberPassword | 12 | A numeric password field. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | numberSigned | 1002 | Can be combined with number and its other options to allow a signed number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_FLAG_SIGNED:kotlin.Int`. |
 | phone | 3 | For entering a phone number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_PHONE:kotlin.Int`. |
 | text | 1 | Just plain old text. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_NORMAL:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textAutoComplete | 10001 | Can be combined with text and its variations to specify that this field will be doing its own auto-completion and talking with the input method appropriately. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_COMPLETE:kotlin.Int`. |
 | textAutoCorrect | 8001 | Can be combined with text and its variations to request auto-correction of text being input. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_CORRECT:kotlin.Int`. |
 | textCapCharacters | 1001 | Can be combined with text and its variations to request capitalization of all characters. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_CHARACTERS:kotlin.Int`. |
+| --- | --- | --- |
 | textCapSentences | 4001 | Can be combined with text and its variations to request capitalization of the first character of every sentence. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_SENTENCES:kotlin.Int`. |
 | textCapWords | 2001 | Can be combined with text and its variations to request capitalization of the first character of every word. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_WORDS:kotlin.Int`. |
 | textEmailAddress | 21 | Text that will be used as an e-mail address. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_ADDRESS:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textEmailSubject | 31 | Text that is being supplied as the subject of an e-mail. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_SUBJECT:kotlin.Int`. |
 | textEnableTextConversionSuggestions | 100001 | Can be combined with text and its variations to indicate that if there is extra information, the IME should provide `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute.html#`. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_CONVERSION_SUGGESTIONS:kotlin.Int`. |
 | textEnableTextSuggestionSelected | 200000 | Can be combined with text and its variations to indicate that if there is extra information, the IME should provide `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute.html#` with text suggestion selected information. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_SUGGESTION_SELECTED:kotlin.Int`. |
+| --- | --- | --- |
 | textFilter | b1 | Text that is filtering some other data. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_FILTER:kotlin.Int`. |
 | textImeMultiLine | 40001 | Can be combined with text and its variations to indicate that though the regular text view should not be multiple lines, the IME should provide multiple lines if it can. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_IME_MULTI_LINE:kotlin.Int`. |
 | textLongMessage | 51 | Text that is the content of a long message. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_LONG_MESSAGE:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textMultiLine | 20001 | Can be combined with text and its variations to allow multiple lines of text in the field. If this flag is not set, the text field will be constrained to a single line. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_MULTI_LINE:kotlin.Int`. Note: If this flag is not set and the text field doesn't have max length limit, the framework automatically set maximum length of the characters to 5000 for the performance reasons. |
 | textNoSuggestions | 80001 | Can be combined with text and its variations to indicate that the IME should not show any dictionary-based word suggestions. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_NO_SUGGESTIONS:kotlin.Int`. |
 | textPassword | 81 | Text that is a password. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textPersonName | 61 | Text that is the name of a person. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PERSON_NAME:kotlin.Int`. |
 | textPhonetic | c1 | Text that is for phonetic pronunciation, such as a phonetic name field in a contact entry. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PHONETIC:kotlin.Int`. |
 | textPostalAddress | 71 | Text that is being supplied as a postal mailing address. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_POSTAL_ADDRESS:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textShortMessage | 41 | Text that is the content of a short message. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_SHORT_MESSAGE:kotlin.Int`. |
 | textUri | 11 | Text that will be used as a URI. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_URI:kotlin.Int`. |
 | textVisiblePassword | 91 | Text that is a password that should be visible. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textWebEditText | a1 | Text that is being supplied as text in a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT:kotlin.Int`. |
 | textWebEmailAddress | d1 | Text that will be used as an e-mail address on a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS:kotlin.Int`. |
 | textWebPassword | e1 | Text that will be used as a password on a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | time | 24 | For entering a time. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_TIME:kotlin.Int`. |
 
 ### android:justificationMode
@@ -7617,6 +7796,7 @@ Must be one of the following constant values.
 | inter_character | 2 | @FlaggedApi("com.android.text.flags.inter_character_justification") |
 | inter_word | 1 | Justification by stretching word spacing. |
 | none | 0 | No justification. |
+| --- | --- | --- |
 
 ### android:letterSpacing
 
@@ -7641,6 +7821,7 @@ Must be one of the following constant values.
 | loose | 1 | The least restrictive line-break rules are used for line breaking. |
 | none | 0 | No line-break rules are used for line breaking. |
 | normal | 2 | The most common line-break rules are used for line breaking. |
+| --- | --- | --- |
 | strict | 3 | The most strict line-break rules are used for line breaking. |
 
 ### android:lineBreakWordStyle
@@ -8011,14 +8192,17 @@ May be a dimension value, which is a floating point number appended with a unit 
 android:textStyle
 ```
 Style (normal, bold, italic, bold|italic) for the text.
+| --- | --- |
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bold | 1 | |
 | italic | 2 | |
 | normal | 0 | |
+| --- | --- | --- |
 
 ### android:typeface
 
@@ -8034,6 +8218,7 @@ Must be one of the following constant values.
 | monospace | 3 | |
 | normal | 0 | |
 | sans | 1 | |
+| --- | --- | --- |
 | serif | 2 | |
 
 ### android:width
@@ -8163,6 +8348,7 @@ If you override this method you *must* call through to the superclass implementa
 | `info` | [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#): The info to which to add the extra data. Never `null`. |
 | `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A key specifying the type of extra data to add to the info. The extra data should be added to the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` returned by the info's `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#getExtras()` method. Never `null`. |
 | `arguments` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` holding any arguments relevant for this request. May be `null` if the service provided no arguments. |
+| --- | --- |
 
 ### addTextChangedListener
 
@@ -8209,6 +8395,7 @@ Convenience method to append the specified text slice to the TextView's display 
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: text to be appended to the already displayed text |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first character in the `text` |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the character following the last character in the `text` |
+| --- | --- |
 
 **See Also**
 
@@ -8421,6 +8608,7 @@ Finds the Views that contain given text. The containment is case insensitive. Th
 | `outViews` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!\>!: The output list of matching Views. |
 | `searched` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text to match against. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FIND_VIEWS_WITH_TEXT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FIND_VIEWS_WITH_CONTENT_DESCRIPTION:kotlin.Int` |
+| --- | --- |
 
 ### getAccessibilityClassName
 
@@ -10710,6 +10898,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`. |
 | `count` | Number of pairs as returned by event.getRepeatCount(). |
 | `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The KeyEvent object that defines the button action. |
+| --- | --- |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of times the action was made. |
 
 | Return ||
@@ -10888,6 +11077,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -11144,6 +11334,7 @@ Specify whether this widget should automatically scale the text to try to perfec
 | `autoSizeMinTextSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the minimum text size available for auto-size |
 | `autoSizeMaxTextSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum text size available for auto-size |
 | `autoSizeStepGranularity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the auto-size step granularity. It is used in conjunction with the minimum and maximum text size in order to build the set of text sizes the system uses to choose from when auto-sizing |
+| --- | --- |
 | `unit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the desired dimension unit for all sizes above. See `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#` for the possible dimension units |
 
 | Exceptions ||
@@ -11325,6 +11516,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `left` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `top` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `right` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
+| --- | --- |
 | `bottom` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 
 ### setCompoundDrawablesRelative
@@ -11349,6 +11541,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `start` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `top` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `end` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
+| --- | --- |
 | `bottom` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 
 ### setCompoundDrawablesRelativeWithIntrinsicBounds
@@ -11373,6 +11566,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `start` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `top` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `end` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
+| --- | --- |
 | `bottom` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 
 ### setCompoundDrawablesRelativeWithIntrinsicBounds
@@ -11397,6 +11591,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the start Drawable. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the top Drawable. |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the end Drawable. |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the bottom Drawable. |
 
 ### setCompoundDrawablesWithIntrinsicBounds
@@ -11421,6 +11616,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `left` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `top` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 | `right` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
+| --- | --- |
 | `bottom` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: This value may be `null`. |
 
 ### setCompoundDrawablesWithIntrinsicBounds
@@ -11445,6 +11641,7 @@ Calling this method will overwrite any Drawables previously set using `https://d
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the left Drawable. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the top Drawable. |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the right Drawable. |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of the bottom Drawable. |
 
 ### setCursorVisible
@@ -12559,6 +12756,7 @@ Sets the padding. The view may add on the space required to display the scrollba
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the left padding in pixels |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the top padding in pixels |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the right padding in pixels |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bottom padding in pixels |
 
 **See Also**
@@ -12586,6 +12784,7 @@ Sets the relative padding. The view may add on the space required to display the
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start padding in pixels |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the top padding in pixels |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end padding in pixels |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bottom padding in pixels |
 
 **See Also**
@@ -12828,6 +13027,7 @@ Sets the TextView to display the specified slice of the specified char array. Yo
 | `text` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html): char array to be displayed. This value cannot be `null`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): start index in the char array |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): length of char count after `start` |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -13708,6 +13908,7 @@ If you override this method you *must* call through to the superclass implementa
 | `gainFocus` | True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
 | `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| --- | --- |
 
 ### onLayout
 
@@ -13730,6 +13931,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |
 
@@ -13777,6 +13979,7 @@ This is called in response to an internal scroll in this view (i.e., the view sc
 | `l` | Current horizontal scroll origin. |
 | `t` | Current vertical scroll origin. |
 | `oldl` | Previous horizontal scroll origin. |
+| --- | --- |
 | `oldt` | Previous vertical scroll origin. |
 
 ### onSelectionChanged
@@ -13823,6 +14026,7 @@ This method is called when the text is changed, in case any subclasses would lik
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text the TextView is displaying |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the start of the range of the text that was modified |
 | `lengthBefore` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The length of the former text that has been replaced |
+| --- | --- |
 | `lengthAfter` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The length of the replacement modified text |
 
 ### onVisibilityChanged

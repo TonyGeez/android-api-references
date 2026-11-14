@@ -9,6 +9,7 @@ abstract class CharsetDecoder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.charset.CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#) |
 
 An engine that can transform a sequence of bytes in a specific charset into a sequence of sixteen-bit Unicode characters.
@@ -43,18 +44,23 @@ Instances of this class are not safe for use by multiple concurrent threads.
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [averageCharsPerByte](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#averageCharsPerByte())`()` Returns the average number of characters that will be produced for each byte of input. |
 | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | [charset](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#charset())`()` Returns the charset that created this decoder. |
 | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)! | [decode](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#decode(java.nio.ByteBuffer))`(`in:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Convenience method that decodes the remaining content of a single input byte buffer into a newly-allocated character buffer. |
+| --- | --- |
 | [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult)! | [decode](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#decode(java.nio.ByteBuffer,%20java.nio.CharBuffer,%20kotlin.Boolean))`(`in:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `out:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)!`, `endOfInput:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Decodes as many bytes as possible from the given input buffer, writing the results to the given output buffer. |
 | open [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | [detectedCharset](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#detectedCharset())`()` Retrieves the charset that was detected by this decoder*(optional operation)*. |
 | [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult)! | [flush](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#flush(java.nio.CharBuffer))`(`out:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)!`)` Flushes this decoder. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutoDetecting](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#isAutoDetecting())`()` Tells whether or not this decoder implements an auto-detecting charset. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCharsetDetected](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#isCharsetDetected())`()` Tells whether or not this decoder has yet detected a charset*(optional operation)*. |
 | open [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)! | [malformedInputAction](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#malformedInputAction())`()` Returns this decoder's current action for malformed-input errors. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [maxCharsPerByte](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#maxCharsPerByte())`()` Returns the maximum number of characters that will be produced for each byte of input. |
 | [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#)! | [onMalformedInput](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#onMalformedInput(java.nio.charset.CodingErrorAction))`(`newAction:` ` [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)!`)` Changes this decoder's action for malformed-input errors. |
 | [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#)! | [onUnmappableCharacter](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#onUnmappableCharacter(java.nio.charset.CodingErrorAction))`(`newAction:` ` [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)!`)` Changes this decoder's action for unmappable-character errors. |
+| --- | --- |
 | [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#)! | [replaceWith](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#replaceWith(kotlin.String))`(`newReplacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Changes this decoder's replacement value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replacement](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#replacement())`()` Returns this decoder's replacement value. |
 | [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#)! | [reset](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#reset())`()` Resets this decoder, clearing any internal state. |
+| --- | --- |
 | open [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)! | [unmappableCharacterAction](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#unmappableCharacterAction())`()` Returns this decoder's current action for unmappable-character errors. |
 
 | Protected methods ||
@@ -62,9 +68,11 @@ Instances of this class are not safe for use by multiple concurrent threads.
 | abstract [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult)! | [decodeLoop](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#decodeLoop(java.nio.ByteBuffer,%20java.nio.CharBuffer))`(`in:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `out:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)!`)` Decodes one or more bytes into one or more characters. |
 | open [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult)! | [implFlush](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#implFlush(java.nio.CharBuffer))`(`out:` ` [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)!`)` Flushes this decoder. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implOnMalformedInput](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#implOnMalformedInput(java.nio.charset.CodingErrorAction))`(`newAction:` ` [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)!`)` Reports a change to this decoder's malformed-input action. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implOnUnmappableCharacter](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#implOnUnmappableCharacter(java.nio.charset.CodingErrorAction))`(`newAction:` ` [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction)!`)` Reports a change to this decoder's unmappable-character action. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implReplaceWith](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#implReplaceWith(kotlin.String))`(`newReplacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Reports a change to this decoder's replacement value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implReset](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#implReset())`()` Resets this decoder, clearing any charset-specific internal state. |
+| --- | --- |
 
 ## Protected constructors
 
@@ -86,6 +94,7 @@ Initializes a new decoder. The new decoder will have the given chars-per-byte va
 | `cs` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)!:The charset that created this decoder |
 | `averageCharsPerByte` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):A positive float value indicating the expected number of characters that will be produced for each input byte |
 | `maxCharsPerByte` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):A positive float value indicating the maximum number of characters that will be produced for each input byte |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------|
@@ -146,6 +155,7 @@ This method implements an entire [decoding operation](https://developer.android.
 | `java.lang.IllegalStateException` | If a decoding operation is already in progress |
 | `java.nio.charset.MalformedInputException` | If the byte sequence starting at the input buffer's current position is not legal for this charset and the current malformed-input action is [CodingErrorAction.REPORT](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction) |
 | `java.nio.charset.UnmappableCharacterException` | If the byte sequence starting at the input buffer's current position cannot be mapped to an equivalent character sequence and the current unmappable-character action is [java.nio.charset.CodingErrorAction#REPORT](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction) |
+| --- | --- |
 | `java.nio.charset.CoderMalfunctionError` | If an invocation of the decodeLoop method threw an unexpected exception |
 | `java.lang.NullPointerException` | if input buffer is null |
 
@@ -183,6 +193,7 @@ This method works by invoking the [decodeLoop](https://developer.android.com/ref
 | `in` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The input byte buffer |
 | `out` | [CharBuffer](https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#)!:The output character buffer |
 | `endOfInput` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if, and only if, the invoker can provide no additional input bytes beyond those in the given buffer |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -193,6 +204,7 @@ This method works by invoking the [decodeLoop](https://developer.android.com/ref
 | `java.lang.IllegalStateException` | If a decoding operation is already in progress and the previous step was an invocation neither of the [reset](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#reset())method, nor of this method with a value of`false`for the`endOfInput`parameter, nor of this method with a value of`true`for the`endOfInput`parameter but a return value indicating an incomplete decoding operation |
 | `java.nio.charset.CoderMalfunctionError` | If an invocation of the decodeLoop method threw an unexpected exception |
 | `java.lang.NullPointerException` | if input or output buffer is null |
+| --- | --- |
 
 ### detectedCharset
 

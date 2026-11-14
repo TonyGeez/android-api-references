@@ -9,9 +9,11 @@ open class GenericSignatureFormatError : ClassFormatError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ClassFormatError](https://developer.android.com/reference/kotlin/java/lang/ClassFormatError.html#) ||
 | | | | | ↳ | [java.lang.reflect.GenericSignatureFormatError](https://developer.android.com/reference/kotlin/java/lang/reflect/GenericSignatureFormatError#) |
 

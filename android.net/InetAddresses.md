@@ -3,12 +3,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # InetAddresses
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/InetAddresses "View this page in Java")
+| --- | --- |
 
 ```
 open class InetAddresses
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.InetAddresses](https://developer.android.com/reference/kotlin/android/net/InetAddresses#) |
 
 Utility methods for `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#` implementations.

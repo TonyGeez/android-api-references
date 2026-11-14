@@ -6,12 +6,14 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 # SliceProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/slice/SliceProvider "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SliceProvider : ContentProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#) ||
 | | ↳ | [android.app.slice.SliceProvider](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#) |
 
@@ -66,18 +68,23 @@ Slices can be identified by a Uri or by an Intent. To link an Intent with a slic
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachInfo](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#attachInfo(android.content.Context,%20android.content.pm.ProviderInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `info:` ` [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#)!`)` <br /> |
 | open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [call](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle))`(`method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#getType(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [insert](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#insert(android.net.Uri,%20android.content.ContentValues))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `values:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)?`)` <br /> |
 | open [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice)! | [onBindSlice](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onBindSlice(android.net.Uri,%20kotlin.collections.MutableSet))`(`sliceUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `supportedSpecs:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SliceSpec](https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec)!>!`)` Implemented to create a slice. |
+| --- | --- |
 | open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | [onCreatePermissionRequest](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onCreatePermissionRequest(android.net.Uri))`(`sliceUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Called when an app requests a slice it does not have write permission to the uri for. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | [onGetSliceDescendants](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onGetSliceDescendants(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Obtains a list of slices that are descendants of the specified Uri. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [onMapIntentToUri](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onMapIntentToUri(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` This method must be overridden if an [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#) is specified on the SliceProvider. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSlicePinned](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onSlicePinned(android.net.Uri))`(`sliceUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Called to inform an app that a slice has been pinned. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSliceUnpinned](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#onSliceUnpinned(android.net.Uri))`(`sliceUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Called to inform an app that a slices is no longer pinned. |
 | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | [query](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `queryArgs:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`, `cancellationSignal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` <br /> |
+| --- | --- |
 | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | [query](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
 | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | [query](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cancellationSignal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](https://developer.android.com/reference/kotlin/android/app/slice/SliceProvider#update(android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `values:` ` [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -165,6 +172,7 @@ open fun call(
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
@@ -189,6 +197,7 @@ fun delete(
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The full URI to query, including a row ID (if a specific record is requested). This value cannot be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional restriction to apply to rows when deleting. This value may be`null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -403,6 +412,7 @@ fun query(
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This will be the full URI sent by the client. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:The list of columns to put into the cursor. If`null`provide a default set of columns. |
 | `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_LIMIT:kotlin.String), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
+| --- | --- |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?:A signal to cancel the operation in progress, or`null`. |
 
 | Return ||
@@ -430,6 +440,7 @@ fun query(
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:The list of columns to put into the cursor. If`null`all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A selection criteria to apply when filtering rows. If`null`then all rows are included. |
+| --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:How the rows in the cursor should be sorted. If`null`then the provider is free to define the sort order. |
 
@@ -459,9 +470,11 @@ fun query(
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:The list of columns to put into the cursor. If`null`all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A selection criteria to apply when filtering rows. If`null`then all rows are included. |
+| --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:How the rows in the cursor should be sorted. If`null`then the provider is free to define the sort order. |
 | `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?:A signal to cancel the operation in progress, or`null`if none. If the operation is canceled, then [android.os.OperationCanceledException](https://developer.android.com/reference/kotlin/android/os/OperationCanceledException.html#) will be thrown when the query is executed. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -487,6 +500,7 @@ fun update(
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be`null`. |
 | `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)?:A set of column_name/value pairs to update in the database. This value may be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional filter to match rows to update. This value may be`null`. |
+| --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 
 | Return ||

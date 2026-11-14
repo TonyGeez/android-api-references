@@ -9,6 +9,7 @@ open class XmlPullParserFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.xmlpull.v1.XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#) |
 
 This class is used to create implementations of XML Pull Parser defined in XMPULL V1 API.
@@ -28,12 +29,15 @@ This class is used to create implementations of XML Pull Parser defined in XMPUL
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the current value of the feature with given name. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#isNamespaceAware())`()` Indicates whether or not the factory is configured to produce parsers which are namespace aware (it simply set feature XmlPullParser.FEATURE_PROCESS_NAMESPACES to true or false). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#isValidating())`()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
+| --- | --- |
 | openstatic [XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newInstance())`()` Creates a new instance of a PullParserFactory that can be used to create XML pull parsers. |
 | openstatic [XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newInstance(kotlin.String,%20java.lang.Class))`(`unused:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unused2:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a factory that always returns instances of Android's built-in [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser) and [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer) implementation. |
 | open [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser)! | [newPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newPullParser())`()` Creates a new instance of a XML Pull Parser using the currently configured factory features. |
+| --- | --- |
 | open [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer)! | [newSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newSerializer())`()` Creates a new instance of a XML Serializer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the features to be set when XML Pull Parser is created by this factory. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNamespaceAware](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setNamespaceAware(kotlin.Boolean))`(`awareness:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will provide support for XML namespaces. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValidating](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setValidating(kotlin.Boolean))`(`validating:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will be validating (it simply set feature XmlPullParser.FEATURE_VALIDATION to true or false). |
 
 | Properties ||
@@ -41,6 +45,7 @@ This class is used to create implementations of XML Pull Parser defined in XMPUL
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classNamesLocation](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#classNamesLocation:kotlin.String) Unused, but we have to keep it because it's public API. |
 | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [features](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#features:java.util.HashMap) <br /> |
 | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parserClasses](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#parserClasses:java.util.ArrayList) <br /> |
+| --- | --- |
 | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [serializerClasses](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#serializerClasses:java.util.ArrayList) <br /> |
 
 ## Constants

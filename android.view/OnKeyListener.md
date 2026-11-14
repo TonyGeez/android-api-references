@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnKeyListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnKeyListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnKeyListener
@@ -43,6 +44,7 @@ Key presses in software keyboards will generally NOT trigger this method, althou
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view the key has been dispatched to. |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The code for the physical key that was pressed |
 | `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!:The KeyEvent object containing full information about the event. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

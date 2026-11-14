@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # NdefFormatable
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NdefFormatable "View this page in Java") 
+| --- | --- |
 
 ```
 class NdefFormatable : TagTechnology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.tech.NdefFormatable](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#) |
 
 Provide access to NDEF format operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
@@ -30,9 +32,11 @@ Unfortunately the procedures to convert unformated tags to NDEF formatted tags a
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#connect())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [format](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#format(android.nfc.NdefMessage))`(`firstMessage:` ` [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)!`)` Format a tag as NDEF, and write a [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatReadOnly](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#formatReadOnly(android.nfc.NdefMessage))`(`firstMessage:` ` [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)!`)` Formats a tag as NDEF, write a [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#), and make read-only. |
 | static [NdefFormatable](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NdefFormatable](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#) for the given tag. |
 | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#getTag())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NdefFormatable#isConnected())`()` <br /> |
 
 ## Public methods
@@ -50,6 +54,7 @@ fun close(): Unit
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### connect
 
@@ -64,6 +69,7 @@ fun connect(): Unit
 | `TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or connect is canceled |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
+| --- | --- |
 
 ### format
 
@@ -92,6 +98,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or the operation is canceled |
 | `android.nfc.FormatException` | if the NDEF Message to write is malformed |
+| --- | --- |
 
 ### formatReadOnly
 
@@ -120,6 +127,7 @@ Requires the [android.Manifest.permission#NFC](https://developer.android.com/ref
 | `android.nfc.TagLostException` | if the tag leaves the field |
 | `java.io.IOException` | if there is an I/O failure, or the operation is canceled |
 | `android.nfc.FormatException` | if the NDEF Message to write is malformed |
+| --- | --- |
 | `java.lang.SecurityException` | if the tag object is reused after the tag has left the field |
 
 ### get

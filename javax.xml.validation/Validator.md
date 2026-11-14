@@ -9,6 +9,7 @@ abstract class Validator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) |
 
 A processor that checks an XML document against [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema).
@@ -28,12 +29,15 @@ Note that while the [validate(javax.xml.transform.Source)](https://developer.and
 | abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | [getErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getErrorHandler())`()` Gets the current [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| --- | --- |
 | abstract [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | [getResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getResourceResolver())`()` Gets the current [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#reset())`()` Reset this`Validator`to its original configuration. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler))`(`errorHandler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!`)` Sets the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to receive errors encountered during the`validate`method invocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setProperty(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setResourceResolver(org.w3c.dom.ls.LSResourceResolver))`(`resourceResolver:` ` [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)!`)` Sets the [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) to customize resource resolution while in a validation episode. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source))`(`source:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`)` Validates the specified input. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source,%20javax.xml.transform.Result))`(`source:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`, `result:` ` [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#)!`)` Validates the specified input and send the augmented validation result to the specified output. |
 
@@ -100,6 +104,7 @@ Implementors are free (and encouraged) to invent their own features, using names
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the feature name but cannot determine its value at this time. |
+| --- | --- |
 
 **See Also**
 
@@ -134,6 +139,7 @@ Implementors are free (and encouraged) to invent their own properties, using nam
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the XMLReader recognizes the property name but cannot determine its value at this time. |
+| --- | --- |
 
 **See Also**
 
@@ -239,6 +245,7 @@ The feature name is any fully-qualified URI. It is possible for a [Validator](ht
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the feature name but cannot set the requested value. |
+| --- | --- |
 
 **See Also**
 
@@ -271,6 +278,7 @@ The property name is any fully-qualified URI. It is possible for a [Validator](h
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the property name but cannot set the requested value. |
+| --- | --- |
 
 ### setResourceResolver
 
@@ -343,9 +351,11 @@ This method places the following restrictions on the types of the [Source](https
 #### [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)/ [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) accepted:
 
 | | [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#) | [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource.html#) | [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource.html#) |
+| --- | --- | --- | --- |
 | null | OK | OK | OK | OK |
 | [javax.xml.transform.sax.SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult.html#) | OK | Err | Err | Err |
 | [javax.xml.transform.dom.DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult.html#) | Err | OK | Err | Err |
+| --- | --- | --- | --- | --- |
 | [javax.xml.transform.stream.StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult.html#) | Err | Err | Err | OK |
 
 To validate one [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#) into another kind of [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#), use the identity transformer (see [javax.xml.transform.TransformerFactory#newTransformer()](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#newTransformer())).
@@ -364,6 +374,7 @@ If a document is valid, or if a document contains some errors but none of them w
 | `java.lang.IllegalArgumentException` | If the [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) type doesn't match the [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#) type, or if the specified source is not a [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#), [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource.html#) or [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource.html#). |
 | `org.xml.sax.SAXException` | If the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) throws a [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException.html#) or if a fatal error is found and the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) returns normally. |
 | `java.io.IOException` | If the validator is processing a [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#) and the underlying [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) throws an [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#). |
+| --- | --- |
 | `java.lang.NullPointerException` | If the source parameter is null. |
 
 **See Also**

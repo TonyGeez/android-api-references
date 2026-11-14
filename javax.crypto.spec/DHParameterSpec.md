@@ -9,6 +9,7 @@ open class DHParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.DHParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec#) |
 
 This class specifies the set of parameters used with the Diffie-Hellman algorithm, as specified in PKCS #3:*Diffie-Hellman Key-Agreement Standard*.
@@ -31,6 +32,7 @@ Note that this class does not perform any validation on specified parameters. Th
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec#getG())`()` Returns the base generator`g`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec#getL())`()` Returns the size in bits,`l`, of the random exponent (private value). |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec#getP())`()` Returns the prime modulus`p`. |
+| --- | --- |
 
 ## Public constructors
 
@@ -69,6 +71,7 @@ Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`, a base 
 | `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime modulus |
 | `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base generator |
 | `l` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size in bits of the random exponent (private value) |
+| --- | --- |
 
 ## Public methods
 

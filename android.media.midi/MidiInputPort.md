@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # MidiInputPort
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiInputPort "View this page in Java") 
+| --- | --- |
 
 ```
 class MidiInputPort : MidiReceiver, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.midi.MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver) ||
 | | ↳ | [android.media.midi.MidiInputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort#) |
 
@@ -23,6 +25,7 @@ This class is used for sending data to a port on a MIDI device
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort#close())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPortNumber](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort#getPortNumber())`()` Returns the port number of this port |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFlush](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort#onFlush())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSend](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort#onSend(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long))`(`msg:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timestamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Protected methods ||
@@ -92,6 +95,7 @@ fun onSend(
 | `msg` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the MIDI data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset of the first byte of the data in the array to be processed |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of MIDI data in the array to be processed |
+| --- | --- |
 | `timestamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the timestamp of the message (based on [java.lang.System#nanoTime](https://developer.android.com/reference/kotlin/java/lang/System.html#nanoTime()) |
 
 | Exceptions ||

@@ -9,9 +9,11 @@ open class HttpRetryException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.net.HttpRetryException](https://developer.android.com/reference/kotlin/java/net/HttpRetryException#) |
 
 Thrown to indicate that a HTTP request needs to be retried but cannot be retried automatically, due to streaming mode being enabled.
@@ -28,6 +30,7 @@ Thrown to indicate that a HTTP request needs to be retried but cannot be retried
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocation](https://developer.android.com/reference/kotlin/java/net/HttpRetryException#getLocation())`()` Returns the value of the Location header field if the error resulted from redirection. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/net/HttpRetryException#getReason())`()` Returns a string explaining why the http request could not be retried. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [responseCode](https://developer.android.com/reference/kotlin/java/net/HttpRetryException#responseCode())`()` Returns the http response code |
+| --- | --- |
 
 ## Public constructors
 
@@ -66,6 +69,7 @@ Constructs a new `HttpRetryException` with detail message responseCode and the c
 | `detail` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the HTTP response code from server. |
 | `location` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the URL to be redirected to |
+| --- | --- |
 
 ## Public methods
 

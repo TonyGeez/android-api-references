@@ -7,6 +7,7 @@ class SurfaceControl : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.SurfaceControl](https://developer.android.com/reference/kotlin/android/view/SurfaceControl#) |
 
 Handle to an on-screen Surface managed by the system compositor. The SurfaceControl is a combination of a buffer source, and metadata about how to display the buffers. By constructing a `https://developer.android.com/reference/kotlin/android/view/Surface` from this SurfaceControl you can submit buffers to be composited. Using `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` you can manipulate various properties of how the buffer will be displayed on-screen. SurfaceControl's are arranged into a scene-graph like hierarchy, and as such any SurfaceControl may have a parent. Geometric properties like transform, crop, and Z-ordering will be inherited from the parent, as if the child were content in the parents buffer stream.
@@ -18,9 +19,11 @@ Handle to an on-screen Surface managed by the system compositor. The SurfaceCont
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#` objects. |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.JankData` Jank information to be fed back via `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` Listener interface to be informed about SurfaceFlinger's jank classification for a specific surface. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration` Handle to a registered OnJankDatalistener. |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` An atomic set of changes to a set of SurfaceControl. |
 | abstract | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionCommittedListener` Interface to handle request to `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCommittedListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.TransactionCommittedListener)` |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionStats` Transaction stats given to the listener registered in `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCompletedListener(java.util.concurrent.Executor,%20java.util.function.Consumer)` |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TrustedPresentationThresholds` Threshold values that are sent with `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#setTrustedPresentationCallback(android.view.SurfaceControl,%20android.view.SurfaceControl.TrustedPresentationThresholds,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` |
 
@@ -29,9 +32,11 @@ Handle to an on-screen Surface managed by the system compositor. The SurfaceCont
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_IDENTITY:kotlin.Int` Identity transform. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_HORIZONTAL:kotlin.Int` Mirror horizontally. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_HORIZONTAL_ROTATE_90:kotlin.Int` Mirror horizontally and rotate 90 degrees clock-wise. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_VERTICAL:kotlin.Int` Mirror vertically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_VERTICAL_ROTATE_90:kotlin.Int` Mirror vertically and rotate 90 degrees clock-wise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_180:kotlin.Int` Rotate 180 degrees clock-wise. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_270:kotlin.Int` Rotate 270 degrees clock-wise. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_90:kotlin.Int` Rotate 90 degrees clock-wise. |
 
@@ -52,9 +57,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#isValid()()` Check whether this instance points to a valid layer with the system-compositor. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
+| --- | --- |
 | [SurfaceControl.OnJankDataListenerRegistration](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#release()()` Release the local reference to the server-side surface. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Protected methods ||
@@ -104,6 +111,7 @@ static val BUFFER_TRANSFORM_MIRROR_HORIZONTAL_ROTATE_90: Int
 ```
 
 Mirror horizontally and rotate 90 degrees clock-wise. Equivalent to (`https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_HORIZONTAL:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_90:kotlin.Int`).
+| --- | --- |
 
  Value: 5
 
@@ -128,6 +136,7 @@ static val BUFFER_TRANSFORM_MIRROR_VERTICAL_ROTATE_90: Int
 ```
 
 Mirror vertically and rotate 90 degrees clock-wise. Equivalent to (`https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_VERTICAL:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_90:kotlin.Int`).
+| --- | --- |
 
  Value: 6
 
@@ -140,6 +149,7 @@ static val BUFFER_TRANSFORM_ROTATE_180: Int
 ```
 
 Rotate 180 degrees clock-wise. Cannot be combined with other transforms. Equivalent to (`https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_HORIZONTAL:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_MIRROR_VERTICAL:kotlin.Int`).
+| --- | --- |
 
  Value: 3
 
@@ -152,6 +162,7 @@ static val BUFFER_TRANSFORM_ROTATE_270: Int
 ```
 
 Rotate 270 degrees clock-wise. Cannot be combined with other transforms. Equivalent to (`https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_180:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#BUFFER_TRANSFORM_ROTATE_90:kotlin.Int`).
+| --- | --- |
 
  Value: 7
 

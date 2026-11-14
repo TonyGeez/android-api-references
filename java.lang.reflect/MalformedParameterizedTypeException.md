@@ -9,9 +9,11 @@ open class MalformedParameterizedTypeException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.reflect.MalformedParameterizedTypeException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParameterizedTypeException#) |
 
 Thrown when a semantically malformed parameterized type is encountered by a reflective method that needs to instantiate it. For example, if the number of type arguments to a parameterized type is wrong.

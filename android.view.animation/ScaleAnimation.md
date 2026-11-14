@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ScaleAnimation
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/ScaleAnimation "View this page in Java") 
+| --- | --- |
 
 ```
 open class ScaleAnimation : Animation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation) ||
 | | ↳ | [android.view.animation.ScaleAnimation](https://developer.android.com/reference/kotlin/android/view/animation/ScaleAnimation#) |
 
@@ -79,6 +81,7 @@ Constructor to use when building a ScaleAnimation from code
 | `fromX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the start of the animation |
 | `toX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the end of the animation |
 | `fromY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the start of the animation |
+| --- | --- |
 | `toY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the end of the animation |
 
 ### ScaleAnimation
@@ -102,9 +105,11 @@ Constructor to use when building a ScaleAnimation from code
 | `fromX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the start of the animation |
 | `toX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the end of the animation |
 | `fromY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the start of the animation |
+| --- | --- |
 | `toY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the end of the animation |
 | `pivotX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the point about which the object is being scaled, specified as an absolute number where 0 is the left edge. (This point remains fixed while the object changes size.) |
 | `pivotY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the point about which the object is being scaled, specified as an absolute number where 0 is the top edge. (This point remains fixed while the object changes size.) |
+| --- | --- |
 
 ### ScaleAnimation
 
@@ -129,9 +134,11 @@ Constructor to use when building a ScaleAnimation from code
 | `fromX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the start of the animation |
 | `toX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal scaling factor to apply at the end of the animation |
 | `fromY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the start of the animation |
+| --- | --- |
 | `toY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical scaling factor to apply at the end of the animation |
 | `pivotXType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how pivotXValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `pivotXValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the point about which the object is being scaled, specified as an absolute number where 0 is the left edge. (This point remains fixed while the object changes size.) This value can either be an absolute number if pivotXType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
+| --- | --- |
 | `pivotYType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specifies how pivotYValue should be interpreted. One of Animation.ABSOLUTE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. |
 | `pivotYValue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the point about which the object is being scaled, specified as an absolute number where 0 is the top edge. (This point remains fixed while the object changes size.) This value can either be an absolute number if pivotYType is ABSOLUTE, or a percentage (where 1.0 is 100%) otherwise. |
 
@@ -155,6 +162,7 @@ open fun initialize(
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the object being animated |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the object being animated |
 | `parentWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Width of the animated object's parent |
+| --- | --- |
 | `parentHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the animated object's parent |
 
 ## Protected methods

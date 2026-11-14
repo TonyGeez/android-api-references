@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # MbmsDownloadSessionCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/MbmsDownloadSessionCallback "View this page in Java") 
+| --- | --- |
 
 ```
 open class MbmsDownloadSessionCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.MbmsDownloadSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback#) |
 
 A callback class that apps should use to receive information on file downloads over cell-broadcast.
@@ -26,6 +28,7 @@ A callback class that apps should use to receive information on file downloads o
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback#onError(kotlin.Int,%20kotlin.String))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Indicates that the middleware has encountered an asynchronous error. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFileServicesUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback#onFileServicesUpdated(kotlin.collections.MutableList))`(`services:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo)!>!`)` Called to indicate published File Services have changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMiddlewareReady](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback#onMiddlewareReady())`()` Called to indicate that the middleware has been initialized and is ready. |
+| --- | --- |
 
 ## Public constructors
 

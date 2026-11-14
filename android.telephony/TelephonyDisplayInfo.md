@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # TelephonyDisplayInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class TelephonyDisplayInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#) |
 
 TelephonyDisplayInfo contains telephony-related information used for display purposes only. This information is provided in accordance with carrier policy and branding preferences; it is not necessarily a precise or accurate representation of the current state and should be treated accordingly. To be notified of changes in TelephonyDisplayInfo, use android.telephony.TelephonyManager#registerTelephonyCallback with a [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback) that implements [TelephonyCallback.DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener). Override the onDisplayInfoChanged() method to handle the broadcast.
@@ -22,9 +24,11 @@ TelephonyDisplayInfo contains telephony-related information used for display pur
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_LTE_ADVANCED_PRO](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_LTE_ADVANCED_PRO:kotlin.Int) Override network type when the device is connected to advanced pro [TelephonyManager.NETWORK_TYPE_LTE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int) cellular network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_LTE_CA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_LTE_CA:kotlin.Int) Override network type when the device is connected to [TelephonyManager.NETWORK_TYPE_LTE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int) cellular network and is using carrier aggregation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_NONE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_NONE:kotlin.Int) No override. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_NR_ADVANCED](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_NR_ADVANCED:kotlin.Int) Override network type when the device is connected NR cellular network and the data rate is higher than the generic 5G date rate. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_NR_NSA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_NR_NSA:kotlin.Int) Override network type when the device is connected to [TelephonyManager.NETWORK_TYPE_LTE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int) network and has E-UTRA-NR Dual Connectivity(EN-DC) capability or is currently connected to the secondary [TelephonyManager.NETWORK_TYPE_NR](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_NR:kotlin.Int) cellular network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE:kotlin.Int) Override network type when the device is connected to [TelephonyManager.NETWORK_TYPE_LTE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int) network and has E-UTRA-NR Dual Connectivity(EN-DC) capability or is currently connected to the secondary [TelephonyManager.NETWORK_TYPE_NR](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_NR:kotlin.Int) cellular network on millimeter wave bands. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,9 +39,11 @@ TelephonyDisplayInfo contains telephony-related information used for display pur
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#getNetworkType())`()` Get current packet-switching cellular network type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOverrideNetworkType](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#getOverrideNetworkType())`()` Get the override network type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRoaming](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#isRoaming())`()` Get device is roaming or not. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

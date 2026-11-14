@@ -7,6 +7,7 @@ open class WeakHashMap<K : Any!, V : Any!> : AbstractMap<K, V>, MutableMa
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap)\<K, V\> ||
 | | ↳ | [java.util.WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap#) |
 
@@ -44,12 +45,15 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#clear()()` Removes all of the mappings from this map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#containsKey(java.util.WeakHashMap.K)(key: K?)` Returns `true` if this map contains a mapping for the specified key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#containsValue(java.util.WeakHashMap.V)(value: V?)` Returns `true` if this map maps one or more keys to the specified value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer<in K, in V>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#get(java.util.WeakHashMap.K)(key: K?)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#isEmpty()()` Returns `true` if this map contains no key-value mappings. |
+| --- | --- |
 | open static [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#newWeakHashMap(kotlin.Int)(numMappings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new, empty WeakHashMap suitable for the expected number of mappings. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#put(java.util.WeakHashMap.K,%20java.util.WeakHashMap.V)(key: K, value: V)` Associates the specified value with the specified key in this map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map. |
+| --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#remove(java.util.WeakHashMap.K)(key: K?)` Removes the mapping for a key from this weak hash map if it is present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 
@@ -62,6 +66,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#keys:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#size:kotlin.Int` Returns the number of key-value mappings in this map. |
+| --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#values:kotlin.collections.MutableCollection` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection` view of the values contained in this map. |
 
 ## Public constructors
@@ -274,6 +279,7 @@ Creates a new, empty WeakHashMap suitable for the expected number of mappings. T
 | `<K>` | the type of keys maintained by the new map |
 | `<V>` | the type of mapped values |
 | `numMappings` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the expected number of mappings |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -310,6 +316,7 @@ Associates the specified value with the specified key in this map. If the map pr
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putAll
@@ -331,6 +338,7 @@ Copies all of the mappings from the specified map to this map. These mappings wi
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null. |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putAll` operation is not supported by this map |
 
 ### remove
@@ -360,6 +368,7 @@ The map will not contain a mapping for the specified key once the call returns.
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### replaceAll
 
@@ -380,6 +389,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this map's entry set iterator. |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 

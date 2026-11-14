@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MergeCursor
 
 Kotlin | [Java](https://developer.android.com/reference/android/database/MergeCursor "View this page in Java")
+| --- | --- |
 
 ```
 open class MergeCursor : AbstractCursor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.database.AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor) ||
 | | ↳ | [android.database.MergeCursor](https://developer.android.com/reference/kotlin/android/database/MergeCursor#) |
 
@@ -25,21 +27,27 @@ A convenience class that lets you present an array of Cursors as a single linear
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#close()()` Closes the Cursor, releasing all of its resources and making it completely invalid. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#deactivate()()` Deactivates the Cursor, making all calls on it fail until `https://developer.android.com/reference/kotlin/android/database/Cursor#requery()` is called. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getBlob(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a byte array. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getColumnNames()()` Returns a string array holding the names of all of the columns in the result set in the order in which they were listed in the result. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getCount()()` Returns the numbers of rows in the cursor. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getDouble(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a double. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getFloat(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a float. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getInt(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as an int. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getLong(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a long. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getShort(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a short. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getString(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the requested column as a String. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#getType(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns data type of the given column's value. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#isNull(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `true` if the value in the indicated column is null. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#onMove(kotlin.Int,%20kotlin.Int)(oldPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This function is called every time the cursor is successfully scrolled to a new position, giving the subclass a chance to update any state it may have. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#registerContentObserver(android.database.ContentObserver)(observer: https://developer.android.com/reference/kotlin/android/database/ContentObserver!)` Register an observer that is called when changes happen to the content backing this cursor. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#registerDataSetObserver(android.database.DataSetObserver)(observer: https://developer.android.com/reference/kotlin/android/database/DataSetObserver!)` Register an observer that is called when changes happen to the contents of the this cursors data set, for example, when the data set is changed via `https://developer.android.com/reference/kotlin/android/database/Cursor#requery()`, `https://developer.android.com/reference/kotlin/android/database/Cursor#deactivate()`, or #close(). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#requery()()` Performs the query that created the cursor again, refreshing its contents. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#unregisterContentObserver(android.database.ContentObserver)(observer: https://developer.android.com/reference/kotlin/android/database/ContentObserver!)` Unregister an observer that has previously been registered with this cursor via `https://developer.android.com/reference/kotlin/android/database/Cursor#registerContentObserver(android.database.ContentObserver)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/MergeCursor#unregisterDataSetObserver(android.database.DataSetObserver)(observer: https://developer.android.com/reference/kotlin/android/database/DataSetObserver!)` Unregister an observer that has previously been registered with this cursor via `https://developer.android.com/reference/kotlin/android/database/Cursor#registerContentObserver(android.database.ContentObserver)`. |
 
 | Inherited functions ||

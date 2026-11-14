@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipProfile
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipProfile "View this page in Java") 
+| --- | --- |
 
 ```
 open class SipProfile : Cloneable, Parcelable, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.sip.SipProfile](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#) |
 
 | **This class was deprecated in API level 31.**
@@ -41,18 +43,23 @@ You can create a [SipProfile](https://developer.android.com/reference/kotlin/and
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#describeContents())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAuthUserName](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getAuthUserName())`()` Gets the username for authentication. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAutoRegistration](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getAutoRegistration())`()` Gets the flag of 'Auto Registration'. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getDisplayName())`()` Gets the display name of the user. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getPassword())`()` Gets the password. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getPort())`()` Gets the port number of the SIP server. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProfileName](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getProfileName())`()` Gets the (user-defined) name of the profile. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProtocol](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getProtocol())`()` Gets the protocol used to connect to the server. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProxyAddress](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getProxyAddress())`()` Gets the network address of the server outbound proxy. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSendKeepAlive](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getSendKeepAlive())`()` Gets the flag of 'Sending keep-alive'. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSipDomain](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getSipDomain())`()` Gets the SIP domain. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUriString](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getUriString())`()` Gets the SIP URI string of this profile. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserName](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#getUserName())`()` Gets the username. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallingUid](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#setCallingUid(kotlin.Int))`(`uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the calling process's Uid in the sip service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/sip/SipProfile#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|

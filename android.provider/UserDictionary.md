@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # UserDictionary
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/UserDictionary "View this page in Java") 
+| --- | --- |
 
 ```
 open class UserDictionary
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.UserDictionary](https://developer.android.com/reference/kotlin/android/provider/UserDictionary#) |
 
 A provider of user defined words for input methods to use for predictive text input. Applications and input methods may add words into the dictionary. Words can have associated frequency information and locale information.

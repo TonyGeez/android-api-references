@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SynthesisCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/tts/SynthesisCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface SynthesisCallback
@@ -21,12 +22,15 @@ A callback to return speech data synthesized by a text to speech engine. The eng
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [audioAvailable](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#audioAvailable(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The service should call this method when synthesized audio is ready for consumption. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [done](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#done())`()` The service should call this method when all the synthesized audio for a request has been passed to [audioAvailable](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#audioAvailable(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#error())`()` The service should call this method if the speech synthesis fails. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#error(kotlin.Int))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The service should call this method if the speech synthesis fails. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxBufferSize](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#getMaxBufferSize())`()` <br /> |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFinished](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#hasFinished())`()` Check if [done](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#done())was called or not. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStarted](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#hasStarted())`()` Check if [start](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#start(kotlin.Int,%20kotlin.Int,%20kotlin.Int))was called or not. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rangeStart](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#rangeStart(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`markerInFrames:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The service may call this method to provide timing information about the spoken text. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#start(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`sampleRateInHz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `audioFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `channelCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The service should call this when it starts to synthesize audio for this request. |
+| --- | --- |
 
 ## Public methods
 
@@ -51,6 +55,7 @@ This method should only be called on the synthesis thread, while in [android.spe
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The generated audio data. This method will not hold on to`buffer`, so the caller is free to modify it after this method returns. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset into`buffer`where the audio data starts. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of bytes of audio data in`buffer`. This must be less than or equal to the return value of [getMaxBufferSize](https://developer.android.com/reference/kotlin/android/speech/tts/SynthesisCallback#getMaxBufferSize()). |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -169,6 +174,7 @@ This method should only be called on the synthesis thread, while in [android.spe
 | `markerInFrames` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in frames in the audio where this range is spoken. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start index of the range in the input text. |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The end index (exclusive) of the range in the input text. |
+| --- | --- |
 
 ### start
 
@@ -191,6 +197,7 @@ This method should only be called on the synthesis thread, while in [android.spe
 | `sampleRateInHz` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Sample rate in HZ of the generated audio. |
 | `audioFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Audio format of the generated audio. Must be one of [android.media.AudioFormat#ENCODING_PCM_8BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_8BIT:kotlin.Int) or [AudioFormat.ENCODING_PCM_16BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_16BIT:kotlin.Int). Can also be [AudioFormat.ENCODING_PCM_FLOAT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_FLOAT:kotlin.Int) when targetting Android N and above. Value is [android.media.AudioFormat#ENCODING_PCM_8BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_8BIT:kotlin.Int), [android.media.AudioFormat#ENCODING_PCM_16BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_16BIT:kotlin.Int), or [android.media.AudioFormat#ENCODING_PCM_FLOAT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_FLOAT:kotlin.Int) |
 | `channelCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of channels. Must be`1`or`2`. Value is between 1 and 2 inclusive |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

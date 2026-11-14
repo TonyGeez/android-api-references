@@ -9,6 +9,7 @@ class StringJoiner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner#) |
 
 `StringJoiner`is used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix.
@@ -27,6 +28,7 @@ Prior to adding something to the`StringJoiner`, its`sj.toString()`method will, b
 | [StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner#)! | [add](https://developer.android.com/reference/kotlin/java/util/StringJoiner#add(kotlin.CharSequence))`(`newElement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Adds a copy of the given`CharSequence`value as the next element of the`StringJoiner`value. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/java/util/StringJoiner#length())`()` Returns the length of the`String`representation of this`StringJoiner`. |
 | [StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner#)! | [merge](https://developer.android.com/reference/kotlin/java/util/StringJoiner#merge(java.util.StringJoiner))`(`other:` ` [StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner#)!`)` Adds the contents of the given`StringJoiner`without prefix and suffix as the next element if it is non-empty. |
+| --- | --- |
 | [StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner#)! | [setEmptyValue](https://developer.android.com/reference/kotlin/java/util/StringJoiner#setEmptyValue(kotlin.CharSequence))`(`emptyValue:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the sequence of characters to be used when determining the string representation of this`StringJoiner`and no elements have been added yet, that is, when it is empty. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/StringJoiner#toString())`()` Returns the current value, consisting of the`prefix`, the values added so far separated by the`delimiter`, and the`suffix`, unless no elements have been added in which case, the`prefix + suffix`or the`emptyValue`characters are returned. |
 
@@ -68,6 +70,7 @@ Constructs a`StringJoiner`with no characters in it using copies of the supplied`
 | `delimiter` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the sequence of characters to be used between each element added to the`StringJoiner` |
 | `prefix` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the sequence of characters to be used at the beginning |
 | `suffix` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the sequence of characters to be used at the end |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------|

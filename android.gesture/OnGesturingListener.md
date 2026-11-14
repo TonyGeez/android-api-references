@@ -5,6 +5,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # OnGesturingListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnGesturingListener

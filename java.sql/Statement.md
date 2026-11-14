@@ -11,8 +11,10 @@ interface Statement : AutoCloseable, Wrapper
 | [java.sql.Statement](https://developer.android.com/reference/kotlin/java/sql/Statement#) |
 
 | Known Direct Subclasses [PreparedStatement](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement) |------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [PreparedStatement](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement) | An object that represents a precompiled SQL statement. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [CallableStatement](https://developer.android.com/reference/kotlin/java/sql/CallableStatement) |------------------------------------------------------------------------------------------------|------------------------------------------------------| | [CallableStatement](https://developer.android.com/reference/kotlin/java/sql/CallableStatement) | The interface used to execute SQL stored procedures. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The object used for executing a static SQL statement and returning the results it produces.
 
@@ -25,9 +27,11 @@ By default, only one`ResultSet`object per`Statement`object can be open at the sa
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_ALL_RESULTS](https://developer.android.com/reference/kotlin/java/sql/Statement#CLOSE_ALL_RESULTS:kotlin.Int) The constant indicating that all`ResultSet`objects that have previously been kept open should be closed when calling`getMoreResults`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_CURRENT_RESULT](https://developer.android.com/reference/kotlin/java/sql/Statement#CLOSE_CURRENT_RESULT:kotlin.Int) The constant indicating that the current`ResultSet`object should be closed when calling`getMoreResults`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXECUTE_FAILED](https://developer.android.com/reference/kotlin/java/sql/Statement#EXECUTE_FAILED:kotlin.Int) The constant indicating that an error occured while executing a batch statement. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEEP_CURRENT_RESULT](https://developer.android.com/reference/kotlin/java/sql/Statement#KEEP_CURRENT_RESULT:kotlin.Int) The constant indicating that the current`ResultSet`object should not be closed when calling`getMoreResults`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GENERATED_KEYS](https://developer.android.com/reference/kotlin/java/sql/Statement#NO_GENERATED_KEYS:kotlin.Int) The constant indicating that generated keys should not be made available for retrieval. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RETURN_GENERATED_KEYS](https://developer.android.com/reference/kotlin/java/sql/Statement#RETURN_GENERATED_KEYS:kotlin.Int) The constant indicating that generated keys should be made available for retrieval. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS_NO_INFO](https://developer.android.com/reference/kotlin/java/sql/Statement#SUCCESS_NO_INFO:kotlin.Int) The constant indicating that a batch statement executed successfully but that no count of the number of rows it affected is available. |
 
 | Public methods ||
@@ -35,42 +39,55 @@ By default, only one`ResultSet`object per`Statement`object can be open at the sa
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](https://developer.android.com/reference/kotlin/java/sql/Statement#addBatch(kotlin.String))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds the given SQL command to the current list of commmands for this`Statement`object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/sql/Statement#cancel())`()` Cancels this`Statement`object if both the DBMS and driver support aborting an SQL statement. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearBatch](https://developer.android.com/reference/kotlin/java/sql/Statement#clearBatch())`()` Empties this`Statement`object's current list of SQL commands. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearWarnings](https://developer.android.com/reference/kotlin/java/sql/Statement#clearWarnings())`()` Clears all the warnings reported on this`Statement`object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/sql/Statement#close())`()` Releases this`Statement`object's database and JDBC resources immediately instead of waiting for this to happen when it is automatically closed. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](https://developer.android.com/reference/kotlin/java/sql/Statement#execute(kotlin.String))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may return multiple results. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](https://developer.android.com/reference/kotlin/java/sql/Statement#execute(kotlin.String,%20kotlin.Int))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement, which may return multiple results, and signals the driver that any auto-generated keys should be made available for retrieval. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](https://developer.android.com/reference/kotlin/java/sql/Statement#execute(kotlin.String,%20kotlin.IntArray))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](https://developer.android.com/reference/kotlin/java/sql/Statement#execute(kotlin.String,%20kotlin.Array))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| --- | --- |
 | abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [executeBatch](https://developer.android.com/reference/kotlin/java/sql/Statement#executeBatch())`()` Submits a batch of commands to the database for execution and if all commands execute successfully, returns an array of update counts. |
 | abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [executeQuery](https://developer.android.com/reference/kotlin/java/sql/Statement#executeQuery(kotlin.String))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which returns a single`ResultSet`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](https://developer.android.com/reference/kotlin/java/sql/Statement#executeUpdate(kotlin.String))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may be an`INSERT`,`UPDATE`, or`DELETE`statement or an SQL statement that returns nothing, such as an SQL DDL statement. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](https://developer.android.com/reference/kotlin/java/sql/Statement#executeUpdate(kotlin.String,%20kotlin.Int))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement and signals the driver with the given flag about whether the auto-generated keys produced by this`Statement`object should be made available for retrieval. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](https://developer.android.com/reference/kotlin/java/sql/Statement#executeUpdate(kotlin.String,%20kotlin.IntArray))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](https://developer.android.com/reference/kotlin/java/sql/Statement#executeUpdate(kotlin.String,%20kotlin.Array))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| --- | --- |
 | abstract [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [getConnection](https://developer.android.com/reference/kotlin/java/sql/Statement#getConnection())`()` Retrieves the`Connection`object that produced this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchDirection](https://developer.android.com/reference/kotlin/java/sql/Statement#getFetchDirection())`()` Retrieves the direction for fetching rows from database tables that is the default for result sets generated from this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchSize](https://developer.android.com/reference/kotlin/java/sql/Statement#getFetchSize())`()` Retrieves the number of result set rows that is the default fetch size for`ResultSet`objects generated from this`Statement`object. |
+| --- | --- |
 | abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getGeneratedKeys](https://developer.android.com/reference/kotlin/java/sql/Statement#getGeneratedKeys())`()` Retrieves any auto-generated keys created as a result of executing this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxFieldSize](https://developer.android.com/reference/kotlin/java/sql/Statement#getMaxFieldSize())`()` Retrieves the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxRows](https://developer.android.com/reference/kotlin/java/sql/Statement#getMaxRows())`()` Retrieves the maximum number of rows that a`ResultSet`object produced by this`Statement`object can contain. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](https://developer.android.com/reference/kotlin/java/sql/Statement#getMoreResults())`()` Moves to this`Statement`object's next result, returns`true`if it is a`ResultSet`object, and implicitly closes any current`ResultSet`object(s) obtained with the method`getResultSet`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](https://developer.android.com/reference/kotlin/java/sql/Statement#getMoreResults(kotlin.Int))`(`current:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves to this`Statement`object's next result, deals with any current`ResultSet`object(s) according to the instructions specified by the given flag, and returns`true`if the next result is a`ResultSet`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueryTimeout](https://developer.android.com/reference/kotlin/java/sql/Statement#getQueryTimeout())`()` Retrieves the number of seconds the driver will wait for a`Statement`object to execute. |
+| --- | --- |
 | abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getResultSet](https://developer.android.com/reference/kotlin/java/sql/Statement#getResultSet())`()` Retrieves the current result as a`ResultSet`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetConcurrency](https://developer.android.com/reference/kotlin/java/sql/Statement#getResultSetConcurrency())`()` Retrieves the result set concurrency for`ResultSet`objects generated by this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetHoldability](https://developer.android.com/reference/kotlin/java/sql/Statement#getResultSetHoldability())`()` Retrieves the result set holdability for`ResultSet`objects generated by this`Statement`object. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetType](https://developer.android.com/reference/kotlin/java/sql/Statement#getResultSetType())`()` Retrieves the result set type for`ResultSet`objects generated by this`Statement`object. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUpdateCount](https://developer.android.com/reference/kotlin/java/sql/Statement#getUpdateCount())`()` Retrieves the current result as an update count; if the result is a`ResultSet`object or there are no more results, -1 is returned. |
 | abstract [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning)! | [getWarnings](https://developer.android.com/reference/kotlin/java/sql/Statement#getWarnings())`()` Retrieves the first warning reported by calls on this`Statement`object. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/java/sql/Statement#isClosed())`()` Retrieves whether this`Statement`object has been closed. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPoolable](https://developer.android.com/reference/kotlin/java/sql/Statement#isPoolable())`()` Returns a value indicating whether the`Statement`is poolable or not. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCursorName](https://developer.android.com/reference/kotlin/java/sql/Statement#setCursorName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the SQL cursor name to the given`String`, which will be used by subsequent`Statement`object`execute`methods. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEscapeProcessing](https://developer.android.com/reference/kotlin/java/sql/Statement#setEscapeProcessing(kotlin.Boolean))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets escape processing on or off. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchDirection](https://developer.android.com/reference/kotlin/java/sql/Statement#setFetchDirection(kotlin.Int))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the driver a hint as to the direction in which rows will be processed in`ResultSet`objects created using this`Statement`object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchSize](https://developer.android.com/reference/kotlin/java/sql/Statement#setFetchSize(kotlin.Int))`(`rows:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the JDBC driver a hint as to the number of rows that should be fetched from the database when more rows are needed for`ResultSet`objects genrated by this`Statement`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxFieldSize](https://developer.android.com/reference/kotlin/java/sql/Statement#setMaxFieldSize(kotlin.Int))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxRows](https://developer.android.com/reference/kotlin/java/sql/Statement#setMaxRows(kotlin.Int))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of rows that any`ResultSet`object generated by this`Statement`object can contain to the given number. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPoolable](https://developer.android.com/reference/kotlin/java/sql/Statement#setPoolable(kotlin.Boolean))`(`poolable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Requests that a`Statement`be pooled or not pooled. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQueryTimeout](https://developer.android.com/reference/kotlin/java/sql/Statement#setQueryTimeout(kotlin.Int))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of seconds the driver will wait for a`Statement`object to execute to the given number of seconds. |
 
 | Inherited functions ||
@@ -324,6 +341,7 @@ The`execute`method executes an SQL statement and indicates the form of the first
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`, the second parameter supplied to this method is not`Statement.RETURN_GENERATED_KEYS`or`Statement.NO_GENERATED_KEYS`, the method is called on a`PreparedStatement`or`CallableStatement` |
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method with a constant of Statement.RETURN_GENERATED_KEYS |
+| --- | --- |
 
 **See Also**
 
@@ -364,6 +382,7 @@ The`execute`method executes an SQL statement and indicates the form of the first
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method |
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`, the elements in the`int`array passed to this method are not valid column indexes, the method is called on a`PreparedStatement`or`CallableStatement` |
+| --- | --- |
 
 **See Also**
 
@@ -403,6 +422,7 @@ The`execute`method executes an SQL statement and indicates the form of the first
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method |
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`,the elements of the`String`array passed to this method are not valid column names, the method is called on a`PreparedStatement`or`CallableStatement` |
+| --- | --- |
 
 **See Also**
 
@@ -526,6 +546,7 @@ Executes the given SQL statement and signals the driver with the given flag abou
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`, the given SQL statement returns a`ResultSet`object, the given constant is not one of those allowed, the method is called on a`PreparedStatement`or`CallableStatement` |
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method with a constant of Statement.RETURN_GENERATED_KEYS |
+| --- | --- |
 
 ### executeUpdate
 
@@ -556,6 +577,7 @@ Executes the given SQL statement and signals the driver that the auto-generated 
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method |
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`, the SQL statement returns a`ResultSet`object,the second argument supplied to this method is not an`int`array whose elements are valid column indexes, the method is called on a`PreparedStatement`or`CallableStatement` |
+| --- | --- |
 
 ### executeUpdate
 
@@ -586,6 +608,7 @@ Executes the given SQL statement and signals the driver that the auto-generated 
 | `java.sql.SQLFeatureNotSupportedException` | if the JDBC driver does not support this method |
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
 | `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`, the SQL statement returns a`ResultSet`object, the second argument supplied to this method is not a`String`array whose elements are valid column names, the method is called on a`PreparedStatement`or`CallableStatement` |
+| --- | --- |
 
 ### getConnection
 

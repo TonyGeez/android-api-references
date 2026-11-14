@@ -3,15 +3,18 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # NetworkViolation
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/strictmode/NetworkViolation "View this page in Java")
+| --- | --- |
 
 ```
 class NetworkViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.NetworkViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/NetworkViolation#) |
+| --- | --- | --- | --- |
 
 ## Summary
 

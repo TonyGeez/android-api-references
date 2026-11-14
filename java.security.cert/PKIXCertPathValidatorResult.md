@@ -9,9 +9,11 @@ open class PKIXCertPathValidatorResult : CertPathValidatorResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.PKIXCertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#) |
 
 | Known Direct Subclasses [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathBuilderResult) | This class represents the successful result of the PKIX certification path builder algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class represents the successful result of the PKIX certification path validation algorithm.
 
@@ -34,6 +36,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#clone())`()` Returns a copy of this object. |
 | open [PolicyNode](https://developer.android.com/reference/kotlin/java/security/cert/PolicyNode)! | [getPolicyTree](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#getPolicyTree())`()` Returns the root node of the valid policy tree resulting from the PKIX certification path validation algorithm. |
 | open [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)! | [getPublicKey](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#getPublicKey())`()` Returns the public key of the subject (target) of the certification path, including any inherited public key parameters if applicable. |
+| --- | --- |
 | open [TrustAnchor](https://developer.android.com/reference/kotlin/java/security/cert/TrustAnchor)! | [getTrustAnchor](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#getTrustAnchor())`()` Returns the`TrustAnchor`describing the CA that served as a trust anchor for the certification path. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathValidatorResult#toString())`()` Return a printable representation of this`PKIXCertPathValidatorResult`. |
 
@@ -57,6 +60,7 @@ Creates an instance of`PKIXCertPathValidatorResult`containing the specified para
 | `trustAnchor` | [TrustAnchor](https://developer.android.com/reference/kotlin/java/security/cert/TrustAnchor)!:a`TrustAnchor`describing the CA that served as a trust anchor for the certification path |
 | `policyTree` | [PolicyNode](https://developer.android.com/reference/kotlin/java/security/cert/PolicyNode)!:the immutable valid policy tree, or`null`if there are no valid policies |
 | `subjectPublicKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!:the public key of the subject |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------------------------------|

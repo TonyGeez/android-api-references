@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CallAttributes
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/CallAttributes "View this page in Java") 
+| --- | --- |
 
 ```
 class CallAttributes : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.CallAttributes](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#) |
 
 CallAttributes represents a set of properties that define a new Call. Apps should build an instance of this class and use [TelecomManager.addCall](https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback))to start a new call with Telecom.
@@ -28,9 +30,11 @@ Apps should first register a [PhoneAccount](https://developer.android.com/refere
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#AUDIO_CALL:kotlin.Int) Used when answering or dialing a call to indicate that the call does not have a video component |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_INCOMING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_INCOMING:kotlin.Int) Indicates that the call is an incoming call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_OUTGOING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_OUTGOING:kotlin.Int) Indicates that the call is an outgoing call. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_SET_INACTIVE](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_SET_INACTIVE:kotlin.Int) The call being created can be set to inactive (traditionally referred to as hold). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_STREAM](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_STREAM:kotlin.Int) The call can be streamed from a root device to another device to continue the call without completely transferring it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_TRANSFER](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_TRANSFER:kotlin.Int) The call can be completely transferred from one endpoint to another. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_VIDEO_CALLING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_VIDEO_CALLING:kotlin.Int) The call supports video calling. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#VIDEO_CALL:kotlin.Int) Indicates video transmission is supported |
 
@@ -43,15 +47,19 @@ Apps should first register a [PhoneAccount](https://developer.android.com/refere
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getAddress](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getAddress())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallCapabilities](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getCallCapabilities())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallType](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getCallType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getDirection())`()` <br /> |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getDisplayName())`()` <br /> |
 | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) | [getPhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getPhoneAccountHandle())`()` The [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) that should be registered to Telecom to allow calls. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLogExcluded](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#isLogExcluded())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

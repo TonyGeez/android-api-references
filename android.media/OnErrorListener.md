@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnErrorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnErrorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnErrorListener
@@ -41,6 +42,7 @@ Called to indicate an error.
 | `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer the error pertains to |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of error that has occurred: - [MEDIA_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_UNKNOWN:kotlin.Int) - [MEDIA_ERROR_SERVER_DIED](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_SERVER_DIED:kotlin.Int) |
 | `extra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an extra code, specific to the error. Typically implementation dependent. - [MEDIA_ERROR_IO](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_IO:kotlin.Int) - [MEDIA_ERROR_MALFORMED](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_MALFORMED:kotlin.Int) - [MEDIA_ERROR_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_UNSUPPORTED:kotlin.Int) - [MEDIA_ERROR_TIMED_OUT](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_ERROR_TIMED_OUT:kotlin.Int) - `MEDIA_ERROR_SYSTEM (-2147483648)`- low-level system error. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

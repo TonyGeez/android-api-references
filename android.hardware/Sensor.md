@@ -7,6 +7,7 @@ class Sensor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor#) |
 
 Class representing a sensor. Use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int)` to get the list of available sensors. For more information about Android sensors, read the [Motion Sensors guide](https://developer.android.com/reference/kotlin/guide/topics/sensors/sensors_motion.html).
@@ -20,75 +21,99 @@ Class representing a sensor. Use `https://developer.android.com/reference/kotlin
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_CONTINUOUS:kotlin.Int` Events are reported at a constant rate which is set by the rate parameter of `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_ONE_SHOT:kotlin.Int` Events are reported in one-shot mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_ON_CHANGE:kotlin.Int` Events are reported only when the value changes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_SPECIAL_TRIGGER:kotlin.Int` Events are reported as described in the description of the sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ACCELEROMETER:kotlin.String` A constant string describing an accelerometer sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ACCELEROMETER_LIMITED_AXES:kotlin.String` A constant string describing a limited axes accelerometer sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED:kotlin.String` A constant string describing an uncalibrated limited axes accelerometer sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ACCELEROMETER_UNCALIBRATED:kotlin.String` A constant string describing an uncalibrated accelerometer sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_AMBIENT_TEMPERATURE:kotlin.String` A constant string describing an ambient temperature sensor type. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GAME_ROTATION_VECTOR:kotlin.String` A constant string describing an uncalibrated rotation vector sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GEOMAGNETIC_ROTATION_VECTOR:kotlin.String` A constant string describing a geo-magnetic rotation vector. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GRAVITY:kotlin.String` A constant string describing a gravity sensor type. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GYROSCOPE:kotlin.String` A constant string describing a gyroscope sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GYROSCOPE_LIMITED_AXES:kotlin.String` A constant string describing a limited axes gyroscope sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED:kotlin.String` A constant string describing an uncalibrated limited axes gyroscope sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_GYROSCOPE_UNCALIBRATED:kotlin.String` A constant string describing an uncalibrated gyroscope sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_HEADING:kotlin.String` A constant string describing a heading sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_HEAD_TRACKER:kotlin.String` A constant string describing a head tracker sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_HEART_BEAT:kotlin.String` A constant string describing a heart beat sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_HEART_RATE:kotlin.String` A constant string describing a heart rate monitor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_HINGE_ANGLE:kotlin.String` A constant string describing a hinge angle sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_LIGHT:kotlin.String` A constant string describing a light sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_LINEAR_ACCELERATION:kotlin.String` A constant string describing a linear acceleration sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_LOW_LATENCY_OFFBODY_DETECT:kotlin.String` A constant string describing a low-latency offbody detector sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_MAGNETIC_FIELD:kotlin.String` A constant string describing a magnetic field sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_MAGNETIC_FIELD_UNCALIBRATED:kotlin.String` A constant string describing an uncalibrated magnetic field sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_MOTION_DETECT:kotlin.String` A constant string describing a motion detection sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ORIENTATION:kotlin.String` A constant string describing an orientation sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_POSE_6DOF:kotlin.String` A constant string describing a pose sensor with 6 degrees of freedom. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_PRESSURE:kotlin.String` A constant string describing a pressure sensor type. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_PROXIMITY:kotlin.String` A constant string describing a proximity sensor type. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_RELATIVE_HUMIDITY:kotlin.String` A constant string describing a relative humidity sensor type |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_ROTATION_VECTOR:kotlin.String` A constant string describing a rotation vector sensor type. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_SIGNIFICANT_MOTION:kotlin.String` A constant string describing a significant motion trigger sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_STATIONARY_DETECT:kotlin.String` A constant string describing a stationary detection sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_STEP_COUNTER:kotlin.String` A constant string describing a step counter sensor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_STEP_DETECTOR:kotlin.String` A constant string describing a step detector sensor. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#STRING_TYPE_TEMPERATURE:kotlin.String` A constant string describing a temperature sensor type |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int` A constant describing an accelerometer sensor type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_LIMITED_AXES:kotlin.Int` A constant describing a limited axes accelerometer sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED:kotlin.Int` A constant describing an uncalibrated limited axes accelerometer sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_UNCALIBRATED:kotlin.Int` A constant describing an uncalibrated accelerometer sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ALL:kotlin.Int` A constant describing all sensor types. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_AMBIENT_TEMPERATURE:kotlin.Int` A constant describing an ambient temperature sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_DEVICE_PRIVATE_BASE:kotlin.Int` The lowest sensor type vendor defined sensors can use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GAME_ROTATION_VECTOR:kotlin.Int` A constant describing an uncalibrated rotation vector sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GEOMAGNETIC_ROTATION_VECTOR:kotlin.Int` A constant describing a geo-magnetic rotation vector. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GRAVITY:kotlin.Int` A constant describing a gravity sensor type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE:kotlin.Int` A constant describing a gyroscope sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_LIMITED_AXES:kotlin.Int` A constant describing a limited axes gyroscope sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED:kotlin.Int` A constant describing an uncalibrated limited axes gyroscope sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_UNCALIBRATED:kotlin.Int` A constant describing an uncalibrated gyroscope sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEADING:kotlin.Int` A constant string describing a heading sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEAD_TRACKER:kotlin.Int` A constant describing a head tracker sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEART_BEAT:kotlin.Int` A constant describing a heart beat sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEART_RATE:kotlin.Int` A constant describing a heart rate monitor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HINGE_ANGLE:kotlin.Int` A constant describing a hinge angle sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LIGHT:kotlin.Int` A constant describing a light sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LINEAR_ACCELERATION:kotlin.Int` A constant describing a linear acceleration sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LOW_LATENCY_OFFBODY_DETECT:kotlin.Int` A constant describing a low latency off-body detect sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD:kotlin.Int` A constant describing a magnetic field sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD_UNCALIBRATED:kotlin.Int` A constant describing an uncalibrated magnetic field sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MOTION_DETECT:kotlin.Int` A constant describing a motion detect sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ORIENTATION:kotlin.Int` A constant describing an orientation sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_POSE_6DOF:kotlin.Int` A constant describing a pose sensor with 6 degrees of freedom. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PRESSURE:kotlin.Int` A constant describing a pressure sensor type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PROXIMITY:kotlin.Int` A constant describing a proximity sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_RELATIVE_HUMIDITY:kotlin.Int` A constant describing a relative humidity sensor type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ROTATION_VECTOR:kotlin.Int` A constant describing a rotation vector sensor type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int` A constant describing a significant motion trigger sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STATIONARY_DETECT:kotlin.Int` A constant describing a stationary detect sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STEP_COUNTER:kotlin.Int` A constant describing a step counter sensor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STEP_DETECTOR:kotlin.Int` A constant describing a step detector sensor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_TEMPERATURE:kotlin.Int` A constant describing a temperature sensor type |
 
@@ -97,21 +122,27 @@ Class representing a sensor. Use `https://developer.android.com/reference/kotlin
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getFifoMaxEventCount()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getFifoReservedEventCount()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getHighestDirectReportRateLevel()()` Get the highest supported direct report mode rate level of the sensor. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getId()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMaxDelay()()` This value is defined only for continuous and on-change sensors. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMaximumRange()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMinDelay()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getName()()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getPower()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getReportingMode()()` Each sensor has exactly one reporting mode associated with it. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getResolution()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getStringType()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getType()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getVendor()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getVersion()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isAdditionalInfoSupported()()` Returns true if the sensor supports sensor additional information API |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isDirectChannelTypeSupported(kotlin.Int)(sharedMemType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Test if a sensor supports a specified direct channel type. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isDynamicSensor()()` Returns true if the sensor is a dynamic sensor. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor()()` Returns true if the sensor is a wake-up sensor. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#toString()()` Returns a string representation of the object. |
 

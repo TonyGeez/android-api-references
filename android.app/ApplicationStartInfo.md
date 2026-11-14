@@ -7,6 +7,7 @@ class ApplicationStartInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#) |
 
 Describes information related to an application process's startup.
@@ -22,42 +23,55 @@ ApplicationStartInfo objects can be retrieved via: - `https://developer.android.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_INSTANCE:kotlin.Int` The system creates the activity at the root of a new task or locates the activity on an existing task with the same affinity. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_INSTANCE_PER_TASK:kotlin.Int` The activity can only be running as the root activity of the task, the first activity that created the task, and therefore there will only be one instance of this activity in a task; but activity can be instantiated multiple times in different tasks. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_TASK:kotlin.Int` Same as "singleTask", except that the system doesn't launch any other activities into the task holding the instance. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_TOP:kotlin.Int` If an instance of the activity already exists at the top of the target task, the system routes the intent to that instance through a call to its onNewIntent() method, rather than creating a new instance of the activity. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_STANDARD:kotlin.Int` Default. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_ERROR:kotlin.Int` State indicating process startup has failed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_FIRST_FRAME_DRAWN:kotlin.Int` State indicating process startup has made it to first frame draw. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_STARTED:kotlin.Int` State indicating process startup has started. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_ACTIVITY:kotlin.Int` Process was started for an activity component. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_BROADCAST:kotlin.Int` Process was started for a broadcast component. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_CONTENT_PROVIDER:kotlin.Int` Process was started for a content provider component. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_OTHER:kotlin.Int` Process was started not for one of the four standard components. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_SERVICE:kotlin.Int` Process was started for a service component. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_ALARM:kotlin.Int` Process started due to alarm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_BACKUP:kotlin.Int` Process started to run backup. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_BOOT_COMPLETE:kotlin.Int` Process started due to boot complete. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_BROADCAST:kotlin.Int` Process started due to broadcast received for any reason not explicitly listed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_CONTENT_PROVIDER:kotlin.Int` Process started due to access of ContentProvider for any reason not explicitly listed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_JOB:kotlin.Int` \* Process started to run scheduled job. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_LAUNCHER:kotlin.Int` Process started due to click app icon or widget from launcher. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_LAUNCHER_RECENTS:kotlin.Int` Process started from launcher recents. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_OTHER:kotlin.Int` Process started not for any of the listed reasons. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_PUSH:kotlin.Int` Process started due to push message. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_SERVICE:kotlin.Int` Process started due to Service started for any reason not explicitly listed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_REASON_START_ACTIVITY:kotlin.Int` Process started due to Activity started for any reason not explicitly listed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_APPLICATION_ONCREATE:kotlin.Int` Clock monotonic timestamp of Application onCreate called. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_BIND_APPLICATION:kotlin.Int` Clock monotonic timestamp of bindApplication called. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FIRST_FRAME:kotlin.Int` Clock monotonic timestamp of first frame drawn. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FORK:kotlin.Int` Clock monotonic timestamp of process fork. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FULLY_DRAWN:kotlin.Int` Clock monotonic timestamp of reportFullyDrawn called by application. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_INITIAL_RENDERTHREAD_FRAME:kotlin.Int` Clock monotonic timestamp of initial renderthread frame. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_LAUNCH:kotlin.Int` Clock monotonic timestamp of launch started. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_RESERVED_RANGE_DEVELOPER:kotlin.Int` The end of the range reserved for developer supplied timestamps. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_RESERVED_RANGE_DEVELOPER_START:kotlin.Int` The beginning of the range reserved for developer supplied timestamps. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_RESERVED_RANGE_SYSTEM:kotlin.Int` The end of the range, beginning with 0, reserved for system timestamps. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_SOURCE_EVENT:kotlin.Int` Clock monotonic timestamp of the source event which triggered this start. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_SURFACEFLINGER_COMPOSITION_COMPLETE:kotlin.Int` Clock monotonic timestamp of surfaceflinger composition complete. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TYPE_COLD:kotlin.Int` Process started from scratch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TYPE_HOT:kotlin.Int` Process brought back to foreground. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TYPE_UNSET:kotlin.Int` Start type not yet set. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TYPE_WARM:kotlin.Int` Process retained minimally SavedInstanceState. |
 
@@ -78,18 +92,23 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getDefiningUid()()` Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
+| --- | --- |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getIntent()()` The intent used to launch the application. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getLaunchMode()()` An instruction on how the activity should be launched. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()()` Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPid()()` The process id. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getProcessName()()` The actual process name it was running with. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()()` The kernel user identifier of the process, most of the time the system uses this to do access control checks. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getReason()()` The reason code of what triggered the process's start. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartComponent()()` The component type that was being started which triggered the start. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartType()()` The state of the app at startup. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()()` Current state of startup. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupTimestamps()()` Various clock monotonic timestamps in nanoseconds throughout the startup process. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#wasForceStopped()()` Informs whether this is the first process launch for an app since it was `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#FLAG_STOPPED:kotlin.Int` for some reason. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

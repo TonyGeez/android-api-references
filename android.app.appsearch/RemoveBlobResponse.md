@@ -8,6 +8,7 @@ class RemoveBlobResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.RemoveBlobResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#) |
 
 Results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#removeBlob(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`, containing the outcome of the removal of each handles.
@@ -29,6 +30,7 @@ This class is used to retrieve the result of a batch removal operation on a coll
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult)\< [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle)!, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the removal operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

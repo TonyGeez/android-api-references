@@ -9,6 +9,7 @@ open class PBEKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.PBEKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#) |
 
 A user-chosen password that can be used with password-based encryption (*PBE*).
@@ -34,6 +35,7 @@ Also note that this class stores passwords as char arrays instead of`String`obje
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#clearPassword())`()` Clears the internal copy of the password. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#getIterationCount())`()` Returns the iteration count or 0 if not specified. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyLength](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#getKeyLength())`()` Returns the to-be-derived key length or 0 if not specified. |
+| --- | --- |
 | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#getPassword())`()` Returns a copy of the password. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEKeySpec#getSalt())`()` Returns a copy of the salt or null if not specified. |
 
@@ -75,6 +77,7 @@ Note: the`password`and`salt`are cloned before they are stored in the new`PBEKeyS
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password. |
 | `salt` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the salt. |
 | `iterationCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the iteration count. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------|
@@ -102,6 +105,7 @@ Note: the`password`and`salt`are cloned before they are stored in the new`PBEKeyS
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password. |
 | `salt` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the salt. |
 | `iterationCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the iteration count. |
+| --- | --- |
 | `keyLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the to-be-derived key length. |
 
 | Exceptions ||

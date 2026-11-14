@@ -9,6 +9,7 @@ open class ObjectOutputStream : OutputStream, ObjectOutput, ObjectStreamConsta
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream) ||
 | | ↳ | [java.io.ObjectOutputStream](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#) |
 
@@ -83,24 +84,31 @@ Primitive data, excluding serializable fields and externalizable data, is writte
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#close())`()` Closes the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [defaultWriteObject](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#defaultWriteObject())`()` Write the non-static and non-transient fields of the current class to this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#flush())`()` Flushes the stream. |
+| --- | --- |
 | open [ObjectOutputStream.PutField](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream.PutField)! | [putFields](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#putFields())`()` Retrieve the object used to buffer persistent fields to be written to the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#reset())`()` Reset will disregard the state of any objects already written to the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [useProtocolVersion](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#useProtocolVersion(kotlin.Int))`(`version:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify stream protocol version to use when writing the stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#write(kotlin.ByteArray))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes an array of bytes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sub array of bytes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#write(kotlin.Int))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBoolean](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeBoolean(kotlin.Boolean))`(`val:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Writes a boolean. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByte](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeByte(kotlin.Int))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an 8 bit byte. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeBytes(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChar](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeChar(kotlin.Int))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit char. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChars](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeChars(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of chars. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDouble](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeDouble(kotlin.Double))`(`val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Writes a 64 bit double. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFields](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeFields())`()` Write the buffered fields to the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFloat](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeFloat(kotlin.Float))`(`val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Writes a 32 bit float. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInt](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeInt(kotlin.Int))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 32 bit int. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeLong](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeLong(kotlin.Long))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a 64 bit long. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeObject(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Write the specified object to the ObjectOutputStream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeShort](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeShort(kotlin.Int))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit short. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUTF](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeUTF(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Primitive data write of this String in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUnshared](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeUnshared(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes an "unshared" object to the ObjectOutputStream. |
 
@@ -109,9 +117,11 @@ Primitive data, excluding serializable fields and externalizable data, is writte
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateClass](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#annotateClass(java.lang.Class))`(`cl:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Subclasses may implement this method to allow class data to be stored in the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateProxyClass](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#annotateProxyClass(java.lang.Class))`(`cl:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Subclasses may implement this method to store custom data in the stream along with descriptors for dynamic proxy classes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drain](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#drain())`()` Drain any buffered data in ObjectOutputStream. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableReplaceObject](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#enableReplaceObject(kotlin.Boolean))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable the stream to do replacement of objects in the stream. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [replaceObject](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#replaceObject(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This method will allow trusted subclasses of ObjectOutputStream to substitute one object for another during serialization. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeClassDescriptor](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeClassDescriptor(java.io.ObjectStreamClass))`(`desc:` ` [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass)!`)` Write the specified class descriptor to the ObjectOutputStream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObjectOverride](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeObjectOverride(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Method used by subclasses to override the default writeObject method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeStreamHeader](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeStreamHeader())`()` The writeStreamHeader method is provided so subclasses can append or prepend their own header to the stream. |
 
@@ -146,6 +156,7 @@ If a security manager is installed, this constructor will check for the "enableS
 | `java.io.IOException` | if an I/O error occurs while writing stream header |
 | `java.lang.SecurityException` | if untrusted subclass illegally overrides security-sensitive methods |
 | `java.lang.NullPointerException` | if`out`is`null` |
+| --- | --- |
 
 **See Also**
 
@@ -276,6 +287,7 @@ Every effort will be made to avoid introducing additional backwards incompatibil
 | `java.lang.IllegalStateException` | if called after any objects have been serialized. |
 | `java.lang.IllegalArgumentException` | if invalid version is passed in. |
 | `java.io.IOException` | if I/O errors occur |
+| --- | --- |
 
 **See Also**
 
@@ -320,6 +332,7 @@ Writes a sub array of bytes.
 | `b` | the data to be written |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes that are written |
+| --- | --- |
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to be written |
 
 | Exceptions ||
@@ -552,6 +565,7 @@ Exceptions are thrown for problems with the OutputStream and for classes that sh
 | `java.io.InvalidClassException` | Something is wrong with a class used by serialization. |
 | `java.io.NotSerializableException` | Some object to be serialized does not implement the java.io.Serializable interface. |
 | `java.io.IOException` | Any exception thrown by the underlying OutputStream. |
+| --- | --- |
 
 ### writeShort
 
@@ -619,6 +633,7 @@ ObjectOutputStream subclasses which override this method can only be constructed
 | `java.io.NotSerializableException` | if an object in the graph to be serialized does not implement the Serializable interface |
 | `java.io.InvalidClassException` | if a problem exists with the class of an object to be serialized |
 | `java.io.IOException` | if an I/O error occurs during serialization |
+| --- | --- |
 
 ## Protected methods
 

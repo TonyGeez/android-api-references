@@ -9,6 +9,7 @@ open class SimpleTimeZone : TimeZone
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone) ||
 | | ↳ | [java.util.SimpleTimeZone](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#) |
 
@@ -69,6 +70,7 @@ These parameter rules are also applicable to the set rule methods, such as`setSt
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARD_TIME](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#STANDARD_TIME:kotlin.Int) Constant for a mode of start or end time specified as standard time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UTC_TIME](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#UTC_TIME:kotlin.Int) Constant for a mode of start or end time specified as UTC. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WALL_TIME](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#WALL_TIME:kotlin.Int) Constant for a mode of start or end time specified as wall clock time. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -86,24 +88,31 @@ These parameter rules are also applicable to the set rule methods, such as`setSt
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#clone())`()` Returns a clone of this`SimpleTimeZone`instance. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two`SimpleTimeZone`objects. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDSTSavings](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#getDSTSavings())`()` Returns the amount of time in milliseconds that the clock is advanced during daylight saving time. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#getOffset(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`era:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `millis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the difference in milliseconds between local time and UTC, taking into account both the raw offset and the effect of daylight saving, for the specified date and time. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#getOffset(kotlin.Long))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the offset of this time zone from UTC at the given time. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawOffset](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#getRawOffset())`()` Gets the GMT offset for this time zone. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSameRules](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#hasSameRules(java.util.TimeZone))`(`other:` ` [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone)!`)` Returns`true`if this zone has the same rules and offset as another zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#hashCode())`()` Generates the hash code for the SimpleDateFormat object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inDaylightTime](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#inDaylightTime(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`)` Queries if the given date is in daylight saving time. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [observesDaylightTime](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#observesDaylightTime())`()` Returns`true`if this`SimpleTimeZone`observes Daylight Saving Time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDSTSavings](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setDSTSavings(kotlin.Int))`(`millisSavedDuringDST:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the amount of time in milliseconds that the clock is advanced during daylight saving time. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setEndRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`endMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the daylight saving time end rule to a fixed date within a month. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setEndRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`endMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endDayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the daylight saving time end rule. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setEndRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`endMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endDayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `after:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the daylight saving time end rule to a weekday before or after the given date within a month, e. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRawOffset](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setRawOffset(kotlin.Int))`(`offsetMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the base time zone offset to GMT. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setStartRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the daylight saving time start rule to a fixed date within a month. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setStartRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startDayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the daylight saving time start rule. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartRule](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setStartRule(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`startMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startDayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `after:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the daylight saving time start rule to a weekday before or after the given date within a month, e. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartYear](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#setStartYear(kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the daylight saving time starting year. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#toString())`()` Returns a string representation of this time zone. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useDaylightTime](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone#useDaylightTime())`()` Queries if this time zone uses daylight saving time. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -211,12 +220,15 @@ Constructs a SimpleTimeZone with the given base time zone offset from GMT, time 
 | `rawOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The given base time zone offset from GMT. |
 | `ID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The time zone ID which is given to this object. |
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
+| --- | --- |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. See the class description for the special cases of this parameter. |
 | `startDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting day-of-week. See the class description for the special cases of this parameter. |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in local wall clock time (in milliseconds within the day), which is local standard time in this case. |
+| --- | --- |
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. See the class description for the special cases of this parameter. |
 | `endDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending day-of-week. See the class description for the special cases of this parameter. |
+| --- | --- |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in local wall clock time, (in milliseconds within the day) which is local daylight time in this case. |
 
 | Exceptions ||
@@ -269,12 +281,15 @@ Constructs a SimpleTimeZone with the given base time zone offset from GMT, time 
 | `rawOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The given base time zone offset from GMT. |
 | `ID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The time zone ID which is given to this object. |
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
+| --- | --- |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. See the class description for the special cases of this parameter. |
 | `startDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting day-of-week. See the class description for the special cases of this parameter. |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in local wall clock time, which is local standard time in this case. |
+| --- | --- |
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. See the class description for the special cases of this parameter. |
 | `endDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending day-of-week. See the class description for the special cases of this parameter. |
+| --- | --- |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in local wall clock time, which is local daylight time in this case. |
 | `dstSavings` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The amount of time in milliseconds saved during daylight saving time. |
 
@@ -310,15 +325,19 @@ Constructs a SimpleTimeZone with the given base time zone offset from GMT, time 
 | `rawOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The given base time zone offset from GMT. |
 | `ID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The time zone ID which is given to this object. |
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
+| --- | --- |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. See the class description for the special cases of this parameter. |
 | `startDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting day-of-week. See the class description for the special cases of this parameter. |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in the time mode specified by`startTimeMode`. |
+| --- | --- |
 | `startTimeMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The mode of the start time specified by startTime. |
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. See the class description for the special cases of this parameter. |
+| --- | --- |
 | `endDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending day-of-week. See the class description for the special cases of this parameter. |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in time mode specified by`endTimeMode`. |
 | `endTimeMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The mode of the end time specified by endTime |
+| --- | --- |
 | `dstSavings` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The amount of time in milliseconds saved during daylight saving time. |
 
 | Exceptions ||
@@ -411,9 +430,11 @@ Returns the difference in milliseconds between local time and UTC, taking into a
 | `era` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The era of the given date. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The year in the given date. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The month in the given date. Month is 0-based. e.g., 0 for January. |
+| --- | --- |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day-in-month of the given date. |
 | `dayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day-of-week of the given date. |
 | `milliseconds` | the milliseconds in day in*standard*local time. |
+| --- | --- |
 | `millis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The milliseconds in day in*standard*local time. |
 
 | Return ||
@@ -571,6 +592,7 @@ Sets the daylight saving time end rule to a fixed date within a month. This meth
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in local wall clock time, (in milliseconds within the day) which is local daylight time in this case. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------|
@@ -596,6 +618,7 @@ Sets the daylight saving time end rule. For example, if daylight saving time end
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. See the class description for the special cases of this parameter. |
 | `endDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending day-of-week. See the class description for the special cases of this parameter. |
+| --- | --- |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in local wall clock time, (in milliseconds within the day) which is local daylight time in this case. |
 
 | Exceptions ||
@@ -623,6 +646,7 @@ Sets the daylight saving time end rule to a weekday before or after the given da
 | `endMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 9 for October). |
 | `endDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time ends. |
 | `endDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time ending day-of-week. |
+| --- | --- |
 | `endTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving ending time in local wall clock time, (in milliseconds within the day) which is local daylight time in this case. |
 | `after` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, this rule selects the first`endDayOfWeek`on or*after* `endDay`. If false, this rule selects the last`endDayOfWeek`on or before`endDay`of the month. |
 
@@ -673,6 +697,7 @@ Sets the daylight saving time start rule to a fixed date within a month. This me
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in local wall clock time, which is local standard time in this case. See the class description for the special cases of this parameter. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------|
@@ -704,6 +729,7 @@ Sets the daylight saving time start rule. For example, if daylight saving time s
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. See the class description for the special cases of this parameter. |
 | `startDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting day-of-week. See the class description for the special cases of this parameter. |
+| --- | --- |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in local wall clock time, which is local standard time in this case. |
 
 | Exceptions ||
@@ -731,6 +757,7 @@ Sets the daylight saving time start rule to a weekday before or after the given 
 | `startMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting month. Month is a [MONTH](https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int) field value (0-based. e.g., 0 for January). |
 | `startDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month on which the daylight saving time starts. |
 | `startDayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting day-of-week. |
+| --- | --- |
 | `startTime` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The daylight saving time starting time in local wall clock time, which is local standard time in this case. |
 | `after` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, this rule selects the first`dayOfWeek`on or*after* `dayOfMonth`. If false, this rule selects the last`dayOfWeek`on or*before* `dayOfMonth`. |
 

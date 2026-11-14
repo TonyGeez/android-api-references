@@ -9,6 +9,7 @@ open class CertPathValidator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertPathValidator](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#) |
 
 A class for validating certification paths (also known as certificate chains).
@@ -51,9 +52,11 @@ However, this is not true for the non-static methods defined by this class. Unle
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getAlgorithm())`()` Returns the algorithm name of this`CertPathValidator`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getDefaultType())`()` Returns the default`CertPathValidator`type as specified by the`certpathvalidator.type`security property, or the string "PKIX" if no such property exists. |
 | openstatic [CertPathValidator](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathValidator`object that implements the specified algorithm. |
+| --- | --- |
 | openstatic [CertPathValidator](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathValidator`object that implements the specified algorithm. |
 | openstatic [CertPathValidator](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`CertPathValidator`object that implements the specified algorithm. |
 | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getProvider())`()` Returns the`Provider`of this`CertPathValidator`. |
+| --- | --- |
 | [CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker)! | [getRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#getRevocationChecker())`()` Returns a`CertPathChecker`that the encapsulated`CertPathValidatorSpi`implementation uses to check the revocation status of certificates. |
 | [CertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorResult)! | [validate](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator#validate(java.security.cert.CertPath,%20java.security.cert.CertPathParameters))`(`certPath:` ` [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)!`, `params:` ` [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters)!`)` Validates the specified certification path using the specified algorithm parameter set. |
 
@@ -77,6 +80,7 @@ Creates a`CertPathValidator`object of the given algorithm, and encapsulates the 
 | `validatorSpi` | [CertPathValidatorSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi)!:the provider implementation |
 | `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name |
+| --- | --- |
 
 ## Public methods
 
@@ -178,6 +182,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 | `java.lang.IllegalArgumentException` | if the`provider`is`null`or empty |
 | `java.security.NoSuchAlgorithmException` | if a`CertPathValidatorSpi`implementation for the specified algorithm is not available from the specified provider |
 | `java.security.NoSuchProviderException` | if the specified provider is not registered in the security provider list |
+| --- | --- |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
 
 **See Also**
@@ -213,6 +218,7 @@ A new CertPathValidator object encapsulating the CertPathValidatorSpi implementa
 | `java.lang.IllegalArgumentException` | if the`provider`is`null` |
 | `java.security.NoSuchAlgorithmException` | if a`CertPathValidatorSpi`implementation for the specified algorithm is not available from the specified Provider object |
 | `java.lang.NullPointerException` | if`algorithm`is`null` |
+| --- | --- |
 
 **See Also**
 

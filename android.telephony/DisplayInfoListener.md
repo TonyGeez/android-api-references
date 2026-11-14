@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DisplayInfoListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DisplayInfoListener

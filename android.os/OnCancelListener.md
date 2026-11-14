@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # OnCancelListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/CancellationSignal.OnCancelListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCancelListener

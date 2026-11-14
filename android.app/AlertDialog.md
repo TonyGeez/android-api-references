@@ -3,16 +3,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AlertDialog
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/AlertDialog "View this page in Java")
+| --- | --- |
 
 ```
 open class AlertDialog : Dialog, DialogInterface
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog) ||
 | | ↳ | [android.app.AlertDialog](https://developer.android.com/reference/kotlin/android/app/AlertDialog#) |
 
 | Known Direct Subclasses [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog), [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog), [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog) |---|---| | [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog) | A simple dialog containing an `https://developer.android.com/reference/kotlin/android/widget/DatePicker.html#`. | | [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog) | A dialog showing a progress indicator and an optional text message or view. | | [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog) | A dialog that prompts the user for the time of day using a `https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#`. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A subclass of Dialog that can display one, two or three buttons. If you only want to display a String in this dialog box, use the setMessage() method. If you want to display a more complex view, look up the FrameLayout called "custom" and add your view to it:
 
@@ -41,6 +44,7 @@ The AlertDialog class takes care of automatically setting `https://developer.and
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#THEME_DEVICE_DEFAULT_DARK:kotlin.Int` Special theme constant for `https://developer.android.com/reference/kotlin/android/app/AlertDialog#AlertDialog(android.content.Context,%20kotlin.Int)`: use the device's default alert theme with a dark background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#THEME_DEVICE_DEFAULT_LIGHT:kotlin.Int` Special theme constant for `https://developer.android.com/reference/kotlin/android/app/AlertDialog#AlertDialog(android.content.Context,%20kotlin.Int)`: use the device's default alert theme with a light background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#THEME_HOLO_DARK:kotlin.Int` Special theme constant for `https://developer.android.com/reference/kotlin/android/app/AlertDialog#AlertDialog(android.content.Context,%20kotlin.Int)`: use the holographic alert theme with a dark background. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#THEME_HOLO_LIGHT:kotlin.Int` Special theme constant for `https://developer.android.com/reference/kotlin/android/app/AlertDialog#AlertDialog(android.content.Context,%20kotlin.Int)`: use the holographic alert theme with a light background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#THEME_TRADITIONAL:kotlin.Int` Special theme constant for `https://developer.android.com/reference/kotlin/android/app/AlertDialog#AlertDialog(android.content.Context,%20kotlin.Int)`: use the traditional (pre-Holo) alert dialog theme. |
 
@@ -59,24 +63,31 @@ The AlertDialog class takes care of automatically setting `https://developer.and
 | open [Button](https://developer.android.com/reference/kotlin/android/widget/Button.html#)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getButton(kotlin.Int)(whichButton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets one of the buttons used in the dialog. |
 | open [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getListView()()` Gets the list view used in the dialog. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)` A key was pressed down. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)` A key was released. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton(kotlin.Int,%20kotlin.CharSequence,%20android.content.DialogInterface.OnClickListener)(whichButton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, listener: https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#!)` Set a listener to be invoked when the specified button of the dialog is pressed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton(kotlin.Int,%20kotlin.CharSequence,%20android.os.Message)(whichButton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, msg: https://developer.android.com/reference/kotlin/android/os/Message.html#!)` Set a message to be sent when a button is pressed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton(kotlin.CharSequence,%20android.content.DialogInterface.OnClickListener)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, listener: https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#!)` Set a listener to be invoked when button 1 of the dialog is pressed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton(kotlin.CharSequence,%20android.os.Message)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, msg: https://developer.android.com/reference/kotlin/android/os/Message.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton2(kotlin.CharSequence,%20android.content.DialogInterface.OnClickListener)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, listener: https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#!)` Set a listener to be invoked when button 2 of the dialog is pressed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton2(kotlin.CharSequence,%20android.os.Message)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, msg: https://developer.android.com/reference/kotlin/android/os/Message.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton3(kotlin.CharSequence,%20android.content.DialogInterface.OnClickListener)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, listener: https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#!)` Set a listener to be invoked when button 3 of the dialog is pressed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setButton3(kotlin.CharSequence,%20android.os.Message)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, msg: https://developer.android.com/reference/kotlin/android/os/Message.html#!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setCustomTitle(android.view.View)(customTitleView: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setIcon(android.graphics.drawable.Drawable)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setIcon(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set resId to 0 if you don't want an icon. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setIconAttribute(kotlin.Int)(attrId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set an icon as supplied by a theme attribute. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setInverseBackgroundForced(kotlin.Boolean)(forceInverseBackground: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setMessage(kotlin.CharSequence)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Set the title text for this dialog's window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Set the view to display in that dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#setView(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, viewSpacingLeft: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, viewSpacingTop: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, viewSpacingRight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, viewSpacingBottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the view to display in that dialog, specifying the spacing to appear around that view. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -348,6 +359,7 @@ Set a listener to be invoked when the specified button of the dialog is pressed.
 | `whichButton` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which button to set the listener on, can be one of `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_POSITIVE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEGATIVE:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEUTRAL:kotlin.Int` |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text to display in positive button. |
 | `listener` | [DialogInterface.OnClickListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#)!: The `https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener.html#` to use. |
+| --- | --- |
 
 ### setButton
 
@@ -368,6 +380,7 @@ Set a message to be sent when a button is pressed.
 | `whichButton` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which button to set the message for, can be one of `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_POSITIVE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEGATIVE:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEUTRAL:kotlin.Int` |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text to display in positive button. |
 | `msg` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!: The `https://developer.android.com/reference/kotlin/android/os/Message.html#` to be sent when clicked. |
+| --- | --- |
 
 ### setButton
 
@@ -582,6 +595,7 @@ Set the view to display in that dialog, specifying the spacing to appear around 
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view to show in the content area of the dialog |
 | `viewSpacingLeft` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear to the left of `view` |
 | `viewSpacingTop` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear above `view` |
+| --- | --- |
 | `viewSpacingRight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear to the right of `view` |
 | `viewSpacingBottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear below `view` |
 

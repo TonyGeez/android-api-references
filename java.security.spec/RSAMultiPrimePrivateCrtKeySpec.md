@@ -9,6 +9,7 @@ open class RSAMultiPrimePrivateCrtKeySpec : RSAPrivateKeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.RSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAPrivateKeySpec) ||
 | | ↳ | [java.security.spec.RSAMultiPrimePrivateCrtKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#) |
 
@@ -26,9 +27,11 @@ This class specifies an RSA multi-prime private key, as defined in the [PKCS#1 v
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getCrtCoefficient())`()` Returns the crtCoefficient. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo)!\>! | [getOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getOtherPrimeInfo())`()` Returns a copy of the otherPrimeInfo or null if there are only two prime factors (p and q). |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentP](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getPrimeExponentP())`()` Returns the primeExponentP. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentQ](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getPrimeExponentQ())`()` Returns the primeExponentQ. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeP](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getPrimeP())`()` Returns the primeP. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeQ](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getPrimeQ())`()` Returns the primeQ. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAMultiPrimePrivateCrtKeySpec#getPublicExponent())`()` Returns the public exponent. |
 
 | Inherited functions ||
@@ -63,12 +66,15 @@ Note that the contents of`otherPrimeInfo`are copied to protect against subsequen
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus n |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent e |
 | `privateExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private exponent d |
+| --- | --- |
 | `primeP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor p of n |
 | `primeQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor q of n |
 | `primeExponentP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (p-1) |
+| --- | --- |
 | `primeExponentQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (q-1) |
 | `crtCoefficient` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the Chinese Remainder Theorem coefficient q-1 mod p |
 | `otherPrimeInfo` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo)!\>!:triplets of the rest of primes, null can be specified if there are only two prime factors (p and q) |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------|
@@ -102,12 +108,15 @@ Note that the contents of`otherPrimeInfo`are copied to protect against subsequen
 | `modulus` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the modulus n |
 | `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent e |
 | `privateExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private exponent d |
+| --- | --- |
 | `primeP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor p of n |
 | `primeQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime factor q of n |
 | `primeExponentP` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (p-1) |
+| --- | --- |
 | `primeExponentQ` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:this is d mod (q-1) |
 | `crtCoefficient` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the Chinese Remainder Theorem coefficient q-1 mod p |
 | `otherPrimeInfo` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo)!\>!:triplets of the rest of primes, null can be specified if there are only two prime factors (p and q) |
+| --- | --- |
 | `keyParams` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters associated with key |
 
 | Exceptions ||

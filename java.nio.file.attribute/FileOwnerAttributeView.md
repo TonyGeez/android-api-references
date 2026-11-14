@@ -11,6 +11,7 @@ interface FileOwnerAttributeView : FileAttributeView
 | [java.nio.file.attribute.FileOwnerAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileOwnerAttributeView#) |
 
 | Known Direct Subclasses [AclFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclFileAttributeView), [PosixFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView) |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AclFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclFileAttributeView) | A file attribute view that supports reading or updating a file's Access Control Lists (ACL) or file owner attributes. | | [PosixFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/PosixFileAttributeView) | A file attribute view that provides a view of the file attributes commonly associated with files on file systems used by operating systems that implement the Portable Operating System Interface (POSIX) family of standards. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A file attribute view that supports reading or updating the owner of a file. This file attribute view is intended for file system implementations that support a file attribute that represents an identity that is the owner of the file. Often the owner of a file is the identity of the entity that created the file.
 
@@ -25,6 +26,7 @@ The [getAttribute](https://developer.android.com/reference/kotlin/java/nio/file/
 | abstract [UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal)! | [getOwner](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileOwnerAttributeView#getOwner())`()` Read the file owner. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileOwnerAttributeView#name())`()` Returns the name of the attribute view. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOwner](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileOwnerAttributeView#setOwner(java.nio.file.attribute.UserPrincipal))`(`owner:` ` [UserPrincipal](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal)!`)` Updates the file owner. |
+| --- | --- |
 
 ## Public methods
 

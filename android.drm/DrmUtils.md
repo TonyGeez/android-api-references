@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmUtils
 
 Kotlin | [Java](https://developer.android.com/reference/android/drm/DrmUtils "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmUtils](https://developer.android.com/reference/kotlin/android/drm/DrmUtils#) |
 
 | **This class was deprecated in API level 30.**

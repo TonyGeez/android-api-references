@@ -7,6 +7,7 @@ abstract class CertPathValidatorSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.cert.CertPathValidatorSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#) |
 
 The *Service Provider Interface* (**SPI** ) for the `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator` class. All `CertPathValidator` implementations must include a class (the SPI class) that extends this class (`CertPathValidatorSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the `CertPathValidator` class. For details, see the Java Cryptography Architecture.

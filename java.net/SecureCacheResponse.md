@@ -9,6 +9,7 @@ abstract class SecureCacheResponse : CacheResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse) ||
 | | ↳ | [java.net.SecureCacheResponse](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#) |
 
@@ -25,6 +26,7 @@ Represents a cache response originally retrieved through secure means, such as T
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#getCipherSuite())`()` Returns the cipher suite in use on the original connection that retrieved the network resource. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getLocalCertificateChain](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#getLocalCertificateChain())`()` Returns the certificate chain that were sent to the server during handshaking of the original connection that retrieved the network resource. |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getLocalPrincipal](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#getLocalPrincipal())`()` Returns the principal that was sent to the server during handshaking in the original connection that retrieved the network resource. |
+| --- | --- |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getPeerPrincipal](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#getPeerPrincipal())`()` Returns the server's principal which was established as part of defining the session during the original connection that retrieved the network resource. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getServerCertificateChain](https://developer.android.com/reference/kotlin/java/net/SecureCacheResponse#getServerCertificateChain())`()` Returns the server's certificate chain, which was established as part of defining the session in the original connection that retrieved the network resource, from cache. |
 

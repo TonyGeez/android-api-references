@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # TimeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/TimeAnimator.TimeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TimeListener
@@ -41,3 +42,4 @@ Notifies listeners of the occurrence of another frame of the animation, along wi
 | `animation` | [TimeAnimator](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator)!:The animator sending out the notification. |
 | `totalTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The total time elapsed since the animator started, in milliseconds. |
 | `deltaTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time elapsed since the previous frame, in milliseconds. |
+| --- | --- |

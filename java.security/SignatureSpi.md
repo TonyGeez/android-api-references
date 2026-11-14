@@ -9,9 +9,11 @@ abstract class SignatureSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.SignatureSpi](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#) |
 
 | Known Direct Subclasses [Signature](https://developer.android.com/reference/kotlin/java/security/Signature) |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [Signature](https://developer.android.com/reference/kotlin/java/security/Signature) | The Signature class is used to provide applications the functionality of a digital signature algorithm. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Signature`class, which is used to provide the functionality of a digital signature algorithm. Digital signatures are used for authentication and integrity assurance of digital data. .
 
@@ -32,15 +34,19 @@ All the abstract methods in this class must be implemented by each cryptographic
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [engineGetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineGetParameter(kotlin.String))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of the specified algorithm parameter. |
 | open [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [engineGetParameters](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineGetParameters())`()` This method is overridden by providers to return the parameters used with this signature engine, or null if this signature engine does not use any parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitSign(java.security.PrivateKey))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`)` Initializes this signature object with the specified private key for signing operations. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitSign(java.security.PrivateKey,%20java.security.SecureRandom))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this signature object with the specified private key and source of randomness for signing operations. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitVerify(java.security.PublicKey))`(`publicKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` Initializes this signature object with the specified public key for verification operations. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSetParameter(kotlin.String,%20kotlin.Any))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the specified algorithm parameter to the specified value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSetParameter(java.security.spec.AlgorithmParameterSpec))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` This method is overridden by providers to initialize this signature engine with the specified parameter set. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSign())`()` Returns the signature bytes of all the data updated so far. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSign(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes this signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(kotlin.Byte))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the data to be signed or verified using the specified byte. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Updates the data to be signed or verified using the specified ByteBuffer. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineVerify(kotlin.ByteArray))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Verifies the passed-in signature. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineVerify(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. |
 
@@ -269,6 +275,7 @@ The signature implementation is reset to its initial state (the state it was in 
 | `outbuf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:buffer for the signature result. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset into`outbuf`where the signature is stored. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of bytes within`outbuf`allotted for the signature. Both this default implementation and the SUN provider do not return partial digests. If the value of this parameter is less than the actual signature length, this method will throw a SignatureException. This parameter is ignored if its value is greater than or equal to the actual signature length. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------|
@@ -315,6 +322,7 @@ Updates the data to be signed or verified, using the specified array of bytes, s
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the array of bytes |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset to start from in the array of bytes |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to use, starting at offset |
+| --- | --- |
 
 | Exceptions ||
 |------------------------------------|-------------------------------------------|
@@ -377,6 +385,7 @@ Note: Subclasses should overwrite the default implementation.
 | `sigBytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the signature bytes to be verified. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the offset to start from in the array of bytes. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to use, starting at offset. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|

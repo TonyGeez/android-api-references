@@ -9,6 +9,7 @@ abstract class KeyFactorySpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.KeyFactorySpi](https://developer.android.com/reference/kotlin/java/security/KeyFactorySpi#) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `KeyFactory` class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a key factory for a particular algorithm.
@@ -32,6 +33,7 @@ A provider should document all the key specifications supported by its key facto
 | abstract [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)! | [engineGeneratePrivate](https://developer.android.com/reference/kotlin/java/security/KeyFactorySpi#engineGeneratePrivate(java.security.spec.KeySpec))`(`keySpec:` ` [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec)!`)` Generates a private key object from the provided key specification (key material). |
 | abstract [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)! | [engineGeneratePublic](https://developer.android.com/reference/kotlin/java/security/KeyFactorySpi#engineGeneratePublic(java.security.spec.KeySpec))`(`keySpec:` ` [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec)!`)` Generates a public key object from the provided key specification (key material). |
 | abstract T | [engineGetKeySpec](https://developer.android.com/reference/kotlin/java/security/KeyFactorySpi#engineGetKeySpec(java.security.Key,%20java.lang.Class))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key)!`, `keySpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Returns a specification (key material) of the given key object. |
+| --- | --- |
 | abstract [Key](https://developer.android.com/reference/kotlin/java/security/Key)! | [engineTranslateKey](https://developer.android.com/reference/kotlin/java/security/KeyFactorySpi#engineTranslateKey(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this key factory. |
 
 ## Public constructors
@@ -108,6 +110,7 @@ Returns a specification (key material) of the given key object. `keySpec` identi
 | `<T>` | the type of the key specification to be returned |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key)!: the key. |
 | `keySpec` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: the specification class in which the key material should be returned. |
+| --- | --- |
 
 | Return ||
 |---|------------------------------------------------------------------------------------------------------|

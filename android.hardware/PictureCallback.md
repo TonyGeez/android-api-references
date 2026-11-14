@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # PictureCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.PictureCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface PictureCallback

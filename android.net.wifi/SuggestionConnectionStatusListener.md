@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SuggestionConnectionStatusListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.SuggestionConnectionStatusListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface SuggestionConnectionStatusListener

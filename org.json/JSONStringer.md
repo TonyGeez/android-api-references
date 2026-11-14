@@ -9,6 +9,7 @@ open class JSONStringer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [org.json.JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#) |
 
 Implements org.json.JSONObject#toString and org.json.JSONArray#toString. Most application developers should use those methods directly and disregard this API. For example: 
@@ -47,12 +48,15 @@ Each stringer may be used to encode a single top level value. Instances of this 
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [array](https://developer.android.com/reference/kotlin/org/json/JSONStringer#array())`()` Begins encoding a new array. |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [endArray](https://developer.android.com/reference/kotlin/org/json/JSONStringer#endArray())`()` Ends encoding the current array. |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [endObject](https://developer.android.com/reference/kotlin/org/json/JSONStringer#endObject())`()` Ends encoding the current object. |
+| --- | --- |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [key](https://developer.android.com/reference/kotlin/org/json/JSONStringer#key(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes the key (property name) to this stringer. |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [object](https://developer.android.com/reference/kotlin/org/json/JSONStringer#object())`()` Begins encoding a new object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/org/json/JSONStringer#toString())`()` Returns the encoded JSON string. |
+| --- | --- |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [value](https://developer.android.com/reference/kotlin/org/json/JSONStringer#value(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Encodes`value`to this stringer. |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [value](https://developer.android.com/reference/kotlin/org/json/JSONStringer#value(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Encodes`value`to this stringer. |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [value](https://developer.android.com/reference/kotlin/org/json/JSONStringer#value(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Encodes`value`. |
+| --- | --- |
 | open [JSONStringer](https://developer.android.com/reference/kotlin/org/json/JSONStringer#)! | [value](https://developer.android.com/reference/kotlin/org/json/JSONStringer#value(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Encodes`value`to this stringer. |
 
 ## Public constructors

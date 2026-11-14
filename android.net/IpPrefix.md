@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # IpPrefix
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/IpPrefix "View this page in Java") 
+| --- | --- |
 
 ```
 class IpPrefix : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix#) |
 
 This class represents an IP prefix, i.e., a contiguous block of IP addresses aligned on a power of two boundary (also known as an "IP subnet"). A prefix is specified by two pieces of information:
@@ -37,12 +39,15 @@ For example, the prefix`192.0.2.0/24`covers the 256 IPv4 addresses from`192.0.2.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/net/IpPrefix#contains(java.net.InetAddress))`(`address:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)`)` Determines whether the prefix contains the specified address. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/IpPrefix#describeContents())`()` Implement the Parcelable interface. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/IpPrefix#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`IpPrefix`object against the specified object in`obj`. |
+| --- | --- |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getAddress](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getAddress())`()` Returns a copy of the first IP address in the prefix. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrefixLength](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getPrefixLength())`()` Returns the prefix length of this`IpPrefix`. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getRawAddress](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getRawAddress())`()` Returns a copy of the IP address bytes in network order (the highest order byte is the zeroth element). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/IpPrefix#hashCode())`()` Gets the hashcode of the represented IP prefix. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/IpPrefix#toString())`()` Returns a string representation of this`IpPrefix`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/IpPrefix#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface. |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|

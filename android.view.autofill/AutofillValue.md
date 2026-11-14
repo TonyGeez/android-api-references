@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AutofillValue
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/autofill/AutofillValue "View this page in Java")
+| --- | --- |
 
 ```
 class AutofillValue : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.autofill.AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#) |
 
 Abstracts how a `https://developer.android.com/reference/kotlin/android/view/View.html#` can be autofilled by an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#`.
@@ -26,18 +28,23 @@ Each `https://developer.android.com/reference/kotlin/android/view/autofill/Autof
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forDate(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a date. |
+| --- | --- |
 | static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forList(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a selection list. |
 | static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forText(kotlin.CharSequence)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a text field. |
 | static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forToggle(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a toggable field. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getDateValue()()` Gets the value to autofill a date field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getListValue()()` Gets the value to autofill a selection list field. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getTextValue()()` Gets the value to autofill a text field. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getToggleValue()()` Gets the value to autofill a toggable field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#isDate()()` Checks if this is a date value. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#isList()()` Checks if this is a list value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#isText()()` Checks if this is a text value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#isToggle()()` Checks if this is a toggle value. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

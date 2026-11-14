@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # PhoneAccountSuggestion
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion "View this page in Java") 
+| --- | --- |
 
 ```
 class PhoneAccountSuggestion : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.PhoneAccountSuggestion](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#) |
 
 ## Summary
@@ -20,6 +22,7 @@ class PhoneAccountSuggestion : Parcelable
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_FREQUENT](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_FREQUENT:kotlin.Int) Indicates that the [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) is suggested because the user uses it frequently for the number that we are calling. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_INTRA_CARRIER](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_INTRA_CARRIER:kotlin.Int) Indicates that the [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) is suggested because the number we're calling is on the same carrier, and therefore may have lower rates. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NONE](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_NONE:kotlin.Int) Indicates that this account is not suggested for use, but is still available. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_OTHER](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_OTHER:kotlin.Int) Indicates that the [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) is suggested for a reason not otherwise enumerated here. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_USER_SET](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_USER_SET:kotlin.Int) Indicates that the [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) is suggested because the user explicitly specified that it be used for the number we are calling. |
 
@@ -36,9 +39,11 @@ class PhoneAccountSuggestion : Parcelable
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) | [getPhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#getPhoneAccountHandle())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReason](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#getReason())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldAutoSelect](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#shouldAutoSelect())`()` Suggests whether the dialer should automatically place the call using this account without user interaction. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -127,6 +132,7 @@ Creates a new instance of [PhoneAccountSuggestion](https://developer.android.com
 | `handle` | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle):The [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) for this suggestion. This value cannot be`null`. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason for this suggestion Value is [android.telecom.PhoneAccountSuggestion#REASON_NONE](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_NONE:kotlin.Int), [android.telecom.PhoneAccountSuggestion#REASON_INTRA_CARRIER](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_INTRA_CARRIER:kotlin.Int), [android.telecom.PhoneAccountSuggestion#REASON_FREQUENT](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_FREQUENT:kotlin.Int), [android.telecom.PhoneAccountSuggestion#REASON_USER_SET](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_USER_SET:kotlin.Int), or [android.telecom.PhoneAccountSuggestion#REASON_OTHER](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#REASON_OTHER:kotlin.Int) |
 | `shouldAutoSelect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the dialer should automatically place the call using this account. See [shouldAutoSelect()](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountSuggestion#shouldAutoSelect()). |
+| --- | --- |
 
 ## Public methods
 

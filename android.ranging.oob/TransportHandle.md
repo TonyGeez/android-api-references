@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # TransportHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/oob/TransportHandle "View this page in Java") 
+| --- | --- |
 
 ```
 interface TransportHandle : AutoCloseable

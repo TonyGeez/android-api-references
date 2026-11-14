@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # IpSecTransform
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/IpSecTransform "View this page in Java") 
+| --- | --- |
 
 ```
 class IpSecTransform : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#) |
 
 This class represents a transform, which roughly corresponds to an IPsec Security Association.
@@ -28,6 +30,7 @@ Transforms are created using [IpSecTransform.Builder](https://developer.android.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#close())`()` Deactivate this`IpSecTransform`and free allocated resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Standard equals. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestIpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#requestIpSecTransformState(java.util.concurrent.Executor,%20android.os.OutcomeReceiver))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)< [IpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransformState)!,` ` [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#)!>`)` Retrieve the current state of this IpSecTransform. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#toString())`()` <br /> |
 
 | Protected methods ||

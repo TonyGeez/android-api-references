@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BeginCreateCredentialResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class BeginCreateCredentialResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.BeginCreateCredentialResponse](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse#) |
 
 Response to a [BeginCreateCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest).
@@ -34,6 +36,7 @@ Response to a [BeginCreateCredentialRequest](https://developer.android.com/refer
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CreateEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CreateEntry)!\> | [getCreateEntries](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse#getCreateEntries())`()` Returns the list of create entries to be displayed on the UI. |
 | [RemoteEntry](https://developer.android.com/reference/kotlin/android/service/credentials/RemoteEntry)? | [getRemoteCreateEntry](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse#getRemoteCreateEntry())`()` Returns the remote create entry to be displayed on the UI. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

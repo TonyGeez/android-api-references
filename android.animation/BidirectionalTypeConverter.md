@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # BidirectionalTypeConverter
 
 Kotlin | [Java](https://developer.android.com/reference/android/animation/BidirectionalTypeConverter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class BidirectionalTypeConverter<T : Any!, V : Any!> : TypeConverter<T, V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.animation.TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter)\<T, V\> ||
 | | ↳ | [android.animation.BidirectionalTypeConverter](https://developer.android.com/reference/kotlin/android/animation/BidirectionalTypeConverter#) |
 

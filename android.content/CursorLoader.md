@@ -6,15 +6,18 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # CursorLoader
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/CursorLoader "View this page in Java") 
+| --- | --- |
 
 ```
 open class CursorLoader : AsyncTaskLoader<Cursor!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.content.Loader](https://developer.android.com/reference/kotlin/android/content/Loader)\<D\> |||
 | | ↳ | [android.content.AsyncTaskLoader](https://developer.android.com/reference/kotlin/android/content/AsyncTaskLoader)\< [android.database.Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)\> ||
 | | | ↳ | [android.content.CursorLoader](https://developer.android.com/reference/kotlin/android/content/CursorLoader#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
 |
@@ -36,24 +39,30 @@ A CursorLoader must be built with the full information for the query to perform,
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelLoadInBackground](https://developer.android.com/reference/kotlin/android/content/CursorLoader#cancelLoadInBackground())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deliverResult](https://developer.android.com/reference/kotlin/android/content/CursorLoader#deliverResult(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/content/CursorLoader#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`, `writer:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` <br /> |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getProjection](https://developer.android.com/reference/kotlin/android/content/CursorLoader#getProjection())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSelection](https://developer.android.com/reference/kotlin/android/content/CursorLoader#getSelection())`()` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSelectionArgs](https://developer.android.com/reference/kotlin/android/content/CursorLoader#getSelectionArgs())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSortOrder](https://developer.android.com/reference/kotlin/android/content/CursorLoader#getSortOrder())`()` <br /> |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getUri](https://developer.android.com/reference/kotlin/android/content/CursorLoader#getUri())`()` <br /> |
 | open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [loadInBackground](https://developer.android.com/reference/kotlin/android/content/CursorLoader#loadInBackground())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCanceled](https://developer.android.com/reference/kotlin/android/content/CursorLoader#onCanceled(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProjection](https://developer.android.com/reference/kotlin/android/content/CursorLoader#setProjection(kotlin.Array))`(`projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelection](https://developer.android.com/reference/kotlin/android/content/CursorLoader#setSelection(kotlin.String))`(`selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectionArgs](https://developer.android.com/reference/kotlin/android/content/CursorLoader#setSelectionArgs(kotlin.Array))`(`selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSortOrder](https://developer.android.com/reference/kotlin/android/content/CursorLoader#setSortOrder(kotlin.String))`(`sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUri](https://developer.android.com/reference/kotlin/android/content/CursorLoader#setUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` <br /> |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReset](https://developer.android.com/reference/kotlin/android/content/CursorLoader#onReset())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartLoading](https://developer.android.com/reference/kotlin/android/content/CursorLoader#onStartLoading())`()` Starts an asynchronous load of the data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopLoading](https://developer.android.com/reference/kotlin/android/content/CursorLoader#onStopLoading())`()` Must be called from the UI thread |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -135,6 +144,7 @@ open fun dump(
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Text to print at the front of each line. |
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!:The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!:A PrintWriter to which the dump is to be set. |
+| --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Additional arguments to the dump request. |
 
 ### getProjection

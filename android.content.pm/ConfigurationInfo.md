@@ -3,12 +3,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # ConfigurationInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/pm/ConfigurationInfo "View this page in Java")
+| --- | --- |
 
 ```
 open class ConfigurationInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.ConfigurationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#) |
 
 Information you can retrieve about hardware configuration preferences declared by an application. This corresponds to information collected from the AndroidManifest.xml's \<uses-configuration\> and \<uses-feature\> tags.
@@ -20,6 +22,7 @@ Information you can retrieve about hardware configuration preferences declared b
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#GL_ES_VERSION_UNDEFINED:kotlin.Int` Default value for `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqGlEsVersion:kotlin.Int`; |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#INPUT_FEATURE_FIVE_WAY_NAV:kotlin.Int` Value for `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqInputFeatures:kotlin.Int`: if set, indicates that the application requires a five way navigation device |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#INPUT_FEATURE_HARD_KEYBOARD:kotlin.Int` Value for `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqInputFeatures:kotlin.Int`: if set, indicates that the application requires a hard keyboard |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,6 +38,7 @@ Information you can retrieve about hardware configuration preferences declared b
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#getGlEsVersion()()` This method extracts the major and minor version of reqGLEsVersion attribute and returns it as a string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -42,9 +46,11 @@ Information you can retrieve about hardware configuration preferences declared b
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ConfigurationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqGlEsVersion:kotlin.Int` The GLES version used by an application. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqInputFeatures:kotlin.Int` Flags associated with the input features. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqKeyboardType:kotlin.Int` Application's input method preference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqNavigation:kotlin.Int` A flag indicating whether any keyboard is available. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqTouchScreen:kotlin.Int` The kind of touch screen attached to the device. |
+| --- | --- |
 
 ## Constants
 

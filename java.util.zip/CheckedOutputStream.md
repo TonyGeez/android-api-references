@@ -9,9 +9,11 @@ open class CheckedOutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [java.util.zip.CheckedOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/CheckedOutputStream#) |
+| --- | --- | --- | --- |
 
 An output stream that also maintains a checksum of the data being written. The checksum can then be used to verify the integrity of the output data.
 
@@ -26,6 +28,7 @@ An output stream that also maintains a checksum of the data being written. The c
 | open [Checksum](https://developer.android.com/reference/kotlin/java/util/zip/Checksum)! | [getChecksum](https://developer.android.com/reference/kotlin/java/util/zip/CheckedOutputStream#getChecksum())`()` Returns the Checksum for this output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/CheckedOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/CheckedOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -90,6 +93,7 @@ Writes an array of bytes. Will block until the bytes are actually written.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to be written |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to be written |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|------------------------------|

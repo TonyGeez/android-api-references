@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # EmbossMaskFilter
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/EmbossMaskFilter "View this page in Java")
+| --- | --- |
 
 ```
 open class EmbossMaskFilter : MaskFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter) ||
 | | ↳ | [android.graphics.EmbossMaskFilter](https://developer.android.com/reference/kotlin/android/graphics/EmbossMaskFilter#) |
 
@@ -45,6 +47,7 @@ Create an emboss maskfilter
 | `direction` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: array of 3 scalars \[x, y, z\] specifying the direction of the light source |
 | `ambient` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): 0...1 amount of ambient light |
 | `specular` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): coefficient for specular highlights (e.g. 8) |
+| --- | --- |
 | `blurRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): amount to blur before applying lighting (e.g. 3) |
 
 | Return ||

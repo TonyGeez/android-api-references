@@ -8,9 +8,11 @@ abstract class IntentService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.IntentService](https://developer.android.com/reference/kotlin/android/app/IntentService#) |
 
 > [!CAUTION]
@@ -1058,9 +1060,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/IntentService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Unless you provide binding for your service, you don't need to implement this method, because the default implementation returns null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onStart(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` You should not override this method for your IntentService. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#setIntentRedelivery(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets intent redelivery preferences. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -2836,6 +2840,7 @@ You should not override this method for your IntentService. Instead, override `h
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional data about this start request. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_REDELIVERY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_RETRY:kotlin.Int` |
 | `startId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A unique integer representing this specific request to start. Use with `https://developer.android.com/reference/kotlin/android/app/Service#stopSelfResult(kotlin.Int)`. |
+| --- | --- |
 
 | Return ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # VirtualViewFillInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/autofill/VirtualViewFillInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class VirtualViewFillInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.autofill.VirtualViewFillInfo](https://developer.android.com/reference/kotlin/android/view/autofill/VirtualViewFillInfo#) |
 
 Information for the virtual view to the autofill framework.

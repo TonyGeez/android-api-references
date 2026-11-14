@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # SurfaceTexture
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/SurfaceTexture "View this page in Java") 
+| --- | --- |
 
 ```
 open class SurfaceTexture
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#) |
 
 Captures frames from an image stream as an OpenGL ES texture.
@@ -45,15 +47,19 @@ SurfaceTexture objects may be created on any thread. [updateTexImage](https://de
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachToGLContext](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#attachToGLContext(kotlin.Int))`(`texName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attach the SurfaceTexture to the OpenGL ES context that is current on the calling thread. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [detachFromGLContext](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#detachFromGLContext())`()` Detach the SurfaceTexture from the OpenGL ES context that owns the OpenGL ES texture object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataSpace](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#getDataSpace())`()` Retrieve the dataspace associated with the texture image set by the most recent call to [updateTexImage](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#updateTexImage()). |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestamp](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#getTimestamp())`()` Retrieve the timestamp associated with the texture image set by the most recent call to [updateTexImage](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#updateTexImage()). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getTransformMatrix](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#getTransformMatrix(kotlin.FloatArray))`(`mtx:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Retrieve the 4x4 texture coordinate transform matrix associated with the texture image set by the most recent call to [updateTexImage](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#updateTexImage()). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReleased](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#isReleased())`()` Returns`true`if the SurfaceTexture was released. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#release())`()` `release()`frees all the buffers and puts the SurfaceTexture into the 'abandoned' state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseTexImage](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#releaseTexImage())`()` Releases the texture content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultBufferSize](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#setDefaultBufferSize(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the default size of the image buffers. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnFrameAvailableListener](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#setOnFrameAvailableListener(android.graphics.SurfaceTexture.OnFrameAvailableListener))`(`listener:` ` [SurfaceTexture.OnFrameAvailableListener](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.OnFrameAvailableListener)?`)` Register a callback to be invoked when a new image frame becomes available to the SurfaceTexture. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnFrameAvailableListener](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#setOnFrameAvailableListener(android.graphics.SurfaceTexture.OnFrameAvailableListener,%20android.os.Handler))`(`listener:` ` [SurfaceTexture.OnFrameAvailableListener](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.OnFrameAvailableListener)?`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?`)` Register a callback to be invoked when a new image frame becomes available to the SurfaceTexture. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateTexImage](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture#updateTexImage())`()` Update the texture image to the most recent frame from the image stream. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|

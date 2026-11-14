@@ -33,9 +33,11 @@ When a Driver class is loaded, it should create an instance of itself and regist
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsURL](https://developer.android.com/reference/kotlin/java/sql/Driver#acceptsURL(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves whether the driver thinks that it can open a connection to the given URL. |
 | abstract [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [connect](https://developer.android.com/reference/kotlin/java/sql/Driver#connect(kotlin.String,%20java.util.Properties))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Attempts to make a database connection to the given URL. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorVersion](https://developer.android.com/reference/kotlin/java/sql/Driver#getMajorVersion())`()` Retrieves the driver's major version number. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinorVersion](https://developer.android.com/reference/kotlin/java/sql/Driver#getMinorVersion())`()` Gets the driver's minor version number. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [DriverPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo)!\>! | [getPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/Driver#getPropertyInfo(kotlin.String,%20java.util.Properties))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Gets information about the possible properties for this driver. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [jdbcCompliant](https://developer.android.com/reference/kotlin/java/sql/Driver#jdbcCompliant())`()` Reports whether this driver is a genuine JDBC CompliantTM driver. |
+| --- | --- |
 
 ## Public methods
 

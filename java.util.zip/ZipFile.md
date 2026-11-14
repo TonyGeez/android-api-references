@@ -9,9 +9,11 @@ open class ZipFile : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.zip.ZipFile](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#) |
 
 | Known Direct Subclasses [JarFile](https://developer.android.com/reference/kotlin/java/util/jar/JarFile.html#) |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [JarFile](https://developer.android.com/reference/kotlin/java/util/jar/JarFile.html#) | The`JarFile`class is used to read the contents of a jar file from any file that can be opened with`java.io.RandomAccessFile`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class is used to read entries from a zip file.
 
@@ -24,45 +26,59 @@ Unless otherwise noted, passing a`null`argument to a constructor or method in th
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENATT:kotlin.Int) Central directory (CEN) header internal file attributes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENATX:kotlin.Int) Central directory (CEN) header external file attributes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENCOM:kotlin.Int) Central directory (CEN) header comment length field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENCRC:kotlin.Int) Central directory (CEN) header uncompressed file crc-32 value field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENDSK:kotlin.Int) Central directory (CEN) header disk number start field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENEXT:kotlin.Int) Central directory (CEN) header extra field length field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENFLG:kotlin.Int) Central directory (CEN) header encrypt, decrypt flags field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENHDR:kotlin.Int) Central directory (CEN) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENHOW:kotlin.Int) Central directory (CEN) header compression method field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENLEN:kotlin.Int) Central directory (CEN) header uncompressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENNAM:kotlin.Int) Central directory (CEN) header filename length field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENOFF:kotlin.Int) Central directory (CEN) header LOC header offset field offset. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENSIG:kotlin.Long) Central directory (CEN) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENSIZ:kotlin.Int) Central directory (CEN) header compressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENTIM:kotlin.Int) Central directory (CEN) header modification time field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENVEM:kotlin.Int) Central directory (CEN) header version made by field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#CENVER:kotlin.Int) Central directory (CEN) header version needed to extract field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDCOM:kotlin.Int) End of central directory (END) header zip file comment length field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDHDR:kotlin.Int) End of central directory (END) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDOFF:kotlin.Int) End of central directory (END) header offset for the first CEN header field offset. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDSIG:kotlin.Long) End of central directory (END) header signature. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDSIZ:kotlin.Int) End of central directory (END) header central directory size in bytes field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDSUB:kotlin.Int) End of central directory (END) header number of entries on this disk field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#ENDTOT:kotlin.Int) End of central directory (END) header total number of entries field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#EXTCRC:kotlin.Int) Extra local (EXT) header uncompressed file crc-32 value field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#EXTHDR:kotlin.Int) Extra local (EXT) header size in bytes (including signature). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#EXTLEN:kotlin.Int) Extra local (EXT) header uncompressed size field offset. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#EXTSIG:kotlin.Long) Extra local (EXT) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#EXTSIZ:kotlin.Int) Extra local (EXT) header compressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCCRC:kotlin.Int) Local file (LOC) header uncompressed file crc-32 value field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCEXT:kotlin.Int) Local file (LOC) header extra field length field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCFLG:kotlin.Int) Local file (LOC) header general purpose bit flag field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCHDR:kotlin.Int) Local file (LOC) header size in bytes (including signature). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCHOW:kotlin.Int) Local file (LOC) header compression method field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCLEN:kotlin.Int) Local file (LOC) header uncompressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCNAM:kotlin.Int) Local file (LOC) header filename length field offset. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCSIG:kotlin.Long) Local file (LOC) header signature. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCSIZ:kotlin.Int) Local file (LOC) header compressed size field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCTIM:kotlin.Int) Local file (LOC) header modification time field offset. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#LOCVER:kotlin.Int) Local file (LOC) header version needed to extract field offset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_DELETE](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#OPEN_DELETE:kotlin.Int) Mode flag to open a zip file and mark it for deletion. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_READ](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#OPEN_READ:kotlin.Int) Mode flag to open a zip file for reading. |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -78,9 +94,11 @@ Unless otherwise noted, passing a`null`argument to a constructor or method in th
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#close())`()` Closes the ZIP file. |
 | open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\<out [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry)!\>! | [entries](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#entries())`()` Returns an enumeration of the ZIP file entries. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#getComment())`()` Returns the zip file comment, or null if none. |
+| --- | --- |
 | open [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry)! | [getEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#getEntry(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the zip file entry for the specified name, or null if not found. |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#getInputStream(java.util.zip.ZipEntry))`(`entry:` ` [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry)!`)` Returns an input stream for reading the contents of the specified zip file entry. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#getName())`()` Returns the path name of the ZIP file. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#size())`()` Returns the number of entries in the ZIP file. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\<out [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry)!\>! | [stream](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile#stream())`()` Returns an ordered`Stream`over the ZIP file entries. |
 
@@ -624,6 +642,7 @@ ZipFile(
 ```
 
 Opens a new`ZipFile`to read from the specified`File`object in the specified mode. The mode argument must be either`OPEN_READ`or`OPEN_READ | OPEN_DELETE`.
+| --- | --- |
 
 First, if there is a security manager, its`checkRead`method is called with the`name`argument as its argument to ensure the read is allowed.
 
@@ -639,6 +658,7 @@ The UTF-8 [charset](https://developer.android.com/reference/kotlin/java/nio/char
 | `java.util.zip.ZipException` | if a ZIP format error has occurred |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.SecurityException` | if a security manager exists and its`checkRead`method doesn't allow read access to the file, or its`checkDelete`method doesn't allow deleting the file when the`OPEN_DELETE`flag is set. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`mode`argument is invalid |
 
 **See Also**
@@ -657,6 +677,7 @@ ZipFile(
 ```
 
 Opens a new`ZipFile`to read from the specified`File`object in the specified mode. The mode argument must be either`OPEN_READ`or`OPEN_READ | OPEN_DELETE`.
+| --- | --- |
 
 First, if there is a security manager, its`checkRead`method is called with the`name`argument as its argument to ensure the read is allowed.
 
@@ -665,12 +686,14 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 | `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:the ZIP file to be opened for reading |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode in which the file is to be opened |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:the [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) to be used to decode the ZIP entry name and comment that are not encoded by using UTF-8 encoding (indicated by entry's general purpose flag). |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.util.zip.ZipException` | if a ZIP format error has occurred |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.SecurityException` | if a security manager exists and its`checkRead`method doesn't allow read access to the file,or its`checkDelete`method doesn't allow deleting the file when the`OPEN_DELETE`flag is set |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if the`mode`argument is invalid |
 
 **See Also**
@@ -724,6 +747,7 @@ If the app targets Android U or above, zip file entry names containing ".." or s
 | `java.util.zip.ZipException` | if (1) a ZIP format error has occurred or (2)`targetSdkVersion >= BUILD.VERSION_CODES.UPSIDE_DOWN_CAKE`and (the`name`argument contains ".." or starts with "/"). |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.SecurityException` | if a security manager exists and its`checkRead`method doesn't allow read access to the file. |
+| --- | --- |
 
 **See Also**
 
@@ -753,6 +777,7 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 | `java.util.zip.ZipException` | if a ZIP format error has occurred |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.SecurityException` | if a security manager exists and its`checkRead`method doesn't allow read access to the file |
+| --- | --- |
 
 **See Also**
 
@@ -860,6 +885,7 @@ Closing this ZIP file will, in turn, close all input streams that have been retu
 | `java.util.zip.ZipException` | if a ZIP format error has occurred |
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.IllegalStateException` | if the zip file has been closed |
+| --- | --- |
 
 ### getName
 

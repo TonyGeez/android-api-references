@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # VcnWifiUnderlyingNetworkTemplate
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnWifiUnderlyingNetworkTemplate "View this page in Java")
+| --- | --- |
 
 ```
 class VcnWifiUnderlyingNetworkTemplate : VcnUnderlyingNetworkTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) ||
 | | ↳ | [android.net.vcn.VcnWifiUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#) |
 
@@ -31,6 +33,7 @@ See `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyin
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#getSsids()()` Retrieve the matching SSIDs, or an empty set if any SSID is acceptable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

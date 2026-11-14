@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # EventInput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventInput "View this page in Java") 
+| --- | --- |
 
 ```
 class EventInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.EventInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventInput#) |
 
 The input data for [android.adservices.ondevicepersonalization.IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,%20android.os.OutcomeReceiver)).
@@ -26,6 +28,7 @@ The input data for [android.adservices.ondevicepersonalization.IsolatedWorker#on
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventInput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getParameters](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventInput#getParameters())`()` The Event URL parameters that the service passed to[android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String))or android. |
 | [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord)? | [getRequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventInput#getRequestLogRecord())`()` The [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventInput#hashCode())`()` <br /> |
 
 ## Public constructors

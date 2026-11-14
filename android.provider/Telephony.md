@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # Telephony
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Telephony "View this page in Java") 
+| --- | --- |
 
 ```
 class Telephony
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.Telephony](https://developer.android.com/reference/kotlin/android/provider/Telephony#) |
 
 The Telephony provider contains data related to phone operation, specifically SMS and MMS messages, access to the APN list, including the MMSC to use, and the service state.
@@ -47,11 +49,14 @@ For more information about building SMS apps, read the blog post, [Getting Your 
 | abstract | [BaseMmsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns) Base columns for tables that contain MMSs. |
 | abstract | [CanonicalAddressesColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.CanonicalAddressesColumns) Columns for the "canonical_addresses" table used by MMS and SMS. |
 | | [CarrierId](https://developer.android.com/reference/kotlin/android/provider/Telephony.CarrierId) Contains carrier identification information for the current subscriptions. |
+| --- | --- |
 | | [Carriers](https://developer.android.com/reference/kotlin/android/provider/Telephony.Carriers) Carriers class contains information about APNs, including MMSC information. |
 | | [Mms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms) Contains all MMS messages. |
 | | [MmsSms](https://developer.android.com/reference/kotlin/android/provider/Telephony.MmsSms) Contains all MMS and SMS messages. |
+| --- | --- |
 | | [ServiceStateTable](https://developer.android.com/reference/kotlin/android/provider/Telephony.ServiceStateTable) Constants for interfacing with the ServiceStateProvider and the different fields of the [ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState.html#) class accessible through the provider. |
 | | [Sms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms) Contains all text-based SMS messages. |
 | abstract | [TextBasedSmsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns) Base columns for tables that contain text-based SMSs. |
+| --- | --- |
 | | [Threads](https://developer.android.com/reference/kotlin/android/provider/Telephony.Threads) Helper functions for the "threads" table used by MMS and SMS. |
 | abstract | [ThreadsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.ThreadsColumns) Columns for the "threads" table used by MMS and SMS. |

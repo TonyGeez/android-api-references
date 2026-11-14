@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # PositionedGlyphs
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/text/PositionedGlyphs "View this page in Java") 
+| --- | --- |
 
 ```
 class PositionedGlyphs
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.text.PositionedGlyphs](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#) |
 
 Text shaping result object for single style text. You can get text shaping result by[TextRunShaper.shapeTextRun(char[], int, int, int, int, float, float, boolean, Paint)](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#shapeTextRun(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint))and [TextRunShaper.shapeTextRun(CharSequence, int, int, int, int, float, float, boolean,](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#shapeTextRun(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint)).
@@ -26,18 +28,23 @@ Text shaping result object for single style text. You can get text shaping resul
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAdvance](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getAdvance())`()` Returns the total amount of advance consumed by this positioned glyphs. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAscent](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getAscent())`()` Effective ascent value of this positioned glyphs. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDescent](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getDescent())`()` Effective descent value of this positioned glyphs. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeBold](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getFakeBold(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake bold option used for drawing, otherwise false. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeItalic](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getFakeItalic(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake italic option used for drawing, otherwise false. |
+| --- | --- |
 | [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font.html#) | [getFont](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getFont(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the font object used for drawing the glyph at the given index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlyphId](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getGlyphId(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the glyph ID used for drawing the glyph at the given index. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphX](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getGlyphX(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the x coordinate of the glyph position at the given index. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphY](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getGlyphY(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the y coordinate of the glyph position at the given index. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getItalicOverride](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getItalicOverride(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden italic value if the font is variable font and \`ital\` value is overridden for drawing. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetX](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getOffsetX())`()` Returns the amount of X offset added to glyph position. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetY](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getOffsetY())`()` Returns the amount of Y offset added to glyph position. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWeightOverride](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#getWeightOverride(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden weight value if the font is variable font and \`wght\` value is overridden for drawing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glyphCount](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#glyphCount())`()` Returns the number of glyphs stored. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/text/PositionedGlyphs#toString())`()` <br /> |
 

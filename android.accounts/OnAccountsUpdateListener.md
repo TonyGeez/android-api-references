@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # OnAccountsUpdateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnAccountsUpdateListener

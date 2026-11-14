@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # PromptContentItemBulletedText
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/PromptContentItemBulletedText "View this page in Java") 
+| --- | --- |
 
 ```
 class PromptContentItemBulletedText : Parcelable, PromptContentItem
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.PromptContentItemBulletedText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemBulletedText#) |
 
 A list item with bulleted text shown on [PromptVerticalListContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView).

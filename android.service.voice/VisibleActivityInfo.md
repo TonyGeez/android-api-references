@@ -5,12 +5,14 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 # VisibleActivityInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/voice/VisibleActivityInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class VisibleActivityInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.voice.VisibleActivityInfo](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#) |
 
 The class is used to represent a visible activity information. The system provides this to services that need to know [android.service.voice.VoiceInteractionSession.ActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.ActivityId).
@@ -26,9 +28,11 @@ The class is used to represent a visible activity information. The system provid
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [VoiceInteractionSession.ActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.ActivityId) | [getActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#getActivityId())`()` Returns the [android.service.voice.VoiceInteractionSession.ActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.ActivityId) of this visible activity which can be used to interact with an activity, for example through [VoiceInteractionSession.requestDirectActions(VoiceInteractionSession.ActivityId,](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession#requestDirectActions(android.service.voice.VoiceInteractionSession.ActivityId,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

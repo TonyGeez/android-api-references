@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # OnHeadTrackerAvailableListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Spatializer.OnHeadTrackerAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnHeadTrackerAvailableListener

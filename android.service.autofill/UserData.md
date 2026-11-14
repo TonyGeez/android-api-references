@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # UserData
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/UserData "View this page in Java")
+| --- | --- |
 
 ```
 class UserData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.UserData](https://developer.android.com/reference/kotlin/android/service/autofill/UserData#) |
 
 Defines the user data used for [field classification](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#FieldClassification).
@@ -28,12 +30,15 @@ Defines the user data used for [field classification](https://developer.android.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getFieldClassificationAlgorithm()()` Gets the name of the default algorithm that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()` match scores}. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getFieldClassificationAlgorithmForCategory(kotlin.String)(categoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the name of the algorithm corresponding to the specific autofill category that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()` |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getId()()` Gets the id. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxCategoryCount()()` Gets the maximum number of unique category ids that can be passed to the builder's constructor and `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxFieldClassificationIdsSize()()` Gets the maximum number of ids that can be passed to `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFieldClassificationIds(android.view.autofill.AutofillId)`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxUserDataSize()()` Gets the maximum number of values that can be added to a `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxValueLength()()` Gets the maximum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMinValueLength()()` Gets the minimum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

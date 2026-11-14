@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ServiceWorkerWebSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ServiceWorkerWebSettings
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.ServiceWorkerWebSettings](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#) |
 
 Manages settings state for all Service Workers. These settings are not tied to the lifetime of any WebView because service workers can outlive WebView instances. The settings are similar to [WebSettings](https://developer.android.com/reference/kotlin/android/webkit/WebSettings) but only settings relevant to Service Workers are supported.
@@ -26,9 +28,11 @@ Manages settings state for all Service Workers. These settings are not tied to t
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowContentAccess](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#getAllowContentAccess())`()` Gets whether Service Workers support content URL access. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowFileAccess](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#getAllowFileAccess())`()` Gets whether Service Workers support file access. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBlockNetworkLoads](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#getBlockNetworkLoads())`()` Gets whether Service Workers are prohibited from loading any resources from the network. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCacheMode](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#getCacheMode())`()` Gets the current setting for overriding the cache mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowContentAccess](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#setAllowContentAccess(kotlin.Boolean))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables content URL access from Service Workers, see [WebSettings.setAllowContentAccess](https://developer.android.com/reference/kotlin/android/webkit/WebSettings#setAllowContentAccess(kotlin.Boolean)). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowFileAccess](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#setAllowFileAccess(kotlin.Boolean))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables file access within Service Workers, see [WebSettings.setAllowFileAccess](https://developer.android.com/reference/kotlin/android/webkit/WebSettings#setAllowFileAccess(kotlin.Boolean)). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBlockNetworkLoads](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#setBlockNetworkLoads(kotlin.Boolean))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether Service Workers should not load resources from the network, see [WebSettings.setBlockNetworkLoads](https://developer.android.com/reference/kotlin/android/webkit/WebSettings#setBlockNetworkLoads(kotlin.Boolean)). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCacheMode](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerWebSettings#setCacheMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the way the cache is used, see [WebSettings.setCacheMode](https://developer.android.com/reference/kotlin/android/webkit/WebSettings#setCacheMode(kotlin.Int)). |
 

@@ -9,6 +9,7 @@ abstract class KeyStoreSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.KeyStoreSpi](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyStore`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a keystore for a particular keystore type.
@@ -24,24 +25,31 @@ This class defines the*Service Provider Interface* (**SPI** ) for the`KeyStore`c
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [engineAliases](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineAliases())`()` Lists all the alias names of this keystore. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineContainsAlias](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineContainsAlias(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks if the given alias exists in this keystore. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineDeleteEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineDeleteEntry(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Deletes the entry identified by the given alias from this keystore. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineEntryInstanceOf](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineEntryInstanceOf(kotlin.String,%20java.lang.Class))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entryClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [KeyStore.Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry)!>!`)` Determines if the keystore`Entry`for the specified`alias`is an instance or subclass of the specified`entryClass`. |
 | abstract [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)! | [engineGetCertificate](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetCertificate(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate associated with the given alias. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineGetCertificateAlias](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetCertificateAlias(java.security.cert.Certificate))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [engineGetCertificateChain](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetCertificateChain(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate chain associated with the given alias. |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [engineGetCreationDate](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetCreationDate(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the creation date of the entry identified by the given alias. |
 | open [KeyStore.Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry)! | [engineGetEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `protParam:` ` [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!`)` Gets a`KeyStore.Entry`for the specified alias with the specified protection parameter. |
+| --- | --- |
 | abstract [Key](https://developer.android.com/reference/kotlin/java/security/Key)! | [engineGetKey](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineGetKey(kotlin.String,%20kotlin.CharArray))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Returns the key associated with the given alias, using the given password to recover it. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsCertificateEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineIsCertificateEntry(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setCertificateEntry`, or created by a call to`setEntry`with a`TrustedCertificateEntry`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsKeyEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineIsKeyEntry(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setKeyEntry`, or created by a call to`setEntry`with a`PrivateKeyEntry`or a`SecretKeyEntry`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineLoad(java.io.InputStream,%20kotlin.CharArray))`(`stream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Loads the keystore from the given input stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineLoad(java.security.KeyStore.LoadStoreParameter))`(`param:` ` [KeyStore.LoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter)!`)` Loads the keystore using the given`KeyStore.LoadStoreParameter`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineProbe](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream))`(`stream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Probes the specified input stream to determine whether it contains a keystore that is supported by this implementation, or not. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetCertificateEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineSetCertificateEntry(kotlin.String,%20java.security.cert.Certificate))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Assigns the given certificate to the given alias. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineSetEntry(kotlin.String,%20java.security.KeyStore.Entry,%20java.security.KeyStore.ProtectionParameter))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entry:` ` [KeyStore.Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry)!`, `protParam:` ` [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!`)` Saves a`KeyStore.Entry`under the specified alias. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineSetKeyEntry(kotlin.String,%20kotlin.ByteArray,%20kotlin.Array))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>!`)` Assigns the given key (that has already been protected) to the given alias. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineSetKeyEntry(kotlin.String,%20java.security.Key,%20kotlin.CharArray,%20kotlin.Array))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>!`)` Assigns the given key to the given alias, protecting it with the given password. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSize](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineSize())`()` Retrieves the number of entries in this keystore. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineStore(java.io.OutputStream,%20kotlin.CharArray))`(`stream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Stores this keystore to the given output stream, and protects its integrity with the given password. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineStore(java.security.KeyStore.LoadStoreParameter))`(`param:` ` [KeyStore.LoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter)!`)` Stores this keystore using the given`KeyStore.LoadStoreParmeter`. |
 
 ## Public constructors
@@ -235,6 +243,7 @@ Gets a`KeyStore.Entry`for the specified alias with the specified protection para
 | `java.security.KeyStoreException` | if the operation failed |
 | `java.security.NoSuchAlgorithmException` | if the algorithm for recovering the entry cannot be found |
 | `java.security.UnrecoverableEntryException` | if the specified`protParam`were insufficient or invalid |
+| --- | --- |
 | `java.security.UnrecoverableKeyException` | if the entry is a`PrivateKeyEntry`or`SecretKeyEntry`and the specified`protParam`does not contain the information needed to recover the key (e.g. wrong password) |
 
 ### engineGetKey
@@ -325,6 +334,7 @@ A password may be given to unlock the keystore (e.g. the keystore resides on a h
 | `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the [cause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())of the`IOException`should be an`UnrecoverableKeyException` |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
 | `java.security.cert.CertificateException` | if any of the certificates in the keystore could not be loaded |
+| --- | --- |
 
 ### engineLoad
 
@@ -347,6 +357,7 @@ Note that if this KeyStore has already been loaded, it is reinitialized and load
 | `java.lang.IllegalArgumentException` | if the given`KeyStore.LoadStoreParameter`input is not recognized |
 | `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect`ProtectionParameter`(e.g. wrong password) the [cause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())of the`IOException`should be an`UnrecoverableKeyException` |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
+| --- | --- |
 | `java.security.cert.CertificateException` | if any of the certificates in the keystore could not be loaded |
 
 ### engineProbe
@@ -417,6 +428,7 @@ If an entry already exists for the specified alias, it is overridden.
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:save the`KeyStore.Entry`under this alias |
 | `entry` | [KeyStore.Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry)!:the`Entry`to save |
 | `protParam` | [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!:the`ProtectionParameter`used to protect the`Entry`, which may be`null` |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|-------------------------|
@@ -445,6 +457,7 @@ If the given alias already exists, the keystore information associated with it i
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
 | `key` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the key (in protected format) to be associated with the alias |
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>!:the certificate chain for the corresponding public key (only useful if the protected key is of type`java.security.PrivateKey`). |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|--------------------------|
@@ -474,6 +487,7 @@ If the given alias already exists, the keystore information associated with it i
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
 | `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key)!:the key to be associated with the alias |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password to protect the key |
+| --- | --- |
 | `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>!:the certificate chain for the corresponding public key (only required if the given key is of type`java.security.PrivateKey`). |
 
 | Exceptions ||
@@ -517,6 +531,7 @@ Stores this keystore to the given output stream, and protects its integrity with
 | `java.io.IOException` | if there was an I/O problem with data |
 | `java.security.NoSuchAlgorithmException` | if the appropriate data integrity algorithm could not be found |
 | `java.security.cert.CertificateException` | if any of the certificates included in the keystore data could not be stored |
+| --- | --- |
 
 ### engineStore
 
@@ -537,4 +552,5 @@ Stores this keystore using the given`KeyStore.LoadStoreParmeter`.
 | `java.lang.IllegalArgumentException` | if the given`KeyStore.LoadStoreParmeter`input is not recognized |
 | `java.io.IOException` | if there was an I/O problem with data |
 | `java.security.NoSuchAlgorithmException` | if the appropriate data integrity algorithm could not be found |
+| --- | --- |
 | `java.security.cert.CertificateException` | if any of the certificates included in the keystore data could not be stored |

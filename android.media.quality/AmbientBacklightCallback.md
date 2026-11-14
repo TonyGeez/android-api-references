@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AmbientBacklightCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/MediaQualityManager.AmbientBacklightCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface AmbientBacklightCallback

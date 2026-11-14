@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PdfPageImageContent
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/content/PdfPageImageContent "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageImageContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.content.PdfPageImageContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageImageContent#) |
 
 Represents the content associated with an image type in a page of a PDF document.
@@ -31,6 +33,7 @@ Represents the content associated with an image type in a page of a PDF document
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageImageContent#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAltText](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageImageContent#getAltText())`()` Gets the alternate text associated with the image represented by this instance. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageImageContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

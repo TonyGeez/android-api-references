@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PathShape
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/PathShape "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathShape : Shape
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) ||
 | | ↳ | [android.graphics.drawable.shapes.PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#) |
 
@@ -29,6 +31,7 @@ The path can be drawn to a Canvas with its own draw() method, but more graphical
 | open [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#) | [clone](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#clone())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#draw(android.graphics.Canvas,%20android.graphics.Paint))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#hashCode())`()` <br /> |
 
 | Protected methods ||
@@ -59,6 +62,7 @@ PathShape constructor.
 | `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#):a Path that defines the geometric paths for this shape This value cannot be`null`. |
 | `stdWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the standard width for the shape. Any changes to the width with resize() will result in a width scaled based on the new width divided by this width. |
 | `stdHeight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the standard height for the shape. Any changes to the height with resize() will result in a height scaled based on the new height divided by this height. |
+| --- | --- |
 
 ## Public methods
 

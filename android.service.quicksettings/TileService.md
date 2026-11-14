@@ -7,9 +7,11 @@ open class TileService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.quicksettings.TileService](https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#) |
 
 A TileService provides the user a tile that can be added to Quick Settings. Quick Settings is a space provided that allows the user to change settings and take quick actions without leaving the context of their current app.
@@ -43,12 +45,15 @@ TileService will resolve against services that match the {@value #ACTION_QS_TILE
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#ACTION_QS_TILE:kotlin.String` Action that identifies a Service as being a TileService. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#ACTION_QS_TILE_PREFERENCES:kotlin.String` An activity that provides a user interface for adjusting TileService preferences. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#CATEGORY_ACCESSIBILITY:kotlin.String` Tile category for accessibility related tiles. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#CATEGORY_CONNECTIVITY:kotlin.String` Tile category for connectivity related tiles. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#CATEGORY_DISPLAY:kotlin.String` Tile category for display related tiles. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#CATEGORY_PRIVACY:kotlin.String` Tile category for privacy related tiles. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#CATEGORY_UTILITIES:kotlin.String` Tile category for utility tiles. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#META_DATA_ACTIVE_TILE:kotlin.String` Meta-data for tile definition to set a tile into active mode. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#META_DATA_TILE_CATEGORY:kotlin.String` Meta-data to set a category for a tile. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#META_DATA_TOGGLEABLE_TILE:kotlin.String` Meta-data for a tile to mark is toggleable. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/content/Context.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#ACCESSIBILITY_SERVICE:kotlin.String`
@@ -1077,18 +1082,23 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Tile](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile)! | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#getQsTile()()` Gets the `https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile` for this service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#isLocked()()` Checks if the lock screen is showing. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#isSecure()()` Checks if the device is in a secure state. |
+| --- | --- |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onClick()()` Called when the user clicks on this tile. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onStartListening()()` Called when this tile moves into a listening state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onStopListening()()` Called when this tile moves out of the listening state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onTileAdded()()` Called when the user adds this tile to Quick Settings. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onTileRemoved()()` Called when the user removes this tile from Quick Settings. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#requestListeningState(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Requests that a tile be put in the listening state so it can send an update. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#showDialog(android.app.Dialog)(dialog: https://developer.android.com/reference/kotlin/android/app/Dialog.html#!)` Used to show a dialog. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#startActivityAndCollapse(android.app.PendingIntent)(pendingIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Starts an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#startActivityAndCollapse(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Start an activity while collapsing the panel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#unlockAndRun(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Prompts the user to unlock the device before executing the Runnable. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 

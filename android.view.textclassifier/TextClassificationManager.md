@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # TextClassificationManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager "View this page in Java") 
+| --- | --- |
 
 ```
 class TextClassificationManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.TextClassificationManager](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#) |
 
 Interface to the text classification service.
@@ -22,6 +24,7 @@ Interface to the text classification service.
 | [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) | [createTextClassificationSession](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#createTextClassificationSession(android.view.textclassifier.TextClassificationContext))`(`classificationContext:` ` [TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext)`)` Call this method to start a text classification session with the given context. |
 | [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) | [getTextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#getTextClassifier())`()` Returns the text classifier that was set via [setTextClassifier(android.view.textclassifier.TextClassifier)](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#setTextClassifier(android.view.textclassifier.TextClassifier)). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextClassificationSessionFactory](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#setTextClassificationSessionFactory(android.view.textclassifier.TextClassificationSessionFactory))`(`factory:` ` [TextClassificationSessionFactory](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationSessionFactory)?`)` Sets a TextClassificationSessionFactory to be used to create session-aware TextClassifiers. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager#setTextClassifier(android.view.textclassifier.TextClassifier))`(`textClassifier:` ` [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier)?`)` Sets the text classifier. |
 
 ## Public methods

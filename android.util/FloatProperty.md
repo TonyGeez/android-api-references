@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # FloatProperty
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/FloatProperty "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class FloatProperty<T : Any!> : Property<T, Float!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.util.Property](https://developer.android.com/reference/kotlin/android/util/Property)\<T, [kotlin.Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)\> ||
 | | ↳ | [android.util.FloatProperty](https://developer.android.com/reference/kotlin/android/util/FloatProperty#) |
 

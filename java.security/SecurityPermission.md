@@ -9,9 +9,11 @@ class SecurityPermission : BasicPermission
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission) |||
 | | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission) ||
 | | | ↳ | [java.security.SecurityPermission](https://developer.android.com/reference/kotlin/java/security/SecurityPermission#) |
+| --- | --- | --- | --- |
 
 Legacy security code; do not use.
 

@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # NotificationChannelGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/NotificationChannelGroup "View this page in Java") 
+| --- | --- |
 
 ```
 class NotificationChannelGroup : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#) |
 
 A grouping of related notification channels. e.g., channels that all belong to a single account.
@@ -30,15 +32,19 @@ A grouping of related notification channels. e.g., channels that all belong to a
 | [NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#)! | [clone](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#clone())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel)!\>! | [getChannels](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#getChannels())`()` Returns the list of channels that belong to this group |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#getDescription())`()` Returns the user visible description of this group. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getId](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#getId())`()` Returns the id of this group. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#getName())`()` Returns the user visible name of this group. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#isBlocked())`()` Returns whether or not notifications posted to [channels](https://developer.android.com/reference/kotlin/android/app/NotificationChannel) belonging to this group are blocked. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#setDescription(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the user visible description of this group. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

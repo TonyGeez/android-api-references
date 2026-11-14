@@ -3,12 +3,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # ChooserResult
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/chooser/ChooserResult "View this page in Java")
+| --- | --- |
 
 ```
 class ChooserResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserResult](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#) |
 
 An event reported to a supplied \[IntentSender\] by the system chooser when an activity is selected or other actions are taken to complete the session.
@@ -20,6 +22,7 @@ An event reported to a supplied \[IntentSender\] by the system chooser when an a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_COPY:kotlin.Int` The session was completed by invoking the copy action. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_EDIT:kotlin.Int` The session was completed by invoking the edit action. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_SELECTED_COMPONENT:kotlin.Int` The session was completed by selecting an activity to launch. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_UNKNOWN:kotlin.Int` An unknown action was taken to complete the session. |
 
 | Inherited constants ||
@@ -31,9 +34,11 @@ An event reported to a supplied \[IntentSender\] by the system chooser when an a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#getSelectedComponent()()` Provides the component of the Activity selected for results with type when type is `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_SELECTED_COMPONENT:kotlin.Int`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#getType()()` The type of the result. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#isShortcut()()` Whether the selected component was provided by the app from as a shortcut. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

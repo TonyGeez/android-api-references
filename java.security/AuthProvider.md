@@ -9,9 +9,11 @@ abstract class AuthProvider : Provider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [java.util.Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary.html#)\<K, V\> |||||
 | | ↳ | [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html#)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> ||||
 | | | ↳ | [java.util.Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) ||
 | | | | | ↳ | [java.security.AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider#) |
 
@@ -28,6 +30,7 @@ Legacy security code; do not use.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [login](https://developer.android.com/reference/kotlin/java/security/AuthProvider#login(javax.security.auth.Subject,%20javax.security.auth.callback.CallbackHandler))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject.html#)!`, `handler:` ` [CallbackHandler](https://developer.android.com/reference/kotlin/javax/security/auth/callback/CallbackHandler.html#)!`)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [logout](https://developer.android.com/reference/kotlin/java/security/AuthProvider#logout())`()` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallbackHandler](https://developer.android.com/reference/kotlin/java/security/AuthProvider#setCallbackHandler(javax.security.auth.callback.CallbackHandler))`(`handler:` ` [CallbackHandler](https://developer.android.com/reference/kotlin/javax/security/auth/callback/CallbackHandler.html#)!`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

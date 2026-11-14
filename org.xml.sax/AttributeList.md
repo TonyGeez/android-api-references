@@ -12,6 +12,7 @@ interface AttributeList
 | [org.xml.sax.AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#) |
 
 | Known Direct Subclasses [AttributeListImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributeListImpl) |-----------------------------------------------------------------------------------------------------------|-------------------------------------------| | [AttributeListImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributeListImpl) | Default implementation for AttributeList. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 9.**
 |
@@ -59,9 +60,11 @@ public void startElement (String name, AttributeList atts) {
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getLength())`()` Return the number of attributes in this list. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getName(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the name of an attribute in this list (by position). |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the type of an attribute in the list (by position). |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the type of an attribute in the list (by name). |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of an attribute in the list (by position). |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value of an attribute in the list (by name). |
+| --- | --- |
 
 ## Public methods
 

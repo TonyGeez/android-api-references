@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # FallbackOption
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/FallbackOption "View this page in Java") 
+| --- | --- |
 
 ```
 class FallbackOption : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.biometrics.FallbackOption](https://developer.android.com/reference/kotlin/android/hardware/biometrics/FallbackOption#) |
 
 Contains the information for a fallback option to be displayed within Biometric Prompt.
@@ -30,6 +32,7 @@ Contains the information for a fallback option to be displayed within Biometric 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/hardware/biometrics/FallbackOption#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconType](https://developer.android.com/reference/kotlin/android/hardware/biometrics/FallbackOption#getIconType())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/FallbackOption#getText())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/hardware/biometrics/FallbackOption#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

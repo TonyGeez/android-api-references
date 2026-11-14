@@ -8,6 +8,7 @@ class CloudMediaProviderContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.CloudMediaProviderContract](https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#) |
 
 Defines the contract between a cloud media provider and the OS.
@@ -21,9 +22,11 @@ To create a cloud media provider, extend `https://developer.android.com/referenc
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.AlbumColumns` Constants related to an album item, including `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` column names |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.Capabilities` Information about what capabilities a CloudMediaProvider can support. |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCategoryColumns` MediaCategory represents a broader structure that a `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaSetColumns` or another `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCategoryColumns` belongs to. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo` Constants related to a media collection |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` Constants related to a media item, including `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` column names |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaSetColumns` MediaSet represents a cohesive collection of related unique media items, sharing a common meaningful context or theme. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.SearchSuggestionColumns` Represents a search suggestion provided by the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
 
 | Constants ||
@@ -31,21 +34,27 @@ To create a cloud media provider, extend `https://developer.android.com/referenc
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` Limits the query results to only media items matching the given album id. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_LOOPING_PLAYBACK_ENABLED:kotlin.String` Indicates whether to enable looping playback of media items. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_MEDIA_COLLECTION_ID:kotlin.String` `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo#MEDIA_COLLECTION_ID:kotlin.String` on which the media or album query occurred. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` The maximum number of query results that should be included in a batch when syncing metadata with cloud provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` Opaque pagination token to retrieve the next page (cursor) from a media or album query. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PREVIEW_THUMBNAIL:kotlin.String` Forces the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)` file descriptor to return a thumbnail image. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` Extra used to specify the sorting behavior when querying from `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED:kotlin.String` Indicates whether to mute audio during preview of media items. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` Generation number to fetch the latest media or album metadata changes from the media collection. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSION:kotlin.String` Permission required to protect `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETS:kotlin.String` Represents media category related to faces of people and pets. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MEDIA_CATEGORY_TYPE_USER_ALBUMS:kotlin.String` Represents media category related to a user's custom albums. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#PROVIDER_INTERFACE:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to identify `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_ALBUM:kotlin.String` Suggestion based on user albums. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_DATE:kotlin.String` Suggestion based on the date photos were taken. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_FACE:kotlin.String` Suggestion based on faces detected in photos. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_LOCATION:kotlin.String` Suggestion based on location data associated with photos. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_TEXT:kotlin.String` Represents a generic text search suggestion. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SORT_ORDER_DESC_DATE_TAKEN:kotlin.Int` Sort items in descending order by the `DATE_TAKEN_MILLIS`. |
 
 ## Constants

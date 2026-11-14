@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # ThemedSpinnerAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ThemedSpinnerAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 interface ThemedSpinnerAdapter : SpinnerAdapter
@@ -13,8 +14,10 @@ interface ThemedSpinnerAdapter : SpinnerAdapter
 | [android.widget.ThemedSpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/ThemedSpinnerAdapter#) |
 
 | Known Direct Subclasses [ArrayAdapter](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter), [CursorAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter), [SimpleAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleAdapter) |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ArrayAdapter](https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter) | You can use this adapter to provide views for an [AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView), Returns a view for each object in a collection of data objects you provide, and can be used with list-based user interface widgets such as [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView) or [Spinner](https://developer.android.com/reference/kotlin/android/widget/Spinner). | | [CursorAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter) | Adapter that exposes data from a [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) to a [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView) widget. | | [SimpleAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleAdapter) | An easy adapter to map static data to views defined in an XML file. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ResourceCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter), [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [ResourceCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter) | An easy adapter that creates views defined in an XML file. | | [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An extension of SpinnerAdapter that is capable of inflating drop-down views against a different theme than normal views.
 

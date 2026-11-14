@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MatchFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/util/Linkify.MatchFilter "View this page in Java") 
+| --- | --- |
 
 ```
 interface MatchFilter
@@ -41,6 +42,7 @@ Examines the character span matched by the pattern and determines if the match s
 | `s` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The body of text against which the pattern was matched |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the first character in s that was matched by the pattern - inclusive |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the last character in s that was matched - exclusive |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|

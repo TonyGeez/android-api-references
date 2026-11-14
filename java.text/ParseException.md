@@ -9,11 +9,14 @@ open class ParseException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.text.ParseException](https://developer.android.com/reference/kotlin/java/text/ParseException#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException.html#) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException.html#) | Exception that signals an error has occurred while parsing the input to StringPrep or IDNA. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Signals that an error has been reached unexpectedly while parsing.
 

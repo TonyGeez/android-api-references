@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # CircularPropagation
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/CircularPropagation "View this page in Java") 
+| --- | --- |
 
 ```
 open class CircularPropagation : VisibilityPropagation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.transition.TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation) |||
 | | ↳ | [android.transition.VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation) ||
 | | | ↳ | [android.transition.CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation#) |
+| --- | --- | --- | --- |
 
 A propagation that varies with the distance to the epicenter of the Transition or center of the scene if no epicenter exists. When a View is visible in the start of the transition, Views farther from the epicenter will transition sooner than Views closer to the epicenter. When a View is not in the start of the transition or is not visible at the start of the transition, it will transition sooner when closer to the epicenter and later when farther from the epicenter. This is the default TransitionPropagation used with [android.transition.Explode](https://developer.android.com/reference/kotlin/android/transition/Explode).
 
@@ -61,6 +64,7 @@ open fun getStartDelay(
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The root of the View hierarchy running the transition. |
 | `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!:The transition that created the Animator |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The values for a specific target in the start scene. |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The values for the target in the end scene. |
 
 | Return ||

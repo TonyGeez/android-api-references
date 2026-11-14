@@ -5,12 +5,14 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 # UtteranceProgressListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class UtteranceProgressListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.speech.tts.UtteranceProgressListener](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#) |
 
 Listener for events relating to the progress of an utterance through the synthesis queue. Each utterance is associated with a call to android.speech.tts.TextToSpeech#speak or android.speech.tts.TextToSpeech#synthesizeToFile with an associated utterance identifier, as per [TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.Engine#KEY_PARAM_UTTERANCE_ID:kotlin.String). The callbacks specified in this method can be called from multiple threads.
@@ -26,9 +28,11 @@ Listener for events relating to the progress of an utterance through the synthes
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioAvailable](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onAudioAvailable(kotlin.String,%20kotlin.ByteArray))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `audio:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is called when a chunk of audio is ready for consumption. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBeginSynthesis](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onBeginSynthesis(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sampleRateInHz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `audioFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `channelCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the TTS engine begins to synthesize the audio for a request. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDone](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onDone(kotlin.String))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance has successfully completed processing. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onError(kotlin.String))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an error has occurred during processing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onError(kotlin.String,%20kotlin.Int))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an error has occurred during processing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRangeStart](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onRangeStart(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `frame:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This is called when the TTS service is about to speak the specified range of the utterance with the given utteranceId. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onStart(kotlin.String))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance "starts" as perceived by the caller. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener#onStop(kotlin.String,%20kotlin.Boolean))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `interrupted:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when an utterance has been stopped while in progress or flushed from the synthesis queue. |
 
@@ -88,6 +92,7 @@ This is called when the TTS engine starts synthesizing audio for the request. If
 | `utteranceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The utterance ID of the utterance. |
 | `sampleRateInHz` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Sample rate in hertz of the generated audio. |
 | `audioFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Audio format of the generated audio. Should be one of [AudioFormat.ENCODING_PCM_8BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_8BIT:kotlin.Int), [AudioFormat.ENCODING_PCM_16BIT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_16BIT:kotlin.Int) or [AudioFormat.ENCODING_PCM_FLOAT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#ENCODING_PCM_FLOAT:kotlin.Int). |
+| --- | --- |
 | `channelCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of channels. |
 
 ### onDone
@@ -165,6 +170,7 @@ Only called if the engine supplies timing information by calling [android.speech
 | `utteranceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Unique id identifying the synthesis request. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start index of the range in the utterance text. |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The end index of the range (exclusive) in the utterance text. |
+| --- | --- |
 | `frame` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in frames in the audio of the request where this range is spoken. |
 
 ### onStart

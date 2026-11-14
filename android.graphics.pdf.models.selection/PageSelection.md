@@ -4,12 +4,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PageSelection
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/models/selection/PageSelection "View this page in Java")
+| --- | --- |
 
 ```
 class PageSelection : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.models.selection.PageSelection](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#) |
 
 Represents the list of selected content on a particular page of the PDF document. By default, the selection boundary is represented from left to right. **Note:**Currently supports text selection only.
@@ -29,9 +31,11 @@ Represents the list of selected content on a particular page of the PDF document
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getPage()()` Gets the particular page for which the selection is highlighted. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent.html#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getSelectedTextContents()()` Returns the text content within the selection boundaries on the page. |
+| --- | --- |
 | [SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStart()()` Gets the edge from where the selection starts- index is inclusive. |
 | [SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStop()()` Gets the edge where the selection stops - index is inclusive. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -59,6 +63,7 @@ Creates a new instance of `https://developer.android.com/reference/kotlin/androi
 | `page` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The page number of the selection. |
 | `start` | [SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary): Boundary where the selection starts. This value cannot be `null`. |
 | `stop` | [SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary): Boundary where the selection stops. This value cannot be `null`. |
+| --- | --- |
 | `selectedContents` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent.html#)!\>: list of segments of selected text content. This value cannot be `null`. |
 
 | Exceptions ||

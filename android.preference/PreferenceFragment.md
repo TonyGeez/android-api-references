@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # PreferenceFragment
 
 Kotlin | [Java](https://developer.android.com/reference/android/preference/PreferenceFragment "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class PreferenceFragment : Fragment
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment.html#) ||
 | | ↳ | [android.preference.PreferenceFragment](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#) |
 
@@ -61,18 +63,23 @@ The preference hierarchy can be formed in multiple ways:
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPreferencesFromIntent](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#addPreferencesFromIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Adds preferences from activities that match the given [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPreferencesFromResource](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#addPreferencesFromResource(kotlin.Int))`(`preferencesResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inflates the given XML resource and adds the preference hierarchy to the current preference hierarchy. |
 | open [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)! | [findPreference](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#findPreference(kotlin.CharSequence))`(`key:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Finds a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) based on its key. |
+| --- | --- |
 | open [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager)! | [getPreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#getPreferenceManager())`()` Returns the [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager) used by this fragment. |
 | open [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen)! | [getPreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#getPreferenceScreen())`()` Gets the root of the preference hierarchy that this fragment is showing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityCreated](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onActivityCreated(android.os.Bundle))`(`savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called when the fragment's activity has been created and this fragment's view hierarchy instantiated. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityResult](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onActivityResult(kotlin.Int,%20kotlin.Int,%20android.content.Intent))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreate](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onCreate(android.os.Bundle))`(`savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called to do initial creation of a fragment. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | [onCreateView](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle))`(`inflater:` ` [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#)!`, `container:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)?`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called to have the fragment instantiate its user interface view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onDestroy())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyView](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onDestroyView())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceTreeClick](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onPreferenceTreeClick(android.preference.PreferenceScreen,%20android.preference.Preference))`(`preferenceScreen:` ` [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen)!`, `preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onSaveInstanceState(android.os.Bundle))`(`outState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onStart())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onStop())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onViewCreated](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#onViewCreated(android.view.View,%20android.os.Bundle))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called immediately after [onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)](https://developer.android.com/reference/kotlin/android/app/Fragment.html#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle)) has returned, but before any saved state has been restored in to the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment#setPreferenceScreen(android.preference.PreferenceScreen))`(`preferenceScreen:` ` [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen)!`)` Sets the root of the preference hierarchy that this fragment is showing. |
 
@@ -215,6 +222,7 @@ open fun onActivityResult(
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer request code originally supplied to startActivityForResult(), allowing you to identify who this result came from. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer result code returned by the child activity through its setResult(). |
 | `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
+| --- | --- |
 
 ### onCreate
 
@@ -261,6 +269,7 @@ If you return a View from here, you will later be called in [onDestroyView](http
 | `inflater` | [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#)!: The LayoutInflater object that can be used to inflate any views in the fragment, |
 | `container` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)?: This value may be `null`. |
 | `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------|

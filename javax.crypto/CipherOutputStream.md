@@ -9,9 +9,11 @@ open class CipherOutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [javax.crypto.CipherOutputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#) |
+| --- | --- | --- | --- |
 
 A CipherOutputStream is composed of an OutputStream and a Cipher so that write() methods first process the data before writing them out to the underlying OutputStream. The cipher must be fully initialized before being used by a CipherOutputStream.
 
@@ -36,6 +38,7 @@ It is crucial for a programmer using this class not to use methods that are not 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#close())`()` Closes this output stream and releases any system resources associated with this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#flush())`()` Flushes this output stream by forcing any buffered output bytes that have already been processed by the encapsulated cipher object to be written out. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes`b.length`bytes from the specified byte array to this output stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this output stream. |
 
@@ -105,6 +108,7 @@ This method resets the encapsulated cipher object to its initial state and calls
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 ### flush
 
@@ -144,6 +148,7 @@ The`write`method of`CipherOutputStream`calls the`write`method of three arguments
 | `java.io.IOException` | if an I/O error occurs. |
 | `java.lang.NullPointerException` | if`b`is null. |
 | `java.io.IOException` | if an I/O error occurs. |
+| --- | --- |
 
 **See Also**
 
@@ -166,6 +171,7 @@ Writes`len`bytes from the specified byte array starting at offset`off`to this ou
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes to write. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------------------------------------------|

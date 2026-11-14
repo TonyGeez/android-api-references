@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # Callback
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/advancedprotection/AdvancedProtectionManager.Callback "View this page in Java") 
+| --- | --- |
 
 ```
 interface Callback

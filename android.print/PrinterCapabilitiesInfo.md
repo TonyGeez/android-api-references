@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrinterCapabilitiesInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class PrinterCapabilitiesInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrinterCapabilitiesInfo](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#) |
 
 This class represents the capabilities of a printer. Instances of this class are created by a print service to report the capabilities of a printer it manages. The capabilities of a printer specify how it can print content. For example, what are the media sizes supported by the printer, what are the minimal margins of the printer based on its technical design, etc.
@@ -30,12 +32,15 @@ This class represents the capabilities of a printer. Instances of this class are
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorModes](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getColorModes())`()` Gets the bit mask of supported color modes. |
+| --- | --- |
 | [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes) | [getDefaults](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getDefaults())`()` Gets the default print attributes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuplexModes](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getDuplexModes())`()` Gets the bit mask of supported duplex modes. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.MediaSize](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.MediaSize)!\> | [getMediaSizes](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getMediaSizes())`()` Gets the supported media sizes. |
+| --- | --- |
 | [PrintAttributes.Margins](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Margins) | [getMinMargins](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getMinMargins())`()` Gets the minimal margins. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.Resolution](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Resolution)!\> | [getResolutions](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#getResolutions())`()` Gets the supported resolutions. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/print/PrinterCapabilitiesInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

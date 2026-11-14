@@ -5,6 +5,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # RecognitionSupportCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/speech/RecognitionSupportCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface RecognitionSupportCallback

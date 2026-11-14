@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Browser
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Browser "View this page in Java") 
+| --- | --- |
 
 ```
 open class Browser
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.Browser](https://developer.android.com/reference/kotlin/android/provider/Browser#) |
 
 ## Summary
@@ -20,6 +22,7 @@ open class Browser
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_APPLICATION_ID](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_APPLICATION_ID:kotlin.String) The name of the extra data when starting the Browser from another application. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CREATE_NEW_TAB](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_CREATE_NEW_TAB:kotlin.String) Boolean extra passed along with an Intent to a browser, specifying that a new tab be created. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HEADERS](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_HEADERS:kotlin.String) The name of the extra data in the VIEW intent. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INITIAL_ZOOM_LEVEL](https://developer.android.com/reference/kotlin/android/provider/Browser#INITIAL_ZOOM_LEVEL:kotlin.String) The name of extra data when starting Browser with ACTION_VIEW or ACTION_SEARCH intent. |
 
 | Public constructors ||

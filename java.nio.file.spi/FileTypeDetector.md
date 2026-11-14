@@ -9,6 +9,7 @@ abstract class FileTypeDetector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.file.spi.FileTypeDetector](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileTypeDetector#) |
 
 A file type detector for probing a file to guess its file type.

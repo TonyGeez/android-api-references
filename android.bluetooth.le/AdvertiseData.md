@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # AdvertiseData
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertiseData "View this page in Java")
+| --- | --- |
 
 ```
 class AdvertiseData : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.AdvertiseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#) |
 
 Advertise data packet container for Bluetooth LE advertising. This represents the data to be advertised as well as the scan response data for active scans.
@@ -30,15 +32,19 @@ Use `https://developer.android.com/reference/kotlin/android/bluetooth/le/Adverti
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getIncludeDeviceName()()` Whether the device name will be included in the advertisement packet. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getIncludeTxPowerLevel()()` Whether the transmission power level will be included in the advertisement packet. |
 | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getManufacturerSpecificData()()` Returns an array of manufacturer Id and the corresponding manufacturer specific data. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getServiceData()()` Returns a map of 16-bit UUID and its corresponding service data. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getServiceSolicitationUuids()()` Returns a list of service solicitation UUIDs within the advertisement that we invite to connect. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getServiceUuids()()` Returns a list of service UUIDs within the advertisement that are used to identify the Bluetooth GATT services. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TransportDiscoveryData](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#getTransportDiscoveryData()()` Returns a list of `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData` within the advertisement. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

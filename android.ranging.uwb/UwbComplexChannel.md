@@ -7,6 +7,7 @@ class UwbComplexChannel : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.uwb.UwbComplexChannel](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#) |
 
 A Class representing the complex channel for UWB which comprises channel and preamble index negotiated between peer devices out of band before ranging.
@@ -29,21 +30,27 @@ See
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_10:kotlin.Int` UWB channel 10 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_12:kotlin.Int` UWB channel 12 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_13:kotlin.Int` UWB channel 13 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_14:kotlin.Int` UWB channel 14 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_5:kotlin.Int` UWB channel 5 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_6:kotlin.Int` UWB channel 6 |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_8:kotlin.Int` UWB channel 8 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_CHANNEL_9:kotlin.Int` UWB channel 9 |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_10:kotlin.Int` UWB preamble code index 10 (PRF mode - BPRF). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_11:kotlin.Int` UWB preamble code index 11 (PRF mode - BPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_12:kotlin.Int` UWB preamble code index 12 (PRF mode - BPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_25:kotlin.Int` UWB preamble code index 25 (PRF mode - HPRF). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_26:kotlin.Int` UWB preamble code index 26 (PRF mode - HPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_27:kotlin.Int` UWB preamble code index 27 (PRF mode - HPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_28:kotlin.Int` UWB preamble code index 28 (PRF mode - HPRF). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_29:kotlin.Int` UWB preamble code index 29 (PRF mode - HPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_30:kotlin.Int` UWB preamble code index 30 (PRF mode - HPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_31:kotlin.Int` UWB preamble code index 31 (PRF mode - HPRF). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_32:kotlin.Int` UWB preamble code index 32 (PRF mode - HPRF). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#UWB_PREAMBLE_CODE_INDEX_9:kotlin.Int` UWB preamble code index 9 (PRF mode - BPRF). |
 
@@ -56,9 +63,11 @@ See
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#getChannel()()` Gets the UWB channel associated with this configuration. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#getPreambleIndex()()` Gets the UWB preamble index associated with this configuration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

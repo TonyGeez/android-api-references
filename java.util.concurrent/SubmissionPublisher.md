@@ -9,6 +9,7 @@ open class SubmissionPublisher<T : Any!> : AutoCloseable, Flow.Publisher<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.SubmissionPublisher](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#) |
 
 A [Flow.Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) that asynchronously issues submitted (non-null) items to current subscribers until it is closed. Each current subscriber receives newly submitted items in the same order unless drops or exceptions are encountered. Using a SubmissionPublisher allows item generators to act as compliant [reactive-streams](http://www.reactive-streams.org/) Publishers relying on drop handling and/or blocking for flow control.
@@ -84,18 +85,23 @@ Here is an example of a [Flow.Processor](https://developer.android.com/reference
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#close())`()` Unless already closed, issues [onComplete](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onComplete()) signals to current subscribers, and disallows subsequent attempts to publish. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeExceptionally](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#closeExceptionally(kotlin.Throwable))`(`error:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Unless already closed, issues [onError](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onError(kotlin.Throwable)) signals to current subscribers with the given error, and disallows subsequent attempts to publish. |
 | open [CompletableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!\>! | [consume](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#consume(java.util.function.Consumer))`(`consumer:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `T>!`)` Processes all published items using the given Consumer function. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [estimateMaximumLag](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#estimateMaximumLag())`()` Returns an estimate of the maximum number of items produced but not yet consumed among all current subscribers. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [estimateMinimumDemand](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#estimateMinimumDemand())`()` Returns an estimate of the minimum number of items requested (via [request](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription#request(kotlin.Long))) but not yet produced, among all current subscribers. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getClosedException](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getClosedException())`()` Returns the exception associated with [closeExceptionally](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#closeExceptionally(kotlin.Throwable)), or null if not closed or if closed normally. |
+| --- | --- |
 | open [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor)! | [getExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getExecutor())`()` Returns the Executor used for asynchronous delivery. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxBufferCapacity](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getMaxBufferCapacity())`()` Returns the maximum per-subscriber buffer capacity. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberOfSubscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getNumberOfSubscribers())`()` Returns the number of current subscribers. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)\<in T\>!\>! | [getSubscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getSubscribers())`()` Returns a list of current subscribers for monitoring and tracking purposes, not for invoking [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber) methods on the subscribers. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSubscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#hasSubscribers())`()` Returns true if this publisher has any subscribers. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#isClosed())`()` Returns true if this publisher is not accepting submissions. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSubscribed](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#isSubscribed(java.util.concurrent.Flow.Subscriber))`(`subscriber:` ` [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)<in` `T>!`)` Returns true if the given Subscriber is currently subscribed. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#offer(java.util.concurrent.SubmissionPublisher.T,%20java.util.function.BiPredicate))`(`item:` `T`, `onDrop:` ` [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate.html#)< [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)<in` `T>!,` `in` `T>!`)` Publishes the given item, if possible, to each current subscriber by asynchronously invoking its [onNext](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onNext(java.util.concurrent.Flow.Subscriber.T)) method. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#offer(java.util.concurrent.SubmissionPublisher.T,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.function.BiPredicate))`(`item:` `T`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`, `onDrop:` ` [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate.html#)< [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)<in` `T>!,` `in` `T>!`)` Publishes the given item, if possible, to each current subscriber by asynchronously invoking its [onNext](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onNext(java.util.concurrent.Flow.Subscriber.T)) method, blocking while resources for any subscription are unavailable, up to the specified timeout or until the caller thread is interrupted, at which point the given handler (if non-null) is invoked, and if it returns true, retried once. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#submit(java.util.concurrent.SubmissionPublisher.T))`(`item:` `T`)` Publishes the given item to each current subscriber by asynchronously invoking its [onNext](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onNext(java.util.concurrent.Flow.Subscriber.T)) method, blocking uninterruptibly while resources for any subscriber are unavailable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subscribe](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#subscribe(java.util.concurrent.Flow.Subscriber))`(`subscriber:` ` [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)<in` `T>!`)` Adds the given Subscriber unless already subscribed. |
 
@@ -151,6 +157,7 @@ Creates a new SubmissionPublisher using the given Executor for async delivery to
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor)!: the executor to use for async delivery, supporting creation of at least one independent thread |
 | `maxBufferCapacity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum capacity for each subscriber's buffer (the enforced capacity may be rounded up to the nearest power of two and/or bounded by the largest value supported by this implementation; method [getMaxBufferCapacity](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher#getMaxBufferCapacity()) returns the actual value) |
 | `handler` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<in [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)\<in T\>!, in [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>!: if non-null, procedure to invoke upon exception thrown in method `onNext` |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------|
@@ -392,6 +399,7 @@ If the Executor for this publisher throws a RejectedExecutionException (or any o
 | `java.lang.IllegalStateException` | if closed |
 | `java.lang.NullPointerException` | if item is null |
 | `java.util.concurrent.RejectedExecutionException` | if thrown by Executor |
+| --- | --- |
 
 ### offer
 
@@ -417,6 +425,7 @@ If the Executor for this publisher throws a RejectedExecutionException (or any o
 | `item` | T: the (non-null) item to publish |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): how long to wait for resources for any subscriber before giving up, in units of `unit` |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!: a `TimeUnit` determining how to interpret the `timeout` parameter |
+| --- | --- |
 | `onDrop` | [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate.html#)\< [Flow.Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber)\<in T\>!, in T\>!: if non-null, the handler invoked upon a drop to a subscriber, with arguments of the subscriber and item; if it returns true, an offer is re-attempted (once) |
 
 | Return ||
@@ -428,6 +437,7 @@ If the Executor for this publisher throws a RejectedExecutionException (or any o
 | `java.lang.IllegalStateException` | if closed |
 | `java.lang.NullPointerException` | if item is null |
 | `java.util.concurrent.RejectedExecutionException` | if thrown by Executor |
+| --- | --- |
 
 ### submit
 
@@ -454,6 +464,7 @@ If the Executor for this publisher throws a RejectedExecutionException (or any o
 | `java.lang.IllegalStateException` | if closed |
 | `java.lang.NullPointerException` | if item is null |
 | `java.util.concurrent.RejectedExecutionException` | if thrown by Executor |
+| --- | --- |
 
 ### subscribe
 

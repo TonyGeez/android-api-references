@@ -9,6 +9,7 @@ abstract class MethodHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.invoke.MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#) |
 
 A method handle is a typed, directly executable reference to an underlying method, constructor, field, or similar low-level operation, with optional transformations of arguments or return values. These transformations are quite general, and include such patterns as [conversion](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asType(java.lang.invoke.MethodType)), [insertion](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#bindTo(kotlin.Any)), java.lang.invoke.MethodHandles#dropArguments, and [substitution](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#filterArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20java.lang.invoke.MethodHandle))
@@ -183,18 +184,23 @@ These limits imply that certain method handles cannot be created, solely because
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asCollector](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asCollector(kotlin.Int,%20java.lang.Class,%20kotlin.Int))`(`collectArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of positional arguments starting at a given position, and collects them into an array argument. |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asCollector](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asCollector(java.lang.Class,%20kotlin.Int))`(`arrayType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of trailing positional arguments and collects them into an array argument. |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asFixedArity](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asFixedArity())`()` Makes a*fixed arity*method handle which is otherwise equivalent to the current method handle. |
+| --- | --- |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asSpreader](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asSpreader(kotlin.Int,%20java.lang.Class,%20kotlin.Int))`(`spreadArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts an array argument at a given position and spreads its elements as positional arguments in place of the array. |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asSpreader](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asSpreader(java.lang.Class,%20kotlin.Int))`(`arrayType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts a trailing array argument and spreads its elements as positional arguments. |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asType(java.lang.invoke.MethodType))`(`newType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces an adapter method handle which adapts the type of the current method handle to a new type. |
+| --- | --- |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [asVarargsCollector](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asVarargsCollector(java.lang.Class))`(`arrayType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Makes a*variable arity*adapter which is able to accept any number of trailing positional arguments and collect them into an array argument. |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [bindTo](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#bindTo(kotlin.Any))`(`x:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Binds a value`x`to the first argument of a method handle, without invoking it. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invoke](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invoke(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, and optionally performing conversions on arguments and return values. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeExact](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invokeExact(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, but requiring an exact type match. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invokeWithArguments(kotlin.Any))`(`vararg` `arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Performs a variable arity invocation, passing the arguments in the given list to the method handle, as if via an inexact [invoke](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invoke(kotlin.Any))from a call site which mentions only the type`Object`, and whose arity is the length of the argument list. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invokeWithArguments(kotlin.collections.MutableList))`(`arguments:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>!`)` Performs a variable arity invocation, passing the arguments in the given array to the method handle, as if via an inexact [invoke](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invoke(kotlin.Any))from a call site which mentions only the type`Object`, and whose arity is the length of the argument array. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarargsCollector](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#isVarargsCollector())`()` Determines if this method handle supports [variable arity](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asVarargsCollector(java.lang.Class))calls. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#toString())`()` Returns a string representation of the method handle, starting with the string`"MethodHandle"`and ending with the string representation of the method handle's type. |
 | open [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | [type](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#type())`()` Reports the type of this method handle. |
+| --- | --- |
 | open [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#)! | [withVarargs](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#withVarargs(kotlin.Boolean))`(`makeVarargs:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adapts this method handle to be [variable arity](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asVarargsCollector(java.lang.Class))if the boolean flag is true, else [fixed arity](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#asFixedArity()). |
 
 ## Public methods
@@ -220,6 +226,7 @@ This method behaves very much like [asCollector(java.lang.Class,int)](https://de
 | `collectArgPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based position in the parameter list at which to start collecting. |
 | `arrayType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to collect into a new array argument |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -230,6 +237,7 @@ This method behaves very much like [asCollector(java.lang.Class,int)](https://de
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
 | `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's array parameter type, or`arrayLength`is not a legal array size, or`collectArgPos`has an illegal value (negative, or greater than the number of arguments), or the resulting method handle's type would have [too many parameters](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#maxarity) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
+| --- | --- |
 
 **See Also**
 
@@ -303,6 +311,7 @@ Here are some examples of array-collecting method handles:
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
 | `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's trailing parameter type, or`arrayLength`is not a legal array size, or the resulting method handle's type would have [too many parameters](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#maxarity) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
+| --- | --- |
 
 **See Also**
 
@@ -376,6 +385,7 @@ This method behaves very much like [asSpreader(java.lang.Class,int)](https://dev
 | `spreadArgPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position (zero-based index) in the argument list at which spreading should start. |
 | `arrayType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:usually`Object[]`, the type of the array argument from which to extract the spread arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to spread from an incoming array argument |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -386,6 +396,7 @@ This method behaves very much like [asSpreader(java.lang.Class,int)](https://dev
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
 | `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if`spreadArgPos`has an illegal value (negative, or together with arrayLength exceeding the number of arguments), or if the resulting method handle's type would have [too many parameters](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#maxarity) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
+| --- | --- |
 
 **See Also**
 
@@ -473,6 +484,7 @@ Here are some simple examples of array-spreading method handles:
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
 | `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if the resulting method handle's type would have [too many parameters](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#maxarity) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
+| --- | --- |
 
 **See Also**
 
@@ -683,6 +695,7 @@ When this method is observed via the Core Reflection API, it will appear as a si
 | `java.lang.invoke.WrongMethodTypeException` | if the target's type cannot be adjusted to the caller's symbolic type descriptor |
 | `java.lang.ClassCastException` | if the target's type can be adjusted to the caller, but a reference cast fails |
 | `java.lang.Throwable` | anything thrown by the underlying method propagates unchanged through the method handle call |
+| --- | --- |
 
 ### invokeExact
 
@@ -759,6 +772,7 @@ Unlike the signature polymorphic methods`invokeExact`and`invoke`,`invokeWithArgu
 | `java.lang.ClassCastException` | if an argument cannot be converted by reference casting |
 | `java.lang.invoke.WrongMethodTypeException` | if the target's type cannot be adjusted to take the given number of`Object`arguments |
 | `java.lang.Throwable` | anything thrown by the target method invocation |
+| --- | --- |
 
 **See Also**
 
@@ -794,6 +808,7 @@ This method is also equivalent to the following code:
 | `java.lang.NullPointerException` | if`arguments`is a null reference |
 | `java.lang.ClassCastException` | if an argument cannot be converted by reference casting |
 | `java.lang.invoke.WrongMethodTypeException` | if the target's type cannot be adjusted to take the given number of`Object`arguments |
+| --- | --- |
 | `java.lang.Throwable` | anything thrown by the target method invocation |
 
 ### isVarargsCollector

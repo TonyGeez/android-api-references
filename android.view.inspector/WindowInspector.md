@@ -3,12 +3,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # WindowInspector
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inspector/WindowInspector "View this page in Java") 
+| --- | --- |
 
 ```
 class WindowInspector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inspector.WindowInspector](https://developer.android.com/reference/kotlin/android/view/inspector/WindowInspector#) |
 
 Provides access to window inspection information.
@@ -20,6 +22,7 @@ Provides access to window inspection information.
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addGlobalWindowViewsListener](https://developer.android.com/reference/kotlin/android/view/inspector/WindowInspector#addGlobalWindowViewsListener(java.util.concurrent.Executor,%20java.util.function.Consumer))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `consumer:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!>!>`)` Adds a listener that is notified whenever the value of [getGlobalWindowViews()](https://developer.android.com/reference/kotlin/android/view/inspector/WindowInspector#getGlobalWindowViews()) changes. |
 | static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!\> | [getGlobalWindowViews](https://developer.android.com/reference/kotlin/android/view/inspector/WindowInspector#getGlobalWindowViews())`()` <br /> |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeGlobalWindowViewsListener](https://developer.android.com/reference/kotlin/android/view/inspector/WindowInspector#removeGlobalWindowViewsListener(java.util.function.Consumer))`(`consumer:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!>!>`)` Removes a listener from getting notifications of global window views changes. |
+| --- | --- |
 
 ## Public methods
 

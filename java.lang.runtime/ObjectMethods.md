@@ -9,6 +9,7 @@ open class ObjectMethods
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.runtime.ObjectMethods](https://developer.android.com/reference/kotlin/java/lang/runtime/ObjectMethods#) |
 
 Bootstrap methods for state-driven implementations of core methods, including [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)), [Object.hashCode()](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()), and [Object.toString()](https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()). These methods may be used, for example, by Java compiler implementations to implement the bodies of [Object](https://developer.android.com/reference/kotlin/java/lang/Object.html#) methods for record classes.
@@ -43,9 +44,11 @@ Bootstrap method to generate the [Object.equals(Object)](https://developer.andro
 | `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#):Every bootstrap method is expected to have a`lookup`which usually represents a lookup context with the accessibility privileges of the caller. This is because`invokedynamic`call sites always provide a`lookup`to the corresponding bootstrap method, but this method just ignores the`lookup`parameter |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the method to generate, which must be one of`"equals"`,`"hashCode"`, or`"toString"` |
 | `type` | [TypeDescriptor](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.html#):a [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#) corresponding the descriptor type for the method, which must correspond to the descriptor for the corresponding [Object](https://developer.android.com/reference/kotlin/java/lang/Object.html#) method, if linking an`invokedynamic`call site, or the constant`MethodHandle.class`, if linking a dynamic constant |
+| --- | --- |
 | `recordClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>:the record class hosting the record components |
 | `names` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the list of component names, joined into a string separated by ";", or the empty string if there are no components. Maybe be null, if the`methodName`is`"equals"`or`"hashCode"`. |
 | `getters` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle.html#)!:method handles for the accessor methods for the components |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|

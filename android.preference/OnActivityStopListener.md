@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnActivityStopListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnActivityStopListener

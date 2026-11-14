@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # MedicalResource
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/MedicalResource "View this page in Java") 
+| --- | --- |
 
 ```
 class MedicalResource : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#) |
 
 A class to capture the user's medical data. This is the class used for all medical resource types.
@@ -29,15 +31,19 @@ The data representation follows the [Fast Healthcare Interoperability Resources 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_ALLERGIES_INTOLERANCES](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_ALLERGIES_INTOLERANCES:kotlin.Int) Medical resource type labelling data as allergies or intolerances. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_CONDITIONS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_CONDITIONS:kotlin.Int) Medical resource type labelling data as medical conditions (clinical condition, problem, diagnosis etc). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_LABORATORY_RESULTS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_LABORATORY_RESULTS:kotlin.Int) Medical resource type labelling data as results (Laboratory or pathology). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_MEDICATIONS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_MEDICATIONS:kotlin.Int) Medical resource type labelling data as medication related. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_PERSONAL_DETAILS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_PERSONAL_DETAILS:kotlin.Int) Medical resource type labelling data as related to personal details, including demographic information such as name, date of birth, and contact details such as address or telephone numbers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_PRACTITIONER_DETAILS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_PRACTITIONER_DETAILS:kotlin.Int) Medical resource type labelling data as related to practitioners. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_PREGNANCY](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_PREGNANCY:kotlin.Int) Medical resource type labelling data as to do with pregnancy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_PROCEDURES](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_PROCEDURES:kotlin.Int) Medical resource type labelling data as procedures (actions taken on or for a patient). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_SOCIAL_HISTORY](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_SOCIAL_HISTORY:kotlin.Int) Medical resource type labelling data as social history. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_VACCINES](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_VACCINES:kotlin.Int) Medical resource type labelling data as vaccines. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_VISITS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_VISITS:kotlin.Int) Medical resource type labelling data as related to an encounter with a practitioner. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDICAL_RESOURCE_TYPE_VITAL_SIGNS](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#MEDICAL_RESOURCE_TYPE_VITAL_SIGNS:kotlin.Int) Medical resource type labelling data as vital signs. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -48,12 +54,15 @@ The data representation follows the [Fast Healthcare Interoperability Resources 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDataSourceId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#getDataSourceId())`()` Returns the unique [MedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource) ID of where the data comes from. |
+| --- | --- |
 | [FhirResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource) | [getFhirResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#getFhirResource())`()` Returns the enclosed [FhirResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource) object. |
 | [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion) | [getFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#getFhirVersion())`()` Returns the FHIR version being used for`mFhirResource` |
 | [MedicalResourceId](https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId.html#) | [getId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#getId())`()` Returns the ID of this [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#) as [MedicalResourceId](https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId.html#). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#getType())`()` Returns the medical resource type, assigned by the Android Health Platform at insertion time. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

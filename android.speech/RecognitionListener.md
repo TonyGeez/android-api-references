@@ -3,6 +3,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # RecognitionListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/speech/RecognitionListener "View this page in Java")
+| --- | --- |
 
 ```
 interface RecognitionListener
@@ -19,15 +20,19 @@ Used for receiving notifications from the SpeechRecognizer when the recognition 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onBeginningOfSpeech()()` The user has started to speak. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onBufferReceived(kotlin.ByteArray)(buffer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` More sound has been received. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onEndOfSegmentedSession()()` Called at the end of a segmented recognition request. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onEndOfSpeech()()` Called after the user stops speaking. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onError(kotlin.Int)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` A network or recognition error occurred. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onEvent(kotlin.Int,%20android.os.Bundle)(eventType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Reserved for adding future events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onLanguageDetection(android.os.Bundle)(results: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when the language detection (and switching) results are available. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)(partialResults: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called when partial recognition results are available. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onReadyForSpeech(android.os.Bundle)(params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called when the endpointer is ready for the user to start speaking. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)(results: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called when recognition results are ready. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onRmsChanged(kotlin.Float)(rmsdB: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` The sound level in the audio stream has changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onSegmentResults(android.os.Bundle)(segmentResults: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called for each ready segment of a recognition request. |
+| --- | --- |
 
 ## Public methods
 

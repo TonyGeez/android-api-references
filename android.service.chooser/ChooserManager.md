@@ -5,12 +5,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # ChooserManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/ChooserManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class ChooserManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.chooser.ChooserManager](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager#) |
 
 Manages the creation, tracking, and retrieval of chooser sessions.

@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnFinished
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/PendingIntent.OnFinished "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFinished
@@ -43,5 +44,6 @@ Called when a send operation as completed.
 | `pendingIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent)!:The PendingIntent this operation was sent through. |
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The original Intent that was sent. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The final result code determined by the send. |
+| --- | --- |
 | `resultData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The final data collected by a broadcast. |
 | `resultExtras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The final extras collected by a broadcast. |

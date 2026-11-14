@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # MediaSyncEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaSyncEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaSyncEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaSyncEvent](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#) |
 
 The MediaSyncEvent class defines events that can be used to synchronize playback or capture actions between different players and recorders.
@@ -33,12 +35,15 @@ For instance, [AudioRecord.startRecording(MediaSyncEvent)](https://developer.and
 | openstatic [MediaSyncEvent](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#)! | [createEvent](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#createEvent(kotlin.Int))`(`eventType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a synchronization event of the sepcified type. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSessionId](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#getAudioSessionId())`()` Gets the synchronization event audio session ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#getType())`()` Gets the synchronization event type. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#hashCode())`()` <br /> |
+| --- | --- |
 | open [MediaSyncEvent](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#)! | [setAudioSessionId](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#setAudioSessionId(kotlin.Int))`(`audioSessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the event source audio session ID. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/MediaSyncEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

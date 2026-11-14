@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # VisualVoicemailSms
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/VisualVoicemailSms "View this page in Java")
+| --- | --- |
 
 ```
 class VisualVoicemailSms : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.VisualVoicemailSms](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#) |
 
 Represents the content of a visual voicemail SMS. If a incoming SMS matches the `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings` set by the default dialer, `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telephony.VisualVoicemailSms)` will be called.
@@ -24,9 +26,11 @@ Represents the content of a visual voicemail SMS. If a incoming SMS matches the 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getFields()()` The key-value pairs sent by the SMS, or `null` if the framework cannot parse the SMS as voicemail but the carrier pattern indicates it is. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getMessageBody()()` Raw message body of the received SMS. |
+| --- | --- |
 | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getPhoneAccountHandle()()` The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` that received the SMS. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getPrefix()()` The event type of the SMS or `null` if the framework cannot parse the SMS as voicemail but the carrier pattern indicates it is. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

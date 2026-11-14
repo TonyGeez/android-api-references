@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # MidiOutputPort
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiOutputPort "View this page in Java") 
+| --- | --- |
 
 ```
 class MidiOutputPort : MidiSender, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.midi.MidiSender](https://developer.android.com/reference/kotlin/android/media/midi/MidiSender) ||
 | | ↳ | [android.media.midi.MidiOutputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#) |
 
@@ -23,6 +25,7 @@ This class is used for receiving data from a port on a MIDI device
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#close())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPortNumber](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#getPortNumber())`()` Returns the port number of this port |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnect](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#onConnect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisconnect](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#onDisconnect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> |
 
 | Protected methods ||

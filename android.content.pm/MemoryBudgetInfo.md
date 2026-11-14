@@ -7,6 +7,7 @@ class MemoryBudgetInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.MemoryBudgetInfo](https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#) |
 
 Memory budget information for an application. entries are retrieved from \<memory-budget\> entries in an application's manifest, and can be obtained through `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)`.
@@ -37,9 +38,11 @@ If a process RSS exceeds its declared budget then the kernel will force it to dr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#FEATURE_AUTOMOTIVE:kotlin.Int` Indicates that this `MemoryBudgetInfo` applies to the automotive form factor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#FEATURE_LEANBACK:kotlin.Int` Indicates that this `MemoryBudgetInfo` applies to the TV form factor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#FEATURE_UNSPECIFIED:kotlin.Int` Indicates that this `MemoryBudgetInfo` is generic, and can apply to any form factor. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#FEATURE_WATCH:kotlin.Int` Indicates that this `MemoryBudgetInfo` applies to the watch form factor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#STATE_BACKGROUND:kotlin.Int` Indicates that this `MemoryBudgetInfo` can apply to a process that is in the background. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#STATE_FOREGROUND:kotlin.Int` Indicates that this `MemoryBudgetInfo` can apply to a process that is in the foreground (or in a less important state). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#STATE_PERCEPTIBLE:kotlin.Int` Indicates that this `MemoryBudgetInfo` can apply to a process that is perceptible (or in a less important state). |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
@@ -59,12 +62,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#getAdditionalBytesPerDisplayPixel()()` Returns the additional bytes per pixel that this `MemoryBudgetInfo`'s limit will be raised by. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#getAdditionalMbPerDensity()()` Returns the additional memory (in MiB) that this `MemoryBudgetInfo`'s limit will be raised by, based on the screen density of the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#getFeature()()` Returns the form factor to which this `MemoryBudgetInfo` applies. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#getMaxMb()()` Returns the memory limit (in MiB) that this `MemoryBudgetInfo` represents. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#getState()()` Returns the process state in which this `MemoryBudgetInfo` applies. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

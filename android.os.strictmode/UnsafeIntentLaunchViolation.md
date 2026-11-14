@@ -3,15 +3,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # UnsafeIntentLaunchViolation
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/strictmode/UnsafeIntentLaunchViolation "View this page in Java")
+| --- | --- |
 
 ```
 class UnsafeIntentLaunchViolation : Violation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
 | | | ↳ | [android.os.strictmode.UnsafeIntentLaunchViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/UnsafeIntentLaunchViolation#) |
+| --- | --- | --- | --- |
 
 Violation raised when your app launches an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which originated from outside your app.
 

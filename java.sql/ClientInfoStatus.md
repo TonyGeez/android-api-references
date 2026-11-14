@@ -9,10 +9,12 @@ class ClientInfoStatus
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.sql.ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#)\> ||
 | | ↳ | [java.sql.ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#) |
 
 | Known Direct Subclasses [ClientInfoStatus.REASON_UNKNOWN](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_UNKNOWN), [ClientInfoStatus.REASON_UNKNOWN_PROPERTY](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_UNKNOWN_PROPERTY), [ClientInfoStatus.REASON_VALUE_INVALID](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_VALUE_INVALID), [ClientInfoStatus.REASON_VALUE_TRUNCATED](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_VALUE_TRUNCATED) |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [ClientInfoStatus.REASON_UNKNOWN](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_UNKNOWN) | The client info property could not be set for some unknown reason | | [ClientInfoStatus.REASON_UNKNOWN_PROPERTY](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_UNKNOWN_PROPERTY) | The client info property name specified was not a recognized property name. | | [ClientInfoStatus.REASON_VALUE_INVALID](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_VALUE_INVALID) | The value specified for the client info property was not valid. | | [ClientInfoStatus.REASON_VALUE_TRUNCATED](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus#ENUM_VALUE:REASON_VALUE_TRUNCATED) | The value specified for the client info property was too large. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration for status of the reason that a property could not be set via a call to`Connection.setClientInfo`
 

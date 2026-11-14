@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptGroup "View this page in Java") 
+| --- | --- |
 
 ```
 class ScriptGroup : BaseObj
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
 | | ↳ | [android.renderscript.ScriptGroup](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#) |
 
@@ -32,15 +34,18 @@ Grouping kernels together allows for more efficient execution. For example, runt
 | | [Binding](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Binding) Represents a binding of a value to a global variable in a kernel or invocable function. |
 | | [Builder](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Builder) Helper class to build a ScriptGroup. |
 | | [Builder2](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Builder2) The builder class for creating script groups |
+| --- | --- |
 | | [Closure](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Closure) An opaque class for closures |
 | | [Future](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Future) An opaque class for futures |
 | | [Input](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup.Input) An opaque class for script group inputs |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#destroy())`()` Destroy this ScriptGroup and all Closures in it |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#execute())`()` Execute the ScriptGroup. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [execute](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#execute(kotlin.Any))`(`vararg` `inputs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Executes a script group |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#setInput(android.renderscript.Script.KernelID,%20android.renderscript.Allocation))`(`s:` ` [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)!`, `a:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets an input of the ScriptGroup. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](https://developer.android.com/reference/kotlin/android/renderscript/ScriptGroup#setOutput(android.renderscript.Script.KernelID,%20android.renderscript.Allocation))`(`s:` ` [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)!`, `a:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets an output of the ScriptGroup. |
 

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DebugUtils
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/DebugUtils "View this page in Java") 
+| --- | --- |
 
 ```
 open class DebugUtils
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.DebugUtils](https://developer.android.com/reference/kotlin/android/util/DebugUtils#) |
 
 Various utilities for debugging and logging.

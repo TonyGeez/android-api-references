@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AmbientBacklightSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/AmbientBacklightSettings "View this page in Java") 
+| --- | --- |
 
 ```
 class AmbientBacklightSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.AmbientBacklightSettings](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#) |
 
 Settings to configure ambient backlight hardware.
@@ -22,6 +24,7 @@ Settings to configure ambient backlight hardware.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_AUDIO](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_AUDIO:kotlin.Int) The detection is enabled for audio. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_AUDIO_VIDEO](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_AUDIO_VIDEO:kotlin.Int) The detection is enabled for audio and video. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_NONE](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_NONE:kotlin.Int) The detection is disabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_VIDEO](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_VIDEO:kotlin.Int) The detection is enabled for video. |
 
 | Inherited constants ||
@@ -37,12 +40,15 @@ Settings to configure ambient backlight hardware.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorFormat](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getColorFormat())`()` Gets color format. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHorizontalZonesCount](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getHorizontalZonesCount())`()` Gets the number of horizontal color zones. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxFps](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getMaxFps())`()` Gets max frames per second. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getSource())`()` Gets source of ambient backlight detection. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreshold](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getThreshold())`()` Gets the detection threshold of the ambient light. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVerticalZonesCount](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#getVerticalZonesCount())`()` Gets the number of vertical color zones. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLetterboxOmitted](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#isLetterboxOmitted())`()` Returns`true`if the black portion of the screen in letter box mode is omitted;`false`otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

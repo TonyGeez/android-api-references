@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # TransformationMethod
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/method/TransformationMethod "View this page in Java") 
+| --- | --- |
 
 ```
 interface TransformationMethod
@@ -13,8 +14,10 @@ interface TransformationMethod
 | [android.text.method.TransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/TransformationMethod#) |
 
 | Known Direct Subclasses [PasswordTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/PasswordTransformationMethod), [ReplacementTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod) |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PasswordTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/PasswordTransformationMethod) | <br /> | | [ReplacementTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod) | This transformation method causes the characters in the [getOriginal](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod#getOriginal())array to be replaced by the corresponding characters in the [getReplacement](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod#getReplacement())array. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [HideReturnsTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/HideReturnsTransformationMethod), [SingleLineTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/SingleLineTransformationMethod) |---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [HideReturnsTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/HideReturnsTransformationMethod) | This transformation method causes any carriage return characters (\\r) to be hidden by displaying them as zero-width non-breaking space characters (\\uFEFF). | | [SingleLineTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/SingleLineTransformationMethod) | This transformation method causes any newline characters (\\n) to be displayed as spaces instead of causing line breaks, and causes carriage return characters (\\r) to have no appearance. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 TextView uses TransformationMethods to do things like replacing the characters of passwords with dots, or keeping the newline characters from causing line breaks in single-line text fields.
 

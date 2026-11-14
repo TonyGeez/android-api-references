@@ -7,9 +7,11 @@ open class Random : RandomGenerator, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Random](https://developer.android.com/reference/kotlin/java/util/Random#) |
 
 | Known Direct Subclasses [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#), [ThreadLocalRandom](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadLocalRandom) |---|---| | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#) | This class provides a cryptographically strong random number generator (RNG). | | [ThreadLocalRandom](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadLocalRandom) | A random number generator (with period 264) isolated to the current thread. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An instance of this class is used to generate a stream of pseudorandom numbers; its period is only 248. The class uses a 48-bit seed, which is modified using a linear congruential formula. (See Donald E. Knuth, The Art of Computer Programming, Volume 2, Third edition: Seminumerical Algorithms, Section 3.2.1.)
 
@@ -35,24 +37,31 @@ Instances of `java.util.Random` are not cryptographically secure. Consider inste
 | open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#doubles()()` Returns an effectively unlimited stream of pseudorandom `double` values, each between zero (inclusive) and one (exclusive). |
 | open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#doubles(kotlin.Double,%20kotlin.Double)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns an effectively unlimited stream of pseudorandom `double` values, each conforming to the given origin (inclusive) and bound (exclusive). |
 | open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#doubles(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `double` values, each between zero (inclusive) and one (exclusive). |
+| --- | --- |
 | open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#doubles(kotlin.Long,%20kotlin.Double,%20kotlin.Double)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `double` values, each conforming to the given origin (inclusive) and bound (exclusive). |
 | open static [Random](https://developer.android.com/reference/kotlin/java/util/Random#)! | `https://developer.android.com/reference/kotlin/java/util/Random#from(java.util.random.RandomGenerator)(generator: https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator!)` Returns an instance of `Random` that delegates method calls to the `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator` argument. |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#ints()()` Returns an effectively unlimited stream of pseudorandom `int` values. |
+| --- | --- |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#ints(kotlin.Int,%20kotlin.Int)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an effectively unlimited stream of pseudorandom `int` values, each conforming to the given origin (inclusive) and bound (exclusive). |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#ints(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `int` values. |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#ints(kotlin.Long,%20kotlin.Int,%20kotlin.Int)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `int` values, each conforming to the given origin (inclusive) and bound (exclusive). |
+| --- | --- |
 | open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#longs()()` Returns an effectively unlimited stream of pseudorandom `long` values. |
 | open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#longs(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `long` values. |
 | open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#longs(kotlin.Long,%20kotlin.Long)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an effectively unlimited stream of pseudorandom `long` values, each conforming to the given origin (inclusive) and bound (exclusive). |
+| --- | --- |
 | open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | `https://developer.android.com/reference/kotlin/java/util/Random#longs(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a stream producing the given `streamSize` number of pseudorandom `long`, each conforming to the given origin (inclusive) and bound (exclusive). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextBoolean()()` Returns the next pseudorandom, uniformly distributed `boolean` value from this random number generator's sequence. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextBytes(kotlin.ByteArray)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Generates random bytes and places them into a user-supplied byte array. |
+| --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextDouble()()` Returns the next pseudorandom, uniformly distributed `double` value between `0.0` and `1.0` from this random number generator's sequence. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextFloat()()` Returns the next pseudorandom, uniformly distributed `float` value between `0.0` and `1.0` from this random number generator's sequence. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextGaussian()()` Returns the next pseudorandom, Gaussian ("normally") distributed `double` value with mean `0.0` and standard deviation `1.0` from this random number generator's sequence. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextInt()()` Returns the next pseudorandom, uniformly distributed `int` value from this random number generator's sequence. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextInt(kotlin.Int)(bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a pseudorandom, uniformly distributed `int` value between 0 (inclusive) and the specified value (exclusive), drawn from this random number generator's sequence. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#nextLong()()` Returns the next pseudorandom, uniformly distributed `long` value from this random number generator's sequence. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Random#setSeed(kotlin.Long)(seed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets or updates the seed of this random number generator using the provided `long` seed value (optional operation). |
 
 | Protected methods ||
@@ -180,6 +189,7 @@ Returns a stream producing the given `streamSize` number of pseudorandom `double
 | `streamSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the number of values to generate |
 | `randomNumberOrigin` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): the origin (inclusive) of each random value |
 | `randomNumberBound` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): the bound (exclusive) of each random value |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -332,6 +342,7 @@ A pseudorandom `int` value is generated as if it's the result of calling the fol
 | `streamSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the number of values to generate |
 | `randomNumberOrigin` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the origin (inclusive) of each random value |
 | `randomNumberBound` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bound (exclusive) of each random value |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -472,6 +483,7 @@ A pseudorandom `long` value is generated as if it's the result of calling the fo
 | `streamSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the number of values to generate |
 | `randomNumberOrigin` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the origin (inclusive) of each random value |
 | `randomNumberBound` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the bound (exclusive) of each random value |
+| --- | --- |
 
 | Return ||
 |---|---|

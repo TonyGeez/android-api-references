@@ -9,9 +9,11 @@ class InMemoryDexClassLoader : BaseDexClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) |||
 | | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader) ||
 | | | ↳ | [dalvik.system.InMemoryDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/InMemoryDexClassLoader#) |
+| --- | --- | --- | --- |
 
 A [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) implementation that loads classes from a buffer containing a DEX file. This can be used to execute code that has not been written to the local file system.
 
@@ -82,3 +84,4 @@ Create an in-memory DEX class loader with the given dex buffers.
 | `dexBuffers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>:array of buffers containing DEX files between buffer.position() and buffer.limit(). This value cannot be`null`. |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null` |
 | `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?:the parent class loader for delegation. This value may be`null`. |
+| --- | --- |

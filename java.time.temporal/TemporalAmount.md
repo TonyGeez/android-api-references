@@ -11,8 +11,10 @@ interface TemporalAmount
 | [java.time.temporal.TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#) |
 
 | Known Direct Subclasses [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod.html#), [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod.html#) | A date-based amount of time, such as '3 years, 4 months and 5 days' in an arbitrary chronology, intended for advanced globalization use cases. | | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | A time-based amount of time, such as '34. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [Period](https://developer.android.com/reference/kotlin/java/time/Period.html#) |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [Period](https://developer.android.com/reference/kotlin/java/time/Period.html#) | A date-based amount of time in the ISO-8601 calendar system, such as '2 years, 3 months and 4 days'. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Framework-level interface defining an amount of time, such as "6 hours", "8 days" or "2 years and 3 months".
 
@@ -31,6 +33,7 @@ This interface is a framework-level interface that should not be widely used in 
 | abstract [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [addTo](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#addTo(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adds to the specified temporal object. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#get(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns the value of the requested unit. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!\>! | [getUnits](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#getUnits())`()` Returns the list of units uniquely defining the value of this TemporalAmount. |
+| --- | --- |
 | abstract [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [subtractFrom](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#subtractFrom(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Subtracts this object from the specified temporal object. |
 
 ## Public methods

@@ -7,6 +7,7 @@ abstract class ValidatorHandler : ContentHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.ValidatorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#) |
 
 Streaming validator that works on SAX stream.
@@ -48,12 +49,15 @@ This feature is set to `false` by default.
 | abstract [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getContentHandler()()` Gets the `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` which receives the augmented validation result. |
 | abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getErrorHandler()()` Gets the current `https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up the value of a feature flag. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getProperty(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up the value of a property. |
 | abstract [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getResourceResolver()()` Gets the current `https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
 | abstract [TypeInfoProvider](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getTypeInfoProvider()()` Obtains the `https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider` implementation of this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setContentHandler(org.xml.sax.ContentHandler)(receiver: https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#!)` Sets the `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` which receives the augmented validation result. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setErrorHandler(org.xml.sax.ErrorHandler)(errorHandler: https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#!)` Sets the `https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#` to receive errors encountered during the validation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setFeature(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the value of a feature flag. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setProperty(kotlin.String,%20kotlin.Any)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, object: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Set the value of a property. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)(resourceResolver: https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#!)` Sets the `https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#` to customize resource resolution while in a validation episode. |
 
@@ -142,6 +146,7 @@ Implementors are free (and encouraged) to invent their own features, using names
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#` recognizes the feature name but cannot determine its value at this time. |
+| --- | --- |
 
 **See Also**
 
@@ -176,6 +181,7 @@ Implementors are free (and encouraged) to invent their own properties, using nam
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the XMLReader recognizes the property name but cannot determine its value at this time. |
+| --- | --- |
 
 **See Also**
 
@@ -313,6 +319,7 @@ The feature name is any fully-qualified URI. It is possible for a `https://devel
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#` recognizes the feature name but cannot set the requested value. |
+| --- | --- |
 
 **See Also**
 
@@ -345,6 +352,7 @@ The property name is any fully-qualified URI. It is possible for a `https://deve
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
 | `org.xml.sax.SAXNotSupportedException` | When the `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#` recognizes the property name but cannot set the requested value. |
+| --- | --- |
 
 ### setResourceResolver
 

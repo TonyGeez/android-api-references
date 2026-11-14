@@ -9,9 +9,11 @@ open class InvalidPreferencesFormatException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.util.prefs.InvalidPreferencesFormatException](https://developer.android.com/reference/kotlin/java/util/prefs/InvalidPreferencesFormatException#) |
+| --- | --- | --- | --- |
 
 Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of preferences, as per the [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences) specification.
 

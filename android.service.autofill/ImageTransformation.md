@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # ImageTransformation
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/ImageTransformation "View this page in Java") 
+| --- | --- |
 
 ```
 class ImageTransformation : Parcelable, Transformation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.ImageTransformation](https://developer.android.com/reference/kotlin/android/service/autofill/ImageTransformation#) |
 
 Replaces the content of a child [ImageView](https://developer.android.com/reference/kotlin/android/widget/ImageView.html#) of a [presentation template](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#) with the first image that matches a regular expression (regex).
@@ -43,6 +45,7 @@ There is no imposed limit in the number of options, but keep in mind that regexs
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/ImageTransformation#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/ImageTransformation#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/ImageTransformation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

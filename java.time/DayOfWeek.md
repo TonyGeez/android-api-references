@@ -7,10 +7,12 @@ class DayOfWeek : TemporalAccessor, TemporalAdjuster
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)\> ||
 | | ↳ | [java.time.DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#) |
 
 | Known Direct Subclasses [DayOfWeek.FRIDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:FRIDAY), [DayOfWeek.MONDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:MONDAY), [DayOfWeek.SATURDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SATURDAY), [DayOfWeek.SUNDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SUNDAY), [DayOfWeek.THURSDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:THURSDAY), [DayOfWeek.TUESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:TUESDAY), [DayOfWeek.WEDNESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:WEDNESDAY) |---|---| | [DayOfWeek.FRIDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:FRIDAY) | The singleton instance for the day-of-week of Friday. | | [DayOfWeek.MONDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:MONDAY) | The singleton instance for the day-of-week of Monday. | | [DayOfWeek.SATURDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SATURDAY) | The singleton instance for the day-of-week of Saturday. | | [DayOfWeek.SUNDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SUNDAY) | The singleton instance for the day-of-week of Sunday. | | [DayOfWeek.THURSDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:THURSDAY) | The singleton instance for the day-of-week of Thursday. | | [DayOfWeek.TUESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:TUESDAY) | The singleton instance for the day-of-week of Tuesday. | | [DayOfWeek.WEDNESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:WEDNESDAY) | The singleton instance for the day-of-week of Wednesday. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A day-of-week, such as 'Tuesday'.
 
@@ -41,15 +43,19 @@ This enum represents a common concept that is found in many calendar systems. As
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this day-of-week. |
 | static [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `DayOfWeek` from a temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this day-of-week as an `int`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#getDisplayName(java.time.format.TextStyle,%20java.util.Locale)(style: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the textual representation, such as 'Mon' or 'Friday'. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this day-of-week as a `long`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#getValue()()` Gets the day-of-week `int` value. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
 | [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#minus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days before this one. |
 | static [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#of(kotlin.Int)(dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `DayOfWeek` from an `int` value. |
+| --- | --- |
 | [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#plus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days after this one. |
 | R | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this day-of-week using the specified query. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| --- | --- |
 
 ## Enum values
 
@@ -233,6 +239,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an `int` |
+| --- | --- |
 
 ### getDisplayName
 
@@ -289,6 +296,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### getValue
 

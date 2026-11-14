@@ -5,15 +5,18 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AconfigStorageReadException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/flagging/AconfigStorageReadException "View this page in Java") 
+| --- | --- |
 
 ```
 open class AconfigStorageReadException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.os.flagging.AconfigStorageReadException](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#) |
 
 Exception thrown when an error occurs while reading from Aconfig Storage.
@@ -33,6 +36,7 @@ This exception indicates a problem accessing or retrieving configuration data fr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CANNOT_READ_STORAGE_FILE](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_CANNOT_READ_STORAGE_FILE:kotlin.Int) Error code indicating that there was an error reading the Aconfig Storage file. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CONTAINER_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_CONTAINER_NOT_FOUND:kotlin.Int) Error code indicating that the specified container is not found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_GENERIC](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_GENERIC:kotlin.Int) Generic error code indicating an unspecified Aconfig Storage error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PACKAGE_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_PACKAGE_NOT_FOUND:kotlin.Int) Error code indicating that the requested configuration package is not found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_STORAGE_SYSTEM_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_STORAGE_SYSTEM_NOT_FOUND:kotlin.Int) Error code indicating that the Aconfig Storage system is not found on the device. |
 
@@ -149,6 +153,7 @@ Constructs a new`AconfigStorageReadException`with the specified error code, deta
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The error code for this exception. Value is [android.os.flagging.AconfigStorageReadException#ERROR_GENERIC](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_GENERIC:kotlin.Int), [android.os.flagging.AconfigStorageReadException#ERROR_STORAGE_SYSTEM_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_STORAGE_SYSTEM_NOT_FOUND:kotlin.Int), [android.os.flagging.AconfigStorageReadException#ERROR_PACKAGE_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_PACKAGE_NOT_FOUND:kotlin.Int), [android.os.flagging.AconfigStorageReadException#ERROR_CONTAINER_NOT_FOUND](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_CONTAINER_NOT_FOUND:kotlin.Int), [android.os.flagging.AconfigStorageReadException#ERROR_CANNOT_READ_STORAGE_FILE](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#ERROR_CANNOT_READ_STORAGE_FILE:kotlin.Int), or android.os.flagging.AconfigStorageReadException.ERROR_FILE_FINGERPRINT_MISMATCH |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The detail message for this exception. This value cannot be`null`. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html):The cause of this exception. This value cannot be`null`. |
+| --- | --- |
 
 ### AconfigStorageReadException
 

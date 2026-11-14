@@ -9,6 +9,7 @@ open class InheritableThreadLocal<T : Any!> : ThreadLocal<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.ThreadLocal](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal)\<T\> ||
 | | ↳ | [java.lang.InheritableThreadLocal](https://developer.android.com/reference/kotlin/java/lang/InheritableThreadLocal#) |
 

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ControlButton
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/ControlButton "View this page in Java") 
+| --- | --- |
 
 ```
 class ControlButton : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.controls.templates.ControlButton](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton#) |
 
 Button element for [ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate).
@@ -30,6 +32,7 @@ Button element for [ControlTemplate](https://developer.android.com/reference/kot
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton#describeContents())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getActionDescription](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton#getActionDescription())`()` The content description for this button. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton#isChecked())`()` Whether the button should be rendered in a checked state. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

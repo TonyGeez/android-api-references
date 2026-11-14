@@ -11,8 +11,10 @@ interface AsynchronousChannel : Channel
 | [java.nio.channels.AsynchronousChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannel#) |
 
 | Known Direct Subclasses [AsynchronousByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel), [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel), [AsynchronousServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousServerSocketChannel) |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [AsynchronousByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel) | An asynchronous channel that can read and write bytes. | | [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel) | An asynchronous channel for reading, writing, and manipulating a file. | | [AsynchronousServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousServerSocketChannel) | An asynchronous channel for stream-oriented listening sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel) |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------| | [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel) | An asynchronous channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A channel that supports asynchronous I/O operations. Asynchronous I/O operations will usually take one of two forms:
 

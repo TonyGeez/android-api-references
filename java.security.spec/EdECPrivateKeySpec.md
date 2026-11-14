@@ -9,6 +9,7 @@ class EdECPrivateKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.EdECPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EdECPrivateKeySpec#) |
 
 A class representing elliptic curve private keys as defined in [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032), including the curve and other algorithm parameters. The private key is a bit string represented using a byte array. This class only supports bit string lengths that are a multiple of 8.

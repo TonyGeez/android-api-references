@@ -9,6 +9,7 @@ class CodeSigner : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.CodeSigner](https://developer.android.com/reference/kotlin/java/security/CodeSigner#) |
 
 This class encapsulates information about a code signer. It is immutable.
@@ -24,6 +25,7 @@ This class encapsulates information about a code signer. It is immutable.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/CodeSigner#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this code signer. |
 | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | [getSignerCertPath](https://developer.android.com/reference/kotlin/java/security/CodeSigner#getSignerCertPath())`()` Returns the signer's certificate path. |
 | [Timestamp](https://developer.android.com/reference/kotlin/java/security/Timestamp)! | [getTimestamp](https://developer.android.com/reference/kotlin/java/security/CodeSigner#getTimestamp())`()` Returns the signature timestamp. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/CodeSigner#hashCode())`()` Returns the hash code value for this code signer. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/CodeSigner#toString())`()` Returns a string describing this code signer. |
 

@@ -9,6 +9,7 @@ open class StatementEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [javax.sql.StatementEvent](https://developer.android.com/reference/kotlin/javax/sql/StatementEvent#) |
 
@@ -81,6 +82,7 @@ Constructs a`StatementEvent`with the specified`PooledConnection`,`PreparedStatem
 | `con` | [PooledConnection](https://developer.android.com/reference/kotlin/javax/sql/PooledConnection)!:The`PooledConnection`that the closed or invalid`PreparedStatement`is associated with. |
 | `statement` | [PreparedStatement](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement.html#)!:The`PreparedStatement`that is being closed or is invalid |
 | `exception` | [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException.html#)!:The`SQLException `the driver is about to throw to the application |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|------------------------|

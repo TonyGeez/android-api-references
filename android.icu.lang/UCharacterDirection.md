@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UCharacterDirection
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacterDirection "View this page in Java") 
+| --- | --- |
 
 ```
 class UCharacterDirection : UCharacterEnums.ECharacterDirection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.lang.UCharacterDirection](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterDirection#) |
 
 Enumerated Unicode character linguistic direction constants. Used as return results from [UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter)

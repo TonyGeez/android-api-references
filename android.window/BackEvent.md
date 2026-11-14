@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # BackEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/window/BackEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class BackEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.window.BackEvent](https://developer.android.com/reference/kotlin/android/window/BackEvent#) |
 
 Object used to report back gesture progress. Holds information about the touch event, swipe direction and the animation progress that predictive back animations should seek to.
@@ -22,6 +24,7 @@ Object used to report back gesture progress. Holds information about the touch e
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_LEFT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_LEFT:kotlin.Int) Indicates that the edge swipe starts from the left edge of the screen |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_NONE](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_NONE:kotlin.Int) Indicates that the back event was not triggered by an edge swipe back gesture. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_RIGHT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_RIGHT:kotlin.Int) Indicates that the edge swipe starts from the right edge of the screen |
+| --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -33,9 +36,11 @@ Object used to report back gesture progress. Holds information about the touch e
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/window/BackEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrameTimeMillis](https://developer.android.com/reference/kotlin/android/window/BackEvent#getFrameTimeMillis())`()` Returns the frameTime of the BackEvent in milliseconds. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getProgress](https://developer.android.com/reference/kotlin/android/window/BackEvent#getProgress())`()` Returns a value between 0 and 1 on how far along the back gesture is. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSwipeEdge](https://developer.android.com/reference/kotlin/android/window/BackEvent#getSwipeEdge())`()` Returns the screen edge that the swipe starts from. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchX](https://developer.android.com/reference/kotlin/android/window/BackEvent#getTouchX())`()` Returns the absolute X location of the touch point, or NaN if the event is from a button press. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchY](https://developer.android.com/reference/kotlin/android/window/BackEvent#getTouchY())`()` Returns the absolute Y location of the touch point, or NaN if the event is from a button press. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/window/BackEvent#toString())`()` <br /> |
 
 ## Constants
@@ -97,6 +102,7 @@ Creates a new [BackEvent](https://developer.android.com/reference/kotlin/android
 | `touchX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Absolute X location of the touch point of this event. |
 | `touchY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Absolute Y location of the touch point of this event. |
 | `progress` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Value between 0 and 1 on how far along the back gesture is. |
+| --- | --- |
 | `swipeEdge` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Indicates which edge the swipe starts from. Value is [android.window.BackEvent#EDGE_LEFT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_LEFT:kotlin.Int), [android.window.BackEvent#EDGE_RIGHT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_RIGHT:kotlin.Int), or [android.window.BackEvent#EDGE_NONE](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_NONE:kotlin.Int) |
 
 ### BackEvent
@@ -119,6 +125,7 @@ Creates a new [BackEvent](https://developer.android.com/reference/kotlin/android
 | `touchX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Absolute X location of the touch point of this event. |
 | `touchY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Absolute Y location of the touch point of this event. |
 | `progress` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Value between 0 and 1 on how far along the back gesture is. |
+| --- | --- |
 | `swipeEdge` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Indicates which edge the swipe starts from. Value is [android.window.BackEvent#EDGE_LEFT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_LEFT:kotlin.Int), [android.window.BackEvent#EDGE_RIGHT](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_RIGHT:kotlin.Int), or [android.window.BackEvent#EDGE_NONE](https://developer.android.com/reference/kotlin/android/window/BackEvent#EDGE_NONE:kotlin.Int) |
 | `frameTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): frame time of the back event. |
 

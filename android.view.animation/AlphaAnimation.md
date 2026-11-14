@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # AlphaAnimation
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/AlphaAnimation "View this page in Java") 
+| --- | --- |
 
 ```
 open class AlphaAnimation : Animation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation) ||
 | | ↳ | [android.view.animation.AlphaAnimation](https://developer.android.com/reference/kotlin/android/view/animation/AlphaAnimation#) |
 

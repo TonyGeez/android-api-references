@@ -9,6 +9,7 @@ open class ArrayDeque<E : Any!> : AbstractCollection<E>, Cloneable, Deque<E>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> ||
 | | ↳ | [java.util.ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#) |
 
@@ -37,39 +38,51 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#add(java.util.ArrayDeque.E))`(`element:` `E`)` Inserts the specified element at the end of this deque. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection at the end of this deque, as if by calling #addLast on each one, in the order that they are returned by the collection's iterator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addFirst(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addLast(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#clear())`()` Removes all of the elements from this deque. |
 | open [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#)\<E\> | [clone](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#clone())`()` Returns a copy of this deque. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#contains(java.util.ArrayDeque.E))`(`element:` `E?`)` Returns`true`if this deque contains the specified element. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [descendingIterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#descendingIterator())`()` <br /> |
 | openE | [element](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#element())`()` Retrieves, but does not remove, the head of the queue represented by this deque. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `E>`)` <br /> |
 | openE | [getFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#getFirst())`()` <br /> |
 | openE | [getLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#getLast())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#isEmpty())`()` Returns`true`if this deque contains no elements. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#iterator())`()` Returns an iterator over the elements in this deque. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offer(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offerFirst(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offerLast(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
 | openE? | [peek](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peek())`()` Retrieves, but does not remove, the head of the queue represented by this deque, or returns`null`if this deque is empty. |
+| --- | --- |
 | openE? | [peekFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peekFirst())`()` <br /> |
 | openE? | [peekLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peekLast())`()` <br /> |
 | openE? | [poll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#poll())`()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns`null`if this deque is empty. |
+| --- | --- |
 | openE? | [pollFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pollFirst())`()` <br /> |
 | openE? | [pollLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pollLast())`()` <br /> |
 | openE | [pop](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pop())`()` Pops an element from the stack represented by this deque. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#push(java.util.ArrayDeque.E))`(`e:` `E`)` Pushes an element onto the stack represented by this deque. |
 | openE | [remove](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#remove())`()` Retrieves and removes the head of the queue represented by this deque. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#remove(java.util.ArrayDeque.E))`(`element:` `E?`)` Removes a single instance of the specified element from this deque. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
 | openE | [removeFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirst())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFirstOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirstOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the first occurrence of the specified element in this deque (when traversing the deque from head to tail). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)<in` `E>`)` <br /> |
 | openE | [removeLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeLast())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeLastOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeLastOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the last occurrence of the specified element in this deque (when traversing the deque from head to tail). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#spliterator())`()` Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this deque. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#toArray())`()` Returns an array containing all of the elements in this deque in proper sequence (from first to last element). |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this deque in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 
 | Inherited functions ||
@@ -152,6 +165,7 @@ This method is equivalent to #addLast.
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 
@@ -178,6 +192,7 @@ Adds all of the elements in the specified collection at the end of this deque, a
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified collection or any of its elements are null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
 
@@ -200,6 +215,7 @@ Inserts the specified element at the front of this deque.
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.UnsupportedOperationException` | if this collection implementation does not support this operation |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
+| --- | --- |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 
@@ -224,6 +240,7 @@ This method is equivalent to #add.
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.UnsupportedOperationException` | if this collection implementation does not support this operation |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
+| --- | --- |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 
@@ -415,6 +432,7 @@ This method is equivalent to [offerLast](https://developer.android.com/reference
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
+| --- | --- |
 
 ### offerFirst
 
@@ -439,6 +457,7 @@ Inserts the specified element at the front of this deque.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
+| --- | --- |
 
 ### offerLast
 
@@ -463,6 +482,7 @@ Inserts the specified element at the end of this deque.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
+| --- | --- |
 
 ### peek
 
@@ -585,6 +605,7 @@ This method is equivalent to #addFirst.
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 
 ### remove
@@ -632,6 +653,7 @@ This method is equivalent to [removeFirstOccurrence(java.lang.Object)](https://d
 | `java.lang.ClassCastException` | if the class of the specified element is incompatible with this deque (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this collection |
+| --- | --- |
 
 ### removeAll
 
@@ -654,6 +676,7 @@ open fun removeAll(elements: Collection<E>): Boolean
 | `java.lang.UnsupportedOperationException` | if the`removeAll`method is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not support null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 ### removeFirst
 
@@ -777,6 +800,7 @@ open fun retainAll(elements: Collection<E>): Boolean
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this collection |
 | `java.lang.ClassCastException` | if the types of one or more elements in this collection are incompatible with the specified collection (java.util.Collection#) |
 | `java.lang.NullPointerException` | if this collection contains one or more null elements and the specified collection does not permit null elements (java.util.Collection#) or if the specified collection is null |
+| --- | --- |
 
 ### spliterator
 

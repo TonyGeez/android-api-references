@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # FloatArrayEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/FloatArrayEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class FloatArrayEvaluator : TypeEvaluator<FloatArray!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.FloatArrayEvaluator](https://developer.android.com/reference/kotlin/android/animation/FloatArrayEvaluator#) |
 
 This evaluator can be used to perform type interpolation between`float[]`values. Each index into the array is treated as a separate value to interpolate. For example, evaluating`{100, 200}`and`{300, 400}`will interpolate the value at the first index between 100 and 300 and the value at the second index value between 200 and 400.
@@ -76,6 +78,7 @@ Interpolates the value at each index by the fraction. If[FloatArrayEvaluator(flo
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The start value. |
 | `endValue` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:The end value. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|

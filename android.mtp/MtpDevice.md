@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # MtpDevice
 
 Kotlin | [Java](https://developer.android.com/reference/android/mtp/MtpDevice "View this page in Java") 
+| --- | --- |
 
 ```
 class MtpDevice
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.mtp.MtpDevice](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#) |
 
 This class represents an MTP or PTP device connected on the USB host bus. An application can instantiate an object of this type, by referencing an attached and then use methods in this class to get information about the device and objects stored on it, as well as open the connection and transfer data.
@@ -26,24 +28,31 @@ This class represents an MTP or PTP device connected on the USB host bus. An app
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#close())`()` Closes all resources related to the MtpDevice object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteObject](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#deleteObject(kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Deletes an object on the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getDeviceId())`()` Returns the USB ID of the USB device. |
+| --- | --- |
 | [MtpDeviceInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo)? | [getDeviceInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getDeviceInfo())`()` Returns the [MtpDeviceInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo) for this device |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getDeviceName())`()` Returns the name of the USB device This returns the same value as android. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getObject](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getObject(kotlin.Int,%20kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the data for an object as a byte array. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getObjectHandles](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getObjectHandles(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the list of object handles for all objects on the given storage unit, with the given format and parent. |
 | [MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo)? | [getObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getObjectInfo(kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo) for an object. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getParent](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getParent(kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the object handle for the parent of an object on the device. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getPartialObject(kotlin.Int,%20kotlin.Long,%20kotlin.Long,%20kotlin.ByteArray))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject64](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getPartialObject64(kotlin.Int,%20kotlin.Long,%20kotlin.Long,%20kotlin.ByteArray))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStorageId](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getStorageId(kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the ID of the storage unit containing the given object on the device. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getStorageIds](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getStorageIds())`()` Returns the list of IDs for all storage units on this device Information about each storage unit can be accessed via [getStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getStorageInfo(kotlin.Int)). |
 | [MtpStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo)? | [getStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getStorageInfo(kotlin.Int))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo) for a storage unit. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getThumbnail](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#getThumbnail(kotlin.Int))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the thumbnail data for an object as a byte array. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#importFile(kotlin.Int,%20android.os.ParcelFileDescriptor))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `descriptor:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`)` Copies the data for an object to a file descriptor. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#importFile(kotlin.Int,%20kotlin.String))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Copies the data for an object to a file in external storage. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [open](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#open(android.hardware.usb.UsbDeviceConnection))`(`connection:` ` [UsbDeviceConnection](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection.html#)`)` Opens the MTP device. |
+| --- | --- |
 | [MtpEvent](https://developer.android.com/reference/kotlin/android/mtp/MtpEvent) | [readEvent](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#readEvent(android.os.CancellationSignal))`(`signal:` ` [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?`)` Reads an event from the device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [sendObject](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#sendObject(kotlin.Int,%20kotlin.Long,%20android.os.ParcelFileDescriptor))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `descriptor:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`)` Copies the data for an object from a file descriptor. |
 | [MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo)? | [sendObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#sendObjectInfo(android.mtp.MtpObjectInfo))`(`info:` ` [MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo)`)` Uploads an object metadata for a new entry. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice#toString())`()` Returns a string representation of the object. |
 
 | Protected methods ||
@@ -179,6 +188,7 @@ Returns the list of object handles for all objects on the given storage unit, wi
 | `storageId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the storage unit to query |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the format of the object to return, or zero for all formats |
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the parent object to query, -1 for the storage root, or zero for all objects |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -240,6 +250,7 @@ Obtains object bytes in the specified range and writes it to an array. This call
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the object to read |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Start index of reading range. It must be a non-negative value at most 0xffffffff. |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Size of reading range. It must be a non-negative value at most Integer.MAX_VALUE or 0xffffffff. If 0xffffffff is specified, the method obtains the full bytes of object. |
+| --- | --- |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): Array to write data. This value cannot be `null`. |
 
 | Return ||
@@ -266,6 +277,7 @@ Obtains object bytes in the specified range and writes it to an array. This call
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the object to read |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Start index of reading range. It must be a non-negative value. |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Size of reading range. It must be a non-negative value at most Integer.MAX_VALUE. |
+| --- | --- |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): Array to write data. This value cannot be `null`. |
 
 | Return ||
@@ -447,6 +459,7 @@ Copies the data for an object from a file descriptor. This call may block for an
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the target file |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): size of the file in bytes |
 | `descriptor` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#): file descriptor to read the data from. This value cannot be `null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|

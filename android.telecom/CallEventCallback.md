@@ -3,6 +3,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CallEventCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/telecom/CallEventCallback "View this page in Java")
+| --- | --- |
 
 ```
 interface CallEventCallback
@@ -19,9 +20,11 @@ CallEventCallback relays call updates (that do not require any action) from the 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onAvailableCallEndpointsChanged(kotlin.collections.MutableList)(availableEndpoints: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint!>)` Telecom is informing the client that the available `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`s have changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onCallEndpointChanged(android.telecom.CallEndpoint)(newCallEndpoint: https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint)` Telecom is informing the client the current `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint` changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onCallStreamingFailed(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Telecom is informing the client user requested call streaming but the stream can't be started. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onEvent(kotlin.String,%20android.os.Bundle)(event: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Informs this `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#` on events raised from a `https://developer.android.com/reference/kotlin/android/telecom/InCallService` presenting this call. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onMuteStateChanged(kotlin.Boolean)(isMuted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the mute state changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback#onVideoStateChanged(kotlin.Int)(videoState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the video state changes. |
+| --- | --- |
 
 ## Public methods
 

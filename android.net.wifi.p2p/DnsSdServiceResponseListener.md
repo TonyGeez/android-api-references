@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # DnsSdServiceResponseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface DnsSdServiceResponseListener
@@ -43,3 +44,4 @@ This function is invoked when the device with the specified Bonjour registration
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:instance name. e.g) "MyPrinter". |
 | `registrationType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: e.g) "_ipp._tcp.local." |
 | `srcDevice` | [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!:source device. |
+| --- | --- |

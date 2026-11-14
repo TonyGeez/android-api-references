@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # RcsUceAdapter
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/RcsUceAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 open class RcsUceAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.ims.RcsUceAdapter](https://developer.android.com/reference/kotlin/android/telephony/ims/RcsUceAdapter#) |
 
 Manages RCS User Capability Exchange for the subscription specified. 

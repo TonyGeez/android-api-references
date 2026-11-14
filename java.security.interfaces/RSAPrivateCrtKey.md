@@ -23,9 +23,11 @@ The interface to an RSA private key, as defined in the [PKCS#1 v2.2](https://too
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getCrtCoefficient())`()` Returns the crtCoefficient. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getPrimeExponentP())`()` Returns the primeExponentP. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getPrimeExponentQ())`()` Returns the primeExponentQ. |
+| --- | --- |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getPrimeP())`()` Returns the primeP. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getPrimeQ())`()` Returns the primeQ. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey#getPublicExponent())`()` Returns the public exponent. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

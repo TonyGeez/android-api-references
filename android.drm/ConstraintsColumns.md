@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # ConstraintsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmStore.ConstraintsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface ConstraintsColumns
@@ -26,9 +27,11 @@ Interface definition for the columns that represent DRM constraints. android.drm
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTENDED_METADATA](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#EXTENDED_METADATA:kotlin.String) This is a user-defined constraint. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LICENSE_AVAILABLE_TIME](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#LICENSE_AVAILABLE_TIME:kotlin.String) This is a duration-based constaint. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LICENSE_EXPIRY_TIME](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#LICENSE_EXPIRY_TIME:kotlin.String) This is a date-based constaint. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LICENSE_START_TIME](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#LICENSE_START_TIME:kotlin.String) This is a date-based constraint. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MAX_REPEAT_COUNT](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#MAX_REPEAT_COUNT:kotlin.String) This is a count-based constraint. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REMAINING_REPEAT_COUNT](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns#REMAINING_REPEAT_COUNT:kotlin.String) This is a count-based constraint. |
+| --- | --- |
 
 ## Constants
 

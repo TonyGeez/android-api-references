@@ -7,6 +7,7 @@ open class DelegatedAdminReceiver : BroadcastReceiver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#) ||
 | | ↳ | [android.app.admin.DelegatedAdminReceiver](https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#) |
 
@@ -27,6 +28,7 @@ The callback methods happen on the main thread of the process. Thus long running
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Allows this receiver to select the alias for a private key and certificate pair for authentication. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onNetworkLogsAvailable(android.content.Context,%20android.content.Intent,%20kotlin.Long,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, batchToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, networkLogsCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called each time a new batch of network logs can be retrieved. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Intercept delegated device administrator broadcasts. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onSecurityLogsAvailable(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called each time a new batch of security logs can be retrieved. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#abortBroadcast()()`
@@ -190,6 +192,7 @@ This callback is only applicable if the delegated app has `https://developer.and
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the app asking for the private key and certificate pair. |
+| --- | --- |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The URI to authenticate, may be null. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The alias preselected by the client, or null. |
 
@@ -225,6 +228,7 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `batchToken` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The token representing the current batch of network logs. |
+| --- | --- |
 | `networkLogsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The total count of events in the current batch of network logs. Value is 1 or greater |
 
 **See Also**

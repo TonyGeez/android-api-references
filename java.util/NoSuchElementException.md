@@ -9,12 +9,15 @@ open class NoSuchElementException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.NoSuchElementException](https://developer.android.com/reference/kotlin/java/util/NoSuchElementException#) |
 
 | Known Direct Subclasses [InputMismatchException](https://developer.android.com/reference/kotlin/java/util/InputMismatchException) |-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputMismatchException](https://developer.android.com/reference/kotlin/java/util/InputMismatchException) | Thrown by a`Scanner`to indicate that the token retrieved does not match the pattern for the expected type, or that the token is out of range for the expected type. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Thrown by various accessor methods to indicate that the element being requested does not exist.
 

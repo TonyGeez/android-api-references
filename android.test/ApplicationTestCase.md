@@ -4,12 +4,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # ApplicationTestCase
 
 Kotlin | [Java](https://developer.android.com/reference/android/test/ApplicationTestCase "View this page in Java")
+| --- | --- |
 
 ```
 abstract class ApplicationTestCase<T : Application!> : AndroidTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.AndroidTestCase](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase) ||
 | | ↳ | [android.test.ApplicationTestCase](https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#) |
 
@@ -40,12 +42,14 @@ If simply run your tests as-is, your Application will be injected with a fully-f
 | open T | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getApplication()()` <br /> |
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getSystemContext()()` Return a real (not mocked or instrumented) system Context that can be used when generating Mock or other Context objects for your Application under test. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#testApplicationTestCaseSetUpProperly()()` This test simply confirms that the Application class can be instantiated properly. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#createApplication()()` Start the Application under test, in the same way as if it was started by the system. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#setUp()()` This will do the work to instantiate the Application under test. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#tearDown()()` Shuts down the Application under test. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#terminateApplication()()` This will make the necessary calls to terminate the Application under test (it will call onTerminate(). |
 
 | Inherited functions ||

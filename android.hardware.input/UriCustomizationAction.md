@@ -7,6 +7,7 @@ class UriCustomizationAction : CustomizationAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.input.CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction) ||
 | | ↳ | [android.hardware.input.UriCustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#) |
 
@@ -21,6 +22,7 @@ Examples include opening a specific file, navigating to a URL, or opening a dire
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_FILE:kotlin.Int` Action type: Open File. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_FOLDER:kotlin.Int` Action type: Open Folder. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_URL:kotlin.Int` Action type: Open URL. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -31,6 +33,7 @@ Examples include opening a specific file, navigating to a URL, or opening a dire
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#getType()()` Gets the action type associated with this customization. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#getUri()()` Gets the URI for this action. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#hashCode()()` Returns a hash code value for the object. |
 
 ## Constants

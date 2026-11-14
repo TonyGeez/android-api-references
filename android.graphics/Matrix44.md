@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # Matrix44
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/Matrix44 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Matrix44
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#) |
 
 The Matrix44 class holds a 4x4 matrix for transforming coordinates. It is similar to [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix), and should be used when you want to manipulate the canvas in 3D. Values are kept in row-major order. The values and operations are treated as column vectors.
@@ -27,18 +29,23 @@ The Matrix44 class holds a 4x4 matrix for transforming coordinates. It is simila
 | open [Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#) | [concat](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#concat(android.graphics.Matrix44))`(`b:` ` [Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#)`)` Multiplies \`this\` matrix (A) and provided Matrix (B) in the order of A \* B. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#get(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value at the matrix's row and column. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getValues](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#getValues(kotlin.FloatArray))`(`dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Copies matrix values into the provided array in row-major order. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#hashCode())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [invert](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#invert())`()` Inverts the Matrix44, then return true if successful, false if unable to invert. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdentity](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#isIdentity())`()` Returns true if Matrix44 is equal to identity matrix. |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [map](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#map(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [map](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#map(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.FloatArray))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#reset())`()` Sets the Matrix44 to the identity matrix. |
 | open [Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#) | [rotate](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#rotate(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`deg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `xComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `zComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a rotation around a given axis, then returns self. |
 | open [Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#) | [scale](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#scale(kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies scaling factors to \`this\` Matrix44, then returns self. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#set(kotlin.Int,%20kotlin.Int,%20kotlin.Float))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value at the matrix's row and column to the provided value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#setValues(kotlin.FloatArray))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Replaces the Matrix's values with the values in the provided array. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#toString())`()` <br /> |
+| --- | --- |
 | open [Matrix44](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#) | [translate](https://developer.android.com/reference/kotlin/android/graphics/Matrix44#translate(kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a translation to \`this\` Matrix44, then returns self. |
 
 ## Public constructors
@@ -254,6 +261,7 @@ Applies a rotation around a given axis, then returns self.`x`,`y`,`z`represent t
 | `deg` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Amount in degrees to rotate the matrix about the x-axis |
 | `xComp` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):X component of the rotation axis |
 | `yComp` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Y component of the rotation axis |
+| --- | --- |
 | `zComp` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Z component of the rotation axis |
 
 | Return ||
@@ -279,6 +287,7 @@ Applies scaling factors to \`this\` Matrix44, then returns self. Pass 1s for no 
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Scaling factor for the x-axis |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Scaling factor for the y-axis |
 | `z` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Scaling factor for the z-axis |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -303,6 +312,7 @@ Sets the value at the matrix's row and column to the provided value.
 | `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An integer from 0 to 3 indicating the row of the value to change Value is between 0 and 3 inclusive |
 | `col` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An integer from 0 to 3 indicating the column of the value to change Value is between 0 and 3 inclusive |
 | `val` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The value the element at the specified index will be set to |
+| --- | --- |
 
 ### setValues
 
@@ -353,6 +363,7 @@ Applies a translation to \`this\` Matrix44, then returns self.
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Translation for the x-axis |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Translation for the y-axis |
 | `z` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Translation for the z-axis |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|

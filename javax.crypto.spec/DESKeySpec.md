@@ -9,6 +9,7 @@ open class DESKeySpec : KeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.DESKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#) |
 
 This class specifies a DES key.
@@ -29,6 +30,7 @@ This class specifies a DES key.
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getKey](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#getKey())`()` Returns the DES key material. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParityAdjusted](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#isParityAdjusted(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material, starting at`offset`inclusive, is parity-adjusted. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWeak](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#isWeak(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material is weak or semi-weak. |
+| --- | --- |
 
 ## Constants
 

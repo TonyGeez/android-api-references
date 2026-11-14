@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PrintWriterPrinter
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/PrintWriterPrinter "View this page in Java") 
+| --- | --- |
 
 ```
 open class PrintWriterPrinter : Printer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.PrintWriterPrinter](https://developer.android.com/reference/kotlin/android/util/PrintWriterPrinter#) |
 
 Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer) that sends its output to a [java.io.PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#).

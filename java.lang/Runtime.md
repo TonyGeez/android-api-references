@@ -9,6 +9,7 @@ open class Runtime
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Runtime](https://developer.android.com/reference/kotlin/java/lang/Runtime#) |
 
 Every Java application has a single instance of class `Runtime` that allows the application to interface with the environment in which the application is running. The current runtime can be obtained from the `getRuntime` method.
@@ -22,24 +23,31 @@ An application cannot create its own instance of this class.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addShutdownHook](https://developer.android.com/reference/kotlin/java/lang/Runtime#addShutdownHook(java.lang.Thread))`(`hook:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)!`)` Registers a new virtual-machine shutdown hook. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [availableProcessors](https://developer.android.com/reference/kotlin/java/lang/Runtime#availableProcessors())`()` Returns the number of processors available to the Java virtual machine. |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.String))`(`command:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the specified string command in a separate process. |
+| --- | --- |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.String,%20kotlin.Array))`(`command:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `envp:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the specified string command in a separate process with the specified environment. |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.String,%20kotlin.Array,%20java.io.File))`(`command:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `envp:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `dir:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Executes the specified string command in a separate process with the specified environment and working directory. |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array))`(`cmdarray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the specified command and arguments in a separate process. |
+| --- | --- |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array,%20kotlin.Array))`(`cmdarray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `envp:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the specified command and arguments in a separate process with the specified environment. |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process)! | [exec](https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array,%20kotlin.Array,%20java.io.File))`(`cmdarray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `envp:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `dir:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Executes the specified command and arguments in a separate process with the specified environment and working directory. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [exit](https://developer.android.com/reference/kotlin/java/lang/Runtime#exit(kotlin.Int))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Terminates the currently running Java virtual machine by initiating its shutdown sequence. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [freeMemory](https://developer.android.com/reference/kotlin/java/lang/Runtime#freeMemory())`()` Returns the amount of free memory in the Java Virtual Machine. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [gc](https://developer.android.com/reference/kotlin/java/lang/Runtime#gc())`()` Runs the garbage collector. |
 | open static [Runtime](https://developer.android.com/reference/kotlin/java/lang/Runtime#)! | [getRuntime](https://developer.android.com/reference/kotlin/java/lang/Runtime#getRuntime())`()` Returns the runtime object associated with the current Java application. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [halt](https://developer.android.com/reference/kotlin/java/lang/Runtime#halt(kotlin.Int))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Forcibly terminates the currently running Java virtual machine. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](https://developer.android.com/reference/kotlin/java/lang/Runtime#load(kotlin.String))`(`filename:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Loads the native library specified by the filename argument. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadLibrary](https://developer.android.com/reference/kotlin/java/lang/Runtime#loadLibrary(kotlin.String))`(`libname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Loads the native library specified by the `libname` argument. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [maxMemory](https://developer.android.com/reference/kotlin/java/lang/Runtime#maxMemory())`()` Returns the maximum amount of memory that the Java virtual machine will attempt to use. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeShutdownHook](https://developer.android.com/reference/kotlin/java/lang/Runtime#removeShutdownHook(java.lang.Thread))`(`hook:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)!`)` De-registers a previously-registered virtual-machine shutdown hook. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runFinalization](https://developer.android.com/reference/kotlin/java/lang/Runtime#runFinalization())`()` Runs the finalization methods of any objects pending finalization. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runFinalizersOnExit](https://developer.android.com/reference/kotlin/java/lang/Runtime#runFinalizersOnExit(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable finalization on exit; doing so specifies that the finalizers of all objects that have finalizers that have not yet been automatically invoked are to be run before the Java runtime exits. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [totalMemory](https://developer.android.com/reference/kotlin/java/lang/Runtime#totalMemory())`()` Returns the total amount of memory in the Java virtual machine. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [traceInstructions](https://developer.android.com/reference/kotlin/java/lang/Runtime#traceInstructions(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Not implemented, does nothing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [traceMethodCalls](https://developer.android.com/reference/kotlin/java/lang/Runtime#traceMethodCalls(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Not implemented, does nothing. |
 
 ## Public methods
@@ -82,6 +90,7 @@ In rare circumstances the virtual machine may *abort* , that is, stop running wi
 | `java.lang.IllegalArgumentException` | If the specified hook has already been registered, or if it can be determined that the hook is already running or has already been run |
 | `java.lang.IllegalStateException` | If the virtual machine is already in the process of shutting down |
 | `java.lang.SecurityException` | If a security manager is present and it denies [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)("shutdownHooks") |
+| --- | --- |
 
 **See Also**
 
@@ -130,6 +139,7 @@ This is a convenience method. An invocation of the form `exec(command)` behaves 
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.NullPointerException` | If `command` is `null` |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | If `command` is empty |
 
 **See Also**
@@ -166,6 +176,7 @@ This is a convenience method. An invocation of the form `exec(command, envp)` be
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.NullPointerException` | If `command` is `null`, or one of the elements of `envp` is `null` |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | If `command` is empty |
 
 **See Also**
@@ -196,6 +207,7 @@ More precisely, the `command` string is broken into tokens using a [StringTokeni
 | `command` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a specified system command. |
 | `envp` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: array of strings, each element of which has environment variable settings in the format *name* =*value* , or `null` if the subprocess should inherit the environment of the current process. |
 | `dir` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the working directory of the subprocess, or `null` if the subprocess should inherit the working directory of the current process. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -206,6 +218,7 @@ More precisely, the `command` string is broken into tokens using a [StringTokeni
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.NullPointerException` | If `command` is `null`, or one of the elements of `envp` is `null` |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | If `command` is empty |
 
 **See Also**
@@ -237,6 +250,7 @@ This is a convenience method. An invocation of the form `exec(cmdarray)` behaves
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.NullPointerException` | If `cmdarray` is `null`, or one of the elements of `cmdarray` is `null` |
+| --- | --- |
 | `java.lang.IndexOutOfBoundsException` | If `cmdarray` is an empty array (has length `0`) |
 
 **See Also**
@@ -272,6 +286,7 @@ This is a convenience method. An invocation of the form `exec(cmdarray, envp)` b
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.NullPointerException` | If `cmdarray` is `null`, or one of the elements of `cmdarray` is `null`, or one of the elements of `envp` is `null` |
+| --- | --- |
 | `java.lang.IndexOutOfBoundsException` | If `cmdarray` is an empty array (has length `0`) |
 
 **See Also**
@@ -321,6 +336,7 @@ If the operating system does not support the creation of processes, an [Unsuppor
 | `cmdarray` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: array containing the command to call and its arguments. |
 | `envp` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: array of strings, each element of which has environment variable settings in the format *name* =*value* , or `null` if the subprocess should inherit the environment of the current process. |
 | `dir` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the working directory of the subprocess, or `null` if the subprocess should inherit the working directory of the current process. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -331,6 +347,7 @@ If the operating system does not support the creation of processes, an [Unsuppor
 | `java.lang.SecurityException` | If a security manager exists and its [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String)) method doesn't allow creation of the subprocess |
 | `java.lang.UnsupportedOperationException` | If the operating system does not support the creation of processes. |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 | `java.lang.NullPointerException` | If `cmdarray` is `null`, or one of the elements of `cmdarray` is `null`, or one of the elements of `envp` is `null` |
 | `java.lang.IndexOutOfBoundsException` | If `cmdarray` is an empty array (has length `0`) |
 
@@ -463,6 +480,7 @@ The method [System.load(String)](https://developer.android.com/reference/kotlin/
 | `java.lang.SecurityException` | if a security manager exists and its `checkLink` method doesn't allow loading of the specified dynamic library |
 | `java.lang.UnsatisfiedLinkError` | if either the filename is not an absolute path name, the native library is not statically linked with the VM, or the library cannot be mapped to a native library image by the host system. |
 | `java.lang.NullPointerException` | if `filename` is `null` |
+| --- | --- |
 
 **See Also**
 
@@ -501,6 +519,7 @@ If this method is called more than once with the same library name, the second a
 | `java.lang.SecurityException` | if a security manager exists and its `checkLink` method doesn't allow loading of the specified dynamic library |
 | `java.lang.UnsatisfiedLinkError` | if either the libname argument contains a file path, the native library is not statically linked with the VM, or the library cannot be mapped to a native library image by the host system. |
 | `java.lang.NullPointerException` | if `libname` is `null` |
+| --- | --- |
 
 **See Also**
 

@@ -3,12 +3,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AbstractThreadedSyncAdapter
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter "View this page in Java")
+| --- | --- |
 
 ```
 abstract class AbstractThreadedSyncAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.AbstractThreadedSyncAdapter](https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#) |
 
 An abstract implementation of a SyncAdapter that spawns a thread to invoke a sync operation. If a sync operation is already in progress when a sync request is received, an error will be returned to the new request and the existing request will be allowed to continue. However if there is no sync in progress then a thread will be spawned and `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onPerformSync(android.accounts.Account,%20android.os.Bundle,%20kotlin.String,%20android.content.ContentProviderClient,%20android.content.SyncResult)` will be invoked on that thread.
@@ -65,9 +67,11 @@ The `android:resource` attribute must point to a resource that looks like:
 | open [Context](https://developer.android.com/reference/kotlin/android/content/Context)! | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#getContext()()` <br /> |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)! | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#getSyncAdapterBinder()()` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onPerformSync(android.accounts.Account,%20android.os.Bundle,%20kotlin.String,%20android.content.ContentProviderClient,%20android.content.SyncResult)(account: https://developer.android.com/reference/kotlin/android/accounts/Account.html#!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/android/content/ContentProviderClient!, syncResult: https://developer.android.com/reference/kotlin/android/content/SyncResult!)` Perform a sync for this account. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onSecurityException(android.accounts.Account,%20android.os.Bundle,%20kotlin.String,%20android.content.SyncResult)(account: https://developer.android.com/reference/kotlin/android/accounts/Account.html#!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, syncResult: https://developer.android.com/reference/kotlin/android/content/SyncResult!)` Report that there was a security exception when opening the content provider prior to calling `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onPerformSync(android.accounts.Account,%20android.os.Bundle,%20kotlin.String,%20android.content.ContentProviderClient,%20android.content.SyncResult)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onSyncCanceled()()` Indicates that a sync operation has been canceled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onSyncCanceled(java.lang.Thread)(thread: https://developer.android.com/reference/kotlin/java/lang/Thread.html#!)` Indicates that a sync operation has been canceled. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#onUnsyncableAccount()()` Allows to defer syncing until all accounts are properly set up. |
 
 ## Constants
@@ -124,6 +128,7 @@ Creates an `https://developer.android.com/reference/kotlin/android/content/Abstr
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)!: the `https://developer.android.com/reference/kotlin/android/content/Context` that this is running within. |
 | `autoInitialize` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true then sync requests that have `https://developer.android.com/reference/kotlin/android/content/ContentResolver#SYNC_EXTRAS_INITIALIZE:kotlin.String` set will be internally handled by `https://developer.android.com/reference/kotlin/android/content/AbstractThreadedSyncAdapter#` by calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver#setIsSyncable(android.accounts.Account,%20kotlin.String,%20kotlin.Int)` with 1 if it is currently set to \<0. |
 | `allowParallelSyncs` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true then allow syncs for different accounts to run at the same time, each in their own thread. This must be consistent with the setting in the SyncAdapter's configuration file. |
+| --- | --- |
 
 ## Public methods
 
@@ -168,6 +173,7 @@ Perform a sync for this account. SyncAdapter-specific parameters may be specifie
 | `account` | [Account](https://developer.android.com/reference/kotlin/android/accounts/Account.html#)!: the account that should be synced |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: SyncAdapter-specific parameters |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the authority of this sync request |
+| --- | --- |
 | `provider` | [ContentProviderClient](https://developer.android.com/reference/kotlin/android/content/ContentProviderClient)!: a ContentProviderClient that points to the ContentProvider for this authority |
 | `syncResult` | [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult)!: SyncAdapter-specific parameters |
 
@@ -191,6 +197,7 @@ Report that there was a security exception when opening the content provider pri
 | `account` | [Account](https://developer.android.com/reference/kotlin/android/accounts/Account.html#)!: the account that attempted to sync |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: SyncAdapter-specific parameters |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the authority of the failed sync request |
+| --- | --- |
 | `syncResult` | [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult)!: SyncAdapter-specific parameters |
 
 ### onSyncCanceled

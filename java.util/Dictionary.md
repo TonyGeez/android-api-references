@@ -9,11 +9,14 @@ abstract class Dictionary<K : Any!, V : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary#) |
 
 | Known Direct Subclasses [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable) |---------------------------------------------------------------------------------|----------------------------------------------------------------| | [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable) | This class implements a hash table, which maps keys to values. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#), [Properties](https://developer.android.com/reference/kotlin/java/util/Properties), [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider.html#) | Legacy security code; do not use. | | [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) | The`Properties`class represents a persistent set of properties. | | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The`Dictionary`class is the abstract parent of any class, such as`Hashtable`, which maps keys to values. Every key and every value is an object. In any one`Dictionary`object, every key is associated with at most one value. Given a`Dictionary`and a key, the associated element can be looked up. Any non-`null`object can be used as a key and as a value.
 
@@ -32,9 +35,11 @@ As a rule, the`equals`method should be used by implementations of this class to 
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<V\>! | [elements](https://developer.android.com/reference/kotlin/java/util/Dictionary#elements())`()` Returns an enumeration of the values in this dictionary. |
 | abstractV | [get](https://developer.android.com/reference/kotlin/java/util/Dictionary#get(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value to which the key is mapped in this dictionary. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Dictionary#isEmpty())`()` Tests if this dictionary maps no keys to value. |
+| --- | --- |
 | abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<K\>! | [keys](https://developer.android.com/reference/kotlin/java/util/Dictionary#keys())`()` Returns an enumeration of the keys in this dictionary. |
 | abstractV | [put](https://developer.android.com/reference/kotlin/java/util/Dictionary#put(java.util.Dictionary.K,%20java.util.Dictionary.V))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this dictionary. |
 | abstractV | [remove](https://developer.android.com/reference/kotlin/java/util/Dictionary#remove(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Removes the`key`(and its corresponding`value`) from this dictionary. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/Dictionary#size())`()` Returns the number of entries (distinct keys) in this dictionary. |
 
 ## Public constructors

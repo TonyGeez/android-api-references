@@ -6,12 +6,14 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 # KeyStoreParameter
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/KeyStoreParameter "View this page in Java") 
+| --- | --- |
 
 ```
 class KeyStoreParameter : KeyStore.ProtectionParameter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.KeyStoreParameter](https://developer.android.com/reference/kotlin/android/security/KeyStoreParameter#) |
 
 | **This class was deprecated in API level 23.**

@@ -6,6 +6,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # OnLoadCanceledListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnLoadCanceledListener<D : Any!>

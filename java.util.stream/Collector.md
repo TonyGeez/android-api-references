@@ -77,9 +77,11 @@ In addition to the predefined implementations in [Collectors](https://developer.
 | abstract [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A,T\>! | [accumulator](https://developer.android.com/reference/kotlin/java/util/stream/Collector#accumulator())`()` A function that folds a value into a mutable result container. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Collector.Characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics)!\>! | [characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector#characteristics())`()` Returns a`Set`of`Collector.Characteristics`indicating the characteristics of this Collector. |
 | abstract [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<A\>! | [combiner](https://developer.android.com/reference/kotlin/java/util/stream/Collector#combiner())`()` A function that accepts two partial results and merges them. |
+| --- | --- |
 | abstract [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<A,R\>! | [finisher](https://developer.android.com/reference/kotlin/java/util/stream/Collector#finisher())`()` Perform the final transformation from the intermediate accumulation type`A`to the final result type`R`. |
 | openstatic [Collector](https://developer.android.com/reference/kotlin/java/util/stream/Collector#)\<T,A,R\>! | [of](https://developer.android.com/reference/kotlin/java/util/stream/Collector#of(java.util.function.Supplier,%20java.util.function.BiConsumer,%20java.util.function.BinaryOperator,%20java.util.function.Function,%20java.util.stream.Collector.Characteristics))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<A>!`, `accumulator:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<A,` `T>!`, `combiner:` ` [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)<A>!`, `finisher:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<A,` `R>!`, `vararg` `characteristics:` ` [Collector.Characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics)!`)` Returns a new`Collector`described by the given`supplier`,`accumulator`,`combiner`, and`finisher`functions. |
 | openstatic [Collector](https://developer.android.com/reference/kotlin/java/util/stream/Collector#)\<T,R,R\>! | [of](https://developer.android.com/reference/kotlin/java/util/stream/Collector#of(java.util.function.Supplier,%20java.util.function.BiConsumer,%20java.util.function.BinaryOperator,%20java.util.stream.Collector.Characteristics))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<R>!`, `accumulator:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<R,` `T>!`, `combiner:` ` [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)<R>!`, `vararg` `characteristics:` ` [Collector.Characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics)!`)` Returns a new`Collector`described by the given`supplier`,`accumulator`, and`combiner`functions. |
+| --- | --- |
 | abstract [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>! | [supplier](https://developer.android.com/reference/kotlin/java/util/stream/Collector#supplier())`()` A function that creates and returns a new mutable result container. |
 
 ## Public methods
@@ -163,9 +165,11 @@ Returns a new`Collector`described by the given`supplier`,`accumulator`,`combiner
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<A\>!:The supplier function for the new collector |
 | `accumulator` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<A,T\>!:The accumulator function for the new collector |
 | `combiner` | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<A\>!:The combiner function for the new collector |
+| --- | --- |
 | `finisher` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<A,R\>!:The finisher function for the new collector |
 | `characteristics` | [Collector.Characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics)!:The collector characteristics for the new collector |
 | `<T>` | The type of input elements for the new collector |
+| --- | --- |
 | `<A>` | The intermediate accumulation type of the new collector |
 | `<R>` | The final result type of the new collector |
 
@@ -197,9 +201,11 @@ Returns a new`Collector`described by the given`supplier`,`accumulator`, and`comb
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<R\>!:The supplier function for the new collector |
 | `accumulator` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<R,T\>!:The accumulator function for the new collector |
 | `combiner` | [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#)\<R\>!:The combiner function for the new collector |
+| --- | --- |
 | `characteristics` | [Collector.Characteristics](https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics)!:The collector characteristics for the new collector |
 | `<T>` | The type of input elements for the new collector |
 | `<R>` | The type of intermediate accumulation result, and final result, for the new collector |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|--------------------|

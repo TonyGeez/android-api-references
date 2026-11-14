@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # IpConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/IpConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class IpConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpConfiguration](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#) |
 
 A class representing the IP configuration of a network.
@@ -30,9 +32,11 @@ A class representing the IP configuration of a network.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo)? | [getHttpProxy](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#getHttpProxy())`()` The proxy configuration of this object. |
+| --- | --- |
 | [StaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration)? | [getStaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#getStaticIpConfiguration())`()` Get the current static IP configuration (possibly null). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/IpConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Properties ||

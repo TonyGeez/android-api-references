@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # SymbolTable
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/SymbolTable "View this page in Java") 
+| --- | --- |
 
 ```
 interface SymbolTable
@@ -33,6 +34,7 @@ Finally, a symbol table defines parsing behavior for symbolic names. All symboli
 | abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [lookup](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable#lookup(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Lookup the characters associated with this string and return it. |
 | abstract [UnicodeMatcher](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher)! | [lookupMatcher](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable#lookupMatcher(kotlin.Int))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Lookup the UnicodeMatcher associated with the given character, and return it. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [parseReference](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable#parseReference(kotlin.String,%20java.text.ParsePosition,%20kotlin.Int))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parse a symbol reference name from the given string, starting at the given position. |
+| --- | --- |
 
 ## Constants
 
@@ -105,6 +107,7 @@ Parse a symbol reference name from the given string, starting at the given posit
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the text to parse for the name |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!:on entry, the index of the first character to parse. This is the character following the SYMBOL_REF character. On exit, the index after the last parsed character. If the parse failed, pos is unchanged on exit. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index after the last character to be parsed. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|

@@ -9,6 +9,7 @@ abstract class SecretKeyFactorySpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.SecretKeyFactorySpi](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `SecretKeyFactory` class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a secret-key factory for a particular algorithm.
@@ -26,6 +27,7 @@ A provider should document all the key specifications supported by its secret ke
 | abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineGenerateSecret](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineGenerateSecret(java.security.spec.KeySpec))`(`keySpec:` ` [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)!`)` Generates a `SecretKey` object from the provided key specification (key material). |
 | abstract [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)! | [engineGetKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineGetKeySpec(javax.crypto.SecretKey,%20java.lang.Class))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`, `keySpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
 | abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineTranslateKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineTranslateKey(javax.crypto.SecretKey))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
+| --- | --- |
 
 ## Public constructors
 

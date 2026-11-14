@@ -7,6 +7,7 @@ class ZoneOffset : ZoneId, Comparable<ZoneOffset!>, Serializable, TemporalAcce
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.time.ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId) ||
 | | ↳ | [java.time.ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#) |
 
@@ -33,21 +34,27 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have the same offset as this object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#compareTo(java.time.ZoneOffset)(other: https://developer.android.com/reference/kotlin/java/time/ZoneOffset#!)` Compares this offset to another offset in descending order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this offset is equal to another offset. |
+| --- | --- |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `ZoneOffset` from a temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this offset as an `int`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getId()()` Gets the normalized zone offset ID. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this offset as a `long`. |
 | [ZoneRules](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getRules()()` Gets the associated time-zone rules. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getTotalSeconds()()` Gets the total zone offset in seconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#hashCode()()` A hash code for this offset. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#of(kotlin.String)(offsetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Obtains an instance of `ZoneOffset` using the ID. |
+| --- | --- |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHours(kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours. |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHoursMinutes(kotlin.Int,%20kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours and minutes. |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHoursMinutesSeconds(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours, minutes and seconds. |
+| --- | --- |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofTotalSeconds(kotlin.Int)(totalSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` specifying the total offset in seconds |
 | R | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this offset using the specified query. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#toString()()` Outputs this offset as a `String`, using the normalized ID. |
 
 | Inherited functions ||
@@ -59,6 +66,7 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#MAX:java.time.ZoneOffset` Constant for the maximum supported offset. |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#MIN:java.time.ZoneOffset` Constant for the minimum supported offset. |
 | static [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#UTC:java.time.ZoneOffset` The time-zone offset for UTC, with an ID of 'Z'. |
+| --- | --- |
 
 | Inherited properties ||
 |---|---|
@@ -211,6 +219,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained or the value is outside the range of valid values for the field |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported or the range of values exceeds an `int` |
+| --- | --- |
 
 ### getId
 
@@ -261,6 +270,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### getRules
 
@@ -449,6 +459,7 @@ The sign of the hours, minutes and seconds components must match. Thus, if the h
 | `hours` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the time-zone offset in hours, from -18 to +18 |
 | `minutes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the time-zone offset in minutes, from 0 to ±59, sign matches hours and seconds |
 | `seconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the time-zone offset in seconds, from 0 to ±59, sign matches hours and minutes |
+| --- | --- |
 
 | Return ||
 |---|---|

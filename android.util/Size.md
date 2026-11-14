@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # Size
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Size "View this page in Java") 
+| --- | --- |
 
 ```
 class Size
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Size](https://developer.android.com/reference/kotlin/android/util/Size#) |
 
 Immutable class for describing width and height dimensions in pixels.
@@ -26,9 +28,11 @@ Immutable class for describing width and height dimensions in pixels.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/util/Size#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this size is equal to another size. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/util/Size#getHeight())`()` Get the height of the size (in pixels). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/util/Size#getWidth())`()` Get the width of the size (in pixels). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/util/Size#hashCode())`()` Returns a hash code value for the object. |
 | static [Size](https://developer.android.com/reference/kotlin/android/util/Size#)! | [parseSize](https://developer.android.com/reference/kotlin/android/util/Size#parseSize(kotlin.String))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses the specified string as a size value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/util/Size#toString())`()` Return the size represented as a string with the format`"WxH"` |
+| --- | --- |
 
 ## Public constructors
 

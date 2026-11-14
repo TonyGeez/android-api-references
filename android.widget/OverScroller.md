@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # OverScroller
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/OverScroller "View this page in Java") 
+| --- | --- |
 
 ```
 open class OverScroller
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.OverScroller](https://developer.android.com/reference/kotlin/android/widget/OverScroller#) |
 
 This class encapsulates scrolling with the ability to overshoot the bounds of a scrolling operation. This class is a drop-in replacement for [android.widget.Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller) in most cases.
@@ -29,21 +31,27 @@ This class encapsulates scrolling with the ability to overshoot the bounds of a 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abortAnimation](https://developer.android.com/reference/kotlin/android/widget/OverScroller#abortAnimation())`()` Stops the animation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [computeScrollOffset](https://developer.android.com/reference/kotlin/android/widget/OverScroller#computeScrollOffset())`()` Call this when you want to know the new location. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fling](https://developer.android.com/reference/kotlin/android/widget/OverScroller#fling(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fling](https://developer.android.com/reference/kotlin/android/widget/OverScroller#fling(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `overX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `overY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling based on a fling gesture. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forceFinished](https://developer.android.com/reference/kotlin/android/widget/OverScroller#forceFinished(kotlin.Boolean))`(`finished:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Force the finished field to a particular value. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCurrVelocity](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getCurrVelocity())`()` Returns the absolute value of the current velocity. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrX](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getCurrX())`()` Returns the current X offset in the scroll. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrY](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getCurrY())`()` Returns the current Y offset in the scroll. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalX](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getFinalX())`()` Returns where the scroll will end. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalY](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getFinalY())`()` Returns where the scroll will end. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartX](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getStartX())`()` Returns the start X offset in the scroll. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartY](https://developer.android.com/reference/kotlin/android/widget/OverScroller#getStartY())`()` Returns the start Y offset in the scroll. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinished](https://developer.android.com/reference/kotlin/android/widget/OverScroller#isFinished())`()` Returns whether the scroller has finished scrolling. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOverScrolled](https://developer.android.com/reference/kotlin/android/widget/OverScroller#isOverScrolled())`()` Returns whether the current Scroller is currently returning to a valid position. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyHorizontalEdgeReached](https://developer.android.com/reference/kotlin/android/widget/OverScroller#notifyHorizontalEdgeReached(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `overX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify the scroller that we've reached a horizontal boundary. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyVerticalEdgeReached](https://developer.android.com/reference/kotlin/android/widget/OverScroller#notifyVerticalEdgeReached(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `finalY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `overY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify the scroller that we've reached a vertical boundary. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFriction](https://developer.android.com/reference/kotlin/android/widget/OverScroller#setFriction(kotlin.Float))`(`friction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The amount of friction applied to flings. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [springBack](https://developer.android.com/reference/kotlin/android/widget/OverScroller#springBack(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call this when you want to 'spring back' into a valid coordinate range. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](https://developer.android.com/reference/kotlin/android/widget/OverScroller#startScroll(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point and the distance to travel. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](https://developer.android.com/reference/kotlin/android/widget/OverScroller#startScroll(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point and the distance to travel. |
 
@@ -101,6 +109,7 @@ Creates an OverScroller with flywheel enabled.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context of this application. |
 | `interpolator` | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)!: The scroll interpolator. If null, a default (viscous) interpolator will be used. |
 | `bounceCoefficientX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A value between 0 and 1 that will determine the proportion of the velocity which is preserved in the bounce when the horizontal edge is reached. A null value means no bounce. This behavior is no longer supported and this coefficient has no effect. |
+| --- | --- |
 | `bounceCoefficientY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Same as bounceCoefficientX but for the vertical direction. This behavior is no longer supported and this coefficient has no effect. |
 
 ### OverScroller
@@ -125,6 +134,7 @@ Creates an OverScroller.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context of this application. |
 | `interpolator` | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)!: The scroll interpolator. If null, a default (viscous) interpolator will be used. |
 | `bounceCoefficientX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A value between 0 and 1 that will determine the proportion of the velocity which is preserved in the bounce when the horizontal edge is reached. A null value means no bounce. This behavior is no longer supported and this coefficient has no effect. |
+| --- | --- |
 | `bounceCoefficientY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Same as bounceCoefficientX but for the vertical direction. This behavior is no longer supported and this coefficient has no effect. |
 | `flywheel` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, successive fling motions will keep on increasing scroll speed. |
 
@@ -196,12 +206,15 @@ Start scrolling based on a fling gesture. The distance traveled will depend on t
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting point of the scroll (X) |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting point of the scroll (Y) |
 | `velocityX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Initial velocity of the fling (X) measured in pixels per second. |
+| --- | --- |
 | `velocityY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Initial velocity of the fling (Y) measured in pixels per second |
 | `minX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Minimum X value. The scroller will not scroll past this point unless overX \> 0. If overfling is allowed, it will use minX as a springback boundary. |
 | `maxX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Maximum X value. The scroller will not scroll past this point unless overX \> 0. If overfling is allowed, it will use maxX as a springback boundary. |
+| --- | --- |
 | `minY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Minimum Y value. The scroller will not scroll past this point unless overY \> 0. If overfling is allowed, it will use minY as a springback boundary. |
 | `maxY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Maximum Y value. The scroller will not scroll past this point unless overY \> 0. If overfling is allowed, it will use maxY as a springback boundary. |
 | `overX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Overfling range. If \> 0, horizontal overfling in either direction will be possible. |
+| --- | --- |
 | `overY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Overfling range. If \> 0, vertical overfling in either direction will be possible. |
 
 ### forceFinished
@@ -363,6 +376,7 @@ Notify the scroller that we've reached a horizontal boundary. Normally the infor
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting/current X position |
 | `finalX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired final X position |
 | `overX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Magnitude of overscroll allowed. This should be the maximum desired distance from finalX. Absolute value - must be positive. |
+| --- | --- |
 
 ### notifyVerticalEdgeReached
 
@@ -383,6 +397,7 @@ Notify the scroller that we've reached a vertical boundary. Normally the informa
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting/current Y position |
 | `finalY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired final Y position |
 | `overY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Magnitude of overscroll allowed. This should be the maximum desired distance from finalY. Absolute value - must be positive. |
+| --- | --- |
 
 ### setFriction
 
@@ -420,9 +435,11 @@ Call this when you want to 'spring back' into a valid coordinate range.
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting X coordinate |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting Y coordinate |
 | `minX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Minimum valid X value |
+| --- | --- |
 | `maxX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Maximum valid X value |
 | `minY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Minimum valid Y value |
 | `maxY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Minimum valid Y value |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -448,6 +465,7 @@ Start scrolling by providing a starting point and the distance to travel. The sc
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting horizontal scroll offset in pixels. Positive numbers will scroll the content to the left. |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting vertical scroll offset in pixels. Positive numbers will scroll the content up. |
 | `dx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal distance to travel. Positive numbers will scroll the content to the left. |
+| --- | --- |
 | `dy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical distance to travel. Positive numbers will scroll the content up. |
 
 ### startScroll
@@ -471,5 +489,6 @@ Start scrolling by providing a starting point and the distance to travel.
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting horizontal scroll offset in pixels. Positive numbers will scroll the content to the left. |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting vertical scroll offset in pixels. Positive numbers will scroll the content up. |
 | `dx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Horizontal distance to travel. Positive numbers will scroll the content to the left. |
+| --- | --- |
 | `dy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Vertical distance to travel. Positive numbers will scroll the content up. |
 | `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Duration of the scroll in milliseconds. |

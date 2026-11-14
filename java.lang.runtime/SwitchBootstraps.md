@@ -9,6 +9,7 @@ open class SwitchBootstraps
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.runtime.SwitchBootstraps](https://developer.android.com/reference/kotlin/java/lang/runtime/SwitchBootstraps#) |
 
 Bootstrap methods for linking`invokedynamic`call sites that implement the selection functionality of the`switch`statement. The bootstraps take additional static arguments corresponding to the`case`labels of the`switch`, implicitly numbered sequentially from`[0..N)`.
@@ -60,6 +61,7 @@ The value of the`restart`index must be between`0`(inclusive) and the length of t
 | `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
 | `invocationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:unused |
 | `invocationType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!:The invocation type of the`CallSite`with two parameters, an enum type, an`int`, and`int`as a return type. |
+| --- | --- |
 | `labels` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:case labels -`String`constants and`Class`instances, in any combination |
 
 | Return ||
@@ -105,6 +107,7 @@ The value of the`restart`index must be between`0`(inclusive) and the length of t
 | `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
 | `invocationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:unused |
 | `invocationType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!:The invocation type of the`CallSite`with two parameters, a reference type, an`int`, and`int`as a return type. |
+| --- | --- |
 | `labels` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:case labels -`String`and`Integer`constants and`Class`and`EnumDesc`instances, in any combination |
 
 | Return ||

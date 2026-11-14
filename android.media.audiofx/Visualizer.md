@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # Visualizer
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/Visualizer "View this page in Java") 
+| --- | --- |
 
 ```
 open class Visualizer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.audiofx.Visualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#) |
 
 The Visualizer class enables application to retrieve part of the currently playing audio for visualization purpose. It is not an audio recording interface and only returns partial and low quality audio content. However, to protect privacy of certain audio data (e.g voice mail) the use of the visualizer requires the permission android.permission.RECORD_AUDIO.
@@ -49,18 +51,23 @@ The Visualizer class can also be used to perform measurements on the audio being
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALREADY_EXISTS](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ALREADY_EXISTS:kotlin.Int) Internal operation status. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR:kotlin.Int) Unspecified error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BAD_VALUE](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR_BAD_VALUE:kotlin.Int) Operation failed due to bad parameter value. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEAD_OBJECT](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR_DEAD_OBJECT:kotlin.Int) Operation failed due to dead remote object. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_OPERATION](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR_INVALID_OPERATION:kotlin.Int) Operation failed because it was requested in wrong state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_INIT](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR_NO_INIT:kotlin.Int) Operation failed due to bad object initialization. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_MEMORY](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#ERROR_NO_MEMORY:kotlin.Int) Operation failed due to lack of memory. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MODE_NONE](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#MEASUREMENT_MODE_NONE:kotlin.Int) Defines a measurement mode in which no measurements are performed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MODE_PEAK_RMS](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#MEASUREMENT_MODE_PEAK_RMS:kotlin.Int) Defines a measurement mode which computes the peak and RMS value in mB below the "full scale", where 0mB is normally the maximum sample value (but see the note below). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCALING_MODE_AS_PLAYED](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#SCALING_MODE_AS_PLAYED:kotlin.Int) Defines a capture mode where the playback volume will affect (scale) the range of the captured data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCALING_MODE_NORMALIZED](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#SCALING_MODE_NORMALIZED:kotlin.Int) Defines a capture mode where amplification is applied based on the content of the captured data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ENABLED](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#STATE_ENABLED:kotlin.Int) State of a Visualizer object that is active. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INITIALIZED](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#STATE_INITIALIZED:kotlin.Int) State of a Visualizer object that is ready to be used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_UNINITIALIZED](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#STATE_UNINITIALIZED:kotlin.Int) State of a Visualizer object that was not successfully initialized upon creation |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#SUCCESS:kotlin.Int) Successful operation. |
+| --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -71,18 +78,23 @@ The Visualizer class can also be used to perform measurements on the audio being
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCaptureSize](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getCaptureSize())`()` Returns current capture size. |
 | openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getCaptureSizeRange](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getCaptureSizeRange())`()` Returns the capture size range. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnabled](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getEnabled())`()` Get current activation state of the visualizer. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFft](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getFft(kotlin.ByteArray))`(`fft:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns a frequency capture of currently playing audio content. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCaptureRate](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getMaxCaptureRate())`()` Returns the maximum capture rate for the callback capture method. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getMeasurementMode())`()` Returns the current measurement modes performed by this audio effect |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeasurementPeakRms](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getMeasurementPeakRms(android.media.audiofx.Visualizer.MeasurementPeakRms))`(`measurement:` ` [Visualizer.MeasurementPeakRms](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer.MeasurementPeakRms)!`)` Retrieves the latest peak and RMS measurement. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSamplingRate](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getSamplingRate())`()` Returns the sampling rate of the captured audio. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScalingMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getScalingMode())`()` Returns the current scaling mode on the captured visualization data. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWaveForm](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#getWaveForm(kotlin.ByteArray))`(`waveform:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns a waveform capture of currently playing audio content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#release())`()` Releases the native Visualizer resources. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setCaptureSize](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#setCaptureSize(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the capture size, i. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setDataCaptureListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#setDataCaptureListener(android.media.audiofx.Visualizer.OnDataCaptureListener,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean))`(`listener:` ` [Visualizer.OnDataCaptureListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer.OnDataCaptureListener)?`, `rate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `waveform:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `fft:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Registers an OnDataCaptureListener interface and specifies the rate at which the capture should be updated as well as the type of capture requested. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#setEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the visualization engine. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setMeasurementMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#setMeasurementMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the combination of measurement modes to be performed by this audio effect. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setScalingMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer#setScalingMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the type of scaling applied on the captured visualization data. |
 
 | Protected methods ||
@@ -361,6 +373,7 @@ The layout in the returned byte array is as follows:
 - If Fs is the sampling frequency retuned by getSamplingRate() the kth frequency is: k \* Fs / n
 
 | Index <br /> | 0 <br /> | 1 <br /> | 2 <br /> | 3 <br /> | 4 <br /> | 5 <br /> | ... <br /> | n - 2 <br /> | n - 1 <br /> |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Data <br /> | Rf0 <br /> | Rf(n/2) <br /> | Rf1 <br /> | If1 <br /> | Rf2 <br /> | If2 <br /> | ... <br /> | Rf(n/2-1) <br /> | If(n/2-1) <br /> |
 
 In order to obtain magnitude and phase values the following code can be used: 
@@ -553,6 +566,7 @@ Call this method with a null listener to stop receiving the capture updates.
 | `listener` | [Visualizer.OnDataCaptureListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer.OnDataCaptureListener)?:OnDataCaptureListener registered This value may be`null`. |
 | `rate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rate in milliHertz at which the capture should be updated |
 | `waveform` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a waveform capture is requested: the onWaveFormDataCapture() method will be called on the OnDataCaptureListener interface. |
+| --- | --- |
 | `fft` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a frequency capture is requested: the onFftDataCapture() method will be called on the OnDataCaptureListener interface. |
 
 | Return ||

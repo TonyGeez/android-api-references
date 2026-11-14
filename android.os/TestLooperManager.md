@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # TestLooperManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/TestLooperManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class TestLooperManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.TestLooperManager](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#) |
 
 Blocks a looper from executing any messages, and allows the holder of this object to control when and which messages get executed until it is released.
@@ -24,12 +26,15 @@ A TestLooperManager should be acquired using [android.app.Instrumentation#acquir
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#execute(android.os.Message))`(`message:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message)!`)` Executes the given message on the Looper thread this wrapper is attached to. |
 | open [MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue)! | [getMessageQueue](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#getMessageQueue())`()` Returns the [MessageQueue](https://developer.android.com/reference/kotlin/android/os/MessageQueue) this object is wrapping. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMessages](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#hasMessages(android.os.Handler,%20kotlin.Any,%20kotlin.Int))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if there are any queued messages that match the parameters. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMessages](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#hasMessages(android.os.Handler,%20kotlin.Any,%20java.lang.Runnable))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `r:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Returns true if there are any queued messages that match the parameters. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlockedOnSyncBarrier](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#isBlockedOnSyncBarrier())`()` Checks whether the Looper is currently blocked on a sync barrier. |
 | open [Message](https://developer.android.com/reference/kotlin/android/os/Message)! | [next](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#next())`()` Returns the next message that should be executed by this queue, may block if no messages are ready. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [peekWhen](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#peekWhen())`()` Retrieves, but does not remove, the values of android. |
 | open [Message](https://developer.android.com/reference/kotlin/android/os/Message)? | [poll](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#poll())`()` Retrieves and removes the next message in this queue. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#recycle(android.os.Message))`(`msg:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message)!`)` Called to indicate that a Message returned by [next()](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#next())has been parsed and should be recycled. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/os/TestLooperManager#release())`()` Releases the looper to continue standard looping and processing of messages, no further interactions with TestLooperManager will be allowed after release() has been called. |
 
 ## Public methods
@@ -75,6 +80,7 @@ Returns true if there are any queued messages that match the parameters.
 | `h` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:the value of [Message.getTarget()](https://developer.android.com/reference/kotlin/android/os/Message#getTarget()) |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value of [Message.what](https://developer.android.com/reference/kotlin/android/os/Message#what:kotlin.Int) |
 | `object` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the value of [Message.obj](https://developer.android.com/reference/kotlin/android/os/Message#obj:kotlin.Any), null for any |
+| --- | --- |
 
 ### hasMessages
 
@@ -95,6 +101,7 @@ Returns true if there are any queued messages that match the parameters.
 | `h` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:the value of [Message.getTarget()](https://developer.android.com/reference/kotlin/android/os/Message#getTarget()) |
 | `r` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the value of [Message.getCallback()](https://developer.android.com/reference/kotlin/android/os/Message#getCallback()) |
 | `object` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the value of [Message.obj](https://developer.android.com/reference/kotlin/android/os/Message#obj:kotlin.Any), null for any |
+| --- | --- |
 
 ### isBlockedOnSyncBarrier
 

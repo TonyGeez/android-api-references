@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # Callback
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/GeolocationPermissions.Callback "View this page in Java") 
+| --- | --- |
 
 ```
 interface Callback
@@ -41,3 +42,4 @@ Sets the Geolocation permission state for the supplied origin.
 | `origin` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the origin for which permissions are set |
 | `allow` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not the origin should be allowed to use the Geolocation API |
 | `retain` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the permission should be retained beyond the lifetime of a page currently being displayed by a WebView |
+| --- | --- |

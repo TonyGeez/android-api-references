@@ -7,9 +7,11 @@ abstract class WallpaperService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.wallpaper.WallpaperService](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#) |
 
 A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it. This service object itself does very little -- its only purpose is to generate instances of `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine` as needed. Implementing a wallpaper thus involves subclassing from this, subclassing an Engine implementation, and implementing `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreateEngine()` to return a new instance of your engine.
@@ -1051,6 +1053,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal accessibility service interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreate()()` Called by the system when the service is first created. |
 | abstract [WallpaperService.Engine](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine)! | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreateEngine()()` Must be implemented to return a new instance of the wallpaper's engine. |
+| --- | --- |
 | open [WallpaperService.Engine](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine)? | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreateEngine(android.app.wallpaper.WallpaperDescription)(description: https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.html#)` Creates a new engine instance to show the given content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 
@@ -2856,3 +2859,4 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
+| --- | --- |

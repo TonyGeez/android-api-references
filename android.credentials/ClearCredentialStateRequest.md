@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ClearCredentialStateRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/ClearCredentialStateRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class ClearCredentialStateRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.ClearCredentialStateRequest](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateRequest#) |
 
 A request class for clearing a user's credential state from the credential providers.
@@ -30,6 +32,7 @@ A request class for clearing a user's credential state from the credential provi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateRequest#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getData](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateRequest#getData())`()` Returns the request data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateRequest#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

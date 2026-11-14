@@ -6,15 +6,18 @@ Deprecated in [API level 3](https://developer.android.com/guide/topics/manifest/
 # ActivityInstrumentationTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ActivityInstrumentationTestCase<T : Activity!> : ActivityTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) |||
 | | ↳ | [android.test.ActivityTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityTestCase) ||
 | | | ↳ | [android.test.ActivityInstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/ActivityInstrumentationTestCase#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 3.**
 |
@@ -83,6 +86,7 @@ Creates an [ActivityInstrumentationTestCase](https://developer.android.com/refer
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:ignored - no longer in use. |
 | `activityClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!:The activity to test. This must be a class in the instrumentation targetPackage specified in the AndroidManifest.xml |
 | `initialTouchMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true = in touch mode |
+| --- | --- |
 
 ## Public methods
 

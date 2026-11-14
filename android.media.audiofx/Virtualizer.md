@@ -6,12 +6,14 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 # Virtualizer
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/Virtualizer "View this page in Java") 
+| --- | --- |
 
 ```
 open class Virtualizer : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.Virtualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#) |
 
@@ -45,9 +47,11 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_STRENGTH](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#PARAM_STRENGTH:kotlin.Int) Virtualizer effect strength. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_STRENGTH_SUPPORTED](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#PARAM_STRENGTH_SUPPORTED:kotlin.Int) Is strength parameter supported by virtualizer engine. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUALIZATION_MODE_AUTO](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_AUTO:kotlin.Int) A virtualization mode used to indicate the virtualizer effect must stop forcing the processing to a particular mode in [forceVirtualizationMode(int)](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#forceVirtualizationMode(kotlin.Int)). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUALIZATION_MODE_BINAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_BINAURAL:kotlin.Int) A virtualization mode typically used over headphones. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUALIZATION_MODE_OFF](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_OFF:kotlin.Int) A virtualization mode indicating virtualization processing is not active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUALIZATION_MODE_TRANSAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_TRANSAURAL:kotlin.Int) A virtualization mode typically used over speakers. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -62,12 +66,15 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canVirtualize](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#canVirtualize(kotlin.Int,%20kotlin.Int))`(`inputChannelMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `virtualizationMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the combination of a channel mask and virtualization mode is supported by this virtualizer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [forceVirtualizationMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#forceVirtualizationMode(kotlin.Int))`(`virtualizationMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Forces the virtualizer effect to use the given processing mode. |
 | open [Virtualizer.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer.Settings)! | [getProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#getProperties())`()` Gets the virtualizer properties. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getRoundedStrength](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#getRoundedStrength())`()` Gets the current strength of the effect. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSpeakerAngles](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#getSpeakerAngles(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray))`(`inputChannelMask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `virtualizationMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `angles:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Queries the virtual speaker angles (azimuth and elevation) for a combination of a channel mask and virtualization mode. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getStrengthSupported](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#getStrengthSupported())`()` Indicates whether setting strength is supported. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVirtualizationMode](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#getVirtualizationMode())`()` Return the virtualization mode being used, if any. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameterListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#setParameterListener(android.media.audiofx.Virtualizer.OnParameterChangeListener))`(`listener:` ` [Virtualizer.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer.OnParameterChangeListener)!`)` Registers an OnParameterChangeListener interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#setProperties(android.media.audiofx.Virtualizer.Settings))`(`settings:` ` [Virtualizer.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer.Settings)!`)` Sets the virtualizer properties. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrength](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#setStrength(kotlin.Short))`(`strength:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the strength of the virtualizer effect. |
 
 | Inherited functions ||
@@ -200,6 +207,7 @@ Class constructor.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 | `java.lang.RuntimeException` | |
 
 ## Public methods
@@ -234,6 +242,7 @@ Checks if the combination of a channel mask and virtualization mode is supported
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### forceVirtualizationMode
 
@@ -261,6 +270,7 @@ Forces the virtualizer effect to use the given processing mode. The effect must 
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getProperties
 
@@ -283,6 +293,7 @@ Gets the virtualizer properties. This method is useful when a snapshot of curren
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getRoundedStrength
 
@@ -305,6 +316,7 @@ Gets the current strength of the effect.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getSpeakerAngles
 
@@ -329,6 +341,7 @@ Note that in some virtualizer implementations, the angles may be strength-depend
 | `inputChannelMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the channel mask of the content to virtualize. |
 | `virtualizationMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode for which virtualization processing is to be performed, one of [VIRTUALIZATION_MODE_BINAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_BINAURAL:kotlin.Int), [VIRTUALIZATION_MODE_TRANSAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_TRANSAURAL:kotlin.Int). Value is [android.media.audiofx.Virtualizer#VIRTUALIZATION_MODE_BINAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_BINAURAL:kotlin.Int), or [android.media.audiofx.Virtualizer#VIRTUALIZATION_MODE_TRANSAURAL](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer#VIRTUALIZATION_MODE_TRANSAURAL:kotlin.Int) |
 | `angles` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:a non-null array whose length is 3 times the number of channels in the channel mask. If the method indicates the configuration is supported, the array will contain upon return triplets of values: for each channel`i`among the channels of the mask: - the element at index`3*i`in the array contains the speaker identification (e.g. [AudioFormat.CHANNEL_OUT_FRONT_LEFT](https://developer.android.com/reference/kotlin/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_LEFT:kotlin.Int)), - the element at index`3*i+1`contains its corresponding azimuth angle expressed in degrees, where 0 is the direction the listener faces, 180 is behind the listener, and -90 is to her/his left, - the element at index`3*i+2`contains its corresponding elevation angle where +90 is directly above the listener, 0 is the horizontal plane, and -90 is directly below the listener. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -339,6 +352,7 @@ Note that in some virtualizer implementations, the angles may be strength-depend
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getStrengthSupported
 
@@ -415,6 +429,7 @@ Sets the virtualizer properties. This method is useful when virtualizer settings
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setStrength
 
@@ -437,3 +452,4 @@ Sets the strength of the virtualizer effect. If the implementation does not supp
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |

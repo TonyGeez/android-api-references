@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # TextSelection
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextSelection "View this page in Java") 
+| --- | --- |
 
 ```
 class TextSelection : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.TextSelection](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#) |
 
 Information about where text selection should be.
@@ -31,12 +33,15 @@ Information about where text selection should be.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#describeContents())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getConfidenceScore](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getConfidenceScore(kotlin.String))`(`entity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the confidence score for the specified entity. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getEntity](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getEntity(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the entity at the specified index. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEntityCount](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getEntityCount())`()` Returns the number of entities found in the classified text. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getExtras())`()` Returns the extended data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getId())`()` Returns the id, if one exists, for this object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSelectionEndIndex](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getSelectionEndIndex())`()` Returns the end index of the text selection. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSelectionStartIndex](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getSelectionStartIndex())`()` Returns the start index of the text selection. |
 | [TextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification)? | [getTextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#getTextClassification())`()` Returns the text classification result of the suggested selection span. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

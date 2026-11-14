@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # MidiDeviceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiDeviceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class MidiDeviceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.midi.MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#) |
 
 This class contains information to describe a MIDI device. For now we only have information that can be retrieved easily for USB devices, but we will probably expand this in the future. This class is just an immutable object to encapsulate the MIDI device description. Use the MidiDevice class to actually communicate with devices.
@@ -26,21 +28,27 @@ This class contains information to describe a MIDI device. For now we only have 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_BLUETOOTH_DEVICE](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_BLUETOOTH_DEVICE:kotlin.String) Bundle key for the device's corresponding Bluetooth device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_MANUFACTURER](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_MANUFACTURER:kotlin.String) Bundle key for the device's manufacturer name property. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_NAME](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_NAME:kotlin.String) Bundle key for the device's user visible name property. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_PRODUCT](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_PRODUCT:kotlin.String) Bundle key for the device's product name property. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_SERIAL_NUMBER](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_SERIAL_NUMBER:kotlin.String) Bundle key for the device's serial number property. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_USB_DEVICE](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_USB_DEVICE:kotlin.String) Bundle key for the device's corresponding USB device. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_VERSION](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROPERTY_VERSION:kotlin.String) Bundle key for the device's version property. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_1_0_UP_TO_128_BITS](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_1_0_UP_TO_128_BITS:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_1_0_UP_TO_128_BITS_AND_JRTS](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_1_0_UP_TO_128_BITS_AND_JRTS:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_1_0_UP_TO_64_BITS](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_1_0_UP_TO_64_BITS:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_1_0_UP_TO_64_BITS_AND_JRTS](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_1_0_UP_TO_64_BITS_AND_JRTS:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_2_0](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_2_0:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_MIDI_2_0_AND_JRTS](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_MIDI_2_0_AND_JRTS:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UMP_USE_MIDI_CI](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UMP_USE_MIDI_CI:kotlin.Int) Constant representing a default protocol with Universal MIDI Packets (UMP). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#PROTOCOL_UNKNOWN:kotlin.Int) Constant representing a device with an unknown default protocol. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BLUETOOTH](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#TYPE_BLUETOOTH:kotlin.Int) Constant representing Bluetooth MIDI devices for [getType](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getType()) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_USB](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#TYPE_USB:kotlin.Int) Constant representing USB MIDI devices for [getType](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getType()) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VIRTUAL](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#TYPE_VIRTUAL:kotlin.Int) Constant representing virtual (software based) MIDI devices for [getType](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getType()) |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -51,15 +59,19 @@ This class contains information to describe a MIDI device. For now we only have 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultProtocol](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getDefaultProtocol())`()` Returns the default protocol. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getId())`()` Returns the ID of the device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputPortCount](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getInputPortCount())`()` Returns the device's number of input ports. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOutputPortCount](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getOutputPortCount())`()` Returns the device's number of output ports. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MidiDeviceInfo.PortInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo.PortInfo)!\>! | [getPorts](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getPorts())`()` Returns information about the device's ports. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getProperties](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getProperties())`()` Returns the [android.os.Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) containing the device's properties. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#getType())`()` Returns the type of the device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivate](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#isPrivate())`()` Returns true if the device is private. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

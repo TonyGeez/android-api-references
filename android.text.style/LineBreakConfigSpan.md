@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # LineBreakConfigSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/LineBreakConfigSpan "View this page in Java") 
+| --- | --- |
 
 ```
 class LineBreakConfigSpan : ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.text.style.LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#) |
 
 LineBreakSpan for changing line break style of the specific region of the text.
@@ -26,12 +28,15 @@ LineBreakSpan for changing line break style of the specific region of the text.
 | static [LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#) | [createNoBreakSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#createNoBreakSpan())`()` A specialized [LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#) that used for preventing line break. |
 | static [LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#) | [createNoHyphenationSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#createNoHyphenationSpan())`()` A specialized [LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#) that used for preventing hyphenation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#describeContents())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.html#) | [getLineBreakConfig](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#getLineBreakConfig())`()` Gets an associated line break config. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#getSpanTypeId())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

@@ -11,6 +11,7 @@ interface ScheduledFuture<V : Any!> : Delayed, Future<V>
 | [java.util.concurrent.ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture#) |
 
 | Known Direct Subclasses [RunnableScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableScheduledFuture) |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RunnableScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableScheduledFuture) | A [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture#) that is [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A delayed result-bearing action that can be cancelled. Usually a scheduled future is the result of scheduling a task with a [ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService).
 

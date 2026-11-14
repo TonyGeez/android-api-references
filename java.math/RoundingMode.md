@@ -9,10 +9,12 @@ class RoundingMode
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.math.RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode#)\> ||
 | | ↳ | [java.math.RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode#) |
 
 | Known Direct Subclasses [RoundingMode.CEILING](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:CEILING), [RoundingMode.DOWN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:DOWN), [RoundingMode.FLOOR](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:FLOOR), [RoundingMode.HALF_DOWN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_DOWN), [RoundingMode.HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_EVEN), [RoundingMode.HALF_UP](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_UP), [RoundingMode.UNNECESSARY](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:UNNECESSARY), [RoundingMode.UP](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:UP) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------| | [RoundingMode.CEILING](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:CEILING) | Rounding mode to round towards positive infinity. | | [RoundingMode.DOWN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:DOWN) | Rounding mode to round towards zero. | | [RoundingMode.FLOOR](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:FLOOR) | Rounding mode to round towards negative infinity. | | [RoundingMode.HALF_DOWN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_DOWN) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. | | [RoundingMode.HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_EVEN) | Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. | | [RoundingMode.HALF_UP](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:HALF_UP) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. | | [RoundingMode.UNNECESSARY](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:UNNECESSARY) | Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. | | [RoundingMode.UP](https://developer.android.com/reference/kotlin/java/math/RoundingMode#ENUM_VALUE:UP) | Rounding mode to round away from zero. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Specifies a*rounding policy* for numerical operations capable of discarding precision. Each rounding mode indicates how the least significant returned digit of a rounded result is to be calculated. If fewer digits are returned than the digits needed to represent the exact numerical result, the discarded digits will be referred to as the*discarded fraction*regardless the digits' contribution to the value of the number. In other words, considered as a numerical value, the discarded fraction could have an absolute value greater than one.
 
@@ -20,15 +22,19 @@ Each rounding mode description includes a table listing how different two-digit 
 **Summary of Rounding Operations Under Different Rounding Modes**
 
 | Input Number | Result of rounding input to one digit with the given rounding mode ||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input Number | `UP` | `DOWN` | `CEILING` | `FLOOR` | `HALF_UP` | `HALF_DOWN` | `HALF_EVEN` | `UNNECESSARY` |
 | 5.5 | 6 | 5 | 6 | 5 | 6 | 5 | 6 | throw`ArithmeticException` |
 | 2.5 | 3 | 2 | 3 | 2 | 3 | 2 | 2 | throw`ArithmeticException` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1.6 | 2 | 1 | 2 | 1 | 2 | 2 | 2 | throw`ArithmeticException` |
 | 1.1 | 2 | 1 | 2 | 1 | 1 | 1 | 1 | throw`ArithmeticException` |
 | 1.0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | -1.0 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 |
 | -1.1 | -2 | -1 | -1 | -2 | -1 | -1 | -1 | throw`ArithmeticException` |
 | -1.6 | -2 | -1 | -1 | -2 | -2 | -2 | -2 | throw`ArithmeticException` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | -2.5 | -3 | -2 | -2 | -3 | -3 | -2 | -2 | throw`ArithmeticException` |
 | -5.5 | -6 | -5 | -5 | -6 | -6 | -5 | -6 | throw`ArithmeticException` |
 |--------------|------|--------|-----------|---------|-----------|-------------|-------------|----------------------------|
@@ -67,15 +73,19 @@ Rounding mode to round towards positive infinity. If the result is positive, beh
 Example:
 
 | Input Number | Input rounded to one digit with`CEILING`rounding |
+| --- | --- |
 | 5.5 | 6 |
 | 2.5 | 3 |
 | 1.6 | 2 |
+| --- | --- |
 | 1.1 | 2 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -1 |
 | -1.6 | -1 |
 | -2.5 | -2 |
+| --- | --- |
 | -5.5 | -5 |
 |--------------|--------------------------------------------------|
 
@@ -92,15 +102,19 @@ Rounding mode to round towards zero. Never increments the digit prior to a disca
 Example:
 
 | Input Number | Input rounded to one digit with`DOWN`rounding |
+| --- | --- |
 | 5.5 | 5 |
 | 2.5 | 2 |
 | 1.6 | 1 |
+| --- | --- |
 | 1.1 | 1 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -1 |
 | -1.6 | -1 |
 | -2.5 | -2 |
+| --- | --- |
 | -5.5 | -5 |
 |--------------|-----------------------------------------------|
 
@@ -117,15 +131,19 @@ Rounding mode to round towards negative infinity. If the result is positive, beh
 Example:
 
 | Input Number | Input rounded to one digit with`FLOOR`rounding |
+| --- | --- |
 | 5.5 | 5 |
 | 2.5 | 2 |
 | 1.6 | 1 |
+| --- | --- |
 | 1.1 | 1 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -2 |
 | -1.6 | -2 |
 | -2.5 | -3 |
+| --- | --- |
 | -5.5 | -6 |
 |--------------|------------------------------------------------|
 
@@ -142,15 +160,19 @@ Rounding mode to round towards "nearest neighbor" unless both neighbors are equi
 Example:
 
 | Input Number | Input rounded to one digit with`HALF_DOWN`rounding |
+| --- | --- |
 | 5.5 | 5 |
 | 2.5 | 2 |
 | 1.6 | 2 |
+| --- | --- |
 | 1.1 | 1 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -1 |
 | -1.6 | -2 |
 | -2.5 | -2 |
+| --- | --- |
 | -5.5 | -5 |
 |--------------|----------------------------------------------------|
 
@@ -167,15 +189,19 @@ Rounding mode to round towards the "nearest neighbor" unless both neighbors are 
 Example:
 
 | Input Number | Input rounded to one digit with`HALF_EVEN`rounding |
+| --- | --- |
 | 5.5 | 6 |
 | 2.5 | 2 |
 | 1.6 | 2 |
+| --- | --- |
 | 1.1 | 1 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -1 |
 | -1.6 | -2 |
 | -2.5 | -2 |
+| --- | --- |
 | -5.5 | -6 |
 |--------------|----------------------------------------------------|
 
@@ -192,15 +218,19 @@ Rounding mode to round towards "nearest neighbor" unless both neighbors are equi
 Example:
 
 | Input Number | Input rounded to one digit with`HALF_UP`rounding |
+| --- | --- |
 | 5.5 | 6 |
 | 2.5 | 3 |
 | 1.6 | 2 |
+| --- | --- |
 | 1.1 | 1 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -1 |
 | -1.6 | -2 |
 | -2.5 | -3 |
+| --- | --- |
 | -5.5 | -6 |
 |--------------|--------------------------------------------------|
 
@@ -217,15 +247,19 @@ Rounding mode to assert that the requested operation has an exact result, hence 
 Example:
 
 | Input Number | Input rounded to one digit with`UNNECESSARY`rounding |
+| --- | --- |
 | 5.5 | throw`ArithmeticException` |
 | 2.5 | throw`ArithmeticException` |
 | 1.6 | throw`ArithmeticException` |
+| --- | --- |
 | 1.1 | throw`ArithmeticException` |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | throw`ArithmeticException` |
 | -1.6 | throw`ArithmeticException` |
 | -2.5 | throw`ArithmeticException` |
+| --- | --- |
 | -5.5 | throw`ArithmeticException` |
 |--------------|------------------------------------------------------|
 
@@ -242,15 +276,19 @@ Rounding mode to round away from zero. Always increments the digit prior to a no
 Example:
 
 | Input Number | Input rounded to one digit with`UP`rounding |
+| --- | --- |
 | 5.5 | 6 |
 | 2.5 | 3 |
 | 1.6 | 2 |
+| --- | --- |
 | 1.1 | 2 |
 | 1.0 | 1 |
 | -1.0 | -1 |
+| --- | --- |
 | -1.1 | -2 |
 | -1.6 | -2 |
 | -2.5 | -3 |
+| --- | --- |
 | -5.5 | -6 |
 |--------------|---------------------------------------------|
 

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # IslamicCalendar
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/util/IslamicCalendar "View this page in Java") 
+| --- | --- |
 
 ```
 open class IslamicCalendar : Calendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) ||
 | | ↳ | [android.icu.util.IslamicCalendar](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#) |
 
@@ -45,15 +47,19 @@ IslamicCalendar usually should be instantiated using [android.icu.util.Calendar#
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DHU_AL_HIJJAH](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#DHU_AL_HIJJAH:kotlin.Int) Constant for Dhu al-Hijjah, the 12th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DHU_AL_QIDAH](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#DHU_AL_QIDAH:kotlin.Int) Constant for Dhu al-Qi'dah, the 11th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUMADA_1](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#JUMADA_1:kotlin.Int) Constant for Jumada al-awwal or (Jumada I), the 5th month of the Islamic year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUMADA_2](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#JUMADA_2:kotlin.Int) Constant for Jumada al-thani or (Jumada II), the 6th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MUHARRAM](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#MUHARRAM:kotlin.Int) Constant for Muharram, the 1st month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RABI_1](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#RABI_1:kotlin.Int) Constant for Rabi' al-awwal (or Rabi' I), the 3rd month of the Islamic year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RABI_2](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#RABI_2:kotlin.Int) Constant for Rabi' al-thani or (Rabi' II), the 4th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAJAB](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#RAJAB:kotlin.Int) Constant for Rajab, the 7th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAMADAN](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#RAMADAN:kotlin.Int) Constant for Ramadan, the 9th month of the Islamic year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAFAR](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#SAFAR:kotlin.Int) Constant for Safar, the 2nd month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHABAN](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#SHABAN:kotlin.Int) Constant for Sha'ban, the 8th month of the Islamic year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHAWWAL](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#SHAWWAL:kotlin.Int) Constant for Shawwal, the 10th month of the Islamic year. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -76,6 +82,7 @@ IslamicCalendar usually should be instantiated using [android.icu.util.Calendar#
 | open [IslamicCalendar.CalculationType](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar.CalculationType)! | [getCalculationType](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#getCalculationType())`()` gets the calculation type for this calendar. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#getType())`()` **\[icu\]** Returns the calendar type name string for this Calendar object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inTemporalLeapYear](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#inTemporalLeapYear())`()` **\[icu\]** Returns true if the date is in a leap year. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCalculationType](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#setCalculationType(android.icu.util.IslamicCalendar.CalculationType))`(`type:` ` [IslamicCalendar.CalculationType](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar.CalculationType)!`)` sets the calculation type for this calendar. |
 
 | Protected methods ||
@@ -83,9 +90,11 @@ IslamicCalendar usually should be instantiated using [android.icu.util.Calendar#
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handleComputeFields](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleComputeFields(kotlin.Int))`(`julianDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override Calendar to compute several fields specific to the Islamic calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleComputeMonthStart](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`eyear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `useMonth:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetExtendedYear](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleGetExtendedYear())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetLimit](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limitType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetMonthLength](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int))`(`extendedYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the length (in days) of the given month. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [handleGetYearLength](https://developer.android.com/reference/kotlin/android/icu/util/IslamicCalendar#handleGetYearLength(kotlin.Int))`(`extendedYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the number of days in the given Islamic year |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -340,6 +349,7 @@ Constructs an `IslamicCalendar` with the given date set in the default time zone
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field in the calendar. Note that the month value is 0-based. e.g., 0 for Muharram. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field in the calendar. |
+| --- | --- |
 
 **See Also**
 
@@ -366,9 +376,11 @@ Constructs an `IslamicCalendar` with the given date and time set for the default
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [YEAR](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int) time field in the calendar. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [MONTH](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int) time field in the calendar. Note that the month value is 0-based. e.g., 0 for Muharram. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [DATE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int) time field in the calendar. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [HOUR_OF_DAY](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int) time field in the calendar. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [MINUTE](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int) time field in the calendar. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the value used to set the [SECOND](https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int) time field in the calendar. |
+| --- | --- |
 
 **See Also**
 
@@ -498,6 +510,7 @@ protected open fun handleComputeMonthStart(
 | `eyear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the extended year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the zero-based month, or 0 if useMonth is false |
 | `useMonth` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, compute the day before the first day of the given year, otherwise, compute the day before the first day of the given month |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|

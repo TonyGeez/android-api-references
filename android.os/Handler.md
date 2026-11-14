@@ -3,15 +3,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Handler
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/Handler "View this page in Java")
+| --- | --- |
 
 ```
 open class Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Handler](https://developer.android.com/reference/kotlin/android/os/Handler#) |
 
 | Known Direct Subclasses [AsyncQueryHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler.html#), [AsyncQueryHandler.WorkerHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler.WorkerHandler.html#), [HttpAuthHandler](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler.html#), [SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler.html#) |---|---| | [AsyncQueryHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler.html#) | A helper class to help make handling asynchronous `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` queries easier. | | [AsyncQueryHandler.WorkerHandler](https://developer.android.com/reference/kotlin/android/content/AsyncQueryHandler.WorkerHandler.html#) | <br /> | | [HttpAuthHandler](https://developer.android.com/reference/kotlin/android/webkit/HttpAuthHandler.html#) | Represents a request for HTTP authentication. | | [SslErrorHandler](https://developer.android.com/reference/kotlin/android/webkit/SslErrorHandler.html#) | Represents a request for handling an SSL error. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Handler allows you to send and process `https://developer.android.com/reference/kotlin/android/os/Message` and Runnable objects associated with a thread's `https://developer.android.com/reference/kotlin/android/os/MessageQueue`. Each Handler instance is associated with a single thread and that thread's message queue. When you create a new Handler it is bound to a `https://developer.android.com/reference/kotlin/android/os/Looper`. It will deliver messages and runnables to that Looper's message queue and execute them on that Looper's thread.
 
@@ -50,36 +53,47 @@ See `java.util.concurrent` for standard concurrency primitives.
 | open static [Handler](https://developer.android.com/reference/kotlin/android/os/Handler#) | `https://developer.android.com/reference/kotlin/android/os/Handler#createAsync(android.os.Looper)(looper: https://developer.android.com/reference/kotlin/android/os/Looper)` Create a new Handler whose posted messages and runnables are not subject to synchronization barriers such as display vsync. |
 | open static [Handler](https://developer.android.com/reference/kotlin/android/os/Handler#) | `https://developer.android.com/reference/kotlin/android/os/Handler#createAsync(android.os.Looper,%20android.os.Handler.Callback)(looper: https://developer.android.com/reference/kotlin/android/os/Looper, callback: https://developer.android.com/reference/kotlin/android/os/Handler.Callback)` Create a new Handler whose posted messages and runnables are not subject to synchronization barriers such as display vsync. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#dispatchMessage(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message)` Handle system messages here. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | [Looper](https://developer.android.com/reference/kotlin/android/os/Looper) | `https://developer.android.com/reference/kotlin/android/os/Handler#getLooper()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#getMessageName(android.os.Message)(message: https://developer.android.com/reference/kotlin/android/os/Message)` Returns a string representing the name of the specified message. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#handleMessage(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message)` Subclasses must implement this to receive messages. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#hasCallbacks(java.lang.Runnable)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Check if there are any pending posts of messages with callback r in the message queue. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#hasMessages(kotlin.Int)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check if there are any pending posts of messages with code 'what' in the message queue. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#hasMessages(kotlin.Int,%20kotlin.Any)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, object: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if there are any pending posts of messages with code 'what' and whose obj is 'object' in the message queue. |
 | [Message](https://developer.android.com/reference/kotlin/android/os/Message) | `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage()()` Returns a new `https://developer.android.com/reference/kotlin/android/os/Message` from the global message pool. |
 | [Message](https://developer.android.com/reference/kotlin/android/os/Message) | `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage(kotlin.Int)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage()`, except that it also sets the what member of the returned Message. |
+| --- | --- |
 | [Message](https://developer.android.com/reference/kotlin/android/os/Message) | `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, arg1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, arg2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage()`, except that it also sets the what, arg1 and arg2 members of the returned Message. |
 | [Message](https://developer.android.com/reference/kotlin/android/os/Message) | `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, arg1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, arg2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage()`, except that it also sets the what, obj, arg1,and arg2 values on the returned Message. |
 | [Message](https://developer.android.com/reference/kotlin/android/os/Message) | `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage(kotlin.Int,%20kotlin.Any)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtainMessage()`, except that it also sets the what and obj members of the returned Message. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#post(java.lang.Runnable)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Causes the Runnable r to be added to the message queue. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#postAtFrontOfQueue(java.lang.Runnable)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Posts a message to an object that implements Runnable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#postAtTime(java.lang.Runnable,%20kotlin.Any,%20kotlin.Long)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, token: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, uptimeMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the Runnable r to be added to the message queue, to be run at a specific time given by uptimeMillis. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#postAtTime(java.lang.Runnable,%20kotlin.Long)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, uptimeMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the Runnable r to be added to the message queue, to be run at a specific time given by uptimeMillis. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#postDelayed(java.lang.Runnable,%20kotlin.Any,%20kotlin.Long)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, token: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, delayMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the Runnable r to be added to the message queue, to be run after the specified amount of time elapses. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#postDelayed(java.lang.Runnable,%20kotlin.Long)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, delayMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the Runnable r to be added to the message queue, to be run after the specified amount of time elapses. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#removeCallbacks(java.lang.Runnable)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Remove any pending posts of Runnable r that are in the message queue. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#removeCallbacks(java.lang.Runnable,%20kotlin.Any)(r: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, token: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Remove any pending posts of Runnable r with Object token that are in the message queue. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#removeCallbacksAndMessages(kotlin.Any)(token: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Remove any pending posts of callbacks and sent messages whose obj is token. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#removeMessages(kotlin.Int)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove any pending posts of messages with code 'what' that are in the message queue. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#removeMessages(kotlin.Int,%20kotlin.Any)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, object: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Remove any pending posts of messages with code 'what' and whose obj is 'object' that are in the message queue. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendEmptyMessage(kotlin.Int)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sends a Message containing only the what value. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendEmptyMessageAtTime(kotlin.Int,%20kotlin.Long)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uptimeMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sends a Message containing only the what value, to be delivered at a specific time. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendEmptyMessageDelayed(kotlin.Int,%20kotlin.Long)(what: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, delayMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sends a Message containing only the what value, to be delivered after the specified amount of time elapses. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendMessage(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message)` Pushes a message onto the end of the message queue after all pending messages before the current time. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendMessageAtFrontOfQueue(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message)` Enqueue a message at the front of the message queue, to be processed on the next iteration of the message loop. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendMessageAtTime(android.os.Message,%20kotlin.Long)(msg: https://developer.android.com/reference/kotlin/android/os/Message, uptimeMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Enqueue a message into the message queue after all pending messages before the absolute time (in milliseconds) uptimeMillis. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#sendMessageDelayed(android.os.Message,%20kotlin.Long)(msg: https://developer.android.com/reference/kotlin/android/os/Message, delayMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Enqueue a message into the message queue after all pending messages before (current time + delayMillis). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Handler#toString()()` Returns a string representation of the object. |
 
 ## Public constructors
@@ -369,6 +383,7 @@ Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtai
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.what field. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.arg1 field. |
 | `arg2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.arg2 field. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -394,6 +409,7 @@ Same as `https://developer.android.com/reference/kotlin/android/os/Handler#obtai
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.what field. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.arg1 field. |
 | `arg2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value to assign to the returned Message.arg2 field. |
+| --- | --- |
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?: Value to assign to the returned Message.obj field. This value may be `null`. |
 
 | Return ||
@@ -477,6 +493,7 @@ Causes the Runnable r to be added to the message queue, to be run at a specific 
 | `r` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#): The Runnable that will be executed. This value cannot be `null`. |
 | `token` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?: An instance which can be used to cancel `r` via `https://developer.android.com/reference/kotlin/android/os/Handler#removeCallbacksAndMessages(kotlin.Any)`. This value may be `null`. |
 | `uptimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The absolute time at which the callback should run, using the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` time-base. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -527,6 +544,7 @@ Causes the Runnable r to be added to the message queue, to be run after the spec
 | `r` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#): The Runnable that will be executed. This value cannot be `null`. |
 | `token` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?: An instance which can be used to cancel `r` via `https://developer.android.com/reference/kotlin/android/os/Handler#removeCallbacksAndMessages(kotlin.Any)`. This value may be `null`. |
 | `delayMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The delay (in milliseconds) until the Runnable will be executed. |
+| --- | --- |
 
 | Return ||
 |---|---|

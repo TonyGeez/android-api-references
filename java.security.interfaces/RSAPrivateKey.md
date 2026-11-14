@@ -11,6 +11,7 @@ interface RSAPrivateKey : PrivateKey, RSAKey
 | [java.security.interfaces.RSAPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateKey#) |
 
 | Known Direct Subclasses [RSAMultiPrimePrivateCrtKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey), [RSAPrivateCrtKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey) |----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RSAMultiPrimePrivateCrtKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey) | The interface to an RSA multi-prime private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the*Chinese Remainder Theorem*(CRT) information values. | | [RSAPrivateCrtKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateCrtKey) | The interface to an RSA private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the*Chinese Remainder Theorem*(CRT) information values. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The interface to an RSA private key.
 

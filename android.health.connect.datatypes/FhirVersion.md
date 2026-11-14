@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # FhirVersion
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/FhirVersion "View this page in Java") 
+| --- | --- |
 
 ```
 class FhirVersion : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#) |
 
 Represents the FHIR version. This is designed according to [the official FHIR versions](https://build.fhir.org/versions.html#versions) of the Fast Healthcare Interoperability Resources (FHIR) standard. "label", which represents a 'working' version, is not supported for now.
@@ -29,12 +31,15 @@ The versions R4 (4.0.1) and R4B (4.3.0) are supported in Health Connect.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajor](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#getMajor())`()` Returns the major version. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinor](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#getMinor())`()` Returns the minor version. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatch](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#getPatch())`()` Returns the patch version. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#isSupportedFhirVersion())`()` Returns`true`if the [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#) is supported by Health Connect. |
 | static [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#) | [parseFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#parseFhirVersion(kotlin.String))`(`fhirVersionString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#) object with the version of string format. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#toString())`()` Returns the string representation of the FHIR version. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Populates a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#) with the self information. |
 
 | Properties ||

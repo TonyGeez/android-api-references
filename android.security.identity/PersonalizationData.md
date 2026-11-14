@@ -8,6 +8,7 @@ open class PersonalizationData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.PersonalizationData](https://developer.android.com/reference/kotlin/android/security/identity/PersonalizationData#) |
 
 > [!CAUTION]

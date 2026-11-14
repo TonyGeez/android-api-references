@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # RangeValueIterator
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/util/RangeValueIterator "View this page in Java") 
+| --- | --- |
 
 ```
 interface RangeValueIterator

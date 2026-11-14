@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # FingerprintGestureController
 
 Kotlin| [Java](https://developer.android.com/reference/android/accessibilityservice/FingerprintGestureController "View this page in Java") 
+| --- | --- |
 
 ```
 class FingerprintGestureController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.FingerprintGestureController](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#) |
 
 An [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService) can capture gestures performed on a device's fingerprint sensor, as long as the device has a sensor capable of detecting gestures.
@@ -36,6 +38,7 @@ Multiple accessibility services may listen for fingerprint gestures simultaneous
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_DOWN](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_DOWN:kotlin.Int) Identifier for a swipe down on the fingerprint sensor |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_LEFT](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_LEFT:kotlin.Int) Identifier for a swipe left on the fingerprint sensor |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_RIGHT](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_RIGHT:kotlin.Int) Identifier for a swipe right on the fingerprint sensor |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_UP](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_UP:kotlin.Int) Identifier for a swipe up on the fingerprint sensor |
 
 | Public methods ||
@@ -43,6 +46,7 @@ Multiple accessibility services may listen for fingerprint gestures simultaneous
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGestureDetectionAvailable](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#isGestureDetectionAvailable())`()` Gets if the fingerprint sensor's gesture detection is available. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#registerFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback,%20android.os.Handler))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?`)` Register a callback to be informed of fingerprint sensor gesture events. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#unregisterFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback)!`)` Unregister a listener added with [registerFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#registerFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback,%20android.os.Handler)). |
+| --- | --- |
 
 ## Constants
 

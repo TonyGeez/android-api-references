@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SplashScreen
 
 Kotlin| [Java](https://developer.android.com/reference/android/window/SplashScreen "View this page in Java") 
+| --- | --- |
 
 ```
 interface SplashScreen
@@ -32,6 +33,7 @@ Each splash screen instance is bound to a particular [Activity](https://develope
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearOnExitAnimationListener](https://developer.android.com/reference/kotlin/android/window/SplashScreen#clearOnExitAnimationListener())`()` Clear exist listener |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnExitAnimationListener](https://developer.android.com/reference/kotlin/android/window/SplashScreen#setOnExitAnimationListener(android.window.SplashScreen.OnExitAnimationListener))`(`listener:` ` [SplashScreen.OnExitAnimationListener](https://developer.android.com/reference/kotlin/android/window/SplashScreen.OnExitAnimationListener)`)` Specifies whether an [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) wants to handle the splash screen animation on its own. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSplashScreenTheme](https://developer.android.com/reference/kotlin/android/window/SplashScreen#setSplashScreenTheme(kotlin.Int))`(`themeId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the theme used for the [SplashScreen](https://developer.android.com/reference/kotlin/android/window/SplashScreen#) s of this application. |
+| --- | --- |
 
 ## Constants
 

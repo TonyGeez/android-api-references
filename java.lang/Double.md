@@ -9,6 +9,7 @@ class Double : Number, Comparable<Double!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.lang.Double](https://developer.android.com/reference/kotlin/java/lang/Double#) |
 
@@ -44,12 +45,15 @@ The adjusted behaviors defined for`equals`and`compareTo`allow instances of wrapp
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](https://developer.android.com/reference/kotlin/java/lang/Double#BYTES:kotlin.Int) The number of bytes used to represent a`double`value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_EXPONENT](https://developer.android.com/reference/kotlin/java/lang/Double#MAX_EXPONENT:kotlin.Int) Maximum exponent a finite`double`variable may have. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Double#MAX_VALUE:kotlin.Double) A constant holding the largest positive finite value of type`double`, (2-2-52)·21023. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_EXPONENT](https://developer.android.com/reference/kotlin/java/lang/Double#MIN_EXPONENT:kotlin.Int) Minimum exponent a normalized`double`variable may have. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_NORMAL](https://developer.android.com/reference/kotlin/java/lang/Double#MIN_NORMAL:kotlin.Double) A constant holding the smallest positive normal value of type`double`, 2-1022. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Double#MIN_VALUE:kotlin.Double) A constant holding the smallest positive nonzero value of type`double`, 2-1074. |
+| --- | --- |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NEGATIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Double#NEGATIVE_INFINITY:kotlin.Double) A constant holding the negative infinity of type`double`. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NaN](https://developer.android.com/reference/kotlin/java/lang/Double#NaN:kotlin.Double) A constant holding a Not-a-Number (NaN) value of type`double`. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [POSITIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Double#POSITIVE_INFINITY:kotlin.Double) A constant holding the positive infinity of type`double`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRECISION](https://developer.android.com/reference/kotlin/java/lang/Double#PRECISION:kotlin.Int) The number of bits in the significand of a`double`value. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](https://developer.android.com/reference/kotlin/java/lang/Double#SIZE:kotlin.Int) The number of bits used to represent a`double`value. |
 
@@ -63,30 +67,39 @@ The adjusted behaviors defined for`equals`and`compareTo`allow instances of wrapp
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/lang/Double#compare(kotlin.Double,%20kotlin.Double))`(`d1:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `d2:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares the two specified`double`values. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Double#compareTo(kotlin.Double))`(`other:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares two`Double`objects numerically. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToLongBits](https://developer.android.com/reference/kotlin/java/lang/Double#doubleToLongBits(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToRawLongBits](https://developer.android.com/reference/kotlin/java/lang/Double#doubleToRawLongBits(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout, preserving Not-a-Number (NaN) values. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Double#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Double#hashCode())`()` Returns a hash code for this`Double`object. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Double#hashCode(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hash code for a`double`value; compatible with`Double.hashCode()`. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinite](https://developer.android.com/reference/kotlin/java/lang/Double#isFinite(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the argument is a finite floating-point value; returns`false`otherwise (for NaN and infinity arguments). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](https://developer.android.com/reference/kotlin/java/lang/Double#isInfinite())`()` Returns`true`if this`Double`value is infinitely large in magnitude,`false`otherwise. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](https://developer.android.com/reference/kotlin/java/lang/Double#isInfinite(kotlin.Double))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is infinitely large in magnitude,`false`otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](https://developer.android.com/reference/kotlin/java/lang/Double#isNaN())`()` Returns`true`if this`Double`value is a Not-a-Number (NaN),`false`otherwise. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](https://developer.android.com/reference/kotlin/java/lang/Double#isNaN(kotlin.Double))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is a Not-a-Number (NaN) value,`false`otherwise. |
+| --- | --- |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [longBitsToDouble](https://developer.android.com/reference/kotlin/java/lang/Double#longBitsToDouble(kotlin.Long))`(`bits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the`double`value corresponding to a given bit representation. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [max](https://developer.android.com/reference/kotlin/java/lang/Double#max(kotlin.Double,%20kotlin.Double))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the greater of two`double`values as if by calling [Math.max](https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Double,%20kotlin.Double)). |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [min](https://developer.android.com/reference/kotlin/java/lang/Double#min(kotlin.Double,%20kotlin.Double))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the smaller of two`double`values as if by calling [Math.min](https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Double,%20kotlin.Double)). |
+| --- | --- |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [parseDouble](https://developer.android.com/reference/kotlin/java/lang/Double#parseDouble(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a new`double`initialized to the value represented by the specified`String`, as performed by the`valueOf`method of class`Double`. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](https://developer.android.com/reference/kotlin/java/lang/Double#sum(kotlin.Double,%20kotlin.Double))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Adds two`double`values together as per the + operator. |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](https://developer.android.com/reference/kotlin/java/lang/Double#toByte())`()` Returns the value of this`Double`as a`byte`after a narrowing primitive conversion. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/lang/Double#toDouble())`()` Returns the`double`value of this`Double`object. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/lang/Double#toFloat())`()` Returns the value of this`Double`as a`float`after a narrowing primitive conversion. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](https://developer.android.com/reference/kotlin/java/lang/Double#toHexString(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hexadecimal string representation of the`double`argument. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/lang/Double#toInt())`()` Returns the value of this`Double`as an`int`after a narrowing primitive conversion. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/lang/Double#toLong())`()` Returns the value of this`Double`as a`long`after a narrowing primitive conversion. |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](https://developer.android.com/reference/kotlin/java/lang/Double#toShort())`()` Returns the value of this`Double`as a`short`after a narrowing primitive conversion. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Double#toString())`()` Returns a string representation of this`Double`object. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Double#toString(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a string representation of the`double`argument. |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Double#valueOf(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a`Double`instance representing the specified`double`value. |
+| --- | --- |
 | static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Double#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a object holding the value represented by the argument string . |
 
 | Properties ||
@@ -722,15 +735,19 @@ Returns a hexadecimal string representation of the`double`argument. All characte
  - If*m* is a`double`value with a subnormal representation, the significand is represented by the characters`"0x0."`followed by a hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed. Next, the exponent is represented by`"p-1022"`. Note that there must be at least one nonzero digit in a subnormal significand.
 
 | Floating-point Value | Hexadecimal String |
+| --- | --- |
 | `1.0` | `0x1.0p0` |
 | `-1.0` | `-0x1.0p0` |
 | `2.0` | `0x1.0p1` |
+| --- | --- |
 | `3.0` | `0x1.8p1` |
 | `0.5` | `0x1.0p-1` |
 | `0.25` | `0x1.0p-2` |
+| --- | --- |
 | `Double.MAX_VALUE` | `0x1.fffffffffffffp1023` |
 | `Minimum Normal Value` | `0x1.0p-1022` |
 | `Maximum Subnormal Value` | `0x0.fffffffffffffp-1022` |
+| --- | --- |
 | `Double.MIN_VALUE` | `0x0.0000000000001p-1022` |
 |---------------------------|---------------------------|
 

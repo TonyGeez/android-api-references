@@ -8,6 +8,7 @@ abstract class PresentationSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.PresentationSession](https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#) |
 
 > [!CAUTION]
@@ -26,6 +27,7 @@ This should be used for all interactions with a remote verifier instead of the n
 | abstract [CredentialDataResult](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult)? | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getCredentialData(kotlin.String,%20android.security.identity.CredentialDataRequest)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, request: https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest)` Retrieves data from a named credential in the current presentation session. |
 | abstract [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair.html#) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getEphemeralKeyPair()()` Gets the ephemeral key pair to use to establish a secure channel with the verifier. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#setReaderEphemeralPublicKey(java.security.PublicKey)(readerEphemeralPublicKey: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)` Set the ephemeral public key provided by the verifier. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#setSessionTranscript(kotlin.ByteArray)(sessionTranscript: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Set the session transcript. |
 
 ## Public methods
@@ -88,6 +90,7 @@ Note that the request message CBOR is used only for enforcing reader authenticat
 | `android.security.identity.EphemeralPublicKeyNotFoundException` | if the ephemeral public key was not found in the session transcript. |
 | `android.security.identity.InvalidReaderSignatureException` | if the reader signature is invalid, or it doesn't contain a certificate chain, or if the signature failed to validate. |
 | `android.security.identity.InvalidRequestMessageException` | if the requestMessage is malformed. |
+| --- | --- |
 | `android.security.identity.NoAuthenticationKeyAvailableException` | if authentication keys were never provisioned for the credential or if they are expired or exhausted their use-count. |
 
 ### getEphemeralKeyPair

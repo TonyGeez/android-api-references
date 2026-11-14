@@ -7,6 +7,7 @@ open class HandlerThread : Thread
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#) ||
 | | ↳ | [android.os.HandlerThread](https://developer.android.com/reference/kotlin/android/os/HandlerThread#) |
 
@@ -66,6 +67,7 @@ The default priority that is assigned to a thread.
 | open [Looper](https://developer.android.com/reference/kotlin/android/os/Looper)! | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#getLooper()()` This method returns the Looper associated with this thread. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#getThreadId()()` Returns the identifier of this thread. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#quit()()` Quits the handler thread's looper. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#quitSafely()()` Quits the handler thread's looper safely. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#run()()` If this thread was constructed using a separate `Runnable` run object, then that `Runnable` object's `run` method is called; otherwise, this method does nothing and returns. |
 

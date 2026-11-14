@@ -9,6 +9,7 @@ class AccessControlContext
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext#) |
 
 Android doesn't support [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#). Do not use this class.

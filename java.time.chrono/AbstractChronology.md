@@ -7,6 +7,7 @@ abstract class AbstractChronology : Chronology
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.chrono.AbstractChronology](https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#) |
 
 Known Direct Subclasses [HijrahChronology](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology), [IsoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology), [JapaneseChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology), [MinguoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoChronology), [ThaiBuddhistChronology](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistChronology) [HijrahChronology](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology) The Hijrah calendar is a lunar calendar supporting Islamic calendars.
@@ -32,6 +33,7 @@ See `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology`
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#compareTo(java.time.chrono.Chronology)(other: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology!)` Compares this chronology to another chronology. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this chronology is equal to another chronology. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#hashCode()()` A hash code for this chronology. |
+| --- | --- |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)! | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#toString()()` Outputs this chronology as a `String`, using the chronology ID. |
 

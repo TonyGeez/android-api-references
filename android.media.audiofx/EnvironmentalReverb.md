@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # EnvironmentalReverb
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb "View this page in Java") 
+| --- | --- |
 
 ```
 open class EnvironmentalReverb : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.EnvironmentalReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#) |
 
@@ -38,12 +40,15 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_DECAY_HF_RATIO](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_DECAY_HF_RATIO:kotlin.Int) Decay HF ratio. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_DECAY_TIME](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_DECAY_TIME:kotlin.Int) Decay time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_DENSITY](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_DENSITY:kotlin.Int) Density. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_DIFFUSION](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_DIFFUSION:kotlin.Int) Diffusion. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_REFLECTIONS_DELAY](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_REFLECTIONS_DELAY:kotlin.Int) Early reflections delay. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_REFLECTIONS_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_REFLECTIONS_LEVEL:kotlin.Int) Early reflections level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_REVERB_DELAY](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_REVERB_DELAY:kotlin.Int) Reverb delay. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_REVERB_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_REVERB_LEVEL:kotlin.Int) Reverb level. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_ROOM_HF_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_ROOM_HF_LEVEL:kotlin.Int) Room HF level. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARAM_ROOM_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#PARAM_ROOM_LEVEL:kotlin.Int) Room level. |
 
 | Inherited constants ||
@@ -59,24 +64,31 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getDecayHFRatio](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getDecayHFRatio())`()` Gets the ratio of high frequency decay time (at 5 kHz) relative to low frequencies. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDecayTime](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getDecayTime())`()` Gets the decay time. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getDensity](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getDensity())`()` Gets the density level. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getDiffusion](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getDiffusion())`()` Gets diffusion level. |
 | open [EnvironmentalReverb.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb.Settings)! | [getProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getProperties())`()` Gets the environmental reverb properties. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReflectionsDelay](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getReflectionsDelay())`()` Gets the reflections delay. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getReflectionsLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getReflectionsLevel())`()` Gets the volume level of the early reflections. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReverbDelay](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getReverbDelay())`()` Gets the reverb delay. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getReverbLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getReverbLevel())`()` Gets the reverb level. |
+| --- | --- |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getRoomHFLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getRoomHFLevel())`()` Gets the room HF level. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getRoomLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#getRoomLevel())`()` Gets the master volume level of the environmental reverb effect. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecayHFRatio](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setDecayHFRatio(kotlin.Short))`(`decayHFRatio:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the ratio of high frequency decay time (at 5 kHz) relative to the decay time at low frequencies. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecayTime](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setDecayTime(kotlin.Int))`(`decayTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the time taken for the level of reverberation to decay by 60 dB. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDensity](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setDensity(kotlin.Short))`(`density:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Controls the modal density of the late reverberation decay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDiffusion](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setDiffusion(kotlin.Short))`(`diffusion:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the echo density in the late reverberation decay. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameterListener](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setParameterListener(android.media.audiofx.EnvironmentalReverb.OnParameterChangeListener))`(`listener:` ` [EnvironmentalReverb.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb.OnParameterChangeListener)!`)` Registers an OnParameterChangeListener interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setProperties(android.media.audiofx.EnvironmentalReverb.Settings))`(`settings:` ` [EnvironmentalReverb.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb.Settings)!`)` Sets the environmental reverb properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReflectionsDelay](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setReflectionsDelay(kotlin.Int))`(`reflectionsDelay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the delay time for the early reflections. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReflectionsLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setReflectionsLevel(kotlin.Short))`(`reflectionsLevel:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the volume level of the early reflections. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReverbDelay](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setReverbDelay(kotlin.Int))`(`reverbDelay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the time between the first reflection and the reverberation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReverbLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setReverbLevel(kotlin.Short))`(`reverbLevel:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the volume level of the late reverberation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoomHFLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setRoomHFLevel(kotlin.Short))`(`roomHF:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the volume level at 5 kHz relative to the volume level at low frequencies of the overall reverb effect. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoomLevel](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb#setRoomLevel(kotlin.Short))`(`room:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the master volume level of the environmental reverb effect. |
 
@@ -234,6 +246,7 @@ Class constructor.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
 | `java.lang.RuntimeException` | |
+| --- | --- |
 
 ## Public methods
 
@@ -256,6 +269,7 @@ Gets the ratio of high frequency decay time (at 5 kHz) relative to low frequenci
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getDecayTime
 
@@ -276,6 +290,7 @@ Gets the decay time.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getDensity
 
@@ -296,6 +311,7 @@ Gets the density level.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getDiffusion
 
@@ -316,6 +332,7 @@ Gets diffusion level.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getProperties
 
@@ -336,6 +353,7 @@ Gets the environmental reverb properties. This method is useful when a snapshot 
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getReflectionsDelay
 
@@ -356,6 +374,7 @@ Gets the reflections delay.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getReflectionsLevel
 
@@ -376,6 +395,7 @@ Gets the volume level of the early reflections.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getReverbDelay
 
@@ -396,6 +416,7 @@ Gets the reverb delay.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getReverbLevel
 
@@ -416,6 +437,7 @@ Gets the reverb level.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getRoomHFLevel
 
@@ -436,6 +458,7 @@ Gets the room HF level.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getRoomLevel
 
@@ -456,6 +479,7 @@ Gets the master volume level of the environmental reverb effect.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setDecayHFRatio
 
@@ -476,6 +500,7 @@ Sets the ratio of high frequency decay time (at 5 kHz) relative to the decay tim
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setDecayTime
 
@@ -496,6 +521,7 @@ Sets the time taken for the level of reverberation to decay by 60 dB.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setDensity
 
@@ -518,6 +544,7 @@ The scale should approximately map linearly to the perceived change in reverbera
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setDiffusion
 
@@ -540,6 +567,7 @@ The scale should approximately map linearly to the perceived change in reverbera
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setParameterListener
 
@@ -574,6 +602,7 @@ Sets the environmental reverb properties. This method is useful when reverb sett
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setReflectionsDelay
 
@@ -596,6 +625,7 @@ This method sets the time between when the direct path is heard and when the fir
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setReflectionsLevel
 
@@ -618,6 +648,7 @@ This level is combined with the overall room level (set using [setRoomLevel(shor
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setReverbDelay
 
@@ -638,6 +669,7 @@ Sets the time between the first reflection and the reverberation.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setReverbLevel
 
@@ -660,6 +692,7 @@ This level is combined with the overall room level (set using [setRoomLevel(shor
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setRoomHFLevel
 
@@ -682,6 +715,7 @@ This controls a low-pass filter that will reduce the level of the high-frequency
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setRoomLevel
 
@@ -702,3 +736,4 @@ Sets the master volume level of the environmental reverb effect.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |

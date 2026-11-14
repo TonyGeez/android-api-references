@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # Prediction
 
 Kotlin| [Java](https://developer.android.com/reference/android/gesture/Prediction "View this page in Java") 
+| --- | --- |
 
 ```
 open class Prediction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.gesture.Prediction](https://developer.android.com/reference/kotlin/android/gesture/Prediction#) |
 
 ## Summary

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # RadioAccessSpecifier
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/RadioAccessSpecifier "View this page in Java") 
+| --- | --- |
 
 ```
 class RadioAccessSpecifier : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.RadioAccessSpecifier](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#) |
 
 Describes a particular radio access network to be scanned. The scan can be performed on either bands or channels for a specific radio access network type.
@@ -30,9 +32,11 @@ Describes a particular radio access network to be scanned. The scan can be perfo
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getBands](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#getBands())`()` Returns the frequency bands that need to be scanned. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getChannels](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#getChannels())`()` Returns the frequency channels that need to be scanned. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadioAccessNetwork](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#getRadioAccessNetwork())`()` Returns the radio access network that needs to be scanned. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -60,6 +64,7 @@ Creates a new RadioAccessSpecifier with radio network, bands and channels The us
 | `ran` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the radio access network |
 | `bands` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:the frequency bands to be scanned |
 | `channels` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:the frequency bands to be scanned |
+| --- | --- |
 
 ## Public methods
 

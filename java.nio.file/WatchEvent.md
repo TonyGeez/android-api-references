@@ -28,6 +28,7 @@ Watch events are immutable and safe for use by multiple concurrent threads.
 | abstractT | [context](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent#context())`()` Returns the context for the event. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [count](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent#count())`()` Returns the event count. |
 | abstract [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\<T\>! | [kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent#kind())`()` Returns the event kind. |
+| --- | --- |
 
 ## Public methods
 

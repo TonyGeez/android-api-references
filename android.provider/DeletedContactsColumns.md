@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # DeletedContactsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/ContactsContract.DeletedContactsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface DeletedContactsColumns
@@ -13,6 +14,7 @@ protected interface DeletedContactsColumns
 | [android.provider.ContactsContract.DeletedContactsColumns](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContactsColumns#) |
 
 | Known Direct Subclasses [ContactsContract.DeletedContacts](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContacts) |--------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------| | [ContactsContract.DeletedContacts](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContacts) | Constants for the deleted contact table. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 

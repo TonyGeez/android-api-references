@@ -9,9 +9,11 @@ open class InetAddress : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) |
 
 | Known Direct Subclasses [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address), [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address) | This class represents an Internet Protocol version 4 (IPv4) address. | | [Inet6Address](https://developer.android.com/reference/kotlin/java/net/Inet6Address) | This class represents an Internet Protocol version 6 (IPv6) address. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents an Internet Protocol (IP) address.
 
@@ -20,6 +22,7 @@ An IP address is either a 32-bit or 128-bit unsigned number used by IP, a lower-
 ### Address types
 
 | *unicast* | An identifier for a single interface. A packet sent to a unicast address is delivered to the interface identified by that address. The Unspecified Address -- Also called anylocal or wildcard address. It must never be assigned to any node. It indicates the absence of an address. One example of its use is as the target of bind, which allows a server to accept a client connection on any interface, in case the server host has multiple interfaces. The*unspecified*address must not be used as the destination address of an IP packet. The*Loopback*Addresses -- This is the address assigned to the loopback interface. Anything sent to this IP address loops around and becomes IP input on the local host. This address is often used when testing a client. |
+| --- | --- |
 | *multicast* | An identifier for a set of interfaces (typically belonging to different nodes). A packet sent to a multicast address is delivered to all interfaces identified by that address. |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -72,27 +75,35 @@ Two Java security properties control the TTL values used for positive and negati
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/InetAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#getAddress())`()` Returns the raw IP address of this`InetAddress`object. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#)!\>! | [getAllByName](https://developer.android.com/reference/kotlin/java/net/InetAddress#getAllByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Given the name of a host, returns an array of its IP addresses, based on the configured name service on the system. |
+| --- | --- |
 | openstatic [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) | [getByAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#getByAddress(kotlin.ByteArray))`(`addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns an`InetAddress`object given the raw IP address . |
 | openstatic [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) | [getByAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#getByAddress(kotlin.String,%20kotlin.ByteArray))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an InetAddress based on the provided host name and IP address. |
 | openstatic [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) | [getByName](https://developer.android.com/reference/kotlin/java/net/InetAddress#getByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Determines the IP address of a host, given the host's name. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalHostName](https://developer.android.com/reference/kotlin/java/net/InetAddress#getCanonicalHostName())`()` Gets the fully qualified domain name for this IP address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#getHostAddress())`()` Returns the IP address string in textual presentation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostName](https://developer.android.com/reference/kotlin/java/net/InetAddress#getHostName())`()` Gets the host name for this IP address. |
+| --- | --- |
 | openstatic [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) | [getLocalHost](https://developer.android.com/reference/kotlin/java/net/InetAddress#getLocalHost())`()` Returns the address of the local host. |
 | openstatic [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#) | [getLoopbackAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#getLoopbackAddress())`()` Returns the loopback address. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/InetAddress#hashCode())`()` Returns a hashcode for this IP address. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnyLocalAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#isAnyLocalAddress())`()` Utility routine to check if the InetAddress in a wildcard address. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLinkLocalAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#isLinkLocalAddress())`()` Utility routine to check if the InetAddress is an link local address. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopbackAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#isLoopbackAddress())`()` Utility routine to check if the InetAddress is a loopback address. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCGlobal](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMCGlobal())`()` Utility routine to check if the multicast address has global scope. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCLinkLocal](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMCLinkLocal())`()` Utility routine to check if the multicast address has link scope. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCNodeLocal](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMCNodeLocal())`()` Utility routine to check if the multicast address has node scope. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCOrgLocal](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMCOrgLocal())`()` Utility routine to check if the multicast address has organization scope. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCSiteLocal](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMCSiteLocal())`()` Utility routine to check if the multicast address has site scope. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMulticastAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#isMulticastAddress())`()` Utility routine to check if the InetAddress is an IP multicast address. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](https://developer.android.com/reference/kotlin/java/net/InetAddress#isReachable(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](https://developer.android.com/reference/kotlin/java/net/InetAddress#isReachable(java.net.NetworkInterface,%20kotlin.Int,%20kotlin.Int))`(`netif:` ` [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)?`, `ttl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSiteLocalAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress#isSiteLocalAddress())`()` Utility routine to check if the InetAddress is a site local address. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/InetAddress#toString())`()` Converts this IP address to a`String`. |
 
 ## Public methods
@@ -545,6 +556,7 @@ The timeout value, in milliseconds, indicates the maximum amount of time the try
 | `netif` | [NetworkInterface](https://developer.android.com/reference/kotlin/java/net/NetworkInterface)?:the NetworkInterface through which the test will be done, or null for any interface |
 | `ttl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum numbers of hops to try or 0 for the default |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the time, in milliseconds, before the call aborts |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|

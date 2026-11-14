@@ -9,6 +9,7 @@ interface XMLFilter : XMLReader
 | [org.xml.sax.XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter#) |
 
 | Known Direct Subclasses [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) |---|---| | [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) | Base class for deriving an XML filter. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface for an XML filter. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.* See <http://www.saxproject.org> for further information.
 

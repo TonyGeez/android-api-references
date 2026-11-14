@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # InputType
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/InputType "View this page in Java") 
+| --- | --- |
 
 ```
 interface InputType
@@ -13,6 +14,7 @@ interface InputType
 | [android.text.InputType](https://developer.android.com/reference/kotlin/android/text/InputType#) |
 
 | Known Direct Subclasses [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#) | An EditorInfo describes several attributes of a text editing object that an input method is communicating with (typically an EditText), most importantly the type of text content it contains and the current cursor position. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Bit definitions for an integer defining the basic content type of text held in an [Editable](https://developer.android.com/reference/kotlin/android/text/Editable) object. Supported classes may be combined with variations and flags to indicate desired behaviors.
 
@@ -20,12 +22,15 @@ Bit definitions for an integer defining the basic content type of text held in a
 
 A password field with the password visible to the user:
 : inputType = TYPE_CLASS_TEXT | TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+| --- | --- |
 
 A multi-line postal address with automatic capitalization:
 : inputType = TYPE_CLASS_TEXT | TYPE_TEXT_VARIATION_POSTAL_ADDRESS | TYPE_TEXT_FLAG_MULTI_LINE
+| --- | --- | --- |
 
 A time field:
 : inputType = TYPE_CLASS_DATETIME | TYPE_DATETIME_VARIATION_TIME
+| --- | --- |
 
 <br />
 
@@ -36,42 +41,55 @@ A time field:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CLASS_DATETIME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_DATETIME:kotlin.Int) Class for dates and times. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CLASS_NUMBER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_NUMBER:kotlin.Int) Class for numeric text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CLASS_PHONE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_PHONE:kotlin.Int) Class for a phone number. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int) Class for normal text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DATETIME_VARIATION_DATE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_DATETIME_VARIATION_DATE:kotlin.Int) Default variation of [TYPE_CLASS_DATETIME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_DATETIME:kotlin.Int): allows entering only a date. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DATETIME_VARIATION_NORMAL](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_DATETIME_VARIATION_NORMAL:kotlin.Int) Default variation of [TYPE_CLASS_DATETIME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_DATETIME:kotlin.Int): allows entering both a date and time. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DATETIME_VARIATION_TIME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_DATETIME_VARIATION_TIME:kotlin.Int) Default variation of [TYPE_CLASS_DATETIME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_DATETIME:kotlin.Int): allows entering only a time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MASK_CLASS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_MASK_CLASS:kotlin.Int) Mask of bits that determine the overall class of text being given. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MASK_FLAGS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_MASK_FLAGS:kotlin.Int) Mask of bits that provide addition bit flags of options. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MASK_VARIATION](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_MASK_VARIATION:kotlin.Int) Mask of bits that determine the variation of the base content class. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_NULL:kotlin.Int) Special content type for when no explicit type has been specified. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NUMBER_FLAG_DECIMAL](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_NUMBER_FLAG_DECIMAL:kotlin.Int) Flag of [TYPE_CLASS_NUMBER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_NUMBER:kotlin.Int): the number is decimal, allowing a decimal point to provide fractional values. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NUMBER_FLAG_SIGNED](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_NUMBER_FLAG_SIGNED:kotlin.Int) Flag of [TYPE_CLASS_NUMBER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_NUMBER:kotlin.Int): the number is signed, allowing a positive or negative sign at the start. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NUMBER_VARIATION_NORMAL](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_NUMBER_VARIATION_NORMAL:kotlin.Int) Default variation of [TYPE_CLASS_NUMBER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_NUMBER:kotlin.Int): plain normal numeric text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NUMBER_VARIATION_PASSWORD](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_NUMBER_VARIATION_PASSWORD:kotlin.Int) Variation of [TYPE_CLASS_NUMBER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_NUMBER:kotlin.Int): entering a numeric password. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_AUTO_COMPLETE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_AUTO_COMPLETE:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): the text editor (which means the application) is performing auto-completion of the text being entered based on its own semantics, which it will present to the user as they type. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_AUTO_CORRECT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_AUTO_CORRECT:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): the user is entering free-form text that should have auto-correction applied to it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_CAP_CHARACTERS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_CAP_CHARACTERS:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): capitalize all characters. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_CAP_SENTENCES](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_CAP_SENTENCES:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): capitalize the first character of each sentence. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_CAP_WORDS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_CAP_WORDS:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): capitalize the first character of every word. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_ENABLE_TEXT_CONVERSION_SUGGESTIONS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_ENABLE_TEXT_CONVERSION_SUGGESTIONS:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): Let the IME know the text conversion suggestions are required by the application. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_IME_MULTI_LINE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_IME_MULTI_LINE:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): the regular text view associated with this should not be multi-line, but when a fullscreen input method is providing text it should use multiple lines if it can. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_MULTI_LINE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_MULTI_LINE:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): multiple lines of text can be entered into the field. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_FLAG_NO_SUGGESTIONS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_FLAG_NO_SUGGESTIONS:kotlin.Int) Flag for [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): the input method does not need to display any dictionary-based candidates. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_EMAIL_ADDRESS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_EMAIL_ADDRESS:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering an e-mail address. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_EMAIL_SUBJECT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_EMAIL_SUBJECT:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering the subject line of an e-mail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_FILTER](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_FILTER:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering text to filter contents of a list etc. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_LONG_MESSAGE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_LONG_MESSAGE:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering the content of a long, possibly formal message such as the body of an e-mail. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_NORMAL](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_NORMAL:kotlin.Int) Default variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): plain old normal text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_PASSWORD](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_PASSWORD:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering a password. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_PERSON_NAME](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_PERSON_NAME:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering the name of a person. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_PHONETIC](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_PHONETIC:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering text for phonetic pronunciation, such as a phonetic name field in contacts. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_POSTAL_ADDRESS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_POSTAL_ADDRESS:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering a postal mailing address. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_SHORT_MESSAGE](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_SHORT_MESSAGE:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering a short, possibly informal message such as an instant message or a text message. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_URI](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_URI:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering a URI. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_VISIBLE_PASSWORD](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering a password, which should be visible to the user. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_WEB_EDIT_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering text inside of a web form. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering e-mail address inside of a web form. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT_VARIATION_WEB_PASSWORD](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_TEXT_VARIATION_WEB_PASSWORD:kotlin.Int) Variation of [TYPE_CLASS_TEXT](https://developer.android.com/reference/kotlin/android/text/InputType#TYPE_CLASS_TEXT:kotlin.Int): entering password inside of a web form. |
+| --- | --- |
 
 ## Constants
 

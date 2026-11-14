@@ -7,6 +7,7 @@ open class MultisensoryManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.multisensory.MultisensoryManager](https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#) |
 
 Provides capabilities to deliver audio-haptic feedback from the Multisensory Design System in Android.
@@ -18,24 +19,31 @@ Provides capabilities to deliver audio-haptic feedback from the Multisensory Des
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_CANCEL:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_DRAG_INDICATOR_CONTINUOUS:kotlin.Int` Inform the user that their drag gesture has resulted in an incremental value change. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_DRAG_INDICATOR_DISCRETE:kotlin.Int` Inform the user that their drag gesture has resulted in a stepped value change. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_DRAG_INDICATOR_THRESHOLD_LIMIT:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_FAILURE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_FAILURE_HIGH_EMPHASIS:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_KEYPRESS_DELETE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_KEYPRESS_RETURN:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_KEYPRESS_SPACEBAR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_KEYPRESS_STANDARD:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_LOCK:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_LONG_PRESS:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_PAUSE:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_START:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_STOP:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_SUCCESS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_SWIPE_INDICATOR_THRESHOLD_LIMIT:kotlin.Int` Inform the user that their swipe gesture has crossed a threshold. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_SWITCH_OFF:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_SWITCH_ON:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_TAP_HIGH_EMPHASIS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_TAP_LOW_EMPHASIS:kotlin.Int` Played when a user taps on any UI element that can be interacted with but is not otherwise defined. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_TAP_MEDIUM_EMPHASIS:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/multisensory/MultisensoryManager#TOKEN_UNLOCK:kotlin.Int` <br /> |
 

@@ -7,6 +7,7 @@ open class AccessibilityServiceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#) |
 
 This class describes an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`. The system notifies an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s according to the information encapsulated in this class.
@@ -26,24 +27,31 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | [`android:accessibilityEventTypes`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The event types this service would like to receive as specified in android. |
 | [`android:accessibilityFeedbackType`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The feedback types this service provides as specified in android. |
 | [`android:accessibilityFlags`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Additional flags as specified in android. |
+| --- | --- |
 | [`android:animatedImageDrawable`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Animated image of the accessibility service purpose or behavior, to help users understand how the service can help them. |
 | [`android:canControlMagnification`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to control display magnification. |
 | [`android:canPerformGestures`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to perform gestures. |
+| --- | --- |
 | [`android:canRequestFilterKeyEvents`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to request to filter key events. |
 | [`android:canRequestFingerprintGestures`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to capture gestures from the fingerprint sensor. |
 | [`android:canRequestTouchExplorationMode`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to request touch exploration mode in which touched items are spoken aloud and the UI can be explored via gestures. |
+| --- | --- |
 | [`android:canRetrieveWindowContent`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to retrieve the active window content. |
 | [`android:canTakeScreenshot`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to take screenshot. |
 | [`android:description`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
+| --- | --- |
 | [`android:htmlDescription`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Html description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
 | [`android:interactiveUiTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | A recommended timeout in milliseconds used in android. |
 | [`android:intro`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Detailed intro of the accessibility service purpose or behavior. |
+| --- | --- |
 | [`android:isAccessibilityTool`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute indicating whether the accessibility service is used to assist users with disabilities. |
 | [`android:nonInteractiveUiTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | A recommended timeout in milliseconds used in android. |
 | [`android:notificationTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The minimal period in milliseconds between two accessibility events of the same type are sent to this service. |
+| --- | --- |
 | [`android:packageNames`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Comma separated package names from which this service would like to receive events (leave out for all packages). |
 | [`android:settingsActivity`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Fully qualified class name of an activity that allows the user to modify the settings for this service. |
 | [`android:summary`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Brief summary of the accessibility service purpose or behavior. |
+| --- | --- |
 | [`android:tileService`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Fully qualified class name of android. |
 
 | Constants ||
@@ -51,33 +59,43 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_CONTROL_MAGNIFICATION:kotlin.Int` Capability: This accessibility service can control display magnification. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_PERFORM_GESTURES:kotlin.Int` Capability: This accessibility service can perform gestures. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTS:kotlin.Int` Capability: This accessibility service can request to filter the key event stream. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES:kotlin.Int` Capability: This accessibility service can capture gestures from the fingerprint sensor |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_TOUCH_EXPLORATION:kotlin.Int` Capability: This accessibility service can request touch exploration mode in which touched items are spoken aloud and the UI can be explored via gestures. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT:kotlin.Int` Capability: This accessibility service can retrieve the active window content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_TAKE_SCREENSHOT:kotlin.Int` Capability: This accessibility service can take screenshot. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#DEFAULT:kotlin.Int` If an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is the default for a given type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_ALL_MASK:kotlin.Int` Mask for all feedback types. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_AUDIBLE:kotlin.Int` Denotes audible (not spoken) feedback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_BRAILLE:kotlin.Int` Denotes braille feedback. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_GENERIC:kotlin.Int` Denotes generic feedback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_HAPTIC:kotlin.Int` Denotes haptic feedback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_SPOKEN:kotlin.Int` Denotes spoken feedback. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_VISUAL:kotlin.Int` Denotes visual feedback. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_ENABLE_ACCESSIBILITY_VOLUME:kotlin.Int` This flag requests that all audio tracks system-wide with `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ASSISTANCE_ACCESSIBILITY:kotlin.Int` be controlled by the `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#STREAM_ACCESSIBILITY:kotlin.Int` volume. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int` If this flag is set the system will regard views that are not important for accessibility in addition to the ones that are important for accessibility. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INPUT_METHOD_EDITOR:kotlin.Int` This flag makes the AccessibilityService an input method editor with a subset of input method editor capabilities: get the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#` and get text selection change notifications. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REPORT_VIEW_IDS:kotlin.Int` This flag requests that the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#`s obtained by an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` contain the id of the source view. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_2_FINGER_PASSTHROUGH:kotlin.Int` This flag requests that when `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_MULTI_FINGER_GESTURES:kotlin.Int` is enabled, two-finger passthrough gestures are re-enabled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_ACCESSIBILITY_BUTTON:kotlin.Int` This flag indicates to the system that the accessibility service requests that an accessibility button be shown within the system's navigation area, if available. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_FILTER_KEY_EVENTS:kotlin.Int` This flag requests from the system to filter key events. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_FINGERPRINT_GESTURES:kotlin.Int` This flag requests that all fingerprint gestures be sent to the accessibility service. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_MULTI_FINGER_GESTURES:kotlin.Int` This flag requests that when `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled, multi-finger gestures are also enabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_SHORTCUT_WARNING_DIALOG_SPOKEN_FEEDBACK:kotlin.Int` This flag requests that accessibility shortcut warning dialog has spoken feedback when dialog is shown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` This flag requests that the system gets into touch exploration mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_RETRIEVE_INTERACTIVE_WINDOWS:kotlin.Int` This flag indicates to the system that the accessibility service wants to access content of all interactive windows. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_SEND_MOTION_EVENTS:kotlin.Int` This flag requests that when `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled, a service will receive the motion events for each successfully-detected gesture. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_SERVICE_HANDLES_DOUBLE_TAP:kotlin.Int` This flag requests that when `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled, double tap and double tap and hold gestures are dispatched to the service rather than being handled by the framework. |
 
 | Inherited constants ||
@@ -93,27 +111,35 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#capabilityToString(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a capability. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackTypeToString(kotlin.Int)(feedbackType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a feedback type. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#flagToString(kotlin.Int)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a flag. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getCanRetrieveWindowContent()()` Whether this service can retrieve the current window's content. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getCapabilities()()` Returns the bit mask of capabilities this accessibility service has such as being able to retrieve the active window content, etc. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getDescription()()` Gets the non-localized description of the accessibility service. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getId()()` The accessibility service id. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getInteractiveUiTimeoutMillis()()` Get the recommended timeout for interactive controls. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getMotionEventSources()()` Returns the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getNonInteractiveUiTimeoutMillis()()` Get the recommended timeout for non-interactive controls. |
+| --- | --- |
 | open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getResolveInfo()()` The service `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getSettingsActivityName()()` The settings activity name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getTileServiceName()()` Gets the name of `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` is associated with this accessibility service. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#hashCode()()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#isAccessibilityTool()()` Indicates if the service is used to assist users with disabilities. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadDescription(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` The localized description of the accessibility service. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadIntro(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)` The localized intro of the accessibility service. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadSummary(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` The localized summary of the accessibility service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setInteractiveUiTimeoutMillis(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the recommended time that interactive controls need to remain on the screen to support the user. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setMotionEventSources(kotlin.Int)(motionEventSources: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setNonInteractiveUiTimeoutMillis(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the recommended time that non-interactive controls need to remain on the screen to support the user. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flagz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -121,9 +147,11 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#)!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#eventTypes:kotlin.Int` The event types an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackType:kotlin.Int` The feedback type an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` provides. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#flags:kotlin.Int` This field represents a set of flags used for configuring an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#notificationTimeout:kotlin.Long` The timeout, in milliseconds, after the most recent event of a given type before an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is notified. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#packageNames:kotlin.Array` The package names an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. |
+| --- | --- |
 
 ## XML attributes
 
@@ -135,36 +163,46 @@ android:accessibilityEventTypes
 The event types this service would like to receive as specified in `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | typeAllMask | ffffffff | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPES_ALL_MASK:kotlin.Int` i.e. all events. |
 | typeAnnouncement | 4000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT:kotlin.Int` events. |
 | typeAssistReadingContext | 1000000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_ASSIST_READING_CONTEXT:kotlin.Int` events. |
+| --- | --- | --- |
 | typeContextClicked | 800000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CONTEXT_CLICKED:kotlin.Int` events. |
 | typeGestureDetectionEnd | 80000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_END:kotlin.Int` events. |
 | typeGestureDetectionStart | 40000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_START:kotlin.Int` events. |
+| --- | --- | --- |
 | typeNotificationStateChanged | 40 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_NOTIFICATION_STATE_CHANGED:kotlin.Int` events. |
 | typeSpeechStateChange | 2000000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_SPEECH_STATE_CHANGE:kotlin.Int` events. |
 | typeTouchExplorationGestureEnd | 400 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_END:kotlin.Int` events. |
+| --- | --- | --- |
 | typeTouchExplorationGestureStart | 200 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_START:kotlin.Int` events. |
 | typeTouchInteractionEnd | 200000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_END:kotlin.Int` events. |
 | typeTouchInteractionStart | 100000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_START:kotlin.Int` events. |
+| --- | --- | --- |
 | typeViewAccessibilityFocusCleared | 10000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED:kotlin.Int` events. |
 | typeViewAccessibilityFocused | 8000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUSED:kotlin.Int` events. |
 | typeViewClicked | 1 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CLICKED:kotlin.Int` events. |
+| --- | --- | --- |
 | typeViewFocused | 8 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_FOCUSED:kotlin.Int` events. |
 | typeViewHoverEnter | 80 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_ENTER:kotlin.Int` events. |
 | typeViewHoverExit | 100 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_EXIT:kotlin.Int` events. |
+| --- | --- | --- |
 | typeViewLongClicked | 2 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_LONG_CLICKED:kotlin.Int` events. |
 | typeViewScrolled | 1000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SCROLLED:kotlin.Int` events. |
 | typeViewSelected | 4 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SELECTED:kotlin.Int` events. |
+| --- | --- | --- |
 | typeViewTextChanged | 10 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_CHANGED:kotlin.Int` events. |
 | typeViewTextSelectionChanged | 2000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_SELECTION_CHANGED:kotlin.Int` events. |
 | typeViewTextTraversedAtMovementGranularity | 20000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY:kotlin.Int` events. |
+| --- | --- | --- |
 | typeWindowContentChanged | 800 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_CONTENT_CHANGED:kotlin.Int` events. |
 | typeWindowStateChanged | 20 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_STATE_CHANGED:kotlin.Int` events. |
 | typeWindowsChanged | 400000 | Receives `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED:kotlin.Int` events. |
+| --- | --- | --- |
 
 ### android:accessibilityFeedbackType
 
@@ -174,15 +212,18 @@ android:accessibilityFeedbackType
 The feedback types this service provides as specified in `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | feedbackAllMask | ffffffff | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_ALL_MASK:kotlin.Int` feedback. |
 | feedbackAudible | 4 | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_AUDIBLE:kotlin.Int` feedback. |
 | feedbackGeneric | 10 | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_GENERIC:kotlin.Int` feedback. |
+| --- | --- | --- |
 | feedbackHaptic | 2 | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_HAPTIC:kotlin.Int` feedback. |
 | feedbackSpoken | 1 | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_SPOKEN:kotlin.Int` feedback. |
 | feedbackVisual | 8 | Provides `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_VISUAL:kotlin.Int` feedback. |
+| --- | --- | --- |
 
 ### android:accessibilityFlags
 
@@ -192,24 +233,30 @@ android:accessibilityFlags
 Additional flags as specified in `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | flagDefault | 1 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#DEFAULT:kotlin.Int`. |
 | flagEnableAccessibilityVolume | 80 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_ENABLE_ACCESSIBILITY_VOLUME:kotlin.Int`. |
 | flagIncludeNotImportantViews | 2 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int`. |
+| --- | --- | --- |
 | flagInputMethodEditor | 8000 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INPUT_METHOD_EDITOR:kotlin.Int`. |
 | flagReportViewIds | 10 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REPORT_VIEW_IDS:kotlin.Int`. |
 | flagRequestAccessibilityButton | 100 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_ACCESSIBILITY_BUTTON:kotlin.Int`. |
+| --- | --- | --- |
 | flagRequestEnhancedWebAccessibility | 8 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY:kotlin.Int`. Not used by the framework. |
 | flagRequestFilterKeyEvents | 20 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_FILTER_KEY_EVENTS:kotlin.Int`. |
 | flagRequestFingerprintGestures | 200 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_FINGERPRINT_GESTURES:kotlin.Int`. |
+| --- | --- | --- |
 | flagRequestMultiFingerGestures | 1000 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_MULTI_FINGER_GESTURES:kotlin.Int`. |
 | flagRequestShortcutWarningDialogSpokenFeedback | 400 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_SHORTCUT_WARNING_DIALOG_SPOKEN_FEEDBACK:kotlin.Int`. |
 | flagRequestTouchExplorationMode | 4 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int`. |
+| --- | --- | --- |
 | flagRequireShortcut | 20000 | Has flag android.accessibilityservice.AccessibilityServiceInfo#FLAG_REQUIRE_SHORTCUT. |
 | flagRetrieveInteractiveWindows | 40 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_RETRIEVE_INTERACTIVE_WINDOWS:kotlin.Int`. |
 | flagSendMotionEvents | 4000 | |
+| --- | --- | --- |
 | flagServiceHandlesDoubleTap | 800 | Has flag `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_SERVICE_HANDLES_DOUBLE_TAP:kotlin.Int`. |
 
 ### android:animatedImageDrawable

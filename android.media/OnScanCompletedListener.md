@@ -5,6 +5,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # OnScanCompletedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnScanCompletedListener
@@ -13,6 +14,7 @@ interface OnScanCompletedListener
 | [android.media.MediaScannerConnection.OnScanCompletedListener](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#) |
 
 | Known Direct Subclasses [MediaScannerConnection.MediaScannerConnectionClient](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient) |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MediaScannerConnection.MediaScannerConnectionClient](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient) | An interface for notifying clients of MediaScannerConnection when a connection to the MediaScanner service has been established and when the scanning of a file has completed. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Interface for notifying clients of the result of scanning a requested media file.
 

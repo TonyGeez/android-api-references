@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnDrawableLoadedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/Icon.OnDrawableLoadedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDrawableLoadedListener

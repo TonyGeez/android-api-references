@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # Checksum
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/Checksum "View this page in Java") 
+| --- | --- |
 
 ```
 class Checksum : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.Checksum](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#) |
 
 A typed checksum.
@@ -22,9 +24,11 @@ A typed checksum.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PARTIAL_MERKLE_ROOT_1M_SHA256](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_PARTIAL_MERKLE_ROOT_1M_SHA256:kotlin.Int) Root SHA256 hash of a 1M Merkle tree computed over protected content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PARTIAL_MERKLE_ROOT_1M_SHA512](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_PARTIAL_MERKLE_ROOT_1M_SHA512:kotlin.Int) Root SHA512 hash of a 1M Merkle tree computed over protected content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WHOLE_MD5](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_MD5:kotlin.Int) MD5 hash computed over all file bytes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WHOLE_MERKLE_ROOT_4K_SHA256](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_MERKLE_ROOT_4K_SHA256:kotlin.Int) Root SHA256 hash of a 4K Merkle tree computed over all file bytes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WHOLE_SHA1](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA1:kotlin.Int) SHA1 hash computed over all file bytes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WHOLE_SHA256](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA256:kotlin.Int) SHA256 hash computed over all file bytes. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WHOLE_SHA512](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA512:kotlin.Int) SHA512 hash computed over all file bytes. |
 
 | Inherited constants ||
@@ -40,6 +44,7 @@ A typed checksum.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#getType())`()` Checksum type. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getValue](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#getValue())`()` Checksum value. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/Checksum#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

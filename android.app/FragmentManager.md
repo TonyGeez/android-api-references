@@ -4,12 +4,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # FragmentManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/FragmentManager "View this page in Java")
+| --- | --- |
 
 ```
 abstract class FragmentManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.FragmentManager](https://developer.android.com/reference/kotlin/android/app/FragmentManager#) |
 
 > [!CAUTION]
@@ -36,6 +38,7 @@ While the FragmentManager API was introduced in `https://developer.android.com/r
 | abstract | `https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry` Representation of an entry on the fragment back stack, as created with `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#addToBackStack(kotlin.String)`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/FragmentManager.FragmentLifecycleCallbacks` Callback interface for listening to fragment state changes that happen within a given FragmentManager. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener` Interface to watch for changes to the back stack. |
+| --- | --- |
 
 | Constants ||
 |---|---|
@@ -50,27 +53,35 @@ While the FragmentManager API was introduced in `https://developer.android.com/r
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#addOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)(listener: https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener!)` Add a new listener for changes to the fragment back stack. |
 | abstract [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#beginTransaction()()` Start a series of edit operations on the Fragments associated with this FragmentManager. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, writer: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Print the FragmentManager's state into the given stream. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#enableDebugLogging(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the framework's internal fragment manager debugging logs are turned on. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#executePendingTransactions()()` After a `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction` is committed with `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#commit()`, it is scheduled to be executed asynchronously on the process's main thread. |
 | abstract [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#findFragmentById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a fragment that was identified by the given id either when inflated from XML or as the container ID when added in a transaction. |
+| --- | --- |
 | abstract [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#findFragmentByTag(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds a fragment that was identified by the given tag either when inflated from XML or as supplied when added in a transaction. |
 | abstract [FragmentManager.BackStackEntry](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#getBackStackEntryAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the BackStackEntry at index index in the back stack; where the item on the bottom of the stack has index 0. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#getBackStackEntryCount()()` Return the number of entries currently in the back stack. |
+| --- | --- |
 | abstract [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#getFragment(android.os.Bundle,%20kotlin.String)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve the current Fragment instance for a reference previously placed with `https://developer.android.com/reference/kotlin/android/app/FragmentManager#putFragment(android.os.Bundle,%20kotlin.String,%20android.app.Fragment)`. |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)!\>! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#getFragments()()` Get a list of all fragments that are currently added to the FragmentManager. |
 | abstract [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#getPrimaryNavigationFragment()()` Return the currently active primary navigation fragment for this FragmentManager. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#invalidateOptionsMenu()()` Invalidate the attached activity's options menu as necessary. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#isDestroyed()()` Returns true if the final `https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()` call has been made on the FragmentManager's Activity, so this instance is now dead. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#isStateSaved()()` Returns `true` if the FragmentManager's state has already been saved by its host. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack()()` Pop the top state off the back stack. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Pop all back stack states up to the one with the given identifier. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Pop the last fragment transition from the manager's fragment back stack. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStackImmediate()()` Like `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack()`, but performs the operation immediately inside of the call. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStackImmediate(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack(kotlin.Int,%20kotlin.Int)`, but performs the operation immediately inside of the call. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStackImmediate(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/FragmentManager#popBackStack(kotlin.String,%20kotlin.Int)`, but performs the operation immediately inside of the call. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#putFragment(android.os.Bundle,%20kotlin.String,%20android.app.Fragment)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fragment: https://developer.android.com/reference/kotlin/android/app/Fragment!)` Put a reference to a fragment in a Bundle. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#registerFragmentLifecycleCallbacks(android.app.FragmentManager.FragmentLifecycleCallbacks,%20kotlin.Boolean)(cb: https://developer.android.com/reference/kotlin/android/app/FragmentManager.FragmentLifecycleCallbacks!, recursive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Registers a `https://developer.android.com/reference/kotlin/android/app/FragmentManager.FragmentLifecycleCallbacks` to listen to fragment lifecycle events happening in this FragmentManager. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#removeOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)(listener: https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener!)` Remove a listener that was previously added with `https://developer.android.com/reference/kotlin/android/app/FragmentManager#addOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)`. |
+| --- | --- |
 | abstract [Fragment.SavedState](https://developer.android.com/reference/kotlin/android/app/Fragment.SavedState)! | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#saveFragmentInstanceState(android.app.Fragment)(f: https://developer.android.com/reference/kotlin/android/app/Fragment!)` Save the current instance state of the given Fragment. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentManager#unregisterFragmentLifecycleCallbacks(android.app.FragmentManager.FragmentLifecycleCallbacks)(cb: https://developer.android.com/reference/kotlin/android/app/FragmentManager.FragmentLifecycleCallbacks!)` Unregisters a previously registered `https://developer.android.com/reference/kotlin/android/app/FragmentManager.FragmentLifecycleCallbacks`. |
 
@@ -148,6 +159,7 @@ Print the FragmentManager's state into the given stream.
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Text to print at the front of each line. |
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: A PrintWriter to which the dump is to be set. |
+| --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Additional arguments to the dump request. |
 
 ### enableDebugLogging
@@ -468,6 +480,7 @@ Put a reference to a fragment in a Bundle. This Bundle can be persisted as saved
 | `bundle` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The bundle in which to put the fragment reference. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the entry in the bundle. |
 | `fragment` | [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment)!: The Fragment whose reference is to be stored. |
+| --- | --- |
 
 ### registerFragmentLifecycleCallbacks
 

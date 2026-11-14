@@ -9,6 +9,7 @@ open class PKIXBuilderParameters : PKIXParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.cert.PKIXParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters) ||
 | | ↳ | [java.security.cert.PKIXBuilderParameters](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters#) |
 
@@ -36,6 +37,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxPathLength](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters#getMaxPathLength())`()` Returns the value of the maximum number of intermediate non-self-issued certificates that may exist in a certification path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxPathLength](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters#setMaxPathLength(kotlin.Int))`(`maxPathLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value of the maximum number of non-self-issued intermediate certificates that may exist in a certification path. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/PKIXBuilderParameters#toString())`()` Returns a formatted string describing the parameters. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -65,6 +67,7 @@ Creates an instance of`PKIXBuilderParameters`that populates the set of most-trus
 | `java.security.KeyStoreException` | if`keystore`has not been initialized |
 | `java.security.InvalidAlgorithmParameterException` | if`keystore`does not contain at least one trusted certificate entry |
 | `java.lang.NullPointerException` | if`keystore`is`null` |
+| --- | --- |
 
 ### PKIXBuilderParameters
 
@@ -90,6 +93,7 @@ Note that the`Set`is copied to protect against subsequent modifications.
 | `java.security.InvalidAlgorithmParameterException` | if`trustAnchors`is empty`(trustAnchors.isEmpty() == true)` |
 | `java.lang.NullPointerException` | if`trustAnchors`is`null` |
 | `java.lang.ClassCastException` | if any of the elements of`trustAnchors`are not of type`java.security.cert.TrustAnchor` |
+| --- | --- |
 
 ## Public methods
 

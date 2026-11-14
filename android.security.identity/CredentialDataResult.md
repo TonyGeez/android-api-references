@@ -8,6 +8,7 @@ abstract class CredentialDataResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.CredentialDataResult](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#) |
 
 > [!CAUTION]
@@ -28,9 +29,11 @@ An object that contains the result of retrieving data from a credential. This is
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceMac()()` Returns a message authentication code over the `DeviceAuthenticationBytes` CBOR specified in `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceNameSpaces()`, to prove to the reader that the data is from a trusted credential. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceNameSpaces()()` Returns a CBOR structure containing the retrieved device-signed data. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceSignature()()` Returns a signature over the `DeviceAuthenticationBytes` CBOR specified in `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceNameSpaces()`, to prove to the reader that the data is from a trusted credential. |
+| --- | --- |
 | abstract [CredentialDataResult.Entries](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceSignedEntries()()` Gets the device-signed entries that was returned. |
 | abstract [CredentialDataResult.Entries](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getIssuerSignedEntries()()` Gets the issuer-signed entries that was returned. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getStaticAuthenticationData()()` Returns the static authentication data associated with the dynamic authentication key used to MAC the data returned by `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult#getDeviceNameSpaces()`. |
+| --- | --- |
 
 ## Public methods
 

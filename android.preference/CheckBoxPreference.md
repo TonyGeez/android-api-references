@@ -6,15 +6,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # CheckBoxPreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/CheckBoxPreference "View this page in Java") 
+| --- | --- |
 
 ```
 open class CheckBoxPreference : TwoStatePreference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.TwoStatePreference](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference) ||
 | | | ↳ | [android.preference.CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -31,6 +34,7 @@ This preference will store a boolean into the SharedPreferences.
 | [`android:disableDependentsState`](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference#attr_CheckBoxPreference) | The state (true for on, or false for off) that causes dependents to be disabled. |
 | [`android:summaryOff`](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference#attr_CheckBoxPreference) | The summary for the Preference in a PreferenceActivity screen when the CheckBoxPreference is unchecked. |
 | [`android:summaryOn`](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference#attr_CheckBoxPreference) | The summary for the Preference in a PreferenceActivity screen when the CheckBoxPreference is checked. |
+| --- | --- |
 
 | Inherited XML attributes ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OisSample
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/OisSample "View this page in Java") 
+| --- | --- |
 
 ```
 class OisSample
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.OisSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#) |
 
 Immutable class to store an [optical image stabilization sample](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.html#STATISTICS_OIS_SAMPLES:android.hardware.camera2.CaptureResult.Key).
@@ -26,9 +28,11 @@ Immutable class to store an [optical image stabilization sample](https://develop
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [OisSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#) is equal to another [OisSample](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestamp](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#getTimestamp())`()` Get the timestamp in nanoseconds. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getXshift](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#getXshift())`()` Get the shift in x direction. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getYshift](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#getYshift())`()` Get the shift in y direction. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OisSample#toString())`()` Return the OisSample as a string representation. |
+| --- | --- |
 
 ## Public constructors
 
@@ -58,6 +62,7 @@ xShift and yShift must be finite; NaN and infinity is not allowed.
 | `timestamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):timestamp of the OIS sample. |
 | `xShift` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):shift of the OIS sample in x direction. |
 | `yShift` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):shift of the OIS sample in y direction. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------|

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # StateListAnimator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/StateListAnimator "View this page in Java") 
+| --- | --- |
 
 ```
 open class StateListAnimator : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.StateListAnimator](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#) |
 
 Lets you define a number of Animators that will run on the attached View depending on the View's drawable state.
@@ -24,15 +26,19 @@ It can be defined in an XML file with the`<selector>`element. Each State Animato
 | [`android:animation`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | Animation to use on each child. |
 | [`android:state_activated`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. |
 | [`android:state_active`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or drawable is considered "active" by its host. |
+| --- | --- |
 | [`android:state_checkable`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State identifier indicating that the object may display a check mark. |
 | [`android:state_checked`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State identifier indicating that the object is currently checked. |
 | [`android:state_enabled`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view is enabled. |
+| --- | --- |
 | [`android:state_first`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or drawable is in the first position in an ordered set. |
 | [`android:state_focused`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view has input focus. |
 | [`android:state_last`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or drawable is in the last position in an ordered set. |
+| --- | --- |
 | [`android:state_middle`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or drawable is in the middle position in an ordered set. |
 | [`android:state_pressed`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when the user is pressing down in a view. |
 | [`android:state_selected`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view (or one of its parents) is currently selected. |
+| --- | --- |
 | [`android:state_single`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view or drawable is considered "single" by its host. |
 | [`android:state_window_focused`](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#attr_StateListAnimator) | State value for StateListDrawable , set when a view's window has input focus. |
 
@@ -45,6 +51,7 @@ It can be defined in an XML file with the`<selector>`element. Each State Animato
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addState](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#addState(kotlin.IntArray,%20android.animation.Animator))`(`specs:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `animator:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)!`)` Associates the given animator with the provided drawable state specs so that it will be run when the View's drawable state matches the specs. |
 | open [StateListAnimator](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#) | [clone](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#clone())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [jumpToCurrentState](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator#jumpToCurrentState())`()` If there is an animation running for a recent state change, ends it. |
+| --- | --- |
 
 ## XML attributes
 

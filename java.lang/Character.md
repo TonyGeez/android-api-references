@@ -7,6 +7,7 @@ class Character : Comparable<Char!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Character](https://developer.android.com/reference/kotlin/java/lang/Character#) |
 
 The `Character` class is the java.lang# for values of the primitive type `char`. An object of type `Character` contains a single field whose type is `char`.
@@ -37,78 +38,102 @@ In the Java SE API documentation, *Unicode code point* is used for character val
 | | `https://developer.android.com/reference/kotlin/java/lang/Character.Subset` Instances of this class represent particular subsets of the Unicode character set. |
 | | `https://developer.android.com/reference/kotlin/java/lang/Character.UnicodeBlock` A family of character subsets representing the character blocks in the Unicode specification. |
 | | `https://developer.android.com/reference/kotlin/java/lang/Character.UnicodeScript` A family of character subsets representing the character scripts defined in the [*Unicode Standard Annex #24: Script Names*](http://www.unicode.org/reports/tr24/). |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#BYTES:kotlin.Int` The number of bytes used to represent a `char` value in unsigned binary form. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#COMBINING_SPACING_MARK:kotlin.Byte` General category "Mc" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#CONNECTOR_PUNCTUATION:kotlin.Byte` General category "Pc" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#CONTROL:kotlin.Byte` General category "Cc" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#CURRENCY_SYMBOL:kotlin.Byte` General category "Sc" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DASH_PUNCTUATION:kotlin.Byte` General category "Pd" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DECIMAL_DIGIT_NUMBER:kotlin.Byte` General category "Nd" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_ARABIC_NUMBER:kotlin.Byte` Weak bidirectional character type "AN" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_BOUNDARY_NEUTRAL:kotlin.Byte` Weak bidirectional character type "BN" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR:kotlin.Byte` Weak bidirectional character type "CS" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_EUROPEAN_NUMBER:kotlin.Byte` Weak bidirectional character type "EN" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR:kotlin.Byte` Weak bidirectional character type "ES" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR:kotlin.Byte` Weak bidirectional character type "ET" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_FIRST_STRONG_ISOLATE:kotlin.Byte` Weak bidirectional character type "FSI" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_LEFT_TO_RIGHT:kotlin.Byte` Strong bidirectional character type "L" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING:kotlin.Byte` Strong bidirectional character type "LRE" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_LEFT_TO_RIGHT_ISOLATE:kotlin.Byte` Weak bidirectional character type "LRI" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE:kotlin.Byte` Strong bidirectional character type "LRO" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_NONSPACING_MARK:kotlin.Byte` Weak bidirectional character type "NSM" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_OTHER_NEUTRALS:kotlin.Byte` Neutral bidirectional character type "ON" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR:kotlin.Byte` Neutral bidirectional character type "B" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT:kotlin.Byte` Weak bidirectional character type "PDF" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE:kotlin.Byte` Weak bidirectional character type "PDI" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_RIGHT_TO_LEFT:kotlin.Byte` Strong bidirectional character type "R" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC:kotlin.Byte` Strong bidirectional character type "AL" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING:kotlin.Byte` Strong bidirectional character type "RLE" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_RIGHT_TO_LEFT_ISOLATE:kotlin.Byte` Weak bidirectional character type "RLI" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE:kotlin.Byte` Strong bidirectional character type "RLO" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_SEGMENT_SEPARATOR:kotlin.Byte` Neutral bidirectional character type "S" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_UNDEFINED:kotlin.Byte` Undefined bidirectional character type. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#DIRECTIONALITY_WHITESPACE:kotlin.Byte` Neutral bidirectional character type "WS" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#ENCLOSING_MARK:kotlin.Byte` General category "Me" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#END_PUNCTUATION:kotlin.Byte` General category "Pe" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#FINAL_QUOTE_PUNCTUATION:kotlin.Byte` General category "Pf" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#FORMAT:kotlin.Byte` General category "Cf" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#INITIAL_QUOTE_PUNCTUATION:kotlin.Byte` General category "Pi" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#LETTER_NUMBER:kotlin.Byte` General category "Nl" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#LINE_SEPARATOR:kotlin.Byte` General category "Zl" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#LOWERCASE_LETTER:kotlin.Byte` General category "Ll" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MATH_SYMBOL:kotlin.Byte` General category "Sm" in the Unicode specification. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_CODE_POINT:kotlin.Int` The maximum value of a [Unicode code point](http://www.unicode.org/glossary/#code_point), constant `U+10FFFF`. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_HIGH_SURROGATE:kotlin.Char` The maximum value of a [Unicode high-surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit) in the UTF-16 encoding, constant `'\u005CuDBFF'`. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_LOW_SURROGATE:kotlin.Char` The maximum value of a [Unicode low-surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit) in the UTF-16 encoding, constant `'\u005CuDFFF'`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int` The maximum radix available for conversion to and from strings. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_SURROGATE:kotlin.Char` The maximum value of a Unicode surrogate code unit in the UTF-16 encoding, constant `'\u005CuDFFF'`. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MAX_VALUE:kotlin.Char` The constant value of this field is the largest value of type `char`, `'\u005CuFFFF'`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_CODE_POINT:kotlin.Int` The minimum value of a [Unicode code point](http://www.unicode.org/glossary/#code_point), constant `U+0000`. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_HIGH_SURROGATE:kotlin.Char` The minimum value of a [Unicode high-surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit) in the UTF-16 encoding, constant `'\u005CuD800'`. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_LOW_SURROGATE:kotlin.Char` The minimum value of a [Unicode low-surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit) in the UTF-16 encoding, constant `'\u005CuDC00'`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int` The minimum radix available for conversion to and from strings. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_SUPPLEMENTARY_CODE_POINT:kotlin.Int` The minimum value of a [Unicode supplementary code point](http://www.unicode.org/glossary/#supplementary_code_point), constant `U+10000`. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_SURROGATE:kotlin.Char` The minimum value of a Unicode surrogate code unit in the UTF-16 encoding, constant `'\u005CuD800'`. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MIN_VALUE:kotlin.Char` The constant value of this field is the smallest value of type `char`, `'\u005Cu0000'`. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MODIFIER_LETTER:kotlin.Byte` General category "Lm" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#MODIFIER_SYMBOL:kotlin.Byte` General category "Sk" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#NON_SPACING_MARK:kotlin.Byte` General category "Mn" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#OTHER_LETTER:kotlin.Byte` General category "Lo" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#OTHER_NUMBER:kotlin.Byte` General category "No" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#OTHER_PUNCTUATION:kotlin.Byte` General category "Po" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#OTHER_SYMBOL:kotlin.Byte` General category "So" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#PARAGRAPH_SEPARATOR:kotlin.Byte` General category "Zp" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#PRIVATE_USE:kotlin.Byte` General category "Co" in the Unicode specification. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#SIZE:kotlin.Int` The number of bits used to represent a `char` value in unsigned binary form, constant `16`. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#SPACE_SEPARATOR:kotlin.Byte` General category "Zs" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#START_PUNCTUATION:kotlin.Byte` General category "Ps" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#SURROGATE:kotlin.Byte` General category "Cs" in the Unicode specification. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#TITLECASE_LETTER:kotlin.Byte` General category "Lt" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#UNASSIGNED:kotlin.Byte` General category "Cn" in the Unicode specification. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#UPPERCASE_LETTER:kotlin.Byte` General category "Lu" in the Unicode specification. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -119,96 +144,127 @@ In the Java SE API documentation, *Unicode code point* is used for character val
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#charCount(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines the number of `char` values needed to represent the specified character (Unicode code point). |
 | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#charValue()()` Returns the value of this `Character` object. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointAt(kotlin.CharArray,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point at the given index of the `char` array. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointAt(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point at the given index of the `char` array, where only array elements with `index` less than `limit` can be used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointAt(kotlin.CharSequence,%20kotlin.Int)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point at the given index of the `CharSequence`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointBefore(kotlin.CharArray,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point preceding the given index of the `char` array. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointBefore(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point preceding the given index of the `char` array, where only array elements with `index` greater than or equal to `start` can be used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointBefore(kotlin.CharSequence,%20kotlin.Int)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the code point preceding the given index of the `CharSequence`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointCount(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of Unicode code points in a subarray of the `char` array argument. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointCount(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of Unicode code points in the text range of the specified char sequence. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#codePointOf(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the code point value of the Unicode character specified by the given character name. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#compare(kotlin.Char,%20kotlin.Char)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Compares two `char` values numerically. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#compareTo(kotlin.Char)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Compares two `Character` objects numerically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Char,%20kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the numeric value of the character `ch` in the specified radix. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Int,%20kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the numeric value of the specified character (Unicode code point) in the specified radix. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this object against the specified object. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#forDigit(kotlin.Int,%20kotlin.Int)(digit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines the character representation for a specific digit in the specified radix. |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getDirectionality(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns the Unicode directionality property for the given character. |
+| --- | --- |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getDirectionality(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the Unicode directionality property for the given character (Unicode code point). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/Character#getName(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the name of the specified character , or null if the code point is `https://developer.android.com/reference/kotlin/java/lang/Character#UNASSIGNED:kotlin.Byte`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getNumericValue(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns the `int` value that the specified Unicode character represents. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getNumericValue(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `int` value that the specified character (Unicode code point) represents. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getType(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns a value indicating a character's general category. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#getType(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a value indicating a character's general category. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#hashCode()()` Returns a hash code for this `Character`; equal to the result of invoking `charValue()`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#hashCode(kotlin.Char)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns a hash code for a `char` value; compatible with `Character.hashCode()`. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#highSurrogate(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the leading surrogate (a [high surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isAlphabetic(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is alphabetic. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isBmpCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [Basic Multilingual Plane (BMP)](https://developer.android.com/reference/kotlin/java/lang/Character#BMP). |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if a character is defined in Unicode. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if a character (Unicode code point) is defined in Unicode. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDigit(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a digit. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDigit(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a digit. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isEmoji(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an Emoji. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isEmojiComponent(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an Emoji Component. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isEmojiModifier(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an Emoji Modifier. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isEmojiModifierBase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an Emoji Modifier Base. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isEmojiPresentation(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) has the Emoji Presentation property by default. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isExtendedPictographic(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an Extended Pictographic. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isHighSurrogate(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the given `char` value is a [Unicode high-surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit) (also known as *leading-surrogate code unit*). |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isISOControl(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is an ISO control character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isISOControl(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the referenced character (Unicode code point) is an ISO control character. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isIdentifierIgnorable(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character should be regarded as an ignorable character in a Java identifier or a Unicode identifier. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isIdentifierIgnorable(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) should be regarded as an ignorable character in a Java identifier or a Unicode identifier. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isIdeographic(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a CJKV (Chinese, Japanese, Korean and Vietnamese) ideograph, as defined by the Unicode Standard. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierPart(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character may be part of a Java identifier as other than the first character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierPart(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the character (Unicode code point) may be part of a Java identifier as other than the first character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierStart(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is permissible as the first character in a Java identifier. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierStart(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the character (Unicode code point) is permissible as the first character in a Java identifier. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaLetter(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is permissible as the first character in a Java identifier. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaLetterOrDigit(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character may be part of a Java identifier as other than the first character. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLetter(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a letter. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLetter(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a letter. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLetterOrDigit(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a letter or digit. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLetterOrDigit(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a letter or digit. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLowSurrogate(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the given `char` value is a [Unicode low-surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit) (also known as *trailing-surrogate code unit*). |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLowerCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a lowercase character. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isLowerCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a lowercase character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isMirrored(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines whether the character is mirrored according to the Unicode specification. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isMirrored(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is mirrored according to the Unicode specification. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSpace(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is ISO-LATIN-1 white space. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a Unicode space character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a Unicode space character. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSupplementaryCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [supplementary character](https://developer.android.com/reference/kotlin/java/lang/Character#supplementary) range. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSurrogate(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the given `char` value is a Unicode *surrogate code unit*. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSurrogatePair(kotlin.Char,%20kotlin.Char)(high: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines whether the specified pair of `char` values is a valid [Unicode surrogate pair](http://www.unicode.org/glossary/#surrogate_pair). |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isTitleCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a titlecase character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isTitleCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a titlecase character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierPart(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character may be part of a Unicode identifier as other than the first character. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierPart(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) may be part of a Unicode identifier as other than the first character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierStart(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is permissible as the first character in a Unicode identifier. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierStart(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is permissible as the first character in a Unicode identifier. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUpperCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is an uppercase character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isUpperCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is an uppercase character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isValidCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified code point is a valid [Unicode code point value](http://www.unicode.org/glossary/#code_point). |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is white space according to Java. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is white space according to Java. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#lowSurrogate(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the trailing surrogate (a [low surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#offsetByCodePoints(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, codePointOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within the given `char` subarray that is offset from the given `index` by `codePointOffset` code points. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#offsetByCodePoints(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, codePointOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within the given char sequence that is offset from the given `index` by `codePointOffset` code points. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#reverseBytes(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns the value obtained by reversing the order of the bytes in the specified `char` value. |
+| --- | --- |
 | static [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/Character#toChars(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the specified character (Unicode code point) to its UTF-16 representation stored in a `char` array. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toChars(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, dstIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the specified character (Unicode code point) to its UTF-16 representation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toCodePoint(kotlin.Char,%20kotlin.Char)(high: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Converts the specified surrogate pair to its supplementary code point value. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toLowerCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Converts the character argument to lowercase using case mapping information from the UnicodeData file. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toLowerCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the character (Unicode code point) argument to lowercase using case mapping information from the UnicodeData file. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toString()()` Returns a `String` object representing this `Character`'s value. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toString(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns a `String` object representing the specified `char`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toString(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `String` object representing the specified character (Unicode code point). |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toTitleCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Converts the character argument to titlecase using case mapping information from the UnicodeData file. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toTitleCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the character (Unicode code point) argument to titlecase using case mapping information from the UnicodeData file. |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toUpperCase(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Converts the character argument to uppercase using case mapping information from the UnicodeData file. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#toUpperCase(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the character (Unicode code point) argument to uppercase using case mapping information from the UnicodeData file. |
+| --- | --- |
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#valueOf(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns a `Character` instance representing the specified `char` value. |
 
 | Properties ||
@@ -1163,6 +1219,7 @@ Returns the code point at the given index of the `char` array, where only array 
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the `char` array |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index to the `char` values (Unicode code units) in the `char` array to be converted |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index after the last array element that can be used in the `char` array |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1246,6 +1303,7 @@ Returns the code point preceding the given index of the `char` array, where only
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the `char` array |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index following the code point that should be returned |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first array element in the `char` array |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1302,6 +1360,7 @@ Returns the number of Unicode code points in a subarray of the `char` array argu
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the `char` array |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first `char` in the given `char` array |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the subarray in `char`s |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1331,6 +1390,7 @@ Returns the number of Unicode code points in the text range of the specified cha
 | `seq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the char sequence |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index to the first `char` of the text range. |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index after the last `char` of the text range. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2847,9 +2907,11 @@ static fun isSpace(ch: Char): Boolean
 Determines if the specified character is ISO-LATIN-1 white space. This method returns `true` for the following five characters only:
 
 | Character | Code | Name |
+| --- | --- | --- |
 | `'\t'` | `U+0009` | `HORIZONTAL TABULATION` |
 | `'\n'` | `U+000A` | `NEW LINE` |
 | `'\f'` | `U+000C` | `FORM FEED` |
+| --- | --- | --- |
 | `'\r'` | `U+000D` | `CARRIAGE RETURN` |
 | `' '` | `U+0020` | `SPACE` |
 |---|---|---|
@@ -3461,6 +3523,7 @@ Returns the index within the given `char` subarray that is offset from the given
 | `a` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the `char` array |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the first `char` of the subarray |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the length of the subarray in `char`s |
+| --- | --- |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index to be offset |
 | `codePointOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset in code points |
 
@@ -3492,6 +3555,7 @@ Returns the index within the given char sequence that is offset from the given `
 | `seq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the char sequence |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index to be offset |
 | `codePointOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset in code points |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -3561,6 +3625,7 @@ Converts the specified character (Unicode code point) to its UTF-16 representati
 | `codePoint` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the character (Unicode code point) to be converted. |
 | `dst` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: an array of `char` in which the `codePoint`'s UTF-16 value is stored. |
 | `dstIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start index into the `dst` array where the converted value is stored. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -3571,6 +3636,7 @@ Converts the specified character (Unicode code point) to its UTF-16 representati
 | `java.lang.IllegalArgumentException` | if the specified `codePoint` is not a valid Unicode code point. |
 | `java.lang.IndexOutOfBoundsException` | if `dstIndex` is negative or not less than `dst.length`, or if `dst` at `dstIndex` doesn't have enough array element(s) to store the resulting `char` value(s). (If `dstIndex` is equal to `dst.length-1` and the specified `codePoint` is a supplementary character, the high-surrogate value is not stored in `dst[dstIndex]`.) |
 | `java.lang.NullPointerException` | if the specified `dst` is null. |
+| --- | --- |
 
 ### toCodePoint
 

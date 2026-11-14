@@ -12,6 +12,7 @@ interface CoreConnectionPNames
 | [org.apache.http.params.CoreConnectionPNames](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#) |
 
 | Known Direct Subclasses [HttpConnectionParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpConnectionParams) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [HttpConnectionParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpConnectionParams) | An adaptor for accessing connection parameters in [HttpParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 22.**
 |
@@ -26,9 +27,11 @@ Defines parameter names for connections in HttpCore.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONNECTION_TIMEOUT](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#CONNECTION_TIMEOUT:kotlin.String) Determines the timeout until a connection is etablished. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MAX_HEADER_COUNT](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#MAX_HEADER_COUNT:kotlin.String) Determines the maximum HTTP header count allowed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MAX_LINE_LENGTH](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#MAX_LINE_LENGTH:kotlin.String) Determines the maximum line length limit. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOCKET_BUFFER_SIZE](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#SOCKET_BUFFER_SIZE:kotlin.String) Determines the size of the internal socket buffer used to buffer data while receiving / transmitting HTTP messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SO_LINGER](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#SO_LINGER:kotlin.String) Sets SO_LINGER with the specified linger time in seconds. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SO_TIMEOUT](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#SO_TIMEOUT:kotlin.String) Defines the default socket timeout (SO_TIMEOUT) in milliseconds which is the timeout for waiting for data. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STALE_CONNECTION_CHECK](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#STALE_CONNECTION_CHECK:kotlin.String) Determines whether stale connection check is to be used. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TCP_NODELAY](https://developer.android.com/reference/kotlin/org/apache/http/params/CoreConnectionPNames#TCP_NODELAY:kotlin.String) Determines whether Nagle's algorithm is to be used. |
 

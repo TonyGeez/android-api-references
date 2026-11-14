@@ -4,6 +4,7 @@ Also in [Ad Services Extensions 7](https://developer.android.com/sdkExtensions)
 # SdkSandboxActivityHandler
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler "View this page in Java")
+| --- | --- |
 
 ```
 interface SdkSandboxActivityHandler

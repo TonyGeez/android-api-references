@@ -11,6 +11,7 @@ interface PropertyChangeListener : EventListener
 | [java.beans.PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener#) |
 
 | Known Direct Subclasses [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy) |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------| | [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy) | A class which extends the`EventListenerProxy`specifically for adding a`PropertyChangeListener`with a "bound" property. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A "PropertyChange" event gets fired whenever a bean changes a "bound" property. You can register a PropertyChangeListener with a source bean so as to be notified of any bound property updates.
 

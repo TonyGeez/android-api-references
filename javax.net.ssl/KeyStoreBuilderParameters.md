@@ -9,6 +9,7 @@ open class KeyStoreBuilderParameters : ManagerFactoryParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.KeyStoreBuilderParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyStoreBuilderParameters#) |
 
 A parameters object for X509KeyManagers that encapsulates a List of KeyStore.Builders.

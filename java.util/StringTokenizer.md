@@ -9,6 +9,7 @@ open class StringTokenizer : Enumeration<Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#) |
 
 The string tokenizer class allows an application to break a string into tokens. The tokenization method is much simpler than the one used by the`StreamTokenizer`class. The`StringTokenizer`methods do not distinguish among identifiers, numbers, and quoted strings, nor do they recognize and skip comments.
@@ -78,9 +79,11 @@ this
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countTokens](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#countTokens())`()` Calculates the number of times that this tokenizer's`nextToken`method can be called before it generates an exception. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#hasMoreElements())`()` Returns the same value as the`hasMoreTokens`method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreTokens](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#hasMoreTokens())`()` Tests if there are more tokens available from this tokenizer's string. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [nextElement](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextElement())`()` Returns the same value as the`nextToken`method, except that its declared return value is`Object`rather than`String`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken())`()` Returns the next token from this string tokenizer. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken(kotlin.String))`(`delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the next token in this string tokenizer's string. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -151,6 +154,7 @@ Note that if`delim`is`null`, this constructor does not throw an exception. Howev
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a string to be parsed. |
 | `delim` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the delimiters. |
 | `returnDelims` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):flag indicating whether to return the delimiters as tokens. |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------|-----------------|

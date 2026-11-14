@@ -6,6 +6,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 # OnKeyguardExitResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/KeyguardManager.OnKeyguardExitResult "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnKeyguardExitResult

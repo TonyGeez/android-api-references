@@ -9,6 +9,7 @@ abstract class ExemptionMechanismSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.ExemptionMechanismSpi](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`ExemptionMechanism`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular exemption mechanism.
@@ -24,9 +25,11 @@ This class defines the*Service Provider Interface* (**SPI** ) for the`ExemptionM
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineGenExemptionBlob())`()` Generates the exemption mechanism key blob. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGenExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineGenExemptionBlob(kotlin.ByteArray,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the exemption mechanism key blob, and stores the result in the`output`buffer, starting at`outputOffset`inclusive. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetOutputSize](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineGetOutputSize(kotlin.Int))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next [engineGenExemptionBlob](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineGenExemptionBlob(kotlin.ByteArray,%20kotlin.Int))operation, given the input length`inputLen`(in bytes). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineInit(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Initializes this exemption mechanism with a key. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineInit(java.security.Key,%20java.security.AlgorithmParameters))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#)!`)` Initializes this exemption mechanism with a key and a set of algorithm parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/crypto/ExemptionMechanismSpi#engineInit(java.security.Key,%20java.security.spec.AlgorithmParameterSpec))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Initializes this exemption mechanism with a key and a set of algorithm parameters. |
+| --- | --- |
 
 ## Public constructors
 
@@ -153,6 +156,7 @@ If this exemption mechanism requires any algorithm parameters and`params`is null
 | `java.security.InvalidKeyException` | if the given key is inappropriate for this exemption mechanism. |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this exemption mechanism. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of initializing. |
+| --- | --- |
 
 ### engineInit
 
@@ -179,3 +183,4 @@ If this exemption mechanism requires any algorithm parameters and`params`is null
 | `java.security.InvalidKeyException` | if the given key is inappropriate for this exemption mechanism. |
 | `java.security.InvalidAlgorithmParameterException` | if the given algorithm parameters are inappropriate for this exemption mechanism. |
 | `javax.crypto.ExemptionMechanismException` | if problem(s) encountered in the process of initializing. |
+| --- | --- |

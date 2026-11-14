@@ -7,6 +7,7 @@ open class RemoteCallbackList<E : IInterface!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.RemoteCallbackList](https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#) |
 
 Takes care of the grunt work of maintaining a list of remote interfaces, typically for the use of performing callbacks from a `https://developer.android.com/reference/kotlin/android/app/Service.html#` to its clients. In particular, this:
@@ -32,6 +33,7 @@ If a registered interface's process goes away, this class will take care of auto
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_DROP:kotlin.Int` When the callback recipient's process is frozen, callbacks are suppressed as if they never happened. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_ENQUEUE_ALL:kotlin.Int` When the callback recipient's process is frozen, callbacks are enqueued so they're invoked after the recipient is unfrozen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT:kotlin.Int` When the callback recipient's process is frozen, only the most recent callback is enqueued, which is later invoked after the recipient is unfrozen. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_UNSET:kotlin.Int` Callbacks are invoked immediately regardless of the frozen state of the target process. |
 
 | Public constructors ||
@@ -43,18 +45,23 @@ If a registered interface's process goes away, this class will take care of auto
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()()` Use instead to ensure proper handling of frozen processes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#broadcast(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<E>)` Performs `callback` on each registered interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()()` Clean up the state of a broadcast previously initiated by calling `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastCookie(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the cookie associated with the item returned by `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`. |
 | open E | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve an item in the active broadcast that was previously started with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. |
 | open [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)? | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getExecutor()()` Returns the executor used when invoking callbacks asynchronously. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getFrozenCalleePolicy()()` Returns the frozen callee policy. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getMaxQueueSize()()` Returns the max queue size. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCookie(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return any cookie associated with a currently registered interface. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCount()()` Returns the number of registered interfaces. |
 | open E | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackItem(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a currently registered interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()()` Disable this interface list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E)(callbackInterface: E)` Old version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not provide a cookie. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E,%20kotlin.Any)(callbackInterface: E, cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Called when the process hosting an interface in the list has gone away. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E)(callbackInterface: E)` Simple version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not take a cookie object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)(callbackInterface: E, cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Add a new interface to the list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)(callbackInterface: E)` Remove from the list an interface that was previously added with #register. |
 

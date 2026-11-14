@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SubtitleData
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/SubtitleData "View this page in Java") 
+| --- | --- |
 
 ```
 class SubtitleData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.SubtitleData](https://developer.android.com/reference/kotlin/android/media/SubtitleData#) |
 
 Class encapsulating subtitle data, as received through the [MediaPlayer.OnSubtitleDataListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSubtitleDataListener) interface. The subtitle data includes:
@@ -61,6 +63,7 @@ See [MediaPlayer.setOnSubtitleDataListener(android.media.MediaPlayer.OnSubtitleD
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](https://developer.android.com/reference/kotlin/android/media/SubtitleData#getData())`()` Returns the encoded data for the subtitle content. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationUs](https://developer.android.com/reference/kotlin/android/media/SubtitleData#getDurationUs())`()` Returns the duration in microsecond during which the subtitle should be displayed. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeUs](https://developer.android.com/reference/kotlin/android/media/SubtitleData#getStartTimeUs())`()` Returns the media time at which the subtitle should be displayed, expressed in microseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackIndex](https://developer.android.com/reference/kotlin/android/media/SubtitleData#getTrackIndex())`()` Returns the index of the media player track which contains this subtitle data. |
 
 ## Public constructors
@@ -84,6 +87,7 @@ Constructor.
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the media player track which contains this subtitle data. |
 | `startTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time in microsecond for the subtitle data |
 | `durationUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the duration in microsecond for the subtitle data |
+| --- | --- |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the data array for the subtitle data. It should not be null. No data copying is made. |
 
 ## Public methods

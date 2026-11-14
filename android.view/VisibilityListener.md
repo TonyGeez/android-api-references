@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # VisibilityListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface VisibilityListener

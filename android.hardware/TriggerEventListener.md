@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # TriggerEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/TriggerEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class TriggerEventListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#) |
 
 This class is the listener used to handle Trigger Sensors. Trigger Sensors are sensors that trigger an event and are automatically disabled. [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int) is one such example.

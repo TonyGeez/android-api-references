@@ -7,6 +7,7 @@ class SessionConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.SessionConfig](https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#) |
 
 Defines the ranging session configurations.
@@ -33,12 +34,15 @@ This class allows apps to set various parameters related to a ranging session.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getAntennaMode()()` Returns antenna mode of the session. |
+| --- | --- |
 | [DataNotificationConfig](https://developer.android.com/reference/kotlin/android/ranging/DataNotificationConfig) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getDataNotificationConfig()()` Returns the data notification configuration for this preference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getRangingMeasurementsLimit()()` Returns the configured ranging measurements limit for the ranging session. |
 | [SensorFusionParams](https://developer.android.com/reference/kotlin/android/ranging/SensorFusionParams) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getSensorFusionParams()()` Returns the sensor fusion parameters used for this preference. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#isAngleOfArrivalNeeded()()` Returns whether hardware-provided Angle-of-arrival was requested by the app. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

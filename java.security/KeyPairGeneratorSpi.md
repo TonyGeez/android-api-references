@@ -9,9 +9,11 @@ abstract class KeyPairGeneratorSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.KeyPairGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/KeyPairGeneratorSpi#) |
 
 | Known Direct Subclasses [KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator) |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [KeyPairGenerator](https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator) | The KeyPairGenerator class is used to generate pairs of public and private keys. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyPairGenerator`class, which is used to generate pairs of public and private keys.
 
@@ -30,6 +32,7 @@ In case the client does not explicitly initialize the KeyPairGenerator (via a ca
 | abstract [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair)! | [generateKeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPairGeneratorSpi#generateKeyPair())`()` Generates a key pair. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGeneratorSpi#initialize(kotlin.Int,%20java.security.SecureRandom))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes the key pair generator for a certain keysize, using the default parameter set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](https://developer.android.com/reference/kotlin/java/security/KeyPairGeneratorSpi#initialize(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes the key pair generator using the specified parameter set and user-provided source of randomness. |
+| --- | --- |
 
 ## Public constructors
 

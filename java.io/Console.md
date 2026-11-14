@@ -9,6 +9,7 @@ class Console : Flushable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.Console](https://developer.android.com/reference/kotlin/java/io/Console#) |
 
 Methods to access the character-based console device, if any, associated with the current Java virtual machine.
@@ -45,12 +46,15 @@ Unless otherwise specified, passing a`null`argument to any method in this class 
 | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)! | [charset](https://developer.android.com/reference/kotlin/java/io/Console#charset())`()` Returns the [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) object used for the`Console`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/Console#flush())`()` Flushes the console and forces any buffered output to be written immediately . |
 | [Console](https://developer.android.com/reference/kotlin/java/io/Console#)! | [format](https://developer.android.com/reference/kotlin/java/io/Console#format(kotlin.String,%20kotlin.Any))`(`fmt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes a formatted string to this console's output stream using the specified format string and arguments. |
+| --- | --- |
 | [Console](https://developer.android.com/reference/kotlin/java/io/Console#)! | [printf](https://developer.android.com/reference/kotlin/java/io/Console#printf(kotlin.String,%20kotlin.Any))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` A convenience method to write a formatted string to this console's output stream using the specified format string and arguments. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](https://developer.android.com/reference/kotlin/java/io/Console#readLine())`()` Reads a single line of text from the console. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](https://developer.android.com/reference/kotlin/java/io/Console#readLine(kotlin.String,%20kotlin.Any))`(`fmt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Provides a formatted prompt, then reads a single line of text from the console. |
+| --- | --- |
 | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [readPassword](https://developer.android.com/reference/kotlin/java/io/Console#readPassword())`()` Reads a password or passphrase from the console with echoing disabled |
 | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [readPassword](https://developer.android.com/reference/kotlin/java/io/Console#readPassword(kotlin.String,%20kotlin.Any))`(`fmt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Provides a formatted prompt, then reads a password or passphrase from the console with echoing disabled. |
 | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader)! | [reader](https://developer.android.com/reference/kotlin/java/io/Console#reader())`()` Retrieves the unique [Reader](https://developer.android.com/reference/kotlin/java/io/Reader) object associated with this console. |
+| --- | --- |
 | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter)! | [writer](https://developer.android.com/reference/kotlin/java/io/Console#writer())`()` Retrieves the unique [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter) object associated with this console. |
 
 ## Public methods

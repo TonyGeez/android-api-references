@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PopupWindow
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/PopupWindow "View this page in Java") 
+| --- | --- |
 
 ```
 open class PopupWindow
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.PopupWindow](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#) |
 
 This class represents a popup window that can be used to display an arbitrary view. The popup window is a floating container that appears on top of the current activity.
@@ -34,15 +36,18 @@ Popup enter and exit transitions may also be specified in the popup window's sty
 | [`android:overlapAnchor`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | Whether the popup window should overlap its anchor view. |
 | [`android:popupAnimationStyle`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | The animation style to use for the popup window. |
 | [`android:popupBackground`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | The background to use for the popup window. |
+| --- | --- |
 | [`android:popupElevation`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | Window elevation to use for the popup window. |
 | [`android:popupEnterTransition`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | Transition used to move views into the popup window. |
 | [`android:popupExitTransition`](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#attr_PopupWindow) | Transition used to move views out of the popup window. |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_FROM_FOCUSABLE](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_FROM_FOCUSABLE:kotlin.Int) Mode for [setInputMethodMode(int)](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setInputMethodMode(kotlin.Int)): the requirements for the input method should be based on the focusability of the popup. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NEEDED](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_NEEDED:kotlin.Int) Mode for [setInputMethodMode(int)](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setInputMethodMode(kotlin.Int)): this popup always needs to work with an input method, regardless of whether it is focusable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NOT_NEEDED](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_NOT_NEEDED:kotlin.Int) Mode for [setInputMethodMode(int)](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setInputMethodMode(kotlin.Int)): this popup never needs to work with an input method, regardless of whether it is focusable. |
+| --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -61,66 +66,87 @@ Popup enter and exit transitions may also be specified in the popup window's sty
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#dismiss())`()` Disposes of the popup window. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAnimationStyle](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getAnimationStyle())`()` Return the animation style to use the popup appears and disappears |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [getBackground](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getBackground())`()` Return the drawable used as the popup window's background. |
+| --- | --- |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getContentView](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getContentView())`()` Return the view used as the content of the popup window. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getElevation](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getElevation())`()` <br /> |
 | open [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition.html#)? | [getEnterTransition](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getEnterTransition())`()` Returns the enter transition to be used when the popup window is shown. |
+| --- | --- |
 | open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | [getEpicenterBounds](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getEpicenterBounds())`()` Returns bounds which are used as a center of the enter and exit transitions. |
 | open [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition.html#)? | [getExitTransition](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getExitTransition())`()` Returns the exit transition to be used when the popup window is dismissed. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getHeight())`()` Returns the popup's requested height. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputMethodMode](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getInputMethodMode())`()` Return the current value in [setInputMethodMode(int)](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setInputMethodMode(kotlin.Int)). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAvailableHeight](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getMaxAvailableHeight(android.view.View))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` Returns the maximum height that is available for the popup to be completely shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAvailableHeight](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getMaxAvailableHeight(android.view.View,%20kotlin.Int))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`, `yOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the maximum height that is available for the popup to be completely shown. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAvailableHeight](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getMaxAvailableHeight(android.view.View,%20kotlin.Int,%20kotlin.Boolean))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`, `yOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ignoreBottomDecorations:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns the maximum height that is available for the popup to be completely shown, optionally ignoring any bottom decorations such as the input method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getOverlapAnchor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getOverlapAnchor())`()` Returns whether the popup window should overlap its anchor view when displayed as a drop-down. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftInputMode](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getSoftInputMode())`()` Returns the current value in [setSoftInputMode(int)](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setSoftInputMode(kotlin.Int)). |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getWidth())`()` Returns the popup's requested width. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWindowLayoutType](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#getWindowLayoutType())`()` Returns the layout type for this window. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAboveAnchor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isAboveAnchor())`()` Indicates whether the popup is showing above (the y coordinate of the popup's bottom is less than the y coordinate of the anchor) or below the anchor view (the y coordinate of the popup is greater than y coordinate of the anchor's bottom). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAttachedInDecor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isAttachedInDecor())`()` Indicates whether the popup window will be attached in the decor frame of its parent window. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClippedToScreen](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isClippedToScreen())`()` Indicates whether this popup will be clipped to the screen and not to the containing window |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClippingEnabled](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isClippingEnabled())`()` Indicates whether clipping of the popup window is enabled. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFocusable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isFocusable())`()` Indicate whether the popup window can grab the focus. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLaidOutInScreen](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isLaidOutInScreen())`()` Indicates whether the popup window will be forced into using absolute screen coordinates for positioning. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutsideTouchable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isOutsideTouchable())`()` Indicates whether the popup window will be informed of touch events outside of its window. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShowing](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isShowing())`()` Indicate whether this popup window is showing on screen. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSplitTouchEnabled](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isSplitTouchEnabled())`()` Indicates whether the popup window supports splitting touches. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTouchModal](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isTouchModal())`()` Indicates whether outside touches will be sent to this window or other windows behind it |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTouchable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#isTouchable())`()` Indicates whether the popup window receives touch events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnimationStyle](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setAnimationStyle(kotlin.Int))`(`animationStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the animation style resource for this popup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttachedInDecor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setAttachedInDecor(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` This will attach the popup window to the decor frame of the parent window to avoid overlaping with screen decorations like the navigation bar. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundDrawable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setBackgroundDrawable(android.graphics.drawable.Drawable))`(`background:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Specifies the background drawable for this popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClippingEnabled](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setClippingEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allows the popup window to extend beyond the bounds of the screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentView](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setContentView(android.view.View))`(`contentView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` Change the popup's content. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElevation](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setElevation(kotlin.Float))`(`elevation:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the elevation for this popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnterTransition](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setEnterTransition(android.transition.Transition))`(`enterTransition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition.html#)?`)` Sets the enter transition to be used when the popup window is shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEpicenterBounds](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setEpicenterBounds(android.graphics.Rect))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?`)` Sets the bounds used as the epicenter of the enter and exit transitions. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExitTransition](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setExitTransition(android.transition.Transition))`(`exitTransition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition.html#)?`)` Sets the exit transition to be used when the popup window is dismissed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFocusable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setFocusable(kotlin.Boolean))`(`focusable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Changes the focusability of the popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHeight](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setHeight(kotlin.Int))`(`height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the popup's requested height. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIgnoreCheekPress](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setIgnoreCheekPress())`()` Set the flag on popup to ignore cheek press events; by default this flag is set to false which means the popup will not ignore cheek press dispatch events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputMethodMode](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setInputMethodMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Control how the popup operates with an input method: one of [INPUT_METHOD_FROM_FOCUSABLE](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_FROM_FOCUSABLE:kotlin.Int), [INPUT_METHOD_NEEDED](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_NEEDED:kotlin.Int), or [INPUT_METHOD_NOT_NEEDED](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#INPUT_METHOD_NOT_NEEDED:kotlin.Int). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsClippedToScreen](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setIsClippedToScreen(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Clip this popup window to the screen, but not to the containing window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsLaidOutInScreen](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setIsLaidOutInScreen(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allows the popup window to force the flag [WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN](https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_IN_SCREEN:kotlin.Int), overriding default behavior. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setOnDismissListener(android.widget.PopupWindow.OnDismissListener))`(`onDismissListener:` ` [PopupWindow.OnDismissListener](https://developer.android.com/reference/kotlin/android/widget/PopupWindow.OnDismissListener)!`)` Sets the listener to be called when the window is dismissed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutsideTouchable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setOutsideTouchable(kotlin.Boolean))`(`touchable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether the pop-up will be informed of touch events outside of its window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOverlapAnchor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setOverlapAnchor(kotlin.Boolean))`(`overlapAnchor:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the popup window should overlap its anchor view when displayed as a drop-down. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoftInputMode](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setSoftInputMode(kotlin.Int))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the operating mode for the soft input area. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSplitTouchEnabled](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setSplitTouchEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allows the popup window to split touches across other windows that also support split touch. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTouchInterceptor](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setTouchInterceptor(android.view.View.OnTouchListener))`(`l:` ` [View.OnTouchListener](https://developer.android.com/reference/kotlin/android/view/View.OnTouchListener.html#)!`)` Set a callback for all touch events being dispatched to the popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTouchModal](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setTouchModal(kotlin.Boolean))`(`touchModal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this window is touch modal or if outside touches will be sent to other windows behind it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTouchable](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setTouchable(kotlin.Boolean))`(`touchable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Changes the touchability of the popup window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWidth](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setWidth(kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the popup's requested width. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWindowLayoutMode](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setWindowLayoutMode(kotlin.Int,%20kotlin.Int))`(`widthSpec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `heightSpec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the width and height measure specs that are given to the window manager by the popup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWindowLayoutType](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#setWindowLayoutType(kotlin.Int))`(`layoutType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the layout type for this window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showAsDropDown](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#showAsDropDown(android.view.View))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` Display the content view in a popup window anchored to the bottom-left corner of the anchor view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showAsDropDown](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#showAsDropDown(android.view.View,%20kotlin.Int,%20kotlin.Int))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `xoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Display the content view in a popup window anchored to the bottom-left corner of the anchor view offset by the specified x and y coordinates. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showAsDropDown](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#showAsDropDown(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `xoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Displays the content view in a popup window anchored to the corner of another view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [showAtLocation](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#showAtLocation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`parent:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Display the content view in a popup window at the specified location. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update())`()` Updates the state of the popup window, if it is currently being displayed, from the currently set state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update(android.view.View,%20kotlin.Int,%20kotlin.Int))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the position and the dimension of the popup window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`anchor:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `xoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the position and the dimension of the popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the dimension of the popup window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the position and the dimension of the popup window. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/PopupWindow#update(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `force:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Updates the position and the dimension of the popup window. |
 
 ## XML attributes
@@ -326,6 +352,7 @@ The popup does not provide any background. This should be handled by the content
 | `contentView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the popup's content |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's width |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's height |
+| --- | --- |
 
 ### PopupWindow
 
@@ -348,6 +375,7 @@ The popup does not provide any background. This should be handled by the content
 | `contentView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the popup's content |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's width |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's height |
+| --- | --- |
 | `focusable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the popup can be focused, false otherwise |
 
 ### PopupWindow
@@ -602,6 +630,7 @@ Returns the maximum height that is available for the popup to be completely show
 | `anchor` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#):The view on which the popup window must be anchored. This value cannot be`null`. |
 | `yOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):y offset from the view's bottom edge |
 | `ignoreBottomDecorations` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, the height returned will be all the way to the bottom of the display, ignoring any bottom decorations |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -1416,6 +1445,7 @@ If the view later scrolls to move`anchor`to a different location, the popup will
 | `anchor` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the view on which to pin the popup window |
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A horizontal offset from the anchor in pixels |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A vertical offset from the anchor in pixels |
+| --- | --- |
 
 **See Also**
 
@@ -1445,6 +1475,7 @@ If the view later scrolls to move`anchor`to a different location, the popup will
 | `anchor` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the view on which to pin the popup window |
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A horizontal offset from the anchor in pixels |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A vertical offset from the anchor in pixels |
+| --- | --- |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Alignment of the popup relative to the anchor |
 
 **See Also**
@@ -1465,12 +1496,14 @@ open fun showAtLocation(
 ```
 
 Display the content view in a popup window at the specified location. If the popup window cannot fit on screen, it will be clipped. See [android.view.WindowManager.LayoutParams](https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#) for more information on how gravity and the x and y parameters are related. Specifying a gravity of [android.view.Gravity#NO_GRAVITY](https://developer.android.com/reference/kotlin/android/view/Gravity.html#NO_GRAVITY:kotlin.Int) is similar to specifying`Gravity.LEFT | Gravity.TOP`.
+| --- | --- |
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parent` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:a parent view to get the [android.view.View#getWindowToken()](https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken())token from |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the gravity which controls the placement of the popup window |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's x location offset |
+| --- | --- |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the popup's y location offset |
 
 ### update
@@ -1515,6 +1548,7 @@ Calling this function also updates the window with the current popup state as de
 | `anchor` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the popup's anchor view |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new width in pixels, must be \>= 0 or -1 to ignore |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new height in pixels, must be \>= 0 or -1 to ignore |
+| --- | --- |
 
 ### update
 
@@ -1541,6 +1575,7 @@ If the view later scrolls to move`anchor`to a different location, the popup will
 | `anchor` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the popup's anchor view |
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):x offset from the view's left edge |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):y offset from the view's bottom edge |
+| --- | --- |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new width in pixels, must be \>= 0 or -1 to ignore |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new height in pixels, must be \>= 0 or -1 to ignore |
 
@@ -1586,6 +1621,7 @@ Width and height can be set to -1 to update location only. Calling this function
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new x location |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new y location |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new width in pixels, must be \>= 0 or -1 to ignore |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new height in pixels, must be \>= 0 or -1 to ignore |
 
 ### update
@@ -1611,5 +1647,6 @@ Width and height can be set to -1 to update location only. Calling this function
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new x location |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new y location |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new width in pixels, must be \>= 0 or -1 to ignore |
+| --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new height in pixels, must be \>= 0 or -1 to ignore |
 | `force` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to reposition the window even if the specified position already seems to correspond to the LayoutParams,`false`to only reposition if needed |

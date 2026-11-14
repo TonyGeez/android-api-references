@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pDnsSdServiceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pDnsSdServiceRequest : WifiP2pServiceRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest) ||
 | | ↳ | [android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#) |
 
@@ -27,6 +29,7 @@ A class for creating a Bonjour service discovery request for use with [WifiP2pMa
 | openstatic [WifiP2pDnsSdServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#)! | [newInstance](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#newInstance())`()` Create a service discovery request to search all Bonjour services. |
 | openstatic [WifiP2pDnsSdServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#)! | [newInstance](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#newInstance(kotlin.String))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a service discovery to search for Bonjour services with the specified service type. |
 | openstatic [WifiP2pDnsSdServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#)! | [newInstance](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest#newInstance(kotlin.String,%20kotlin.String))`(`instanceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a service discovery request to get the TXT data from the specified Bonjour service. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

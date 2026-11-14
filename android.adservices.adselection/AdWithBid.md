@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 12](https://developer.android.com/sdkExtensions)
 # AdWithBid
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/AdWithBid "View this page in Java") 
+| --- | --- |
 
 ```
 class AdWithBid : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.AdWithBid](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#) |
 
 Represents an ad and its corresponding bid value after the bid generation step in the ad selection process.
@@ -33,9 +35,11 @@ The ads and their bids are fed into an ad scoring process which will inform the 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [AdData](https://developer.android.com/reference/kotlin/android/adservices/common/AdData.html#) | [getAdData](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#getAdData())`()` <br /> |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getBid](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#getBid())`()` The bid is the amount of money an advertiser has bid during the ad selection process to show an ad. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|

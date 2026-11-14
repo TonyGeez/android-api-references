@@ -5,15 +5,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # BroadcastInfoResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class BroadcastInfoResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#) |
 
 | Known Direct Subclasses [CommandResponse](https://developer.android.com/reference/kotlin/android/media/tv/CommandResponse), [DsmccResponse](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse), [PesResponse](https://developer.android.com/reference/kotlin/android/media/tv/PesResponse), [SectionResponse](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse), [SignalingDataResponse](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse), [StreamEventResponse](https://developer.android.com/reference/kotlin/android/media/tv/StreamEventResponse), [TableResponse](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse), [TimelineResponse](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse), [TsResponse](https://developer.android.com/reference/kotlin/android/media/tv/TsResponse) |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------| | [CommandResponse](https://developer.android.com/reference/kotlin/android/media/tv/CommandResponse) | A response for command from broadcast signal. | | [DsmccResponse](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse) | A response for DSM-CC from broadcast signal. | | [PesResponse](https://developer.android.com/reference/kotlin/android/media/tv/PesResponse) | A response for PES from broadcast signal. | | [SectionResponse](https://developer.android.com/reference/kotlin/android/media/tv/SectionResponse) | A response for Section from broadcast signal. | | [SignalingDataResponse](https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataResponse) | A response for the signaling data from the broadcast signal. | | [StreamEventResponse](https://developer.android.com/reference/kotlin/android/media/tv/StreamEventResponse) | A response for Stream Event from broadcast signal. | | [TableResponse](https://developer.android.com/reference/kotlin/android/media/tv/TableResponse) | A response for Table from broadcast signal. | | [TimelineResponse](https://developer.android.com/reference/kotlin/android/media/tv/TimelineResponse) | A response for Timeline from broadcast signal. | | [TsResponse](https://developer.android.com/reference/kotlin/android/media/tv/TsResponse) | A response for TS (transport stream) from broadcast signal. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A response of [BroadcastInfoRequest](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest) for information retrieved from broadcast signal.
 
@@ -24,6 +27,7 @@ A response of [BroadcastInfoRequest](https://developer.android.com/reference/kot
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_RESULT_CANCEL](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_CANCEL:kotlin.Int) Response result: cancel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_ERROR:kotlin.Int) Response result: error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONSE_RESULT_OK](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_OK:kotlin.Int) Response result: OK. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,9 +38,11 @@ A response of [BroadcastInfoRequest](https://developer.android.com/reference/kot
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestId](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#getRequestId())`()` Gets the ID of the request. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResponseResult](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#getResponseResult())`()` Gets the result for the response. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequence](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#getSequence())`()` Gets the sequence number which indicates the order of related responses. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#getType())`()` Gets the broadcast info type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

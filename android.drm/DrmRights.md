@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmRights
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmRights "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmRights
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#) |
 
 | **This class was deprecated in API level 30.**
@@ -41,6 +43,7 @@ Please note that the account id and subscription id is not mandatory by all DRM 
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getAccountId())`()` Retrieves the account ID associated with this`DrmRights`object. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getData())`()` Retrieves the rights data associated with this`DrmRights`object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getMimeType())`()` Retrieves the MIME type associated with this`DrmRights`object. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getSubscriptionId())`()` Retrieves the subscription ID associated with this`DrmRights`object. |
 
 ## Public constructors
@@ -114,6 +117,7 @@ Creates a`DrmRights`object with the given parameters.
 | `rightsFilePath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path to the file containing rights information. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:MIME type. Must not be null or an empty string. |
 | `accountId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Account ID of the user. |
+| --- | --- |
 
 ### DrmRights
 
@@ -134,6 +138,7 @@ Creates a`DrmRights`object with the given parameters.
 | `rightsFilePath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path to the file containing rights information. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:MIME type. Must not be null or an empty string. |
 | `accountId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Account ID of the user. |
+| --- | --- |
 | `subscriptionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Subscription ID of the user. |
 
 ## Public methods

@@ -7,6 +7,7 @@ class SpellCheckerInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.SpellCheckerInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#) |
 
 This class is used to specify meta information of a spell checker. The XML file specifying metadata for a spell checker service must adhere to the following constraints:
@@ -28,12 +29,15 @@ This class is used to specify meta information of a spell checker. The XML file 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#describeContents()()` Used to make this class parcelable. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getComponent()()` Return the component of the service that implements. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getId()()` Return a unique ID for this spell checker. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getPackageName()()` Return the . |
 | [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getServiceInfo()()` Return the raw information about the Service implementing this spell checker. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSettingsActivity()()` Return the class name of an activity that provides a settings UI. |
+| --- | --- |
 | [SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSubtypeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the subtype at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSubtypeCount()()` Return the count of the subtypes. |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed icon for this spell checker. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed label for this spell checker. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 

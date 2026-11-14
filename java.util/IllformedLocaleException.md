@@ -9,9 +9,11 @@ open class IllformedLocaleException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#) |
 
 Thrown by methods in [Locale](https://developer.android.com/reference/kotlin/java/util/Locale) and [Locale.Builder](https://developer.android.com/reference/kotlin/java/util/Locale.Builder) to indicate that an argument is not a well-formed BCP 47 tag.

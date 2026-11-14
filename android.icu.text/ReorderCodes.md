@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ReorderCodes
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Collator.ReorderCodes "View this page in Java") 
+| --- | --- |
 
 ```
 interface ReorderCodes
@@ -21,12 +22,15 @@ Reordering codes for non-script groups that can be reordered under collation.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#CURRENCY:kotlin.Int) Characters with the currency property. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#DEFAULT:kotlin.Int) A special reordering code that is used to specify the default reordering codes for a locale. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIGIT](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#DIGIT:kotlin.Int) Characters with the digit property. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIRST](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#FIRST:kotlin.Int) The first entry in the enumeration of reordering groups. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#NONE:kotlin.Int) A special reordering code that is used to specify no reordering codes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHERS](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#OTHERS:kotlin.Int) A special reordering code that is used to specify all other codes used for reordering except for the codes listed as ReorderingCodes and those listed explicitly in a reordering. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#PUNCTUATION:kotlin.Int) Characters with the punctuation property. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPACE](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#SPACE:kotlin.Int) Characters with the space property. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYMBOL](https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes#SYMBOL:kotlin.Int) Characters with the symbol property. |
+| --- | --- |
 
 ## Constants
 

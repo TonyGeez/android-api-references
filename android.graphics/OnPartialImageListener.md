@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnPartialImageListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnPartialImageListener

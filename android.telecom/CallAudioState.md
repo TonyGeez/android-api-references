@@ -3,12 +3,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # CallAudioState
 
 Kotlin | [Java](https://developer.android.com/reference/android/telecom/CallAudioState "View this page in Java")
+| --- | --- |
 
 ```
 class CallAudioState : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telecom.CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#) |
 
 Encapsulates the telecom audio state, including the current audio routing, supported audio routing and mute.
@@ -20,9 +22,11 @@ Encapsulates the telecom audio state, including the current audio routing, suppo
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int` Direct the audio stream through Bluetooth. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_EARPIECE:kotlin.Int` Direct the audio stream through the device's earpiece. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_SPEAKER:kotlin.Int` Direct the audio stream through the device's speakerphone. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_STREAMING:kotlin.Int` Direct the audio stream through another device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_HEADSET:kotlin.Int` Direct the audio stream through a wired headset. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_OR_EARPIECE:kotlin.Int` Direct the audio stream through the device's earpiece or wired headset if one is connected. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -37,12 +41,15 @@ Encapsulates the telecom audio state, including the current audio routing, suppo
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#audioRouteToString(kotlin.Int)(route: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the provided audio route into a human readable string representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getActiveBluetoothDevice()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getRoute()()` <br /> |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedBluetoothDevices()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedRouteMask()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#isMuted()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes AudioState object into a serializeable Parcel. |
 
 | Properties ||
@@ -143,6 +150,7 @@ Constructor for a `https://developer.android.com/reference/kotlin/android/teleco
 | `muted` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the call is muted, `false` otherwise. |
 | `route` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The current audio route being used. Allowed values: `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_EARPIECE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_HEADSET:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_SPEAKER:kotlin.Int` Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_EARPIECE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_SPEAKER:kotlin.Int` |
 | `supportedRouteMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bit mask of all routes supported by this call. This should be a bitwise combination of the following values: `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_EARPIECE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_HEADSET:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_SPEAKER:kotlin.Int` Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_EARPIECE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_WIRED_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_SPEAKER:kotlin.Int` |
+| --- | --- |
 
 ## Public methods
 

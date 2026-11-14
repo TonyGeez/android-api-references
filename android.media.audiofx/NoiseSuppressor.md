@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # NoiseSuppressor
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/NoiseSuppressor "View this page in Java") 
+| --- | --- |
 
 ```
 open class NoiseSuppressor : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.NoiseSuppressor](https://developer.android.com/reference/kotlin/android/media/audiofx/NoiseSuppressor#) |
 

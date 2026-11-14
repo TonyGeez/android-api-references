@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # NetworkCapabilities
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/NetworkCapabilities "View this page in Java")
+| --- | --- |
 
 ```
 class NetworkCapabilities : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#) |
 
 Representation of the capabilities of an active network.
@@ -44,51 +46,67 @@ Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequ
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_CAPTIVE_PORTAL:kotlin.Int` Indicates that this network was found to have a captive portal in place last time it was probed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_CBS:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's CBS servers, used for carrier specific services. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_DUN:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's DUN or tethering gateway. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_EIMS:kotlin.Int` Indicates this is a network that has the ability to reach a carrier's Emergency IMS servers or other services, used for network signaling during emergency calls. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_ENTERPRISE:kotlin.Int` Indicates that this network is intended for enterprise use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_FOREGROUND:kotlin.Int` Indicates that this network is available for use by apps, and not a network that is being kept up in the background to facilitate fast network switching. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_FOTA:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's FOTA portal, used for over the air updates. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_HEAD_UNIT:kotlin.Int` Indicates that this network is connected to an automotive head unit. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_IA:kotlin.Int` Indicates this is a network that has the ability to reach a carrier's Initial Attach servers. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_IMS:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's IMS servers, used for network registration and signaling. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_INTERNET:kotlin.Int` Indicates that this network should be able to reach the internet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_LOCAL_NETWORK:kotlin.Int` Indicates that this network is a local network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_MCX:kotlin.Int` Indicates this is a network that has the ability to reach a carrier's Mission Critical servers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_MMS:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's MMSC for sending and receiving MMS messages. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_MMTEL:kotlin.Int` Indicates that this network has ability to support MMTEL (Multimedia Telephony service). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINED:kotlin.Int` Indicates that this is not a bandwidth-constrained network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_CONGESTED:kotlin.Int` Indicates that this network is not congested. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_METERED:kotlin.Int` Indicates that this network is unmetered. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_RESTRICTED:kotlin.Int` Indicates that this network is available for general use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_ROAMING:kotlin.Int` Indicates that this network is not roaming. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_SUSPENDED:kotlin.Int` Indicates that this network is not currently suspended. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_VPN:kotlin.Int` Indicates that this network is not a VPN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_PRIORITIZE_BANDWIDTH:kotlin.Int` Indicates that this network should be able to prioritize bandwidth for the internet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_PRIORITIZE_LATENCY:kotlin.Int` Indicates that this network should be able to prioritize latency for the internet. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_PRIORITIZE_UNIFIED_COMMUNICATIONS:kotlin.Int` Indicates that this network is optimized for real-time unified communications, such as Over-the-Top (OTT) voice and video calls. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_RCS:kotlin.Int` Indicates this is a network that has the ability to reach a carrier's RCS servers, used for Rich Communication Services. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_SUPL:kotlin.Int` Indicates this is a network that has the ability to reach the carrier's SUPL server, used to retrieve GPS information. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_TEMPORARILY_NOT_METERED:kotlin.Int` Indicates that this network is temporarily unmetered. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_TRUSTED:kotlin.Int` Indicates that the user has indicated implicit trust of this network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_VALIDATED:kotlin.Int` Indicates that connectivity on this network was successfully validated. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_WIFI_P2P:kotlin.Int` Indicates this is a network that has the ability to reach a Wi-Fi direct peer. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_XCAP:kotlin.Int` Indicates this is a network that has the ability to reach a carrier's XCAP servers, used for configuration and control. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_ENTERPRISE_ID_1:kotlin.Int` Enterprise capability identifier 1. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_ENTERPRISE_ID_2:kotlin.Int` Enterprise capability identifier 2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_ENTERPRISE_ID_3:kotlin.Int` Enterprise capability identifier 3. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_ENTERPRISE_ID_4:kotlin.Int` Enterprise capability identifier 4. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_ENTERPRISE_ID_5:kotlin.Int` Enterprise capability identifier 5. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#SIGNAL_STRENGTH_UNSPECIFIED:kotlin.Int` Magic value that indicates no signal strength provided. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_BLUETOOTH:kotlin.Int` Indicates this network uses a Bluetooth transport. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_CELLULAR:kotlin.Int` Indicates this network uses a Cellular transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_ETHERNET:kotlin.Int` Indicates this network uses an Ethernet transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_LOWPAN:kotlin.Int` Indicates this network uses a LoWPAN transport. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_SATELLITE:kotlin.Int` Indicates this network uses a Satellite transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_THREAD:kotlin.Int` Indicates this network uses a Thread transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_USB:kotlin.Int` Indicates this network uses a USB transport. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_VPN:kotlin.Int` Indicates this network uses a VPN transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_WIFI:kotlin.Int` Indicates this network uses a Wi-Fi transport. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_WIFI_AWARE:kotlin.Int` Indicates this network uses a Wi-Fi Aware transport. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -104,18 +122,23 @@ Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequ
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getCapabilities()()` Gets all the capabilities set on this `NetworkCapability` instance. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getEnterpriseIds()()` Get enteprise identifiers set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkDownstreamBandwidthKbps()()` Retrieves the downstream bandwidth for this network in Kbps. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkUpstreamBandwidthKbps()()` Retrieves the upstream bandwidth for this network in Kbps. |
+| --- | --- |
 | [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getNetworkSpecifier()()` Gets the optional bearer specific network specifier. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getOwnerUid()()` Retrieves the UID of the app that owns this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSignalStrength()()` Retrieves the signal strength. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSubscriptionIds()()` Gets the subscription ID set that associated to this network or request. |
 | [TransportInfo](https://developer.android.com/reference/kotlin/android/net/TransportInfo)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()()` Returns a transport-specific information container. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasCapability(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of a capability on this instance. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasEnterpriseId(kotlin.Int)(enterpriseId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of an enterprise capability identifier on this instance. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasTransport(kotlin.Int)(transportType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of a transport on this instance. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

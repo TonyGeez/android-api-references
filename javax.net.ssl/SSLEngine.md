@@ -9,6 +9,7 @@ abstract class SSLEngine
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#) |
 
 A class which enables secure communications using protocols such as the Secure Sockets Layer (SSL) or [IETF RFC 2246 "Transport Layer Security" (TLS)](http://www.ietf.org/rfc/rfc2246.txt) protocols, but is transport independent.
@@ -146,6 +147,7 @@ Applications might choose to process delegated tasks in different threads. When 
 | SSLv3 | 1--25 | 1--22 |
 | TLSv1 | 1+ | 1+ |
 | TLSv1.1 | 20+ | 20+ |
+| --- | --- | --- |
 | TLSv1.2 | 20+ | 20+ |
 | TLSv1.3 | 29+ | 29+ |
 
@@ -156,123 +158,163 @@ Applications might choose to process delegated tasks in different threads. When 
 | SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_DSS_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA | 9-22 | 9-19 |
 | SSL_DHE_RSA_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA | 9-22 | |
 | SSL_DH_anon_EXPORT_WITH_RC4_40_MD5 | 9-22 | |
 | SSL_DH_anon_WITH_3DES_EDE_CBC_SHA | 9-22 | |
+| --- | --- | --- |
 | SSL_DH_anon_WITH_DES_CBC_SHA | 9-22 | |
 | SSL_DH_anon_WITH_RC4_128_MD5 | 9-22 | |
 | SSL_RSA_EXPORT_WITH_DES40_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_EXPORT_WITH_RC4_40_MD5 | 9-22 | 9-19 |
 | SSL_RSA_WITH_3DES_EDE_CBC_SHA | 9+ | 9-19 |
 | SSL_RSA_WITH_DES_CBC_SHA | 9-22 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_WITH_NULL_MD5 | 9-22 | |
 | SSL_RSA_WITH_NULL_SHA | 9-22 | |
 | SSL_RSA_WITH_RC4_128_MD5 | 9-25 | 9-19 |
+| --- | --- | --- |
 | SSL_RSA_WITH_RC4_128_SHA | 9-25 | 9-23 |
 | TLS_AES_128_GCM_SHA256 | 29+ | 29+ |
 | TLS_AES_256_GCM_SHA384 | 29+ | 29+ |
+| --- | --- | --- |
 | TLS_CHACHA20_POLY1305_SHA256 | 29+ | 29+ |
 | TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA | 1-8 | 1-8 |
 | TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA | 1-8 | 1-8 |
+| --- | --- | --- |
 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA | 9-22 | 9-22 |
 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 | 20-22 | |
 | TLS_DHE_DSS_WITH_AES_128_GCM_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA | 9-22 | 20-22 |
 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA256 | 20-22 | |
 | TLS_DHE_DSS_WITH_AES_256_GCM_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_DHE_DSS_WITH_DES_CBC_SHA | 1-8 | 1-8 |
 | TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA | 1-8 | 1-8 |
 | TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA | 1-8 | 1-8 |
+| --- | --- | --- |
 | TLS_DHE_RSA_WITH_AES_128_CBC_SHA | 9-25 | 9-25 |
 | TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 | 20-25 | |
 | TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 | 20-25 | 20-25 |
+| --- | --- | --- |
 | TLS_DHE_RSA_WITH_AES_256_CBC_SHA | 9-25 | 20-25 |
 | TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 | 20-25 | |
 | TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 | 20-25 | 20-25 |
+| --- | --- | --- |
 | TLS_DHE_RSA_WITH_DES_CBC_SHA | 1-8 | 1-8 |
 | TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA | 1-8 | |
 | TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA | 1-8 | |
+| --- | --- | --- |
 | TLS_DH_DSS_WITH_DES_CBC_SHA | 1-8 | |
 | TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA | 1-8 | |
 | TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA | 1-8 | |
+| --- | --- | --- |
 | TLS_DH_RSA_WITH_DES_CBC_SHA | 1-8 | |
 | TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA | 1-8 | |
 | TLS_DH_anon_WITH_3DES_EDE_CBC_SHA | 1-8 | |
+| --- | --- | --- |
 | TLS_DH_anon_WITH_AES_128_CBC_SHA | 9-22 | |
 | TLS_DH_anon_WITH_AES_128_CBC_SHA256 | 20-22 | |
 | TLS_DH_anon_WITH_AES_128_GCM_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_DH_anon_WITH_AES_256_CBC_SHA | 9-22 | |
 | TLS_DH_anon_WITH_AES_256_CBC_SHA256 | 20-22 | |
 | TLS_DH_anon_WITH_AES_256_GCM_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_DH_anon_WITH_DES_CBC_SHA | 1-8 | |
 | TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA | 20-22 | |
 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
 | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 | 20-28 | |
 | TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
 | TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
+| --- | --- | --- |
 | TLS_ECDHE_ECDSA_WITH_NULL_SHA | 20-22 | |
 | TLS_ECDHE_ECDSA_WITH_RC4_128_SHA | 20-25 | 20-23 |
 | TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA | 21+ | 21+ |
+| --- | --- | --- |
 | TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA | 21+ | 21+ |
 | TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
 | TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA | 20+ | 20+ |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA | 20+ | 20+ |
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 | 20-28 | |
 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 | 24+ | 24+ |
 | TLS_ECDHE_RSA_WITH_NULL_SHA | 20-22 | |
 | TLS_ECDHE_RSA_WITH_RC4_128_SHA | 20-25 | 20-23 |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_NULL_SHA | 20-22 | |
 | TLS_ECDH_ECDSA_WITH_RC4_128_SHA | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA | 20-22 | |
 | TLS_ECDH_RSA_WITH_AES_128_CBC_SHA | 20-22 | |
 | TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 | 20-22 | |
 | TLS_ECDH_RSA_WITH_AES_256_CBC_SHA | 20-22 | |
 | TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384 | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384 | 20-22 | |
 | TLS_ECDH_RSA_WITH_NULL_SHA | 20-22 | |
 | TLS_ECDH_RSA_WITH_RC4_128_SHA | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA | 20-22 | |
 | TLS_ECDH_anon_WITH_AES_128_CBC_SHA | 20-22 | |
 | TLS_ECDH_anon_WITH_AES_256_CBC_SHA | 20-22 | |
+| --- | --- | --- |
 | TLS_ECDH_anon_WITH_NULL_SHA | 20-22 | |
 | TLS_ECDH_anon_WITH_RC4_128_SHA | 20-22 | |
 | TLS_EMPTY_RENEGOTIATION_INFO_SCSV | 20+ | 20+ |
+| --- | --- | --- |
 | TLS_FALLBACK_SCSV | 21+ | |
 | TLS_NULL_WITH_NULL_NULL | 1-8 | |
 | TLS_PSK_WITH_3DES_EDE_CBC_SHA | 21-22 | |
+| --- | --- | --- |
 | TLS_PSK_WITH_AES_128_CBC_SHA | 21+ | 21+ |
 | TLS_PSK_WITH_AES_256_CBC_SHA | 21+ | 21+ |
 | TLS_PSK_WITH_RC4_128_SHA | 21-25 | |
+| --- | --- | --- |
 | TLS_RSA_EXPORT_WITH_DES40_CBC_SHA | 1-8 | 1-8 |
 | TLS_RSA_WITH_3DES_EDE_CBC_SHA | 1-8 | 1-8 |
 | TLS_RSA_WITH_AES_128_CBC_SHA | 9+ | 9+ |
+| --- | --- | --- |
 | TLS_RSA_WITH_AES_128_CBC_SHA256 | 20-28 | |
 | TLS_RSA_WITH_AES_128_GCM_SHA256 | 20+ | 20+ |
 | TLS_RSA_WITH_AES_256_CBC_SHA | 9+ | 20+ |
+| --- | --- | --- |
 | TLS_RSA_WITH_AES_256_CBC_SHA256 | 20-28 | |
 | TLS_RSA_WITH_AES_256_GCM_SHA384 | 20+ | 20+ |
 | TLS_RSA_WITH_DES_CBC_SHA | 1-8 | 1-8 |
+| --- | --- | --- |
 | TLS_RSA_WITH_NULL_MD5 | 1-8 | |
 | TLS_RSA_WITH_NULL_SHA | 1-8 | |
 | TLS_RSA_WITH_NULL_SHA256 | 20-22 | |
+| --- | --- | --- |
 
 *NOTE* : PSK cipher suites are enabled by default only if the`SSLContext`through which the engine was created has been initialized with a`PSKKeyManager`.
 
@@ -288,39 +330,51 @@ Applications might choose to process delegated tasks in different threads. When 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginHandshake](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#beginHandshake())`()` Initiates handshaking (initial or renegotiation) on this SSLEngine. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeInbound](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#closeInbound())`()` Signals that no more inbound network data will be sent to this`SSLEngine`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeOutbound](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#closeOutbound())`()` Signals that no more outbound application data will be sent on this`SSLEngine`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getApplicationProtocol](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getApplicationProtocol())`()` Returns the most recent application protocol value negotiated for this connection. |
 | abstract [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)! | [getDelegatedTask](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getDelegatedTask())`()` Returns a delegated`Runnable`task for this`SSLEngine`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnableSessionCreation](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getEnableSessionCreation())`()` Returns true if new SSL sessions may be established by this engine. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getEnabledCipherSuites())`()` Returns the names of the SSL cipher suites which are currently enabled for use on this engine. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getEnabledProtocols())`()` Returns the names of the protocol versions which are currently enabled for use with this`SSLEngine`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHandshakeApplicationProtocol](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getHandshakeApplicationProtocol())`()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
+| --- | --- |
 | open [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\< [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getHandshakeApplicationProtocolSelector](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getHandshakeApplicationProtocolSelector())`()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
 | open [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | [getHandshakeSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getHandshakeSession())`()` Returns the`SSLSession`being constructed during a SSL/TLS handshake. |
 | abstract [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)! | [getHandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getHandshakeStatus())`()` Returns the current handshake status for this`SSLEngine`. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNeedClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getNeedClientAuth())`()` Returns true if the engine will*require*client authentication. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPeerHost](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getPeerHost())`()` Returns the host name of the peer. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerPort](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getPeerPort())`()` Returns the port number of the peer. |
+| --- | --- |
 | open [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [getSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getSSLParameters())`()` Returns the SSLParameters in effect for this SSLEngine. |
 | abstract [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | [getSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getSession())`()` Returns the`SSLSession`in use in this`SSLEngine`. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getSupportedCipherSuites())`()` Returns the names of the cipher suites which could be enabled for use on this engine. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getSupportedProtocols())`()` Returns the names of the protocols which could be enabled for use with this`SSLEngine`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseClientMode](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getUseClientMode())`()` Returns true if the engine is set to use client mode when handshaking. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getWantClientAuth())`()` Returns true if the engine will*request*client authentication. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInboundDone](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#isInboundDone())`()` Returns whether [unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#unwrap(java.nio.ByteBuffer,%20java.nio.ByteBuffer))will accept any more inbound data messages. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutboundDone](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#isOutboundDone())`()` Returns whether [wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#wrap(java.nio.ByteBuffer,%20java.nio.ByteBuffer))will produce any more outbound data messages. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableSessionCreation](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setEnableSessionCreation(kotlin.Boolean))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether new SSL sessions may be established by this engine. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setEnabledCipherSuites(kotlin.Array))`(`suites:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the cipher suites enabled for use on this engine. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setEnabledProtocols(kotlin.Array))`(`protocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set the protocol versions enabled for use on this engine. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHandshakeApplicationProtocolSelector](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction))`(`selector:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)< [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNeedClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setNeedClientAuth(kotlin.Boolean))`(`need:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*require*client authentication. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setSSLParameters(javax.net.ssl.SSLParameters))`(`params:` ` [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)!`)` Applies SSLParameters to this engine. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseClientMode](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setUseClientMode(kotlin.Boolean))`(`mode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to use client (or server) mode when handshaking. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWantClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setWantClientAuth(kotlin.Boolean))`(`want:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*request*client authentication. |
 | open [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [unwrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#unwrap(java.nio.ByteBuffer,%20java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Attempts to decode SSL/TLS network data into a plaintext application data buffer. |
 | open [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [unwrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#unwrap(java.nio.ByteBuffer,%20kotlin.Array))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`)` Attempts to decode SSL/TLS network data into a sequence of plaintext application data buffers. |
+| --- | --- |
 | abstract [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [unwrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#unwrap(java.nio.ByteBuffer,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to decode SSL/TLS network data into a subsequence of plaintext application data buffers. |
 | open [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [wrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#wrap(java.nio.ByteBuffer,%20java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Attempts to encode a buffer of plaintext application data into SSL/TLS network data. |
 | abstract [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [wrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#wrap(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20java.nio.ByteBuffer))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Attempts to encode plaintext bytes from a subsequence of data buffers into SSL/TLS network data. |
+| --- | --- |
 | open [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult)! | [wrap](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#wrap(kotlin.Array,%20java.nio.ByteBuffer))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`, `dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Attempts to encode plaintext bytes from a sequence of data buffers into SSL/TLS network data. |
 
 ## Protected constructors
@@ -1090,6 +1144,7 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.nio.ReadOnlyBufferException` | if the`dst`buffer is read-only. |
 | `java.lang.IllegalArgumentException` | if either`src`or`dst`is null. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
 **See Also**
@@ -1127,6 +1182,7 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.nio.ReadOnlyBufferException` | if any of the`dst`buffers are read-only. |
 | `java.lang.IllegalArgumentException` | if either`src`or`dsts`is null, or if any element in`dsts`is null. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
 **See Also**
@@ -1165,6 +1221,7 @@ See the class description for more information on engine closure.
 | `src` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:a`ByteBuffer`containing inbound network data. |
 | `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>!:an array of`ByteBuffer`s to hold inbound application data. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be transferred; it must be non-negative and no larger than`dsts.length`. |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; it must be non-negative and no larger than`dsts.length`-`offset`. |
 
 | Return ||
@@ -1176,6 +1233,7 @@ See the class description for more information on engine closure.
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold. |
 | `java.nio.ReadOnlyBufferException` | if any of the`dst`buffers are read-only. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if either`src`or`dsts`is null, or if any element in the`dsts`subsequence specified is null. |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
@@ -1218,6 +1276,7 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.nio.ReadOnlyBufferException` | if the`dst`buffer is read-only. |
 | `java.lang.IllegalArgumentException` | if either`src`or`dst`is null. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
 **See Also**
@@ -1254,6 +1313,7 @@ See the class description for more information on engine closure.
 | `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>!:an array of`ByteBuffers`containing the outbound application data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be retrieved; it must be non-negative and no larger than`srcs.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; it must be non-negative and no larger than`srcs.length`-`offset` |
+| --- | --- |
 | `dst` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:a`ByteBuffer`to hold outbound network data |
 
 | Return ||
@@ -1265,6 +1325,7 @@ See the class description for more information on engine closure.
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.lang.IndexOutOfBoundsException` | if the preconditions on the`offset`and`length`parameters do not hold. |
 | `java.nio.ReadOnlyBufferException` | if the`dst`buffer is read-only. |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if either`srcs`or`dst`is null, or if any element in the`srcs`subsequence specified is null. |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
@@ -1307,6 +1368,7 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 | `javax.net.ssl.SSLException` | A problem was encountered while processing the data that caused the`SSLEngine`to abort. See the class description for more information on engine closure. |
 | `java.nio.ReadOnlyBufferException` | if the`dst`buffer is read-only. |
 | `java.lang.IllegalArgumentException` | if either`srcs`or`dst`is null, or if any element in`srcs`is null. |
+| --- | --- |
 | `java.lang.IllegalStateException` | if the client/server mode has not yet been set. |
 
 **See Also**

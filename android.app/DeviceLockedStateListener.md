@@ -5,6 +5,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # DeviceLockedStateListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/KeyguardManager.DeviceLockedStateListener "View this page in Java") 
+| --- | --- |
 
 ```
 @FunctionalInterface interface DeviceLockedStateListener

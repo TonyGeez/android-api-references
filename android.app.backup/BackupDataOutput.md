@@ -7,6 +7,7 @@ open class BackupDataOutput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#) |
 
 Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` commits information to the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)` method. Data written for backup is presented as a set of "entities," key/value pairs in which each binary data record "value" is named with a string "key."
@@ -38,6 +39,7 @@ static final String MY_STRING_KEY = "storedstring";
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#getQuota()()` Returns the quota in bytes for the application's current backup operation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#getTransportFlags()()` Returns flags with additional information about the backup transport. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityData(kotlin.ByteArray,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write a chunk of data under the current entity to the backup transport. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityHeader(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dataSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Mark the beginning of one record in the backup data stream. |
 
 | Protected methods ||

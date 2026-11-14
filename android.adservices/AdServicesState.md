@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AdServicesState
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/AdServicesState "View this page in Java") 
+| --- | --- |
 
 ```
 open class AdServicesState
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.AdServicesState](https://developer.android.com/reference/kotlin/android/adservices/AdServicesState#) |
 
 This class specifies the state of the APIs exposed by AdServicesApi apk.

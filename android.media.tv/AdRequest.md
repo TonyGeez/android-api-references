@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # AdRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/AdRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class AdRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.AdRequest](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#) |
 
 An advertisement request which can be sent to TV input to request AD operations.
@@ -36,12 +38,15 @@ An advertisement request which can be sent to TV input to request AD operations.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEchoIntervalMillis](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getEchoIntervalMillis())`()` Gets the echo interval in milliseconds. |
 | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | [getFileDescriptor](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getFileDescriptor())`()` Gets the file descriptor of the AD media. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getId())`()` Gets the ID of AD request. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMediaFileType](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getMediaFileType())`()` Gets the media file type such as mp4, mob, avi. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetadata](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getMetadata())`()` Gets the metadata of the media file. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestType](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getRequestType())`()` Gets the request type. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeMillis](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getStartTimeMillis())`()` Gets the start time of the AD media in milliseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStopTimeMillis](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getStopTimeMillis())`()` Gets the stop time of the AD media in milliseconds. |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getUri](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getUri())`()` Gets the URI of the AD media. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -97,6 +102,7 @@ AdRequest(
 | `requestType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.media.tv.AdRequest#REQUEST_TYPE_START](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#REQUEST_TYPE_START:kotlin.Int), or [android.media.tv.AdRequest#REQUEST_TYPE_STOP](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#REQUEST_TYPE_STOP:kotlin.Int) |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:This value may be`null`. |
 | `metadata` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
+| --- | --- |
 
 ### AdRequest
 
@@ -119,6 +125,7 @@ AdRequest(
 | `requestType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.media.tv.AdRequest#REQUEST_TYPE_START](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#REQUEST_TYPE_START:kotlin.Int), or [android.media.tv.AdRequest#REQUEST_TYPE_STOP](https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#REQUEST_TYPE_STOP:kotlin.Int) |
 | `fileDescriptor` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)?:This value may be`null`. |
 | `mediaFileType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
+| --- | --- |
 | `metadata` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
 
 ## Public methods

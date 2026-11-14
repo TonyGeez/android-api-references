@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # SipErrorCode
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/sip/SipErrorCode "View this page in Java") 
+| --- | --- |
 
 ```
 open class SipErrorCode
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.sip.SipErrorCode](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#) |
 
 | **This class was deprecated in API level 31.**
@@ -27,15 +29,19 @@ Defines error codes returned during SIP actions. For example, during [onRegistra
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLIENT_ERROR](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#CLIENT_ERROR:kotlin.Int) When some error occurs on the device, possibly due to a bug. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CROSS_DOMAIN_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#CROSS_DOMAIN_AUTHENTICATION:kotlin.Int) Cross-domain authentication required. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_CONNECTION_LOST](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#DATA_CONNECTION_LOST:kotlin.Int) When data connection is lost. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_CREDENTIALS](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#INVALID_CREDENTIALS:kotlin.Int) When invalid credentials are provided. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_REMOTE_URI](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#INVALID_REMOTE_URI:kotlin.Int) When the remote URI is not valid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IN_PROGRESS](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#IN_PROGRESS:kotlin.Int) The client is in a transaction and cannot initiate a new one. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_ERROR](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#NO_ERROR:kotlin.Int) Not an error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PEER_NOT_REACHABLE](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#PEER_NOT_REACHABLE:kotlin.Int) When the peer is not reachable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVER_ERROR](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#SERVER_ERROR:kotlin.Int) When server responds with an error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVER_UNREACHABLE](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#SERVER_UNREACHABLE:kotlin.Int) When the server is not reachable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_ERROR](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#SOCKET_ERROR:kotlin.Int) When some socket error occurs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_OUT](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#TIME_OUT:kotlin.Int) When the transaction gets timed out. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_TERMINTED](https://developer.android.com/reference/kotlin/android/net/sip/SipErrorCode#TRANSACTION_TERMINTED:kotlin.Int) When transaction is terminated unexpectedly. |
 
 | Public methods ||

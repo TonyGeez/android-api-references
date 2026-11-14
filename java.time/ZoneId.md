@@ -7,9 +7,11 @@ abstract class ZoneId : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#) |
 
 | Known Direct Subclasses [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset) |---|---| | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset) | A time-zone offset from Greenwich/UTC, such as `+02:00`. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A time-zone ID, such as `Europe/Paris`
 
@@ -55,15 +57,19 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneId#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this time-zone ID is equal to another time-zone ID. |
 | open static [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `ZoneId` from a temporal object. |
 | open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getAvailableZoneIds()()` Gets the set of available zone IDs. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getDisplayName(java.time.format.TextStyle,%20java.util.Locale)(style: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the textual representation of the zone, such as 'British Time' or '+02:00'. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getId()()` Gets the unique time-zone ID. |
 | abstract [ZoneRules](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getRules()()` Gets the time-zone rules for this ID allowing calculations to be performed. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneId#hashCode()()` A hash code for this time-zone ID. |
 | open [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#normalized()()` Normalizes the time-zone ID, returning a `ZoneOffset` where possible. |
 | open static [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#of(kotlin.String)(zoneId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Obtains an instance of `ZoneId` from an ID ensuring that the ID is valid and available for use. |
+| --- | --- |
 | open static [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#of(kotlin.String,%20kotlin.collections.MutableMap)(zoneId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, aliasMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Obtains an instance of `ZoneId` using its ID using a map of aliases to supplement the standard zone IDs. |
 | open static [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#ofOffset(kotlin.String,%20java.time.ZoneOffset)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Obtains an instance of `ZoneId` wrapping an offset. |
 | open static [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId#)! | `https://developer.android.com/reference/kotlin/java/time/ZoneId#systemDefault()()` Gets the system default time-zone. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneId#toString()()` Outputs this zone as a `String`, using the ID. |
 
 | Properties ||

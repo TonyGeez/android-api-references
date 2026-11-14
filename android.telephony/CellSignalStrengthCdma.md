@@ -5,12 +5,14 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # CellSignalStrengthCdma
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma "View this page in Java") 
+| --- | --- |
 
 ```
 class CellSignalStrengthCdma : CellSignalStrength, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) ||
 | | ↳ | [android.telephony.CellSignalStrengthCdma](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#) |
 
@@ -28,18 +30,23 @@ Signal strength related information.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsuLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getAsuLevel())`()` Get the 1xRTT Level in (Android) ASU. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCdmaDbm](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getCdmaDbm())`()` Get the CDMA RSSI value in dBm |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCdmaEcio](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getCdmaEcio())`()` Get the CDMA Ec/Io value in dB\*10 |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCdmaLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getCdmaLevel())`()` Get cdma as level 0. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDbm](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getDbm())`()` Get the signal strength as dBm |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoDbm](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getEvdoDbm())`()` Get the EVDO RSSI value in dBm |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoEcio](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getEvdoEcio())`()` Get the EVDO Ec/Io value in dB\*10 |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getEvdoLevel())`()` Get Evdo as level 0. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEvdoSnr](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getEvdoSnr())`()` Get the signal to noise ratio. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#getLevel())`()` Retrieve an abstract level value for the overall signal quality. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -92,18 +99,22 @@ Get the 1xRTT Level in (Android) ASU. There is no standard definition of ASU for
 | -75.. | 16 |
 | -82..-76 | 8 |
 | -90..-83 | 4 |
+| --- | --- |
 | -95..-91 | 2 |
 | -100..-96 | 1 |
 | ..-101 | 99 |
+| --- | --- |
 
 | Ec/Io Range (dB) | ASU Value |
 |------------------|-----------|
 | -90.. | 16 |
 | -100..-91 | 8 |
 | -115..-101 | 4 |
+| --- | --- |
 | -130..-116 | 2 |
 | --150..-131 | 1 |
 | ..-151 | 99 |
+| --- | --- |
 
 <br />
 

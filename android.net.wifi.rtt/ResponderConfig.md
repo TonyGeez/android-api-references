@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # ResponderConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class ResponderConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.rtt.ResponderConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#) |
 
 Defines the configuration of an IEEE 802.11mc Responder. The Responder may be an Access Point (AP), a Wi-Fi Aware device, or a manually configured Responder.
@@ -37,18 +39,23 @@ A Responder configuration may be constructed from a [ScanResult](https://develop
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [ResponderConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#) | [fromScanResult](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#fromScanResult(android.net.wifi.ScanResult))`(`scanResult:` ` [ScanResult](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#)`)` Creates a Responder configuration from a [ScanResult](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#) corresponding to an Access Point (AP), which can be obtained from [android.net.wifi.WifiManager#getScanResults()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#getScanResults()). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq0Mhz](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getCenterFreq0Mhz())`()` If the Access Point (AP) bandwidth is 20 MHz, 0 MHz is returned. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq1Mhz](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getCenterFreq1Mhz())`()` If the Access Point (AP) bandwidth is 80 + 80 MHz, this param is not used and returns 0. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelWidth](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getChannelWidth())`()` AP Channel bandwidth; one of [ScanResult.CHANNEL_WIDTH_20MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#CHANNEL_WIDTH_20MHZ:kotlin.Int), [ScanResult.CHANNEL_WIDTH_40MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#CHANNEL_WIDTH_40MHZ:kotlin.Int), [ScanResult.CHANNEL_WIDTH_80MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#CHANNEL_WIDTH_80MHZ:kotlin.Int), [ScanResult.CHANNEL_WIDTH_160MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#CHANNEL_WIDTH_160MHZ:kotlin.Int), [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#) or [ScanResult.CHANNEL_WIDTH_320MHZ](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#CHANNEL_WIDTH_320MHZ:kotlin.Int). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequencyMhz](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getFrequencyMhz())`()` <br /> |
 | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | [getMacAddress](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getMacAddress())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPreamble](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getPreamble())`()` Get the preamble type of the channel. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResponderType](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getResponderType())`()` Get responder type. |
 | [SecureRangingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/SecureRangingConfig)? | [getSecureRangingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#getSecureRangingConfig())`()` Get secure ranging configuration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211azNtbSupported](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#is80211azNtbSupported())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211mcSupported](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#is80211mcSupported())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

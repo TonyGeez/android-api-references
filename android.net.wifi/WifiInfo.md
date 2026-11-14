@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # WifiInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiInfo : Parcelable, TransportInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.WifiInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#) |
 
 Describes the state of any Wi-Fi connection that is active or is in the process of being set up. In the connected state, access to location sensitive fields requires the same permissions as [WifiManager.getScanResults](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()). If such access is not allowed, [getSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getSSID())will return [WifiManager.UNKNOWN_SSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#UNKNOWN_SSID:kotlin.String) and [getBSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getBSSID())will return`"02:00:00:00:00:00"`. [getApMldMacAddress()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getApMldMacAddress())will return null. [getNetworkId()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getNetworkId())will return`-1`. [getPasspointFqdn()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getPasspointFqdn())will return null. [getPasspointProviderFriendlyName()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getPasspointProviderFriendlyName())will return null. [getInformationElements()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getInformationElements())will return null. [getMacAddress()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getMacAddress())will return`"02:00:00:00:00:00"`.
@@ -26,21 +28,27 @@ Describes the state of any Wi-Fi connection that is active or is in the process 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FREQUENCY_UNITS](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#FREQUENCY_UNITS:kotlin.String) Frequency in MHz |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LINK_SPEED_UNITS](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#LINK_SPEED_UNITS:kotlin.String) The unit in which links speeds are expressed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINK_SPEED_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#LINK_SPEED_UNKNOWN:kotlin.Int) Constant for unknown link speed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_DPP](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_DPP:kotlin.Int) Security type for Easy Connect (DPP) network |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_EAP:kotlin.Int) Security type for an EAP network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_EAP_WPA3_ENTERPRISE:kotlin.Int) Security type for a WPA3-Enterprise network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT:kotlin.Int) Security type for a WPA3-Enterprise in 192-bit security network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OPEN](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_OPEN:kotlin.Int) Security type for an open network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OSEN](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_OSEN:kotlin.Int) Security type for an OSEN network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OWE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_OWE:kotlin.Int) Security type for an OWE network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_PASSPOINT_R1_R2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_PASSPOINT_R1_R2:kotlin.Int) Security type for a Passpoint R1/R2 network, where TKIP and WEP are not allowed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_PASSPOINT_R3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_PASSPOINT_R3:kotlin.Int) Security type for a Passpoint R3 network, where TKIP and WEP are not allowed, and PMF must be set to Required. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_PSK](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_PSK:kotlin.Int) Security type for a PSK network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_SAE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_SAE:kotlin.Int) Security type for an SAE network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_UNKNOWN:kotlin.Int) Unknown security type. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_CERT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_WAPI_CERT:kotlin.Int) Security type for a WAPI Certificate network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_PSK](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_WAPI_PSK:kotlin.Int) Security type for a WAPI PSK network. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WEP](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#SECURITY_TYPE_WEP:kotlin.Int) Security type for a WEP network. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -51,33 +59,43 @@ Describes the state of any Wi-Fi connection that is active or is in the process 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MloLink](https://developer.android.com/reference/kotlin/android/net/wifi/MloLink)!\> | [getAffiliatedMloLinks](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getAffiliatedMloLinks())`()` Return the Multi-Link Operation (MLO) affiliated Links for Wi-Fi 7 access points. |
 | open [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | [getApMldMacAddress](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getApMldMacAddress())`()` Return the Multi-Link Device (MLD) MAC Address for the connected access point. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApMloLinkId](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getApMloLinkId())`()` Return the access point Multi-Link Operation (MLO) link-id for Wi-Fi 7 access points. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getApplicableRedactions](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getApplicableRedactions())`()` Returns a bitmask of all the applicable redactions (based on the permissions held by the receiving app) to be performed on this TransportInfo. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MloLink](https://developer.android.com/reference/kotlin/android/net/wifi/MloLink)!\> | [getAssociatedMloLinks](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getAssociatedMloLinks())`()` Return the associated Multi-Link Operation (MLO) Links for Wi-Fi 7 access points. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getBSSID())`()` Return the basic service set identifier (BSSID) of the current access point. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentSecurityType](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getCurrentSecurityType())`()` Returns the security type of the current 802. |
 | openstatic [NetworkInfo.DetailedState](https://developer.android.com/reference/kotlin/android/net/NetworkInfo.DetailedState.html#)! | [getDetailedStateOf](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getDetailedStateOf(android.net.wifi.SupplicantState))`(`suppState:` ` [SupplicantState](https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState)!`)` Map a supplicant state into a fine-grained network connectivity state. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequency](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getFrequency())`()` Returns the current frequency in [FREQUENCY_UNITS](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#FREQUENCY_UNITS:kotlin.String). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getHiddenSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getHiddenSSID())`()` <br /> |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult.InformationElement](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.InformationElement)!\>? | [getInformationElements](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getInformationElements())`()` Get all information elements found in the beacon of the connected bssid. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIpAddress](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getIpAddress())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLinkSpeed](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getLinkSpeed())`()` Returns the current link speed in [LINK_SPEED_UNITS](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#LINK_SPEED_UNITS:kotlin.String). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMacAddress](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getMacAddress())`()` Returns the MAC address used for this connection. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSupportedRxLinkSpeedMbps](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getMaxSupportedRxLinkSpeedMbps())`()` Returns the maximum supported receive link speed in Mbps |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSupportedTxLinkSpeedMbps](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getMaxSupportedTxLinkSpeedMbps())`()` Returns the maximum supported transmit link speed in Mbps |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkId](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getNetworkId())`()` Each configured network has a unique small integer ID, used to identify the network. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPasspointFqdn](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getPasspointFqdn())`()` Returns the Fully Qualified Domain Name of the network if it is a Passpoint network. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPasspointProviderFriendlyName](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getPasspointProviderFriendlyName())`()` Returns the Provider Friendly Name of the network if it is a Passpoint network. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPasspointUniqueId](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getPasspointUniqueId())`()` Get the Passpoint unique identifier for the current connection |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getRssi())`()` Returns the received signal strength indicator of the current 802. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRxLinkSpeedMbps](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getRxLinkSpeedMbps())`()` Returns the current receive link speed in Mbps. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSSID](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getSSID())`()` Returns the service set identifier (SSID) of the current 802. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getSubscriptionId())`()` If this network is provisioned by a carrier, returns subscription Id corresponding to the associated SIM on the device. |
 | open [SupplicantState](https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState)! | [getSupplicantState](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getSupplicantState())`()` Return the detailed state of the supplicant's negotiation with an access point, in the form of a [SupplicantState](https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState) object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxLinkSpeedMbps](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getTxLinkSpeedMbps())`()` Returns the current transmit link speed in Mbps. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWifiStandard](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#getWifiStandard())`()` Get connection Wi-Fi standard |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#hashCode())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRestricted](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#isRestricted())`()` Returns true if the current Wifi network is a restricted network, false otherwise. |
+| --- | --- |
 | open [WifiInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#) | [makeCopy](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#makeCopy(kotlin.Long))`(`redactions:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Create a copy of a [WifiInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#) with some fields redacted based on the permissions held by the receiving app. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo#toString())`()` <br /> |
 

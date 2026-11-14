@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # TextInclusionStrategy
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/Layout.TextInclusionStrategy "View this page in Java") 
+| --- | --- |
 
 ```
 @FunctionalInterface interface TextInclusionStrategy

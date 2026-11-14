@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # EventLog
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/EventLog "View this page in Java") 
+| --- | --- |
 
 ```
 open class EventLog
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.EventLog](https://developer.android.com/reference/kotlin/android/util/EventLog#) |
 
 Access to the system diagnostic event record. System diagnostic events are used to record certain system-level events (such as garbage collection, activity manager state, system watchdogs, and other low level activity), which may be automatically collected and analyzed during system development.
@@ -30,9 +32,11 @@ Events use integer tag codes corresponding to /system/etc/event-log-tags. They c
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTagCode](https://developer.android.com/reference/kotlin/android/util/EventLog#getTagCode(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the event type tag code associated with an event name. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTagName](https://developer.android.com/reference/kotlin/android/util/EventLog#getTagName(kotlin.Int))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the name associated with an event type tag code. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readEvents](https://developer.android.com/reference/kotlin/android/util/EventLog#readEvents(kotlin.IntArray,%20kotlin.collections.MutableCollection))`(`tags:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `output:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [EventLog.Event](https://developer.android.com/reference/kotlin/android/util/EventLog.Event)!>!`)` Read events from the log, filtered by type. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [writeEvent](https://developer.android.com/reference/kotlin/android/util/EventLog#writeEvent(kotlin.Int,%20kotlin.Float))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Record an event log message. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [writeEvent](https://developer.android.com/reference/kotlin/android/util/EventLog#writeEvent(kotlin.Int,%20kotlin.Int))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Record an event log message. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [writeEvent](https://developer.android.com/reference/kotlin/android/util/EventLog#writeEvent(kotlin.Int,%20kotlin.Any))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `list:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Record an event log message. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [writeEvent](https://developer.android.com/reference/kotlin/android/util/EventLog#writeEvent(kotlin.Int,%20kotlin.String))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Record an event log message. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [writeEvent](https://developer.android.com/reference/kotlin/android/util/EventLog#writeEvent(kotlin.Int,%20kotlin.Long))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Record an event log message. |
 

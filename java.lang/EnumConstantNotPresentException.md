@@ -9,9 +9,11 @@ open class EnumConstantNotPresentException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.EnumConstantNotPresentException](https://developer.android.com/reference/kotlin/java/lang/EnumConstantNotPresentException#) |
 
 Thrown when an application tries to access an enum constant by name and the enum type contains no constant with the specified name. This exception can be thrown by the .

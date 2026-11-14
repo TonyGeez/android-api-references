@@ -9,6 +9,7 @@ open class FormattableFlags
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.FormattableFlags](https://developer.android.com/reference/kotlin/java/util/FormattableFlags#) |
 
 FormattableFlags are passed to the [Formattable.formatTo()](https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method and modify the output format for [Formattables](https://developer.android.com/reference/kotlin/java/util/Formattable). Implementations of [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable) are responsible for interpreting and validating any flags.
@@ -20,6 +21,7 @@ FormattableFlags are passed to the [Formattable.formatTo()](https://developer.an
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTERNATE](https://developer.android.com/reference/kotlin/java/util/FormattableFlags#ALTERNATE:kotlin.Int) Requires the output to use an alternate form. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_JUSTIFY](https://developer.android.com/reference/kotlin/java/util/FormattableFlags#LEFT_JUSTIFY:kotlin.Int) Left-justifies the output. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE](https://developer.android.com/reference/kotlin/java/util/FormattableFlags#UPPERCASE:kotlin.Int) Converts the output to upper case according to the rules of the [locale](https://developer.android.com/reference/kotlin/java/util/Locale) given during creation of the`formatter`argument of the [formatTo()](https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method. |
+| --- | --- |
 
 ## Constants
 

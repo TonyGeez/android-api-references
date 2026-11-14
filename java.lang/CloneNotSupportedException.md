@@ -9,9 +9,11 @@ open class CloneNotSupportedException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) ||
 | | | ↳ | [java.lang.CloneNotSupportedException](https://developer.android.com/reference/kotlin/java/lang/CloneNotSupportedException#) |
+| --- | --- | --- | --- |
 
 Thrown to indicate that the`clone`method in class`Object`has been called to clone an object, but that the object's class does not implement the`Cloneable`interface.
 

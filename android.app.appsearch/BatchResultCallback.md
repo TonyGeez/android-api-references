@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BatchResultCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/BatchResultCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface BatchResultCallback<KeyType : Any!, ValueType : Any!>

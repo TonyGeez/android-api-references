@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # HardwareBufferRenderer
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/HardwareBufferRenderer "View this page in Java") 
+| --- | --- |
 
 ```
 open class HardwareBufferRenderer : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.HardwareBufferRenderer](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#) |
 
 Creates an instance of a hardware-accelerated renderer. This is used to render a scene built from [RenderNode](https://developer.android.com/reference/kotlin/android/graphics/RenderNode) s to an output [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#). There can be as many HardwareBufferRenderer instances as desired.
@@ -36,9 +38,11 @@ This is useful in situations where a scene built with [RenderNode](https://devel
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#close())`()` Releases the resources associated with this [HardwareBufferRenderer](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#) instance. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#isClosed())`()` Returns if the [HardwareBufferRenderer](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#) has already been closed. |
 | open [HardwareBufferRenderer.RenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer.RenderRequest) | [obtainRenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#obtainRenderRequest())`()` Returns a [RenderRequest](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer.RenderRequest) that can be used to render into the provided [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentRoot](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#setContentRoot(android.graphics.RenderNode))`(`content:` ` [RenderNode](https://developer.android.com/reference/kotlin/android/graphics/RenderNode)?`)` Sets the content root to render. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceAlpha](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#setLightSourceAlpha(kotlin.Float,%20kotlin.Float))`(`ambientShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spotShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configures the ambient \& spot shadow alphas. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceGeometry](https://developer.android.com/reference/kotlin/android/graphics/HardwareBufferRenderer#setLightSourceGeometry(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`lightX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the center of the light source. |
+| --- | --- |
 
 ## Public constructors
 
@@ -160,4 +164,5 @@ This must be set at least once along with [setLightSourceAlpha(float,float)](htt
 | `lightX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X position of the light source. If unsure, a reasonable default is 'displayWidth / 2f - windowLeft'. |
 | `lightY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y position of the light source. If unsure, a reasonable default is '0 - windowTop' |
 | `lightZ` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Z position of the light source. Must be \>= 0. If unsure, a reasonable default is 600dp. Value is 0.0f or greater |
+| --- | --- |
 | `lightRadius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The radius of the light source. Smaller radius will have sharper edges, larger radius will have softer shadows. If unsure, a reasonable default is 800 dp. Value is 0.0f or greater |

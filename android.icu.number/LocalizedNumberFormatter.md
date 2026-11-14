@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # LocalizedNumberFormatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/number/LocalizedNumberFormatter "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocalizedNumberFormatter : NumberFormatterSettings<LocalizedNumberFormatter!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.number.NumberFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings)\< [android.icu.number.LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#)\> ||
 | | ↳ | [android.icu.number.LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#) |
 
@@ -23,9 +25,11 @@ A NumberFormatter that has a locale associated with it; this means .format() met
 | open [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber)! | [format](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#format(android.icu.util.Measure))`(`input:` ` [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#)!`)` Format the given [Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure.html#) or [CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount.html#) to a string using the settings specified in the NumberFormatter fluent setting chain. |
 | open [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber)! | [format](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#format(kotlin.Double))`(`input:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Format the given float or double to a string using the settings specified in the NumberFormatter fluent setting chain. |
 | open [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber)! | [format](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#format(kotlin.Number))`(`input:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`)` Format the given [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#), [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal.html#), or other [Number](https://developer.android.com/reference/kotlin/java/lang/Number.html#) to a string using the settings specified in the NumberFormatter fluent setting chain. |
+| --- | --- |
 | open [FormattedNumber](https://developer.android.com/reference/kotlin/android/icu/number/FormattedNumber)! | [format](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#format(kotlin.Long))`(`input:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Format the given byte, short, int, or long to a string using the settings specified in the NumberFormatter fluent setting chain. |
 | open [Format](https://developer.android.com/reference/kotlin/java/text/Format.html#)! | [toFormat](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#toFormat())`()` Creates a representation of this LocalizedNumberFormat as a [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#), enabling the use of this number formatter with APIs that need an object of that type, such as MessageFormat. |
 | open [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter)! | [withoutLocale](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter#withoutLocale())`()` Disassociate the locale from this formatter. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

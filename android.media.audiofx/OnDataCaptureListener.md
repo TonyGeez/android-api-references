@@ -5,6 +5,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # OnDataCaptureListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDataCaptureListener
@@ -46,6 +47,7 @@ For the explanation of the fft data array layout, and the example code for proce
 | `visualizer` | [Visualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer)!:Visualizer object on which the listener is registered. |
 | `fft` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:array of bytes containing the frequency representation. |
 | `samplingRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):sampling rate of the visualized audio. |
+| --- | --- |
 
 ### onWaveFormDataCapture
 
@@ -68,3 +70,4 @@ Data in the waveform buffer is valid only within the scope of the callback. Appl
 | `visualizer` | [Visualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Visualizer)!:Visualizer object on which the listener is registered. |
 | `waveform` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:array of bytes containing the waveform representation. |
 | `samplingRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):sampling rate of the visualized audio. |
+| --- | --- |

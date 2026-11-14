@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # Rational
 
 Kotlin | [Java](https://developer.android.com/reference/android/util/Rational "View this page in Java")
+| --- | --- |
 
 ```
 class Rational : Number, Comparable<Rational!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [android.util.Rational](https://developer.android.com/reference/kotlin/android/util/Rational#) |
 
@@ -27,18 +29,23 @@ Contains a pair of `int`s representing the numerator and denominator of a Ration
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#compareTo(android.util.Rational)(other: https://developer.android.com/reference/kotlin/android/util/Rational#!)` Compare this rational to the specified rational to determine their natural order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this Rational to another object and see if they are equal. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#getDenominator()()` Gets the denominator of the rational |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#getNumerator()()` Gets the numerator of the rational. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isFinite()()` Indicates whether this rational represents a finite value. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isInfinite()()` Indicates whether this rational represents an infinite value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isNaN()()` Indicates whether this rational is a *Not-a-Number (NaN)* value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isZero()()` Indicates whether this rational represents a zero value. |
+| --- | --- |
 | static [Rational](https://developer.android.com/reference/kotlin/android/util/Rational#)! | `https://developer.android.com/reference/kotlin/android/util/Rational#parseRational(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a rational value. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toDouble()()` Returns the value of the specified number as a `double`. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toFloat()()` Returns the value of the specified number as a `float`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toInt()()` Returns the value of the specified number as a `int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toLong()()` Returns the value of the specified number as a `long`. |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toShort()()` Returns the value of the specified number as a `short`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toString()()` Return a string representation of this rational, e. |
 
 | Properties ||
@@ -46,6 +53,7 @@ Contains a pair of `int`s representing the numerator and denominator of a Ration
 | static [Rational](https://developer.android.com/reference/kotlin/android/util/Rational#)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NEGATIVE_INFINITY:android.util.Rational` Constant for the negative infinity value of the `Rational` type. |
 | static [Rational](https://developer.android.com/reference/kotlin/android/util/Rational#)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NaN:android.util.Rational` Constant for the *Not-a-Number (NaN)* value of the `Rational` type. |
 | static [Rational](https://developer.android.com/reference/kotlin/android/util/Rational#)! | `https://developer.android.com/reference/kotlin/android/util/Rational#POSITIVE_INFINITY:android.util.Rational` Constant for the positive infinity value of the `Rational` type. |
+| --- | --- |
 | static [Rational](https://developer.android.com/reference/kotlin/android/util/Rational#)! | `https://developer.android.com/reference/kotlin/android/util/Rational#ZERO:android.util.Rational` Constant for the zero value of the `Rational` type. |
 
 ## Public constructors

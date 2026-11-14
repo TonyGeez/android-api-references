@@ -8,6 +8,7 @@ open class AnalogClock : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.widget.AnalogClock](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#) |
 
@@ -25,6 +26,7 @@ This widget displays an analogic clock with two hands for hours and minutes.
 | [`android:dial`](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#attr_AnalogClock) | |
 | [`android:hand_hour`](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#attr_AnalogClock) | |
 | [`android:hand_minute`](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#attr_AnalogClock) | |
+| --- | --- |
 | [`android:hand_second`](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#attr_AnalogClock) | |
 | [`android:timeZone`](https://developer.android.com/reference/kotlin/android/widget/AnalogClock#attr_AnalogClock) | Specifies the time zone to use. |
 
@@ -306,6 +308,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -422,6 +425,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1607,24 +1611,31 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getDialTintBlendMode()()` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getDialTintList()()` <br /> |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getHourHandTintBlendMode()()` <br /> |
+| --- | --- |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getHourHandTintList()()` <br /> |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getMinuteHandTintBlendMode()()` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getMinuteHandTintList()()` <br /> |
+| --- | --- |
 | open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getSecondHandTintBlendMode()()` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getSecondHandTintList()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#getTimeZone()()` Indicates which time zone is currently used by this view. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setDial(android.graphics.drawable.Icon)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)` Sets the dial of the clock to the specified Icon. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setDialTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setDialTintList(android.content.res.ColorStateList)`} to the dial drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setDialTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the dial drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setHourHand(android.graphics.drawable.Icon)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)` Sets the hour hand of the clock to the specified Icon. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setHourHandTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setHourHandTintList(android.content.res.ColorStateList)`} to the hour hand drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setHourHandTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the hour hand drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setMinuteHand(android.graphics.drawable.Icon)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)` Sets the minute hand of the clock to the specified Icon. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setMinuteHandTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setMinuteHandTintList(android.content.res.ColorStateList)`} to the minute hand drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setMinuteHandTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the minute hand drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setSecondHand(android.graphics.drawable.Icon)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?)` Sets the second hand of the clock to the specified Icon, or hides the second hand if it is null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setSecondHandTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies the blending mode used to apply the tint specified by `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setSecondHandTintList(android.content.res.ColorStateList)`} to the second hand drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setSecondHandTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Applies a tint to the second hand drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#setTimeZone(kotlin.String)(timeZone: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the specified time zone to use in this clock. |
 
@@ -1633,6 +1644,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AnalogClock#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 
@@ -3435,6 +3447,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4816,6 +4829,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7801,4 +7815,5 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |

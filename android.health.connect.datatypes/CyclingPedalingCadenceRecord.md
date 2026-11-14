@@ -8,9 +8,11 @@ class CyclingPedalingCadenceRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.CyclingPedalingCadenceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#) |
+| --- | --- | --- | --- |
 
 Captures the user's cycling pedaling cadence.
 
@@ -30,6 +32,7 @@ Captures the user's cycling pedaling cadence.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#getSamples()()` {@return CyclingPedalingCadenceRecord samples corresponding to this record, in ascending time \* order} |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -41,6 +44,7 @@ Captures the user's cycling pedaling cadence.
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| --- | --- |
 
 ## Public methods
 

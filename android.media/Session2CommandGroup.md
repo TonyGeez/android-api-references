@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # Session2CommandGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Session2CommandGroup "View this page in Java") 
+| --- | --- |
 
 ```
 class Session2CommandGroup : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.Session2CommandGroup](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#) |
 
 This API is not generally intended for third party application developers. Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Media3 session Library](https://developer.android.com/media/media3/session/control-playback) for consistent behavior across all devices.
@@ -32,6 +34,7 @@ A set of [Session2Command](https://developer.android.com/reference/kotlin/androi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#describeContents())`()` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Session2Command](https://developer.android.com/reference/kotlin/android/media/Session2Command)!\> | [getCommands](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#getCommands())`()` Gets all commands of this command group. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCommand](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#hasCommand(android.media.Session2Command))`(`command:` ` [Session2Command](https://developer.android.com/reference/kotlin/android/media/Session2Command)`)` Checks whether this command group has a command that matches given`command`. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCommand](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#hasCommand(kotlin.Int))`(`commandCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether this command group has a command that matches given`commandCode`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/Session2CommandGroup#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

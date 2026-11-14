@@ -7,6 +7,7 @@ class VibratorEnvelopeEffectInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.vibrator.VibratorEnvelopeEffectInfo](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#) |
 
 Provides information about the vibrator hardware capabilities and limitations regarding waveform envelope effects. This includes:
@@ -30,12 +31,15 @@ This information can be used to help construct waveform envelope effects with `h
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxControlPointDurationMillis()()` Retrieves the maximum duration supported between two control points within an envelope effect, in milliseconds. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxDurationMillis()()` Retrieves the maximum duration supported for an envelope effect, in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxSize()()` Retrieves the maximum number of control points supported for an envelope effect. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMinControlPointDurationMillis()()` Retrieves the minimum duration supported between two control points within an envelope effect, in milliseconds. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

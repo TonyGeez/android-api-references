@@ -9,6 +9,7 @@ open class DrbgParameters
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.DrbgParameters](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#) |
 
 This class specifies the parameters used by a DRBG (Deterministic Random Bit Generator).
@@ -100,6 +101,7 @@ SecureRandom drbg;
 | | [Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability) The reseedable and prediction resistance capabilities of a DRBG. |
 | | [Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) DRBG parameters for instantiation. |
 | | [NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) DRBG parameters for random bits generation. |
+| --- | --- |
 | | [Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) DRBG parameters for reseed. |
 
 | Public methods ||
@@ -107,6 +109,7 @@ SecureRandom drbg;
 | open static [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation)! | [instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#instantiation(kotlin.Int,%20java.security.DrbgParameters.Capability,%20kotlin.ByteArray))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `capability:` ` [DrbgParameters.Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability)!`, `personalizationString:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) object. |
 | open static [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes)! | [nextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#nextBytes(kotlin.Int,%20kotlin.Boolean,%20kotlin.ByteArray))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) object. |
 | open static [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed)! | [reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#reseed(kotlin.Boolean,%20kotlin.ByteArray))`(`predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) object. |
+| --- | --- |
 
 ## Public methods
 
@@ -129,6 +132,7 @@ Generates a [DrbgParameters.Instantiation](https://developer.android.com/referen
 | `strength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): security strength in bits, -1 for default strength if used in `getInstance`. |
 | `capability` | [DrbgParameters.Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability)!: capability |
 | `personalizationString` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: personalization string as a byte array, can be `null`. The content of this byte array will be copied. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -158,6 +162,7 @@ Generates a [NextBytes](https://developer.android.com/reference/kotlin/java/secu
 | `strength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): requested security strength in bits. If set to -1, the effective strength will be used. |
 | `predictionResistance` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): prediction resistance requested |
 | `additionalInput` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: additional input, can be `null`. The content of this byte array will be copied. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|--------------------------|

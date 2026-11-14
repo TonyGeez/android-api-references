@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # IkeSessionConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class IkeSessionConfiguration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.IkeSessionConfiguration](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#) |
 
 IkeSessionConfiguration represents the negotiated configuration for a [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession).
@@ -33,6 +35,7 @@ Configurations include remote application version and enabled IKE extensions.
 | [EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo.html#)? | [getEapInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#getEapInfo())`()` Retrieves the EAP information. |
 | [IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo) | [getIkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#getIkeSessionConnectionInfo())`()` Returns the connection information. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRemoteApplicationVersion](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#getRemoteApplicationVersion())`()` Gets remote (server) version information. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\> | [getRemoteVendorIds](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#getRemoteVendorIds())`()` Returns remote vendor IDs received during IKE Session setup. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIkeExtensionEnabled](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#isIkeExtensionEnabled(kotlin.Int))`(`extensionType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if an IKE extension is enabled. |
 

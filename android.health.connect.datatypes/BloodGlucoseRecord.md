@@ -8,9 +8,11 @@ class BloodGlucoseRecord : InstantRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
 | | | ↳ | [android.health.connect.datatypes.BloodGlucoseRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#) |
+| --- | --- | --- | --- |
 
 Captures the concentration of glucose in the blood. Each record represents a single instantaneous blood glucose reading.
 
@@ -21,6 +23,7 @@ Captures the concentration of glucose in the blood. Each record represents a sin
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#` |
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord.RelationToMealType` Relationship of the meal to the blood glucose measurement. |
 | | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord.SpecimenSource` Type of body fluid used to measure the blood glucose. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -31,9 +34,11 @@ Captures the concentration of glucose in the blood. Each record represents a sin
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [BloodGlucose](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getLevel()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getMealType()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getRelationToMeal()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getSpecimenSource()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -57,6 +62,7 @@ Indicates whether some other object is "equal to" this one.
 | `obj` | the reference object with which to compare. |
 | `object` | the reference object with which to compare. This value may be `null`. |
 | `o` | the reference object with which to compare. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

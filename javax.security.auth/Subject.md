@@ -9,6 +9,7 @@ class Subject : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.security.auth.Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#) |
 
 A`Subject`represents a grouping of related information for a single entity, such as a person. Such information includes the Subject's identities as well as its security-related attributes (passwords and cryptographic keys, for example).
@@ -44,18 +45,23 @@ This`Subject`class implements`Serializable`. While the Principals associated wit
 | staticT | [doAs](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#doAs(javax.security.auth.Subject,%20java.security.PrivilegedAction))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!`, `action:` ` [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction.html#)<T>!`)` Perform work as a particular`Subject`. |
 | staticT | [doAs](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#doAs(javax.security.auth.Subject,%20java.security.PrivilegedExceptionAction))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!`, `action:` ` [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction.html#)<T>!`)` Perform work as a particular`Subject`. |
 | staticT | [doAsPrivileged](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#doAsPrivileged(javax.security.auth.Subject,%20java.security.PrivilegedAction,%20java.security.AccessControlContext))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!`, `action:` ` [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction.html#)<T>!`, `acc:` ` [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext.html#)!`)` Perform privileged work as a particular`Subject`. |
+| --- | --- |
 | staticT | [doAsPrivileged](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#doAsPrivileged(javax.security.auth.Subject,%20java.security.PrivilegedExceptionAction,%20java.security.AccessControlContext))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!`, `action:` ` [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction.html#)<T>!`, `acc:` ` [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext.html#)!`)` Perform privileged work as a particular`Subject`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this`Subject`for equality. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>! | [getPrincipals](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPrincipals())`()` Return the`Set`of Principals associated with this`Subject`. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>! | [getPrincipals](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPrincipals(java.lang.Class))`(`c:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Return a`Set`of Principals associated with this`Subject`that are instances or subclasses of the specified`Class`. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getPrivateCredentials](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPrivateCredentials())`()` Return the`Set`of private credentials held by this`Subject`. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>! | [getPrivateCredentials](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPrivateCredentials(java.lang.Class))`(`c:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Return a`Set`of private credentials associated with this`Subject`that are instances or subclasses of the specified`Class`. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getPublicCredentials](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPublicCredentials())`()` Return the`Set`of public credentials held by this`Subject`. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>! | [getPublicCredentials](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getPublicCredentials(java.lang.Class))`(`c:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Return a`Set`of public credentials associated with this`Subject`that are instances or subclasses of the specified`Class`. |
 | static [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)! | [getSubject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#getSubject(java.security.AccessControlContext))`(`acc:` ` [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext.html#)!`)` Get the`Subject`associated with the provided`AccessControlContext`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#hashCode())`()` Returns a hashcode for this`Subject`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#isReadOnly())`()` Query whether this`Subject`is read-only. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#setReadOnly())`()` Set this`Subject`to be read-only. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#toString())`()` Return the String representation of this`Subject`. |
 
 ## Public constructors
@@ -99,6 +105,7 @@ To modify the Principals Set, the caller must have`AuthPermission("modifyPrincip
 | `readOnly` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the`Subject`is to be read-only, and false otherwise. <br /> |
 | `principals` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>!:the`Set`of Principals to be associated with this`Subject`. <br /> |
 | `pubCredentials` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<\*\>!:the`Set`of public credentials to be associated with this`Subject`. <br /> |
+| --- | --- |
 | `privCredentials` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<\*\>!:the`Set`of private credentials to be associated with this`Subject`. |
 
 | Exceptions ||
@@ -129,6 +136,7 @@ This method first retrieves the current Thread's`AccessControlContext`via`Access
 | `subject` | [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!:the`Subject`that the specified`action`will run as. This parameter may be`null`. <br /> |
 | `<T>` | the type of the value returned by the PrivilegedAction's`run`method. |
 | `action` | [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction.html#)\<T\>!:the code to be run as the specified`Subject`. <br /> |
+| --- | --- |
 
 | Return ||
 |---|----------------------------------------------------------|
@@ -161,6 +169,7 @@ This method first retrieves the current Thread's`AccessControlContext`via`Access
 | `subject` | [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!:the`Subject`that the specified`action`will run as. This parameter may be`null`. <br /> |
 | `<T>` | the type of the value returned by the PrivilegedExceptionAction's`run`method. |
 | `action` | [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction.html#)\<T\>!:the code to be run as the specified`Subject`. <br /> |
+| --- | --- |
 
 | Return ||
 |---|-------------------------------------------------------------------|
@@ -171,6 +180,7 @@ This method first retrieves the current Thread's`AccessControlContext`via`Access
 | `java.security.PrivilegedActionException` | if the`PrivilegedExceptionAction.run`method throws a checked exception. <br /> |
 | `java.lang.NullPointerException` | if the specified`PrivilegedExceptionAction`is`null`. <br /> |
 | `java.lang.SecurityException` | if the caller does not have permission to invoke this method. |
+| --- | --- |
 
 ### doAsPrivileged
 
@@ -195,6 +205,7 @@ This method behaves exactly as`Subject.doAs`, except that instead of retrieving 
 | `subject` | [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!:the`Subject`that the specified`action`will run as. This parameter may be`null`. <br /> |
 | `<T>` | the type of the value returned by the PrivilegedAction's`run`method. |
 | `action` | [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction.html#)\<T\>!:the code to be run as the specified`Subject`. <br /> |
+| --- | --- |
 | `acc` | [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext.html#)!:the`AccessControlContext`to be tied to the specified*subject* and*action* . <br /> |
 
 | Return ||
@@ -229,6 +240,7 @@ This method behaves exactly as`Subject.doAs`, except that instead of retrieving 
 | `subject` | [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject#)!:the`Subject`that the specified`action`will run as. This parameter may be`null`. <br /> |
 | `<T>` | the type of the value returned by the PrivilegedExceptionAction's`run`method. |
 | `action` | [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction.html#)\<T\>!:the code to be run as the specified`Subject`. <br /> |
+| --- | --- |
 | `acc` | [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext.html#)!:the`AccessControlContext`to be tied to the specified*subject* and*action* . <br /> |
 
 | Return ||
@@ -240,6 +252,7 @@ This method behaves exactly as`Subject.doAs`, except that instead of retrieving 
 | `java.security.PrivilegedActionException` | if the`PrivilegedExceptionAction.run`method throws a checked exception. <br /> |
 | `java.lang.NullPointerException` | if the specified`PrivilegedExceptionAction`is`null`. <br /> |
 | `java.lang.SecurityException` | if the caller does not have permission to invoke this method. |
+| --- | --- |
 
 ### equals
 

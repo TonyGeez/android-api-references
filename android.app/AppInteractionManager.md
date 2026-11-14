@@ -7,6 +7,7 @@ class AppInteractionManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.AppInteractionManager](https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#) |
 
 Provides access to App Interaction access control APIs.
@@ -18,9 +19,11 @@ Provides access to App Interaction access control APIs.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#ACTION_MANAGE_APP_INTERACTION_ACCESS:kotlin.String` Activity action: Launches a UI that shows list of all interactors and provides management of App Interaction access of those interactors. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#ACTION_MANAGE_INTERACTOR_ACCESS:kotlin.String` Activity action: Launches a UI that shows a list of all targets that the specified interactor package can access, and provides management of App Interaction access of those targets. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#ACTION_MANAGE_INTERACTOR_TARGET_ACCESS:kotlin.String` Activity action: Launches a UI that provides management of App Interaction access of a specific interactor to a specific target. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#ACTION_MANAGE_TARGET_ACCESS:kotlin.String` Activity action: Launches a UI that shows list of all interactors for a specific target and provides management of App Interaction access by those interactors. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#EXTRA_INTERACTOR_PACKAGE_NAME:kotlin.String` Intent extra: A `https://developer.android.com/reference/kotlin/java/lang/String.html#` specifying the package name of the interactor when requesting or managing App Interaction access. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#EXTRA_TARGET_PACKAGE_NAME:kotlin.String` Intent extra: A `String` specifying the target package name when managing App Interaction access. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
@@ -162,3 +165,4 @@ Example usage:
 | `params` | [AppInteractionSession.CreateParams](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.CreateParams): The params to create the session. This value cannot be `null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [AppInteractionSession](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession)!, [AppInteractionException](https://developer.android.com/reference/kotlin/android/app/AppInteractionException)!\>: The callback to be called when the session is created or an error occurs. This value cannot be `null`. |
+| --- | --- |

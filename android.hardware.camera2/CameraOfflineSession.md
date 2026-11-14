@@ -7,6 +7,7 @@ abstract class CameraOfflineSession : CameraCaptureSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.camera2.CameraCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession) ||
 | | ↳ | [android.hardware.camera2.CameraOfflineSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraOfflineSession#) |
 

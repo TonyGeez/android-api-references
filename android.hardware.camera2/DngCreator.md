@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # DngCreator
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/DngCreator "View this page in Java") 
+| --- | --- |
 
 ```
 class DngCreator : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) |
 
 The [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) class provides functions to write raw pixel data as a DNG file.
@@ -36,12 +38,15 @@ For more information on the DNG file format and associated metadata, please refe
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#close())`()` <br /> |
 | [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) | [setDescription](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#setDescription(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Set the user description string to write. |
 | [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) | [setLocation](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#setLocation(android.location.Location))`(`location:` ` [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#)`)` Set image location metadata. |
+| --- | --- |
 | [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) | [setOrientation](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#setOrientation(kotlin.Int))`(`orientation:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the orientation value to write. |
 | [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) | [setThumbnail](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#setThumbnail(android.graphics.Bitmap))`(`pixels:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`)` Set the thumbnail image. |
 | [DngCreator](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#) | [setThumbnail](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#setThumbnail(android.media.Image))`(`pixels:` ` [Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)`)` Set the thumbnail image. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByteBuffer](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#writeByteBuffer(java.io.OutputStream,%20android.util.Size,%20java.nio.ByteBuffer,%20kotlin.Long))`(`dngOutput:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)`, `size:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)`, `pixels:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Write the [android.graphics.ImageFormat#RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int) pixel data to a DNG file with the currently configured metadata. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeImage](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#writeImage(java.io.OutputStream,%20android.media.Image))`(`dngOutput:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)`, `pixels:` ` [Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)`)` Write the pixel data to a DNG file with the currently configured metadata. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInputStream](https://developer.android.com/reference/kotlin/android/hardware/camera2/DngCreator#writeInputStream(java.io.OutputStream,%20android.util.Size,%20java.io.InputStream,%20kotlin.Long))`(`dngOutput:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)`, `size:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)`, `pixels:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Write the [android.graphics.ImageFormat#RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int) pixel data to a DNG file with the currently configured metadata. |
+| --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -236,6 +241,7 @@ Any mark or limit set on this [ByteBuffer](https://developer.android.com/referen
 | `dngOutput` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#):an [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) to write the DNG file to. This value cannot be`null`. |
 | `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):the [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) of the image to write, in pixels. This value cannot be`null`. |
 | `pixels` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#):an [java.nio.ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) of pixel data to write. This value cannot be`null`. |
+| --- | --- |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the offset of the raw image in bytes. This indicates how many bytes will be skipped in the input before any pixel data is read. Value is 0 or greater |
 
 | Exceptions ||
@@ -268,6 +274,7 @@ For this method to succeed, the [android.media.Image](https://developer.android.
 | `java.io.IOException` | if an error was encountered in the output stream. |
 | `java.lang.IllegalArgumentException` | if an image with an unsupported format was used. |
 | `java.lang.IllegalStateException` | if not enough metadata information has been set to write a well-formatted DNG file. |
+| --- | --- |
 
 ### writeInputStream
 
@@ -291,6 +298,7 @@ Raw pixel data must have 16 bits per pixel, and the input must contain at least`
 | `dngOutput` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#):an [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) to write the DNG file to. This value cannot be`null`. |
 | `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#):the [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) of the image to write, in pixels. This value cannot be`null`. |
 | `pixels` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#):an [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) of pixel data to write. This value cannot be`null`. |
+| --- | --- |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the offset of the raw image in bytes. This indicates how many bytes will be skipped in the input before any pixel data is read. Value is 0 or greater |
 
 | Exceptions ||
@@ -298,6 +306,7 @@ Raw pixel data must have 16 bits per pixel, and the input must contain at least`
 | `java.io.IOException` | if an error was encountered in the input or output stream. |
 | `java.lang.IllegalStateException` | if not enough metadata information has been set to write a well-formatted DNG file. |
 | `java.lang.IllegalArgumentException` | if the size passed in does not match the |
+| --- | --- |
 
 ## Protected methods
 

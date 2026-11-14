@@ -8,6 +8,7 @@ class FederatedComputeScheduleResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduleResponse](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse#) |
 
 > [!CAUTION]
@@ -28,6 +29,7 @@ The result returned by `https://developer.android.com/reference/kotlin/android/a
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [FederatedComputeScheduleRequest](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse#getFederatedComputeScheduleRequest()()` The request associated with this response. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 ## Public constructors
 

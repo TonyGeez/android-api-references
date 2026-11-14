@@ -3,12 +3,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # GnssClock
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/GnssClock "View this page in Java")
+| --- | --- |
 
 ```
 class GnssClock : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssClock](https://developer.android.com/reference/kotlin/android/location/GnssClock#) |
 
 A class containing a GNSS clock timestamp.
@@ -26,30 +28,39 @@ It represents a measurement of the GNSS receiver's clock.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getBiasNanos()()` Gets the clock's sub-nanosecond bias. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getBiasUncertaintyNanos()()` Gets the clock's Bias Uncertainty (1-Sigma) in nanoseconds. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getDriftNanosPerSecond()()` Gets the clock's Drift in nanoseconds per second. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getDriftUncertaintyNanosPerSecond()()` Gets the clock's Drift Uncertainty (1-Sigma) in nanoseconds per second. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getElapsedRealtimeNanos()()` Returns the elapsed real-time of this clock since system boot, in nanoseconds. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getElapsedRealtimeUncertaintyNanos()()` Gets the estimate of the relative precision of the alignment of the `https://developer.android.com/reference/kotlin/android/location/GnssClock#getElapsedRealtimeNanos()` timestamp, with the reported measurements in nanoseconds (68% confidence). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getFullBiasNanos()()` Gets the difference between hardware clock (`https://developer.android.com/reference/kotlin/android/location/GnssClock#getTimeNanos()`) inside GPS receiver and the true GPS time since 0000Z, January 6, 1980, in nanoseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getHardwareClockDiscontinuityCount()()` Gets count of hardware clock discontinuities. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getLeapSecond()()` Gets the leap second associated with the clock's time. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceCarrierFrequencyHzForIsb()()` Returns the reference carrier frequency in Hz for inter-signal bias. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceCodeTypeForIsb()()` Returns the reference code type for inter-signal bias. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()()` Returns the reference constellation type for inter-signal bias. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getTimeNanos()()` Gets the GNSS receiver internal hardware clock value in nanoseconds. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#getTimeUncertaintyNanos()()` Gets the clock's time Uncertainty (1-Sigma) in nanoseconds. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getBiasNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasBiasUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getBiasUncertaintyNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasDriftNanosPerSecond()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getDriftNanosPerSecond()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasDriftUncertaintyNanosPerSecond()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getDriftUncertaintyNanosPerSecond()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasElapsedRealtimeNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getElapsedRealtimeNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasElapsedRealtimeUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getElapsedRealtimeUncertaintyNanos()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasFullBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getFullBiasNanos()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasLeapSecond()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getLeapSecond()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasReferenceCarrierFrequencyHzForIsb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceCarrierFrequencyHzForIsb()` is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasReferenceCodeTypeForIsb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceCodeTypeForIsb()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasReferenceConstellationTypeForIsb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()` is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#hasTimeUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssClock#getTimeUncertaintyNanos()` is available, `false` otherwise. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssClock#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

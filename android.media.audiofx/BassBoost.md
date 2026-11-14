@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # BassBoost
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/BassBoost "View this page in Java") 
+| --- | --- |
 
 ```
 open class BassBoost : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.BassBoost](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#) |
 
@@ -53,9 +55,11 @@ See [android.media.audiofx.AudioEffect](https://developer.android.com/reference/
 | open [BassBoost.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost.Settings)! | [getProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#getProperties())`()` Gets the bass boost properties. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getRoundedStrength](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#getRoundedStrength())`()` Gets the current strength of the effect. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getStrengthSupported](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#getStrengthSupported())`()` Indicates whether setting strength is supported. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameterListener](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#setParameterListener(android.media.audiofx.BassBoost.OnParameterChangeListener))`(`listener:` ` [BassBoost.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost.OnParameterChangeListener)!`)` Registers an OnParameterChangeListener interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperties](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#setProperties(android.media.audiofx.BassBoost.Settings))`(`settings:` ` [BassBoost.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost.Settings)!`)` Sets the bass boost properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrength](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost#setStrength(kotlin.Short))`(`strength:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the strength of the bass boost effect. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -115,6 +119,7 @@ Class constructor.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 | `java.lang.RuntimeException` | |
 
 ## Public methods
@@ -138,6 +143,7 @@ Gets the bass boost properties. This method is useful when a snapshot of current
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getRoundedStrength
 
@@ -158,6 +164,7 @@ Gets the current strength of the effect.
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### getStrengthSupported
 
@@ -206,6 +213,7 @@ Sets the bass boost properties. This method is useful when bass boost settings h
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setStrength
 
@@ -226,3 +234,4 @@ Sets the strength of the bass boost effect. If the implementation does not suppo
 | `java.lang.IllegalStateException` | |
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |

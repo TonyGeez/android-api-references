@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # GetTopicsRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/topics/GetTopicsRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class GetTopicsRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.topics.GetTopicsRequest](https://developer.android.com/reference/kotlin/android/adservices/topics/GetTopicsRequest#) |
 
 Get Topics Request.

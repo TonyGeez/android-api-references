@@ -9,6 +9,7 @@ abstract class Pipe
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe#) |
 
 A pair of channels that implements a unidirectional pipe.
@@ -33,6 +34,7 @@ Whether or not a thread writing bytes to a pipe will block until another thread 
 | openstatic [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe#open())`()` Opens a pipe. |
 | abstract [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel)! | [sink](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe#sink())`()` Returns this pipe's sink channel. |
 | abstract [Pipe.SourceChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SourceChannel)! | [source](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe#source())`()` Returns this pipe's source channel. |
+| --- | --- |
 
 ## Protected constructors
 

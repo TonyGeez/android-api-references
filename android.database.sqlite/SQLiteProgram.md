@@ -5,16 +5,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SQLiteProgram
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteProgram "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SQLiteProgram : SQLiteClosable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.database.sqlite.SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable) ||
 | | ↳ | [android.database.sqlite.SQLiteProgram](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#) |
 
 | Known Direct Subclasses [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery), [SQLiteStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement) |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery) | Represents a query that reads the resulting rows into a [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery). | | [SQLiteStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement) | Represents a statement that can be executed against a database. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A base class for compiled SQLite programs.
 
@@ -27,9 +30,11 @@ This class is not thread-safe.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindAllArgsAsStrings](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindAllArgsAsStrings(kotlin.Array))`(`bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Given an array of String bindArgs, this method binds all of them in one single call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindBlob](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindBlob(kotlin.Int,%20kotlin.ByteArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Bind a byte array value to this statement. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindDouble](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindDouble(kotlin.Int,%20kotlin.Double))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Bind a double value to this statement. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindLong](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindLong(kotlin.Int,%20kotlin.Long))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Bind a long value to this statement. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindNull](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindNull(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Bind a NULL value to this statement. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindString](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindString(kotlin.Int,%20kotlin.String))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Bind a String value to this statement. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearBindings](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#clearBindings())`()` Clears all existing bindings. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUniqueId](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#getUniqueId())`()` Unimplemented. |
 

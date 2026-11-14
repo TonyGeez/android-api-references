@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # WifiSsid
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiSsid "View this page in Java") 
+| --- | --- |
 
 ```
 class WifiSsid : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#) |
 
 Representation of a Wi-Fi Service Set Identifier (SSID).
@@ -26,9 +28,11 @@ Representation of a Wi-Fi Service Set Identifier (SSID).
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | static [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#) | [fromBytes](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#fromBytes(kotlin.ByteArray))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Create a WifiSsid from the raw bytes. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getBytes](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#getBytes())`()` Returns the raw byte array representing this SSID. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#toString())`()` Returns the string representation of the WifiSsid. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Properties ||

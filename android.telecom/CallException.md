@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CallException
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/CallException "View this page in Java") 
+| --- | --- |
 
 ```
 class CallException : RuntimeException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.telecom.CallException](https://developer.android.com/reference/kotlin/android/telecom/CallException#) |
 
 This class defines exceptions that can be thrown when using Telecom APIs with [android.os.OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#) s. Most of these exceptions are thrown when changing a call state with [CallControl](https://developer.android.com/reference/kotlin/android/telecom/CallControl) s or [CallControlCallback](https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback) s.
@@ -25,9 +28,11 @@ This class defines exceptions that can be thrown when using Telecom APIs with [a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_CALL_CANNOT_BE_SET_TO_ACTIVE](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_CALL_CANNOT_BE_SET_TO_ACTIVE:kotlin.Int) The operation has failed because Telecom cannot set the requested call as the current active call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_CALL_IS_NOT_BEING_TRACKED](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_CALL_IS_NOT_BEING_TRACKED:kotlin.Int) The operation has failed because Telecom has already removed the call from the server side and destroyed all the objects associated with it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_CALL_NOT_PERMITTED_AT_PRESENT_TIME](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_CALL_NOT_PERMITTED_AT_PRESENT_TIME:kotlin.Int) The operation has failed because there is either no PhoneAccount registered with Telecom for the given operation, or the limit of calls has been reached. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_CANNOT_HOLD_CURRENT_ACTIVE_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_CANNOT_HOLD_CURRENT_ACTIVE_CALL:kotlin.Int) The operation has failed due to Telecom failing to hold the current active call for the call attempting to become the new active call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_ERROR_UNKNOWN:kotlin.Int) The operation has failed due to an unknown or unspecified error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_OPERATION_TIMED_OUT](https://developer.android.com/reference/kotlin/android/telecom/CallException#CODE_OPERATION_TIMED_OUT:kotlin.Int) The operation has failed because the operation failed to complete before the timeout |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -42,6 +47,7 @@ This class defines exceptions that can be thrown when using Telecom APIs with [a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/CallException#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](https://developer.android.com/reference/kotlin/android/telecom/CallException#getCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/CallException#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

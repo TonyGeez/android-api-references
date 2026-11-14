@@ -6,12 +6,14 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 # PropertyPath
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/PropertyPath "View this page in Java") 
+| --- | --- |
 
 ```
 open class PropertyPath : MutableIterable<PropertyPath.PathSegment!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#) |
 
 Represents a property path returned from searching the AppSearch Database.
@@ -36,9 +38,11 @@ This class won't perform any retrievals, it will only parse the path string. As 
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) | [get](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) at a specified index of the PropertyPath. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#hashCode())`()` <br /> |
+| --- | --- |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment)!\> | [iterator](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#iterator())`()` Returns an iterator over the PathSegments within the PropertyPath |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#size())`()` Returns the number of [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) s in the PropertyPath. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#toString())`()` Returns a valid path string representing this PropertyPath |
+| --- | --- |
 
 ## Public constructors
 

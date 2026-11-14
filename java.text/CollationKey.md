@@ -9,6 +9,7 @@ abstract class CollationKey : Comparable<CollationKey!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.text.CollationKey](https://developer.android.com/reference/kotlin/java/text/CollationKey#) |
 
 A`CollationKey`represents a`String`under the rules of a specific`Collator`object. Comparing two`CollationKey`s returns the relative order of the`String`s they represent. Using`CollationKey`s to compare`String`s is generally faster than using`Collator.compare`. Thus, when the`String`s must be compared multiple times, for example when sorting a list of`String`s. It's more efficient to use`CollationKey`s.
@@ -54,6 +55,7 @@ The following example shows how`CollationKey`s might be used to sort a list of`S
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/text/CollationKey#compareTo(java.text.CollationKey))`(`other:` ` [CollationKey](https://developer.android.com/reference/kotlin/java/text/CollationKey#)!`)` Compare this CollationKey to the target CollationKey. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSourceString](https://developer.android.com/reference/kotlin/java/text/CollationKey#getSourceString())`()` Returns the String that this CollationKey represents. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/java/text/CollationKey#toByteArray())`()` Converts the CollationKey to a sequence of bits. |
+| --- | --- |
 
 ## Protected constructors
 

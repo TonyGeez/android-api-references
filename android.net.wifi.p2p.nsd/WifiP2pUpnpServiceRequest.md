@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # WifiP2pUpnpServiceRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class WifiP2pUpnpServiceRequest : WifiP2pServiceRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest) ||
 | | ↳ | [android.net.wifi.p2p.nsd.WifiP2pUpnpServiceRequest](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest#) |
 

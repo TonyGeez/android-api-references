@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnTimeSetListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/TimePickerDialog.OnTimeSetListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnTimeSetListener
@@ -41,3 +42,4 @@ Called when the user is done setting a new time and the dialog has closed.
 | `view` | [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#)!:the view associated with this listener |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hour that was set |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minute that was set |
+| --- | --- |

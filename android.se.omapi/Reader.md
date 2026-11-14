@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Reader
 
 Kotlin| [Java](https://developer.android.com/reference/android/se/omapi/Reader "View this page in Java") 
+| --- | --- |
 
 ```
 class Reader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.se.omapi.Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#) |
 
 Instances of this class represent Secure Element Readers supported to this device. These Readers can be physical devices or virtual devices. They can be removable or not. They can contain Secure Element that can or cannot be removed.
@@ -22,6 +24,7 @@ Instances of this class represent Secure Element Readers supported to this devic
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeSessions](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#closeSessions())`()` Close all the sessions opened on this reader. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#getName())`()` Return the name of this reader. |
 | [SEService](https://developer.android.com/reference/kotlin/android/se/omapi/SEService) | [getSEService](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#getSEService())`()` Return the Secure Element service this reader is bound to. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecureElementPresent](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#isSecureElementPresent())`()` Check if a Secure Element is present in this reader. |
 | [Session](https://developer.android.com/reference/kotlin/android/se/omapi/Session) | [openSession](https://developer.android.com/reference/kotlin/android/se/omapi/Reader#openSession())`()` Connects to a Secure Element in this reader. |
 

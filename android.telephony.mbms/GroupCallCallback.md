@@ -3,6 +3,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # GroupCallCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback "View this page in Java")
+| --- | --- |
 
 ```
 interface GroupCallCallback
@@ -23,6 +24,7 @@ A callback class for use when the application is in a group call. The middleware
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onBroadcastSignalStrengthUpdated(kotlin.Int)(signalStrength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Broadcast Signal Strength updated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition in this group call. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onGroupCallStateChanged(kotlin.Int,%20kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to indicate this call has changed state. |
+| --- | --- |
 
 ## Constants
 

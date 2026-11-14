@@ -9,9 +9,11 @@ open class InflaterOutputStream : FilterOutputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
 | | | ↳ | [java.util.zip.InflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#) |
+| --- | --- | --- | --- |
 
 Implements an output stream filter for uncompressing data stored in the "deflate" compression format.
 
@@ -28,6 +30,7 @@ Implements an output stream filter for uncompressing data stored in the "deflate
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#close())`()` Writes any remaining uncompressed data to the output stream and closes the underlying output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#finish())`()` Finishes writing uncompressed data to the output stream without closing the underlying stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#flush())`()` Flushes this output stream, forcing any pending buffered output bytes to be written. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the uncompressed output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte to the uncompressed output stream. |
 
@@ -104,6 +107,7 @@ Creates a new output stream with the specified decompressor and buffer size.
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:output stream to write the uncompressed data to |
 | `infl` | [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!:decompressor ("inflater") for this stream |
 | `bufLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):decompression buffer size |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -174,12 +178,14 @@ Writes an array of bytes to the uncompressed output stream.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:buffer containing compressed data to decompress and write to the output stream |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):starting offset of the compressed data within`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of bytes to decompress from`b` |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs or this stream is already closed |
 | `java.lang.IndexOutOfBoundsException` | if`off < 0`, or if`len < 0`, or if`len > b.length - off` |
 | `java.lang.NullPointerException` | if`b`is null |
+| --- | --- |
 | `java.util.zip.ZipException` | if a compression (ZIP) format error occurs |
 
 ### write

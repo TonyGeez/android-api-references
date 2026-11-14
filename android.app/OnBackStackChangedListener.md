@@ -6,6 +6,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # OnBackStackChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnBackStackChangedListener
@@ -14,6 +15,7 @@ interface OnBackStackChangedListener
 | [android.app.FragmentManager.OnBackStackChangedListener](https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener#) |
 
 | Known Direct Subclasses [FragmentBreadCrumbs](https://developer.android.com/reference/kotlin/android/app/FragmentBreadCrumbs) |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [FragmentBreadCrumbs](https://developer.android.com/reference/kotlin/android/app/FragmentBreadCrumbs) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 28.**
 |

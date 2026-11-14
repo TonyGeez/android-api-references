@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnHeaderDecodedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/ImageDecoder.OnHeaderDecodedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnHeaderDecodedListener
@@ -43,3 +44,4 @@ Called by [ImageDecoder](https://developer.android.com/reference/kotlin/android/
 | `decoder` | [ImageDecoder](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder):the object performing the decode, for changing its default settings. This value cannot be`null`. |
 | `info` | [ImageDecoder.ImageInfo](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.ImageInfo):information about the encoded image. This value cannot be`null`. |
 | `source` | [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source):object that created`decoder`. This value cannot be`null`. |
+| --- | --- |

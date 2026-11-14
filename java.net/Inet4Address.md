@@ -9,6 +9,7 @@ class Inet4Address : InetAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress) ||
 | | ↳ | [java.net.Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address#) |
 
@@ -46,15 +47,19 @@ Historically the IPv4 TTL field in the IP header has doubled as a multicast scop
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/Inet4Address#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#getAddress())`()` Returns the raw IP address of this`InetAddress`object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#getHostAddress())`()` Returns the IP address string in textual presentation form. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/Inet4Address#hashCode())`()` Returns a hashcode for this IP address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnyLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isAnyLocalAddress())`()` Utility routine to check if the InetAddress is a wildcard address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLinkLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isLinkLocalAddress())`()` Utility routine to check if the InetAddress is an link local address. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopbackAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isLoopbackAddress())`()` Utility routine to check if the InetAddress is a loopback address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCGlobal](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMCGlobal())`()` Utility routine to check if the multicast address has global scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCLinkLocal](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMCLinkLocal())`()` Utility routine to check if the multicast address has link scope. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCNodeLocal](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMCNodeLocal())`()` Utility routine to check if the multicast address has node scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCOrgLocal](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMCOrgLocal())`()` Utility routine to check if the multicast address has organization scope. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCSiteLocal](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMCSiteLocal())`()` Utility routine to check if the multicast address has site scope. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMulticastAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isMulticastAddress())`()` Utility routine to check if the InetAddress is an IP multicast address. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSiteLocalAddress](https://developer.android.com/reference/kotlin/java/net/Inet4Address#isSiteLocalAddress())`()` Utility routine to check if the InetAddress is a site local address. |
 

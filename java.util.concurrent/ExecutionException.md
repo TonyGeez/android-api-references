@@ -9,9 +9,11 @@ open class ExecutionException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.util.concurrent.ExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutionException#) |
+| --- | --- | --- | --- |
 
 Exception thrown when attempting to retrieve the result of a task that aborted by throwing an exception. This exception can be inspected using the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method.
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # TimeInstantRangeFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter "View this page in Java") 
+| --- | --- |
 
 ```
 class TimeInstantRangeFilter : TimeRangeFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.TimeInstantRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#) |
 
 Specification of time range for read and delete requests. Internally represents a SQLLite argument that specifies start and end time to put in as SQLLite parameters. The filter must be bound at least at one of the ends, i.e., either the start or end time must be set, or else an IllegalArgumentException is thrown.
@@ -26,6 +28,7 @@ Specification of time range for read and delete requests. Internally represents 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getEndTime](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#getEndTime())`()` <br /> |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getStartTime](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#getStartTime())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBounded](https://developer.android.com/reference/kotlin/android/health/connect/TimeInstantRangeFilter#isBounded())`()` <br /> |
 

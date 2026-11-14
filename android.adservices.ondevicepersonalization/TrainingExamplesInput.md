@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # TrainingExamplesInput
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExamplesInput "View this page in Java") 
+| --- | --- |
 
 ```
 class TrainingExamplesInput
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.TrainingExamplesInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#) |
 
 The input data for [IsolatedWorker.onTrainingExamples](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onTrainingExamples(android.adservices.ondevicepersonalization.TrainingExamplesInput,%20android.os.OutcomeReceiver)).
@@ -26,9 +28,11 @@ The input data for [IsolatedWorker.onTrainingExamples](https://developer.android
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getCollectionName](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#getCollectionName())`()` The data collection name to use to create training examples. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPopulationName](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#getPopulationName())`()` The name of the federated compute population. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getResumptionToken](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#getResumptionToken())`()` Token used to support the resumption of training. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTaskName](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#getTaskName())`()` The name of the task within the population. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesInput#hashCode())`()` <br /> |
+| --- | --- |
 
 ## Public constructors
 
@@ -51,6 +55,7 @@ Creates a new TrainingExamplesInput.
 | `populationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the federated compute population. It should match the population name in [FederatedComputeInput.getPopulationName](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeInput#getPopulationName()). This value cannot be`null`. |
 | `taskName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the task within the population. It should match task plan configured at remote federated compute server. One population may have multiple tasks. The task name can be used to uniquely identify the job. This value cannot be`null`. |
 | `resumptionToken` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:Token used to support the resumption of training. If client app wants to use resumption token to track what examples are already used in previous federated compute jobs, it need set [TrainingExampleRecord.Builder.setResumptionToken](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord.Builder#setResumptionToken(kotlin.Byte)), OnDevicePersonalization will store it and pass it here for generating new training examples. This value may be`null`. |
+| --- | --- |
 | `collectionName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The data collection name to use to create training examples. This value may be`null`. |
 
 ## Public methods

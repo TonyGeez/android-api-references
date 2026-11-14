@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # DrmInitData
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/DrmInitData "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class DrmInitData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.DrmInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData#) |
 
 Encapsulates initialization data required by a [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) instance.
@@ -26,6 +28,7 @@ Encapsulates initialization data required by a [MediaDrm](https://developer.andr
 | abstract [DrmInitData.SchemeInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData.SchemeInitData)! | [get](https://developer.android.com/reference/kotlin/android/media/DrmInitData#get(java.util.UUID))`(`schemeUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!`)` Retrieves initialization data for a given DRM scheme, specified by its UUID. |
 | open [DrmInitData.SchemeInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData.SchemeInitData) | [getSchemeInitDataAt](https://developer.android.com/reference/kotlin/android/media/DrmInitData#getSchemeInitDataAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [SchemeInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData.SchemeInitData) with the given`index`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSchemeInitDataCount](https://developer.android.com/reference/kotlin/android/media/DrmInitData#getSchemeInitDataCount())`()` Returns the number of [SchemeInitData](https://developer.android.com/reference/kotlin/android/media/DrmInitData.SchemeInitData) elements available through [getSchemeInitDataAt](https://developer.android.com/reference/kotlin/android/media/DrmInitData#getSchemeInitDataAt(kotlin.Int)). |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # RecordIdFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/RecordIdFilter "View this page in Java") 
+| --- | --- |
 
 ```
 open class RecordIdFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.RecordIdFilter](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#) |
 
 A class to represent filtering based on record ID or client ID.
@@ -22,6 +24,7 @@ A class to represent filtering based on record ID or client ID.
 | openstatic [RecordIdFilter](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#) | [fromClientRecordId](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#fromClientRecordId(java.lang.Class,%20kotlin.String))`(`recordType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!>`, `clientRecordId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates an instance of Record id filter based on client record id. |
 | openstatic [RecordIdFilter](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#) | [fromId](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#fromId(java.lang.Class,%20kotlin.String))`(`recordType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!>`, `id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates an instance of Record id filter based on record id. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getClientRecordId](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#getClientRecordId())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#getId())`()` <br /> |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!\> | [getRecordType](https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter#getRecordType())`()` <br /> |
 

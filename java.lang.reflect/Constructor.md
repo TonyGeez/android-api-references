@@ -9,9 +9,11 @@ class Constructor<T : Any!> : Executable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.lang.reflect.AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject) |||
 | | ↳ | [java.lang.reflect.Executable](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable) ||
 | | | ↳ | [java.lang.reflect.Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#) |
+| --- | --- | --- | --- |
 
 `Constructor`provides information about, and access to, a single constructor for a class.
 
@@ -28,21 +30,27 @@ class Constructor<T : Any!> : Executable
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`Constructor`against the specified object. |
 | T? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns this element's annotation for the specified type if such an annotation is*present*, else null. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getDeclaredAnnotations())`()` Returns annotations that are*directly present*on this element. |
+| --- | --- |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\> | [getDeclaringClass](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getDeclaringClass())`()` Returns the`Class`object representing the class or interface that declares the executable represented by this object. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\> | [getExceptionTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getExceptionTypes())`()` Returns an array of`Class`objects that represent the types of exceptions declared to be thrown by the underlying executable represented by this object. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getGenericExceptionTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getGenericExceptionTypes())`()` Returns an array of`Type`objects that represent the exceptions declared to be thrown by this executable object. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getGenericParameterTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getGenericParameterTypes())`()` Returns an array of`Type`objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getModifiers())`()` Returns the Java language [modifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier) for the executable represented by this object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getName())`()` Returns the name of this constructor, as a string. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\>!\> | [getParameterAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getParameterAnnotations())`()` Returns an array of arrays of`Annotation`s that represent the annotations on the formal parameters, in declaration order, of the`Executable`represented by this object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameterCount](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getParameterCount())`()` Returns the number of formal parameters (whether explicitly declared or implicitly declared or neither) for the executable represented by this object. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\> | [getParameterTypes](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getParameterTypes())`()` Returns an array of`Class`objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable)\< [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#)\<T\>!\>!\> | [getTypeParameters](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#getTypeParameters())`()` Returns an array of`TypeVariable`objects that represent the type variables declared by the generic declaration represented by this`GenericDeclaration`object, in declaration order. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#hashCode())`()` Returns a hashcode for this`Constructor`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#isSynthetic())`()` Returns`true`if this executable is a synthetic construct; returns`false`otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#isVarArgs())`()` Returns`true`if this executable was declared to take a variable number of arguments; returns`false`otherwise. |
 | T | [newInstance](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#newInstance(kotlin.Any))`(`vararg` `initargs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Uses the constructor represented by this`Constructor`object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toGenericString](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#toGenericString())`()` Returns a string describing this`Constructor`, including type parameters. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#toString())`()` Returns a string describing this`Constructor`. |
 
 | Inherited functions ||
@@ -156,6 +164,7 @@ If an exception type is a type variable or a parameterized type, it is created. 
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic method signature does not conform to the format specified in The Java™ Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if the underlying executable's`throws`clause refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if the underlying executable's`throws`clause refers to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getGenericParameterTypes
 
@@ -180,6 +189,7 @@ If a formal parameter type is a type variable or a parameterized type, it is cre
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic method signature does not conform to the format specified in The Java™ Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if any of the parameter types of the underlying executable refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if any of the underlying executable's parameter types refer to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getModifiers
 
@@ -342,6 +352,7 @@ If the constructor completes normally, returns the newly created and initialized
 | `java.lang.IllegalAccessException` | if this`Constructor`object is enforcing Java language access control and the underlying constructor is inaccessible. |
 | `java.lang.IllegalArgumentException` | if the number of actual and formal parameters differ; if an unwrapping conversion for primitive arguments fails; or if, after possible unwrapping, a parameter value cannot be converted to the corresponding formal parameter type by a method invocation conversion; if this constructor pertains to an enum type. |
 | `java.lang.InstantiationException` | if the class that declares the underlying constructor represents an abstract class. |
+| --- | --- |
 | `java.lang.reflect.InvocationTargetException` | if the underlying constructor throws an exception. |
 | `java.lang.ExceptionInInitializerError` | if the initialization provoked by this method fails. |
 

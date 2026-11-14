@@ -3,12 +3,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # Effect
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/effect/Effect "View this page in Java")
+| --- | --- |
 
 ```
 abstract class Effect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.effect.Effect](https://developer.android.com/reference/kotlin/android/media/effect/Effect#) |
 
 Effects are high-performance transformations that can be applied to image frames. These are passed in the form of OpenGL ES 2.0 texture names. Typical frames could be images loaded from disk, or frames from the camera or other video streams.
@@ -28,6 +30,7 @@ The application is responsible for creating an EGL context, and making it curren
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(inputTexId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outputTexId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Apply an effect to GL textures. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#getName()()` Get the effect name. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#release()()` Release an effect. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#setParameter(kotlin.String,%20kotlin.Any)(parameterKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Set a filter parameter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#setUpdateListener(android.media.effect.EffectUpdateListener)(listener: https://developer.android.com/reference/kotlin/android/media/effect/EffectUpdateListener!)` Set an effect listener. |
 
@@ -69,6 +72,7 @@ Note, that regardless of whether a texture image was originally provided or not,
 | `inputTexId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The GL texture name of a valid and bound input texture. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the input texture in pixels. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the input texture in pixels. |
+| --- | --- |
 | `outputTexId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The GL texture name of the output texture. |
 
 ### getName

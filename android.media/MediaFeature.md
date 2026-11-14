@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # MediaFeature
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaFeature "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaFeature
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaFeature](https://developer.android.com/reference/kotlin/android/media/MediaFeature#) |
 
 MediaFeature defines various media features, e.g. hdr type.

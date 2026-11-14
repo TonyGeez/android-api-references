@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # TabListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.TabListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface TabListener
@@ -26,6 +27,7 @@ Callback interface invoked when a tab is focused, unfocused, added, or removed.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabReselected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabReselected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab that is already selected is chosen again by the user. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabSelected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabSelected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab enters the selected state. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabUnselected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabUnselected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab exits the selected state. |
+| --- | --- |
 
 ## Public methods
 

@@ -9,6 +9,7 @@ open class MethodHandles
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.invoke.MethodHandles](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#) |
 
 This class consists exclusively of static methods that operate on or return method handles. They fall into several categories:
@@ -32,45 +33,59 @@ This class consists exclusively of static methods that operate on or return meth
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [arrayConstructor](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#arrayConstructor(java.lang.Class))`(`arrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle constructing arrays of a desired type, as if by the `anewarray` bytecode. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [arrayElementGetter](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#arrayElementGetter(java.lang.Class))`(`arrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle giving read access to elements of an array. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [arrayElementSetter](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#arrayElementSetter(java.lang.Class))`(`arrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle giving write access to elements of an array. |
+| --- | --- |
 | open static [VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle)! | [arrayElementVarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#arrayElementVarHandle(java.lang.Class))`(`arrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a VarHandle giving access to elements of an array of type `arrayClass`. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [arrayLength](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#arrayLength(java.lang.Class))`(`arrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle returning the length of an array, as if by the `arraylength` bytecode. |
 | open static [VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle)! | [byteArrayViewVarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#byteArrayViewVarHandle(java.lang.Class,%20java.nio.ByteOrder))`(`viewArrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `byteOrder:` ` [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder.html#)!`)` Produces a VarHandle giving access to elements of a `byte[]` array viewed as if it were a different primitive array type, such as `int[]` or `long[]`. |
+| --- | --- |
 | open static [VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle)! | [byteBufferViewVarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#byteBufferViewVarHandle(java.lang.Class,%20java.nio.ByteOrder))`(`viewArrayClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `byteOrder:` ` [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder.html#)!`)` Produces a VarHandle giving access to elements of a `ByteBuffer` viewed as if it were an array of elements of a different primitive component type to that of `byte`, such as `int[]` or `long[]`. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [catchException](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#catchException(java.lang.invoke.MethodHandle,%20java.lang.Class,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `exType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!>!`, `handler:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Makes a method handle which adapts a target method handle, by running it inside an exception handler. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [collectArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#collectArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `filter:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Adapts a target method handle by pre-processing a sub-sequence of its arguments with a filter (another method handle). |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [constant](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#constant(java.lang.Class,%20kotlin.Any))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Produces a method handle of the requested return type which returns the given constant value every time it is invoked. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [countedLoop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#countedLoop(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`iterations:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `init:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `body:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Constructs a loop that runs a given number of iterations. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [countedLoop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#countedLoop(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`start:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `end:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `init:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `body:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Constructs a loop that counts over a range of numbers. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [doWhileLoop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#doWhileLoop(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`init:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `body:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pred:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Constructs a `do-while` loop from an initializer, a body, and a predicate. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dropArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#dropArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20java.lang.Class))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `valueTypes:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle which will discard some placeholder arguments before calling some other specified *target* method handle. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dropArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#dropArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20kotlin.collections.MutableList))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `valueTypes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Produces a method handle which will discard some placeholder arguments before calling some other specified *target* method handle. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dropArgumentsToMatch](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#dropArgumentsToMatch(java.lang.invoke.MethodHandle,%20kotlin.Int,%20kotlin.collections.MutableList,%20kotlin.Int))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `skip:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newTypes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapts a target method handle to match the given parameter type list. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dropReturn](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#dropReturn(java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Drop the return value of the target handle (if any). |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [empty](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#empty(java.lang.invoke.MethodType))`(`type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a method handle of the requested type which ignores any arguments, does nothing, and returns a suitable default depending on the return type. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [exactInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#exactInvoker(java.lang.invoke.MethodType))`(`type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a special *invoker method handle* which can be used to invoke any method handle of the given type, as if by [invokeExact](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invokeExact(kotlin.Any)). |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [explicitCastArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#explicitCastArguments(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodType))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `newType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a method handle which adapts the type of the given method handle to a new type by pairwise argument and return type conversion. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [filterArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#filterArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `filters:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Adapts a target method handle by pre-processing one or more of its arguments, each with its own unary filter function, and then calling the target with each pre-processed argument replaced by the result of its corresponding filter function. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [filterReturnValue](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#filterReturnValue(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `filter:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Adapts a target method handle by post-processing its return value (if any) with a filter (another method handle). |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [foldArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#foldArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `combiner:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Adapts a target method handle by pre-processing some of its arguments, starting at a given position, and then calling the target with the result of the pre-processing, inserted into the original sequence of arguments just before the folded arguments. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [foldArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#foldArguments(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `combiner:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Adapts a target method handle by pre-processing some of its arguments, and then calling the target with the result of the pre-processing, inserted into the original sequence of arguments. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [guardWithTest](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#guardWithTest(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`test:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `fallback:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Makes a method handle which adapts a target method handle, by guarding it with a test, a boolean-valued method handle. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [identity](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#identity(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a method handle which returns its sole argument when invoked. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [insertArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#insertArguments(java.lang.invoke.MethodHandle,%20kotlin.Int,%20kotlin.Any))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Provides a target method handle with one or more *bound arguments* in advance of the method handle's invocation. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [invoker](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#invoker(java.lang.invoke.MethodType))`(`type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a special *invoker method handle* which can be used to invoke any method handle compatible with the given type, as if by [invoke](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle#invoke(kotlin.Any)). |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [iteratedLoop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#iteratedLoop(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`iterator:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `init:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `body:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Constructs a loop that ranges over the values produced by an `Iterator<T>`. |
 | open static [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)! | [lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#lookup())`()` Returns a [lookup object](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup) with full capabilities to emulate all supported bytecode behaviors of the caller. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [loop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#loop(kotlin.Array))`(`vararg` `clauses:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!>!`)` Constructs a method handle representing a loop with several loop variables that are updated and checked upon each iteration. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [permuteArguments](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#permuteArguments(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodType,%20kotlin.Int))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `newType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`, `vararg` `reorder:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Produces a method handle which adapts the calling sequence of the given method handle to a new type, by reordering the arguments. |
 | open static [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)! | [privateLookupIn](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#privateLookupIn(java.lang.Class,%20java.lang.invoke.MethodHandles.Lookup))`(`targetClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `lookup:` ` [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)!`)` Returns a [lookup object](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup) with full capabilities to emulate all supported bytecode behaviors, including [private access](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup#privacc), on a target class. |
+| --- | --- |
 | open static [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup)! | [publicLookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#publicLookup())`()` Returns a [lookup object](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup) which is trusted minimally. |
 | open static T | [reflectAs](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#reflectAs(java.lang.Class,%20java.lang.invoke.MethodHandle))`(`expected:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`, `target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Performs an unchecked "crack" of a [direct method handle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandleInfo#directmh). |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [spreadInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#spreadInvoker(java.lang.invoke.MethodType,%20kotlin.Int))`(`type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`, `leadingArgCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Produces a method handle which will invoke any method handle of the given `type`, with a given number of trailing arguments replaced by a single trailing `Object[]` array. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [tableSwitch](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#tableSwitch(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`fallback:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `vararg` `targets:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Creates a table switch method handle, which can be used to switch over a set of target method handles, based on a given target index, called selector. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [throwException](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#throwException(java.lang.Class,%20java.lang.Class))`(`returnType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`, `exType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!>!`)` Produces a method handle which will throw exceptions of the given `exType`. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [tryFinally](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#tryFinally(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `cleanup:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Makes a method handle that adapts a `target` method handle by wrapping it in a `try-finally` block. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [varHandleExactInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#varHandleExactInvoker(java.lang.invoke.VarHandle.AccessMode,%20java.lang.invoke.MethodType))`(`accessMode:` ` [VarHandle.AccessMode](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.AccessMode)!`, `type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a special *invoker method handle* which can be used to invoke a signature-polymorphic access mode method on any VarHandle whose associated access mode type is compatible with the given type. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [varHandleInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#varHandleInvoker(java.lang.invoke.VarHandle.AccessMode,%20java.lang.invoke.MethodType))`(`accessMode:` ` [VarHandle.AccessMode](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.AccessMode)!`, `type:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`)` Produces a special *invoker method handle* which can be used to invoke a signature-polymorphic access mode method on any VarHandle whose associated access mode type is compatible with the given type. |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [whileLoop](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#whileLoop(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle))`(`init:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `pred:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`, `body:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Constructs a `while` loop from an initializer, a body, and a predicate. |
+| --- | --- |
 | open static [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [zero](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#zero(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Produces a constant method handle of the requested return type which returns the default value for that type every time it is invoked. |
 
 ## Public methods
@@ -256,6 +271,7 @@ If the variable type is `float` or `double` then atomic update access modes comp
 | `java.lang.NullPointerException` | if viewArrayClass or byteOrder is null |
 | `java.lang.IllegalArgumentException` | if viewArrayClass is not an array type |
 | `java.lang.UnsupportedOperationException` | if the component type of viewArrayClass is not supported as a variable type |
+| --- | --- |
 
 ### byteBufferViewVarHandle
 
@@ -309,6 +325,7 @@ If the variable type is `float` or `double` then atomic update access modes comp
 | `java.lang.NullPointerException` | if viewArrayClass or byteOrder is null |
 | `java.lang.IllegalArgumentException` | if viewArrayClass is not an array type |
 | `java.lang.UnsupportedOperationException` | if the component type of viewArrayClass is not supported as a variable type |
+| --- | --- |
 
 ### catchException
 
@@ -349,6 +366,7 @@ The target and handler must return the same type, even if the handler always thr
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call |
 | `exType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>!: the type of exception which the handler will catch |
 | `handler` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call if a matching exception is thrown |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -453,6 +471,7 @@ If the target method handle consumes no arguments besides than the result (if an
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after filtering the subsequence of arguments |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position of the first adapter argument to pass to the filter, and/or the target argument which receives the result of the filter |
 | `filter` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call on the subsequence of arguments |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -499,6 +518,7 @@ The returned method handle is equivalent to `identity(type).bindTo(value)`.
 | `java.lang.NullPointerException` | if the `type` argument is null |
 | `java.lang.ClassCastException` | if the value cannot be converted to the required return type |
 | `java.lang.IllegalArgumentException` | if the given type is `void.class` |
+| --- | --- |
 
 ### countedLoop
 
@@ -559,6 +579,7 @@ Here is pseudocode for the resulting loop handle. In the code, `V`/`v` represent
 | `iterations` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: a non-`null` handle to return the number of iterations this loop should run. The handle's result type must be `int`. See above for other constraints. |
 | `init` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: optional initializer, providing the initial value of the loop variable. May be `null`, implying a default initial value. See above for other constraints. |
 | `body` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: body of the loop, which may not be `null`. It controls the loop parameters and result type in the standard case (see above for details). It must accept its own return type (if non-void) plus an `int` parameter (for the counter), and may accept any number of additional types. See above for other constraints. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------|
@@ -636,6 +657,7 @@ Here is pseudocode for the resulting loop handle. In the code, `V`/`v` represent
 | `start` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: a non-`null` handle to return the start value of the loop counter, which must be `int`. See above for other constraints. |
 | `end` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: a non-`null` handle to return the end value of the loop counter (the loop will run to `end-1`). The result type must be `int`. See above for other constraints. |
 | `init` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: optional initializer, providing the initial value of the loop variable. May be `null`, implying a default initial value. See above for other constraints. |
+| --- | --- |
 | `body` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: body of the loop, which may not be `null`. It controls the loop parameters and result type in the standard case (see above for details). It must accept its own return type (if non-void) plus an `int` parameter (for the counter), and may accept any number of additional types. See above for other constraints. |
 
 | Return ||
@@ -705,6 +727,7 @@ Here is pseudocode for the resulting loop handle. In the code, `V`/`v` represent
 | `init` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: optional initializer, providing the initial value of the loop variable. May be `null`, implying a default initial value. See above for other constraints. |
 | `body` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: body of the loop, which may not be `null`. It controls the loop parameters and result type. See above for other constraints. |
 | `pred` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: condition for the loop, which may not be `null`. Its result type must be `boolean`. See above for other constraints. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -741,6 +764,7 @@ The `pos` argument may range between zero and *N* , where *N* is the arity of th
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after the arguments are dropped |
 | `valueTypes` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: the type(s) of the argument(s) to drop |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position of first argument to drop (zero for the leftmost) |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -794,6 +818,7 @@ This method is also equivalent to the following code:
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after the arguments are dropped |
 | `valueTypes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: the type(s) of the argument(s) to drop |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): position of first argument to drop (zero for the leftmost) |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -833,6 +858,7 @@ Given these assumptions, the result of an invocation of `dropArgumentsToMatch` w
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to adapt |
 | `skip` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of targets parameters to disregard (they will be unchanged) |
 | `newTypes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: the list of types to match `target`'s parameter type list to |
+| --- | --- |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): place in `newTypes` where the non-skipped target parameters must occur |
 
 | Return ||
@@ -1027,6 +1053,7 @@ Here is pseudocode for the resulting adapter. In the code, `T` denotes the retur
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after arguments are filtered |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position of the first argument to filter |
 | `filters` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handles to call initially on filtered arguments |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -1133,6 +1160,7 @@ This method is closely related to [foldArguments(java.lang.invoke.MethodHandle,j
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after arguments are combined |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to start folding and at which to insert the folding result; if this is `0`, the effect is the same as for [foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles#foldArguments(java.lang.invoke.MethodHandle,%20java.lang.invoke.MethodHandle)). |
 | `combiner` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call initially on the incoming arguments |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -1259,6 +1287,7 @@ Note that the test arguments (`a...` in the pseudocode) cannot be modified by ex
 | `test` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle used for test, must return boolean |
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call if test passes |
 | `fallback` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: method handle to call if test fails |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1317,6 +1346,7 @@ The `pos` argument selects which parameters are to be bound. It may range betwee
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after the argument is inserted |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): where to insert the argument (zero for the first) |
 | `values` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the series of arguments to insert |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -1425,6 +1455,7 @@ Here is pseudocode for the resulting loop handle. In the code, `V`/`v` represent
 | `iterator` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: an optional handle to return the iterator to start the loop. If non-`null`, the handle must return [java.util.Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator.html#) or a subtype. See above for other constraints. |
 | `init` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: optional initializer, providing the initial value of the loop variable. May be `null`, implying a default initial value. See above for other constraints. |
 | `body` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: body of the loop, which may not be `null`. It controls the loop parameters and result type in the standard case (see above for details). It must accept its own return type (if non-void) plus a `T` parameter (for the iterated values), and may accept any number of additional types. See above for other constraints. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -1663,6 +1694,7 @@ The reordering array need not specify an actual permutation. An incoming argumen
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle to invoke after arguments are reordered |
 | `newType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!: the expected type of the new method handle |
 | `reorder` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an index array which controls the reordering |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -1700,6 +1732,7 @@ Returns a [lookup object](https://developer.android.com/reference/kotlin/java/la
 | `java.lang.IllegalArgumentException` | if `targetClass` is a primitive type or array class |
 | `java.lang.NullPointerException` | if `targetClass` or `caller` is `null` |
 | `java.lang.IllegalAccessException` | is not thrown on Android |
+| --- | --- |
 
 ### publicLookup
 
@@ -1739,6 +1772,7 @@ If there is a security manager, its `checkPermission` method is called with a `R
 | `<T>` | the desired type of the result, either [Member](https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html#) or a subtype |
 | `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: a direct method handle to crack into symbolic reference components |
 | `expected` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: a class object representing the desired result type `T` |
+| --- | --- |
 
 | Return ||
 |---|---------------------------------------------------------|
@@ -1749,6 +1783,7 @@ If there is a security manager, its `checkPermission` method is called with a `R
 | `java.lang.SecurityException` | if the caller is not privileged to call `setAccessible` |
 | `java.lang.NullPointerException` | if either argument is `null` |
 | `java.lang.IllegalArgumentException` | if the target is not a direct method handle |
+| --- | --- |
 | `java.lang.ClassCastException` | if the member is not of the expected type |
 
 ### spreadInvoker
@@ -2031,6 +2066,7 @@ Here is pseudocode for the resulting loop handle. In the code, `V`/`v` represent
 | `init` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: optional initializer, providing the initial value of the loop variable. May be `null`, implying a default initial value. See above for other constraints. |
 | `pred` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: condition for the loop, which may not be `null`. Its result type must be `boolean`. See above for other constraints. |
 | `body` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: body of the loop, which may not be `null`. It controls the loop parameters and result type. See above for other constraints. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|

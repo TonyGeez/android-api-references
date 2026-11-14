@@ -7,9 +7,11 @@ class PccEgressException : Exception, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.app.privatecompute.PccEgressException](https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#) |
+| --- | --- | --- | --- |
 
 Exception thrown when an egress request fails inside the PCC sandbox. Contains the android.app.privatecompute.PccEgressException.StatusCode detailing the failure.
 
@@ -24,6 +26,7 @@ Exception thrown when an egress request fails inside the PCC sandbox. Contains t
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_CONTENT_SENSITIVE:kotlin.Int` Indicates that the request failed because the content was classified as sensitive. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_NO_RESPONSE_FROM_EGRESS_SERVICE:kotlin.Int` Indicates that the request failed because the proxy service did not respond or timed out. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_UNABLE_TO_DELIVER_REQUEST:kotlin.Int` Indicates that the request failed because the system was unable to deliver the egress. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_UNKNOWN:kotlin.Int` Indicates an unspecified or unexpected failure. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
@@ -50,6 +53,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [PccEgressException.SensitiveCategoryInfo](https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#getSensitiveCategoryInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo` detailing the sensitive content detected during egress screening. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#getStatusCode()()` Returns the status code detailing the egress failure. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -174,6 +178,7 @@ Creates a new PccEgressException with a given android.app.privatecompute.PccEgre
 | `statusCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The android.app.privatecompute.PccEgressException.StatusCode of the egress failure. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_UNABLE_TO_DELIVER_REQUEST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_NO_RESPONSE_FROM_EGRESS_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_CONTENT_SENSITIVE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_UNKNOWN:kotlin.Int` |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The detailed error message description. This value cannot be `null`. |
 | `sensitiveCategoryInfo` | [PccEgressException.SensitiveCategoryInfo](https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo): The `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo` detailing the sensitive content screening result. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

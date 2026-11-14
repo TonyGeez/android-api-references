@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # ParcelUuid
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/ParcelUuid "View this page in Java") 
+| --- | --- |
 
 ```
 class ParcelUuid : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#) |
 
 This class is a Parcelable wrapper around [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#) which is an immutable representation of a 128-bit universally unique identifier.
@@ -30,9 +32,11 @@ This class is a Parcelable wrapper around [UUID](https://developer.android.com/r
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this ParcelUuid to another object for equality. |
 | static [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#)! | [fromString](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#fromString(kotlin.String))`(`uuid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new ParcelUuid from a string representation of [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#). |
+| --- | --- |
 | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [getUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#getUuid())`()` Get the [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#) represented by the ParcelUuid. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#toString())`()` Returns a string representation of the ParcelUuid For example: 0000110B-0000-1000-8000-00805F9B34FB will be the return value. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/ParcelUuid#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

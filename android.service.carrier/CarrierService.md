@@ -7,9 +7,11 @@ abstract class CarrierService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.service.carrier.CarrierService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#) |
 
 A service that exposes carrier-specific functionality to the system.
@@ -1061,6 +1063,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#notifyCarrierNetworkChange(kotlin.Boolean)(active: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Informs the system of an intentional upcoming carrier network change by a carrier app. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#notifyCarrierNetworkChange(kotlin.Int,%20kotlin.Boolean)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, active: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Informs the system of an intentional upcoming carrier network change by a carrier app on the given `subscriptionId`. |
 | open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` If overriding this method, call through to the super method for any unknown actions. |
+| --- | --- |
 | abstract [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)! | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(android.service.carrier.CarrierIdentifier)(id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier!)` Override this method to set carrier configuration. |
 | open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(kotlin.Int,%20android.service.carrier.CarrierIdentifier)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier?)` Override this method to set carrier configuration on the given `subscriptionId`. |
 

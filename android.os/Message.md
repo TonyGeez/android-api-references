@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Message
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Message "View this page in Java") 
+| --- | --- |
 
 ```
 class Message : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Message](https://developer.android.com/reference/kotlin/android/os/Message#) |
 
 Defines a message containing a description and arbitrary data object that can be sent to a [Handler](https://developer.android.com/reference/kotlin/android/os/Handler). This object contains two extra int fields and an extra object field that allow you to not do allocations in many cases.
@@ -32,24 +34,31 @@ While the constructor of Message is public, the best way to get one of these is 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyFrom](https://developer.android.com/reference/kotlin/android/os/Message#copyFrom(android.os.Message))`(`o:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message#)!`)` Make this message like o. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/Message#describeContents())`()` <br /> |
 | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)! | [getCallback](https://developer.android.com/reference/kotlin/android/os/Message#getCallback())`()` Retrieve callback object that will execute when this message is handled. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)! | [getData](https://developer.android.com/reference/kotlin/android/os/Message#getData())`()` Obtains a Bundle of arbitrary data associated with this event, lazily creating it if necessary. |
 | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)! | [getTarget](https://developer.android.com/reference/kotlin/android/os/Message#getTarget())`()` Retrieve the [Handler](https://developer.android.com/reference/kotlin/android/os/Handler) implementation that will receive this message. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWhen](https://developer.android.com/reference/kotlin/android/os/Message#getWhen())`()` Return the targeted delivery time of this message, in milliseconds. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsynchronous](https://developer.android.com/reference/kotlin/android/os/Message#isAsynchronous())`()` Returns true if the message is asynchronous, meaning that it is not subject to [Looper](https://developer.android.com/reference/kotlin/android/os/Looper) synchronization barriers. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain())`()` Return a new Message instance from the global pool. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but sets the value for the*target*member on the Message returned. |
+| --- | --- |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler,%20kotlin.Int))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but sets the values for both*target* and*what*members on the Message. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but sets the values of the*target* ,*what* ,*arg1* , and*arg2*members. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but sets the values of the*target* ,*what* ,*arg1* ,*arg2* , and*obj*members. |
+| --- | --- |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler,%20kotlin.Int,%20kotlin.Any))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but sets the values of the*target* ,*what* , and*obj*members. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler,%20java.lang.Runnable))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`, `callback:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Same as [obtain(android.os.Handler)](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Handler)), but assigns a callback Runnable on the Message that is returned. |
 | static [Message](https://developer.android.com/reference/kotlin/android/os/Message#)! | [obtain](https://developer.android.com/reference/kotlin/android/os/Message#obtain(android.os.Message))`(`orig:` ` [Message](https://developer.android.com/reference/kotlin/android/os/Message#)!`)` Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Message#obtain()), but copies the values of an existing message (including its target) into the new one. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)? | [peekData](https://developer.android.com/reference/kotlin/android/os/Message#peekData())`()` Like getData(), but does not lazily create the Bundle. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](https://developer.android.com/reference/kotlin/android/os/Message#recycle())`()` Return a Message instance to the global pool. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendToTarget](https://developer.android.com/reference/kotlin/android/os/Message#sendToTarget())`()` Sends this Message to the Handler specified by [getTarget](https://developer.android.com/reference/kotlin/android/os/Message#getTarget()). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAsynchronous](https://developer.android.com/reference/kotlin/android/os/Message#setAsynchronous(kotlin.Boolean))`(`async:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the message is asynchronous, meaning that it is not subject to [Looper](https://developer.android.com/reference/kotlin/android/os/Looper) synchronization barriers. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](https://developer.android.com/reference/kotlin/android/os/Message#setData(android.os.Bundle))`(`data:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)!`)` Sets a Bundle of arbitrary data values. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/android/os/Message#setTarget(android.os.Handler))`(`target:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!`)` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/Message#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Message#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -58,9 +67,11 @@ While the constructor of Message is public, the best way to get one of these is 
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator)\< [Message](https://developer.android.com/reference/kotlin/android/os/Message#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/os/Message#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg1](https://developer.android.com/reference/kotlin/android/os/Message#arg1:kotlin.Int) arg1 and arg2 are lower-cost alternatives to using [setData()](https://developer.android.com/reference/kotlin/android/os/Message#setData(android.os.Bundle))if you only need to store a few integer values. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg2](https://developer.android.com/reference/kotlin/android/os/Message#arg2:kotlin.Int) arg1 and arg2 are lower-cost alternatives to using [setData()](https://developer.android.com/reference/kotlin/android/os/Message#setData(android.os.Bundle))if you only need to store a few integer values. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [obj](https://developer.android.com/reference/kotlin/android/os/Message#obj:kotlin.Any) An arbitrary object to send to the recipient. |
 | [Messenger](https://developer.android.com/reference/kotlin/android/os/Messenger)! | [replyTo](https://developer.android.com/reference/kotlin/android/os/Message#replyTo:android.os.Messenger) Optional Messenger where replies to this message can be sent. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sendingUid](https://developer.android.com/reference/kotlin/android/os/Message#sendingUid:kotlin.Int) Optional field indicating the uid that sent the message. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [what](https://developer.android.com/reference/kotlin/android/os/Message#what:kotlin.Int) User-defined message code so that the recipient can identify what this message is about. |
 
 ## Public constructors
@@ -231,6 +242,7 @@ Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Mes
 | `h` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg1*value to set. |
+| --- | --- |
 | `arg2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg2*value to set. |
 
 | Return ||
@@ -258,6 +270,7 @@ Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Mes
 | `h` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg1*value to set. |
+| --- | --- |
 | `arg2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg2*value to set. |
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The*obj*value to set. |
 
@@ -284,6 +297,7 @@ Same as [obtain()](https://developer.android.com/reference/kotlin/android/os/Mes
 | `h` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The*object*method to set. |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|

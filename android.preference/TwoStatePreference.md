@@ -6,16 +6,19 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # TwoStatePreference
 
 Kotlin| [Java](https://developer.android.com/reference/android/preference/TwoStatePreference "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class TwoStatePreference : Preference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) ||
 | | ↳ | [android.preference.TwoStatePreference](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#) |
 
 | Known Direct Subclasses [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference), [SwitchPreference](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------| | [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that provides checkbox widget functionality. | | [SwitchPreference](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) that provides a two-state toggleable option. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -45,12 +48,15 @@ Common base class for preferences that have two selectable states, persist a boo
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDisableDependentsState](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#getDisableDependentsState())`()` Returns whether dependents are disabled when this preference is on (`true`) or when this preference is off (`false`). |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSummaryOff](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#getSummaryOff())`()` Returns the summary to be shown when unchecked. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSummaryOn](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#getSummaryOn())`()` Returns the summary to be shown when checked. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#isChecked())`()` Returns the checked state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChecked](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setChecked(kotlin.Boolean))`(`checked:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the checked state and saves it to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDisableDependentsState](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setDisableDependentsState(kotlin.Boolean))`(`disableDependentsState:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether dependents are disabled when this preference is on (`true`) or when this preference is off (`false`). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummaryOff](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setSummaryOff(kotlin.Int))`(`summaryResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummaryOff](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setSummaryOff(kotlin.CharSequence))`(`summary:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the summary to be shown when unchecked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummaryOn](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setSummaryOn(kotlin.Int))`(`summaryResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummaryOn](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#setSummaryOn(kotlin.CharSequence))`(`summary:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the summary to be shown when checked. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldDisableDependents](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#shouldDisableDependents())`()` <br /> |
 
@@ -59,6 +65,7 @@ Common base class for preferences that have two selectable states, persist a boo
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#onClick())`()` <br /> |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [onGetDefaultValue](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int))`(`a:` ` [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#onRestoreInstanceState(android.os.Parcelable))`(`state:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!`)` <br /> |
+| --- | --- |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#onSaveInstanceState())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInitialValue](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any))`(`restoreValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 

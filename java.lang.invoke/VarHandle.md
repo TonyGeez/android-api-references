@@ -9,6 +9,7 @@ abstract class VarHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.invoke.VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#) |
 
 A VarHandle is a dynamically strongly typed reference to a variable, or to a parametrically-defined family of variables, including static fields, non-static fields, array elements, or components of an off-heap data structure. Access to such variables is supported under various*access modes*, including plain read/write access, volatile read/write access, and compare-and-set.
@@ -154,45 +155,59 @@ A VarHandle can be obtained for a variable, such as a field, which is declared w
 | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | [accessModeType](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#accessModeType(java.lang.invoke.VarHandle.AccessMode))`(`accessMode:` ` [VarHandle.AccessMode](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.AccessMode)!`)` Obtains the access mode type for this VarHandle and a given access mode. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireFence](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#acquireFence())`()` Ensures that loads before the fence will not be reordered with loads and stores after the fence. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [compareAndExchange](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#compareAndExchange(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [compareAndExchangeAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#compareAndExchangeAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [compareAndExchangeRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#compareAndExchangeRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#compareAndSet(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>! | [coordinateTypes](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#coordinateTypes())`()` Returns the coordinate types for this VarHandle. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fullFence](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#fullFence())`()` Ensures that loads and stores before the fence will not be reordered with loads and stores after the fence. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of a variable, with memory semantics of reading as if the variable was declared non-`volatile`. |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of a variable, and ensures that subsequent loads and stores are not reordered before this access. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndAdd(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically adds the`value`to the current value of a variable with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any)), and returns the variable's previous value, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndAddAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndAddAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically adds the`value`to the current value of a variable with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any)), and returns the variable's previous value, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndAddRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndAddRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically adds the`value`to the current value of a variable with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any)), and returns the variable's previous value, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseAnd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseAnd(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise AND between the variable's current value and the`mask`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseAndAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseAndAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise AND between the variable's current value and the`mask`with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseAndRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseAndRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise AND between the variable's current value and the`mask`with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseOr](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseOr(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise OR between the variable's current value and the`mask`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseOrAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseOrAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise OR between the variable's current value and the`mask`with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseOrRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseOrRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise OR between the variable's current value and the`mask`with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseXor](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseXor(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise XOR between the variable's current value and the`mask`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseXorAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseXorAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise XOR between the variable's current value and the`mask`with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndBitwiseXorRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndBitwiseXorRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the result of bitwise XOR between the variable's current value and the`mask`with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndSet(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndSetAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndSetAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
+| --- | --- |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAndSetRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAndSetRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Atomically sets the value of a variable to the`newValue`with the memory semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))and returns the variable's previous value, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getOpaque(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of a variable, accessed in program order, but with no assurance of memory ordering effects with respect to other threads. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of a variable, with memory semantics of reading as if the variable was declared`volatile`. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAccessModeSupported](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode))`(`accessMode:` ` [VarHandle.AccessMode](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.AccessMode)!`)` Returns`true`if the given access mode is supported, otherwise`false`. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadLoadFence](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#loadLoadFence())`()` Ensures that loads before the fence will not be reordered with loads after the fence. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseFence](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#releaseFence())`()` Ensures that loads and stores before the fence will not be reordered with stores after the fence. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value of a variable to the`newValue`, with memory semantics of setting as if the variable was declared non-`volatile`and non-`final`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setOpaque(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value of a variable to the`newValue`, in program order, but with no assurance of memory ordering effects with respect to other threads. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value of a variable to the`newValue`, and ensures that prior loads and stores are not reordered after this access. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value of a variable to the`newValue`, with memory semantics of setting as if the variable was declared`volatile`. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [storeStoreFence](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#storeStoreFence())`()` Ensures that stores before the fence will not be reordered with stores after the fence. |
 | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [toMethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#toMethodHandle(java.lang.invoke.VarHandle.AccessMode))`(`accessMode:` ` [VarHandle.AccessMode](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.AccessMode)!`)` Obtains a method handle bound to this VarHandle and the given access mode. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#toString())`()` Returns a compact textual description of this [VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#), including the type of variable described, and a description of its coordinates. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [varType](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#varType())`()` Returns the variable type of variables referenced by this VarHandle. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#weakCompareAndSet(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Possibly atomically sets the value of a variable to the`newValue`with the memory semantics of [setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setVolatile(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getVolatile(kotlin.Any)). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#weakCompareAndSetAcquire(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Possibly atomically sets the value of a variable to the`newValue`with the semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#getAcquire(kotlin.Any)). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#weakCompareAndSetPlain(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Possibly atomically sets the value of a variable to the`newValue`with the semantics of [set](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#set(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#weakCompareAndSetRelease(kotlin.Any))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Possibly atomically sets the value of a variable to the`newValue`with the semantics of [setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#setRelease(kotlin.Any))if the variable's current value, referred to as the*witness value* ,`==`the`expectedValue`, as accessed with the memory semantics of [get](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle#get(kotlin.Any)). |
+| --- | --- |
 
 ## Public methods
 
@@ -253,6 +268,7 @@ The symbolic type descriptor at the call site of`compareAndExchange`must match t
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type is not compatible with the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type is compatible with the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -286,6 +302,7 @@ The symbolic type descriptor at the call site of`compareAndExchangeAcquire`must 
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -319,6 +336,7 @@ The symbolic type descriptor at the call site of`compareAndExchangeRelease`must 
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -352,6 +370,7 @@ The symbolic type descriptor at the call site of`compareAndSet`must match the ac
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -438,6 +457,7 @@ The symbolic type descriptor at the call site of`getAcquire`must match the acces
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### getAndAdd
 
@@ -466,6 +486,7 @@ The symbolic type descriptor at the call site of`getAndAdd`must match the access
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -499,6 +520,7 @@ The symbolic type descriptor at the call site of`getAndAddAcquire`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -532,6 +554,7 @@ The symbolic type descriptor at the call site of`getAndAddRelease`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -567,6 +590,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseAnd`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -602,6 +626,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseAndAcquire`must ma
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -637,6 +662,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseAndRelease`must ma
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -672,6 +698,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseOr`must match the 
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -707,6 +734,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseOrAcquire`must mat
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -742,6 +770,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseOrRelease`must mat
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -777,6 +806,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseXor`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -812,6 +842,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseXorAcquire`must ma
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -847,6 +878,7 @@ The symbolic type descriptor at the call site of`getAndBitwiseXorRelease`must ma
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -880,6 +912,7 @@ The symbolic type descriptor at the call site of`getAndSet`must match the access
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -913,6 +946,7 @@ The symbolic type descriptor at the call site of`getAndSetAcquire`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -946,6 +980,7 @@ The symbolic type descriptor at the call site of`getAndSetRelease`must match the
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -979,6 +1014,7 @@ The symbolic type descriptor at the call site of`getOpaque`must match the access
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### getVolatile
 
@@ -1007,6 +1043,7 @@ The symbolic type descriptor at the call site of`getVolatile`must match the acce
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### isAccessModeSupported
 
@@ -1071,6 +1108,7 @@ The symbolic type descriptor at the call site of`set`must match the access mode 
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### setOpaque
 
@@ -1095,6 +1133,7 @@ The symbolic type descriptor at the call site of`setOpaque`must match the access
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### setRelease
 
@@ -1119,6 +1158,7 @@ The symbolic type descriptor at the call site of`setRelease`must match the acces
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### setVolatile
 
@@ -1143,6 +1183,7 @@ The symbolic type descriptor at the call site of`setVolatile`must match the acce
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 ### storeStoreFence
 
@@ -1229,6 +1270,7 @@ The symbolic type descriptor at the call site of`weakCompareAndSet`must match th
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -1264,6 +1306,7 @@ The symbolic type descriptor at the call site of`weakCompareAndSetAcquire`must m
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -1299,6 +1342,7 @@ The symbolic type descriptor at the call site of`weakCompareAndSetPlain`must mat
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 
@@ -1334,6 +1378,7 @@ The symbolic type descriptor at the call site of`weakCompareAndSetRelease`must m
 | `java.lang.UnsupportedOperationException` | if the access mode is unsupported for this VarHandle. |
 | `java.lang.invoke.WrongMethodTypeException` | if the access mode type does not match the caller's symbolic type descriptor. |
 | `java.lang.ClassCastException` | if the access mode type matches the caller's symbolic type descriptor, but a reference cast fails. |
+| --- | --- |
 
 **See Also**
 

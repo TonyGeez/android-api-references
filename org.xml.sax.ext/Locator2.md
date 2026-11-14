@@ -11,6 +11,7 @@ interface Locator2 : Locator
 | [org.xml.sax.ext.Locator2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2#) |
 
 | Known Direct Subclasses [Locator2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Locator2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2#) interface. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 SAX2 extension to augment the entity information provided though a [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#). If an implementation supports this extension, the Locator provided in [ContentHandler.setDocumentLocator()](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#setDocumentLocator(org.xml.sax.Locator))will implement this interface, and the*http://xml.org/sax/features/use-locator2* feature flag will have the value*true* .*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.*
 

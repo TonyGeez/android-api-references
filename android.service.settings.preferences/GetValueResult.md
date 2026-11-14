@@ -7,6 +7,7 @@ class GetValueResult : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.settings.preferences.GetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest`.
@@ -27,9 +28,11 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_DISALLOW:kotlin.Int` Requested preference is not allowed for access in this API under the current device policy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_INTERNAL_ERROR:kotlin.Int` API call failed due to an issue with the service binding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_INVALID_REQUEST:kotlin.Int` Request object is not valid. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_OK:kotlin.Int` Request is successful. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_REQUIRE_APP_PERMISSION:kotlin.Int` Requested preference requires permissions not held by the calling application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_UNAVAILABLE:kotlin.Int` Preference is currently not available, likely due to device state or the state of a dependency. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#RESULT_UNSUPPORTED:kotlin.Int` Requested preference is not supported by this API. |
 
 | Inherited constants ||
@@ -41,6 +44,7 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getMetadata()()` Returns the metadata of requested Preference if request successful. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getResultCode()()` Returns the result code indicating status of the request. |
+| --- | --- |
 | [SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getValue()()` Returns the value of requested Preference if request successful. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

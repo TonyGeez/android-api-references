@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # EGLImage
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLImage "View this page in Java") 
+| --- | --- |
 
 ```
 open class EGLImage : EGLObjectHandle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.opengl.EGLObjectHandle](https://developer.android.com/reference/kotlin/android/opengl/EGLObjectHandle) ||
 | | ↳ | [android.opengl.EGLImage](https://developer.android.com/reference/kotlin/android/opengl/EGLImage#) |
 

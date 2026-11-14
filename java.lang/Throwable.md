@@ -9,6 +9,7 @@ open class Throwable : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Throwable](https://developer.android.com/reference/kotlin/java/lang/Throwable#) |
 
 The`Throwable`class is the superclass of all errors and exceptions in the Java language. Only objects that are instances of this class (or one of its subclasses) are thrown by the Java Virtual Machine or can be thrown by the Java`throw`statement. Similarly, only this class or one of its subclasses can be the argument type in a`catch`clause. For the purposes of compile-time checking of exceptions,`Throwable`and any subclass of`Throwable`that is not also a subclass of either [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) or [Error](https://developer.android.com/reference/kotlin/java/lang/Error) are regarded as checked exceptions.
@@ -43,15 +44,19 @@ By convention, class`Throwable`and its subclasses have two constructors, one tha
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSuppressed](https://developer.android.com/reference/kotlin/java/lang/Throwable#addSuppressed(kotlin.Throwable))`(`exception:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` Appends the specified exception to the exceptions that were suppressed in order to deliver this exception. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [fillInStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#fillInStackTrace())`()` Fills in the execution stack trace. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? | [getCause](https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause())`()` Returns the cause of this throwable or`null`if the cause is nonexistent or unknown. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLocalizedMessage](https://developer.android.com/reference/kotlin/java/lang/Throwable#getLocalizedMessage())`()` Creates a localized description of this throwable. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMessage](https://developer.android.com/reference/kotlin/java/lang/Throwable#getMessage())`()` Returns the detail message string of this throwable. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!\> | [getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace())`()` Provides programmatic access to the stack trace information printed by [printStackTrace()](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace()). |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\> | [getSuppressed](https://developer.android.com/reference/kotlin/java/lang/Throwable#getSuppressed())`()` Returns an array containing all of the exceptions that were suppressed, typically by the`try`-with-resources statement, in order to deliver this exception. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable#initCause(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Initializes the*cause*of this throwable to the specified value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace())`()` Prints this throwable and its backtrace to the standard error stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace(java.io.PrintStream))`(`s:` ` [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)`)` Prints this throwable and its backtrace to the specified print stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace(java.io.PrintWriter))`(`s:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)`)` Prints this throwable and its backtrace to the specified print writer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#setStackTrace(kotlin.Array))`(`stackTrace:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!>`)` Sets the stack trace elements that will be returned by [getStackTrace()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace())and printed by [printStackTrace()](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace())and related methods. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Throwable#toString())`()` Returns a short description of this throwable. |
 
 ## Public constructors
@@ -144,6 +149,7 @@ Note that the other constructors of`Throwable`treat suppression as being enabled
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the detail message. |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:the cause. (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 | `enableSuppression` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not suppression is enabled or disabled |
+| --- | --- |
 | `writableStackTrace` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not the stack trace should be writable |
 
 **See Also**

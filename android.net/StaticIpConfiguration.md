@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # StaticIpConfiguration
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/StaticIpConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class StaticIpConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.StaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#) |
 
 Class that describes static IP configuration.
@@ -30,12 +32,15 @@ Class that describes static IP configuration.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#describeContents())`()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\> | [getDnsServers](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getDnsServers())`()` Get the DNS servers included in the configuration. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDomains](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getDomains())`()` Get a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) containing the comma separated domains to search when resolving host names on this link, in priority order. |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)? | [getGateway](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getGateway())`()` Get the gateway included in the configuration. |
 | [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress) | [getIpAddress](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getIpAddress())`()` Get the static IP address included in the configuration. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

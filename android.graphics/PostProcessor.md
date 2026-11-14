@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # PostProcessor
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/PostProcessor "View this page in Java") 
+| --- | --- |
 
 ```
 interface PostProcessor

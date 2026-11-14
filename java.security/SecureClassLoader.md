@@ -9,10 +9,12 @@ open class SecureClassLoader : ClassLoader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) ||
 | | ↳ | [java.security.SecureClassLoader](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader#) |
 
 | Known Direct Subclasses [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader.html#) |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader.html#) | This class loader is used to load classes and resources from a search path of URLs referring to both JAR files and directories. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class extends ClassLoader with additional support for defining classes with an associated code source and permissions which are retrieved by the system policy by default.
 
@@ -28,6 +30,7 @@ This class extends ClassLoader with additional support for defining classes with
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.CodeSource))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cs:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`)` Converts an array of bytes into an instance of class Class, with an optional CodeSource. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader#defineClass(kotlin.String,%20java.nio.ByteBuffer,%20java.security.CodeSource))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `cs:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`)` Converts a [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) into an instance of class`Class`, with an optional CodeSource. |
 | open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [getPermissions](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader#getPermissions(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`)` Returns the permissions for the given CodeSource object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -108,6 +111,7 @@ If a non-null CodeSource is supplied a ProtectionDomain is constructed and assoc
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the expected name of the class, or`null`if not known, using '.' and not '/' as the separator and without a trailing ".class" suffix. |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the bytes that make up the class data. The bytes in positions`off`through`off+len-1`should have the format of a valid class file as defined by The Java™ Virtual Machine Specification. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in`b`of the class data |
+| --- | --- |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the class data |
 | `cs` | [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!:the associated CodeSource, or`null`if none |
 
@@ -120,6 +124,7 @@ If a non-null CodeSource is supplied a ProtectionDomain is constructed and assoc
 | `java.lang.ClassFormatError` | if the data did not contain a valid class |
 | `java.lang.IndexOutOfBoundsException` | if either`off`or`len`is negative, or if`off+len`is greater than`b.length`. |
 | `java.lang.SecurityException` | if an attempt is made to add this class to a package that contains classes that were signed by a different set of certificates than this class, or if the class name begins with "java.". |
+| --- | --- |
 
 ### defineClass
 
@@ -144,6 +149,7 @@ If a non-null CodeSource is supplied a ProtectionDomain is constructed and assoc
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the expected name of the class, or`null`if not known, using '.' and not '/' as the separator and without a trailing ".class" suffix. |
 | `b` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:the bytes that make up the class data. The bytes from positions`b.position()`through`b.position() + b.limit() -1`should have the format of a valid class file as defined by The Java™ Virtual Machine Specification. |
 | `cs` | [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!:the associated CodeSource, or`null`if none |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------|

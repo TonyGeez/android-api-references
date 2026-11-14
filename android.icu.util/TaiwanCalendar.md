@@ -7,9 +7,11 @@ open class TaiwanCalendar : GregorianCalendar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) |||
 | | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar) ||
 | | | ↳ | [android.icu.util.TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar#) |
+| --- | --- | --- | --- |
 
 `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912.
 
@@ -54,6 +56,7 @@ TaiwanCalendar usually should be instantiated using `https://developer.android.c
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar#handleComputeFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override Calendar to compute several fields specific to the hybrid Gregorian-Julian calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar#handleGetExtendedYear()()` Returns the extended year defined by the current fields. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override GregorianCalendar. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -190,6 +193,7 @@ Constructs a `TaiwanCalendar` with the given date set in the default time zone w
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` time field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` time field. |
+| --- | --- |
 
 ### TaiwanCalendar
 
@@ -212,9 +216,11 @@ Constructs a TaiwanCalendar with the given date and time set for the default tim
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` time field. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int` time field. The value is 0-based. e.g., 0 for January. |
 | `date` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int` time field. |
+| --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#HOUR_OF_DAY:kotlin.Int` time field. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MINUTE:kotlin.Int` time field. |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value used to set the calendar's `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SECOND:kotlin.Int` time field. |
+| --- | --- |
 
 ### TaiwanCalendar
 

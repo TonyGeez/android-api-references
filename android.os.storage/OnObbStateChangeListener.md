@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # OnObbStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class OnObbStateChangeListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.storage.OnObbStateChangeListener](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#) |
 
 Used for receiving notifications from [StorageManager](https://developer.android.com/reference/kotlin/android/os/storage/StorageManager) about OBB file states.
@@ -22,9 +24,11 @@ Used for receiving notifications from [StorageManager](https://developer.android
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ALREADY_MOUNTED](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_ALREADY_MOUNTED:kotlin.Int) The OBB has already been mounted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_COULD_NOT_MOUNT](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_COULD_NOT_MOUNT:kotlin.Int) The OBB could not be mounted by the system. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_COULD_NOT_UNMOUNT](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_COULD_NOT_UNMOUNT:kotlin.Int) The OBB could not be unmounted. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERNAL](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_INTERNAL:kotlin.Int) There was an internal system error encountered while trying to mount the OBB. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_MOUNTED](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_NOT_MOUNTED:kotlin.Int) A call was made to unmount the OBB when it was not mounted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PERMISSION_DENIED](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#ERROR_PERMISSION_DENIED:kotlin.Int) The current application does not have permission to use this OBB. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOUNTED](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#MOUNTED:kotlin.Int) The OBB container is now mounted and ready for use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNMOUNTED](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener#UNMOUNTED:kotlin.Int) The OBB container is now unmounted and not usable. |
 

@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # UsageEventsQuery
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/UsageEventsQuery "View this page in Java") 
+| --- | --- |
 
 ```
 class UsageEventsQuery : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.UsageEventsQuery](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#) |
 
 An Object-Oriented representation for a [UsageEvents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents) query. Used by [UsageStatsManager.queryEvents(UsageEventsQuery)](https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEvents(android.app.usage.UsageEventsQuery))call.
@@ -30,9 +32,11 @@ An Object-Oriented representation for a [UsageEvents](https://developer.android.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBeginTimeMillis](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#getBeginTimeMillis())`()` Returns the inclusive timestamp to indicate the beginning of the range of events. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndTimeMillis](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#getEndTimeMillis())`()` Returns the exclusive timestamp to indicate the end of the range of events. |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getEventTypes](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#getEventTypes())`()` Retrieves the usage event types for the query. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getPackageNames](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#getPackageNames())`()` Retrieves a`Set`of package names for the query. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/usage/UsageEventsQuery#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|

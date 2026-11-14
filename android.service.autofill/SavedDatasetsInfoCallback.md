@@ -3,6 +3,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SavedDatasetsInfoCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfoCallback "View this page in Java")
+| --- | --- |
 
 ```
 interface SavedDatasetsInfoCallback
@@ -23,6 +24,7 @@ This callback can be used only once.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#ERROR_NEEDS_USER_ACTION:kotlin.Int` The result cannot be computed until the user takes some action, such as setting up their account. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#ERROR_OTHER:kotlin.Int` The result could not be computed for any other reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#ERROR_UNSUPPORTED:kotlin.Int` The service does not support this request. |
+| --- | --- |
 
 | Public methods ||
 |---|---|

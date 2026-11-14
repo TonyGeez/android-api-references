@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # AnimatorListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/Animator.AnimatorListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface AnimatorListener
@@ -13,6 +14,7 @@ interface AnimatorListener
 | [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#) |
 
 | Known Direct Subclasses [AnimatorListenerAdapter](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter) |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatorListenerAdapter](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter) | This adapter class provides empty implementations of the methods from [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An animation listener receives notifications from an animation. Notifications indicate animation related events, such as the end or the repetition of the animation.
 
@@ -23,9 +25,11 @@ An animation listener receives notifications from an animation. Notifications in
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationCancel](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationCancel(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the cancellation of the animation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the end of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator,%20kotlin.Boolean))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`, `isReverse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies the end of the animation. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationRepeat(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the repetition of the animation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationStart(android.animation.Animator))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`)` Notifies the start of the animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationStart(android.animation.Animator,%20kotlin.Boolean))`(`animation:` ` [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)`, `isReverse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies the start of the animation as well as the animation's overall play direction. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # AutomaticZenRule
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/AutomaticZenRule "View this page in Java") 
+| --- | --- |
 
 ```
 class AutomaticZenRule : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.AutomaticZenRule](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#) |
 
 Rule instance information for a zen (aka DND or Attention Management) mode.
@@ -26,12 +28,15 @@ Rule instance information for a zen (aka DND or Attention Management) mode.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BEDTIME](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_BEDTIME:kotlin.Int) The type for rules triggered by bedtime/sleeping, like time of day, or snore detection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DRIVING](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_DRIVING:kotlin.Int) The type for rules triggered by driving detection, like Bluetooth connections or vehicle sounds. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IMMERSIVE](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_IMMERSIVE:kotlin.Int) The type for rules triggered by the user entering an immersive activity, like opening an app using [WindowInsetsController.hide(int)](https://developer.android.com/reference/kotlin/android/view/WindowInsetsController.html#hide(kotlin.Int)). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MANAGED](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_MANAGED:kotlin.Int) The type for rules created and managed by a device owner. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_OTHER:kotlin.Int) Rule is of a known type, but not one of the specific types. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCHEDULE_CALENDAR](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_SCHEDULE_CALENDAR:kotlin.Int) The type for rules triggered by calendar events. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCHEDULE_TIME](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_SCHEDULE_TIME:kotlin.Int) The type for rules triggered according to a time-based schedule. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_THEATER](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_THEATER:kotlin.Int) The type for rules that have a [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#) that implies that the device should not make sound and potentially hide some visual effects; may be triggered when entering a location where silence is requested, like a theater. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#TYPE_UNKNOWN:kotlin.Int) Rule is of an unknown type. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -48,27 +53,35 @@ Rule instance information for a zen (aka DND or Attention Management) mode.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getConditionId](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getConditionId())`()` Returns the representation of the state that causes this rule to become active. |
+| --- | --- |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getConfigurationActivity](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getConfigurationActivity())`()` Returns the [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) of the activity that shows configuration options for this rule. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getCreationTime())`()` Returns the time this rule was created, represented as milliseconds since the epoch. |
 | [ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects.html#)? | [getDeviceEffects](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getDeviceEffects())`()` Gets the [ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects.html#) of this rule. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconResId](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getIconResId())`()` Gets the resource id of the drawable icon for this rule. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterruptionFilter](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getInterruptionFilter())`()` Returns the interruption filter that is applied when this rule is active. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getName())`()` Returns the name of this rule. |
+| --- | --- |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getOwner](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getOwner())`()` Returns the [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) of the condition provider service that owns this rule. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTriggerDescription](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getTriggerDescription())`()` Gets the user visible description of when this rule is active (see [Condition.STATE_TRUE](https://developer.android.com/reference/kotlin/android/service/notification/Condition.html#STATE_TRUE:kotlin.Int)). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getType())`()` Gets the type of the rule. |
+| --- | --- |
 | [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#)? | [getZenPolicy](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getZenPolicy())`()` Gets the [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#) applied if [getInterruptionFilter()](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getInterruptionFilter())is [NotificationManager.INTERRUPTION_FILTER_PRIORITY](https://developer.android.com/reference/kotlin/android/app/NotificationManager#INTERRUPTION_FILTER_PRIORITY:kotlin.Int). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#isEnabled())`()` Returns whether this rule is enabled. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isManualInvocationAllowed](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#isManualInvocationAllowed())`()` Gets whether this rule can be manually activated by the user even when the triggering condition for the rule is not met. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConditionId](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setConditionId(android.net.Uri))`(`conditionId:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Sets the representation of the state that causes this rule to become active. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConfigurationActivity](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setConfigurationActivity(android.content.ComponentName))`(`componentName:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?`)` Sets the configuration activity - an activity that handles [NotificationManager.ACTION_AUTOMATIC_ZEN_RULE](https://developer.android.com/reference/kotlin/android/app/NotificationManager#ACTION_AUTOMATIC_ZEN_RULE:kotlin.String) that shows the user more information about this rule and/or allows them to configure it. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDeviceEffects](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setDeviceEffects(android.service.notification.ZenDeviceEffects))`(`deviceEffects:` ` [ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects.html#)?`)` Sets the [ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects.html#) associated to this rule. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables this rule. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterruptionFilter](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setInterruptionFilter(kotlin.Int))`(`interruptionFilter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the interruption filter that is applied when this rule is active. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the name of this rule. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZenPolicy](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#setZenPolicy(android.service.notification.ZenPolicy))`(`zenPolicy:` ` [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#)?`)` Sets the [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#) applied if [getInterruptionFilter()](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#getInterruptionFilter())is [NotificationManager.INTERRUPTION_FILTER_PRIORITY](https://developer.android.com/reference/kotlin/android/app/NotificationManager#INTERRUPTION_FILTER_PRIORITY:kotlin.Int). |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -223,9 +236,11 @@ Note: Prefer [AutomaticZenRule.Builder](https://developer.android.com/reference/
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the rule. This value cannot be`null`. |
 | `owner` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?:The Condition Provider service that owns this rule. This can be null if you're using [NotificationManager.setAutomaticZenRuleState(String, Condition)](https://developer.android.com/reference/kotlin/android/app/NotificationManager#setAutomaticZenRuleState(kotlin.String,%20android.service.notification.Condition))instead of [android.service.notification.ConditionProviderService](https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService.html#). |
 | `configurationActivity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?:An activity that handles [NotificationManager.ACTION_AUTOMATIC_ZEN_RULE](https://developer.android.com/reference/kotlin/android/app/NotificationManager#ACTION_AUTOMATIC_ZEN_RULE:kotlin.String) that shows the user more information about this rule and/or allows them to configure it. This is required if you are not using a [android.service.notification.ConditionProviderService](https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService.html#). If you are, it overrides the information specified in your manifest. This value may be`null`. |
+| --- | --- |
 | `conditionId` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):A representation of the state that should cause your app to apply the given interruption filter. This value cannot be`null`. |
 | `interruptionFilter` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The interruption filter defines which notifications are allowed to interrupt the user (e.g. via sound \& vibration) while this rule is active. |
 | `policy` | [ZenPolicy](https://developer.android.com/reference/kotlin/android/service/notification/ZenPolicy.html#)?:The policy defines which notifications are allowed to interrupt the user while this rule is active. This overrides the global policy while this rule is action ([Condition.STATE_TRUE](https://developer.android.com/reference/kotlin/android/service/notification/Condition.html#STATE_TRUE:kotlin.Int)). This value may be`null`. |
+| --- | --- |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the rule is enabled. |
 
 ### AutomaticZenRule
@@ -250,6 +265,7 @@ Creates an automatic zen rule.
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the rule. |
 | `owner` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!:The Condition Provider service that owns this rule. |
 | `interruptionFilter` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The interruption filter defines which notifications are allowed to interrupt the user (e.g. via sound \& vibration) while this rule is active. |
+| --- | --- |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the rule is enabled. |
 
 ## Public methods

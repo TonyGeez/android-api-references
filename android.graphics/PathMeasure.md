@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PathMeasure
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/PathMeasure "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathMeasure
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.PathMeasure](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#) |
 
 ## Summary
@@ -30,9 +32,11 @@ open class PathMeasure
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#getLength())`()` Return the total length of the current contour, or 0 if no path is associated with this measure object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMatrix](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#getMatrix(kotlin.Float,%20android.graphics.Matrix,%20kotlin.Int))`(`distance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `matrix:` ` [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pins distance to 0 \<= distance \<= getLength(), and then computes the corresponding matrix. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPosTan](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#getPosTan(kotlin.Float,%20kotlin.FloatArray,%20kotlin.FloatArray))`(`distance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pos:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `tan:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Pins distance to 0 \<= distance \<= getLength(), and then computes the corresponding position and tangent. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSegment](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#getSegment(kotlin.Float,%20kotlin.Float,%20android.graphics.Path,%20kotlin.Boolean))`(`startD:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stopD:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dst:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!`, `startWithMoveTo:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Given a start and stop distance, return in dst the intervening segment(s). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#isClosed())`()` Return true if the current contour is closed() |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextContour](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#nextContour())`()` Move to the next contour in the path. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPath](https://developer.android.com/reference/kotlin/android/graphics/PathMeasure#setPath(android.graphics.Path,%20kotlin.Boolean))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!`, `forceClosed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Assign a new path, or null to have none. |
 
 | Protected methods ||
@@ -121,6 +125,7 @@ Pins distance to 0 \<= distance \<= getLength(), and then computes the correspon
 | `distance` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The distance along the associated path |
 | `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix)!:Allocated by the caller, this is set to the transformation associated with the position and tangent at the specified distance |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Specified what aspects should be returned in the matrix. |
+| --- | --- |
 
 ### getPosTan
 
@@ -141,6 +146,7 @@ Pins distance to 0 \<= distance \<= getLength(), and then computes the correspon
 | `distance` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The distance along the current contour to sample |
 | `pos` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:If not null, returns the sampled position (x==\[0\], y==\[1\]) |
 | `tan` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:If not null, returns the sampled tangent (x==\[0\], y==\[1\]) |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|

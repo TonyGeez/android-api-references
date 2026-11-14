@@ -4,12 +4,14 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 # HighlightAnnotation
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/component/HighlightAnnotation "View this page in Java")
+| --- | --- |
 
 ```
 class HighlightAnnotation : PdfAnnotation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.component.PdfAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfAnnotation) ||
 | | ↳ | [android.graphics.pdf.component.HighlightAnnotation](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#) |
 
@@ -28,6 +30,7 @@ If the highlight color is not explicitly set using #setColor(android.graphics.Co
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getBoundsList()()` Returns the bounding rectangles of the highlight annotation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getColor()()` Returns the highlight color of the annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#setBoundsList(kotlin.collections.MutableList)(boundsList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!>)` Sets the bounding rectangles of the highlight annotation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#setColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the highlight color of the annotation. |
 
 | Inherited functions ||

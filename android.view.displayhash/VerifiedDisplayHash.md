@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # VerifiedDisplayHash
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash "View this page in Java") 
+| --- | --- |
 
 ```
 class VerifiedDisplayHash : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.displayhash.VerifiedDisplayHash](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#) |
 
 The verified display hash used to validate information about what was present on screen.
@@ -30,9 +32,11 @@ The verified display hash used to validate information about what was present on
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#describeContents())`()` <br /> |
 | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBoundsInWindow](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#getBoundsInWindow())`()` The bounds of the requested area to generate the hash. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHashAlgorithm](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#getHashAlgorithm())`()` The selected hash algorithm that generated the image hash. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getImageHash](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#getImageHash())`()` The image hash generated when creating the DisplayHash. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeMillis](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#getTimeMillis())`()` The timestamp when the hash was generated. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -60,6 +64,7 @@ Creates a new VerifiedDisplayHash.
 | `timeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The timestamp when the hash was generated. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
 | `boundsInWindow` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The bounds of the requested area to generate the hash. This is in window space passed in by the client. This value cannot be`null`. |
 | `hashAlgorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The selected hash algorithm that generated the image hash. This value cannot be`null`. |
+| --- | --- |
 | `imageHash` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):The image hash generated when creating the DisplayHash. This value cannot be`null`. |
 
 ## Public methods

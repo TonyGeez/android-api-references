@@ -5,15 +5,18 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # OperationApplicationException
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/OperationApplicationException "View this page in Java") 
+| --- | --- |
 
 ```
 open class OperationApplicationException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.content.OperationApplicationException](https://developer.android.com/reference/kotlin/android/content/OperationApplicationException#) |
+| --- | --- | --- | --- |
 
 Thrown when an application of a [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation) fails due the specified constraints.
 

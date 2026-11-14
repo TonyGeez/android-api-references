@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # SelectRangeGesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/SelectRangeGesture "View this page in Java") 
+| --- | --- |
 
 ```
 class SelectRangeGesture : PreviewableHandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) |||
 | | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture) ||
 | | | ↳ | [android.view.inputmethod.SelectRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#) |
+| --- | --- | --- | --- |
 
 A subclass of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for selecting a range of text by defining start and end rectangles. This can be useful when the range cannot be defined with a single rectangle. This class holds the information required for selection of text in toolkit widgets like [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#).
 
@@ -34,9 +37,11 @@ Note: this selects text within a range*between* two given areas. To select all t
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGranularity](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#getGranularity())`()` Returns Granular level on which text should be operated. |
+| --- | --- |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | [getSelectionEndArea](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#getSelectionEndArea())`()` Returns the Selection end area [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) in screen coordinates. |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | [getSelectionStartArea](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#getSelectionStartArea())`()` Returns the Selection start area [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) in screen coordinates. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 
 | Properties ||

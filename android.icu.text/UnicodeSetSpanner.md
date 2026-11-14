@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UnicodeSetSpanner
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner "View this page in Java") 
+| --- | --- |
 
 ```
 open class UnicodeSetSpanner
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.UnicodeSetSpanner](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#) |
 
 A helper class used to count, replace, and trim CharSequences based on UnicodeSet matches. An instance is immutable (and thus thread-safe) iff the source UnicodeSet is frozen.
@@ -24,6 +26,7 @@ A helper class used to count, replace, and trim CharSequences based on UnicodeSe
 These are actually not complete inverses. However, the alternating works because there are no gaps. For example, with \[a{ab}{bc}\], you get the following behavior when scanning forward:
 
 | SIMPLE | xxx\[ab\]cyyy |
+| --- | --- |
 | CONTAINED | xxx\[abc\]yyy |
 | NOT_CONTAINED | \[xxx\]ab\[cyyy\] |
 |---------------|-------------------|
@@ -31,6 +34,7 @@ These are actually not complete inverses. However, the alternating works because
 So here is what happens when you alternate:
 
 | start | |xxxabcyyy |
+| --- | --- | --- |
 | NOT_CONTAINED | xxx|abcyyy |
 | CONTAINED | xxxabc|yyy |
 | NOT_CONTAINED | xxxabcyyy| |
@@ -54,15 +58,19 @@ The entire string is traversed.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#countIn(kotlin.CharSequence))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the number of matching characters found in a character sequence, counting by CountMethod. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#countIn(kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.CountMethod))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!`)` Returns the number of matching characters found in a character sequence, using SpanCondition. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#countIn(kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.CountMethod,%20android.icu.text.UnicodeSet.SpanCondition))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!`)` Returns the number of matching characters found in a character sequence. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#deleteFrom(kotlin.CharSequence))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Delete all the matching spans in sequence, using SpanCondition. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#deleteFrom(kotlin.CharSequence,%20android.icu.text.UnicodeSet.SpanCondition))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!`)` Delete all matching spans in sequence, according to the spanCondition. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)! | [getUnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#getUnicodeSet())`()` Returns the UnicodeSet used for processing. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#hashCode())`()` Returns a hash code value for the object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#replaceFrom(kotlin.CharSequence,%20kotlin.CharSequence))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Replace all matching spans in sequence by the replacement, counting by CountMethod. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#replaceFrom(kotlin.CharSequence,%20kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.CountMethod))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!`)` Replace all matching spans in sequence by replacement, according to the CountMethod, using SpanCondition. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#replaceFrom(kotlin.CharSequence,%20kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.CountMethod,%20android.icu.text.UnicodeSet.SpanCondition))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!`)` Replace all matching spans in sequence by replacement, according to the countMethod and spanCondition. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#trim(kotlin.CharSequence))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start and end of the string, using TrimOption. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#trim(kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.TrimOption))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.TrimOption)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, using the trimOption and SpanCondition. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner#trim(kotlin.CharSequence,%20android.icu.text.UnicodeSetSpanner.TrimOption,%20android.icu.text.UnicodeSet.SpanCondition))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.TrimOption)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, depending on the trimOption and spanCondition. |
 
@@ -143,6 +151,7 @@ Returns the number of matching characters found in a character sequence. The cod
 | `sequence` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the sequence to count characters in |
 | `countMethod` | [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!:whether to treat an entire span as a match, or individual elements as matches |
 | `spanCondition` | [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!:the spanCondition to use. SIMPLE or CONTAINED means only count the elements in the span; NOT_CONTAINED is the reverse. **WARNING:**when a UnicodeSet contains strings, there may be unexpected behavior in edge cases. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -291,6 +300,7 @@ Replace all matching spans in sequence by replacement, according to the CountMet
 | `sequence` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:charsequence to replace matching spans in. |
 | `replacement` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:replacement sequence. To delete, use "" |
 | `countMethod` | [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!:whether to treat an entire span as a match, or individual elements as matches |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------|
@@ -316,6 +326,7 @@ Replace all matching spans in sequence by replacement, according to the countMet
 | `sequence` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:charsequence to replace matching spans in. |
 | `replacement` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:replacement sequence. To delete, use "" |
 | `countMethod` | [UnicodeSetSpanner.CountMethod](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.CountMethod)!:whether to treat an entire span as a match, or individual elements as matches |
+| --- | --- |
 | `spanCondition` | [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!:specify whether to modify the matching spans (CONTAINED or SIMPLE) or the non-matching (NOT_CONTAINED) |
 
 | Return ||
@@ -402,6 +413,7 @@ Returns a trimmed sequence (using CharSequence.subsequence()), that omits matchi
 | `sequence` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the sequence to trim |
 | `trimOption` | [UnicodeSetSpanner.TrimOption](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSetSpanner.TrimOption)!:LEADING, TRAILING, or BOTH |
 | `spanCondition` | [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!:SIMPLE, CONTAINED or NOT_CONTAINED |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------|

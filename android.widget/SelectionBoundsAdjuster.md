@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # SelectionBoundsAdjuster
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/AbsListView.SelectionBoundsAdjuster "View this page in Java") 
+| --- | --- |
 
 ```
 interface SelectionBoundsAdjuster

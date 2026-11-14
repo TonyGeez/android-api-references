@@ -7,6 +7,7 @@ abstract class SAXParserFactory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.parsers.SAXParserFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#) |
 
 Defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents.
@@ -22,15 +23,19 @@ Defines a factory API that enables applications to configure and obtain a SAX ba
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#getFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the particular property requested for in the underlying implementation of org. |
 | open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#getSchema()()` Gets the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` object specified through the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setSchema(javax.xml.validation.Schema)` method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isNamespaceAware()()` Indicates whether or not the factory is configured to produce parsers which are namespace aware. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isValidating()()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isXIncludeAware()()` Get state of XInclude processing. |
 | open static [SAXParserFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance()()` Returns Android's implementation of `SAXParserFactory`. |
+| --- | --- |
 | open static [SAXParserFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Returns an instance of the named implementation of `SAXParserFactory`. |
 | abstract [SAXParser](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newSAXParser()()` Creates a new instance of a SAXParser using the currently configured factory parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setFeature(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the particular feature in the underlying implementation of org. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setNamespaceAware(kotlin.Boolean)(awareness: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies that the parser produced by this code will provide support for XML namespaces. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setSchema(javax.xml.validation.Schema)(schema: https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#!)` Set the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` to be used by parsers created from this factory. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setValidating(kotlin.Boolean)(validating: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies that the parser produced by this code will validate documents as they are parsed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setXIncludeAware(kotlin.Boolean)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set state of XInclude processing. |
 
 ## Protected constructors
@@ -70,6 +75,7 @@ Returns the particular property requested for in the underlying implementation o
 | `javax.xml.parsers.ParserConfigurationException` | if a parser cannot be created which satisfies the requested configuration. |
 | `org.xml.sax.SAXNotRecognizedException` | When the underlying XMLReader does not recognize the property name. |
 | `org.xml.sax.SAXNotSupportedException` | When the underlying XMLReader recognizes the property name but doesn't support the property. |
+| --- | --- |
 
 **See Also**
 
@@ -221,6 +227,7 @@ All implementations are required to support the `https://developer.android.com/r
 | `java.lang.NullPointerException` | If the `name` parameter is null. |
 | `javax.xml.parsers.ParserConfigurationException` | if a parser cannot be created which satisfies the requested configuration. |
 | `org.xml.sax.SAXNotRecognizedException` | When the underlying XMLReader does not recognize the property name. |
+| --- | --- |
 | `org.xml.sax.SAXNotSupportedException` | When the underlying XMLReader recognizes the property name but doesn't support the property. |
 
 **See Also**

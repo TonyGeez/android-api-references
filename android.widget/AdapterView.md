@@ -7,9 +7,11 @@ abstract class AdapterView<T : Adapter!> : ViewGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
 | | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView#) |
+| --- | --- | --- | --- |
 
 Known Direct Subclasses [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView), [AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner), [AdapterViewAnimator](https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator) [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView) Base class that can be used to implement virtualized lists of items.
 [AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner) An abstract base class for spinner widgets.
@@ -39,6 +41,7 @@ See `https://developer.android.com/reference/kotlin/android/widget/ListView`, `h
 | open | `https://developer.android.com/reference/kotlin/android/widget/AdapterView.AdapterContextMenuInfo` Extra menu information provided to the `https://developer.android.com/reference/kotlin/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,%20android.view.View,%20android.view.ContextMenu.ContextMenuInfo)` callback when a context menu is brought up for this AdapterView. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener` Interface definition for a callback to be invoked when an item in this AdapterView has been clicked. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemLongClickListener` Interface definition for a callback to be invoked when an item in this view has been clicked and held. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener` Interface definition for a callback to be invoked when an item in this view has been selected. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -319,6 +322,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -435,6 +439,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -583,6 +588,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -598,6 +604,7 @@ May be a boolean value, such as "`true`" or "`false`".
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#INVALID_POSITION:kotlin.Int` Represents an invalid position. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#INVALID_ROW_ID:kotlin.Long` Represents an empty or invalid row id |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#ITEM_VIEW_TYPE_HEADER_OR_FOOTER:kotlin.Int` The item view type returned by `https://developer.android.com/reference/kotlin/android/widget/Adapter#getItemViewType(kotlin.Int)` when the item is a header or footer. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#ITEM_VIEW_TYPE_IGNORE:kotlin.Int` The item view type returned by `https://developer.android.com/reference/kotlin/android/widget/Adapter#getItemViewType(kotlin.Int)` when the adapter does not want the item's view recycled. |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO:kotlin.Int`
@@ -1756,36 +1763,47 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#addView(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` This method is not supported and throws an UnsupportedOperationException when called. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` This method is not supported and throws an UnsupportedOperationException when called. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#addView(android.view.View,%20kotlin.Int)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is not supported and throws an UnsupportedOperationException when called. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#addView(android.view.View,%20kotlin.Int,%20android.view.ViewGroup.LayoutParams)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` This method is not supported and throws an UnsupportedOperationException when called. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | abstract T | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getAdapter()()` Returns the adapter currently associated with this widget. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getCount()()` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getEmptyView()()` When the current adapter is empty, the AdapterView can display a special view called the empty view. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getFirstVisiblePosition()()` Returns the position within the adapter's data set for the first item displayed on screen. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getItemAtPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the data associated with the specified position in the list. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getItemIdAtPosition(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getLastVisiblePosition()()` Returns the position within the adapter's data set for the last item displayed on screen. |
+| --- | --- |
 | [AdapterView.OnItemClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener)? | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getOnItemClickListener()()` <br /> |
 | [AdapterView.OnItemLongClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemLongClickListener)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getOnItemLongClickListener()()` <br /> |
 | [AdapterView.OnItemSelectedListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener)? | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getOnItemSelectedListener()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getPositionForView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Returns the position within the adapter's data set for the view, where view is a an adapter item or a descendant of an adapter item. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getSelectedItem()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getSelectedItemId()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getSelectedItemPosition()()` Return the position of the currently selected item within the adapter's data set |
 | abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#getSelectedView()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#onProvideAutofillStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Populates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` to fullfil an autofill request. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#performItemClick(android.view.View,%20kotlin.Int,%20kotlin.Long)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Call the OnItemClickListener, if it is defined. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#removeAllViews()()` This method is not supported and throws an UnsupportedOperationException when called. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#removeView(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` This method is not supported and throws an UnsupportedOperationException when called. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#removeViewAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is not supported and throws an UnsupportedOperationException when called. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setAdapter(android.widget.AdapterView.T)(adapter: T)` Sets the adapter that provides the data and the views to represent the data in this widget. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setEmptyView(android.view.View)(emptyView: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the view to show if the adapter is empty |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setFocusable(kotlin.Int)(focusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets whether this view can receive focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setFocusableInTouchMode(kotlin.Boolean)(focusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this view can receive focus while in touch mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setOnClickListener(android.view.View.OnClickListener)(l: https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#?)` Register a callback to be invoked when this view is clicked. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)(listener: https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener?)` Register a callback to be invoked when an item in this AdapterView has been clicked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setOnItemLongClickListener(android.widget.AdapterView.OnItemLongClickListener)(listener: https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemLongClickListener!)` Register a callback to be invoked when an item in this AdapterView has been clicked and held |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener)(listener: https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener?)` Register a callback to be invoked when an item in this AdapterView has been selected. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setSelection(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the currently selected item. |
 
 | Protected methods ||
@@ -1793,6 +1811,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#canAnimate()()` Indicates whether the view group has the ability to animate its children after the first layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#dispatchRestoreInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Override to prevent thawing of any views created by the adapter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#dispatchSaveInstanceState(android.util.SparseArray)(container: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>!)` Override to prevent freezing of any views created by the adapter. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 
@@ -2677,6 +2696,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4513,6 +4533,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8303,6 +8324,7 @@ This method is not supported and throws an UnsupportedOperationException when ca
 | `view` | The view to be added to this window. |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: Ignored. |
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Ignored. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -8349,6 +8371,7 @@ This method is not supported and throws an UnsupportedOperationException when ca
 | `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Ignored. |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Ignored. |
 | `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: Ignored. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -8636,6 +8659,7 @@ Call the OnItemClickListener, if it is defined. Performs all normal actions asso
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view within the AdapterView that was clicked. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the adapter. |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -8893,5 +8917,6 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |

@@ -7,9 +7,11 @@ abstract class DataMigrationToPccService : Service
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
 | | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.privatecompute.DataMigrationToPccService](https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService#) |
 
 Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.

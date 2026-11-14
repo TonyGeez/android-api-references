@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SensorPrivacyManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorPrivacyManager "View this page in Java") 
+| --- | --- |
 
 ```
 class SensorPrivacyManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.SensorPrivacyManager](https://developer.android.com/reference/kotlin/android/hardware/SensorPrivacyManager#) |
 
 This class provides information about the microphone and camera toggles.

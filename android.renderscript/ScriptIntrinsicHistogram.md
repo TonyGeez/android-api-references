@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptIntrinsicHistogram
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram "View this page in Java") 
+| --- | --- |
 
 ```
 class ScriptIntrinsicHistogram : ScriptIntrinsic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
 | | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.renderscript.ScriptIntrinsicHistogram](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#) |
 
 | **This class was deprecated in API level 31.**
@@ -30,12 +33,15 @@ Intrinsic Histogram filter.
 | static [ScriptIntrinsicHistogram](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#create(android.renderscript.RenderScript,%20android.renderscript.Element))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`)` Create an intrinsic for calculating the histogram of an uchar or uchar4 image. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#forEach(android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Process an input buffer and place the histogram into the output allocation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#forEach(android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Process an input buffer and place the histogram into the output allocation. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#forEach_Dot(android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Process an input buffer and place the histogram into the output allocation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#forEach_Dot(android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Process an input buffer and place the histogram into the output allocation. |
 | [Script.FieldID](https://developer.android.com/reference/kotlin/android/renderscript/Script.FieldID)! | [getFieldID_Input](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#getFieldID_Input())`()` Get a FieldID for the input field of this intrinsic. |
+| --- | --- |
 | [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelID_Separate](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#getKernelID_Separate())`()` Get a KernelID for this intrinsic kernel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDotCoefficients](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#setDotCoefficients(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the coefficients used for the RGBA to Luminocity calculation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicHistogram#setOutput(android.renderscript.Allocation))`(`aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Set the output of the histogram. |
+| --- | --- |
 
 ## Public methods
 
@@ -191,6 +197,7 @@ Set the coefficients used for the RGBA to Luminocity calculation. The default is
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Red coefficient |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Green coefficient |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Blue coefficient |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Alpha coefficient |
 
 ### setOutput

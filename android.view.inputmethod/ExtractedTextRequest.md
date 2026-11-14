@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # ExtractedTextRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/ExtractedTextRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class ExtractedTextRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.ExtractedTextRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#) |
 
 Description of what an input method would like from an application when extract text from its input editor.
@@ -35,6 +37,7 @@ Description of what an input method would like from an application when extract 
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ExtractedTextRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#CREATOR:android.os.Parcelable.Creator) Used to make this class parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#flags:kotlin.Int) Additional request flags, having the same possible values as the flags parameter of [InputConnection.getTextBeforeCursor()](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxChars](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#hintMaxChars:kotlin.Int) Hint for the maximum number of characters to return. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxLines](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#hintMaxLines:kotlin.Int) Hint for the maximum number of lines to return. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [token](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest#token:kotlin.Int) Arbitrary integer that can be supplied in the request, which will be delivered back when reporting updates. |
 

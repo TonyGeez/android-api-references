@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SweepGradient
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/SweepGradient "View this page in Java") 
+| --- | --- |
 
 ```
 open class SweepGradient : Shader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
 | | ↳ | [android.graphics.SweepGradient](https://developer.android.com/reference/kotlin/android/graphics/SweepGradient#) |
 
@@ -48,6 +50,7 @@ A Shader that draws a sweep gradient around a center point.
 | `cx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center |
 | `cy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center |
 | `color0` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color to use at the start of the sweep |
+| --- | --- |
 | `color1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sRGB color to use at the end of the sweep |
 
 ### SweepGradient
@@ -69,6 +72,7 @@ A Shader that draws a sweep gradient around a center point.
 | `cx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center |
 | `cy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center |
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html):The sRGB colors to be distributed between around the center. There must be at least 2 colors in the array. This value cannot be`null`. |
+| --- | --- |
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be NULL. The relative position of each corresponding color in the colors array, beginning with 0 and ending with 1.0. If the values are not monotonic, the drawing may produce unexpected results. If positions is NULL, then the colors are automatically spaced evenly. This value may be`null`. |
 
 ### SweepGradient
@@ -90,6 +94,7 @@ A Shader that draws a sweep gradient around a center point.
 | `cx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center |
 | `cy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center |
 | `color0` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color to use at the start of the sweep |
+| --- | --- |
 | `color1` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The color to use at the end of the sweep |
 
 | Exceptions ||
@@ -115,6 +120,7 @@ A Shader that draws a sweep gradient around a center point.
 | `cx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x-coordinate of the center |
 | `cy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y-coordinate of the center |
 | `colors` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html):The colors to be distributed between around the center. There must be at least 2 colors in the array. This value cannot be`null`. |
+| --- | --- |
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?:May be NULL. The relative position of each corresponding color in the colors array, beginning with 0 and ending with 1.0. If the values are not monotonic, the drawing may produce unexpected results. If positions is NULL, then the colors are automatically spaced evenly. This value may be`null`. |
 
 | Exceptions ||

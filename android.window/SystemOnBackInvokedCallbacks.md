@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # SystemOnBackInvokedCallbacks
 
 Kotlin | [Java](https://developer.android.com/reference/android/window/SystemOnBackInvokedCallbacks "View this page in Java")
+| --- | --- |
 
 ```
 class SystemOnBackInvokedCallbacks
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.window.SystemOnBackInvokedCallbacks](https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#) |
 
 Utility class providing `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback`s to override the default behavior when system back is invoked. e.g. `https://developer.android.com/reference/kotlin/android/app/Activity.html#finish()`

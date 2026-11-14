@@ -3,12 +3,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # ScaleGestureDetector
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/ScaleGestureDetector "View this page in Java")
+| --- | --- |
 
 ```
 open class ScaleGestureDetector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#) |
 
 Detects scaling transformation gestures using the supplied `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s. The `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener` callback will notify users when a particular gesture event has occurred. This class should only be used with `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s reported via touch. To use this class:
@@ -35,18 +37,23 @@ Detects scaling transformation gestures using the supplied `https://developer.an
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getCurrentSpan()()` Return the average distance between each of the pointers forming the gesture in progress through the focal point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getCurrentSpanX()()` Return the average X distance between each of the pointers forming the gesture in progress through the focal point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getCurrentSpanY()()` Return the average Y distance between each of the pointers forming the gesture in progress through the focal point. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getEventTime()()` Return the event time of the current event being processed. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getFocusX()()` Get the X coordinate of the current gesture's focal point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getFocusY()()` Get the Y coordinate of the current gesture's focal point. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getPreviousSpan()()` Return the previous average distance between each of the pointers forming the gesture in progress through the focal point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getPreviousSpanX()()` Return the previous average X distance between each of the pointers forming the gesture in progress through the focal point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getPreviousSpanY()()` Return the previous average Y distance between each of the pointers forming the gesture in progress through the focal point. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getScaleFactor()()` Return the scaling factor from the previous scale event to the current event. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getTimeDelta()()` Return the time difference in milliseconds between the previous accepted scaling event and the current scaling event. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#isInProgress()()` Returns `true` if a scale gesture is in progress. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#isQuickScaleEnabled()()` Return whether the quick scale gesture, in which the user performs a double tap followed by a swipe, should perform scaling. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#isStylusScaleEnabled()()` Return whether the stylus scale gesture, in which the user uses a stylus and presses the button, should perform scaling. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent)` Accepts MotionEvents and dispatches events to a `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener` when appropriate. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#setQuickScaleEnabled(kotlin.Boolean)(scales: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether the associated `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener` should receive onScale callbacks when the user performs a doubleTap followed by a swipe. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#setStylusScaleEnabled(kotlin.Boolean)(scales: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the associated `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener` should receive onScale callbacks when the user uses a stylus and presses the button. |
 
@@ -91,6 +98,7 @@ Creates a ScaleGestureDetector with the supplied listener.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the application's context. This value cannot be `null`. |
 | `listener` | [ScaleGestureDetector.OnScaleGestureListener](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener): the listener invoked for all the callbacks, this must not be null. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: the handler to use for running deferred listener events. This value may be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

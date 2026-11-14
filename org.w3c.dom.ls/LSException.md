@@ -9,9 +9,11 @@ open class LSException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [org.w3c.dom.ls.LSException](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSException#) |
 
 Parser or write operations may throw an `LSException` if the processing is stopped. The processing can be stopped due to a `DOMError` with a severity of `DOMError.SEVERITY_FATAL_ERROR` or a non recovered `DOMError.SEVERITY_ERROR`, or if `DOMErrorHandler.handleError()` returned `false`.

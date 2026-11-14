@@ -8,9 +8,11 @@ class StepsCadenceRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.StepsCadenceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#) |
+| --- | --- | --- | --- |
 
 Captures the user's steps cadence.
 
@@ -30,6 +32,7 @@ Captures the user's steps cadence.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [StepsCadenceRecord.StepsCadenceRecordSample](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord.StepsCadenceRecordSample)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#getSamples()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -41,6 +44,7 @@ Captures the user's steps cadence.
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#STEPS_CADENCE_RATE_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average Steps cadence rate using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#STEPS_CADENCE_RATE_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum Steps cadence rate using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord#STEPS_CADENCE_RATE_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum Steps cadence rate using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| --- | --- |
 
 ## Public methods
 

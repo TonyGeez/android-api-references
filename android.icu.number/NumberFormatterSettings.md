@@ -7,9 +7,11 @@ abstract class NumberFormatterSettings<T : NumberFormatterSettings<*>!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.number.NumberFormatterSettings](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#) |
 
 | Known Direct Subclasses [LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter), [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter) |---|---| | [LocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter) | A NumberFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter) | A NumberFormatter that does not yet have a locale. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract base class for specifying settings related to number formatting. This class is implemented by `https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter` and `https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter`. This class is not intended for public subclassing.
 
@@ -20,21 +22,27 @@ An abstract base class for specifying settings related to number formatting. Thi
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#decimal(android.icu.number.NumberFormatter.DecimalSeparatorDisplay)(style: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.DecimalSeparatorDisplay!)` Sets the decimal separator display strategy. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#displayOptions(android.icu.text.DisplayOptions)(displayOptions: https://developer.android.com/reference/kotlin/android/icu/text/DisplayOptions.html#!)` Specifies the `DisplayOptions`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#grouping(android.icu.number.NumberFormatter.GroupingStrategy)(strategy: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.GroupingStrategy!)` Specifies the grouping strategy to use when formatting numbers. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#hashCode()()` Returns a hash code value for the object. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#integerWidth(android.icu.number.IntegerWidth)(style: https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth!)` Specifies the minimum and maximum number of digits to render before the decimal mark. |
+| --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#notation(android.icu.number.Notation)(notation: https://developer.android.com/reference/kotlin/android/icu/number/Notation!)` Specifies the notation style (simple, scientific, or compact) for rendering numbers. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#perUnit(android.icu.util.MeasureUnit)(perUnit: https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#!)` Sets a unit to be used in the denominator. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#precision(android.icu.number.Precision)(precision: https://developer.android.com/reference/kotlin/android/icu/number/Precision!)` Specifies the rounding precision to use when formatting numbers. |
+| --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#roundingMode(java.math.RoundingMode)(roundingMode: https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#!)` Specifies how to determine the direction to round a number when it has more digits than fit in the desired precision. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#scale(android.icu.number.Scale)(scale: https://developer.android.com/reference/kotlin/android/icu/number/Scale!)` Sets a scale (multiplier) to be used to scale the number by an arbitrary amount before formatting. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#sign(android.icu.number.NumberFormatter.SignDisplay)(style: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.SignDisplay!)` Sets the plus/minus sign display strategy. |
+| --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#symbols(android.icu.text.DecimalFormatSymbols)(symbols: https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormatSymbols.html#!)` Specifies the symbols (decimal separator, grouping separator, percent sign, numerals, etc.) to use when rendering numbers. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#symbols(android.icu.text.NumberingSystem)(ns: https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem.html#!)` Specifies that the given numbering system should be used when fetching symbols. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#toSkeleton()()` Creates a skeleton string representation of this number formatter. |
+| --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#unit(android.icu.util.MeasureUnit)(unit: https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit.html#!)` Specifies the unit (unit of measure, currency, or percent) to associate with rendered numbers. |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#unitWidth(android.icu.number.NumberFormatter.UnitWidth)(style: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.UnitWidth!)` Sets the width of the unit (measure unit or currency). |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatterSettings#usage(kotlin.String)(usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Specifies the usage for which numbers will be formatted ("person-height", "road", "rainfall", etc.) |
+| --- | --- |
 
 ## Public methods
 

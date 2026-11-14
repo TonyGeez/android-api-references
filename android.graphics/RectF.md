@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RectF
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/RectF "View this page in Java") 
+| --- | --- |
 
 ```
 open class RectF : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#) |
 
 RectF holds four float coordinates for a rectangle. The rectangle is represented by the coordinates of its 4 edges (left, top, right, bottom). These fields can be accessed directly. Use width() and height() to retrieve the rectangle's width and height. Note: most methods do not check to see that the coordinates are sorted correctly (i.e. left \<= right and top \<= bottom).
@@ -33,42 +35,54 @@ RectF holds four float coordinates for a rectangle. The rectangle is represented
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerX](https://developer.android.com/reference/kotlin/android/graphics/RectF#centerX())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerY](https://developer.android.com/reference/kotlin/android/graphics/RectF#centerY())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/graphics/RectF#contains(android.graphics.RectF))`(`r:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` Returns true iff the specified rectangle r is inside or equal to this rectangle. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/graphics/RectF#contains(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Returns true if (x,y) is inside the rectangle. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/graphics/RectF#contains(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`left:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `top:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `right:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bottom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Returns true iff the 4 specified sides of a rectangle are inside or equal to this rectangle. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/RectF#describeContents())`()` Parcelable interface methods |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/RectF#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/RectF#hashCode())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [height](https://developer.android.com/reference/kotlin/android/graphics/RectF#height())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inset](https://developer.android.com/reference/kotlin/android/graphics/RectF#inset(kotlin.Float,%20kotlin.Float))`(`dx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Inset the rectangle by (dx,dy). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersect](https://developer.android.com/reference/kotlin/android/graphics/RectF#intersect(android.graphics.RectF))`(`r:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` If the specified rectangle intersects this rectangle, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersect](https://developer.android.com/reference/kotlin/android/graphics/RectF#intersect(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`left:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `top:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `right:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bottom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` If the rectangle specified by left,top,right,bottom intersects this rectangle, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersects](https://developer.android.com/reference/kotlin/android/graphics/RectF#intersects(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`left:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `top:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `right:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bottom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Returns true if this rectangle intersects the specified rectangle. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersects](https://developer.android.com/reference/kotlin/android/graphics/RectF#intersects(android.graphics.RectF,%20android.graphics.RectF))`(`a:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`, `b:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` Returns true iff the two specified rectangles intersect. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/android/graphics/RectF#isEmpty())`()` Returns true if the rectangle is empty (left \>= right or top \>= bottom) |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [offset](https://developer.android.com/reference/kotlin/android/graphics/RectF#offset(kotlin.Float,%20kotlin.Float))`(`dx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Offset the rectangle by adding dx to its left and right coordinates, and adding dy to its top and bottom coordinates. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [offsetTo](https://developer.android.com/reference/kotlin/android/graphics/RectF#offsetTo(kotlin.Float,%20kotlin.Float))`(`newLeft:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `newTop:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Offset the rectangle to a specific (left, top) position, keeping its width and height the same. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](https://developer.android.com/reference/kotlin/android/graphics/RectF#readFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`)` Set the rectangle's coordinates from the data stored in the specified parcel. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [round](https://developer.android.com/reference/kotlin/android/graphics/RectF#round(android.graphics.Rect))`(`dst:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)`)` Set the dst integer Rect by rounding this rectangle's coordinates to their nearest integer values. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [roundOut](https://developer.android.com/reference/kotlin/android/graphics/RectF#roundOut(android.graphics.Rect))`(`dst:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)`)` Set the dst integer Rect by rounding "out" this rectangle, choosing the floor of top and left, and the ceiling of right and bottom. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/graphics/RectF#set(android.graphics.Rect))`(`src:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)`)` Copy the coordinates from src into this rectangle. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/graphics/RectF#set(android.graphics.RectF))`(`src:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` Copy the coordinates from src into this rectangle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/graphics/RectF#set(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`left:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `top:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `right:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bottom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the rectangle's coordinates to the specified values. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEmpty](https://developer.android.com/reference/kotlin/android/graphics/RectF#setEmpty())`()` Set the rectangle to (0,0,0,0) |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setIntersect](https://developer.android.com/reference/kotlin/android/graphics/RectF#setIntersect(android.graphics.RectF,%20android.graphics.RectF))`(`a:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`, `b:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` If rectangles a and b intersect, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](https://developer.android.com/reference/kotlin/android/graphics/RectF#sort())`()` Swap top/bottom or left/right if there are flipped (i.e. left \> right and/or top \> bottom). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toShortString](https://developer.android.com/reference/kotlin/android/graphics/RectF#toShortString())`()` Return a string representation of the rectangle in a compact form. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/RectF#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [union](https://developer.android.com/reference/kotlin/android/graphics/RectF#union(android.graphics.RectF))`(`r:` ` [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)`)` Update this Rect to enclose itself and the specified rectangle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [union](https://developer.android.com/reference/kotlin/android/graphics/RectF#union(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Update this Rect to enclose itself and the \[x,y\] coordinate. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [union](https://developer.android.com/reference/kotlin/android/graphics/RectF#union(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`left:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `top:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `right:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bottom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Update this Rect to enclose itself and the specified rectangle. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [width](https://developer.android.com/reference/kotlin/android/graphics/RectF#width())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/RectF#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write this rectangle to the specified parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/graphics/RectF#CREATOR:android.os.Parcelable.Creator) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [bottom](https://developer.android.com/reference/kotlin/android/graphics/RectF#bottom:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [left](https://developer.android.com/reference/kotlin/android/graphics/RectF#left:kotlin.Float) <br /> |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [right](https://developer.android.com/reference/kotlin/android/graphics/RectF#right:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [top](https://developer.android.com/reference/kotlin/android/graphics/RectF#top:kotlin.Float) <br /> |
 
@@ -129,6 +143,7 @@ Create a new rectangle with the specified coordinates. Note: no range checking i
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the left side of the rectangle |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the top of the rectangle |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the right side of the rectangle |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the bottom of the rectangle |
 
 ## Public methods
@@ -217,6 +232,7 @@ Returns true iff the 4 specified sides of a rectangle are inside or equal to thi
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The left side of the rectangle being tested for containment |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The top of the rectangle being tested for containment |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The right side of the rectangle being tested for containment |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The bottom of the rectangle being tested for containment |
 
 | Return ||
@@ -333,6 +349,7 @@ If the rectangle specified by left,top,right,bottom intersects this rectangle, r
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The left side of the rectangle being intersected with this rectangle |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The top of the rectangle being intersected with this rectangle |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The right side of the rectangle being intersected with this rectangle. |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The bottom of the rectangle being intersected with this rectangle. |
 
 | Return ||
@@ -359,6 +376,7 @@ Returns true if this rectangle intersects the specified rectangle. In no event i
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The left side of the rectangle being tested for intersection |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The top of the rectangle being tested for intersection |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The right side of the rectangle being tested for intersection |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The bottom of the rectangle being tested for intersection |
 
 | Return ||
@@ -523,6 +541,7 @@ Set the rectangle's coordinates to the specified values. Note: no range checking
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the left side of the rectangle |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the top of the rectangle |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of the right side of the rectangle |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of the bottom of the rectangle |
 
 ### setEmpty
@@ -645,6 +664,7 @@ Update this Rect to enclose itself and the specified rectangle. If the specified
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The left edge being unioned with this rectangle |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The top edge being unioned with this rectangle |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The right edge being unioned with this rectangle |
+| --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The bottom edge being unioned with this rectangle |
 
 ### width
@@ -677,6 +697,7 @@ Write this rectangle to the specified parcel. To restore a rectangle from a parc
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The parcel to write the rectangle's coordinates into |
+| --- | --- |
 
 ## Properties
 

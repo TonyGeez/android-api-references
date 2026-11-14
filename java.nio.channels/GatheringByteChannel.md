@@ -11,6 +11,7 @@ interface GatheringByteChannel : WritableByteChannel
 | [java.nio.channels.GatheringByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/GatheringByteChannel#) |
 
 | Known Direct Subclasses [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel), [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel), [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel), [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------| | [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel) | A selectable channel for datagram-oriented sockets. | | [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel) | A channel for reading, writing, mapping, and manipulating a file. | | [Pipe.SinkChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.SinkChannel) | A channel representing the writable end of a [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe). | | [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) | A selectable channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A channel that can write bytes from a sequence of buffers.
 
@@ -59,6 +60,7 @@ c.write(srcs, 0, srcs.length);
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -96,6 +98,7 @@ This method may be invoked at any time. If another thread has already initiated 
 | `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>!:The buffers from which bytes are to be retrieved |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be retrieved; must be non-negative and no larger than`srcs.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; must be non-negative and no larger than`srcs.length`-`offset` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------|
@@ -106,6 +109,8 @@ This method may be invoked at any time. If another thread has already initiated 
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |

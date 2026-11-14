@@ -7,9 +7,11 @@ class AppFunctionException : Exception, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.app.appfunctions.AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#) |
+| --- | --- | --- | --- |
 
 App function related error.
 
@@ -22,15 +24,19 @@ This exception may include a `https://developer.android.com/reference/kotlin/and
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_APP_UNKNOWN_ERROR:kotlin.Int` An unknown error occurred while processing the call in the AppFunctionService. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CANCELLED:kotlin.Int` The operation was cancelled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CATEGORY_APP:kotlin.Int` The error is caused by the app providing the function. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CATEGORY_REQUEST_ERROR:kotlin.Int` The error is caused by the app requesting a function execution. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CATEGORY_SYSTEM:kotlin.Int` The error is caused by an issue in the system. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CATEGORY_UNKNOWN:kotlin.Int` The error category is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DENIED:kotlin.Int` The caller does not have the permission to execute an app function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DISABLED:kotlin.Int` The caller tried to execute a disabled app function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_ENTERPRISE_POLICY_DISALLOWED:kotlin.Int` The operation was disallowed by enterprise policy. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_FUNCTION_NOT_FOUND:kotlin.Int` The caller tried to execute a function that does not exist. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_INVALID_ARGUMENT:kotlin.Int` The caller supplied invalid arguments to the execution request. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_SYSTEM_ERROR:kotlin.Int` An internal unexpected error coming from the system. |
+| --- | --- |
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
@@ -54,9 +60,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getErrorCategory()()` Returns the error category. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getErrorCode()()` Returns one of the `ERROR` constants. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getErrorMessage()()` Returns the error message. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getExtras()()` Returns any extras associated with this error. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -286,6 +294,7 @@ AppFunctionException(
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error code. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DENIED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_APP_UNKNOWN_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_FUNCTION_NOT_FOUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_INVALID_ARGUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CANCELLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_ENTERPRISE_POLICY_DISALLOWED:kotlin.Int` |
 | `errorMessage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The error message. This value may be `null`. |
 | `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The extras associated with this error. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

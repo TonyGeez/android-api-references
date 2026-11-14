@@ -3,12 +3,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # InputConfiguration
 
 Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration "View this page in Java")
+| --- | --- |
 
 ```
 class InputConfiguration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.params.InputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#) |
 
 Immutable class to store an input configuration that is used to create a reprocessable capture session.
@@ -25,9 +27,11 @@ Immutable class to store an input configuration that is used to create a reproce
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this InputConfiguration is equal to another InputConfiguration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#getFormat()()` Get the format of this input configuration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#getHeight()()` Get the height of this input configuration. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#getWidth()()` Get the width of this input configuration. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#isMultiResolution()()` Whether this input configuration is of multi-resolution. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#toString()()` Return this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration#` as a string representation. |
 
 ## Public constructors
@@ -52,6 +56,7 @@ Images of a user-defined format are accessible by applications. Use `https://dev
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the input buffers. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the input buffers. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Format of the input buffers. One of ImageFormat or PixelFormat constants. |
+| --- | --- |
 
 **See Also**
 

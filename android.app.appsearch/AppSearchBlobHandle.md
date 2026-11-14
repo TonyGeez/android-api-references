@@ -8,6 +8,7 @@ class AppSearchBlobHandle : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#) |
 
 An identifier to represent a blob in AppSearch.
@@ -31,12 +32,15 @@ A `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericD
 | static [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.String,%20kotlin.String,%20kotlin.String)(digest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, databaseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new AppSearch blob identifier with given digest, package, database and namespace. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getDatabaseName()()` Returns the name of database stored the blob that this object is representing. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getNamespace()()` Returns the app-defined namespace this blob resides in. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getPackageName()()` Returns the package name indicating the owner app of the blob that this object is representing. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getSha256Digest()()` Returns the SHA-256 hash of the blob that this object is representing. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -70,6 +74,7 @@ For two objects of `https://developer.android.com/reference/kotlin/android/app/a
 | `digest` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): The SHA-256 hash of the blob this is representing. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the owner of this Blob. This value cannot be `null`. |
 | `databaseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The database name of this blob to stored into. This value cannot be `null`. |
+| --- | --- |
 | `namespace` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The namespace of this blob resides in. This value cannot be `null`. |
 
 | Return ||

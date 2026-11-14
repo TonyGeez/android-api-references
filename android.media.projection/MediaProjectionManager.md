@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # MediaProjectionManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/projection/MediaProjectionManager "View this page in Java") 
+| --- | --- |
 
 ```
 class MediaProjectionManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.projection.MediaProjectionManager](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#) |
 
 Manages the retrieval of certain types of [MediaProjection](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection) tokens.
@@ -32,6 +34,7 @@ An example flow of starting a media projection will be:
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | [createScreenCaptureIntent](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent())`()` Returns an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) that**must** be passed to [Activity.startActivityForResult(Intent, int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int))(or similar) in order to start screen capture. |
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | [createScreenCaptureIntent](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig))`(`config:` ` [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig)`)` Returns an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) that**must** be passed to [Activity.startActivityForResult(Intent, int)](https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int))(or similar) in order to start screen capture. |
 | [MediaProjection](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection)? | [getMediaProjection](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#getMediaProjection(kotlin.Int,%20android.content.Intent))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultData:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)`)` Retrieves the [MediaProjection](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection) obtained from a successful screen capture request. |
+| --- | --- |
 
 ## Public methods
 

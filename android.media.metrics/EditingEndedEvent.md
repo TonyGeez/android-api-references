@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # EditingEndedEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/EditingEndedEvent "View this page in Java") 
+| --- | --- |
 
 ```
 class EditingEndedEvent : Event, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event) ||
 | | ↳ | [android.media.metrics.EditingEndedEvent](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#) |
 
@@ -27,33 +29,43 @@ Event for an editing operation having ended.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_AUDIO_PROCESSING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_AUDIO_PROCESSING_FAILED:kotlin.Int) Caused by an audio processing failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_DECODER_INIT_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_DECODER_INIT_FAILED:kotlin.Int) Caused by a decoder initialization failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_DECODING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_DECODING_FAILED:kotlin.Int) Caused by a failure while trying to decode media samples. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_DECODING_FORMAT_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_DECODING_FORMAT_UNSUPPORTED:kotlin.Int) Caused by trying to decode content whose format is not supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_ENCODER_INIT_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_ENCODER_INIT_FAILED:kotlin.Int) Caused by an encoder initialization failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_ENCODING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_ENCODING_FAILED:kotlin.Int) Caused by a failure while trying to encode media samples. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED:kotlin.Int) Caused by trying to encode content whose format is not supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_FAILED_RUNTIME_CHECK](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_FAILED_RUNTIME_CHECK:kotlin.Int) Error code for unexpected runtime errors. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_BAD_HTTP_STATUS](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_BAD_HTTP_STATUS:kotlin.Int) Caused by an HTTP server returning an unexpected HTTP response status code. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED:kotlin.Int) Caused by failing to load data via cleartext HTTP, when the app's network security configuration does not permit it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_FILE_NOT_FOUND](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_FILE_NOT_FOUND:kotlin.Int) Caused by a non-existent file. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_NETWORK_CONNECTION_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_NETWORK_CONNECTION_FAILED:kotlin.Int) Error code for network connection failures. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT:kotlin.Int) Error code for network timeouts. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_NO_PERMISSION](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_NO_PERMISSION:kotlin.Int) Caused by lack of permission to perform an IO operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE:kotlin.Int) Caused by reading data out of the data bounds. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_IO_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_IO_UNSPECIFIED:kotlin.Int) Error code for non-specific errors during input/output. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_MUXING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_MUXING_FAILED:kotlin.Int) Caused by a failure while muxing media samples. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_NONE](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_NONE:kotlin.Int) Special value representing that no error occurred. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED:kotlin.Int) Caused by a video frame processing failure. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL_STATE_CANCELED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#FINAL_STATE_CANCELED:kotlin.Int) The editing operation was canceled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL_STATE_ERROR](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#FINAL_STATE_ERROR:kotlin.Int) The editing operation failed due to an error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL_STATE_SUCCEEDED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#FINAL_STATE_SUCCEEDED:kotlin.Int) The editing operation was successful. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_AUDIO_EDIT](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_AUDIO_EDIT:kotlin.Long) Input audio was edited. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_AUDIO_TRANSCODE](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_AUDIO_TRANSCODE:kotlin.Long) Input audio was decoded and re-encoded. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_AUDIO_TRANSMUX](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_AUDIO_TRANSMUX:kotlin.Long) Input audio samples were written (muxed) directly to the output file without transcoding. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_PAUSED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_PAUSED:kotlin.Long) The editing operation was paused before it completed. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_RESUMED](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_RESUMED:kotlin.Long) The editing operation resumed a previous (paused) operation. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_VIDEO_EDIT](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_VIDEO_EDIT:kotlin.Long) Input video was edited. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_VIDEO_TRANSCODE](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_VIDEO_TRANSCODE:kotlin.Long) Input video was decoded and re-encoded. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [OPERATION_TYPE_VIDEO_TRANSMUX](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#OPERATION_TYPE_VIDEO_TRANSMUX:kotlin.Long) Input video samples were written (muxed) directly to the output file without transcoding. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROGRESS_PERCENT_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#PROGRESS_PERCENT_UNKNOWN:kotlin.Int) Special value for unknown [final progress](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getFinalProgressPercent()). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SINCE_CREATED_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#TIME_SINCE_CREATED_UNKNOWN:kotlin.Int) Special value for unknown [time since creation](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getTimeSinceCreatedMillis()). |
 
@@ -66,18 +78,23 @@ Event for an editing operation having ended.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getErrorCode())`()` Returns the error code for a [failed](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#FINAL_STATE_ERROR:kotlin.Int) editing session. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getExporterName](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getExporterName())`()` Returns the name of the library implementing the exporting operation, for example, a Maven artifact ID like "androidx. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFinalProgressPercent](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getFinalProgressPercent())`()` Returns the progress of the editing operation in percent at the moment that it ended, or [PROGRESS_PERCENT_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#PROGRESS_PERCENT_UNKNOWN:kotlin.Int) if unknown. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalState](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getFinalState())`()` Returns the state of the editing session when it ended. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaItemInfo](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo)!\> | [getInputMediaItemInfos](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getInputMediaItemInfos())`()` Gets information about the input media items, or an empty list if unspecified. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMuxerName](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getMuxerName())`()` Returns the name of the library implementing the media muxing operation, for example, a Maven artifact ID like "androidx. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getOperationTypes](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getOperationTypes())`()` Gets a set of flags describing the types of operations performed. |
 | [MediaItemInfo](https://developer.android.com/reference/kotlin/android/media/metrics/MediaItemInfo)? | [getOutputMediaItemInfo](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getOutputMediaItemInfo())`()` Gets information about the output media item, or`null`if unspecified. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#getTimeSinceCreatedMillis())`()` Gets the elapsed time since creating of the editing session, in milliseconds, or [TIME_SINCE_CREATED_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#TIME_SINCE_CREATED_UNKNOWN:kotlin.Int) if unknown. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#toString())`()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

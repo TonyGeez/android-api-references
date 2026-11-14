@@ -7,6 +7,7 @@ open class ContentCaptureNodeProperties
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.contentcapture.ContentCaptureNodeProperties](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#) |
 
 Properties of a Node for Content Capture.
@@ -37,15 +38,19 @@ Calling a getter method when the corresponding property has not been set (i.e. w
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#clear()()` Clears the entire properties object for reuse. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getBounds(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Copies the relative boundaries of this node into the provided `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#`. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getContentDescription()()` Gets the content description of the node. |
+| --- | --- |
 | open [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getParentId()()` Gets the parent ID of the node. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getText()()` Gets the text of the node. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasBounds()()` Checks if the bounds have been explicitly set. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasContentDescription()()` Checks if the content description has been explicitly set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasParentId()()` Checks if the parent ID has been explicitly set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasText()()` Checks if the text has been explicitly set. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the boundaries for this node relative to the parent node. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setContentDescription(kotlin.CharSequence)(contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the content description for this node. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setParentId(android.view.autofill.AutofillId)(parentId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#?)` Sets the parent ID for this node. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setText(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the text for this node. |
 
 ## Public constructors
@@ -218,6 +223,7 @@ Sets the boundaries for this node relative to the parent node.
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): left bound |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): top bound |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): right bound |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bottom bound |
 
 ### setContentDescription

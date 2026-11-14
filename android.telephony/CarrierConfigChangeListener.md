@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CarrierConfigChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CarrierConfigManager.CarrierConfigChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface CarrierConfigChangeListener
@@ -42,4 +43,5 @@ Called when carrier configurations have changed.
 | `logicalSlotIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The logical SIM slot index on which to monitor and get notification. It is guaranteed to be valid. |
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The subscription on the SIM slot. May be [SubscriptionManager.INVALID_SUBSCRIPTION_ID](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#INVALID_SUBSCRIPTION_ID:kotlin.Int). |
 | `carrierId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The optional carrier Id, may be [TelephonyManager.UNKNOWN_CARRIER_ID](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNKNOWN_CARRIER_ID:kotlin.Int). See [TelephonyManager.getSimCarrierId()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()). |
+| --- | --- |
 | `specificCarrierId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The optional fine-grained carrierId, may be [android.telephony.TelephonyManager#UNKNOWN_CARRIER_ID](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNKNOWN_CARRIER_ID:kotlin.Int). A specific carrierId may be different from the carrierId above in a MVNO scenario. See detail in [TelephonyManager.getSimSpecificCarrierId()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()). |

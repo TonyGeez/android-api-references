@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # UrspRule
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/data/UrspRule "View this page in Java") 
+| --- | --- |
 
 ```
 class UrspRule : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.data.UrspRule](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#) |
 
 Represents a single URSP rule as defined in 3GPP TS 24.526. URSP stands for UE Route Selection Policy. In 5G, network can provide URSP information to devices which provides information on what connection parameters should be used for what traffic.
@@ -26,9 +28,11 @@ Represents a single URSP rule as defined in 3GPP TS 24.526. URSP stands for UE R
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecedence](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#getPrecedence())`()` Precedence value in the range of 0 to 255. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RouteSelectionDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor)!\> | [getRouteSelectionDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#getRouteSelectionDescriptor())`()` List of routes (connection parameters) that must be used by the device for requests matching a traffic descriptor. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TrafficDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor)!\> | [getTrafficDescriptors](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#getTrafficDescriptors())`()` These traffic descriptors are used as a matcher for network requests. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/data/UrspRule#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

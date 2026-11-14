@@ -7,6 +7,7 @@ class ExecuteAppFunctionRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appfunctions.ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#) |
 
 A request to execute an app function, provided to android.app.appfunctions.AppFunctionManager#executeAppFunction.
@@ -36,9 +37,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [AppFunctionActivityId](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getActivityId()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId` for this request. |
 | [AppInteractionAttribution](https://developer.android.com/reference/kotlin/android/app/AppInteractionAttribution.html#)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getAttribution()()` Returns the `https://developer.android.com/reference/kotlin/android/app/AppInteractionAttribution.html#` for the `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#`. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getExtras()()` Returns the additional values for this function execution request. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getFunctionIdentifier()()` Returns the unique identifier of the app function to be executed. |
 | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getParameters()()` Returns the function parameters as a key-value `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getTargetPackageName()()` Returns the package name of the app that hosts the app function. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

@@ -3,12 +3,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintAttributes
 
 Kotlin | [Java](https://developer.android.com/reference/android/print/PrintAttributes "View this page in Java")
+| --- | --- |
 
 ```
 class PrintAttributes : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes#) |
 
 This class represents the attributes of a print job. These attributes describe how the printed content should be laid out. For example, the print attributes may state that the content should be laid out on a letter size with 300 DPI (dots per inch) resolution, have a margin of 10 mills (thousand of an inch) on all sides, and be black and white.
@@ -20,6 +22,7 @@ This class represents the attributes of a print job. These attributes describe h
 | | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Builder` Builder for creating `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#`. |
 | | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Margins` This class specifies content margins. |
 | | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes.MediaSize` This class specifies a supported media size. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Resolution` This class specifies a supported resolution in DPI (dots per inch). |
 
 | Constants ||
@@ -27,6 +30,7 @@ This class represents the attributes of a print job. These attributes describe h
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#COLOR_MODE_COLOR:kotlin.Int` Color mode: Color color scheme, for example many colors are used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#COLOR_MODE_MONOCHROME:kotlin.Int` Color mode: Monochrome color scheme, for example one color is used. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#DUPLEX_MODE_LONG_EDGE:kotlin.Int` Duplex mode: Pages are turned sideways along the long edge - like a book. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#DUPLEX_MODE_NONE:kotlin.Int` Duplex mode: No duplexing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#DUPLEX_MODE_SHORT_EDGE:kotlin.Int` Duplex mode: Pages are turned upwards along the short edge - like a notpad. |
 
@@ -39,12 +43,15 @@ This class represents the attributes of a print job. These attributes describe h
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getColorMode()()` Gets the color mode. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getDuplexMode()()` Gets the duplex mode. |
 | [PrintAttributes.MediaSize](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.MediaSize)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMediaSize()()` Gets the media size. |
 | [PrintAttributes.Margins](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Margins)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMinMargins()()` Gets the minimal margins. |
+| --- | --- |
 | [PrintAttributes.Resolution](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Resolution)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getResolution()()` Gets the resolution. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

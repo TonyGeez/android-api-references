@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintDocumentInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/PrintDocumentInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class PrintDocumentInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintDocumentInfo](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#) |
 
 This class encapsulates information about a document for printing purposes. This meta-data is used by the platform and print services, components that interact with printers. For example, this class contains the number of pages contained in the document it describes and this number of pages is shown to the user allowing them to select the range to print. Also a print service may optimize the printing process based on the content type, such as document or photo.
@@ -57,6 +59,7 @@ An example usage looks like this:
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_DOCUMENT](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#CONTENT_TYPE_DOCUMENT:kotlin.Int) Content type: document. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_PHOTO](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#CONTENT_TYPE_PHOTO:kotlin.Int) Content type: photo. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#CONTENT_TYPE_UNKNOWN:kotlin.Int) Content type: unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAGE_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#PAGE_COUNT_UNKNOWN:kotlin.Int) Constant for unknown page count. |
 
 | Inherited constants ||
@@ -68,12 +71,15 @@ An example usage looks like this:
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#getContentType())`()` Gets the content type. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataSize](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#getDataSize())`()` Gets the document data size in bytes. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#getName())`()` Gets the document name. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageCount](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#getPageCount())`()` Gets the total number of pages. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/print/PrintDocumentInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

@@ -6,12 +6,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 # HttpEngine
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/http/HttpEngine "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class HttpEngine
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.http.HttpEngine](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#) |
 
 An engine to process [UrlRequest](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest) s, which uses the best HTTP stack available on the current platform. An instance of this class can be created using [Builder](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine.Builder).
@@ -27,9 +29,11 @@ An engine to process [UrlRequest](https://developer.android.com/reference/kotlin
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindToNetwork](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#bindToNetwork(android.net.Network))`(`network:` ` [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)?`)` Binds the engine to the specified network. |
 | abstract [URLStreamHandlerFactory](https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory.html#) | [createUrlStreamHandlerFactory](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#createUrlStreamHandlerFactory())`()` Creates a [URLStreamHandlerFactory](https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory.html#) to handle HTTP and HTTPS traffic. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersionString](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#getVersionString())`()` <br /> |
+| --- | --- |
 | abstract [BidirectionalStream.Builder](https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder) | [newBidirectionalStreamBuilder](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newBidirectionalStreamBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.BidirectionalStream.Callback))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [BidirectionalStream.Callback](https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback)`)` Creates a builder for [BidirectionalStream](https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream) objects. |
 | abstract [UrlRequest.Builder](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder) | [newUrlRequestBuilder](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newUrlRequestBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.UrlRequest.Callback))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [UrlRequest.Callback](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback)`)` Creates a builder for [UrlRequest](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest). |
 | abstract [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#) | [openConnection](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#openConnection(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)`)` Establishes a new connection to the resource specified by the [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)`url`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#shutdown())`()` Shuts down the [HttpEngine](https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#) if there are no active requests, otherwise throws an exception. |
 
 ## Public methods
@@ -108,6 +112,7 @@ Creates a builder for [BidirectionalStream](https://developer.android.com/refere
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):URL for the generated streams. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):the [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) on which`callback`methods will be invoked. This value cannot be`null`. |
 | `callback` | [BidirectionalStream.Callback](https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback):the [BidirectionalStream.Callback](https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback) object that gets invoked upon different events occurring. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -133,6 +138,7 @@ Creates a builder for [UrlRequest](https://developer.android.com/reference/kotli
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):URL for the generated requests. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) on which all callbacks will be invoked. This value cannot be`null`. |
 | `callback` | [UrlRequest.Callback](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback):callback object that gets invoked on different events. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------|

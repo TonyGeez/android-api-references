@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # Columns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/SyncStateContract.Columns "View this page in Java") 
+| --- | --- |
 
 ```
 interface Columns : BaseColumns
@@ -13,8 +14,10 @@ interface Columns : BaseColumns
 | [android.provider.SyncStateContract.Columns](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Columns#) |
 
 | Known Direct Subclasses [CalendarContract.ColorsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns), [CalendarContract.SyncState](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncState), [ContactsContract.ProfileSyncState](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ProfileSyncState), [ContactsContract.SyncState](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncState), [SyncStateContract.Constants](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Constants) |----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| | [CalendarContract.ColorsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ColorsColumns) | <br /> | | [CalendarContract.SyncState](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncState) | A table provided for sync adapters to use for storing private sync state data. | | [ContactsContract.ProfileSyncState](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ProfileSyncState) | A table provided for sync adapters to use for storing private sync state data for the user's personal profile. | | [ContactsContract.SyncState](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncState) | A table provided for sync adapters to use for storing private sync state data for contacts. | | [SyncStateContract.Constants](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Constants) | <br /> | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [CalendarContract.Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [CalendarContract.Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) | Fields for accessing colors available for a given account. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
@@ -23,6 +26,7 @@ interface Columns : BaseColumns
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_NAME](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Columns#ACCOUNT_NAME:kotlin.String) A reference to the name of the account to which this data belongs |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_TYPE](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Columns#ACCOUNT_TYPE:kotlin.String) A reference to the type of the account to which this data belongs |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Columns#DATA:kotlin.String) The sync data associated with this account. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|

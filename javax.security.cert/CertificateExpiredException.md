@@ -9,9 +9,11 @@ open class CertificateExpiredException : CertificateException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.security.cert.CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException#) |
 
 Certificate Expired Exception. This is thrown whenever the current`Date`or the specified`Date`is after the`notAfter`date/time specified in the validity period of the certificate.

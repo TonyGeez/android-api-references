@@ -4,12 +4,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AppSetId
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/appsetid/AppSetId "View this page in Java")
+| --- | --- |
 
 ```
 open class AppSetId
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.appsetid.AppSetId](https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#) |
 
 A unique, per-device, per developer-account user-resettable ID for non-monetizing advertising usecases.
@@ -32,6 +34,7 @@ Represents the appSetID and scope of this appSetId from the android.adservices.a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#getId()()` Retrieves the appSetId. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#getScope()()` Retrieves the scope of the appSetId. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#hashCode()()` Returns a hash code value for the object. |
 
 ## Constants

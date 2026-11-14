@@ -9,9 +9,11 @@ open class DataTruncation : SQLWarning
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning) ||
 | | | | | ↳ | [java.sql.DataTruncation](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#) |
 
@@ -33,6 +35,7 @@ The SQLstate for a`DataTruncation`during write is`22001`.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataSize](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#getDataSize())`()` Gets the number of bytes of data that should have been transferred. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#getIndex())`()` Retrieves the index of the column or parameter that was truncated. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getParameter](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#getParameter())`()` Indicates whether the value truncated was a parameter value or a column value. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRead](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#getRead())`()` Indicates whether or not the value was truncated on a read. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransferSize](https://developer.android.com/reference/kotlin/java/sql/DataTruncation#getTransferSize())`()` Gets the number of bytes of data actually transferred. |
 
@@ -65,6 +68,7 @@ Creates a`DataTruncation`object with the SQLState initialized to 01004 when`read
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the parameter or column value |
 | `parameter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a parameter value was truncated |
 | `read` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a read was truncated |
+| --- | --- |
 | `dataSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the original size of the data |
 | `transferSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size after truncation |
 
@@ -91,9 +95,11 @@ Creates a`DataTruncation`object with the SQLState initialized to 01004 when`read
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the parameter or column value |
 | `parameter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a parameter value was truncated |
 | `read` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a read was truncated |
+| --- | --- |
 | `dataSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the original size of the data |
 | `transferSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size after truncation |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`DataTruncation`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # StreamingServiceCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/StreamingServiceCallback "View this page in Java") 
+| --- | --- |
 
 ```
 open class StreamingServiceCallback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.StreamingServiceCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#) |
 
 A callback class for use when the application is actively streaming content. The middleware will provide updates on the status of the stream via this callback.
@@ -30,6 +32,7 @@ A callback class for use when the application is actively streaming content. The
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBroadcastSignalStrengthUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onBroadcastSignalStrengthUpdated(kotlin.Int))`(`signalStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Broadcast Signal Strength updated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onError(kotlin.Int,%20kotlin.String))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Called by the middleware when it has detected an error condition in this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaDescriptionUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onMediaDescriptionUpdated())`()` Called to indicate the mpd of a the stream has changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStreamMethodUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onStreamMethodUpdated(kotlin.Int))`(`methodType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify of bcast/unicast method being used. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStreamStateUpdated](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onStreamStateUpdated(kotlin.Int,%20kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to indicate this stream has changed state. |
 

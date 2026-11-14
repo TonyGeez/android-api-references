@@ -9,6 +9,7 @@ abstract class SSLServerSocket : ServerSocket
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.ServerSocket](https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#) ||
 | | ↳ | [javax.net.ssl.SSLServerSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#) |
 
@@ -32,18 +33,23 @@ Instances of this class are generally created using a`SSLServerSocketFactory`. T
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnableSessionCreation](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getEnableSessionCreation())`()` Returns true if new SSL sessions may be established by the sockets which are created from this server socket. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getEnabledCipherSuites())`()` Returns the list of cipher suites which are currently enabled for use by newly accepted connections. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getEnabledProtocols())`()` Returns the names of the protocols which are currently enabled for use by the newly accepted connections. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNeedClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getNeedClientAuth())`()` Returns true if client authentication will be*required* on newly`accept`ed server-mode`SSLSocket`s. |
 | open [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [getSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getSSLParameters())`()` Returns the SSLParameters in effect for newly accepted connections. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getSupportedCipherSuites())`()` Returns the names of the cipher suites which could be enabled for use on an SSL connection. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getSupportedProtocols())`()` Returns the names of the protocols which could be enabled for use. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseClientMode](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getUseClientMode())`()` Returns true if accepted connections will be in SSL client mode. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#getWantClientAuth())`()` Returns true if client authentication will be*requested*on newly accepted server-mode connections. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableSessionCreation](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setEnableSessionCreation(kotlin.Boolean))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether new SSL sessions may be established by the sockets which are created from this server socket. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledCipherSuites](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setEnabledCipherSuites(kotlin.Array))`(`suites:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the cipher suites enabled for use by accepted connections. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledProtocols](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setEnabledProtocols(kotlin.Array))`(`protocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Controls which particular protocols are enabled for use by accepted connections. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNeedClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setNeedClientAuth(kotlin.Boolean))`(`need:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether`accept`ed server-mode`SSLSockets`will be initially configured to*require*client authentication. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setSSLParameters(javax.net.ssl.SSLParameters))`(`params:` ` [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)!`)` Applies SSLParameters to newly accepted connections. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseClientMode](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setUseClientMode(kotlin.Boolean))`(`mode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether accepted connections are in the (default) SSL server mode, or the SSL client mode. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWantClientAuth](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#setWantClientAuth(kotlin.Boolean))`(`want:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether`accept`ed server-mode`SSLSockets`will be initially configured to*request*client authentication. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocket#toString())`()` <br /> |
 
@@ -94,6 +100,7 @@ If there is a security manager, its`checkListen`method is called with the`port`a
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -129,6 +136,7 @@ If there is a security manager, its`checkListen`method is called with the`port`a
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 
@@ -162,12 +170,14 @@ If*address*is null, it will default accepting connections on any/all local addre
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port on which to listen |
 | `backlog` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):requested maximum length of the queue of incoming connections. |
 | `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the address of the network interface through which connections will be accepted |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs when creating the socket |
 | `java.lang.SecurityException` | if a security manager exists and its`checkListen`method doesn't allow the operation. |
 | `java.lang.IllegalArgumentException` | if the port parameter is outside the specified range of valid port values, which is between 0 and 65535, inclusive. |
+| --- | --- |
 
 **See Also**
 

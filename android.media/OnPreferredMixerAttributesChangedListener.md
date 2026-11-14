@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # OnPreferredMixerAttributesChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioManager.OnPreferredMixerAttributesChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnPreferredMixerAttributesChangedListener
@@ -43,3 +44,4 @@ Called on the listener to indicate that the preferred mixer attributes for the a
 | `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes):the audio attributes for playback This value cannot be`null`. |
 | `device` | [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo):the targeted device This value cannot be`null`. |
 | `mixerAttributes` | [AudioMixerAttributes](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes)?:the [AudioMixerAttributes](https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes) that contains information for preferred mixer attributes or null if preferred mixer attributes is cleared |
+| --- | --- |

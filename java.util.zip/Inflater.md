@@ -9,6 +9,7 @@ open class Inflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.zip.Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#) |
 
 This class provides support for general purpose decompression using the popular ZLIB compression library. The ZLIB compression library was initially developed as part of the PNG graphics standard and is not protected by patents. It is fully described in the specifications at the [java.util.zip package description](https://developer.android.com/reference/kotlin/java/util/zip/package-summary#package-description).
@@ -59,21 +60,27 @@ try {
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#end())`()` Closes the decompressor and discards any unprocessed input. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [finished](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#finished())`()` Returns true if the end of the compressed data stream has been reached. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdler](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getAdler())`()` Returns the ADLER-32 value of the uncompressed data. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesRead](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getBytesRead())`()` Returns the total number of compressed bytes input so far. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesWritten](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getBytesWritten())`()` Returns the total number of uncompressed bytes output so far. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemaining](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getRemaining())`()` Returns the total number of bytes remaining in the input buffer. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalIn](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getTotalIn())`()` Returns the total number of compressed bytes input so far. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalOut](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#getTotalOut())`()` Returns the total number of uncompressed bytes output so far. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [inflate](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#inflate(kotlin.ByteArray))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Uncompresses bytes into specified buffer. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [inflate](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#inflate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Uncompresses bytes into specified buffer. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [inflate](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#inflate(java.nio.ByteBuffer))`(`output:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Uncompresses bytes into specified buffer. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [needsDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#needsDictionary())`()` Returns true if a preset dictionary is needed for decompression. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [needsInput](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#needsInput())`()` Returns true if no data remains in the input buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#reset())`()` Resets inflater so that a new set of input data can be processed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setDictionary(kotlin.ByteArray))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets the preset dictionary to the given array of bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setDictionary(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the preset dictionary to the given array of bytes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setDictionary(java.nio.ByteBuffer))`(`dictionary:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Sets the preset dictionary to the bytes in the given buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setInput(kotlin.ByteArray))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets input data for decompression. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setInput(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets input data for decompression. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/java/util/zip/Inflater#setInput(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Sets input data for decompression. |
 
@@ -275,6 +282,7 @@ These byte totals, as well as the [total bytes read](https://developer.android.c
 | `output` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer for the uncompressed data |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of uncompressed bytes |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------|
@@ -401,6 +409,7 @@ Sets the preset dictionary to the given array of bytes. Should be called when in
 | `dictionary` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the dictionary data bytes |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data |
+| --- | --- |
 
 **See Also**
 
@@ -469,6 +478,7 @@ One of the`setInput()`methods should be called whenever`needsInput()`returns tru
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the input data bytes |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset of the input data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the input data |
+| --- | --- |
 
 **See Also**
 

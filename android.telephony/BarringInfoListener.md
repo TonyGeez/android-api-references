@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # BarringInfoListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.BarringInfoListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface BarringInfoListener

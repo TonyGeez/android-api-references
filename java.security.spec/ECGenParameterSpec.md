@@ -7,6 +7,7 @@ open class ECGenParameterSpec : NamedParameterSpec, AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec) ||
 | | ↳ | [java.security.spec.ECGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECGenParameterSpec#) |
 

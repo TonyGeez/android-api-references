@@ -9,6 +9,7 @@ abstract class Transformer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.Transformer](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#) |
 
 An instance of this abstract class can transform a source tree into a result tree.
@@ -30,15 +31,19 @@ A`Transformer`may be used multiple times. Parameters and output properties are p
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearParameters](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#clearParameters())`()` Clear all parameters set with setParameter. |
 | abstract [ErrorListener](https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener)! | [getErrorListener](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#getErrorListener())`()` Get the error event handler in effect for the transformation. |
 | abstract [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)! | [getOutputProperties](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#getOutputProperties())`()` Get a copy of the output properties for the transformation. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOutputProperty](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#getOutputProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get an output property that is in effect for the transformer. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#getParameter(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a parameter that was explicitly set with setParameter. |
 | abstract [URIResolver](https://developer.android.com/reference/kotlin/javax/xml/transform/URIResolver)! | [getURIResolver](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#getURIResolver())`()` Get an object that will be used to resolve URIs used in document(). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#reset())`()` Reset this`Transformer`to its original configuration. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorListener](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setErrorListener(javax.xml.transform.ErrorListener))`(`listener:` ` [ErrorListener](https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener)!`)` Set the error event listener in effect for the transformation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperties](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperties(java.util.Properties))`(`oformat:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Set the output properties for the transformation. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperty](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperty(kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set an output property that will be in effect for the transformation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setParameter(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Add a parameter for the transformation. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURIResolver](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setURIResolver(javax.xml.transform.URIResolver))`(`resolver:` ` [URIResolver](https://developer.android.com/reference/kotlin/javax/xml/transform/URIResolver)!`)` Set an object that will be used to resolve URIs used in document(). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transform](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#transform(javax.xml.transform.Source,%20javax.xml.transform.Result))`(`xmlSource:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source)!`, `outputTarget:` ` [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result)!`)` Transform the XML`Source`to a`Result`. |
 
 ## Protected constructors

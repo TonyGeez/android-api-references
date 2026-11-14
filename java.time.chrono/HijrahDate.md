@@ -7,6 +7,7 @@ class HijrahDate : ChronoLocalDate, Serializable, Temporal, TemporalAdjuster
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.time.chrono.HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#) |
 
 A date in the Hijrah calendar system.
@@ -26,27 +27,35 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#atTime(java.time.LocalTime)(localTime: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#!)` Combines this date with a time to create a `ChronoLocalDateTime`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this date to another date, including the chronology. |
 | static [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `HijrahDate` of the Islamic Umm Al-Qura calendar from a temporal object. |
+| --- | --- |
 | [HijrahChronology](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#getChronology()()` Gets the chronology of this date, which is the Hijrah calendar system. |
 | [HijrahEra](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahEra)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#getEra()()` Gets the era applicable at this date. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the value of the specified field as a `long`. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#hashCode()()` A hash code for this date. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#isLeapYear()()` Checks if the year is a leap year, according to the Hijrah calendar system rules. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#lengthOfMonth()()` Returns the length of the month represented by this date. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#lengthOfYear()()` Returns the length of the year represented by this date. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#minus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount subtracted. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period subtracted. |
+| --- | --- |
 | static [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#now()()` Obtains the current `HijrahDate` of the Islamic Umm Al-Qura calendar in the default time-zone. |
 | static [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current `HijrahDate` of the Islamic Umm Al-Qura calendar from the specified clock. |
 | static [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current `HijrahDate` of the Islamic Umm Al-Qura calendar in the specified time-zone. |
+| --- | --- |
 | static [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a `HijrahDate` of the Islamic Umm Al-Qura calendar from the proleptic-year, month-of-year and day-of-month fields. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#plus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount added. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period added. |
+| --- | --- |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the range of valid values for the specified field. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#toEpochDay()()` Converts this date to the Epoch Day. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#until(java.time.chrono.ChronoLocalDate)(endDate: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate!)` Calculates the period between this date and another date as a `ChronoPeriod`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Calculates the amount of time until another date in terms of the specified unit. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#!)` Returns an adjusted object of the same type as this object with the adjustment made. |
+| --- | --- |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an object of the same type as this object with the specified field altered. |
 | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate#withVariant(java.time.chrono.HijrahChronology)(chronology: https://developer.android.com/reference/kotlin/java/time/chrono/HijrahChronology!)` Returns a `HijrahDate` with the Chronology requested. |
 
@@ -183,6 +192,7 @@ This queries the date-time for the value of the specified field. The returned va
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### hashCode
 
@@ -311,6 +321,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the unit cannot be subtracted |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### now
 
@@ -397,6 +408,7 @@ This returns a `HijrahDate` with the specified fields. The day must be valid for
 | `prolepticYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the Hijrah proleptic-year |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the Hijrah month-of-year, from 1 to 12 |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the Hijrah day-of-month, from 1 to 30 |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -473,6 +485,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the unit cannot be added |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### range
 
@@ -609,6 +622,7 @@ This instance is immutable and unaffected by this method call.
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to the same type as this temporal |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
+| --- | --- |
 
 ### with
 
@@ -675,6 +689,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
+| --- | --- |
 
 ### withVariant
 

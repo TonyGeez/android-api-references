@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # PeriodicAdvertisingParameters
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters "View this page in Java") 
+| --- | --- |
 
 ```
 class PeriodicAdvertisingParameters : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.PeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#) |
 
 The [PeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#) provide a way to adjust periodic advertising preferences for each Bluetooth LE advertising set. Use [PeriodicAdvertisingParameters.Builder](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters.Builder) to create an instance of this class.
@@ -30,6 +32,7 @@ The [PeriodicAdvertisingParameters](https://developer.android.com/reference/kotl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getIncludeTxPower](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#getIncludeTxPower())`()` Returns whether the TX Power will be included. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterval](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#getInterval())`()` Returns the periodic advertising interval, in 1. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

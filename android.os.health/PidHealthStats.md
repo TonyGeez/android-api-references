@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # PidHealthStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/health/PidHealthStats "View this page in Java") 
+| --- | --- |
 
 ```
 class PidHealthStats
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.health.PidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats#) |
 
 Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [UidHealthStats.STATS_PIDS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PIDS:kotlin.Int) key.
@@ -24,6 +26,7 @@ The values coming from PidHealthStats are a little bit different from the other 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WAKE_NESTING_COUNT](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats#MEASUREMENT_WAKE_NESTING_COUNT:kotlin.Int) Key for a measurement of the current nesting depth of wakelocks for this process. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WAKE_START_MS](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats#MEASUREMENT_WAKE_START_MS:kotlin.Int) Key for a measurement of the time in the [android.os.SystemClock#elapsedRealtime](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime())timebase that a wakelock was first acquired in this process. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WAKE_SUM_MS](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats#MEASUREMENT_WAKE_SUM_MS:kotlin.Int) Key for a measurement of the total number of milleseconds that this process has held a wake lock. |
+| --- | --- |
 
 ## Constants
 

@@ -8,9 +8,11 @@ open class ExpandableListActivity : Activity, ExpandableListView.OnChildClickL
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
 | | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
 | | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) ||
 | | | | | ↳ | [android.app.ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#) |
 
@@ -1130,15 +1132,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter.html#)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListAdapter()()` Get the ExpandableListAdapter associated with this activity's ExpandableListView. |
 | open [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListView()()` Get the activity's expandable list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedId()()` Gets the ID of the currently selected group or child. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedPosition()()` Gets the position (in packed position representation) of the currently selected group or child. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#onChildClick(android.widget.ExpandableListView,%20android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)(parent: https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!, groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Override this for receiving callbacks when a child has been clicked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#onContentChanged()()` Updates the screen state (current list and other views) when the content changes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#onCreateContextMenu(android.view.ContextMenu,%20android.view.View,%20android.view.ContextMenu.ContextMenuInfo)(menu: https://developer.android.com/reference/kotlin/android/view/ContextMenu.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!, menuInfo: https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#!)` Override this to populate the context menu when an item is long pressed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#onGroupCollapse(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override this for receiving callbacks when a group has been collapsed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#onGroupExpand(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override this for receiving callbacks when a group has been expanded. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#setListAdapter(android.widget.ExpandableListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter.html#!)` Provide the adapter for the expandable list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#setSelectedChild(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, shouldExpandGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the selection to the specified child. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#setSelectedGroup(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the selection to the specified group. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -5025,6 +5031,7 @@ Callback method to be invoked when a child in this expandable list has been clic
 | `parent` | [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#)!: The ExpandableListView where the click happened |
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view within the expandable list/ListView that was clicked |
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The group position that contains the child that was clicked |
+| --- | --- |
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The child position within the group |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the child that was clicked |
 
@@ -5074,6 +5081,7 @@ It is not safe to hold onto the context menu after this method returns.
 | `menu` | [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu.html#)!: The context menu that is being built |
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view for which the context menu is being built |
 | `menuInfo` | [ContextMenu.ContextMenuInfo](https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
+| --- | --- |
 
 ### onGroupCollapse
 
@@ -5140,6 +5148,7 @@ Sets the selection to the specified child. If the child is in a collapsed group,
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the group that contains the child. |
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the child within the group. |
 | `shouldExpandGroup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the child's group should be expanded if it is collapsed. |
+| --- | --- |
 
 | Return ||
 |---|---|

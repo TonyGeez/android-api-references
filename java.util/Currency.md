@@ -9,6 +9,7 @@ class Currency : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Currency](https://developer.android.com/reference/kotlin/java/util/Currency#) |
 
 Represents a currency. Currencies are identified by their ISO 4217 currency codes. Visit the [ISO web site](http://www.iso.org/iso/home/standards/currency_codes.htm) for more information.
@@ -24,15 +25,19 @@ It is recommended to use [java.math.BigDecimal](https://developer.android.com/re
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Currency](https://developer.android.com/reference/kotlin/java/util/Currency#)!\>! | [getAvailableCurrencies](https://developer.android.com/reference/kotlin/java/util/Currency#getAvailableCurrencies())`()` Gets the set of available currencies. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencyCode](https://developer.android.com/reference/kotlin/java/util/Currency#getCurrencyCode())`()` Gets the ISO 4217 currency code of this currency. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultFractionDigits](https://developer.android.com/reference/kotlin/java/util/Currency#getDefaultFractionDigits())`()` Gets the default number of fraction digits used with this currency. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/Currency#getDisplayName())`()` Gets the name that is suitable for displaying this currency for the default [DISPLAY](https://developer.android.com/reference/kotlin/java/util/Locale.Category) locale. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/Currency#getDisplayName(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`)` Gets the name that is suitable for displaying this currency for the specified locale. |
 | static [Currency](https://developer.android.com/reference/kotlin/java/util/Currency#)! | [getInstance](https://developer.android.com/reference/kotlin/java/util/Currency#getInstance(kotlin.String))`(`currencyCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the`Currency`instance for the given currency code. |
+| --- | --- |
 | static [Currency](https://developer.android.com/reference/kotlin/java/util/Currency#)! | [getInstance](https://developer.android.com/reference/kotlin/java/util/Currency#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`)` Returns the`Currency`instance for the country of the given locale. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericCode](https://developer.android.com/reference/kotlin/java/util/Currency#getNumericCode())`()` Returns the ISO 4217 numeric code of this currency. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumericCodeAsString](https://developer.android.com/reference/kotlin/java/util/Currency#getNumericCodeAsString())`()` Returns the 3 digit ISO 4217 numeric code of this currency as a`String`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](https://developer.android.com/reference/kotlin/java/util/Currency#getSymbol())`()` Gets the symbol of this currency for the default [DISPLAY](https://developer.android.com/reference/kotlin/java/util/Locale.Category) locale. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](https://developer.android.com/reference/kotlin/java/util/Currency#getSymbol(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`)` Gets the symbol of this currency for the specified locale. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Currency#toString())`()` Returns the ISO 4217 currency code of this currency. |
+| --- | --- |
 
 ## Public methods
 

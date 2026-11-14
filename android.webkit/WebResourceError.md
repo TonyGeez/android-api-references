@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # WebResourceError
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebResourceError "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebResourceError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebResourceError](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError#) |
 
 Encapsulates information about errors that occurred during loading of web resources. See [WebViewClient.onReceivedError(WebView, WebResourceRequest, WebResourceError)](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedError(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20android.webkit.WebResourceError))

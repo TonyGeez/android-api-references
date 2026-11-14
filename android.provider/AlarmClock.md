@@ -7,6 +7,7 @@ class AlarmClock
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.AlarmClock](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#) |
 
 The AlarmClock provider contains an Intent action and extras that can be used to start an Activity to set a new alarm or timer in an alarm clock application. Applications that wish to receive the ACTION_SET_ALARM, ACTION_SET_TIMER, ACTION_DISMISS_ALARM, ACTION_DISMISS_TIMER, and ACTION_SNOOZE_ALARM Intents should create an activity to handle the Intent that requires the permission, com.android.alarm.permission.SET_ALARM. Applications that wish to create a new alarm or timer should use android.content.Context#startActivity so that the user has the option of choosing which alarm clock application to use. Android TV devices may not support the alarm intents.
@@ -18,24 +19,31 @@ The AlarmClock provider contains an Intent action and extras that can be used to
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_ALARM:kotlin.String` Activity Action: Dismiss an alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_TIMER:kotlin.String` Activity Action: Dismiss a timer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SET_ALARM:kotlin.String` Activity Action: Set an alarm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SET_TIMER:kotlin.String` Activity Action: Set a timer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SHOW_ALARMS:kotlin.String` Activity Action: Show the alarms. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SHOW_TIMERS:kotlin.String` Activity Action: Show the timers. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SNOOZE_ALARM:kotlin.String` Activity Action: Snooze a currently ringing alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ALARM_SEARCH_MODE_ALL:kotlin.String` Selects all alarms. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ALARM_SEARCH_MODE_LABEL:kotlin.String` Search by alarm label. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ALARM_SEARCH_MODE_NEXT:kotlin.String` Selects the alarm that will ring next, or the alarm that is currently ringing, if any. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ALARM_SEARCH_MODE_TIME:kotlin.String` Search for the alarm that is most closely matched by the search parameters `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_HOUR:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_MINUTES:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_IS_PM:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_ALARM_SEARCH_MODE:kotlin.String` Bundle extra: Specify the type of search mode to look up an alarm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_ALARM_SNOOZE_DURATION:kotlin.String` Bundle extra: The snooze duration of the alarm in minutes. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_DAYS:kotlin.String` Bundle extra: Weekdays for repeating alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_HOUR:kotlin.String` Bundle extra: The hour of the alarm. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_IS_PM:kotlin.String` Bundle extra: The AM/PM of the alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_LENGTH:kotlin.String` Bundle extra: The length of the timer in seconds. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_MESSAGE:kotlin.String` Bundle extra: A custom message for the alarm or timer. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_MINUTES:kotlin.String` Bundle extra: The minutes of the alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_RINGTONE:kotlin.String` Bundle extra: A ringtone to be played with this alarm. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_SKIP_UI:kotlin.String` Bundle extra: Whether or not to display an activity after performing the action. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_VIBRATE:kotlin.String` Bundle extra: Whether or not to activate the device vibrator. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#VALUE_RINGTONE_SILENT:kotlin.String` Bundle extra value: Indicates no ringtone should be played. |
 

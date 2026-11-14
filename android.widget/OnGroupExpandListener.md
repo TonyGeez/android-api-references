@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnGroupExpandListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/ExpandableListView.OnGroupExpandListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnGroupExpandListener
@@ -13,6 +14,7 @@ interface OnGroupExpandListener
 | [android.widget.ExpandableListView.OnGroupExpandListener](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupExpandListener#) |
 
 | Known Direct Subclasses [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#) | An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Used for being notified when a group is expanded
 

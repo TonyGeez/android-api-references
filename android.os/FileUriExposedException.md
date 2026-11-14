@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # FileUriExposedException
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/FileUriExposedException "View this page in Java") 
+| --- | --- |
 
 ```
 open class FileUriExposedException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.os.FileUriExposedException](https://developer.android.com/reference/kotlin/android/os/FileUriExposedException#) |
 
 The exception that may be thrown when an application exposes a`file://` [android.net.Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) to another app.

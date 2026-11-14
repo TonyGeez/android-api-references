@@ -7,6 +7,7 @@ open class RemoteViews : LayoutInflater.Filter, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#) |
 
 A class that describes a view hierarchy that can be displayed in another process. The hierarchy is inflated from a layout resource file, and this class provides some basic operations for modifying the content of the inflated hierarchy.
@@ -50,18 +51,22 @@ Descendants of these classes are not supported.
 | open | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.ActionException` Exception to send when something goes wrong executing an action |
 | | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` A data parcel that carries the instructions to draw the RemoteViews, as an alternative to XML layout. |
 | | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems` Representation of a fixed list of items to be displayed in a RemoteViews collection. |
+| --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` Class representing a response to an action performed on any element of a RemoteViews. |
 | | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteView` This annotation indicates that a subclass of View is allowed to be used with the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` mechanism. |
 | | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteViewOutlineProvider` OutlineProvider for a view with a radius set by `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewOutlinePreferredRadius(kotlin.Int,%20kotlin.Float,%20kotlin.Int)`. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#EXTRA_CHECKED:kotlin.String` The intent extra for whether the view whose checked state changed is currently checked. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#EXTRA_SHARED_ELEMENT_BOUNDS:kotlin.String` The intent extra that contains the bounds for all shared elements. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_BOTTOM:kotlin.Int` The value will apply to the marginBottom. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` The value will apply to the marginEnd. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_LEFT:kotlin.Int` The value will apply to the marginLeft. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_RIGHT:kotlin.Int` The value will apply to the marginRight. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_START:kotlin.Int` The value will apply to the marginStart. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_TOP:kotlin.Int` The value will apply to the marginTop. |
 
@@ -92,96 +97,127 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#addStableView(kotlin.Int,%20android.widget.RemoteViews,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nestedView: https://developer.android.com/reference/kotlin/android/widget/RemoteViews#, stableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addView(android.view.View)` after inflating the given `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#addView(kotlin.Int,%20android.widget.RemoteViews)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nestedView: https://developer.android.com/reference/kotlin/android/widget/RemoteViews#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addView(android.view.View)` after inflating the given `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#`. |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#apply(android.content.Context,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Inflates the view hierarchy represented by this object and applies all of the actions. |
+| --- | --- |
 | open [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#clone()()` Returns a deep copy of the RemoteViews object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [RemoteViews.DrawInstructions](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions)? | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getDrawInstructions()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` associated with this RemoteViews, if any. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getLayoutId()()` Returns the layout id of the root layout associated with this RemoteViews. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getPackage()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getViewId()()` Get the ID of the top-level view of the XML layout, if set using `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#RemoteViews(kotlin.String,%20kotlin.Int,%20kotlin.Int)`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#onLoadClass(java.lang.Class)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!)` Used to restrict the views which can be inflated |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#reapply(android.content.Context,%20android.view.View)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Applies all of the actions to the provided view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#removeAllViews(kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#removeAllViews()`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setAccessibilityTraversalAfter(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nextId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setAccessibilityTraversalAfter(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setAccessibilityTraversalBefore(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nextId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setAccessibilityTraversalBefore(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setAppWidgetEventTag(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a view tag associating a View with an ID to be used for widget interaction usage events (`https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent.html#`). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setBitmap(kotlin.Int,%20kotlin.String,%20android.graphics.Bitmap)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Call a method taking one Bitmap on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setBlendMode(kotlin.Int,%20kotlin.String,%20android.graphics.BlendMode)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Call a method taking one BlendMode on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setBoolean(kotlin.Int,%20kotlin.String,%20kotlin.Boolean)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Call a method taking one boolean on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setBundle(kotlin.Int,%20kotlin.String,%20android.os.Bundle)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Call a method taking one Bundle on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setByte(kotlin.Int,%20kotlin.String,%20kotlin.Byte)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Call a method taking one byte on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setChar(kotlin.Int,%20kotlin.String,%20kotlin.Char)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Call a method taking one char on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setCharSequence(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, stringResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one CharSequence on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setCharSequence(kotlin.Int,%20kotlin.String,%20kotlin.CharSequence)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Call a method taking one CharSequence on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setCharSequenceAttr(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, stringAttribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one CharSequence on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setChronometer(kotlin.Int,%20kotlin.Long,%20kotlin.String,%20kotlin.Boolean)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, base: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, started: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/Chronometer#setBase(kotlin.Long)`, `https://developer.android.com/reference/kotlin/android/widget/Chronometer#setFormat(kotlin.String)`, and `https://developer.android.com/reference/kotlin/android/widget/Chronometer#start()` or `https://developer.android.com/reference/kotlin/android/widget/Chronometer#stop()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setChronometerCountDown(kotlin.Int,%20kotlin.Boolean)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isCountDown: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/Chronometer#setCountDown(kotlin.Boolean)` on the chronometer with the given viewId. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColor(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, colorResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a color, on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorAttr(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, colorAttribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a color, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorInt(kotlin.Int,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, notNight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, night: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a color, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorStateList(kotlin.Int,%20kotlin.String,%20android.content.res.ColorStateList)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Call a method taking one ColorStateList on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorStateList(kotlin.Int,%20kotlin.String,%20android.content.res.ColorStateList,%20android.content.res.ColorStateList)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, notNight: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?, night: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Call a method taking one ColorStateList on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorStateList(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, colorResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one ColorStateList on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setColorStateListAttr(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, colorAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one ColorStateList on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setCompoundButtonChecked(kotlin.Int,%20kotlin.Boolean)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, checked: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/CompoundButton#setChecked(kotlin.Boolean)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setContentDescription(kotlin.Int,%20kotlin.CharSequence)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Equivalent to calling View. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setDisplayedChild(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#setDisplayedChild(kotlin.Int)` |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setDouble(kotlin.Int,%20kotlin.String,%20kotlin.Double)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Call a method taking one double on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setEmptyView(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, emptyViewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AdapterView#setEmptyView(android.view.View)` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setFloat(kotlin.Int,%20kotlin.String,%20kotlin.Float)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Call a method taking one float on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setFloatDimen(kotlin.Int,%20kotlin.String,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one float, a size in pixels, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setFloatDimen(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, dimenResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one float, a size in pixels, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setFloatDimenAttr(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, dimenAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one float, a size in pixels, on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIcon(kotlin.Int,%20kotlin.String,%20android.graphics.drawable.Icon)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#!)` Call a method taking one Icon on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIcon(kotlin.Int,%20kotlin.String,%20android.graphics.drawable.Icon,%20android.graphics.drawable.Icon)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, notNight: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?, night: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?)` Call a method taking one Icon on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setImageViewBitmap(kotlin.Int,%20android.graphics.Bitmap)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageBitmap(android.graphics.Bitmap)` |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setImageViewIcon(kotlin.Int,%20android.graphics.drawable.Icon)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageIcon(android.graphics.drawable.Icon)` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setImageViewResource(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageResource(kotlin.Int)` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setImageViewUri(kotlin.Int,%20android.net.Uri)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ImageView#setImageURI(android.net.Uri)` |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setInt(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIntDimen(kotlin.Int,%20kotlin.String,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a size in pixels, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIntDimen(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, dimenResource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a size in pixels, on a view in the layout for this RemoteViews. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIntDimenAttr(kotlin.Int,%20kotlin.String,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, dimenAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Call a method taking one int, a size in pixels, on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setIntent(kotlin.Int,%20kotlin.String,%20android.content.Intent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Call a method taking one Intent on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setLabelFor(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, labeledId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setLabelFor(kotlin.Int)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setLightBackgroundLayoutId(kotlin.Int)(layoutId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provides an alternate layout ID, which can be used to inflate this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setLong(kotlin.Int,%20kotlin.String,%20kotlin.Long)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Call a method taking one long on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setOnCheckedChangeResponse(kotlin.Int,%20android.widget.RemoteViews.RemoteResponse)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, response: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/CompoundButton#setOnCheckedChangeListener(android.widget.CompoundButton.OnCheckedChangeListener)` to launch the provided `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setOnClickFillInIntent(kotlin.Int,%20android.content.Intent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` When using collections (eg. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setOnClickPendingIntent(kotlin.Int,%20android.app.PendingIntent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, pendingIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setOnClickListener(android.view.View.OnClickListener)` to launch the provided `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setOnClickResponse(kotlin.Int,%20android.widget.RemoteViews.RemoteResponse)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, response: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse)` Equivalent of calling `https://developer.android.com/reference/kotlin/android/view/View.html#setOnClickListener(android.view.View.OnClickListener)` to launch the provided `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setOnStylusHandwritingPendingIntent(kotlin.Int,%20android.app.PendingIntent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, pendingIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setHandwritingDelegatorCallback(java.lang.Runnable)` to send the provided `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setPendingIntentTemplate(kotlin.Int,%20android.app.PendingIntent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, pendingIntentTemplate: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` When using collections (eg. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setProgressBar(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, progress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, indeterminate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#setMax(kotlin.Int)`, android. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setRadioGroupChecked(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, checkedId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/RadioGroup#check(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setRelativeScrollPosition(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ListView#smoothScrollByOffset(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setRemoteAdapter(kotlin.Int,%20android.content.Intent)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setRemoteViewsAdapter(android.content.Intent)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setRemoteAdapter(kotlin.Int,%20android.widget.RemoteViews.RemoteCollectionItems)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, items: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems)` Creates a simple Adapter for the viewId specified. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setRemoteAdapter(kotlin.Int,%20kotlin.Int,%20android.content.Intent)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AbsListView#setRemoteViewsAdapter(android.content.Intent)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setScrollPosition(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/ListView#smoothScrollToPosition(kotlin.Int)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setShort(kotlin.Int,%20kotlin.String,%20kotlin.Short)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Call a method taking one short on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setString(kotlin.Int,%20kotlin.String,%20kotlin.String)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Call a method taking one String on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setTextColor(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextColor(kotlin.Int)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setTextViewCompoundDrawables(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesWithIntrinsicBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setTextViewCompoundDrawablesRelative(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/TextView#setCompoundDrawablesRelativeWithIntrinsicBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setTextViewText(kotlin.Int,%20kotlin.CharSequence)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.CharSequence)` |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setTextViewTextSize(kotlin.Int,%20kotlin.Int,%20kotlin.Float)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextSize(kotlin.Int,%20kotlin.Float)` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setUri(kotlin.Int,%20kotlin.String,%20android.net.Uri)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, methodName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Call a method taking one Uri on a view in the layout for this RemoteViews. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutHeight(kotlin.Int,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#height:kotlin.Int` except that you may provide the value in any dimension units. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutHeightAttr(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#height:kotlin.Int` with the value of the given attribute in the current theme. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutHeightDimen(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightDimen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#height:kotlin.Int` with the result of `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getDimensionPixelSize(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutMargin(kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.MarginLayoutParams.html#setMarginEnd(kotlin.Int)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutMarginAttr(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.MarginLayoutParams.html#setMarginEnd(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutMarginDimen(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dimen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.MarginLayoutParams.html#setMarginEnd(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutWidth(kotlin.Int,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#width:kotlin.Int` except that you may provide the value in any dimension units. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutWidthAttr(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widthAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#width:kotlin.Int` with the value of the given attribute in the current theme. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewLayoutWidthDimen(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widthDimen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to setting `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#width:kotlin.Int` with the result of `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getDimensionPixelSize(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewOutlinePreferredRadius(kotlin.Int,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets an OutlineProvider on the view whose corner radius is a dimension calculated using `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#applyDimension(kotlin.Int,%20kotlin.Float,%20android.util.DisplayMetrics)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewOutlinePreferredRadiusAttr(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attrId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets an OutlineProvider on the view whose corner radius is a dimension attribute with `attrId`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewOutlinePreferredRadiusDimen(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets an OutlineProvider on the view whose corner radius is a dimension resource with `resId`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewPadding(kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, units: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#setViewVisibility(kotlin.Int,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#showNext(kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#showNext()` |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#showPrevious(kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#showPrevious()` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -429,6 +465,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the parent `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` to add child into. |
 | `nestedView` | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#): `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` that describes the child. This value cannot be `null`. |
 | `stableId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An id that is stable across different versions of RemoteViews. |
+| --- | --- |
 
 ### addView
 
@@ -692,6 +729,7 @@ Call a method taking one Bitmap on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The value to pass to the method. |
+| --- | --- |
 
 ### setBlendMode
 
@@ -712,6 +750,7 @@ Call a method taking one BlendMode on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `value` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: The value to pass to the method. This value may be `null`. |
+| --- | --- |
 
 ### setBoolean
 
@@ -732,6 +771,7 @@ Call a method taking one boolean on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setBundle
 
@@ -752,6 +792,7 @@ Call a method taking one Bundle on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The value to pass to the method. |
+| --- | --- |
 
 ### setByte
 
@@ -772,6 +813,7 @@ Call a method taking one byte on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setChar
 
@@ -792,6 +834,7 @@ Call a method taking one char on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setCharSequence
 
@@ -812,6 +855,7 @@ Call a method taking one CharSequence on a view in the layout for this RemoteVie
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `stringResource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setCharSequence
 
@@ -832,6 +876,7 @@ Call a method taking one CharSequence on a view in the layout for this RemoteVie
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The value to pass to the method. |
+| --- | --- |
 
 ### setCharSequenceAttr
 
@@ -852,6 +897,7 @@ Call a method taking one CharSequence on a view in the layout for this RemoteVie
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `stringAttribute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The attribute to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setChronometer
 
@@ -873,6 +919,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/Chronometer` to change |
 | `base` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time at which the timer would have read 0:00. This time should be based off of `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()`. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The Chronometer format string, or null to simply display the timer value. |
+| --- | --- |
 | `started` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if you want the clock to be started, false if not. |
 
 **See Also**
@@ -916,6 +963,7 @@ Call a method taking one int, a color, on a view in the layout for this RemoteVi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `colorResource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setColorAttr
 
@@ -936,6 +984,7 @@ Call a method taking one int, a color, on a view in the layout for this RemoteVi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `colorAttribute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The theme attribute to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setColorInt
 
@@ -957,6 +1006,7 @@ Call a method taking one int, a color, on a view in the layout for this RemoteVi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `notNight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` |
+| --- | --- |
 | `night` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` |
 
 ### setColorStateList
@@ -978,6 +1028,7 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `value` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method. This value may be `null`. |
+| --- | --- |
 
 ### setColorStateList
 
@@ -999,6 +1050,7 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `notNight` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
+| --- | --- |
 | `night` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
 
 ### setColorStateList
@@ -1020,6 +1072,7 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `colorResource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setColorStateListAttr
 
@@ -1040,6 +1093,7 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `colorAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The theme attribute to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setCompoundButtonChecked
 
@@ -1113,6 +1167,7 @@ Call a method taking one double on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setEmptyView
 
@@ -1151,6 +1206,7 @@ Call a method taking one float on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setFloatDimen
 
@@ -1172,6 +1228,7 @@ Call a method taking one float, a size in pixels, on a view in the layout for th
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `value` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The value of the dimension. |
+| --- | --- |
 | `unit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unit in which the value is specified. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_SP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_MM:kotlin.Int` |
 
 ### setFloatDimen
@@ -1193,6 +1250,7 @@ Call a method taking one float, a size in pixels, on a view in the layout for th
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `dimenResource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setFloatDimenAttr
 
@@ -1213,6 +1271,7 @@ Call a method taking one float, a size in pixels, on a view in the layout for th
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `dimenAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The attribute to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setIcon
 
@@ -1233,6 +1292,7 @@ Call a method taking one Icon on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)!: The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` to pass the method. |
+| --- | --- |
 
 ### setIcon
 
@@ -1254,6 +1314,7 @@ Call a method taking one Icon on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `notNight` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
+| --- | --- |
 | `night` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
 
 ### setImageViewBitmap
@@ -1347,6 +1408,7 @@ Call a method taking one int on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setIntDimen
 
@@ -1368,6 +1430,7 @@ Call a method taking one int, a size in pixels, on a view in the layout for this
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `value` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The value of the dimension. |
+| --- | --- |
 | `unit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unit in which the value is specified. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_SP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_MM:kotlin.Int` |
 
 ### setIntDimen
@@ -1389,6 +1452,7 @@ Call a method taking one int, a size in pixels, on a view in the layout for this
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `dimenResource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setIntDimenAttr
 
@@ -1409,6 +1473,7 @@ Call a method taking one int, a size in pixels, on a view in the layout for this
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
 | `dimenAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The attribute to resolve and pass as argument to the method. |
+| --- | --- |
 
 ### setIntent
 
@@ -1429,6 +1494,7 @@ Call a method taking one Intent on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to pass the method. |
+| --- | --- |
 
 ### setLabelFor
 
@@ -1477,6 +1543,7 @@ Call a method taking one long on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setOnCheckedChangeResponse
 
@@ -1608,6 +1675,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/ProgressBar` to change |
 | `max` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The 100% value for the progress bar |
 | `progress` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The current value of the progress bar. |
+| --- | --- |
 | `indeterminate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the progress bar is indeterminate, false if not. |
 
 ### setRadioGroupChecked
@@ -1707,6 +1775,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `appWidgetId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the app widget which contains the specified view. (This parameter is ignored in this deprecated method) |
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/AdapterView` |
 | `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent of the service which will be providing data to the RemoteViewsAdapter |
+| --- | --- |
 
 ### setScrollPosition
 
@@ -1745,6 +1814,7 @@ Call a method taking one short on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html): The value to pass to the method. |
+| --- | --- |
 
 ### setString
 
@@ -1765,6 +1835,7 @@ Call a method taking one String on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The value to pass to the method. |
+| --- | --- |
 
 ### setTextColor
 
@@ -1805,6 +1876,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose text should change |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place to the left of the text, or 0 |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place above the text, or 0 |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place to the right of the text, or 0 |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place below the text, or 0 |
 
@@ -1829,6 +1901,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose text should change |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place before the text (relative to the layout direction), or 0 |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place above the text, or 0 |
+| --- | --- |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place after the text, or 0 |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of a drawable to place below the text, or 0 |
 
@@ -1869,6 +1942,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose text size should change |
 | `units` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The units of size (e.g. COMPLEX_UNIT_SP) |
 | `size` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The size of the text |
+| --- | --- |
 
 ### setUri
 
@@ -1889,6 +1963,7 @@ Call a method taking one Uri on a view in the layout for this RemoteViews.
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
 | `value` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The value to pass to the method. |
+| --- | --- |
 
 ### setViewLayoutHeight
 
@@ -1969,6 +2044,7 @@ NOTE: It is recommended to use `https://developer.android.com/reference/kotlin/a
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view to change |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The margin being set e.g. `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_BOTTOM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_START:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` |
 | `value` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): a value for the margin the given units. |
+| --- | --- |
 | `units` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unit type of the value e.g. `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_SP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_MM:kotlin.Int` |
 
 ### setViewLayoutMarginAttr
@@ -1990,6 +2066,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view to change |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The margin being set e.g. `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_BOTTOM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_START:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` |
 | `attr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a dimension attribute to apply to the margin, or 0 to clear the margin. |
+| --- | --- |
 
 ### setViewLayoutMarginDimen
 
@@ -2010,6 +2087,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view to change |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The margin being set e.g. `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_BOTTOM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_START:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#MARGIN_END:kotlin.Int` |
 | `dimen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a dimension resource to apply to the margin, or 0 to clear the margin. |
+| --- | --- |
 
 ### setViewLayoutWidth
 
@@ -2139,9 +2217,11 @@ Prefer using scalable units like `https://developer.android.com/reference/kotlin
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view to change |
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the left padding value in the given units |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the top padding value in the given units |
+| --- | --- |
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the right padding value in the given units |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the bottom padding value in the given units |
 | `units` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unit type of the value, e.g. `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_DIP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_SP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_PT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#COMPLEX_UNIT_MM:kotlin.Int` |
+| --- | --- |
 
 ### setViewPadding
 
@@ -2166,6 +2246,7 @@ Prefer using the `https://developer.android.com/reference/kotlin/android/widget/
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view to change |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the left padding in pixels. The units of this value are pixels. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the top padding in pixels. The units of this value are pixels. |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the right padding in pixels. The units of this value are pixels. |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bottom padding in pixels. The units of this value are pixels. |
 

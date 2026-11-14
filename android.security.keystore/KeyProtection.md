@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # KeyProtection
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyProtection "View this page in Java") 
+| --- | --- |
 
 ```
 class KeyProtection : KeyStore.ProtectionParameter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.keystore.KeyProtection](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#) |
 
 Specification of how a key or key pair is secured when imported into the [Android Keystore system](https://developer.android.com/training/articles/keystore.html). This class specifies authorized uses of the imported key, such as whether user authentication is required for using the key, what operations the key is authorized for (e.g., decryption, but not signing) with what parameters (e.g., only with a particular padding scheme or digest), and the key's validity start and end dates. Key use authorizations expressed in this class apply only to secret keys and private keys -- public keys can be used for any supported operations.
@@ -197,24 +199,31 @@ This example illustrates how to import an RSA key pair into the Android KeyStore
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getBlockModes](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getBlockModes())`()` Gets the set of block modes (e.g., |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDigests](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getDigests())`()` Gets the set of digest algorithms (e.g., |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEncryptionPaddings](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getEncryptionPaddings())`()` Gets the set of padding schemes (e.g., |
+| --- | --- |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityForConsumptionEnd](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getKeyValidityForConsumptionEnd())`()` Gets the time instant after which the key is no long valid for decryption and verification. |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityForOriginationEnd](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getKeyValidityForOriginationEnd())`()` Gets the time instant after which the key is no long valid for encryption and signing. |
 | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [getKeyValidityStart](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getKeyValidityStart())`()` Gets the time instant before which the key is not yet valid. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxUsageCount](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getMaxUsageCount())`()` Returns the maximum number of times the limited use key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int) if there's no restriction on the number of times the key can be used. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMgf1Digests](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getMgf1Digests())`()` Returns the set of digests that can be used by the MGF1 mask generation function (e.g., |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPurposes](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getPurposes())`()` Gets the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSignaturePaddings](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getSignaturePaddings())`()` Gets the set of padding schemes (e.g., |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationType](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getUserAuthenticationType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationValidityDurationSeconds](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#getUserAuthenticationValidityDurationSeconds())`()` Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDigestsSpecified](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isDigestsSpecified())`()` Returns`true`if the set of digest algorithms with which the key can be used has been specified. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInvalidatedByBiometricEnrollment](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isInvalidatedByBiometricEnrollment())`()` Returns`true`if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMgf1DigestsSpecified](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isMgf1DigestsSpecified())`()` Returns`true`if the set of digests for the MGF1 mask generation function, with which the key can be used, has been specified. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRandomizedEncryptionRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isRandomizedEncryptionRequired())`()` Returns`true`if encryption using this key must be sufficiently randomized to produce different ciphertexts for the same plaintext every time. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnlockedDeviceRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isUnlockedDeviceRequired())`()` Returns`true`if the key is authorized to be used only while the device is unlocked. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isUserAuthenticationRequired())`()` Returns`true`if the key is authorized to be used only if the user has been authenticated. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationValidWhileOnBody](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isUserAuthenticationValidWhileOnBody())`()` Returns`true`if the key will be de-authorized when the device is removed from the user's body. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserConfirmationRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isUserConfirmationRequired())`()` Returns`true`if the key is authorized to be used only for messages confirmed by the user. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserPresenceRequired](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProtection#isUserPresenceRequired())`()` Returns`true`if the key is authorized to be used only if a test of user presence has been performed between the`Signature.initSign()`and`Signature.sign()`calls. |
+| --- | --- |
 
 ## Public methods
 

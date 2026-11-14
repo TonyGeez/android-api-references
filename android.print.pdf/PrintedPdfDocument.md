@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintedPdfDocument
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument "View this page in Java") 
+| --- | --- |
 
 ```
 open class PrintedPdfDocument : PdfDocument
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.PdfDocument](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.html#) ||
 | | ↳ | [android.print.pdf.PrintedPdfDocument](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument#) |
 
@@ -56,6 +58,7 @@ A typical use of the APIs looks like this:
 | open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getPageContentRect](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument#getPageContentRect())`()` Gets the content rectangle. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageHeight](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument#getPageHeight())`()` Gets the page height. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageWidth](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument#getPageWidth())`()` Gets the page width. |
+| --- | --- |
 | open [PdfDocument.Page](https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.Page.html#) | [startPage](https://developer.android.com/reference/kotlin/android/print/pdf/PrintedPdfDocument#startPage(kotlin.Int))`(`pageNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Starts a new page. |
 
 | Inherited functions ||

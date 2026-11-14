@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AvailableNfcAntenna
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/AvailableNfcAntenna "View this page in Java") 
+| --- | --- |
 
 ```
 class AvailableNfcAntenna : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.AvailableNfcAntenna](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#) |
 
 Represents a single available Nfc antenna on an Android device.
@@ -30,9 +32,11 @@ Represents a single available Nfc antenna on an Android device.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified AvailableNfcAntenna contains identical specifications. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocationX](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#getLocationX())`()` Location of the antenna on the X axis in millimeters. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocationY](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#getLocationY())`()` Location of the antenna on the Y axis in millimeters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/nfc/AvailableNfcAntenna#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

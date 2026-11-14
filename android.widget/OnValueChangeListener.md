@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnValueChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/NumberPicker.OnValueChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnValueChangeListener
@@ -41,3 +42,4 @@ Called upon a change of the current value.
 | `picker` | [NumberPicker](https://developer.android.com/reference/kotlin/android/widget/NumberPicker)!:The NumberPicker associated with this listener. |
 | `oldVal` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value. |
 | `newVal` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value. |
+| --- | --- |

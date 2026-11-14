@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnRatingBarChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/RatingBar.OnRatingBarChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnRatingBarChangeListener
@@ -41,3 +42,4 @@ Notification that the rating has changed. Clients can use the fromUser parameter
 | `ratingBar` | [RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar)!:The RatingBar whose rating has changed. |
 | `rating` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The current rating. This will be in the range 0..numStars. |
 | `fromUser` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):True if the rating change was initiated by a user's touch gesture or arrow key/horizontal trackbell movement. |
+| --- | --- |

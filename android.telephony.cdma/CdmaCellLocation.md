@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # CdmaCellLocation
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation "View this page in Java") 
+| --- | --- |
 
 ```
 open class CdmaCellLocation : CellLocation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#) ||
 | | ↳ | [android.telephony.cdma.CdmaCellLocation](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#) |
 
@@ -33,15 +35,19 @@ Represents the cell location on a CDMA phone.
 | openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [convertQuartSecToDecDegrees](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#convertQuartSecToDecDegrees(kotlin.Int))`(`quartSec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts latitude or longitude from 0. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillInNotifierBundle](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#fillInNotifierBundle(android.os.Bundle))`(`bundleToFill:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Fill the cell location data into the intent notifier Bundle based on service state |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationId](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#getBaseStationId())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLatitude](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#getBaseStationLatitude())`()` Latitude is a decimal number as specified in 3GPP2 C. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLongitude](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#getBaseStationLongitude())`()` Longitude is a decimal number as specified in 3GPP2 C. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkId](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#getNetworkId())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemId](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#getSystemId())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#hashCode())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#setCellLocationData(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#setCellLocationData(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `systemId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `networkId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStateInvalid](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#setStateInvalid())`()` Invalidate this object. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation#toString())`()` <br /> |
 
 | Inherited functions ||

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # PatternPathMotion
 
 Kotlin| [Java](https://developer.android.com/reference/android/transition/PatternPathMotion "View this page in Java") 
+| --- | --- |
 
 ```
 open class PatternPathMotion : PathMotion
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.PathMotion](https://developer.android.com/reference/kotlin/android/transition/PathMotion) ||
 | | ↳ | [android.transition.PatternPathMotion](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion#) |
 
@@ -37,6 +39,7 @@ This may be used in XML as an element inside a transition.
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [getPath](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion#getPath(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 | open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [getPatternPath](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion#getPatternPath())`()` Returns the Path defining a pattern of motion between two coordinates. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternPath](https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion#setPatternPath(android.graphics.Path))`(`patternPath:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)!`)` Sets the Path defining a pattern of motion between two coordinates. |
+| --- | --- |
 
 ## Public constructors
 
@@ -94,6 +97,7 @@ open fun getPath(
 | `startX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the starting point. |
 | `startY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the starting point. |
 | `endX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The x coordinate of the ending point. |
+| --- | --- |
 | `endY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The y coordinate of the ending point. |
 
 | Return ||

@@ -9,6 +9,7 @@ abstract class AtomicLongFieldUpdater<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.atomic.AtomicLongFieldUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#) |
 
 A reflection-based utility that enables atomic updates to designated`volatile long`fields of designated classes. This class is designed for use in atomic data structures in which several fields of the same node are independently subject to atomic updates.
@@ -28,18 +29,23 @@ Object arguments for parameters of type`T`that are not instances of the class pa
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [accumulateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#accumulateAndGet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#addAndGet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#compareAndSet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long,%20kotlin.Long))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#decrementAndGet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#get(java.util.concurrent.atomic.AtomicLongFieldUpdater.T))`(`obj:` `T`)` Returns the current value held in the field of the given object managed by this updater. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAccumulate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndAccumulate(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAdd](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndAdd(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndDecrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndDecrement(java.util.concurrent.atomic.AtomicLongFieldUpdater.T))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndIncrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndIncrement(java.util.concurrent.atomic.AtomicLongFieldUpdater.T))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndSet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given value and returns the old value. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndUpdate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#getAndUpdate(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20java.util.function.LongUnaryOperator))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [incrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#incrementAndGet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#lazySet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Eventually sets the field of the given object managed by this updater to the given updated value. |
 | openstatic [AtomicLongFieldUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#)\<U\>! | [newUpdater](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#newUpdater(java.lang.Class,%20kotlin.String))`(`tclass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<U>!`, `fieldName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates and returns an updater for objects with the given field. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#set(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the field of the given object managed by this updater to the given updated value. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [updateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#updateAndGet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20java.util.function.LongUnaryOperator))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongFieldUpdater#weakCompareAndSet(java.util.concurrent.atomic.AtomicLongFieldUpdater.T,%20kotlin.Long,%20kotlin.Long))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
 
@@ -76,6 +82,7 @@ Atomically updates (with memory effects as specified by [java.lang.invoke.VarHan
 | `obj` | T:An object whose field to get and set |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
 | `accumulatorFunction` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------|
@@ -122,6 +129,7 @@ Atomically sets the field of the given object managed by this updater to the giv
 | `obj` | T:An object whose field to conditionally set |
 | `expect` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the expected value |
 | `update` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the new value |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
@@ -182,6 +190,7 @@ Atomically updates (with memory effects as specified by [java.lang.invoke.VarHan
 | `obj` | T:An object whose field to get and set |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
 | `accumulatorFunction` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------|
@@ -343,6 +352,7 @@ Creates and returns an updater for objects with the given field. The Class argum
 | `tclass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<U\>!:the class of the objects holding the field |
 | `fieldName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the field to be updated |
 | `<U>` | the type of instances of tclass |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -414,6 +424,7 @@ This operation may fail spuriously and does not provide ordering guarantees, so 
 | `obj` | T:An object whose field to conditionally set |
 | `expect` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the expected value |
 | `update` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the new value |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|

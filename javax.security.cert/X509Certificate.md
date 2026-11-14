@@ -9,6 +9,7 @@ abstract class X509Certificate : Certificate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.security.cert.Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/Certificate) ||
 | | ↳ | [javax.security.cert.X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#) |
 
@@ -83,15 +84,19 @@ The value of this`cert.provider.x509v1`property has to be changed to instantiate
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#checkValidity())`()` Checks that the certificate is currently valid. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#checkValidity(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Checks that the specified date is within the certificate's validity period. |
 | static [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getInstance(kotlin.ByteArray))`(`certData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Instantiates an X509Certificate object, and initializes it with the specified byte array. |
+| --- | --- |
 | static [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getInstance(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Instantiates an X509Certificate object, and initializes it with the data read from the input stream`inStream`. |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getIssuerDN](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getIssuerDN())`()` Gets the`issuer`(issuer distinguished name) value from the certificate. |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getNotAfter](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getNotAfter())`()` Gets the`notAfter`date from the validity period of the certificate. |
+| --- | --- |
 | abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getNotBefore](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getNotBefore())`()` Gets the`notBefore`date from the validity period of the certificate. |
 | abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getSerialNumber](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getSerialNumber())`()` Gets the`serialNumber`value from the certificate. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgName](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getSigAlgName())`()` Gets the signature algorithm name for the certificate signature algorithm. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgOID](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getSigAlgOID())`()` Gets the signature algorithm OID string from the certificate. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSigAlgParams](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getSigAlgParams())`()` Gets the DER-encoded signature algorithm parameters from this certificate's signature algorithm. |
 | abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getSubjectDN](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getSubjectDN())`()` Gets the`subject`(subject distinguished name) value from the certificate. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate#getVersion())`()` Gets the`version`(version number) value from the certificate. |
 
 | Inherited functions ||

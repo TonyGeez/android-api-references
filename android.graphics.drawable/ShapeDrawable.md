@@ -5,16 +5,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ShapeDrawable
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class ShapeDrawable : Drawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.ShapeDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#) |
 
 | Known Direct Subclasses [PaintDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/PaintDrawable) |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [PaintDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/PaintDrawable) | Drawable that draws its bounds in the given paint, with optional rounded corners. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A Drawable object that draws primitive shapes. A ShapeDrawable takes a [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) object and manages its presence on the screen. If no Shape is given, then the ShapeDrawable will default to a [android.graphics.drawable.shapes.RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape).
 
@@ -35,9 +38,11 @@ This object can be defined in an XML file with the `<shape>` element.
 | [`android:bottom`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Bottom padding. |
 | [`android:color`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Defines the color of the shape. |
 | [`android:height`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Defines the height of the shape. |
+| --- | --- |
 | [`android:left`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Left padding. |
 | [`android:right`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Right padding. |
 | [`android:top`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Top padding. |
+| --- | --- |
 | [`android:width`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#attr_ShapeDrawable) | Defines the width of the shape. |
 
 | Public constructors ||
@@ -50,30 +55,39 @@ This object can be defined in an XML file with the `<shape>` element.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getAlpha())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getChangingConfigurations())`()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | open [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState)? | [getConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getConstantState())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getIntrinsicHeight())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getIntrinsicWidth())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getOpacity())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPadding](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getPadding(android.graphics.Rect))`(`padding:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` <br /> |
 | open [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)! | [getPaint](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getPaint())`()` Returns the Paint used to draw the shape. |
 | open [ShapeDrawable.ShaderFactory](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable.ShaderFactory)! | [getShaderFactory](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getShaderFactory())`()` Returns the ShaderFactory used by this ShapeDrawable for requesting a [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader.html#). |
+| --- | --- |
 | open [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape)! | [getShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#getShape())`()` Returns the Shape of this ShapeDrawable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#hasFocusStateSpecified())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#isStateful())`()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#mutate())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the alpha level for this drawable \[0. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDither](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setDither(kotlin.Boolean))`(`dither:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setIntrinsicHeight(kotlin.Int))`(`height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intrinsic (default) height for this shape. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setIntrinsicWidth(kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intrinsic (default) width for this shape. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadding](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setPadding(android.graphics.Rect))`(`padding:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Sets padding for this shape, defined by a Rect object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadding](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets padding for the shape. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShaderFactory](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setShaderFactory(android.graphics.drawable.ShapeDrawable.ShaderFactory))`(`fact:` ` [ShapeDrawable.ShaderFactory](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable.ShaderFactory)!`)` Sets a ShaderFactory to which requests for a [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader.html#) object will be made. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setShape(android.graphics.drawable.shapes.Shape))`(`s:` ` [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape)!`)` Sets the Shape of this ShapeDrawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setTintBlendMode(android.graphics.BlendMode))`(`blendMode:` ` [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)!`)` Specifies a tint blending mode for this drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#setTintList(android.content.res.ColorStateList))`(`tint:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?`)` <br /> |
 
 | Protected methods ||
@@ -81,6 +95,7 @@ This object can be defined in an XML file with the `<shape>` element.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inflateTag](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#inflateTag(kotlin.String,%20android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`)` Subclasses override this to parse custom subelements. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChange](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#onBoundsChange(android.graphics.Rect))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDraw](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#onDraw(android.graphics.drawable.shapes.Shape,%20android.graphics.Canvas,%20android.graphics.Paint))`(`shape:` ` [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape)!`, `canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` Called from the drawable's draw() method after the canvas has been set to draw the shape at (0,0). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStateChange](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable#onStateChange(kotlin.IntArray))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` <br /> |
 
 | Inherited functions ||
@@ -366,6 +381,7 @@ open fun inflate(
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): Resources used to resolve attribute values This value cannot be `null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): XML parser from which to inflate this Drawable This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): Base set of attribute values This value cannot be `null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: Theme to apply, may be null |
 
 | Exceptions ||
@@ -489,6 +505,7 @@ Sets padding for the shape.
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): padding for the left side (in pixels) |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): padding for the top (in pixels) |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): padding for the right side (in pixels) |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): padding for the bottom (in pixels) |
 
 ### setShaderFactory

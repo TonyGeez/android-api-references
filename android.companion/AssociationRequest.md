@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AssociationRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/companion/AssociationRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class AssociationRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.AssociationRequest](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#) |
 
 A request for the user to select a companion device to associate with. You can optionally set [filters](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest.Builder#addDeviceFilter(android.companion.DeviceFilter))for which devices to show to the user to select from. The exact type and fields of the filter you can set depend on the medium type. See [Builder](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest.Builder)'s static factory methods for specific protocols that are supported. You can also set [single device](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest.Builder#setSingleDevice(kotlin.Boolean))to request a popup with single device to be shown instead of a list to choose from
@@ -26,9 +28,11 @@ A request for the user to select a companion device to associate with. You can o
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_APP_STREAMING](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_APP_STREAMING:kotlin.String) Device profile: a virtual display capable of rendering Android applications, and sending back input events. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_AUTOMOTIVE_PROJECTION](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_AUTOMOTIVE_PROJECTION:kotlin.String) Device profile: Android Automotive Projection Only applications that have been granted [android.Manifest.permission#REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION:kotlin.String) are allowed to request to be associated with such devices. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_COMPUTER](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_COMPUTER:kotlin.String) Device profile: Allows the companion app to access notification, recent photos and media for computer cross-device features. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_GLASSES](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_GLASSES:kotlin.String) Device profile: glasses. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_NEARBY_DEVICE_STREAMING](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_NEARBY_DEVICE_STREAMING:kotlin.String) Device profile: a virtual device capable of rendering content from an Android host to a nearby device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEVICE_PROFILE_WATCH](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#DEVICE_PROFILE_WATCH:kotlin.String) Device profile: watch. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -39,12 +43,15 @@ A request for the user to select a companion device to associate with. You can o
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getDeviceIcon](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#getDeviceIcon())`()` Get the device icon of the self-managed association request. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDeviceProfile](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#getDeviceProfile())`()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDisplayName](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#getDisplayName())`()` The Display name of the device to be shown in the CDM confirmation UI. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForceConfirmation](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#isForceConfirmation())`()` Indicates whether the application requires the [CompanionDeviceManager](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager) service to collect an explicit confirmation from the user before creating an association, even if such confirmation is not required from the service's perspective. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelfManaged](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#isSelfManaged())`()` Whether the association is to be managed by the companion application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSingleDevice](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#isSingleDevice())`()` Whether only a single device should match the provided filter. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/companion/AssociationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -7,6 +7,7 @@ class DexFile
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [dalvik.system.DexFile](https://developer.android.com/reference/kotlin/dalvik/system/DexFile#) |
 
 Loads DEX files. This class is meant for internal use and should not be used by applications. Applications should not instantiate this class. It will hurt performance in most cases and will lead to incorrect execution of bytecode in the worst case. Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **Non-static APIs will be removed in a future Android release**.
@@ -27,9 +28,11 @@ Loads DEX files. This class is meant for internal use and should not be used by 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#close()()` Closes the DEX file. |
 | [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#entries()()` Enumerate the names of the classes in this DEX file. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#getName()()` Gets the name of the (already opened) DEX file. |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#isDexOptNeeded(kotlin.String)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the VM believes that the apk/jar file is out of date and should be passed through "dexopt" again. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#loadClass(kotlin.String,%20java.lang.ClassLoader)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Loads a class. |
 | static [DexFile](https://developer.android.com/reference/kotlin/dalvik/system/DexFile#)! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#loadDex(kotlin.String,%20kotlin.String,%20kotlin.Int)(sourcePathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, outputPathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a DEX file, specifying the file in which the optimized DEX data should be written. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#toString()()` Returns a string representation of the object. |
 
 | Protected methods ||
@@ -143,6 +146,7 @@ Returns true if the VM believes that the apk/jar file is out of date and should 
 | `java.io.FileNotFoundException` | if fileName is not readable, not a file, or not present. |
 | `java.io.IOException` | if fileName is not a valid apk/jar file or if problems occur while parsing it. |
 | `java.lang.NullPointerException` | if fileName is null. |
+| --- | --- |
 
 ### loadClass
 

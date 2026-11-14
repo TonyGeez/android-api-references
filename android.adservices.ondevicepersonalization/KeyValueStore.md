@@ -5,6 +5,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # KeyValueStore
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/KeyValueStore "View this page in Java") 
+| --- | --- |
 
 ```
 interface KeyValueStore
@@ -13,6 +14,7 @@ interface KeyValueStore
 | [android.adservices.ondevicepersonalization.KeyValueStore](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore#) |
 
 | Known Direct Subclasses [MutableKeyValueStore](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/MutableKeyValueStore) |----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [MutableKeyValueStore](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/MutableKeyValueStore) | An interface to a read-write key-value store. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An interface to a read-only key-value store. Used as a Data Access Object for the REMOTE_DATA table.
 

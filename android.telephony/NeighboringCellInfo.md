@@ -6,12 +6,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # NeighboringCellInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/NeighboringCellInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class NeighboringCellInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#) |
 
 | **This class was deprecated in API level 29.**
@@ -43,12 +45,15 @@ Represents the neighboring cell information, including Received Signal Strength 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCid](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getCid())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLac](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getLac())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getNetworkType())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsc](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getPsc())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getRssi())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCid](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#setCid(kotlin.Int))`(`cid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRssi](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#setRssi(kotlin.Int))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the signal strength of the cell. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

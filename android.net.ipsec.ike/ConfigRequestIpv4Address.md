@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ConfigRequestIpv4Address
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address "View this page in Java") 
+| --- | --- |
 
 ```
 interface ConfigRequestIpv4Address : TunnelModeChildSessionParams.TunnelModeChildConfigRequest

@@ -9,6 +9,7 @@ class DatatypeConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.datatype.DatatypeConstants](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#) |
 
 Utility class to contain basic Datatype values as constants.
@@ -24,21 +25,27 @@ Utility class to contain basic Datatype values as constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APRIL](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#APRIL:kotlin.Int) Value for fourth month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUGUST](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#AUGUST:kotlin.Int) Value for eighth month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECEMBER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DECEMBER:kotlin.Int) Value for twelve month of year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EQUAL](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#EQUAL:kotlin.Int) Comparison result. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEBRUARY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FEBRUARY:kotlin.Int) Value for second month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_UNDEFINED](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int) Designation that an "int" field is not set. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREATER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GREATER:kotlin.Int) Comparison result. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDETERMINATE](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#INDETERMINATE:kotlin.Int) Comparison result. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JANUARY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#JANUARY:kotlin.Int) Value for first month of year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JULY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#JULY:kotlin.Int) Value for seventh month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUNE](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#JUNE:kotlin.Int) Value for sixth month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LESSER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#LESSER:kotlin.Int) Comparison result. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MARCH](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MARCH:kotlin.Int) Value for third month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_TIMEZONE_OFFSET](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MAX_TIMEZONE_OFFSET:kotlin.Int) W3C XML Schema max timezone offset is -14:00. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MAY:kotlin.Int) Value for fifth month of year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_TIMEZONE_OFFSET](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MIN_TIMEZONE_OFFSET:kotlin.Int) W3C XML Schema min timezone offset is +14:00. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOVEMBER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#NOVEMBER:kotlin.Int) Value for eleven month of year. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OCTOBER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#OCTOBER:kotlin.Int) Value for tenth month of year. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEPTEMBER](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#SEPTEMBER:kotlin.Int) Value for ninth month of year. |
 
 | Properties ||
@@ -46,18 +53,23 @@ Utility class to contain basic Datatype values as constants.
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [DATE](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DATE:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [DATETIME](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DATETIME:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [DAYS](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DAYS:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the days field. |
+| --- | --- |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [DURATION](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema datatype`duration`. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [DURATION_DAYTIME](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION_DAYTIME:javax.xml.namespace.QName) Fully qualified name for XQuery 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [DURATION_YEARMONTH](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#DURATION_YEARMONTH:javax.xml.namespace.QName) Fully qualified name for XQuery 1. |
+| --- | --- |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [GDAY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GDAY:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [GMONTH](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GMONTH:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [GMONTHDAY](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GMONTHDAY:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
+| --- | --- |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [GYEAR](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GYEAR:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [GYEARMONTH](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#GYEARMONTH:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [HOURS](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#HOURS:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the hours field. |
+| --- | --- |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [MINUTES](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MINUTES:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the minutes field. |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [MONTHS](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#MONTHS:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the months field. |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [SECONDS](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#SECONDS:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the seconds field. |
+| --- | --- |
 | static [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | [TIME](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#TIME:javax.xml.namespace.QName) Fully qualified name for W3C XML Schema 1. |
 | static [DatatypeConstants.Field](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants.Field)! | [YEARS](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#YEARS:javax.xml.datatype.DatatypeConstants.Field) A constant that represents the years field. |
 

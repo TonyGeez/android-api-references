@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # VmSocketAddress
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/VmSocketAddress "View this page in Java") 
+| --- | --- |
 
 ```
 class VmSocketAddress : SocketAddress
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#) ||
 | | ↳ | [android.system.VmSocketAddress](https://developer.android.com/reference/kotlin/android/system/VmSocketAddress#) |
 

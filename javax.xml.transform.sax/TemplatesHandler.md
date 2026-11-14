@@ -21,6 +21,7 @@ Note that TemplatesHandler does not need to implement LexicalHandler.
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TemplatesHandler#getSystemId())`()` Get the base ID (URI or system ID) from where relative URLs will be resolved. |
 | abstract [Templates](https://developer.android.com/reference/kotlin/javax/xml/transform/Templates.html#)! | [getTemplates](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TemplatesHandler#getTemplates())`()` When a TemplatesHandler object is used as a ContentHandler for the parsing of transformation instructions, it creates a Templates object, which the caller can get once the SAX events have been completed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/TemplatesHandler#setSystemId(kotlin.String))`(`systemID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the base ID (URI or system ID) for the Templates object created by this builder. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

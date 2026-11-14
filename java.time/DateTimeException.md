@@ -9,12 +9,15 @@ open class DateTimeException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.time.DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException#) |
 
 | Known Direct Subclasses [DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException), [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException), [ZoneRulesException](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRulesException) |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException) | An exception thrown when an error occurs during parsing. | | [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException) | UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is not supported for a Temporal class. | | [ZoneRulesException](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRulesException) | Thrown to indicate a problem with time-zone configuration. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Exception used to indicate a problem while calculating a date-time.
 

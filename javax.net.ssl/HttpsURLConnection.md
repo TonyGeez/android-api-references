@@ -7,9 +7,11 @@ abstract class HttpsURLConnection : HttpURLConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.net.URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#) |||
 | | ↳ | [java.net.HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection.html#) ||
 | | | ↳ | [javax.net.ssl.HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#) |
+| --- | --- | --- | --- |
 
 `HttpsURLConnection` extends `HttpURLConnection` with support for https-specific features.
 
@@ -32,15 +34,19 @@ This class uses `HostnameVerifier` and `SSLSocketFactory`. There are default imp
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getCipherSuite()()` Returns the cipher suite in use on this connection. |
 | open static [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getDefaultHostnameVerifier()()` Gets the default `HostnameVerifier` that is inherited by new instances of this class. |
 | open static [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getDefaultSSLSocketFactory()()` Gets the default static `SSLSocketFactory` that is inherited by new instances of this class. |
+| --- | --- |
 | open [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getHostnameVerifier()()` Gets the `HostnameVerifier` in place on this instance. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getLocalCertificates()()` Returns the certificate(s) that were sent to the server during handshaking. |
 | open [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getLocalPrincipal()()` Returns the principal that was sent to the server during handshaking. |
+| --- | --- |
 | open [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getPeerPrincipal()()` Returns the server's principal which was established as part of defining the session. |
 | open [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getSSLSocketFactory()()` Gets the SSL socket factory to be used when creating sockets for secure https URL connections. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#getServerCertificates()()` Returns the server's certificate chain which was established as part of defining the session. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)(v: https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier!)` Sets the default `HostnameVerifier` inherited by a new instance of this class. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)(sf: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory!)` Sets the default `SSLSocketFactory` inherited by new instances of this class. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#setHostnameVerifier(javax.net.ssl.HostnameVerifier)(v: https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier!)` Sets the `HostnameVerifier` for this instance. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)(sf: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory!)` Sets the `SSLSocketFactory` to be used when this instance creates sockets for secure https URL connections. |
 
 | Inherited functions ||
@@ -287,6 +293,7 @@ Developers are *strongly* discouraged from changing the default `HostnameVerifie
 | Android's default `https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager`, as used with Android's default `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext`, `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory` and `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket` implementations. | The `HostnameVerifier` is used to verify the peer's certificate hostname after connecting if `SSLParameters.setEndpointIdentificationAlgorithm("HTTPS")` has been called. Instances use the *current* default `HostnameVerifier` at verification time. |
 | `https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#` | The current default `HostnameVerifier` is used from various `createSocket` methods. See `https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#` for details; for example `https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#createSocket(kotlin.String,%20kotlin.Int)`. |
 | Android's default `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#` implementation. | The `HostnameVerifier` is used after a successful TLS handshake to verify the URI host against the TLS session server. Instances use the default `HostnameVerifier` set *when they were created* unless overridden with `https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection#setHostnameVerifier(javax.net.ssl.HostnameVerifier)`. Android's `HttpsURLConnection` relies on the `HostnameVerifier` for the *entire* hostname verification step. |
+| --- | --- |
 
 If this method is not called, the default `HostnameVerifier` will check the hostname according to RFC 2818.
 

@@ -5,6 +5,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # OnAccessibilityEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnAccessibilityEventListener

@@ -9,9 +9,11 @@ abstract class TimeZone : Cloneable, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#) |
 
 | Known Direct Subclasses [SimpleTimeZone](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [SimpleTimeZone](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone) | `SimpleTimeZone`is a concrete subclass of`TimeZone`that represents a time zone for use with a Gregorian calendar. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 represents a time zone offset, and also figures out daylight savings.
 
@@ -59,24 +61,31 @@ For compatibility with JDK 1.1.x, some other three-letter time zone IDs (such as
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/TimeZone#clone())`()` Creates a copy of this`TimeZone`. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](https://developer.android.com/reference/kotlin/java/util/TimeZone#getAvailableIDs())`()` Gets all the available IDs supported. |
 | openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](https://developer.android.com/reference/kotlin/java/util/TimeZone#getAvailableIDs(kotlin.Int))`(`rawOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the available IDs according to the given time zone offset in milliseconds. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDSTSavings](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDSTSavings())`()` Returns the amount of time to be added to local standard time to get local wall clock time. |
 | openstatic [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#)! | [getDefault](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault())`()` Gets the default`TimeZone`for this host. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDisplayName())`()` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the default locale. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDisplayName(kotlin.Boolean,%20kotlin.Int))`(`daylight:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a name in the specified`style`of this`TimeZone`suitable for presentation to the user in the default locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDisplayName(kotlin.Boolean,%20kotlin.Int,%20java.util.Locale))`(`daylightTime:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`)` Returns the [short](https://developer.android.com/reference/kotlin/java/util/TimeZone#SHORT:kotlin.Int) or [long](https://developer.android.com/reference/kotlin/java/util/TimeZone#LONG:kotlin.Int) name of this time zone with either standard or daylight time, as written in`locale`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/util/TimeZone#getDisplayName(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!`)` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the specified`locale`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getID](https://developer.android.com/reference/kotlin/java/util/TimeZone#getID())`()` Gets the ID of this time zone. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/java/util/TimeZone#getOffset(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`era:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `milliseconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the time zone offset, for current date, modified in case of daylight savings. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/java/util/TimeZone#getOffset(kotlin.Long))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the offset of this time zone from UTC at the specified date. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawOffset](https://developer.android.com/reference/kotlin/java/util/TimeZone#getRawOffset())`()` Returns the amount of time in milliseconds to add to UTC to get standard time in this time zone. |
 | openstatic [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#)! | [getTimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getTimeZone(kotlin.String))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the`TimeZone`for the given ID. |
 | openstatic [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#)! | [getTimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#getTimeZone(java.time.ZoneId))`(`zoneId:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!`)` Gets the`TimeZone`for the given`zoneId`. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSameRules](https://developer.android.com/reference/kotlin/java/util/TimeZone#hasSameRules(java.util.TimeZone))`(`other:` ` [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#)!`)` Returns true if this zone has the same rule and offset as another zone. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inDaylightTime](https://developer.android.com/reference/kotlin/java/util/TimeZone#inDaylightTime(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date)!`)` Queries if the given`date`is in Daylight Saving Time in this time zone. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [observesDaylightTime](https://developer.android.com/reference/kotlin/java/util/TimeZone#observesDaylightTime())`()` Returns`true`if this`TimeZone`is currently in Daylight Saving Time, or if a transition from Standard Time to Daylight Saving Time occurs at any future time. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/util/TimeZone#setDefault(java.util.TimeZone))`(`timeZone:` ` [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone#)!`)` Sets the`TimeZone`that is returned by the`getDefault`method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setID](https://developer.android.com/reference/kotlin/java/util/TimeZone#setID(kotlin.String))`(`ID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the time zone ID. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRawOffset](https://developer.android.com/reference/kotlin/java/util/TimeZone#setRawOffset(kotlin.Int))`(`offsetMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the base time zone offset to GMT. |
+| --- | --- |
 | open [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)! | [toZoneId](https://developer.android.com/reference/kotlin/java/util/TimeZone#toZoneId())`()` Converts this`TimeZone`object to a`ZoneId`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useDaylightTime](https://developer.android.com/reference/kotlin/java/util/TimeZone#useDaylightTime())`()` Queries if this`TimeZone`uses Daylight Saving Time. |
 
@@ -305,6 +314,7 @@ Returns the [short](https://developer.android.com/reference/kotlin/java/util/Tim
 | `daylightTime` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`specifying a Daylight Saving Time name, or`false`specifying a Standard Time name |
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [LONG](https://developer.android.com/reference/kotlin/java/util/TimeZone#LONG:kotlin.Int) or [SHORT](https://developer.android.com/reference/kotlin/java/util/TimeZone#SHORT:kotlin.Int) |
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!:the locale in which to supply the display name. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -386,9 +396,11 @@ This method returns a historically correct offset if an underlying`TimeZone`impl
 | `era` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the era of the given date. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the year in the given date. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the month in the given date. Month is 0-based. e.g., 0 for January. |
+| --- | --- |
 | `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day-in-month of the given date. |
 | `dayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day-of-week of the given date. |
 | `milliseconds` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the milliseconds in day in*standard*local time. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------|

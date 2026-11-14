@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # AdvertisingSet
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertisingSet "View this page in Java") 
+| --- | --- |
 
 ```
 class AdvertisingSet
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.le.AdvertisingSet](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#) |
 
 This class provides a way to control single Bluetooth LE advertising instance.
@@ -24,9 +26,11 @@ To get an instance of [AdvertisingSet](https://developer.android.com/reference/k
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableAdvertising](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#enableAdvertising(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxExtendedAdvertisingEvents:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enables Advertising. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setAdvertisingData(android.bluetooth.le.AdvertiseData))`(`advertiseData:` ` [AdvertiseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData)!`)` Set/update data being Advertised. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setAdvertisingParameters(android.bluetooth.le.AdvertisingSetParameters))`(`parameters:` ` [AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters)!`)` Update advertising parameters associated with this AdvertisingSet. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setPeriodicAdvertisingData(android.bluetooth.le.AdvertiseData))`(`periodicData:` ` [AdvertiseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData)!`)` Used to set periodic advertising data, must be called after setPeriodicAdvertisingParameters, or after advertising was started with periodic advertising data set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingEnabled](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setPeriodicAdvertisingEnabled(kotlin.Boolean))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Used to enable/disable periodic advertising. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setPeriodicAdvertisingParameters(android.bluetooth.le.PeriodicAdvertisingParameters))`(`parameters:` ` [PeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters)!`)` Update periodic advertising parameters associated with this set. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScanResponseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet#setScanResponseData(android.bluetooth.le.AdvertiseData))`(`scanResponse:` ` [AdvertiseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData)!`)` Set/update scan response data. |
 
 ## Public methods
@@ -53,6 +57,7 @@ Requires [android.Manifest.permission#BLUETOOTH_ADVERTISE](https://developer.and
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the advertising should be enabled (true), or disabled (false) |
 | `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): advertising duration, in 10ms unit. Valid range is from 1 (10ms) to 65535 (655,350 ms) |
 | `maxExtendedAdvertisingEvents` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): maximum number of extended advertising events the controller shall attempt to send prior to terminating the extended advertising, even if the duration has not expired. Valid range is from 1 to 255. |
+| --- | --- |
 
 ### setAdvertisingData
 

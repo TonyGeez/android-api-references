@@ -7,9 +7,11 @@ open class SearchView : LinearLayout, CollapsibleActionView
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.SearchView](https://developer.android.com/reference/kotlin/android/widget/SearchView#) |
 
 A widget that provides a user interface for the user to enter a search query and submit a request to a search provider. Shows a list of query suggestions or results, if available, and allows the user to pick a suggestion or result to launch into.
@@ -31,12 +33,14 @@ If you want the search field to always be visible, then call setIconifiedByDefau
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SearchView.OnCloseListener` <br /> |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SearchView.OnQueryTextListener` Callbacks for changes to the query text. |
 | abstract | `https://developer.android.com/reference/kotlin/android/widget/SearchView.OnSuggestionListener` Callback interface for selection events on suggestions. |
+| --- | --- |
 
 | XML attributes ||
 |---|---|
 | [`android:iconifiedByDefault`](https://developer.android.com/reference/kotlin/android/widget/SearchView#attr_SearchView) | The default state of the SearchView. |
 | [`android:imeOptions`](https://developer.android.com/reference/kotlin/android/widget/SearchView#attr_SearchView) | The IME options to set on the query text field. |
 | [`android:inputType`](https://developer.android.com/reference/kotlin/android/widget/SearchView#attr_SearchView) | The input type to set on the query text field. |
+| --- | --- |
 | [`android:maxWidth`](https://developer.android.com/reference/kotlin/android/widget/SearchView#attr_SearchView) | An optional maximum width of the SearchView. |
 | [`android:queryHint`](https://developer.android.com/reference/kotlin/android/widget/SearchView#attr_SearchView) | An optional query hint string to be displayed in the empty query field. |
 
@@ -55,6 +59,7 @@ May be an integer value, such as "`100`".
 `https://developer.android.com/reference/kotlin/android/widget/LinearLayout#attr_LinearLayout` Specifies how an object should position its content, on both the X and Y axes, within its own bounds.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description bottom 50 Push object to the bottom of its container, not changing its size. center 11 Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. center_horizontal 1 Place object in the horizontal center of its container, not changing its size. center_vertical 10 Place object in the vertical center of its container, not changing its size. clip_horizontal 8 Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. clip_vertical 80 Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. end 800005 Push object to the end of its container, not changing its size. fill 77 Grow the horizontal and vertical size of the object if needed so it completely fills its container. fill_horizontal 7 Grow the horizontal size of the object if needed so it completely fills its container. fill_vertical 70 Grow the vertical size of the object if needed so it completely fills its container. left 3 Push object to the left of its container, not changing its size. right 5 Push object to the right of its container, not changing its size. start 800003 Push object to the beginning of its container, not changing its size. top 30 Push object to the top of its container, not changing its size.
 
 <br />
@@ -356,6 +361,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -472,6 +478,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -620,6 +627,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1818,36 +1826,47 @@ Don't show any dividers.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#clearFocus()()` Called when this view wants to give up focus. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getImeOptions()()` Returns the IME options set on the query text field. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getInputType()()` Returns the input type set on the query text field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getMaxWidth()()` Gets the specified maximum width in pixels, if set. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getQuery()()` Returns the query string currently in the text field. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getQueryHint()()` Returns the hint text that will be displayed in the query text field. |
 | open [CursorAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/SearchView#getSuggestionsAdapter()()` Returns the adapter used for suggestions, if any. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#isIconfiedByDefault()()` Returns the default iconified state of the search field. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#isIconified()()` Returns the current iconified state of the SearchView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#isIconifiedByDefault()()` Returns the default iconified state of the search field. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#isQueryRefinementEnabled()()` Returns whether query refinement is enabled for all items or only specific ones. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#isSubmitButtonEnabled()()` Returns whether the submit button is enabled when necessary or never displayed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onActionViewCollapsed()()` Called when this view is collapsed as an action view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onActionViewExpanded()()` Called when this view is expanded as an action view. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Handles the key down event for dealing with action keys. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing this view gains or loses focus. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#requestFocus(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Call this to try to give focus to a specific view or to one of its descendants and give it hints about the direction and a specific rectangle that the focus is coming from. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setIconified(kotlin.Boolean)(iconify: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Iconifies or expands the SearchView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setIconifiedByDefault(kotlin.Boolean)(iconified: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the default or resting state of the search field. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setImeOptions(kotlin.Int)(imeOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the IME options on the query text field. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setInputType(kotlin.Int)(inputType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the input type on the query text field. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setMaxWidth(kotlin.Int)(maxpixels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Makes the view at most this many pixels wide |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setOnCloseListener(android.widget.SearchView.OnCloseListener)(listener: https://developer.android.com/reference/kotlin/android/widget/SearchView.OnCloseListener!)` Sets a listener to inform when the user closes the SearchView. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setOnQueryTextFocusChangeListener(android.view.View.OnFocusChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/View.OnFocusChangeListener.html#!)` Sets a listener to inform when the focus of the query text field changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setOnQueryTextListener(android.widget.SearchView.OnQueryTextListener)(listener: https://developer.android.com/reference/kotlin/android/widget/SearchView.OnQueryTextListener!)` Sets a listener for user actions within the SearchView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setOnSearchClickListener(android.view.View.OnClickListener)(listener: https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#!)` Sets a listener to inform when the search button is pressed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setOnSuggestionListener(android.widget.SearchView.OnSuggestionListener)(listener: https://developer.android.com/reference/kotlin/android/widget/SearchView.OnSuggestionListener!)` Sets a listener to inform when a suggestion is focused or clicked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setQuery(kotlin.CharSequence,%20kotlin.Boolean)(query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, submit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets a query string in the text field and optionally submits the query as well. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setQueryHint(kotlin.CharSequence)(hint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the hint text to display in the query text field. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setQueryRefinementEnabled(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies if a query refinement button should be displayed alongside each suggestion or if it should depend on the flags set in the individual items retrieved from the suggestions provider. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setSearchableInfo(android.app.SearchableInfo)(searchable: https://developer.android.com/reference/kotlin/android/app/SearchableInfo.html#!)` Sets the SearchableInfo for this SearchView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setSubmitButtonEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables showing a submit button when the query is non-empty. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#setSuggestionsAdapter(android.widget.CursorAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/CursorAdapter!)` You can set a custom adapter if you wish. |
 
 | Protected methods ||
@@ -1855,6 +1874,7 @@ Don't show any dividers.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/SearchView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 
@@ -2774,6 +2794,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4626,6 +4647,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8458,24 +8480,30 @@ android:imeOptions
 The IME options to set on the query text field.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | actionDone | 6 | The action key performs a "done" operation, closing the soft input method. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_DONE:kotlin.Int`. |
 | actionGo | 2 | The action key performs a "go" operation to take the user to the target of the text they typed. Typically used, for example, when entering a URL. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_GO:kotlin.Int`. |
 | actionNext | 5 | The action key performs a "next" operation, taking the user to the next field that will accept text. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_NEXT:kotlin.Int`. |
+| --- | --- | --- |
 | actionNone | 1 | This editor has no action associated with it. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_NONE:kotlin.Int`. |
 | actionPrevious | 7 | The action key performs a "previous" operation, taking the user to the previous field that will accept text. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_PREVIOUS:kotlin.Int`. |
 | actionSearch | 3 | The action key performs a "search" operation, taking the user to the results of searching for the text the have typed (in whatever context is appropriate). Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEARCH:kotlin.Int`. |
+| --- | --- | --- |
 | actionSend | 4 | The action key performs a "send" operation, delivering the text to its target. This is typically used when composing a message. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEND:kotlin.Int`. |
 | actionUnspecified | 0 | There is no specific action associated with this editor, let the editor come up with its own if it can. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_NULL:kotlin.Int`. |
 | flagForceAscii | 80000000 | Used to request that the IME should be capable of inputting ASCII characters. The intention of this flag is to ensure that the user can type Roman alphabet characters in a `https://developer.android.com/reference/kotlin/android/widget/TextView` used for, typically, account ID or password input. It is expected that IMEs normally are able to input ASCII even without being told so (such IMEs already respect this flag in a sense), but there could be some cases they aren't when, for instance, only non-ASCII input languages like Arabic, Greek, Hebrew, Russian are enabled in the IME. Applications need to be aware that the flag is not a guarantee, and not all IMEs will respect it. However, it is strongly recommended for IME authors to respect this flag especially when their IME could end up with a state that has only non-ASCII input languages enabled. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_FORCE_ASCII:kotlin.Int`. |
+| --- | --- | --- |
 | flagNavigateNext | 8000000 | Used to specify that there is something interesting that a forward navigation can focus on. This is like using actionNext, except allows the IME to be multiline (with an enter key) as well as provide forward navigation. Note that some IMEs may not be able to do this, especially when running on a small screen where there is little space. In that case it does not need to present a UI for this option. Like actionNext, if the user selects the IME's facility to forward navigate, this will show up in the application at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performEditorAction(kotlin.Int)`. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_NEXT:kotlin.Int`. |
 | flagNavigatePrevious | 4000000 | Like flagNavigateNext, but specifies there is something interesting that a backward navigation can focus on. If the user selects the IME's facility to backward navigate, this will show up in the application as an actionPrevious at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#performEditorAction(kotlin.Int)`. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_PREVIOUS:kotlin.Int`. |
 | flagNoAccessoryAction | 20000000 | Used in conjunction with a custom action, this indicates that the action should not be available as an accessory button when the input method is full-screen. Note that by setting this flag, there can be cases where the action is simply never available to the user. Setting this generally means that you think showing text being edited is more important than the action you have supplied. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ACCESSORY_ACTION:kotlin.Int`. |
+| --- | --- | --- |
 | flagNoEnterAction | 40000000 | Used in conjunction with a custom action, this indicates that the action should not be available in-line as a replacement for the "enter" key. Typically this is because the action has such a significant impact or is not recoverable enough that accidentally hitting it should be avoided, such as sending a message. Note that `https://developer.android.com/reference/kotlin/android/widget/TextView` will automatically set this flag for you on multi-line text views. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ENTER_ACTION:kotlin.Int`. |
 | flagNoExtractUi | 10000000 | Used to specify that the IME does not need to show its extracted text UI. For input methods that may be fullscreen, often when in landscape mode, this allows them to be smaller and let part of the application be shown behind. Though there will likely be limited access to the application available from the user, it can make the experience of a (mostly) fullscreen IME less jarring. Note that when this flag is specified the IME may *not* be set up to be able to display text, so it should only be used in situations where this is not needed. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_EXTRACT_UI:kotlin.Int`. |
 | flagNoFullscreen | 2000000 | Used to request that the IME never go into fullscreen mode. Applications need to be aware that the flag is not a guarantee, and not all IMEs will respect it. Corresponds to `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_FULLSCREEN:kotlin.Int`. |
+| --- | --- | --- |
 | flagNoPersonalizedLearning | 1000000 | Used to request that the IME should not update any personalized data such as typing history and personalized language model based on what the user typed on this text editing object. Typical use cases are: - When the application is in a special mode, where user's activities are expected to be not recorded in the application's history. Some web browsers and chat applications may have this kind of modes. - When storing typing history does not make much sense. Specifying this flag in typing games may help to avoid typing history from being filled up with words that the user is less likely to type in their daily life. Another example is that when the application already knows that the expected input is not a valid word (e.g. a promotion code that is not a valid word in any natural language). Applications need to be aware that the flag is not a guarantee, and some IMEs may not respect it. |
 | normal | 0 | There are no special semantics associated with this editor. |
 
@@ -8487,42 +8515,54 @@ android:inputType
 The input type to set on the query text field.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | date | 14 | For entering a date. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_DATE:kotlin.Int`. |
 | datetime | 4 | For entering a date and time. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_NORMAL:kotlin.Int`. |
 | none | 0 | There is no content type. The text is not editable. |
+| --- | --- | --- |
 | number | 2 | A numeric only field. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_NORMAL:kotlin.Int`. |
 | numberDecimal | 2002 | Can be combined with number and its other options to allow a decimal (fractional) number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_FLAG_DECIMAL:kotlin.Int`. |
 | numberPassword | 12 | A numeric password field. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | numberSigned | 1002 | Can be combined with number and its other options to allow a signed number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_FLAG_SIGNED:kotlin.Int`. |
 | phone | 3 | For entering a phone number. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_PHONE:kotlin.Int`. |
 | text | 1 | Just plain old text. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_NORMAL:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textAutoComplete | 10001 | Can be combined with text and its variations to specify that this field will be doing its own auto-completion and talking with the input method appropriately. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_COMPLETE:kotlin.Int`. |
 | textAutoCorrect | 8001 | Can be combined with text and its variations to request auto-correction of text being input. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_CORRECT:kotlin.Int`. |
 | textCapCharacters | 1001 | Can be combined with text and its variations to request capitalization of all characters. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_CHARACTERS:kotlin.Int`. |
+| --- | --- | --- |
 | textCapSentences | 4001 | Can be combined with text and its variations to request capitalization of the first character of every sentence. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_SENTENCES:kotlin.Int`. |
 | textCapWords | 2001 | Can be combined with text and its variations to request capitalization of the first character of every word. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_CAP_WORDS:kotlin.Int`. |
 | textEmailAddress | 21 | Text that will be used as an e-mail address. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_ADDRESS:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textEmailSubject | 31 | Text that is being supplied as the subject of an e-mail. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_SUBJECT:kotlin.Int`. |
 | textEnableTextConversionSuggestions | 100001 | Can be combined with text and its variations to indicate that if there is extra information, the IME should provide `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute.html#`. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_CONVERSION_SUGGESTIONS:kotlin.Int`. |
 | textEnableTextSuggestionSelected | 200000 | Can be combined with text and its variations to indicate that if there is extra information, the IME should provide `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute.html#` with text suggestion selected information. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_SUGGESTION_SELECTED:kotlin.Int`. |
+| --- | --- | --- |
 | textFilter | b1 | Text that is filtering some other data. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_FILTER:kotlin.Int`. |
 | textImeMultiLine | 40001 | Can be combined with text and its variations to indicate that though the regular text view should not be multiple lines, the IME should provide multiple lines if it can. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_IME_MULTI_LINE:kotlin.Int`. |
 | textLongMessage | 51 | Text that is the content of a long message. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_LONG_MESSAGE:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textMultiLine | 20001 | Can be combined with text and its variations to allow multiple lines of text in the field. If this flag is not set, the text field will be constrained to a single line. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_MULTI_LINE:kotlin.Int`. Note: If this flag is not set and the text field doesn't have max length limit, the framework automatically set maximum length of the characters to 5000 for the performance reasons. |
 | textNoSuggestions | 80001 | Can be combined with text and its variations to indicate that the IME should not show any dictionary-based word suggestions. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_NO_SUGGESTIONS:kotlin.Int`. |
 | textPassword | 81 | Text that is a password. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textPersonName | 61 | Text that is the name of a person. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PERSON_NAME:kotlin.Int`. |
 | textPhonetic | c1 | Text that is for phonetic pronunciation, such as a phonetic name field in a contact entry. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PHONETIC:kotlin.Int`. |
 | textPostalAddress | 71 | Text that is being supplied as a postal mailing address. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_POSTAL_ADDRESS:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textShortMessage | 41 | Text that is the content of a short message. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_SHORT_MESSAGE:kotlin.Int`. |
 | textUri | 11 | Text that will be used as a URI. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_URI:kotlin.Int`. |
 | textVisiblePassword | 91 | Text that is a password that should be visible. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | textWebEditText | a1 | Text that is being supplied as text in a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT:kotlin.Int`. |
 | textWebEmailAddress | d1 | Text that will be used as an e-mail address on a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS:kotlin.Int`. |
 | textWebPassword | e1 | Text that will be used as a password on a web form. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_PASSWORD:kotlin.Int`. |
+| --- | --- | --- | --- |
 | time | 24 | For entering a time. Corresponds to `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_DATETIME:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_DATETIME_VARIATION_TIME:kotlin.Int`. |
 
 ### android:maxWidth
@@ -9126,6 +9166,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left position, relative to parent |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top position, relative to parent |
+| --- | --- |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right position, relative to parent |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom position, relative to parent |
 

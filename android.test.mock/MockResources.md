@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # MockResources
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockResources "View this page in Java") 
+| --- | --- |
 
 ```
 open class MockResources : Resources
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.res.Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) ||
 | | ↳ | [android.test.mock.MockResources](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#) |
 
@@ -36,36 +38,47 @@ A mock [android.content.res.Resources](https://developer.android.com/reference/k
 | open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#) | [getAnimation](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getAnimation(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColor](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getColor(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#) | [getColorStateList](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getColorStateList(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)! | [getConfiguration](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getConfiguration())`()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDimension](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getDimension(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelOffset](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getDimensionPixelOffset(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelSize](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getDimensionPixelSize(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)! | [getDisplayMetrics](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getDisplayMetrics())`()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [getDrawable](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getDrawable(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIdentifier](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getIdentifier(kotlin.String,%20kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defPackage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getIntArray](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getIntArray(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInteger](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getInteger(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#) | [getLayout](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getLayout(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Movie](https://developer.android.com/reference/kotlin/android/graphics/Movie.html#)! | [getMovie](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getMovie(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getQuantityString](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getQuantityString(kotlin.Int,%20kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quantity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getQuantityString](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getQuantityString(kotlin.Int,%20kotlin.Int,%20kotlin.Any))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quantity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `formatArgs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getQuantityText](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getQuantityText(kotlin.Int,%20kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quantity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResourceEntryName](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getResourceEntryName(kotlin.Int))`(`resid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResourceName](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getResourceName(kotlin.Int))`(`resid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResourcePackageName](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getResourcePackageName(kotlin.Int))`(`resid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResourceTypeName](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getResourceTypeName(kotlin.Int))`(`resid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getString](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getString(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getString](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getString(kotlin.Int,%20kotlin.Any))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `vararg` `formatArgs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getStringArray](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getStringArray(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getText](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getText(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getText(kotlin.Int,%20kotlin.CharSequence))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `def:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getTextArray](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getTextArray(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getValue](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getValue(kotlin.Int,%20android.util.TypedValue,%20kotlin.Boolean))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outValue:` ` [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!`, `resolveRefs:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getValue](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getValue(kotlin.String,%20android.util.TypedValue,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `outValue:` ` [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!`, `resolveRefs:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#) | [getXml](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#getXml(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)! | [obtainAttributes](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray))`(`set:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`, `attrs:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
 | open [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#) | [obtainTypedArray](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#obtainTypedArray(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) | [openRawResource](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#openRawResource(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)! | [openRawResourceFd](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#openRawResourceFd(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateConfiguration](https://developer.android.com/reference/kotlin/android/test/mock/MockResources#updateConfiguration(android.content.res.Configuration,%20android.util.DisplayMetrics))`(`config:` ` [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)!`, `metrics:` ` [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)!`)` <br /> |
 
@@ -286,6 +299,7 @@ open fun getIdentifier(
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the desired resource. |
 | `defType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional default resource type to find, if "type/" is not included in the name. Can be null to require an explicit type. |
 | `defPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional default package to find, if "package:" is not included in the name. Can be null to require an explicit package. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -420,6 +434,7 @@ open fun getQuantityString(
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
 | `quantity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number used to get the correct string for the current language's plural rules. |
 | `formatArgs` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The format arguments that will be used for substitution. |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -698,6 +713,7 @@ open fun getValue(
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
 | `outValue` | [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!:Object in which to place the resource data. |
 | `resolveRefs` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, a resource that is a reference to another resource will be followed so that you receive the actual final resource data. If false, the TypedValue will be filled in with the reference itself. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------------------|----------------------------------------------------------|
@@ -722,6 +738,7 @@ open fun getValue(
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the desired resource. This is passed to getIdentifier() with a default type of "string". |
 | `outValue` | [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!:Object in which to place the resource data. |
 | `resolveRefs` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, a resource that is a reference to another resource will be followed so that you receive the actual final resource data. If false, the TypedValue will be filled in with the reference itself. |
+| --- | --- |
 
 | Exceptions ||
 |---------------------------------------------------|----------------------------------------------------------|

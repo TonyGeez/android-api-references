@@ -9,9 +9,11 @@ open class EOFException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.io.EOFException](https://developer.android.com/reference/kotlin/java/io/EOFException#) |
 
 Signals that an end of file or end of stream has been reached unexpectedly during input.

@@ -9,6 +9,7 @@ open class StreamResult : Result
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.transform.stream.StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#) |
 
 Acts as an holder for a transformation result, which may be XML, plain Text, HTML, or some other form of markup.
@@ -36,9 +37,11 @@ Acts as an holder for a transformation result, which may be XML, plain Text, HTM
 | open [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [getOutputStream](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#getOutputStream())`()` Get the byte stream that was set with setOutputStream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#getSystemId())`()` Get the system identifier that was set with setSystemId. |
 | open [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [getWriter](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#getWriter())`()` Get the character stream that was set with setWriter. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputStream](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#setOutputStream(java.io.OutputStream))`(`outputStream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Set the ByteStream that is to be written to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#setSystemId(java.io.File))`(`f:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Set the system ID from a`File`reference. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the systemID that may be used in association with the byte or character stream, or, if neither is set, use this value as a writeable URI (probably a file name). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWriter](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult#setWriter(java.io.Writer))`(`writer:` ` [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)!`)` Set the writer that is to receive the result. |
 
 ## Constants

@@ -7,6 +7,7 @@ open class KdfParameterSpec : NamedParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec.html#) ||
 | | ↳ | [android.crypto.hpke.KdfParameterSpec](https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#) |
 
@@ -27,6 +28,7 @@ Note that currently only `HKDF_SHA256` is implemented.
 | static [KdfParameterSpec](https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#HKDF_SHA256:android.crypto.hpke.KdfParameterSpec` <br /> |
 | static [KdfParameterSpec](https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#HKDF_SHA384:android.crypto.hpke.KdfParameterSpec` <br /> |
 | static [KdfParameterSpec](https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec#HKDF_SHA512:android.crypto.hpke.KdfParameterSpec` <br /> |
+| --- | --- |
 
 | Inherited properties ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # TimeZoneNames
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/TimeZoneNames "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class TimeZoneNames : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.TimeZoneNames](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#) |
 
 `TimeZoneNames`is an abstract class representing the time zone display name data model defined by [UTS#35 Unicode Locale Data Markup Language (LDML)](http://www.unicode.org/reports/tr35/). The model defines meta zone, which is used for storing a set of display names. A meta zone can be shared by multiple time zones. Also a time zone may have multiple meta zone historic mappings.
@@ -44,12 +46,15 @@ The default`TimeZoneNames`implementation returned by [getInstance(android.icu.ut
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableMetaZoneIDs](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getAvailableMetaZoneIDs())`()` Returns an immutable set of all available meta zone IDs. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableMetaZoneIDs](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getAvailableMetaZoneIDs(kotlin.String))`(`tzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an immutable set of all available meta zone IDs used by the given time zone. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getDisplayName(kotlin.String,%20android.icu.text.TimeZoneNames.NameType,%20kotlin.Long))`(`tzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [TimeZoneNames.NameType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType)!`, `date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the display name of the time zone at the given date. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExemplarLocationName](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getExemplarLocationName(kotlin.String))`(`tzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the exemplar location name for the given time zone. |
 | openstatic [TimeZoneNames](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Returns an instance of`TimeZoneNames`for the specified locale. |
 | openstatic [TimeZoneNames](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns an instance of`TimeZoneNames`for the specified [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMetaZoneDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getMetaZoneDisplayName(kotlin.String,%20android.icu.text.TimeZoneNames.NameType))`(`mzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [TimeZoneNames.NameType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType)!`)` Returns the display name of the meta zone. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMetaZoneID](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getMetaZoneID(kotlin.String,%20kotlin.Long))`(`tzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the meta zone ID for the given canonical time zone ID at the given date. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReferenceZoneID](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getReferenceZoneID(kotlin.String,%20kotlin.String))`(`mzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `region:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the reference zone ID for the given meta zone ID for the region. |
+| --- | --- |
 | openstatic [TimeZoneNames](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#)! | [getTZDBInstance](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getTZDBInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Returns an instance of`TimeZoneNames`containing only short specific zone names ([NameType.SHORT_STANDARD](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType) and [NameType.SHORT_DAYLIGHT](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType)), compatible with the IANA tz database's zone abbreviations (not localized). |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTimeZoneDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames#getTimeZoneDisplayName(kotlin.String,%20android.icu.text.TimeZoneNames.NameType))`(`tzID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [TimeZoneNames.NameType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType)!`)` Returns the display name of the time zone. |
 
@@ -108,6 +113,7 @@ Returns the display name of the time zone at the given date.
 | `tzID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The canonical time zone ID. |
 | `type` | [TimeZoneNames.NameType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType)!:The display name type. See [TimeZoneNames.NameType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames.NameType). |
 | `date` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The date |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

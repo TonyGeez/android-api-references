@@ -5,12 +5,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 # InputDevice
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/InputDevice "View this page in Java") 
+| --- | --- |
 
 ```
 class InputDevice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice#) |
 
 Describes the capabilities of a particular input device.
@@ -33,39 +35,51 @@ As a further wrinkle, different kinds of input sources uses different coordinate
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_TYPE_ALPHABETIC](https://developer.android.com/reference/kotlin/android/view/InputDevice#KEYBOARD_TYPE_ALPHABETIC:kotlin.Int) The keyboard supports a complement of alphabetic keys. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_TYPE_NONE](https://developer.android.com/reference/kotlin/android/view/InputDevice#KEYBOARD_TYPE_NONE:kotlin.Int) There is no keyboard. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_TYPE_NON_ALPHABETIC](https://developer.android.com/reference/kotlin/android/view/InputDevice#KEYBOARD_TYPE_NON_ALPHABETIC:kotlin.Int) The keyboard is not fully alphabetic. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_ORIENTATION](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_ORIENTATION:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_ORIENTATION](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_ORIENTATION:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_PRESSURE](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_PRESSURE:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_PRESSURE](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_PRESSURE:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_SIZE](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_SIZE:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_SIZE](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_SIZE:kotlin.Int). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_TOOL_MAJOR](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_TOOL_MAJOR:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_TOOL_MAJOR](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_TOOL_MAJOR:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_TOOL_MINOR](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_TOOL_MINOR:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_TOOL_MINOR](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_TOOL_MINOR:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_TOUCH_MAJOR](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_TOUCH_MAJOR:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_TOUCH_MAJOR](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_TOUCH_MAJOR:kotlin.Int). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_TOUCH_MINOR](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_TOUCH_MINOR:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_TOUCH_MINOR](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_TOUCH_MINOR:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_X](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_X:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_X](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_X:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTION_RANGE_Y](https://developer.android.com/reference/kotlin/android/view/InputDevice#MOTION_RANGE_Y:kotlin.Int) Constant for retrieving the range of values for [MotionEvent.AXIS_Y](https://developer.android.com/reference/kotlin/android/view/MotionEvent#AXIS_Y:kotlin.Int). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_ANY](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_ANY:kotlin.Int) A special input source constant that is used when filtering input devices to match devices that provide any type of input source. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_BLUETOOTH_STYLUS](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_BLUETOOTH_STYLUS:kotlin.Int) The input device is a Bluetooth stylus. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_BUTTON](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_BUTTON:kotlin.Int) The input source has buttons or keys. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_JOYSTICK](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_JOYSTICK:kotlin.Int) The input source is a joystick. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_MASK](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_MASK:kotlin.Int) A mask for input source classes. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_NONE](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_NONE:kotlin.Int) The input source has no class. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_POINTER](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_POINTER:kotlin.Int) The input source is a pointing device associated with a display. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_POSITION](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_POSITION:kotlin.Int) The input source is an absolute positioning device not associated with a display (unlike [SOURCE_CLASS_POINTER](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_POINTER:kotlin.Int)). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CLASS_TRACKBALL](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_CLASS_TRACKBALL:kotlin.Int) The input source is a trackball navigation device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_DPAD](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_DPAD:kotlin.Int) The input source is a DPad. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_GAMEPAD](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_GAMEPAD:kotlin.Int) The input source is a game pad. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_HDMI](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_HDMI:kotlin.Int) The input source is a device connected through HDMI-based bus. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_JOYSTICK](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_JOYSTICK:kotlin.Int) The input source is a joystick. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_KEYBOARD](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_KEYBOARD:kotlin.Int) The input source is a keyboard. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_MOUSE](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_MOUSE:kotlin.Int) The input source is a mouse pointing device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_MOUSE_RELATIVE](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_MOUSE_RELATIVE:kotlin.Int) The input source is a mouse device whose relative motions should be interpreted as navigation events. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_ROTARY_ENCODER](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_ROTARY_ENCODER:kotlin.Int) The input source is a rotating encoder device whose motions should be interpreted as akin to those of a scroll wheel. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_SENSOR](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_SENSOR:kotlin.Int) The input source is a sensor associated with the input device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_STYLUS](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_STYLUS:kotlin.Int) The input source is a stylus pointing device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TOUCHPAD](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_TOUCHPAD:kotlin.Int) The input source is a touchpad (also known as a trackpad). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TOUCHSCREEN](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_TOUCHSCREEN:kotlin.Int) The input source is a touch screen pointing device. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TOUCH_NAVIGATION](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_TOUCH_NAVIGATION:kotlin.Int) The input source is a touch device whose motions should be interpreted as navigation events. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TRACKBALL](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_TRACKBALL:kotlin.Int) The input source is a trackball. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_UNKNOWN](https://developer.android.com/reference/kotlin/android/view/InputDevice#SOURCE_UNKNOWN:kotlin.Int) The input source is unknown. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -76,30 +90,39 @@ As a further wrinkle, different kinds of input sources uses different coordinate
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/InputDevice#describeContents())`()` <br /> |
 | [BatteryState](https://developer.android.com/reference/kotlin/android/hardware/BatteryState.html#) | [getBatteryState](https://developer.android.com/reference/kotlin/android/view/InputDevice#getBatteryState())`()` Gets the battery state object associated with the device, if there is one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getControllerNumber](https://developer.android.com/reference/kotlin/android/view/InputDevice#getControllerNumber())`()` The controller number for a given input device. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescriptor](https://developer.android.com/reference/kotlin/android/view/InputDevice#getDescriptor())`()` Gets the input device descriptor, which is a stable identifier for an input device. |
 | static [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice#)? | [getDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice#getDevice(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets information about the input device with the specified id. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getDeviceIds](https://developer.android.com/reference/kotlin/android/view/InputDevice#getDeviceIds())`()` Gets the ids of all input devices in the system. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/view/InputDevice#getId())`()` Gets the input device id. |
 | [KeyCharacterMap](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap)! | [getKeyCharacterMap](https://developer.android.com/reference/kotlin/android/view/InputDevice#getKeyCharacterMap())`()` Gets the key character map associated with this input device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyCodeForKeyLocation](https://developer.android.com/reference/kotlin/android/view/InputDevice#getKeyCodeForKeyLocation(kotlin.Int))`(`locationKeyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the [key code](https://developer.android.com/reference/kotlin/android/view/KeyEvent) produced by the given location on a reference QWERTY keyboard layout. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyboardType](https://developer.android.com/reference/kotlin/android/view/InputDevice#getKeyboardType())`()` Gets the keyboard type. |
 | [LightsManager](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager.html#) | [getLightsManager](https://developer.android.com/reference/kotlin/android/view/InputDevice#getLightsManager())`()` Gets the lights manager associated with the device, if there is one. |
 | [InputDevice.MotionRange](https://developer.android.com/reference/kotlin/android/view/InputDevice.MotionRange)! | [getMotionRange](https://developer.android.com/reference/kotlin/android/view/InputDevice#getMotionRange(kotlin.Int))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets information about the range of values for a particular [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent) axis. |
+| --- | --- |
 | [InputDevice.MotionRange](https://developer.android.com/reference/kotlin/android/view/InputDevice.MotionRange)! | [getMotionRange](https://developer.android.com/reference/kotlin/android/view/InputDevice#getMotionRange(kotlin.Int,%20kotlin.Int))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets information about the range of values for a particular [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent) axis used by a particular source on the device. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputDevice.MotionRange](https://developer.android.com/reference/kotlin/android/view/InputDevice.MotionRange)!\>! | [getMotionRanges](https://developer.android.com/reference/kotlin/android/view/InputDevice#getMotionRanges())`()` Gets the ranges for all axes supported by the device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/view/InputDevice#getName())`()` Gets the name of this input device. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProductId](https://developer.android.com/reference/kotlin/android/view/InputDevice#getProductId())`()` Gets the product id for the given device, if available. |
 | [SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#) | [getSensorManager](https://developer.android.com/reference/kotlin/android/view/InputDevice#getSensorManager())`()` Gets the sensor manager service associated with the input device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSources](https://developer.android.com/reference/kotlin/android/view/InputDevice#getSources())`()` Gets the input sources supported by this input device as a combined bitfield. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorId](https://developer.android.com/reference/kotlin/android/view/InputDevice#getVendorId())`()` Gets the vendor id for the given device, if available. |
 | [Vibrator](https://developer.android.com/reference/kotlin/android/os/Vibrator.html#)! | [getVibrator](https://developer.android.com/reference/kotlin/android/view/InputDevice#getVibrator())`()` Gets the vibrator service associated with the device, if there is one. |
 | [VibratorManager](https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#) | [getVibratorManager](https://developer.android.com/reference/kotlin/android/view/InputDevice#getVibratorManager())`()` Gets the vibrator manager associated with the device. |
+| --- | --- |
 | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [hasKeys](https://developer.android.com/reference/kotlin/android/view/InputDevice#hasKeys(kotlin.Int))`(`vararg` `keys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets whether the device is capable of producing the list of keycodes. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMicrophone](https://developer.android.com/reference/kotlin/android/view/InputDevice#hasMicrophone())`()` Reports whether the device has a built-in microphone. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/view/InputDevice#isEnabled())`()` Returns true if input device is enabled. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExternal](https://developer.android.com/reference/kotlin/android/view/InputDevice#isExternal())`()` Returns true if the device is external (connected to USB or Bluetooth or some other peripheral bus), otherwise it is built-in. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](https://developer.android.com/reference/kotlin/android/view/InputDevice#isVirtual())`()` Returns true if the device is a virtual input device rather than a real one, such as the virtual keyboard (see [KeyCharacterMap.VIRTUAL_KEYBOARD](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#VIRTUAL_KEYBOARD:kotlin.Int)). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSource](https://developer.android.com/reference/kotlin/android/view/InputDevice#supportsSource(kotlin.Int))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the input device supports the given source or sources. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/InputDevice#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/InputDevice#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -800,6 +823,7 @@ The following table provides a non-exhaustive list of examples:
 | French AZERTY | [KeyEvent.KEYCODE_Q](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_Q:kotlin.Int) | [KeyEvent.KEYCODE_A](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_A:kotlin.Int) |
 | German QWERTZ | [KeyEvent.KEYCODE_Y](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_Y:kotlin.Int) | [KeyEvent.KEYCODE_Z](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_Z:kotlin.Int) |
 | US QWERTY | [KeyEvent.KEYCODE_B](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_B:kotlin.Int) | [KeyEvent.KEYCODE_B](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_B:kotlin.Int) |
+| --- | --- | --- |
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

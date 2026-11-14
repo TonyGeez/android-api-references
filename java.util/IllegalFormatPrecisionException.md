@@ -9,12 +9,15 @@ open class IllegalFormatPrecisionException : IllegalFormatException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
+| --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| --- | --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
 | | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
 | | | | | | ↳ | [java.util.IllegalFormatPrecisionException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatPrecisionException#) |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when the precision is a negative value other than `-1`, the conversion does not support a precision, or the value is otherwise unsupported. If the precision is not representable by an `int` type, then the value `Integer.MIN_VALUE` will be used in the exception.
 

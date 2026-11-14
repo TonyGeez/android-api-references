@@ -5,6 +5,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # RemindersColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.RemindersColumns "View this page in Java") 
+| --- | --- |
 
 ```
 protected interface RemindersColumns
@@ -13,6 +14,7 @@ protected interface RemindersColumns
 | [android.provider.CalendarContract.RemindersColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#) |
 
 | Known Direct Subclasses [CalendarContract.Reminders](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Reminders) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [CalendarContract.Reminders](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Reminders) | Fields and helpers for accessing reminders for an event. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
@@ -21,12 +23,15 @@ protected interface RemindersColumns
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#EVENT_ID:kotlin.String) The event the reminder belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METHOD](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD:kotlin.String) The alarm method, as set on the server. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METHOD_ALARM](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_ALARM:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METHOD_ALERT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_ALERT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METHOD_DEFAULT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_DEFAULT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METHOD_EMAIL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_EMAIL:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METHOD_SMS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_SMS:kotlin.Int) <br /> |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MINUTES](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#MINUTES:kotlin.String) The minutes prior to the event that the alarm should ring. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MINUTES_DEFAULT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#MINUTES_DEFAULT:kotlin.Int) Passing this as a minutes value will use the default reminder minutes. |
+| --- | --- |
 
 ## Constants
 

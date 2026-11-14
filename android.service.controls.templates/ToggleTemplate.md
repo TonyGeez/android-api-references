@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ToggleTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/ToggleTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class ToggleTemplate : ControlTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.templates.ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) ||
 | | ↳ | [android.service.controls.templates.ToggleTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleTemplate#) |
 
@@ -31,6 +33,7 @@ A template for a [Control](https://developer.android.com/reference/kotlin/androi
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getContentDescription](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleTemplate#getContentDescription())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTemplateType](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleTemplate#getTemplateType())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleTemplate#isChecked())`()` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

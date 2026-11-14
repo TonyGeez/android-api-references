@@ -9,9 +9,11 @@ open class InvocationTargetException : ReflectiveOperationException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.ReflectiveOperationException](https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.reflect.InvocationTargetException](https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationTargetException#) |
 
 InvocationTargetException is a checked exception that wraps an exception thrown by an invoked method or constructor.

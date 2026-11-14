@@ -5,12 +5,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # WebResourceResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebResourceResponse "View this page in Java") 
+| --- | --- |
 
 ```
 open class WebResourceResponse
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#) |
 
 Encapsulates a resource response. Applications can return an instance of this class from android.webkit.WebViewClient#shouldInterceptRequest to provide a custom response when the WebView requests a particular resource.
@@ -27,12 +29,15 @@ Encapsulates a resource response. Applications can return an instance of this cl
 | open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getData](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getData())`()` Gets the input stream that provides the resource response's data. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getEncoding())`()` Gets the resource response's encoding. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getMimeType())`()` Gets the resource response's MIME type. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReasonPhrase](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getReasonPhrase())`()` Gets the description of the resource response's status code. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getResponseHeaders](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getResponseHeaders())`()` Gets the headers for the resource response. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatusCode](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#getStatusCode())`()` Gets the resource response's status code. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#setData(java.io.InputStream))`(`data:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Sets the input stream that provides the resource response's data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#setEncoding(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the resource response's encoding, for example "UTF-8". |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMimeType](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#setMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the resource response's MIME type, for example "text/html". |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResponseHeaders](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#setResponseHeaders(kotlin.collections.MutableMap))`(`headers:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the headers for the resource response. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStatusCodeAndReasonPhrase](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse#setStatusCodeAndReasonPhrase(kotlin.Int,%20kotlin.String))`(`statusCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reasonPhrase:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the resource response's status code and reason phrase. |
 
@@ -61,9 +66,11 @@ Constructs a resource response with the given parameters. Callers must implement
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the resource response's MIME type, for example`"text/html"`. |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the resource response's character encoding, for example`"utf-8"`. |
 | `statusCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the status code needs to be in the ranges \[100, 299\], \[400, 599\]. Causing a redirect by specifying a 3xx code is not supported. |
+| --- | --- |
 | `reasonPhrase` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the phrase describing the status code, for example "OK". Must be non-empty. This value cannot be`null`. |
 | `responseHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the resource response's headers represented as a mapping of header name -\> header value. |
 | `data` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream that provides the resource response's data. Must not be a StringBufferInputStream. |
+| --- | --- |
 
 ### WebResourceResponse
 
@@ -85,6 +92,7 @@ Constructs a resource response with the given MIME type, character encoding, and
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the resource response's MIME type, for example`"text/html"`. |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the resource response's character encoding, for example`"utf-8"`. |
 | `data` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream that provides the resource response's data. Must not be a StringBufferInputStream. |
+| --- | --- |
 
 ## Public methods
 

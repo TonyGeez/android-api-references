@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ChildSessionConfiguration
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionConfiguration "View this page in Java") 
+| --- | --- |
 
 ```
 class ChildSessionConfiguration
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.ChildSessionConfiguration](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionConfiguration#) |
 
 ChildSessionConfiguration represents the negotiated configuration for a Child Session.

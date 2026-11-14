@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # SharedLibraryInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/pm/SharedLibraryInfo "View this page in Java")
+| --- | --- |
 
 ```
 class SharedLibraryInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#) |
 
 This class provides information for a shared library. There are four types of shared libraries: builtin - non-updatable part of the OS; dynamic - updatable backwards-compatible dynamically linked; static - non backwards-compatible emulating static linking; SDK - updatable backwards-incompatible dynamically loaded.
@@ -20,6 +22,7 @@ This class provides information for a shared library. There are four types of sh
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#TYPE_BUILTIN:kotlin.Int` Shared library type: this library is a part of the OS and cannot be updated or uninstalled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#TYPE_DYNAMIC:kotlin.Int` Shared library type: this library is backwards-compatible, can be updated, and updates can be uninstalled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#TYPE_SDK_PACKAGE:kotlin.Int` SDK package shared library type: this library is **not** compatible between versions, can be updated and updates can be uninstalled. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#TYPE_STATIC:kotlin.Int` Shared library type: this library is **not** backwards -compatible, can be updated and updates can be uninstalled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#VERSION_UNDEFINED:kotlin.Int` Constant for referring to an undefined version. |
 
@@ -32,12 +35,15 @@ This class provides information for a shared library. There are four types of sh
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getCertDigests()()` Gets the list of certificate digests for the shared library. |
 | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDeclaringPackage()()` Gets the package that declares the library. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDependentPackages()()` Gets the packages that depend on the library. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getLongVersion()()` Gets the version of the library. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getName()()` Gets the library name an app defines in its manifest to depend on the library. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getType()()` Gets the type of this library. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getVersion()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Float2
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Float2 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Float2
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2#) |
 
 | **This class was deprecated in API level 31.**

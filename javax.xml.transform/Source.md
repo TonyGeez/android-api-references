@@ -11,6 +11,7 @@ interface Source
 | [javax.xml.transform.Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source#) |
 
 | Known Direct Subclasses [DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource), [SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource), [StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource) |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource) | Acts as a holder for a transformation Source tree in the form of a Document Object Model (DOM) tree. | | [SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource) | Acts as an holder for SAX-style Source. | | [StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource) | Acts as an holder for a transformation Source in the form of a stream of XML markup. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An object that implements this interface contains the information needed to act as source input (XML source or transformation instructions).
 

@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # SeekableInputReader
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaParser.SeekableInputReader "View this page in Java") 
+| --- | --- |
 
 ```
 interface SeekableInputReader : MediaParser.InputReader

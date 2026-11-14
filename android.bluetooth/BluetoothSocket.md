@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # BluetoothSocket
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothSocket "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothSocket : Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothSocket](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#) |
 
 A connected or connecting Bluetooth socket.
@@ -40,6 +42,7 @@ Once the socket is connected, whether initiated as a client or accepted as a ser
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_L2CAP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_L2CAP:kotlin.Int) L2CAP socket |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_LE:kotlin.Int) L2CAP socket on LE transport |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RFCOMM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_RFCOMM:kotlin.Int) RFCOMM socket |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_SCO:kotlin.Int) SCO socket |
 
 | Public methods ||
@@ -47,12 +50,15 @@ Once the socket is connected, whether initiated as a client or accepted as a ser
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#close())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect())`()` Attempt to connect to a remote device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getConnectionType())`()` Get the type of the underlying connection. |
+| --- | --- |
 | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getInputStream](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getInputStream())`()` Get the input stream associated with this socket. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxReceivePacketSize](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getMaxReceivePacketSize())`()` Get the maximum supported Receive packet size for the underlying transport. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransmitPacketSize](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getMaxTransmitPacketSize())`()` Get the maximum supported Transmit packet size for the underlying transport. |
+| --- | --- |
 | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [getOutputStream](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getOutputStream())`()` Get the output stream associated with this socket. |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)! | [getRemoteDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#getRemoteDevice())`()` Get the remote device this socket is connecting, or connected, to. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#isConnected())`()` Get the connection status of this socket, ie, whether there is an active connection with remote device. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#toString())`()` <br /> |
 
 ## Constants

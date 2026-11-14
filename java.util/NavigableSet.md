@@ -11,6 +11,7 @@ interface NavigableSet<E : Any!> : SortedSet<E>
 | [java.util.NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#) |
 
 | Known Direct Subclasses [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet), [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet) | A scalable concurrent [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#) implementation based on a [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap). | | [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) | A [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#) implementation based on a [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap). | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet) extended with navigation methods reporting closest matches for given search targets. Methods [lower](https://developer.android.com/reference/kotlin/java/util/NavigableSet#lower(java.util.NavigableSet.E)), [floor](https://developer.android.com/reference/kotlin/java/util/NavigableSet#floor(java.util.NavigableSet.E)), [ceiling](https://developer.android.com/reference/kotlin/java/util/NavigableSet#ceiling(java.util.NavigableSet.E)), and [higher](https://developer.android.com/reference/kotlin/java/util/NavigableSet#higher(java.util.NavigableSet.E))return elements respectively less than, less than or equal, greater than or equal, and greater than a given element, returning`null`if there is no such element.
 
@@ -27,21 +28,27 @@ Methods [subSet(E, E)](https://developer.android.com/reference/kotlin/java/util/
 | abstractE | [ceiling](https://developer.android.com/reference/kotlin/java/util/NavigableSet#ceiling(java.util.NavigableSet.E))`(`e:` `E`)` Returns the least element in this set greater than or equal to the given element, or`null`if there is no such element. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [descendingIterator](https://developer.android.com/reference/kotlin/java/util/NavigableSet#descendingIterator())`()` Returns an iterator over the elements in this set, in descending order. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#)\<E\>! | [descendingSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#descendingSet())`()` Returns a reverse order view of the elements contained in this set. |
+| --- | --- |
 | abstractE | [floor](https://developer.android.com/reference/kotlin/java/util/NavigableSet#floor(java.util.NavigableSet.E))`(`e:` `E`)` Returns the greatest element in this set less than or equal to the given element, or`null`if there is no such element. |
 | abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\>! | [headSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#headSet(java.util.NavigableSet.E))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#)\<E\>! | [headSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#headSet(java.util.NavigableSet.E,%20kotlin.Boolean))`(`toElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are less than (or equal to, if`inclusive`is true)`toElement`. |
+| --- | --- |
 | abstractE | [higher](https://developer.android.com/reference/kotlin/java/util/NavigableSet#higher(java.util.NavigableSet.E))`(`e:` `E`)` Returns the least element in this set strictly greater than the given element, or`null`if there is no such element. |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/NavigableSet#iterator())`()` Returns an iterator over the elements in this set, in ascending order. |
 | abstractE | [lower](https://developer.android.com/reference/kotlin/java/util/NavigableSet#lower(java.util.NavigableSet.E))`(`e:` `E`)` Returns the greatest element in this set strictly less than the given element, or`null`if there is no such element. |
+| --- | --- |
 | abstractE | [pollFirst](https://developer.android.com/reference/kotlin/java/util/NavigableSet#pollFirst())`()` Retrieves and removes the first (lowest) element, or returns`null`if this set is empty. |
 | abstractE | [pollLast](https://developer.android.com/reference/kotlin/java/util/NavigableSet#pollLast())`()` Retrieves and removes the last (highest) element, or returns`null`if this set is empty. |
 | openE | [removeFirst](https://developer.android.com/reference/kotlin/java/util/NavigableSet#removeFirst())`()` Removes and returns the first element of this collection (optional operation). |
+| --- | --- |
 | openE | [removeLast](https://developer.android.com/reference/kotlin/java/util/NavigableSet#removeLast())`()` Removes and returns the last element of this collection (optional operation). |
 | open [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#)\<E\>! | [reversed](https://developer.android.com/reference/kotlin/java/util/NavigableSet#reversed())`()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#)\<E\>! | [subSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#subSet(java.util.NavigableSet.E,%20kotlin.Boolean,%20java.util.NavigableSet.E,%20kotlin.Boolean))`(`fromElement:` `E`, `fromInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `toElement:` `E`, `toInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements range from`fromElement`to`toElement`. |
+| --- | --- |
 | abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\>! | [subSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#subSet(java.util.NavigableSet.E,%20java.util.NavigableSet.E))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
 | abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet)\<E\>! | [tailSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#tailSet(java.util.NavigableSet.E))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
 | abstract [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#)\<E\>! | [tailSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet#tailSet(java.util.NavigableSet.E,%20kotlin.Boolean))`(`fromElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are greater than (or equal to, if`inclusive`is true)`fromElement`. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -152,6 +159,7 @@ Equivalent to`headSet(toElement, false)`.
 | `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
+| --- | --- |
 
 ### headSet
 
@@ -182,6 +190,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
+| --- | --- |
 
 ### higher
 
@@ -347,6 +356,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 | `fromElement` | E:low endpoint of the returned set |
 | `fromInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if the low endpoint is to be included in the returned view |
 | `toElement` | E:high endpoint of the returned set |
+| --- | --- |
 | `toInclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if the high endpoint is to be included in the returned view |
 
 | Return ||
@@ -358,6 +368,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`fromElement`and`toElement`cannot be compared to one another using this set's comparator (or, if the set has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if`fromElement`or`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`or`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if`fromElement`is greater than`toElement`; or if this set itself has a restricted range, and`fromElement`or`toElement`lies outside the bounds of the range. |
+| --- | --- |
 
 ### subSet
 
@@ -390,6 +401,7 @@ Equivalent to`subSet(fromElement, true, toElement, false)`.
 | `java.lang.ClassCastException` | if`fromElement`and`toElement`cannot be compared to one another using this set's comparator (or, if the set has no comparator, using natural ordering). Implementations may, but are not required to, throw this exception if`fromElement`or`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`or`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if`fromElement`is greater than`toElement`; or if this set itself has a restricted range, and`fromElement`or`toElement`lies outside the bounds of the range |
+| --- | --- |
 
 ### tailSet
 
@@ -418,6 +430,7 @@ Equivalent to`tailSet(fromElement, true)`.
 | `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
+| --- | --- |
 
 ### tailSet
 
@@ -448,3 +461,4 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 | `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
+| --- | --- |

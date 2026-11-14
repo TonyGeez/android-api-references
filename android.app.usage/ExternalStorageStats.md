@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # ExternalStorageStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/ExternalStorageStats "View this page in Java") 
+| --- | --- |
 
 ```
 class ExternalStorageStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.ExternalStorageStats](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#) |
 
 Shared/external storage statistics for a [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) on a single storage volume.
@@ -26,9 +28,11 @@ Shared/external storage statistics for a [UserHandle](https://developer.android.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAppBytes](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#getAppBytes())`()` Return the total bytes used by app files in the shared/external storage hosted on this volume. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAudioBytes](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#getAudioBytes())`()` Return the total bytes used by all audio files in the shared/external storage hosted on this volume. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getImageBytes](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#getImageBytes())`()` Return the total bytes used by all image files in the shared/external storage hosted on this volume. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalBytes](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#getTotalBytes())`()` Return the total bytes used by all files in the shared/external storage hosted on this volume. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getVideoBytes](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#getVideoBytes())`()` Return the total bytes used by all video files in the shared/external storage hosted on this volume. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

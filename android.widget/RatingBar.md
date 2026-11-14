@@ -7,9 +7,11 @@ open class RatingBar : AbsSeekBar
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.widget.ProgressBar](https://developer.android.com/reference/kotlin/android/widget/ProgressBar) |||
 | | | ↳ | [android.widget.AbsSeekBar](https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar#) |
 
 A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. The user can touch/drag or use arrow keys to set the rating when using the default size RatingBar. The smaller RatingBar style ( `https://developer.android.com/reference/kotlin/android/R.attr.html#ratingBarStyleSmall:kotlin.Int`) and the larger indicator-only style (`https://developer.android.com/reference/kotlin/android/R.attr.html#ratingBarStyleIndicator:kotlin.Int`) do not support user interaction and should only be used as indicators.
@@ -31,6 +33,7 @@ The secondary progress should not be modified by the client as it is used intern
 | [`android:isIndicator`](https://developer.android.com/reference/kotlin/android/widget/RatingBar#attr_RatingBar) | Whether this rating bar is an indicator (and non-changeable by the user). |
 | [`android:numStars`](https://developer.android.com/reference/kotlin/android/widget/RatingBar#attr_RatingBar) | The number of stars (or rating items) to show. |
 | [`android:rating`](https://developer.android.com/reference/kotlin/android/widget/RatingBar#attr_RatingBar) | The rating to set by default. |
+| --- | --- |
 | [`android:stepSize`](https://developer.android.com/reference/kotlin/android/widget/RatingBar#attr_RatingBar) | The step size of the rating. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/ProgressBar` `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar` Timeout between frames of animation in milliseconds.
@@ -389,6 +392,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -505,6 +509,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1690,15 +1695,19 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#getNumStars()()` Returns the number of stars shown. |
 | open [RatingBar.OnRatingBarChangeListener](https://developer.android.com/reference/kotlin/android/widget/RatingBar.OnRatingBarChangeListener)! | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#getOnRatingBarChangeListener()()` <br /> |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#getRating()()` Gets the current rating (number of stars filled). |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#getStepSize()()` Gets the step size of this rating bar. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#isIndicator()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setIsIndicator(kotlin.Boolean)(isIndicator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether this rating bar should only be an indicator (thus non-changeable by the user). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setMax(kotlin.Int)(max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the upper range of the progress bar max. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setNumStars(kotlin.Int)(numStars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the number of stars to show. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setOnRatingBarChangeListener(android.widget.RatingBar.OnRatingBarChangeListener)(listener: https://developer.android.com/reference/kotlin/android/widget/RatingBar.OnRatingBarChangeListener!)` Sets the listener to be called when the rating changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setRating(kotlin.Float)(rating: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the rating (the number of stars filled). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RatingBar#setStepSize(kotlin.Float)(stepSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the step size (granularity) of this rating bar. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -3475,6 +3484,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4841,6 +4851,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }

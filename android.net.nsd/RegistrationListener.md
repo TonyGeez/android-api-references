@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # RegistrationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdManager.RegistrationListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface RegistrationListener
@@ -21,6 +22,7 @@ Interface for callback invocation for service registration
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onRegistrationFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceRegistered](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onServiceRegistered(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceUnregistered](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onServiceUnregistered(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` <br /> |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUnregistrationFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener#onUnregistrationFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods

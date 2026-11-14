@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # ProcessedData
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/ProcessedData "View this page in Java") 
+| --- | --- |
 
 ```
 open class ProcessedData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData#) |
 
 | **This class was deprecated in API level 30.**
@@ -27,6 +29,7 @@ An entity class that wraps the result of a [processDrmInfo()](https://developer.
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](https://developer.android.com/reference/kotlin/android/drm/ProcessedData#getAccountId())`()` Retrieves the account ID associated with this object. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData#getData())`()` Retrieves the processed data. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/drm/ProcessedData#getSubscriptionId())`()` Returns the subscription ID associated with this object. |
+| --- | --- |
 
 ## Public methods
 

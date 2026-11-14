@@ -7,6 +7,7 @@ class NetworkRegistrationInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.NetworkRegistrationInfo](https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#) |
 
 Description of a mobile network registration info
@@ -18,18 +19,23 @@ Description of a mobile network registration info
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_CS:kotlin.Int` Circuit switched domain |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_CS_PS:kotlin.Int` Applicable to both CS and PS Domain |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_PS:kotlin.Int` Packet switched domain |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_UNKNOWN:kotlin.Int` Unknown / Unspecified domain |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#NR_STATE_CONNECTED:kotlin.Int` The device is camped on an LTE cell that supports E-UTRA-NR Dual Connectivity(EN-DC) and also connected to at least one 5G cell as a secondary serving cell. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#NR_STATE_NONE:kotlin.Int` The device isn't camped on an LTE cell or the LTE cell doesn't support E-UTRA-NR Dual Connectivity(EN-DC). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#NR_STATE_NOT_RESTRICTED:kotlin.Int` The device is camped on an LTE cell that supports E-UTRA-NR Dual Connectivity(EN-DC) and both the use of dual connectivity with NR(DCNR) is not restricted and NR is supported by the selected PLMN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#NR_STATE_RESTRICTED:kotlin.Int` The device is camped on an LTE cell that supports E-UTRA-NR Dual Connectivity(EN-DC) but either the use of dual connectivity with NR(DCNR) is restricted or NR is not supported by the selected PLMN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_DATA:kotlin.Int` Data service |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_EMERGENCY:kotlin.Int` Emergency service |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_EMERGENCY_SMS:kotlin.Int` Emergency SMS service |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_MMS:kotlin.Int` MMS service |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_SMS:kotlin.Int` SMS service |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_UNKNOWN:kotlin.Int` Unknown service |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_VIDEO:kotlin.Int` Video service |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#SERVICE_TYPE_VOICE:kotlin.Int` Voice service |
 
 | Inherited constants ||
@@ -41,21 +47,27 @@ Description of a mobile network registration info
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getAccessNetworkTechnology()()` <br /> |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getAvailableServices()()` <br /> |
 | [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity)? | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getCellIdentity()()` Require `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`, otherwise return null. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getDomain()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getRegisteredPlmn()()` Get the PLMN-ID for this Network Registration, also known as the RPLMN. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getRejectCause()()` Get the 3GPP/3GPP2 reason code indicating why registration failed. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getTransportType()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isNetworkRegistered()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isNetworkRoaming()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isNetworkSearching()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isNonTerrestrialNetwork()()` Get whether the network is a non-terrestrial network. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isRegistered()()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isRoaming()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#isSearching()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -6,12 +6,14 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 # PdfPageTextObject
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/component/PdfPageTextObject "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageTextObject : PdfPageObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.pdf.component.PdfPageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject) ||
 | | ↳ | [android.graphics.pdf.component.PdfPageTextObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#) |
 
@@ -24,6 +26,7 @@ Represents a text object on a PDF page. This class extends PageObject and provid
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENDER_MODE_FILL](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#RENDER_MODE_FILL:kotlin.Int) Fill Mode : Only the interior of the glyphs is filled with the fill color. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENDER_MODE_FILL_STROKE](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#RENDER_MODE_FILL_STROKE:kotlin.Int) FillStroke Mode : Both the interior and outline of the glyphs are rendered using the fill abd stroke colors respectively. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENDER_MODE_STROKE](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#RENDER_MODE_STROKE:kotlin.Int) Stroke Mode : Only the outline of the glyphs is stroked with the stroke color. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENDER_MODE_UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#RENDER_MODE_UNKNOWN:kotlin.Int) Unknown Render Mode. |
 
 | Public constructors ||
@@ -35,15 +38,19 @@ Represents a text object on a PDF page. This class extends PageObject and provid
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFillColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getFillColor())`()` Returns the fill color of the object. |
 | [PdfPageTextObjectFont](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObjectFont) | [getFont](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getFont())`()` Returns the font of the text. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontSize](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getFontSize())`()` Returns the font size of the object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRenderMode](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getRenderMode())`()` Returns the render mode of the object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrokeColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getStrokeColor())`()` Returns the stroke color of the object. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getStrokeWidth](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getStrokeWidth())`()` Returns the stroke width of the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getText](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#getText())`()` Returns the text content of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFillColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#setFillColor(kotlin.Int))`(`fillColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the fill color of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRenderMode](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#setRenderMode(kotlin.Int))`(`renderMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the android. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrokeColor](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#setStrokeColor(kotlin.Int))`(`strokeColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the stroke color of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrokeWidth](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#setStrokeWidth(kotlin.Float))`(`strokeWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the stroke width of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject#setText(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the text content of the object. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -124,6 +131,7 @@ Constructor for the PdfPageTextObject. Sets the object type to TEXT and initiali
 | `font` | [PdfPageTextObjectFont](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObjectFont):The font of the text. This value cannot be`null`. |
 | `fontSize` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The font size of the text. |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

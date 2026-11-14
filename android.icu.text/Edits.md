@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # Edits
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Edits "View this page in Java") 
+| --- | --- |
 
 ```
 class Edits
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits#) |
 
 Records lengths of string edits but not replacement text. Supports replacements, insertions, deletions in linear progression. Does not support moving/reordering of text.
@@ -62,12 +64,15 @@ For examples of how to use this class, see the test`TestCaseMapEditsIteratorDocs
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addReplace](https://developer.android.com/reference/kotlin/android/icu/text/Edits#addReplace(kotlin.Int,%20kotlin.Int))`(`oldLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a change edit: a record for a text replacement/insertion/deletion. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUnchanged](https://developer.android.com/reference/kotlin/android/icu/text/Edits#addUnchanged(kotlin.Int))`(`unchangedLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a no-change edit: a record for an unchanged segment of text. |
 | [Edits.Iterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits.Iterator)! | [getCoarseChangesIterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits#getCoarseChangesIterator())`()` Returns an Iterator for coarse-grained change edits (adjacent change edits are treated as one). |
+| --- | --- |
 | [Edits.Iterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits.Iterator)! | [getCoarseIterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits#getCoarseIterator())`()` Returns an Iterator for coarse-grained change and no-change edits (adjacent change edits are treated as one). |
 | [Edits.Iterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits.Iterator)! | [getFineChangesIterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits#getFineChangesIterator())`()` Returns an Iterator for fine-grained change edits (full granularity of change edits is retained). |
 | [Edits.Iterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits.Iterator)! | [getFineIterator](https://developer.android.com/reference/kotlin/android/icu/text/Edits#getFineIterator())`()` Returns an Iterator for fine-grained change and no-change edits (full granularity of change edits is retained). |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasChanges](https://developer.android.com/reference/kotlin/android/icu/text/Edits#hasChanges())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthDelta](https://developer.android.com/reference/kotlin/android/icu/text/Edits#lengthDelta())`()` How much longer is the new text compared with the old text? |
 | [Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits#)! | [mergeAndAppend](https://developer.android.com/reference/kotlin/android/icu/text/Edits#mergeAndAppend(android.icu.text.Edits,%20android.icu.text.Edits))`(`ab:` ` [Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits#)!`, `bc:` ` [Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits#)!`)` Merges the two input Edits and appends the result to this object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfChanges](https://developer.android.com/reference/kotlin/android/icu/text/Edits#numberOfChanges())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/text/Edits#reset())`()` Resets the data but may not release memory. |
 

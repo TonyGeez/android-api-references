@@ -10,9 +10,11 @@ abstract class Identity : Principal, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.Identity](https://developer.android.com/reference/kotlin/java/security/Identity#) |
 
 | Known Direct Subclasses [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope), [Signer](https://developer.android.com/reference/kotlin/java/security/Signer) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope) | This class represents a scope for identities. | | [Signer](https://developer.android.com/reference/kotlin/java/security/Signer) | This class is used to represent an Identity that can also digitally sign data. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 3.**
 |
@@ -42,15 +44,19 @@ An Identity can be subclassed, to include postal and email addresses, telephone 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCertificate](https://developer.android.com/reference/kotlin/java/security/Identity#addCertificate(java.security.Certificate))`(`certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!`)` Adds a certificate for this identity. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!\>! | [certificates](https://developer.android.com/reference/kotlin/java/security/Identity#certificates())`()` Returns a copy of all the certificates for this identity. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/Identity#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this identity. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfo](https://developer.android.com/reference/kotlin/java/security/Identity#getInfo())`()` Returns general information previously specified for this identity. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/security/Identity#getName())`()` Returns this identity's name. |
 | open [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)! | [getPublicKey](https://developer.android.com/reference/kotlin/java/security/Identity#getPublicKey())`()` Returns this identity's public key. |
+| --- | --- |
 | [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope)! | [getScope](https://developer.android.com/reference/kotlin/java/security/Identity#getScope())`()` Returns this identity's scope. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/Identity#hashCode())`()` Returns a hashcode for this identity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCertificate](https://developer.android.com/reference/kotlin/java/security/Identity#removeCertificate(java.security.Certificate))`(`certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!`)` Removes a certificate from this identity. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfo](https://developer.android.com/reference/kotlin/java/security/Identity#setInfo(kotlin.String))`(`info:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a general information string for this identity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicKey](https://developer.android.com/reference/kotlin/java/security/Identity#setPublicKey(java.security.PublicKey))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` Sets this identity's public key. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/Identity#toString())`()` Returns a short string describing this identity, telling its name and its scope (if any). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/java/security/Identity#toString(kotlin.Boolean))`(`detailed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a string representation of this identity, with optionally more details than that provided by the`toString`method without any arguments. |
 
 | Protected methods ||
@@ -172,6 +178,7 @@ Tests for equality between the specified object and this identity. This first te
 | `obj` | the reference object with which to compare. |
 | `another` | principal to compare with. |
 | `identity` | the object to test for equality with this identity. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|

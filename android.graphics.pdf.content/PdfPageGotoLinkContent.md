@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PdfPageGotoLinkContent
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/content/PdfPageGotoLinkContent "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageGotoLinkContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.content.PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) |
 
 Represents the content associated with a goto link on a page in the PDF document. Goto Link is an internal navigation link which directs the user to a different location within the same pdf document
@@ -35,6 +37,7 @@ Represents the content associated with a goto link on a page in the PDF document
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | [getBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#getBounds())`()` Gets the bounds of a [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) represented as a list of [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#). |
 | [PdfPageGotoLinkContent.Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) | [getDestination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#getDestination())`()` Gets the destination [Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) of the [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

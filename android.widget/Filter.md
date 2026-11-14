@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Filter
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/Filter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class Filter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.Filter](https://developer.android.com/reference/kotlin/android/widget/Filter#) |
 
 A filter constrains data with a filtering pattern.
@@ -35,6 +37,7 @@ Filtering operations performed by calling [filter(java.lang.CharSequence)](https
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [convertResultToString](https://developer.android.com/reference/kotlin/android/widget/Filter#convertResultToString(kotlin.Any))`(`resultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Converts a value from the filtered set into a CharSequence. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [filter](https://developer.android.com/reference/kotlin/android/widget/Filter#filter(kotlin.CharSequence))`(`constraint:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Starts an asynchronous filtering operation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [filter](https://developer.android.com/reference/kotlin/android/widget/Filter#filter(kotlin.CharSequence,%20android.widget.Filter.FilterListener))`(`constraint:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `listener:` ` [Filter.FilterListener](https://developer.android.com/reference/kotlin/android/widget/Filter.FilterListener)!`)` Starts an asynchronous filtering operation. |
+| --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -5,17 +5,21 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ResourceCursorAdapter
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/ResourceCursorAdapter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ResourceCursorAdapter : CursorAdapter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.widget.BaseAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseAdapter) |||
 | | ↳ | [android.widget.CursorAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter) ||
 | | | ↳ | [android.widget.ResourceCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [SimpleCursorAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorAdapter) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An easy adapter that creates views defined in an XML file. You can specify the XML file that defines the appearance of the views.
 
@@ -36,6 +40,7 @@ An easy adapter that creates views defined in an XML file. You can specify the X
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [newDropDownView](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#newDropDownView(android.content.Context,%20android.database.Cursor,%20android.view.ViewGroup))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` <br /> |
 | open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [newView](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#newView(android.content.Context,%20android.database.Cursor,%20android.view.ViewGroup))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Inflates view(s) from the specified XML file. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownViewResource](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#setDropDownViewResource(kotlin.Int))`(`dropDownLayout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource of the drop down views. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownViewTheme](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#setDropDownViewTheme(android.content.res.Resources.Theme))`(`theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Sets the [android.content.res.Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#) against which drop-down views are inflated. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setViewResource](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorAdapter#setViewResource(kotlin.Int))`(`layout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource of the item views. |
 
@@ -85,6 +90,7 @@ Constructor with default behavior as per [CursorAdapter.CursorAdapter(Context, C
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context where the ListView associated with this adapter is running |
 | `layout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource identifier of a layout file that defines the views for this list item. Unless you override them later, this will define both the item views and the drop down views. |
 | `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. |
+| --- | --- |
 | `autoRequery` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true the adapter will call requery() on the cursor whenever it changes so the most recent data is always displayed. Using true here is discouraged. |
 
 ### ResourceCursorAdapter
@@ -106,6 +112,7 @@ Standard constructor.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context where the ListView associated with this adapter is running |
 | `layout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource identifier of a layout file that defines the views for this list item. Unless you override them later, this will define both the item views and the drop down views. |
 | `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags used to determine the behavior of the adapter, as per [CursorAdapter.CursorAdapter(Context, Cursor, int)](https://developer.android.com/reference/kotlin/android/widget/CursorAdapter#CursorAdapter(android.content.Context,%20android.database.Cursor,%20kotlin.Int)). |
 
 ## Public methods
@@ -127,6 +134,7 @@ open fun newDropDownView(
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The parent to which the new view is attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------|
@@ -151,6 +159,7 @@ Inflates view(s) from the specified XML file.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
 | `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
 | `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The parent to which the new view is attached to |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------|

@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # VpnManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/VpnManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class VpnManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.VpnManager](https://developer.android.com/reference/kotlin/android/net/VpnManager#) |
 
 This class provides an interface for apps to manage platform VPN profiles
@@ -27,21 +29,27 @@ Restricted for SDK Runtime environment in API level 34.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VPN_MANAGER_EVENT](https://developer.android.com/reference/kotlin/android/net/VpnManager#ACTION_VPN_MANAGER_EVENT:kotlin.String) Action sent in [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) s to VpnManager clients when an event occurred. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CATEGORY_EVENT_ALWAYS_ON_STATE_CHANGED](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_ALWAYS_ON_STATE_CHANGED:kotlin.String) The always-on state of this VPN was changed |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CATEGORY_EVENT_DEACTIVATED_BY_USER](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_DEACTIVATED_BY_USER:kotlin.String) The user deactivated the VPN. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CATEGORY_EVENT_IKE_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_IKE_ERROR:kotlin.String) An IKE protocol error occurred. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CATEGORY_EVENT_NETWORK_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_NETWORK_ERROR:kotlin.String) A network error occurred. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CLASS_NOT_RECOVERABLE](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CLASS_NOT_RECOVERABLE:kotlin.Int) [EXTRA_ERROR_CLASS](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CLASS:kotlin.String) coding for a non-recoverable error. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CLASS_RECOVERABLE](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CLASS_RECOVERABLE:kotlin.Int) [EXTRA_ERROR_CLASS](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CLASS:kotlin.String) coding for a recoverable error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_NETWORK_IO](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CODE_NETWORK_IO:kotlin.Int) An [EXTRA_ERROR_CODE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CODE:kotlin.String) for [CATEGORY_EVENT_NETWORK_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_NETWORK_ERROR:kotlin.String) indicating an input/output error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_NETWORK_LOST](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CODE_NETWORK_LOST:kotlin.Int) An [EXTRA_ERROR_CODE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CODE:kotlin.String) for [CATEGORY_EVENT_NETWORK_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_NETWORK_ERROR:kotlin.String) indicating that network connectivity was lost. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_NETWORK_PROTOCOL_TIMEOUT](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CODE_NETWORK_PROTOCOL_TIMEOUT:kotlin.Int) An [EXTRA_ERROR_CODE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CODE:kotlin.String) for [CATEGORY_EVENT_NETWORK_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_NETWORK_ERROR:kotlin.String) indicating a timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CODE_NETWORK_UNKNOWN_HOST](https://developer.android.com/reference/kotlin/android/net/VpnManager#ERROR_CODE_NETWORK_UNKNOWN_HOST:kotlin.Int) An [EXTRA_ERROR_CODE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CODE:kotlin.String) for [CATEGORY_EVENT_NETWORK_ERROR](https://developer.android.com/reference/kotlin/android/net/VpnManager#CATEGORY_EVENT_NETWORK_ERROR:kotlin.String) to indicate that the network host isn't known. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_ERROR_CLASS](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CLASS:kotlin.String) Extra for the error class, as an `int`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_ERROR_CODE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_ERROR_CODE:kotlin.String) Extra for an error code, as an `int`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SESSION_KEY](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_SESSION_KEY:kotlin.String) The key of the session that experienced this event, as a `String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TIMESTAMP_MILLIS](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_TIMESTAMP_MILLIS:kotlin.String) A `long` timestamp containing the time at which the event occurred. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNDERLYING_LINK_PROPERTIES](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_UNDERLYING_LINK_PROPERTIES:kotlin.String) The [LinkProperties](https://developer.android.com/reference/kotlin/android/net/LinkProperties) of the underlying network when the event occurred. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNDERLYING_NETWORK](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_UNDERLYING_NETWORK:kotlin.String) The network that was underlying the VPN when the event occurred, as a [Network](https://developer.android.com/reference/kotlin/android/net/Network). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNDERLYING_NETWORK_CAPABILITIES](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_UNDERLYING_NETWORK_CAPABILITIES:kotlin.String) The [NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities) of the underlying network when the event occurred. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_VPN_PROFILE_STATE](https://developer.android.com/reference/kotlin/android/net/VpnManager#EXTRA_VPN_PROFILE_STATE:kotlin.String) The VpnProfileState at the time that this event occurred. |
 
 | Public methods ||
@@ -49,9 +57,11 @@ Restricted for SDK Runtime environment in API level 34.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteProvisionedVpnProfile](https://developer.android.com/reference/kotlin/android/net/VpnManager#deleteProvisionedVpnProfile())`()` Delete the VPN profile configuration that was provisioned by the calling app |
 | open [VpnProfileState](https://developer.android.com/reference/kotlin/android/net/VpnProfileState)? | [getProvisionedVpnProfileState](https://developer.android.com/reference/kotlin/android/net/VpnManager#getProvisionedVpnProfileState())`()` Retrieve the VpnProfileState for the profile provisioned by the calling package. |
 | open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | [provisionVpnProfile](https://developer.android.com/reference/kotlin/android/net/VpnManager#provisionVpnProfile(android.net.PlatformVpnProfile))`(`profile:` ` [PlatformVpnProfile](https://developer.android.com/reference/kotlin/android/net/PlatformVpnProfile)`)` Install a VpnProfile configuration keyed on the calling app's package name. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startProvisionedVpnProfile](https://developer.android.com/reference/kotlin/android/net/VpnManager#startProvisionedVpnProfile())`()` Request the startup of a previously provisioned VPN. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [startProvisionedVpnProfileSession](https://developer.android.com/reference/kotlin/android/net/VpnManager#startProvisionedVpnProfileSession())`()` Request the startup of a previously provisioned VPN. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopProvisionedVpnProfile](https://developer.android.com/reference/kotlin/android/net/VpnManager#stopProvisionedVpnProfile())`()` Tear down the VPN provided by the calling app (if any) |
+| --- | --- |
 
 ## Constants
 

@@ -7,6 +7,7 @@ class GnssStatus : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssStatus](https://developer.android.com/reference/kotlin/android/location/GnssStatus#) |
 
 This class represents the current state of the GNSS engine and is used in conjunction with `https://developer.android.com/reference/kotlin/android/location/GnssStatus.Callback`.
@@ -23,9 +24,11 @@ This class represents the current state of the GNSS engine and is used in conjun
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_BEIDOU:kotlin.Int` Constellation type constant for Beidou. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GALILEO:kotlin.Int` Constellation type constant for Galileo. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GLONASS:kotlin.Int` Constellation type constant for Glonass. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_GPS:kotlin.Int` Constellation type constant for GPS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_IRNSS:kotlin.Int` Constellation type constant for IRNSS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_QZSS:kotlin.Int` Constellation type constant for QZSS. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_SBAS:kotlin.Int` Constellation type constant for SBAS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#CONSTELLATION_UNKNOWN:kotlin.Int` Unknown constellation type. |
 
@@ -46,24 +49,31 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getAzimuthDegrees(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the azimuth the satellite at the specified index. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getBasebandCn0DbHz(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the baseband carrier-to-noise density of the satellite at the specified index in dB-Hz. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getCarrierFrequencyHz(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the carrier frequency of the signal tracked. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getCn0DbHz(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the carrier-to-noise density at the antenna of the satellite at the specified index in dB-Hz. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getCodeType(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the code type as defined in `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()` of the satellite at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getConstellationType(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the constellation type of the satellite at the specified index. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getElapsedRealtimeNanos(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the elapsed real-time of this GnssStatus since system boot, in nanoseconds. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getElapsedRealtimeUncertaintyNanos(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the estimate of the relative precision of the alignment of the #getElapsedRealtimeNanos() timestamp, with the reported GnssStatus in nanoseconds (68% confidence). |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getElevationDegrees(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the elevation of the satellite at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getSatelliteCount()()` Gets the total number of satellites in satellite list. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getSvid(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the identification number for the satellite at the specific index. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasAlmanacData(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether the satellite at the specified index has almanac data. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasBasebandCn0DbHz(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether a valid `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getBasebandCn0DbHz(kotlin.Int)` is available. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasCarrierFrequencyHz(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether a valid `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getCarrierFrequencyHz(kotlin.Int)` is available. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasCodeType(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether a valid #getCodeType() is available. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasElapsedRealtimeNanos(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `true` if #getElapsedRealtimeNanos() is available, `false` otherwise. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasElapsedRealtimeUncertaintyNanos(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `true` if #getElapsedRealtimeUncertaintyNanos() is available, `false` otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hasEphemerisData(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether the satellite at the specified index has ephemeris data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#usedInFix(kotlin.Int)(satelliteIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reports whether the satellite at the specified index was used in the calculation of the most recent position fix. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssStatus#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
@@ -588,6 +598,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| --- | --- |
 
 ## Properties
 

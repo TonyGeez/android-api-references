@@ -7,6 +7,7 @@ class WifiAwareNetworkSpecifier : NetworkSpecifier, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#) ||
 | | ↳ | [android.net.wifi.aware.WifiAwareNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#) |
 
@@ -27,12 +28,15 @@ Network specifier object used to request a Wi-Fi Aware network. Apps should use 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#canBeSatisfiedBy(android.net.NetworkSpecifier)(other: https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#!)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#getChannelFrequencyMhz()()` Get the specified channel in MHZ for this Wi-Fi Aware network specifier. |
 | [WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#getWifiAwareDataPathSecurityConfig()()` Get the security config specified in this Network Specifier to encrypt Wi-Fi Aware data-path |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#isChannelRequired()()` Check if the specified channel is required to honor or not. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

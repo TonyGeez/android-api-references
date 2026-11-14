@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # Formatter
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/NumberPicker.Formatter "View this page in Java") 
+| --- | --- |
 
 ```
 interface Formatter

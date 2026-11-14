@@ -6,12 +6,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # TimingLogger
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/TimingLogger "View this page in Java") 
+| --- | --- |
 
 ```
 open class TimingLogger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.TimingLogger](https://developer.android.com/reference/kotlin/android/util/TimingLogger#) |
 
 | **This class was deprecated in API level 30.**
@@ -56,6 +58,7 @@ D/TAG     ( 3459): methodA: begin
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSplit](https://developer.android.com/reference/kotlin/android/util/TimingLogger#addSplit(kotlin.String))`(`splitLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a split for the current time, labeled with splitLabel. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpToLog](https://developer.android.com/reference/kotlin/android/util/TimingLogger#dumpToLog())`()` Dumps the timings to the log using Log. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/util/TimingLogger#reset())`()` Clear and initialize a TimingLogger object that will log using the tag and label that was specified previously, either via the constructor or a call to reset(tag, label). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/util/TimingLogger#reset(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Clear and initialize a TimingLogger object that will log using the specific tag. |
 
 ## Public constructors

@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # VcnGatewayConnectionConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class VcnGatewayConnectionConfig
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.vcn.VcnGatewayConnectionConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#) |
 
 This class represents a configuration for a connection to a Virtual Carrier Network gateway.
@@ -50,12 +52,15 @@ As an abstraction of a cellular network, services that can be provided by a VCN 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExposedCapabilities](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getExposedCapabilities())`()` Returns all exposed capabilities. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getGatewayConnectionName](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getGatewayConnectionName())`()` Returns the configured Gateway Connection name. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getMaxMtu())`()` Retrieves the maximum MTU allowed for this Gateway Connection. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinUdpPort4500NatTimeoutSeconds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getMinUdpPort4500NatTimeoutSeconds())`()` Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. |
 | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getRetryIntervalsMillis](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getRetryIntervalsMillis())`()` Retrieves the configured retry intervals. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate)!\> | [getVcnUnderlyingNetworkPriorities](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getVcnUnderlyingNetworkPriorities())`()` Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not configured. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGatewayOption](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#hasGatewayOption(kotlin.Int))`(`option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given VCN gateway option is enabled. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSafeModeEnabled](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#isSafeModeEnabled())`()` Check whether safe mode is enabled |
 
 ## Constants

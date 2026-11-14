@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # UsbConfiguration
 
 Kotlin | [Java](https://developer.android.com/reference/android/hardware/usb/UsbConfiguration "View this page in Java")
+| --- | --- |
 
 ```
 open class UsbConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#) |
 
 A class representing a configuration on a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice`. A USB configuration can have one or more interfaces, each one providing a different piece of functionality, separate from the other interfaces. An interface will have one or more `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint`s, which are the channels by which the host transfers data with the device.
@@ -32,12 +34,15 @@ A class representing a configuration on a `https://developer.android.com/referen
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getId()()` Returns the configuration's ID field. |
 | open [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getInterface(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface` at the given index. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getInterfaceCount()()` Returns the number of `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface`s this configuration contains. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getMaxPower()()` Returns the configuration's max power consumption, in milliamps. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getName()()` Returns the configuration's name. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#isRemoteWakeup()()` Returns the remote-wakeup attribute value configuration's attributes field. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#isSelfPowered()()` Returns the self-powered attribute value configuration's attributes field. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # TvContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvContract "View this page in Java") 
+| --- | --- |
 
 ```
 class TvContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.tv.TvContract](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#) |
 
 The contract between the TV provider and applications. Contains definitions for the supported URIs and columns.
@@ -31,45 +33,57 @@ TvContract defines a basic database of TV content metadata such as channel and p
 | abstract | [BaseTvColumns](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.BaseTvColumns) Common base for the tables of TV channels/programs. |
 | | [Channels](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Channels) Column definitions for the TV channels table. |
 | | [PreviewPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.PreviewPrograms) Column definitions for the preview TV programs table. |
+| --- | --- |
 | | [Programs](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs) Column definitions for the TV programs table. |
 | | [RecordedPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.RecordedPrograms) Column definitions for the recorded TV programs table. |
 | | [WatchNextPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.WatchNextPrograms) Column definitions for the "watch next" TV programs table. |
+| --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_INITIALIZE_PROGRAMS](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#ACTION_INITIALIZE_PROGRAMS:kotlin.String) Broadcast Action: sent to the target TV input after it is first installed to notify the input to initialize its channels and programs to the system content provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#ACTION_PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT:kotlin.String) Broadcast Action: sent by the system to tell the target TV input that one of its existing preview programs is added to the watch next programs table by user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_PREVIEW_PROGRAM_BROWSABLE_DISABLED](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#ACTION_PREVIEW_PROGRAM_BROWSABLE_DISABLED:kotlin.String) Broadcast Action: sent by the system to tell the target TV input that one of its preview program's browsable state is disabled, i. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_REQUEST_CHANNEL_BROWSABLE](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#ACTION_REQUEST_CHANNEL_BROWSABLE:kotlin.String) Activity Action: sent by an application telling the system to make the given channel browsable with user interaction. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#ACTION_WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED:kotlin.String) Broadcast Action: sent by the system to tell the target TV input that one of its "watch next" program's browsable state is disabled, i. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#AUTHORITY:kotlin.String) The authority for the TV provider. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CHANNEL_ID](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#EXTRA_CHANNEL_ID:kotlin.String) The key for a bundle parameter containing a channel ID as a long integer |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PREVIEW_PROGRAM_ID](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#EXTRA_PREVIEW_PROGRAM_ID:kotlin.String) The key for a bundle parameter containing a program ID as a long integer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WATCH_NEXT_PROGRAM_ID](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#EXTRA_WATCH_NEXT_PROGRAM_ID:kotlin.String) The key for a bundle parameter containing a watch next program ID as a long integer. |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildChannelLogoUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildChannelLogoUri(android.net.Uri))`(`channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Builds a URI that points to a channel logo. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildChannelLogoUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildChannelLogoUri(kotlin.Long))`(`channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a channel logo. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildChannelUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildChannelUri(kotlin.Long))`(`channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a specific channel. |
+| --- | --- |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildChannelUriForPassthroughInput](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildChannelUriForPassthroughInput(kotlin.String))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Build a special channel URI intended to be used with pass-through inputs. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildChannelsUriForInput](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildChannelsUriForInput(kotlin.String))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Builds a URI that points to all channels from a given TV input. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildInputId](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildInputId(android.content.ComponentName))`(`name:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Builds an ID that uniquely identifies a TV input service. |
+| --- | --- |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildPreviewProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildPreviewProgramUri(kotlin.Long))`(`previewProgramId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a specific preview program. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildPreviewProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildPreviewProgramsUriForChannel(android.net.Uri))`(`channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Builds a URI that points to all preview programs on a given channel. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildPreviewProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildPreviewProgramsUriForChannel(kotlin.Long))`(`channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to all preview programs on a given channel. |
+| --- | --- |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildProgramUri(kotlin.Long))`(`programId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a specific program. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildProgramsUriForChannel(android.net.Uri))`(`channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Builds a URI that points to all programs on a given channel. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildProgramsUriForChannel(android.net.Uri,%20kotlin.Long,%20kotlin.Long))`(`channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `startTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to programs on a specific channel whose schedules overlap with the given time frame. |
+| --- | --- |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildProgramsUriForChannel(kotlin.Long))`(`channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to all programs on a given channel. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildProgramsUriForChannel](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildProgramsUriForChannel(kotlin.Long,%20kotlin.Long,%20kotlin.Long))`(`channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `startTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to programs on a specific channel whose schedules overlap with the given time frame. |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildRecordedProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildRecordedProgramUri(kotlin.Long))`(`recordedProgramId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a specific recorded program. |
+| --- | --- |
 | static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [buildWatchNextProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#buildWatchNextProgramUri(kotlin.Long))`(`watchNextProgramId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Builds a URI that points to a specific watch next program. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChannelUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#isChannelUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChannelUriForPassthroughInput](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#isChannelUriForPassthroughInput(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChannelUriForTunerInput](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#isChannelUriForTunerInput(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#isProgramUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecordedProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#isRecordedProgramUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` <br /> |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestChannelBrowsable](https://developer.android.com/reference/kotlin/android/media/tv/TvContract#requestChannelBrowsable(android.content.Context,%20kotlin.Long))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `channelId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Requests to make a channel browsable. |
 
 ## Constants
@@ -387,6 +401,7 @@ Builds a URI that points to programs on a specific channel whose schedules overl
 | `channelUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The URI of the channel to return programs for. |
 | `startTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The start time used to filter programs. The returned programs should have [Programs.COLUMN_END_TIME_UTC_MILLIS](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs#COLUMN_END_TIME_UTC_MILLIS:kotlin.String) that is greater than this time. |
 | `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The end time used to filter programs. The returned programs should have [Programs.COLUMN_START_TIME_UTC_MILLIS](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs#COLUMN_START_TIME_UTC_MILLIS:kotlin.String) that is less than this time. |
+| --- | --- |
 
 ### buildProgramsUriForChannel
 
@@ -421,6 +436,7 @@ Builds a URI that points to programs on a specific channel whose schedules overl
 | `channelId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The ID of the channel to return programs for. |
 | `startTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The start time used to filter programs. The returned programs will have a [Programs.COLUMN_END_TIME_UTC_MILLIS](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs#COLUMN_END_TIME_UTC_MILLIS:kotlin.String) that is greater than or equal to`startTime`. |
 | `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The end time used to filter programs. The returned programs will have [Programs.COLUMN_START_TIME_UTC_MILLIS](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs#COLUMN_START_TIME_UTC_MILLIS:kotlin.String) that is less than or equal to`endTime`. |
+| --- | --- |
 
 ### buildRecordedProgramUri
 

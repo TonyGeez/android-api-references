@@ -9,6 +9,7 @@ open class SoftReference<T : Any!> : Reference<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.ref.Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference)\<T\> ||
 | | ↳ | [java.lang.ref.SoftReference](https://developer.android.com/reference/kotlin/java/lang/ref/SoftReference#) |
 

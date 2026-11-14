@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # SyncParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/SyncParams "View this page in Java") 
+| --- | --- |
 
 ```
 class SyncParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#) |
 
 Structure for common A/V sync params. Used by [MediaSync](https://developer.android.com/reference/kotlin/android/media/MediaSync){link MediaSync#getSyncParams()} and {link MediaSync#setSyncParams(SyncParams)} to control A/V sync behavior.
@@ -39,9 +41,11 @@ Structure for common A/V sync params. Used by [MediaSync](https://developer.andr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_ADJUST_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/SyncParams#AUDIO_ADJUST_MODE_DEFAULT:kotlin.Int) System will determine best handling of audio for playback rate adjustments. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_ADJUST_MODE_RESAMPLE](https://developer.android.com/reference/kotlin/android/media/SyncParams#AUDIO_ADJUST_MODE_RESAMPLE:kotlin.Int) Resample audio when playback rate must be adjusted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_ADJUST_MODE_STRETCH](https://developer.android.com/reference/kotlin/android/media/SyncParams#AUDIO_ADJUST_MODE_STRETCH:kotlin.Int) Time stretch audio when playback rate must be adjusted. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_SOURCE_AUDIO](https://developer.android.com/reference/kotlin/android/media/SyncParams#SYNC_SOURCE_AUDIO:kotlin.Int) Use audio track for sync source. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_SOURCE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/SyncParams#SYNC_SOURCE_DEFAULT:kotlin.Int) Use the default sync source (default). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_SOURCE_SYSTEM_CLOCK](https://developer.android.com/reference/kotlin/android/media/SyncParams#SYNC_SOURCE_SYSTEM_CLOCK:kotlin.Int) Use system monotonic clock for sync source. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_SOURCE_VSYNC](https://developer.android.com/reference/kotlin/android/media/SyncParams#SYNC_SOURCE_VSYNC:kotlin.Int) Use vsync as the sync source. |
 
 | Public constructors ||
@@ -53,12 +57,15 @@ Structure for common A/V sync params. Used by [MediaSync](https://developer.andr
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#)! | [allowDefaults](https://developer.android.com/reference/kotlin/android/media/SyncParams#allowDefaults())`()` Allows defaults to be returned for properties not set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioAdjustMode](https://developer.android.com/reference/kotlin/android/media/SyncParams#getAudioAdjustMode())`()` Retrieves the audio adjust mode. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFrameRate](https://developer.android.com/reference/kotlin/android/media/SyncParams#getFrameRate())`()` Retrieves the video frame rate hint. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSyncSource](https://developer.android.com/reference/kotlin/android/media/SyncParams#getSyncSource())`()` Retrieves the sync source. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTolerance](https://developer.android.com/reference/kotlin/android/media/SyncParams#getTolerance())`()` Retrieves the tolerance factor. |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#)! | [setAudioAdjustMode](https://developer.android.com/reference/kotlin/android/media/SyncParams#setAudioAdjustMode(kotlin.Int))`(`audioAdjustMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio adjust mode. |
+| --- | --- |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#)! | [setFrameRate](https://developer.android.com/reference/kotlin/android/media/SyncParams#setFrameRate(kotlin.Float))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the video frame rate hint to be used. |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#)! | [setSyncSource](https://developer.android.com/reference/kotlin/android/media/SyncParams#setSyncSource(kotlin.Int))`(`syncSource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the sync source. |
 | [SyncParams](https://developer.android.com/reference/kotlin/android/media/SyncParams#)! | [setTolerance](https://developer.android.com/reference/kotlin/android/media/SyncParams#setTolerance(kotlin.Float))`(`tolerance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the tolerance. |
+| --- | --- |
 
 ## Constants
 

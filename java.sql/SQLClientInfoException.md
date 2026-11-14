@@ -9,9 +9,11 @@ open class SQLClientInfoException : SQLException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.sql.SQLClientInfoException](https://developer.android.com/reference/kotlin/java/sql/SQLClientInfoException#) |
 
 The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) is thrown when one or more client info properties could not be set on a`Connection`. In addition to the information provided by`SQLException`, a`SQLClientInfoException`provides a list of client info properties that were not set. Some databases do not allow multiple client info properties to be set atomically. For those databases, it is possible that some of the client info properties had been set even though the`Connection.setClientInfo`method threw an exception. An application can use the`getFailedProperties `method to retrieve a list of client info properties that were not set. The properties are identified by passing a`Map<String,ClientInfoStatus>`to the appropriate`SQLClientInfoException`constructor.
@@ -75,6 +77,7 @@ Constructs a`SQLClientInfoException`object initialized with a given`reason`,`SQL
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific exception code |
+| --- | --- |
 | `failedProperties` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus)!\>!:A Map containing the property values that could not be set. The keys in the Map contain the names of the client info properties that could not be set and the values contain one of the reason codes defined in`ClientInfoStatus` <br /> |
 
 ### SQLClientInfoException
@@ -99,6 +102,7 @@ Constructs a`SQLClientInfoException`object initialized with a given`reason`,`SQL
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `vendorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a database vendor-specific exception code |
+| --- | --- |
 | `failedProperties` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus)!\>!:A Map containing the property values that could not be set. The keys in the Map contain the names of the client info properties that could not be set and the values contain one of the reason codes defined in`ClientInfoStatus` |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. <br /> |
 
@@ -122,6 +126,7 @@ Constructs a`SQLClientInfoException`object initialized with a given`reason`,`SQL
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `failedProperties` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus)!\>!:A Map containing the property values that could not be set. The keys in the Map contain the names of the client info properties that could not be set and the values contain one of the reason codes defined in`ClientInfoStatus` <br /> |
+| --- | --- |
 
 ### SQLClientInfoException
 
@@ -144,6 +149,7 @@ Constructs a`SQLClientInfoException`object initialized with a given`reason`,`SQL
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `SQLState` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an XOPEN or SQL:2003 code identifying the exception |
 | `failedProperties` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus)!\>!:A Map containing the property values that could not be set. The keys in the Map contain the names of the client info properties that could not be set and the values contain one of the reason codes defined in`ClientInfoStatus` |
+| --- | --- |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. <br /> |
 
 ### SQLClientInfoException
@@ -185,6 +191,7 @@ Constructs a`SQLClientInfoException`object initialized with a given`reason`,`cau
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a description of the exception |
 | `failedProperties` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [ClientInfoStatus](https://developer.android.com/reference/kotlin/java/sql/ClientInfoStatus)!\>!:A Map containing the property values that could not be set. The keys in the Map contain the names of the client info properties that could not be set and the values contain one of the reason codes defined in`ClientInfoStatus` |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the underlying reason for this`SQLException`(which is saved for later retrieval by the`getCause()`method); may be null indicating the cause is non-existent or unknown. <br /> |
+| --- | --- |
 
 ### SQLClientInfoException
 

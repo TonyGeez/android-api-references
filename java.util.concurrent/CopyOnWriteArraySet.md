@@ -9,9 +9,11 @@ open class CopyOnWriteArraySet<E : Any!> : AbstractSet<E>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#)\<E\> |||
 | | ↳ | [java.util.AbstractSet](https://developer.android.com/reference/kotlin/java/util/AbstractSet.html#)\<E\> ||
 | | | ↳ | [java.util.concurrent.CopyOnWriteArraySet](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#) |
+| --- | --- | --- | --- |
 
 A [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) that uses an internal [CopyOnWriteArrayList](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList) for all of its operations. Thus, it shares the same basic properties:
 
@@ -58,18 +60,23 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#add(java.util.concurrent.CopyOnWriteArraySet.E))`(`element:` `E`)` Adds the specified element to this set if it is not already present. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection to this set if they're not already present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#clear())`()` Removes all of the elements from this set. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#contains(java.util.concurrent.CopyOnWriteArraySet.E))`(`element:` `E?`)` Returns`true`if this set contains the specified element. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns`true`if this set contains all of the elements of the specified collection. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this set for equality. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `E>`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#isEmpty())`()` Returns`true`if this set contains no elements. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#iterator())`()` Returns an iterator over the elements contained in this set in the order in which these elements were added. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#remove(java.util.concurrent.CopyOnWriteArraySet.E))`(`element:` `E?`)` Removes the specified element from this set if it is present. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes from this set all of its elements that are contained in the specified collection. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)<in` `E>`)` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this set that are contained in the specified collection. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#spliterator())`()` Returns a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#) over the elements in this set in the order in which these elements were added. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#toArray())`()` Returns an array containing all of the elements in this set. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this set; the runtime type of the returned array is that of the specified array. |
 
 | Inherited functions ||
@@ -140,6 +147,7 @@ Adds the specified element to this set if it is not already present. More formal
 | `java.lang.UnsupportedOperationException` | if the`add`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this set |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this set |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
 
@@ -166,6 +174,7 @@ Adds all of the elements in the specified collection to this set if they're not 
 | `java.lang.UnsupportedOperationException` | if the`addAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this set |
 | `java.lang.NullPointerException` | if the specified collection is null |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this set |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
 
@@ -321,6 +330,7 @@ Removes the specified element from this set if it is present. More formally, rem
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/concurrent/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this set |
+| --- | --- |
 
 ### removeAll
 
@@ -345,6 +355,7 @@ Removes from this set all of its elements that are contained in the specified co
 | `java.lang.UnsupportedOperationException` | if the`removeAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)), or if the specified collection is null |
+| --- | --- |
 
 **See Also**
 
@@ -392,6 +403,7 @@ Retains only the elements in this set that are contained in the specified collec
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this set |
 | `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com//reference/java/util/Collection.html#optional-restrictions)), or if the specified collection is null |
+| --- | --- |
 
 **See Also**
 

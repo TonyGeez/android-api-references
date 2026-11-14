@@ -3,12 +3,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # LoudnessEnhancer
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/LoudnessEnhancer "View this page in Java")
+| --- | --- |
 
 ```
 open class LoudnessEnhancer : AudioEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
 | | ↳ | [android.media.audiofx.LoudnessEnhancer](https://developer.android.com/reference/kotlin/android/media/audiofx/LoudnessEnhancer#) |
 
@@ -76,6 +78,7 @@ Class constructor.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.RuntimeException` | |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | |
 
 ## Public methods
@@ -99,6 +102,7 @@ Return the target gain.
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |
 
 ### setTargetGain
 
@@ -119,3 +123,4 @@ Set the target gain for the audio effect. The target gain is the maximum value b
 | `java.lang.IllegalArgumentException` | |
 | `java.lang.IllegalStateException` | |
 | `java.lang.UnsupportedOperationException` | |
+| --- | --- |

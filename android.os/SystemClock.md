@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SystemClock
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/SystemClock "View this page in Java") 
+| --- | --- |
 
 ```
 class SystemClock
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.SystemClock](https://developer.android.com/reference/kotlin/android/os/SystemClock#) |
 
 Core timekeeping facilities.
@@ -42,12 +44,15 @@ There are several mechanisms for controlling the timing of events:
 | static [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#) | [currentGnssTimeClock](https://developer.android.com/reference/kotlin/android/os/SystemClock#currentGnssTimeClock())`()` Returns a [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#) that starts at January 1, 1970 00:00:00. |
 | static [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#) | [currentNetworkTimeClock](https://developer.android.com/reference/kotlin/android/os/SystemClock#currentNetworkTimeClock())`()` Returns a [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#) that starts at January 1, 1970 00:00:00. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [currentThreadTimeMillis](https://developer.android.com/reference/kotlin/android/os/SystemClock#currentThreadTimeMillis())`()` Returns milliseconds running in the current thread. |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [elapsedRealtime](https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime())`()` Returns milliseconds since boot, including time spent in sleep. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [elapsedRealtimeNanos](https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtimeNanos())`()` Returns nanoseconds since boot, including time spent in sleep. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setCurrentTimeMillis](https://developer.android.com/reference/kotlin/android/os/SystemClock#setCurrentTimeMillis(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the current wall time, in milliseconds. |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](https://developer.android.com/reference/kotlin/android/os/SystemClock#sleep(kotlin.Long))`(`ms:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Waits a given number of milliseconds (of uptimeMillis) before returning. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [uptimeMillis](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis())`()` Returns milliseconds since boot, not counting time spent in deep sleep. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [uptimeNanos](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos())`()` Returns nanoseconds since boot, not counting time spent in deep sleep. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # PrintManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/print/PrintManager "View this page in Java") 
+| --- | --- |
 
 ```
 class PrintManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.print.PrintManager](https://developer.android.com/reference/kotlin/android/print/PrintManager#) |
 
 System level service for accessing the printing capabilities of the platform.
@@ -38,6 +40,7 @@ Requires the [PackageManager#FEATURE_PRINTING](https://developer.android.com/ref
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintJob](https://developer.android.com/reference/kotlin/android/print/PrintJob)!\> | [getPrintJobs](https://developer.android.com/reference/kotlin/android/print/PrintManager#getPrintJobs())`()` Gets the print jobs for this application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrintServiceEnabled](https://developer.android.com/reference/kotlin/android/print/PrintManager#isPrintServiceEnabled(android.content.ComponentName))`(`service:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)`)` Checks whether a given print service is enabled. |
 | [PrintJob](https://developer.android.com/reference/kotlin/android/print/PrintJob) | [print](https://developer.android.com/reference/kotlin/android/print/PrintManager#print(kotlin.String,%20android.print.PrintDocumentAdapter,%20android.print.PrintAttributes))`(`printJobName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `documentAdapter:` ` [PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter)`, `attributes:` ` [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes)?`)` Creates a print job for printing a [PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter) with default print attributes. |
+| --- | --- |
 
 ## Public methods
 
@@ -106,6 +109,7 @@ The default print attributes are a hint to the system how the data is to be prin
 | `printJobName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):A name for the new print job which is shown to the user. This value cannot be`null`. |
 | `documentAdapter` | [PrintDocumentAdapter](https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter):An adapter that emits the document to print. This value cannot be`null`. |
 | `attributes` | [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes)?:The default print job attributes or`null`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------|

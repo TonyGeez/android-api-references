@@ -3,15 +3,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # DeleteRangeGesture
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/DeleteRangeGesture "View this page in Java")
+| --- | --- |
 
 ```
 class DeleteRangeGesture : PreviewableHandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) |||
 | | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture) ||
 | | | ↳ | [android.view.inputmethod.DeleteRangeGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#) |
+| --- | --- | --- | --- |
 
 A subclass of `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` for deleting a range of text by defining start and end rectangles. This can be useful when the range cannot be defined with a single rectangle. This class holds the information required for deletion of text in toolkit widgets like `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
 
@@ -32,9 +35,11 @@ Note: this deletes text within a range *between* two given areas. To delete all 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#getDeletionEndArea()()` Returns the Deletion end area `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` in screen coordinates. |
+| --- | --- |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#getDeletionStartArea()()` Returns the Deletion start area `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` in screen coordinates. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#getGranularity()()` Returns Granular level on which text should be operated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 | Properties ||

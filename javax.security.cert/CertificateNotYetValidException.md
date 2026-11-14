@@ -9,9 +9,11 @@ open class CertificateNotYetValidException : CertificateException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [javax.security.cert.CertificateNotYetValidException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateNotYetValidException#) |
 
 Certificate is not yet valid exception. This is thrown whenever the current`Date`or the specified`Date`is before the`notBefore`date/time in the Certificate validity period.

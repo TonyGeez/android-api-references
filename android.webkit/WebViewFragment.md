@@ -7,12 +7,14 @@ WebViewFragment
 ===============
 
 Kotlin | [Java](/reference/android/webkit/WebViewFragment "View this page in Java") 
+| --- | --- |
 
 ```
 open class WebViewFragment : Fragment
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Fragment](../app/Fragment.html#) ||
 | | ↳ | [android.webkit.WebViewFragment](#) |
 
@@ -40,9 +42,11 @@ Summary
 | open [WebView](/reference/kotlin/android/webkit/WebView)! | [getWebView](#getWebView())`()` Gets the WebView. |
 | open [View](../view/View.html#)? | [onCreateView](#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle))`(`inflater:` ` [LayoutInflater](../view/LayoutInflater.html#)!`, `container:` ` [ViewGroup](../view/ViewGroup.html#)?`, `savedInstanceState:` ` [Bundle](../os/Bundle.html#)!`)` Called to instantiate the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](#onDestroy())`()` Called when the fragment is no longer in use. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyView](#onDestroyView())`()` Called when the WebView has been detached from the fragment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPause](#onPause())`()` Called when the fragment is visible to the user and actively running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResume](#onResume())`()` Called when the fragment is no longer resumed. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -96,6 +100,7 @@ Called to instantiate the view. Creates and returns the WebView.
 | `inflater` | [LayoutInflater](../view/LayoutInflater.html#)!: The LayoutInflater object that can be used to inflate any views in the fragment, |
 | `container` | [ViewGroup](../view/ViewGroup.html#)?: If non-null, this is the parent view that the fragment's UI should be attached to. The fragment should not add the view itself, but this can be used to generate the LayoutParams of the view. |
 | `savedInstanceState` | [Bundle](../os/Bundle.html#)!: If non-null, this fragment is being re-constructed from a previous saved state as given here. |
+| --- | --- |
 
 | Return ||
 |-----------------------------|-------------------------------------------------|

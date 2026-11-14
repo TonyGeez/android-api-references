@@ -7,9 +7,11 @@ open class Toolbar : ViewGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
 | | | ↳ | [android.widget.Toolbar](https://developer.android.com/reference/kotlin/android/widget/Toolbar#) |
+| --- | --- | --- | --- |
 
 A standard toolbar for use within application content.
 
@@ -39,30 +41,39 @@ In modern Android UIs developers should lean more on a visually distinct color s
 | [`android:buttonGravity`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
 | [`android:collapseContentDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Text to set as the content description for the collapse button. |
 | [`android:collapseIcon`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Icon drawable to use for the collapse button. |
+| --- | --- |
 | [`android:contentInsetEnd`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
 | [`android:contentInsetEndWithActions`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar when actions from a menu are present. |
 | [`android:contentInsetLeft`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
+| --- | --- |
 | [`android:contentInsetRight`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
 | [`android:contentInsetStart`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
 | [`android:contentInsetStartWithNavigation`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar when a navigation button is present, such as the Up button. |
+| --- | --- |
 | [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies how an object should position its content, on both the X and Y axes, within its own bounds. |
 | [`android:logo`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Drawable to set as the logo that appears at the starting side of the Toolbar, just after the navigation button. |
 | [`android:logoDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A content description string to describe the appearance of the associated logo image. |
+| --- | --- |
 | [`android:maxButtonHeight`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
 | [`android:navigationContentDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Text to set as the content description for the navigation button located at the start of the toolbar. |
 | [`android:navigationIcon`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Icon drawable to use for the navigation button located at the start of the toolbar. |
+| --- | --- |
 | [`android:popupTheme`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Reference to a theme that should be used to inflate popups shown by widgets in the toolbar. |
 | [`android:subtitle`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies subtitle text used for navigationMode="normal". |
 | [`android:subtitleTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
+| --- | --- |
 | [`android:subtitleTextColor`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A color to apply to the subtitle string. |
 | [`android:title`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | The title associated with the item. |
 | [`android:titleMargin`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the left, start, right and end sides of the toolbar's title. |
+| --- | --- |
 | [`android:titleMarginBottom`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the bottom side of the toolbar's title. |
 | [`android:titleMarginEnd`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the end side of the toolbar's title. |
 | [`android:titleMarginStart`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the start side of the toolbar's title. |
+| --- | --- |
 | [`android:titleMarginTop`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the top side of the toolbar's title. |
 | [`android:titleTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
 | [`android:titleTextColor`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A color to apply to the title string. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -342,6 +353,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -458,6 +470,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -606,6 +619,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1772,69 +1786,91 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#collapseActionView()()` Collapse a currently expanded action view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#dismissPopupMenus()()` Dismiss all currently showing popup menus, including overflow or submenus. |
 | open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCollapseContentDescription()()` Retrieve the currently configured content description for the collapse button view. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCollapseIcon()()` Return the current drawable used as the collapse icon. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetEnd()()` Gets the ending content inset for this toolbar. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetEndWithActions()()` Gets the end content inset to use when action buttons are present. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetLeft()()` Gets the left content inset for this toolbar. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetRight()()` Gets the right content inset for this toolbar. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetStart()()` Gets the starting content inset for this toolbar. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetStartWithNavigation()()` Gets the start content inset to use when a navigation button is present. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetEnd()()` Gets the content inset that will be used on the ending side of the bar in the current toolbar configuration. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetLeft()()` Gets the content inset that will be used on the left side of the bar in the current toolbar configuration. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetRight()()` Gets the content inset that will be used on the right side of the bar in the current toolbar configuration. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetStart()()` Gets the content inset that will be used on the starting side of the bar in the current toolbar configuration. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getLogo()()` Return the current logo drawable. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getLogoDescription()()` Return the description of the toolbar's logo. |
 | open [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getMenu()()` Return the Menu shown in the toolbar. |
+| --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getNavigationContentDescription()()` Retrieve the currently configured content description for the navigation button view. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getNavigationIcon()()` Return the current drawable used as the navigation icon. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getOverflowIcon()()` Return the current drawable used as the overflow icon. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getPopupTheme()()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getSubtitle()()` Return the subtitle of this toolbar. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getTitle()()` Returns the title of this toolbar. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getTitleMarginBottom()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getTitleMarginEnd()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getTitleMarginStart()()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getTitleMarginTop()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#hasExpandedActionView()()` Check whether this Toolbar is currently hosting an expanded action view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#hideOverflowMenu()()` Hide the overflow items from the associated menu. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#inflateMenu(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inflate a menu resource into this toolbar. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#isOverflowMenuShowing()()` Check whether the overflow menu is currently showing. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setCollapseContentDescription(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a content description for the collapse button if one is present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setCollapseContentDescription(kotlin.CharSequence)(description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Set a content description for the collapse button if one is present. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setCollapseIcon(android.graphics.drawable.Drawable)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Set the icon to use for the toolbar's collapse button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setCollapseIcon(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the icon to use for the toolbar's collapse button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setContentInsetEndWithActions(kotlin.Int)(insetEndWithActions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the start content inset to use when action buttons are present. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setContentInsetStartWithNavigation(kotlin.Int)(insetStartWithNavigation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the start content inset to use when a navigation button is present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setContentInsetsAbsolute(kotlin.Int,%20kotlin.Int)(contentInsetLeft: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contentInsetRight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the content insets for this toolbar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setContentInsetsRelative(kotlin.Int,%20kotlin.Int)(contentInsetStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contentInsetEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the content insets for this toolbar relative to layout direction. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setLogo(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set a logo drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setLogo(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a logo drawable from a resource id. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setLogoDescription(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a description of the toolbar's logo. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setLogoDescription(kotlin.CharSequence)(description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set a description of the toolbar's logo. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setNavigationContentDescription(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a content description for the navigation button if one is present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setNavigationContentDescription(kotlin.CharSequence)(description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Set a content description for the navigation button if one is present. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setNavigationIcon(android.graphics.drawable.Drawable)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Set the icon to use for the toolbar's navigation button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setNavigationIcon(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the icon to use for the toolbar's navigation button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setNavigationOnClickListener(android.view.View.OnClickListener)(listener: https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#!)` Set a listener to respond to navigation events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setOnMenuItemClickListener(android.widget.Toolbar.OnMenuItemClickListener)(listener: https://developer.android.com/reference/kotlin/android/widget/Toolbar.OnMenuItemClickListener!)` Set a listener to respond to menu item click events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setOverflowIcon(android.graphics.drawable.Drawable)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#?)` Set the icon to use for the overflow button. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setPopupTheme(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies the theme to use when inflating popup menus. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setSubtitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the subtitle of this toolbar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setSubtitle(kotlin.CharSequence)(subtitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the subtitle of this toolbar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setSubtitleTextAppearance(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color, size, style, hint color, and highlight color from the specified TextAppearance resource. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setSubtitleTextColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color of the subtitle, if present. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the title of this toolbar. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the title of this toolbar. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleMargin(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the title margin. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleMarginBottom(kotlin.Int)(margin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bottom title margin in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleMarginEnd(kotlin.Int)(margin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the ending title margin in pixels. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleMarginStart(kotlin.Int)(margin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the starting title margin in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleMarginTop(kotlin.Int)(margin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the top title margin in pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleTextAppearance(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color, size, style, hint color, and highlight color from the specified TextAppearance resource. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#setTitleTextColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text color of the title, if present. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#showOverflowMenu()()` Show the overflow items from the associated menu. |
 
@@ -1843,12 +1879,15 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
 | open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
 | open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -2758,6 +2797,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4616,6 +4656,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8363,21 +8404,26 @@ android:gravity
 Specifies how an object should position its content, on both the X and Y axes, within its own bounds.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 
 | Constant | Value | Description |
 |---|---|---|
 | bottom | 50 | Push object to the bottom of its container, not changing its size. |
 | center | 11 | Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
 | center_horizontal | 1 | Place object in the horizontal center of its container, not changing its size. |
+| --- | --- | --- |
 | center_vertical | 10 | Place object in the vertical center of its container, not changing its size. |
 | clip_horizontal | 8 | Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. |
 | clip_vertical | 80 | Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. |
+| --- | --- | --- |
 | end | 800005 | Push object to the end of its container, not changing its size. |
 | fill | 77 | Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
 | fill_horizontal | 7 | Grow the horizontal size of the object if needed so it completely fills its container. |
+| --- | --- | --- |
 | fill_vertical | 70 | Grow the vertical size of the object if needed so it completely fills its container. |
 | left | 3 | Push object to the left of its container, not changing its size. |
 | right | 5 | Push object to the right of its container, not changing its size. |
+| --- | --- | --- |
 | start | 800003 | Push object to the beginning of its container, not changing its size. |
 | top | 30 | Push object to the top of its container, not changing its size. |
 
@@ -9613,6 +9659,7 @@ Sets the title margin.
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the starting title margin in pixels |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the top title margin in pixels |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ending title margin in pixels |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the bottom title margin in pixels |
 
 **See Also**
@@ -9820,6 +9867,7 @@ Called from layout when this view should assign a size and position to each of i
 | `changed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This is a new size or position for this view |
 | `left` | Left position, relative to parent |
 | `top` | Top position, relative to parent |
+| --- | --- |
 | `right` | Right position, relative to parent |
 | `bottom` | Bottom position, relative to parent |
 

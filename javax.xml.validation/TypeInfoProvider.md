@@ -9,6 +9,7 @@ abstract class TypeInfoProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.xml.validation.TypeInfoProvider](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider#) |
 
 This class provides access to the type information determined by [ValidatorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler).
@@ -28,6 +29,7 @@ Implementation of this "interface" can be obtained through the [ValidatorHandler
 | abstract [TypeInfo](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-type-info/index.html)! | [getAttributeTypeInfo](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider#getAttributeTypeInfo(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the immutable [TypeInfo](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-type-info/index.html) object for the specified attribute of the current element. |
 | abstract [TypeInfo](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-type-info/index.html)! | [getElementTypeInfo](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider#getElementTypeInfo())`()` Returns the immutable [TypeInfo](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-type-info/index.html) object for the current element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdAttribute](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider#isIdAttribute(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the specified attribute is determined to be ID. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpecified](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider#isSpecified(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns false if the attribute was added by the validator. |
 
 ## Protected constructors

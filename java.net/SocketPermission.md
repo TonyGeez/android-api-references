@@ -9,6 +9,7 @@ class SocketPermission : Permission, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) ||
 | | ↳ | [java.net.SocketPermission](https://developer.android.com/reference/kotlin/java/net/SocketPermission#) |
 

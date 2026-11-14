@@ -5,12 +5,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # BluetoothClass
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothClass "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothClass : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#) |
 
 Represents a Bluetooth class, which describes general characteristics and capabilities of a device. For example, a Bluetooth class will specify the general device type such as a phone, a computer, or headset, and whether it's capable of services such as audio or telephony.
@@ -33,6 +35,7 @@ Use [BluetoothDevice.getBluetoothClass](https://developer.android.com/reference/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_A2DP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_A2DP:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HEADSET](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_HEADSET:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HID](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_HID:kotlin.Int) <br /> |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -43,12 +46,15 @@ Use [BluetoothDevice.getBluetoothClass](https://developer.android.com/reference/
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doesClassMatch](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#doesClassMatch(kotlin.Int))`(`profile:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Check class bits for possible bluetooth profile support. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#getDeviceClass())`()` Return the (major and minor) device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorDeviceClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#getMajorDeviceClass())`()` Return the major device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#hasService(kotlin.Int))`(`service:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified service class is supported by this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,12 +9,15 @@ open class ProviderException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.security.ProviderException](https://developer.android.com/reference/kotlin/java/security/ProviderException#) |
 
 | Known Direct Subclasses [BackendBusyException](https://developer.android.com/reference/kotlin/android/security/keystore/BackendBusyException.html#), [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException.html#), [StrongBoxUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/StrongBoxUnavailableException.html#) |-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [BackendBusyException](https://developer.android.com/reference/kotlin/android/security/keystore/BackendBusyException.html#) | Indicates a transient error that prevented a key operation from being created. | | [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException.html#) | Indicates that the Keystore does not support securely importing wrapped keys. | | [StrongBoxUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/StrongBoxUnavailableException.html#) | Indicates that an operation could not be performed because the requested security hardware is not available. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A runtime exception for Provider exceptions (such as misconfiguration errors or unrecoverable internal errors), which may be subclassed by Providers to throw specialized, provider-specific runtime errors.
 

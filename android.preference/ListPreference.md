@@ -4,15 +4,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # ListPreference
 
 Kotlin | [Java](https://developer.android.com/reference/android/preference/ListPreference "View this page in Java")
+| --- | --- |
 
 ```
 open class ListPreference : DialogPreference
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference) ||
 | | | ↳ | [android.preference.ListPreference](https://developer.android.com/reference/kotlin/android/preference/ListPreference#) |
+| --- | --- | --- | --- |
 
 > [!CAUTION]
 > **This class was deprecated in API level 29.**
@@ -51,15 +54,19 @@ This preference will store a string into the SharedPreferences. This string will
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#findIndexOfValue(kotlin.String)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the index of the given value (in the entry values array). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#getEntries()()` The list of entries to be shown in the list in subsequent dialogs. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#getEntry()()` Returns the entry corresponding to the current value. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#getEntryValues()()` Returns the array of values to be saved for the preference. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#getSummary()()` Returns the summary of this ListPreference. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#getValue()()` Returns the value of the key. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setEntries(kotlin.Int)(entriesResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setEntries(kotlin.Array)(entries: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>!)` Sets the human-readable entries to be shown in the list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setEntryValues(kotlin.Int)(entryValuesResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setEntryValues(kotlin.Array)(entryValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>!)` The array to find the value to save for a preference when an entry from entries is selected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setSummary(kotlin.CharSequence)(summary: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the summary for this Preference with a CharSequence. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setValue(kotlin.String)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the value of the key. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#setValueIndex(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the value to the given index from the entry values. |
 
 | Protected methods ||
@@ -67,9 +74,11 @@ This preference will store a string into the SharedPreferences. This string will
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onDialogClosed(kotlin.Boolean)(positiveResult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the dialog is dismissed and should be used to save data to the `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#`. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int)(a: https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a Preference is being inflated and the default value attribute needs to be read. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onPrepareDialogBuilder(android.app.AlertDialog.Builder)(builder: https://developer.android.com/reference/kotlin/android/app/AlertDialog.Builder.html#!)` Prepares the dialog builder to be shown when the preference is clicked. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a Preference to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState()`. |
 | open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onSaveInstanceState()()` Hook allowing a Preference to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/ListPreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any)(restoreValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Implement this to set the initial value of the Preference. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

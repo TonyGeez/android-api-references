@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # WindowId
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowId "View this page in Java") 
+| --- | --- |
 
 ```
 open class WindowId : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.WindowId](https://developer.android.com/reference/kotlin/android/view/WindowId#) |
 
 Safe identifier for a window. This currently allows you to retrieve and observe the input focus state of the window. Most applications will not use this, instead relying on the simpler (and more efficient) methods available on [View](https://developer.android.com/reference/kotlin/android/view/View). This classes is useful when window input interactions need to be done across processes: the class itself is a Parcelable that can be passed to other processes for them to interact with your window, and it provides a limited safe API that doesn't allow the other process to negatively harm your window.
@@ -30,9 +32,11 @@ Safe identifier for a window. This currently allows you to retrieve and observe 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/WindowId#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/WindowId#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Comparison operator on two IntentSender objects, such that true is returned then they both represent the same operation from the same package. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/WindowId#hashCode())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFocused](https://developer.android.com/reference/kotlin/android/view/WindowId#isFocused())`()` Retrieve the current focus state of the associated window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerFocusObserver](https://developer.android.com/reference/kotlin/android/view/WindowId#registerFocusObserver(android.view.WindowId.FocusObserver))`(`observer:` ` [WindowId.FocusObserver](https://developer.android.com/reference/kotlin/android/view/WindowId.FocusObserver)!`)` Start monitoring for changes in the focus state of the window. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/WindowId#toString())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterFocusObserver](https://developer.android.com/reference/kotlin/android/view/WindowId#unregisterFocusObserver(android.view.WindowId.FocusObserver))`(`observer:` ` [WindowId.FocusObserver](https://developer.android.com/reference/kotlin/android/view/WindowId.FocusObserver)!`)` Stop monitoring changes in the focus state of the window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/WindowId#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

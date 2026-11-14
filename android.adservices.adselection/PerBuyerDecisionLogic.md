@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 12](https://developer.android.com/sdkExtensions)
 # PerBuyerDecisionLogic
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/adselection/PerBuyerDecisionLogic "View this page in Java") 
+| --- | --- |
 
 ```
 class PerBuyerDecisionLogic : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.PerBuyerDecisionLogic](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#) |
 
 The override object for decision logic JS per buyer for [SignedContextualAds](https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds).
@@ -37,6 +39,7 @@ See [CustomAudience.getBiddingLogicUri()](https://developer.android.com/referenc
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#)!, [DecisionLogic](https://developer.android.com/reference/kotlin/android/adservices/adselection/DecisionLogic)!\> | [getPerBuyerLogicMap](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#getPerBuyerLogicMap())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

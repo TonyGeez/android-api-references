@@ -9,6 +9,7 @@ open class BigDecimal : Number, Comparable<BigDecimal!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.math.BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#) |
 
@@ -33,9 +34,11 @@ For methods and constructors with a`MathContext`parameter, if the result is inex
 Besides a logical exact result, each arithmetic operation has a preferred scale for representing a result. The preferred scale for each operation is listed in the table below.
 
 | Operation | Preferred Scale of Result |
+| --- | --- |
 | Add | max(addend.scale(), augend.scale()) |
 | Subtract | max(minuend.scale(), subtrahend.scale()) |
 | Multiply | multiplier.scale() + multiplicand.scale() |
+| --- | --- |
 | Divide | dividend.scale() - divisor.scale() |
 | Square root | radicand.scale()/2 |
 |-------------|-------------------------------------------|
@@ -66,9 +69,11 @@ All methods and constructors for this class throw`NullPointerException`when pass
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_CEILING](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_CEILING:kotlin.Int) Rounding mode to round towards positive infinity. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_DOWN](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_DOWN:kotlin.Int) Rounding mode to round towards zero. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_FLOOR](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_FLOOR:kotlin.Int) Rounding mode to round towards negative infinity. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_DOWN](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_HALF_DOWN:kotlin.Int) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_EVEN](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_HALF_EVEN:kotlin.Int) Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_UP](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_HALF_UP:kotlin.Int) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UNNECESSARY](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_UNNECESSARY:kotlin.Int) Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UP](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ROUND_UP:kotlin.Int) Rounding mode to round away from zero. |
 
@@ -96,63 +101,83 @@ All methods and constructors for this class throw`NullPointerException`when pass
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [abs](https://developer.android.com/reference/kotlin/java/math/BigDecimal#abs())`()` Returns a`BigDecimal`whose value is the absolute value of this`BigDecimal`, and whose scale is`this.scale()`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [abs](https://developer.android.com/reference/kotlin/java/math/BigDecimal#abs(java.math.MathContext))`(`mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is the absolute value of this`BigDecimal`, with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [add](https://developer.android.com/reference/kotlin/java/math/BigDecimal#add(java.math.BigDecimal))`(`augend:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is`(this + augend)`, and whose scale is`max(this.scale(), augend.scale())`. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [add](https://developer.android.com/reference/kotlin/java/math/BigDecimal#add(java.math.BigDecimal,%20java.math.MathContext))`(`augend:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(this + augend)`, with rounding according to the context settings. |
 | open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [byteValueExact](https://developer.android.com/reference/kotlin/java/math/BigDecimal#byteValueExact())`()` Converts this`BigDecimal`to a`byte`, checking for lost information. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/math/BigDecimal#compareTo(java.math.BigDecimal))`(`other:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Compares this`BigDecimal`numerically with the specified`BigDecimal`. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is`(this / divisor)`, and whose preferred scale is`(this.scale() - divisor.scale())`; if the exact quotient cannot be represented (because it has a non-terminating decimal expansion) an`ArithmeticException`is thrown. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal,%20kotlin.Int))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `roundingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is`this.scale()`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal,%20kotlin.Int,%20kotlin.Int))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `scale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `roundingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is as specified. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal,%20kotlin.Int,%20java.math.RoundingMode))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `scale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `roundingMode:` ` [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode)!`)` Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is as specified. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal,%20java.math.MathContext))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(this / divisor)`, with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divide](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divide(java.math.BigDecimal,%20java.math.RoundingMode))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `roundingMode:` ` [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode)!`)` Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is`this.scale()`. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!\>! | [divideAndRemainder](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divideAndRemainder(java.math.BigDecimal))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a two-element`BigDecimal`array containing the result of`divideToIntegralValue`followed by the result of`remainder`on the two operands. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!\>! | [divideAndRemainder](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divideAndRemainder(java.math.BigDecimal,%20java.math.MathContext))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a two-element`BigDecimal`array containing the result of`divideToIntegralValue`followed by the result of`remainder`on the two operands calculated with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divideToIntegralValue](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divideToIntegralValue(java.math.BigDecimal))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is the integer part of the quotient`(this / divisor)`rounded down. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [divideToIntegralValue](https://developer.android.com/reference/kotlin/java/math/BigDecimal#divideToIntegralValue(java.math.BigDecimal,%20java.math.MathContext))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is the integer part of`(this / divisor)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/math/BigDecimal#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`BigDecimal`with the specified`Object`for equality. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/math/BigDecimal#hashCode())`()` Returns the hash code for this`BigDecimal`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValueExact](https://developer.android.com/reference/kotlin/java/math/BigDecimal#intValueExact())`()` Converts this`BigDecimal`to an`int`, checking for lost information. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [longValueExact](https://developer.android.com/reference/kotlin/java/math/BigDecimal#longValueExact())`()` Converts this`BigDecimal`to a`long`, checking for lost information. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [max](https://developer.android.com/reference/kotlin/java/math/BigDecimal#max(java.math.BigDecimal))`(`val:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns the maximum of this`BigDecimal`and`val`. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [min](https://developer.android.com/reference/kotlin/java/math/BigDecimal#min(java.math.BigDecimal))`(`val:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns the minimum of this`BigDecimal`and`val`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [movePointLeft](https://developer.android.com/reference/kotlin/java/math/BigDecimal#movePointLeft(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`which is equivalent to this one with the decimal point moved`n`places to the left. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [movePointRight](https://developer.android.com/reference/kotlin/java/math/BigDecimal#movePointRight(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`which is equivalent to this one with the decimal point moved`n`places to the right. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [multiply](https://developer.android.com/reference/kotlin/java/math/BigDecimal#multiply(java.math.BigDecimal))`(`multiplicand:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is`(this × multiplicand)`, and whose scale is`(this.scale() + multiplicand.scale())`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [multiply](https://developer.android.com/reference/kotlin/java/math/BigDecimal#multiply(java.math.BigDecimal,%20java.math.MathContext))`(`multiplicand:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(this × multiplicand)`, with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [negate](https://developer.android.com/reference/kotlin/java/math/BigDecimal#negate())`()` Returns a`BigDecimal`whose value is`(-this)`, and whose scale is`this.scale()`. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [negate](https://developer.android.com/reference/kotlin/java/math/BigDecimal#negate(java.math.MathContext))`(`mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(-this)`, with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [plus](https://developer.android.com/reference/kotlin/java/math/BigDecimal#plus())`()` Returns a`BigDecimal`whose value is`(+this)`, and whose scale is`this.scale()`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [plus](https://developer.android.com/reference/kotlin/java/math/BigDecimal#plus(java.math.MathContext))`(`mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(+this)`, with rounding according to the context settings. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [pow](https://developer.android.com/reference/kotlin/java/math/BigDecimal#pow(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`whose value is`(thisn)`, The power is computed exactly, to unlimited precision. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [pow](https://developer.android.com/reference/kotlin/java/math/BigDecimal#pow(kotlin.Int,%20java.math.MathContext))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(thisn)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [precision](https://developer.android.com/reference/kotlin/java/math/BigDecimal#precision())`()` Returns the*precision* of this`BigDecimal`. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [remainder](https://developer.android.com/reference/kotlin/java/math/BigDecimal#remainder(java.math.BigDecimal))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is`(this % divisor)`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [remainder](https://developer.android.com/reference/kotlin/java/math/BigDecimal#remainder(java.math.BigDecimal,%20java.math.MathContext))`(`divisor:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(this % divisor)`, with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [round](https://developer.android.com/reference/kotlin/java/math/BigDecimal#round(java.math.MathContext))`(`mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`rounded according to the`MathContext`settings. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [scale](https://developer.android.com/reference/kotlin/java/math/BigDecimal#scale())`()` Returns the*scale* of this`BigDecimal`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [scaleByPowerOfTen](https://developer.android.com/reference/kotlin/java/math/BigDecimal#scaleByPowerOfTen(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigDecimal whose numerical value is equal to (`this`\* 10n). |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [setScale](https://developer.android.com/reference/kotlin/java/math/BigDecimal#setScale(kotlin.Int))`(`newScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`whose scale is the specified value, and whose value is numerically equal to this`BigDecimal`'s. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [setScale](https://developer.android.com/reference/kotlin/java/math/BigDecimal#setScale(kotlin.Int,%20kotlin.Int))`(`newScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `roundingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`BigDecimal`whose scale is the specified value, and whose unscaled value is determined by multiplying or dividing this`BigDecimal`'s unscaled value by the appropriate power of ten to maintain its overall value. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [setScale](https://developer.android.com/reference/kotlin/java/math/BigDecimal#setScale(kotlin.Int,%20java.math.RoundingMode))`(`newScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `roundingMode:` ` [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode)!`)` Returns a`BigDecimal`whose scale is the specified value, and whose unscaled value is determined by multiplying or dividing this`BigDecimal`'s unscaled value by the appropriate power of ten to maintain its overall value. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [shortValueExact](https://developer.android.com/reference/kotlin/java/math/BigDecimal#shortValueExact())`()` Converts this`BigDecimal`to a`short`, checking for lost information. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](https://developer.android.com/reference/kotlin/java/math/BigDecimal#signum())`()` Returns the signum function of this`BigDecimal`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [sqrt](https://developer.android.com/reference/kotlin/java/math/BigDecimal#sqrt(java.math.MathContext))`(`mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns an approximation to the square root of`this`with rounding according to the context settings. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [stripTrailingZeros](https://developer.android.com/reference/kotlin/java/math/BigDecimal#stripTrailingZeros())`()` Returns a`BigDecimal`which is numerically equal to this one but with any trailing zeros removed from the representation. |
+| --- | --- |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [subtract](https://developer.android.com/reference/kotlin/java/math/BigDecimal#subtract(java.math.BigDecimal))`(`subtrahend:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`)` Returns a`BigDecimal`whose value is`(this - subtrahend)`, and whose scale is`max(this.scale(), subtrahend.scale())`. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [subtract](https://developer.android.com/reference/kotlin/java/math/BigDecimal#subtract(java.math.BigDecimal,%20java.math.MathContext))`(`subtrahend:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!`, `mc:` ` [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!`)` Returns a`BigDecimal`whose value is`(this - subtrahend)`, with rounding according to the context settings. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger)! | [toBigInteger](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toBigInteger())`()` Converts this`BigDecimal`to a`BigInteger`. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger)! | [toBigIntegerExact](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toBigIntegerExact())`()` Converts this`BigDecimal`to a`BigInteger`, checking for lost information. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toDouble())`()` Converts this`BigDecimal`to a`double`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toEngineeringString](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toEngineeringString())`()` Returns a string representation of this`BigDecimal`, using engineering notation if an exponent is needed. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toFloat())`()` Converts this`BigDecimal`to a`float`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toInt())`()` Converts this`BigDecimal`to an`int`. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toLong())`()` Converts this`BigDecimal`to a`long`. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPlainString](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toPlainString())`()` Returns a string representation of this`BigDecimal`without an exponent field. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/math/BigDecimal#toString())`()` Returns the string representation of this`BigDecimal`, using scientific notation if an exponent is needed. |
 | open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [ulp](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ulp())`()` Returns the size of an ulp, a unit in the last place, of this`BigDecimal`. |
+| --- | --- |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger)! | [unscaledValue](https://developer.android.com/reference/kotlin/java/math/BigDecimal#unscaledValue())`()` Returns a`BigInteger`whose value is the*unscaled value* of this`BigDecimal`. |
 | openstatic [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [valueOf](https://developer.android.com/reference/kotlin/java/math/BigDecimal#valueOf(kotlin.Double))`(`val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Translates a`double`into a`BigDecimal`, using the`double`'s canonical string representation provided by the [Double.toString(double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double))method. |
 | openstatic [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [valueOf](https://developer.android.com/reference/kotlin/java/math/BigDecimal#valueOf(kotlin.Long))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Translates a`long`value into a`BigDecimal`with a scale of zero. |
+| --- | --- |
 | openstatic [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [valueOf](https://developer.android.com/reference/kotlin/java/math/BigDecimal#valueOf(kotlin.Long,%20kotlin.Int))`(`unscaledVal:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `scale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a`long`unscaled value and an`int`scale into a`BigDecimal`. |
 
 | Properties ||
@@ -160,6 +185,7 @@ All methods and constructors for this class throw`NullPointerException`when pass
 | static [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [ONE](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ONE:java.math.BigDecimal) The value 1, with a scale of 0. |
 | static [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [TEN](https://developer.android.com/reference/kotlin/java/math/BigDecimal#TEN:java.math.BigDecimal) The value 10, with a scale of 0. |
 | static [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)! | [ZERO](https://developer.android.com/reference/kotlin/java/math/BigDecimal#ZERO:java.math.BigDecimal) The value 0, with a scale of 0. |
+| --- | --- |
 
 ## Constants
 
@@ -321,6 +347,7 @@ Translates a character array representation of a`BigDecimal`into a`BigDecimal`, 
 | `in` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:`char`array that is the source of characters. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):first character in the array to inspect. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of characters to consider. |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -345,6 +372,7 @@ Translates a character array representation of a`BigDecimal`into a`BigDecimal`, 
 | `in` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:`char`array that is the source of characters. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):first character in the array to inspect. |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of characters to consider. |
+| --- | --- |
 | `mc` | [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!:the context to use. |
 
 | Exceptions ||
@@ -604,6 +632,7 @@ Translates a`BigInteger`unscaled value and an`int`scale into a`BigDecimal`, with
 | `unscaledVal` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger)!:unscaled value of the`BigDecimal`. |
 | `scale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):scale of the`BigDecimal`. |
 | `mc` | [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext)!:the context to use. |
+| --- | --- |
 
 ### BigDecimal
 
@@ -854,6 +883,7 @@ Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is as spe
 | `divisor` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!:value by which this`BigDecimal`is to be divided. |
 | `scale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):scale of the`BigDecimal`quotient to be returned. |
 | `roundingMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rounding mode to apply. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------|------------------|
@@ -894,6 +924,7 @@ Returns a`BigDecimal`whose value is`(this / divisor)`, and whose scale is as spe
 | `divisor` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal#)!:value by which this`BigDecimal`is to be divided. |
 | `scale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):scale of the`BigDecimal`quotient to be returned. |
 | `roundingMode` | [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode)!:rounding mode to apply. |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------|------------------|

@@ -11,6 +11,7 @@ interface ChronoLocalDate : Comparable<ChronoLocalDate!>, Temporal, TemporalAd
 | [java.time.chrono.ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#) |
 
 | Known Direct Subclasses [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate), [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate), [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#), [MinguoDate](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoDate), [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [HijrahDate](https://developer.android.com/reference/kotlin/java/time/chrono/HijrahDate) | A date in the Hijrah calendar system. | | [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate) | A date in the Japanese Imperial calendar system. | | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#) | A date without a time-zone in the ISO-8601 calendar system, such as`2007-12-03`. | | [MinguoDate](https://developer.android.com/reference/kotlin/java/time/chrono/MinguoDate) | A date in the Minguo calendar system. | | [ThaiBuddhistDate](https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate) | A date in the Thai Buddhist calendar system. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A date without time-of-day or time-zone in an arbitrary chronology, intended for advanced globalization use cases.
 
@@ -90,27 +91,35 @@ Developers writing low-level frameworks or libraries should also avoid this inte
 | open [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)! | [adjustInto](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#adjustInto(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!`)` Adjusts the specified temporal object to have the same date as this object. |
 | open [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<\*\>! | [atTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#atTime(java.time.LocalTime))`(`localTime:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)!`)` Combines this date with a time to create a`ChronoLocalDateTime`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#compareTo(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!`)` Compares this date to another date, including the chronology. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#format(java.time.format.DateTimeFormatter))`(`formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#)!`)` Formats this date using the specified formatter. |
 | openstatic [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [from](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!`)` Obtains an instance of`ChronoLocalDate`from a temporal object. |
 | abstract [Chronology](https://developer.android.com/reference/kotlin/java/time/chrono/Chronology)! | [getChronology](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#getChronology())`()` Gets the chronology of this date. |
+| --- | --- |
 | open [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)! | [getEra](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#getEra())`()` Gets the era, as defined by the chronology. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isAfter(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!`)` Checks if this date is after the specified date ignoring the chronology. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isBefore(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!`)` Checks if this date is before the specified date ignoring the chronology. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isEqual(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!`)` Checks if this date is equal to the specified date ignoring the chronology. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isLeapYear())`()` Checks if the year is a leap year, as defined by the calendar system. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` Checks if the specified field is supported. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isSupported(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` Checks if the specified unit is supported. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#lengthOfMonth())`()` Returns the length of the month represented by this date, as defined by the calendar system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#lengthOfYear())`()` Returns the length of the year represented by this date, as defined by the calendar system. |
+| --- | --- |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#minus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount subtracted. |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` Returns an object of the same type as this object with the specified period subtracted. |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#plus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount added. |
+| --- | --- |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` Returns an object of the same type as this object with the specified period added. |
 | openR | [query](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#query(java.time.temporal.TemporalQuery))`(`query:` ` [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)<R>!`)` Queries this date using the specified query. |
 | openstatic [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\< [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!\>! | [timeLineOrder](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#timeLineOrder())`()` Gets a comparator that compares`ChronoLocalDate`in time-line order ignoring the chronology. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#toEpochDay())`()` Converts this date to the Epoch Day. |
 | abstract [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod)! | [until](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#until(java.time.chrono.ChronoLocalDate))`(`endDateExclusive:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)!`)` Calculates the period between this date and another date as a`ChronoPeriod`. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit))`(`endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` Calculates the amount of time until another date in terms of the specified unit. |
+| --- | --- |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#with(java.time.temporal.TemporalAdjuster))`(`adjuster:` ` [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
 | open [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#with(java.time.temporal.TemporalField,%20kotlin.Long))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an object of the same type as this object with the specified field altered. |
 
@@ -545,6 +554,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.time.DateTimeException` | if the unit cannot be subtracted |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### plus
 
@@ -613,6 +623,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.time.DateTimeException` | if the unit cannot be added |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### query
 
@@ -758,6 +769,7 @@ This instance is immutable and unaffected by this method call.
 | `java.time.DateTimeException` | if the amount cannot be calculated, or the end temporal cannot be converted to a`ChronoLocalDate` |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the unit is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |
 
 ### with
 
@@ -824,3 +836,4 @@ In some cases, changing a field is not fully defined. For example, if the target
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported |
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
+| --- | --- |

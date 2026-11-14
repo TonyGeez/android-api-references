@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ContentCaptureManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager "View this page in Java") 
+| --- | --- |
 
 ```
 class ContentCaptureManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.contentcapture.ContentCaptureManager](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#) |
 
 Provides additional ways for apps to integrate with the content capture subsystem.
@@ -131,15 +133,18 @@ If your view provides its own virtual hierarchy (for example, if it's a browser 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_CONCURRENT_REQUEST](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_CONCURRENT_REQUEST:kotlin.Int) Request has been rejected, because a concurrent data share sessions is in progress. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED:kotlin.Int) Request has been interrupted because of data share session timeout. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_UNKNOWN:kotlin.Int) Error happened during the data sharing session. |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ContentCaptureCondition](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition)!\>? | [getContentCaptureConditions](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#getContentCaptureConditions())`()` Gets the list of conditions for when content capture should be allowed. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getServiceComponentName](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#getServiceComponentName())`()` Returns the component name of the system service that is consuming the captured events for the current user. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContentCaptureEnabled](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#isContentCaptureEnabled())`()` Checks whether content capture is enabled for this activity. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeData](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#removeData(android.view.contentcapture.DataRemovalRequest))`(`request:` ` [DataRemovalRequest](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest)`)` Called by the app to request the content capture service to remove content capture data associated with some context. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentCaptureEnabled](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#setContentCaptureEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by apps to explicitly enable or disable content capture. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shareData](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#shareData(android.view.contentcapture.DataShareRequest,%20java.util.concurrent.Executor,%20android.view.contentcapture.DataShareWriteAdapter))`(`request:` ` [DataShareRequest](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareRequest)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `dataShareWriteAdapter:` ` [DataShareWriteAdapter](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter)`)` Called by the app to request data sharing via writing to a file. |
+| --- | --- |
 
 ## Constants
 
@@ -284,3 +289,4 @@ Note: using this API doesn't guarantee the app staying alive and is "best-effort
 | `request` | [DataShareRequest](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareRequest):object specifying details of the data being shared. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
 | `dataShareWriteAdapter` | [DataShareWriteAdapter](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter):This value cannot be`null`. |
+| --- | --- |

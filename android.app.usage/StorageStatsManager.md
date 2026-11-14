@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # StorageStatsManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/StorageStatsManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class StorageStatsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.StorageStatsManager](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#) |
 
 Access to detailed storage statistics. This provides a summary of how apps, users, and external/shared storage is utilizing disk space.
@@ -24,9 +26,11 @@ Note: no permissions are required when calling these APIs for your own package o
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeBytes](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#getFreeBytes(java.util.UUID))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`)` Return the free space on the requested storage volume. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalBytes](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#getTotalBytes(java.util.UUID))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`)` Return the total size of the underlying physical media that is hosting this storage volume. |
 | open [ExternalStorageStats](https://developer.android.com/reference/kotlin/android/app/usage/ExternalStorageStats) | [queryExternalStatsForUser](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#queryExternalStatsForUser(java.util.UUID,%20android.os.UserHandle))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`, `user:` ` [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)`)` Return shared/external storage statistics for a specific [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) on the requested storage volume. |
+| --- | --- |
 | open [StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats) | [queryStatsForPackage](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#queryStatsForPackage(java.util.UUID,%20kotlin.String,%20android.os.UserHandle))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `user:` ` [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)`)` Return storage statistics for a specific package on the requested storage volume. |
 | open [StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats) | [queryStatsForUid](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#queryStatsForUid(java.util.UUID,%20kotlin.Int))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return storage statistics for a specific UID on the requested storage volume. |
 | open [StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats) | [queryStatsForUser](https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager#queryStatsForUser(java.util.UUID,%20android.os.UserHandle))`(`storageUuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)`, `user:` ` [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)`)` Return storage statistics for a specific [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) on the requested storage volume. |
+| --- | --- |
 
 ## Public methods
 
@@ -145,6 +149,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `storageUuid` | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#):the UUID of the storage volume you're interested in, such as [StorageManager.UUID_DEFAULT](https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#UUID_DEFAULT:java.util.UUID). This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the package name you're interested in. This value cannot be`null`. |
 | `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#):the user you're interested in. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------|

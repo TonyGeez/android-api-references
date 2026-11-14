@@ -9,9 +9,11 @@ open class ExceptionInInitializerError : LinkageError
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
 | | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.ExceptionInInitializerError](https://developer.android.com/reference/kotlin/java/lang/ExceptionInInitializerError#) |
 
 Signals that an unexpected exception has occurred in a static initializer. An`ExceptionInInitializerError`is thrown to indicate that an exception occurred during evaluation of a static initializer or the initializer for a static variable.

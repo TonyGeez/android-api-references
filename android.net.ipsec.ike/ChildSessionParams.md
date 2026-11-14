@@ -5,15 +5,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ChildSessionParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class ChildSessionParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.ChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#) |
 
 | Known Direct Subclasses [TransportModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TransportModeChildSessionParams), [TunnelModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams) |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [TransportModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TransportModeChildSessionParams) | TransportModeChildSessionParams represents proposed configurations for negotiating a transport mode Child Session. | | [TunnelModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams) | TunnelModeChildSessionParams represents proposed configurations for negotiating a tunnel mode Child Session. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ChildSessionParams is an abstract class that represents proposed configurations for negotiating a Child Session.
 
@@ -32,9 +35,11 @@ When requesting the first Child Session in IKE AUTH, IKE library will not propos
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChildSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal)!\> | [getChildSaProposals](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#getChildSaProposals())`()` Retrieves all ChildSaProposals configured |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHardLifetimeSeconds](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#getHardLifetimeSeconds())`()` Retrieves hard lifetime in seconds |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector)!\> | [getInboundTrafficSelectors](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#getInboundTrafficSelectors())`()` Retrieves configured inbound traffic selectors |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector)!\> | [getOutboundTrafficSelectors](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#getOutboundTrafficSelectors())`()` Retrieves configured outbound traffic selectors |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftLifetimeSeconds](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#getSoftLifetimeSeconds())`()` Retrieves soft lifetime in seconds |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams#hashCode())`()` <br /> |
 
 ## Public methods

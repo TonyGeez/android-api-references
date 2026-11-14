@@ -6,6 +6,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # TabContentFactory
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/TabHost.TabContentFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface TabContentFactory

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ColorStateList
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/res/ColorStateList "View this page in Java") 
+| --- | --- |
 
 ```
 open class ColorStateList : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) |
 
 Lets you map [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) state sets to colors.
@@ -83,6 +85,7 @@ For more information, see the guide to [Color State List Resource](https://devel
 | [`android:alpha`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Alpha multiplier applied to the base color. |
 | [`android:color`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Base color for this state. |
 | [`android:lStar`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Perceptual luminance applied to the base color. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -97,15 +100,19 @@ For more information, see the guide to [Color State List Resource](https://devel
 | openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [createFromXml](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources)!`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`)` Creates a ColorStateList from an XML document. |
 | openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [createFromXml](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?`)` Creates a ColorStateList from an XML document using given a set of [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources) and a [Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#describeContents())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getChangingConfigurations())`()` Returns a mask of the configuration parameters for which this color state list may change, requiring that it be re-created. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorForState](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getColorForState(kotlin.IntArray,%20kotlin.Int))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `defaultColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the color associated with the given set of [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) states. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultColor](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getDefaultColor())`()` Return the default color in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#). |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#isOpaque())`()` Indicates whether this color state list is opaque, which means that every color returned from[getColorForState(int[],int)](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getColorForState(kotlin.IntArray,%20kotlin.Int))has an alpha value of 255. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#isStateful())`()` Indicates whether this color state list contains at least one state spec and the first spec is not empty (e.g. match-all). |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#toString())`()` <br /> |
+| --- | --- |
 | openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [valueOf](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#valueOf(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [withAlpha](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#withAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified alpha value (0-255). |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [withLStar](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#withLStar(kotlin.Float))`(`lStar:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified perceived luminosity value (0-100). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
@@ -201,6 +208,7 @@ Creates a ColorStateList from an XML document using given a set of [Resources](h
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources):Resources against which the ColorStateList should be inflated. This value cannot be`null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):Parser for the XML document defining the ColorStateList. This value cannot be`null`. |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?:Optional theme to apply to the color state list, may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|

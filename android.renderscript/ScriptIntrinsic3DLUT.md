@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptIntrinsic3DLUT
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsic3DLUT "View this page in Java") 
+| --- | --- |
 
 ```
 class ScriptIntrinsic3DLUT : ScriptIntrinsic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
 | | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.renderscript.ScriptIntrinsic3DLUT](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#) |
 
 | **This class was deprecated in API level 31.**
@@ -30,6 +33,7 @@ Intrinsic for converting RGB to RGBA by using a 3D lookup table. The incoming r,
 | static [ScriptIntrinsic3DLUT](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#create(android.renderscript.RenderScript,%20android.renderscript.Element))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!`)` Supported elements types are [Element.U8_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_4(android.renderscript.RenderScript))The defaults tables are identity. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#forEach(android.renderscript.Allocation,%20android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#forEach(android.renderscript.Allocation,%20android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
+| --- | --- |
 | [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelID](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#getKernelID())`()` Get a KernelID for this intrinsic kernel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLUT](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic3DLUT#setLUT(android.renderscript.Allocation))`(`lut:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Sets the [android.renderscript.Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation) to be used as the lookup table. |
 
@@ -101,6 +105,7 @@ Invoke the kernel and apply the lookup to each cell of ain and copy to aout.
 | `ain` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:Input allocation |
 | `aout` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!:Output allocation |
 | `opt` | [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!:Launch options for kernel |
+| --- | --- |
 
 ### getKernelID
 

@@ -7,6 +7,7 @@ abstract class PKIXRevocationChecker : PKIXCertPathChecker
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.cert.PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker) ||
 | | ↳ | [java.security.cert.PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#) |
 
@@ -41,15 +42,19 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#clone()()` Returns a clone of this object. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Extension](https://developer.android.com/reference/kotlin/java/security/cert/Extension)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getOcspExtensions()()` Gets the optional OCSP request extensions. |
 | open [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getOcspResponder()()` Gets the URI that identifies the location of the OCSP responder. |
+| --- | --- |
 | open [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getOcspResponderCert()()` Gets the OCSP responder's certificate. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getOcspResponses()()` Gets the OCSP responses. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PKIXRevocationChecker.Option](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker.Option)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getOptions()()` Gets the revocation options. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertPathValidatorException](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#getSoftFailExceptions()()` Returns a list containing the exceptions that are ignored by the revocation checker when the `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker.Option` option is set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#setOcspExtensions(kotlin.collections.MutableList)(extensions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Extension!>!)` Sets the optional OCSP request extensions. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#setOcspResponder(java.net.URI)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!)` Sets the URI that identifies the location of the OCSP responder. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#setOcspResponderCert(java.security.cert.X509Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate!)` Sets the OCSP responder's certificate. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#setOcspResponses(kotlin.collections.MutableMap)(responses: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!>!)` Sets the OCSP responses. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker#setOptions(kotlin.collections.MutableSet)(options: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker.Option!>!)` Sets the revocation options. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

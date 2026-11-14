@@ -7,9 +7,11 @@ open class LinkedList<E : Any!> : AbstractSequentialList<E>, Cloneable, Dequ
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> ||||
 | | ↳ | [java.util.AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList)\<E\> |||
 | | | ↳ | [java.util.AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList)\<E\> ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.util.LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList#) |
 
 Doubly-linked list implementation of the `List` and `Deque` interfaces. Implements all optional list operations, and permits all elements (including `null`).
@@ -40,45 +42,59 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#add(java.util.LinkedList.E)(element: E)` Appends the specified element to the end of this list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#add(kotlin.Int,%20java.util.LinkedList.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Inserts the specified element at the specified position in this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#addAll(kotlin.Int,%20kotlin.collections.Collection)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Inserts all of the elements in the specified collection into this list, starting at the specified position. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#addFirst(java.util.LinkedList.E)(e: E)` Inserts the specified element at the beginning of this list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#addLast(java.util.LinkedList.E)(e: E)` Appends the specified element to the end of this list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#clear()()` Removes all of the elements from this list. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#clone()()` Returns a shallow copy of this `LinkedList`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#contains(java.util.LinkedList.E)(element: E)` Returns `true` if this list contains the specified element. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#contains(java.util.LinkedList.E)(element: E)` Returns `true` if this list contains the specified element. |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#descendingIterator()()` <br /> |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#element()()` Retrieves, but does not remove, the head (first element) of this list. |
+| --- | --- |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the element at the specified position in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#getFirst()()` Returns the first element in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#getLast()()` Returns the last element in this list. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#indexOf(java.util.LinkedList.E)(element: E)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#indexOf(java.util.LinkedList.E)(element: E)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#lastIndexOf(java.util.LinkedList.E)(element: E)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#lastIndexOf(java.util.LinkedList.E)(element: E)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#listIterator(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#offer(java.util.LinkedList.E)(e: E)` Adds the specified element as the tail (last element) of this list. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#offerFirst(java.util.LinkedList.E)(e: E)` Inserts the specified element at the front of this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#offerLast(java.util.LinkedList.E)(e: E)` Inserts the specified element at the end of this list. |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#peek()()` Retrieves, but does not remove, the head (first element) of this list. |
+| --- | --- |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#peekFirst()()` Retrieves, but does not remove, the first element of this list, or returns `null` if this list is empty. |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#peekLast()()` Retrieves, but does not remove, the last element of this list, or returns `null` if this list is empty. |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#poll()()` Retrieves and removes the head (first element) of this list. |
+| --- | --- |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#pollFirst()()` Retrieves and removes the first element of this list, or returns `null` if this list is empty. |
 | open E? | `https://developer.android.com/reference/kotlin/java/util/LinkedList#pollLast()()` Retrieves and removes the last element of this list, or returns `null` if this list is empty. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#pop()()` Pops an element from the stack represented by this list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#push(java.util.LinkedList.E)(e: E)` Pushes an element onto the stack represented by this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#remove()()` Retrieves and removes the head (first element) of this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#remove(java.util.LinkedList.E)(element: E)` Removes the first occurrence of the specified element from this list, if it is present. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#remove(java.util.LinkedList.E)(element: E)` Removes the first occurrence of the specified element from this list, if it is present. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the element at the specified position in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#removeFirst()()` Removes and returns the first element from this list. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#removeFirstOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the first occurrence of the specified element in this list (when traversing the list from head to tail). |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#removeLast()()` Removes and returns the last element from this list. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/LinkedList#removeLastOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the last occurrence of the specified element in this list (when traversing the list from head to tail). |
+| --- | --- |
 | open [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList#)\<E\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/LinkedList#set(kotlin.Int,%20java.util.LinkedList.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Replaces the element at the specified position in this list with the specified element. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#spliterator()()` Creates a * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and *fail-fast* `https://developer.android.com/reference/kotlin/java/util/Spliterator` over the elements in this list. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#toArray()()` Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/LinkedList#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 
@@ -87,6 +103,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | From class `https://developer.android.com/reference/kotlin/java/util/AbstractList` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#add(java.util.AbstractList.E)(element: E)` Appends the specified element to the end of this list (optional operation). Lists that support this operation may place limitations on what elements may be added to this list. In particular, some lists will refuse to add null elements, and others will impose restrictions on the type of elements that may be added. List classes should clearly specify in their documentation any restrictions on what elements may be added. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#clear()()` Removes all of the elements from this list (optional operation). The list will be empty after this call returns. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this list for equality. Returns `true` if and only if the specified object is also a list, both lists have the same size, and all corresponding pairs of elements in the two lists are *equal* . (Two elements `e1` and `e2` are *equal* if `(e1==null ? e2==null : e1.equals(e2))`.) In other words, two lists are defined to be equal if they contain the same elements in the same order. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#hashCode()()` Returns the hash code value for this list. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#indexOf(java.util.AbstractList.E)(element: E?)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. More formally, returns the lowest index `i` such that `Objects.equals(o, get(i))`, or -1 if there is no such index. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#lastIndexOf(java.util.AbstractList.E)(element: E?)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. More formally, returns the highest index `i` such that `Objects.equals(o, get(i))`, or -1 if there is no such index. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html<E>` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#listIterator()()` Returns a list iterator over the elements in this list (in proper sequence). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#removeRange(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes from this list all of the elements whose index is between `fromIndex`, inclusive, and `toIndex`, exclusive. Shifts any succeeding elements to the left (reduces their index). This call shortens the list by `(toIndex - fromIndex)` elements. (If `toIndex==fromIndex`, this operation has no effect.) This method is called by the `clear` operation on this list and its subLists. Overriding this method to take advantage of the internals of the list implementation can *substantially* improve the performance of the `clear` operation on this list and its subLists. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<E>` | `https://developer.android.com/reference/kotlin/java/util/AbstractList#subList(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. (If `fromIndex``toIndex` are equal, the returned list is empty.) The returned list is backed by this list, so non-structural changes in the returned list are reflected in this list, and vice-versa. The returned list supports all of the optional list operations supported by this list. This method eliminates the need for explicit range operations (of the sort that commonly exist for arrays). Any operation that expects a list can be used as a range operation by passing a subList view instead of a whole list. For example, the following idiom removes a range of elements from a list: ```kotlin <code>list.subList(from, to).clear(); </code> ``` Similar idioms may be constructed for `indexOf` and `lastIndexOf`, and all of the algorithms in the `Collections` class can be applied to a subList. The semantics of the list returned by this method become undefined if the backing list (i.e., this list) is *structurally modified* in any way other than via the returned list. (Structural modifications are those that change the size of this list, or otherwise perturb it in such a fashion that iterations in progress may yield incorrect results.) <br /> | ||
 | From class `https://developer.android.com/reference/kotlin/java/util/AbstractCollection` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Adds all of the elements in the specified collection to this collection (optional operation). The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.) If the specified collection has a defined [encounter order](https://developer.android.com/reference/kotlin/java/util/SequencedCollection#encounter), processing of its elements generally occurs in that order. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#contains(java.util.AbstractCollection.E)(element: E?)` Returns `true` if this collection contains the specified element. More formally, returns `true` if and only if this collection contains at least one element `e` such that `Objects.equals(o, e)`. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this collection contains all of the elements in the specified collection. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#isEmpty()()` Returns `true` if this collection contains no elements. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#remove(java.util.AbstractCollection.E)(element: E?)` Removes a single instance of the specified element from this collection, if it is present (optional operation). More formally, removes an element `e` such that `Objects.equals(o, e)`, if this collection contains one or more such elements. Returns `true` if this collection contained the specified element (or equivalently, if this collection changed as a result of the call). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#removeAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Removes all of this collection's elements that are also contained in the specified collection (optional operation). After this call returns, this collection will contain no elements in common with the specified collection. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Retains only the elements in this collection that are contained in the specified collection (optional operation). In other words, removes from this collection all of its elements that are not contained in the specified collection. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toArray()()` Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](https://developer.android.com/reference/kotlin/java/lang/Class.html#getComponentType()) is `Object`. The returned array will be "safe" in that no references to it are maintained by this collection. (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. If the collection fits in the specified array, it is returned therein. Otherwise, a new array is allocated with the runtime type of the specified array and the size of this collection. If this collection fits in the specified array with room to spare (i.e., the array has more elements than this collection), the element in the array immediately following the end of the collection is set to `null`. (This is useful in determining the length of this collection *only* if the caller knows that this collection does not contain any `null` elements.) If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toString()()` Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters `", "` (comma and space). Elements are converted to strings as by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`. <br /> | ||
 | From class `https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html<E>` | `https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList#iterator()()` Returns an iterator over the elements in this list (in proper sequence). This implementation merely returns a list iterator over the list. <br /> | ||
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Properties ||
 |---|---|
@@ -154,6 +171,7 @@ This method is equivalent to #addLast.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of this element prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -180,6 +198,7 @@ Inserts the specified element at the specified position in this list. Shifts the
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -210,6 +229,7 @@ Inserts all of the elements in the specified collection into this list, starting
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -236,6 +256,7 @@ Appends all of the elements in the specified collection to the end of this list,
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -258,6 +279,7 @@ Inserts the specified element at the beginning of this list.
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if this collection implementation does not support this operation |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 
@@ -282,6 +304,7 @@ This method is equivalent to #add.
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if this collection implementation does not support this operation |
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
+| --- | --- |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
 
@@ -594,6 +617,7 @@ Adds the specified element as the tail (last element) of this list.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
+| --- | --- |
 
 ### offerFirst
 
@@ -618,6 +642,7 @@ Inserts the specified element at the front of this list.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
+| --- | --- |
 
 ### offerLast
 
@@ -642,6 +667,7 @@ Inserts the specified element at the end of this list.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
+| --- | --- |
 
 ### peek
 
@@ -768,6 +794,7 @@ This method is equivalent to #addFirst.
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this deque |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to capacity restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements |
 
 ### remove
@@ -811,6 +838,7 @@ Removes the first occurrence of the specified element from this list, if it is p
 | `java.lang.ClassCastException` | if the class of the specified element is incompatible with this deque (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this list |
+| --- | --- |
 
 ### remove
 
@@ -835,6 +863,7 @@ Removes the first occurrence of the specified element from this list, if it is p
 | `java.lang.ClassCastException` | if the class of the specified element is incompatible with this deque (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified element is null and this deque does not permit null elements (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this list |
+| --- | --- |
 
 ### removeAt
 
@@ -986,6 +1015,7 @@ Replaces the element at the specified position in this list with the specified e
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index >= size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this list |
 

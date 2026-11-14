@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # OnRestrictedCaptionAreaChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnRestrictedCaptionAreaChangedListener

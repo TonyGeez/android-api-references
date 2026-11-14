@@ -8,6 +8,7 @@ class Domain
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.net.config.Domain](https://developer.android.com/reference/kotlin/android/security/net/config/Domain#) |
 
 A network Domain, represented as a lower-case string for the hostname, and a boolean to define whether the subdomains are considered part of the same domain.
@@ -23,6 +24,7 @@ A network Domain, represented as a lower-case string for the hostname, and a boo
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/Domain#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/Domain#getHostname()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/Domain#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/Domain#isLocalhost()()` <br /> |
 
 ## Public constructors

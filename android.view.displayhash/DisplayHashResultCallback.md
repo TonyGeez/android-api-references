@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # DisplayHashResultCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/displayhash/DisplayHashResultCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface DisplayHashResultCallback
@@ -21,9 +22,11 @@ Use when calling [View.generateDisplayHash(String, Rect, Executor,](https://deve
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_BOUNDS](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_BOUNDS:kotlin.Int) The bounds used when requesting the hash hash were invalid or empty. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM:kotlin.Int) The hash algorithm sent to generate the hash was invalid. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_MISSING_WINDOW](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_MISSING_WINDOW:kotlin.Int) The window for the view that requested the hash is no longer around. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN:kotlin.Int) The view that requested the hash is not visible on screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS:kotlin.Int) The caller requested to generate the hash too frequently. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_UNKNOWN:kotlin.Int) An unknown error occurred. |
+| --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

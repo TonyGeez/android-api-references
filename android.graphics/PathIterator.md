@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # PathIterator
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/PathIterator "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathIterator : MutableIterator<PathIterator.Segment!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.PathIterator](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#) |
 
 `PathIterator` can be used to query a given [Path](https://developer.android.com/reference/kotlin/android/graphics/Path) object, to discover its operations and point values.
@@ -26,9 +28,11 @@ open class PathIterator : MutableIterator<PathIterator.Segment!>
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CLOSE](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_CLOSE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CONIC](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_CONIC:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CUBIC](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_CUBIC:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_DONE](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_DONE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_LINE](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_LINE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_MOVE](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_MOVE:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_QUAD](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_QUAD:kotlin.Int) <br /> |
 
 | Public methods ||
@@ -36,6 +40,7 @@ open class PathIterator : MutableIterator<PathIterator.Segment!>
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#hasNext())`()` Returns true if the there are more elements in this iterator to be returned. |
 | open [PathIterator.Segment](https://developer.android.com/reference/kotlin/android/graphics/PathIterator.Segment) | [next](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#next())`()` Returns the next [Segment](https://developer.android.com/reference/kotlin/android/graphics/PathIterator.Segment) element in this iterator. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#next(kotlin.FloatArray,%20kotlin.Int))`(`points:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the next verb in this iterator's [Path](https://developer.android.com/reference/kotlin/android/graphics/Path), and fills entries in the `points` array with the point data (if any) for that operation. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peek](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#peek())`()` Returns the next verb in the iteration, or [VERB_DONE](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#VERB_DONE:kotlin.Int) if there are no more elements. |
 
 ## Constants

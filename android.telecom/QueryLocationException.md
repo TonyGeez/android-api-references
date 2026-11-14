@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # QueryLocationException
 
 Kotlin| [Java](https://developer.android.com/reference/android/telecom/QueryLocationException "View this page in Java") 
+| --- | --- |
 
 ```
 class QueryLocationException : RuntimeException, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.telecom.QueryLocationException](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#) |
 
 This class represents a set of exceptions that can occur when requesting a [Connection.queryLocationForEmergency(long, String, Executor, OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/telecom/Connection#queryLocationForEmergency(kotlin.Long,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
@@ -25,9 +28,11 @@ This class represents a set of exceptions that can occur when requesting a [Conn
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS:kotlin.Int) The operation has failed due to a location query being requested for a non-emergency connection. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_PERMITTED](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_NOT_PERMITTED:kotlin.Int) The operation has failed because it is not permitted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PREVIOUS_REQUEST_EXISTS](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS:kotlin.Int) The operation was rejected due to an existing request. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REQUEST_TIME_OUT](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_REQUEST_TIME_OUT:kotlin.Int) The operation was not completed on time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SERVICE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_SERVICE_UNAVAILABLE:kotlin.Int) The operation has failed due to the service is not available. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_UNSPECIFIED:kotlin.Int) The operation has failed due to an unknown or unspecified error. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -44,6 +49,7 @@ This class represents a set of exceptions that can occur when requesting a [Conn
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#getCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -168,6 +174,7 @@ QueryLocationException(
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_REQUEST_TIME_OUT:kotlin.Int), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS:kotlin.Int), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_NOT_PERMITTED:kotlin.Int), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS:kotlin.Int), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_SERVICE_UNAVAILABLE:kotlin.Int), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telecom/QueryLocationException#ERROR_UNSPECIFIED:kotlin.Int) |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:This value may be`null`. |
+| --- | --- |
 
 ## Public methods
 

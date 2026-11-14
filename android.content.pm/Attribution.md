@@ -3,12 +3,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # Attribution
 
 Kotlin | [Java](https://developer.android.com/reference/android/content/pm/Attribution "View this page in Java")
+| --- | --- |
 
 ```
 class Attribution : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.Attribution](https://developer.android.com/reference/kotlin/android/content/pm/Attribution#) |
 
 Information about an attribution declared by a package. This corresponds to the information collected from the AndroidManifest.xml's \<attribution\> tags.
@@ -24,6 +26,7 @@ Information about an attribution declared by a package. This corresponds to the 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Attribution#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Attribution#getLabel()()` The resource ID of the label of the attribution From the \<manifest\> tag's "label" attribute |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Attribution#getTag()()` The tag of this attribution. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/Attribution#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,6 +5,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # HighContrastTextStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface HighContrastTextStateChangeListener

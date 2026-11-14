@@ -9,6 +9,7 @@ class FrequencyCapFilters : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.common.FrequencyCapFilters](https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#) |
 
 > [!CAUTION]
@@ -33,6 +34,7 @@ Frequency caps filters combine an event type with a list of `https://developer.a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_CLICK:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_IMPRESSION:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_VIEW:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_WIN:kotlin.Int` The WIN ad event type is automatically populated within the Protected Audience service for any winning ad which is returned from Protected Audience ad selection. |
 
 | Inherited constants ||
@@ -44,12 +46,15 @@ Frequency caps filters combine an event type with a list of `https://developer.a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#` objects contain the same information. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#getKeyedFrequencyCapsForClickEvents()()` Gets the list of `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap` objects that will filter on the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_CLICK:kotlin.Int` event type. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#getKeyedFrequencyCapsForImpressionEvents()()` Gets the list of `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap` objects that will filter on the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_IMPRESSION:kotlin.Int` event type. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#getKeyedFrequencyCapsForViewEvents()()` Gets the list of `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap` objects that will filter on the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_VIEW:kotlin.Int` event type. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#getKeyedFrequencyCapsForWinEvents()()` Gets the list of `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap` objects that will filter on the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#AD_EVENT_TYPE_WIN:kotlin.Int` event type. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#` object's data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

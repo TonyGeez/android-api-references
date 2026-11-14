@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UCharacterCategory
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacterCategory "View this page in Java") 
+| --- | --- |
 
 ```
 class UCharacterCategory : UCharacterEnums.ECharacterCategory
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.lang.UCharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterCategory#) |
 
 Enumerated Unicode category types from the UnicodeData.txt file. Used as return results from [UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter) Equivalent to icu's UCharCategory. Refer to [Unicode Consortium](http://www.unicode.org/Public/UNIDATA/UCD.html) for more information about UnicodeData.txt.

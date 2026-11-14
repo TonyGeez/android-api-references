@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ManagedSubscriptionsPolicy
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/admin/ManagedSubscriptionsPolicy "View this page in Java") 
+| --- | --- |
 
 ```
 class ManagedSubscriptionsPolicy : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.ManagedSubscriptionsPolicy](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#) |
 
 A policy class that describes how managed SIM subscriptions should behave on the device.
@@ -35,9 +37,11 @@ A policy class that describes how managed SIM subscriptions should behave on the
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPolicyType](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#getPolicyType())`()` Returns the type of managed subscriptions policy, or [TYPE_ALL_PERSONAL_SUBSCRIPTIONS](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#TYPE_ALL_PERSONAL_SUBSCRIPTIONS:kotlin.Int) if no policy has been set. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

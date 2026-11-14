@@ -6,12 +6,14 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 # MedicalDataSource
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/MedicalDataSource "View this page in Java") 
+| --- | --- |
 
 ```
 class MedicalDataSource : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.MedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#) |
 
 Captures the data source information of medical data. All [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource) s are associated with a`MedicalDataSource`.
@@ -33,12 +35,15 @@ The medical data is represented using the [Fast Healthcare Interoperability Reso
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDisplayName](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getDisplayName())`()` Returns the display name. |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getFhirBaseUri](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getFhirBaseUri())`()` Returns the FHIR base URI, where data written for this data source came from. |
 | [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion) | [getFhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getFhirVersion())`()` Returns the FHIR version of [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource) s from this source. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getId())`()` Returns the unique identifier, assigned by the Android Health Platform at insertion time. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | [getLastDataUpdateTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getLastDataUpdateTime())`()` Returns the time [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource) s linked to this data source were last updated, or`null`if the data source has no linked resources. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#getPackageName())`()` Returns the corresponding package name of the owning app. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#hashCode())`()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#toString())`()` Returns a string representation of this [MedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

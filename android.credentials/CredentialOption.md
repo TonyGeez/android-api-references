@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CredentialOption
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/CredentialOption "View this page in Java") 
+| --- | --- |
 
 ```
 class CredentialOption : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#) |
 
 Information about a specific type of credential to be requested during a android.credentials.CredentialManager#getCredential operation.
@@ -34,9 +36,11 @@ Information about a specific type of credential to be requested during a android
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#describeContents())`()` <br /> |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\> | [getAllowedProviders](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getAllowedProviders())`()` Returns the set of [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) corresponding to providers that must receive this option. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCandidateQueryData](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getCandidateQueryData())`()` Returns the partial request data that will be sent to the provider during the initial credential candidate query stage. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCredentialRetrievalData](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getCredentialRetrievalData())`()` Returns the full request data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getType())`()` Returns the requested credential type. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemProviderRequired](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#isSystemProviderRequired())`()` Returns true if the request must only be fulfilled by a system provider, and false otherwise. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

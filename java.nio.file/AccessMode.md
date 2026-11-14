@@ -9,10 +9,12 @@ class AccessMode
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#)\> ||
 | | ↳ | [java.nio.file.AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#) |
 
 | Known Direct Subclasses [AccessMode.EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:EXECUTE), [AccessMode.READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:READ), [AccessMode.WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:WRITE) |------------------------------------------------------------------------------------------------------------------|----------------------| | [AccessMode.EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:EXECUTE) | Test execute access. | | [AccessMode.READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:READ) | Test read access. | | [AccessMode.WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:WRITE) | Test write access. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines access modes used to test the accessibility of a file.
 

@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # AssociatedDevice
 
 Kotlin | [Java](https://developer.android.com/reference/android/companion/AssociatedDevice "View this page in Java")
+| --- | --- |
 
 ```
 class AssociatedDevice : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.companion.AssociatedDevice](https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#) |
 
 Container for device info from an association that is not self-managed. Device can be one of three types:
@@ -30,9 +32,11 @@ Container for device info from an association that is not self-managed. Device c
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult.html#)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBleDevice()()` Return bluetooth LE device info. |
+| --- | --- |
 | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBluetoothDevice()()` Return bluetooth device info. |
 | [ScanResult](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getWifiDevice()()` Return Wi-Fi device info. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

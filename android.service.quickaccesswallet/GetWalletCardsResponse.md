@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # GetWalletCardsResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class GetWalletCardsResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quickaccesswallet.GetWalletCardsResponse](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#) |
 
 The response for an [GetWalletCardsRequest](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest) contains a list of wallet cards and the index of the card that should initially be displayed in the 'selected' position.
@@ -30,6 +32,7 @@ The response for an [GetWalletCardsRequest](https://developer.android.com/refere
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSelectedIndex](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#getSelectedIndex())`()` The`selectedIndex`represents the index of the card that should be presented in the 'selected' position when the cards are initially displayed in the quick access wallet. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WalletCard](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard)!\> | [getWalletCards](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#getWalletCards())`()` The list of [WalletCard](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard) s. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

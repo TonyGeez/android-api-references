@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # BaseMmsColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Telephony.BaseMmsColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface BaseMmsColumns : BaseColumns
@@ -13,6 +14,7 @@ interface BaseMmsColumns : BaseColumns
 | [android.provider.Telephony.BaseMmsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#) |
 
 | Known Direct Subclasses [Telephony.Mms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms), [Telephony.Mms.Draft](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Draft), [Telephony.Mms.Inbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Inbox), [Telephony.Mms.Outbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Outbox), [Telephony.Mms.Sent](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Sent) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [Telephony.Mms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms) | Contains all MMS messages. | | [Telephony.Mms.Draft](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Draft) | Contains all MMS messages in the MMS app drafts folder. | | [Telephony.Mms.Inbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Inbox) | Contains all MMS messages in the MMS app inbox. | | [Telephony.Mms.Outbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Outbox) | Contains all MMS messages in the MMS app outbox. | | [Telephony.Mms.Sent](https://developer.android.com/reference/kotlin/android/provider/Telephony.Mms.Sent) | Contains all MMS messages in the MMS app sent folder. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base columns for tables that contain MMSs.
 
@@ -23,42 +25,55 @@ Base columns for tables that contain MMSs.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTENT_CLASS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#CONTENT_CLASS:kotlin.String) The`content-class`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTENT_LOCATION](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#CONTENT_LOCATION:kotlin.String) The`Content-Location`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#CONTENT_TYPE:kotlin.String) The`Content-Type`of the message. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CREATOR](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#CREATOR:kotlin.String) The identity of the sender of a sent message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#DATE:kotlin.String) The date the message was received. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE_SENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#DATE_SENT:kotlin.String) The date the message was sent. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DELIVERY_REPORT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#DELIVERY_REPORT:kotlin.String) The`delivery-report`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DELIVERY_TIME](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#DELIVERY_TIME:kotlin.String) The`delivery-time`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXPIRY](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#EXPIRY:kotlin.String) The expiry time of the message. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LOCKED](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#LOCKED:kotlin.String) Is the message locked? |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_BOX](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX:kotlin.String) The box which the message belongs to, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_ALL](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_ALL:kotlin.Int) Message box: all messages. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_DRAFTS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_DRAFTS:kotlin.Int) Message box: drafts. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_FAILED](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_FAILED:kotlin.Int) Message box: failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_INBOX](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_INBOX:kotlin.Int) Message box: inbox. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_OUTBOX](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_OUTBOX:kotlin.Int) Message box: outbox. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_BOX_SENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_BOX_SENT:kotlin.Int) Message box: sent messages. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_CLASS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_CLASS:kotlin.String) The class of the message. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_ID:kotlin.String) The`Message-ID`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_SIZE](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_SIZE:kotlin.String) The size of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MESSAGE_TYPE](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MESSAGE_TYPE:kotlin.String) The type of the message defined by MMS spec. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MMS_VERSION](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#MMS_VERSION:kotlin.String) The version of the specification that this message conforms to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PRIORITY](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#PRIORITY:kotlin.String) The priority of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#READ:kotlin.String) Has the message been read? |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ_REPORT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#READ_REPORT:kotlin.String) The`read-report`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ_STATUS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#READ_STATUS:kotlin.String) The`read-status`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPORT_ALLOWED](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#REPORT_ALLOWED:kotlin.String) Is read report allowed? |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESPONSE_STATUS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#RESPONSE_STATUS:kotlin.String) The`response-status`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESPONSE_TEXT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#RESPONSE_TEXT:kotlin.String) The`response-text`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RETRIEVE_STATUS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#RETRIEVE_STATUS:kotlin.String) The`retrieve-status`of the message. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RETRIEVE_TEXT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#RETRIEVE_TEXT:kotlin.String) The`retrieve-text`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RETRIEVE_TEXT_CHARSET](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#RETRIEVE_TEXT_CHARSET:kotlin.String) The character set of the retrieve-text. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SEEN](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#SEEN:kotlin.String) Has the message been seen by the user? The "seen" flag determines whether we need to show a new message notification. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATUS](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#STATUS:kotlin.String) The`status`of the message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBJECT](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#SUBJECT:kotlin.String) The subject of the message, if present. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBJECT_CHARSET](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#SUBJECT_CHARSET:kotlin.String) The character set of the subject, if present. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBSCRIPTION_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#SUBSCRIPTION_ID:kotlin.String) The subscription to which the message belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TEXT_ONLY](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#TEXT_ONLY:kotlin.String) Does the message have only a text part (can also have a subject) with no picture, slideshow, sound, etc. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [THREAD_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#THREAD_ID:kotlin.String) The thread ID of the message. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TRANSACTION_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.BaseMmsColumns#TRANSACTION_ID:kotlin.String) The`transaction-id`of the message. |
 
 | Inherited constants ||

@@ -4,12 +4,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AppSetIdManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/appsetid/AppSetIdManager "View this page in Java")
+| --- | --- |
 
 ```
 open class AppSetIdManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.appsetid.AppSetIdManager](https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetIdManager#) |
 
 AppSetIdManager provides APIs for app and ad-SDKs to access appSetId for non-monetizing purpose.

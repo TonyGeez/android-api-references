@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ValueSanitizer
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/UrlQuerySanitizer.ValueSanitizer "View this page in Java") 
+| --- | --- |
 
 ```
 interface ValueSanitizer
@@ -13,6 +14,7 @@ interface ValueSanitizer
 | [android.net.UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer#) |
 
 | Known Direct Subclasses [UrlQuerySanitizer.IllegalCharacterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer) |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [UrlQuerySanitizer.IllegalCharacterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer) | Sanitize values based on which characters they contain. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A functor used to sanitize a single query value.
 

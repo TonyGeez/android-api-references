@@ -9,10 +9,12 @@ class IsoEra : Era
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.chrono.IsoEra](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#)\> ||
 | | ↳ | [java.time.chrono.IsoEra](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#) |
 
 | Known Direct Subclasses [IsoEra.BCE](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#ENUM_VALUE:BCE), [IsoEra.CE](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#ENUM_VALUE:CE) |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------| | [IsoEra.BCE](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#ENUM_VALUE:BCE) | The singleton instance for the era before the current one, 'Before Current Era', which has the numeric value 0. | | [IsoEra.CE](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra#ENUM_VALUE:CE) | The singleton instance for the current era, 'Current Era', which has the numeric value 1. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An era in the ISO calendar system.
 
@@ -23,6 +25,7 @@ The ISO-8601 standard does not define eras. A definition has therefore been crea
 | 2 | CE | 2 |
 | 1 | CE | 1 |
 | 1 | BCE | 0 |
+| --- | --- | --- |
 | 2 | BCE | -1 |
 
 **Do not use `ordinal()` to obtain the numeric representation of `IsoEra`. Use `getValue()` instead.**

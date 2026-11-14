@@ -7,6 +7,7 @@ open class GeolocationPermissions
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.GeolocationPermissions](https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#) |
 
 This class is used to manage permissions for the WebView's Geolocation JavaScript API. Geolocation permissions are applied to an origin, which consists of the host, scheme and port of a URI. In order for web content to use the Geolocation API, permission must be granted for that content's origin. This class stores Geolocation permissions. An origin's permission state can be either allowed or denied. This class uses Strings to represent an origin. When an origin attempts to use the Geolocation API, but no permission state is currently set for that origin, `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onGeolocationPermissionsShowPrompt(kotlin.String,%20android.webkit.GeolocationPermissions.Callback)` is called. This allows the permission state to be set for that origin. The methods of this class can be used to modify and interrogate the stored Geolocation permissions at any time.
@@ -22,9 +23,11 @@ This class is used to manage permissions for the WebView's Geolocation JavaScrip
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#allow(kotlin.String)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Allows the specified origin to use the Geolocation API. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#clear(kotlin.String)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Clears the Geolocation permission state for the specified origin. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#clearAll()()` Clears the Geolocation permission state for all origins. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#getAllowed(kotlin.String,%20android.webkit.ValueCallback)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!)` Gets the Geolocation permission state for the specified origin. |
 | open static [GeolocationPermissions](https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#)! | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#getInstance()()` Gets the singleton instance of this class. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions#getOrigins(android.webkit.ValueCallback)(callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>!)` Gets the set of origins for which Geolocation permissions are stored. |
+| --- | --- |
 
 ## Public methods
 

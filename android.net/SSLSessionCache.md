@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # SSLSessionCache
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/SSLSessionCache "View this page in Java") 
+| --- | --- |
 
 ```
 class SSLSessionCache
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache#) |
 
 File-based cache of established SSL sessions. When re-establishing a connection to the same server, using an SSL session cache can save some time, power, and bandwidth by skipping directly to an encrypted stream. This is a persistent cache which can span executions of the application.

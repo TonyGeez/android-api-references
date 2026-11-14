@@ -6,15 +6,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # MediaMetadataEditor
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMetadataEditor "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class MediaMetadataEditor
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#) |
 
 | Known Direct Subclasses [RemoteControlClient.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.MetadataEditor), [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor) |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RemoteControlClient.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.MetadataEditor) | Class used to modify metadata in a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) object. | | [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor) | A class to read the metadata published by a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient), or send a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) new values for keys that can be edited. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 21.**
 |
@@ -29,21 +32,26 @@ An abstract class for editing and storing metadata that can be published by [Rem
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITMAP_KEY_ARTWORK](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#BITMAP_KEY_ARTWORK:kotlin.Int) The metadata key for the content artwork / album art. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_OTHERS](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_OTHERS:kotlin.Int) The metadata key for the content's average rating, not the user's rating. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_USER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_USER:kotlin.Int) The metadata key for the content's user rating. |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addEditableKey](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#addEditableKey(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flags the given key as being editable. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#apply())`()` Applies all of the metadata changes that have been set since the MediaMetadataEditor instance was created or since [clear()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#clear()) was called. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#clear())`()` Clears all the pending metadata changes set since the MediaMetadataEditor instance was created or since this method was last called. |
+| --- | --- |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [getBitmap](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getBitmap(kotlin.Int,%20android.graphics.Bitmap))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`)` Returns the [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) value for the key. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getEditableKeys](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getEditableKeys())`()` Retrieves the keys flagged as editable. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getLong(kotlin.Int,%20kotlin.Long))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the long value for the key. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getObject(kotlin.Int,%20kotlin.Any))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns an object representation of the value for the key |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getString(kotlin.Int,%20kotlin.String))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) value for the key. |
 | open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putBitmap](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putBitmap(kotlin.Int,%20android.graphics.Bitmap))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`)` Adds image. |
+| --- | --- |
 | open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putLong](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putLong(kotlin.Int,%20kotlin.Long))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds numerical information. |
 | open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putObject](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putObject(kotlin.Int,%20kotlin.Any))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds information stored as an instance. |
 | open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putString](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putString(kotlin.Int,%20kotlin.String))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds textual information. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEditableKeys](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#removeEditableKeys())`()` Causes all metadata fields to be read-only. |
 
 ## Constants

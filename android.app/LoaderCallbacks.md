@@ -6,6 +6,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # LoaderCallbacks
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/LoaderManager.LoaderCallbacks "View this page in Java") 
+| --- | --- |
 
 ```
 interface LoaderCallbacks<D : Any!>
@@ -26,6 +27,7 @@ Callback interface for a client to interact with the manager.
 | abstract [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)\<D\>! | [onCreateLoader](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks#onCreateLoader(kotlin.Int,%20android.os.Bundle))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `args:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Instantiate and return a new Loader for the given ID. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLoadFinished](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks#onLoadFinished(android.content.Loader,%20android.app.LoaderManager.LoaderCallbacks.D))`(`loader:` ` [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)<D>!`, `data:` `D`)` Called when a previously created loader has finished its load. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLoaderReset](https://developer.android.com/reference/kotlin/android/app/LoaderManager.LoaderCallbacks#onLoaderReset(android.content.Loader))`(`loader:` ` [Loader](https://developer.android.com/reference/kotlin/android/content/Loader.html#)<D>!`)` Called when a previously created loader is being reset, and thus making its data unavailable. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnSubtitleDataListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnSubtitleDataListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnSubtitleDataListener

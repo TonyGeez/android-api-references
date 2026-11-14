@@ -3,6 +3,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # OnGetControllerHintsListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/MediaRouter2.OnGetControllerHintsListener "View this page in Java")
+| --- | --- |
 
 ```
 interface OnGetControllerHintsListener

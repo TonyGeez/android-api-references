@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # OnDrawerCloseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDrawerCloseListener

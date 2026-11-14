@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationRequestValue
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/TranslationRequestValue "View this page in Java") 
+| --- | --- |
 
 ```
 class TranslationRequestValue : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationRequestValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#) |
 
 A value to be translated via [android.view.translation.Translator](https://developer.android.com/reference/kotlin/android/view/translation/Translator).
@@ -26,9 +28,11 @@ A value to be translated via [android.view.translation.Translator](https://devel
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [TranslationRequestValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#) | [forText](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#forText(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Creates a [TranslationRequestValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#) with a [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) value; |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getText](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#getText())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

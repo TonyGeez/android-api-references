@@ -3,6 +3,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # AnimatorUpdateListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener "View this page in Java")
+| --- | --- |
 
 ```
 interface AnimatorUpdateListener

@@ -9,6 +9,7 @@ open class ReferenceQueue<T : Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.ref.ReferenceQueue](https://developer.android.com/reference/kotlin/java/lang/ref/ReferenceQueue#) |
 
 Reference queues, to which registered reference objects are appended by the garbage collector after the appropriate reachability changes are detected.
@@ -24,6 +25,7 @@ Reference queues, to which registered reference objects are appended by the garb
 | open [Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference)\<outT\>! | [poll](https://developer.android.com/reference/kotlin/java/lang/ref/ReferenceQueue#poll())`()` Polls this queue to see if a reference object is available. |
 | open [Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference)\<outT\>! | [remove](https://developer.android.com/reference/kotlin/java/lang/ref/ReferenceQueue#remove())`()` Removes the next reference object in this queue, blocking until one becomes available. |
 | open [Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference)\<outT\>! | [remove](https://developer.android.com/reference/kotlin/java/lang/ref/ReferenceQueue#remove(kotlin.Long))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Removes the next reference object in this queue, blocking until either one becomes available or the given timeout period expires. |
+| --- | --- |
 
 ## Public constructors
 

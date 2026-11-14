@@ -23,6 +23,7 @@ For transformation errors, a `Transformer` must use this interface instead of th
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#error(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a recoverable error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#fatalError(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a non-recoverable error. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#warning(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a warning. |
+| --- | --- |
 
 ## Public methods
 

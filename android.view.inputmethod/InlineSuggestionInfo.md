@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # InlineSuggestionInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class InlineSuggestionInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.InlineSuggestionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#) |
 
 This class represents the description of an inline suggestion. It contains information to help the IME to decide where and when to show the suggestions. See [InlineSuggestion](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion) for more information.
@@ -22,6 +24,7 @@ This class represents the description of an inline suggestion. It contains infor
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_AUTOFILL](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#SOURCE_AUTOFILL:kotlin.String) Suggestion source: the suggestion is made by the user selected autofill service. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_PLATFORM](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#SOURCE_PLATFORM:kotlin.String) Suggestion source: the suggestion is made by the platform. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_ACTION](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#TYPE_ACTION:kotlin.String) UI type: the UI contains an widget that will launch an intent when tapped. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_SUGGESTION](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#TYPE_SUGGESTION:kotlin.String) UI type: the UI contains an Autofill suggestion that will autofill the fields when tapped. |
 
 | Inherited constants ||
@@ -33,12 +36,15 @@ This class represents the description of an inline suggestion. It contains infor
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getAutofillHints](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#getAutofillHints())`()` Hints for the type of data being suggested. |
+| --- | --- |
 | [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) | [getInlinePresentationSpec](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#getInlinePresentationSpec())`()` The presentation spec to which the inflated suggestion view abides. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSource](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#getSource())`()` The source from which the suggestion is provided. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#getType())`()` The type of the UI. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#hashCode())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#isPinned())`()` Whether the suggestion should be pinned or not. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

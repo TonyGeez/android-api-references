@@ -9,6 +9,7 @@ class RecordComponent : AnnotatedElement
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.reflect.RecordComponent](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#) |
 
 A`RecordComponent`provides information about, and dynamic access to, a component of a record class.
@@ -20,12 +21,15 @@ A`RecordComponent`provides information about, and dynamic access to, a component
 | [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method) | [getAccessor](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getAccessor())`()` Returns a`Method`that represents the accessor for this record component. |
 | T? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns this element's annotation for the specified type if such an annotation is*present*, else null. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getAnnotations())`()` Returns annotations that are*present*on this element. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getDeclaredAnnotations())`()` Returns annotations that are*directly present*on this element. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getDeclaringRecord](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getDeclaringRecord())`()` Returns the record class which declares this record component. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getGenericSignature](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getGenericSignature())`()` Returns a`String`that describes the generic type signature for this record component. |
+| --- | --- |
 | [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | [getGenericType](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getGenericType())`()` Returns a`Type`object that represents the declared type for this record component. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getName())`()` Returns the name of this record component. |
 | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getType](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#getType())`()` Returns a`Class`that identifies the declared type for this record component. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/RecordComponent#toString())`()` Returns a string describing this record component. |
 
 | Inherited functions ||
@@ -156,6 +160,7 @@ If the type of the underlying record component is a type variable or a parameter
 | `java.lang.reflect.GenericSignatureFormatError` | if the generic record component signature does not conform to the format specified in The Java Virtual Machine Specification |
 | `java.lang.TypeNotPresentException` | if the generic type signature of the underlying record component refers to a non-existent type declaration |
 | `java.lang.reflect.MalformedParameterizedTypeException` | if the generic signature of the underlying record component refers to a parameterized type that cannot be instantiated for any reason |
+| --- | --- |
 
 ### getName
 

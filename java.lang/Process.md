@@ -7,6 +7,7 @@ abstract class Process
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.Process](https://developer.android.com/reference/kotlin/java/lang/Process#) |
 
 The `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#start()` and `https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array,%20kotlin.Array,%20java.io.File)` methods create a native process and return an instance of a subclass of `Process` that can be used to control the process and obtain information about it. The class `Process` provides methods for performing input from the process, performing output to the process, waiting for the process to complete, checking the exit status of the process, and destroying (killing) the process.
@@ -34,12 +35,15 @@ As of 1.5, `https://developer.android.com/reference/kotlin/java/lang/ProcessBuil
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#destroy()()` Kills the subprocess. |
 | open [Process](https://developer.android.com/reference/kotlin/java/lang/Process#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#destroyForcibly()()` Kills the subprocess. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#exitValue()()` Returns the exit value for the subprocess. |
+| --- | --- |
 | abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getErrorStream()()` Returns the input stream connected to the error output of the subprocess. |
 | abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getInputStream()()` Returns the input stream connected to the normal output of the subprocess. |
 | abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getOutputStream()()` Returns the output stream connected to the normal input of the subprocess. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#isAlive()()` Tests whether the subprocess represented by this `Process` is alive. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#pid()()` Returns the native process ID of the process. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#waitFor()()` Causes the current thread to wait, if necessary, until the process represented by this `Process` object has terminated. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#waitFor(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Causes the current thread to wait, if necessary, until the subprocess represented by this `Process` object has terminated, or the specified waiting time elapses. |
 
 ## Public constructors

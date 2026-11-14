@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # TelephonyScanManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyScanManager "View this page in Java") 
+| --- | --- |
 
 ```
 class TelephonyScanManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.TelephonyScanManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyScanManager#) |
 
 Manages the radio access network scan requests and callbacks. 

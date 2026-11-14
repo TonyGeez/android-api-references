@@ -9,6 +9,7 @@ class SandboxedSdk : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.sdksandbox.SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#) |
 
 > [!CAUTION]
@@ -37,6 +38,7 @@ The SDK should create it when `https://developer.android.com/reference/kotlin/an
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()()` Returns the interface to the SDK that was loaded in response to `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
 | [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getSharedLibraryInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#` for the SDK. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

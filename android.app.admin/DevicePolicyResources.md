@@ -7,6 +7,7 @@ class DevicePolicyResources
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.admin.DevicePolicyResources](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResources#) |
 
 Class containing the required identifiers to update device management resources.

@@ -6,6 +6,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # Smoke
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/suitebuilder/annotation/Smoke "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class Smoke

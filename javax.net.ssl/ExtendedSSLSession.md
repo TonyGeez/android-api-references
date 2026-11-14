@@ -9,6 +9,7 @@ abstract class ExtendedSSLSession : SSLSession
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.net.ssl.ExtendedSSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession#) |
 
 Extends the`SSLSession`interface to support additional session attributes.
@@ -24,6 +25,7 @@ Extends the`SSLSession`interface to support additional session attributes.
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getLocalSupportedSignatureAlgorithms](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession#getLocalSupportedSignatureAlgorithms())`()` Obtains an array of supported signature algorithms that the local side is willing to use. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPeerSupportedSignatureAlgorithms](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession#getPeerSupportedSignatureAlgorithms())`()` Obtains an array of supported signature algorithms that the peer is able to use. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SNIServerName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName)!\>! | [getRequestedServerNames](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession#getRequestedServerNames())`()` Obtains a [List](https://developer.android.com/reference/kotlin/java/util/List.html#) containing all [SNIServerName](https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName) s of the requested Server Name Indication (SNI) extension. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

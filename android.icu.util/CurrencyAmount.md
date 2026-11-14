@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # CurrencyAmount
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/CurrencyAmount "View this page in Java") 
+| --- | --- |
 
 ```
 open class CurrencyAmount : Measure
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.util.Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure) ||
 | | ↳ | [android.icu.util.CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount#) |
 

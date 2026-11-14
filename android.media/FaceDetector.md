@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # FaceDetector
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/FaceDetector "View this page in Java") 
+| --- | --- |
 
 ```
 open class FaceDetector
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.FaceDetector](https://developer.android.com/reference/kotlin/android/media/FaceDetector#) |
 
 Identifies the faces of people in a [android.graphics.Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) graphic object.
@@ -53,6 +55,7 @@ Creates a FaceDetector, configured with the size of the images to be analysed an
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the width of the image |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the height of the image |
 | `maxFaces` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of faces to identify |
+| --- | --- |
 
 ## Public methods
 

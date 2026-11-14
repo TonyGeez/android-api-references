@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # SEService
 
 Kotlin| [Java](https://developer.android.com/reference/android/se/omapi/SEService "View this page in Java") 
+| --- | --- |
 
 ```
 class SEService
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.se.omapi.SEService](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#) |
 
 The SEService realises the communication to available Secure Elements on the device. This is the entry point of this API. It is used to connect to the infrastructure and get access to a list of Secure Element Readers.
@@ -26,6 +28,7 @@ The SEService realises the communication to available Secure Elements on the dev
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SECURE_ELEMENT_STATE_CHANGED](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#ACTION_SECURE_ELEMENT_STATE_CHANGED:kotlin.String) Broadcast Action: Intent to notify if the secure element state is changed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_NAME](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#EXTRA_READER_NAME:kotlin.String) Mandatory extra containing the reader name of the state changed secure element. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_STATE](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#EXTRA_READER_STATE:kotlin.String) Mandatory extra containing the connected state of the state changed secure element. |
+| --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -36,6 +39,7 @@ The SEService realises the communication to available Secure Elements on the dev
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader)!\> | [getReaders](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#getReaders())`()` Returns an array of available Secure Element readers. |
 | [Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader) | [getUiccReader](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#getUiccReader(kotlin.Int))`(`slotNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a UICC Reader instance with specific slot number from the SecureElementService |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#getVersion())`()` Returns the version of the OpenMobile API specification this implementation is based on. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#isConnected())`()` Tells whether or not the service is connected. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](https://developer.android.com/reference/kotlin/android/se/omapi/SEService#shutdown())`()` Releases all Secure Elements resources allocated by this SEService (including any binding to an underlying service). |
 
@@ -102,6 +106,7 @@ The call-back object passed as a parameter will have its onConnected() method ca
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):the context of the calling application. Cannot be`null`. |
 | `listener` | [SEService.OnConnectedListener](https://developer.android.com/reference/kotlin/android/se/omapi/SEService.OnConnectedListener):a OnConnectedListener object. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):an Executor which will be used when invoking the callback. This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,12 +5,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # Rating
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/Rating "View this page in Java") 
+| --- | --- |
 
 ```
 class Rating : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.Rating](https://developer.android.com/reference/kotlin/android/media/Rating#) |
 
 A class to encapsulate rating information used as content metadata. A rating is defined by its rating style (see [RATING_HEART](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_HEART:kotlin.Int), [RATING_THUMB_UP_DOWN](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_THUMB_UP_DOWN:kotlin.Int), [RATING_3_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_3_STARS:kotlin.Int), [RATING_4_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_4_STARS:kotlin.Int), [RATING_5_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_5_STARS:kotlin.Int) or [RATING_PERCENTAGE](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_PERCENTAGE:kotlin.Int)) and the actual rating value (which may be defined as "unrated"), both of which are defined when the rating instance is constructed through one of the factory methods.
@@ -22,9 +24,11 @@ A class to encapsulate rating information used as content metadata. A rating is 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_3_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_3_STARS:kotlin.Int) A rating style with 0 to 3 stars. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_4_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_4_STARS:kotlin.Int) A rating style with 0 to 4 stars. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_5_STARS](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_5_STARS:kotlin.Int) A rating style with 0 to 5 stars. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_HEART](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_HEART:kotlin.Int) A rating style with a single degree of rating, "heart" vs "no heart". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_NONE](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_NONE:kotlin.Int) Indicates a rating style is not supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_PERCENTAGE](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_PERCENTAGE:kotlin.Int) A rating style expressed as a percentage. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_THUMB_UP_DOWN](https://developer.android.com/reference/kotlin/android/media/Rating#RATING_THUMB_UP_DOWN:kotlin.Int) A rating style for "thumb up" vs "thumb down". |
 
 | Inherited constants ||
@@ -36,15 +40,19 @@ A class to encapsulate rating information used as content metadata. A rating is 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/Rating#describeContents())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPercentRating](https://developer.android.com/reference/kotlin/android/media/Rating#getPercentRating())`()` Return the percentage-based rating value. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRatingStyle](https://developer.android.com/reference/kotlin/android/media/Rating#getRatingStyle())`()` Return the rating style. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getStarRating](https://developer.android.com/reference/kotlin/android/media/Rating#getStarRating())`()` Return the star-based rating value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHeart](https://developer.android.com/reference/kotlin/android/media/Rating#hasHeart())`()` Return whether the rating is "heart selected". |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRated](https://developer.android.com/reference/kotlin/android/media/Rating#isRated())`()` Return whether there is a rating value available. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isThumbUp](https://developer.android.com/reference/kotlin/android/media/Rating#isThumbUp())`()` Return whether the rating is "thumb up". |
 | static [Rating](https://developer.android.com/reference/kotlin/android/media/Rating#)! | [newHeartRating](https://developer.android.com/reference/kotlin/android/media/Rating#newHeartRating(kotlin.Boolean))`(`hasHeart:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a Rating instance with a heart-based rating. |
 | static [Rating](https://developer.android.com/reference/kotlin/android/media/Rating#)! | [newPercentageRating](https://developer.android.com/reference/kotlin/android/media/Rating#newPercentageRating(kotlin.Float))`(`percent:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return a Rating instance with a percentage-based rating. |
+| --- | --- |
 | static [Rating](https://developer.android.com/reference/kotlin/android/media/Rating#)! | [newStarRating](https://developer.android.com/reference/kotlin/android/media/Rating#newStarRating(kotlin.Int,%20kotlin.Float))`(`starRatingStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `starRating:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return a Rating instance with a star-based rating. |
 | static [Rating](https://developer.android.com/reference/kotlin/android/media/Rating#)! | [newThumbRating](https://developer.android.com/reference/kotlin/android/media/Rating#newThumbRating(kotlin.Boolean))`(`thumbIsUp:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a Rating instance with a thumb-based rating. |
 | static [Rating](https://developer.android.com/reference/kotlin/android/media/Rating#)! | [newUnratedRating](https://developer.android.com/reference/kotlin/android/media/Rating#newUnratedRating(kotlin.Int))`(`ratingStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a Rating instance with no rating. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/Rating#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/Rating#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

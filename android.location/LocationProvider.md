@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # LocationProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/LocationProvider "View this page in Java") 
+| --- | --- |
 
 ```
 open class LocationProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.LocationProvider](https://developer.android.com/reference/kotlin/android/location/LocationProvider#) |
 
 | **This class was deprecated in API level 31.**
@@ -27,18 +29,22 @@ Information about the properties of a location provider.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABLE](https://developer.android.com/reference/kotlin/android/location/LocationProvider#AVAILABLE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OUT_OF_SERVICE](https://developer.android.com/reference/kotlin/android/location/LocationProvider#OUT_OF_SERVICE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPORARILY_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/location/LocationProvider#TEMPORARILY_UNAVAILABLE:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccuracy](https://developer.android.com/reference/kotlin/android/location/LocationProvider#getAccuracy())`()` Returns the rough accuracy of this provider, one of the ProviderProperties. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/location/LocationProvider#getName())`()` Returns the name of this provider. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPowerRequirement](https://developer.android.com/reference/kotlin/android/location/LocationProvider#getPowerRequirement())`()` Returns the power requirement for this provider, one of the ProviderProperties. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMonetaryCost](https://developer.android.com/reference/kotlin/android/location/LocationProvider#hasMonetaryCost())`()` Returns true if the use of this provider may result in a monetary charge to the user, false if use is free. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [meetsCriteria](https://developer.android.com/reference/kotlin/android/location/LocationProvider#meetsCriteria(android.location.Criteria))`(`criteria:` ` [Criteria](https://developer.android.com/reference/kotlin/android/location/Criteria)!`)` Returns true if this provider meets the given criteria, false otherwise. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresCell](https://developer.android.com/reference/kotlin/android/location/LocationProvider#requiresCell())`()` Returns true if the provider requires access to an appropriate cellular network (e.g., to make use of cell tower IDs), false otherwise. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresNetwork](https://developer.android.com/reference/kotlin/android/location/LocationProvider#requiresNetwork())`()` Returns true if the provider requires access to a data network (e.g., the Internet), false otherwise. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresSatellite](https://developer.android.com/reference/kotlin/android/location/LocationProvider#requiresSatellite())`()` Returns true if the provider requires access to a satellite-based positioning system (e.g., GPS), false otherwise. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsAltitude](https://developer.android.com/reference/kotlin/android/location/LocationProvider#supportsAltitude())`()` Returns true if the provider is able to provide altitude information, false otherwise. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsBearing](https://developer.android.com/reference/kotlin/android/location/LocationProvider#supportsBearing())`()` Returns true if the provider is able to provide bearing information, false otherwise. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSpeed](https://developer.android.com/reference/kotlin/android/location/LocationProvider#supportsSpeed())`()` Returns true if the provider is able to provide speed information, false otherwise. |
 

@@ -9,6 +9,7 @@ open class MemoryHandler : Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler) ||
 | | ↳ | [java.util.logging.MemoryHandler](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#) |
 
@@ -54,9 +55,11 @@ For a custom handler, e.g. com.foo.MyHandler, the properties would be:
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#close())`()` Close the Handler and free all associated resources. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#flush())`()` Causes a flush on the target Handler. |
 | open [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)! | [getPushLevel](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#getPushLevel())`()` Get the pushLevel. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#isLoggable(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Check if this Handler would actually log a given LogRecord into its internal buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#publish(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Store a LogRecord in an internal buffer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#push())`()` Push any buffered output to the target Handler. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPushLevel](https://developer.android.com/reference/kotlin/java/util/logging/MemoryHandler#setPushLevel(java.util.logging.Level))`(`newLevel:` ` [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)!`)` Set the pushLevel. |
 
 | Inherited functions ||
@@ -95,6 +98,7 @@ The MemoryHandler is configured based on LogManager properties (or their default
 | `target` | [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!:the Handler to which to publish output. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of log records to buffer (must be greater than zero) |
 | `pushLevel` | [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level)!:message level to push on |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|------------------|

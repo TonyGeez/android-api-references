@@ -3,12 +3,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # VisibilitySetterAction
 
 Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/VisibilitySetterAction "View this page in Java")
+| --- | --- |
 
 ```
 class VisibilitySetterAction : OnClickAction, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.VisibilitySetterAction](https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#) |
 
 Action used to change the visibility of other child view in a `https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription` `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#`.
@@ -30,6 +32,7 @@ See `https://developer.android.com/reference/kotlin/android/service/autofill/Cus
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # PaintFlagsDrawFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/PaintFlagsDrawFilter "View this page in Java") 
+| --- | --- |
 
 ```
 open class PaintFlagsDrawFilter : DrawFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.DrawFilter](https://developer.android.com/reference/kotlin/android/graphics/DrawFilter) ||
 | | ↳ | [android.graphics.PaintFlagsDrawFilter](https://developer.android.com/reference/kotlin/android/graphics/PaintFlagsDrawFilter#) |
 

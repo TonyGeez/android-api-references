@@ -9,6 +9,7 @@ open class RemoveAdSelectionOverrideRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.RemoveAdSelectionOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#) |
 
 > [!CAUTION]

@@ -7,6 +7,7 @@ class Light : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.lights.Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light#) |
 
 Represents a logical light on the device.
@@ -18,12 +19,15 @@ Represents a logical light on the device.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_CAPABILITY_ANIMATION:kotlin.Int` Capability for lights that support animations and fast transitions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_CAPABILITY_BRIGHTNESS:kotlin.Int` Capability for lights that could adjust its LED brightness. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_CAPABILITY_COLOR_RGB:kotlin.Int` Capability for lights that have red, green and blue LEDs to control the light's color. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_CAPABILITY_RGB:kotlin.Int` Capability for lights that have red, green and blue LEDs to control the light's color. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_APPLICATION:kotlin.Int` Type for lights that indicate application driven use cases. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_INPUT:kotlin.Int` Type for lights that indicate a monochrome color LED light. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_KEYBOARD_BACKLIGHT:kotlin.Int` Type for lights that illuminate keyboard keys. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_MICROPHONE:kotlin.Int` Type for lights that indicate microphone usage |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#LIGHT_TYPE_PLAYER_ID:kotlin.Int` Type for lights that indicate a group of LED lights representing player id. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -34,15 +38,19 @@ Represents a logical light on the device.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#describeContents()()` Implement the Parcelable interface |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#getId()()` Returns the id of the light. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#getMinUpdatePeriodMillis()()` Returns the minimum update period supported by the light. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#getName()()` Returns the name of the light. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#getOrdinal()()` Returns the ordinal of the light. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#getType()()` Returns the logical type of the light. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#hasAnimationControl()()` Check whether the light has animation capabilities. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#hasBrightnessControl()()` Check whether the light has led brightness control. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#hasRgbControl()()` Check whether the light has RGB led control. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/lights/Light#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
 
 | Properties ||

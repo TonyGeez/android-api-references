@@ -9,13 +9,17 @@ open class InflaterInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||
 | | | ↳ | [java.util.zip.InflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [GZIPInputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPInputStream), [ZipInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipInputStream) |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [GZIPInputStream](https://developer.android.com/reference/kotlin/java/util/zip/GZIPInputStream) | This class implements a stream filter for reading compressed data in the GZIP file format. | | [ZipInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipInputStream) | This class implements an input stream filter for reading files in the ZIP file format. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [JarInputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream.html#) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [JarInputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream.html#) | The`JarInputStream`class is used to read the contents of a JAR file from any input stream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 This class implements a stream filter for uncompressing data in the "deflate" compression format. It is also used as the basis for other decompression filters, such as GZIPInputStream.
 
@@ -32,9 +36,11 @@ This class implements a stream filter for uncompressing data in the "deflate" co
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#available())`()` Returns 0 after EOF has been reached, otherwise always return 1. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#close())`()` Closes this input stream and releases any system resources associated with the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#mark(kotlin.Int))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the current position in this input stream. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#markSupported())`()` Tests if this input stream supports the`mark`and`reset`methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#read())`()` Reads a byte of uncompressed data. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads uncompressed data into an array of bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#reset())`()` Repositions this stream to the position at the time the`mark`method was last called on this input stream. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips specified number of bytes of uncompressed data. |
 
@@ -52,6 +58,7 @@ This class implements a stream filter for uncompressing data in the "deflate" co
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#buf:kotlin.ByteArray) Input buffer for decompression. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [closed](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#closed:kotlin.Boolean) Indicates whether the #close() method has been called, internal use only. |
 | [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)! | [inf](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#inf:java.util.zip.Inflater) Decompressor for this stream. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [len](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream#len:kotlin.Int) Length of input buffer. |
 
 | Inherited properties ||
@@ -109,6 +116,7 @@ Creates a new input stream with the specified decompressor and buffer size.
 | `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream |
 | `inf` | [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!:the decompressor ("inflater") |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the input buffer size |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------|
@@ -227,6 +235,7 @@ Reads uncompressed data into an array of bytes. If`len`is not zero, the method w
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -237,6 +246,7 @@ Reads uncompressed data into an array of bytes. If`len`is not zero, the method w
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`b.length - off` |
+| --- | --- |
 | `java.util.zip.ZipException` | if a ZIP format error has occurred |
 
 ### reset

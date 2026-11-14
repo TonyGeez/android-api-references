@@ -9,6 +9,7 @@ open class DriverManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.sql.DriverManager](https://developer.android.com/reference/kotlin/java/sql/DriverManager#) |
 
 The basic service for managing a set of JDBC drivers. 
@@ -39,15 +40,19 @@ Starting with the Java 2 SDK, Standard Edition, version 1.3, a logging stream ca
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deregisterDriver](https://developer.android.com/reference/kotlin/java/sql/DriverManager#deregisterDriver(java.sql.Driver))`(`driver:` ` [Driver](https://developer.android.com/reference/kotlin/java/sql/Driver)!`)` Drops a driver from the`DriverManager`'s list. |
 | openstatic [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [getConnection](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getConnection(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to establish a connection to the given database URL. |
 | openstatic [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [getConnection](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getConnection(kotlin.String,%20kotlin.String,%20kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `user:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to establish a connection to the given database URL. |
+| --- | --- |
 | openstatic [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [getConnection](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getConnection(kotlin.String,%20java.util.Properties))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Attempts to establish a connection to the given database URL. |
 | openstatic [Driver](https://developer.android.com/reference/kotlin/java/sql/Driver)! | [getDriver](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getDriver(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to locate a driver that understands the given URL. |
 | openstatic [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Driver](https://developer.android.com/reference/kotlin/java/sql/Driver)!\>! | [getDrivers](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getDrivers())`()` Retrieves an Enumeration with all of the currently loaded JDBC drivers to which the current caller has access. |
+| --- | --- |
 | openstatic [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)! | [getLogStream](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getLogStream())`()` Retrieves the logging/tracing PrintStream that is used by the`DriverManager`and all drivers. |
 | openstatic [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)! | [getLogWriter](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getLogWriter())`()` Retrieves the log writer. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoginTimeout](https://developer.android.com/reference/kotlin/java/sql/DriverManager#getLoginTimeout())`()` Gets the maximum time in seconds that a driver can wait when attempting to log in to a database. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/sql/DriverManager#println(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Prints a message to the current JDBC log stream. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDriver](https://developer.android.com/reference/kotlin/java/sql/DriverManager#registerDriver(java.sql.Driver))`(`driver:` ` [Driver](https://developer.android.com/reference/kotlin/java/sql/Driver)!`)` Registers the given driver with the`DriverManager`. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogStream](https://developer.android.com/reference/kotlin/java/sql/DriverManager#setLogStream(java.io.PrintStream))`(`out:` ` [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)!`)` Sets the logging/tracing PrintStream that is used by the`DriverManager`and all drivers. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogWriter](https://developer.android.com/reference/kotlin/java/sql/DriverManager#setLogWriter(java.io.PrintWriter))`(`out:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`)` Sets the logging/tracing`PrintWriter`object that is used by the`DriverManager`and all drivers. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoginTimeout](https://developer.android.com/reference/kotlin/java/sql/DriverManager#setLoginTimeout(kotlin.Int))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum time in seconds that a driver will wait while attempting to connect to a database. |
 
@@ -112,6 +117,7 @@ Attempts to establish a connection to the given database URL. The`DriverManager`
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a database url of the form`jdbc:`*subprotocol* `:`*subname* |
 | `user` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the database user on whose behalf the connection is being made |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the user's password |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------|

@@ -7,6 +7,7 @@ class PlaybackSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.PlaybackSession](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#) |
 
 An instance of this class represents a session of media playback used to report playback metrics and events. Create a new instance using `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createPlaybackSession()`.
@@ -18,12 +19,15 @@ An instance of this class represents a session of media playback used to report 
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#getSessionId()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportNetworkEvent(android.media.metrics.NetworkEvent)(event: https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent)` Reports network event. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportPlaybackErrorEvent(android.media.metrics.PlaybackErrorEvent)(event: https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent)` Reports error event. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportPlaybackMetrics(android.media.metrics.PlaybackMetrics)(metrics: https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics)` Reports playback metrics. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportPlaybackStateEvent(android.media.metrics.PlaybackStateEvent)(event: https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent)` Reports playback state event. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportTrackChangeEvent(android.media.metrics.TrackChangeEvent)(event: https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent)` Reports track change event. |
 
 ## Public methods

@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnMenuVisibilityListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnMenuVisibilityListener

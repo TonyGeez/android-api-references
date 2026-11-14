@@ -7,6 +7,7 @@ open class StatusBarManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.StatusBarManager](https://developer.android.com/reference/kotlin/android/app/StatusBarManager#) |
 
 Allows an app to control the status bar.
@@ -18,21 +19,26 @@ Allows an app to control the status bar.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` cannot be completed due to the Power Menu being currently disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` has succeeded and the Power Menu is currently showing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` Unknwown result of calling `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_APP_NOT_IN_FOREGROUND:kotlin.Int` Indicates that the requesting application is not in the foreground. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_BAD_COMPONENT:kotlin.Int` Indicates that the component does not match an enabled exported `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` for the current user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_MISMATCHED_PACKAGE:kotlin.Int` Indicates that this package does not match that of the `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_NOT_CURRENT_USER:kotlin.Int` Indicates that the user is not the current user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_NO_STATUS_BAR_SERVICE:kotlin.Int` The request could not be processed because no fulfilling service was found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_REQUEST_IN_PROGRESS:kotlin.Int` Indicates that there's a request in progress for this package. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_RESULT_TILE_ADDED:kotlin.Int` Response indicating that the tile was added. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED:kotlin.Int` Response indicating that the tile was already added and the user was not prompted. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_RESULT_TILE_NOT_ADDED:kotlin.Int` Response indicating that the tile was not added. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#canLaunchCaptureContentActivityForNote(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity)` Checks whether the supplied activity can `https://developer.android.com/reference/kotlin/android/app/Activity#startActivityForResult(android.content.Intent,%20kotlin.Int)` a system activity that captures content on the screen to take a screenshot. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#requestAddTileService(android.content.ComponentName,%20kotlin.CharSequence,%20android.graphics.drawable.Icon,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(tileServiceComponentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, tileLabel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#, resultExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Request to the user to add a `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` to the set of current QS tiles. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>)` Request to show the Power Menu. |
+| --- | --- |
 
 ## Constants
 
@@ -248,6 +254,7 @@ The user for which this will be added is determined from the `https://developer.
 | `tileServiceComponentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` for the request. This value cannot be `null`. |
 | `tileLabel` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): label of the tile to show to the user. This value cannot be `null`. |
 | `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#): icon to use in the tile shown to the user. This value cannot be `null`. |
+| --- | --- |
 | `resultExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): an executor to run the callback on. This value cannot be `null`. |
 | `resultCallback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: callback to indicate the result of the request. This value cannot be `null`. |
 

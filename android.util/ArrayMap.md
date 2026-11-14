@@ -7,6 +7,7 @@ class ArrayMap<K : Any!, V : Any!> : MutableMap<K, V>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.ArrayMap](https://developer.android.com/reference/kotlin/android/util/ArrayMap#) |
 
 ArrayMap is a generic key-\>value mapping data structure that is designed to be more memory efficient than a traditional `https://developer.android.com/reference/kotlin/java/util/HashMap.html#`. It keeps its mappings in an array data structure -- an integer array of hash codes for each item, and an Object array of the key/value pairs. This allows it to avoid having to create an extra object for every entry put in to the map, and it also tries to control the growth of the size of these arrays more aggressively (since growing them only requires copying the entries in the array, not rebuilding a hash map).
@@ -30,33 +31,42 @@ This structure is **NOT** thread-safe.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#clear()()` Make the array map empty. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#containsAll(kotlin.collections.MutableCollection)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<*>!)` Determine if the array map contains all of the keys in the given collection. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#containsKey(android.util.ArrayMap.K)(key: K)` Check whether a key exists in the array. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#containsValue(android.util.ArrayMap.V)(value: V)` Check whether a value exists in the array. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#ensureCapacity(kotlin.Int)(minimumCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure the array map can hold at least minimumCapacity items. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in K, in V>)` Performs the given action for all elements in the stored order. |
 | V? | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#get(android.util.ArrayMap.K)(key: K)` Retrieve a value from the array. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#indexOfKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns the index of a key in the set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#indexOfValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns an index for which `https://developer.android.com/reference/kotlin/android/util/ArrayMap#valueAt(kotlin.Int)` would return the specified value, or a negative number if no keys map to the specified value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#isEmpty()()` Return true if the array map contains no items. |
+| --- | --- |
 | K | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#keyAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the key at the given index in the array. |
 | V? | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#put(android.util.ArrayMap.K,%20android.util.ArrayMap.V)(key: K, value: V)` Add a new value to the array map. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#putAll(android.util.ArrayMap)(array: https://developer.android.com/reference/kotlin/android/util/ArrayMap#<out K, out V>!)` Perform a `https://developer.android.com/reference/kotlin/android/util/ArrayMap#put(android.util.ArrayMap.K,%20android.util.ArrayMap.V)` of all key/value pairs in array |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Perform a `https://developer.android.com/reference/kotlin/android/util/ArrayMap#put(android.util.ArrayMap.K,%20android.util.ArrayMap.V)` of all key/value pairs in map |
 | V? | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#remove(android.util.ArrayMap.K)(key: K)` Remove an existing key from the array map. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#removeAll(kotlin.collections.MutableCollection)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<*>!)` Remove all keys in the array map that exist in the given collection. |
+| --- | --- |
 | V | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove the key/value mapping at the given index. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#retainAll(kotlin.collections.MutableCollection)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<*>!)` Remove all keys in the array map that do **not** exist in the given collection. |
+| --- | --- |
 | V | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#setValueAt(kotlin.Int,%20android.util.ArrayMap.V)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: V)` Set the value at a given index in the array. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#toString()()` Returns a string representation of the object. |
 | V | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#valueAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the value at the given index in the array. |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>\> | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#entries:kotlin.collections.MutableSet` Return a `https://developer.android.com/reference/kotlin/java/util/Set.html#` for iterating over and interacting with all mappings in the array map. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#keys:kotlin.collections.MutableSet` Return a `https://developer.android.com/reference/kotlin/java/util/Set.html#` for iterating over and interacting with all keys in the array map. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#size:kotlin.Int` Return the number of items in this array map. |
+| --- | --- |
 | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/android/util/ArrayMap#values:kotlin.collections.MutableCollection` Return a `https://developer.android.com/reference/kotlin/java/util/Collection.html#` for iterating over and interacting with all values in the array map. |
 
 ## Public constructors
@@ -208,6 +218,7 @@ This implementation returns false if the object is not a map, or if the maps hav
 | `obj` | the reference object with which to compare. |
 | `o` | object to be compared for equality with this map |
 | `object` | This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -364,6 +375,7 @@ Add a new value to the array map.
 | `java.lang.ClassCastException` | if the class of the specified key or value prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified key or value is null and this map does not permit null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
 
 ### putAll
@@ -400,6 +412,7 @@ Perform a `https://developer.android.com/reference/kotlin/android/util/ArrayMap#
 | `java.lang.ClassCastException` | if the class of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.IllegalArgumentException` | if some property of a key or value in the specified map prevents it from being stored in this map |
 | `java.lang.NullPointerException` | if the specified map is null, or if this map does not permit null keys or values, and the specified map contains null keys or values |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putAll` operation is not supported by this map |
 
 ### remove
@@ -425,6 +438,7 @@ Remove an existing key from the array map.
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified key is null and this map does not permit null keys (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
+| --- | --- |
 
 ### removeAll
 
@@ -483,6 +497,7 @@ Replaces each entry's value with the result of invoking the given function on th
 | `java.lang.ClassCastException` | if the class of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.IllegalArgumentException` | if some property of a replacement value prevents it from being stored in this map (java.util.Collection#) |
 | `java.lang.NullPointerException` | if the specified function is null, or if a replacement value is null and this map does not permit null values (java.util.Collection#) |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replaceAll` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
 

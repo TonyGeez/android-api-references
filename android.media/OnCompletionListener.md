@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OnCompletionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnCompletionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCompletionListener

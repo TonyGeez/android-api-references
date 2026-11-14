@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # BitmapShader
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/BitmapShader "View this page in Java")
+| --- | --- |
 
 ```
 open class BitmapShader : Shader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
 | | ↳ | [android.graphics.BitmapShader](https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#) |
 
@@ -21,6 +23,7 @@ Shader used to draw a bitmap as a texture. The bitmap can be repeated or mirrore
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#FILTER_MODE_DEFAULT:kotlin.Int` This FilterMode value will respect the value of the Paint#isFilterBitmap flag while the shader is attached to the Paint. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#FILTER_MODE_LINEAR:kotlin.Int` This FilterMode value will cause the shader to interpolate the output of the shader from a 2x2 grid of pixels nearest to the sample point (i.e. bilinear interpolation). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#FILTER_MODE_NEAREST:kotlin.Int` This FilterMode value will cause the shader to sample from the nearest pixel to the requested sample point. |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -31,6 +34,7 @@ Shader used to draw a bitmap as a texture. The bitmap can be repeated or mirrore
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#getFilterMode()()` Returns the filter mode used when sampling from this shader |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#getMaxAnisotropy()()` Returns the current max anisotropic filtering value configured by `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#setFilterMode(kotlin.Int)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#setFilterMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the filter mode to be used when sampling from this shader. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#setMaxAnisotropy(kotlin.Int)(maxAnisotropy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Enables and configures the max anisotropy sampling value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#setOverrideGainmap(android.graphics.Gainmap)(overrideGainmap: https://developer.android.com/reference/kotlin/android/graphics/Gainmap?)` Draws the BitmapShader with a copy of the given gainmap instead of the gainmap on the Bitmap the shader was constructed from |
 
@@ -114,6 +118,7 @@ Call this to create a new shader that will draw with a bitmap.
 | `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): The bitmap to use inside the shader. This value cannot be `null`. |
 | `tileX` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode): The tiling mode for x to draw the bitmap in. This value cannot be `null`. |
 | `tileY` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode): The tiling mode for y to draw the bitmap in. This value cannot be `null`. |
+| --- | --- |
 
 ## Public methods
 

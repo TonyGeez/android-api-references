@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RawResponderRangingConfig
 
 Kotlin| [Java](https://developer.android.com/reference/android/ranging/raw/RawResponderRangingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 class RawResponderRangingConfig : RangingConfig, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.ranging.RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig.html#) ||
 | | ↳ | [android.ranging.raw.RawResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig#) |
 
@@ -32,6 +34,7 @@ Represents the configuration for a raw ranging session initiated by a responder 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig#describeContents())`()` <br /> |
 | [RawRangingDevice](https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice) | [getRawRangingDevice](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig#getRawRangingDevice())`()` Returns the [android.ranging.raw.RawRangingDevice](https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice) participating in this session as the responder. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig#toString())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||

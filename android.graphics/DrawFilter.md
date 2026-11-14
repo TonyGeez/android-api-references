@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DrawFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/DrawFilter "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrawFilter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.DrawFilter](https://developer.android.com/reference/kotlin/android/graphics/DrawFilter#) |
 
 | Known Direct Subclasses [PaintFlagsDrawFilter](https://developer.android.com/reference/kotlin/android/graphics/PaintFlagsDrawFilter) |--------------------------------------------------------------------------------------------------------------|--------| | [PaintFlagsDrawFilter](https://developer.android.com/reference/kotlin/android/graphics/PaintFlagsDrawFilter) | <br /> | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A DrawFilter subclass can be installed in a Canvas. When it is present, it can modify the paint that is used to draw (temporarily). With this, a filter can disable/enable antialiasing, or change the color for everything this is drawn.
 

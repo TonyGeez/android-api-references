@@ -6,15 +6,18 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 # DrmEvent
 
 Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmEvent "View this page in Java") 
+| --- | --- |
 
 ```
 open class DrmEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.drm.DrmEvent](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#) |
 
 | Known Direct Subclasses [DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent), [DrmInfoEvent](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent) | An entity class that is passed to the [onError()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener#onError(android.drm.DrmManagerClient,%20android.drm.DrmErrorEvent))callback. | | [DrmInfoEvent](https://developer.android.com/reference/kotlin/android/drm/DrmInfoEvent) | An entity class that is passed to the [onInfo()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener#onInfo(android.drm.DrmManagerClient,%20android.drm.DrmInfoEvent))callback. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 30.**
 |
@@ -29,6 +32,7 @@ A base class that is used to send asynchronous event information from the DRM fr
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_OBJECT](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#DRM_INFO_OBJECT:kotlin.String) The key that is used in the`attributes`HashMap to pass the [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo) object. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_STATUS_OBJECT](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#DRM_INFO_STATUS_OBJECT:kotlin.String) The key that is used in the`attributes`HashMap to pass the return status. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_RIGHTS_REMOVED](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#TYPE_ALL_RIGHTS_REMOVED:kotlin.Int) All of the rights information associated with all DRM schemes have been successfully removed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DRM_INFO_PROCESSED](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#TYPE_DRM_INFO_PROCESSED:kotlin.Int) The given DRM information has been successfully processed. |
 
 | Protected constructors ||
@@ -41,6 +45,7 @@ A base class that is used to send asynchronous event information from the DRM fr
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#getAttribute(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the attribute associated with the specified key. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessage](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#getMessage())`()` Retrieves the message description associated with this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#getType())`()` Retrieves the type of information that is associated with this object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUniqueId](https://developer.android.com/reference/kotlin/android/drm/DrmEvent#getUniqueId())`()` Retrieves the unique session identifier associated with this object. |
 
 ## Constants
@@ -122,6 +127,7 @@ Creates a`DrmEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of information. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. |
+| --- | --- |
 
 ### DrmEvent
 
@@ -142,6 +148,7 @@ Creates a`DrmEvent`object with the specified parameters.
 | `uniqueId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Unique session identifier. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of information. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. |
+| --- | --- |
 | `attributes` | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Attributes for extensible information. |
 
 ## Public methods

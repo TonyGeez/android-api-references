@@ -5,15 +5,18 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # RangingConfig
 
 Kotlin | [Java](https://developer.android.com/reference/android/ranging/RangingConfig "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class RangingConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig#) |
 
 | Known Direct Subclasses [OobInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig), [OobResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig), [RawInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig), [RawResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig) |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [OobInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig) | Represents the configuration for an Out-of-Band (OOB) initiator in a ranging session. | | [OobResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig) | Represents the configuration for an Out-of-Band (OOB) responder in a ranging session. | | [RawInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig) | Represents the configuration for initiating a raw ranging session. | | [RawResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig) | Represents the configuration for a raw ranging session initiated by a responder device. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class to represent type of ranging configuration.
 

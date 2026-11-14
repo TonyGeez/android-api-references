@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # EventStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/EventStats "View this page in Java") 
+| --- | --- |
 
 ```
 class EventStats : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#) |
 
 Contains usage statistics for an event type for a specific time range.
@@ -30,12 +32,15 @@ Contains usage statistics for an event type for a specific time range.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#add(android.app.usage.EventStats))`(`right:` ` [EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#)!`)` Add the statistics from the right [EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#) to the left. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getCount())`()` Return the number of times that this event occurred over the interval. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getEventType())`()` Return the type of event this is usage for. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFirstTimeStamp](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getFirstTimeStamp())`()` Get the beginning of the time range this [android.app.usage.EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#) represents, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastEventTime](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getLastEventTime())`()` Get the last time this event triggered, measured in milliseconds since the epoch. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastTimeStamp](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getLastTimeStamp())`()` Get the end of the time range this [android.app.usage.EventStats](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#) represents, measured in milliseconds since the epoch. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalTime](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#getTotalTime())`()` Get the total time this event was active, measured in milliseconds. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/usage/EventStats#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

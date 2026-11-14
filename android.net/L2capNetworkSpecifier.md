@@ -8,6 +8,7 @@ class L2capNetworkSpecifier : NetworkSpecifier, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier) ||
 | | ↳ | [android.net.L2capNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#) |
 
@@ -24,9 +25,11 @@ A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#HEADER_COMPRESSION_6LOWPAN:kotlin.Int` Use 6lowpan header compression as specified in rfc6282. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#HEADER_COMPRESSION_ANY:kotlin.Int` Accept any form of header compression. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#HEADER_COMPRESSION_NONE:kotlin.Int` Do not compress packets on this network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#PSM_ANY:kotlin.Int` Match any Protocol/Service Multiplexer (PSM). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#ROLE_ANY:kotlin.Int` Match any role. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#ROLE_CLIENT:kotlin.Int` Specifier describes a client network, i. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#ROLE_SERVER:kotlin.Int` Specifier describes a server network, i. |
 
 | Inherited constants ||
@@ -38,12 +41,15 @@ A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#canBeSatisfiedBy(android.net.NetworkSpecifier)(other: https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier!)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getHeaderCompression()()` Returns the compression mechanism for this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getPsm()()` Returns the Protocol/Service Multiplexer (PSM) for this network to connect to. |
 | [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRemoteAddress()()` Returns the remote MAC address for this network to connect to. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRole()()` Returns the role to be used for this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#hashCode()()` Returns a hash code value for the object. |
 | [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#redact()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

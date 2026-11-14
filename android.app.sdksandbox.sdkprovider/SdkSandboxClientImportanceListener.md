@@ -4,6 +4,7 @@ Also in [Ad Services Extensions 14](https://developer.android.com/sdkExtensions)
 # SdkSandboxClientImportanceListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener "View this page in Java")
+| --- | --- |
 
 ```
 interface SdkSandboxClientImportanceListener

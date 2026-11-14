@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ContrastChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/UiModeManager.ContrastChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface ContrastChangeListener

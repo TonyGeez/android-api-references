@@ -3,12 +3,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # ChangeImageTransform
 
 Kotlin | [Java](https://developer.android.com/reference/android/transition/ChangeImageTransform "View this page in Java")
+| --- | --- |
 
 ```
 open class ChangeImageTransform : Transition
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.transition.Transition](https://developer.android.com/reference/kotlin/android/transition/Transition) ||
 | | ↳ | [android.transition.ChangeImageTransform](https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#) |
 
@@ -32,6 +34,7 @@ In combination with ChangeBounds, ChangeImageTransform allows ImageViews that ch
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#captureEndValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the end scene for the properties that this transition monitors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
 | open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator.html#)? | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` Creates an Animator for ImageViews moving, changing dimensions, and/or changing `https://developer.android.com/reference/kotlin/android/widget/ImageView.ScaleType.html#`. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#getTransitionProperties()()` Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. |
 
 | Inherited functions ||
@@ -111,6 +114,7 @@ Creates an Animator for ImageViews moving, changing dimensions, and/or changing 
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#): The root of the transition hierarchy. This value cannot be `null`. |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: The values for a specific target in the start scene. This value may be `null`. |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)?: The values for the target in the end scene. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

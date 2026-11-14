@@ -5,6 +5,7 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 # OnApplyWindowInsetsListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnApplyWindowInsetsListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnApplyWindowInsetsListener

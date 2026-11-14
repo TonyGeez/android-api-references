@@ -9,6 +9,7 @@ interface EntityResolver2 : EntityResolver
 | [org.xml.sax.ext.EntityResolver2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/EntityResolver2#) |
 
 | Known Direct Subclasses [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) |---|---| | [DefaultHandler2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/DefaultHandler2) | This class extends the SAX2 base handler class to support the SAX2 `https://developer.android.com/reference/kotlin/org/xml/sax/ext/LexicalHandler`, `https://developer.android.com/reference/kotlin/org/xml/sax/ext/DeclHandler`, and `https://developer.android.com/reference/kotlin/org/xml/sax/ext/EntityResolver2#` extensions. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Extended interface for mapping external entity references to input sources, or providing a missing external subset. The `https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#setEntityResolver(org.xml.sax.EntityResolver)` method is used to provide implementations of this interface to parsers. When a parser uses the methods in this interface, the #resolveEntity method (in this interface) is used *instead of* the older (SAX 1.0) `https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#resolveEntity(kotlin.String,%20kotlin.String)` method. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.*
 
@@ -104,6 +105,7 @@ Note that the entity naming scheme used here is the same one used in the `https:
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Identifies the external entity being resolved. Either "\[dtd\]" for the external subset, or a name starting with "%" to indicate a parameter entity, or else the name of a general entity. This is never null when invoked by a SAX2 parser. |
 | `publicId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The public identifier of the external entity being referenced (normalized as required by the XML specification), or null if none was supplied. |
 | `baseURI` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The URI with respect to which relative systemIDs are interpreted. This is always an absolute URI, unless it is null (likely because the XMLReader was given an InputSource without one). This URI is defined by the XML specification to be the one associated with the "\<" starting the relevant declaration. |
+| --- | --- |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The system identifier of the external entity being referenced; either a relative or absolute URI. This is never null when invoked by a SAX2 parser; only declared entities, and any external subset, are resolved by such parsers. |
 
 | Return ||

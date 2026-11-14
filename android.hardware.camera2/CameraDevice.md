@@ -7,6 +7,7 @@ abstract class CameraDevice : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#) |
 
 The CameraDevice class is a representation of a single camera connected to an Android device, allowing for fine-grain control of image capture and post-processing at high frame rates.
@@ -27,30 +28,38 @@ A given camera device may provide support at one of several levels defined in `h
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#AUDIO_RESTRICTION_NONE:kotlin.Int` No vibration or sound muting for this camera device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#AUDIO_RESTRICTION_VIBRATION:kotlin.Int` Mute vibration from ringtones, alarms or notifications while this camera device is in use. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#AUDIO_RESTRICTION_VIBRATION_SOUND:kotlin.Int` Mute vibration and sound from ringtones, alarms or notifications while this camera device is in use. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_MANUAL:kotlin.Int` A basic template for direct application control of capture parameters. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_PREVIEW:kotlin.Int` Create a request suitable for a camera preview window. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_RECORD:kotlin.Int` Create a request suitable for video recording. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_STILL_CAPTURE:kotlin.Int` Create a request suitable for still image capture. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_VIDEO_SNAPSHOT:kotlin.Int` Create a request suitable for still image capture while recording video. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_ZERO_SHUTTER_LAG:kotlin.Int` Create a request suitable for zero shutter lag still capture. |
+| --- | --- |
 
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#close()()` Close the connection to this camera device as quickly as possible. |
 | abstract [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
 | open [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int,%20kotlin.collections.MutableSet)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, physicalCameraIdSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)(config: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration!)` Create a new `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` using a `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` helper object that aggregates all supported parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new camera capture session by providing the target output set of Surfaces to the camera device. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSessionByOutputConfigurations(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputConfigurations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>!, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new camera capture session by providing the target output set of Surfaces and its corresponding surface configuration to the camera device. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new constrained high speed capture session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createExtensionSession(android.hardware.camera2.params.ExtensionSessionConfiguration)(extensionConfiguration: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration)` Initialize a specific device-specific extension augmented camera capture session. |
 | abstract [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)(inputResult: https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input Surface configuration and the target output set of Surfaces to the camera device. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSessionByConfigurations(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` to the camera device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getCameraAudioRestriction()()` Get currently applied global camera audio restriction mode. |
+| --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getId()()` Get the ID of this camera device. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)(sessionConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration)` Checks whether a particular `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` is supported by the camera device. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set audio restriction mode when this CameraDevice is being used. |
+| --- | --- |
 
 ## Constants
 
@@ -233,6 +242,7 @@ Create a `https://developer.android.com/reference/kotlin/android/hardware/camera
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the templateType is not supported by this device. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if this is not a primary client of a camera opened in shared mode |
 
 ### createCaptureRequest
@@ -266,6 +276,7 @@ The output is undefined for any logical camera streams in case valid physical ca
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the templateType is not supported by this device, or one of the physical id arguments matches with logical camera id. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if this is not a primary client of a camera opened in shared mode |
 
 **See Also**
@@ -327,14 +338,17 @@ To use these tables, determine the number and the formats/targets of outputs nee
 Legacy devices (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY:kotlin.Int`) support at least the following stream combinations:
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `PRIV` | `MAXIMUM` | || || Simple preview, GPU video processing, or no-preview video recording. |
 | `JPEG` | `MAXIMUM` | || || No-viewfinder still image capture. |
 | `YUV ` | `MAXIMUM` | || || In-application video/image processing. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM` | || Standard still imaging. |
 | `YUV ` | `PREVIEW` | `JPEG` | `MAXIMUM` | || In-app processing plus still capture. |
 | `PRIV` | `PREVIEW` | `PRIV` | `PREVIEW` | || Standard recording. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `YUV ` | `PREVIEW` | || Preview plus in-app processing. |
 | `PRIV` | `PREVIEW` | `YUV ` | `PREVIEW` | `JPEG` | `MAXIMUM` | Still capture plus in-app processing. |
 
@@ -347,14 +361,17 @@ Legacy devices (`https://developer.android.com/reference/kotlin/android/hardware
 Limited-level (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int`) devices support at least the following stream combinations in addition to those for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY:kotlin.Int` devices:
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `PRIV` | `PREVIEW` | `PRIV` | `RECORD ` | || High-resolution video recording with preview. |
 | `PRIV` | `PREVIEW` | `YUV ` | `RECORD ` | || High-resolution in-app video processing with preview. |
 | `YUV ` | `PREVIEW` | `YUV ` | `RECORD ` | || Two-input in-app video processing. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PRIV` | `RECORD ` | `JPEG` | `RECORD ` | High-resolution recording with video snapshot. |
 | `PRIV` | `PREVIEW` | `YUV ` | `RECORD ` | `JPEG` | `RECORD ` | High-resolution in-app processing with video snapshot. |
 | `YUV ` | `PREVIEW` | `YUV ` | `PREVIEW` | `JPEG` | `MAXIMUM` | Two-input in-app processing with still capture. |
+| --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
@@ -365,14 +382,17 @@ Limited-level (`https://developer.android.com/reference/kotlin/android/hardware/
 FULL-level (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int`) devices support at least the following stream combinations in addition to those for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices:
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `PRIV` | `PREVIEW` | `PRIV` | `MAXIMUM` | || Maximum-resolution GPU processing with preview. |
 | `PRIV` | `PREVIEW` | `YUV ` | `MAXIMUM` | || Maximum-resolution in-app processing with preview. |
 | `YUV ` | `PREVIEW` | `YUV ` | `MAXIMUM` | || Maximum-resolution two-input in-app processing. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM` | Video recording with maximum-size video snapshot |
 | `YUV ` | `640x480` | `PRIV` | `PREVIEW` | `YUV ` | `MAXIMUM` | Standard video recording plus maximum-resolution in-app processing. |
 | `YUV ` | `640x480` | `YUV ` | `PREVIEW` | `YUV ` | `MAXIMUM` | Preview plus two-input maximum-resolution in-app processing. |
+| --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
@@ -383,14 +403,17 @@ FULL-level (`https://developer.android.com/reference/kotlin/android/hardware/cam
 RAW-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_RAW:kotlin.Int`) devices additionally support at least the following stream combinations on both `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices:
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `RAW ` | `MAXIMUM` | || || No-preview DNG capture. |
 | `PRIV` | `PREVIEW` | `RAW ` | `MAXIMUM` | || Standard DNG capture. |
 | `YUV ` | `PREVIEW` | `RAW ` | `MAXIMUM` | || In-app processing plus DNG capture. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PRIV` | `PREVIEW` | `RAW ` | `MAXIMUM` | Video recording with DNG capture. |
 | `PRIV` | `PREVIEW` | `YUV ` | `PREVIEW` | `RAW ` | `MAXIMUM` | Preview with in-app processing and DNG capture. |
 | `YUV ` | `PREVIEW` | `YUV ` | `PREVIEW` | `RAW ` | `MAXIMUM` | Two-input in-app processing plus DNG capture. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM` | `RAW ` | `MAXIMUM` | Still capture with simultaneous JPEG and DNG. |
 | `YUV ` | `PREVIEW` | `JPEG` | `MAXIMUM` | `RAW ` | `MAXIMUM` | In-app processing with simultaneous JPEG and DNG. |
 
@@ -403,11 +426,13 @@ RAW-capability (`https://developer.android.com/reference/kotlin/android/hardware
 BURST-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BURST_CAPTURE:kotlin.Int`) devices support at least the below stream combinations in addition to those for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices. Note that all FULL-level devices support the BURST capability, and the below list is a strict subset of the list for FULL-level devices, so this table is only relevant for LIMITED-level devices that support the BURST_CAPTURE capability.
 
 | Target 1 || Target 2 || Sample use case(s) |
+| --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|
 | `PRIV` | `PREVIEW` | `PRIV` | `MAXIMUM` | Maximum-resolution GPU processing with preview. |
 | `PRIV` | `PREVIEW` | `YUV ` | `MAXIMUM` | Maximum-resolution in-app processing with preview. |
 | `YUV ` | `PREVIEW` | `YUV ` | `MAXIMUM` | Maximum-resolution two-input in-app processing. |
+| --- | --- | --- | --- | --- |
 
 <br />
 
@@ -418,6 +443,7 @@ BURST-capability (`https://developer.android.com/reference/kotlin/android/hardwa
 LEVEL-3 (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_3:kotlin.Int`) support at least the following stream combinations in addition to the combinations for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int` and for RAW capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_RAW:kotlin.Int`):
 
 | Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|
 | `PRIV` | `PREVIEW` | `PRIV` | `640x480` | `YUV` | `MAXIMUM` | `RAW` | `MAXIMUM` | In-app viewfinder analysis with dynamic selection of output format. |
@@ -434,11 +460,13 @@ BACKWARD_COMPATIBLE devices capable of streaming concurrently with other devices
 Note: The sizes mentioned for these concurrent streams are the maximum sizes guaranteed to be supported. Sizes smaller than these, obtained by android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes for a particular format, are supported as well.
 
 | Target 1 || Target 2 || Sample use case(s) |
+| --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|
 | `YUV` | `s1440p` | || In-app video / image processing. |
 | `PRIV` | `s1440p` | || In-app viewfinder analysis. |
 | `JPEG` | `s1440p` | || No viewfinder still image capture. |
+| --- | --- | --- | --- | --- |
 | `YUV / PRIV` | `s720p` | `JPEG` | `s1440p` | Standard still imaging. |
 | `YUV / PRIV` | `s720p` | `YUV / PRIV ` | `s1440p` | In-app video / processing with preview. |
 
@@ -467,11 +495,13 @@ Devices capable of outputting HEIC formats (`https://developer.android.com/refer
 Devices capable of multi-resolution output for a particular format ( `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap#getOutputInfo(kotlin.Int)` returns a non-empty list) support using `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` for MAXIMUM resolution streams of that format for all mandatory stream combinations. For example, if a LIMITED camera device supports multi-resolution output streams for both `JPEG` and `PRIVATE`, in addition to the stream configurations in the LIMITED and Legacy table above, the camera device supports the following guaranteed stream combinations (`MULTI_RES` in the Max size column refers to a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` created based on the variable max resolutions supported):
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `PRIV` | `MULTI_RES` | || || Simple preview, GPU video processing, or no-preview video recording. |
 | `JPEG` | `MULTI_RES` | || || No-viewfinder still image capture. |
 | `PRIV` | `PREVIEW` | `JPEG` | `MULTI_RES` | || Standard still imaging. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `YUV ` | `PREVIEW` | `JPEG` | `MULTI_RES` | Still capture plus in-app processing. |
 
 <br />
@@ -481,6 +511,7 @@ Devices capable of multi-resolution output for a particular format ( `https://de
 ##### LIMITED-level additional guaranteed configurations with multi-resolution outputs
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `YUV ` | `PREVIEW` | `YUV ` | `PREVIEW` | `JPEG` | `MULTI_RES` | Two-input in-app processing with still capture. |
@@ -496,11 +527,13 @@ The same logic applies to other hardware levels and capabilities.
 Devices with the ULTRA_HIGH_RESOLUTION_SENSOR capability have some additional guarantees which clients can take advantage of:
 
 | Target 1 ||| Target 2 ||| Target 3 ||| Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Type | SC Map | Max size | Type | SC Map | Max size | Type | SC Map | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|
 | `YUV / JPEG / RAW` | `MAX_RES` | `MAX` | `PRIV / YUV` | `DEFAULT` | `PREVIEW` | ||| Ultra high res still image capture with preview |
 | `YUV / JPEG / RAW` | `MAX_RES` | `MAX` | `PRIV` | `DEFAULT` | `PREVIEW` | `PRIV / YUV` | `DEFAULT` | `RECORD` | Ultra high res still capture with preview + app based RECORD size analysis |
 | `YUV / JPEG / RAW` | `MAX_RES` | `MAX` | `PRIV` | `DEFAULT` | `PREVIEW` | `JPEG / YUV / RAW` | `DEFAULT` | `MAX` | Ultra high res still image capture with preview + default sensor pixel mode analysis stream |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
@@ -513,14 +546,17 @@ Here, SC Map, refers to the `https://developer.android.com/reference/kotlin/andr
 10-bit output capable `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT:kotlin.Int` devices support at least the following stream combinations:
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|
 | `PRIV` | `MAXIMUM` | |||| Simple preview, GPU video processing, or no-preview video recording. |
 | `YUV` | `MAXIMUM` | |||| In-application video/image processing. |
 | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM ` | || Standard still imaging. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `YUV ` | `MAXIMUM ` | || Maximum-resolution in-app processing with preview. |
 | `YUV` | `PREVIEW` | `YUV` | `MAXIMUM ` | || Maximum-resolution two-input in-app processing. |
 | `PRIV` | `PREVIEW` | `PRIV` | `RECORD ` | || High-resolution video recording with preview. |
+| --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PRIV` | `RECORD ` | `YUV` | `RECORD ` | High-resolution recording with in-app snapshot. |
 | `PRIV` | `PREVIEW` | `PRIV ` | `RECORD ` | `JPEG` | `RECORD ` | High-resolution recording with video snapshot. |
 
@@ -544,20 +580,25 @@ Jpeg/R camera outputs will typically be able to support the MAXIMUM device resol
 Devices with the STREAM_USE_CASE capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_STREAM_USE_CASE:kotlin.Int`) support below additional stream combinations:
 
 | Target 1 ||| Target 2 ||| Target 3 ||| Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Usecase | Type | Max size | Usecase | Type | Max size | Usecase | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|
 | `YUV / PRIV` | `PREVIEW` | `PREVIEW` | ||| ||| Simple preview or in-app image processing |
 | `YUV / PRIV` | `RECORD` | `VIDEO_RECORD` | ||| ||| Simple video recording or in-app video processing |
 | `YUV / JPEG` | `MAXIMUM` | `STILL_CAPTURE` | ||| ||| Simple JPEG or YUV still image capture |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `YUV / PRIV` | `s1440p` | `PREVIEW_VIDEO_STILL` | ||| ||| Multi-purpose stream for preview, video and still image capture |
 | `YUV / PRIV` | `s1440p` | `VIDEO_CALL` | ||| ||| Simple video call |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV / JPEG` | `MAXIMUM` | `STILL_CAPTURE` | ||| Preview with JPEG or YUV still image capture |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV / PRIV` | `RECORD` | `VIDEO_RECORD` | ||| Preview with video recording or in-app video processing |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV` | `PREVIEW` | `PREVIEW` | ||| Preview with in-application image processing |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV / PRIV` | `s1440p` | `VIDEO_CALL` | ||| Preview with video call |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `YUV / PRIV` | `s1440p` | `PREVIEW_VIDEO_STILL` | `YUV / JPEG` | `MAXIMUM` | `STILL_CAPTURE` | ||| MultI-purpose stream with JPEG or YUV still capture |
 | `YUV` | `PREVIEW` | `STILL_CAPTURE` | `JPEG` | `MAXIMUM` | `STILL_CAPTURE` | ||| YUV and JPEG concurrent still image capture (for testing) |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV / PRIV` | `RECORD` | `VIDEO_RECORD` | `JPEG` | `RECORD` | `STILL_CAPTURE` | Preview, video record and JPEG video snapshot |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `PREVIEW` | `PREVIEW` | `YUV` | `PREVIEW` | `PREVIEW` | `JPEG` | `MAXIMUM` | `STILL_CAPTURE` | Preview, in-application image processing, and JPEG still image capture |
 
 <br />
@@ -569,11 +610,13 @@ Devices with the STREAM_USE_CASE capability (`https://developer.android.com/refe
 Devices that include the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SCALER_AVAILABLE_STREAM_USE_CASES_CROPPED_RAW:kotlin.Int` stream use-case in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_AVAILABLE_STREAM_USE_CASES:android.hardware.camera2.CameraCharacteristics.Key`, support the additional stream combinations below:
 
 | Target 1 ||| Target 2 ||| Target 3 ||| Sample use case(s) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Type | Max size | Usecase | Type | Max size | Usecase | Type | Max size | Usecase | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|
 | `RAW` | `MAXIMUM` | `CROPPED_RAW` | ||| ||| Cropped RAW still capture without preview |
 | `PRIV / YUV` | `PREVIEW` | `PREVIEW` | `RAW` | `MAXIMUM` | `CROPPED_RAW` | ||| Preview with cropped RAW still capture |
 | `PRIV / YUV` | `PREVIEW` | `PREVIEW` | `YUV / JPEG` | `MAXIMUM` | `STILL_CAPTURE` | `RAW` | `MAXIMUM` | `CROPPED_RAW` | Preview with YUV / JPEG and cropped RAW still capture |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV / YUV` | `PREVIEW` | `PREVIEW` | `PRIV / YUV` | `PREVIEW` | `VIDEO_RECORD / PREVIEW` | `RAW` | `MAXIMUM` | `CROPPED_RAW` | Video recording with preview and cropped RAW still capture |
 
 <br />
@@ -585,11 +628,13 @@ Devices that include the `https://developer.android.com/reference/kotlin/android
 For devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#CONTROL_AVAILABLE_VIDEO_STABILIZATION_MODES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATION:kotlin.Int`, the following stream combinations are guaranteed, for CaptureRequests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_VIDEO_STABILIZATION_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATION:kotlin.Int`
 
 | Target 1 || Target 2 || Sample use case(s) |
+| --- | --- | --- | --- | --- |
 | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|
 | `PRIV / YUV` | `s1440p` | || Stabilized preview, GPU video processing, or no-preview stabilized video recording. |
 | `PRIV / YUV` | `s1440p` | `JPEG / YUV` | `MAXIMUM ` | Standard still imaging with stabilized preview. |
 | `PRIV / YUV` | `PREVIEW` | `PRIV / YUV` | `s1440p ` | High-resolution recording with stabilized preview and recording stream. |
+| --- | --- | --- | --- | --- |
 
 <br />
 
@@ -620,12 +665,14 @@ Reprocessing with 10-bit output targets on 10-bit capable `https://developer.and
 LIMITED-level (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int`) devices support at least the following stream combinations for creating a reprocessable capture session in addition to those listed earlier for regular captures for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices:
 
 | LIMITED-level additional guaranteed configurations for creating a reprocessable capture session (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `JPEG` | `MAXIMUM` | | | | | No-viewfinder still image reprocessing. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM` | | | ZSL(Zero-Shutter-Lag) still imaging. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `YUV` | `PREVIEW` | `JPEG` | `MAXIMUM` | | | ZSL still and in-app processing imaging. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `YUV` | `PREVIEW` | `YUV` | `PREVIEW` | `JPEG` | `MAXIMUM` | ZSL in-app processing with still capture. |
 
 <br />
@@ -635,15 +682,18 @@ LIMITED-level (`https://developer.android.com/reference/kotlin/android/hardware/
 FULL-level (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int`) devices support at least the following stream combinations for creating a reprocessable capture session in addition to those for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices:
 
 | FULL-level additional guaranteed configurations for creating a reprocessable capture session (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `YUV` | `MAXIMUM` | `YUV` | `MAXIMUM` | `PRIV` | `PREVIEW` | | | | | Maximum-resolution multi-frame image fusion in-app processing with regular preview. |
 | `YUV` | `MAXIMUM` | `YUV` | `MAXIMUM` | `YUV` | `PREVIEW` | | | | | Maximum-resolution multi-frame image fusion two-input in-app processing. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `PRIV` | `PREVIEW` | `YUV` | `RECORD` | | | High-resolution ZSL in-app video processing with regular preview. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV` | `MAXIMUM` | `PRIV` | `MAXIMUM` | `PRIV` | `PREVIEW` | `YUV` | `MAXIMUM` | | | Maximum-resolution ZSL in-app processing with regular preview. |
 | `PRIV` | `MAXIMUM` | `PRIV` | `MAXIMUM` | `YUV` | `PREVIEW` | `YUV` | `MAXIMUM` | | | Maximum-resolution two-input ZSL in-app processing. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `PRIV` | `PREVIEW` | `YUV` | `PREVIEW` | `JPEG` | `MAXIMUM` | ZSL still capture and in-app processing. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
@@ -652,12 +702,14 @@ FULL-level (`https://developer.android.com/reference/kotlin/android/hardware/cam
 RAW-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_RAW:kotlin.Int`) devices additionally support at least the following stream combinations for creating a reprocessable capture session on both `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices
 
 | RAW-capability additional guaranteed configurations for creating a reprocessable capture session (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `YUV` | `PREVIEW` | `RAW` | `MAXIMUM` | | | Mutually exclusive ZSL in-app processing and DNG capture. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `PRIV` | `PREVIEW` | `YUV` | `PREVIEW` | `RAW` | `MAXIMUM` | Mutually exclusive ZSL in-app processing and preview with DNG capture. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `YUV` | `PREVIEW` | `YUV` | `PREVIEW` | `RAW` | `MAXIMUM` | Mutually exclusive ZSL two-input in-app processing and DNG capture. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `PRIV` | `PREVIEW` | `JPEG` | `MAXIMUM` | `RAW` | `MAXIMUM` | Mutually exclusive ZSL still capture and preview with DNG capture. |
 | `PRIV`/`YUV` | `MAXIMUM` | Same as input | `MAXIMUM` | `YUV` | `PREVIEW` | `JPEG` | `MAXIMUM` | `RAW` | `MAXIMUM` | Mutually exclusive ZSL in-app processing with still capture and DNG capture. |
 
@@ -668,6 +720,7 @@ RAW-capability (`https://developer.android.com/reference/kotlin/android/hardware
 LEVEL-3 (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_3:kotlin.Int`) devices support at least the following stream combinations for creating a reprocessable capture session in addition to those for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int` devices. Note that while the second configuration allows for configuring `MAXIMUM` `YUV` and `JPEG` outputs at the same time, that configuration is not listed for regular capture sessions, and therefore simultaneous output to both targets is not allowed.
 
 | LEVEL-3 additional guaranteed configurations for creating a reprocessable capture session (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is always guaranteed. |||||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Target 5 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -681,35 +734,41 @@ LEVEL-3 (`https://developer.android.com/reference/kotlin/android/hardware/camera
 If a camera device supports multi-resolution `YUV` input and multi-resolution `YUV` output or supports multi-resolution `PRIVATE` input and multi-resolution `PRIVATE` output, the additional mandatory stream combinations for LIMITED and FULL devices are listed below (`MULTI_RES` in the Max size column refers to a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` for output, and a multi-resolution `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration` for input):
 
 | LIMITED-level additional guaranteed configurations for creating a reprocessable capture session with multi-resolution input and multi-resolution outputs (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `PRIV`/`YUV` | `MULTI_RES` | Same as input | `MULTI_RES` | `JPEG` | `MULTI_RES` | | | | | No-viewfinder still image reprocessing. |
 | `PRIV`/`YUV` | `MULTI_RES` | Same as input | `MULTI_RES` | `PRIV` | `PREVIEW` | `JPEG` | `MULTI_RES` | | | ZSL(Zero-Shutter-Lag) still imaging. |
 | `PRIV`/`YUV` | `MULTI_RES` | Same as input | `MULTI_RES` | `YUV` | `PREVIEW` | `JPEG` | `MULTI_RES` | | | ZSL still and in-app processing imaging. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRIV`/`YUV` | `MULTI_RES` | Same as input | `MULTI_RES` | `YUV` | `PREVIEW` | `YUV` | `PREVIEW` | `JPEG` | `MULTI_RES` | ZSL in-app processing with still capture. |
 
 <br />
 
 | FULL-level additional guaranteed configurations for creating a reprocessable capture session with multi-resolution input and multi-resolution outputs (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input || Target 1 || Target 2 || Target 3 || Target 4 || Sample use case(s) |
 | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Type | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `PRIV` | `MULTI_RES` | `PRIV` | `MULTI_RES` | `PRIV` | `PREVIEW` | `YUV` | `MULTI_RES` | | | Maximum-resolution ZSL in-app processing with regular preview. |
 | `PRIV` | `MULTI_RES` | `PRIV` | `MULTI_RES` | `YUV` | `PREVIEW` | `YUV` | `MULTI_RES` | | | Maximum-resolution two-input ZSL in-app processing. |
 | `PRIV`/`YUV` | `MULTI_RES` | Same as input | `MULTI_RES` | `PRIV` | `PREVIEW` | `YUV` | `PREVIEW` | `JPEG` | `MULTI_RES` | ZSL still capture and in-app processing. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
 Devices with the ULTRA_HIGH_RESOLUTION_SENSOR capability have some additional guarantees which clients can take advantage of :
 
 | Additional guaranteed combinations for ULTRA_HIGH_RESOLUTION sensors (YUV / PRIV inputs are guaranteed only if YUV / PRIVATE reprocessing are supported) |||||||||||||
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Input ||| Target 1 ||| Target 2 ||| Target 3 ||| Sample use case(s) |
 | Type | SC Map | Max size | Type | SC Map | Max size | Type | SC Map | Max size | Type | SC Map | Max size | Sample use case(s) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `RAW` | `MAX_RES` | `MAX` | `RAW` | `MAX_RES` | `MAX` | `PRIV / YUV` | `DEFAULT` | `PREVIEW` | ||| RAW remosaic reprocessing with separate preview |
 | `RAW` | `MAX_RES` | `MAX` | `RAW` | `MAX_RES` | `MAX` | `PRIV / YUV` | `DEFAULT` | `PREVIEW` | `JPEG / YUV` | `MAX_RES` | `MAX` | Ultra high res RAW -\> JPEG / YUV with seperate preview |
 | `YUV / PRIV` | `MAX_RES` | `MAX` | `YUV / PRIV` | `MAX_RES` | `MAX` | `YUV / PRIV` | `DEFAULT` | `PREVIEW` | `JPEG ` | `MAX_RES` | `MAX` | Ultra high res PRIV / YUV -\> YUV / JPEG reprocessing with seperate preview |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <br />
 
@@ -768,12 +827,14 @@ Create a new camera capture session by providing the target output set of Surfac
 | `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
 | `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the set of output Surfaces do not meet the requirements, the callback is null, or the handler is null but the current thread has no looper. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 
 **See Also**
 
@@ -829,12 +890,14 @@ Create a new constrained high speed capture session.
 | `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured high speed image data. This value cannot be `null`. |
 | `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the set of output Surfaces do not meet the requirements, the callback is null, or the handler is null but the current thread has no looper, or the camera device doesn't support high speed video capability. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 
 **See Also**
 
@@ -907,6 +970,7 @@ Each reprocess `https://developer.android.com/reference/kotlin/android/hardware/
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if inputResult is null. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the camera has been opened in shared mode |
 
 **See Also**
@@ -939,6 +1003,7 @@ Create a new reprocessable camera capture session by providing the desired repro
 | `inputConfig` | [InputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration): The configuration for the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` This value cannot be `null`. |
 | `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
 | `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
+| --- | --- |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 
 | Exceptions ||
@@ -946,6 +1011,7 @@ Create a new reprocessable camera capture session by providing the desired repro
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the input configuration is null or not supported, the set of output Surfaces do not meet the requirements, the callback is null, or the handler is null but the current thread has no looper. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 
 **See Also**
 
@@ -981,6 +1047,7 @@ Create a new reprocessable camera capture session by providing the desired repro
 | `inputConfig` | [InputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration): This value cannot be `null`. |
 | `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration)!\>: This value cannot be `null`. |
 | `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): This value cannot be `null`. |
+| --- | --- |
 | `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: This value may be `null`. |
 
 **See Also**
@@ -1079,6 +1146,7 @@ For other cases where concurrent captures of a stream combination are not suppor
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the session configuration is invalid, including, if it contains certain non-supported features queryable via CameraCharacteristics. |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 | `java.lang.UnsupportedOperationException` | if the query operation is not supported by the camera device |
 
 **See Also**
@@ -1111,6 +1179,7 @@ The mute settings from this CameraDevice will be automatically removed when the 
 | `android.hardware.camera2.CameraAccessException` | if the camera device is no longer connected or has encountered a fatal error |
 | `java.lang.IllegalArgumentException` | if the mode is not supported |
 | `java.lang.IllegalStateException` | if the camera device has been closed |
+| --- | --- |
 
 **See Also**
 

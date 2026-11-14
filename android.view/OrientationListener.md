@@ -6,12 +6,14 @@ Deprecated in [API level 3](https://developer.android.com/guide/topics/manifest/
 # OrientationListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/OrientationListener "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class OrientationListener : SensorListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.OrientationListener](https://developer.android.com/reference/kotlin/android/view/OrientationListener#) |
 
 | **This class was deprecated in API level 3.**
@@ -36,6 +38,7 @@ Helper class for receiving notifications from the SensorManager when the orienta
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disable](https://developer.android.com/reference/kotlin/android/view/OrientationListener#disable())`()` Disables the OrientationListener. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enable](https://developer.android.com/reference/kotlin/android/view/OrientationListener#enable())`()` Enables the OrientationListener so it will monitor the sensor and call [onOrientationChanged](https://developer.android.com/reference/kotlin/android/view/OrientationListener#onOrientationChanged(kotlin.Int))when the device orientation changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccuracyChanged](https://developer.android.com/reference/kotlin/android/view/OrientationListener#onAccuracyChanged(kotlin.Int,%20kotlin.Int))`(`sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOrientationChanged](https://developer.android.com/reference/kotlin/android/view/OrientationListener#onOrientationChanged(kotlin.Int))`(`orientation:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look at [android.view.OrientationEventListener#onOrientationChanged](https://developer.android.com/reference/kotlin/android/view/OrientationEventListener#onOrientationChanged(kotlin.Int))for method description and usage |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorChanged](https://developer.android.com/reference/kotlin/android/view/OrientationListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray))`(`sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` <br /> |
 

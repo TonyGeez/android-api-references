@@ -9,6 +9,7 @@ open class CodingErrorAction
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.charset.CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#) |
 
 A typesafe enumeration for coding-error actions.
@@ -26,6 +27,7 @@ Instances of this class are used to specify how malformed-input and unmappable-c
 | static [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#)! | [IGNORE](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#IGNORE:java.nio.charset.CodingErrorAction) Action indicating that a coding error is to be handled by dropping the erroneous input and resuming the coding operation. |
 | static [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#)! | [REPLACE](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPLACE:java.nio.charset.CodingErrorAction) Action indicating that a coding error is to be handled by dropping the erroneous input, appending the coder's replacement value to the output buffer, and resuming the coding operation. |
 | static [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#)! | [REPORT](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction) Action indicating that a coding error is to be reported, either by returning a [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult) object or by throwing a [CharacterCodingException](https://developer.android.com/reference/kotlin/java/nio/charset/CharacterCodingException), whichever is appropriate for the method implementing the coding process. |
+| --- | --- |
 
 ## Public methods
 

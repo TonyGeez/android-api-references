@@ -7,9 +7,11 @@ open class TimeZoneFormat : UFormat, Freezable<TimeZoneFormat!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) |||
 | | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) ||
 | | | ↳ | [android.icu.text.TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#) |
+| --- | --- | --- | --- |
 
 `TimeZoneFormat` supports time zone display name formatting and parsing. An instance of TimeZoneFormat works as a subformatter of `https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat`, but you can also directly get a new instance of `TimeZoneFormat` and formatting/parsing time zone display names.
 
@@ -22,6 +24,7 @@ ICU implements the time zone display names defined by [UTS#35 Unicode Locale Dat
 | | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.GMTOffsetPatternType` Offset pattern type enum. |
 | | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.ParseOption` Parse option enum, used for specifying optional parse behavior. |
 | | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style` Time zone display format style enum used by format/parse APIs in `TimeZoneFormat`. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType` Time type enum used for receiving time type (standard time, daylight time or unknown) in `TimeZoneFormat` APIs. |
 
 | Protected constructors ||
@@ -33,36 +36,47 @@ ICU implements the time zone display names defined by [UTS#35 Unicode Locale Dat
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#clone()()` Creates and returns a copy of this object. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#cloneAsThawed()()` Provides for the clone operation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#format(android.icu.text.TimeZoneFormat.Style,%20android.icu.util.TimeZone,%20kotlin.Long)(style: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style!, tz: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#!, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the display name of the time zone at the given date for the style. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#format(android.icu.text.TimeZoneFormat.Style,%20android.icu.util.TimeZone,%20kotlin.Long,%20android.icu.util.Output)(style: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style!, tz: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#!, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, timeType: https://developer.android.com/reference/kotlin/android/icu/util/Output.html#<https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType!>!)` Returns the display name of the time zone at the given date for the style. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, pos: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats an object and appends the resulting text to a given string buffer. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#formatOffsetISO8601Basic(kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean,%20kotlin.Boolean)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useUtcIndicator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, isShort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ignoreSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the ISO 8601 basic time zone string for the given offset. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#formatOffsetISO8601Extended(kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean,%20kotlin.Boolean)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useUtcIndicator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, isShort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ignoreSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the ISO 8601 extended time zone string for the given offset. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#formatOffsetLocalizedGMT(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the localized GMT(UTC) offset format for the given offset. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#formatOffsetShortLocalizedGMT(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the short localized GMT(UTC) offset format for the given offset. |
+| --- | --- |
 | open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#formatToCharacterIterator(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Formats an Object producing an `AttributedCharacterIterator`. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#freeze()()` Freezes the object. |
 | open [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet.html#)\< [TimeZoneFormat.ParseOption](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.ParseOption)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getDefaultParseOptions()()` Returns the default parse options used by this `TimeZoneFormat` instance. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getGMTOffsetDigits()()` Returns the decimal digit characters used for localized GMT format in a single string containing from 0 to 9 in the ascending order. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType)(type: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.GMTOffsetPatternType!)` Returns the offset pattern used for localized GMT format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getGMTPattern()()` Returns the localized GMT format pattern. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getGMTZeroFormat()()` Returns the localized GMT format string for GMT(UTC) itself (GMT offset is 0). |
 | open static [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns a frozen instance of `TimeZoneFormat` for the given locale. |
 | open static [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a frozen instance of `TimeZoneFormat` for the given `https://developer.android.com/reference/kotlin/java/util/Locale.html#`. |
+| --- | --- |
 | open [TimeZoneNames](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#getTimeZoneNames()()` Returns the time zone display name data used by this instance. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#isFrozen()()` Determines whether the object has been frozen or not. |
 | open [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parse(android.icu.text.TimeZoneFormat.Style,%20kotlin.String,%20java.text.ParsePosition,%20android.icu.util.Output)(style: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style!, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!, timeType: https://developer.android.com/reference/kotlin/android/icu/util/Output.html#<https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType!>!)` Returns a `TimeZone` by parsing the time zone string according to the parse position, the style and the default parse options. |
+| --- | --- |
 | open [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parse(android.icu.text.TimeZoneFormat.Style,%20kotlin.String,%20java.text.ParsePosition,%20java.util.EnumSet,%20android.icu.util.Output)(style: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style!, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!, options: https://developer.android.com/reference/kotlin/java/util/EnumSet.html#<https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.ParseOption!>!, timeType: https://developer.android.com/reference/kotlin/android/icu/util/Output.html#<https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType!>!)` Returns a `TimeZone` by parsing the time zone string according to the parse position, the style and the parse options. |
 | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parse(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `TimeZone` for the given text. |
 | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parse(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Returns a `TimeZone` by parsing the time zone string according to the given parse position. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parseObject(kotlin.String,%20java.text.ParsePosition)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses text from a string to produce an object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parseOffsetISO8601(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Returns offset from GMT(UTC) in milliseconds for the given ISO 8601 basic or extended time zone string. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parseOffsetLocalizedGMT(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Returns offset from GMT(UTC) in milliseconds for the given localized GMT offset format string. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#parseOffsetShortLocalizedGMT(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Returns offset from GMT(UTC) in milliseconds for the given short localized GMT offset format string. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setDefaultParseOptions(java.util.EnumSet)(options: https://developer.android.com/reference/kotlin/java/util/EnumSet.html#<https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.ParseOption!>!)` Sets the default parse options. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setGMTOffsetDigits(kotlin.String)(digits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the decimal digit characters used for localized GMT format. |
+| --- | --- |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType,%20kotlin.String)(type: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.GMTOffsetPatternType!, pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the offset pattern for the given offset type. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setGMTPattern(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the localized GMT format pattern. |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setGMTZeroFormat(kotlin.String)(gmtZeroFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the localized GMT format string for GMT(UTC) itself (GMT offset is 0). |
+| --- | --- |
 | open [TimeZoneFormat](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat#setTimeZoneNames(android.icu.text.TimeZoneNames)(tznames: https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneNames!)` Sets the time zone display name data to this instance. |
 
 ## Protected constructors
@@ -132,6 +146,7 @@ Returns the display name of the time zone at the given date for the style.
 | `style` | [TimeZoneFormat.Style](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style)!: the style enum (e.g. `GENERIC_LONG`, `LOCALIZED_GMT`...) |
 | `tz` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)!: the time zone. |
 | `date` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the date. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -162,6 +177,7 @@ Returns the display name of the time zone at the given date for the style. This 
 | `style` | [TimeZoneFormat.Style](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style)!: the style enum (e.g. `GENERIC_LONG`, `LOCALIZED_GMT`...) |
 | `tz` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)!: the time zone. |
 | `date` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the date. |
+| --- | --- |
 | `timeType` | [Output](https://developer.android.com/reference/kotlin/android/icu/util/Output.html#)\< [TimeZoneFormat.TimeType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType)!\>!: the output argument for receiving the time type (standard/daylight/unknown) used for the display name, or specify null if the information is not necessary. |
 
 | Return ||
@@ -192,6 +208,7 @@ Formats an object and appends the resulting text to a given string buffer. If th
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The object to format |
 | `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: where the text is to be appended |
 | `pos` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!: A `FieldPosition` identifying a field in the formatted text |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -222,6 +239,7 @@ Returns the ISO 8601 basic time zone string for the given offset. For example, "
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset from GMT(UTC) in milliseconds. |
 | `useUtcIndicator` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if ISO 8601 UTC indicator "Z" is used when the offset is 0. |
 | `isShort` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if shortest form is used. |
+| --- | --- |
 | `ignoreSeconds` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if non-zero offset seconds is appended. |
 
 | Return ||
@@ -257,6 +275,7 @@ Returns the ISO 8601 extended time zone string for the given offset. For example
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the offset from GMT(UTC) in milliseconds. |
 | `useUtcIndicator` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if ISO 8601 UTC indicator "Z" is used when the offset is 0. |
 | `isShort` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if shortest form is used. |
+| --- | --- |
 | `ignoreSeconds` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if non-zero offset seconds is appended. |
 
 | Return ||
@@ -563,6 +582,7 @@ Returns a `TimeZone` by parsing the time zone string according to the parse posi
 | `style` | [TimeZoneFormat.Style](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style)!: the format style |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the text contains a time zone string at the position. |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: the position. |
+| --- | --- |
 | `timeType` | [Output](https://developer.android.com/reference/kotlin/android/icu/util/Output.html#)\< [TimeZoneFormat.TimeType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType)!\>!: The output argument for receiving the time type (standard/daylight/unknown), or specify null if the information is not necessary. |
 
 | Return ||
@@ -597,6 +617,7 @@ Returns a `TimeZone` by parsing the time zone string according to the parse posi
 | `style` | [TimeZoneFormat.Style](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.Style)!: the format style. |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the text contains a time zone string at the position. |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: the position. |
+| --- | --- |
 | `options` | [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet.html#)\< [TimeZoneFormat.ParseOption](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.ParseOption)!\>!: the parse options. |
 | `timeType` | [Output](https://developer.android.com/reference/kotlin/android/icu/util/Output.html#)\< [TimeZoneFormat.TimeType](https://developer.android.com/reference/kotlin/android/icu/text/TimeZoneFormat.TimeType)!\>!: The output argument for receiving the time type (standard/daylight/unknown), or specify null if the information is not necessary. |
 

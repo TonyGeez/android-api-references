@@ -3,12 +3,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # DateIntervalInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/text/DateIntervalInfo "View this page in Java")
+| --- | --- |
 
 ```
 open class DateIntervalInfo : Cloneable, Freezable<DateIntervalInfo!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#) |
 
 DateIntervalInfo is a public class for encapsulating localizable date time interval patterns. It is used by DateIntervalFormat.
@@ -57,12 +59,15 @@ DateIntervalInfo are not expected to be subclassed. Data for a calendar is loade
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#clone()()` Clone this object. |
 | open [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#cloneAsThawed()()` Provides for the clone operation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Override equals |
+| --- | --- |
 | open [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#freeze()()` Freezes the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getDefaultOrder()()` Get default order -- whether the first date in pattern is later date or not. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getFallbackIntervalPattern()()` Get the fallback interval pattern. |
+| --- | --- |
 | open [DateIntervalInfo.PatternInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo.PatternInfo)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getIntervalPattern(kotlin.String,%20kotlin.Int)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the interval pattern given the largest different calendar field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#hashCode()()` Override hashcode |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#isFrozen()()` Determines whether the object has been frozen or not. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#setFallbackIntervalPattern(kotlin.String)(fallbackPattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Re-set the fallback interval pattern. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#setIntervalPattern(kotlin.String,%20kotlin.Int,%20kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lrgDiffCalUnit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, intervalPattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Provides a way for client to build interval patterns. |
 
@@ -282,6 +287,7 @@ Restriction: Currently, users can only set interval patterns when the following 
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval pattern based |
 | `lrgDiffCalUnit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the largest different calendar unit. |
 | `intervalPattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the interval pattern on the largest different calendar unit. For example, if lrgDiffCalUnit is "year", the interval pattern for en_US when year is different could be "'from' yyyy 'to' yyyy". |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

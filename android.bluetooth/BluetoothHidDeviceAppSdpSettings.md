@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothHidDeviceAppSdpSettings
 
 Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings "View this page in Java")
+| --- | --- |
 
 ```
 class BluetoothHidDeviceAppSdpSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothHidDeviceAppSdpSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#) |
 
 Represents the Service Discovery Protocol (SDP) settings for a Bluetooth HID Device application.
@@ -30,9 +32,11 @@ The BluetoothHidDevice framework adds the SDP record during app registration, so
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#getDescription()()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#getDescriptors()()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#getName()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#getProvider()()` <br /> |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#getSubclass()()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -61,6 +65,7 @@ Create a BluetoothHidDeviceAppSdpSettings object for the Bluetooth SDP record.
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of this Bluetooth HID device. Maximum length is 50 bytes. |
 | `description` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Description for this Bluetooth HID device. Maximum length is 50 bytes. |
 | `provider` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Provider of this Bluetooth HID device. Maximum length is 50 bytes. |
+| --- | --- |
 | `subclass` | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html): Subclass of this Bluetooth HID device. See [www.usb.org/developers/hidpage/HID1_11.pdf Section 4.2](https://developer.android.com/static/reference/kotlin/android/bluetooth/www.usb.org/developers/hidpage/HID1_11.pdf) |
 | `descriptors` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: Descriptors of this Bluetooth HID device. See [www.usb.org/developers/hidpage/HID1_11.pdf Chapter 6](https://developer.android.com/static/reference/kotlin/android/bluetooth/www.usb.org/developers/hidpage/HID1_11.pdf) Maximum length is 2048 bytes. |
 

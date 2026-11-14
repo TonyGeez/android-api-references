@@ -8,6 +8,7 @@ abstract class WritableIdentityCredential
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.WritableIdentityCredential](https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#) |
 
 > [!CAUTION]

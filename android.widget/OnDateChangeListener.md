@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnDateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/CalendarView.OnDateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDateChangeListener
@@ -42,4 +43,5 @@ Called upon change of the selected day.
 | `view` | [CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView):The view associated with this listener. This value cannot be`null`. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The year that was set. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The month that was set \[0-11\]. |
+| --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The day of the month that was set. |

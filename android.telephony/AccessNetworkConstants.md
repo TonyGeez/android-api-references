@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # AccessNetworkConstants
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/AccessNetworkConstants "View this page in Java") 
+| --- | --- |
 
 ```
 class AccessNetworkConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.AccessNetworkConstants](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants#) |
 
 Contains access network related constants.
@@ -22,6 +24,7 @@ Contains access network related constants.
 | | [AccessNetworkType](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.AccessNetworkType) <br /> |
 | | [EutranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.EutranBand) Frequency bands for EUTRAN. |
 | | [GeranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.GeranBand) Frequency bands for GERAN. |
+| --- | --- |
 | | [NgranBands](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.NgranBands) Frequency bands for NGRAN https://www. |
 | | [UtranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.UtranBand) Frequency bands for UTRAN. |
 

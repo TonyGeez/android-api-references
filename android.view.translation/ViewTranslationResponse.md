@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ViewTranslationResponse
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/translation/ViewTranslationResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class ViewTranslationResponse : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#) |
 
 Wrapper class representing a translation response associated with a [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be used by translation service.
@@ -30,9 +32,11 @@ Wrapper class representing a translation response associated with a [android.vie
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | [getAutofillId](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getAutofillId())`()` Returns the associated [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) of this response. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getKeys](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getKeys())`()` Returns all keys in this response as a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) of Strings. |
 | [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) | [getValue](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getValue(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Gets the [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) of the corresponding key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

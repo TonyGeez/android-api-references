@@ -6,15 +6,18 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AdServicesException
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/exceptions/AdServicesException "View this page in Java") 
+| --- | --- |
 
 ```
 open class AdServicesException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [android.adservices.exceptions.AdServicesException](https://developer.android.com/reference/kotlin/android/adservices/exceptions/AdServicesException#) |
+| --- | --- | --- | --- |
 
 Exception thrown by AdServices.
 

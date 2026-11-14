@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # BluetoothSocketSettings
 
 Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothSocketSettings "View this page in Java") 
+| --- | --- |
 
 ```
 class BluetoothSocketSettings
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.bluetooth.BluetoothSocketSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#) |
 
 Defines parameters for creating Bluetooth server and client socket channels.
@@ -28,9 +30,11 @@ Used with [BluetoothAdapter.listenUsingSocketSettings](https://developer.android
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL2capPsm](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getL2capPsm())`()` Returns the L2CAP PSM value used for a BluetoothSocket#TYPE_LE socket. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getRfcommServiceName](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getRfcommServiceName())`()` Returns the RFCOMM service name used for a BluetoothSocket#TYPE_RFCOMM socket. |
 | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)? | [getRfcommUuid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getRfcommUuid())`()` Returns the RFCOMM service UUID used for a BluetoothSocket#TYPE_RFCOMM socket. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSocketType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getSocketType())`()` Returns the type of the Bluetooth socket. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthenticationRequired](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#isAuthenticationRequired())`()` Checks if authentication is enabled for the Bluetooth socket. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncryptionRequired](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#isEncryptionRequired())`()` Checks if encryption is enabled for the Bluetooth socket. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#toString())`()` Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothSocketSettings parameter current value. |
 
 ## Public methods

@@ -7,6 +7,7 @@ class PublishConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.aware.PublishConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#) |
 
 Defines the configuration of an Aware publish session. Built using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig.Builder`. A publish session is created using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#publish(android.net.wifi.aware.PublishConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` or updated using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#updatePublish(android.net.wifi.aware.PublishConfig)`.
@@ -39,12 +40,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getInstantCommunicationBand()()` Get the Wi-Fi band for instant communication mode for this publish session |
+| --- | --- |
 | [AwarePairingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getPairingConfig()()` Get the Aware Pairing config for this publish session |
 | [WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getSecurityConfig()()` Get the data-path security config for this publish session |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#isFrameworkOffloadedPairingEnabled()()` Get whether framework offloaded pairing is enabled for this publish config. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#isInstantCommunicationModeEnabled()()` Check if instant communication mode is enabled for this publish session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

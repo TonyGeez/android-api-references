@@ -6,6 +6,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 # OnZoomChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.OnZoomChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnZoomChangeListener
@@ -48,3 +49,4 @@ Called when the zoom value has changed during a smooth zoom.
 | `zoomValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the current zoom value. In smooth zoom mode, camera calls this for every new zoom value. |
 | `stopped` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether smooth zoom is stopped. If the value is true, this is the last zoom update for the application. |
 | `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:the Camera service object |
+| --- | --- |

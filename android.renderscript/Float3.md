@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Float3
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Float3 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Float3
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Float3](https://developer.android.com/reference/kotlin/android/renderscript/Float3#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Vector version of the basic float type. Provides three float fields packed.
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Float3#x:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Float3#y:kotlin.Float) <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Float3#z:kotlin.Float) <br /> |
+| --- | --- |
 
 ## Public constructors
 

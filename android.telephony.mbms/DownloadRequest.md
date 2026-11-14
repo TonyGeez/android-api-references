@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # DownloadRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/DownloadRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class DownloadRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.mbms.DownloadRequest](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#) |
 
 Describes a request to download files over cell-broadcast. Instances of this class should be created by the app when requesting a download, and instances of this class will be passed back to the app when the middleware updates the status of the download.
@@ -30,12 +32,15 @@ Describes a request to download files over cell-broadcast. Instances of this cla
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getDestinationUri](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getDestinationUri())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileServiceId](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getFileServiceId())`()` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAppIntentSize](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getMaxAppIntentSize())`()` Maximum permissible length for the app's destination path, when serialized via [Uri.toString()](https://developer.android.com/reference/kotlin/android/net/Uri.html#toString()). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxDestinationUriSize](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getMaxDestinationUriSize())`()` Maximum permissible length for the app's download-completion intent, when serialized via [Intent.toUri(int)](https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)). |
+| --- | --- |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getSourceUri](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getSourceUri())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#getSubscriptionId())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#toByteArray())`()` This method returns a byte array that may be persisted to disk and restored to a [DownloadRequest](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

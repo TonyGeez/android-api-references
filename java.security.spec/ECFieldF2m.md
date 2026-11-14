@@ -9,6 +9,7 @@ open class ECFieldF2m : ECField
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.spec.ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#) |
 
 This immutable class defines an elliptic curve (EC) characteristic 2 finite field.
@@ -26,9 +27,11 @@ This immutable class defines an elliptic curve (EC) characteristic 2 finite fiel
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this finite field for equality with the specified object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getFieldSize())`()` Returns the field size in bits which is`m`for this characteristic 2 finite field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getM](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getM())`()` Returns the value`m`of this characteristic 2 finite field. |
+| --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getMidTermsOfReductionPolynomial](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getMidTermsOfReductionPolynomial())`()` Returns an integer array which contains the order of the middle term(s) of the reduction polynomial for polynomial basis or null for normal basis. |
 | open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getReductionPolynomial](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getReductionPolynomial())`()` Returns a BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial for polynomial basis or null for normal basis. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#hashCode())`()` Returns a hash code value for this characteristic 2 finite field. |
+| --- | --- |
 
 ## Public constructors
 

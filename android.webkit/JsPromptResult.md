@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # JsPromptResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/JsPromptResult "View this page in Java") 
+| --- | --- |
 
 ```
 open class JsPromptResult : JsResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.webkit.JsResult](https://developer.android.com/reference/kotlin/android/webkit/JsResult) ||
 | | ↳ | [android.webkit.JsPromptResult](https://developer.android.com/reference/kotlin/android/webkit/JsPromptResult#) |
 

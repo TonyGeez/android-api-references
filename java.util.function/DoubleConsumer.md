@@ -11,6 +11,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 | [java.util.function.DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer#) |
 
 | Known Direct Subclasses [DoubleStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.Builder.html#), [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics.html#) |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [DoubleStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.Builder.html#) | A mutable builder for a`DoubleStream`. | | [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics.html#) | A state object for collecting statistics such as count, min, max, sum, and average. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents an operation that accepts a single`double`-valued argument and returns no result. This is the primitive type specialization of [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer) for`double`. Unlike most other functional interfaces,`DoubleConsumer`is expected to operate via side-effects.
 

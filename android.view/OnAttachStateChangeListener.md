@@ -5,6 +5,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # OnAttachStateChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnAttachStateChangeListener

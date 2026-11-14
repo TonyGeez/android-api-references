@@ -9,11 +9,14 @@ abstract class AbstractExecutorService : ExecutorService
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.concurrent.AbstractExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#) |
 
 | Known Direct Subclasses [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool), [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) for running [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) s. | | [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](https://developer.android.com/reference/kotlin/java/util/concurrent/Executors) factory methods. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) |--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) | A [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) that can additionally schedule commands to run after a given delay, or to execute periodically. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Provides default implementations of [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) execution methods. This class implements the`submit`,`invokeAny`and`invokeAll`methods using a [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture) returned by`newTaskFor`, which defaults to the [FutureTask](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask) class provided in this package. For example, the implementation of`submit(Runnable)`creates an associated`RunnableFuture`that is executed and returned. Subclasses may override the`newTaskFor`methods to return`RunnableFuture`implementations other than`FutureTask`.
 
@@ -45,9 +48,11 @@ Provides default implementations of [ExecutorService](https://developer.android.
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#invokeAll(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` <br /> |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#invokeAll(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
 | openT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#invokeAny(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` <br /> |
+| --- | --- |
 | openT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#invokeAny(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<\*\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#submit(java.lang.Runnable))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` <br /> |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#submit(java.lang.Runnable,%20java.util.concurrent.AbstractExecutorService.submit.T))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `result:` `T`)` <br /> |
+| --- | --- |
 | open [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService#submit(java.util.concurrent.Callable))`(`task:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!`)` <br /> |
 
 | Protected methods ||
@@ -96,6 +101,7 @@ open fun <T : Any!> invokeAll(tasks: MutableCollection<out Callable<T>!>!): 
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case unfinished tasks are cancelled |
 | `java.lang.NullPointerException` | if tasks or any of its elements are`null` |
 | `java.util.concurrent.RejectedExecutionException` | if any task cannot be scheduled for execution |
+| --- | --- |
 
 ### invokeAll
 
@@ -114,6 +120,7 @@ open fun <T : Any!> invokeAll(
 | `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
@@ -125,6 +132,7 @@ open fun <T : Any!> invokeAll(
 | `java.lang.InterruptedException` | if interrupted while waiting, in which case unfinished tasks are cancelled |
 | `java.lang.NullPointerException` | if tasks, any of its elements, or unit are`null` |
 | `java.util.concurrent.RejectedExecutionException` | if any task cannot be scheduled for execution |
+| --- | --- |
 
 ### invokeAny
 
@@ -148,6 +156,7 @@ open fun <T : Any!> invokeAny(tasks: MutableCollection<out Callable<T>!>!): 
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.NullPointerException` | if tasks or any element task subject to execution is`null` |
 | `java.lang.IllegalArgumentException` | if tasks is empty |
+| --- | --- |
 | `java.util.concurrent.ExecutionException` | if no task successfully completes |
 | `java.util.concurrent.RejectedExecutionException` | if tasks cannot be scheduled for execution |
 
@@ -168,6 +177,7 @@ open fun <T : Any!> invokeAny(
 | `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
 | `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
@@ -179,6 +189,7 @@ open fun <T : Any!> invokeAny(
 | `java.lang.InterruptedException` | if interrupted while waiting |
 | `java.lang.NullPointerException` | if tasks, or unit, or any element task subject to execution is`null` |
 | `java.util.concurrent.TimeoutException` | if the given timeout elapses before any task successfully completes |
+| --- | --- |
 | `java.util.concurrent.ExecutionException` | if no task successfully completes |
 | `java.util.concurrent.RejectedExecutionException` | if tasks cannot be scheduled for execution |
 
@@ -219,6 +230,7 @@ open fun <T : Any!> submit(
 | `task` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to submit |
 | `result` | T:the result to return |
 | `<T>` | the type of the result |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -271,6 +283,7 @@ Returns a`RunnableFuture`for the given runnable and default value.
 | `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the runnable task being wrapped |
 | `value` | T:the default value for the returned future |
 | `<T>` | the type of the given value |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

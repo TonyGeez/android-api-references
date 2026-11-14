@@ -7,6 +7,7 @@ class Base64
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Base64](https://developer.android.com/reference/kotlin/java/util/Base64#) |
 
 This class consists exclusively of static methods for obtaining encoders and decoders for the Base64 encoding scheme. The implementation of this class supports the following types of Base64 as specified in [RFC 4648](http://www.ietf.org/rfc/rfc4648.txt) and [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
@@ -37,9 +38,11 @@ Unless otherwise noted, passing a `null` argument to a method of this class will
 | static [Base64.Decoder](https://developer.android.com/reference/kotlin/java/util/Base64.Decoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [Basic](https://developer.android.com/reference/kotlin/java/util/Base64#basic) type base64 encoding scheme. |
 | static [Base64.Encoder](https://developer.android.com/reference/kotlin/java/util/Base64.Encoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [Basic](https://developer.android.com/reference/kotlin/java/util/Base64#basic) type base64 encoding scheme. |
 | static [Base64.Decoder](https://developer.android.com/reference/kotlin/java/util/Base64.Decoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [MIME](https://developer.android.com/reference/kotlin/java/util/Base64#mime) type base64 decoding scheme. |
+| --- | --- |
 | static [Base64.Encoder](https://developer.android.com/reference/kotlin/java/util/Base64.Encoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](https://developer.android.com/reference/kotlin/java/util/Base64#mime) type base64 encoding scheme. |
 | static [Base64.Encoder](https://developer.android.com/reference/kotlin/java/util/Base64.Encoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeEncoder(kotlin.Int,%20kotlin.ByteArray)(lineLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lineSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](https://developer.android.com/reference/kotlin/java/util/Base64#mime) type base64 encoding scheme with specified line length and line separators. |
 | static [Base64.Decoder](https://developer.android.com/reference/kotlin/java/util/Base64.Decoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getUrlDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [URL and Filename safe](https://developer.android.com/reference/kotlin/java/util/Base64#url) type base64 encoding scheme. |
+| --- | --- |
 | static [Base64.Encoder](https://developer.android.com/reference/kotlin/java/util/Base64.Encoder)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getUrlEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [URL and Filename safe](https://developer.android.com/reference/kotlin/java/util/Base64#url) type base64 encoding scheme. |
 
 ## Public methods

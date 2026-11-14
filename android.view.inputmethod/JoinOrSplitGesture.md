@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # JoinOrSplitGesture
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/JoinOrSplitGesture "View this page in Java") 
+| --- | --- |
 
 ```
 class JoinOrSplitGesture : HandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
 | | ↳ | [android.view.inputmethod.JoinOrSplitGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#) |
 
@@ -32,6 +34,7 @@ A subclass of [HandwritingGesture](https://developer.android.com/reference/kotli
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | [getJoinOrSplitPoint](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#getJoinOrSplitPoint())`()` Returns the gesture point in screen coordinates set with [Builder.setJoinOrSplitPoint](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture.Builder#setJoinOrSplitPoint(android.graphics.PointF)). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/JoinOrSplitGesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
 

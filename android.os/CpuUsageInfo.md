@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # CpuUsageInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/CpuUsageInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class CpuUsageInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.CpuUsageInfo](https://developer.android.com/reference/kotlin/android/os/CpuUsageInfo#) |
 
 CPU usage information per core.
@@ -26,6 +28,7 @@ CPU usage information per core.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/CpuUsageInfo#describeContents())`()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActive](https://developer.android.com/reference/kotlin/android/os/CpuUsageInfo#getActive())`()` Gets the active time in milliseconds since the system last booted. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotal](https://developer.android.com/reference/kotlin/android/os/CpuUsageInfo#getTotal())`()` Gets the total time in milliseconds that the CPU has been enabled since the system last booted. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/CpuUsageInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

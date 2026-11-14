@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Measure
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/Measure "View this page in Java") 
+| --- | --- |
 
 ```
 open class Measure
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.util.Measure](https://developer.android.com/reference/kotlin/android/icu/util/Measure#) |
 
 | Known Direct Subclasses [CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount) |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount) | An amount of currency, consisting of a Number and a Currency. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An amount of a specified unit, consisting of a Number and a Unit. For example, a length measure consists of a Number and a length unit, such as feet or meters.
 
@@ -32,6 +35,7 @@ Measure objects are immutable. All subclasses must guarantee that. (However, sub
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/util/Measure#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the given object is equal to this object. |
 | open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getNumber](https://developer.android.com/reference/kotlin/android/icu/util/Measure#getNumber())`()` Returns the numeric value of this object. |
 | open [MeasureUnit](https://developer.android.com/reference/kotlin/android/icu/util/MeasureUnit)! | [getUnit](https://developer.android.com/reference/kotlin/android/icu/util/Measure#getUnit())`()` Returns the unit of this object. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/util/Measure#hashCode())`()` Returns a hashcode for this object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/util/Measure#toString())`()` Returns a string representation of this object. |
 

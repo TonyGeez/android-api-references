@@ -6,6 +6,7 @@ Also in [T Extensions 3](https://developer.android.com/sdkExtensions)
 # ObserverCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/observer/ObserverCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface ObserverCallback

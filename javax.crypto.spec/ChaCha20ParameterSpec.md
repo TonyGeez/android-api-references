@@ -9,6 +9,7 @@ class ChaCha20ParameterSpec : AlgorithmParameterSpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.crypto.spec.ChaCha20ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/ChaCha20ParameterSpec#) |
 
 This class specifies the parameters used with the [*ChaCha20*](https://tools.ietf.org/html/rfc7539) algorithm.

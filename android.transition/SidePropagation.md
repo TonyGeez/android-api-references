@@ -3,15 +3,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # SidePropagation
 
 Kotlin | [Java](https://developer.android.com/reference/android/transition/SidePropagation "View this page in Java")
+| --- | --- |
 
 ```
 open class SidePropagation : VisibilityPropagation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.transition.TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation) |||
 | | ↳ | [android.transition.VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation) ||
 | | | ↳ | [android.transition.SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation#) |
+| --- | --- | --- | --- |
 
 A `TransitionPropagation` that propagates based on the distance to the side and, orthogonally, the distance to epicenter. If the transitioning View is visible in the start of the transition, then it will transition sooner when closer to the side and later when farther. If the view is not visible in the start of the transition, then it will transition later when closer to the side and sooner when farther from the edge. This is the default TransitionPropagation used with `https://developer.android.com/reference/kotlin/android/transition/Slide`.
 
@@ -26,6 +29,7 @@ A `TransitionPropagation` that propagates based on the distance to the side and,
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/transition/SidePropagation#getStartDelay(android.view.ViewGroup,%20android.transition.Transition,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, transition: https://developer.android.com/reference/kotlin/android/transition/Transition!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Called by Transition to alter the Animator start delay. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/SidePropagation#setPropagationSpeed(kotlin.Float)(propagationSpeed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the speed at which transition propagation happens, relative to the duration of the Transition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/SidePropagation#setSide(kotlin.Int)(side: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the side that is used to calculate the transition propagation. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -62,6 +66,7 @@ Called by Transition to alter the Animator start delay. All start delays will be
 | `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the View hierarchy running the transition. |
 | `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition that created the Animator |
 | `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The values for a specific target in the start scene. |
+| --- | --- |
 | `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The values for the target in the end scene. |
 
 | Return ||

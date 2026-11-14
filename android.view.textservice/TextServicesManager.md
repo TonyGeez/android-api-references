@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # TextServicesManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/TextServicesManager "View this page in Java") 
+| --- | --- |
 
 ```
 class TextServicesManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textservice.TextServicesManager](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#) |
 
 System API to the overall text services, which arbitrates interaction between applications and text services. The user can change the current text services in Settings. And also applications can specify the target text services.
@@ -36,6 +38,7 @@ There are three primary parties involved in the text services framework (TSF) ar
 | [SpellCheckerInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo)? | [getCurrentSpellCheckerInfo](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#getCurrentSpellCheckerInfo())`()` Retrieve the currently active spell checker, or null if there is none. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SpellCheckerInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo)!\> | [getEnabledSpellCheckerInfos](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#getEnabledSpellCheckerInfos())`()` Retrieve the list of currently enabled spell checkers. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpellCheckerEnabled](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#isSpellCheckerEnabled())`()` Return whether the spell checker is enabled or not. |
+| --- | --- |
 | [SpellCheckerSession](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession)? | [newSpellCheckerSession](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#newSpellCheckerSession(android.os.Bundle,%20java.util.Locale,%20android.view.textservice.SpellCheckerSession.SpellCheckerSessionListener,%20kotlin.Boolean))`(`bundle:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`, `listener:` ` [SpellCheckerSession.SpellCheckerSessionListener](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener)`, `referToSpellCheckerLanguageSettings:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Get a spell checker session from the spell checker. |
 | [SpellCheckerSession](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession)? | [newSpellCheckerSession](https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager#newSpellCheckerSession(android.view.textservice.SpellCheckerSession.SpellCheckerSessionParams,%20java.util.concurrent.Executor,%20android.view.textservice.SpellCheckerSession.SpellCheckerSessionListener))`(`params:` ` [SpellCheckerSession.SpellCheckerSessionParams](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [SpellCheckerSession.SpellCheckerSessionListener](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener)`)` Get a spell checker session from the spell checker. |
 
@@ -107,6 +110,7 @@ Get a spell checker session from the spell checker.
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:the locale for the spell checker. If`locale`is null and referToSpellCheckerLanguageSettings is true, the locale specified in Settings will be returned. If`locale`is not null and referToSpellCheckerLanguageSettings is true, the locale specified in Settings will be returned only when it is same as`locale`. Exceptionally, when referToSpellCheckerLanguageSettings is true and`locale`is only language (e.g. "en"), the specified locale in Settings (e.g. "en_US") will be selected. |
 | `listener` | [SpellCheckerSession.SpellCheckerSessionListener](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener):a spell checker session lister for getting results from the spell checker. This value cannot be`null`. |
 | `referToSpellCheckerLanguageSettings` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, the session for one of enabled languages in settings will be returned. |
+| --- | --- |
 | `bundle` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
 
 | Return ||
@@ -132,6 +136,7 @@ Get a spell checker session from the spell checker.
 | `params` | [SpellCheckerSession.SpellCheckerSessionParams](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams):The parameters passed to the spell checker. This value cannot be`null`. |
 | `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which`listener`will be called back. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
 | `listener` | [SpellCheckerSession.SpellCheckerSessionListener](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener):a spell checker session lister for getting results from the spell checker. This value cannot be`null`. |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|

@@ -5,6 +5,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # OnConnectedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/se/omapi/SEService.OnConnectedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnConnectedListener

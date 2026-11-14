@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ServiceWorkerClient
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/ServiceWorkerClient "View this page in Java") 
+| --- | --- |
 
 ```
 open class ServiceWorkerClient
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.ServiceWorkerClient](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerClient#) |
 
 Base class for clients to capture Service Worker related callbacks, see [ServiceWorkerController](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController) for usage example.

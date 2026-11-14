@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MockAccountManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockAccountManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class MockAccountManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.test.mock.MockAccountManager](https://developer.android.com/reference/kotlin/android/test/mock/MockAccountManager#) |
 
 | **This class was deprecated in API level 28.**

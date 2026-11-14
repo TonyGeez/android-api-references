@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # DataRemovalRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class DataRemovalRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.contentcapture.DataRemovalRequest](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#) |
 
 Class used by apps to request the content capture service to remove data associated with [LocusIds](https://developer.android.com/reference/kotlin/android/content/LocusId.html#).
@@ -37,6 +39,7 @@ An app which has tagged data with a LocusId can therefore delete them later. Thi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DataRemovalRequest.LocusIdRequest](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest.LocusIdRequest)!\> | [getLocusIdRequests](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#getLocusIdRequests())`()` Gets the list of`LousId`s the apps is requesting to remove. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#getPackageName())`()` Gets the name of the app that's making the request. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForEverything](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#isForEverything())`()` Checks if app is requesting to remove content capture data associated with its package. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataRemovalRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

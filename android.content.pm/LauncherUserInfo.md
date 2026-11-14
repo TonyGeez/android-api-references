@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # LauncherUserInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/LauncherUserInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class LauncherUserInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.pm.LauncherUserInfo](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#) |
 
 The LauncherUserInfo object holds information about an Android user that is required to display the Launcher related UI elements specific to the user (like badges).
@@ -30,6 +32,7 @@ The LauncherUserInfo object holds information about an Android user that is requ
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#describeContents())`()` <br /> |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getUserConfig](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#getUserConfig())`()` Returns additional configs for this launcher user |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserSerialNumber](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#getUserSerialNumber())`()` Returns serial number of user as returned by [UserManager.getSerialNumberForUser(UserHandle)](https://developer.android.com/reference/kotlin/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)) |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getUserType](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#getUserType())`()` Returns type of the user as defined in [UserManager](https://developer.android.com/reference/kotlin/android/os/UserManager.html#). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

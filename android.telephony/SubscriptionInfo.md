@@ -5,12 +5,14 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 # SubscriptionInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/SubscriptionInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class SubscriptionInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#) |
 
 A Parcelable class for Subscription Information.
@@ -26,30 +28,39 @@ A Parcelable class for Subscription Information.
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [createIconBitmap](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#createIconBitmap(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Creates and returns an icon`Bitmap`to represent this`SubscriptionInfo`in a user interface. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCardId](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getCardId())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCarrierId](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getCarrierId())`()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getCarrierName](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getCarrierName())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountryIso](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getCountryIso())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataRoaming](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getDataRoaming())`()` Whether user enables data roaming for this subscription or not. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getDisplayName())`()` <br /> |
+| --- | --- |
 | open [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getGroupUuid](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getGroupUuid())`()` Used in scenarios where different subscriptions are bundled as a group. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIccId](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getIccId())`()` Returns the ICC ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconTint](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getIconTint())`()` A highlight color to use in displaying information about this`PhoneAccount`. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMcc](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getMcc())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getMccString())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMnc](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getMnc())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getMncString())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumber](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getNumber())`()` Returns the number of this subscription. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPortIndex](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getPortIndex())`()` <br /> |
+| --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getServiceCapabilities](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities())`()` Retrieves the service capabilities for the current subscription. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSimSlotIndex](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getSimSlotIndex())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getSubscriptionId())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionType](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getSubscriptionType())`()` This method returns the type of a subscription. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUsageSetting](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getUsageSetting())`()` Get the usage setting for this subscription. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#hashCode())`()` <br /> |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmbedded](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#isEmbedded())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOnlyNonTerrestrialNetwork](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#isOnlyNonTerrestrialNetwork())`()` Check if the subscription is exclusively for non-terrestrial networks. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpportunistic](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#isOpportunistic())`()` An opportunistic subscription connects to a network that is limited in functionality and / or coverage. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # PdfPageLinkContent
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/content/PdfPageLinkContent "View this page in Java") 
+| --- | --- |
 
 ```
 class PdfPageLinkContent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.content.PdfPageLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageLinkContent#) |
 
 Represents the bounds and link on a page of the PDF document. Weblinks are those links implicitly embedded in PDF pages.**Note:** Only weblinks that are embedded will be supported. Links encoded as plain text will be returned as part of [PdfPageTextContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent).
@@ -31,6 +33,7 @@ Represents the bounds and link on a page of the PDF document. Weblinks are those
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageLinkContent#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | [getBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageLinkContent#getBounds())`()` Gets the bounds of the embedded weblink represented as a list of [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#). |
 | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getUri](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageLinkContent#getUri())`()` Gets the weblink on the page of the PDF document. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageLinkContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||

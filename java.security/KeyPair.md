@@ -9,6 +9,7 @@ class KeyPair : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair#) |
 
 This class is a simple holder for a key pair (a public key and a private key). It does not enforce any security, and, when initialized, should be treated like a PrivateKey.

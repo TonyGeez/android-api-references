@@ -9,12 +9,15 @@ open class SocketException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.net.SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException#) |
 
 | Known Direct Subclasses [BindException](https://developer.android.com/reference/kotlin/java/net/BindException), [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException), [NoRouteToHostException](https://developer.android.com/reference/kotlin/java/net/NoRouteToHostException), [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [BindException](https://developer.android.com/reference/kotlin/java/net/BindException) | Signals that an error occurred while attempting to bind a socket to a local address and port. | | [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [NoRouteToHostException](https://developer.android.com/reference/kotlin/java/net/NoRouteToHostException) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException) | Signals that an ICMP Port Unreachable message has been received on a connected datagram. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that there is an error creating or accessing a Socket.
 

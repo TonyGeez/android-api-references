@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # KeyStoreManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyStoreManager "View this page in Java") 
+| --- | --- |
 
 ```
 class KeyStoreManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.keystore.KeyStoreManager](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#) |
 
 This class provides methods for interacting with keys stored within the [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore).
@@ -26,9 +28,11 @@ This class provides methods for interacting with keys stored within the [Android
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\> | [getGrantedCertificateChainFromId](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#getGrantedCertificateChainFromId(kotlin.Long))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [List](https://developer.android.com/reference/kotlin/java/util/List.html#) of [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#) instances representing the certificate chain for the key that was previously shared with the app under the provided`id`. |
 | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#) | [getGrantedKeyFromId](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#getGrantedKeyFromId(kotlin.Long))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the key with the specified`id`that was previously shared with the app. |
 | [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair.html#) | [getGrantedKeyPairFromId](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#getGrantedKeyPairFromId(kotlin.Long))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair.html#) containing the public and private key associated with the key that was previously shared with the app under the provided`id`. |
+| --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getSupplementaryAttestationInfo](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#getSupplementaryAttestationInfo(kotlin.Int))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns tag-specific data required to interpret a tag's attested value. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [grantKeyAccess](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#grantKeyAccess(kotlin.String,%20kotlin.Int))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Grants access to the key owned by the calling app stored under the specified`alias`to another app on the device with the provided`uid`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [revokeKeyAccess](https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager#revokeKeyAccess(kotlin.String,%20kotlin.Int))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Revokes access to the key in the app's namespace stored under the specified`alias`that was previously granted to another app on the device with the provided`uid`. |
+| --- | --- |
 
 ## Constants
 

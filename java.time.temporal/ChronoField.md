@@ -7,6 +7,7 @@ class ChronoField : TemporalField
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.temporal.ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#)\> ||
 | | ↳ | [java.time.temporal.ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#) |
 
@@ -87,15 +88,19 @@ These fields are intended to be applicable in multiple calendar systems. For exa
 | R | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#adjustInto(java.time.temporal.ChronoField.adjustInto.R,%20kotlin.Long)(temporal: R, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of the specified temporal object with the value of this field set. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#checkValidIntValue(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks that the specified value is valid and fits in an `int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#checkValidValue(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks that the specified value is valid for this field. |
+| --- | --- |
 | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#getBaseUnit()()` Gets the unit that the field is measured in. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#getDisplayName(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the display name for the field in the requested locale. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#getFrom(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Gets the value of this field from the specified temporal object. |
+| --- | --- |
 | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#getRangeUnit()()` Gets the range that the field is bound by. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#isDateBased()()` Checks if this field represents a component of a date. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#isSupportedBy(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Checks if this field is supported by the temporal object. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#isTimeBased()()` Checks if this field represents a component of a time. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#range()()` Gets the range of valid values for the field. |
 | [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#rangeRefinedBy(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Get the range of valid values for this field using the temporal object to refine the result. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#toString()()` Returns the name of this enum constant, as contained in the declaration. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField` `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!` `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#resolve(kotlin.collections.MutableMap,%20java.time.temporal.TemporalAccessor,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, partialTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)`
@@ -642,6 +647,7 @@ Implementations must not alter the specified temporal object. Instead, an adjust
 | `<R>` | the type of the Temporal object |
 | `temporal` | R: the temporal object to adjust, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -652,6 +658,7 @@ Implementations must not alter the specified temporal object. Instead, an adjust
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if the field cannot be set |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported by the temporal |
+| --- | --- |
 
 ### checkValidIntValue
 
@@ -772,6 +779,7 @@ Implementations should perform any queries or calculations using the fields avai
 | `java.lang.ArithmeticException` | if numeric overflow occurs |
 | `java.time.DateTimeException` | if a value for the field cannot be obtained |
 | `java.time.temporal.UnsupportedTemporalTypeException` | if the field is not supported by the temporal |
+| --- | --- |
 
 ### getRangeUnit
 

@@ -9,6 +9,7 @@ open class UpdateAdCounterHistogramRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.UpdateAdCounterHistogramRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#) |
 
 > [!CAUTION]
@@ -31,9 +32,11 @@ The ad counter histograms, which are historical logs of events which are associa
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` objects contain the same information. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdEventType()()` Gets the ad event type which, along with an ad's counter keys, identifies which histogram should be updated. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdSelectionId()()` Gets the ad selection ID with which the rendered ad's events are associated. |
+| --- | --- |
 | open [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getCallerAdTech()()` Gets the caller adtech entity's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` object's data. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#toString()()` Returns a string representation of the object. |
+| --- | --- |
 
 ## Public methods
 

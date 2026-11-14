@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # MtpDeviceInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/mtp/MtpDeviceInfo "View this page in Java") 
+| --- | --- |
 
 ```
 open class MtpDeviceInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.mtp.MtpDeviceInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#) |
 
 This class encapsulates information about an MTP device. This corresponds to the DeviceInfo Dataset described in section 5.1.1 of the MTP specification.
@@ -22,9 +24,11 @@ This class encapsulates information about an MTP device. This corresponds to the
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getEventsSupported](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getEventsSupported())`()` Returns event code supported by the device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getManufacturer](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getManufacturer())`()` Returns the manufacturer's name for the MTP device |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getModel](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getModel())`()` Returns the model name for the MTP device |
+| --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getOperationsSupported](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getOperationsSupported())`()` Returns operation code supported by the device. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSerialNumber](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getSerialNumber())`()` Returns the unique serial number for the MTP device |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#getVersion())`()` Returns the version string the MTP device |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEventSupported](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#isEventSupported(kotlin.Int))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns if the given event is supported by the device or not. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOperationSupported](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo#isOperationSupported(kotlin.Int))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns if the given operation is supported by the device or not. |
 

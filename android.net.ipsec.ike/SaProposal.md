@@ -7,9 +7,11 @@ abstract class SaProposal
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ipsec.ike.SaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#) |
 
 | Known Direct Subclasses [ChildSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal), [IkeSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal) |---|---| | [ChildSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal) | ChildSaProposal represents a proposed configuration to negotiate a Child SA. | | [IkeSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal) | IkeSaProposal represents a proposed configuration to negotiate an IKE SA. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 SaProposal represents a proposed configuration to negotiate an IKE or Child SA.
 
@@ -24,33 +26,43 @@ User must provide at least one valid SaProposal when they are creating a new IKE
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_1024_BIT_MODP:kotlin.Int` 1024-bit MODP Diffie-Hellman Group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_1536_BIT_MODP:kotlin.Int` 1536-bit MODP Diffie-Hellman Group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_2048_BIT_MODP:kotlin.Int` 2048-bit MODP Diffie-Hellman Group. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_3072_BIT_MODP:kotlin.Int` 3072-bit MODP Diffie-Hellman Group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_4096_BIT_MODP:kotlin.Int` 4096-bit MODP Diffie-Hellman Group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_CURVE_25519:kotlin.Int` Elliptic Curve Diffie-Hellman 25519. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#DH_GROUP_NONE:kotlin.Int` None Diffie-Hellman Group. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_3DES:kotlin.Int` 3DES Encryption/Ciphering Algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_AES_CBC:kotlin.Int` AES-CBC Encryption/Ciphering Algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_AES_CTR:kotlin.Int` AES-CTR Encryption/Ciphering Algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_AES_GCM_12:kotlin.Int` AES-GCM Authentication/Integrity + Encryption/Ciphering Algorithm with 12-octet ICV (truncation). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_AES_GCM_16:kotlin.Int` AES-GCM Authentication/Integrity + Encryption/Ciphering Algorithm with 16-octet ICV (truncation). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_AES_GCM_8:kotlin.Int` AES-GCM Authentication/Integrity + Encryption/Ciphering Algorithm with 8-octet ICV (truncation). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#ENCRYPTION_ALGORITHM_CHACHA20_POLY1305:kotlin.Int` ChaCha20-Poly1305 Authentication/Integrity + Encryption/Ciphering Algorithm with 16-octet ICV (truncation). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_AES_CMAC_96:kotlin.Int` AES-CMAC-96 Authentication/Integrity Algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_AES_XCBC_96:kotlin.Int` AES-XCBC-96 Authentication/Integrity Algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_HMAC_SHA1_96:kotlin.Int` HMAC-SHA1 Authentication/Integrity Algorithm. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_HMAC_SHA2_256_128:kotlin.Int` HMAC-SHA256 Authentication/Integrity Algorithm with 128-bit truncation. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_HMAC_SHA2_384_192:kotlin.Int` HMAC-SHA384 Authentication/Integrity Algorithm with 192-bit truncation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_HMAC_SHA2_512_256:kotlin.Int` HMAC-SHA512 Authentication/Integrity Algorithm with 256-bit truncation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#INTEGRITY_ALGORITHM_NONE:kotlin.Int` None Authentication/Integrity Algorithm. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#KEY_LEN_AES_128:kotlin.Int` AES Encryption/Ciphering Algorithm key length 128 bits. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#KEY_LEN_AES_192:kotlin.Int` AES Encryption/Ciphering Algorithm key length 192 bits. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#KEY_LEN_AES_256:kotlin.Int` AES Encryption/Ciphering Algorithm key length 256 bits. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#KEY_LEN_UNUSED:kotlin.Int` Key length unused. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_AES128_CMAC:kotlin.Int` AES128-CMAC Pseudorandom Function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_AES128_XCBC:kotlin.Int` AES128-XCBC Pseudorandom Function. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_HMAC_SHA1:kotlin.Int` HMAC-SHA1 Pseudorandom Function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_SHA2_256:kotlin.Int` HMAC-SHA2-256 Pseudorandom Function. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_SHA2_384:kotlin.Int` HMAC-SHA2-384 Pseudorandom Function. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#PSEUDORANDOM_FUNCTION_SHA2_512:kotlin.Int` HMAC-SHA2-384 Pseudorandom Function. |
 
 | Public methods ||
@@ -58,9 +70,11 @@ User must provide at least one valid SaProposal when they are creating a new IKE
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getDhGroups()()` Gets all proposed Diffie-Hellman groups |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getEncryptionAlgorithms()()` Gets all proposed encryption algorithms |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getIntegrityAlgorithms()()` Gets all proposed integrity algorithms |
 | open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getSupportedDhGroups()()` Returns supported DH groups for IKE and Child SA proposal negotiation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#toString()()` Returns a string representation of the object. |
 
 ## Constants

@@ -9,6 +9,7 @@ class X500Principal : Principal, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [javax.security.auth.x500.X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#) |
 
 This class represents an X.500`Principal`.`X500Principal`s are represented by distinguished names such as "CN=Duke, OU=JavaSoft, O=Sun Microsystems, C=US".
@@ -26,6 +27,7 @@ Note that the`getSubjectX500Principal`and`getIssuerX500Principal`methods of`X509
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CANONICAL](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#CANONICAL:kotlin.String) Canonical String format of Distinguished Names. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC1779](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#RFC1779:kotlin.String) RFC 1779 String format of Distinguished Names. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC2253](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#RFC2253:kotlin.String) RFC 2253 String format of Distinguished Names. |
+| --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -39,9 +41,11 @@ Note that the`getSubjectX500Principal`and`getIssuerX500Principal`methods of`X509
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified`Object`with this`X500Principal`for equality. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getEncoded())`()` Returns the distinguished name in ASN. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName())`()` Returns a string representation of the X. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a string representation of the X. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String,%20kotlin.collections.MutableMap))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oidMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns a string representation of the X. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#hashCode())`()` Return a hash code for this`X500Principal`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#toString())`()` Return a user-friendly string representation of this`X500Principal`. |
 
 | Inherited functions ||
@@ -229,6 +233,7 @@ This implementation is compliant with the requirements of RFC 3280.
 | `obj` | the reference object with which to compare. |
 | `another` | principal to compare with. |
 | `o` | Object to be compared for equality with this`X500Principal` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|

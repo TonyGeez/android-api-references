@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # LogPrinter
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/LogPrinter "View this page in Java") 
+| --- | --- |
 
 ```
 open class LogPrinter : Printer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter#) |
 
 Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer) that sends its output to the system log.

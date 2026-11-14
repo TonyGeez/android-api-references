@@ -5,6 +5,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # SuppressLint
 
 Kotlin| [Java](https://developer.android.com/reference/android/annotation/SuppressLint "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.CLASS, AnnotationTarget.FILE, AnnotationTarget.FIELD, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.LOCAL_VARIABLE]) class SuppressLint

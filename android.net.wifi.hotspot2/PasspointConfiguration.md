@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # PasspointConfiguration
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration "View this page in Java")
+| --- | --- |
 
 ```
 class PasspointConfiguration : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.hotspot2.PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#) |
 
 Class representing Passpoint configuration. This contains configurations specified in PerProviderSubscription (PPS) Management Object (MO) tree. For more info, refer to Hotspot 2.0 PPS MO defined in section 9.1 of the Hotspot 2.0 Release 2 Technical Specification.
@@ -29,18 +31,23 @@ Class representing Passpoint configuration. This contains configurations specifi
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getCredential()()` Get the credential information. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getDecoratedIdentityPrefix()()` Get the decorated identity prefix. |
 | [HomeSp](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getHomeSp()()` Get the Home SP (Service Provider) information. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getSubscriptionExpirationTimeMillis()()` Utility method to get the time this subscription will expire. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getUniqueId()()` Get a unique identifier for a PasspointConfiguration object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#isOsuProvisioned()()` Indicates if the Passpoint Configuration was provisioned by a subscription (OSU) server, which means that it's an R2 (or R3) profile. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setCredential(android.net.wifi.hotspot2.pps.Credential)(credential: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential!)` Set the credential information. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setDecoratedIdentityPrefix(kotlin.String)(decoratedIdentityPrefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set a prefix for a decorated identity as per RFC 7542. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setHomeSp(android.net.wifi.hotspot2.pps.HomeSp)(homeSp: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp!)` Set the Home SP (Service Provider) information. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setSubscriptionExpirationTimeInMillis(kotlin.Long)(subscriptionExpirationTimeInMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Utility method to set the time this subscription will expire. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

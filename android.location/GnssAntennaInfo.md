@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # GnssAntennaInfo
 
 Kotlin| [Java](https://developer.android.com/reference/android/location/GnssAntennaInfo "View this page in Java") 
+| --- | --- |
 
 ```
 class GnssAntennaInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.GnssAntennaInfo](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#) |
 
 A class that contains information about a GNSS antenna. GNSS antenna characteristics can change with device configuration, such as when a device is folded open or closed. Antenna information is delivered to registered instances of [Listener](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.Listener).
@@ -26,6 +28,7 @@ Antenna info parameters are measured for each specific device model by the devic
 | | [Builder](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.Builder) Builder class for GnssAntennaInfo. |
 | abstract | [Listener](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.Listener) Used for receiving GNSS antenna info from the GNSS engine. |
 | | [PhaseCenterOffset](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.PhaseCenterOffset) Class containing information about the antenna phase center offset (PCO). |
+| --- | --- |
 | | [SphericalCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.SphericalCorrections) Represents corrections on a spherical mapping. |
 
 | Inherited constants ||
@@ -37,12 +40,15 @@ Antenna info parameters are measured for each specific device model by the devic
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getCarrierFrequencyMHz](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#getCarrierFrequencyMHz())`()` Returns the center frequency of the corresponding carrier frequency band. |
+| --- | --- |
 | [GnssAntennaInfo.PhaseCenterOffset](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.PhaseCenterOffset) | [getPhaseCenterOffset](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#getPhaseCenterOffset())`()` Returns a [PhaseCenterOffset](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.PhaseCenterOffset) object encapsulating the phase center offset and corresponding uncertainties in millimeters. |
 | [GnssAntennaInfo.SphericalCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.SphericalCorrections)? | [getPhaseCenterVariationCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#getPhaseCenterVariationCorrections())`()` Returns a [SphericalCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.SphericalCorrections) object encapsulating the phase center variation corrections and corresponding uncertainties in millimeters. |
 | [GnssAntennaInfo.SphericalCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.SphericalCorrections)? | [getSignalGainCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#getSignalGainCorrections())`()` Returns a [SphericalCorrections](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.SphericalCorrections) object encapsulating the signal gain corrections and corresponding uncertainties in dBi. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -176,6 +182,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

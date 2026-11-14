@@ -5,6 +5,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # OnFrameMetricsAvailableListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFrameMetricsAvailableListener
@@ -41,3 +42,4 @@ Called when information is available for the previously rendered frame. Reports 
 | `window` | [Window](https://developer.android.com/reference/kotlin/android/view/Window)!: The [Window](https://developer.android.com/reference/kotlin/android/view/Window) on which the frame was displayed. |
 | `frameMetrics` | [FrameMetrics](https://developer.android.com/reference/kotlin/android/view/FrameMetrics)!: the available metrics. This object is reused on every call and thus **this reference is not valid outside the scope of this method**. |
 | `dropCountSinceLastInvocation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of reports dropped since the last time this callback was invoked. |
+| --- | --- |

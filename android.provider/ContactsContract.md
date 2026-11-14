@@ -3,12 +3,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # ContactsContract
 
 Kotlin | [Java](https://developer.android.com/reference/android/provider/ContactsContract "View this page in Java")
+| --- | --- |
 
 ```
 class ContactsContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract#) |
 
 The contract between the contacts provider and applications. Contains definitions for the supported URIs and columns. These APIs supersede `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts`.
@@ -37,45 +39,59 @@ Other tables include:
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.AggregationExceptions` Constants for the contact aggregation exceptions table, which contains aggregation rules overriding those used by automatic aggregation. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.BaseSyncColumns` Generic columns for use by sync adapters. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds` Container for definitions of common data types stored in the `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data` table. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ContactNameColumns` Contact name and contact name metadata columns in the RawContacts table. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ContactOptionsColumns` Columns of `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts` that track the user's preferences for, or interactions with, the contact. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ContactStatusColumns` <br /> |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts` Constants for the contacts table, which contains a record per aggregate of raw contacts representing the same person. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ContactsColumns` Columns of `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts` that refer to intrinsic properties of the contact, as opposed to the user-specified options found in `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ContactOptionsColumns`. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data` Constants for the data table, which contains data points tied to a raw contact. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataColumns` Columns in the Data table. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataColumnsWithJoins` Combines all columns returned by `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data` table queries. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataUsageFeedback` API allowing applications to send usage information for each `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data` row to the Contacts Provider. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataUsageStatColumns` Columns in the Data_Usage_Stat table |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContacts` Constants for the deleted contact table. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContactsColumns` <br /> |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Directory` A Directory represents a contacts corpus, e. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources` Types of data used to produce the display name for a contact. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayPhoto` Helper class for accessing full-size photos by photo file ID. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle` Constants for various styles of combining given name, family name etc into a full name. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Groups` Constants for the groups table. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.GroupsColumns` <br /> |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Intents` Contains helper classes used to create or manage `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that involve contacts. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookup` A table that represents the result of looking up a phone number, for example for caller ID. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns` <br /> |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneticNameStyle` Constants for various styles of capturing the pronunciation of a person's name. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PinnedPositions` Contact-specific information about whether or not a contact has been pinned by the user at a particular position within the system contact application's user interface. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Presence` <br /> |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PresenceColumns` Additional data mixed in with `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.StatusColumns` to link back to specific `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String` entries. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Profile` Constants for the user's profile data, which is represented as a single contact on the device that represents the user. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ProfileSyncState` A table provided for sync adapters to use for storing private sync state data for the user's personal profile. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.ProviderStatus` API for inquiring about the general status of the provider. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.QuickContact` Helper methods to display QuickContact dialogs that display all the information belonging to a specific `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts` entry. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContacts` Constants for the raw contacts table, which contains one row of contact information for each person in each synced account. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContactsColumns` <br /> |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContactsEntity` Constants for the raw contacts entities table, which can be thought of as an outer join of the raw_contacts table with the data table. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SearchSnippets` Additional column returned by `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts#CONTENT_FILTER_URI:android.net.Uri` explaining why the filter matched the contact. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Settings` Contacts-specific settings for various `https://developer.android.com/reference/kotlin/android/accounts/Account.html#`'s. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SettingsColumns` <br /> |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SimAccount` A parcelable class encapsulating account data for contacts that originate from a SIM card. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SimContacts` Class containing utility methods around determine what accounts in the ContactsProvider are related to the SIM cards in the device. |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.StatusColumns` Social status update columns. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.StatusUpdates` A status update is linked to a `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data` row and captures the user's latest status update via the corresponding source, e. |
+| --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncColumns` Columns that appear when each row of a table belongs to a specific account, including sync information that an account may need. |
 | | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncState` A table provided for sync adapters to use for storing private sync state data for contacts. |
 
@@ -84,12 +100,15 @@ Other tables include:
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#AUTHORITY:kotlin.String` The authority for the contacts provider |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#CALLER_IS_SYNCADAPTER:kotlin.String` An optional URI parameter for insert, update, or delete queries that allows the caller to specify that it is a sync adapter. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#DEFERRED_SNIPPETING:kotlin.String` A key to a boolean in the "extras" bundle of the cursor. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#DEFERRED_SNIPPETING_QUERY:kotlin.String` Key to retrieve the original deferred snippeting from the cursor on the client side. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#DIRECTORY_PARAM_KEY:kotlin.String` Query parameter that should be used by the client to access a specific `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Directory`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#LIMIT_PARAM_KEY:kotlin.String` A query parameter that limits the number of results returned for supported URIs. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#PRIMARY_ACCOUNT_NAME:kotlin.String` A query parameter specifing a primary account. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#PRIMARY_ACCOUNT_TYPE:kotlin.String` A query parameter specifing a primary account. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#REMOVE_DUPLICATE_ENTRIES:kotlin.String` A boolean parameter for `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Phone#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Email#CONTENT_URI:android.net.Uri`, and `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.StructuredPostal#CONTENT_URI:android.net.Uri`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#STREQUENT_PHONE_ONLY:kotlin.String` A boolean parameter for `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts#CONTENT_STREQUENT_URI:android.net.Uri` and `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts#CONTENT_STREQUENT_FILTER_URI:android.net.Uri`, which requires the ContactsProvider to return only phone-related results. |
 
 | Public constructors ||

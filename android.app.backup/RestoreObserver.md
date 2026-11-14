@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # RestoreObserver
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/backup/RestoreObserver "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class RestoreObserver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#) |
 
 Callback class for receiving progress reports during a restore operation. These methods will all be called on your application's main thread.
@@ -26,6 +28,7 @@ Callback class for receiving progress reports during a restore operation. These 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpdate](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#onUpdate(kotlin.Int,%20kotlin.String))`(`nowBeingRestored:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentPackage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` An indication of which package is being restored currently, out of the total number provided in the [restoreStarting(int)](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))callback. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreFinished](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreFinished(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore process has completed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreStarting](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))`(`numPackages:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore operation has begun. |
+| --- | --- |
 
 ## Public constructors
 

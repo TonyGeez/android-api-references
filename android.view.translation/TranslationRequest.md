@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # TranslationRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/translation/TranslationRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class TranslationRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.translation.TranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#) |
 
 Translation request sent to the translation service by the [android.view.translation.Translator](https://developer.android.com/reference/kotlin/android/view/translation/Translator) which contains the text to be translated.
@@ -26,6 +28,7 @@ Translation request sent to the translation service by the [android.view.transla
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_DICTIONARY_RESULT](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#FLAG_DICTIONARY_RESULT:kotlin.Int) Indicates this request wants to receive the dictionary result. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_PARTIAL_RESPONSES](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#FLAG_PARTIAL_RESPONSES:kotlin.Int) Indicates this request is willing to accept partial responses. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_TRANSLATION_RESULT](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#FLAG_TRANSLATION_RESULT:kotlin.Int) Indicates this request wants to receive the standard translation result. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_TRANSLITERATION_RESULT](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#FLAG_TRANSLITERATION_RESULT:kotlin.Int) Indicates this request wants to receive the transliteration result. |
 
 | Inherited constants ||
@@ -37,9 +40,11 @@ Translation request sent to the translation service by the [android.view.transla
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#describeContents())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#getFlags())`()` Request flags. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TranslationRequestValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue)!\> | [getTranslationRequestValues](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#getTranslationRequestValues())`()` List of [TranslationRequestValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequestValue) s to be translated. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest)!\> | [getViewTranslationRequests](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#getViewTranslationRequests())`()` List of [ViewTranslationRequest](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest) s to be translated. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/TranslationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

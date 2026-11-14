@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # SurfaceSyncGroup
 
 Kotlin| [Java](https://developer.android.com/reference/android/window/SurfaceSyncGroup "View this page in Java") 
+| --- | --- |
 
 ```
 class SurfaceSyncGroup
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.window.SurfaceSyncGroup](https://developer.android.com/reference/kotlin/android/window/SurfaceSyncGroup#) |
 
 A way for data to be gathered so multiple surfaces can be synced. This is intended to be used with AttachedSurfaceControl, SurfaceView, and SurfaceControlViewHost. This allows different parts of the system to synchronize different surfaces themselves without having to manage timing of different rendering threads. This will also allow synchronization of surfaces across multiple processes. The caller can add SurfaceControlViewHosts from another process to the SurfaceSyncGroup in a different process and this clas will ensure all the surfaces are ready before applying everything together. see the [SurfaceSyncGroup documentation](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/window/SurfaceSyncGroup.md)
@@ -28,6 +30,7 @@ A way for data to be gathered so multiple surfaces can be synced. This is intend
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/android/window/SurfaceSyncGroup#add(android.view.AttachedSurfaceControl,%20java.lang.Runnable))`(`attachedSurfaceControl:` ` [AttachedSurfaceControl](https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl.html#)?`, `runnable:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)?`)` Add an AttachedSurfaceControl to the SurfaceSyncGroup. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/android/window/SurfaceSyncGroup#add(android.view.SurfaceControlViewHost.SurfacePackage,%20java.lang.Runnable))`(`surfacePackage:` ` [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#)`, `runnable:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)?`)` Add a SurfaceControlViewHost. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTransaction](https://developer.android.com/reference/kotlin/android/window/SurfaceSyncGroup#addTransaction(android.view.SurfaceControl.Transaction))`(`transaction:` ` [SurfaceControl.Transaction](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction.html#)`)` Add a Transaction to this SurfaceSyncGroup. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [markSyncReady](https://developer.android.com/reference/kotlin/android/window/SurfaceSyncGroup#markSyncReady())`()` Mark the SurfaceSyncGroup as ready to complete. |
 
 ## Public constructors

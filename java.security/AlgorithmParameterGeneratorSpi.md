@@ -9,6 +9,7 @@ abstract class AlgorithmParameterGeneratorSpi
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.AlgorithmParameterGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`AlgorithmParameterGenerator`class, which is used to generate a set of parameters to be used with a certain algorithm.
@@ -28,6 +29,7 @@ In case the client does not explicitly initialize the AlgorithmParameterGenerato
 | abstract [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [engineGenerateParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineGenerateParameters())`()` Generates the parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineInit(kotlin.Int,%20java.security.SecureRandom))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator for a certain size and source of randomness. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineInit(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`genParamSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| --- | --- |
 
 ## Public constructors
 

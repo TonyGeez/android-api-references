@@ -8,6 +8,7 @@ open class SliceManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.slice.SliceManager](https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#) |
 
 > [!CAUTION]
@@ -32,12 +33,15 @@ Restricted for SDK Runtime environment in API level 34.
 | open [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice)? | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#bindSlice(android.content.Intent,%20kotlin.collections.MutableSet)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, supportedSpecs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec!>)` Turns a slice intent into slice content. |
 | open [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice)? | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#bindSlice(android.net.Uri,%20kotlin.collections.MutableSet)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, supportedSpecs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec!>)` Turns a slice Uri into slice content. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#checkSlicePermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and user ID has been granted permission to access a specific slice URI. |
+| --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#getPinnedSlices()()` Get the list of currently pinned slices for this app. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SliceSpec](https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec)!\> | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#getPinnedSpecs(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Get the current set of specs for a pinned slice. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#getSliceDescendants(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Obtains a list of slices that are descendants of the specified Uri. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#grantSlicePermission(kotlin.String,%20android.net.Uri)(toPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Grant permission to access a specific slice Uri to another package. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#mapIntentToUri(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Turns a slice intent into a slice uri. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#pinSlice(android.net.Uri,%20kotlin.collections.MutableSet)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, specs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec!>)` Ensures that a slice is in a pinned state. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#revokeSlicePermission(kotlin.String,%20android.net.Uri)(toPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Remove permissions to access a particular content provider Uri that were previously added with `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#grantSlicePermission(kotlin.String,%20android.net.Uri)` for a specific target package. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/SliceManager#unpinSlice(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Remove a pin for a slice. |
 
@@ -175,6 +179,7 @@ Determine whether a particular process and user ID has been granted permission t
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The uri that is being checked. This value cannot be `null`. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The process ID being checked against. Must be \> 0. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The user ID being checked against. A uid of 0 is the root user, which will pass every permission check. |
+| --- | --- |
 
 | Return ||
 |---|---|

@@ -7,6 +7,7 @@ class RoleManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.role.RoleManager](https://developer.android.com/reference/kotlin/android/app/role/RoleManager#) |
 
 This class provides information about and manages roles.
@@ -24,15 +25,19 @@ Upon becoming a role holder, the application may be granted certain privileges t
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_ASSISTANT:kotlin.String` The name of the assistant app role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_BROWSER:kotlin.String` The name of the browser role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_CALL_REDIRECTION:kotlin.String` The name of the call redirection role. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_CALL_SCREENING:kotlin.String` The name of the call screening and caller id role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_CONTENT_SAFETY:kotlin.String` The name of the content safety role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_DIALER:kotlin.String` The name of the dialer role. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_EMERGENCY:kotlin.String` The name of the emergency role |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_HOME:kotlin.String` The name of the home role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_NOTES:kotlin.String` The name of the notes role. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_REGISTERED_APP_STORE:kotlin.String` The name of the registered app store role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_SEARCH_ENGINE:kotlin.String` The name of the search engine role. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_SMS:kotlin.String` The name of the SMS role. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#ROLE_WALLET:kotlin.String` The name of the Wallet role. |
 
 | Public methods ||
@@ -40,6 +45,7 @@ Upon becoming a role holder, the application may be granted certain privileges t
 | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#createRequestRoleIntent(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `Intent` suitable for passing to `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` which prompts the user to grant a role to this application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleAvailable(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether a role is available in the system. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleHeld(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether the calling application is holding a particular role. |
+| --- | --- |
 
 ## Constants
 

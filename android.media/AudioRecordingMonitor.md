@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # AudioRecordingMonitor
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioRecordingMonitor "View this page in Java") 
+| --- | --- |
 
 ```
 interface AudioRecordingMonitor
@@ -13,6 +14,7 @@ interface AudioRecordingMonitor
 | [android.media.AudioRecordingMonitor](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor#) |
 
 | Known Direct Subclasses [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord), [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. | | [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) | Used to record audio and video. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 AudioRecordingMonitor defines an interface implemented by [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) and [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) allowing applications to install a callback and be notified of changes in the capture path while recoding is active.
 
@@ -23,6 +25,7 @@ AudioRecordingMonitor defines an interface implemented by [AudioRecord](https://
 | abstract [AudioRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration)? | [getActiveRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor#getActiveRecordingConfiguration())`()` Returns the current active audio recording for this audio recorder. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAudioRecordingCallback](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor#registerAudioRecordingCallback(java.util.concurrent.Executor,%20android.media.AudioManager.AudioRecordingCallback))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `cb:` ` [AudioManager.AudioRecordingCallback](https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback)`)` Register a callback to be notified of audio capture changes via a [AudioManager.AudioRecordingCallback](https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAudioRecordingCallback](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback))`(`cb:` ` [AudioManager.AudioRecordingCallback](https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback)`)` Unregister an audio recording callback previously registered with [registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)](https://developer.android.com/reference/kotlin/android/media/AudioRecordingMonitor#registerAudioRecordingCallback(java.util.concurrent.Executor,%20android.media.AudioManager.AudioRecordingCallback)). |
+| --- | --- |
 
 ## Public methods
 

@@ -9,9 +9,11 @@ open class SAXNotSupportedException : SAXException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [org.xml.sax.SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [org.xml.sax.SAXNotSupportedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotSupportedException#) |
 
 Exception class for an unsupported operation.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.

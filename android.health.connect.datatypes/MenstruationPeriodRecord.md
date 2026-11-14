@@ -8,9 +8,11 @@ class MenstruationPeriodRecord : IntervalRecord
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
 | | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
 | | | ↳ | [android.health.connect.datatypes.MenstruationPeriodRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MenstruationPeriodRecord#) |
+| --- | --- | --- | --- |
 
 Captures the menstruation period record. Each record contains the start / end of the event.
 

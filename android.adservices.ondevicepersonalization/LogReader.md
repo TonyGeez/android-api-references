@@ -8,6 +8,7 @@ open class LogReader
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.LogReader](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#) |
 
 > [!CAUTION]

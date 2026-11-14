@@ -12,6 +12,7 @@ interface Parser
 | [org.xml.sax.Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#) |
 
 | Known Direct Subclasses [XMLReaderAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter) |---------------------------------------------------------------------------------------------------------|------------------------------------------| | [XMLReaderAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter) | Adapt a SAX2 XMLReader as a SAX1 Parser. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 9.**
 |
@@ -34,9 +35,11 @@ SAX1 parsers are reusable but not re-entrant: the application may reuse a parser
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#parse(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document from a system identifier (URI). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#parse(org.xml.sax.InputSource))`(`source:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource)!`)` Parse an XML document. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#setDTDHandler(org.xml.sax.DTDHandler))`(`handler:` ` [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler)!`)` Allow an application to register a DTD event handler. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#setDocumentHandler(org.xml.sax.DocumentHandler))`(`handler:` ` [DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler)!`)` Allow an application to register a document event handler. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#setEntityResolver(org.xml.sax.EntityResolver))`(`resolver:` ` [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver)!`)` Allow an application to register a custom entity resolver. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#setErrorHandler(org.xml.sax.ErrorHandler))`(`handler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler)!`)` Allow an application to register an error event handler. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](https://developer.android.com/reference/kotlin/org/xml/sax/Parser#setLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Allow an application to request a locale for errors and warnings. |
 
 ## Public methods

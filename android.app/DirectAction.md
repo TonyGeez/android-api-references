@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # DirectAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/DirectAction "View this page in Java") 
+| --- | --- |
 
 ```
 class DirectAction : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.DirectAction](https://developer.android.com/reference/kotlin/android/app/DirectAction#) |
 
 Represents an abstract action that can be perform on this app. This are requested from outside the app's UI (eg by SystemUI or assistant). The semantics of these actions are not specified by the OS. This allows open-ended and scalable approach for defining how an app interacts with components that expose alternative interaction models to the user such as the assistant, SystemUI, etc. You can use [equals(java.lang.Object)](https://developer.android.com/reference/kotlin/android/app/DirectAction#equals(kotlin.Any))to compare instances of this class.
@@ -30,9 +32,11 @@ Represents an abstract action that can be perform on this app. This are requeste
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/DirectAction#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/DirectAction#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/app/DirectAction#getExtras())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/app/DirectAction#getId())`()` <br /> |
 | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)? | [getLocusId](https://developer.android.com/reference/kotlin/android/app/DirectAction#getLocusId())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/DirectAction#hashCode())`()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/DirectAction#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

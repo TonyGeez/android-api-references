@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ConfigRequestIpv4DnsServer
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer "View this page in Java") 
+| --- | --- |
 
 ```
 interface ConfigRequestIpv4DnsServer : TunnelModeChildSessionParams.TunnelModeChildConfigRequest

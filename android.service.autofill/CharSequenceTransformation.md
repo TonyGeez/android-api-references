@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # CharSequenceTransformation
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/CharSequenceTransformation "View this page in Java") 
+| --- | --- |
 
 ```
 class CharSequenceTransformation : Parcelable, Transformation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.autofill.CharSequenceTransformation](https://developer.android.com/reference/kotlin/android/service/autofill/CharSequenceTransformation#) |
 
 Replaces a [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#) child of a [CustomDescription](https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription) with the contents of one or more regular expressions (regexs).
@@ -50,6 +52,7 @@ new CharSequenceTransformation
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/CharSequenceTransformation#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/CharSequenceTransformation#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/CharSequenceTransformation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|

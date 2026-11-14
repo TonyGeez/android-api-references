@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # OpenableColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/OpenableColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface OpenableColumns
@@ -13,6 +14,7 @@ interface OpenableColumns
 | [android.provider.OpenableColumns](https://developer.android.com/reference/kotlin/android/provider/OpenableColumns#) |
 
 | Known Direct Subclasses [VoicemailContract.Voicemails](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract.Voicemails) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------| | [VoicemailContract.Voicemails](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract.Voicemails) | Defines fields exposed through the /voicemail path of this content provider. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 These are standard columns for openable URIs. Providers that serve openable URIs*must*support at least these columns when queried.
 

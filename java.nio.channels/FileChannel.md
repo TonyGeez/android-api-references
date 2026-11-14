@@ -9,6 +9,7 @@ abstract class FileChannel : AbstractInterruptibleChannel, GatheringByteChanne
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.nio.channels.spi.AbstractInterruptibleChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractInterruptibleChannel) ||
 | | ↳ | [java.nio.channels.FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#) |
 
@@ -45,24 +46,31 @@ A file channel that is open for writing may be in*append mode* , for example if 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [force](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#force(kotlin.Boolean))`(`metaData:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Forces any updates to this channel's file to be written to the storage device that contains it. |
 | [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#lock())`()` Acquires an exclusive lock on this channel's file. |
 | abstract [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [lock](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#lock(kotlin.Long,%20kotlin.Long,%20kotlin.Boolean))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Acquires a lock on the given region of this channel's file. |
+| --- | --- |
 | abstract [MappedByteBuffer](https://developer.android.com/reference/kotlin/java/nio/MappedByteBuffer.html#)! | [map](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#map(java.nio.channels.FileChannel.MapMode,%20kotlin.Long,%20kotlin.Long))`(`mode:` ` [FileChannel.MapMode](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Maps a region of this channel's file directly into memory. |
 | openstatic [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#open(java.nio.file.Path,%20java.nio.file.OpenOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!`)` Opens or creates a file, returning a file channel to access the file. |
 | openstatic [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#)! | [open](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#open(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!>!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Opens or creates a file, returning a file channel to access the file. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#position())`()` Returns this channel's file position. |
 | abstract [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#)! | [position](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#position(kotlin.Long))`(`newPosition:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this channel's file position. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#read(java.nio.ByteBuffer))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Reads a sequence of bytes from this channel into the given buffer. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#read(java.nio.ByteBuffer,%20kotlin.Long))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Reads a sequence of bytes from this channel into the given buffer, starting at the given file position. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#read(kotlin.Array))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`)` Reads a sequence of bytes from this channel into the given buffers. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#size())`()` Returns the current size of this channel's file. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferFrom](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#transferFrom(java.nio.channels.ReadableByteChannel,%20kotlin.Long,%20kotlin.Long))`(`src:` ` [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Transfers bytes into this channel's file from the given readable byte channel. |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#transferTo(kotlin.Long,%20kotlin.Long,%20java.nio.channels.WritableByteChannel))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `target:` ` [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!`)` Transfers bytes from this channel's file to the given writable byte channel. |
+| --- | --- |
 | abstract [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#)! | [truncate](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#truncate(kotlin.Long))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates this channel's file to the given size. |
 | [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [tryLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#tryLock())`()` Attempts to acquire an exclusive lock on this channel's file. |
 | abstract [FileLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileLock)! | [tryLock](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#tryLock(kotlin.Long,%20kotlin.Long,%20kotlin.Boolean))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to acquire a lock on the given region of this channel's file. |
+| --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#write(java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Writes a sequence of bytes to this channel from the given buffer. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#write(java.nio.ByteBuffer,%20kotlin.Long))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a sequence of bytes to this channel from the given buffer, starting at the given file position. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#write(kotlin.Array))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`)` Writes a sequence of bytes to this channel from the given buffers. |
+| --- | --- |
 | abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#write(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sequence of bytes to this channel from a subsequence of the given buffers. |
 
 | Inherited functions ||
@@ -137,9 +145,11 @@ fc.<code><a docref="java.nio.channels.FileChannel$lock(kotlin.Long, kotlin.Long,
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the invoking thread is blocked in this method |
 | `java.nio.channels.FileLockInterruptionException` | If the invoking thread is interrupted while blocked in this method |
+| --- | --- |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region of the same file |
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 **See Also**
 
@@ -178,6 +188,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position at which the locked region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to request a shared lock, in which case this channel must be open for reading (and possibly writing);`false`to request an exclusive lock, in which case this channel must be open for writing (and possibly reading) |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -188,9 +199,11 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the invoking thread is blocked in this method |
+| --- | --- |
 | `java.nio.channels.FileLockInterruptionException` | If the invoking thread is interrupted while blocked in this method |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region |
 | `java.nio.channels.NonReadableChannelException` | If`shared`is`true`this channel was not opened for reading |
+| --- | --- |
 | `java.nio.channels.NonWritableChannelException` | If`shared`is`false`but this channel was not opened for writing |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -235,6 +248,7 @@ For most operating systems, mapping a file into memory is more expensive than re
 | `mode` | [FileChannel.MapMode](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode)!:One of the constants [READ_ONLY](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#READ_ONLY:java.nio.channels.FileChannel.MapMode), [READ_WRITE](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#READ_WRITE:java.nio.channels.FileChannel.MapMode), or [PRIVATE](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#PRIVATE:java.nio.channels.FileChannel.MapMode) defined in the [MapMode](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode) class, according to whether the file is to be mapped read-only, read/write, or privately (copy-on-write), respectively |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the mapped region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the region to be mapped; must be non-negative and no greater than [java.lang.Integer#MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int) |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------|
@@ -245,6 +259,7 @@ For most operating systems, mapping a file into memory is more expensive than re
 | `java.nio.channels.NonReadableChannelException` | If the`mode`is [READ_ONLY](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#READ_ONLY:java.nio.channels.FileChannel.MapMode) but this channel was not opened for reading |
 | `java.nio.channels.NonWritableChannelException` | If the`mode`is [READ_WRITE](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#READ_WRITE:java.nio.channels.FileChannel.MapMode) or [PRIVATE](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.MapMode#PRIVATE:java.nio.channels.FileChannel.MapMode) but this channel was not opened for both reading and writing |
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 **See Also**
@@ -287,6 +302,7 @@ where`opts`is a set of the options specified in the`options`array.
 | `java.lang.IllegalArgumentException` | If the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | If the`path`is associated with a provider that does not support creating file channels, or an unsupported open option is specified |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
 
 ### open
@@ -308,12 +324,15 @@ The`options`parameter determines how the file is opened. The [READ](https://deve
 In the addition to`READ`and`WRITE`, the following options may be present:
 
 | Option | Description |
+| --- | --- |
 | [APPEND](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then the file is opened for writing and each invocation of the channel's`write`method first advances the position to the end of the file and then writes the requested data. Whether the advancement of the position and the writing of the data are done in a single atomic operation is system-dependent and therefore unspecified. This option may not be used in conjunction with the`READ`or`TRUNCATE_EXISTING`options. |
 | [TRUNCATE_EXISTING](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then the existing file is truncated to a size of 0 bytes. This option is ignored when the file is opened only for reading. |
 | [CREATE_NEW](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then a new file is created, failing if the file already exists. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored when the file is opened only for reading. |
+| --- | --- |
 | [CREATE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | If this option is present then an existing file is opened if it exists, otherwise a new file is created. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored if the`CREATE_NEW`option is also present or the file is opened only for reading. |
 | [DELETE_ON_CLOSE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | When this option is present then the implementation makes a*best effort* attempt to delete the file when closed by the #close method. If the`close`method is not invoked then a*best effort*attempt is made to delete the file when the Java virtual machine terminates. |
 | [SPARSE](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | When creating a new file this option is a*hint*that the new file will be sparse. This option is ignored when not creating a new file. |
+| --- | --- |
 | [SYNC](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](https://developer.android.com/reference/kotlin/java/nio/file/package-summary.html#integrity)). |
 | [DSYNC](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) | Requires that every update to the file's content be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](https://developer.android.com/reference/kotlin/java/nio/file/package-summary.html#integrity)). |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -329,6 +348,7 @@ The new channel is created by invoking the [newFileChannel](https://developer.an
 | `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:The path of the file to open or create |
 | `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!\>!:Options specifying how the file is opened |
 | `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:An optional list of file attributes to set atomically when creating the file |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------|
@@ -339,6 +359,7 @@ The new channel is created by invoking the [newFileChannel](https://developer.an
 | `java.lang.IllegalArgumentException` | If the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | If the`path`is associated with a provider that does not support creating file channels, or an unsupported open option is specified, or the array contains an attribute that cannot be set atomically when creating the file |
 | `java.io.IOException` | If an I/O error occurs |
+| --- | --- |
 | `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
 
 ### position
@@ -385,6 +406,7 @@ Setting the position to a value that is greater than the file's current size is 
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.lang.IllegalArgumentException` | If the new position is negative |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 ### read
 
@@ -411,6 +433,7 @@ Bytes are read starting at this channel's current file position, and then the fi
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the read operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the read operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -443,9 +466,11 @@ This method works in the same manner as the [read(java.nio.ByteBuffer)](https://
 | `java.lang.IllegalArgumentException` | If the position is negative |
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the read operation is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the read operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 ### read
 
@@ -472,6 +497,7 @@ Bytes are read starting at this channel's current file position, and then the fi
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the read operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the read operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -496,6 +522,7 @@ Bytes are read starting at this channel's current file position, and then the fi
 | `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>!:The buffers into which bytes are to be transferred |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer into which bytes are to be transferred; must be non-negative and no larger than`dsts.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; must be non-negative and no larger than`dsts.length`-`offset` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -506,9 +533,11 @@ Bytes are read starting at this channel's current file position, and then the fi
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the read operation is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the read operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 ### size
 
@@ -554,6 +583,7 @@ This method is potentially much more efficient than a simple loop that reads fro
 | `src` | [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!:The source channel |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the transfer is to begin; must be non-negative |
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum number of bytes to be transferred; must be non-negative |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -564,9 +594,11 @@ This method is potentially much more efficient than a simple loop that reads fro
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.NonReadableChannelException` | If the source channel was not opened for reading |
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If either this channel or the source channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes either channel while the transfer is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the transfer is in progress, thereby closing both channels and setting the current thread's interrupt status |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 ### transferTo
@@ -594,6 +626,7 @@ This method is potentially much more efficient than a simple loop that reads fro
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the transfer is to begin; must be non-negative |
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum number of bytes to be transferred; must be non-negative |
 | `target` | [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!:The target channel |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -604,9 +637,11 @@ This method is potentially much more efficient than a simple loop that reads fro
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.NonReadableChannelException` | If this channel was not opened for reading |
 | `java.nio.channels.NonWritableChannelException` | If the target channel was not opened for writing |
+| --- | --- |
 | `java.nio.channels.ClosedChannelException` | If either this channel or the target channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes either channel while the transfer is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the transfer is in progress, thereby closing both channels and setting the current thread's interrupt status |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 ### truncate
@@ -634,6 +669,7 @@ If the given size is less than the file's current size then the file is truncate
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.lang.IllegalArgumentException` | If the new size is negative |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 ### tryLock
@@ -661,6 +697,7 @@ fc.<code><a docref="java.nio.channels.FileChannel$tryLock(kotlin.Long, kotlin.Lo
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 **See Also**
 
@@ -695,6 +732,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position at which the locked region is to start; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | `shared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to request a shared lock,`false`to request an exclusive lock |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -705,6 +743,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 | `java.lang.IllegalArgumentException` | If the preconditions on the parameters do not hold |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.OverlappingFileLockException` | If a lock that overlaps the requested region is already held by this Java virtual machine, or if another thread is already blocked in this method and is attempting to lock an overlapping region of the same file |
+| --- | --- |
 | `java.io.IOException` | If some other I/O error occurs |
 
 **See Also**
@@ -738,6 +777,7 @@ Bytes are written starting at this channel's current file position unless the ch
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -770,9 +810,11 @@ This method works in the same manner as the [write(java.nio.ByteBuffer)](https:/
 | `java.lang.IllegalArgumentException` | If the position is negative |
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |
 
 ### write
 
@@ -799,6 +841,7 @@ Bytes are written starting at this channel's current file position unless the ch
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
+| --- | --- |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
 
@@ -823,6 +866,7 @@ Bytes are written starting at this channel's current file position unless the ch
 | `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!\>!:The buffers from which bytes are to be retrieved |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be retrieved; must be non-negative and no larger than`srcs.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; must be non-negative and no larger than`srcs.length`-`offset` |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------|
@@ -833,6 +877,8 @@ Bytes are written starting at this channel's current file position unless the ch
 | `java.lang.IndexOutOfBoundsException` | If the preconditions on the`offset`and`length`parameters do not hold |
 | `java.nio.channels.NonWritableChannelException` | If this channel was not opened for writing |
 | `java.nio.channels.ClosedChannelException` | If this channel is closed |
+| --- | --- |
 | `java.nio.channels.AsynchronousCloseException` | If another thread closes this channel while the write operation is in progress |
 | `java.nio.channels.ClosedByInterruptException` | If another thread interrupts the current thread while the write operation is in progress, thereby closing the channel and setting the current thread's interrupt status |
 | `java.io.IOException` | If some other I/O error occurs |
+| --- | --- |

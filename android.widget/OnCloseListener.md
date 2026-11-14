@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # OnCloseListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/SearchView.OnCloseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnCloseListener

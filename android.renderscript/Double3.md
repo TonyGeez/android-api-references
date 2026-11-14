@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Double3
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Double3 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Double3
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Double3](https://developer.android.com/reference/kotlin/android/renderscript/Double3#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Vector version of the basic double type. Provides three double fields packed.
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Double3#x:kotlin.Double) <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Double3#y:kotlin.Double) <br /> |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Double3#z:kotlin.Double) <br /> |
+| --- | --- |
 
 ## Public constructors
 

@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # MultiChoiceModeListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/AbsListView.MultiChoiceModeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface MultiChoiceModeListener : ActionMode.Callback
@@ -46,4 +47,5 @@ Called when an item is checked or unchecked during selection mode.
 | `mode` | [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)!: The [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#) providing the selection mode |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Adapter position of the item that was checked or unchecked |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Adapter ID of the item that was checked or unchecked |
+| --- | --- |
 | `checked` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the item is now checked, `false` if the item is now unchecked. |

@@ -5,6 +5,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # OnWindowVisibilityChangeListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnWindowVisibilityChangeListener

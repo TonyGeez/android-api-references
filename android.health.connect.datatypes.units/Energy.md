@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # Energy
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/units/Energy "View this page in Java") 
+| --- | --- |
 
 ```
 class Energy : Comparable<Energy!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.units.Energy](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#) |
 
 Represents a unit of energy. Supported units: calories
@@ -22,9 +24,11 @@ Represents a unit of energy. Supported units: calories
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#compareTo(android.health.connect.datatypes.units.Energy))`(`other:` ` [Energy](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#)`)` Compares this object with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [Energy](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#) | [fromCalories](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#fromCalories(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates an Energy object with the specified value in calories. |
+| --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCalories](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#getInCalories())`()` Returns energy in calories |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#hashCode())`()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy#toString())`()` <br /> |
+| --- | --- |
 
 ## Public methods
 

@@ -7,6 +7,7 @@ class Objects
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.Objects](https://developer.android.com/reference/kotlin/java/util/Objects#) |
 
 This class consists of `static` utility methods for operating on objects, or checking certain conditions before operation. These utilities include `null`-safe or `null`-tolerant methods for computing the hash code of an object, returning a string for an object, comparing two objects, and checking if indexes or sub-range values are out of bounds.
@@ -18,24 +19,31 @@ This class consists of `static` utility methods for operating on objects, or che
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromIndexSize(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromIndexSize(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromToIndex(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
+| --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromToIndex(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkIndex(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkIndex(kotlin.Long,%20kotlin.Long)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#compare(java.util.Objects.compare.T,%20java.util.Objects.compare.T,%20java.util.Comparator)(a: T, b: T, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` {@return 0 if the arguments are identical and {@code \* c. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#deepEquals(kotlin.Any,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the arguments are deeply equal to each other \* and {@code false} otherwise} Two `null` values are deeply equal. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#equals(kotlin.Any,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the arguments are equal to each other \* and {@code false} otherwise} Consequently, if both arguments are `null`, `true` is returned. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#hash(kotlin.Any)(vararg values: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` {@return a hash code for a sequence of input values} The hash code is generated as if all the input values were placed into an array, and that array were hashed by calling `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.Array)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#hashCode(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return the hash code of a non-{@code null} argument and 0 for \* a {@code null} argument} |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#isNull(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the provided reference is {@code \* null}; {@code false} otherwise} |
+| --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#nonNull(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the provided reference is non-{@code null}; \* {@code false} otherwise} |
 | static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T)(obj: T?)` Checks that the specified object reference is not `null`. |
 | static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T,%20kotlin.String)(obj: T?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
+| --- | --- |
 | static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T,%20java.util.function.Supplier)(obj: T?, messageSupplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
 | static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNullElse(java.util.Objects.requireNonNullElse.T,%20java.util.Objects.requireNonNullElse.T)(obj: T?, defaultObj: T)` {@return the first argument if it is non-{@code null} and \* otherwise the second argument if it is non-{@code null}} |
 | static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNullElseGet(java.util.Objects.requireNonNullElseGet.T,%20java.util.function.Supplier)(obj: T?, supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier<out T>)` {@return the first argument if it is non-{@code null} and \* otherwise the value from {@code supplier. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toIdentityString(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` {@return a string equivalent to the string returned by {@code \* Object. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toString(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return the result of calling {@code toString} for a \* non-{@code null} argument and {@code "null"} for a \* {@code null} argument} |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toString(kotlin.Any,%20kotlin.String)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, nullDefault: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` {@return the result of calling {@code toString} on the first \* argument if the first argument is not {@code null} and the \* second argument otherwise} |
+| --- | --- |
 
 ## Public methods
 
@@ -65,6 +73,7 @@ The sub-range is defined to be out of bounds if any of the following inequalitie
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the lower-bound (inclusive) of the sub-interval |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size of the sub-range |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the upper-bound (exclusive) of the range |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -100,6 +109,7 @@ The sub-range is defined to be out of bounds if any of the following inequalitie
 | `fromIndex` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the lower-bound (inclusive) of the sub-interval |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the size of the sub-range |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the upper-bound (exclusive) of the range |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -135,6 +145,7 @@ The sub-range is defined to be out of bounds if any of the following inequalitie
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the lower-bound (inclusive) of the sub-range |
 | `toIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the upper-bound (exclusive) of the sub-range |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the upper-bound (exclusive) the range |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -170,6 +181,7 @@ The sub-range is defined to be out of bounds if any of the following inequalitie
 | `fromIndex` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the lower-bound (inclusive) of the sub-range |
 | `toIndex` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the upper-bound (exclusive) of the sub-range |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the upper-bound (exclusive) the range |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -264,6 +276,7 @@ Note that if one of the arguments is `null`, a `NullPointerException` may or may
 | `<T>` | the type of the objects being compared |
 | `a` | T: an object |
 | `b` | T: an object to be compared with `a` |
+| --- | --- |
 | `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the `Comparator` to compare the first two arguments |
 
 **See Also**
@@ -458,6 +471,7 @@ public Foo(Bar bar, Baz baz) {
 | `<T>` | the type of the reference |
 | `obj` | T?: the object reference to check for nullity |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): detail message to be used in the event that a `NullPointerException` is thrown |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -487,6 +501,7 @@ Unlike the method `https://developer.android.com/reference/kotlin/java/util/Obje
 | `<T>` | the type of the reference |
 | `obj` | T?: the object reference to check for nullity |
 | `messageSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: supplier of the detail message to be used in the event that a `NullPointerException` is thrown |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -514,6 +529,7 @@ static fun <T : Any!> requireNonNullElse(
 | `<T>` | the type of the reference |
 | `obj` | T?: an object |
 | `defaultObj` | T: a non-`null` object to return if the first argument is `null` |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -537,6 +553,7 @@ static fun <T : Any!> requireNonNullElseGet(
 | `<T>` | the type of the first argument and return type |
 | `obj` | T?: an object |
 | `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\<out T\>: of a non-`null` object to return if the first argument is `null` |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

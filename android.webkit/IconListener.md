@@ -6,6 +6,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 # IconListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebIconDatabase.IconListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface IconListener

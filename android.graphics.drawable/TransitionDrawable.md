@@ -7,9 +7,11 @@ open class TransitionDrawable : LayerDrawable, Drawable.Callback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
 | | ↳ | [android.graphics.drawable.LayerDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable) ||
 | | | ↳ | [android.graphics.drawable.TransitionDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#) |
+| --- | --- | --- | --- |
 
 An extension of LayerDrawables that is intended to cross-fade between the first and second layer. To start the transition, call `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#startTransition(kotlin.Int)`. To display just the first layer, call `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#resetTransition()`.
 
@@ -22,9 +24,11 @@ It can be defined in an XML file with the `<transition>` element. Each Drawable 
 | [`android:bottom`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Bottom inset to apply to the layer. |
 | [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Drawable used to render the layer. |
 | [`android:id`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Identifier of the layer. |
+| --- | --- |
 | [`android:left`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Left inset to apply to the layer. |
 | [`android:right`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Right inset to apply to the layer. |
 | [`android:top`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Top inset to apply to the layer. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable` `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#attr_LayerDrawable` Bottom inset to apply to the layer.
 
@@ -47,6 +51,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#attr_LayerDrawable` Gravity used to align the layer within its container. If no value is specified, the default behavior depends on whether an explicit width or height has been set, If no dimension is set, gravity in that direction defaults to `fill_horizontal` or `fill_vertical`; otherwise, it defaults to `left` or `top`.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description bottom 50 Push object to the bottom of its container, not changing its size. center 11 Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. center_horizontal 1 Place object in the horizontal center of its container, not changing its size. center_vertical 10 Place object in the vertical center of its container, not changing its size. clip_horizontal 8 Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds. The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the left edge, and neither will clip both edges. clip_vertical 80 Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds. The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top edge, and neither will clip both edges. end 800005 Push object to the end of its container, not changing its size. fill 77 Grow the horizontal and vertical size of the object if needed so it completely fills its container. fill_horizontal 7 Grow the horizontal size of the object if needed so it completely fills its container. fill_vertical 70 Grow the vertical size of the object if needed so it completely fills its container. left 3 Push object to the left of its container, not changing its size. right 5 Push object to the right of its container, not changing its size. start 800003 Push object to the beginning of its container, not changing its size. top 30 Push object to the top of its container, not changing its size.
 
 <br />
@@ -127,9 +132,11 @@ Padding mode used to stack each layer directly atop the previous layer.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#isCrossFadeEnabled()()` Indicates whether the cross fade is enabled for this transition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#resetTransition()()` Show only the first layer. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#reverseTransition(kotlin.Int)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reverses the transition, picking up where the transition currently is. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#setCrossFadeEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the cross fade of the drawables. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#startTransition(kotlin.Int)(durationMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Begin the second layer on top of the first layer. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#addLayer(android.graphics.drawable.Drawable)(dr: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable!)`
 

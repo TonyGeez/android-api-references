@@ -7,6 +7,7 @@ open class InstrumentationInfo : PackageItemInfo, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
 | | ↳ | [android.content.pm.InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#) |
 
@@ -36,6 +37,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#toString()()` Returns a string representation of the object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
 
@@ -94,12 +96,15 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#dataDir:kotlin.String` Full path to a directory assigned to the package for its persistent data. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#functionalTest:kotlin.Boolean` Specifies whether or not to run this instrumentation as a functional test |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#handleProfiling:kotlin.Boolean` Specifies whether or not this instrumentation will handle profiling. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#publicSourceDir:kotlin.String` Full path to the publicly available parts of `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#sourceDir:kotlin.String`, including resources and manifest. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#sourceDir:kotlin.String` Full path to the base APK for this application. |
+| --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#splitNames:kotlin.Array` The names of all installed split APKs, ordered lexicographically. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#splitPublicSourceDirs:kotlin.Array` Full path to the publicly available parts of `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#splitSourceDirs:kotlin.Array`, including resources and manifest. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#splitSourceDirs:kotlin.Array` Full paths to zero or more split APKs, indexed by the same order as `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#splitNames:kotlin.Array`. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#targetPackage:kotlin.String` The name of the application package being instrumented. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#targetProcesses:kotlin.String` Names of the process(es) this instrumentation will run in. |
 

@@ -9,9 +9,11 @@ open class ServiceConfigurationError : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
 | | | ↳ | [java.util.ServiceConfigurationError](https://developer.android.com/reference/kotlin/java/util/ServiceConfigurationError#) |
+| --- | --- | --- | --- |
 
 Error thrown when something goes wrong while locating, loading, or instantiating a service provider.
 

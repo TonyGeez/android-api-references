@@ -6,6 +6,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # SdkSandboxProcessDeathCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface SdkSandboxProcessDeathCallback

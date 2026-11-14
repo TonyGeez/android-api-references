@@ -9,6 +9,7 @@ abstract class Authenticator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.Authenticator](https://developer.android.com/reference/kotlin/java/net/Authenticator#) |
 
 The class Authenticator represents an object that knows how to obtain authentication for a network connection. Usually, it will do this by prompting the user for information.
@@ -34,6 +35,7 @@ All methods that request authentication have a default implementation that fails
 | open static [PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication)! | [requestPasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/Authenticator#requestPasswordAuthentication(kotlin.String,%20java.net.InetAddress,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
 | open static [PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication)! | [requestPasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/Authenticator#requestPasswordAuthentication(kotlin.String,%20java.net.InetAddress,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20java.net.URL,%20java.net.Authenticator.RequestorType))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `reqType:` ` [Authenticator.RequestorType](https://developer.android.com/reference/kotlin/java/net/Authenticator.RequestorType)!`)` Ask the authenticator that has been registered with the system for a password. |
 | open static [PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication)! | [requestPasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/Authenticator#requestPasswordAuthentication(java.net.InetAddress,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
+| --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/Authenticator#setDefault(java.net.Authenticator))`(`a:` ` [Authenticator](https://developer.android.com/reference/kotlin/java/net/Authenticator#)!`)` Sets the authenticator that will be used by the networking code when a proxy or an HTTP server asks for authentication. |
 
 | Protected methods ||
@@ -41,12 +43,15 @@ All methods that request authentication have a default implementation that fails
 | open [PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication)! | [getPasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/Authenticator#getPasswordAuthentication())`()` Called when password authorization is needed. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingHost](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingHost())`()` Gets the `hostname` of the site or proxy requesting authentication, or `null` if not available. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestingPort](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingPort())`()` Gets the port number for the requested connection. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingPrompt](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingPrompt())`()` Gets the prompt string given by the requestor. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingProtocol](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingProtocol())`()` Give the protocol that's requesting the connection. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingScheme](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingScheme())`()` Gets the scheme of the requestor (the HTTP scheme for an HTTP firewall, for example). |
+| --- | --- |
 | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getRequestingSite](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingSite())`()` Gets the `InetAddress` of the site requesting authorization, or `null` if not available. |
 | open [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [getRequestingURL](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingURL())`()` Returns the URL that resulted in this request for authentication. |
 | open [Authenticator.RequestorType](https://developer.android.com/reference/kotlin/java/net/Authenticator.RequestorType)! | [getRequestorType](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestorType())`()` Returns whether the requestor is a Proxy or a Server. |
+| --- | --- |
 
 ## Public constructors
 
@@ -84,9 +89,11 @@ First, if there is a security manager, its `checkPermission` method is called wi
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The hostname of the site requesting authentication. |
 | `addr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!: The InetAddress of the site requesting authentication, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection. |
+| --- | --- |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingProtocol())) |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user which identifies the authentication realm. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -126,9 +133,11 @@ First, if there is a security manager, its `checkPermission` method is called wi
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The hostname of the site requesting authentication. |
 | `addr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!: The InetAddress of the site requesting authorization, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection |
+| --- | --- |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingProtocol())) |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
+| --- | --- |
 | `url` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!: The requesting URL that caused the authentication |
 | `reqType` | [Authenticator.RequestorType](https://developer.android.com/reference/kotlin/java/net/Authenticator.RequestorType)!: The type (server or proxy) of the entity requesting authentication. |
 
@@ -167,6 +176,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 | `addr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!: The InetAddress of the site requesting authorization, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](https://developer.android.com/reference/kotlin/java/net/Authenticator#getRequestingProtocol())) |
+| --- | --- |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
 

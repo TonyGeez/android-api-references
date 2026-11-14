@@ -3,12 +3,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 # SuggestedDeviceInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/SuggestedDeviceInfo "View this page in Java")
+| --- | --- |
 
 ```
 class SuggestedDeviceInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.SuggestedDeviceInfo](https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#) |
 
 Allows applications to suggest routes to the system UI (for example, in the System UI Output Switcher).
@@ -30,12 +32,15 @@ Suggested devices are used to transfer the current media session from one device
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getDeviceDisplayName()()` Returns the name to be displayed to the user. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getExtras()()` Returns the extras associated with the suggestion. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getRouteId()()` Returns the route ID associated with the suggestion. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getType()()` Returns the device type associated with the suggestion. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

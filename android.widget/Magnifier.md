@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # Magnifier
 
 Kotlin| [Java](https://developer.android.com/reference/android/widget/Magnifier "View this page in Java") 
+| --- | --- |
 
 ```
 class Magnifier
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.widget.Magnifier](https://developer.android.com/reference/kotlin/android/widget/Magnifier#) |
 
 Android magnifier widget. Can be used by any view which is attached to a window.
@@ -35,21 +37,27 @@ Android magnifier widget. Can be used by any view which is attached to a window.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](https://developer.android.com/reference/kotlin/android/widget/Magnifier#dismiss())`()` Dismisses the magnifier from the screen. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCornerRadius](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getCornerRadius())`()` <br /> The units of this value are pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultHorizontalSourceToMagnifierOffset](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getDefaultHorizontalSourceToMagnifierOffset())`()` Returns the horizontal offset, in pixels, to be applied to the source center position to obtain the magnifier center position when [show(float,float)](https://developer.android.com/reference/kotlin/android/widget/Magnifier#show(kotlin.Float,%20kotlin.Float))is called. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultVerticalSourceToMagnifierOffset](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getDefaultVerticalSourceToMagnifierOffset())`()` Returns the vertical offset, in pixels, to be applied to the source center position to obtain the magnifier center position when [show(float,float)](https://developer.android.com/reference/kotlin/android/widget/Magnifier#show(kotlin.Float,%20kotlin.Float))is called. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getElevation](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getElevation())`()` <br /> The units of this value are pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getHeight())`()` <br /> The units of this value are pixels. |
+| --- | --- |
 | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | [getOverlay](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getOverlay())`()` Returns the overlay to be drawn on the top of the magnifier, or`null`if no overlay should be drawn. |
 | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)? | [getPosition](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getPosition())`()` Returns the top left coordinates of the magnifier, relative to the main application window. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceHeight](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getSourceHeight())`()` <br /> The units of this value are pixels. |
+| --- | --- |
 | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)? | [getSourcePosition](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getSourcePosition())`()` Returns the top left coordinates of the magnifier source (i.e. the view region going to be magnified and copied to the magnifier), relative to the window or surface the content is copied from. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceWidth](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getSourceWidth())`()` <br /> The units of this value are pixels. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getWidth())`()` <br /> The units of this value are pixels. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getZoom](https://developer.android.com/reference/kotlin/android/widget/Magnifier#getZoom())`()` Returns the zoom to be applied to the magnified view region copied to the magnifier. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClippingEnabled](https://developer.android.com/reference/kotlin/android/widget/Magnifier#isClippingEnabled())`()` Returns whether the magnifier position will be adjusted such that the magnifier will be fully within the bounds of the main application window, by also avoiding any overlap with system insets (such as the one corresponding to the status bar) i. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoom](https://developer.android.com/reference/kotlin/android/widget/Magnifier#setZoom(kotlin.Float))`(`zoom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the zoom to be applied to the chosen content before being copied to the magnifier popup. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](https://developer.android.com/reference/kotlin/android/widget/Magnifier#show(kotlin.Float,%20kotlin.Float))`(`sourceCenterX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `sourceCenterY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Shows the magnifier on the screen. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](https://developer.android.com/reference/kotlin/android/widget/Magnifier#show(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`sourceCenterX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `sourceCenterY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `magnifierCenterX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `magnifierCenterY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Shows the magnifier on the screen at a position that is independent from its content position. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/android/widget/Magnifier#update())`()` Asks the magnifier to update its content. |
+| --- | --- |
 
 ## Constants
 
@@ -410,6 +418,7 @@ Shows the magnifier on the screen at a position that is independent from its con
 | `sourceCenterX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):horizontal coordinate of the source center relative to the view Value is 0.0f or greater |
 | `sourceCenterY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):vertical coordinate of the source center, relative to the view Value is 0.0f or greater |
 | `magnifierCenterX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):horizontal coordinate of the magnifier center, relative to the view |
+| --- | --- |
 | `magnifierCenterY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):vertical coordinate of the magnifier center, relative to the view |
 
 ### update

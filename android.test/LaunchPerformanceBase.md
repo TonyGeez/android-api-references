@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # LaunchPerformanceBase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/LaunchPerformanceBase "View this page in Java") 
+| --- | --- |
 
 ```
 open class LaunchPerformanceBase : Instrumentation
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.app.Instrumentation](https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#) ||
 | | ↳ | [android.test.LaunchPerformanceBase](https://developer.android.com/reference/kotlin/android/test/LaunchPerformanceBase#) |
 

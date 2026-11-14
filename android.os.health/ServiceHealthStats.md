@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ServiceHealthStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/health/ServiceHealthStats "View this page in Java") 
+| --- | --- |
 
 ```
 class ServiceHealthStats
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.health.ServiceHealthStats](https://developer.android.com/reference/kotlin/android/os/health/ServiceHealthStats#) |
 
 Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [HealthStats.getStats(int)](https://developer.android.com/reference/kotlin/android/os/health/HealthStats#getStats(kotlin.Int))with the [PackageHealthStats.STATS_SERVICES](https://developer.android.com/reference/kotlin/android/os/health/PackageHealthStats#STATS_SERVICES:kotlin.Int) key.

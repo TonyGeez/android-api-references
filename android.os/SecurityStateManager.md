@@ -7,6 +7,7 @@ open class SecurityStateManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.SecurityStateManager](https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#) |
 
 SecurityStateManager provides the functionality to query the security status of the system and platform components. For example, this includes the system and vendor security patch level.
@@ -18,6 +19,7 @@ SecurityStateManager provides the functionality to query the security status of 
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#KEY_KERNEL_VERSION:kotlin.String` The kernel version key returned as part of the `Bundle` from `getGlobalSecurityState`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#KEY_SYSTEM_SPL:kotlin.String` The system SPL key returned as part of the `Bundle` from `getGlobalSecurityState`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#KEY_SYSTEM_SUPPLEMENTAL_PATCHES:kotlin.String` The system supplemental patches key returned as part of the `Bundle` from `getGlobalSecurityState`. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#KEY_VENDOR_SPL:kotlin.String` The vendor SPL key returned as part of the `Bundle` from `getGlobalSecurityState`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#KEY_VENDOR_SUPPLEMENTAL_PATCHES:kotlin.String` The vendor supplemental patches key returned as part of the `Bundle` from `getGlobalSecurityState`. |
 

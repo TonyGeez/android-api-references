@@ -9,9 +9,11 @@ open class DeflaterInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||
 | | | ↳ | [java.util.zip.DeflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#) |
+| --- | --- | --- | --- |
 
 Implements an input stream filter for compressing data in the "deflate" compression format.
 
@@ -28,9 +30,11 @@ Implements an input stream filter for compressing data in the "deflate" compress
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#available())`()` Returns 0 after EOF has been reached, otherwise always return 1. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#close())`()` Closes this input stream and its underlying input stream, discarding any pending uncompressed data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#mark(kotlin.Int))`(`limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` *This operation is not supported*. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#markSupported())`()` Always returns`false`because this input stream does not support the #mark and #reset methods. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#read())`()` Reads a single byte of compressed data from the input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads compressed data into a byte array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#reset())`()` *This operation is not supported*. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards data from the input stream. |
 
@@ -107,6 +111,7 @@ Creates a new input stream with the specified compressor and buffer size.
 | `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:input stream to read the uncompressed data to |
 | `defl` | [Deflater](https://developer.android.com/reference/kotlin/java/util/zip/Deflater)!:compressor ("deflater") for this stream |
 | `bufLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):compression buffer size |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-----------------------|
@@ -216,6 +221,7 @@ Reads compressed data into a byte array. This method will block until some input
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:buffer into which the data is read |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):starting offset of the data within`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):maximum number of compressed bytes to read into`b` |
+| --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -226,6 +232,7 @@ Reads compressed data into a byte array. This method will block until some input
 | `java.io.IOException` | if an I/O error occurs or if this input stream is already closed |
 | `java.lang.NullPointerException` | If`b`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | if`len > b.length - off` |
+| --- | --- |
 
 ### reset
 

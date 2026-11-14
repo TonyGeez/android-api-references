@@ -5,6 +5,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 # AccountManagerFuture
 
 Kotlin| [Java](https://developer.android.com/reference/android/accounts/AccountManagerFuture "View this page in Java") 
+| --- | --- |
 
 ```
 interface AccountManagerFuture<V : Any!>
@@ -21,6 +22,7 @@ A AccountManagerFuture represents the result of an asynchronous [AccountManager]
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#cancel(kotlin.Boolean))`(`mayInterruptIfRunning:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to cancel execution of this task. |
 | abstractV | [getResult](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#getResult())`()` Accessor for the future result the [AccountManagerFuture](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#) represents. |
 | abstractV | [getResult](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#getResult(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Accessor for the future result the [AccountManagerFuture](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#) represents. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#isCancelled())`()` Returns true if this task was cancelled before it completed normally. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDone](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture#isDone())`()` Returns true if this task completed. |
 
@@ -65,6 +67,7 @@ Accessor for the future result the [AccountManagerFuture](https://developer.andr
 | `android.accounts.OperationCanceledException` | if the request was canceled for any reason (including if it is forbidden by policy to modify an account (of that type)) |
 | `android.accounts.AuthenticatorException` | if there was an error communicating with the authenticator or if the authenticator returned an invalid response |
 | `java.io.IOException` | if the authenticator returned an error response that indicates that it encountered an IOException while communicating with the authentication server |
+| --- | --- |
 
 ### getResult
 
@@ -93,6 +96,7 @@ Accessor for the future result the [AccountManagerFuture](https://developer.andr
 | `android.accounts.OperationCanceledException` | if the request was canceled for any reason |
 | `android.accounts.AuthenticatorException` | if there was an error communicating with the authenticator or if the authenticator returned an invalid response |
 | `java.io.IOException` | if the authenticator returned an error response that indicates that it encountered an IOException while communicating with the authentication server |
+| --- | --- |
 
 ### isCancelled
 

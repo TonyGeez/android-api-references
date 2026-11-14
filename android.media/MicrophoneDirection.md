@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # MicrophoneDirection
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MicrophoneDirection "View this page in Java") 
+| --- | --- |
 
 ```
 interface MicrophoneDirection
@@ -13,6 +14,7 @@ interface MicrophoneDirection
 | [android.media.MicrophoneDirection](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection#) |
 
 | Known Direct Subclasses [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord), [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. | | [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder) | Used to record audio and video. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface defining mechanism for controlling the directionality and field width of audio capture.
 
@@ -23,6 +25,7 @@ Interface defining mechanism for controlling the directionality and field width 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_AWAY_FROM_USER](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection#MIC_DIRECTION_AWAY_FROM_USER:kotlin.Int) Optimize capture for audio coming from the side of the device pointing away from the user. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_EXTERNAL](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection#MIC_DIRECTION_EXTERNAL:kotlin.Int) Optimize capture for audio coming from an off-device microphone. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_TOWARDS_USER](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection#MIC_DIRECTION_TOWARDS_USER:kotlin.Int) Optimize capture for audio coming from the side of the device facing the user. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/media/MicrophoneDirection#MIC_DIRECTION_UNSPECIFIED:kotlin.Int) Don't do any directionality processing of the activated microphone(s). |
 
 | Public methods ||

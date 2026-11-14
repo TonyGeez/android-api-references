@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # SharedPreferencesBackupHelper
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/backup/SharedPreferencesBackupHelper "View this page in Java") 
+| --- | --- |
 
 ```
 open class SharedPreferencesBackupHelper : BackupHelper
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.backup.SharedPreferencesBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper#) |
 
 A helper class that can be used in conjunction with [android.app.backup.BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) to manage the backup of [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). Whenever a backup is performed, it will back up all named shared preferences that have changed since the last backup operation.
@@ -53,6 +55,7 @@ No further implementation is needed; the [BackupAgentHelper](https://developer.a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [performBackup](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper#performBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor))`(`oldState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`, `data:` ` [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!`, `newState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` Backs up the configured [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) groups. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreEntity](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper#restoreEntity(android.app.backup.BackupDataInputStream))`(`data:` ` [BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream)!`)` Restores one entity from the restore data stream to its proper shared preferences file store. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNewStateDescription](https://developer.android.com/reference/kotlin/android/app/backup/SharedPreferencesBackupHelper#writeNewStateDescription(android.os.ParcelFileDescriptor))`(`fd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` <br /> |
+| --- | --- |
 
 ## Public constructors
 
@@ -94,6 +97,7 @@ Backs up the configured [android.content.SharedPreferences](https://developer.an
 | `oldState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read-only [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
 | `data` | [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!: An open, read/write [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput) pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
 | `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read/write [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
+| --- | --- |
 
 ### restoreEntity
 

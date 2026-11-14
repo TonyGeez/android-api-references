@@ -6,6 +6,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 # PhonesColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.PhonesColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface PhonesColumns
@@ -14,6 +15,7 @@ interface PhonesColumns
 | [android.provider.Contacts.PhonesColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#) |
 
 | Known Direct Subclasses [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People), [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones), [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) | This table contains people. | | [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones) | A sub directory of a single person that contains all of their Phones. | | [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) | This table stores phone numbers and a reference to the person that the contact method belongs to. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
@@ -28,15 +30,19 @@ Columns from the Phones table that other columns join into themselves.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#ISPRIMARY:kotlin.String) Whether this is the primary phone number |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#LABEL:kotlin.String) The user provided label for the phone number, only used if TYPE is TYPE_CUSTOM. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#NUMBER:kotlin.String) The phone number as the user entered it. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER_KEY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#NUMBER_KEY:kotlin.String) The normalized phone number |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE:kotlin.String) The type of the the phone number. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_CUSTOM:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_HOME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_FAX_HOME:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_FAX_WORK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HOME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_HOME:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MOBILE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_MOBILE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_OTHER:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PAGER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_PAGER:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_WORK:kotlin.Int) <br /> |
 
 ## Constants

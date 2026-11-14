@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # ConfigParser
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/ConfigParser "View this page in Java") 
+| --- | --- |
 
 ```
 class ConfigParser
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.wifi.hotspot2.ConfigParser](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/ConfigParser#) |
 
 Utility class for building PasspointConfiguration from an installation file.

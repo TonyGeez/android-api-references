@@ -5,12 +5,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # DsmccResponse
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/tv/DsmccResponse "View this page in Java") 
+| --- | --- |
 
 ```
 class DsmccResponse : BroadcastInfoResponse, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.media.tv.BroadcastInfoResponse](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse) ||
 | | ↳ | [android.media.tv.DsmccResponse](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#) |
 
@@ -23,6 +25,7 @@ A response for DSM-CC from broadcast signal.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BIOP_MESSAGE_TYPE_DIRECTORY](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#BIOP_MESSAGE_TYPE_DIRECTORY:kotlin.String) BIOP directory message |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BIOP_MESSAGE_TYPE_FILE](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#BIOP_MESSAGE_TYPE_FILE:kotlin.String) BIOP file message |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BIOP_MESSAGE_TYPE_SERVICE_GATEWAY](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#BIOP_MESSAGE_TYPE_SERVICE_GATEWAY:kotlin.String) BIOP service gateway message |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BIOP_MESSAGE_TYPE_STREAM](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#BIOP_MESSAGE_TYPE_STREAM:kotlin.String) BIOP stream message |
 
 | Inherited constants ||
@@ -41,9 +44,11 @@ A response for DSM-CC from broadcast signal.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#describeContents())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBiopMessageType](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#getBiopMessageType())`()` Returns the BIOP message type. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getChildList](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#getChildList())`()` Returns a list of subobject names for the given service gateway or directory message response. |
+| --- | --- |
 | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | [getFile](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#getFile())`()` Returns the file descriptor for a given file message response. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getStreamEventIds](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#getStreamEventIds())`()` Returns all event IDs carried in a given stream message response. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getStreamEventNames](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#getStreamEventNames())`()` Returns all event names carried in a given stream message response. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/DsmccResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||
@@ -167,6 +172,7 @@ The current stream message response does not support other stream messages types
 | `responseResult` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_ERROR:kotlin.Int), [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_OK](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_OK:kotlin.Int), or [android.media.tv.BroadcastInfoResponse#RESPONSE_RESULT_CANCEL](https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoResponse#RESPONSE_RESULT_CANCEL:kotlin.Int) |
 | `eventIds` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?: This value may be `null`. |
 | `eventNames` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
+| --- | --- |
 
 ## Public methods
 

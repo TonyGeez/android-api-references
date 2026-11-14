@@ -5,12 +5,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 # SuggestionSpan
 
 Kotlin| [Java](https://developer.android.com/reference/android/text/style/SuggestionSpan "View this page in Java") 
+| --- | --- |
 
 ```
 open class SuggestionSpan : CharacterStyle, ParcelableSpan
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
 | | ↳ | [android.text.style.SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#) |
 
@@ -23,12 +25,15 @@ Holds suggestion candidates for the text enclosed in this span. When such a span
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SUGGESTION_PICKED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#ACTION_SUGGESTION_PICKED:kotlin.String) This action is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_AUTO_CORRECTION](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_AUTO_CORRECTION:kotlin.Int) Sets this flag if the auto correction is about to be applied to a word/text that the user is typing/composing. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_EASY_CORRECT](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_EASY_CORRECT:kotlin.Int) Sets this flag if the suggestions should be easily accessible with few interactions. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_GRAMMAR_ERROR](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_GRAMMAR_ERROR:kotlin.Int) Sets this flag if the suggestions apply to a grammar error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_MISSPELLED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_MISSPELLED:kotlin.Int) Sets this flag if the suggestions apply to a misspelled word/text. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUGGESTIONS_MAX_SIZE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTIONS_MAX_SIZE:kotlin.Int) <br /> |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_AFTER](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_AFTER:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_BEFORE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_BEFORE:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_HASHCODE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_HASHCODE:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
+| --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -42,15 +47,19 @@ Holds suggestion candidates for the text enclosed in this span. When such a span
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getFlags())`()` <br /> |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getLocale())`()` <br /> |
 | open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | [getLocaleObject](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getLocaleObject())`()` Returns a well-formed BCP 47 language tag representation of the suggestions, as a [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getSpanTypeId())`()` <br /> |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSuggestions](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getSuggestions())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnderlineColor](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getUnderlineColor())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#hashCode())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFlags](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#setFlags(kotlin.Int))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#updateDrawState(android.text.TextPaint))`(`tp:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -198,6 +207,7 @@ SuggestionSpan(
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context for the application |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
+| --- | --- |
 
 ### SuggestionSpan
 
@@ -217,6 +227,7 @@ SuggestionSpan(
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context for the application |
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:locale Locale of the suggestions |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span. Only the first up to [SuggestionSpan.SUGGESTIONS_MAX_SIZE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTIONS_MAX_SIZE:kotlin.Int) will be considered. Null values not permitted. |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
 | `notificationTargetClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:if not null, this class will get notified when the user selects one of the suggestions. On Android [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int) and later this parameter is always ignored. |
 
@@ -244,6 +255,7 @@ SuggestionSpan(
 | `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:Locale of the suggestions |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
+| --- | --- |
 
 ## Public methods
 

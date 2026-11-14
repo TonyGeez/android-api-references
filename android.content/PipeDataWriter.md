@@ -5,6 +5,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # PipeDataWriter
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/ContentProvider.PipeDataWriter "View this page in Java") 
+| --- | --- |
 
 ```
 interface PipeDataWriter<T : Any!>
@@ -43,5 +44,6 @@ Called from a background thread to stream data out to a pipe. Note that the pipe
 | `output` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#):The pipe where data should be written. This will be closed for you upon returning from this function. This value cannot be`null`. |
 | `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The URI whose data is to be written. This value cannot be`null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The desired type of data to be written. This value cannot be`null`. |
+| --- | --- |
 | `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:Options supplied by caller. This value may be`null`. |
 | `args` | T?:Your own custom arguments. This value may be`null`. |

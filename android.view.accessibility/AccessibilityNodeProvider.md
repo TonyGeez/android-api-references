@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # AccessibilityNodeProvider
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class AccessibilityNodeProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.accessibility.AccessibilityNodeProvider](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#) |
 
 This class is the contract a client should implement to enable support of a virtual view hierarchy rooted at a given view for accessibility purposes. A virtual view hierarchy is a tree of imaginary Views that is reported as a part of the view hierarchy when an [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#) explores the window content. Since the virtual View tree does not exist this class is responsible for managing the [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) s describing that tree to accessibility services.
@@ -172,6 +174,7 @@ final class MyCalendarViewAccessibilityDelegate extends AccessibilityDelegate {
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addExtraDataToAccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#addExtraDataToAccessibilityNodeInfo(kotlin.Int,%20android.view.accessibility.AccessibilityNodeInfo,%20kotlin.String,%20android.os.Bundle))`(`virtualViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `info:` ` [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)!`, `extraDataKey:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `arguments:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Adds extra data to an [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) based on an explicit request for the additional data. |
 | open [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | [createAccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#createAccessibilityNodeInfo(kotlin.Int))`(`virtualViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) representing a virtual view, such as a descendant of the host View, with the given`virtualViewId`or the host View itself if`virtualViewId`equals to [HOST_VIEW_ID](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#HOST_VIEW_ID:kotlin.Int). |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)!\>? | [findAccessibilityNodeInfosByText](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#findAccessibilityNodeInfosByText(kotlin.String,%20kotlin.Int))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `virtualViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finds [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) s by text. |
+| --- | --- |
 | open [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | [findFocus](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#findFocus(kotlin.Int))`(`focus:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find the virtual view, such as a descendant of the host View, that has the specified focus type. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [performAction](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#performAction(kotlin.Int,%20kotlin.Int,%20android.os.Bundle))`(`virtualViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arguments:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Performs an accessibility action on a virtual view, such as a descendant of the host View, with the given`virtualViewId`or the host View itself if`virtualViewId`equals to [HOST_VIEW_ID](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider#HOST_VIEW_ID:kotlin.Int). |
 
@@ -221,6 +224,7 @@ This method only needs to be implemented if a virtual view offers to provide add
 | `virtualViewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The virtual view id used to create the node |
 | `info` | [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)!:The info to which to add the extra data |
 | `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A key specifying the type of extra data to add to the info. The extra data should be added to the [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) returned by the info's [AccessibilityNodeInfo.getExtras](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras())method. |
+| --- | --- |
 | `arguments` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:A [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) holding any arguments relevant for this request. |
 
 **See Also**
@@ -323,6 +327,7 @@ Performs an accessibility action on a virtual view, such as a descendant of the 
 | `virtualViewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A client defined virtual view id. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The action to perform. |
 | `arguments` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:Optional action arguments. This value may be`null`. |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------|

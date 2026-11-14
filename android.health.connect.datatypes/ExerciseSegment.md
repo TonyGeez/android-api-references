@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ExerciseSegment
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment "View this page in Java") 
+| --- | --- |
 
 ```
 class ExerciseSegment
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.ExerciseSegment](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#) |
 
 Represents particular exercise within exercise session (see [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord)).
@@ -28,12 +30,15 @@ Each record contains start and end time of the exercise, exercise type and optio
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getEndTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getEndTime())`()` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRateOfPerceivedExertion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getRateOfPerceivedExertion())`()` Gets the rate of perceived exertion (RPE) for this exercise segment. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepetitionsCount](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getRepetitionsCount())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSegmentType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getSegmentType())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSetIndex](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getSetIndex())`()` Gets the set index for this exercise segment. |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getStartTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getStartTime())`()` <br /> |
 | [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass)? | [getWeight](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getWeight())`()` Gets the weight associated with this exercise segment. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRateOfPerceivedExertion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#hasRateOfPerceivedExertion())`()` Returns true if this segment has an associated rate of perceived exertion. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSetIndex](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#hasSetIndex())`()` Returns true if this segment has an associated set index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#hashCode())`()` <br /> |
 

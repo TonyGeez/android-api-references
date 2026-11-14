@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # AnimatorPauseListener
 
 Kotlin | [Java](https://developer.android.com/reference/android/animation/Animator.AnimatorPauseListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface AnimatorPauseListener
@@ -13,6 +14,7 @@ interface AnimatorPauseListener
 | [android.animation.Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener#) |
 
 | Known Direct Subclasses [AnimatorListenerAdapter](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter) |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatorListenerAdapter](https://developer.android.com/reference/kotlin/android/animation/AnimatorListenerAdapter) | This adapter class provides empty implementations of the methods from [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener). | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 A pause listener receives notifications from an animation when the animation is [paused](https://developer.android.com/reference/kotlin/android/animation/Animator#pause()) or [resumed](https://developer.android.com/reference/kotlin/android/animation/Animator#resume()).
 

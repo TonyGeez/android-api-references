@@ -6,12 +6,14 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 # Criteria
 
 Kotlin | [Java](https://developer.android.com/reference/android/location/Criteria "View this page in Java") 
+| --- | --- |
 
 ```
 open class Criteria : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.location.Criteria](https://developer.android.com/reference/kotlin/android/location/Criteria#) |
 
 | **This class was deprecated in API level 34.**
@@ -27,12 +29,15 @@ A class indicating the application criteria for selecting a location provider. P
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_COARSE](https://developer.android.com/reference/kotlin/android/location/Criteria#ACCURACY_COARSE:kotlin.Int) A constant indicating an approximate accuracy requirement |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_FINE](https://developer.android.com/reference/kotlin/android/location/Criteria#ACCURACY_FINE:kotlin.Int) A constant indicating a finer location accuracy requirement |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_HIGH](https://developer.android.com/reference/kotlin/android/location/Criteria#ACCURACY_HIGH:kotlin.Int) a constant indicating a high accuracy requirement - may be used for horizontal, altitude, speed or bearing accuracy. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_LOW](https://developer.android.com/reference/kotlin/android/location/Criteria#ACCURACY_LOW:kotlin.Int) A constant indicating a low location accuracy requirement - may be used for horizontal, altitude, speed or bearing accuracy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCURACY_MEDIUM](https://developer.android.com/reference/kotlin/android/location/Criteria#ACCURACY_MEDIUM:kotlin.Int) A constant indicating a medium accuracy requirement - currently used only for horizontal accuracy. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_REQUIREMENT](https://developer.android.com/reference/kotlin/android/location/Criteria#NO_REQUIREMENT:kotlin.Int) A constant indicating that the application does not choose to place requirement on a particular feature. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_HIGH](https://developer.android.com/reference/kotlin/android/location/Criteria#POWER_HIGH:kotlin.Int) A constant indicating a high power requirement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_LOW](https://developer.android.com/reference/kotlin/android/location/Criteria#POWER_LOW:kotlin.Int) A constant indicating a low power requirement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POWER_MEDIUM](https://developer.android.com/reference/kotlin/android/location/Criteria#POWER_MEDIUM:kotlin.Int) A constant indicating a medium power requirement. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -48,24 +53,31 @@ A class indicating the application criteria for selecting a location provider. P
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/Criteria#describeContents())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#getAccuracy())`()` Returns a constant indicating desired accuracy of location. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBearingAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#getBearingAccuracy())`()` Returns a constant indicating the desired bearing accuracy. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHorizontalAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#getHorizontalAccuracy())`()` Returns a constant indicating the desired horizontal accuracy (latitude and longitude). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPowerRequirement](https://developer.android.com/reference/kotlin/android/location/Criteria#getPowerRequirement())`()` Returns a constant indicating the desired maximum power requirement. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpeedAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#getSpeedAccuracy())`()` Returns a constant indicating the desired speed accuracy. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVerticalAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#getVerticalAccuracy())`()` Returns a constant indicating the desired vertical accuracy (altitude). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAltitudeRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#isAltitudeRequired())`()` Returns whether the provider must provide altitude information. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBearingRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#isBearingRequired())`()` Returns whether the provider must provide bearing information. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCostAllowed](https://developer.android.com/reference/kotlin/android/location/Criteria#isCostAllowed())`()` Returns whether the provider is allowed to incur monetary cost. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpeedRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#isSpeedRequired())`()` Returns whether the provider must provide speed information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#setAccuracy(kotlin.Int))`(`accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired accuracy for latitude and longitude. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAltitudeRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#setAltitudeRequired(kotlin.Boolean))`(`altitudeRequired:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the provider must provide altitude information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearingAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#setBearingAccuracy(kotlin.Int))`(`accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired bearing accuracy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearingRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#setBearingRequired(kotlin.Boolean))`(`bearingRequired:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the provider must provide bearing information. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCostAllowed](https://developer.android.com/reference/kotlin/android/location/Criteria#setCostAllowed(kotlin.Boolean))`(`costAllowed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the provider is allowed to incur monetary cost. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHorizontalAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#setHorizontalAccuracy(kotlin.Int))`(`accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired horizontal accuracy (latitude and longitude). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPowerRequirement](https://developer.android.com/reference/kotlin/android/location/Criteria#setPowerRequirement(kotlin.Int))`(`powerRequirement:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired maximum power requirement. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeedAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#setSpeedAccuracy(kotlin.Int))`(`accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired speed accuracy. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeedRequired](https://developer.android.com/reference/kotlin/android/location/Criteria#setSpeedRequired(kotlin.Boolean))`(`speedRequired:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates whether the provider must provide speed information. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVerticalAccuracy](https://developer.android.com/reference/kotlin/android/location/Criteria#setVerticalAccuracy(kotlin.Int))`(`accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicates the desired vertical accuracy (altitude). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/Criteria#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/Criteria#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

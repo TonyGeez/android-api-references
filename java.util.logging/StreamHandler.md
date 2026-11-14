@@ -9,10 +9,12 @@ open class StreamHandler : Handler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.logging.Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler) ||
 | | ↳ | [java.util.logging.StreamHandler](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#) |
 
 | Known Direct Subclasses [ConsoleHandler](https://developer.android.com/reference/kotlin/java/util/logging/ConsoleHandler), [FileHandler](https://developer.android.com/reference/kotlin/java/util/logging/FileHandler), [SocketHandler](https://developer.android.com/reference/kotlin/java/util/logging/SocketHandler) |---------------------------------------------------------------------------------------------------|---------------------------------------------------| | [ConsoleHandler](https://developer.android.com/reference/kotlin/java/util/logging/ConsoleHandler) | This Handler publishes log records to System.err. | | [FileHandler](https://developer.android.com/reference/kotlin/java/util/logging/FileHandler) | Simple file logging Handler. | | [SocketHandler](https://developer.android.com/reference/kotlin/java/util/logging/SocketHandler) | Simple network logging Handler. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Stream based logging Handler.
 
@@ -51,6 +53,7 @@ For a custom handler, e.g. com.foo.MyHandler, the properties would be:
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#close())`()` Close the current output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#flush())`()` Flush any buffered messages. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#isLoggable(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Check if this Handler would actually log a given LogRecord. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#publish(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Format and publish a LogRecord. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](https://developer.android.com/reference/kotlin/java/util/logging/StreamHandler#setEncoding(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set (or change) the character encoding used by this Handler. |
 

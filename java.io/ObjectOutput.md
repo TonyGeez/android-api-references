@@ -11,6 +11,7 @@ interface ObjectOutput : AutoCloseable, DataOutput
 | [java.io.ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#) |
 
 | Known Direct Subclasses [ObjectOutputStream](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream) |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [ObjectOutputStream](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream) | An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ObjectOutput extends the DataOutput interface to include writing of objects. DataOutput includes methods for output of primitive types, ObjectOutput extends that interface to include objects, arrays, and Strings.
 
@@ -21,9 +22,11 @@ ObjectOutput extends the DataOutput interface to include writing of objects. Dat
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#close())`()` Closes the stream. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#flush())`()` Flushes the stream. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes an array of bytes. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sub array of bytes. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](https://developer.android.com/reference/kotlin/java/io/ObjectOutput#writeObject(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Write an object to the underlying storage or stream. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -98,6 +101,7 @@ Writes a sub array of bytes.
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to be written |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the data |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes that are written |
+| --- | --- |
 
 | Exceptions ||
 |-----------------------|-------------------------------|

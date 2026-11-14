@@ -9,12 +9,15 @@ open class FileSystemException : IOException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [java.nio.file.FileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemException#) |
 
 | Known Direct Subclasses [AccessDeniedException](https://developer.android.com/reference/kotlin/java/nio/file/AccessDeniedException), [AtomicMoveNotSupportedException](https://developer.android.com/reference/kotlin/java/nio/file/AtomicMoveNotSupportedException), [DirectoryNotEmptyException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryNotEmptyException), [FileAlreadyExistsException](https://developer.android.com/reference/kotlin/java/nio/file/FileAlreadyExistsException), [FileSystemLoopException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemLoopException), [NoSuchFileException](https://developer.android.com/reference/kotlin/java/nio/file/NoSuchFileException), [NotDirectoryException](https://developer.android.com/reference/kotlin/java/nio/file/NotDirectoryException), [NotLinkException](https://developer.android.com/reference/kotlin/java/nio/file/NotLinkException) |---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------| | [AccessDeniedException](https://developer.android.com/reference/kotlin/java/nio/file/AccessDeniedException) | Checked exception thrown when a file system operation is denied, typically due to a file permission or other access check. | | [AtomicMoveNotSupportedException](https://developer.android.com/reference/kotlin/java/nio/file/AtomicMoveNotSupportedException) | Checked exception thrown when a file cannot be moved as an atomic file system operation. | | [DirectoryNotEmptyException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryNotEmptyException) | Checked exception thrown when a file system operation fails because a directory is not empty. | | [FileAlreadyExistsException](https://developer.android.com/reference/kotlin/java/nio/file/FileAlreadyExistsException) | Checked exception thrown when an attempt is made to create a file or directory and a file of that name already exists. | | [FileSystemLoopException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemLoopException) | Checked exception thrown when a file system loop, or cycle, is encountered. | | [NoSuchFileException](https://developer.android.com/reference/kotlin/java/nio/file/NoSuchFileException) | Checked exception thrown when an attempt is made to access a file that does not exist. | | [NotDirectoryException](https://developer.android.com/reference/kotlin/java/nio/file/NotDirectoryException) | Checked exception thrown when a file system operation, intended for a directory, fails because the file is not a directory. | | [NotLinkException](https://developer.android.com/reference/kotlin/java/nio/file/NotLinkException) | Checked exception thrown when a file system operation fails because a file is not a symbolic link. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown when a file system operation fails on one or two files. This class is the general class for file system exceptions.
 
@@ -30,6 +33,7 @@ Thrown when a file system operation fails on one or two files. This class is the
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFile](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemException#getFile())`()` Returns the file used to create this exception. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOtherFile](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemException#getOtherFile())`()` Returns the other file used to create this exception. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemException#getReason())`()` Returns the string explaining why the file system operation failed. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,6 +73,7 @@ Constructs an instance of this class. This constructor should be used when an op
 | `file` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a string identifying the file or`null`if not known. |
 | `other` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a string identifying the other file or`null`if there isn't another file or if not known |
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a reason message with additional information or`null` |
+| --- | --- |
 
 ## Public methods
 

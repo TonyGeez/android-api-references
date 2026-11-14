@@ -9,9 +9,11 @@ open class InvalidPathException : IllegalArgumentException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
+| --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| --- | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
 | | | | | ↳ | [java.nio.file.InvalidPathException](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#) |
 
@@ -29,6 +31,7 @@ Unchecked exception thrown when path string cannot be converted into a [Path](ht
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getIndex())`()` Returns an index into the input string of the position at which the error occurred, or`-1`if this position is not known. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getInput())`()` Returns the input string. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getReason())`()` Returns a string explaining why the input string was rejected. |
+| --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,6 +78,7 @@ Constructs an instance from the given input string, reason, and error index.
 | `input` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the input string |
 | `reason` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a string explaining why the input was rejected |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index at which the error occurred, or`-1`if the index is not known |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|

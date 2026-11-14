@@ -9,9 +9,11 @@ open class PrintStream : FilterOutputStream, Appendable, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream) |||
 | | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream) ||
 | | | ↳ | [java.io.PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#) |
+| --- | --- | --- | --- |
 
 A`PrintStream`adds functionality to another output stream, namely the ability to print representations of various data values conveniently. Two other features are provided as well. Unlike other output streams, a`PrintStream`never throws an`IOException`; instead, exceptional situations merely set an internal flag that can be tested via the`checkError`method. Optionally, a`PrintStream`can be created so as to flush automatically; this means that the`flush`method of the underlying output stream is automatically invoked after a byte array is written, one of the`println`methods is invoked, or a newline character or byte (`'\n'`) is written.
 
@@ -39,36 +41,47 @@ This class always replaces malformed and unmappable character sequences with the
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#) | [append](https://developer.android.com/reference/kotlin/java/io/PrintStream#append(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified character to this output stream. |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#) | [append](https://developer.android.com/reference/kotlin/java/io/PrintStream#append(kotlin.CharSequence))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this output stream. |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#) | [append](https://developer.android.com/reference/kotlin/java/io/PrintStream#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this output stream. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkError](https://developer.android.com/reference/kotlin/java/io/PrintStream#checkError())`()` Flushes the stream and checks its error state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/PrintStream#close())`()` Closes the stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/io/PrintStream#flush())`()` Flushes the stream. |
+| --- | --- |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#)! | [format](https://developer.android.com/reference/kotlin/java/io/PrintStream#format(kotlin.String,%20kotlin.Any))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes a formatted string to this output stream using the specified format string and arguments. |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#)! | [format](https://developer.android.com/reference/kotlin/java/io/PrintStream#format(java.util.Locale,%20kotlin.String,%20kotlin.Any))`(`l:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes a formatted string to this output stream using the specified format string and arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Boolean))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Prints a boolean value. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Prints a character. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.CharArray))`(`s:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Prints an array of characters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Prints a double-precision floating-point number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Float))`(`f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Prints a floating-point number. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Prints an integer. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Prints an object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Prints a string. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [print](https://developer.android.com/reference/kotlin/java/io/PrintStream#print(kotlin.Long))`(`l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Prints a long integer. |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#)! | [printf](https://developer.android.com/reference/kotlin/java/io/PrintStream#printf(kotlin.String,%20kotlin.Any))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` A convenience method to write a formatted string to this output stream using the specified format string and arguments. |
+| --- | --- |
 | open [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream#)! | [printf](https://developer.android.com/reference/kotlin/java/io/PrintStream#printf(java.util.Locale,%20kotlin.String,%20kotlin.Any))`(`l:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` A convenience method to write a formatted string to this output stream using the specified format string and arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println())`()` Terminates the current line by writing the line separator string. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Boolean))`(`x:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Prints a boolean and then terminate the line. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Char))`(`x:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Prints a character and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.CharArray))`(`x:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Prints an array of characters and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Double))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Prints a double and then terminate the line. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Prints a float and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Prints an integer and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Any))`(`x:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Prints an Object and then terminate the line. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.String))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Prints a String and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/java/io/PrintStream#println(kotlin.Long))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Prints a long and then terminate the line. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/PrintStream#write(kotlin.ByteArray))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes all bytes from the specified byte array to this stream. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/PrintStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/PrintStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](https://developer.android.com/reference/kotlin/java/io/PrintStream#writeBytes(kotlin.ByteArray))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes all bytes from the specified byte array to this stream. |
+| --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,6 +139,7 @@ Creates a new print stream, without automatic line flushing, with the specified 
 | `java.io.FileNotFoundException` | If the given file object does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### PrintStream
 
@@ -206,6 +220,7 @@ Creates a new print stream, with the specified OutputStream, line flushing, and 
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream)!:The output stream to which values and objects will be printed |
 | `autoFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the output buffer will be flushed whenever a byte array is written, one of the`println`methods is invoked, or a newline character or byte (`'\n'`) is written |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [character encoding](https://developer.android.com/reference/kotlin/java/lang/package-summary.html#charenc) |
+| --- | --- |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------|
@@ -229,6 +244,7 @@ Creates a new print stream, with the specified OutputStream, line flushing and c
 | `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream)!:The output stream to which values and objects will be printed |
 | `autoFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the output buffer will be flushed whenever a byte array is written, one of the`println`methods is invoked, or a newline character or byte (`'\n'`) is written |
 | `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:A [charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#) |
+| --- | --- |
 
 ### PrintStream
 
@@ -271,6 +287,7 @@ Creates a new print stream, without automatic line flushing, with the specified 
 | `java.io.FileNotFoundException` | If the given file object does not denote an existing, writable regular file and a new regular file of that name cannot be created, or if some other error occurs while opening or creating the file |
 | `java.lang.SecurityException` | If a security manager is present and java.lang.SecurityManager#checkWrite denies write access to the file |
 | `java.io.UnsupportedEncodingException` | If the named charset is not supported |
+| --- | --- |
 
 ### PrintStream
 
@@ -382,6 +399,7 @@ An invocation of this method of the form`out.append(csq, start, end)`when`csq`is
 | `csq` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?:The character sequence from which a subsequence will be appended. If`csq`is`null`, then characters will be appended as if`csq`contained the four characters`"null"`. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the first character in the subsequence |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the character following the last character in the subsequence |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------|
@@ -497,6 +515,7 @@ Writes a formatted string to this output stream using the specified format strin
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) to apply during formatting. If`l`is`null`then no localization is applied. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A format string as described in [Format string syntax](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax) |
 | `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java Virtual Machine Specification. The behaviour on a`null`argument depends on the [conversion](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax). |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------|
@@ -717,6 +736,7 @@ An invocation of this method of the form`out.printf(l, format, args)`behaves in 
 | `l` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:The [locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) to apply during formatting. If`l`is`null`then no localization is applied. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A format string as described in [Format string syntax](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax) |
 | `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java Virtual Machine Specification. The behaviour on a`null`argument depends on the [conversion](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax). |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------|
@@ -909,6 +929,7 @@ Note that the bytes will be written as given; to write characters that will be t
 | `b` | the data. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset from which to start taking bytes |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Number of bytes to write |
+| --- | --- |
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:A byte array |
 
 | Exceptions ||

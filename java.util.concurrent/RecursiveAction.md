@@ -9,6 +9,7 @@ abstract class RecursiveAction : ForkJoinTask<Void!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.concurrent.ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\< [java.lang.Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)\> ||
 | | ↳ | [java.util.concurrent.RecursiveAction](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction#) |
 
@@ -135,6 +136,7 @@ The following example illustrates some refinements and idioms that may lead to b
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [compute](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction#compute())`()` The main computation performed by this task. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [exec](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction#exec())`()` Implements execution conventions for RecursiveActions. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRawResult](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction#setRawResult(java.lang.Void))`(`mustBeNull:` ` [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!`)` Requires null completion value. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

@@ -9,6 +9,7 @@ open class Manifest : Cloneable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.util.jar.Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#) |
 
 The Manifest class is used to maintain Manifest entry names and their associated Attributes. There are main Manifest Attributes as well as per-entry Attributes. For information on the Manifest format, please see the [Manifest format specification](https://docs.oracle.com/en/java/javase/17/docs/specs/jar/jar.html).
@@ -26,12 +27,15 @@ The Manifest class is used to maintain Manifest entry names and their associated
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#clear())`()` Clears the main Attributes as well as the entries in this Manifest. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#clone())`()` Returns a shallow copy of this Manifest. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified Object is also a Manifest and has the same main Attributes and entries. |
+| --- | --- |
 | open [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes)! | [getAttributes](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#getAttributes(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the Attributes for the specified entry name. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes)!\>! | [getEntries](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#getEntries())`()` Returns a Map of the entries contained in this Manifest. |
 | open [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes)! | [getMainAttributes](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#getMainAttributes())`()` Returns the main Attributes for the Manifest. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#hashCode())`()` Returns the hash code for this Manifest. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#read(java.io.InputStream))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Reads the Manifest from the specified InputStream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/jar/Manifest#write(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Writes the Manifest to the specified OutputStream. |
+| --- | --- |
 
 ## Public constructors
 

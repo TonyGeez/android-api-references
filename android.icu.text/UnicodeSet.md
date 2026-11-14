@@ -7,6 +7,7 @@ open class UnicodeSet : UnicodeFilter, Comparable<UnicodeSet!>, Freezable<Unic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.icu.text.UnicodeFilter](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeFilter) ||
 | | ↳ | [android.icu.text.UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#) |
 
@@ -22,12 +23,15 @@ The second API is the `applyPattern()`/`toPattern()` API from the `java.text.For
 Patterns are accepted by the constructors and the `applyPattern()` methods and returned by the `toPattern()` method. These patterns follow a syntax similar to that employed by version 8 regular expression character classes. Here are some simple examples:
 
 | `[]` | No characters |
+| --- | --- |
 | `[a]` | The character 'a' |
 | `[ae]` | The characters 'a' and 'e' |
 | `[a-e]` | The characters 'a' through 'e' inclusive, in Unicode code point order |
+| --- | --- |
 | `[\\u4E01]` | The character U+4E01 |
 | `[a{ab}{ac}]` | The character 'a' and the multicharacter strings "ab" and "ac" |
 | `[\p{Lu}]` | All characters in the general category Uppercase Letter |
+| --- | --- |
 
 Any character may be preceded by a backslash in order to remove any special meaning. White space characters, as defined by the Unicode Pattern_White_Space property, are ignored, unless they are escaped.
 
@@ -40,30 +44,38 @@ Since ICU 70, "\[\^...\]", "\[:\^foo\]", "\\P{foo}", and "\[:binaryProperty=No:\
 Ranges are indicated by placing two a '-' between two characters, as in "a-z". This specifies the range of all characters from the left to the right, in Unicode order. If the left character is greater than or equal to the right character it is a syntax error. If a '-' occurs as the first character after the opening '\[' or '\[\^', or if it occurs as the last character before the closing '\]', then it is taken as a literal. Thus "\[a\\\\-b\]", "\[-ab\]", and "\[ab-\]" all indicate the same set of three characters, 'a', 'b', and '-'.
 
 Sets may be intersected using the '\&' operator or the asymmetric set difference may be taken using the '-' operator, for example, "\[\[:L:\]\&\[\\\\u0000-\\\\u0FFF\]\]" indicates the set of all Unicode letters with values less than 4096. Operators ('\&' and '|') have equal precedence and bind left-to-right. Thus "\[\[:L:\]-\[a-z\]-\[\\\\u0100-\\\\u01FF\]\]" is equivalent to "\[\[\[:L:\]-\[a-z\]\]-\[\\\\u0100-\\\\u01FF\]\]". This only really matters for difference; intersection is commutative.
+| --- | --- |
 
 | `[a]` | The set containing 'a' |
+| --- | --- |
 | `[a-z]` | The set containing 'a' through 'z' and all letters in between, in Unicode order |
 | `[^a-z]` | The set containing all characters but 'a' through 'z', that is, U+0000 through 'a'-1 and 'z'+1 through U+10FFFF |
 | `[[pat1][pat2]]` | The union of sets specified by *pat1* and *pat2* |
+| --- | --- |
 | `[[pat1]&[pat2]]` | The intersection of sets specified by *pat1* and *pat2* |
 | `[[pat1]-[pat2]]` | The asymmetric difference of sets specified by *pat1* and *pat2* |
 | `[:Lu:] or \p{Lu}` | The set of characters having the specified Unicode property; in this case, Unicode uppercase letters |
+| --- | --- |
 | `[:^Lu:] or \P{Lu}` | The set of characters *not* having the given Unicode property |
 
 **Formal syntax**
 
 | `pattern := ` | `('[' '^'? item* ']') | property` |
+| --- | --- | --- |
 | `item := ` | `char | (char '-' char) | pattern-expr ` |
 | `pattern-expr := ` | `pattern | pattern-expr pattern | pattern-expr op pattern ` |
 | `op := ` | `'&' | '-' ` |
+| --- | --- | --- |
 | `special := ` | `'[' | ']' | '-' ` |
 | `char := ` | *any character that is not* ` special | ('\\' `*any character* `) | ('\u' hex hex hex hex) ` |
 | `hex := ` | `'0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'a' | 'b' | 'c' | 'd' | 'e' | 'f'` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `property := ` | *a Unicode property set pattern* |
 
 <br />
 
 | Legend: |---|---|---| | `a := b` | | `a` may be replaced by `b` | | `a?` | | zero or one instance of `a` | | `a*` | | one or more instances of `a` | | `a | b` | | either `a` or `b` | | `'a'` | | the literal string between the quotes | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 To iterate over contents of `UnicodeSet`, the following are available:
 
@@ -85,15 +97,18 @@ To replace, count elements, or delete spans, see `https://developer.android.com/
 | | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.ComparisonStyle` Comparison style enums used by `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#compareTo(android.icu.text.UnicodeSet,%20android.icu.text.UnicodeSet.ComparisonStyle)`. |
 | open | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.EntryRange` A struct-like class used for iteration through ranges, for faster iteration than by String. |
 | | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition` Argument values for whether span() and similar functions continue while the current character is contained vs. |
+| --- | --- |
 
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#ADD_CASE_MAPPINGS:kotlin.Int` Adds all case mappings for each element in the set. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#CASE:kotlin.Int` Alias for `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#CASE_INSENSITIVE:kotlin.Int`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#CASE_INSENSITIVE:kotlin.Int` Enable case insensitive matching. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#IGNORE_SPACE:kotlin.Int` Bitmask for constructor and applyPattern() indicating that white space should be ignored. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#MAX_VALUE:kotlin.Int` Maximum value that can be stored in a UnicodeSet. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#MIN_VALUE:kotlin.Int` Minimum value that can be stored in a UnicodeSet. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#SIMPLE_CASE_INSENSITIVE:kotlin.Int` Enable case insensitive matching. |
 
 | Public constructors ||
@@ -113,93 +128,123 @@ To replace, count elements, or delete spans, see `https://developer.android.com/
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#_generatePattern(java.lang.StringBuffer,%20kotlin.Boolean)(result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, escapeUnprintable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Generate and append a string representation of this set to result. |
 | open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#_generatePattern(java.lang.StringBuffer,%20kotlin.Boolean,%20kotlin.Boolean)(result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, escapeUnprintable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, includeStrings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Generate and append a string representation of this set to result. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#add(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds the specified character to this set if it is not already present. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#add(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds the specified range to this set if it is not already present. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#add(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Adds the specified multicharacter to this set if it is not already present. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#add(kotlin.collections.MutableIterable)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<*>!)` Add the contents of the collection (as strings) into this UnicodeSet. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAll(android.icu.text.UnicodeSet)(c: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Adds all of the elements in the specified set to this set if they're not already present. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAll(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds all characters in range (uses preferred naming convention). |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAll(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Adds each of the characters in this string to the set. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAll(kotlin.collections.MutableIterable)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<*>!)` Add a collection (as strings) into this UnicodeSet. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAll(android.icu.text.UnicodeSet.addAll.T)(vararg collection: T)` <br /> |
 | open T | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addAllTo(android.icu.text.UnicodeSet.addAllTo.T)(target: T)` Add the contents of the UnicodeSet (as strings) into a collection. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#addMatchSetTo(android.icu.text.UnicodeSet)(toUnionTo: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Implementation of UnicodeMatcher API. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyIntPropertyValue(kotlin.Int,%20kotlin.Int)(prop: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Modifies this set to contain those code points which have the given value for the given binary or enumerated property, as returned by UCharacter. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyPattern(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Modifies this set to represent the set specified by the given pattern. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyPattern(kotlin.String,%20kotlin.Boolean)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, ignoreWhitespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Modifies this set to represent the set specified by the given pattern, optionally ignoring whitespace. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyPattern(kotlin.String,%20kotlin.Int)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Modifies this set to represent the set specified by the given pattern, optionally ignoring whitespace. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyPropertyAlias(kotlin.String,%20kotlin.String)(propertyAlias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, valueAlias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Modifies this set to contain those code points which have the given value for the given property. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#applyPropertyAlias(kotlin.String,%20kotlin.String,%20android.icu.text.SymbolTable)(propertyAlias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, valueAlias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, symbols: https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable!)` Modifies this set to contain those code points which have the given value for the given property. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#charAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character at the given index within this set, where the set is ordered by ascending code point. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#clear()()` Removes all of the elements from this set. |
+| --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#clone()()` Return a new set that is equivalent to this one. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#cloneAsThawed()()` Clone a thawed version of this class, according to the Freezable interface. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#closeOver(kotlin.Int)(attribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Close this set over the given attribute. |
+| --- | --- |
 | open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#codePointStream()()` Returns an `https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#` of Unicode code point values from this `UnicodeSet`. |
 | open [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#codePoints()()` Returns an `https://developer.android.com/reference/kotlin/java/lang/Iterable.html#` for iteration over all the code points in this set. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#compact()()` Reallocate this objects internal structures to take up the least possible space, without changing this object's value. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#compareTo(android.icu.text.UnicodeSet)(other: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Compares UnicodeSets, where shorter come first, and otherwise lexicographically (according to the comparison of the first characters that differ). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#compareTo(android.icu.text.UnicodeSet,%20android.icu.text.UnicodeSet.ComparisonStyle)(o: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!, style: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.ComparisonStyle!)` Compares UnicodeSets, in three different ways. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#compareTo(kotlin.collections.MutableIterable)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` <br /> |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complement()()` This is equivalent to `complement(MIN_VALUE, MAX_VALUE)`. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complement(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Complements the specified character in this set. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complement(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Complements the specified range in this set. |
+| --- | --- |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complement(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Complement the specified string in this set. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complementAll(android.icu.text.UnicodeSet)(c: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Complements in this set all elements contained in the specified set. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#complementAll(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Complement EACH of the characters in this string. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#contains(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if this set contains the given character. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#contains(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if this set contains every character of the given range. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#contains(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns `true` if this set contains the given multicharacter string. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsAll(android.icu.text.UnicodeSet)(b: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Returns true if this set contains all the characters and strings of the given set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsAll(kotlin.collections.MutableIterable)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<T>!)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsAll(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if there is a partition of the string such that this set contains each of the partitioned strings. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsNone(android.icu.text.UnicodeSet)(b: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Returns true if none of the characters or strings in this UnicodeSet appears in the string. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsNone(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if this set contains none of the characters of the given range. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsNone(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns true if this set contains none of the characters of the given string. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsNone(kotlin.collections.MutableIterable)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<T>!)` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsSome(android.icu.text.UnicodeSet)(s: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Returns true if this set contains one or more of the characters and strings of the given set. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsSome(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if this set contains one or more of the characters in the given range. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsSome(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns true if this set contains one or more of the characters of the given string. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#containsSome(kotlin.collections.MutableIterable)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<T>!)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this set for equality. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#freeze()()` Freeze this class, according to the Freezable interface. |
 | open static [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#from(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Makes a set from a multicharacter string. |
 | open static [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#fromAll(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Makes a set from each of the characters in the string. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#getRangeCount()()` Iteration method that returns the number of ranges contained in this set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#getRangeEnd(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Iteration method that returns the last character in the specified range of this set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#getRangeStart(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Iteration method that returns the first character in the specified range of this set. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#hasStrings()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#hashCode()()` Returns the hash code value for this set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#indexOf(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index of the given character within this set, where the set is ordered by ascending code point. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#isEmpty()()` Returns `true` if this set contains no elements. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#isFrozen()()` Is this frozen, according to the Freezable interface? |
 | open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#iterator()()` Returns a string iterator. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#matches(android.icu.text.Replaceable,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Boolean)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, incremental: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Implementation of UnicodeMatcher. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#matchesIndexValue(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implementation of UnicodeMatcher API. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [UnicodeSet.EntryRange](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.EntryRange)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#rangeStream()()` Returns a `https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#` of `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.EntryRange` values from this `UnicodeSet`. |
+| --- | --- |
 | open [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)\< [UnicodeSet.EntryRange](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.EntryRange)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#ranges()()` Provide for faster iteration than by String. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#remove(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the specified character from this set if it is present. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#remove(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the specified range from this set if it is present. |
+| --- | --- |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#remove(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Removes the specified string from this set if it is present. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#removeAll(android.icu.text.UnicodeSet)(c: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Removes from this set all of its elements that are contained in the specified set. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#removeAll(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Remove EACH of the characters in this string. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#removeAll(kotlin.collections.MutableIterable)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<T>!)` <br /> |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#removeAllStrings()()` Remove all strings from this UnicodeSet |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retain(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retain the specified character from this set if it is present. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retain(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retain only the elements in this set that are contained in the specified range. |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retain(kotlin.CharSequence)(cs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Retain the specified string in this set if it is present. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retainAll(android.icu.text.UnicodeSet)(c: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Retains only the elements in this set that are contained in the specified set. |
+| --- | --- |
 | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retainAll(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Retains EACH of the characters in this string. |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#retainAll(kotlin.collections.MutableIterable)(collection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<T>!)` <br /> |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#set(android.icu.text.UnicodeSet)(other: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#!)` Make this object represent the same set as `other`. |
+| --- | --- |
 | open [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#set(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Make this object represent the range `start - end`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#size()()` Returns the number of elements in this set (its cardinality) Note than the elements of a set may include both individual codepoints and strings. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#span(kotlin.CharSequence,%20android.icu.text.UnicodeSet.SpanCondition)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, spanCondition: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition!)` Span a string using this UnicodeSet. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#span(kotlin.CharSequence,%20kotlin.Int,%20android.icu.text.UnicodeSet.SpanCondition)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, spanCondition: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition!)` Span a string using this UnicodeSet. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#spanBack(kotlin.CharSequence,%20android.icu.text.UnicodeSet.SpanCondition)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, spanCondition: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition!)` Span a string backwards (from the end) using this UnicodeSet. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#spanBack(kotlin.CharSequence,%20kotlin.Int,%20android.icu.text.UnicodeSet.SpanCondition)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, spanCondition: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition!)` Span a string backwards (from the fromIndex) using this UnicodeSet. |
+| --- | --- |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#stream()()` Returns a stream of `String` values from this `UnicodeSet`. |
 | open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#stringStream()()` Returns a `https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#` of `String` values from this `UnicodeSet`. |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#strings()()` For iterating through the strings in the set. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#toPattern(kotlin.Boolean)(escapeUnprintable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a string representation of this set. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#toString()()` Return a programmer-readable string representation of this object. |
 
@@ -444,6 +489,7 @@ Constructs a set from the given pattern. See the class description for the synta
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a string specifying what characters are in the set |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: on input, the position in pattern at which to start parsing. On output, the position after the last character parsed. |
 | `symbols` | [SymbolTable](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable)!: a symbol table mapping variables to char\[\] arrays and chars to UnicodeSets |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -468,6 +514,7 @@ Constructs a set from the given pattern. See the class description for the synta
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a string specifying what characters are in the set |
 | `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: on input, the position in pattern at which to start parsing. On output, the position after the last character parsed. |
 | `symbols` | [SymbolTable](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable)!: a symbol table mapping variables to char\[\] arrays and chars to UnicodeSets |
+| --- | --- |
 | `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a bitmask indicating which options to apply. Valid options are `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#IGNORE_SPACE:kotlin.Int` and at most one of `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#CASE_INSENSITIVE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#ADD_CASE_MAPPINGS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet#SIMPLE_CASE_INSENSITIVE:kotlin.Int`. These case options are mutually exclusive. |
 
 | Exceptions ||
@@ -513,6 +560,7 @@ Generate and append a string representation of this set to result. This does not
 | `result` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: the buffer into which to generate the pattern |
 | `escapeUnprintable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): escape unprintable characters if true |
 | `includeStrings` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, doesn't include the strings. |
+| --- | --- |
 
 ### add
 
@@ -814,6 +862,7 @@ Modifies this set to contain those code points which have the given value for th
 | `propertyAlias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string of the property alias. |
 | `valueAlias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string of the value alias. |
 | `symbols` | [SymbolTable](https://developer.android.com/reference/kotlin/android/icu/text/SymbolTable)!: if not null, then symbols are first called to see if a property is available. If true, then everything else is skipped. |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1577,6 +1626,7 @@ Implementation of UnicodeMatcher.matches(). Always matches the longest possible 
 | `text` | [Replaceable](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable)!: the text to be matched |
 | `offset` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: on input, the index into text at which to begin matching. On output, the limit of the matched text. The number of matched characters is the output value of offset minus the input value. Offset should always point to the HIGH SURROGATE (leading code unit) of a pair of surrogates, both on entry and upon return. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the limit index of text to be matched. Greater than offset for a forward direction match, less than offset for a backward direction match. The last character to be considered for matching will be text.charAt(limit-1) in the forward direction or text.charAt(limit+1) in the backward direction. |
+| --- | --- |
 | `incremental` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true, then assume further characters may be inserted at limit and check for partial matching. Otherwise assume the text as given is complete. |
 
 | Return ||
@@ -1938,6 +1988,7 @@ To replace, count elements, or delete spans, see `https://developer.android.com/
 | `s` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The string to be spanned |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The start index that the span begins |
 | `spanCondition` | [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!: The span condition |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -1988,6 +2039,7 @@ To replace, count elements, or delete spans, see `https://developer.android.com/
 | `s` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The string to be spanned |
 | `fromIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the char (exclusive) that the string should be spanned backwards |
 | `spanCondition` | [UnicodeSet.SpanCondition](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet.SpanCondition)!: The span condition |
+| --- | --- |
 
 | Return ||
 |---|---|

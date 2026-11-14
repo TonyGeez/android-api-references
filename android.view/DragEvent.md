@@ -3,12 +3,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 # DragEvent
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/DragEvent "View this page in Java")
+| --- | --- |
 
 ```
 open class DragEvent : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.DragEvent](https://developer.android.com/reference/kotlin/android/view/DragEvent#) |
 
 Represents an event that is sent out by the system at various times during a drag and drop operation. It is a data structure that contains several important pieces of data about the operation and the underlying data.
@@ -24,9 +26,11 @@ Most methods return valid data only for certain event actions. This is summarize
 | ACTION_DRAG_STARTED | X | X | X | X | | |
 | ACTION_DRAG_ENTERED | X | X | | | | |
 | ACTION_DRAG_LOCATION | X | X | X | X | | |
+| --- | --- | --- | --- | --- | --- | --- |
 | ACTION_DRAG_EXITED | X | X | | | | |
 | ACTION_DROP | X | X | X | X | X | |
 | ACTION_DRAG_ENDED | | X | | | | X |
+| --- | --- | --- | --- | --- | --- | --- |
 
 The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`, `https://developer.android.com/reference/kotlin/android/view/DragEvent#getLocalState()` `https://developer.android.com/reference/kotlin/android/view/DragEvent#describeContents()`, `https://developer.android.com/reference/kotlin/android/view/DragEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/view/DragEvent#toString()` methods always return valid data.
 
@@ -43,9 +47,11 @@ The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAc
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_ENDED:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Signals to a View that the drag and drop operation has concluded. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_ENTERED:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Signals to a View that the drag point has entered the bounding box of the View. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_EXITED:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Signals that the user has moved the drag shadow out of the bounding box of the View or into a descendant view that can accept the data. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_LOCATION:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Sent to a View after `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_ENTERED:kotlin.Int` while the drag shadow is still within the View object's bounding box, but not within a descendant view that can accept the data. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DRAG_STARTED:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Signals the start of a drag and drop operation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#ACTION_DROP:kotlin.Int` Action constant returned by `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()`: Signals to a View that the user has released the drag shadow, and the drag point is within the bounding box of the View and not within a descendant view that can accept the data. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -56,12 +62,15 @@ The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAc
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#describeContents()()` Returns information about the `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` representation of this DragEvent object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()()` Inspect the action value of this event. |
 | open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipData()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
+| --- | --- |
 | open [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#` object contained in the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getLocalState()()` Returns the local state object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getResult()()` Returns an indication of the result of the drag and drop operation. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getX()()` Gets the X coordinate of the drag point. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getY()()` Gets the Y coordinate of the drag point. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#toString()()` Returns a string containing a concise, human-readable representation of this DragEvent object. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` object from this DragEvent object. |
 
 | Properties ||

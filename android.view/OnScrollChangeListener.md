@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnScrollChangeListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnScrollChangeListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnScrollChangeListener
@@ -45,5 +46,6 @@ Called when the scroll position of a view changes.
 | `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view whose scroll position has changed. |
 | `scrollX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Current horizontal scroll origin. |
 | `scrollY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Current vertical scroll origin. |
+| --- | --- |
 | `oldScrollX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Previous horizontal scroll origin. |
 | `oldScrollY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Previous vertical scroll origin. |

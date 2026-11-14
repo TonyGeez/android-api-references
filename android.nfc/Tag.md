@@ -5,12 +5,14 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 # Tag
 
 Kotlin| [Java](https://developer.android.com/reference/android/nfc/Tag "View this page in Java") 
+| --- | --- |
 
 ```
 class Tag : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.nfc.Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag#) |
 
 Represents an NFC tag that has been discovered.
@@ -60,6 +62,7 @@ Tags can have a wide range of capabilities. Simple tags just offer read/write se
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/nfc/Tag#describeContents())`()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](https://developer.android.com/reference/kotlin/android/nfc/Tag#getId())`()` Get the Tag Identifier (if it has one). |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getTechList](https://developer.android.com/reference/kotlin/android/nfc/Tag#getTechList())`()` Get the technologies available in this tag, as fully qualified class names. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/nfc/Tag#toString())`()` Human-readable description of the tag, for debugging. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/nfc/Tag#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

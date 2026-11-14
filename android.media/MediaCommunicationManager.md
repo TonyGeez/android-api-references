@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # MediaCommunicationManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCommunicationManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaCommunicationManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.MediaCommunicationManager](https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager#) |
 
 This API is not generally intended for third party application developers. Use [MediaSessionManager](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager) to obtain information about active media sessions on the device. Provides support for interacting with [MediaSession2s](https://developer.android.com/reference/kotlin/android/media/MediaSession2) that applications have published to express their ongoing media playback state.

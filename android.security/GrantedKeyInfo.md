@@ -7,6 +7,7 @@ class GrantedKeyInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.GrantedKeyInfo](https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#) |
 
 Information about a key pair granted to an application via KeyChain.
@@ -34,6 +35,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getAlias()()` Returns the alias of the granted key pair. |
 | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)? | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getCertificate()()` Returns the leaf certificate of the granted key pair, or `null` if no certificate is associated with the alias. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

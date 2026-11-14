@@ -5,12 +5,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 # RectEvaluator
 
 Kotlin| [Java](https://developer.android.com/reference/android/animation/RectEvaluator "View this page in Java") 
+| --- | --- |
 
 ```
 open class RectEvaluator : TypeEvaluator<Rect!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.animation.RectEvaluator](https://developer.android.com/reference/kotlin/android/animation/RectEvaluator#) |
 
 This evaluator can be used to perform type interpolation between`Rect`values.
@@ -75,6 +77,7 @@ If [RectEvaluator(android.graphics.Rect)](https://developer.android.com/referenc
 | `fraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The fraction from the starting to the ending values |
 | `startValue` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:The start Rect |
 | `endValue` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:The end Rect |
+| --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

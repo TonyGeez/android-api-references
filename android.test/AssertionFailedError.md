@@ -6,17 +6,21 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 # AssertionFailedError
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/AssertionFailedError "View this page in Java") 
+| --- | --- |
 
 ```
 open class AssertionFailedError : Error
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
 | | | ↳ | [android.test.AssertionFailedError](https://developer.android.com/reference/kotlin/android/test/AssertionFailedError#) |
+| --- | --- | --- | --- |
 
 | Known Direct Subclasses [ComparisonFailure](https://developer.android.com/reference/kotlin/android/test/ComparisonFailure) |----------------------------------------------------------------------------------------------------|--------------------------------------------------| | [ComparisonFailure](https://developer.android.com/reference/kotlin/android/test/ComparisonFailure) | Thrown when an assert equals for Strings failed. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 16.**
 |

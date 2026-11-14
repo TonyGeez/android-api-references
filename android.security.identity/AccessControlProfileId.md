@@ -8,6 +8,7 @@ open class AccessControlProfileId
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.identity.AccessControlProfileId](https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfileId#) |
 
 > [!CAUTION]

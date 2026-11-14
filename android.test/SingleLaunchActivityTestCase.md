@@ -6,12 +6,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 # SingleLaunchActivityTestCase
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/SingleLaunchActivityTestCase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class SingleLaunchActivityTestCase<T : Activity!> : InstrumentationTestCase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase) ||
 | | ↳ | [android.test.SingleLaunchActivityTestCase](https://developer.android.com/reference/kotlin/android/test/SingleLaunchActivityTestCase#) |
 

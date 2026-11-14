@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # SimPhonebookContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/provider/SimPhonebookContract "View this page in Java") 
+| --- | --- |
 
 ```
 class SimPhonebookContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.provider.SimPhonebookContract](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract#) |
 
 The contract between the provider of contact records on the device's SIM cards and applications. Contains definitions of the supported URIs and columns.

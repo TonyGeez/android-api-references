@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # ViewFactory
 
 Kotlin | [Java](https://developer.android.com/reference/android/widget/ViewSwitcher.ViewFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface ViewFactory

@@ -5,12 +5,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # Visibility
 
 Kotlin| [Java](https://developer.android.com/reference/android/opengl/Visibility "View this page in Java") 
+| --- | --- |
 
 ```
 open class Visibility
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.opengl.Visibility](https://developer.android.com/reference/kotlin/android/opengl/Visibility#) |
 
 A collection of utility methods for computing the visibility of triangle meshes.
@@ -26,6 +28,7 @@ A collection of utility methods for computing the visibility of triangle meshes.
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [computeBoundingSphere](https://developer.android.com/reference/kotlin/android/opengl/Visibility#computeBoundingSphere(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int))`(`positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `positionsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `positionsCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sphere:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `sphereOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compute a bounding sphere for a set of points. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [frustumCullSpheres](https://developer.android.com/reference/kotlin/android/opengl/Visibility#frustumCullSpheres(kotlin.FloatArray,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))`(`mvp:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `mvpOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `spheres:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `spheresOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `spheresCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `results:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `resultsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultsCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given an OpenGL ES ModelView-Projection matrix (which implicitly describes a frustum) and a list of spheres, determine which spheres intersect the frustum. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [visibilityTest](https://developer.android.com/reference/kotlin/android/opengl/Visibility#visibilityTest(kotlin.FloatArray,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ws:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `wsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `positionsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `indices:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `indicesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `indexCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether a given triangle mesh is visible on the screen. |
+| --- | --- |
 
 ## Public constructors
 
@@ -58,6 +61,7 @@ Compute a bounding sphere for a set of points. It is approximately the minimal b
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:positions in x, y, z triples |
 | `positionsOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset into positions array |
 | `positionsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of position triples to process |
+| --- | --- |
 | `sphere` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:array containing the output as (x, y, z, r) |
 | `sphereOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):offset where the sphere data will be written |
 
@@ -102,9 +106,11 @@ Spheres are described as four floating point values: x, y, z, and r, in world-sp
 | `mvp` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:a float array containing the mode-view-projection matrix |
 | `mvpOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset of the mvp data within the mvp array. |
 | `spheres` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:a float array containing the sphere data. |
+| --- | --- |
 | `spheresOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an offset into the sphere array where the sphere data starts |
 | `spheresCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of spheres to cull. |
 | `results` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:an integer array containing the indices of the spheres that are either contained entirely within or intersect the frustum. |
+| --- | --- |
 | `resultsOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an offset into the results array where the results start. |
 | `resultsCapacity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of array elements available for storing results. |
 
@@ -139,9 +145,11 @@ Test whether a given triangle mesh is visible on the screen. The mesh is specifi
 | `ws` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:the world space to screen space transform matrix, as an OpenGL column matrix. |
 | `wsOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index into the ws array where the data starts. |
 | `positions` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:the vertex positions (x, y, z). |
+| --- | --- |
 | `positionsOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index in the positions array where the data starts. |
 | `indices` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the indices of the triangle list. The indices are expressed as chars because they are unsigned 16-bit values. |
 | `indicesOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index in the indices array where the index data starts. |
+| --- | --- |
 | `indexCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of indices in use. Typically a multiple of three. If not a multiple of three, the remaining one or two indices will be ignored. |
 
 | Return ||

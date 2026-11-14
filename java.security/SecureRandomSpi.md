@@ -9,6 +9,7 @@ abstract class SecureRandomSpi : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.SecureRandomSpi](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom) class.
@@ -34,9 +35,11 @@ All the abstract methods in this class must be implemented by each service provi
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSeed](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineGenerateSeed(kotlin.Int))`(`numBytes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the given number of seed bytes. |
 | open [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)! | [engineGetParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineGetParameters())`()` Returns the effective [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters) for this`SecureRandom`instance. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a user-specified number of random bytes. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `params:` ` [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!`)` Generates a user-specified number of random bytes with additional parameters. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReseed](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineReseed(java.security.SecureRandomParameters))`(`params:` ` [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!`)` Reseeds this random object with entropy input read from its entropy source with additional parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetSeed](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineSetSeed(kotlin.ByteArray))`(`seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reseeds this random object with the given seed. |
+| --- | --- |
 
 ## Public constructors
 

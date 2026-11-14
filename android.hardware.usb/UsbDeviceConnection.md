@@ -5,12 +5,14 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # UsbDeviceConnection
 
 Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection "View this page in Java") 
+| --- | --- |
 
 ```
 open class UsbDeviceConnection
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.hardware.usb.UsbDeviceConnection](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#) |
 
 This class is used for sending and receiving data and control messages to a USB device. Instances of this class are created by [UsbManager.openDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager#openDevice(android.hardware.usb.UsbDevice)).
@@ -22,15 +24,19 @@ This class is used for sending and receiving data and control messages to a USB 
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkTransfer](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#bulkTransfer(android.hardware.usb.UsbEndpoint,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`endpoint:` ` [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs a bulk transaction on the given endpoint. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkTransfer](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#bulkTransfer(android.hardware.usb.UsbEndpoint,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`endpoint:` ` [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs a bulk transaction on the given endpoint. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [claimInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#claimInterface(android.hardware.usb.UsbInterface,%20kotlin.Boolean))`(`intf:` ` [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface)!`, `force:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Claims exclusive access to a [android.hardware.usb.UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#close())`()` Releases all system resources related to the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [controlTransfer](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#controlTransfer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`requestType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `request:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs a control transaction on endpoint zero for this device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [controlTransfer](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#controlTransfer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`requestType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `request:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs a control transaction on endpoint zero for this device. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFileDescriptor](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#getFileDescriptor())`()` Returns the native file descriptor for the device, or -1 if the device is not opened. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getRawDescriptors](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#getRawDescriptors())`()` Returns the raw USB descriptors for the device. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSerial](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#getSerial())`()` Returns the serial number for the device. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [releaseInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#releaseInterface(android.hardware.usb.UsbInterface))`(`intf:` ` [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface)!`)` Releases exclusive access to a [android.hardware.usb.UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface). |
 | open [UsbRequest](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest)! | [requestWait](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#requestWait())`()` Waits for the result of a android. |
 | open [UsbRequest](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest)! | [requestWait](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#requestWait(kotlin.Long))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Waits for the result of a android. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#setConfiguration(android.hardware.usb.UsbConfiguration))`(`configuration:` ` [UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration)!`)` Sets the device's current [android.hardware.usb.UsbConfiguration](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#setInterface(android.hardware.usb.UsbInterface))`(`intf:` ` [UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface)!`)` Sets the current [android.hardware.usb.UsbInterface](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface). |
 
@@ -62,6 +68,7 @@ This method transfers data starting from index 0 in the buffer. To specify a dif
 | `endpoint` | [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!:the endpoint for this transaction |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:buffer for data to send or receive; can be`null`to wait for next transaction without reading data |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data to send or receive. Before {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P}, a value larger than 16384 bytes would be truncated down to 16384. In API {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P} and after, any value of length is valid. |
+| --- | --- |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):in milliseconds, 0 is infinite |
 
 | Return ||
@@ -89,6 +96,7 @@ Performs a bulk transaction on the given endpoint. The direction of the transfer
 | `endpoint` | [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!:the endpoint for this transaction |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:buffer for data to send or receive |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the first byte in the buffer to send or receive |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data to send or receive. Before {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P}, a value larger than 16384 bytes would be truncated down to 16384. In API {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P} and after, any value of length is valid. |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):in milliseconds, 0 is infinite |
 
@@ -153,9 +161,11 @@ This method transfers data starting from index 0 in the buffer. To specify a dif
 | `requestType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):request type for this transaction |
 | `request` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):request ID for this transaction |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):value field for this transaction |
+| --- | --- |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index field for this transaction |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:buffer for data portion of transaction, or null if no data needs to be sent or received |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data to send or receive |
+| --- | --- |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):in milliseconds |
 
 | Return ||
@@ -186,9 +196,11 @@ Performs a control transaction on endpoint zero for this device. The direction o
 | `requestType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):request type for this transaction |
 | `request` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):request ID for this transaction |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):value field for this transaction |
+| --- | --- |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index field for this transaction |
 | `buffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:buffer for data portion of transaction, or null if no data needs to be sent or received |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the first byte in the buffer to send or receive |
+| --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the data to send or receive |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):in milliseconds |
 

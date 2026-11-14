@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # ConnectivityDiagnosticsManager
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager "View this page in Java") 
+| --- | --- |
 
 ```
 open class ConnectivityDiagnosticsManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.ConnectivityDiagnosticsManager](https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager#) |
 
 Class that provides utilities for collecting network connectivity diagnostics information. Connectivity information is made available through triggerable diagnostics tools and by listening to System validations. Some diagnostics information may be permissions-restricted.
@@ -32,6 +34,7 @@ The primary responsibilities of this class are to:
 | abstract | [ConnectivityDiagnosticsCallback](https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback) Abstract base class for Connectivity Diagnostics callbacks. |
 | | [ConnectivityReport](https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.ConnectivityReport) Class that includes connectivity information for a specific Network at a specific time. |
 | | [DataStallReport](https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.DataStallReport) Class that includes information for a suspected data stall on a specific Network |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,6 +76,7 @@ To avoid performance issues due to apps leaking callbacks, the system will limit
 | `request` | [NetworkRequest](https://developer.android.com/reference/kotlin/android/net/NetworkRequest):The NetworkRequest that will be used to match with Networks for which callbacks will be fired This value cannot be`null`. |
 | `e` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The Executor to be used for running the callback method invocations This value cannot be`null`. |
 | `callback` | [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback):The ConnectivityDiagnosticsCallback that the caller wants registered with the System This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------|

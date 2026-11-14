@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ReportSystemUsageRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class ReportSystemUsageRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.ReportSystemUsageRequest](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#) |
 
 A request to report usage of a document owned by another app from a system UI surface.
@@ -30,6 +32,7 @@ See [GlobalSearchSession.reportSystemUsage](https://developer.android.com/refere
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDatabaseName](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#getDatabaseName())`()` Returns the database in which the document that was used resides. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDocumentId](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#getDocumentId())`()` Returns the ID of document that was used. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNamespace](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#getNamespace())`()` Returns the namespace of the document that was used. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#getPackageName())`()` Returns the package name of the app which owns the document that was used. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getUsageTimestampMillis](https://developer.android.com/reference/kotlin/android/app/appsearch/ReportSystemUsageRequest#getUsageTimestampMillis())`()` Returns the timestamp in milliseconds of the usage report (the time at which the document was used). |
 

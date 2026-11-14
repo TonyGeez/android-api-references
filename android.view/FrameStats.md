@@ -5,15 +5,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # FrameStats
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/FrameStats "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class FrameStats
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.FrameStats](https://developer.android.com/reference/kotlin/android/view/FrameStats#) |
 
 | Known Direct Subclasses [WindowAnimationFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats), [WindowContentFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [WindowAnimationFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats) | This class contains window animation frame statistics. | | [WindowContentFrameStats](https://developer.android.com/reference/kotlin/android/view/WindowContentFrameStats) | This class contains window content frame statistics. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This is the base class for frame statistics.
 
@@ -32,6 +35,7 @@ This is the base class for frame statistics.
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndTimeNano](https://developer.android.com/reference/kotlin/android/view/FrameStats#getEndTimeNano())`()` Gets the end time of the interval for which these statistics apply. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrameCount](https://developer.android.com/reference/kotlin/android/view/FrameStats#getFrameCount())`()` Gets the number of frames for which there is data. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFramePresentedTimeNano](https://developer.android.com/reference/kotlin/android/view/FrameStats#getFramePresentedTimeNano(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the time a frame at a given index was presented. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRefreshPeriodNano](https://developer.android.com/reference/kotlin/android/view/FrameStats#getRefreshPeriodNano())`()` Gets the refresh period of the display hosting the window(s) for which these statistics apply. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeNano](https://developer.android.com/reference/kotlin/android/view/FrameStats#getStartTimeNano())`()` Gets the start time of the interval for which these statistics apply. |
 

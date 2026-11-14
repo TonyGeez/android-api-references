@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ThumbnailTemplate
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/ThumbnailTemplate "View this page in Java") 
+| --- | --- |
 
 ```
 class ThumbnailTemplate : ControlTemplate
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.service.controls.templates.ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) ||
 | | ↳ | [android.service.controls.templates.ThumbnailTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#) |
 
@@ -31,6 +33,7 @@ A template for a [Control](https://developer.android.com/reference/kotlin/androi
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getContentDescription](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#getContentDescription())`()` The description of the image returned by [ThumbnailTemplate.getThumbnail()](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#getThumbnail()) |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTemplateType](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#getTemplateType())`()` <br /> |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) | [getThumbnail](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#getThumbnail())`()` The [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)(image) displayed by this template. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isActive](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate#isActive())`()` <br /> |
 
 | Inherited functions ||
@@ -56,6 +59,7 @@ ThumbnailTemplate(
 | `templateId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the identifier for this template object This value cannot be`null`. |
 | `active` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the image corresponds to an active (live) stream. |
 | `thumbnail` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#):an image to display on the [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) This value cannot be`null`. |
+| --- | --- |
 | `contentDescription` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):a description of the image for accessibility. This value cannot be`null`. |
 
 ## Public methods

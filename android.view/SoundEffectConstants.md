@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # SoundEffectConstants
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/SoundEffectConstants "View this page in Java") 
+| --- | --- |
 
 ```
 open class SoundEffectConstants
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.SoundEffectConstants](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#) |
 
 Constants to be used to play sound effects via [View.playSoundEffect(int)](https://developer.android.com/reference/kotlin/android/view/View#playSoundEffect(kotlin.Int))
@@ -22,12 +24,15 @@ Constants to be used to play sound effects via [View.playSoundEffect(int)](https
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLICK](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#CLICK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_DOWN](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_DOWN:kotlin.Int) Effect id for a navigation down |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_LEFT](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_LEFT:kotlin.Int) Effect id for a navigation left |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_REPEAT_DOWN](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_REPEAT_DOWN:kotlin.Int) Effect id for a repeatedly triggered navigation down, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_REPEAT_LEFT](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_REPEAT_LEFT:kotlin.Int) Effect id for a repeatedly triggered navigation left, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_REPEAT_RIGHT](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_REPEAT_RIGHT:kotlin.Int) Effect id for a repeatedly triggered navigation right, e. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_REPEAT_UP](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_REPEAT_UP:kotlin.Int) Effect id for a repeatedly triggered navigation up, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_RIGHT](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_RIGHT:kotlin.Int) Effect id for a navigation right |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAVIGATION_UP](https://developer.android.com/reference/kotlin/android/view/SoundEffectConstants#NAVIGATION_UP:kotlin.Int) Effect id for a navigation up |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

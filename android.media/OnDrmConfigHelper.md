@@ -5,6 +5,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # OnDrmConfigHelper
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnDrmConfigHelper "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnDrmConfigHelper

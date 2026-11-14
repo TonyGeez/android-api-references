@@ -7,6 +7,7 @@ open class ObjectStreamField : Comparable<Any!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.io.ObjectStreamField](https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#) |
 
 A description of a Serializable field from a Serializable class. An array of ObjectStreamFields is used to declare the Serializable fields of a class.
@@ -23,12 +24,15 @@ A description of a Serializable field from a Serializable class. An array of Obj
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#compareTo(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compare this field with another `ObjectStreamField`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getName()()` Get the name of this field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getOffset()()` Offset of field within instance data. |
+| --- | --- |
 | open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getType()()` Get the type of the field. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeCode()()` Returns character encoding of field type. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeString()()` Return the JVM type signature. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#isPrimitive()()` Return true if this field has a primitive type. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#isUnshared()()` Returns boolean value indicating whether or not the serializable field represented by this ObjectStreamField instance is unshared. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#toString()()` Return a string that describes this field. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -71,6 +75,7 @@ Creates an ObjectStreamField representing a serializable field with the given na
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: field name |
 | `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: field type |
 | `unshared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, write/read field values in the same manner as writeObject/readObject; if true, write/read in the same manner as writeUnshared/readUnshared |
+| --- | --- |
 
 ## Public methods
 

@@ -3,12 +3,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # VisualVoicemailSmsFilterSettings
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/VisualVoicemailSmsFilterSettings "View this page in Java")
+| --- | --- |
 
 ```
 class VisualVoicemailSmsFilterSettings : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.VisualVoicemailSmsFilterSettings](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#) |
 
 Class to represent various settings for the visual voicemail SMS filter. When the filter is enabled, incoming SMS matching the generalized OMTP format:
@@ -39,12 +41,14 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/VisualVoic
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|
 | static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [VisualVoicemailSmsFilterSettings](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#)!\> | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#clientPrefix:kotlin.String` The client prefix for the visual voicemail SMS filter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#destinationPort:kotlin.Int` The destination port for the visual voicemail SMS filter, or `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#DESTINATION_PORT_ANY:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#DESTINATION_PORT_DATA_SMS:kotlin.Int` |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#originatingNumbers:kotlin.collections.MutableList` The originating number allow list for the visual voicemail SMS filter of a phone account. |
 
 ## Constants

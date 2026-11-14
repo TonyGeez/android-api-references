@@ -21,6 +21,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [comments](https://developer.android.com/reference/kotlin/javax/annotation/processing/Generated#comments:kotlin.String) <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [date](https://developer.android.com/reference/kotlin/javax/annotation/processing/Generated#date:kotlin.String) <br /> |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)\> | [value](https://developer.android.com/reference/kotlin/javax/annotation/processing/Generated#value:kotlin.Array) <br /> |
+| --- | --- |
 
 ## Public constructors
 

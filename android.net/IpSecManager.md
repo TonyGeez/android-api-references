@@ -3,12 +3,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # IpSecManager
 
 Kotlin | [Java](https://developer.android.com/reference/android/net/IpSecManager "View this page in Java")
+| --- | --- |
 
 ```
 open class IpSecManager
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.IpSecManager](https://developer.android.com/reference/kotlin/android/net/IpSecManager#) |
 
 This class contains methods for managing IPsec sessions. Once configured, the kernel will apply confidentiality (encryption) and integrity (authentication) to IP traffic.
@@ -22,6 +24,7 @@ Note that not all aspects of IPsec are permitted by this API. Applications may c
 | | `https://developer.android.com/reference/kotlin/android/net/IpSecManager.ResourceUnavailableException` Thrown to indicate that an IPsec resource is unavailable. |
 | | `https://developer.android.com/reference/kotlin/android/net/IpSecManager.SecurityParameterIndex` This class represents a reserved SPI. |
 | | `https://developer.android.com/reference/kotlin/android/net/IpSecManager.SpiUnavailableException` Thrown to indicate that a requested SPI is in use. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket` This class provides access to a UDP encapsulation Socket. |
 
 | Constants ||
@@ -34,12 +37,15 @@ Note that not all aspects of IPsec are permitted by this API. Applications may c
 | open [IpSecManager.SecurityParameterIndex](https://developer.android.com/reference/kotlin/android/net/IpSecManager.SecurityParameterIndex) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#allocateSecurityParameterIndex(java.net.InetAddress)(destinationAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)` Reserve a random SPI for traffic bound to or from the specified destination address. |
 | open [IpSecManager.SecurityParameterIndex](https://developer.android.com/reference/kotlin/android/net/IpSecManager.SecurityParameterIndex) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#allocateSecurityParameterIndex(java.net.InetAddress,%20kotlin.Int)(destinationAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, requestedSpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reserve the requested SPI for traffic bound to or from the specified destination address. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#applyTransportModeTransform(java.io.FileDescriptor,%20kotlin.Int,%20android.net.IpSecTransform)(socket: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, transform: https://developer.android.com/reference/kotlin/android/net/IpSecTransform)` Apply an IPsec transform to a socket. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#applyTransportModeTransform(java.net.DatagramSocket,%20kotlin.Int,%20android.net.IpSecTransform)(socket: https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, transform: https://developer.android.com/reference/kotlin/android/net/IpSecTransform)` Apply an IPsec transform to a datagram socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#applyTransportModeTransform(java.net.Socket,%20kotlin.Int,%20android.net.IpSecTransform)(socket: https://developer.android.com/reference/kotlin/java/net/Socket.html#, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, transform: https://developer.android.com/reference/kotlin/android/net/IpSecTransform)` Apply an IPsec transform to a stream socket. |
 | open [IpSecManager.UdpEncapsulationSocket](https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#openUdpEncapsulationSocket()()` Open a socket for UDP encapsulation. |
+| --- | --- |
 | open [IpSecManager.UdpEncapsulationSocket](https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#openUdpEncapsulationSocket(kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a socket for UDP encapsulation and bind to the given port. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#removeTransportModeTransforms(java.io.FileDescriptor)(socket: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)` Remove an IPsec transform from a socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#removeTransportModeTransforms(java.net.DatagramSocket)(socket: https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#)` Remove an IPsec transform from a datagram socket. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecManager#removeTransportModeTransforms(java.net.Socket)(socket: https://developer.android.com/reference/kotlin/java/net/Socket.html#)` Remove an IPsec transform from a stream socket. |
 
 ## Constants
@@ -156,6 +162,7 @@ When applying a new tranform to a socket in the outbound direction, the previous
 | `socket` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): a socket file descriptor. This value cannot be `null`. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the direction in which the transform should be applied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_OUT:kotlin.Int` |
 | `transform` | [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform): a transport mode `IpSecTransform` This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -188,6 +195,7 @@ When applying a new tranform to a socket in the outbound direction, the previous
 | `socket` | [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#): a datagram socket. This value cannot be `null`. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the direction in which the transform should be applied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_OUT:kotlin.Int` |
 | `transform` | [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform): a transport mode `IpSecTransform` This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|
@@ -222,6 +230,7 @@ When applying a new tranform to a socket in the outbound direction, the previous
 | `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#): a stream socket. This value cannot be `null`. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the direction in which the transform should be applied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_IN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/IpSecManager#DIRECTION_OUT:kotlin.Int` |
 | `transform` | [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform): a transport mode `IpSecTransform` This value cannot be `null`. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

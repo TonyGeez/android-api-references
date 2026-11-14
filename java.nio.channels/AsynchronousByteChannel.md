@@ -11,6 +11,7 @@ interface AsynchronousByteChannel : AsynchronousChannel
 | [java.nio.channels.AsynchronousByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#) |
 
 | Known Direct Subclasses [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel) |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------| | [AsynchronousSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel) | An asynchronous channel for stream-oriented connecting sockets. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 An asynchronous channel that can read and write bytes.
 
@@ -25,6 +26,7 @@ Note that [ByteBuffers](https://developer.android.com/reference/kotlin/java/nio/
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [read](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#read(java.nio.ByteBuffer))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Reads a sequence of bytes from this channel into the given buffer. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [read](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#read(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousByteChannel.read.A,%20java.nio.channels.CompletionHandler))`(`dst:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` `in` `A>!`)` Reads a sequence of bytes from this channel into the given buffer. |
 | abstract [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [write](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#write(java.nio.ByteBuffer))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Writes a sequence of bytes to this channel from the given buffer. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#write(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousByteChannel.write.A,%20java.nio.channels.CompletionHandler))`(`src:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `attachment:` `A`, `handler:` ` [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` `in` `A>!`)` Writes a sequence of bytes to this channel from the given buffer. |
 
 | Inherited functions ||
@@ -88,6 +90,7 @@ This method may be invoked at any time. Some channel types may not allow more th
 | `<A>` | The type of the attachment |
 | `dst` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The buffer into which bytes are to be transferred |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
+| --- | --- |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,inA\>!:The completion handler |
 
 | Exceptions ||
@@ -95,6 +98,7 @@ This method may be invoked at any time. Some channel types may not allow more th
 | `java.lang.IllegalArgumentException` | If the buffer is read-only |
 | `java.nio.channels.ReadPendingException` | If the channel does not allow more than one read to be outstanding and a previous read has not completed |
 | `java.nio.channels.ShutdownChannelGroupException` | If the channel is associated with a [group](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup) that has terminated |
+| --- | --- |
 
 ### write
 
@@ -149,6 +153,7 @@ This method may be invoked at any time. Some channel types may not allow more th
 | `<A>` | The type of the attachment |
 | `src` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The buffer from which bytes are to be retrieved |
 | `attachment` | A:The object to attach to the I/O operation; can be`null` |
+| --- | --- |
 | `handler` | [CompletionHandler](https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,inA\>!:The completion handler object |
 
 | Exceptions ||

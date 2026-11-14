@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # TimedMetaData
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/TimedMetaData "View this page in Java") 
+| --- | --- |
 
 ```
 class TimedMetaData
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.TimedMetaData](https://developer.android.com/reference/kotlin/android/media/TimedMetaData#) |
 
 Class that embodies one timed metadata access unit, including

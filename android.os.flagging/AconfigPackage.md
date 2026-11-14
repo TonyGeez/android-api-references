@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AconfigPackage
 
 Kotlin | [Java](https://developer.android.com/reference/android/os/flagging/AconfigPackage "View this page in Java")
+| --- | --- |
 
 ```
 open class AconfigPackage
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.flagging.AconfigPackage](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#) |
 
 An `aconfig` package containing the enabled state of its flags.

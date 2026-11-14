@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # PathPermission
 
 Kotlin| [Java](https://developer.android.com/reference/android/content/pm/PathPermission "View this page in Java") 
+| --- | --- |
 
 ```
 open class PathPermission : PatternMatcher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.os.PatternMatcher](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#) ||
 | | ↳ | [android.content.pm.PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission#) |
 
@@ -33,6 +35,7 @@ Description of permissions needed to access a particular path in a [ProviderInfo
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReadPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission#getReadPermission())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getWritePermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission#getWritePermission())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

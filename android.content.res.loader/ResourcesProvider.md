@@ -7,6 +7,7 @@ open class ResourcesProvider : AutoCloseable, Closeable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.content.res.loader.ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) |
 
 Provides methods to load resources data from APKs (`.apk`) and resources tables (eg. `resources.arsc`) for use with `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader`.
@@ -18,9 +19,11 @@ Provides methods to load resources data from APKs (`.apk`) and resources tables 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#close()()` Frees internal data structures. |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#empty(android.content.res.loader.AssetsProvider)(assetsProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider)` Creates an empty ResourcesProvider with no resource data. |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadFromApk(android.os.ParcelFileDescriptor)(fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)` Creates a ResourcesProvider from an APK (`.apk`) file descriptor. |
+| --- | --- |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadFromApk(android.os.ParcelFileDescriptor,%20android.content.res.loader.AssetsProvider)(fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#, assetsProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider?)` Creates a ResourcesProvider from an APK (`.apk`) file descriptor. |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadFromDirectory(kotlin.String,%20android.content.res.loader.AssetsProvider)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, assetsProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider?)` Creates a ResourcesProvider from a directory path. |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadFromSplit(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, splitName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Read from a split installed alongside the application, which may not have been loaded initially because the application requested isolated split loading. |
+| --- | --- |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadFromTable(android.os.ParcelFileDescriptor,%20android.content.res.loader.AssetsProvider)(fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#, assetsProvider: https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider?)` Creates a ResourcesProvider from a resources table (`.arsc`) file descriptor. |
 | open static [ResourcesProvider](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#) | `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider#loadOverlay(android.content.om.OverlayInfo)(overlayInfo: https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo.html#)` Creates a ResourcesProvider instance from the specified overlay information. |
 
@@ -41,6 +44,7 @@ Frees internal data structures. Closed providers can no longer be added to `http
 | `java.lang.Exception` | if this resource cannot be closed |
 | `java.io.IOException` | if an I/O error occurs |
 | `java.lang.IllegalStateException` | if provider is currently used by a ResourcesLoader |
+| --- | --- |
 
 ### empty
 

@@ -5,12 +5,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # Base64
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/Base64 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Base64
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.Base64](https://developer.android.com/reference/kotlin/android/util/Base64#) |
 
 Utilities for encoding and decoding the Base64 representation of binary data. See RFCs [2045](http://www.ietf.org/rfc/rfc2045.txt) and [3548](http://www.ietf.org/rfc/rfc3548.txt).
@@ -22,18 +24,22 @@ Utilities for encoding and decoding the Base64 representation of binary data. Se
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CRLF](https://developer.android.com/reference/kotlin/android/util/Base64#CRLF:kotlin.Int) Encoder flag bit to indicate lines should be terminated with a CRLF pair instead of just an LF. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](https://developer.android.com/reference/kotlin/android/util/Base64#DEFAULT:kotlin.Int) Default values for encoder/decoder flags. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_CLOSE](https://developer.android.com/reference/kotlin/android/util/Base64#NO_CLOSE:kotlin.Int) Flag to pass to [Base64OutputStream](https://developer.android.com/reference/kotlin/android/util/Base64OutputStream) to indicate that it should not close the output stream it is wrapping when it itself is closed. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_PADDING](https://developer.android.com/reference/kotlin/android/util/Base64#NO_PADDING:kotlin.Int) Encoder flag bit to omit the padding '=' characters at the end of the output (if any). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_WRAP](https://developer.android.com/reference/kotlin/android/util/Base64#NO_WRAP:kotlin.Int) Encoder flag bit to omit all line terminators (i.e., the output will be on one long line). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [URL_SAFE](https://developer.android.com/reference/kotlin/android/util/Base64#URL_SAFE:kotlin.Int) Encoder/decoder flag bit to indicate using the "URL and filename safe" variant of Base64 (see RFC 3548 section 4) where`-`and`_`are used in place of`+`and`/`. |
+| --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [decode](https://developer.android.com/reference/kotlin/android/util/Base64#decode(kotlin.ByteArray,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Decode the Base64-encoded data in input and return the data in a new byte array. |
 | openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [decode](https://developer.android.com/reference/kotlin/android/util/Base64#decode(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Decode the Base64-encoded data in input and return the data in a new byte array. |
 | openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [decode](https://developer.android.com/reference/kotlin/android/util/Base64#decode(kotlin.String,%20kotlin.Int))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Decode the Base64-encoded data in input and return the data in a new byte array. |
+| --- | --- |
 | openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [encode](https://developer.android.com/reference/kotlin/android/util/Base64#encode(kotlin.ByteArray,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Base64-encode the given data and return a newly allocated byte\[\] with the result. |
 | openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [encode](https://developer.android.com/reference/kotlin/android/util/Base64#encode(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Base64-encode the given data and return a newly allocated byte\[\] with the result. |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encodeToString](https://developer.android.com/reference/kotlin/android/util/Base64#encodeToString(kotlin.ByteArray,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Base64-encode the given data and return a newly allocated String with the result. |
+| --- | --- |
 | openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encodeToString](https://developer.android.com/reference/kotlin/android/util/Base64#encodeToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Base64-encode the given data and return a newly allocated String with the result. |
 
 ## Constants
@@ -158,6 +164,7 @@ The padding '=' characters at the end are considered optional, but if any are pr
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to decode |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position within the input array at which to start |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of input to decode |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):controls certain features of the decoded output. Pass`DEFAULT`to decode standard Base64. |
 
 | Exceptions ||
@@ -226,6 +233,7 @@ Base64-encode the given data and return a newly allocated byte\[\] with the resu
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to encode |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position within the input array at which to start |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of input to encode |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):controls certain features of the encoded output. Passing`DEFAULT`results in output that adheres to RFC 2045. |
 
 ### encodeToString
@@ -266,4 +274,5 @@ Base64-encode the given data and return a newly allocated String with the result
 | `input` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the data to encode |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position within the input array at which to start |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes of input to encode |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):controls certain features of the encoded output. Passing`DEFAULT`results in output that adheres to RFC 2045. |

@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ColorStateListDrawable
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class ColorStateListDrawable : Drawable, Drawable.Callback
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.ColorStateListDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#) |
 
@@ -28,24 +30,31 @@ A Drawable that manages a [ColorDrawable](https://developer.android.com/referenc
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` Applies the specified theme to this Drawable and its children. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canApplyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#canApplyTheme())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#clearAlpha())`()` Remove the alpha override, reverting to the alpha defined on each color in the [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getAlpha())`()` Gets the current alpha value for the drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getChangingConfigurations())`()` <br /> |
+| --- | --- |
 | open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)? | [getColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getColorFilter())`()` Returns the current color filter, or`null`if none set. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#) | [getColorStateList](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getColorStateList())`()` Returns the ColorStateList backing this Drawable, or a new ColorStateList of the default ColorDrawable color if one hasn't been defined yet. |
 | open [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState) | [getConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getConstantState())`()` Return a [ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState) instance that holds the shared state of this Drawable. |
+| --- | --- |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [getCurrent](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getCurrent())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#getOpacity())`()` Return the opacity/transparency of this Drawable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#hasFocusStateSpecified())`()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidateDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#invalidateDrawable(android.graphics.drawable.Drawable))`(`who:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)`)` Called when the drawable needs to be redrawn. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#isStateful())`()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#mutate())`()` Make this drawable mutable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#scheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable,%20kotlin.Long))`(`who:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)`, `what:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`, `when:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` A Drawable can call this to schedule the next frame of its animation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify an alpha value for the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` Specify an optional color filter for the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorStateList](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#setColorStateList(android.content.res.ColorStateList))`(`colorStateList:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)`)` Replace this Drawable's ColorStateList. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#setTintBlendMode(android.graphics.BlendMode))`(`blendMode:` ` [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)!`)` Specifies a tint blending mode for this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#setTintList(android.content.res.ColorStateList))`(`tint:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?`)` Specifies tint color for this drawable as a color state list. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unscheduleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorStateListDrawable#unscheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable))`(`who:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)`, `what:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` A Drawable can call this to unschedule an action previously scheduled with [scheduleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback#scheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable,%20kotlin.Long)). |
 
 | Protected methods ||
@@ -298,6 +307,7 @@ A Drawable can call this to schedule the next frame of its animation. An impleme
 | `who` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable):This value cannot be`null`. |
 | `what` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#):This value cannot be`null`. |
 | `when` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in milliseconds) to run. The timebase is [android.os.SystemClock#uptimeMillis](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()) |
+| --- | --- |
 
 ### setAlpha
 

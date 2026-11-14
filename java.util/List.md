@@ -45,48 +45,63 @@ The `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#add(java.util.List.E)(element: E)` Appends the specified element to the end of this list (optional operation). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#add(kotlin.Int,%20java.util.List.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Inserts the specified element at the specified position in this list (optional operation). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#addAll(kotlin.Int,%20kotlin.collections.MutableCollection)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>)` Inserts all of the elements in the specified collection into this list at the specified position (optional operation). |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#addFirst(java.util.List.E)(e: E)` Adds an element as the first element of this collection (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#addLast(java.util.List.E)(e: E)` Adds an element as the last element of this collection (optional operation). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#clear()()` Removes all of the elements from this list (optional operation). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#contains(java.util.List.E)(element: E?)` Returns `true` if this list contains the specified element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this list contains all of the elements of the specified collection. |
+| --- | --- |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#copyOf(kotlin.collections.MutableCollection)(coll: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>)` Returns an [unmodifiable List](https://developer.android.com/reference/kotlin/java/util/List#unmodifiable) containing the elements of the given Collection, in its iteration order. |
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/List#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the element at the specified position in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/List#getFirst()()` Gets the first element of this collection. |
+| --- | --- |
 | open E | `https://developer.android.com/reference/kotlin/java/util/List#getLast()()` Gets the last element of this collection. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#indexOf(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#isEmpty()()` Returns `true` if this list contains no elements. |
+| --- | --- |
 | abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#iterator()()` Returns an iterator over the elements in this list in proper sequence. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#lastIndexOf(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
 | abstract [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#listIterator()()` Returns a list iterator over the elements in this list (in proper sequence). |
+| --- | --- |
 | abstract [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#listIterator(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of()()` Returns an unmodifiable list containing zero elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E)(e1: E)` Returns an unmodifiable list containing one element. |
+| --- | --- |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E)` Returns an unmodifiable list containing two elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E)` Returns an unmodifiable list containing three elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E)` Returns an unmodifiable list containing four elements. |
+| --- | --- |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E)` Returns an unmodifiable list containing five elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E, e6: E)` Returns an unmodifiable list containing six elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E, e6: E, e7: E)` Returns an unmodifiable list containing seven elements. |
+| --- | --- |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E, e6: E, e7: E, e8: E)` Returns an unmodifiable list containing eight elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E, e6: E, e7: E, e8: E, e9: E)` Returns an unmodifiable list containing nine elements. |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E,%20java.util.List.of.E)(e1: E, e2: E, e3: E, e4: E, e5: E, e6: E, e7: E, e8: E, e9: E, e10: E)` Returns an unmodifiable list containing ten elements. |
+| --- | --- |
 | open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E)(vararg elements: E)` Returns an unmodifiable list containing an arbitrary number of elements. |
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/List#remove(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the element at the specified position in this list (optional operation). |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#remove(java.util.List.E)(element: E?)` Removes the first occurrence of the specified element from this list, if it is present (optional operation). |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#removeAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Removes from this list all of its elements that are contained in the specified collection (optional operation). |
 | open E | `https://developer.android.com/reference/kotlin/java/util/List#removeFirst()()` Removes and returns the first element of this collection (optional operation). |
 | open E | `https://developer.android.com/reference/kotlin/java/util/List#removeLast()()` Removes and returns the last element of this collection (optional operation). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#replaceAll(java.util.function.UnaryOperator)(operator: https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator<E>)` Replaces each element of this list with the result of applying the operator to that element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Retains only the elements in this list that are contained in the specified collection (optional operation). |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. |
+| --- | --- |
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/List#set(kotlin.Int,%20java.util.List.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Replaces the element at the specified position in this list with the specified element (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#sort(java.util.Comparator)(c: https://developer.android.com/reference/kotlin/java/util/Comparator<in E>?)` Sorts this list according to the order induced by the specified `https://developer.android.com/reference/kotlin/java/util/Comparator`. |
 | open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#spliterator()()` Creates a `https://developer.android.com/reference/kotlin/java/util/Spliterator` over the elements in this list. |
+| --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#subList(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/List#toArray()()` Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/List#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
+| --- | --- |
 
 | Properties ||
 |---|---|
@@ -119,6 +134,7 @@ Lists that support this operation may place limitations on what elements may be 
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of this element prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if the element cannot be added at this time due to insertion restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -145,6 +161,7 @@ Inserts the specified element at the specified position in this list (optional o
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `add` operation is not supported by this list |
 
@@ -175,6 +192,7 @@ Inserts all of the elements in the specified collection into this list at the sp
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index > size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements, or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -201,6 +219,7 @@ Appends all of the elements in the specified collection to the end of this list,
 | `java.lang.ClassCastException` | if the class of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of an element of the specified collection prevents it from being added to this list |
 | `java.lang.IllegalStateException` | if not all the elements can be added at this time due to insertion restrictions |
+| --- | --- |
 | `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements, or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `addAll` operation is not supported by this list |
 
@@ -560,6 +579,7 @@ Returns an unmodifiable list containing two elements. See [Unmodifiable Lists](h
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -588,6 +608,7 @@ Returns an unmodifiable list containing three elements. See [Unmodifiable Lists]
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 
 | Return ||
@@ -618,6 +639,7 @@ Returns an unmodifiable list containing four elements. See [Unmodifiable Lists](
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 
@@ -650,9 +672,11 @@ Returns an unmodifiable list containing five elements. See [Unmodifiable Lists](
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -684,9 +708,11 @@ Returns an unmodifiable list containing six elements. See [Unmodifiable Lists](h
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 | `e6` | E: the sixth element |
 
 | Return ||
@@ -720,9 +746,11 @@ Returns an unmodifiable list containing seven elements. See [Unmodifiable Lists]
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 | `e6` | E: the sixth element |
 | `e7` | E: the seventh element |
 
@@ -758,12 +786,15 @@ Returns an unmodifiable list containing eight elements. See [Unmodifiable Lists]
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 | `e6` | E: the sixth element |
 | `e7` | E: the seventh element |
 | `e8` | E: the eighth element |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -798,12 +829,15 @@ Returns an unmodifiable list containing nine elements. See [Unmodifiable Lists](
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 | `e6` | E: the sixth element |
 | `e7` | E: the seventh element |
 | `e8` | E: the eighth element |
+| --- | --- |
 | `e9` | E: the ninth element |
 
 | Return ||
@@ -840,12 +874,15 @@ Returns an unmodifiable list containing ten elements. See [Unmodifiable Lists](h
 | `<E>` | the `List`'s element type |
 | `e1` | E: the first element |
 | `e2` | E: the second element |
+| --- | --- |
 | `e3` | E: the third element |
 | `e4` | E: the fourth element |
 | `e5` | E: the fifth element |
+| --- | --- |
 | `e6` | E: the sixth element |
 | `e7` | E: the seventh element |
 | `e8` | E: the eighth element |
+| --- | --- |
 | `e9` | E: the ninth element |
 | `e10` | E: the tenth element |
 
@@ -926,6 +963,7 @@ Removes the first occurrence of the specified element from this list, if it is p
 | `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this list |
+| --- | --- |
 
 ### removeAll
 
@@ -950,6 +988,7 @@ Removes from this list all of its elements that are contained in the specified c
 | `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `removeAll` operation is not supported by this list |
+| --- | --- |
 
 **See Also**
 
@@ -1036,6 +1075,7 @@ Retains only the elements in this list that are contained in the specified colle
 | `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
 | `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `retainAll` operation is not supported by this list |
+| --- | --- |
 
 **See Also**
 
@@ -1083,6 +1123,7 @@ Replaces the element at the specified position in this list with the specified e
 | `java.lang.ClassCastException` | if the class of the specified element prevents it from being added to this list |
 | `java.lang.IllegalArgumentException` | if some property of the specified element prevents it from being added to this list |
 | `java.lang.IndexOutOfBoundsException` | if the index is out of range (`index < 0 || index >= size()`) |
+| --- | --- | --- | --- |
 | `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements |
 | `java.lang.UnsupportedOperationException` | if the `set` operation is not supported by this list |
 
@@ -1127,6 +1168,7 @@ For apps running on and targeting Android versions greater than Nougat (API leve
 | `java.lang.ClassCastException` | if the list contains elements that are not *mutually comparable* using the specified comparator |
 | `java.lang.IllegalArgumentException` | ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) if the comparator is found to violate the `https://developer.android.com/reference/kotlin/java/util/Comparator` contract |
 | `java.lang.UnsupportedOperationException` | if the list's list-iterator does not support the `set` operation |
+| --- | --- |
 
 ### spliterator
 

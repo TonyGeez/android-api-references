@@ -7,6 +7,7 @@ class AppSearchSchema : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#) |
 
 The AppSearch Schema for a particular type of document.
@@ -22,12 +23,15 @@ The schema consists of type information, properties, and config (like tokenizati
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig` Configuration for a property of type `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle` in a Document. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.BooleanPropertyConfig` Configuration for a property containing a boolean. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#`. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.BytesPropertyConfig` Configuration for a property containing a byte array. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig` Configuration for a property containing another Document. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.DoublePropertyConfig` Configuration for a property containing a double-precision decimal number. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig` Configuration for a property of type `https://developer.android.com/reference/kotlin/android/app/appsearch/EmbeddingVector` in a Document. |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.LongPropertyConfig` Configuration for a property containing a 64-bit integer. |
 | abstract | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig` Common configuration for a single property (field) in a Document. |
+| --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.StringPropertyConfig` Configuration for a property of type String in a Document. |
 
 | Inherited constants ||
@@ -39,12 +43,15 @@ The schema consists of type information, properties, and config (like tokenizati
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getDescription()()` Returns a natural language description of this schema type. |
+| --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getParentTypes()()` Returns the list of parent types of this schema for polymorphism. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppSearchSchema.PropertyConfig](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getProperties()()` Returns the list of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig`s that are part of this schema. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getSchemaType()()` Returns the name of this schema type, such as Email. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

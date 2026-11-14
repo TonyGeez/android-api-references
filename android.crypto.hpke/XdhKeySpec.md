@@ -5,12 +5,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # XdhKeySpec
 
 Kotlin| [Java](https://developer.android.com/reference/android/crypto/hpke/XdhKeySpec "View this page in Java") 
+| --- | --- |
 
 ```
 class XdhKeySpec : EncodedKeySpec
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.security.spec.EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec.html#) ||
 | | ↳ | [android.crypto.hpke.XdhKeySpec](https://developer.android.com/reference/kotlin/android/crypto/hpke/XdhKeySpec#) |
 
@@ -29,6 +31,7 @@ Subclasses`EncodedKeySpec`using the non-Standard "raw" format. The XdhKeyFactory
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/crypto/hpke/XdhKeySpec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFormat](https://developer.android.com/reference/kotlin/android/crypto/hpke/XdhKeySpec#getFormat())`()` Returns the name of the encoding format associated with this key specification. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getKey](https://developer.android.com/reference/kotlin/android/crypto/hpke/XdhKeySpec#getKey())`()` Returns the public or private key in its raw format. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/crypto/hpke/XdhKeySpec#hashCode())`()` <br /> |
 
 | Inherited functions ||

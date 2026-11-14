@@ -3,12 +3,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # GetCredentialRequest
 
 Kotlin | [Java](https://developer.android.com/reference/android/credentials/GetCredentialRequest "View this page in Java")
+| --- | --- |
 
 ```
 class GetCredentialRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.GetCredentialRequest](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#) |
 
 A request to retrieve the user credential, potentially launching UI flows to let the user pick from different credential sources.
@@ -28,9 +30,11 @@ A request to retrieve the user credential, potentially launching UI flows to let
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#alwaysSendAppInfoToProvider()()` Returns a value to determine if the calling app info should be always sent to the provider in every phase (if true), or should be removed from the query phase, and only sent as part of the request in the final phase, after the user has made a selection on the UI (if false). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption)!\> | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getCredentialOptions()()` Returns the list of credential options to be requested. |
+| --- | --- |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getData()()` Returns the top request level data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getOrigin()()` Returns the origin of the calling app if set otherwise returns null. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

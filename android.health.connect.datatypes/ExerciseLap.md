@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ExerciseLap
 
 Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap "View this page in Java") 
+| --- | --- |
 
 ```
 class ExerciseLap
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.health.connect.datatypes.ExerciseLap](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#) |
 
 Captures the time of a lap within exercise session. Part of [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord).
@@ -28,6 +30,7 @@ Each record contains the start and end time and optional [Length](https://develo
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getEndTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getEndTime())`()` <br /> |
 | [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length)? | [getLength](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getLength())`()` <br /> |
+| --- | --- |
 | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getStartTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getStartTime())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#hashCode())`()` <br /> |
 

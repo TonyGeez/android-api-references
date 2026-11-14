@@ -6,12 +6,14 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 # MutableDouble
 
 Kotlin| [Java](https://developer.android.com/reference/android/util/MutableDouble "View this page in Java") 
+| --- | --- |
 
 ```
 class MutableDouble
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.util.MutableDouble](https://developer.android.com/reference/kotlin/android/util/MutableDouble#) |
 
 | **This class was deprecated in API level 28.**

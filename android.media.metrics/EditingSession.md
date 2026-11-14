@@ -7,6 +7,7 @@ class EditingSession : AutoCloseable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.metrics.EditingSession](https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#) |
 
 Represents a session of media editing, for example, transcoding between formats, transmuxing or applying trimming or audio/video effects to a stream.
@@ -18,9 +19,11 @@ Represents a session of media editing, for example, transcoding between formats,
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#getSessionId()()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#reportEditingEndedEvent(android.media.metrics.EditingEndedEvent)(editingEndedEvent: https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent)` Reports that an editing operation ended. |
+| --- | --- |
 
 ## Public methods
 

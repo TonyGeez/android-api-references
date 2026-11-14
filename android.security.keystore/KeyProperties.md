@@ -5,12 +5,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # KeyProperties
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyProperties "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class KeyProperties
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.keystore.KeyProperties](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#) |
 
 Properties of [Android Keystore](https://developer.android.com/training/articles/keystore.html) keys.
@@ -22,48 +24,63 @@ Properties of [Android Keystore](https://developer.android.com/training/articles
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTH_BIOMETRIC_STRONG](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#AUTH_BIOMETRIC_STRONG:kotlin.Int) Any biometric (e.g. fingerprint, iris, or face) on the device that meets or exceeds the requirements for |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTH_DEVICE_CREDENTIAL](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#AUTH_DEVICE_CREDENTIAL:kotlin.Int) The non-biometric credential used to secure the device (i.e., PIN, pattern, or password) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BLOCK_MODE_CBC](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#BLOCK_MODE_CBC:kotlin.String) Cipher Block Chaining (CBC) block mode. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BLOCK_MODE_CTR](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#BLOCK_MODE_CTR:kotlin.String) Counter (CTR) block mode. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BLOCK_MODE_ECB](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#BLOCK_MODE_ECB:kotlin.String) Electronic Codebook (ECB) block mode. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BLOCK_MODE_GCM](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#BLOCK_MODE_GCM:kotlin.String) Galois/Counter Mode (GCM) block mode. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_MD5](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_MD5:kotlin.String) MD5 digest. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_NONE](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_NONE:kotlin.String) No digest: sign/authenticate the raw message. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_SHA1](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_SHA1:kotlin.String) SHA-1 digest. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_SHA224](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_SHA224:kotlin.String) SHA-2 224 (aka SHA-224) digest. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_SHA256](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_SHA256:kotlin.String) SHA-2 256 (aka SHA-256) digest. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_SHA384](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_SHA384:kotlin.String) SHA-2 384 (aka SHA-384) digest. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DIGEST_SHA512](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#DIGEST_SHA512:kotlin.String) SHA-2 512 (aka SHA-512) digest. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCRYPTION_PADDING_NONE](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ENCRYPTION_PADDING_NONE:kotlin.String) No encryption padding. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCRYPTION_PADDING_PKCS7](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ENCRYPTION_PADDING_PKCS7:kotlin.String) PKCS#7 encryption padding scheme. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCRYPTION_PADDING_RSA_OAEP](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ENCRYPTION_PADDING_RSA_OAEP:kotlin.String) RSA Optimal Asymmetric Encryption Padding (OAEP) scheme. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCRYPTION_PADDING_RSA_PKCS1](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ENCRYPTION_PADDING_RSA_PKCS1:kotlin.String) RSA PKCS#1 v1. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_3DES](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_3DES:kotlin.String) Triple Data Encryption Algorithm (3DES) key. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_AES](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_AES:kotlin.String) Advanced Encryption Standard (AES) key. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_EC](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_EC:kotlin.String) Elliptic Curve (EC) Cryptography key. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_HMAC_SHA1](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_HMAC_SHA1:kotlin.String) Keyed-Hash Message Authentication Code (HMAC) key using SHA-1 as the hash. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_HMAC_SHA224](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_HMAC_SHA224:kotlin.String) Keyed-Hash Message Authentication Code (HMAC) key using SHA-224 as the hash. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_HMAC_SHA256](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_HMAC_SHA256:kotlin.String) Keyed-Hash Message Authentication Code (HMAC) key using SHA-256 as the hash. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_HMAC_SHA384](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_HMAC_SHA384:kotlin.String) Keyed-Hash Message Authentication Code (HMAC) key using SHA-384 as the hash. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_HMAC_SHA512](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_HMAC_SHA512:kotlin.String) Keyed-Hash Message Authentication Code (HMAC) key using SHA-512 as the hash. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_ALGORITHM_RSA](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#KEY_ALGORITHM_RSA:kotlin.String) Rivest Shamir Adleman (RSA) key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIGIN_GENERATED](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ORIGIN_GENERATED:kotlin.Int) Key was generated inside AndroidKeyStore. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIGIN_IMPORTED](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ORIGIN_IMPORTED:kotlin.Int) Key was imported into AndroidKeyStore. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIGIN_SECURELY_IMPORTED](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ORIGIN_SECURELY_IMPORTED:kotlin.Int) Key was imported into the AndroidKeyStore in an encrypted wrapper. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIGIN_UNKNOWN](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#ORIGIN_UNKNOWN:kotlin.Int) Origin of the key is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_AGREE_KEY](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_AGREE_KEY:kotlin.Int) Purpose of key: creating a shared ECDH secret through key agreement. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_ATTEST_KEY](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_ATTEST_KEY:kotlin.Int) Purpose of key: Signing attestations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_DECRYPT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_DECRYPT:kotlin.Int) Purpose of key: decryption. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_ENCRYPT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_ENCRYPT:kotlin.Int) Purpose of key: encryption. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_SIGN](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_SIGN:kotlin.Int) Purpose of key: signing or generating a Message Authentication Code (MAC). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_VERIFY](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_VERIFY:kotlin.Int) Purpose of key: signature or Message Authentication Code (MAC) verification. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PURPOSE_WRAP_KEY](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_WRAP_KEY:kotlin.Int) Purpose of key: wrapping and unwrapping wrapped keys for secure import. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_SOFTWARE](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_SOFTWARE:kotlin.Int) Indicates enforcement by system software. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_STRONGBOX](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_STRONGBOX:kotlin.Int) Indicates enforcement by environment meeting the Strongbox security profile, such as a secure element. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_TRUSTED_ENVIRONMENT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_TRUSTED_ENVIRONMENT:kotlin.Int) Indicates enforcement by a trusted execution environment. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_UNKNOWN:kotlin.Int) This security level indicates that no assumptions can be made about the security level of the respective key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_UNKNOWN_SECURE](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_UNKNOWN_SECURE:kotlin.Int) This security level indicates that due to the target API level of the caller no exact statement can be made about the security level of the key, however, the security level can be considered is at least equivalent to [SECURITY_LEVEL_TRUSTED_ENVIRONMENT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SECURITY_LEVEL_TRUSTED_ENVIRONMENT:kotlin.Int). |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SIGNATURE_PADDING_RSA_PKCS1](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SIGNATURE_PADDING_RSA_PKCS1:kotlin.String) RSA PKCS#1 v1. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SIGNATURE_PADDING_RSA_PSS](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SIGNATURE_PADDING_RSA_PSS:kotlin.String) RSA PKCS#1 v2. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNRESTRICTED_USAGE_COUNT](https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int) This value indicates that there is no restriction on the number of times the key can be used. |
+| --- | --- |
 
 ## Constants
 

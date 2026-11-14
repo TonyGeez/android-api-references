@@ -4,15 +4,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # PreferenceScreen
 
 Kotlin | [Java](https://developer.android.com/reference/android/preference/PreferenceScreen "View this page in Java") 
+| --- | --- |
 
 ```
 class PreferenceScreen : PreferenceGroup, AdapterView.OnItemClickListener, DialogInterface.OnDismissListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) |||
 | | ↳ | [android.preference.PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup) ||
 | | | ↳ | [android.preference.PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#) |
+| --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
@@ -68,6 +71,7 @@ In this example, the "first_preferencescreen" will be used as the root of the hi
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#bind(android.widget.ListView))`(`listView:` ` [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#)!`)` Binds a [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#) to the preferences contained in this [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#) via [getRootAdapter()](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#getRootAdapter()). |
 | [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#)! | [getDialog](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#getDialog())`()` Used to get a handle to the dialog. |
 | [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter.html#)! | [getRootAdapter](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#getRootAdapter())`()` Returns an adapter that can be attached to a [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity) or [PreferenceFragment](https://developer.android.com/reference/kotlin/android/preference/PreferenceFragment) to show the preferences contained in this [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismiss](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onDismiss(android.content.DialogInterface))`(`dialog:` ` [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!`)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onItemClick](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onItemClick(android.widget.AdapterView,%20android.view.View,%20kotlin.Int,%20kotlin.Long))`(`parent:` ` [AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView.html#)< [Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter.html#)!>!`, `view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
@@ -76,6 +80,7 @@ In this example, the "first_preferencescreen" will be used as the root of the hi
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOnSameScreenAsChildren](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#isOnSameScreenAsChildren())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onClick())`()` <br /> |
 | [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter.html#)! | [onCreateRootAdapter](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onCreateRootAdapter())`()` Creates the root adapter. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onRestoreInstanceState(android.os.Parcelable))`(`state:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!`)` <br /> |
 | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen#onSaveInstanceState())`()` <br /> |
 
@@ -168,6 +173,7 @@ fun onItemClick(
 | `parent` | [AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView.html#)\< [Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter.html#)!\>!: The AdapterView where the click happened. |
 | `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view within the AdapterView that was clicked (this will be a view provided by the adapter) |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the adapter. |
+| --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked. |
 
 ## Protected methods

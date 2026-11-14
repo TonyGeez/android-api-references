@@ -5,12 +5,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # Tile
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/quicksettings/Tile "View this page in Java") 
+| --- | --- |
 
 ```
 class Tile : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.quicksettings.Tile](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#) |
 
 A Tile holds the state of a tile that will be displayed in Quick Settings. A tile in Quick Settings exists as an icon with an accompanied label. It also may have content description for accessibility usability. The style and layout of the tile may change to match a given device.
@@ -22,6 +24,7 @@ A Tile holds the state of a tile that will be displayed in Quick Settings. A til
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ACTIVE](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#STATE_ACTIVE:kotlin.Int) This represents a tile that is currently active. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INACTIVE](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#STATE_INACTIVE:kotlin.Int) This represents a tile that is currently in a disabled state but is still interactable. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#STATE_UNAVAILABLE:kotlin.Int) An unavailable state indicates that for some reason this tile is not currently available to the user, and will have no click action. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -32,18 +35,23 @@ A Tile holds the state of a tile that will be displayed in Quick Settings. A til
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#describeContents())`()` <br /> |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)? | [getActivityLaunchForClick](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getActivityLaunchForClick())`()` Gets the Activity [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) to be launched when the tile is clicked. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getContentDescription](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getContentDescription())`()` Gets the current content description for the tile. |
+| --- | --- |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)! | [getIcon](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getIcon())`()` Gets the current icon for the tile. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getLabel](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getLabel())`()` Gets the current label for the tile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getState())`()` The current state of the tile. |
+| --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getStateDescription](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getStateDescription())`()` Gets the current state description for the tile. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getSubtitle](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#getSubtitle())`()` Gets the current subtitle for the tile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActivityLaunchForClick](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setActivityLaunchForClick(android.app.PendingIntent))`(`pendingIntent:` ` [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?`)` Sets an Activity [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) to be launched when the tile is clicked. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentDescription](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setContentDescription(kotlin.CharSequence))`(`contentDescription:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the current content description for the tile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIcon](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setIcon(android.graphics.drawable.Icon))`(`icon:` ` [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)!`)` Sets the current icon for the tile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLabel](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setLabel(kotlin.CharSequence))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the current label for the tile. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setState](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setState(kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current state for the tile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStateDescription](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setStateDescription(kotlin.CharSequence))`(`stateDescription:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the current state description for the tile. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSubtitle](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#setSubtitle(kotlin.CharSequence))`(`subtitle:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Set the subtitle for the tile. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateTile](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#updateTile())`()` Pushes the state of the Tile to Quick Settings to be displayed. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 

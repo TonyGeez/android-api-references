@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ConversationActions
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/ConversationActions "View this page in Java") 
+| --- | --- |
 
 ```
 class ConversationActions : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.textclassifier.ConversationActions](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions#) |
 
 Represents a list of actions suggested by a [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) on a given conversation.
@@ -35,6 +37,7 @@ Represents a list of actions suggested by a [TextClassifier](https://developer.a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions#describeContents())`()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ConversationAction](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction)!\> | [getConversationActions](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions#getConversationActions())`()` Returns an immutable list of [ConversationAction](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction) objects, which are ordered from high confidence to low confidence. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions#getId())`()` Returns the id, if one exists, for this object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

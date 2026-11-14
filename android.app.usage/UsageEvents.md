@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # UsageEvents
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/usage/UsageEvents "View this page in Java") 
+| --- | --- |
 
 ```
 class UsageEvents : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.usage.UsageEvents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#) |
 
 A result returned from [android.app.usage.UsageStatsManager#queryEvents(long, long)](https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager#queryEvents(kotlin.Long,%20kotlin.Long))from which to read [android.app.usage.UsageEvents.Event](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event) objects.
@@ -30,6 +32,7 @@ A result returned from [android.app.usage.UsageStatsManager#queryEvents(long, lo
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextEvent](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#getNextEvent(android.app.usage.UsageEvents.Event))`(`eventOut:` ` [UsageEvents.Event](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event)!`)` Retrieve the next [android.app.usage.UsageEvents.Event](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event) from the collection and put the resulting data into`eventOut`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextEvent](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#hasNextEvent())`()` Returns whether or not there are more events to read using [getNextEvent(android.app.usage.UsageEvents.Event)](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#getNextEvent(android.app.usage.UsageEvents.Event)). |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||

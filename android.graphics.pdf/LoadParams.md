@@ -6,12 +6,14 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 # LoadParams
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/LoadParams "View this page in Java") 
+| --- | --- |
 
 ```
 class LoadParams
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.pdf.LoadParams](https://developer.android.com/reference/kotlin/android/graphics/pdf/LoadParams#) |
 
 Represents a set of parameters to load the PDF document.

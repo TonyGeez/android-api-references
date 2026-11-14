@@ -7,6 +7,7 @@ open class MbmsDownloadReceiver : BroadcastReceiver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#) ||
 | | ↳ | [android.telephony.mbms.MbmsDownloadReceiver](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadReceiver#) |
 

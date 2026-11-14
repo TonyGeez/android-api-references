@@ -5,6 +5,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 # OnScrollChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnScrollChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnScrollChangedListener

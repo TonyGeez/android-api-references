@@ -4,16 +4,19 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Allocation
 
 Kotlin | [Java](https://developer.android.com/reference/android/renderscript/Allocation "View this page in Java")
+| --- | --- |
 
 ```
 open class Allocation : BaseObj
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
 | | ↳ | [android.renderscript.Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#) |
 
 | Known Direct Subclasses [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter) |---|---| | [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter) | Only intended for use by generated reflected code. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
 |
@@ -41,9 +44,11 @@ An Allocation can be populated with the #copyFrom routines. For more complex Ele
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_GRAPHICS_CONSTANTS:kotlin.Int` The Allocation will be used as the source of shader constants by one or more programs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_GRAPHICS_RENDER_TARGET:kotlin.Int` The Allocation will be used as a target for offscreen rendering This was deprecated in API level 16. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_GRAPHICS_TEXTURE:kotlin.Int` The Allocation will be used as a texture source by one or more graphics programs. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_GRAPHICS_VERTEX:kotlin.Int` The Allocation will be used as a graphics mesh. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_IO_INPUT:kotlin.Int` The Allocation will be used as a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` consumer. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_IO_OUTPUT:kotlin.Int` The Allocation will be used as a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` producer. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_SCRIPT:kotlin.Int` The Allocation will be bound to and accessed by scripts. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_SHARED:kotlin.Int` The Allocation's backing store will be inherited from another object (usually a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`); copying to or from the original source Bitmap will cause a synchronization rather than a full copy. |
 
@@ -52,93 +57,123 @@ An Allocation can be populated with the #copyFrom routines. For more complex Ele
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataOff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy part of an Allocation into this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy an array into a 1D region of this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy a 1D region of this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy a 1D region of this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` into an Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int,%20kotlin.Int)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataXoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataYoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy a rectangular region from an Allocation into a rectangular region in this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from an array into a rectangular region in this Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from a rectangular region in this Allocation into an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataXoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataYoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataZoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy a rectangular region into the allocation from another allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from an array into a 3D region in this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(android.graphics.Bitmap)(b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy into an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(android.renderscript.Allocation)(a: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!)` Copy an Allocation from an Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.Array)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/renderscript/BaseObj!>!)` Copy an array of RS objects to the Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy into this Allocation from an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy into this Allocation from an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy into this Allocation from an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy into this Allocation from an array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(android.graphics.Bitmap)(b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy from the Allocation into a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from the Allocation into a byte array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from the Allocation into a float array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from the Allocation into a int array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from the Allocation into an array. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from the Allocation into a short array. |
 | open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!\>! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createAllocations(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, t: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, numAlloc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation Array with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, and usage flags. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
+| --- | --- |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
+| --- | --- |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a non-mipmapped Allocation to use as a graphics texture from the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` referenced by resource ID. |
+| --- | --- |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from the Bitmap referenced by resource ID. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromString(android.renderscript.RenderScript,%20kotlin.String,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation containing string data encoded in UTF-8 format. |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
+| --- | --- |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!)` Creates an Allocation for use by scripts with a given `https://developer.android.com/reference/kotlin/android/renderscript/Type` and no mipmaps |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, mipmap flag, and usage flags. |
+| --- | --- |
 | open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with the size specified by the type and no mipmaps generated by default |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#destroy()()` For USAGE_IO_OUTPUT, destroy() implies setSurface(null). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#generateMipmaps()()` Generate a mipmap chain. |
+| --- | --- |
 | open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getByteBuffer()()` Gets or creates a ByteBuffer that contains the raw data of the current Allocation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()()` Get the size of the Allocation in bytes. |
 | open [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Element` of the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getStride()()` Gets the stride of the Allocation. |
 | open [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getSurface()()` Returns the handle to a raw buffer that is being managed by the screen compositor. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getTimeStamp()()` Get the timestamp for the most recent buffer held by this Allocation. |
+| --- | --- |
 | open [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getType()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getUsage()()` Get the usage flags of the Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioReceive()()` Receive the latest input into the Allocation. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioSend()()` Send a buffer to the output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#resize(kotlin.Int)(dimX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resize a 1D allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)(useAutoPadding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies the mapping between the Allocation's cells and an array's elements when data is copied from the Allocation to the array, or vice-versa. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, component_number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, component_number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setOnBufferAvailableListener(android.renderscript.Allocation.OnBufferAvailableListener)(callback: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.OnBufferAvailableListener!)` Set a notification handler for `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_IO_INPUT:kotlin.Int`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setSurface(android.view.Surface)(sur: https://developer.android.com/reference/kotlin/android/view/Surface.html#!)` Associate a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` with this Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)(srcLocation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Propagate changes from one usage of the Allocation to the other usages of the Allocation. |
+| --- | --- |
 
 | Protected methods ||
 |---|---|
@@ -293,6 +328,7 @@ Copy part of an Allocation into this Allocation.
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: the source data allocation. |
+| --- | --- |
 | `dataOff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): off The offset of the first element in data to be copied. |
 
 ### copy1DRangeFrom
@@ -324,6 +360,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFrom
 
@@ -354,6 +391,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: the source array. |
+| --- | --- |
 
 ### copy1DRangeFrom
 
@@ -384,6 +422,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFrom
 
@@ -415,6 +454,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The source array. |
+| --- | --- |
 
 ### copy1DRangeFrom
 
@@ -445,6 +485,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFromUnchecked
 
@@ -475,6 +516,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFromUnchecked
 
@@ -505,6 +547,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFromUnchecked
 
@@ -535,6 +578,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeFromUnchecked
 
@@ -566,6 +610,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The source array |
+| --- | --- |
 
 ### copy1DRangeFromUnchecked
 
@@ -596,6 +641,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeTo
 
@@ -627,6 +673,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeTo
 
@@ -658,6 +705,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: the source array. |
+| --- | --- |
 
 ### copy1DRangeTo
 
@@ -689,6 +737,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeTo
 
@@ -720,6 +769,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The source array. |
+| --- | --- |
 
 ### copy1DRangeTo
 
@@ -751,6 +801,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeToUnchecked
 
@@ -782,6 +833,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeToUnchecked
 
@@ -813,6 +865,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeToUnchecked
 
@@ -844,6 +897,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy1DRangeToUnchecked
 
@@ -875,6 +929,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The dest array |
+| --- | --- |
 
 ### copy1DRangeToUnchecked
 
@@ -906,6 +961,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
 | `d` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: the source array |
+| --- | --- |
 
 ### copy2DRangeFrom
 
@@ -928,6 +984,7 @@ Copy a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.h
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `data` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: the Bitmap to be copied |
+| --- | --- |
 
 ### copy2DRangeFrom
 
@@ -955,9 +1012,11 @@ Copy a rectangular region from an Allocation into a rectangular region in this A
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update. |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update. |
 | `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: source Allocation. |
 | `dataXoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset in source Allocation |
+| --- | --- |
 | `dataYoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset in source Allocation |
 
 ### copy2DRangeFrom
@@ -991,6 +1050,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: to be placed into the Allocation |
 
@@ -1025,6 +1085,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `data` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: to be placed into the Allocation |
 
@@ -1059,6 +1120,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `data` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: to be placed into the Allocation |
 
@@ -1094,6 +1156,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Data to be placed into the Allocation |
 
@@ -1128,6 +1191,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `data` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: to be placed into the Allocation |
 
@@ -1163,6 +1227,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to copy in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to copy in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to copy |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to copy |
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: Dest Array to be copied into |
 
@@ -1198,6 +1263,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to copy in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to copy in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to copy |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to copy |
 | `data` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!: Dest Array to be copied into |
 
@@ -1233,6 +1299,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to copy in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to copy in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to copy |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to copy |
 | `data` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: Dest Array to be copied into |
 
@@ -1268,6 +1335,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to copy in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to copy in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to copy |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to copy |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Dest Array to be copied into |
 
@@ -1303,6 +1371,7 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to copy in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to copy in this Allocation |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to copy |
+| --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to copy |
 | `data` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!: Dest Array to be copied into |
 
@@ -1335,12 +1404,15 @@ Copy a rectangular region into the allocation from another allocation.
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `zoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Z offset of the region to update in this Allocation |
+| --- | --- |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update. |
 | `d` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Depth of the region to update. |
+| --- | --- |
 | `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: source allocation. |
 | `dataXoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region in the source Allocation |
 | `dataYoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region in the source Allocation |
+| --- | --- |
 | `dataZoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Z offset of the region in the source Allocation |
 
 ### copy3DRangeFrom
@@ -1377,9 +1449,11 @@ If the Allocation has Vec3 Elements and `https://developer.android.com/reference
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
 | `zoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Z offset of the region to update in this Allocation |
+| --- | --- |
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update |
 | `d` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Depth of the region to update |
+| --- | --- |
 | `array` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: to be placed into the allocation |
 
 ### copy3DRangeTo
@@ -1824,6 +1898,7 @@ Creates a new Allocation Array with the given `https://developer.android.com/ref
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: RenderScript context |
 | `t` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: RenderScript type describing data layout |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
+| --- | --- |
 | `numAlloc` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of Allocations in the array. |
 
 | Return ||
@@ -1876,6 +1951,7 @@ Creates a cubemap Allocation from a `https://developer.android.com/reference/kot
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: Bitmap with cubemap faces layed out in the following format: right, left, top, bottom, front, back |
 | `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the cubemap |
+| --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the cubemap is utilized |
 
 | Return ||
@@ -1907,9 +1983,11 @@ Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `ht
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `xpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive x direction |
 | `xneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative x direction |
+| --- | --- |
 | `ypos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive y direction |
 | `yneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative y direction |
 | `zpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive z direction |
+| --- | --- |
 | `zneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative z direction |
 
 | Return ||
@@ -1943,12 +2021,15 @@ Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kot
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `xpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive x direction |
 | `xneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative x direction |
+| --- | --- |
 | `ypos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive y direction |
 | `yneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative y direction |
 | `zpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive z direction |
+| --- | --- |
 | `zneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative z direction |
 | `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the cubemap |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the cubemap is utilized |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2002,6 +2083,7 @@ Creates an Allocation from a `https://developer.android.com/reference/kotlin/and
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: Bitmap source for the allocation data |
 | `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
+| --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
 
 | Return ||
@@ -2031,6 +2113,7 @@ With target API version 18 or greater, this allocation will be created with `htt
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `res` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!: application resources |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource id to load the data from |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2059,6 +2142,7 @@ Creates an Allocation from the Bitmap referenced by resource ID.
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `res` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!: application resources |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource id to load the data from |
+| --- | --- |
 | `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
 
@@ -2087,6 +2171,7 @@ Creates an Allocation containing string data encoded in UTF-8 format.
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: string to create the allocation from |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocaiton is utilized |
+| --- | --- |
 
 ### createSized
 
@@ -2109,6 +2194,7 @@ Creates an Allocation with a specified number of given elements
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the Allocation will belong. |
 | `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!: Element to use in the Allocation |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of Elements in the Allocation |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2136,6 +2222,7 @@ Creates an Allocation with a specified number of given elements
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the Allocation will belong. |
 | `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!: Element to use in the Allocation |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of Elements in the Allocation |
+| --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
 
 | Return ||
@@ -2188,6 +2275,7 @@ Creates a new Allocation with the given `https://developer.android.com/reference
 | `type` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: RenderScript type describing data layout |
 | `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
+| --- | --- |
 
 ### createTyped
 
@@ -2210,6 +2298,7 @@ Creates an Allocation with the size specified by the type and no mipmaps generat
 | `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
 | `type` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: renderscript type describing data layout |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
+| --- | --- |
 
 | Return ||
 |---|---|
@@ -2503,6 +2592,7 @@ This is only intended to be used by auto-generated code reflected from the Rende
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `component_number` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `fp` | [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker)!: |
+| --- | --- |
 
 ### setFromFieldPacker
 
@@ -2528,6 +2618,7 @@ This is only intended to be used by auto-generated code reflected from the Rende
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `zoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
+| --- | --- |
 | `component_number` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `fp` | [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker)!: |
 

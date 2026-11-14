@@ -5,6 +5,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 # OnGenericMotionListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnGenericMotionListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnGenericMotionListener

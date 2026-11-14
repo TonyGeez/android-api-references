@@ -3,12 +3,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 # TrainingExampleRecord
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExampleRecord "View this page in Java")
+| --- | --- |
 
 ```
 class TrainingExampleRecord : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.TrainingExampleRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#) |
 
 One record of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput`.
@@ -28,6 +30,7 @@ One record of `https://developer.android.com/reference/kotlin/android/adservices
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#getResumptionToken()()` The resumption token byte arrays corresponding to training examples. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#getTrainingExample()()` Training example byte arrays. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

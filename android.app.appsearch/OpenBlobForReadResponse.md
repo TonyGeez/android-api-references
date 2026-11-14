@@ -8,6 +8,7 @@ class OpenBlobForReadResponse : Closeable, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.OpenBlobForReadResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForReadResponse#) |
 
 The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#openBlobForRead(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
@@ -31,6 +32,7 @@ The returned `https://developer.android.com/reference/kotlin/android/os/ParcelFi
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForReadResponse#close()()` Closes this stream and releases any system resources associated with it. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForReadResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult)\< [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle)!, [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForReadResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the read blob for read operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForReadResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # ClearCredentialStateRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/ClearCredentialStateRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class ClearCredentialStateRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.service.credentials.ClearCredentialStateRequest](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#) |
 
 A request class for clearing a user's credential state. Providers must clear the credential state when they receive this request.
@@ -30,6 +32,7 @@ A request class for clearing a user's credential state. Providers must clear the
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#describeContents())`()` <br /> |
 | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo) | [getCallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#getCallingAppInfo())`()` Returns the calling app info containing information pertaining to the calling app. |
 | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getData](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#getData())`()` Returns the request data. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

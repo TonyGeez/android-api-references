@@ -3,12 +3,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 # SearchableInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/app/SearchableInfo "View this page in Java")
+| --- | --- |
 
 ```
 class SearchableInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo#) |
 
 Searchability meta-data for an activity. Only applications that search other applications should need to use this class. See [Searchable Configuration](https://developer.android.com/guide/topics/search/searchable-config.html) for more information about declaring searchability meta-data for your application.
@@ -24,27 +26,35 @@ Searchability meta-data for an activity. Only applications that search other app
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#autoUrlDetect()()` Checks whether this searchable activity has auto URL detection turned on. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getHintId()()` Gets the resource id of the hint text. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getImeOptions()()` Gets the input method options specified in the searchable attributes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getInputType()()` Gets the input type as specified in the searchable attributes. |
 | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSearchActivity()()` Gets the component name of the searchable activity. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSettingsDescriptionId()()` Gets the resource id of the description string to use for this source in system search settings, or `0` if none has been specified. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestAuthority()()` Gets the search suggestion content provider authority. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestIntentAction()()` Gets the optional intent action for use with these suggestions. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestIntentData()()` Gets the optional intent data for use with these suggestions. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestPackage()()` Gets the name of the package where the suggestion provider lives, or `null`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestPath()()` Gets the content provider path for obtaining search suggestions. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestSelection()()` Gets the selection for obtaining search suggestions. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestThreshold()()` Gets the suggestion threshold. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceLanguageId()()` Gets the resource id of the spoken language to recognize in voice search. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceLanguageModeId()()` Gets the resource id of the voice search language model string. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceMaxResults()()` The maximum number of voice recognition results to return. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoicePromptTextId()()` Gets the resource id of the voice prompt text string. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceSearchEnabled()()` Checks if the searchable activity wants the voice search button to be shown. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceSearchLaunchRecognizer()()` Checks if voice search should start in-app search. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getVoiceSearchLaunchWebSearch()()` Checks if voice search should start web search. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#queryAfterZeroResults()()` Checks whether this searchable activity should be queried for suggestions if a prefix of the query has returned no results. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#shouldIncludeInGlobalSearch()()` Checks whether the searchable should be included in global search. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#shouldRewriteQueryFromData()()` Checks whether the text in the query field should come from the suggestion intent data. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#shouldRewriteQueryFromText()()` Checks whether the text in the query field should come from the suggestion title. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 

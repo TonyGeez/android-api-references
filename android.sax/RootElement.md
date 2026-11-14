@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # RootElement
 
 Kotlin| [Java](https://developer.android.com/reference/android/sax/RootElement "View this page in Java") 
+| --- | --- |
 
 ```
 open class RootElement : Element
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.sax.Element](https://developer.android.com/reference/kotlin/android/sax/Element) ||
 | | ↳ | [android.sax.RootElement](https://developer.android.com/reference/kotlin/android/sax/RootElement#) |
 

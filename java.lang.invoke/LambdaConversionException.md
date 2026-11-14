@@ -9,9 +9,11 @@ open class LambdaConversionException : Exception
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
 | | | ↳ | [java.lang.invoke.LambdaConversionException](https://developer.android.com/reference/kotlin/java/lang/invoke/LambdaConversionException#) |
+| --- | --- | --- | --- |
 
 LambdaConversionException
 
@@ -87,6 +89,7 @@ Constructs a`LambdaConversionException`with a message, cause, and other settings
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause |
 | `enableSuppression` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not suppressed exceptions are enabled |
+| --- | --- |
 | `writableStackTrace` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not the stack trace is writable |
 
 ### LambdaConversionException

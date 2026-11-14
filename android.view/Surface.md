@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Surface
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/Surface "View this page in Java") 
+| --- | --- |
 
 ```
 open class Surface : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface#) |
 
 Handle onto a raw buffer that is being managed by the screen compositor.
@@ -30,12 +32,15 @@ A Surface is generally created by or from a consumer of image buffers (such as a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ALWAYS](https://developer.android.com/reference/kotlin/android/view/Surface#CHANGE_FRAME_RATE_ALWAYS:kotlin.Int) Change the frame rate even if the transition is going to be non-seamless, i. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](https://developer.android.com/reference/kotlin/android/view/Surface#CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS:kotlin.Int) Change the frame rate only if the transition is going to be seamless. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_AT_LEAST](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST:kotlin.Int) The surface requests a frame rate that is at least the specified frame rate. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_DEFAULT](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_DEFAULT:kotlin.Int) There are no inherent restrictions on the frame rate of this surface. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE:kotlin.Int) This surface is being used to display content with an inherently fixed frame rate, e. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_0](https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_0:kotlin.Int) Rotation constant: 0 degree rotation (natural orientation) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_180](https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_180:kotlin.Int) Rotation constant: 180 degree rotation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_270](https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_270:kotlin.Int) Rotation constant: 270 degree rotation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_90](https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_90:kotlin.Int) Rotation constant: 90 degree rotation. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -51,15 +56,19 @@ A Surface is generally created by or from a consumer of image buffers (such as a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFrameRate](https://developer.android.com/reference/kotlin/android/view/Surface#clearFrameRate())`()` Clears the frame rate which was set for this surface. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/Surface#describeContents())`()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/android/view/Surface#isValid())`()` Returns true if this object holds a valid surface. |
+| --- | --- |
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)! | [lockCanvas](https://developer.android.com/reference/kotlin/android/view/Surface#lockCanvas(android.graphics.Rect))`(`inOutDirty:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Gets a [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#) for drawing into this surface. |
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)! | [lockHardwareCanvas](https://developer.android.com/reference/kotlin/android/view/Surface#lockHardwareCanvas())`()` Gets a [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#) for drawing into this surface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](https://developer.android.com/reference/kotlin/android/view/Surface#readFromParcel(android.os.Parcel))`(`source:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/view/Surface#release())`()` Release the local reference to the server-side surface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](https://developer.android.com/reference/kotlin/android/view/Surface#setFrameRate(kotlin.Float,%20kotlin.Int))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](https://developer.android.com/reference/kotlin/android/view/Surface#setFrameRate(kotlin.Float,%20kotlin.Int,%20kotlin.Int))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `changeFrameRateStrategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/Surface#toString())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvas](https://developer.android.com/reference/kotlin/android/view/Surface#unlockCanvas(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](https://developer.android.com/reference/kotlin/android/view/Surface#unlockCanvasAndPost(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`)` Posts the new contents of the [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#) to the surface and releases the [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#). |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/Surface#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Protected methods ||
@@ -363,6 +372,7 @@ Note that this only has an effect for surfaces presented on the display. If this
 | `frameRate` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The intended frame rate of this surface, in frames per second. 0 is a special value that indicates the app will accept the system's choice for the display frame rate, which is the default behavior if this function isn't called. The`frameRate`parameter does*not*need to be a valid refresh rate for this device's display - e.g., it's fine to pass 30fps to a device that can only run the display at 60fps. Value is 0.0f or greater |
 | `compatibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The frame rate compatibility of this surface. The compatibility value may influence the system's choice of display frame rate. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#FRAME_RATE_COMPATIBILITY_DEFAULT](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_DEFAULT:kotlin.Int), [android.view.Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE:kotlin.Int), [android.view.Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST](https://developer.android.com/reference/kotlin/android/view/Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST:kotlin.Int), android.view.Surface.FRAME_RATE_COMPATIBILITY_EXACT, or android.view.Surface.FRAME_RATE_COMPATIBILITY_MIN |
 | `changeFrameRateStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Whether display refresh rate transitions caused by this surface should be seamless. A seamless transition is one that doesn't have any visual interruptions, such as a black screen for a second or two. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](https://developer.android.com/reference/kotlin/android/view/Surface#CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS:kotlin.Int), or [android.view.Surface#CHANGE_FRAME_RATE_ALWAYS](https://developer.android.com/reference/kotlin/android/view/Surface#CHANGE_FRAME_RATE_ALWAYS:kotlin.Int) |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------|

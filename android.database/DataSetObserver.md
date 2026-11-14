@@ -5,15 +5,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DataSetObserver
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/DataSetObserver "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class DataSetObserver
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver#) |
 
 | Known Direct Subclasses [AlphabetIndexer](https://developer.android.com/reference/kotlin/android/widget/AlphabetIndexer.html#) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [AlphabetIndexer](https://developer.android.com/reference/kotlin/android/widget/AlphabetIndexer.html#) | A helper class for adapters that implement the SectionIndexer interface. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Receives call backs when a data set has been changed, or made invalid. The typically data sets that are observed are [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor) s or [android.widget.Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter.html#) s. DataSetObserver must be implemented by objects which are added to a DataSetObservable.
 

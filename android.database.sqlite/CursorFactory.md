@@ -5,6 +5,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CursorFactory
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.CursorFactory "View this page in Java") 
+| --- | --- |
 
 ```
 interface CursorFactory

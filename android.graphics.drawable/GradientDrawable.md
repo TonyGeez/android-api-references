@@ -3,12 +3,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # GradientDrawable
 
 Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/GradientDrawable "View this page in Java") 
+| --- | --- |
 
 ```
 open class GradientDrawable : Drawable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) ||
 | | ↳ | [android.graphics.drawable.GradientDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#) |
 
@@ -27,39 +29,50 @@ It can be defined in an XML file with the `<shape>` element. For more informatio
 | [`android:angle`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Angle of the gradient, used only with linear gradient. |
 | [`android:bottom`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Amount of bottom padding inside the gradient shape. |
 | [`android:centerColor`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Optional center color. |
+| --- | --- |
 | [`android:centerX`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | X-position of the center point of the gradient within the shape as a fraction of the width. |
 | [`android:centerY`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Y-position of the center point of the gradient within the shape as a fraction of the height. |
 | [`android:color`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Solid color for the gradient shape. |
+| --- | --- |
 | [`android:color`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Color of the gradient shape's stroke. |
 | [`android:dashGap`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Gap between dashes in the stroke. |
 | [`android:dashWidth`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Length of a dash in the stroke. |
+| --- | --- |
 | [`android:endColor`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | End color of the gradient. |
 | [`android:gradientRadius`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Radius of the gradient, used only with radial gradient. |
 | [`android:height`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Height of the gradient shape. |
+| --- | --- |
 | [`android:innerRadius`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Inner radius of the ring. |
 | [`android:innerRadiusRatio`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Inner radius of the ring expressed as a ratio of the ring's width. |
 | [`android:left`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Amount of left padding inside the gradient shape. |
+| --- | --- |
 | [`android:right`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Amount of right padding inside the gradient shape. |
 | [`android:shape`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Indicates what shape to fill with a gradient. |
 | [`android:startColor`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Start color of the gradient. |
+| --- | --- |
 | [`android:thickness`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Thickness of the ring. |
 | [`android:thicknessRatio`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Thickness of the ring expressed as a ratio of the ring's width. |
 | [`android:top`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Amount of top padding inside the gradient shape. |
+| --- | --- |
 | [`android:type`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Type of gradient. |
 | [`android:useLevel`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the shape. |
 | [`android:useLevel`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the gradient. |
+| --- | --- |
 | [`android:visible`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Indicates whether the drawable should intially be visible. |
 | [`android:width`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Width of the gradient shape. |
 | [`android:width`](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#attr_GradientDrawable) | Width of the gradient shape's stroke. |
+| --- | --- |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARC](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#ARC:kotlin.Int) Shape is an arc. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#LINE:kotlin.Int) Shape is a line |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINEAR_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#LINEAR_GRADIENT:kotlin.Int) Gradient is linear (default.) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVAL](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#OVAL:kotlin.Int) Shape is an ellipse |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIAL_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RADIAL_GRADIENT:kotlin.Int) Gradient is circular. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECTANGLE](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RECTANGLE:kotlin.Int) Shape is a rectangle, possibly with rounded corners |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RING](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RING:kotlin.Int) Shape is a ring. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWEEP_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#SWEEP_GRADIENT:kotlin.Int) Gradient is a sweep. |
 
@@ -73,60 +86,79 @@ It can be defined in an XML file with the `<shape>` element. For more informatio
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#applyTheme(android.content.res.Resources.Theme))`(`t:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)`)` Applies the specified theme to this Drawable and its children. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canApplyTheme](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#canApplyTheme())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#draw(android.graphics.Canvas))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getAlpha())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getChangingConfigurations())`()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | [getColor](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getColor())`()` Returns the color state list used to fill the shape, or `null` if the shape is filled with a gradient or has no fill color. |
+| --- | --- |
 | open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)? | [getColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getColorFilter())`()` Returns the current color filter, or `null` if none set. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getColors](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getColors())`()` Returns the colors used to draw the gradient, or `null` if the gradient is drawn using a single color or no colors. |
 | open [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState)? | [getConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getConstantState())`()` <br /> |
+| --- | --- |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | [getCornerRadii](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getCornerRadii())`()` Returns the radii for each of the 4 corners. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCornerRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getCornerRadius())`()` Returns the radius for the corners of the gradient, that was previously set with [setCornerRadius(float)](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setCornerRadius(kotlin.Float)). |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterX](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientCenterX())`()` Returns the X-position of the center of the gradient as a fraction of the width. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterY](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientCenterY())`()` Returns the Y-position of the center of this gradient as a fraction of the height. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientRadius())`()` Returns the radius of the gradient in pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGradientType](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientType())`()` Returns the type of gradient used by this drawable, one of [LINEAR_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#LINEAR_GRADIENT:kotlin.Int), [RADIAL_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RADIAL_GRADIENT:kotlin.Int), or [SWEEP_GRADIENT](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#SWEEP_GRADIENT:kotlin.Int). |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInnerRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getInnerRadius())`()` Return the inner radius of the ring The units of this value are pixels. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInnerRadiusRatio](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getInnerRadiusRatio())`()` Return the inner radius of the ring expressed as a ratio of the ring's width. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getIntrinsicHeight())`()` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getIntrinsicWidth())`()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getOpacity())`()` <br /> |
 | open [Insets](https://developer.android.com/reference/kotlin/android/graphics/Insets.html#) | [getOpticalInsets](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getOpticalInsets())`()` <br /> |
+| --- | --- |
 | open [GradientDrawable.Orientation](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable.Orientation)! | [getOrientation](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getOrientation())`()` Returns the orientation of the gradient defined in this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPadding](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getPadding(android.graphics.Rect))`(`padding:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` <br /> |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getShape())`()` Returns the type of shape used by this drawable, one of [LINE](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#LINE:kotlin.Int), [OVAL](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#OVAL:kotlin.Int), [RECTANGLE](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RECTANGLE:kotlin.Int) or [RING](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#RING:kotlin.Int). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThickness](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getThickness())`()` Return the thickness of the ring The units of this value are pixels. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getThicknessRatio](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getThicknessRatio())`()` Return the thickness ratio of the ring expressed as a ratio of the ring's width. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseLevel](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getUseLevel())`()` Returns whether this drawable's `level` property will be used to scale the gradient. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#hasFocusStateSpecified())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?`)` Inflate this Drawable from an XML resource optionally styled by a theme. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#isStateful())`()` <br /> |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | [mutate](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate())`()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColor(android.content.res.ColorStateList))`(`colorStateList:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?`)` Changes this drawable to use a single color state list instead of a gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColor(kotlin.Int))`(`argb:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes this drawable to use a single color instead of a gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColorFilter(android.graphics.ColorFilter))`(`colorFilter:` ` [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#)?`)` Specify an optional color filter for the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColors(kotlin.IntArray))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`)` Sets the colors used to draw the gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColors(kotlin.IntArray,%20kotlin.FloatArray))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `offsets:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Sets the colors and offsets used to draw the gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadii](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setCornerRadii(kotlin.FloatArray))`(`radii:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Specifies radii for each of the 4 corners. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setCornerRadius(kotlin.Float))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the radius for the corners of the gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDither](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setDither(kotlin.Boolean))`(`dither:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientCenter](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setGradientCenter(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the position of the center of the gradient as a fraction of the width and height. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setGradientRadius(kotlin.Float))`(`gradientRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the radius of the gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientType](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setGradientType(kotlin.Int))`(`gradient:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of gradient used by this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadius](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setInnerRadius(kotlin.Int))`(`innerRadius:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the inner radius of the ring. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadiusRatio](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setInnerRadiusRatio(kotlin.Float))`(`innerRadiusRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Inner radius of the ring expressed as a ratio of the ring's width. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientation](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setOrientation(android.graphics.drawable.GradientDrawable.Orientation))`(`orientation:` ` [GradientDrawable.Orientation](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable.Orientation)!`)` Sets the orientation of the gradient defined in this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadding](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setPadding(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the padding of the gradient shape |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setShape(kotlin.Int))`(`shape:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of shape used to draw the gradient. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setSize(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the shape drawn by this drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setStroke(kotlin.Int,%20android.content.res.ColorStateList))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)!`)` Set the stroke width and color state list for the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setStroke(kotlin.Int,%20android.content.res.ColorStateList,%20kotlin.Float,%20kotlin.Float))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)!`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color state list for the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setStroke(kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the stroke width and color for the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setStroke(kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color for the drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThickness](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setThickness(kotlin.Int))`(`thickness:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the thickness of the ring. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThicknessRatio](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setThicknessRatio(kotlin.Float))`(`thicknessRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configure the thickness of the ring expressed as a ratio of the ring's width. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setTintBlendMode(android.graphics.BlendMode))`(`blendMode:` ` [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)!`)` Specifies a tint blending mode for this drawable. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setTintList(android.content.res.ColorStateList))`(`tint:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?`)` Specifies tint color for this drawable as a color state list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseLevel](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setUseLevel(kotlin.Boolean))`(`useLevel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this drawable's `level` property will be used to scale the gradient. |
 
@@ -135,6 +167,7 @@ It can be defined in an XML file with the `<shape>` element. For more informatio
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChange](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#onBoundsChange(android.graphics.Rect))`(`r:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLevelChange](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#onLevelChange(kotlin.Int))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStateChange](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#onStateChange(kotlin.IntArray))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|
@@ -308,6 +341,7 @@ Must be one of the following constant values.
 | arc | 4 | ARC shape. |
 | line | 2 | Line shape. |
 | oval | 1 | Oval shape. |
+| --- | --- | --- |
 | rectangle | 0 | Rectangle shape, with optional rounder corners. |
 | ring | 3 | Ring shape. |
 
@@ -361,6 +395,7 @@ Must be one of the following constant values.
 | linear | 0 | Linear gradient extending across the center point. |
 | radial | 1 | Radial gradient extending from the center point outward. |
 | sweep | 2 | Sweep (or angular) gradient sweeping counter-clockwise around the center point. |
+| --- | --- | --- |
 
 ### android:useLevel
 
@@ -990,6 +1025,7 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 | `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): This value cannot be `null`. |
 | `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| --- | --- |
 | `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: This value may be `null`. |
 
 | Exceptions ||
@@ -1347,6 +1383,7 @@ Configure the padding of the gradient shape
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left padding of the gradient shape The units of this value are pixels. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top padding of the gradient shape The units of this value are pixels. |
 | `right` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Right padding of the gradient shape The units of this value are pixels. |
+| --- | --- |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom padding of the gradient shape The units of this value are pixels. |
 
 ### setShape
@@ -1441,6 +1478,7 @@ Set the stroke width and color state list for the drawable. If width is zero, th
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width in pixels of the stroke |
 | `colorStateList` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)!: The color state list of the stroke |
 | `dashWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The length in pixels of the dashes, set to 0 to disable dashes |
+| --- | --- |
 | `dashGap` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The gap in pixels between dashes |
 
 **See Also**
@@ -1495,6 +1533,7 @@ Set the stroke width and color for the drawable. If width is zero, then no strok
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width in pixels of the stroke |
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The color of the stroke |
 | `dashWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The length in pixels of the dashes, set to 0 to disable dashes |
+| --- | --- |
 | `dashGap` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The gap in pixels between dashes |
 
 **See Also**

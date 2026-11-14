@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # MenuInflater
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/MenuInflater "View this page in Java") 
+| --- | --- |
 
 ```
 open class MenuInflater
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.MenuInflater](https://developer.android.com/reference/kotlin/android/view/MenuInflater#) |
 
 This class is used to instantiate menu XML files into Menu objects.

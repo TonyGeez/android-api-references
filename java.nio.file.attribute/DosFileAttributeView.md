@@ -17,9 +17,11 @@ A`DosFileAttributeView`is a [BasicFileAttributeView](https://developer.android.c
 Where dynamic access to file attributes is required, the attributes supported by this attribute view are as defined by`BasicFileAttributeView`, and in addition, the following attributes are supported:
 
 | Name | Type |
+| --- | --- |
 | readonly | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 | hidden | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 | system | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
+| --- | --- |
 | archive | [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html#) |
 |----------|-----------------------------------------------------------------------------------|
 
@@ -34,9 +36,11 @@ The [setAttribute](https://developer.android.com/reference/kotlin/java/nio/file/
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#name())`()` Returns the name of the attribute view. |
 | abstract [DosFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributes)! | [readAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#readAttributes())`()` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setArchive](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#setArchive(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Updates the value of the archive attribute. |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHidden](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#setHidden(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Updates the value of the hidden attribute. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#setReadOnly(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Updates the value of the read-only attribute. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystem](https://developer.android.com/reference/kotlin/java/nio/file/attribute/DosFileAttributeView#setSystem(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Updates the value of the system attribute. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

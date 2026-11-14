@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # CharArrayBuffer
 
 Kotlin| [Java](https://developer.android.com/reference/android/database/CharArrayBuffer "View this page in Java") 
+| --- | --- |
 
 ```
 class CharArrayBuffer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.database.CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer#) |
 
 This is used for [Cursor.copyStringToBuffer](https://developer.android.com/reference/kotlin/android/database/Cursor#copyStringToBuffer(kotlin.Int,%20android.database.CharArrayBuffer))

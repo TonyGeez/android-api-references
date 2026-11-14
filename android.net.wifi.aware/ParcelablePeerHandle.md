@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # ParcelablePeerHandle
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/aware/ParcelablePeerHandle "View this page in Java") 
+| --- | --- |
 
 ```
 class ParcelablePeerHandle : PeerHandle, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.net.wifi.aware.PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle) ||
 | | ↳ | [android.net.wifi.aware.ParcelablePeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/ParcelablePeerHandle#) |
 

@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # TextBoundsInfoResult
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfoResult "View this page in Java") 
+| --- | --- |
 
 ```
 class TextBoundsInfoResult
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inputmethod.TextBoundsInfoResult](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult#) |
 
 The object that holds the result of the [InputConnection.requestTextBoundsInfo(RectF, Executor, Consumer)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer))call.
@@ -22,6 +24,7 @@ The object that holds the result of the [InputConnection.requestTextBoundsInfo(R
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_CANCELLED](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult#CODE_CANCELLED:kotlin.Int) Result for [InputConnection.requestTextBoundsInfo(RectF, Executor, Consumer)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer))when the request is cancelled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_FAILED](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult#CODE_FAILED:kotlin.Int) Result for [InputConnection.requestTextBoundsInfo(RectF, Executor, Consumer)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer))when the request failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_SUCCESS](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult#CODE_SUCCESS:kotlin.Int) Result for [InputConnection.requestTextBoundsInfo(RectF, Executor, Consumer)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer))when the editor successfully returns a [TextBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CODE_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult#CODE_UNSUPPORTED:kotlin.Int) Result for [InputConnection.requestTextBoundsInfo(RectF, Executor, Consumer)](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer))when the editor doesn't implement the method. |
 
 | Public constructors ||

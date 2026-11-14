@@ -6,15 +6,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # ScriptIntrinsicResize
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize "View this page in Java") 
+| --- | --- |
 
 ```
 class ScriptIntrinsicResize : ScriptIntrinsic
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
 | | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
 | | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.renderscript.ScriptIntrinsicResize](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#) |
 
 | **This class was deprecated in API level 31.**
@@ -30,9 +33,11 @@ Intrinsic for performing a resize of a 2D allocation.
 | static [ScriptIntrinsicResize](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#)! | [create](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#create(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Supported elements types are [Element.U8](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)), [android.renderscript.Element#U8_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_2(android.renderscript.RenderScript)), [Element.U8_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_3(android.renderscript.RenderScript)), [Element.U8_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_4(android.renderscript.RenderScript)) [Element.F32](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)), [Element.F32_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)), [android.renderscript.Element#F32_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_3(android.renderscript.RenderScript)), [Element.F32_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_4(android.renderscript.RenderScript)) |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#forEach_bicubic(android.renderscript.Allocation))`(`aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Resize copy the input allocation to the output specified. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#forEach_bicubic(android.renderscript.Allocation,%20android.renderscript.Script.LaunchOptions))`(`aout:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`, `opt:` ` [Script.LaunchOptions](https://developer.android.com/reference/kotlin/android/renderscript/Script.LaunchOptions)!`)` Resize copy the input allocation to the output specified. |
+| --- | --- |
 | [Script.FieldID](https://developer.android.com/reference/kotlin/android/renderscript/Script.FieldID)! | [getFieldID_Input](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#getFieldID_Input())`()` Get a FieldID for the input field of this intrinsic. |
 | [Script.KernelID](https://developer.android.com/reference/kotlin/android/renderscript/Script.KernelID)! | [getKernelID_bicubic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#getKernelID_bicubic())`()` Get a KernelID for this intrinsic kernel. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicResize#setInput(android.renderscript.Allocation))`(`ain:` ` [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!`)` Set the input of the resize. |
+| --- | --- |
 
 ## Public methods
 

@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # UnicodeFilter
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/text/UnicodeFilter "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class UnicodeFilter : UnicodeMatcher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.icu.text.UnicodeFilter](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeFilter#) |
 
 | Known Direct Subclasses [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet) |------------------------------------------------------------------------------------------|-----------------------------------------------------------------| | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet) | A mutable set of Unicode characters and multicharacter strings. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 `UnicodeFilter`defines a protocol for selecting a subset of the full range (U+0000 to U+FFFF) of Unicode characters. Currently, filters are used in conjunction with classes like [android.icu.text.Transliterator](https://developer.android.com/reference/kotlin/android/icu/text/Transliterator) to only process selected characters through a transformation.
 
@@ -64,6 +67,7 @@ Default implementation of UnicodeMatcher::matches() for Unicode filters. Matches
 | `text` | [Replaceable](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable)!:the text to be matched |
 | `offset` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:on input, the index into text at which to begin matching. On output, the limit of the matched text. The number of matched characters is the output value of offset minus the input value. Offset should always point to the HIGH SURROGATE (leading code unit) of a pair of surrogates, both on entry and upon return. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the limit index of text to be matched. Greater than offset for a forward direction match, less than offset for a backward direction match. The last character to be considered for matching will be text.charAt(limit-1) in the forward direction or text.charAt(limit+1) in the backward direction. |
+| --- | --- |
 | `incremental` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, then assume further characters may be inserted at limit and check for partial matching. Otherwise assume the text as given is complete. |
 
 | Return ||

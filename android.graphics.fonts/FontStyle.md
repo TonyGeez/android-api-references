@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # FontStyle
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/fonts/FontStyle "View this page in Java") 
+| --- | --- |
 
 ```
 class FontStyle
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.fonts.FontStyle](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#) |
 
 A font style object. This class represents a single font style which is a pair of weight value and slant value. Here are common font styles examples:
@@ -35,15 +37,19 @@ A font style object. This class represents a single font style which is a pair o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_SLANT_ITALIC](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_SLANT_ITALIC:kotlin.Int) A font slant value for italic |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_SLANT_UPRIGHT](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_SLANT_UPRIGHT:kotlin.Int) A font slant value for upright |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_BLACK](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_BLACK:kotlin.Int) A font weight value for the black weight |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_BOLD:kotlin.Int) A font weight value for the bold weight. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_EXTRA_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_EXTRA_BOLD:kotlin.Int) A font weight value for the extra-bold weight |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_EXTRA_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_EXTRA_LIGHT:kotlin.Int) A font weight value for the extra-light weight |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_LIGHT:kotlin.Int) A font weight value for the light weight |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_MAX](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_MAX:kotlin.Int) A maximum weight value for the font |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_MEDIUM](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_MEDIUM:kotlin.Int) A font weight value for the medium weight |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_MIN](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_MIN:kotlin.Int) A minimum weight value for the font |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_NORMAL](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_NORMAL:kotlin.Int) A font weight value for the normal weight |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_SEMI_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_SEMI_BOLD:kotlin.Int) A font weight value for the semi-bold weight |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_THIN](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_THIN:kotlin.Int) A font weight value for the thin weight |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT_WEIGHT_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_UNSPECIFIED:kotlin.Int) A default value when font weight is unspecified |
 
@@ -57,6 +63,7 @@ A font style object. This class represents a single font style which is a pair o
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSlant](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#getSlant())`()` Gets the slant value |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeight](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#getWeight())`()` Gets the weight value |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#toString())`()` <br /> |
 
@@ -261,12 +268,15 @@ Create FontStyle with specific weight and italic
 | 100 | Thin | [FontStyle.FONT_WEIGHT_THIN](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_THIN:kotlin.Int) |
 | 200 | Extra Light (Ultra Light) | [FontStyle.FONT_WEIGHT_EXTRA_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_EXTRA_LIGHT:kotlin.Int) |
 | 300 | Light | [FontStyle.FONT_WEIGHT_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_LIGHT:kotlin.Int) |
+| --- | --- | --- |
 | 400 | Normal (Regular) | [FontStyle.FONT_WEIGHT_NORMAL](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_NORMAL:kotlin.Int) |
 | 500 | Medium | [FontStyle.FONT_WEIGHT_MEDIUM](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_MEDIUM:kotlin.Int) |
 | 600 | Semi Bold (Demi Bold) | [FontStyle.FONT_WEIGHT_SEMI_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_SEMI_BOLD:kotlin.Int) |
+| --- | --- | --- |
 | 700 | Bold | [FontStyle.FONT_WEIGHT_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_BOLD:kotlin.Int) |
 | 800 | Extra Bold (Ultra Bold) | [FontStyle.FONT_WEIGHT_EXTRA_BOLD](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_EXTRA_BOLD:kotlin.Int) |
 | 900 | Black (Heavy) | [FontStyle.FONT_WEIGHT_BLACK](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontStyle#FONT_WEIGHT_BLACK:kotlin.Int) |
+| --- | --- | --- |
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

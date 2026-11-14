@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # IntFlagMapping
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/IntFlagMapping "View this page in Java") 
+| --- | --- |
 
 ```
 class IntFlagMapping
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.inspector.IntFlagMapping](https://developer.android.com/reference/kotlin/android/view/inspector/IntFlagMapping#) |
 
 Maps the values of an`int`property to sets of string for properties that encode flags. An [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion) may provide an instance of this class to a [PropertyMapper](https://developer.android.com/reference/kotlin/android/view/inspector/PropertyMapper) for flag values packed into primitive`int`properties. Each flag has a mask and a target value, for non-exclusive flags, the target can also be used as the mask. A given integer value is compared against each flag to find what flags are active for it by bitwise anding it with the mask and comparing the result against the target, that is,`(value & mask) == target`.
@@ -55,6 +57,7 @@ Add a mutually exclusive flag to the map.
 | `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The bit mask to compare to and with a value |
 | `target` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The target value to compare the masked value with |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The name of the flag to include if enabled This value cannot be`null`. |
+| --- | --- |
 
 ### get
 

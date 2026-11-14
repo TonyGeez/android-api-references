@@ -5,12 +5,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # AudioMetadata
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadata "View this page in Java") 
+| --- | --- |
 
 ```
 class AudioMetadata
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.AudioMetadata](https://developer.android.com/reference/kotlin/android/media/AudioMetadata#) |
 
 AudioMetadata class is used to manage typed key-value pairs for configuration and capability requests within the Audio Framework.

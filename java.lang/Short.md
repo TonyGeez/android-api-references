@@ -9,6 +9,7 @@ class Short : Number, Comparable<Short!>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.lang.Short](https://developer.android.com/reference/kotlin/java/lang/Short#) |
 
@@ -23,6 +24,7 @@ In addition, this class provides several methods for converting a`short`to a`Str
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](https://developer.android.com/reference/kotlin/java/lang/Short#BYTES:kotlin.Int) The number of bytes used to represent a`short`value in two's complement binary form. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Short#MAX_VALUE:kotlin.Short) A constant holding the maximum value a`short`can have, 215-1. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Short#MIN_VALUE:kotlin.Short) A constant holding the minimum value a`short`can have, -215. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](https://developer.android.com/reference/kotlin/java/lang/Short#SIZE:kotlin.Int) The number of bits used to represent a`short`value in two's complement binary form. |
 
 | Public constructors ||
@@ -35,24 +37,31 @@ In addition, this class provides several methods for converting a`short`to a`Str
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/lang/Short#compare(kotlin.Short,%20kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Short#compareTo(kotlin.Short))`(`other:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)!`)` Compares two`Short`objects numerically. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](https://developer.android.com/reference/kotlin/java/lang/Short#compareUnsigned(kotlin.Short,%20kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically treating the values as unsigned. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/lang/Short#decode(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`String`into a`Short`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Short#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Short#hashCode())`()` Returns a hash code for this`Short`; equal to the result of invoking`intValue()`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Short#hashCode(kotlin.Short))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a hash code for a`short`value; compatible with`Short.hashCode()`. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](https://developer.android.com/reference/kotlin/java/lang/Short#parseShort(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses the string argument as a signed decimal`short`. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](https://developer.android.com/reference/kotlin/java/lang/Short#parseShort(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`short`in the radix specified by the second argument. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [reverseBytes](https://developer.android.com/reference/kotlin/java/lang/Short#reverseBytes(kotlin.Short))`(`i:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`short`value. |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](https://developer.android.com/reference/kotlin/java/lang/Short#toByte())`()` Returns the value of this`Short`as a`byte`after a narrowing primitive conversion. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/lang/Short#toDouble())`()` Returns the value of this`Short`as a`double`after a widening primitive conversion. |
+| --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/lang/Short#toFloat())`()` Returns the value of this`Short`as a`float`after a widening primitive conversion. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/lang/Short#toInt())`()` Returns the value of this`Short`as an`int`after a widening primitive conversion. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/lang/Short#toLong())`()` Returns the value of this`Short`as a`long`after a widening primitive conversion. |
+| --- | --- |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](https://developer.android.com/reference/kotlin/java/lang/Short#toShort())`()` Returns the value of this`Short`as a`short`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Short#toString())`()` Returns a`String`object representing this`Short`'s value. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/java/lang/Short#toString(kotlin.Short))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a new`String`object representing the specified`short`. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](https://developer.android.com/reference/kotlin/java/lang/Short#toUnsignedInt(kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Short#toUnsignedLong(kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Short#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Short`object holding the value given by the specified`String`. |
+| --- | --- |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Short#valueOf(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Short`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Short#valueOf(kotlin.Short))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a`Short`instance representing the specified`short`value. |
 

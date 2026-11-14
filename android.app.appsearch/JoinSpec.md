@@ -8,6 +8,7 @@ class JoinSpec : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.JoinSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#) |
 
 This class represents the specifications for the joining operation in search.
@@ -66,9 +67,11 @@ Referring to "this.childrenRankingSignals()" in the ranking signal of the outer 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_AVG_RANKING_SIGNAL:kotlin.Int` Score the aggregation of joined documents using the average ranking signal. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_MAX_RANKING_SIGNAL:kotlin.Int` Score the aggregation of joined documents using the largest ranking signal. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_MIN_RANKING_SIGNAL:kotlin.Int` Score the aggregation of joined documents using the smallest ranking signal. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_OUTER_RESULT_RANKING_SIGNAL:kotlin.Int` Do not score the aggregation of joined documents. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_RESULT_COUNT:kotlin.Int` Score the aggregation of joined documents by counting the number of results. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#AGGREGATION_SCORING_SUM_RANKING_SIGNAL:kotlin.Int` Score the aggregation of joined documents using the sum of ranking signal. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -79,9 +82,11 @@ Referring to "this.childrenRankingSignals()" in the ranking signal of the outer 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getAggregationScoringStrategy()()` Gets the joined document list scoring strategy. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getChildPropertyExpression()()` The property expression that is used to get values from child documents, returned from the nested search. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getMaxJoinedResultCount()()` Returns the max amount of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult` objects to return with the parent document, with a default of 10 SearchResults. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getNestedQuery()()` Returns the query to run on the joined documents. |
 | [SearchSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getNestedSearchSpec()()` Returns the search spec used to retrieve the joined documents. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

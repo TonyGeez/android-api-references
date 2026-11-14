@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # CredentialDescription
 
 Kotlin| [Java](https://developer.android.com/reference/android/credentials/CredentialDescription "View this page in Java") 
+| --- | --- |
 
 ```
 class CredentialDescription : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.credentials.CredentialDescription](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#) |
 
 Represents the type and contained data fields of a [Credential](https://developer.android.com/reference/kotlin/android/credentials/Credential).
@@ -30,9 +32,11 @@ Represents the type and contained data fields of a [Credential](https://develope
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` [getType()](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getType())and [getSupportedElementKeys()](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getSupportedElementKeys())are enough for equality check. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry.html#)!\> | [getCredentialEntries](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getCredentialEntries())`()` Returns the credential entries to be used in the UI. |
+| --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedElementKeys](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getSupportedElementKeys())`()` Returns the flattened JSON string that will be matched with requests. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getType())`()` Returns the type of the Credential described. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#hashCode())`()` [getType()](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getType())and [getSupportedElementKeys()](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#getSupportedElementKeys())are enough for hashing. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -59,6 +63,7 @@ Constructs a [CredentialDescription](https://developer.android.com/reference/kot
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the type of the credential returned. This value cannot be`null`. |
 | `supportedElementKeys` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:Keys of elements to match with Credential requests. This value cannot be`null`. |
 | `credentialEntries` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry.html#)!\>:a list of [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry.html#) s that are to be shown on the account selector if a credential matches with this description. Each entry contains information to be displayed within an entry on the UI, as well as a [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) that will be invoked if the user selects this entry. This value cannot be`null`. |
+| --- | --- |
 
 | Exceptions ||
 |--------------------------------------|-------------------|

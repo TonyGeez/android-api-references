@@ -5,15 +5,18 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # SelectGesture
 
 Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/SelectGesture "View this page in Java") 
+| --- | --- |
 
 ```
 class SelectGesture : PreviewableHandwritingGesture, Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) |||
 | | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture) ||
 | | | ↳ | [android.view.inputmethod.SelectGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#) |
+| --- | --- | --- | --- |
 
 A sub-class of [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) for selecting an area of text using single rectangle. This class holds the information required for selection of text in toolkit widgets like [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#).
 
@@ -34,9 +37,11 @@ Note: This selects all text *within* the given area. To select a range *between*
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGranularity](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#getGranularity())`()` Returns Granular level on which text should be operated. |
+| --- | --- |
 | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | [getSelectionArea](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#getSelectionArea())`()` Returns the Selection area [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) in screen coordinates. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#hashCode())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

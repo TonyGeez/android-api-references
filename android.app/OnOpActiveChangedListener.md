@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # OnOpActiveChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnOpActiveChangedListener
@@ -43,6 +44,7 @@ Called when the active state of an app-op changes.
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The operation that changed. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package performing the operation. This value cannot be`null`. |
 | `active` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the operation became active or inactive. |
+| --- | --- |
 
 ### onOpActiveChanged
 
@@ -72,8 +74,10 @@ If implemented, #onOpActiveChanged(java.lang.String,int,java.lang.String,java.la
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The operation that changed. This value cannot be`null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The UID performing the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package performing the operation. This value cannot be`null`. |
+| --- | --- |
 | `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The operation's attribution tag. This value may be`null`. |
 | `virtualDeviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the virtual device id whose operation has changed |
 | `active` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the operation became active or inactive. |
+| --- | --- |
 | `attributionFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the attribution flags for this operation. Value is either`0`or a combination of android.app.AppOpsManager.ATTRIBUTION_FLAG_ACCESSOR, android.app.AppOpsManager.ATTRIBUTION_FLAG_INTERMEDIARY, android.app.AppOpsManager.ATTRIBUTION_FLAG_RECEIVER, and android.app.AppOpsManager.ATTRIBUTION_FLAG_TRUSTED |
 | `attributionChainId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the unique id of the attribution chain this op is a part of. |

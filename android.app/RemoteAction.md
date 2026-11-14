@@ -5,12 +5,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 # RemoteAction
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/RemoteAction "View this page in Java") 
+| --- | --- |
 
 ```
 class RemoteAction : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction#) |
 
 Represents a remote action that can be called from another process. The action can have an associated visualization including metadata like an icon or title.
@@ -30,15 +32,19 @@ Represents a remote action that can be called from another process. The action c
 | [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction#)! | [clone](https://developer.android.com/reference/kotlin/android/app/RemoteAction#clone())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/RemoteAction#describeContents())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/app/RemoteAction#dump(kotlin.String,%20java.io.PrintWriter))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pw:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!`)` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/RemoteAction#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent) | [getActionIntent](https://developer.android.com/reference/kotlin/android/app/RemoteAction#getActionIntent())`()` Return the action intent. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getContentDescription](https://developer.android.com/reference/kotlin/android/app/RemoteAction#getContentDescription())`()` Return a content description representing the action. |
+| --- | --- |
 | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) | [getIcon](https://developer.android.com/reference/kotlin/android/app/RemoteAction#getIcon())`()` Return an icon representing the action. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getTitle](https://developer.android.com/reference/kotlin/android/app/RemoteAction#getTitle())`()` Return an title representing the action. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/RemoteAction#hashCode())`()` <br /> |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/app/RemoteAction#isEnabled())`()` Return whether this action is enabled. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/app/RemoteAction#setEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this action is enabled. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShouldShowIcon](https://developer.android.com/reference/kotlin/android/app/RemoteAction#setShouldShowIcon(kotlin.Boolean))`(`shouldShowIcon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the icon should be shown. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldShowIcon](https://developer.android.com/reference/kotlin/android/app/RemoteAction#shouldShowIcon())`()` Return whether the icon should be shown. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/RemoteAction#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -65,6 +71,7 @@ RemoteAction(
 | `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#):This value cannot be`null`. |
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
 | `contentDescription` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):This value cannot be`null`. |
+| --- | --- |
 | `intent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent):This value cannot be`null`. |
 
 ## Public methods

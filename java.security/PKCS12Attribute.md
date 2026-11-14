@@ -9,6 +9,7 @@ class PKCS12Attribute : KeyStore.Entry.Attribute
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.security.PKCS12Attribute](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#) |
 
 An attribute associated with a PKCS12 keystore entry. The attribute name is an ASN.1 Object Identifier and the attribute value is a set of ASN.1 types.
@@ -25,9 +26,11 @@ An attribute associated with a PKCS12 keystore entry. The attribute name is an A
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`PKCS12Attribute`and a specified object for equality. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getEncoded())`()` Returns the attribute's ASN. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getName())`()` Returns the attribute's ASN. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getValue())`()` Returns the attribute's ASN. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#hashCode())`()` Returns the hashcode for this`PKCS12Attribute`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#toString())`()` Returns a string representation of this`PKCS12Attribute`. |
+| --- | --- |
 
 ## Public constructors
 

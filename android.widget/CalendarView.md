@@ -7,9 +7,11 @@ open class CalendarView : FrameLayout
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
 | | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
 | | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.widget.CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView#) |
 
 This class is a calendar widget for displaying and selecting dates. The range of dates supported by this calendar is configurable.
@@ -27,15 +29,19 @@ The exact appearance and interaction model of this widget may vary between OS ve
 | [`android:dateTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | The text appearance for the day numbers in the calendar grid. |
 | [`android:firstDayOfWeek`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | The first day of week according to java. |
 | [`android:focusedMonthDateColor`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
+| --- | --- |
 | [`android:maxDate`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | The maximal date shown by this calendar view in mm/dd/yyyy format. |
 | [`android:minDate`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | The minimal date shown by this calendar view in mm/dd/yyyy format. |
 | [`android:selectedDateVerticalBar`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
+| --- | --- |
 | [`android:selectedWeekBackgroundColor`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
 | [`android:showWeekNumber`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
 | [`android:shownWeekCount`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
+| --- | --- |
 | [`android:unfocusedMonthDateColor`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
 | [`android:weekDayTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | The text appearance for the week day abbreviation in the calendar header. |
 | [`android:weekNumberColor`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
+| --- | --- |
 | [`android:weekSeparatorLineColor`](https://developer.android.com/reference/kotlin/android/widget/CalendarView#attr_CalendarView) | |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
@@ -322,6 +328,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -438,6 +445,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -586,6 +594,7 @@ Constant Value Description clipBounds 0 Use the children's clip bounds when layi
 `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#attr_ViewGroup` Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache in memory after its initial usage. Persisting the cache consumes more memory but may prevent frequent garbage collection if the cache is created over and over again. By default the persistence is set to scrolling. Deprecated: The view drawing cache was largely made obsolete with the introduction of hardware-accelerated rendering in API 11.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description all 3 The drawing cache is always persisted. animation 1 The drawing cache is persisted after a layout animation. none 0 The drawing cache is not persisted after use. scrolling 2 The drawing cache is persisted after a scroll.
 
 <br />
@@ -1752,33 +1761,43 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getDate()()` Gets the selected date in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getDateTextAppearance()()` Gets the text appearance for the calendar dates. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getFirstDayOfWeek()()` Gets the first day of week. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getFocusedMonthDateColor()()` Gets the color for the dates in the focused month. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getMaxDate()()` Gets the maximal date supported by this `https://developer.android.com/reference/kotlin/android/widget/CalendarView#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getMinDate()()` Gets the minimal date supported by this `https://developer.android.com/reference/kotlin/android/widget/CalendarView#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getSelectedDateVerticalBar()()` Gets the drawable for the vertical bar shown at the beginning and at the end of the selected date. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getSelectedWeekBackgroundColor()()` Gets the background color for the selected week. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getShowWeekNumber()()` Gets whether to show the week number. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getShownWeekCount()()` Gets the number of weeks to be shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getUnfocusedMonthDateColor()()` Gets the color for the dates in a not focused month. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getWeekDayTextAppearance()()` Gets the text appearance for the week day abbreviation of the calendar header. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getWeekNumberColor()()` Gets the color for the week numbers. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#getWeekSeparatorLineColor()()` Gets the color for the separator line between weeks. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setDate(kotlin.Long)(date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the selected date in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setDate(kotlin.Long,%20kotlin.Boolean,%20kotlin.Boolean)(date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, center: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the selected date in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setDateTextAppearance(kotlin.Int)(resourceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text appearance for the calendar dates. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setFirstDayOfWeek(kotlin.Int)(firstDayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the first day of week. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setFocusedMonthDateColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color for the dates of the focused month. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setMaxDate(kotlin.Long)(maxDate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the maximal date supported by this `https://developer.android.com/reference/kotlin/android/widget/CalendarView#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setMinDate(kotlin.Long)(minDate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the minimal date supported by this `https://developer.android.com/reference/kotlin/android/widget/CalendarView#` in milliseconds since January 1, 1970 00:00:00 in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getDefault()` time zone. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setOnDateChangeListener(android.widget.CalendarView.OnDateChangeListener)(listener: https://developer.android.com/reference/kotlin/android/widget/CalendarView.OnDateChangeListener!)` Sets the listener to be notified upon selected date change. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setSelectedDateVerticalBar(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Sets the drawable for the vertical bar shown at the beginning and at the end of the selected date. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setSelectedDateVerticalBar(kotlin.Int)(resourceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the drawable for the vertical bar shown at the beginning and at the end of the selected date. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setSelectedWeekBackgroundColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the background color for the selected week. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setShowWeekNumber(kotlin.Boolean)(showWeekNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether to show the week number. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setShownWeekCount(kotlin.Int)(count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the number of weeks to be shown. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setUnfocusedMonthDateColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color for the dates of a not focused month. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setWeekDayTextAppearance(kotlin.Int)(resourceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text appearance for the week day abbreviation of the calendar header. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setWeekNumberColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color for the week numbers. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CalendarView#setWeekSeparatorLineColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color for the separator line between weeks. |
 
@@ -2702,6 +2721,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -4554,6 +4574,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -8733,6 +8754,7 @@ Sets the selected date in milliseconds since January 1, 1970 00:00:00 in `https:
 | `date` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The date. |
 | `animate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to animate the scroll to the current date. |
 | `center` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to center the current date even if it is already visible. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

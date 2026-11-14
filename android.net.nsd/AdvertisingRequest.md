@@ -6,12 +6,14 @@ Also in [T Extensions 17](https://developer.android.com/sdkExtensions)
 # AdvertisingRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/AdvertisingRequest "View this page in Java") 
+| --- | --- |
 
 ```
 class AdvertisingRequest : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.net.nsd.AdvertisingRequest](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#) |
 
 Encapsulates parameters for android.net.nsd.NsdManager#registerService.
@@ -35,9 +37,11 @@ Encapsulates parameters for android.net.nsd.NsdManager#registerService.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#getFlags())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProtocolType](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#getProtocolType())`()` <br /> |
 | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo) | [getServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#getServiceInfo())`()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 

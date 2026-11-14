@@ -3,15 +3,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # StringPrepParseException
 
 Kotlin | [Java](https://developer.android.com/reference/android/icu/text/StringPrepParseException "View this page in Java")
+| --- | --- |
 
 ```
 open class StringPrepParseException : ParseException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.text.ParseException](https://developer.android.com/reference/kotlin/java/text/ParseException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.icu.text.StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#) |
 
 Exception that signals an error has occurred while parsing the input to StringPrep or IDNA.
@@ -23,15 +26,19 @@ Exception that signals an error has occurred while parsing the input to StringPr
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#ACE_PREFIX_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#BUFFER_OVERFLOW_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#CHECK_BIDI_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#DOMAIN_NAME_TOO_LONG_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#ILLEGAL_CHAR_FOUND:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#INVALID_CHAR_FOUND:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#LABEL_TOO_LONG_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#PROHIBITED_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#STD3_ASCII_RULES_ERROR:kotlin.Int` <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#UNASSIGNED_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#VERIFICATION_ERROR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#ZERO_LENGTH_LABEL:kotlin.Int` <br /> |
+| --- | --- |
 
 | Public constructors ||
 |---|---|
@@ -44,6 +51,7 @@ Exception that signals an error has occurred while parsing the input to StringPr
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this ParseException to another and evaluate if they are equal. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#getError()()` Returns the error code of this exception. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#hashCode()()` Mock implementation of hashCode(). |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#toString()()` Returns the position of error in the rules string |
 
 | Inherited functions ||
@@ -210,6 +218,7 @@ Construct a ParseException object with the given message and error code
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string describing the type of error that occurred |
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error that has occurred |
 | `rules` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The input rules string |
+| --- | --- |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of error in the rules string |
 
 ### StringPrepParseException
@@ -232,6 +241,7 @@ Construct a ParseException object with the given message and error code
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string describing the type of error that occurred |
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error that has occurred |
 | `rules` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The input rules string |
+| --- | --- |
 | `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of error in the rules string |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The line number at which the error has occurred. If the parse engine is not using this field, it should set it to zero. Otherwise it should be a positive integer. The default value of this field is -1. It will be set to 0 if the code populating this struct is not using line numbers. |
 

@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # DashPathEffect
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/DashPathEffect "View this page in Java") 
+| --- | --- |
 
 ```
 open class DashPathEffect : PathEffect
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) ||
 | | ↳ | [android.graphics.DashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/DashPathEffect#) |
 

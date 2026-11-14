@@ -5,6 +5,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # VerticalOrientation
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.VerticalOrientation "View this page in Java") 
+| --- | --- |
 
 ```
 interface VerticalOrientation
@@ -21,6 +22,7 @@ Vertical Orientation constants.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#ROTATED:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_ROTATED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#TRANSFORMED_ROTATED:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_UPRIGHT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#TRANSFORMED_UPRIGHT:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPRIGHT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#UPRIGHT:kotlin.Int) <br /> |
 
 ## Constants

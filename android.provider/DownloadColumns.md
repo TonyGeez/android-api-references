@@ -9,6 +9,7 @@ interface DownloadColumns : MediaStore.MediaColumns
 | [android.provider.MediaStore.DownloadColumns](https://developer.android.com/reference/kotlin/android/provider/MediaStore.DownloadColumns#) |
 
 | Known Direct Subclasses [MediaStore.Downloads](https://developer.android.com/reference/kotlin/android/provider/MediaStore.Downloads) |---|---| | [MediaStore.Downloads](https://developer.android.com/reference/kotlin/android/provider/MediaStore.Downloads) | Collection of downloaded items. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Download metadata columns.
 

@@ -8,6 +8,7 @@ open class EventUrlProvider
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.EventUrlProvider](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#) |
 
 > [!CAUTION]
@@ -73,6 +74,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `eventParams` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#): The data to be passed to `IsolatedWorker#onEvent(EventInput, android.os.OutcomeReceiver)` when the event occurs. This value cannot be `null`. |
 | `responseData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: The content to be returned to the WebView when the URL is fetched. This value may be `null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The Mime Type of the URL response. This value may be `null`. |
+| --- | --- |
 
 | Return ||
 |---|---|

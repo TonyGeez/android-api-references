@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # ParcelableColorSpace
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/ParcelableColorSpace "View this page in Java") 
+| --- | --- |
 
 ```
 class ParcelableColorSpace : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.ParcelableColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#) |
 
 A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) wrapper for a [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace). In order to enable parceling, the ColorSpace must be either a [Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) ColorSpace or a [ColorSpace.Rgb](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb) instance that has an ICC parametric transfer function as returned by [ColorSpace.Rgb.getTransferParameters()](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb#getTransferParameters()).
@@ -30,9 +32,11 @@ A [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcela
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace) | [getColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#getColorSpace())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#hashCode())`()` <br /> |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParcelable](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#isParcelable(android.graphics.ColorSpace))`(`colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Checks if the given ColorSpace is able to be parceled. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/ParcelableColorSpace#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

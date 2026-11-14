@@ -9,6 +9,7 @@ open class PhantomReference<T : Any!> : Reference<T>
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.lang.ref.Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference)\<T\> ||
 | | ↳ | [java.lang.ref.PhantomReference](https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference#) |
 

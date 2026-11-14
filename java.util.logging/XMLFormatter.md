@@ -9,6 +9,7 @@ open class XMLFormatter : Formatter
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.logging.Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter) ||
 | | ↳ | [java.util.logging.XMLFormatter](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter#) |
 
@@ -29,6 +30,7 @@ The XMLFormatter can be used with arbitrary character encodings, but it is recom
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter#format(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Format the given message to XML. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter#getHead(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the header string for a set of XML formatted records. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter#getTail(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the tail string for a set of XML formatted records. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

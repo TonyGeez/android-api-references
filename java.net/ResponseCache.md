@@ -9,9 +9,11 @@ abstract class ResponseCache
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#) |
 
 | Known Direct Subclasses [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache.html#) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache.html#) | Caches HTTP and HTTPS responses to the filesystem so they may be reused, saving time and bandwidth. | |
+| --- | --- | --- | --- | --- | --- | --- |
 
 Represents implementations of URLConnection caches. An instance of such a class can be registered with the system by doing ResponseCache.setDefault(ResponseCache), and the system will call this object in order to:
 
@@ -33,6 +35,7 @@ The ResponseCache implementation decides which resources should be cached, and f
 | abstract [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse)! | [get](https://developer.android.com/reference/kotlin/java/net/ResponseCache#get(java.net.URI,%20kotlin.String,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `rqstMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `rqstHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Retrieve the cached response based on the requesting uri, request method and request headers. |
 | openstatic [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)! | [getDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache#getDefault())`()` Gets the system-wide response cache. |
 | abstract [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest)! | [put](https://developer.android.com/reference/kotlin/java/net/ResponseCache#put(java.net.URI,%20java.net.URLConnection))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `conn:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!`)` The protocol handler calls this method after a resource has been retrieved, and the ResponseCache must decide whether or not to store the resource in its cache. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache#setDefault(java.net.ResponseCache))`(`responseCache:` ` [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)!`)` Sets (or unsets) the system-wide cache. |
 
 ## Public constructors
@@ -66,6 +69,7 @@ Retrieve the cached response based on the requesting uri, request method and req
 | `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:a`URI`used to reference the requested network resource |
 | `rqstMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a`String`representing the request method |
 | `rqstHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:- a Map from request header field names to lists of field values representing the current request headers |
+| --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|

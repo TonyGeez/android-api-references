@@ -170,12 +170,15 @@ All methods on the`SQLXML`interface must be fully implemented if the JDBC driver
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](https://developer.android.com/reference/kotlin/java/sql/SQLXML#free())`()` This method closes this object and releases the resources that it held. |
 | abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getBinaryStream](https://developer.android.com/reference/kotlin/java/sql/SQLXML#getBinaryStream())`()` Retrieves the XML value designated by this SQLXML instance as a stream. |
 | abstract [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [getCharacterStream](https://developer.android.com/reference/kotlin/java/sql/SQLXML#getCharacterStream())`()` Retrieves the XML value designated by this SQLXML instance as a java. |
+| --- | --- |
 | abstractT | [getSource](https://developer.android.com/reference/kotlin/java/sql/SQLXML#getSource(java.lang.Class))`(`sourceClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Returns a Source for reading the XML value designated by this SQLXML instance. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/java/sql/SQLXML#getString())`()` Returns a string representation of the XML value designated by this SQLXML instance. |
 | abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [setBinaryStream](https://developer.android.com/reference/kotlin/java/sql/SQLXML#setBinaryStream())`()` Retrieves a stream that can be used to write the XML value that this SQLXML instance represents. |
+| --- | --- |
 | abstract [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [setCharacterStream](https://developer.android.com/reference/kotlin/java/sql/SQLXML#setCharacterStream())`()` Retrieves a stream to be used to write the XML value that this SQLXML instance represents. |
 | abstractT | [setResult](https://developer.android.com/reference/kotlin/java/sql/SQLXML#setResult(java.lang.Class))`(`resultClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Returns a Result for setting the XML value designated by this SQLXML instance. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setString](https://developer.android.com/reference/kotlin/java/sql/SQLXML#setString(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the XML value designated by this SQLXML instance to the given String representation. |
+| --- | --- |
 
 ## Public methods
 

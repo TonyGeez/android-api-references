@@ -5,6 +5,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # IkeSessionCallback
 
 Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionCallback "View this page in Java") 
+| --- | --- |
 
 ```
 interface IkeSessionCallback
@@ -23,6 +24,7 @@ Callback interface for receiving state changes of an [IkeSession](https://develo
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClosed](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onClosed())`()` Called when the [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession) is closed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClosedWithException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onClosedWithException(android.net.ipsec.ike.exceptions.IkeException))`(`exception:` ` [IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException)`)` Called if [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession) setup failed or [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession) is closed because of a fatal error. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onError(android.net.ipsec.ike.exceptions.IkeException))`(`exception:` ` [IkeException](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeException)`)` Called if a recoverable error is encountered in an established [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession). |
+| --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpened](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onOpened(android.net.ipsec.ike.IkeSessionConfiguration))`(`sessionConfiguration:` ` [IkeSessionConfiguration](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration)`)` Called when the [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession) setup succeeds. |
 
 ## Public methods

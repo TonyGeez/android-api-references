@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # WebViewDatabase
 
 Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebViewDatabase "View this page in Java") 
+| --- | --- |
 
 ```
 abstract class WebViewDatabase
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.webkit.WebViewDatabase](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#) |
 
 This class allows developers to determine whether any WebView used in the application has stored any of the following types of browsing data and to clear any such stored data for all WebViews in the application.
@@ -32,12 +34,15 @@ This class allows developers to determine whether any WebView used in the applic
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFormData](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#clearFormData())`()` Clears any saved data for web forms. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHttpAuthUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#clearHttpAuthUsernamePassword())`()` Clears any saved credentials for HTTP authentication. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#clearUsernamePassword())`()` Clears any saved username/password pairs for web forms. |
+| --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getHttpAuthUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#getHttpAuthUsernamePassword(kotlin.String,%20kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves HTTP authentication credentials for a given host and realm from the [WebViewDatabase](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#) instance. |
 | openstatic [WebViewDatabase](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#)! | [getInstance](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#getInstance(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` <br /> |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFormData](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#hasFormData())`()` Gets whether there is any saved data for web forms. |
+| --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHttpAuthUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#hasHttpAuthUsernamePassword())`()` Gets whether there are any saved credentials for HTTP authentication. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#hasUsernamePassword())`()` Gets whether there are any saved username/password pairs for web forms. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpAuthUsernamePassword](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#setHttpAuthUsernamePassword(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `username:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Stores HTTP authentication credentials for a given host and realm to the [WebViewDatabase](https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#) instance. |
+| --- | --- |
 
 ## Public constructors
 
@@ -230,6 +235,7 @@ Notes:
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host to which the credentials apply |
 | `realm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the realm to which the credentials apply |
 | `username` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the username |
+| --- | --- |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the password |
 
 **See Also**

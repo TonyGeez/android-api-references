@@ -7,6 +7,7 @@ open class ApnSetting : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.data.ApnSetting](https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#) |
 
 An Access Point Name (APN) configuration for a carrier data connection.
@@ -26,33 +27,43 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSe
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#AUTH_TYPE_CHAP:kotlin.Int` Authentication type for CHAP. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#AUTH_TYPE_NONE:kotlin.Int` Authentication is not required. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#AUTH_TYPE_PAP:kotlin.Int` Authentication type for PAP. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#AUTH_TYPE_PAP_OR_CHAP:kotlin.Int` Authentication type for PAP or CHAP. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#MVNO_TYPE_GID:kotlin.Int` MVNO type for group identifier level 1. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#MVNO_TYPE_ICCID:kotlin.Int` MVNO type for ICCID. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#MVNO_TYPE_IMSI:kotlin.Int` MVNO type for IMSI. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#MVNO_TYPE_SPN:kotlin.Int` MVNO type for service provider name. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_IP:kotlin.Int` Internet protocol. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_IPV4V6:kotlin.Int` Virtual PDP type introduced to handle dual IP stack UE capability. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_IPV6:kotlin.Int` Internet protocol, version 6. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_NON_IP:kotlin.Int` Transfer of Non-IP data to external packet data network. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_PPP:kotlin.Int` Point to point protocol. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#PROTOCOL_UNSTRUCTURED:kotlin.Int` Transfer of Unstructured data to the Data Network via N6. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_BIP:kotlin.Int` APN type for BIP. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_CBS:kotlin.Int` APN type for CBS. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_DEFAULT:kotlin.Int` APN type for default data traffic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_DUN:kotlin.Int` APN type for DUN traffic. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_EMERGENCY:kotlin.Int` APN type for Emergency PDN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_ENTERPRISE:kotlin.Int` APN type for ENTERPRISE. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_FOTA:kotlin.Int` APN type for accessing the carrier's FOTA portal, used for over the air updates. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_HIPRI:kotlin.Int` APN type for HiPri traffic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_IA:kotlin.Int` APN type for IA Initial Attach APN. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_IMS:kotlin.Int` APN type for IMS. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_MCX:kotlin.Int` APN type for MCX (Mission Critical Service) where X can be PTT/Video/Data |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_MMS:kotlin.Int` APN type for MMS traffic. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_OEM_PAID:kotlin.Int` APN type for OEM_PAID networks (Automotive PANS) |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_OEM_PRIVATE:kotlin.Int` APN type for OEM_PRIVATE networks (Automotive PANS) |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_RCS:kotlin.Int` APN type for RCS (Rich Communication Services). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_SUPL:kotlin.Int` APN type for SUPL assisted GPS. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_VSIM:kotlin.Int` APN type for VSIM. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_XCAP:kotlin.Int` APN type for XCAP. |
 
@@ -73,33 +84,43 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getApnName()()` Returns the name of the APN. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getApnTypeBitmask()()` Returns the bitmask of APN types. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getAuthType()()` Returns the authentication type of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getCarrierId()()` Returns the carrier id for this APN. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getEntryName()()` Gets the human-readable name that describes the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getId()()` Returns the unique database id for this entry. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddress()()` Gets the MMS proxy address configured for the APN. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddressAsString()()` Returns the MMS proxy address of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyPort()()` Returns the MMS proxy port of the APN. |
 | open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsc()()` Returns the MMSC Uri of the APN. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV4()()` Returns the default MTU (Maximum Transmission Unit) size in bytes of the IPv4 routes brought up by this APN setting. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV6()()` Returns the MTU size of the IPv6 mobile interface to which the APN connected. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMvnoType()()` Returns the MVNO match type for this APN. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getNetworkTypeBitmask()()` Returns a bitmask describing the Radio Technologies (Network Types) which this APN may use. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getOperatorNumeric()()` Returns the numeric operator ID for the APN. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getPassword()()` Returns the APN password of the APN. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProfileId()()` Returns the profile id to which the APN saved in modem. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProtocol()()` Returns the protocol to use to connect to this APN. |
 | open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddress()()` Gets the HTTP proxy address configured for the APN. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddressAsString()()` Returns the proxy address of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyPort()()` Returns the proxy address of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getRoamingProtocol()()` Returns the protocol to use to connect to this APN while the device is roaming. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getUser()()` Returns the APN username of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#hashCode()()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isAlwaysOn()()` Returns whether User Plane resources have to be activated during every transition from CM-IDLE mode to CM-CONNECTED state for this APN See 3GPP TS 23. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isEnabled()()` Returns the current status of APN. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isPersistent()()` Returns if the APN setting is persistent on the modem. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#toString()()` Returns the string representation of ApnSetting. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

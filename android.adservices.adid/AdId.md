@@ -4,12 +4,14 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 # AdId
 
 Kotlin | [Java](https://developer.android.com/reference/android/adservices/adid/AdId "View this page in Java")
+| --- | --- |
 
 ```
 open class AdId
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adid.AdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#) |
 
 A unique, user-resettable, device-wide, per-profile ID for advertising.
@@ -31,6 +33,7 @@ Ad networks may use `AdId` to monetize for Interest Based Advertising (IBA), i.e
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#getAdId()()` The advertising ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()()` Retrieves the limit ad tracking enabled setting. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#toString()()` Returns a string representation of the object. |
 

@@ -3,6 +3,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # OnBackAnimationCallback
 
 Kotlin | [Java](https://developer.android.com/reference/android/window/OnBackAnimationCallback "View this page in Java")
+| --- | --- |
 
 ```
 interface OnBackAnimationCallback : OnBackInvokedCallback
@@ -27,6 +28,7 @@ When back is triggered, callbacks on the in-focus window are invoked in reverse 
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/window/OnBackAnimationCallback#onBackCancelled()()` Called when a back gesture or back button press has been cancelled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/window/OnBackAnimationCallback#onBackProgressed(android.window.BackEvent)(backEvent: https://developer.android.com/reference/kotlin/android/window/BackEvent)` Called when a back gesture progresses. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/window/OnBackAnimationCallback#onBackStarted(android.window.BackEvent)(backEvent: https://developer.android.com/reference/kotlin/android/window/BackEvent)` Called when a back gesture has been started, or back button has been pressed down. |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

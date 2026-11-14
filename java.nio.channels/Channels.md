@@ -9,6 +9,7 @@ class Channels
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.nio.channels.Channels](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#) |
 
 Utility methods for channels and streams.
@@ -22,15 +23,19 @@ This class defines static methods that support the interoperation of the stream 
 | static [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)! | [newChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newChannel(java.io.InputStream))`(`in:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Constructs a channel that reads bytes from the given stream. |
 | static [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)! | [newChannel](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newChannel(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Constructs a channel that writes bytes to the given stream. |
 | static [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [newInputStream](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newInputStream(java.nio.channels.AsynchronousByteChannel))`(`ch:` ` [AsynchronousByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel)!`)` Constructs a stream that reads bytes from the given channel. |
+| --- | --- |
 | static [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [newInputStream](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newInputStream(java.nio.channels.ReadableByteChannel))`(`ch:` ` [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!`)` Constructs a stream that reads bytes from the given channel. |
 | static [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [newOutputStream](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newOutputStream(java.nio.channels.AsynchronousByteChannel))`(`ch:` ` [AsynchronousByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel)!`)` Constructs a stream that writes bytes to the given channel. |
 | static [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [newOutputStream](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newOutputStream(java.nio.channels.WritableByteChannel))`(`ch:` ` [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!`)` Constructs a stream that writes bytes to the given channel. |
+| --- | --- |
 | static [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [newReader](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newReader(java.nio.channels.ReadableByteChannel,%20kotlin.String))`(`ch:` ` [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!`, `csName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a reader that decodes bytes from the given channel according to the named charset. |
 | static [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [newReader](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newReader(java.nio.channels.ReadableByteChannel,%20java.nio.charset.Charset))`(`ch:` ` [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!`, `charset:` ` [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!`)` Constructs a reader that decodes bytes from the given channel according to the given charset. |
 | static [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [newReader](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newReader(java.nio.channels.ReadableByteChannel,%20java.nio.charset.CharsetDecoder,%20kotlin.Int))`(`ch:` ` [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!`, `dec:` ` [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder.html#)!`, `minBufferCap:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a reader that decodes bytes from the given channel using the given decoder. |
+| --- | --- |
 | static [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [newWriter](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newWriter(java.nio.channels.WritableByteChannel,%20kotlin.String))`(`ch:` ` [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!`, `csName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a writer that encodes characters according to the named charset and writes the resulting bytes to the given channel. |
 | static [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [newWriter](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newWriter(java.nio.channels.WritableByteChannel,%20java.nio.charset.Charset))`(`ch:` ` [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!`, `charset:` ` [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!`)` Constructs a writer that encodes characters according to the given charset and writes the resulting bytes to the given channel. |
 | static [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [newWriter](https://developer.android.com/reference/kotlin/java/nio/channels/Channels#newWriter(java.nio.channels.WritableByteChannel,%20java.nio.charset.CharsetEncoder,%20kotlin.Int))`(`ch:` ` [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!`, `enc:` ` [CharsetEncoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder.html#)!`, `minBufferCap:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a writer that encodes characters using the given encoder and writes the resulting bytes to the given channel. |
+| --- | --- |
 
 ## Public methods
 
@@ -251,6 +256,7 @@ The resulting stream will contain an internal input buffer of at least`minBuffer
 | `ch` | [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel)!:The channel from which bytes will be read |
 | `dec` | [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder.html#)!:The charset decoder to be used |
 | `minBufferCap` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The minimum capacity of the internal byte buffer, or`-1`if an implementation-dependent default capacity is to be used |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------|
@@ -353,6 +359,7 @@ The resulting stream will contain an internal output buffer of at least`minBuffe
 | `ch` | [WritableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/WritableByteChannel)!:The channel to which bytes will be written |
 | `enc` | [CharsetEncoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder.html#)!:The charset encoder to be used |
 | `minBufferCap` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The minimum capacity of the internal byte buffer, or`-1`if an implementation-dependent default capacity is to be used |
+| --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------|

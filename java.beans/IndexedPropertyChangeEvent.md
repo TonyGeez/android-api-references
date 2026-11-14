@@ -9,9 +9,11 @@ open class IndexedPropertyChangeEvent : PropertyChangeEvent
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) |||
 | | ↳ | [java.beans.PropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent) ||
 | | | ↳ | [java.beans.IndexedPropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/IndexedPropertyChangeEvent#) |
+| --- | --- | --- | --- |
 
 An "IndexedPropertyChange" event gets delivered whenever a component that conforms to the JavaBeans™ specification (a "bean") changes a bound indexed property. This class is an extension of`PropertyChangeEvent`but contains the index of the property that has changed.
 
@@ -60,6 +62,7 @@ Constructs a new`IndexedPropertyChangeEvent`object.
 | `source` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The bean that fired the event. |
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The programmatic name of the property that was changed. |
 | `oldValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The old value of the property. |
+| --- | --- |
 | `newValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The new value of the property. |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the property element that was changed. |
 

@@ -8,6 +8,7 @@ class RemoteController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.RemoteController](https://developer.android.com/reference/kotlin/android/media/RemoteController#) |
 
 > [!CAUTION]
@@ -44,9 +45,11 @@ Registration requires the `https://developer.android.com/reference/kotlin/androi
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#clearArtworkConfiguration()()` Prevents this RemoteController from receiving artwork images. |
 | [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor)! | `https://developer.android.com/reference/kotlin/android/media/RemoteController#editMetadata()()` Creates a `https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor` for updating metadata values of the editable keys of the current `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#getEstimatedMediaPosition()()` Return the estimated playback position of the current media track or a negative value if not available. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#seekTo(kotlin.Long)(timeMs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the new playback position. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#sendMediaKeyEvent(android.view.KeyEvent)(keyEvent: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Send a simulated key event for a media button to be received by the current client. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#setArtworkConfiguration(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the maximum artwork image dimensions to be received in the metadata. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#setSynchronizationMode(kotlin.Int)(sync: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the playback position synchronization mode. |
 
 ## Constants
@@ -120,6 +123,7 @@ Class constructor.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
 | `updateListener` | [RemoteController.OnClientUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteController.OnClientUpdateListener)!: the listener to be called whenever new client information is available, must be non-null. |
 | `looper` | [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#)!: the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` on which to run the event loop, or null to use the current thread's looper. |
+| --- | --- |
 
 | Exceptions ||
 |---|---|

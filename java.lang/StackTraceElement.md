@@ -9,6 +9,7 @@ class StackTraceElement : Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.lang.StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#) |
 
 An element in a stack trace, as returned by [java.lang.Throwable#getStackTrace()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace()). Each element represents a single stack frame. All stack frames except for the one at the top of the stack represent a method invocation. The frame at the top of the stack represents the execution point at which the stack trace was generated. Typically, this is the point at which the throwable corresponding to the stack trace was created.
@@ -24,9 +25,11 @@ An element in a stack trace, as returned by [java.lang.Throwable#getStackTrace()
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified object is another `StackTraceElement` instance representing the same execution point as this instance. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getClassName](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#getClassName())`()` Returns the fully qualified name of the class containing the execution point represented by this stack trace element. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileName](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#getFileName())`()` Returns the name of the source file containing the execution point represented by this stack trace element. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#getLineNumber())`()` Returns the line number of the source line containing the execution point represented by this stack trace element. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMethodName](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#getMethodName())`()` Returns the name of the method containing the execution point represented by this stack trace element. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#hashCode())`()` Returns a hash code value for this stack trace element. |
+| --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNativeMethod](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#isNativeMethod())`()` Returns true if the method containing the execution point represented by this stack trace element is a native method. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement#toString())`()` Returns a string representation of this stack trace element. |
 
@@ -51,6 +54,7 @@ Creates a stack trace element representing the specified execution point.
 | `declaringClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the fully qualified name of the class containing the execution point represented by the stack trace element |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the method containing the execution point represented by the stack trace element |
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the file containing the execution point represented by the stack trace element, or `null` if this information is unavailable |
+| --- | --- |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the line number of the source line containing the execution point represented by this stack trace element, or a negative number if this information is unavailable. A value of -2 indicates that the method containing the execution point is a native method |
 
 | Exceptions ||

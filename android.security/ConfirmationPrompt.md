@@ -5,12 +5,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 # ConfirmationPrompt
 
 Kotlin| [Java](https://developer.android.com/reference/android/security/ConfirmationPrompt "View this page in Java") 
+| --- | --- |
 
 ```
 open class ConfirmationPrompt
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.security.ConfirmationPrompt](https://developer.android.com/reference/kotlin/android/security/ConfirmationPrompt#) |
 
 Class used for displaying confirmation prompts.
@@ -45,6 +47,7 @@ Note: It is vital to check the`promptText`because this is the only part that the
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelPrompt](https://developer.android.com/reference/kotlin/android/security/ConfirmationPrompt#cancelPrompt())`()` Cancels a prompt currently being displayed. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/android/security/ConfirmationPrompt#isSupported(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Checks if the device supports confirmation prompts. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [presentPrompt](https://developer.android.com/reference/kotlin/android/security/ConfirmationPrompt#presentPrompt(java.util.concurrent.Executor,%20android.security.ConfirmationCallback))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [ConfirmationCallback](https://developer.android.com/reference/kotlin/android/security/ConfirmationCallback)`)` Requests a confirmation prompt to be presented to the user. |
+| --- | --- |
 
 ## Public methods
 
@@ -103,3 +106,4 @@ Requests a confirmation prompt to be presented to the user. When the prompt is n
 | `java.lang.IllegalArgumentException` | if the prompt text is too long or malfomed. |
 | `android.security.ConfirmationAlreadyPresentingException` | if another prompt is being presented. |
 | `android.security.ConfirmationNotAvailableException` | if confirmation prompts are not supported. |
+| --- | --- |

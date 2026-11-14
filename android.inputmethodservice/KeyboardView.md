@@ -8,6 +8,7 @@ open class KeyboardView : View, View.OnClickListener
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
 | | ↳ | [android.inputmethodservice.KeyboardView](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#) |
 
@@ -29,12 +30,15 @@ A view that renders a virtual `https://developer.android.com/reference/kotlin/an
 | [`android:keyBackground`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Image for the key. |
 | [`android:keyPreviewHeight`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Height of the key press feedback popup. |
 | [`android:keyPreviewLayout`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Layout resource for key press feedback. |
+| --- | --- |
 | [`android:keyPreviewOffset`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Vertical offset of the key press feedback from the key. |
 | [`android:keyTextColor`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Color to use for the label in a key. |
 | [`android:keyTextSize`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Size of the text for character keys. |
+| --- | --- |
 | [`android:labelTextSize`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Size of the text for custom keys with some text and no icon. |
 | [`android:popupLayout`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Layout resource for popup keyboards. |
 | [`android:verticalCorrection`](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#attr_KeyboardView) | Amount to offset the touch Y coordinate by, for bias correction. |
+| --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -314,6 +318,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -430,6 +435,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1614,24 +1620,31 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#closing()()` <br /> |
 | open [Keyboard](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#getKeyboard()()` Returns the current keyboard being displayed by this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#handleBack()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#invalidateAllKeys()()` Requests a redraw of the entire keyboard. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#invalidateKey(kotlin.Int)(keyIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Invalidates a key so that it will be redrawn on the next repaint. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#isPreviewEnabled()()` Returns the enabled state of the key feedback popup. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#isProximityCorrectionEnabled()()` Returns true if proximity correction is enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#isShifted()()` Returns the state of the shift key of the keyboard, if any. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onClick(android.view.View)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Popup keyboard close button clicked. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Implement this to do your drawing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onHoverEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle hover events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onTouchEvent(android.view.MotionEvent)(me: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setKeyboard(android.inputmethodservice.Keyboard)(keyboard: https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard!)` Attaches a keyboard to this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setOnKeyboardActionListener(android.inputmethodservice.KeyboardView.OnKeyboardActionListener)(listener: https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setPopupOffset(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setPopupParent(android.view.View)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setPreviewEnabled(kotlin.Boolean)(previewEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the key feedback popup. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setProximityCorrectionEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When enabled, calls to `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onKey(kotlin.Int,%20kotlin.IntArray)` will include key codes for adjacent keys. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setShifted(kotlin.Boolean)(shifted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the state of the shift key of the keyboard, if any. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#setVerticalCorrection(kotlin.Int)(verticalOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 
@@ -1640,9 +1653,11 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [KeyboardView.OnKeyboardActionListener](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#getOnKeyboardActionListener()()` Returns the `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener` object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#onLongPress(android.inputmethodservice.Keyboard.Key)(popupKey: https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Key!)` Called when a key is long pressed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#swipeDown()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#swipeLeft()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#swipeRight()()` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView#swipeUp()()` <br /> |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -3444,6 +3459,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4809,6 +4825,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7502,6 +7519,7 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |
 
 ### onTouchEvent

@@ -9,6 +9,7 @@ open class NullCipher : Cipher
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [javax.crypto.Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher) ||
 | | ↳ | [javax.crypto.NullCipher](https://developer.android.com/reference/kotlin/javax/crypto/NullCipher#) |
 

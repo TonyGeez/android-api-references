@@ -5,12 +5,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # StructStat
 
 Kotlin| [Java](https://developer.android.com/reference/android/system/StructStat "View this page in Java") 
+| --- | --- |
 
 ```
 class StructStat
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.system.StructStat](https://developer.android.com/reference/kotlin/android/system/StructStat#) |
 
 File information returned by [Os.fstat](https://developer.android.com/reference/kotlin/android/system/Os#fstat(java.io.FileDescriptor)), [Os.lstat](https://developer.android.com/reference/kotlin/android/system/Os#lstat(kotlin.String)), and [Os.stat](https://developer.android.com/reference/kotlin/android/system/Os#stat(kotlin.String)). Corresponds to C's`struct stat`from`<stat.h>`.
@@ -31,18 +33,23 @@ File information returned by [Os.fstat](https://developer.android.com/reference/
 | [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec)! | [st_atim](https://developer.android.com/reference/kotlin/android/system/StructStat#st_atim:android.system.StructTimespec) StructTimespec with time of last access. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_atime](https://developer.android.com/reference/kotlin/android/system/StructStat#st_atime:kotlin.Long) Seconds part of time of last access. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blksize](https://developer.android.com/reference/kotlin/android/system/StructStat#st_blksize:kotlin.Long) A file system-specific preferred I/O block size for this object. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blocks](https://developer.android.com/reference/kotlin/android/system/StructStat#st_blocks:kotlin.Long) Number of blocks allocated for this object. |
 | [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec)! | [st_ctim](https://developer.android.com/reference/kotlin/android/system/StructStat#st_ctim:android.system.StructTimespec) StructTimespec with time of last status change. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ctime](https://developer.android.com/reference/kotlin/android/system/StructStat#st_ctime:kotlin.Long) Seconds part of time of last status change |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_dev](https://developer.android.com/reference/kotlin/android/system/StructStat#st_dev:kotlin.Long) Device ID of device containing file. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_gid](https://developer.android.com/reference/kotlin/android/system/StructStat#st_gid:kotlin.Int) Group ID of file. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ino](https://developer.android.com/reference/kotlin/android/system/StructStat#st_ino:kotlin.Long) File serial number (inode). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_mode](https://developer.android.com/reference/kotlin/android/system/StructStat#st_mode:kotlin.Int) Mode (permissions) of file. |
 | [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec)! | [st_mtim](https://developer.android.com/reference/kotlin/android/system/StructStat#st_mtim:android.system.StructTimespec) StructTimespec with time of last modification. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_mtime](https://developer.android.com/reference/kotlin/android/system/StructStat#st_mtime:kotlin.Long) Seconds part of time of last data modification. |
+| --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_nlink](https://developer.android.com/reference/kotlin/android/system/StructStat#st_nlink:kotlin.Long) Number of hard links to the file. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_rdev](https://developer.android.com/reference/kotlin/android/system/StructStat#st_rdev:kotlin.Long) Device ID (if file is character or block special). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_size](https://developer.android.com/reference/kotlin/android/system/StructStat#st_size:kotlin.Long) For regular files, the file size in bytes. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_uid](https://developer.android.com/reference/kotlin/android/system/StructStat#st_uid:kotlin.Int) User ID of file. |
 
 ## Public constructors

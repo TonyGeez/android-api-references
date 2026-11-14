@@ -3,12 +3,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 # TouchInteractionController
 
 Kotlin | [Java](https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController "View this page in Java")
+| --- | --- |
 
 ```
 class TouchInteractionController
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.accessibilityservice.TouchInteractionController](https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#) |
 
 This class allows a service to handle touch exploration and the detection of specialized accessibility gestures. The service receives motion events and can match those motion events against the gestures it supports. The service can also request the framework enter three other states of operation for the duration of this interaction. Upon entering any of these states the framework will take over and the service will not receive motion events until the start of a new interaction. The states are as follows:
@@ -32,6 +34,7 @@ When `https://developer.android.com/reference/kotlin/android/accessibilityservic
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#STATE_CLEAR:kotlin.Int` The state where the user is not touching the screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#STATE_DELEGATING:kotlin.Int` The user is performing a gesture which is being passed through to the input pipeline as-is. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#STATE_DRAGGING:kotlin.Int` The state where the user is dragging with two fingers. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#STATE_TOUCH_EXPLORING:kotlin.Int` The state where the user is explicitly exploring the screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#STATE_TOUCH_INTERACTING:kotlin.Int` The state where the user is touching the screen and the service is receiving motion events. |
 
@@ -40,15 +43,19 @@ When `https://developer.android.com/reference/kotlin/android/accessibilityservic
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#getDisplayId()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#getMaxPointerCount()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#getState()()` <br /> |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#performClick()()` If `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled and at least one callback has been added, this function tells the framework to perform a click. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#performLongClickAndStartDrag()()` If `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled and at least one callback has been added, this function tells the framework to perform a long click. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#registerCallback(java.util.concurrent.Executor,%20android.accessibilityservice.TouchInteractionController.Callback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController.Callback)` Adds the specified callback to the list of callbacks. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#requestDelegating()()` If `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled and at least one callback has been added, this function tells the framework to initiate a delegating interaction. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#requestDragging(kotlin.Int)(pointerId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled and at least one callback has been added, this function tells the framework to initiate a dragging interaction using the specified pointer. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#requestTouchExploration()()` If `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_TOUCH_EXPLORATION_MODE:kotlin.Int` is enabled and at least one callback has been added for this display this function tells the framework to initiate touch exploration. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#stateToString(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string representation of the specified state. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#unregisterAllCallbacks()()` Removes all callbacks and returns control of touch interactions to the framework. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#unregisterCallback(android.accessibilityservice.TouchInteractionController.Callback)(callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController.Callback)` Unregisters the specified callback. |
+| --- | --- |
 
 ## Constants
 

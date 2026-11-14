@@ -5,15 +5,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 # ICUUncheckedIOException
 
 Kotlin| [Java](https://developer.android.com/reference/android/icu/util/ICUUncheckedIOException "View this page in Java") 
+| --- | --- |
 
 ```
 open class ICUUncheckedIOException : RuntimeException
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
 | | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
 | | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| --- | --- | --- | --- | --- |
 | | | | ↳ | [android.icu.util.ICUUncheckedIOException](https://developer.android.com/reference/kotlin/android/icu/util/ICUUncheckedIOException#) |
 
 Unchecked version of [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#). Some ICU APIs do not throw the standard exception but instead wrap it into this unchecked version.

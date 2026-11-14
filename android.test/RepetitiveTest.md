@@ -6,6 +6,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 # RepetitiveTest
 
 Kotlin| [Java](https://developer.android.com/reference/android/test/RepetitiveTest "View this page in Java") 
+| --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class RepetitiveTest

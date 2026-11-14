@@ -7,6 +7,7 @@ class KeyCustomizationTrigger : CustomizationTrigger
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.hardware.input.CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger) ||
 | | ↳ | [android.hardware.input.KeyCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#) |
 
@@ -19,54 +20,71 @@ Represents a trigger based on a physical key press on a peripheral.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_ASSIST:kotlin.Int` Customizable Key code: Assist key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_BACK:kotlin.Int` Customizable Key code: Back key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_BOOKMARK:kotlin.Int` Customizable Key code: Bookmark key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_BRIGHTNESS_DOWN:kotlin.Int` Customizable Key code: Brightness Down key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_BRIGHTNESS_UP:kotlin.Int` Customizable Key code: Brightness Up key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_CALCULATOR:kotlin.Int` Customizable Key code: Calculator key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_CALENDAR:kotlin.Int` Customizable Key code: Calendar key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_CAMERA:kotlin.Int` Customizable Key code: Camera key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_CONTACTS:kotlin.Int` Customizable Key code: Contacts key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_DICTATE:kotlin.Int` Customizable Key code: Dictate key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_ENVELOPE:kotlin.Int` Customizable Key code: Envelope key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_EXPLORER:kotlin.Int` Customizable Key code: Explorer key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F1:kotlin.Int` Customizable Key code: F1 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F10:kotlin.Int` Customizable Key code: F10 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F11:kotlin.Int` Customizable Key code: F11 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F12:kotlin.Int` Customizable Key code: F12 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F13:kotlin.Int` Customizable Key code: F13 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F14:kotlin.Int` Customizable Key code: F14 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F15:kotlin.Int` Customizable Key code: F15 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F16:kotlin.Int` Customizable Key code: F16 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F17:kotlin.Int` Customizable Key code: F17 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F18:kotlin.Int` Customizable Key code: F18 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F19:kotlin.Int` Customizable Key code: F19 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F2:kotlin.Int` Customizable Key code: F2 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F20:kotlin.Int` Customizable Key code: F20 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F21:kotlin.Int` Customizable Key code: F21 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F22:kotlin.Int` Customizable Key code: F22 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F23:kotlin.Int` Customizable Key code: F23 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F24:kotlin.Int` Customizable Key code: F24 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F3:kotlin.Int` Customizable Key code: F3 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F4:kotlin.Int` Customizable Key code: F4 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F5:kotlin.Int` Customizable Key code: F5 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F6:kotlin.Int` Customizable Key code: F6 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F7:kotlin.Int` Customizable Key code: F7 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F8:kotlin.Int` Customizable Key code: F8 key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_F9:kotlin.Int` Customizable Key code: F9 key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_FORWARD:kotlin.Int` Customizable Key code: Forward key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_FULLSCREEN:kotlin.Int` Customizable Key code: Full Screen key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MEDIA_EJECT:kotlin.Int` Customizable Key code: Eject key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MEDIA_NEXT:kotlin.Int` Customizable Key code: Next Media key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MEDIA_PLAY_PAUSE:kotlin.Int` Customizable Key code: Play/Pause Media key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MEDIA_PREVIOUS:kotlin.Int` Customizable Key code: Previous Media key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MEDIA_STOP:kotlin.Int` Customizable Key code: Stop Media key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MENU:kotlin.Int` Customizable Key code: Menu key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MOVE_HOME:kotlin.Int` Customizable Key code: Home key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_MUSIC:kotlin.Int` Customizable Key code: Music key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_NEW:kotlin.Int` Customizable Key code: New key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_SCREENSHOT:kotlin.Int` Customizable Key code: Screenshot key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_SEARCH:kotlin.Int` Customizable Key code: Search key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_SYSRQ:kotlin.Int` Customizable Key code: System Request / Print Screen key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_VOLUME_DOWN:kotlin.Int` Customizable Key code: Volume Down key. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_VOLUME_MUTE:kotlin.Int` Customizable Key code: Volume Mute key. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/KeyCustomizationTrigger#CUSTOMIZABLE_KEYCODE_VOLUME_UP:kotlin.Int` Customizable Key code: Volume Up key. |
 

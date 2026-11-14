@@ -9,6 +9,7 @@ open class CookieManager : CookieHandler
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.net.CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) ||
 | | ↳ | [java.net.CookieManager](https://developer.android.com/reference/kotlin/java/net/CookieManager#) |
 
@@ -75,6 +76,7 @@ The implementation conforms to [RFC 2965](http://www.ietf.org/rfc/rfc2965.txt), 
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [get](https://developer.android.com/reference/kotlin/java/net/CookieManager#get(java.net.URI,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
 | open [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore)! | [getCookieStore](https://developer.android.com/reference/kotlin/java/net/CookieManager#getCookieStore())`()` To retrieve current cookie store. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/net/CookieManager#put(java.net.URI,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `responseHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookieManager#setCookiePolicy(java.net.CookiePolicy))`(`cookiePolicy:` ` [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy)!`)` To set the cookie policy of this cookie manager. |
 
 | Inherited functions ||

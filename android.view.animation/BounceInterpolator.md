@@ -5,12 +5,14 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 # BounceInterpolator
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/animation/BounceInterpolator "View this page in Java") 
+| --- | --- |
 
 ```
 open class BounceInterpolator : BaseInterpolator
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.animation.BaseInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BaseInterpolator) ||
 | | ↳ | [android.view.animation.BounceInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BounceInterpolator#) |
 

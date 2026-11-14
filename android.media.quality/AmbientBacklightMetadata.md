@@ -3,12 +3,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # AmbientBacklightMetadata
 
 Kotlin | [Java](https://developer.android.com/reference/android/media/quality/AmbientBacklightMetadata "View this page in Java")
+| --- | --- |
 
 ```
 class AmbientBacklightMetadata : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.AmbientBacklightMetadata](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#) |
 
 Metadata of ambient backlight.
@@ -35,12 +37,15 @@ A metadata instance is sent from ambient backlight hardware in a `https://develo
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getColorFormat()()` Gets color format. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getCompressionAlgorithm()()` Gets compress algorithm. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getHorizontalZonesCount()()` Gets the number of horizontal color zones. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getPackageName()()` Gets package name of the metadata. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getSource()()` Gets source of ambient backlight detection. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getVerticalZonesCount()()` Gets the number of vertical color zones. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#getZoneColors()()` Gets color data of all available color zones. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#toString()()` Returns a string representation of the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
@@ -97,6 +102,7 @@ Constructs AmbientBacklightMetadata.
 | `compressAlgorithm` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#ALGORITHM_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#ALGORITHM_RLE:kotlin.Int` |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_AUDIO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_VIDEO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightSettings#SOURCE_AUDIO_VIDEO:kotlin.Int` |
 | `colorFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_F16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_1010102:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_565:kotlin.Int` |
+| --- | --- |
 
 ## Public methods
 

@@ -5,6 +5,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 # WindowInsetsAnimationControlListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface WindowInsetsAnimationControlListener
@@ -27,6 +28,7 @@ The request to control insets can fail immediately. In that case [onCancelled](h
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancelled](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationControlListener#onCancelled(android.view.WindowInsetsAnimationController))`(`controller:` ` [WindowInsetsAnimationController](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationController)?`)` Called when the request for control over the insets has been cancelled, either because the [android.os.CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#) associated with the [request](https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#controlWindowInsetsAnimation(kotlin.Int,%20kotlin.Long,%20android.view.animation.Interpolator,%20android.os.CancellationSignal,%20android.view.WindowInsetsAnimationControlListener))has been invoked, or the window has lost control over the insets (e.g. because it lost focus). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinished](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationControlListener#onFinished(android.view.WindowInsetsAnimationController))`(`controller:` ` [WindowInsetsAnimationController](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationController)`)` Called when the request for control over the insets has [finished](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationController#finish(kotlin.Boolean)). |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReady](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationControlListener#onReady(android.view.WindowInsetsAnimationController,%20kotlin.Int))`(`controller:` ` [WindowInsetsAnimationController](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimationController)`, `types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the animation is ready to be controlled. |
+| --- | --- |
 
 ## Public methods
 

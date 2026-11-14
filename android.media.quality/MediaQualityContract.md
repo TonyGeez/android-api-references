@@ -5,12 +5,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 # MediaQualityContract
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/quality/MediaQualityContract "View this page in Java") 
+| --- | --- |
 
 ```
 open class MediaQualityContract
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.media.quality.MediaQualityContract](https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityContract#) |
 
 The contract between the media quality service and applications. Contains definitions for the commonly used parameter names.
@@ -27,6 +29,7 @@ The contract between the media quality service and applications. Contains defini
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityContract#LEVEL_HIGH:kotlin.String) High level option for a parameter. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LEVEL_LOW](https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityContract#LEVEL_LOW:kotlin.String) Low level option for a parameter. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LEVEL_MEDIUM](https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityContract#LEVEL_MEDIUM:kotlin.String) Medium level option for a parameter. |
+| --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LEVEL_OFF](https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityContract#LEVEL_OFF:kotlin.String) Off level for parameters. |
 
 ## Constants

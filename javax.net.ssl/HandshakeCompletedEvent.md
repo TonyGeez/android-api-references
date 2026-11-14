@@ -9,6 +9,7 @@ open class HandshakeCompletedEvent : EventObject
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
 | | ↳ | [javax.net.ssl.HandshakeCompletedEvent](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#) |
 
@@ -27,9 +28,11 @@ The source of this event is the SSLSocket on which handshaking just completed.
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getCipherSuite())`()` Returns the cipher suite in use by the session which was produced by the handshake. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getLocalCertificates](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getLocalCertificates())`()` Returns the certificate(s) that were sent to the peer during handshaking. |
 | open [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getLocalPrincipal](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getLocalPrincipal())`()` Returns the principal that was sent to the peer during handshaking. |
+| --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate.html#)!\>! | [getPeerCertificateChain](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getPeerCertificateChain())`()` Returns the identity of the peer which was identified as part of defining the session. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getPeerCertificates](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getPeerCertificates())`()` Returns the identity of the peer which was established as part of defining the session. |
 | open [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getPeerPrincipal](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getPeerPrincipal())`()` Returns the identity of the peer which was established as part of defining the session. |
+| --- | --- |
 | open [SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession)! | [getSession](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getSession())`()` Returns the session that triggered this event. |
 | open [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket)! | [getSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedEvent#getSocket())`()` Returns the socket which is the source of this event. |
 

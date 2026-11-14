@@ -3,15 +3,18 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 # CellInfo
 
 Kotlin | [Java](https://developer.android.com/reference/android/telephony/CellInfo "View this page in Java")
+| --- | --- |
 
 ```
 abstract class CellInfo : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.telephony.CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo#) |
 
 | Known Direct Subclasses [CellInfoCdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma), [CellInfoGsm](https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm), [CellInfoLte](https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte), [CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr), [CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma), [CellInfoWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma) |---|---| | [CellInfoCdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a CDMA cell that provides identity and measurement info. | | [CellInfoGsm](https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a GSM cell that provides identity and measurement info. | | [CellInfoLte](https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an LTE cell that provides identity and measurement info. | | [CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an 5G NR cell that provides identity and measurement info. | | [CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a TD-SCDMA cell that provides identity and measurement info. | | [CellInfoWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a WCDMA cell that provides identity and measurement info. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Immutable cell information from a point in time.
 
@@ -22,9 +25,11 @@ Immutable cell information from a point in time.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CONNECTION_NONE:kotlin.Int` Cell is not a serving cell. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CONNECTION_PRIMARY_SERVING:kotlin.Int` UE is connected to cell for signalling and possibly data (3GPP 36.331, 25.331). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CONNECTION_SECONDARY_SERVING:kotlin.Int` UE is connected to cell for data (3GPP 36.331, 25.331). |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CONNECTION_UNKNOWN:kotlin.Int` Connection status is unknown. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#UNAVAILABLE:kotlin.Int` This value indicates that the integer field is unreported. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#UNAVAILABLE_LONG:kotlin.Long` This value indicates that the long field is unreported. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,12 +40,15 @@ Immutable cell information from a point in time.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#describeContents()()` Implement the Parcelable interface |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellConnectionStatus()()` Gets the connection status of this cell. |
+| --- | --- |
 | abstract [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellIdentity()()` <br /> |
 | abstract [CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellSignalStrength()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimeStamp()()` Approximate time this cell information was received from the modem. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimestampMillis()()` Approximate time this cell information was received from the modem. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#hashCode()()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#isRegistered()()` True if the phone is registered to a mobile network that provides service on this cell and this cell is being used or would be used for network signaling. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#toString()()` Returns a string representation of the object. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
 

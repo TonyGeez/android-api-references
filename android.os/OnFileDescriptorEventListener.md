@@ -5,6 +5,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 # OnFileDescriptorEventListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnFileDescriptorEventListener
@@ -21,6 +22,7 @@ A listener which is invoked when file descriptor related events occur.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_ERROR](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_ERROR:kotlin.Int) File descriptor event: Indicates that the file descriptor encountered a fatal error. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_INPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_INPUT:kotlin.Int) File descriptor event: Indicates that the file descriptor is ready for input operations, such as reading. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OUTPUT](https://developer.android.com/reference/kotlin/android/os/MessageQueue.OnFileDescriptorEventListener#EVENT_OUTPUT:kotlin.Int) File descriptor event: Indicates that the file descriptor is ready for output operations, such as writing. |
+| --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

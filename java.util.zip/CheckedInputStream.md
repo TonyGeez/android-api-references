@@ -9,9 +9,11 @@ open class CheckedInputStream : FilterInputStream
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
+| --- | --- | --- | --- |
 | ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||
 | | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||
 | | | ↳ | [java.util.zip.CheckedInputStream](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream#) |
+| --- | --- | --- | --- |
 
 An input stream that also maintains a checksum of the data being read. The checksum can then be used to verify the integrity of the input data.
 
@@ -26,6 +28,7 @@ An input stream that also maintains a checksum of the data being read. The check
 | open [Checksum](https://developer.android.com/reference/kotlin/java/util/zip/Checksum)! | [getChecksum](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream#getChecksum())`()` Returns the Checksum for this input stream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream#read())`()` Reads a byte. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads into an array of bytes. |
+| --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/util/zip/CheckedInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips specified number of bytes of input. |
 
 | Inherited functions ||
@@ -109,6 +112,7 @@ Reads into an array of bytes. If`len`is not zero, the method blocks until some i
 | `b` | the buffer into which the data is read. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the start offset in the destination array`b` |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of bytes read |
+| --- | --- |
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the buffer into which the data is read |
 
 | Return ||
@@ -120,6 +124,7 @@ Reads into an array of bytes. If`len`is not zero, the method blocks until some i
 | `java.io.IOException` | if an I/O error has occurred |
 | `java.lang.NullPointerException` | If`buf`is`null`. |
 | `java.lang.IndexOutOfBoundsException` | If`off`is negative,`len`is negative, or`len`is greater than`buf.length - off` |
+| --- | --- |
 
 ### skip
 

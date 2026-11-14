@@ -5,12 +5,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 # RoundedCorner
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/RoundedCorner "View this page in Java") 
+| --- | --- |
 
 ```
 class RoundedCorner : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#) |
 
 Represents a rounded corner of the display.
@@ -28,6 +30,7 @@ Note: The rounded corner formed by the radius and the center is an approximation
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_LEFT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_BOTTOM_LEFT:kotlin.Int) The rounded corner is at the bottom-left of the screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_RIGHT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_BOTTOM_RIGHT:kotlin.Int) The rounded corner is at the bottom-right of the screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_LEFT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_TOP_LEFT:kotlin.Int) The rounded corner is at the top-left of the screen. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_RIGHT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_TOP_RIGHT:kotlin.Int) The rounded corner is at the top-right of the screen. |
 
 | Inherited constants ||
@@ -43,9 +46,11 @@ Note: The rounded corner formed by the radius and the center is an approximation
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) | [getCenter](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#getCenter())`()` Returns the circle center of a quarter circle approximation of this [RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#). |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#getPosition())`()` Get the position of this [RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadius](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#getRadius())`()` Returns the radius of a quarter circle approximation of this [RoundedCorner](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
@@ -126,6 +131,7 @@ Note that this is only useful for tests. For production code, developers should 
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the rounded corner. Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_TOP_LEFT:kotlin.Int), [android.view.RoundedCorner#POSITION_TOP_RIGHT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_TOP_RIGHT:kotlin.Int), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_BOTTOM_RIGHT:kotlin.Int), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](https://developer.android.com/reference/kotlin/android/view/RoundedCorner#POSITION_BOTTOM_LEFT:kotlin.Int) |
 | `radius` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the radius of the rounded corner. |
 | `centerX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the x of center point of the rounded corner. |
+| --- | --- |
 | `centerY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the y of center point of the rounded corner. |
 
 ## Public methods
@@ -249,6 +255,7 @@ Flatten this object in to a Parcel.
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 | `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Properties
 

@@ -9,6 +9,7 @@ class URI : Comparable<URI!>, Serializable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [java.net.URI](https://developer.android.com/reference/kotlin/java/net/URI#) |
 
 Represents a Uniform Resource Identifier (URI) reference.
@@ -24,6 +25,7 @@ An*absolute* URI specifies a scheme; a URI that is not absolute is said to be*re
 An*opaque* URI is an absolute URI whose scheme-specific part does not begin with a slash character (`'/'`). Opaque URIs are not subject to further parsing. Some examples of opaque URIs are:
 
 | `mailto:java-net@java.sun.com` | |
+| --- | --- |
 | `news:comp.lang.java` | |
 | `urn:isbn:096139210x` |
 
@@ -48,12 +50,15 @@ All told, then, a URI instance has the following nine components:
 | scheme | `String` |
 | scheme-specific-part | `String` |
 | authority | `String` |
+| --- | --- |
 | user-info | `String` |
 | host | `String` |
 | port | `int` |
+| --- | --- |
 | path | `String` |
 | query | `String` |
 | fragment | `String` |
+| --- | --- |
 
 In a given instance any particular component is either*undefined* or*defined* with a distinct value. Undefined string components are represented by`null`, while undefined integer components are represented by`-1`. A string component may be defined to have the empty string as its value; this is not equivalent to that component being undefined.
 
@@ -78,12 +83,15 @@ This operation is often useful when constructing a document containing URIs that
 RFC 2396 specifies precisely which characters are permitted in the various components of a URI reference. The following categories, most of which are taken from that specification, are used below to describe these constraints:
 
 | *alpha* | The US-ASCII alphabetic characters,`'A'`through`'Z'`and`'a'`through`'z'` |
+| --- | --- |
 | *digit* | The US-ASCII decimal digit characters,`'0'`through`'9'` |
 | *alphanum* | All*alpha* and*digit*characters |
 | *unreserved* | All*alphanum* characters together with those in the string`"_-!.~'()*"` |
+| --- | --- |
 | *punct* | The characters in the string`",;:$&+="` |
 | *reserved* | All*punct* characters together with those in the string`"?/[]@"` |
 | *escaped* | Escaped octets, that is, triplets consisting of the percent character (`'%'`) followed by two hexadecimal digits (`'0'`-`'9'`,`'A'`-`'F'`, and`'a'`-`'f'`) |
+| --- | --- |
 | *other* | The Unicode characters that are not in the US-ASCII character set, are not control characters (according to the [Character.isISOControl](https://developer.android.com/reference/kotlin/java/lang/Character.html#isISOControl(kotlin.Char))method), and are not space characters (according to the [Character.isSpaceChar](https://developer.android.com/reference/kotlin/java/lang/Character.html#isSpaceChar(kotlin.Char))method)*(**Deviation from RFC 2396**, which is limited to US-ASCII)* |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
@@ -170,30 +178,39 @@ An instance of the [URL](https://developer.android.com/reference/kotlin/java/net
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/net/URI#compareTo(java.net.URI))`(`other:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI#)!`)` Compares this URI to another object, which must be a URI. |
 | static [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [create](https://developer.android.com/reference/kotlin/java/net/URI#create(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a URI by parsing the given string. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/URI#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests this URI for equality with another object. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAuthority](https://developer.android.com/reference/kotlin/java/net/URI#getAuthority())`()` Returns the decoded authority component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFragment](https://developer.android.com/reference/kotlin/java/net/URI#getFragment())`()` Returns the decoded fragment component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](https://developer.android.com/reference/kotlin/java/net/URI#getHost())`()` Returns the host component of this URI. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPath](https://developer.android.com/reference/kotlin/java/net/URI#getPath())`()` Returns the decoded path component of this URI. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/java/net/URI#getPort())`()` Returns the port number of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQuery](https://developer.android.com/reference/kotlin/java/net/URI#getQuery())`()` Returns the decoded query component of this URI. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawAuthority](https://developer.android.com/reference/kotlin/java/net/URI#getRawAuthority())`()` Returns the raw authority component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawFragment](https://developer.android.com/reference/kotlin/java/net/URI#getRawFragment())`()` Returns the raw fragment component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawPath](https://developer.android.com/reference/kotlin/java/net/URI#getRawPath())`()` Returns the raw path component of this URI. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawQuery](https://developer.android.com/reference/kotlin/java/net/URI#getRawQuery())`()` Returns the raw query component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawSchemeSpecificPart](https://developer.android.com/reference/kotlin/java/net/URI#getRawSchemeSpecificPart())`()` Returns the raw scheme-specific part of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawUserInfo](https://developer.android.com/reference/kotlin/java/net/URI#getRawUserInfo())`()` Returns the raw user-information component of this URI. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScheme](https://developer.android.com/reference/kotlin/java/net/URI#getScheme())`()` Returns the scheme component of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemeSpecificPart](https://developer.android.com/reference/kotlin/java/net/URI#getSchemeSpecificPart())`()` Returns the decoded scheme-specific part of this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserInfo](https://developer.android.com/reference/kotlin/java/net/URI#getUserInfo())`()` Returns the decoded user-information component of this URI. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/URI#hashCode())`()` Returns a hash-code value for this URI. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](https://developer.android.com/reference/kotlin/java/net/URI#isAbsolute())`()` Tells whether or not this URI is absolute. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](https://developer.android.com/reference/kotlin/java/net/URI#isOpaque())`()` Tells whether or not this URI is opaque. |
+| --- | --- |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [normalize](https://developer.android.com/reference/kotlin/java/net/URI#normalize())`()` Normalizes this URI's path. |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [parseServerAuthority](https://developer.android.com/reference/kotlin/java/net/URI#parseServerAuthority())`()` Attempts to parse this URI's authority component, if defined, into user-information, host, and port components. |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [relativize](https://developer.android.com/reference/kotlin/java/net/URI#relativize(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI#)!`)` Relativizes the given URI against this URI. |
+| --- | --- |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [resolve](https://developer.android.com/reference/kotlin/java/net/URI#resolve(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new URI by parsing the given string and then resolving it against this URI. |
 | [URI](https://developer.android.com/reference/kotlin/java/net/URI#)! | [resolve](https://developer.android.com/reference/kotlin/java/net/URI#resolve(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI#)!`)` Resolves the given URI against this URI. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCIIString](https://developer.android.com/reference/kotlin/java/net/URI#toASCIIString())`()` Returns the content of this URI as a US-ASCII string. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/URI#toString())`()` Returns the content of this URI as a string. |
 | [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [toURL](https://developer.android.com/reference/kotlin/java/net/URI#toURL())`()` Constructs a URL from this URI. |
 
@@ -257,6 +274,7 @@ The resulting URI string is then parsed in order to create the new URI instance 
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Scheme name |
 | `ssp` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Scheme-specific part |
 | `fragment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Fragment |
+| --- | --- |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------|
@@ -300,9 +318,11 @@ The resulting URI string is then parsed as if by invoking the [URI(java.lang.Str
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Scheme name |
 | `userInfo` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:User name and authorization information |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Host name |
+| --- | --- |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Port number |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path |
 | `query` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Query |
+| --- | --- |
 | `fragment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Fragment |
 
 | Exceptions ||
@@ -333,6 +353,7 @@ This convenience constructor works as if by invoking the seven-argument construc
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Scheme name |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Host name |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path |
+| --- | --- |
 | `fragment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Fragment |
 
 | Exceptions ||
@@ -372,6 +393,7 @@ The resulting URI string is then parsed as if by invoking the [URI(java.lang.Str
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Scheme name |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Authority |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path |
+| --- | --- |
 | `query` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Query |
 | `fragment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Fragment |
 

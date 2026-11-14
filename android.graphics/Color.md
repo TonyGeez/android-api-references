@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Color
 
 Kotlin| [Java](https://developer.android.com/reference/android/graphics/Color "View this page in Java") 
+| --- | --- |
 
 ```
 open class Color
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.graphics.Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) |
 
 The`Color`class provides methods for creating, converting and manipulating colors. Colors have three different representations:
@@ -32,6 +34,7 @@ A color int always defines a color in the [sRGB](https://developer.android.com/r
 | A | Alpha | 8 bits | \\(\[0..255\]\\) |
 | R | Red | 8 bits | \\(\[0..255\]\\) |
 | G | Green | 8 bits | \\(\[0..255\]\\) |
+| --- | --- | --- | --- |
 | B | Blue | 8 bits | \\(\[0..255\]\\) |
 
 The components in this table are listed in encoding order (see below), which is why color ints are called ARGB colors.
@@ -93,27 +96,35 @@ A color long always defines a color using 4 components packed in a single 64 bit
 | [RGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model) color model ||||
 | R | Red | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | G | Green | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
+| --- | --- | --- | --- |
 | B | Blue | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | A | Alpha | 10 bits | \\(\[0..1023\]\\) |
 | | Color space | 6 bits | \\(\[0..63\]\\) |
+| --- | --- | --- | --- |
 | [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space ||||
 | A | Alpha | 8 bits | \\(\[0..255\]\\) |
 | R | Red | 8 bits | \\(\[0..255\]\\) |
+| --- | --- | --- | --- |
 | G | Green | 8 bits | \\(\[0..255\]\\) |
 | B | Blue | 8 bits | \\(\[0..255\]\\) |
 | X | Unused | 32 bits | \\(0\\) |
+| --- | --- | --- | --- |
 | [XYZ](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model) color model ||||
 | X | X | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | Y | Y | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
+| --- | --- | --- | --- |
 | Z | Z | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | A | Alpha | 10 bits | \\(\[0..1023\]\\) |
 | | Color space | 6 bits | \\(\[0..63\]\\) |
+| --- | --- | --- | --- |
 | [Lab](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model) color model ||||
 | L | L | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | a | a | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
+| --- | --- | --- | --- |
 | b | b | 16 bits | \\(\[-65504.0, 65504.0\]\\) |
 | A | Alpha | 10 bits | \\(\[0..1023\]\\) |
 | | Color space | 6 bits | \\(\[0..63\]\\) |
+| --- | --- | --- | --- |
 | [CMYK](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model) color model ||||
 | Unsupported ||||
 
@@ -198,15 +209,19 @@ The color representations described above do not use pre-multiplied color compon
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLACK](https://developer.android.com/reference/kotlin/android/graphics/Color#BLACK:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUE](https://developer.android.com/reference/kotlin/android/graphics/Color#BLUE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CYAN](https://developer.android.com/reference/kotlin/android/graphics/Color#CYAN:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DKGRAY](https://developer.android.com/reference/kotlin/android/graphics/Color#DKGRAY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAY](https://developer.android.com/reference/kotlin/android/graphics/Color#GRAY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN](https://developer.android.com/reference/kotlin/android/graphics/Color#GREEN:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LTGRAY](https://developer.android.com/reference/kotlin/android/graphics/Color#LTGRAY:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGENTA](https://developer.android.com/reference/kotlin/android/graphics/Color#MAGENTA:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RED](https://developer.android.com/reference/kotlin/android/graphics/Color#RED:kotlin.Int) <br /> |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPARENT](https://developer.android.com/reference/kotlin/android/graphics/Color#TRANSPARENT:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITE](https://developer.android.com/reference/kotlin/android/graphics/Color#WHITE:kotlin.Int) <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YELLOW](https://developer.android.com/reference/kotlin/android/graphics/Color#YELLOW:kotlin.Int) <br /> |
+| --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
@@ -217,60 +232,79 @@ The color representations described above do not use pre-multiplied color compon
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HSVToColor](https://developer.android.com/reference/kotlin/android/graphics/Color#HSVToColor(kotlin.FloatArray))`(`hsv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Convert HSV components to an ARGB color. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HSVToColor](https://developer.android.com/reference/kotlin/android/graphics/Color#HSVToColor(kotlin.Int,%20kotlin.FloatArray))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hsv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Convert HSV components to an ARGB color. |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [RGBToHSV](https://developer.android.com/reference/kotlin/android/graphics/Color#RGBToHSV(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray))`(`red:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `green:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `blue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hsv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Convert RGB components to HSV. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [alpha](https://developer.android.com/reference/kotlin/android/graphics/Color#alpha())`()` Returns the value of the alpha component in the range \\(\[0..1\]\\). |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [alpha](https://developer.android.com/reference/kotlin/android/graphics/Color#alpha(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the alpha component of a color int. |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [alpha](https://developer.android.com/reference/kotlin/android/graphics/Color#alpha(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the alpha component encoded in the specified color long. |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [argb](https://developer.android.com/reference/kotlin/android/graphics/Color#argb(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `green:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return a color-int from alpha, red, green, blue float components in the range \\(\[0..1\]\\). |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [argb](https://developer.android.com/reference/kotlin/android/graphics/Color#argb(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `red:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `green:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `blue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a color-int from alpha, red, green, blue components. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [blue](https://developer.android.com/reference/kotlin/android/graphics/Color#blue())`()` Returns the value of the blue component in the range defined by this color's color space (see [ColorSpace.getMinValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMinValue(kotlin.Int))and [ColorSpace.getMaxValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMaxValue(kotlin.Int))). |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [blue](https://developer.android.com/reference/kotlin/android/graphics/Color#blue(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the blue component of a color int. |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [blue](https://developer.android.com/reference/kotlin/android/graphics/Color#blue(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the blue component encoded in the specified color long. |
 | openstatic [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace) | [colorSpace](https://developer.android.com/reference/kotlin/android/graphics/Color#colorSpace(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the color space encoded in the specified color long. |
+| --- | --- |
 | openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [colorToHSV](https://developer.android.com/reference/kotlin/android/graphics/Color#colorToHSV(kotlin.Int,%20kotlin.FloatArray))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hsv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Convert the ARGB color to its HSV components. |
 | open [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(android.graphics.ColorSpace))`(`colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Converts this color from its color space to the specified color space. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.ColorSpace,%20android.graphics.ColorSpace))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `source:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`, `destination:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Converts the specified 3 component color from the source color space to the destination color space. |
+| --- | --- |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.ColorSpace.Connector))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `connector:` ` [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector)`)` Converts the specified 3 component color from a color space to another using the specified color space [connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector). |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(kotlin.Int,%20android.graphics.ColorSpace))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Converts the specified ARGB color int from the [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space into the specified destination color space. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(kotlin.Long,%20android.graphics.ColorSpace))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Converts the specified color long from its color space into the specified destination color space. |
+| --- | --- |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](https://developer.android.com/reference/kotlin/android/graphics/Color#convert(kotlin.Long,%20android.graphics.ColorSpace.Connector))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `connector:` ` [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector)`)` Converts the specified color long from a color space to another using the specified color space [connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/Color#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | open [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace) | [getColorSpace](https://developer.android.com/reference/kotlin/android/graphics/Color#getColorSpace())`()` Returns this color's color space. |
+| --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getComponent](https://developer.android.com/reference/kotlin/android/graphics/Color#getComponent(kotlin.Int))`(`component:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the specified component in the range defined by this color's color space (see [ColorSpace.getMinValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMinValue(kotlin.Int))and [ColorSpace.getMaxValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMaxValue(kotlin.Int))). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getComponentCount](https://developer.android.com/reference/kotlin/android/graphics/Color#getComponentCount())`()` Returns the number of components that form a color value according to this color space's color model, plus one extra component for alpha. |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getComponents](https://developer.android.com/reference/kotlin/android/graphics/Color#getComponents())`()` Returns this color's components as a new array. |
+| --- | --- |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getComponents](https://developer.android.com/reference/kotlin/android/graphics/Color#getComponents(kotlin.FloatArray))`(`components:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Copies this color's components in the supplied array. |
 | open [ColorSpace.Model](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model)! | [getModel](https://developer.android.com/reference/kotlin/android/graphics/Color#getModel())`()` Returns the color model of this color. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [green](https://developer.android.com/reference/kotlin/android/graphics/Color#green())`()` Returns the value of the green component in the range defined by this color's color space (see [ColorSpace.getMinValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMinValue(kotlin.Int))and [ColorSpace.getMaxValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMaxValue(kotlin.Int))). |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [green](https://developer.android.com/reference/kotlin/android/graphics/Color#green(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the green component of a color int. |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [green](https://developer.android.com/reference/kotlin/android/graphics/Color#green(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the green component encoded in the specified color long. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/Color#hashCode())`()` <br /> |
+| --- | --- |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInColorSpace](https://developer.android.com/reference/kotlin/android/graphics/Color#isInColorSpace(kotlin.Long,%20android.graphics.ColorSpace))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Indicates whether the specified color is in the specified color space. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSrgb](https://developer.android.com/reference/kotlin/android/graphics/Color#isSrgb())`()` Indicates whether this color is in the [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSrgb](https://developer.android.com/reference/kotlin/android/graphics/Color#isSrgb(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Indicates whether the specified color is in the [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWideGamut](https://developer.android.com/reference/kotlin/android/graphics/Color#isWideGamut())`()` Indicates whether this color color is in a wide-gamut color space. |
 | openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWideGamut](https://developer.android.com/reference/kotlin/android/graphics/Color#isWideGamut(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Indicates whether the specified color is in a wide-gamut color space. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [luminance](https://developer.android.com/reference/kotlin/android/graphics/Color#luminance())`()` Returns the relative luminance of this color. |
+| --- | --- |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [luminance](https://developer.android.com/reference/kotlin/android/graphics/Color#luminance(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the relative luminance of a color. |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [luminance](https://developer.android.com/reference/kotlin/android/graphics/Color#luminance(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the relative luminance of a color. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [pack](https://developer.android.com/reference/kotlin/android/graphics/Color#pack())`()` Packs this color into a color long. |
+| --- | --- |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [pack](https://developer.android.com/reference/kotlin/android/graphics/Color#pack(kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `green:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Packs the sRGB color defined by the specified red, green and blue component values into an RGBA color long in the sRGB color space. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [pack](https://developer.android.com/reference/kotlin/android/graphics/Color#pack(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `green:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Packs the sRGB color defined by the specified red, green, blue and alpha component values into an RGBA color long in the sRGB color space. |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [pack](https://developer.android.com/reference/kotlin/android/graphics/Color#pack(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.ColorSpace))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `green:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Packs the 3 component color defined by the specified red, green, blue and alpha component values into a color long in the specified color space. |
+| --- | --- |
 | openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [pack](https://developer.android.com/reference/kotlin/android/graphics/Color#pack(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the specified ARGB color int to an RGBA color long in the sRGB color space. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseColor](https://developer.android.com/reference/kotlin/android/graphics/Color#parseColor(kotlin.String))`(`colorString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the color string, and return the corresponding color-int. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [red](https://developer.android.com/reference/kotlin/android/graphics/Color#red())`()` Returns the value of the red component in the range defined by this color's color space (see [ColorSpace.getMinValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMinValue(kotlin.Int))and [ColorSpace.getMaxValue(int)](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMaxValue(kotlin.Int))). |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [red](https://developer.android.com/reference/kotlin/android/graphics/Color#red(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the red component of a color int. |
 | openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [red](https://developer.android.com/reference/kotlin/android/graphics/Color#red(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the red component encoded in the specified color long. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rgb](https://developer.android.com/reference/kotlin/android/graphics/Color#rgb(kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `green:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Return a color-int from red, green, blue float components in the range \\(\[0..1\]\\). |
+| --- | --- |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rgb](https://developer.android.com/reference/kotlin/android/graphics/Color#rgb(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`red:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `green:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `blue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a color-int from red, green, blue components. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toArgb](https://developer.android.com/reference/kotlin/android/graphics/Color#toArgb())`()` Converts this color to an ARGB color int. |
 | openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toArgb](https://developer.android.com/reference/kotlin/android/graphics/Color#toArgb(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Converts the specified color long to an ARGB color int. |
+| --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/Color#toString())`()` Returns a string representation of the object. |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new opaque`Color`in the [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space with the specified red, green and blue component values. |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new`Color`in the [sRGB](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named) color space with the specified red, green, blue and alpha component values. |
+| --- | --- |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20android.graphics.ColorSpace))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Creates a new`Color`in the specified color space with the specified red, green, blue and alpha component values. |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.FloatArray,%20android.graphics.ColorSpace))`(`components:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `colorSpace:` ` [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace)`)` Creates a new`Color`in the specified color space with the specified component values. |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`Color`instance from an ARGB color int. |
+| --- | --- |
 | openstatic [Color](https://developer.android.com/reference/kotlin/android/graphics/Color#) | [valueOf](https://developer.android.com/reference/kotlin/android/graphics/Color#valueOf(kotlin.Long))`(`color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new`Color`instance from a color long. |
 
 ## Constants
@@ -499,6 +533,7 @@ Convert RGB components to HSV.
 | `red` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):red component value \\(\[0..255\]\\) Value is between 0 and 255 inclusive |
 | `green` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):green component value \\(\[0..255\]\\) Value is between 0 and 255 inclusive |
 | `blue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):blue component value \\(\[0..255\]\\) Value is between 0 and 255 inclusive |
+| --- | --- |
 | `hsv` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:3 element array which holds the resulting HSV components. |
 
 ### alpha
@@ -577,6 +612,7 @@ Return a color-int from alpha, red, green, blue float components in the range \\
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Alpha component \\(\[0..1\]\\) of the color |
 | `red` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Red component \\(\[0..1\]\\) of the color |
 | `green` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Green component \\(\[0..1\]\\) of the color |
+| --- | --- |
 | `blue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Blue component \\(\[0..1\]\\) of the color |
 
 ### argb
@@ -599,6 +635,7 @@ Return a color-int from alpha, red, green, blue components. These component valu
 | `alpha` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Alpha component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
 | `red` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Red component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
 | `green` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Green component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
+| --- | --- |
 | `blue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Blue component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
 
 ### blue
@@ -754,9 +791,11 @@ The red, green and blue components must be in the range defined by the specified
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the color to convert |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the color to convert |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the color to convert |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the color to convert, in \\(\[0..1\]\\) |
 | `source` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace):The source color space, cannot be null |
 | `destination` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace):The destination color space, cannot be null |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------|
@@ -791,6 +830,7 @@ The red, green and blue components must be in the range defined by the source co
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the color to convert |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the color to convert |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the color to convert |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the color to convert, in \\(\[0..1\]\\) |
 | `connector` | [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector):A color space connector, cannot be null |
 
@@ -1284,6 +1324,7 @@ Packs the sRGB color defined by the specified red, green and blue component valu
 | `red` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `green` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `blue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the sRGB color to create, in \\(\[0..1\]\\) |
+| --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------|
@@ -1309,6 +1350,7 @@ Packs the sRGB color defined by the specified red, green, blue and alpha compone
 | `red` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `green` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `blue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the sRGB color to create, in \\(\[0..1\]\\) |
+| --- | --- |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the sRGB color to create, in \\(\[0..1\]\\) |
 
 | Return ||
@@ -1338,6 +1380,7 @@ The red, green and blue components must be in the range defined by the specified
 | `red` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the color to create |
 | `green` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the color to create |
 | `blue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the color to create |
+| --- | --- |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the color to create, in \\(\[0..1\]\\) |
 | `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace):This value cannot be`null`. |
 
@@ -1459,6 +1502,7 @@ Return a color-int from red, green, blue float components in the range \\(\[0..1
 | `red` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Red component \\(\[0..1\]\\) of the color |
 | `green` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Green component \\(\[0..1\]\\) of the color |
 | `blue` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Blue component \\(\[0..1\]\\) of the color |
+| --- | --- |
 
 ### rgb
 
@@ -1479,6 +1523,7 @@ Return a color-int from red, green, blue components. The alpha component is impl
 | `red` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Red component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
 | `green` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Green component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
 | `blue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Blue component \\(\[0..255\]\\) of the color Value is between 0 and 255 inclusive |
+| --- | --- |
 
 ### toArgb
 
@@ -1558,6 +1603,7 @@ Creates a new opaque`Color`in the [sRGB](https://developer.android.com/reference
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the opaque sRGB color to create, in \\(\[0..1\]\\) |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the opaque sRGB color to create, in \\(\[0..1\]\\) |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the opaque sRGB color to create, in \\(\[0..1\]\\) |
+| --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -1583,6 +1629,7 @@ Creates a new`Color`in the [sRGB](https://developer.android.com/reference/kotlin
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the sRGB color to create, in \\(\[0..1\]\\) |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the sRGB color to create, in \\(\[0..1\]\\) |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the sRGB color to create, in \\(\[0..1\]\\) |
 
 | Return ||
@@ -1610,6 +1657,7 @@ Creates a new`Color`in the specified color space with the specified red, green, 
 | `r` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The red component of the color to create |
 | `g` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The green component of the color to create |
 | `b` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The blue component of the color to create |
+| --- | --- |
 | `a` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The alpha component of the color to create, in \\(\[0..1\]\\) |
 | `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace):The color space of the color to create This value cannot be`null`. |
 

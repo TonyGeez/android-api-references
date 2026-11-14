@@ -28,6 +28,7 @@ Defines an annotation used be used within the TestInfo annotation. It specifies 
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [conceptName](https://developer.android.com/reference/kotlin/dalvik/annotation/TestTarget#conceptName:kotlin.String) Specifies the name of a concept being tested. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)\<\*\>\> | [methodArgs](https://developer.android.com/reference/kotlin/dalvik/annotation/TestTarget#methodArgs:kotlin.Array) Specifies the signature of the method that is being tested, in terms of Java classes. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [methodName](https://developer.android.com/reference/kotlin/dalvik/annotation/TestTarget#methodName:kotlin.String) Specifies the name of the method that is being tested. |
+| --- | --- |
 
 ## Public constructors
 

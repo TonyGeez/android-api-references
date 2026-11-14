@@ -6,12 +6,14 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 # AddAdSelectionFromOutcomesOverrideRequest
 
 Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest "View this page in Java") 
+| --- | --- |
 
 ```
 open class AddAdSelectionFromOutcomesOverrideRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest#) |
 
 This POJO represents the [android.adservices.adselection.TestAdSelectionManager#overrideAdSelectionFromOutcomesConfigRemoteInfo](https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#overrideAdSelectionFromOutcomesConfigRemoteInfo(android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))( AddAdSelectionOverrideRequest, Executor, OutcomeReceiver)} request
@@ -29,6 +31,7 @@ It contains, a [AdSelectionFromOutcomesConfig](https://developer.android.com/ref
 | open [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig) | [getAdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest#getAdSelectionFromOutcomesConfig())`()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getOutcomeSelectionLogicJs](https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest#getOutcomeSelectionLogicJs())`()` <br /> |
 | open [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#) | [getOutcomeSelectionTrustedSignals](https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest#getOutcomeSelectionTrustedSignals())`()` <br /> |
+| --- | --- |
 
 ## Public constructors
 
@@ -51,6 +54,7 @@ Builds a [AddAdSelectionFromOutcomesOverrideRequest](https://developer.android.c
 | `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig):This value cannot be`null`. |
 | `outcomeSelectionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `outcomeSelectionTrustedSignals` | [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#):This value cannot be`null`. |
+| --- | --- |
 
 ## Public methods
 

@@ -8,6 +8,7 @@ class SchemaVisibilityConfig : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.appsearch.SchemaVisibilityConfig](https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#) |
 
 A class to hold a all necessary Visibility information corresponding to the same schema. This pattern allows for easier association of these documents.
@@ -29,9 +30,11 @@ This does not correspond to any schema, the properties held in this class are ke
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageIdentifier](https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getAllowedPackages()()` Returns a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier`s of packages that can access this schema. |
+| --- | --- |
 | [PackageIdentifier](https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getPubliclyVisibleTargetPackage()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier` of the package that will be used as the target package in a call to android. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getRequiredPermissions()()` Returns an array of Integers representing Android Permissions that the caller must hold to access the schema this `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#` represents. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#hashCode()()` Returns a hash code value for the object. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||

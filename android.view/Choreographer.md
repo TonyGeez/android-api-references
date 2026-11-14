@@ -5,12 +5,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 # Choreographer
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/Choreographer "View this page in Java") 
+| --- | --- |
 
 ```
 class Choreographer
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.Choreographer](https://developer.android.com/reference/kotlin/android/view/Choreographer#) |
 
 Coordinates the timing of animations, input and drawing.
@@ -39,6 +41,7 @@ Each [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.h
 | abstract | [FrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback) Implement this interface to receive a callback when a new display frame is being rendered. |
 | | [FrameData](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameData) The payload for [VsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.VsyncCallback) which includes frame information such as when the frame started being rendered, and multiple possible frame timelines and their information including deadline and expected present time. |
 | | [FrameTimeline](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameTimeline) Holds data that describes one possible VSync frame event to render at. |
+| --- | --- |
 | abstract | [VsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.VsyncCallback) Implement this interface to receive a callback to start the next frame. |
 
 | Public methods ||
@@ -46,9 +49,11 @@ Each [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.h
 | static [Choreographer](https://developer.android.com/reference/kotlin/android/view/Choreographer#)! | [getInstance](https://developer.android.com/reference/kotlin/android/view/Choreographer#getInstance())`()` Gets the choreographer for the calling thread. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer#postFrameCallback(android.view.Choreographer.FrameCallback))`(`callback:` ` [Choreographer.FrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback)!`)` Posts a frame callback to run on the next frame. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallbackDelayed](https://developer.android.com/reference/kotlin/android/view/Choreographer#postFrameCallbackDelayed(android.view.Choreographer.FrameCallback,%20kotlin.Long))`(`callback:` ` [Choreographer.FrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback)!`, `delayMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Posts a frame callback to run on the next frame after the specified delay. |
+| --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postVsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer#postVsyncCallback(android.view.Choreographer.VsyncCallback))`(`callback:` ` [Choreographer.VsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.VsyncCallback)`)` Posts a vsync callback to run on the next frame. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeFrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer#removeFrameCallback(android.view.Choreographer.FrameCallback))`(`callback:` ` [Choreographer.FrameCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback)!`)` Removes a previously posted frame callback. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeVsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer#removeVsyncCallback(android.view.Choreographer.VsyncCallback))`(`callback:` ` [Choreographer.VsyncCallback](https://developer.android.com/reference/kotlin/android/view/Choreographer.VsyncCallback)?`)` Removes a previously posted vsync callback. |
+| --- | --- |
 
 ## Public methods
 

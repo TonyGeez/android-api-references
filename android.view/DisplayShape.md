@@ -5,12 +5,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 # DisplayShape
 
 Kotlin| [Java](https://developer.android.com/reference/android/view/DisplayShape "View this page in Java") 
+| --- | --- |
 
 ```
 class DisplayShape : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.view.DisplayShape](https://developer.android.com/reference/kotlin/android/view/DisplayShape#) |
 
 A class representing the shape of a display. It provides a [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) of the display shape of the display shape. [DisplayShape](https://developer.android.com/reference/kotlin/android/view/DisplayShape#) is immutable.
@@ -26,9 +28,11 @@ A class representing the shape of a display. It provides a [Path](https://develo
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/DisplayShape#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/DisplayShape#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) | [getPath](https://developer.android.com/reference/kotlin/android/view/DisplayShape#getPath())`()` Returns a [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) of the display shape. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/DisplayShape#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/DisplayShape#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/DisplayShape#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|

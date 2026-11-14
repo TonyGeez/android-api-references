@@ -5,12 +5,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 # CellInfoNr
 
 Kotlin| [Java](https://developer.android.com/reference/android/telephony/CellInfoNr "View this page in Java") 
+| --- | --- |
 
 ```
 class CellInfoNr : CellInfo
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.telephony.CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) ||
 | | ↳ | [android.telephony.CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#) |
 
@@ -28,9 +30,11 @@ A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/Ce
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) | [getCellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#getCellIdentity())`()` <br /> |
 | [CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) | [getCellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#getCellSignalStrength())`()` <br /> |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#hashCode())`()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| --- | --- |
 
 | Inherited functions ||
 |---|---|

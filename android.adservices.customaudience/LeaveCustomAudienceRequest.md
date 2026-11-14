@@ -9,6 +9,7 @@ class LeaveCustomAudienceRequest
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.adservices.customaudience.LeaveCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#) |
 
 > [!CAUTION]
@@ -29,6 +30,7 @@ The request object is used to leave a custom audience.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` objects contain the same information. |
 | [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#getBuyer()()` Gets the buyer's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`, as identified by a domain in the form "buyerexample. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#getName()()` Gets the arbitrary string provided by the owner and buyer on creation of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience` object that represents a single custom audience. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` object's data. |
 
 ## Public methods

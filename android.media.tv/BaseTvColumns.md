@@ -5,6 +5,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 # BaseTvColumns
 
 Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvContract.BaseTvColumns "View this page in Java") 
+| --- | --- |
 
 ```
 interface BaseTvColumns : BaseColumns
@@ -13,6 +14,7 @@ interface BaseTvColumns : BaseColumns
 | [android.media.tv.TvContract.BaseTvColumns](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.BaseTvColumns#) |
 
 | Known Direct Subclasses [TvContract.Channels](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Channels), [TvContract.PreviewPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.PreviewPrograms), [TvContract.Programs](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs), [TvContract.RecordedPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.RecordedPrograms), [TvContract.WatchNextPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.WatchNextPrograms) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [TvContract.Channels](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Channels) | Column definitions for the TV channels table. | | [TvContract.PreviewPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.PreviewPrograms) | Column definitions for the preview TV programs table. | | [TvContract.Programs](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs) | Column definitions for the TV programs table. | | [TvContract.RecordedPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.RecordedPrograms) | Column definitions for the recorded TV programs table. | | [TvContract.WatchNextPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.WatchNextPrograms) | Column definitions for the "watch next" TV programs table. | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Common base for the tables of TV channels/programs.
 

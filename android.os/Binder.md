@@ -5,12 +5,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 # Binder
 
 Kotlin| [Java](https://developer.android.com/reference/android/os/Binder "View this page in Java") 
+| --- | --- |
 
 ```
 open class Binder : IBinder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.os.Binder](https://developer.android.com/reference/kotlin/android/os/Binder#) |
 
 Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder). This class is an implementation of IBinder that provides standard local implementation of such an object.
@@ -37,24 +39,31 @@ You must keep in mind the situations in which your process could go away, and th
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachInterface](https://developer.android.com/reference/kotlin/android/os/Binder#attachInterface(android.os.IInterface,%20kotlin.String))`(`owner:` ` [IInterface](https://developer.android.com/reference/kotlin/android/os/IInterface)?`, `descriptor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Convenience method for associating a specific interface with the Binder. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [clearCallingIdentity](https://developer.android.com/reference/kotlin/android/os/Binder#clearCallingIdentity())`()` Reset the identity of the incoming IPC on the current thread. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [clearCallingWorkSource](https://developer.android.com/reference/kotlin/android/os/Binder#clearCallingWorkSource())`()` Clears the work source on this thread. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/os/Binder#dump(java.io.FileDescriptor,%20kotlin.Array))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Implemented to call the more convenient version[dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])](https://developer.android.com/reference/kotlin/android/os/Binder#dump(java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpAsync](https://developer.android.com/reference/kotlin/android/os/Binder#dumpAsync(java.io.FileDescriptor,%20kotlin.Array))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Like[dump(java.io.FileDescriptor,java.lang.String[])](https://developer.android.com/reference/kotlin/android/os/Binder#dump(java.io.FileDescriptor,%20kotlin.Array)), but ensures the target executes asynchronously. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flushPendingCommands](https://developer.android.com/reference/kotlin/android/os/Binder#flushPendingCommands())`()` Flush any Binder commands pending in the current thread to the kernel driver. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallingPid](https://developer.android.com/reference/kotlin/android/os/Binder#getCallingPid())`()` Return the ID of the process that sent you the current transaction that is being processed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallingUid](https://developer.android.com/reference/kotlin/android/os/Binder#getCallingUid())`()` Return the Linux UID assigned to the process that sent you the current transaction that is being processed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallingUidOrThrow](https://developer.android.com/reference/kotlin/android/os/Binder#getCallingUidOrThrow())`()` Return the Linux UID assigned to the process that sent the transaction currently being processed. |
+| --- | --- |
 | static [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle) | [getCallingUserHandle](https://developer.android.com/reference/kotlin/android/os/Binder#getCallingUserHandle())`()` Return the UserHandle assigned to the process that sent you the current transaction that is being processed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallingWorkSourceUid](https://developer.android.com/reference/kotlin/android/os/Binder#getCallingWorkSourceUid())`()` Returns the work source set by the caller. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getInterfaceDescriptor](https://developer.android.com/reference/kotlin/android/os/Binder#getInterfaceDescriptor())`()` Default implementation returns an empty interface name. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBinderAlive](https://developer.android.com/reference/kotlin/android/os/Binder#isBinderAlive())`()` Check to see if the process that the binder is in is still alive. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [joinThreadPool](https://developer.android.com/reference/kotlin/android/os/Binder#joinThreadPool())`()` Add the calling thread to the IPC thread pool. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [linkToDeath](https://developer.android.com/reference/kotlin/android/os/Binder#linkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int))`(`recipient:` ` [IBinder.DeathRecipient](https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Local implementation is a no-op. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pingBinder](https://developer.android.com/reference/kotlin/android/os/Binder#pingBinder())`()` Default implementation always returns true -- if you got here, the object is alive. |
 | open [IInterface](https://developer.android.com/reference/kotlin/android/os/IInterface)? | [queryLocalInterface](https://developer.android.com/reference/kotlin/android/os/Binder#queryLocalInterface(kotlin.String))`(`descriptor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Use information supplied to [attachInterface()](https://developer.android.com/reference/kotlin/android/os/Binder#attachInterface(android.os.IInterface,%20kotlin.String))to return the associated [IInterface](https://developer.android.com/reference/kotlin/android/os/IInterface) if it matches the requested descriptor. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreCallingIdentity](https://developer.android.com/reference/kotlin/android/os/Binder#restoreCallingIdentity(kotlin.Long))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Restore the identity of the incoming IPC on the current thread back to a previously identity that was returned by [clearCallingIdentity](https://developer.android.com/reference/kotlin/android/os/Binder#clearCallingIdentity()). |
+| --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreCallingWorkSource](https://developer.android.com/reference/kotlin/android/os/Binder#restoreCallingWorkSource(kotlin.Long))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Restores the work source on this thread using a token returned by [setCallingWorkSourceUid(int)](https://developer.android.com/reference/kotlin/android/os/Binder#setCallingWorkSourceUid(kotlin.Int))or [clearCallingWorkSource()](https://developer.android.com/reference/kotlin/android/os/Binder#clearCallingWorkSource()). |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [setCallingWorkSourceUid](https://developer.android.com/reference/kotlin/android/os/Binder#setCallingWorkSourceUid(kotlin.Int))`(`workSource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the work source for this thread. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [transact](https://developer.android.com/reference/kotlin/android/os/Binder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `reply:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Default implementation rewinds the parcels and calls onTransact. |
+| --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unlinkToDeath](https://developer.android.com/reference/kotlin/android/os/Binder#unlinkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int))`(`recipient:` ` [IBinder.DeathRecipient](https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Local implementation is a no-op. |
 
 | Protected methods ||
@@ -469,6 +478,7 @@ Default implementation rewinds the parcels and calls onTransact. On the remote s
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The action to perform. This should be a number between [FIRST_CALL_TRANSACTION](https://developer.android.com/reference/kotlin/android/os/IBinder#FIRST_CALL_TRANSACTION:kotlin.Int) and [LAST_CALL_TRANSACTION](https://developer.android.com/reference/kotlin/android/os/IBinder#LAST_CALL_TRANSACTION:kotlin.Int). |
 | `data` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel):This value cannot be`null`. |
 | `reply` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)?:This value may be`null`. |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional operation flags. Either 0 for a normal RPC, or [FLAG_ONEWAY](https://developer.android.com/reference/kotlin/android/os/IBinder#FLAG_ONEWAY:kotlin.Int) for a one-way RPC. |
 
 | Return ||
@@ -521,6 +531,7 @@ Print the object's state into the given stream.
 | `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#):The raw file descriptor that the dump is being sent to. This value cannot be`null`. |
 | `fout` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#):The file to which you should dump your state. This will be closed for you after you return. This value cannot be`null`. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:additional arguments to the dump request. This value may be`null`. |
+| --- | --- |
 
 ### onTransact
 
@@ -546,6 +557,7 @@ Implementations that are returning a result should generally use [Parcel.writeNo
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The action to perform. This should be a number between [FIRST_CALL_TRANSACTION](https://developer.android.com/reference/kotlin/android/os/IBinder#FIRST_CALL_TRANSACTION:kotlin.Int) and [LAST_CALL_TRANSACTION](https://developer.android.com/reference/kotlin/android/os/IBinder#LAST_CALL_TRANSACTION:kotlin.Int). |
 | `data` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel):Marshalled data being received from the caller. This value cannot be`null`. |
 | `reply` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)?:If the caller is expecting a result back, it should be marshalled in to here. This value may be`null`. |
+| --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional operation flags. Either 0 for a normal RPC, or [FLAG_ONEWAY](https://developer.android.com/reference/kotlin/android/os/IBinder#FLAG_ONEWAY:kotlin.Int) for a one-way RPC. |
 
 | Return ||

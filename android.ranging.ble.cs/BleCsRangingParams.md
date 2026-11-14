@@ -7,6 +7,7 @@ class BleCsRangingParams : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.ranging.ble.cs.BleCsRangingParams](https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#) |
 
 BleCsRangingParams encapsulates the parameters required for a bluetooth channel sounding ranging session.
@@ -22,9 +23,11 @@ BleCsRangingParams encapsulates the parameters required for a bluetooth channel 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#LOCATION_TYPE_INDOOR:kotlin.Int` Location of the device is indoor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#LOCATION_TYPE_OUTDOOR:kotlin.Int` Location of the device is outdoor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#LOCATION_TYPE_UNKNOWN:kotlin.Int` Location of the device is unknown. |
+| --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#SIGHT_TYPE_LINE_OF_SIGHT:kotlin.Int` Remote device is in line of sight. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#SIGHT_TYPE_NON_LINE_OF_SIGHT:kotlin.Int` Remote device is not in line of sight. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#SIGHT_TYPE_UNKNOWN:kotlin.Int` Sight type is unknown. |
+| --- | --- |
 
 | Inherited constants ||
 |---|---|
@@ -35,12 +38,15 @@ BleCsRangingParams encapsulates the parameters required for a bluetooth channel 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#getLocationType()()` Returns the location type for the ranging session. |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#getPeerBluetoothAddress()()` Returns the Bluetooth address of the peer device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#getRangingUpdateRate()()` Returns the ranging update rate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#getSecurityLevel()()` Returns the security level for the ranging session. |
+| --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#getSightType()()` Returns the sight type for this ranging session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| --- | --- |
 
 | Properties ||
 |---|---|

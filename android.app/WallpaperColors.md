@@ -5,12 +5,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 # WallpaperColors
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/WallpaperColors "View this page in Java") 
+| --- | --- |
 
 ```
 class WallpaperColors : Parcelable
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.app.WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#) |
 
 Provides information about the colors of a wallpaper.
@@ -39,12 +41,15 @@ Exposes the 3 most visually representative colors of a wallpaper. Can be either 
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#describeContents())`()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | static [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#)! | [fromBitmap](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#fromBitmap(android.graphics.Bitmap))`(`bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`)` Constructs [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#) from a bitmap. |
+| --- | --- |
 | static [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#)! | [fromDrawable](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#fromDrawable(android.graphics.drawable.Drawable))`(`drawable:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Constructs [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#) from a drawable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorHints](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#getColorHints())`()` Returns the color hints for this instance. |
 | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#) | [getPrimaryColor](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#getPrimaryColor())`()` Gets the most visually representative color of the wallpaper. |
+| --- | --- |
 | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)? | [getSecondaryColor](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#getSecondaryColor())`()` Gets the second most preeminent color of the wallpaper. |
 | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)? | [getTertiaryColor](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#getTertiaryColor())`()` Gets the third most preeminent color of the wallpaper. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#hashCode())`()` <br /> |
+| --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#toString())`()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
@@ -102,6 +107,7 @@ Constructs a new object from three colors.
 | `primaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#):Primary color. This value cannot be`null`. |
 | `secondaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)?:Secondary color. This value may be`null`. |
 | `tertiaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)?:Tertiary color. This value may be`null`. |
+| --- | --- |
 
 **See Also**
 
@@ -127,6 +133,7 @@ Constructs a new object from three colors, where hints can be specified.
 | `primaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#):Primary color. This value cannot be`null`. |
 | `secondaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)?:Secondary color. This value may be`null`. |
 | `tertiaryColor` | [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#)?:Tertiary color. This value may be`null`. |
+| --- | --- |
 | `colorHints` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of color hints. Value is either`0`or a combination of [android.app.WallpaperColors#HINT_SUPPORTS_DARK_TEXT](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#HINT_SUPPORTS_DARK_TEXT:kotlin.Int), and [android.app.WallpaperColors#HINT_SUPPORTS_DARK_THEME](https://developer.android.com/reference/kotlin/android/app/WallpaperColors#HINT_SUPPORTS_DARK_THEME:kotlin.Int) |
 
 **See Also**

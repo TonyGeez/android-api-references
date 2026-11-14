@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # Long3
 
 Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Long3 "View this page in Java") 
+| --- | --- |
 
 ```
 open class Long3
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| --- | --- |
 | ↳ | [android.renderscript.Long3](https://developer.android.com/reference/kotlin/android/renderscript/Long3#) |
 
 | **This class was deprecated in API level 31.**
@@ -32,6 +34,7 @@ Vector version of the basic long type. Provides three long fields packed.
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Long3#x:kotlin.Long) <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Long3#y:kotlin.Long) <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Long3#z:kotlin.Long) <br /> |
+| --- | --- |
 
 ## Public constructors
 

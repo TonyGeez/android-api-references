@@ -6,12 +6,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 # UnitTestSuiteBuilder
 
 Kotlin | [Java](https://developer.android.com/reference/android/test/suitebuilder/UnitTestSuiteBuilder "View this page in Java") 
+| --- | --- |
 
 ```
 open class UnitTestSuiteBuilder : TestSuiteBuilder
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.test.suitebuilder.TestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/TestSuiteBuilder) ||
 | | ↳ | [android.test.suitebuilder.UnitTestSuiteBuilder](https://developer.android.com/reference/kotlin/android/test/suitebuilder/UnitTestSuiteBuilder#) |
 

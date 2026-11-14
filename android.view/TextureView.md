@@ -7,6 +7,7 @@ open class TextureView : View
 ```
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| --- | --- | --- |
 | ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
 | | ↳ | [android.view.TextureView](https://developer.android.com/reference/kotlin/android/view/TextureView#) |
 
@@ -21,6 +22,7 @@ TextureView can only be used in a hardware accelerated window. When rendered in 
 | Supports View alpha | X | U+ |
 | Supports rotations | X | |
 | Supports clipping | X | |
+| --- | --- | --- |
 | HDR support | Limited (on Android T+) | Full |
 | Renders DRM content | | X |
 
@@ -377,6 +379,7 @@ May be a dimension value, which is a floating point number appended with a unit 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which edges should be faded on scrolling.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 1000 Fades horizontal edges only. none 0 No edge is faded. vertical 2000 Fades vertical edges only.
 
 <br />
@@ -493,6 +496,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 `https://developer.android.com/reference/kotlin/android/view/View#attr_View` Defines which scrollbars should be displayed on scrolling or not.
 
 Must be one or more (separated by '|') of the following constant values.
+| --- | --- |
 Constant Value Description horizontal 100 Displays horizontal scrollbar only. none 0 No scrollbar is displayed. vertical 200 Displays vertical scrollbar only.
 
 <br />
@@ -1678,24 +1682,31 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#buildLayer()()` Calling this method has no effect. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Subclasses of TextureView cannot do their own rendering with the `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#` object. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/TextureView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
+| --- | --- |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap()()` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)` Copies the content of this view's surface texture into the specified bitmap. |
 | open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
+| --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getLayerType()()` Always returns `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int`. |
 | open [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTexture()()` Returns the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` used by this view. |
 | open [TextureView.SurfaceTextureListener](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTextureListener()()` Returns the `https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener` currently associated with this texture view. |
+| --- | --- |
 | open [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getTransform(android.graphics.Matrix)(transform: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#?)` Returns the transform associated with this texture view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#isAvailable()()` Returns true if the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` associated with this TextureView is available for rendering. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#isOpaque()()` Indicates whether this View is opaque. |
+| --- | --- |
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()()` Start editing the pixels in the surface. |
 | open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas(android.graphics.Rect)(dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Just like `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()` but allows specification of a dirty rectangle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setBackgroundDrawable(android.graphics.drawable.Drawable)(background: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` <br /> |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setForeground(android.graphics.drawable.Drawable)(foreground: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Supply a Drawable that is to be rendered on top of all of the content in the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setLayerPaint(android.graphics.Paint)(paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#?)` Updates the `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#` object used with the current layer (used only if the current layer type is not set to `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int`). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setLayerType(kotlin.Int,%20android.graphics.Paint)(layerType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#?)` The layer type of a TextureView is ignored since a TextureView is always considered to act as a hardware layer. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setOpaque(kotlin.Boolean)(opaque: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Indicates whether the content of this TextureView is opaque. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setSurfaceTexture(android.graphics.SurfaceTexture)(surfaceTexture: https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)` Set the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` for this view to use. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setSurfaceTextureListener(android.view.TextureView.SurfaceTextureListener)(listener: https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener?)` Sets the `https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener` used to listen to surface texture events. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setTransform(android.graphics.Matrix)(transform: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#?)` Sets the transform to associate with this texture view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#unlockCanvasAndPost(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Finish editing pixels in the surface. |
 
@@ -1704,6 +1715,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#onDraw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Subclasses of TextureView cannot do their own rendering with the `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#` object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
+| --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#onVisibilityChanged(android.view.View,%20kotlin.Int)(changedView: https://developer.android.com/reference/kotlin/android/view/View, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the visibility of the view or an ancestor of the view has changed. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/View` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/View#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View!>!)`
@@ -3480,6 +3492,7 @@ Returns the current scroll capture hint for this view.
 Returns a bitmask representing the enabled scroll indicators.
 
 For example, if the top and left scroll indicators are enabled and all other indicators are disabled, the return value will be `View.SCROLL_INDICATOR_TOP | View.SCROLL_INDICATOR_LEFT`.
+| --- | --- |
 
 To check whether the bottom scroll indicator is enabled, use the value of `(getScrollIndicators() & View.SCROLL_INDICATOR_BOTTOM) != 0`.
 
@@ -4874,6 +4887,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
  && event.isFromSource(InputDevice.SOURCE_STYLUS)
  && (toolType == MotionEvent.TOOL_TYPE_STYLUS
  || toolType == MotionEvent.TOOL_TYPE_ERASER)) {
+| --- | --- |
  // Show this pointer icon only if this pointer is a stylus.
  return PointerIcon.getSystemIcon(mContext, PointerIcon.TYPE_HANDWRITING);
  }
@@ -7231,6 +7245,7 @@ Creates a new TextureView.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 
 ### TextureView
 
@@ -7251,6 +7266,7 @@ Creates a new TextureView.
 | `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
 | `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
+| --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 
 ## Public methods
@@ -7725,6 +7741,7 @@ This is called during layout when the size of this view has changed. If you were
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current width of this view. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current height of this view. |
 | `oldw` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old width of this view. |
+| --- | --- |
 | `oldh` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Old height of this view. |
 
 ### onVisibilityChanged

@@ -5,6 +5,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 # OnOpChangedListener
 
 Kotlin| [Java](https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener "View this page in Java") 
+| --- | --- |
 
 ```
 interface OnOpChangedListener
@@ -58,4 +59,5 @@ If implemented, [onOpChanged(java.lang.String,java.lang.String)](https://develop
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The Op that changed. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Package of the app whose Op changed. Can be empty in the case of a change which is not package specific (such as global restrictions) which may imply a change to the op or package being listened to. This value cannot be`null`. |
 | `userId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):User id of the app whose Op changed. |
+| --- | --- |
 | `persistentDeviceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):persistent device id whose Op changed. This value cannot be`null`. |
